@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { ADVENTURE_ID, trackDestinationClick, scrollToAdventure, clearFromHome } from '../lib/homeReturn';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
@@ -16,8 +18,19 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 
 export default function Home() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    clearFromHome();
+    if (hash !== `#${ADVENTURE_ID}`) return undefined;
+    let tries = 0;
+    const tick = () => { if (!scrollToAdventure() && tries++ < 20) setTimeout(tick, 50); };
+    const t = setTimeout(tick, 50);
+    return () => clearTimeout(t);
+  }, [hash]);
+
   return (
-    <div className="bg-surface text-onsurface" data-testid="home-page">
+    <div className="bg-surface text-onsurface" data-testid="home-page" onClickCapture={trackDestinationClick}>
       <main>
         <div className="relative">
           <Header overlay floating />

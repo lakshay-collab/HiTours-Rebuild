@@ -5,6 +5,7 @@ import { ChevronRight, ChevronDown } from './EgyptIcons';
 import { NavIcon } from './EgyptNavIcons';
 import TrustBar from '../TrustBar';
 import Header from '../Header';
+import { useHomeLink } from '../../lib/homeReturn';
 
 export const scrollToId = (id) => {
   const el = document.getElementById(id);
@@ -130,6 +131,8 @@ export default function EgyptHero({ style, title: titleProp, showTabs = true, cr
   const h = data.hero;
   const title = titleProp || (style ? h.styleH1(style) : h.h1);
   const crumbItems = crumbList || data.crumbs;
+  const home = useHomeLink();
+  const crumbTo = (c) => (c.to === '/' ? home.href : c.to);
   return (
     <>
       <div className="relative">
@@ -156,7 +159,7 @@ export default function EgyptHero({ style, title: titleProp, showTabs = true, cr
         {crumbItems.map((c, i) => (
           <React.Fragment key={c.label}>
             {i > 0 && <ChevronRight size={20} className="text-[#174358]" />}
-            {c.to ? <Link to={c.to} className="hover:underline">{c.label}</Link>
+            {c.to ? <Link to={crumbTo(c)} className="hover:underline">{c.label}</Link>
               : c.href ? <a href={c.href} onClick={(e) => e.preventDefault()} className="hover:underline">{c.label}</a>
                 : <span className="eg-label-lg text-[#002131]">{c.label}</span>}
           </React.Fragment>

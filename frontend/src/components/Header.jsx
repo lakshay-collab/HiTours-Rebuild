@@ -6,6 +6,7 @@ import { nav } from '../mock';
 import MobileDrawer from './MobileDrawer';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 import { DestinationsMenu, ThemesMenu } from './DesktopMenus';
+import { useHomeLink } from '../lib/homeReturn';
 
 const BANNER_KEY = 'hi-banner-dismissed';
 
@@ -21,6 +22,7 @@ export default function Header({ overlay = false, floating = false }) {
   const [open, setOpen] = useState(false);
   const [adviceOpen, setAdviceOpen] = useState(false);
   const [menu, setMenu] = useState(null);
+  const home = useHomeLink();
   const [scrolled, setScrolled] = useState(false);
   const adviceRef = useRef(null);
   const adviceRefFloat = useRef(null);
@@ -78,7 +80,7 @@ export default function Header({ overlay = false, floating = false }) {
 
   const bar = (
     <div className="tl-wide h-[72px] flex items-center justify-between">
-      <a href="/" aria-label="Hi Tours" data-testid="logo-link">
+      <a href={home.href} onClick={home.onClick} aria-label="Hi Tours" data-testid="logo-link">
         <Logo white={overlay} className="h-10 sm:h-11 w-auto" />
       </a>
 
@@ -145,7 +147,7 @@ export default function Header({ overlay = false, floating = false }) {
         data-testid="floating-nav"
       >
         <nav className="flex items-center gap-1 rounded-full bg-white/70 backdrop-blur-xl ring-1 ring-black/5 shadow-[0_10px_34px_rgba(0,33,49,0.16)] pl-2.5 pr-2 py-1.5">
-          <a href="/" aria-label="Hi Tours" data-testid="floating-logo" className="flex items-center pr-1"><Logo className="h-7 w-auto" /></a>
+          <a href={home.href} onClick={home.onClick} aria-label="Hi Tours" data-testid="floating-logo" className="flex items-center pr-1"><Logo className="h-7 w-auto" /></a>
           <span className="h-6 w-px bg-onsurface/15 mx-1" />
           {MENUS.map((m) => (
             <div key={m.key} className="relative" onMouseEnter={() => openMenu(m.key)} onMouseLeave={closeMenu}>
@@ -191,7 +193,7 @@ export default function Header({ overlay = false, floating = false }) {
       {/* Mobile: compact floating pill with logo + hamburger (keeps the existing drawer) */}
       <div className={`lg:hidden fixed top-3 left-1/2 -translate-x-1/2 z-[60] transition-all duration-500 ease-out ${scrolled ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-5 pointer-events-none'}`} data-testid="floating-nav-mobile">
         <div className="flex items-center gap-3 rounded-full bg-white/75 backdrop-blur-xl ring-1 ring-black/5 shadow-[0_10px_30px_rgba(0,33,49,0.16)] pl-4 pr-2 py-1.5">
-          <a href="/" aria-label="Hi Tours"><Logo className="h-6 w-auto" /></a>
+          <a href={home.href} onClick={home.onClick} aria-label="Hi Tours"><Logo className="h-6 w-auto" /></a>
           <button onClick={() => setOpen(true)} aria-label="Open menu" data-testid="floating-mobile-menu" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
             <Menu size={20} strokeWidth={1.75} />
           </button>
