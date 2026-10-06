@@ -35,6 +35,42 @@ import { planner as kazakhstanPlanner, reviews as kazakhstanReviews } from '../k
 import { kazakhstanBySlug } from '../tours/kazakhstanToursData';
 import { planner as bhutanPlanner, reviews as bhutanReviews } from '../bhutanListingData';
 import { bhutanBySlug } from '../tours/bhutanToursData';
+import { planner as laosPlanner, reviews as laosReviews } from '../laosListingData';
+import { laosBySlug } from '../tours/laosToursData';
+import { planner as japanPlanner, reviews as japanReviews } from '../japanListingData';
+import { japanBySlug } from '../tours/japanToursData';
+import { planner as indonesiaPlanner, reviews as indonesiaReviews } from '../indonesiaListingData';
+import { indonesiaBySlug } from '../tours/indonesiaToursData';
+import { planner as chinaPlanner, reviews as chinaReviews } from '../chinaListingData';
+import { chinaBySlug } from '../tours/chinaToursData';
+import { planner as cambodiaPlanner, reviews as cambodiaReviews } from '../cambodiaListingData';
+import { cambodiaBySlug } from '../tours/cambodiaToursData';
+import { planner as philippinesPlanner, reviews as philippinesReviews } from '../philippinesListingData';
+import { philippinesBySlug } from '../tours/philippinesToursData';
+import { planner as icelandPlanner, reviews as icelandReviews } from '../icelandListingData';
+import { icelandBySlug } from '../tours/icelandToursData';
+import { planner as italyPlanner, reviews as italyReviews } from '../italyListingData';
+import { italyBySlug } from '../tours/italyToursData';
+import { planner as greecePlanner, reviews as greeceReviews } from '../greeceListingData';
+import { greeceBySlug } from '../tours/greeceToursData';
+import { planner as norwayPlanner, reviews as norwayReviews } from '../norwayListingData';
+import { norwayBySlug } from '../tours/norwayToursData';
+import { planner as irelandPlanner, reviews as irelandReviews } from '../irelandListingData';
+import { irelandBySlug } from '../tours/irelandToursData';
+import { planner as spainPlanner, reviews as spainReviews } from '../spainListingData';
+import { spainBySlug } from '../tours/spainToursData';
+import { planner as portugalPlanner, reviews as portugalReviews } from '../portugalListingData';
+import { portugalBySlug } from '../tours/portugalToursData';
+import { planner as croatiaPlanner, reviews as croatiaReviews } from '../croatiaListingData';
+import { croatiaBySlug } from '../tours/croatiaToursData';
+import { planner as englandPlanner, reviews as englandReviews } from '../englandListingData';
+import { englandBySlug } from '../tours/englandToursData';
+import { planner as scotlandPlanner, reviews as scotlandReviews } from '../scotlandListingData';
+import { scotlandBySlug } from '../tours/scotlandToursData';
+import { planner as finlandPlanner, reviews as finlandReviews } from '../finlandListingData';
+import { finlandBySlug } from '../tours/finlandToursData';
+import { planner as swedenPlanner, reviews as swedenReviews } from '../swedenListingData';
+import { swedenBySlug } from '../tours/swedenToursData';
 import { thailandBySlug } from '../tours/thailandToursData';
 import { planner as maldivesPlanner, reviews as maldivesReviews } from '../maldivesListingData';
 import { maldivesBySlug } from '../tours/maldivesToursData';
@@ -47,6 +83,24 @@ const DESTINATIONS = [
   ['Singapore', (d) => ({ planner: singaporePlanner, reviews: singaporeReviews })],
   ['Kazakhstan', (d) => ({ planner: kazakhstanPlanner, reviews: kazakhstanReviews })],
   ['Bhutan', (d) => ({ planner: bhutanPlanner, reviews: bhutanReviews })],
+  ["Laos", (d) => ({ planner: laosPlanner, reviews: laosReviews })],
+  ["Japan", (d) => ({ planner: japanPlanner, reviews: japanReviews })],
+  ["Indonesia", (d) => ({ planner: indonesiaPlanner, reviews: indonesiaReviews })],
+  ["China", (d) => ({ planner: chinaPlanner, reviews: chinaReviews })],
+  ["Cambodia", (d) => ({ planner: cambodiaPlanner, reviews: cambodiaReviews })],
+  ["Philippines", (d) => ({ planner: philippinesPlanner, reviews: philippinesReviews })],
+  ["Iceland", (d) => ({ planner: icelandPlanner, reviews: icelandReviews })],
+  ["Italy", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
+  ["Greece", (d) => ({ planner: greecePlanner, reviews: greeceReviews })],
+  ["Norway", (d) => ({ planner: norwayPlanner, reviews: norwayReviews })],
+  ["Ireland", (d) => ({ planner: irelandPlanner, reviews: irelandReviews })],
+  ["Spain", (d) => ({ planner: spainPlanner, reviews: spainReviews })],
+  ["Portugal", (d) => ({ planner: portugalPlanner, reviews: portugalReviews })],
+  ["Croatia", (d) => ({ planner: croatiaPlanner, reviews: croatiaReviews })],
+  ["England", (d) => ({ planner: englandPlanner, reviews: englandReviews })],
+  ["Scotland", (d) => ({ planner: scotlandPlanner, reviews: scotlandReviews })],
+  ["Finland", (d) => ({ planner: finlandPlanner, reviews: finlandReviews })],
+  ["Sweden", (d) => ({ planner: swedenPlanner, reviews: swedenReviews })],
   ['Maldives', (d) => ({ planner: maldivesPlanner, reviews: maldivesReviews })],
   ['Thailand', (d) => ({ planner: { ...planner, h3: 'Plan your Thailand trip', bg: d.gallery?.[0] } })],
   ['Morocco', (d) => ({ planner: { ...planner, h3: 'Plan your Morocco trip', bg: d.gallery?.[0] } })]
@@ -91,6 +145,24 @@ const BY_SLUG = {
   ...singaporeBySlug,
   ...kazakhstanBySlug,
   ...bhutanBySlug,
+  ...laosBySlug,
+  ...japanBySlug,
+  ...indonesiaBySlug,
+  ...chinaBySlug,
+  ...cambodiaBySlug,
+  ...philippinesBySlug,
+  ...icelandBySlug,
+  ...italyBySlug,
+  ...greeceBySlug,
+  ...norwayBySlug,
+  ...irelandBySlug,
+  ...spainBySlug,
+  ...portugalBySlug,
+  ...croatiaBySlug,
+  ...englandBySlug,
+  ...scotlandBySlug,
+  ...finlandBySlug,
+  ...swedenBySlug,
   ...thailandBySlug,
   ...maldivesBySlug
 };

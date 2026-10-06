@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { hero } from '../mock';
 import { destinations } from '../destinationsData';
 
-const ROUTES = { 'Egypt': '/afrika/aegypten', 'Asia': '/asien', 'Vietnam': '/asien/vietnam', 'Thailand': '/asien/thailand', 'Sri Lanka': '/asien/sri-lanka', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives' };
+const ROUTES = { 'Egypt': '/afrika/aegypten', 'Asia': '/asien', 'Vietnam': '/asien/vietnam', 'Thailand': '/asien/thailand', 'Sri Lanka': '/asien/sri-lanka', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
 const ASIA_IMG = 'https://images.ctfassets.net/bth3mlrehms2/27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg?w=160&q=60&fm=webp';
 
 const STYLES = [
