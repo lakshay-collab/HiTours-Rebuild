@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { moments } from '../mock';
-import Carousel from './Carousel';
 import DesignEscapeModal from './egypt/DesignEscapeModal';
 import { destinations } from '../destinationsData';
 
@@ -27,19 +26,23 @@ export default function Moments() {
         </div>
       </div>
 
-      <div className="tl-container mt-8">
-        <Carousel step={272} className="lg:-mx-0" trackClassName="gap-4 pb-1 -mx-4 px-4 sm:-mx-8 sm:px-8 md:mx-0 md:px-0" testId="moments-carousel">
-          {moments.items.map((m) => (
-            <article key={m.title} className="relative shrink-0 snap-start w-[256px] h-[328px] rounded-xl overflow-hidden" data-testid="moment-card">
-              <img src={m.image} alt={m.title} className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#002131]/80 via-[#002131]/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-4 text-white">
-                <h3 className="text-[12px] leading-[16px] font-medium">{m.title}</h3>
-                <p className="text-[12px] leading-[16px] text-white/80 mt-1 font-normal">{m.name}</p>
-              </div>
-            </article>
+      <div className="mt-8 w-full overflow-hidden" data-testid="moments-marquee">
+        <div className="moments-track flex w-max pb-1" data-testid="moments-track">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="flex gap-4 pr-4 shrink-0" aria-hidden={copy === 1} data-testid={`moments-track-set-${copy}`}>
+              {moments.items.map((m) => (
+                <article key={m.title} className="relative shrink-0 w-[256px] h-[328px] rounded-xl overflow-hidden" data-testid="moment-card">
+                  <img src={m.image} alt={m.title} className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#002131]/80 via-[#002131]/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+                    <h3 className="text-[12px] leading-[16px] font-medium">{m.title}</h3>
+                    <p className="text-[12px] leading-[16px] text-white/80 mt-1 font-normal">{m.name}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           ))}
-        </Carousel>
+        </div>
       </div>
 
       <div className="flex justify-center mt-8">

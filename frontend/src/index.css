@@ -148,3 +148,8 @@ body {
 .eg-rise { animation: eg-rise .55s cubic-bezier(.2,.7,.2,1) both; }
 .eg-pop { animation: eg-pop .6s cubic-bezier(.2,.7,.2,1) both; }
 .eg-page-leave { opacity: 0; transform: translateY(-14px); transition: opacity .3s ease, transform .3s ease; }
+
+
+@keyframes moments-marquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+.moments-track { animation: moments-marquee 60s linear infinite; will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .moments-track { animation-duration: 180s; } }
