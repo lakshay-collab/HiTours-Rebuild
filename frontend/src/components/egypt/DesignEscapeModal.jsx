@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { X, ChevronDown } from 'lucide-react';
+import PhoneInput, { EMPTY_PHONE, phoneError, phonePayload } from './PhoneInput';
 
-const EMPTY_FORM = { name: '', phone: '', email: '' };
+const EMPTY_FORM = { name: '', phone: EMPTY_PHONE, email: '' };
 
 const inputCls = 'h-12 sm:h-[52px] w-full rounded-xl border bg-white px-4 eg-body-lg text-[#002131] placeholder:text-[#8A9297] transition-[border-color,box-shadow] focus:border-[#308BB6] focus:shadow-[0_0_0_3px_rgba(48,139,182,0.18)] focus:outline-none';
+const phoneWrapCls = inputCls.replace('px-4 ', '').replace(/focus:/g, 'focus-within:');
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-const PHONE = /^\+?[0-9][0-9\s().-]{6,17}$/;
 
 const validate = (f) => ({
   name: f.name.trim() ? '' : 'Please enter your name',
-  phone: !f.phone.trim() ? 'Please enter your phone number' : PHONE.test(f.phone.trim()) ? '' : 'Please enter a valid phone number',
+  phone: phoneError(f.phone),
   email: !f.email.trim() ? 'Please enter your email address' : EMAIL.test(f.email.trim()) ? '' : 'Please enter a valid email address',
   destination: f.destination ? '' : 'Please select a destination'
 });
@@ -52,17 +53,18 @@ export default function DesignEscapeModal({ open, onClose, destination, tripTitl
 
   if (!open) return null;
   const set = (k) => (e) => { setForm((f) => ({ ...f, [k]: e.target.value })); if (errors[k]) setErrors((er) => ({ ...er, [k]: '' })); };
+  const setPhone = (v) => { setForm((f) => ({ ...f, phone: v })); if (errors.phone) setErrors((er) => ({ ...er, phone: '' })); };
   const submit = async (e) => {
     e.preventDefault();
     if (status === 'sending') return;
-    const lead = { name: form.name.trim(), phone: form.phone.trim(), email: form.email.trim(), destination: activeDestination };
+    const lead = { name: form.name.trim(), phone: form.phone, email: form.email.trim(), destination: activeDestination };
     const errs = validate(lead);
     setErrors(errs);
     if (Object.values(errs).some(Boolean)) return;
     setStatus('sending');
     setSubmitError('');
     try {
-      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { name: lead.name, phone: lead.phone, email: lead.email, destination: activeDestination, trip_title: tripTitle || '', source: selectable ? 'design-your-escape-home' : 'design-your-escape' });
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { name: lead.name, ...phonePayload(lead.phone), email: lead.email, destination: activeDestination, trip_title: tripTitle || '', source: selectable ? 'design-your-escape-home' : 'design-your-escape' });
       setStatus('done');
     } catch (err) {
       const detail = err?.response?.data?.detail;
@@ -103,7 +105,7 @@ export default function DesignEscapeModal({ open, onClose, destination, tripTitl
               </div>
               <Field label="Name" error={errors.name}><input type="text" autoComplete="name" value={form.name} onChange={set('name')} placeholder="Enter your name" className={cls('name')} data-testid="dye-name" /></Field>
               <Field label="Email" error={errors.email}><input type="email" autoComplete="email" value={form.email} onChange={set('email')} placeholder="Enter your email address" className={cls('email')} data-testid="dye-email" /></Field>
-              <Field label="Phone Number" error={errors.phone}><input type="tel" inputMode="tel" autoComplete="tel" value={form.phone} onChange={set('phone')} placeholder="Enter your phone number" className={cls('phone')} data-testid="dye-phone" /></Field>
+              <Field label="Phone Number" error={errors.phone}><PhoneInput value={form.phone} onChange={setPhone} className={`${phoneWrapCls} ${errors.phone ? 'border-[#B3261E]' : 'border-[#C4CBD0]'}`} testId="dye-phone" /></Field>
               {selectable && (
                 <Field label="Destination" error={errors.destination}>
                   <div className="relative">

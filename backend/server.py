@@ -72,7 +72,7 @@ class Lead(BaseModel):
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]{2,}$")
-PHONE_RE = re.compile(r"^\+?[0-9][0-9\s().-]{6,17}$")
+PHONE_RE = re.compile(r"^\+?[0-9][0-9\s().-]{3,17}$")
 KRAYA_USER_ERROR = "We couldn't submit your request right now. Please try again in a moment."
 
 def validate_lead(lead: "LeadCreate"):
@@ -88,7 +88,7 @@ def validate_lead(lead: "LeadCreate"):
 
 def kraya_phone(lead: "Lead") -> str:
     digits = re.sub(r"\D", "", f"{lead.country_code}{lead.phone}")
-    return f"91{digits}" if len(digits) == 10 else digits
+    return f"+91{digits}" if not lead.country_code and len(digits) == 10 else f"+{digits}"
 
 def traveller_count(lead: "Lead") -> str:
     if lead.traveller_count:
