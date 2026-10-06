@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
-import { BedDouble, Car, CalendarDays, Ticket } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { BedDouble, Car, CalendarDays, Ticket, Utensils, Plane } from 'lucide-react';
 import { showcase } from '../mock';
-
-const DEST_ROUTES = {
-  'Vietnam': '/asien/vietnam',
-  'Sri Lanka': '/asien/sri-lanka',
-  'Thailand': '/asien/thailand',
-  'Singapore': '/asien/singapore',
-  'Malaysia': '/asien/malaysia',
-  'Kazakhstan': '/asien/kazakhstan',
-  'Bhutan': '/asien/bhutan',
-  'Maldives': '/asien/maldives'
-};
+import { useLeadModal } from './egypt/LeadModalProvider';
 
 const Tile = ({ img, className = '' }) => (
   <div className={`relative overflow-hidden ${className}`}>
@@ -23,6 +12,7 @@ const Tile = ({ img, className = '' }) => (
 
 export default function TripShowcase() {
   const [active, setActive] = useState(0);
+  const { openLead } = useLeadModal();
   const trip = showcase.trips[active];
   const [a, b, c, d, e] = trip.images;
   const Tabs = ({ mobile = false }) => (
@@ -54,7 +44,7 @@ export default function TripShowcase() {
           <div className="bg-surface-container md:w-[340px] lg:w-[432px] shrink-0 p-6 md:p-8 flex flex-col">
             <h3 className="t-headline-md md:t-headline-lg text-onsurface whitespace-nowrap md:whitespace-normal" data-testid="showcase-title">{trip.title}</h3>
             <div className="grid grid-cols-2 gap-2 mt-5" data-testid="showcase-stats">
-              {[[CalendarDays, trip.duration], [BedDouble, `${trip.hotels} hotels`], [Ticket, `${trip.activities} activities`], [Car, `${trip.transfers} transfers`]].map(([Icon, label]) => (
+              {[[CalendarDays, trip.duration], [BedDouble, `${trip.hotels} hotels`], [Ticket, `${trip.activities} activities`], [Car, `${trip.transfers} transfers`], [Utensils, `${trip.meals} meals`], [Plane, `${trip.flights} flights`]].map(([Icon, label]) => (
                 <span key={label} className="flex items-center gap-2.5 rounded-lg bg-[#FBEADB] px-3 h-11 t-label-lg text-onsurface whitespace-nowrap">
                   <Icon size={20} strokeWidth={1.75} className="text-primary shrink-0" />{label}
                 </span>
@@ -92,7 +82,14 @@ export default function TripShowcase() {
       </div>
 
       <div className="flex justify-center mt-8 md:mt-10">
-        <Link to={DEST_ROUTES[trip.tab] || '/'} className="btn-filled inline-flex items-center justify-center text-center" data-testid="showcase-cta">{trip.cta}</Link>
+        <button
+          type="button"
+          onClick={() => openLead({ destination: trip.tab, tripTitle: trip.title, image: a && a.src, imageAlt: trip.title })}
+          className="btn-filled inline-flex items-center justify-center text-center"
+          data-testid="showcase-cta"
+        >
+          {trip.cta}
+        </button>
       </div>
     </section>
   );

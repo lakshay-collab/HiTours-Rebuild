@@ -170,7 +170,7 @@ export const showcase = {
   trips: [
     trip({
       tab: 'Vietnam', title: 'Vietnam honeymoon', cta: 'Plan your Vietnam trip now',
-      duration: '15 days', stops: '8 stops', transport: 'Private driver', activities: 11, hotels: 7, transfers: 6,
+      duration: '15 days', stops: '8 stops', transport: 'Private driver', activities: 11, hotels: 7, transfers: 6, meals: 14, flights: 2,
       tags: [['bed', 'Boutique hotels'], ['boat', 'Halong Bay cruise'], ['bike', 'Motorbike'], ['food', 'Street food'], ['plane', 'Direct flights']],
       customer: "Prajwal & Sneha's honeymoon", quote: 'From a Halong Bay cruise to lantern-lit Hoi An nights, every single day felt handcrafted just for us.', avatar: '/moments/europe_couple.webp',
       images: [
@@ -183,7 +183,7 @@ export const showcase = {
     }),
     trip({
       tab: 'Sri Lanka', title: 'Sri Lanka family tour', cta: 'Plan your Sri Lanka trip now',
-      duration: '12 days', stops: '6 stops', transport: 'Private driver', activities: 9, hotels: 6, transfers: 5,
+      duration: '12 days', stops: '6 stops', transport: 'Private driver', activities: 9, hotels: 6, transfers: 5, meals: 11, flights: 2,
       tags: [['bed', 'Heritage bungalows'], ['safari', 'Leopard safari'], ['leaf', 'Tea country'], ['food', 'Rice & curry'], ['plane', 'Direct flights']],
       customer: 'the Sharma family', quote: 'Climbing Sigiriya rock at dawn and tea-tasting in the misty hills – the kids still talk about all of it.', avatar: '/moments/family_trip.webp',
       images: [
@@ -196,7 +196,7 @@ export const showcase = {
     }),
     trip({
       tab: 'Thailand', title: 'Thailand island escape', cta: 'Plan your Thailand trip now',
-      duration: '14 days', stops: '8 stops', transport: 'Transfers', activities: 10, hotels: 7, transfers: 6,
+      duration: '14 days', stops: '8 stops', transport: 'Transfers', activities: 10, hotels: 7, transfers: 6, meals: 13, flights: 3,
       tags: [['bed', 'Glamping in the jungle'], ['island', 'Island hopping'], ['bike', 'Motorbike'], ['food', 'Local specialities'], ['plane', 'Stopover in Dubai']],
       customer: "Neha & Aryan's island escape", quote: 'Glamping in the jungle one night, island hopping the next – Hi Tours matched our pace perfectly.', avatar: '/moments/alps.webp',
       images: [
@@ -209,7 +209,7 @@ export const showcase = {
     }),
     trip({
       tab: 'Singapore', title: 'Singapore city break', cta: 'Plan your Singapore trip now',
-      duration: '6 days', stops: '4 stops', transport: 'Metro & transfers', activities: 9, hotels: 4, transfers: 4,
+      duration: '6 days', stops: '4 stops', transport: 'Metro & transfers', activities: 9, hotels: 4, transfers: 4, meals: 5, flights: 2,
       tags: [['bed', 'Rooftop-pool hotels'], ['garden', 'Gardens by the Bay'], ['food', 'Hawker feasts'], ['family', 'Family-friendly'], ['plane', 'Direct flights']],
       customer: "Aditi & Rohan's city break", quote: 'Gardens by the Bay after dark and hawker feasts by day – Singapore packed so much magic into a few days.', avatar: '/moments/eiffel_family.webp',
       images: [
@@ -222,7 +222,7 @@ export const showcase = {
     }),
     trip({
       tab: 'Malaysia', title: 'Malaysia discovery', cta: 'Plan your Malaysia trip now',
-      duration: '13 days', stops: '7 stops', transport: 'Rental car', activities: 10, hotels: 7, transfers: 6,
+      duration: '13 days', stops: '7 stops', transport: 'Rental car', activities: 10, hotels: 7, transfers: 6, meals: 12, flights: 3,
       tags: [['bed', 'Rainforest lodges'], ['tower', 'Petronas Towers'], ['safari', 'Orangutan sanctuary'], ['food', 'Street markets'], ['plane', 'Direct flights']],
       customer: "Imran & Zara's honeymoon", quote: 'From the Petronas Towers to orangutans in Borneo, Malaysia surprised us with something new every single day.', avatar: '/moments/europe_couple.webp',
       images: [
