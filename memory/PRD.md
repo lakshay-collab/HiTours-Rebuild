@@ -480,3 +480,5 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - 2026-10-04: Expert advice hours Mon–Fri 9am→11am (schedule + label); Sat line removed earlier; WhatsApp 24x7 line added. Footer 'Expert advice' legal link opens ExpertAdvicePanel in a popup modal (Footer.jsx adviceOpen state).
 
 - 2026-10-06: Synced workspace with GitHub lakshay-collab/tourlane-rebuild main (fast-forward f280cdd→7649ab6; frontend-only changes: new destinations Bhutan/Malaysia/Singapore/Kazakhstan/Maldives/Thailand data, legal pages, header/footer/expert-panel updates, modal destination picker). Backend/.env untouched. Homepage "Plan your trip" (Moments) already opens DesignEscapeModal in synced code.
+
+- 2026-10-06: DesignEscapeModal trimmed to Name / Email / Phone Number + Get Quote. Destination is a hidden input auto-filled from the page (usePageLead / EgyptDetail) and sent to backend → Kraya "Destination"; travellers/when/month fields removed (Travel Dates & Traveller Count sent empty). Homepage (no detectable destination) keeps the destination dropdown. Tested live: Vietnam, Sri Lanka, Thailand leads → Kraya synced; double-click dedup OK.
