@@ -46,7 +46,7 @@ export const packages = [
   {
     slug: 'hanoi-sapa-5d4n', name: 'Hanoi – Sapa: Discovering North Vietnam', code: 'PKG-1', days: 5, nights: 4, tag: 'Culture', styles: ['Family', 'Honeymoon'], included: { hotels: 2, activities: 12, transfers: 5, meals: 8 },
     summary: 'Hanoi’s Old Quarter, the terraced valleys of Sapa, Cat Cat village and the Fansipan cable car to the “Roof of Indochina”.',
-    stays: [['Hanoi', 'Day 1', 'La Dolce Vita (Superior Room)'], ['Sapa', 'Days 2–3', 'The view ( Standard room)'], ['Hanoi', 'Day 4', 'La Dolce Vita (Superior Room)']],
+    stays: [['Hanoi', 'Day 1', 'La Dolce Vita (Superior Room)'], ['Sapa', 'Days 2–3', 'The view ( Standard room)'], ['Hanoi', 'Days 4–5', 'La Dolce Vita (Superior Room)']],
     // Itinerary text reproduced verbatim from the Hi Tours PDF "Hanoi- Sapa package tour 5 Days 4 Nights" (single source of truth).
     itinerary: [
       D(1, 'Arrival in Vietnam – Hanoi- Afrernoon City tour', 'D', [
