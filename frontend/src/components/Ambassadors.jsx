@@ -13,7 +13,11 @@ const SOCIAL = {
 
 const SocialPanel = () => (
   <div className="bg-surface-container rounded-2xl overflow-hidden flex flex-col h-full" data-testid="social-panel">
-    <ul className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-4 sm:px-8 pt-6 pb-5 md:pt-8 md:pb-6" data-testid="ambassadors-socials">
+    <div className="px-4 sm:px-8 pt-8 md:pt-10 text-center">
+      <h2 className="t-section text-onsurface">{ambassadors.heading}</h2>
+      <p className="t-body-lg text-onsurface-variant mt-2" data-testid="ambassadors-hint">{ambassadors.hint}</p>
+    </div>
+    <ul className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-4 sm:px-8 pt-5 pb-5 md:pt-6 md:pb-6" data-testid="ambassadors-socials">
       {ambassadors.socials.map((s) => {
         const { Icon, bg } = SOCIAL[s.key];
         return (
@@ -45,12 +49,10 @@ export default function Ambassadors() {
   return (
     <section className="pt-12 md:pt-14" data-testid="ambassadors-section">
       <div className="tl-container">
-        <h2 className="t-section text-onsurface text-center">{ambassadors.heading}</h2>
-        <p className="t-body-lg text-onsurface-variant text-center mt-2" data-testid="ambassadors-hint">{ambassadors.hint}</p>
-        <Carousel step="page" className="mt-6 md:mt-8" trackClassName="gap-4 md:gap-6 items-stretch !scroll-pl-0" testId="social-carousel">
-          <div className="w-full shrink-0 snap-start" data-testid="social-slide-0"><SocialPanel /></div>
+        <Carousel step="page" trackClassName="gap-4 md:gap-6 items-stretch !scroll-pl-0 overscroll-x-contain" testId="social-carousel">
+          <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-0"><SocialPanel /></div>
           {promoBanners.map((b, i) => (
-            <div key={b.id} className="w-full shrink-0 snap-start flex" data-testid={`social-slide-${i + 1}`}>
+            <div key={b.id} className="w-full shrink-0 snap-start snap-always flex" data-testid={`social-slide-${i + 1}`}>
               <PromoBanner b={b} index={0} />
             </div>
           ))}

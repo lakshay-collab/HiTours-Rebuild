@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="w-full md:w-[552px]">
           <SearchBar id="hero" />
         </div>
-        <HappyCustomers className="-mt-2 md:-mt-3" />
+        <HappyCustomers tone="dark" className="-mt-2 md:-mt-3" />
       </div>
     </section>
   );

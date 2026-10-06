@@ -71,7 +71,7 @@ export const features = {
 
 export const happyCustomers = {
   text: '1M+ Happy Customers',
-  avatars: ['/moments/europe_couple.webp', '/moments/alps.webp', '/moments/family_trip.webp']
+  avatars: Array.from({ length: 10 }, (_, i) => `/avatars/in-${String(i + 1).padStart(2, '0')}.webp`)
 };
 
 export const ambassadors = {
