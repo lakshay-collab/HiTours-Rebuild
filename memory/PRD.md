@@ -497,3 +497,8 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 
 ## 2026-10-06 — "View more / less" toggles on package detail itinerary
 - `components/egypt/EgyptRoute.jsx`: stop bullets show first 4 with "View more (N more) / View less" (`eg-route-toggle`). Activity card descriptions clamp to 3 lines (`line-clamp-3`) with a per-card "View more / View less" toggle (`ActivityDesc`, `eg-activity-toggle`) shown only when text actually overflows. Verified on Hanoi–Sapa (long text → toggle) and Egypt Luxor (short text → no toggle).
+
+## 2026-10-06 — Country-code phone input + day headings in clubbed stops
+- `components/egypt/PhoneInput.jsx` (new, libphonenumber-js/max): flag (flagcdn) + dial code trigger + number input; searchable country list (name/alias UAE·USA·UK/dial) portaled to body (desktop popover, mobile bottom sheet). India default. Pasted "+44…"/"0091…" switches country (main country for shared codes, e.g. GB not GG) and strips code; bare "91xxxxxxxxxx" with IN selected strips the duplicate code. Per-country validation (`phoneError`), payload via `phonePayload` → `{phone: national, country_code: '+91'}`. Used in DesignEscapeModal and EgyptPlanner. Destination logic untouched.
+- Backend `kraya_phone` now sends E.164 `+<cc><national>` to Kraya (verified 200 OK, synced). Tested via testing_agent iteration_42 (IN/US/GB/AE/TH/VN) + self-test of double-code fix.
+- Shared adapter `tours/vietnamToursData.js`: when a stop clubs multiple days, bullets get `__day__Day N` markers; `EgyptRoute.StopText` renders them as bold "Day N" headings (`eg-route-day-heading`); View-more count excludes markers.

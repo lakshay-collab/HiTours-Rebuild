@@ -25,11 +25,14 @@ const BulletMark = ({ text }) => {
 };
 
 const PREVIEW_BULLETS = 4;
+const DAY_MARK = '__day__';
+const isDayMark = (b) => b.startsWith(DAY_MARK);
 
 function StopText({ s }) {
   const [open, setOpen] = useState(false);
   const canToggle = s.bullets.length > PREVIEW_BULLETS;
   const shown = open || !canToggle ? s.bullets : s.bullets.slice(0, PREVIEW_BULLETS);
+  const hidden = s.bullets.slice(PREVIEW_BULLETS).filter((b) => !isDayMark(b)).length;
   return (
     <div className="md:w-[346px] shrink-0" data-testid="eg-route-stop">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -38,13 +41,14 @@ function StopText({ s }) {
       </div>
       {s.subtitle && <RouteLine cities={s.subtitle.split(' → ')} className="mt-2" testId="eg-route-subtitle" />}
       <ul className="mt-4 flex flex-col gap-2.5" data-testid="eg-route-bullets">
-        {shown.map((b) => (
-          <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>
+        {shown.map((b, i) => (isDayMark(b)
+          ? <li key={b} className={`eg-title-md font-bold text-[#002131] ${i > 0 ? 'mt-2' : ''}`} data-testid="eg-route-day-heading">{b.slice(DAY_MARK.length)}</li>
+          : <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>
         ))}
       </ul>
       {canToggle && (
         <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="mt-3 inline-flex items-center gap-1 eg-label-lg font-semibold text-[#174358] underline underline-offset-4 hover:text-[#002131] transition-colors" data-testid="eg-route-toggle">
-          {open ? 'View less' : `View more (${s.bullets.length - PREVIEW_BULLETS} more)`}
+          {open ? 'View less' : `View more (${hidden} more)`}
           <ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
         </button>
       )}

@@ -1,0 +1,33 @@
+{
+  "summary": "Tested the new country-flag + dial-code phone input across the Vietnam detail page DYE modal (desktop & mobile), homepage DYE modal, and Egypt listing planner, plus backend /api/leads. Backend: 5/5 pytest cases pass (IN +91 synced, US +1 synced, legacy no country_code synced, GET /api/leads 200). Frontend: default +91 with Indian flag; country list opens with search by name/alias/dial-code; US/GB/AE/TH/VN selectable and dial code updates correctly; backdrop + Escape close; +44 7911 123456 paste correctly switches to GB (not Guernsey) and strips to 7911123456; destination header stays 'Vietnam' regardless of country; mobile renders as bottom sheet (bottom-0/inset-x-0/rounded-t-2xl) with no horizontal overflow; homepage DYE modal has new phone field + destination select; Egypt planner (eg-planner-phone-*) uses the same picker, submit button correctly enables only when the phone is valid for the selected country (invalid '123' disables, valid '9876543210' IN and '2025550123' US enable).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "PhoneInput.stripDoubleCode (DesignEscapeModal + EgyptPlanner)",
+        "issue": "Typing/pasting '919876543210' while India (+91) is selected does NOT strip the leading country code. Observed input value remains '919876543210' and dial code '+91', so phonePayload sends phone='919876543210' + country_code='+91' (double-coded). Expected per spec: input becomes '9876543210'. The '+91 9876543210' / '00919876543210' variants work (handled by parseIntl); only the bare-digits case fails. Root cause in PhoneInput.jsx line 56: stripDoubleCode guards with `isValidPhoneNumber(rest, country) && !isValidPhoneNumber(digits, country)`. For IN, libphonenumber-js considers '919876543210' itself a valid national number (12 digits accepted via the mobile pattern), so the second condition is false and the strip is skipped. Suggested fix: for the bare-digits case strip whenever `digits.length > NATIONAL_MAX && rest is valid`, or simply strip when `rest` is valid regardless of whether the full `digits` also validates. Alternatively parse with country hint and compare parsed.nationalNumber length.",
+        "selector": "[data-testid='dye-phone']",
+        "priority": "HIGH"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/backend/tests/test_leads_phone.py", "/app/test_reports/pytest/leads_phone.xml"],
+  "action_items": [
+    "Fix stripDoubleCode in /app/frontend/src/components/egypt/PhoneInput.jsx so bare-digits '919876543210' with IN selected is reduced to '9876543210' (do not require the typed digits to be invalid before stripping — compare lengths or trust the parsed national number)."
+  ],
+  "critical_code_review_comments": [
+    "stripDoubleCode's second guard (!isValidPhoneNumber(digits, country)) is too strict for countries whose national metadata also accepts the country-code-prefixed form (India). Prefer length-based or parse-based detection.",
+    "server.py kraya_phone uses `+91{digits}` only when country_code is empty AND digits length == 10. If the frontend bug above sends phone='919876543210' with country_code='+91', kraya_phone will produce '+91919876543210' (double-coded). Backend could optionally guard by stripping the dial from the start of phone when they match.",
+    "Minor: duplicate planner forms rendered for desktop (eg-planner-*) and mobile (eg-planner-m-*) in the same DOM — two parallel React trees for the same form; both update independently. Not a bug today (CSS hides one) but it doubles state and testid noise."
+  ],
+  "updated_files": ["/app/backend/tests/test_leads_phone.py"],
+  "success_rate": {"backend": "100% (5/5 pytest)", "frontend": "~95% (all flows OK except IN bare-digits double-code strip)"},
+  "test_credentials": "N/A — Kraya API key read from backend .env.",
+  "seed_data_creation": "Created real Kraya leads during backend tests: TEST Lead IN / TEST Lead US / TEST Lead Legacy (one each). They appear in /api/leads with kraya_status='synced'.",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "The country picker, search, portal rendering, mobile bottom-sheet, +44 paste handling, home + planner reuse, and backend /api/leads all work. The only outstanding frontend issue is the bare-digits double-code strip for India (919876543210 should become 9876543210). After fixing stripDoubleCode, re-test: with IN selected, fill phone with '919876543210' and verify input value becomes '9876543210' and dial stays '+91'. Backend tests live at /app/backend/tests/test_leads_phone.py.",
+  "rca of the issue": "stripDoubleCode in PhoneInput.jsx only strips the leading dial code when the shorter 'rest' is valid AND the full typed string is NOT valid for the country. libphonenumber-js's isValidPhoneNumber('919876543210','IN') returns true (its IN national pattern also matches the 12-digit country-code-prefixed form), so the second guard blocks the strip. The '+' / '00' paste cases work because they go through parseIntl, not stripDoubleCode. Fix suggestion: drop the `!isValidPhoneNumber(digits, country)` guard, or replace with a length check (e.g., strip when digits.length > rest.length && isValidPhoneNumber(rest,country) && digits starts with national dial)."
+}

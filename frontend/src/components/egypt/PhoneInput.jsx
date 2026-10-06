@@ -53,7 +53,7 @@ const stripDoubleCode = (digits, country) => {
   const dial = getCountryCallingCode(country);
   if (!digits.startsWith(dial) || digits.length <= dial.length) return digits;
   const rest = digits.slice(dial.length);
-  return isValidPhoneNumber(rest, country) && !isValidPhoneNumber(digits, country) ? rest : digits;
+  return isValidPhoneNumber(rest, country) ? rest : digits;
 };
 
 function CountryPicker({ anchor, value, onPick, onClose, testId }) {

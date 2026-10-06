@@ -2,6 +2,7 @@
 import { packages, cityImages } from '../vietnamPackages';
 
 const LETTERS = 'ABCDEFGHIJ';
+export const DAY_MARK = '__day__';
 const uniq = (a) => [...new Set(a)];
 const countMeals = (it) => it.reduce((n, d) => n + (d.meals ? d.meals.split(',').length : 0), 0);
 const fmt = (n) => `₹${n.toLocaleString('en-IN')}`;
@@ -37,7 +38,7 @@ const build = (p) => {
     const days = range
       ? p.itinerary.filter((d) => (d.day >= range[0] && d.day <= range[1]) || (isLast && d.day > range[1] && d.day <= lastDay && !d.overnight))
       : p.itinerary.filter((d) => d.overnight === city || (city === cruiseCity && (d.overnight === 'On board' || d.title.includes(cruiseCity))));
-    const bullets = uniq(days.flatMap((d) => d.bullets));
+    const bullets = uniq(days.flatMap((d) => (days.length > 1 ? [`${DAY_MARK}Day ${d.day}`, ...d.bullets] : d.bullets)));
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,
