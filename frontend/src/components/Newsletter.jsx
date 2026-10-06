@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import { Mail, Lightbulb, Percent, Headset, Check } from 'lucide-react';
+import React from 'react';
+import { Lightbulb, Percent, Headset } from 'lucide-react';
 import { newsletter } from '../mock';
+import { waHref } from './WhatsAppWidget';
 
 const icons = { idea: Lightbulb, percent: Percent, headset: Headset };
 
-export default function Newsletter() {
-  const [email, setEmail] = useState('');
-  const [done, setDone] = useState(false);
+const WaIcon = ({ className }) => (
+  <svg viewBox="0 0 32 32" className={className} fill="currentColor" aria-hidden="true">
+    <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.47 1.71 6.41L3.2 28.8l6.57-1.72a12.75 12.75 0 0 0 6.23 1.59h.01c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.67-12.8-12.67zm0 23.32h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-3.9 1.02 1.04-3.8-.25-.39a10.6 10.6 0 0 1-1.63-5.65c0-5.87 4.78-10.65 10.66-10.65 2.85 0 5.52 1.11 7.53 3.12a10.58 10.58 0 0 1 3.12 7.54c0 5.87-4.78 10.52-10.77 10.52zm5.84-7.94c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.14 3.09 1.3 3.3c.16.21 2.25 3.43 5.45 4.81.76.33 1.36.53 1.82.67.77.24 1.46.21 2.01.13.61-.09 1.89-.77 2.15-1.52.27-.75.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37z" />
+  </svg>
+);
 
-  const submit = (e) => {
-    e.preventDefault();
-    if (email.trim()) setDone(true);
-  };
+export default function Newsletter() {
+  const href = waHref(newsletter.whatsappText);
 
   return (
     <section className="pt-16 md:pt-24" data-testid="newsletter-section">
@@ -24,25 +25,21 @@ export default function Newsletter() {
               <a href="/privacy" onClick={(e) => e.preventDefault()} className="t-label-lg text-outline underline" data-testid="newsletter-privacy-link">{newsletter.privacy}</a>
             </p>
 
-            {done ? (
-              <div className="flex items-center gap-3 t-body-lg text-primary" data-testid="newsletter-success">
-                <Check size={22} /> {newsletter.success}
-              </div>
-            ) : (
-              <form onSubmit={submit} className="flex items-center w-full sm:w-[500px] h-14 bg-white rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.06)] pl-6 pr-2" data-testid="newsletter-form">
-                <Mail size={22} strokeWidth={1.75} className="text-accent shrink-0" />
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder={newsletter.placeholder}
-                  className="flex-1 min-w-0 bg-transparent outline-none px-4 t-body-lg text-onsurface placeholder:text-onsurface-variant"
-                  data-testid="newsletter-email-input"
-                />
-                <button type="submit" className="btn-sunset" data-testid="newsletter-submit">{newsletter.cta}</button>
-              </form>
-            )}
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center w-full sm:w-[500px] h-14 bg-white rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.06)] pl-6 pr-2 hover:shadow-[0_2px_6px_rgba(0,0,0,0.14),0_8px_24px_rgba(0,0,0,0.08)] transition-shadow"
+              aria-label={`${newsletter.whatsappLabel} ${newsletter.whatsappNumber}`}
+              data-testid="newsletter-whatsapp-link"
+            >
+              <WaIcon className="w-6 h-6 text-[#25D366] shrink-0" />
+              <span className="flex-1 min-w-0 px-4 flex flex-col leading-tight truncate">
+                <span className="t-body-lg text-onsurface truncate">{newsletter.whatsappLabel}</span>
+                <span className="text-[12px] leading-[16px] text-onsurface-variant truncate" data-testid="newsletter-whatsapp-number">{newsletter.whatsappNumber}</span>
+              </span>
+              <span className="btn-sunset shrink-0" data-testid="newsletter-whatsapp-cta">{newsletter.cta}</span>
+            </a>
 
             <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-8">
               {newsletter.bullets.map((b) => {

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { X, ArrowLeft, ArrowRight, MapPin, Sparkles, Info, Briefcase, Megaphone, Umbrella, Phone } from 'lucide-react';
+import { X, ArrowLeft, ArrowRight, MapPin, Sparkles, Info, Briefcase, Megaphone, Umbrella, Phone, BadgeCheck } from 'lucide-react';
 import { destinationTabs, destinations } from '../destinationsData';
 import { themeGroups } from '../themesData';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 
-const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Work with us': Briefcase, 'Press': Megaphone, 'Hi Tours Care': Umbrella, 'Expert advice': Phone };
+const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Work with us': Briefcase, 'Press': Megaphone, 'Hi Tours Care': Umbrella, 'Expert advice': Phone };
 
 const REGION_HREF = { 'Asia': '/asien' };
 const COUNTRY_HREF = { 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
@@ -17,7 +17,7 @@ const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
 
 const SECTIONS = [
   [{ label: 'Destinations', sub: true }, { label: 'Themes', sub: true }],
-  [{ label: 'About us', href: '/about' }, { label: 'Work with us' }, { label: 'Press', href: '/about' }, { label: 'Hi Tours Care', href: '/care' }],
+  [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Work with us' }, { label: 'Press', href: '/about' }, { label: 'Hi Tours Care', href: '/care' }],
   [{ label: 'Expert advice', sub: true }]
 ];
 

@@ -1,6 +1,6 @@
-const WA_NUMBER = '918920606060';
+export const WA_NUMBER = '918920606060';
 const WA_TEXT = 'Hi, I’d like to plan my dream trip. Can you help me?';
-const waHref = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+export const waHref = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 const href = waHref(WA_TEXT);
 
 // On package pages EgyptDetail exposes the opened itinerary title via data-wa-package.

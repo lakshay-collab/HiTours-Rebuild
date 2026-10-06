@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export const ADVENTURE_ID = 'start-your-next-adventure';
+export const WHY_ID = 'why-hi-tours';
 export const HOME_ADVENTURE_HREF = `/#${ADVENTURE_ID}`;
 const KEY = 'hi-from-home';
 const DEST_PREFIXES = ['/asien', '/europa', '/afrika', '/trip-styles', '/themes'];
@@ -33,11 +34,13 @@ export function useHomeLink() {
   return { href: active ? HOME_ADVENTURE_HREF : '/', onClick };
 }
 
-export const scrollToAdventure = () => {
-  const el = document.getElementById(ADVENTURE_ID);
+export const scrollToSection = (id, preJump = 0) => {
+  const el = document.getElementById(id);
   if (!el) return false;
   const target = el.getBoundingClientRect().top + window.scrollY;
-  window.scrollTo({ top: Math.max(0, target - 320), behavior: 'auto' });
+  if (preJump) window.scrollTo({ top: Math.max(0, target - preJump), behavior: 'auto' });
   requestAnimationFrame(() => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' }));
   return true;
 };
+
+export const scrollToAdventure = () => scrollToSection(ADVENTURE_ID, 320);

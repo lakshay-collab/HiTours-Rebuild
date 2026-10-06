@@ -6,7 +6,8 @@ import { nav } from '../mock';
 import MobileDrawer from './MobileDrawer';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 import { DestinationsMenu, ThemesMenu } from './DesktopMenus';
-import { useHomeLink } from '../lib/homeReturn';
+import { useHomeLink, scrollToSection, WHY_ID } from '../lib/homeReturn';
+import { useLocation } from 'react-router-dom';
 
 const BANNER_KEY = 'hi-banner-dismissed';
 
@@ -15,7 +16,8 @@ const MENUS = [
   { key: 'themes', label: 'Themes' }
 ];
 const LINKS = [
-  { label: 'About us', href: '/about' }
+  { label: 'About us', href: '/about' },
+  { label: 'Why Us?', href: `/#${WHY_ID}`, hash: WHY_ID }
 ];
 
 export default function Header({ overlay = false, floating = false }) {
@@ -23,6 +25,9 @@ export default function Header({ overlay = false, floating = false }) {
   const [adviceOpen, setAdviceOpen] = useState(false);
   const [menu, setMenu] = useState(null);
   const home = useHomeLink();
+  const { pathname } = useLocation();
+  // Same-page hash links: scroll directly (the hash effect won't re-fire if the hash is unchanged).
+  const onLink = (l) => (e) => { if (l.hash && pathname === '/') { e.preventDefault(); scrollToSection(l.hash, 320); window.history.replaceState(null, '', l.href); } };
   const [scrolled, setScrolled] = useState(false);
   const adviceRef = useRef(null);
   const adviceRefFloat = useRef(null);
@@ -100,7 +105,7 @@ export default function Header({ overlay = false, floating = false }) {
           </div>
         ))}
         {LINKS.map((l) => (
-          <Link key={l.label} to={l.href} className={`t-body-md ${textCls} hover:opacity-75 transition-opacity whitespace-nowrap px-4`} data-testid={`nav-${l.label.toLowerCase().replace(/\s/g, '-')}`}>
+          <Link key={l.label} to={l.href} onClick={onLink(l)} className={`t-body-md ${textCls} hover:opacity-75 transition-opacity whitespace-nowrap px-4`} data-testid={`nav-${l.label.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}`}>
             {l.label}
           </Link>
         ))}
@@ -163,7 +168,7 @@ export default function Header({ overlay = false, floating = false }) {
             </div>
           ))}
           {LINKS.map((l) => (
-            <Link key={l.label} to={l.href} className="t-body-md rounded-full px-4 py-2 text-onsurface hover:bg-onsurface/[0.05] transition-colors whitespace-nowrap" data-testid={`float-nav-${l.label.toLowerCase().replace(/\s/g, '-')}`}>{l.label}</Link>
+            <Link key={l.label} to={l.href} onClick={onLink(l)} className="t-body-md rounded-full px-4 py-2 text-onsurface hover:bg-onsurface/[0.05] transition-colors whitespace-nowrap" data-testid={`float-nav-${l.label.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}`}>{l.label}</Link>
           ))}
           <span className="h-6 w-px bg-onsurface/15 mx-1" />
           <div className="relative" ref={adviceRefFloat} onMouseEnter={hoverIn} onMouseLeave={hoverOut}>

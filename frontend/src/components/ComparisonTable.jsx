@@ -11,7 +11,7 @@ const Check = () => (
 export default function ComparisonTable() {
   const cols = 'grid grid-cols-[1fr_64px_88px] sm:grid-cols-[1fr_120px_140px] md:grid-cols-[1fr_156px_156px]';
   return (
-    <section className="pt-16 md:pt-20" data-testid="comparison-section">
+    <section id="why-hi-tours" className="pt-16 md:pt-20" data-testid="comparison-section">
       <div className="tl-container flex flex-col gap-8">
         <h2 className="t-section text-center text-onsurface">{comparison.heading}</h2>
         <div className="rounded-xl overflow-hidden" data-testid="comparison-table">

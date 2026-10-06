@@ -78,6 +78,32 @@ export const ambassadors = {
   images: ['/home/on-the-road.webp']
 };
 
+// Promotions & Hot Deals banners (editable): swap image, copy, offer and CTA here.
+export const promoBanners = [
+  {
+    id: 'promotions',
+    tag: 'Promotions',
+    headline: 'Summer Escapes Sale',
+    text: 'Up to ₹25,000 off handcrafted Europe & Asia itineraries planned by our experts.',
+    offer: 'Up to ₹25K off · Book by 30 June',
+    cta: 'Explore promotions',
+    href: '/europa/italy',
+    image: '/home/promo-summer.webp',
+    imageAlt: 'Couple on a sunlit Amalfi coast terrace'
+  },
+  {
+    id: 'hot-deals',
+    tag: 'Hot deals',
+    headline: 'Maldives from ₹89,999',
+    text: 'Limited-time overwater villas and private transfers – only while seats last.',
+    offer: 'Ends Sunday · 7 nights · Flights included',
+    cta: 'Grab the deal',
+    href: '/asien/maldives',
+    image: '/home/promo-hotdeal.webp',
+    imageAlt: 'Maldives overwater villas at sunset'
+  }
+];
+
 export const comparison = {
   heading: 'Why Hi Tours is worth it',
   colAlone: 'On your own',
@@ -246,11 +272,12 @@ export const destinationsHeading = 'Discover our extraordinary destinations';
 
 export const newsletter = {
   heading: 'Experience the best of travel',
-  text: 'Unique itineraries, secret insider tips and the best deals: subscribe to our newsletter and dive into our world of travel. Unsubscribe at any time.',
+  text: 'Unique itineraries, secret insider tips and the best deals: chat with us on WhatsApp and dive into our world of travel. Reply any time, no strings attached.',
   privacy: 'Privacy policy',
-  placeholder: 'Your email address',
-  cta: 'Subscribe now',
-  success: 'Thank you! Please check your inbox to confirm your subscription.',
+  whatsappLabel: 'Chat with us on WhatsApp',
+  whatsappNumber: '+91 89206 06060',
+  whatsappText: 'Hi, I’d like to experience the best of travel with Hi Tours. Can you share your latest itineraries and offers?',
+  cta: 'Chat on WhatsApp',
   bullets: [
     { icon: 'idea', text: 'Inspiring travel ideas' },
     { icon: 'percent', text: 'Exclusive offers & benefits' },
