@@ -157,3 +157,8 @@ body {
 .promo-banner { opacity: 0; transform: translateY(24px); transition: opacity .6s cubic-bezier(.2,.7,.2,1), transform .6s cubic-bezier(.2,.7,.2,1); }
 .promo-banner.is-visible { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { .promo-banner { opacity: 1; transform: none; transition: none; } }
+
+@keyframes promo-marquee { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+.promo-marquee-track { animation: promo-marquee 36s linear infinite; will-change: transform; }
+.promo-marquee-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .promo-marquee-track { animation-duration: 120s; } }

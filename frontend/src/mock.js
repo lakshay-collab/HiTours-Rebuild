@@ -105,7 +105,8 @@ export const promoBanners = [
     cta: 'Grab the deal',
     href: '/asien/maldives',
     image: '/home/promo-hotdeal.webp',
-    imageAlt: 'Maldives overwater villas at sunset'
+    imageAlt: 'Maldives overwater villas at sunset',
+    showDestinations: true
   }
 ];
 
