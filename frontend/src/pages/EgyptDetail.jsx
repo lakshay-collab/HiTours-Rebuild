@@ -348,7 +348,7 @@ function Glance({ open, setOpen, glance, stops }) {
                   <div className="min-w-0">
                     <span className="inline-flex items-center h-6 px-2 rounded-full bg-[#308BB6] eg-label-md text-white">{d.title.split(': ')[0]}</span>
                     <h3 className="mt-1 eg-title-md text-[#002131]">{d.title.split(': ')[1] || d.title}</h3>
-                    <p className="mt-1 eg-body-md text-[#002131]">{d.text}</p>
+                    <p className="mt-1 eg-body-md text-[#002131] whitespace-pre-line">{d.text}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-3 pl-3 border-l-2 border-[#9ACDE5]">
@@ -376,7 +376,7 @@ function Glance({ open, setOpen, glance, stops }) {
                     <td className="py-5 pr-6">
                       <div className="flex gap-4">
                         <img src={stops[Math.min(i, stops.length - 1)].images[0]} alt={stops[Math.min(i, stops.length - 1)].name} className="w-20 h-20 rounded-xl object-cover shrink-0" loading="lazy" data-testid="eg-glance-photo" />
-                        <div className="min-w-0"><h3 className="eg-title-md text-[#002131]">{rest || d.title}</h3><p className="mt-1 eg-body-md text-[#002131]">{d.text}</p></div>
+                        <div className="min-w-0"><h3 className="eg-title-md text-[#002131]">{rest || d.title}</h3><p className="mt-1 eg-body-md text-[#002131] whitespace-pre-line">{d.text}</p></div>
                       </div>
                     </td>
                     <td className="py-5 pr-6 eg-body-md text-[#174358]">{d.hotel}</td>

@@ -35,6 +35,7 @@ import SwedenListing, { SwedenHolidays } from './pages/SwedenListing';
 import ThailandListing, { ThailandHolidays } from './pages/ThailandListing';
 import MaldivesListing, { MaldivesHolidays } from './pages/MaldivesListing';
 import TripStyleListing from './pages/TripStyleListing';
+import ThemeListing from './pages/ThemeListing';
 import About from './pages/About';
 import Care from './pages/Care';
 import { Terms, Privacy } from './pages/Legal';
@@ -145,6 +146,7 @@ function App() {
           <Route path="/asien/maldives/holidays/:style" element={<MaldivesHolidays />} />
           <Route path="/asien/:slug" element={<EgyptDetail />} />
           <Route path="/trip-styles/:slug" element={<TripStyleListing />} />
+          <Route path="/themes/:slug" element={<ThemeListing />} />
           <Route path="/about" element={<About />} />
           <Route path="/care" element={<Care />} />
           <Route path="/terms" element={<Terms />} />

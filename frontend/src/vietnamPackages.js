@@ -37,6 +37,8 @@ const STYLES_ALL = ['Family', 'Beach', 'Honeymoon'];
 
 // day: [dayNo, title, meals, bullets[], overnight]
 const D = (day, title, meals, bullets, overnight) => ({ day, title, meals, bullets, overnight });
+// Applicable per-person price (group of 2) by travel month, per the PDF quotation: high season 01 Oct–31 Nov 2026, otherwise low season.
+const hanoiSapaSeasonPrice = () => { const m = new Date().getMonth() + 1; return m === 10 || m === 11 ? 28049 : 26899; };
 
 export const destination = { name: 'Vietnam', slug: 'vietnam', continent: 'Asia', image: IMG.halong };
 
@@ -44,18 +46,56 @@ export const packages = [
   {
     slug: 'hanoi-sapa-5d4n', name: 'Hanoi – Sapa: Discovering North Vietnam', code: 'PKG-1', days: 5, nights: 4, tag: 'Culture', styles: ['Family', 'Honeymoon'], included: { hotels: 2, activities: 12, transfers: 5, meals: 8 },
     summary: 'Hanoi’s Old Quarter, the terraced valleys of Sapa, Cat Cat village and the Fansipan cable car to the “Roof of Indochina”.',
-    stays: [['Hanoi', 'Day 1', 'La Dolce Vita (Superior room)'], ['Sapa', 'Days 2–3', 'The View (Standard room)'], ['Hanoi', 'Day 4', 'La Dolce Vita (Superior room)']],
+    stays: [['Hanoi', 'Day 1', 'La Dolce Vita (Superior Room)'], ['Sapa', 'Days 2–3', 'The view ( Standard room)'], ['Hanoi', 'Day 4', 'La Dolce Vita (Superior Room)']],
+    // Itinerary text reproduced verbatim from the Hi Tours PDF "Hanoi- Sapa package tour 5 Days 4 Nights" (single source of truth).
     itinerary: [
-      D(1, 'Arrival in Hanoi – afternoon city tour', 'D', ['Arrival at Hanoi International Airport and private transfer to your hotel', 'Afternoon tour (14:00–18:00): Temple of Literature, West Lake and Tran Quoc Pagoda', 'Hoan Kiem Lake, the Old Quarter, The Huc Bridge and Ma May ancient house', 'Green-car or cyclo ride around the Old Quarter, ending with coffee at a local corner café'], 'Hanoi'),
-      D(2, 'Hanoi – Sapa – Cat Cat Village (join-in tour)', 'B, L', ['06:00 sleeper bus from Hanoi to Sapa via Lao Cai with comfort breaks', 'Arrive Sapa around 13:00; welcome drink, briefing, lunch and hotel check-in', 'Walk to Cat Cat village, home of the Black H’mong, at the foot of Fansipan', 'Trek down to the waterfall and old French hydro station, back uphill to Sapa'], 'Sapa'),
-      D(3, 'Sapa – Fansipan Peak – Moana View (join-in tour)', 'B, L', ['Cable car (20 min) to 2,800 m, then 600 steps to the summit of Fansipan – the Roof of Indochina', 'Lunch at a local restaurant or the hotel', 'Afternoon at Moana View: Bali gate, infinity lake, golden hand and panoramic café over Muong Hoa valley'], 'Sapa'),
-      D(4, 'Sapa – return to Hanoi by shared limousine', 'B, L', ['Morning free to explore Sapa', 'Check-out, lunch and 13:00–14:00 shared limousine back to Hanoi', 'Arrive Hanoi 20:00–20:30 and transfer to your hotel'], 'Hanoi'),
-      D(5, 'Hanoi – departure', 'B', ['Breakfast at the hotel', 'Private transfer to Hanoi airport for your onward flight'], null)
+      D(1, 'Arrival in Vietnam – Hanoi- Afrernoon City tour', 'D', [
+        'English-speaking guide. Private transportation.',
+        'Welcome to Vietnam!',
+        'Arrival At Hanoi International Airport and transfer to hotel in private car',
+        'Afternoon Tour 14h00- 18h00',
+        'Afternoon Hanoi tour starts visiting the Temple of Literature ,then move to the West Lake and pay a visit to the oldest pagoda Tran Quoc. Continue drive to Hoan Kiem Lake and the French Quarter (Old Quarter Hanoi), visit The Huc Bridge and Ma May ancient house. A Green Car (or cyclo ride) tour around the Old Quarter to experience the exciting local daily life of Hanoians. Tour ends after a cup of coffee or tea at an authentic Hanoi corner cafe where you can have talks with local people, exchange cultural way of life.',
+        'Overnight in Hanoi'
+      ], 'Hanoi'),
+      D(2, 'Hanoi -  Sapa- Cat Cat Village ( Join- in  tour)', 'B, L', [
+        'English-speaking guide. Join in tour',
+        '6:00 – 6:30: Welcome at bus station, get on sleeping bus and depart to Sapa.',
+        '7:30 – 11:45: Following the Highway to Lao Cai city with the comfort break',
+        '11:45 – 13:00 : Bus on the mountain road approaching to Sapa Town. On the way you can see beautiful view, the valley with terraces field.',
+        '13:00-13:30: Arriving Sapa Town with colorful traditional costumes of H’mong, Dzao, Tay ethnic People.',
+        '- Welcome drink and itinerary briefing.',
+        '14:30: A short walking to the Gate of Cat Cat village which is home of Black H’mong ethnic people and is located near the bottom of a deep valley at the foot of Fansipan Peak. Our local guide will show you the daily life activities of the locals, trekking down to the valley bottom to the waterfall where the French built a Hydraulic Power Station, short time for photo with bridge and the waterfall then you will trekking up hill to get back to Sapa with very beautiful scenery in the late afternoon. Driver pick up back to Sapa',
+        '17:00: Back to Sapa Town. Have dinner and overnight at hotel with night activities'
+      ], 'Sapa'),
+      D(3, 'Sapa- Fansipan Peak- Moana view ( Join in tour)', 'B, L', [
+        'English-speaking guide. Join in tour.',
+        '8:00: After breakfast in hotel, driver & tour guide takes you to Cable Car Station and spend 20 minutes with cable car to enjoy the spectacular scenery.',
+        '9:00: Reaching the altitude of 2800 meters, you have a good time to see the view and take photos, visit pagoda the spiritual destinations and trek up to 600 steps you will reach the peak of Fansipan - the Roof of Indochina. (Spend about 1,5 hours for hiking and taking photos).',
+        '11:30: Coming back to Cable Car Station and return to Sapa town.',
+        '12:00: Lunch at local restaurant or in hotel',
+        'In the afternoon. We start our easy day with a short walk to Moana View just 700m from the Church. Moana View is the latest checkin station specially made for young people who love to experience the new feeling. There, you will checkin the Bali Gate, Infinity lake, Moana Girl statue, Golden hand, thrilling swing, lonely tree and especially the panoramic Café where you can watch Fansipan peak with spectacular Muong Hoa valley. You can prepare nice clothes, hat..to make the best photos.',
+        '17:00: Coming back to Sapa Town. Have dinner and overnight at hotel with night activities.'
+      ], 'Sapa'),
+      D(4, 'Sapa – Return to Hanoi', 'B, L', [
+        'Join in tour. Shared transportation',
+        'Having breakfast at hotel then spend your free time to explore Sapa by yourself',
+        '12:00: Checking out and have lunch and enjoy the rest of time in Sapa',
+        '13:00-14:00: Getting on bus to go back to Hanoi with comfort breaks',
+        '20:00 – 20:30: We say goodbye to you at bus station. And then transfer to hotel in Hanoi for relaxing',
+        'Overnight at the hotel in Hanoi'
+      ], 'Hanoi'),
+      D(5, 'Hanoi – Departure', 'B', [
+        'Private transportation.',
+        'Breakfast at the hotel.',
+        'Transfer to Hanoi airport for your next destination',
+        'End of our services!'
+      ], null)
     ],
-    pricing: { currency: 'INR', basis: '3-star hotels, per person on double-sharing basis', rows: [['All months', 28049]], supplier: { low: '224 US$ pp (2 pax) · low season 1 May–30 Sep 2026', high: '234 US$ pp (2 pax) · high season 1 Oct–30 Nov 2026', single: 'Single supplement 92–98 US$' } },
-    price: 28049,
-    inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room', 'SIC (join-in) tour in Sapa'],
-    exclusions: ['All flights', ...EXCL_BASE],
+    pricing: { currency: 'INR', basis: 'PRICE PER PERSON – 3- star hotels, DOUBLE/ TWIN ROOM, DOUBLE / TWIN SHARING', columns: ['Group of 2 people', 'Group of 3 people'],
+      rows: [['Low season from 01 May to 30 Sept 2026', 26899, 25199], ['High season from 01 Oct to 31 Nov 2026', 28049, 26399]] },
+    price: hanoiSapaSeasonPrice(),
+    inclusions: ['Meals as indicated in this itinerary. (B = Breakfast, L = Lunch, D = Dinner)', 'Accommodations based in 2 people/room.', 'Entrance fees to the attractions mentioned in this program', 'Sightseeing and excursions mentioned in this itinerary', 'English-speaking local guide', 'SIC tour in Sapa', 'Transportation used in the program.'],
+    exclusions: ['International Flights', 'Tips for guides and drivers.', 'Personal expenses such as telephone, laundry, drinks, etc.', 'Meals not mentioned in the program', 'Bank fees related to payment', 'Other services not clearly indicated under "INCLUDED".', 'GST/ TCS/Any Bank Charges'],
     gallery: [IMG.sapa, IMG.hanoi, IMG.hanoiTrain, IMG.mausoleum], alt: 'Rice terraces around Sapa, Vietnam'
   },
   {

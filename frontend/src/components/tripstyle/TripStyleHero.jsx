@@ -1,9 +1,11 @@
+import { useLeadModal } from '../egypt/LeadModalProvider';
 import React from 'react';
 import { ChevronRight } from '../egypt/EgyptIcons';
 import TrustBar from '../TrustBar';
 import Header from '../Header';
 
 export default function TripStyleHero({ hero, crumbs }) {
+  const { openLead } = useLeadModal();
   const [a, b] = hero.images;
   return (
     <>
@@ -22,7 +24,7 @@ export default function TripStyleHero({ hero, crumbs }) {
             <p className="eg-body-lg text-[#002131] pl-1" data-testid="ts-hero-sub">{hero.sub}</p>
           </div>
           <div className="flex flex-col items-center gap-2 md:shrink-0">
-            <a href={hero.ctaHref} onClick={(e) => e.preventDefault()} className="eg-btn-filled h-12 px-6 eg-title-md w-full md:w-auto" data-testid="ts-hero-cta">{hero.cta}</a>
+            <a href={hero.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled h-12 px-6 eg-title-md w-full md:w-auto" data-testid="ts-hero-cta">{hero.cta}</a>
             <p className="eg-body-sm text-[#174358] text-center">{hero.note}</p>
           </div>
         </div>

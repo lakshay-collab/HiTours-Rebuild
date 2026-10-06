@@ -29,13 +29,19 @@ const build = (p) => {
   const prod = toProduct(p);
   const cities = uniq(p.stays.map((s) => s[0]));
   const stayFor = (city) => (p.stays.find((s) => s[0] === city) || [])[2] || '—';
+  const dayRange = (label) => { const m = /(\d+)(?:\s*[–-]\s*(\d+))?/.exec(label || ''); return m ? [Number(m[1]), Number(m[2] || m[1])] : null; };
+  const lastDay = Math.max(...p.itinerary.map((d) => d.day));
   const stops = p.stays.map(([city, dayLabel, hotel], i) => {
-    const days = p.itinerary.filter((d) => d.overnight === city || (city === cruiseCity && (d.overnight === 'On board' || d.title.includes(cruiseCity))));
-    const bullets = uniq(days.flatMap((d) => d.bullets)).slice(0, 5);
+    const range = dayRange(dayLabel);
+    const isLast = i === p.stays.length - 1;
+    const days = range
+      ? p.itinerary.filter((d) => (d.day >= range[0] && d.day <= range[1]) || (isLast && d.day > range[1] && d.day <= lastDay && !d.overnight))
+      : p.itinerary.filter((d) => d.overnight === city || (city === cruiseCity && (d.overnight === 'On board' || d.title.includes(cruiseCity))));
+    const bullets = uniq(days.flatMap((d) => d.bullets));
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,
-      activities: days.slice(0, 3).map((d, k) => ({ name: d.title, description: d.bullets.join('. ') + '.', optional: false, image: images[k % images.length] })),
+      activities: days.slice(0, 3).map((d, k) => ({ name: d.title, description: d.bullets.join(' '), optional: false, image: images[k % images.length] })),
       accommodation: { name: hotel, description: `${dayLabel} · as per the package accommodation list`, images: images.slice(0, 3) }
     };
   });
@@ -60,7 +66,7 @@ const build = (p) => {
       h2: 'Tour summary', short: p.summary, readMore: 'Read more', readLess: 'Read less', hide: 'Hide tour summary',
       intro: `${incl} ${excl}`, intro2: pricingText(p),
       accommodationHeading: 'Accommodation', highlightsHeading: 'Key highlights', dayHeading: 'Day', routeHeading: 'Route',
-      days: p.itinerary.map((d) => ({ title: `Day ${d.day}: ${d.title}${d.meals ? ` (${d.meals})` : ''}`, text: d.bullets[0], hotel: d.overnight ? (d.overnight === 'On board' ? stayFor(cruiseCity) : stayFor(d.overnight)) : 'Departure', highlights: d.bullets.slice(1, 4).length ? d.bullets.slice(1, 4) : d.bullets })),
+      days: p.itinerary.map((d) => ({ title: `Day ${d.day}: ${d.title}${d.meals ? ` (${d.meals})` : ''}`, text: d.bullets.join('\n'), hotel: d.overnight ? (d.overnight === 'On board' ? stayFor(cruiseCity) : stayFor(d.overnight)) : 'Departure', highlights: d.bullets.slice(1, 4).length ? d.bullets.slice(1, 4) : d.bullets })),
       outro: excl
     },
     crumbs: [...crumbBase, { label: p.name }]
