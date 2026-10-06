@@ -9,7 +9,6 @@ export default function Ambassadors() {
         <div className="bg-surface-container rounded-2xl overflow-hidden pt-8 md:pt-10">
           <div className="flex flex-col items-center gap-4 px-4 sm:px-8 md:px-16 text-center">
             <h2 className="t-section text-onsurface">{ambassadors.heading}</h2>
-            <h3 className="t-headline-sm text-onsurface">{ambassadors.subheading}</h3>
             <p className="t-body-lg text-onsurface max-w-[760px]">{ambassadors.text}</p>
             <button className="btn-filled" data-testid="ambassadors-cta">{ambassadors.cta}</button>
           </div>
