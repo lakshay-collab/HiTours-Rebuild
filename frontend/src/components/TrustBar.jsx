@@ -47,7 +47,7 @@ const SLIDES = [
       <Group>
         <Seg icon={ShieldCheck} testId="trust-slide-iso" short={<><B>ISO 45001</B> certified</>}>Hi Tours is <B>ISO 45001</B> certified</Seg>
         <Sep />
-        <Seg>Health &amp; safety is our priority</Seg>
+        <Seg testId="trust-health-safety">Health <span className="sm:hidden">&amp;</span><span className="hidden sm:inline">and</span> Safety is our priority</Seg>
       </Group>
     )
   }
