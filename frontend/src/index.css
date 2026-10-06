@@ -162,3 +162,10 @@ body {
 .promo-marquee-track { animation: promo-marquee 36s linear infinite; will-change: transform; }
 .promo-marquee-track:hover { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .promo-marquee-track { animation-duration: 120s; } }
+
+@keyframes heart-beat { 0%, 100% { transform: scale(1); } 14% { transform: scale(1.22); } 28% { transform: scale(1); } 42% { transform: scale(1.14); } 70% { transform: scale(1); } }
+.heart-beat { animation: heart-beat 1.6s ease-in-out infinite; transform-origin: center; }
+@keyframes heart-float { 0% { opacity: 0; transform: translate(0, 0) scale(.6); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(6px, -22px) scale(1); } }
+.heart-float { position: absolute; left: 50%; top: 0; margin-left: -4px; animation: heart-float 2.4s ease-out infinite; pointer-events: none; }
+.heart-float-b { animation-delay: 1.2s; margin-left: 2px; }
+@media (prefers-reduced-motion: reduce) { .heart-beat, .heart-float { animation: none; } .heart-float { display: none; } }

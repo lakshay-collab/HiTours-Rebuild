@@ -514,3 +514,11 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - Header: "Why Us?" link (desktop + floating + mobile drawer) → `/#why-hi-tours` (ComparisonTable `id=why-hi-tours`); same-page click scrolls directly. Home hash effect handles any `#id`.
 - `Newsletter.jsx` ("Experience the best of travel"): email form replaced by WhatsApp pill → `wa.me/918920606060` (`waHref`/`WA_NUMBER` exported from WhatsAppWidget); copy in `mock.newsletter`.
 - `Ambassadors.jsx` ("Talking Travel") compacted (tighter padding, image max-w 880px). New `PromoBanners.jsx` below it: 2 editable banners from `mock.promoBanners` (Promotions / Hot deals; image, tag, headline, text, offer, cta, href), 1240/272 aspect desktop, stacked on mobile, IntersectionObserver reveal (`.promo-banner.is-visible`). Images `public/home/promo-summer.webp`, `promo-hotdeal.webp` (generated).
+
+## 2026-10-06 (later) — Social carousel, happy-customers pill, WhatsApp CTA, showcase tweaks
+- Ambassadors section renamed "Travel with us on social" (`mock.ambassadors.heading/hint`), subheading/text/CTA removed. Now a horizontal swipe `Carousel step="page"` (arrows on sm+, native swipe on mobile) with 3 full-width slides: social panel (brand-coloured Instagram/Facebook/YouTube/LinkedIn pills with handles only, edge-to-edge image, `ambassadors.images[0]`), Promotions banner, Hot Deals banner (Top-10 marquee). `PromoBanners.jsx` now exports `PromoBanner` only (per-banner IO reveal); no separate section on Home.
+- `Carousel.jsx`: `step="page"` scrolls by clientWidth. Track uses `!scroll-pl-0` for full-width slides.
+- `HappyCustomers.jsx` pill ("1M+ Happy Customers", 3 avatars, beating heart + floating mini hearts; `heart-beat`/`heart-float` keyframes) under hero SearchBar and under AdventureCTA SearchBar (AdventureCTA fixed heights raised by 56px). Copy in `mock.happyCustomers`.
+- Newsletter WhatsApp CTA: green (#25D366) with WhatsApp glyph; number line removed.
+- TripShowcase: CTA opens lead modal (`useLeadModal().openLead`) with destination/trip; stats now include meals & flights (`mock.showcase.trips[].meals/flights`).
+- TrustBar: "Health and Safety is our priority" (≥sm) / "Health & Safety is our priority" (<sm).

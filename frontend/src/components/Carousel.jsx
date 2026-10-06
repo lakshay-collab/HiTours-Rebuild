@@ -21,7 +21,7 @@ export default function Carousel({ children, step = 380, arrowTop = '50%', class
     return () => { el.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
   }, [update]);
 
-  const go = (dir) => ref.current.scrollBy({ left: dir * step, behavior: 'smooth' });
+  const go = (dir) => { const el = ref.current; el.scrollBy({ left: dir * (step === 'page' ? el.clientWidth : step), behavior: 'smooth' }); };
 
   return (
     <div className={`relative ${className}`} data-testid={testId}>

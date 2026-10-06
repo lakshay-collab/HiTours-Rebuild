@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Tag, Flame } from 'lucide-react';
-import { promoBanners } from '../mock';
 import { destinations } from '../destinationsData';
 import { COUNTRY_HREF } from './Destinations';
 
@@ -36,12 +35,26 @@ function DestinationMarquee({ bannerId }) {
   );
 }
 
-function Banner({ b, index }) {
+// Single promo banner; reveals itself when scrolled (horizontally or vertically) into view.
+export function PromoBanner({ b, index = 0, className = '' }) {
+  const ref = useRef(null);
   const Icon = ICONS[b.id] || Tag;
   const withDest = !!b.showDestinations;
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !('IntersectionObserver' in window)) { el && el.classList.add('is-visible'); return undefined; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { el.classList.add('is-visible'); io.disconnect(); } });
+    }, { threshold: 0.2 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div
-      className={`promo-banner group relative w-full overflow-hidden rounded-2xl bg-deep-water text-white flex flex-col ${withDest ? 'min-h-[400px]' : 'min-h-[300px] sm:min-h-[260px] md:min-h-0 md:aspect-[1240/272]'}`}
+      ref={ref}
+      className={`promo-banner group relative w-full overflow-hidden rounded-2xl bg-deep-water text-white flex flex-col ${withDest ? 'min-h-[400px]' : 'min-h-[300px]'} ${className}`}
       style={{ transitionDelay: `${index * 120}ms` }}
       data-testid={`promo-banner-${b.id}`}
     >
@@ -67,27 +80,5 @@ function Banner({ b, index }) {
         </div>
       )}
     </div>
-  );
-}
-
-export default function PromoBanners() {
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const root = ref.current;
-    if (!root || !('IntersectionObserver' in window)) { root && root.classList.add('is-visible'); return undefined; }
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-    }, { threshold: 0.2 });
-    root.querySelectorAll('.promo-banner').forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
-
-  return (
-    <section className="pt-8 md:pt-10" data-testid="promo-banners-section">
-      <div ref={ref} className="tl-container flex flex-col gap-6 md:gap-8">
-        {promoBanners.map((b, i) => <Banner key={b.id} b={b} index={i} />)}
-      </div>
-    </section>
   );
 }

@@ -69,16 +69,19 @@ export const features = {
   ]
 };
 
+export const happyCustomers = {
+  text: '1M+ Happy Customers',
+  avatars: ['/moments/europe_couple.webp', '/moments/alps.webp', '/moments/family_trip.webp']
+};
+
 export const ambassadors = {
-  heading: 'Talking Travel with Hi Tours',
-  subheading: 'Voices from TV, media and culture',
-  text:
-    'Those who travel a lot know what matters. That is why well-known personalities trust Hi Tours – to experience extraordinary trips planned individually, personally and down to the last detail.',
-  cta: 'Learn more',
+  heading: 'Travel with us on social',
+  hint: 'Daily stories, reels and offers – swipe to explore',
   socials: [
     { key: 'instagram', label: 'Instagram', handle: '@hitours', href: 'https://www.instagram.com/hitours' },
-    { key: 'facebook', label: 'Facebook', handle: '@HiToursIN', href: 'https://www.facebook.com/HiToursIN/' },
-    { key: 'youtube', label: 'YouTube', handle: '@hitoursgroup', href: 'https://youtube.com/@hitoursgroup?si=EfxsTKBbup36lxiZ' }
+    { key: 'facebook', label: 'Facebook', handle: '@hitoursin', href: 'https://www.facebook.com/HiToursIN/' },
+    { key: 'youtube', label: 'YouTube', handle: '@hitoursgroup', href: 'https://youtube.com/@hitoursgroup?si=EfxsTKBbup36lxiZ' },
+    { key: 'linkedin', label: 'LinkedIn', handle: 'Hi Tours Group', href: 'https://www.linkedin.com/company/hi-tours-group/' }
   ],
   images: ['/home/on-the-road.webp']
 };

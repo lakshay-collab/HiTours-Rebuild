@@ -1,16 +1,18 @@
 import React from 'react';
 import { adventure } from '../mock';
 import SearchBar from './SearchBar';
+import HappyCustomers from './HappyCustomers';
 import { ADVENTURE_ID } from '../lib/homeReturn';
 
 export default function AdventureCTA({ heading = adventure.heading }) {
   return (
     <section id={ADVENTURE_ID} className="pt-16 md:pt-24 scroll-mt-4" data-testid="adventure-section">
-      <div className="relative w-full bg-surface-container h-auto sm:h-[560px] md:h-[416px] lg:h-[352px] xl:h-[376px] flex flex-col justify-between">
+      <div className="relative w-full bg-surface-container h-auto sm:h-[616px] md:h-[472px] lg:h-[408px] xl:h-[432px] flex flex-col justify-between">
         <div className="relative z-[1] flex flex-col items-center gap-10 lg:gap-8 xl:gap-12 pt-16 lg:pt-12 xl:pt-[72px] px-[13px] sm:px-8">
           <h2 className="t-section text-center text-onsurface sm:w-[536px] md:w-full">{heading}</h2>
-          <div className="w-full sm:w-[536px] md:w-[552px]">
+          <div className="w-full sm:w-[536px] md:w-[552px] flex flex-col items-center gap-4">
             <SearchBar id="adventure" />
+            <HappyCustomers />
           </div>
         </div>
         <div className="relative z-[2] flex items-end justify-between gap-2 mt-6 md:mt-0 md:absolute md:bottom-0 md:left-0 md:w-full pointer-events-none">

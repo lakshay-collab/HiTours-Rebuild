@@ -6,7 +6,6 @@ import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
 import Features from '../components/Features';
 import Ambassadors from '../components/Ambassadors';
-import PromoBanners from '../components/PromoBanners';
 import ComparisonTable from '../components/ComparisonTable';
 import Moments from '../components/Moments';
 import Steps from '../components/Steps';
@@ -42,7 +41,6 @@ export default function Home() {
         <TrustBar />
         <Features />
         <Ambassadors />
-        <PromoBanners />
         <Destinations />
         <Moments />
         <Steps />
