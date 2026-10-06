@@ -1,5 +1,4 @@
 import React from 'react';
-import { Phone } from 'lucide-react';
 import { expertAdvice } from '../mock';
 
 export default function ExpertAdvicePanel({ className = '' }) {
@@ -17,16 +16,6 @@ export default function ExpertAdvicePanel({ className = '' }) {
           </a>
           <div className="mt-1">
             {expertAdvice.hours.map((h) => <p key={h} className="t-body-md text-onsurface-variant leading-6">{h}</p>)}
-          </div>
-        </div>
-        <div className="flex flex-col gap-2 pt-5 border-t border-outline" data-testid="advice-call-section">
-          <p className="t-body-lg text-onsurface">Or call us directly</p>
-          <a href={expertAdvice.telHref} className="t-body-lg text-primary underline underline-offset-4 self-start inline-flex items-center gap-2" data-testid="advice-tel">
-            <Phone size={18} strokeWidth={2} className="text-primary shrink-0" />
-            {expertAdvice.tel}
-          </a>
-          <div className="mt-1">
-            {expertAdvice.callHours.map((h) => <p key={h} className="t-body-md text-onsurface-variant leading-6">{h}</p>)}
           </div>
         </div>
       </div>

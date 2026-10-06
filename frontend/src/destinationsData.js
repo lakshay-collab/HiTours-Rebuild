@@ -15,7 +15,8 @@ export const destinations = {
     { name: 'Egypt', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
     { name: 'Maldives', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
     { name: 'Kazakhstan', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=60&w=520' },
-    { name: 'Bhutan', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=60&w=520' }
+    { name: 'Bhutan', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=60&w=520' },
+    { name: 'Japan', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
   ],
   'Africa': [
     { name: 'South Africa', src: img('11BIZmUhVTObt1mVYFtofn', 'f05f87c118cdb66b143bbb69eba50c62/Su__dafrika_Kapstadt_Zwo__lf_Apostel_Berge.jpg') },
