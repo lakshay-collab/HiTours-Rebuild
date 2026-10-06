@@ -115,6 +115,27 @@ function Accommodation({ a }) {
   );
 }
 
+function ActivityDesc({ text }) {
+  const ref = useRef(null);
+  const [open, setOpen] = useState(false);
+  const [clamped, setClamped] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (el) setClamped(el.scrollHeight > el.clientHeight + 1);
+  }, [text]);
+  return (
+    <>
+      <p ref={ref} className={`eg-body-md text-[#174358] ${open ? '' : 'line-clamp-3'}`} data-testid="eg-activity-desc">{text}</p>
+      {(clamped || open) && (
+        <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="self-start mt-1 inline-flex items-center gap-1 eg-label-md font-semibold text-[#174358] underline underline-offset-4 hover:text-[#002131] transition-colors" data-testid="eg-activity-toggle">
+          {open ? 'View less' : 'View more'}
+          <ChevronRight size={14} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
+        </button>
+      )}
+    </>
+  );
+}
+
 function Activities({ items }) {
   const track = useRef(null);
   const scroll = (d) => track.current && track.current.scrollBy({ left: d * 292, behavior: 'smooth' });
@@ -131,7 +152,7 @@ function Activities({ items }) {
               </div>
               <div className="p-4 flex flex-col gap-1">
                 <h5 className="eg-title-md text-[#002131]" data-testid="eg-activity-name">{a.name}</h5>
-                <p className="eg-body-md text-[#174358]">{a.description}</p>
+                <ActivityDesc text={a.description} />
               </div>
             </div>
           ))}
