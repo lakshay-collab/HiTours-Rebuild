@@ -7,16 +7,15 @@ export const destinationTabs = [
 
 export const destinations = {
   'Top 10': [
-    { name: 'USA', src: img('4qKkGsewSMqgIzrhbg8jUc', '5941e6892942fa67ac32f013d2315c10/Golden_Gate_Bridge_USA.jpg') },
-    { name: 'South Africa', src: img('11BIZmUhVTObt1mVYFtofn', 'f05f87c118cdb66b143bbb69eba50c62/Su__dafrika_Kapstadt_Zwo__lf_Apostel_Berge.jpg') },
+    { name: 'Vietnam', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
+    { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') },
     { name: 'Thailand', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
-    { name: 'Iceland', src: img('19jS6gkSXrat4camgvmXdJ', '6d0914a835cfb184af0111735d4332cc/Island__Reynisfjara.jpg') },
-    { name: 'Canada', src: img('4o10LZngx2dF2lPBMomEIS', '79d54c77ff575453297addd96d42c9fd/Kanada_MoraineLake.jpg') },
-    { name: 'Japan', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') },
-    { name: 'Namibia', src: img('6sKYDcfFOoFsBkOwJtoVoF', '35594053fdc4d0b90d18a18f1058f8b1/Namibia_Sandd%C3%83_ne.jpg') },
-    { name: 'Tanzania', src: img('7edotTbL51cLSRL6y6ie5j', '13d2b882c4cdad47c4629adcf09d5b53/Tansania_Reise_Giraffen_und_der_Kilimandscharo_im_Amboseli_Nationalpark.jpg') },
-    { name: 'Costa Rica', src: img('NicshTzcwRst2izOwKSAV', 'd375b934e43bd3c484b162ec1d67725b/CostaRica_Vulkankrater.jpg') },
-    { name: 'Australia', src: img('62tyUpL6fH7VsSsH7KjOXt', '8965abe9818007096bca5bc3f48a1a2a/Australien_Zw%C3%83__lfApostel.jpg') }
+    { name: 'Singapore', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
+    { name: 'Malaysia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
+    { name: 'Egypt', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
+    { name: 'Maldives', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
+    { name: 'Kazakhstan', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=60&w=520' },
+    { name: 'Bhutan', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=60&w=520' }
   ],
   'Africa': [
     { name: 'South Africa', src: img('11BIZmUhVTObt1mVYFtofn', 'f05f87c118cdb66b143bbb69eba50c62/Su__dafrika_Kapstadt_Zwo__lf_Apostel_Berge.jpg') },
