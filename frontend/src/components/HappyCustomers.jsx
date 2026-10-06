@@ -1,29 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Heart } from 'lucide-react';
 import { happyCustomers } from '../mock';
 
 const SLOTS = 3;
-const ROTATE_MS = 2200;
 
-// Rotates one avatar slot at a time through the pool, with a crossfade.
-const useRotatingAvatars = (pool) => {
-  const [slots, setSlots] = useState(() => pool.slice(0, SLOTS));
-  const [next, setNext] = useState(SLOTS % pool.length);
-  const [turn, setTurn] = useState(0);
-  useEffect(() => {
-    if (pool.length <= SLOTS) return undefined;
-    const t = setInterval(() => {
-      setSlots((prev) => { const copy = [...prev]; copy[turn % SLOTS] = pool[next]; return copy; });
-      setNext((n) => (n + 1) % pool.length);
-      setTurn((k) => k + 1);
-    }, ROTATE_MS);
-    return () => clearInterval(t);
-  }, [pool, next, turn]);
-  return slots;
-};
+// Shuffled once per page load so each visit shows a different trio; shared by both pills.
+const PICKED = (() => {
+  const pool = [...happyCustomers.avatars];
+  for (let i = pool.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  return pool.slice(0, SLOTS);
+})();
 
 export default function HappyCustomers({ tone = 'light', className = '' }) {
-  const slots = useRotatingAvatars(happyCustomers.avatars);
+  const slots = PICKED;
   const dark = tone === 'dark';
   const shell = dark
     ? 'bg-[rgba(0,33,49,0.42)] backdrop-blur-md ring-1 ring-white/25 text-white shadow-[0_6px_22px_rgba(0,0,0,0.25)]'
@@ -35,7 +24,7 @@ export default function HappyCustomers({ tone = 'light', className = '' }) {
       <div className="flex -space-x-2.5">
         {slots.map((src, i) => (
           <span key={i} className={`relative w-8 h-8 rounded-full ring-2 ${ring} overflow-hidden bg-surface-container`}>
-            <img key={src} src={src} alt="" className="absolute inset-0 w-full h-full object-cover avatar-swap" loading="lazy" />
+            <img key={src} src={src} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           </span>
         ))}
       </div>

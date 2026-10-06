@@ -71,7 +71,7 @@ export const features = {
 
 export const happyCustomers = {
   text: '1M+ Happy Customers',
-  avatars: Array.from({ length: 10 }, (_, i) => `/avatars/in-${String(i + 1).padStart(2, '0')}.webp`)
+  avatars: ['01', '02', '04', '06', '07', '09', '11', '12', '13', '14'].map((n) => `/avatars/in-${n}.webp`)
 };
 
 export const ambassadors = {
@@ -281,11 +281,11 @@ export const destinationsHeading = 'Discover our extraordinary destinations';
 
 export const newsletter = {
   heading: 'Experience the best of travel',
-  text: 'Unique itineraries, secret insider tips and the best deals: chat with us on WhatsApp and dive into our world of travel. Reply any time, no strings attached.',
+  text: 'Tell us your dates, budget and travel style – our experts will shape a holiday that is entirely yours. Message us any time, no strings attached.',
   privacy: 'Privacy policy',
-  whatsappLabel: 'Chat with us on WhatsApp',
+  whatsappLabel: 'Customise your holiday',
   whatsappNumber: '+91 89206 06060',
-  whatsappText: 'Hi, I’d like to experience the best of travel with Hi Tours. Can you share your latest itineraries and offers?',
+  whatsappText: 'Hi, I’d like to customise a holiday with Hi Tours. Can you help me plan it?',
   cta: 'Chat on WhatsApp',
   bullets: [
     { icon: 'idea', text: 'Inspiring travel ideas' },

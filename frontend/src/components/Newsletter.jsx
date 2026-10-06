@@ -34,9 +34,9 @@ export default function Newsletter() {
               data-testid="newsletter-whatsapp-link"
             >
               <WaIcon className="w-6 h-6 text-[#25D366] shrink-0" />
-              <span className="flex-1 min-w-0 px-4 t-body-lg text-onsurface truncate">{newsletter.whatsappLabel}</span>
-              <span className="shrink-0 inline-flex items-center gap-2 h-10 px-5 rounded-full bg-[#25D366] text-white t-label-lg transition-colors duration-200 group-hover:bg-[#1EBE5B]" data-testid="newsletter-whatsapp-cta">
-                <WaIcon className="w-5 h-5" />{newsletter.cta}
+              <span className="flex-1 min-w-0 px-3 sm:px-4 t-body-md sm:t-body-lg text-onsurface truncate">{newsletter.whatsappLabel}</span>
+              <span className="shrink-0 inline-flex items-center gap-2 h-10 w-10 sm:w-auto justify-center sm:px-5 rounded-full bg-[#25D366] text-white t-label-lg transition-colors duration-200 group-hover:bg-[#1EBE5B]" data-testid="newsletter-whatsapp-cta">
+                <WaIcon className="w-5 h-5" /><span className="hidden sm:inline">{newsletter.cta}</span>
               </span>
             </a>
 
