@@ -23,6 +23,7 @@ export const hero = {
   ctaHref: '/l/thailand/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: ct('27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg').replace('w=1080', 'w=2400'),
+  video: '/hero/thailand.mp4', poster: '/hero/thailand.webp',
   imageAlt: 'Longtail boats on a turquoise Thai bay beneath limestone cliffs'
 };
 

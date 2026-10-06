@@ -135,7 +135,14 @@ export default function EgyptHero({ style, title: titleProp, showTabs = true, cr
       <div className="relative">
         <Header overlay />
         <section className="relative h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] bg-[#EAE8E0]" data-testid="eg-hero">
-          <img src={h.image} alt={h.imageAlt || 'Pyramids of Giza, Egypt'} className="absolute inset-0 w-full h-full object-cover" loading="eager" data-testid="eg-hero-image" />
+          {h.video ? (
+            <video className="absolute inset-0 w-full h-full object-cover" poster={h.poster || h.image} autoPlay muted loop playsInline preload="metadata" aria-label={h.imageAlt || title} data-testid="eg-hero-video">
+              <source src={h.video.replace(/\.mp4$/, '.webm')} type="video/webm" />
+              <source src={h.video} type="video/mp4" />
+            </video>
+          ) : (
+            <img src={h.image} alt={h.imageAlt || 'Pyramids of Giza, Egypt'} className="absolute inset-0 w-full h-full object-cover" loading="eager" data-testid="eg-hero-image" />
+          )}
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.5)_0%,rgba(0,33,49,0.15)_45%,rgba(0,33,49,0.5)_100%)] pointer-events-none" />
           <div className="absolute inset-0 pt-[112px] md:pt-[108px] flex flex-col items-center justify-center gap-6 md:gap-8 px-4 text-center" data-testid="eg-hero-copy"><HeroCopy title={title} /></div>
         </section>

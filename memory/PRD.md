@@ -502,3 +502,8 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - `components/egypt/PhoneInput.jsx` (new, libphonenumber-js/max): flag (flagcdn) + dial code trigger + number input; searchable country list (name/alias UAE·USA·UK/dial) portaled to body (desktop popover, mobile bottom sheet). India default. Pasted "+44…"/"0091…" switches country (main country for shared codes, e.g. GB not GG) and strips code; bare "91xxxxxxxxxx" with IN selected strips the duplicate code. Per-country validation (`phoneError`), payload via `phonePayload` → `{phone: national, country_code: '+91'}`. Used in DesignEscapeModal and EgyptPlanner. Destination logic untouched.
 - Backend `kraya_phone` now sends E.164 `+<cc><national>` to Kraya (verified 200 OK, synced). Tested via testing_agent iteration_42 (IN/US/GB/AE/TH/VN) + self-test of double-code fix.
 - Shared adapter `tours/vietnamToursData.js`: when a stop clubs multiple days, bullets get `__day__Day N` markers; `EgyptRoute.StopText` renders them as bold "Day N" headings (`eg-route-day-heading`); View-more count excludes markers.
+
+## 2026-10-06 — Destination hero videos (Sri Lanka, Thailand, Vietnam)
+- Client clips (~200 MB 1080p/4K each) encoded to `public/hero/{sri-lanka,thailand,vietnam}.{mp4,webm}` (1280×720, muted, 30fps, H.264 CRF28 faststart ≈4–5 MB; VP9 CRF36 ≈7–8 MB) + `.webp` posters (1600w).
+- Listing data `hero.video` / `hero.poster` fields; `EgyptHero` renders `<video autoPlay muted loop playsInline>` (webm first, mp4 fallback, poster) when `hero.video` is set (`eg-hero-video`), else the existing `<img>`. Same dimensions/overlay/copy. Verified playing on all three pages desktop + mobile.
+- Homepage hero already had its own video (`/hero-video.mp4|webm`) — unchanged.
