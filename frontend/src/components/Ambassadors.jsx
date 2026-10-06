@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Instagram, Facebook, Youtube, Linkedin } from 'lucide-react';
 import { ambassadors, promoBanners } from '../mock';
 import Carousel from './Carousel';
@@ -45,18 +45,39 @@ const SocialPanel = () => (
   </div>
 );
 
+const useIsDesktop = () => {
+  const [desktop, setDesktop] = useState(() => window.matchMedia('(min-width: 768px)').matches);
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const on = (e) => setDesktop(e.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  return desktop;
+};
+
+const Deals = () => (
+  <div className="flex flex-col gap-4 md:gap-6 w-full h-full" data-testid="deals-stack">
+    {promoBanners.map((b, i) => <PromoBanner key={b.id} b={b} index={i} className="md:flex-1" />)}
+  </div>
+);
+
 export default function Ambassadors() {
+  const desktop = useIsDesktop();
   return (
     <section className="pt-12 md:pt-14" data-testid="ambassadors-section">
       <div className="tl-container">
-        <Carousel step="page" trackClassName="gap-4 md:gap-6 items-stretch !scroll-pl-0 overscroll-x-contain" testId="social-carousel">
-          <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-0"><SocialPanel /></div>
-          {promoBanners.map((b, i) => (
-            <div key={b.id} className="w-full shrink-0 snap-start snap-always flex" data-testid={`social-slide-${i + 1}`}>
-              <PromoBanner b={b} index={0} />
-            </div>
-          ))}
-        </Carousel>
+        {desktop ? (
+          <Carousel step="page" trackClassName="gap-6 items-stretch !scroll-pl-0 overscroll-x-contain" testId="social-carousel" dots={2}>
+            <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-0"><SocialPanel /></div>
+            <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-1"><Deals /></div>
+          </Carousel>
+        ) : (
+          <div className="flex flex-col gap-4" data-testid="social-stack">
+            <SocialPanel />
+            <Deals />
+          </div>
+        )}
       </div>
     </section>
   );
