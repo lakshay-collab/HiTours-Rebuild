@@ -75,6 +75,11 @@ export const ambassadors = {
   text:
     'Those who travel a lot know what matters. That is why well-known personalities trust Hi Tours – to experience extraordinary trips planned individually, personally and down to the last detail.',
   cta: 'Learn more',
+  socials: [
+    { key: 'instagram', label: 'Instagram', handle: '@hitours', href: 'https://www.instagram.com/hitours' },
+    { key: 'facebook', label: 'Facebook', handle: '@HiToursIN', href: 'https://www.facebook.com/HiToursIN/' },
+    { key: 'youtube', label: 'YouTube', handle: '@hitoursgroup', href: 'https://youtube.com/@hitoursgroup?si=EfxsTKBbup36lxiZ' }
+  ],
   images: ['/home/on-the-road.webp']
 };
 
