@@ -135,7 +135,7 @@ export default function EgyptHero({ style, title: titleProp, showTabs = true, cr
       <div className="relative">
         <Header overlay />
         <section className="relative h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] bg-[#EAE8E0]" data-testid="eg-hero">
-          {h.video ? (
+          {typeof h.video === 'string' ? (
             <video className="absolute inset-0 w-full h-full object-cover" poster={h.poster || h.image} autoPlay muted loop playsInline preload="metadata" aria-label={h.imageAlt || title} data-testid="eg-hero-video">
               <source src={h.video.replace(/\.mp4$/, '.webm')} type="video/webm" />
               <source src={h.video} type="video/mp4" />
