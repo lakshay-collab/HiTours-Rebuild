@@ -36,8 +36,6 @@ const SLIDES = [
         <Seg icon={CalendarDays} testId="trust-slide-heritage">Established in <B>1995</B></Seg>
         <Sep />
         <Seg><B>{YEARS}</B> years of trust</Seg>
-        <Sep />
-        <Seg><B>1 Million+</B><span className="hidden sm:inline"> happy</span> travellers</Seg>
       </Group>
     )
   },
