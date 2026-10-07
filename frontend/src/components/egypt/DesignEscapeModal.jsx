@@ -84,8 +84,8 @@ export default function DesignEscapeModal({ open, onClose, destination, tripTitl
           {panelImage && <img src={panelImage} alt={imageAlt || activeDestination} className="absolute inset-0 w-full h-full object-cover" data-testid="dye-image" />}
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.05)_0%,rgba(0,33,49,0.2)_40%,rgba(0,33,49,0.82)_100%)]" />
           <div className="absolute inset-x-0 bottom-0 p-5 sm:p-8 text-white">
-            <p className="eg-label-lg uppercase tracking-[0.18em] text-white/80" data-testid="dye-image-destination">{activeDestination || 'Your next escape'}</p>
-            <h2 id="dye-title" className="mt-1 eg-headline-lg sm:eg-display-sm text-white drop-shadow-[0_2px_10px_rgba(0,33,49,0.5)]">Design your escape</h2>
+            <p className="eg-label-lg uppercase tracking-[0.18em] text-white/80">Customise your</p>
+            <h2 id="dye-title" className="mt-1 eg-headline-lg sm:eg-display-sm text-white drop-shadow-[0_2px_10px_rgba(0,33,49,0.5)]" data-testid="dye-image-destination">{activeDestination ? `${activeDestination} holiday` : 'Next holiday'}</h2>
             <p className="mt-2 eg-body-sm text-white/85 line-clamp-2">{tripTitle || 'Share your details and a Hi Tours specialist will call you with a personalised plan.'}</p>
           </div>
         </div>
