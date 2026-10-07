@@ -237,7 +237,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
           {days.map((d, i) => (
             <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`relative h-14 ${i ? 'pl-3' : 'pl-1'} pr-3 flex items-center gap-2 whitespace-nowrap ${active === i ? 'text-[#002131]' : 'text-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>
               <span className={`w-6 h-6 rounded-full border flex items-center justify-center eg-label-lg ${active === i ? 'bg-[#174358] border-[#174358] text-white' : 'bg-white border-[#C4CBD0] text-[#174358]'}`}>{d.letter}</span>
-              <span className="flex flex-col items-start leading-tight"><span className="eg-label-lg">{d.name}</span><span className="text-[11px] text-[#6F777C]" data-testid={`eg-route-tab-city-${i}`}>{d.city}</span></span>
+              <span className="flex flex-col items-start leading-tight"><span className="eg-label-lg">{d.name}</span><span className="text-[11px] text-[#6F777C]" data-testid={`eg-route-city-${i}`}>{d.city}</span></span>
               {active === i && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[#174358]" />}
             </button>
           ))}
