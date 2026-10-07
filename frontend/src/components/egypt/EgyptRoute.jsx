@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { route } from '../../egyptDetailData';
-import { X, Plane, Car } from 'lucide-react';
+import { X, Plane, Car, Moon } from 'lucide-react';
 import { ChevronLeft, ChevronRight, HotelIcon, ExploreIcon, GalleryIcon, PinIcon } from './EgyptIcons';
 
 
@@ -46,11 +46,12 @@ export function toDays(stops) {
       const imgs = (s.dayImages && n != null && s.dayImages[n]) || s.images.map((_, k) => s.images[(k + j) % s.images.length]);
       days.push({
         key: `${s.letter}-${j}`, letter: String(n ?? si + 1), name: dayPart.trim(), city: s.name, title: rest.join(' · ').trim() || s.name,
-        label: rest.length ? `${dayPart.trim()} · ${s.name}` : dayPart.trim(), subtitle: j === 0 ? s.subtitle : null, bullets: g.bullets, images: imgs,
-        accommodation: j === 0 ? s.accommodation : null, activities: acts
+        subtitle: j === 0 ? s.subtitle : null, bullets: g.bullets, images: imgs,
+        accommodation: j === 0 ? s.accommodation : null, activities: acts, overnight: s.name
       });
     });
   });
+  if (days.length > 1) days[days.length - 1].overnight = null;
   return days;
 }
 
@@ -61,9 +62,10 @@ function StopText({ s }) {
   const hidden = s.bullets.length - PREVIEW_BULLETS;
   return (
     <div className="md:w-[346px] shrink-0" data-testid="eg-route-stop">
-      <span className="inline-flex items-center h-6 px-2.5 rounded-full bg-[#308BB6] eg-label-md text-white whitespace-nowrap" data-testid="eg-route-daylabel">{s.label}</span>
+      <span className="inline-flex items-center h-6 px-2.5 rounded-full bg-[#308BB6] eg-label-md text-white whitespace-nowrap" data-testid="eg-route-daylabel">{s.name}</span>
       <h3 className="mt-2 eg-title-lg text-[#002131]" data-testid="eg-route-stop-name">{s.title}</h3>
       {s.subtitle && <RouteLine cities={s.subtitle.split(' → ')} className="mt-2" testId="eg-route-subtitle" />}
+      <StopCarousel images={s.images} name={s.title} className="md:hidden mt-4" />
       <ul className="mt-4 flex flex-col gap-2.5" data-testid="eg-route-bullets">
         {shown.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>)}
       </ul>
@@ -73,15 +75,16 @@ function StopText({ s }) {
           <ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
         </button>
       )}
+      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight"><Moon size={16} className="text-[#308BB6]" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : `Overnight in ${s.overnight}`}</p>}
     </div>
   );
 }
 
-function StopCarousel({ images, name }) {
+function StopCarousel({ images, name, className = '' }) {
   const [i, setI] = useState(0);
   const n = images.length;
   return (
-    <div className="relative shrink-0 md:flex-1 min-w-0 h-[220px] md:h-[300px] md:self-start rounded-xl overflow-hidden bg-[#EAE8E0]" data-testid="eg-stop-gallery">
+    <div className={`relative shrink-0 md:flex-1 min-w-0 aspect-[3/2] md:aspect-auto md:h-[300px] md:self-start rounded-xl overflow-hidden bg-[#EAE8E0] ${className}`} data-testid="eg-stop-gallery">
       <img src={images[i]} alt={`${name} ${i + 1}`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
       <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
         <button type="button" onClick={() => setI((v) => Math.max(0, v - 1))} disabled={i === 0} className="eg-arrow pointer-events-auto disabled:opacity-40" aria-label="Back" data-testid="eg-stop-prev"><ChevronLeft size={24} /></button>
@@ -205,7 +208,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
       if (!head.current) return;
       const top = head.current.getBoundingClientRect().top;
       setStuck(top <= 0 && window.scrollY > 0);
-      const line = HEADER + 90;
+      const line = (head.current.offsetHeight || HEADER) + 60;
       let idx = 0;
       refs.current.forEach((el, i) => { if (el && el.getBoundingClientRect().top <= line) idx = i; });
       setActive(idx);
@@ -222,24 +225,21 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
 
   const goTo = (i) => {
     const el = refs.current[i];
-    if (el) { setActive(i); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - HEADER, behavior: 'smooth' }); }
+    const offset = (head.current ? head.current.offsetHeight : HEADER) + 12;
+    if (el) { setActive(i); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' }); }
   };
 
   return (
     <div className="bg-[#F6F4EB] rounded-xl" id="itinerary" data-testid="eg-detail-route">
       <div ref={head} className="sticky top-0 z-20 bg-[#F0EEE6] rounded-t-xl px-4 md:px-10 shadow-[0_6px_12px_-8px_rgba(0,33,49,0.2)]" data-testid="eg-route-header">
         <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
-          <h2 className="eg-title-lg md:eg-headline-md !leading-7 text-[#002131]">{route.h2}</h2>
+          <h2 className="eg-title-md md:eg-headline-md !leading-7 text-[#002131] truncate">{route.h2}</h2>
           <button type="button" onClick={onSummary} className="shrink-0 inline-flex items-center gap-1 h-9 px-4 rounded-full eg-grad-harbor hover:opacity-90 eg-label-lg text-white transition-opacity" data-testid="eg-route-summary-cta"><span className="md:hidden">{route.summaryShort}</span><span className="hidden md:inline">{route.summaryCta}</span></button>
         </div>
         {!stuck && <p className="eg-body-md text-[#174358] pb-3" data-testid="eg-route-sub">{route.sub}</p>}
-        <div role="tablist" className="flex overflow-x-auto no-scrollbar border-b border-[#E4E3DB]" data-testid="eg-route-tabs">
+        <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar py-3" data-testid="eg-route-tabs">
           {days.map((d, i) => (
-            <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`relative h-14 ${i ? 'pl-3' : 'pl-1'} pr-3 flex items-center gap-2 whitespace-nowrap ${active === i ? 'text-[#002131]' : 'text-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>
-              <span className={`w-6 h-6 rounded-full border flex items-center justify-center eg-label-lg ${active === i ? 'bg-[#174358] border-[#174358] text-white' : 'bg-white border-[#C4CBD0] text-[#174358]'}`}>{d.letter}</span>
-              <span className="flex flex-col items-start leading-tight"><span className="eg-label-lg">{d.name}</span><span className="text-[11px] text-[#6F777C]" data-testid={`eg-route-city-${i}`}>{d.city}</span></span>
-              {active === i && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[#174358]" />}
-            </button>
+            <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`shrink-0 h-9 px-4 rounded-full eg-label-lg whitespace-nowrap transition-colors ${active === i ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>{d.name}</button>
           ))}
         </div>
       </div>
@@ -248,7 +248,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
           <section key={s.key} ref={(el) => { refs.current[i] = el; }} id={`stop-${i}`} className="py-8 first:pt-0 last:pb-0 flex flex-col gap-8" data-testid={`eg-route-section-${i}`}>
             <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-8">
               <StopText s={s} />
-              <StopCarousel images={s.images} name={s.title} />
+              <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
             {s.accommodation && <Accommodation a={s.accommodation} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}

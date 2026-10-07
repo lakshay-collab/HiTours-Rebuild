@@ -102,8 +102,7 @@ const stops = [
       `${DAY_MARK}Day 3 · Gondola Romance & Colourful Islands`,
       'Breakfast at your hotel',
       'Glide through the Grand Canal on a classic Venetian gondola',
-      'Shared boat tour to Murano, Burano & Torcello — glass-blowing, colourful houses and ancient history',
-      'Return to your hotel for a restful overnight stay'
+      'Shared boat tour to Murano, Burano & Torcello — glass-blowing, colourful houses and ancient history'
     ],
     accommodation: {
       name: 'Ca San Polo, Venice — 3 nights',
