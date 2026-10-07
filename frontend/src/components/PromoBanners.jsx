@@ -55,7 +55,7 @@ export function PromoBanner({ b, index = 0, className = '' }) {
   return (
     <div
       ref={ref}
-      className={`promo-banner group relative w-full overflow-hidden rounded-2xl bg-deep-water text-white flex flex-col ${withDest ? 'min-h-[400px]' : 'min-h-[300px]'} ${className}`}
+      className={`promo-banner group relative w-full overflow-hidden rounded-2xl bg-deep-water text-white flex flex-col ${withDest ? 'min-h-[340px]' : 'min-h-[256px]'} ${className}`}
       style={{ transitionDelay: `${index * 120}ms` }}
       data-testid={`promo-banner-${b.id}`}
     >

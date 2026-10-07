@@ -135,11 +135,6 @@ export const products = [
     'https://kiwi-cdn.tlservers.com/items%2Fc04a0e0a-435d-4af5-9552-ff4cead7f556%2Fimage%2Fjpeg%2FjhET5TpEb7ERyB8v56_Tdw%2Fshanghai-istock-1201711683.jpg?w=1080&q=60&auto=format&fit=max',
     'https://kiwi-cdn.tlservers.com/items%2F26ada693-a681-4b34-9253-df4d1eb63ea5%2Fimage%2Fjpeg%2FmOt2nfg_0q0v24GaAR0QwQ%2Fyangshuo-istock-1368399386.jpg?w=1080&q=60&auto=format&fit=max'
   ]),
-  P('India tour with tigers, tea plantations & beach time', 'Culture', 16, 6, 6, 12, 10, 360000, 'Taj Mahal, Agra, India', [
-    `${CT}/3tMULy2oenWfno0vfK90fE/09021ff48b74c1cda2b618e47ea3b71b/Taj_Mahal__Indien.jpg?w=1080&q=60&fm=webp`,
-    `${CT}/13iNJODjS7Pq5MWh4AeEbN/1be0d980bfe6206ee15d8563824c84bc/Thekkady__Indien.jpg?w=1080&q=60&fm=webp`,
-    'https://kiwi-cdn.tlservers.com/items%2F2775752b-d90a-4323-85d2-fd0b238f1c5c%2Fimage%2Fjpeg%2FfZsW6c7_vt_QLNm0wx3ckQ%2Fistock-148427887.jpg?w=1080&q=60&auto=format&fit=max'
-  ]),
   P('South Korea snapshot: the best experiences in 7 days', 'Short trips', 7, 3, 3, 6, 5, 368100, 'Gamcheon Culture Village, Busan, South Korea', [
     `${CT}/5wcHOCUiX8SU0OaPR6m8Ab/3f8d7fc259c2e40c9416849bdfeb8abf/S%C3%83_dkorea_Busan_GamcheonVillage.jpg?w=1080&q=60&fm=webp`,
     'https://kiwi-cdn.tlservers.com/items%2Fd01430c4-705b-418a-89a1-54d8599b6d6a%2Fimage%2Fjpeg%2F3x3W6d2Yz2PeFZCxbUxSQg%2Fistock-908748356.jpg?w=1080&q=60&auto=format&fit=max',
@@ -155,7 +150,6 @@ export const countries = {
     { title: 'Vietnam', href: '/asien/vietnam', image: `${CT}/6KpaBlYiRchxRrYsS84QgO/dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg?w=1080&q=60&fm=webp` },
     { title: 'Japan', href: '#', image: `${CT}/5E91LAbIo29xmfzemwDnnu/082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg?w=1080&q=60&fm=webp` },
     { title: 'Indonesia', href: '#', image: `${CT}/61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png?w=1080&q=60&fm=webp` },
-    { title: 'India', href: '#', image: `${CT}/1OoLHyQc0wvo7b7ky6kOYi/14f2e12522f80eccc465118fb92f7486/Indien_Ladakh_Landschaft_TCG.png?w=1080&q=60&fm=webp` },
     { title: 'China', href: '#', image: `${CT}/3FwBvWPMIiVGThJdqClYD1/bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png?w=1080&q=60&fm=webp` },
     { title: 'Cambodia', href: '#', image: `${CT}/3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg?w=1080&q=60&fm=webp` },
     { title: 'Malaysia', href: '#', image: `${CT}/X7b0PdKpWDMzl19jytcJ6/d0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg?w=1080&q=60&fm=webp` },

@@ -13,11 +13,11 @@ const SOCIAL = {
 
 const SocialPanel = () => (
   <div className="bg-surface-container rounded-2xl overflow-hidden flex flex-col h-full" data-testid="social-panel">
-    <div className="px-4 sm:px-8 pt-8 md:pt-10 text-center">
+    <div className="px-4 sm:px-8 pt-5 md:pt-6 text-center">
       <h2 className="t-section text-onsurface">{ambassadors.heading}</h2>
       <p className="t-body-lg text-onsurface-variant mt-2" data-testid="ambassadors-hint">{ambassadors.hint}</p>
     </div>
-    <ul className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-4 sm:px-8 pt-5 pb-5 md:pt-6 md:pb-6" data-testid="ambassadors-socials">
+    <ul className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-4 sm:px-8 pt-4 pb-4 md:pt-5 md:pb-5" data-testid="ambassadors-socials">
       {ambassadors.socials.map((s) => {
         const { Icon, bg } = SOCIAL[s.key];
         return (
@@ -69,8 +69,8 @@ export default function Ambassadors() {
       <div className="tl-container">
         {desktop ? (
           <Carousel step="page" trackClassName="gap-6 items-stretch !scroll-pl-0 overscroll-x-contain" testId="social-carousel" dots={2}>
-            <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-0"><SocialPanel /></div>
-            <div className="w-full shrink-0 snap-start snap-always" data-testid="social-slide-1"><Deals /></div>
+            <div className="w-full shrink-0 snap-start snap-always md:h-[660px]" data-testid="social-slide-0"><SocialPanel /></div>
+            <div className="w-full shrink-0 snap-start snap-always md:h-[660px]" data-testid="social-slide-1"><Deals /></div>
           </Carousel>
         ) : (
           <div className="flex flex-col gap-4" data-testid="social-stack">

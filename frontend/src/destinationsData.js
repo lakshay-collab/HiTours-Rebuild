@@ -36,7 +36,6 @@ export const destinations = {
     { name: 'Vietnam', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
     { name: 'Japan', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') },
     { name: 'Indonesia', src: img('61b5ymnc76Gat5QEm4R7Uv', '236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png') },
-    { name: 'India', src: img('1OoLHyQc0wvo7b7ky6kOYi', '14f2e12522f80eccc465118fb92f7486/Indien_Ladakh_Landschaft_TCG.png') },
     { name: 'China', src: img('3FwBvWPMIiVGThJdqClYD1', 'bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png') },
     { name: 'Cambodia', src: img('3zbplvZU8SZYLZqdmaPsZv', 'c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg') },
     { name: 'Malaysia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
