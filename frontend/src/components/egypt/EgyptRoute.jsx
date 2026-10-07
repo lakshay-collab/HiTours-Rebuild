@@ -62,8 +62,7 @@ function StopText({ s }) {
   const hidden = s.bullets.length - PREVIEW_BULLETS;
   return (
     <div className="md:w-[346px] shrink-0" data-testid="eg-route-stop">
-      <span className="inline-flex items-center h-6 px-2.5 rounded-full bg-[#308BB6] eg-label-md text-white whitespace-nowrap" data-testid="eg-route-daylabel">{s.name}</span>
-      <h3 className="mt-2 eg-title-lg text-[#002131]" data-testid="eg-route-stop-name">{s.title}</h3>
+      <h3 className="eg-title-lg text-[#002131]" data-testid="eg-route-stop-name">{s.title}</h3>
       {s.subtitle && <RouteLine cities={s.subtitle.split(' → ')} className="mt-2" testId="eg-route-subtitle" />}
       <StopCarousel images={s.images} name={s.title} className="md:hidden mt-4" />
       <ul className="mt-4 flex flex-col gap-2.5" data-testid="eg-route-bullets">
