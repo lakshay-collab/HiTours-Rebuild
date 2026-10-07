@@ -60,6 +60,7 @@ const build = (p) => {
     };
   });
   const incl = `Included: ${p.inclusions.join('; ')}.`;
+  const flights = p.inclusions.some((x) => /flight/i.test(x)) ? Math.max(1, p.itinerary.flatMap((d) => d.bullets).filter((b) => /^(flight|fly|return flight|onward flight|domestic flight)/i.test(b.trim())).length) : 0;
   const excl = `Not included: ${p.exclusions.join('; ')}.`;
   return {
     detail: {
@@ -71,7 +72,7 @@ const build = (p) => {
       stats: { days: prod.days, cities: prod.cities, hotels: prod.hotels, activities: prod.activities, transfers: prod.transfers }, gallery: p.gallery,
       services: [
         [`${prod.hotels} hotel${prod.hotels === 1 ? '' : 's'}`, 'Accommodation'], [`${prod.activities} activities`, 'Activities'], [`${prod.transfers} transfers`, 'Transport'], [`${prod.meals} meals`, 'Meals'],
-        ['24/7 support', '24/7 Support'], [p.inclusions.some((x) => /flight/i.test(x)) ? 'Domestic flights' : 'Entrance fees', 'Customise', 'Included as listed']
+        ...(flights ? [[`${flights} flight${flights === 1 ? '' : 's'}`, 'Flights'], ['24/7 support', '24/7 Support']] : [['24/7 support', '24/7 Support'], ['Customisation', 'Customise', 'Expert customisation']])
       ],
       expert: { ...EXPERT, quote: p.summary, quoteMore: `${p.days} days / ${p.nights} nights from ${fmt(p.price)} per person. ${incl}` }
     },
