@@ -84,6 +84,11 @@ const stops = [
     name: 'Venice',
     dayLabel: 'Day 1–3',
     images: veniceStopImages,
+    dayImages: {
+      1: [HERO(veniceHero), A('c26oghglxak7h94gua0nxcraxs4w_free-photo-of-view-of-tourists-and-a-man-on-a-gondola-on-cana.jpeg'), A('92bo5ko8og2pvbjt3x138wyom0zn_take-a-picture-on-our.jpg')],
+      2: [A(shopping), A('92bo5ko8og2pvbjt3x138wyom0zn_take-a-picture-on-our.jpg'), HERO(veniceHero)],
+      3: [A(gondola), A(islands), HERO(burano)]
+    },
     bullets: [
       `${DAY_MARK}Day 1 · Welcome to the Floating City`,
       'Land at Venice airport and enjoy a comfortable private sedan transfer to your hotel',
@@ -106,9 +111,9 @@ const stops = [
       images: veniceHotelImages
     },
     activities: [
-      { name: 'Grand Canal gondola ride', optional: false, image: A(gondola), description: "Drift through Venice's iconic waterway on a traditional gondola, passing the Peggy Guggenheim Collection, La Fenice theatre, Saint Mark's Basin and San Giorgio Island." },
-      { name: 'Murano, Burano & Torcello island boat tour', optional: false, image: A(islands), description: "A full-day shared boat tour to three magical islands — Murano's glass-making heritage, Burano's famously colourful houses and lace museum, and Torcello's ancient Venetian roots." },
-      { name: 'Noventa di Piave Designer Outlet', optional: false, image: A(shopping), description: 'A premium open-air shopping village with over 150 luxury boutiques offering fashion, accessories and homeware at discounts of up to 70% off retail.' }
+      { name: 'Grand Canal gondola ride', day: 3, optional: false, image: A(gondola), description: "Drift through Venice's iconic waterway on a traditional gondola, passing the Peggy Guggenheim Collection, La Fenice theatre, Saint Mark's Basin and San Giorgio Island." },
+      { name: 'Murano, Burano & Torcello island boat tour', day: 3, optional: false, image: A(islands), description: "A full-day shared boat tour to three magical islands — Murano's glass-making heritage, Burano's famously colourful houses and lace museum, and Torcello's ancient Venetian roots." },
+      { name: 'Noventa di Piave Designer Outlet', day: 2, optional: false, image: A(shopping), description: 'A premium open-air shopping village with over 150 luxury boutiques offering fashion, accessories and homeware at discounts of up to 70% off retail.' }
     ]
   },
   {
@@ -116,6 +121,13 @@ const stops = [
     name: 'Vienna',
     dayLabel: 'Day 4–8',
     images: viennaStopImages,
+    dayImages: {
+      4: [A(museum), A('6iqlthcwwmz2jmv44r8mknj2a2jo_Strauss_Monument.jpg'), A(hopon)],
+      5: [A(hopon), A('6iqlthcwwmz2jmv44r8mknj2a2jo_Strauss_Monument.jpg'), A('eb9as0l1vzrhv8ye99npz5v2wkg9_Sigmund_Freud_Museum.jpg'), A(museum)],
+      6: [A(schonbrunn), HERO(schonbrunn)],
+      7: [A(bratislava), A('vbpytqgskf615bvzw5gzuqffosnh_1582612544_Bratislava1_kl.jpg'), HERO(bratislava)],
+      8: [HERO(schonbrunn), A(museum)]
+    },
     bullets: [
       `${DAY_MARK}Day 4 · Scenic Journey to the City of Music`,
       'Breakfast and check-out from your Venice hotel',
@@ -145,9 +157,9 @@ const stops = [
       images: viennaHotelImages
     },
     activities: [
-      { name: 'Vienna hop-on hop-off bus tour (24-hour)', optional: false, image: A(hopon), description: "A flexible 24-hour sightseeing pass covering Vienna's most iconic landmarks — State Opera, Hofburg Palace, Burgtheater, Freud Museum, Votiv Church, Strauss Monument and the Kunsthistorisches Museum." },
-      { name: 'Schönbrunn Palace & Gardens skip-the-line tour', optional: false, image: A(schonbrunn), description: "Walk straight past the queues into Vienna's grandest imperial palace. Explore lavish interiors including the Grand Gallery and Emperor's Apartments, then wander stunning gardens with fountains and Roman ruins." },
-      { name: 'Bratislava day trip (bus & boat)', optional: false, image: A(bratislava), description: "A cross-border adventure to Slovakia's capital — travel by bus along the Danube, explore Bratislava's historic Old Town and landmarks, then cruise back to Vienna by boat with stunning river views." }
+      { name: 'Vienna hop-on hop-off bus tour (24-hour)', day: 5, optional: false, image: A(hopon), description: "A flexible 24-hour sightseeing pass covering Vienna's most iconic landmarks — State Opera, Hofburg Palace, Burgtheater, Freud Museum, Votiv Church, Strauss Monument and the Kunsthistorisches Museum." },
+      { name: 'Schönbrunn Palace & Gardens skip-the-line tour', day: 6, optional: false, image: A(schonbrunn), description: "Walk straight past the queues into Vienna's grandest imperial palace. Explore lavish interiors including the Grand Gallery and Emperor's Apartments, then wander stunning gardens with fountains and Roman ruins." },
+      { name: 'Bratislava day trip (bus & boat)', day: 7, optional: false, image: A(bratislava), description: "A cross-border adventure to Slovakia's capital — travel by bus along the Danube, explore Bratislava's historic Old Town and landmarks, then cruise back to Vienna by boat with stunning river views." }
     ]
   }
 ];

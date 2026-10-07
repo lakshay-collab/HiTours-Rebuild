@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import EgyptRoute, { RouteLine, Lightbox } from '../components/egypt/EgyptRoute';
+import EgyptRoute, { RouteLine, Lightbox, toDays } from '../components/egypt/EgyptRoute';
 import EgyptPlanner from '../components/egypt/EgyptPlanner';
 import EgyptProductCard from '../components/egypt/EgyptProductCard';
 import { ScrollTop } from '../components/egypt/EgyptHero';
@@ -77,6 +77,7 @@ import { thailandBySlug } from '../tours/thailandToursData';
 import { planner as maldivesPlanner, reviews as maldivesReviews } from '../maldivesListingData';
 import { maldivesBySlug } from '../tours/maldivesToursData';
 import { veniceViennaBySlug } from '../tours/veniceViennaData';
+import { icelandGlaciersBySlug } from '../tours/icelandGlaciersData';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
@@ -170,7 +171,8 @@ const BY_SLUG = {
   ...swedenBySlug,
   ...thailandBySlug,
   ...maldivesBySlug,
-  ...veniceViennaBySlug
+  ...veniceViennaBySlug,
+  ...icelandGlaciersBySlug
 };
 
 const stop = (e) => e.preventDefault();
@@ -334,6 +336,7 @@ const ExpertsCard = ({ testId = 'eg-detail-experts' }) => (
 
 function Glance({ open, setOpen, glance, stops }) {
   const [more, setMore] = useState(false);
+  const dayPics = useMemo(() => toDays(stops), [stops]);
   return (
     <section className="eg-container flex flex-col gap-6 scroll-mt-4" id="summary" data-testid="eg-detail-glance">
       <h2 className="eg-display-sm text-[#002131]">{glance.h2}</h2>
@@ -347,7 +350,7 @@ function Glance({ open, setOpen, glance, stops }) {
             {glance.days.map((d, i) => (
               <div key={d.title} className="py-5 flex flex-col gap-4" data-testid="eg-glance-day">
                 <div className="flex gap-4">
-                  <img src={stops[Math.min(i, stops.length - 1)].images[0]} alt={stops[Math.min(i, stops.length - 1)].name} className="w-20 h-20 rounded-xl object-cover shrink-0" loading="lazy" data-testid="eg-glance-photo" />
+                  <img src={dayPics[Math.min(i, dayPics.length - 1)].images[0]} alt={dayPics[Math.min(i, dayPics.length - 1)].title} className="w-20 h-20 rounded-xl object-cover shrink-0" loading="lazy" data-testid="eg-glance-photo" />
                   <div className="min-w-0">
                     <span className="inline-flex items-center h-6 px-2 rounded-full bg-[#308BB6] eg-label-md text-white">{d.title.split(': ')[0]}</span>
                     <h3 className="mt-1 eg-title-md text-[#002131]">{d.title.split(': ')[1] || d.title}</h3>
@@ -378,7 +381,7 @@ function Glance({ open, setOpen, glance, stops }) {
                     <td className="py-5 pr-4"><span className="inline-flex items-center justify-center min-w-[64px] h-8 px-2 rounded-full bg-[#308BB6] eg-label-lg text-white whitespace-nowrap">{day.replace('Day ', '')}</span></td>
                     <td className="py-5 pr-6">
                       <div className="flex gap-4">
-                        <img src={stops[Math.min(i, stops.length - 1)].images[0]} alt={stops[Math.min(i, stops.length - 1)].name} className="w-20 h-20 rounded-xl object-cover shrink-0" loading="lazy" data-testid="eg-glance-photo" />
+                        <img src={dayPics[Math.min(i, dayPics.length - 1)].images[0]} alt={dayPics[Math.min(i, dayPics.length - 1)].title} className="w-20 h-20 rounded-xl object-cover shrink-0" loading="lazy" data-testid="eg-glance-photo" />
                         <div className="min-w-0"><h3 className="eg-title-md text-[#002131]">{rest || d.title}</h3><p className="mt-1 eg-body-md text-[#002131] whitespace-pre-line">{d.text}</p></div>
                       </div>
                     </td>

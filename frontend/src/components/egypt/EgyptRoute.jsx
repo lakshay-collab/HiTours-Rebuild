@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { route } from '../../egyptDetailData';
 import { X, Plane, Car } from 'lucide-react';
 import { ChevronLeft, ChevronRight, HotelIcon, ExploreIcon, GalleryIcon, PinIcon } from './EgyptIcons';
@@ -24,27 +24,48 @@ const BulletMark = ({ text }) => {
   return <span className={`${cls} bg-[#9ACDE5] text-[#002131]`}><span className="w-1.5 h-1.5 rounded-full bg-[#002131]" /></span>;
 };
 
-const PREVIEW_BULLETS = 4;
+const PREVIEW_BULLETS = 5;
 const DAY_MARK = '__day__';
 const isDayMark = (b) => b.startsWith(DAY_MARK);
+const dayNo = (label) => { const m = /\d+/.exec(label || ''); return m ? Number(m[0]) : null; };
+
+// Split city stops (bullets grouped by DAY_MARK headings) into one section per day.
+export function toDays(stops) {
+  const days = [];
+  stops.forEach((s, si) => {
+    const groups = [];
+    s.bullets.forEach((b) => {
+      if (isDayMark(b)) groups.push({ heading: b.slice(DAY_MARK.length), bullets: [] });
+      else if (!groups.length) groups.push({ heading: s.dayLabel, bullets: [b] });
+      else groups[groups.length - 1].bullets.push(b);
+    });
+    groups.forEach((g, j) => {
+      const [dayPart, ...rest] = g.heading.split(/\s[·|]\s/);
+      const n = dayNo(dayPart);
+      const acts = (s.activities || []).filter((a, k) => (a.day != null ? a.day === n : (groups.length === 1 || k === j)));
+      const imgs = (s.dayImages && n != null && s.dayImages[n]) || s.images.map((_, k) => s.images[(k + j) % s.images.length]);
+      days.push({
+        key: `${s.letter}-${j}`, letter: String(n ?? si + 1), name: dayPart.trim(), city: s.name, title: rest.join(' · ').trim() || s.name,
+        label: rest.length ? `${dayPart.trim()} · ${s.name}` : dayPart.trim(), subtitle: j === 0 ? s.subtitle : null, bullets: g.bullets, images: imgs,
+        accommodation: j === 0 ? s.accommodation : null, activities: acts
+      });
+    });
+  });
+  return days;
+}
 
 function StopText({ s }) {
   const [open, setOpen] = useState(false);
   const canToggle = s.bullets.length > PREVIEW_BULLETS;
   const shown = open || !canToggle ? s.bullets : s.bullets.slice(0, PREVIEW_BULLETS);
-  const hidden = s.bullets.slice(PREVIEW_BULLETS).filter((b) => !isDayMark(b)).length;
+  const hidden = s.bullets.length - PREVIEW_BULLETS;
   return (
     <div className="md:w-[346px] shrink-0" data-testid="eg-route-stop">
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-        <h3 className="eg-title-lg text-[#002131]" data-testid="eg-route-stop-name">{s.name}</h3>
-        <span className="eg-label-lg font-semibold text-[#174358] whitespace-nowrap" data-testid="eg-route-daylabel">{s.dayLabel}</span>
-      </div>
+      <span className="inline-flex items-center h-6 px-2.5 rounded-full bg-[#308BB6] eg-label-md text-white whitespace-nowrap" data-testid="eg-route-daylabel">{s.label}</span>
+      <h3 className="mt-2 eg-title-lg text-[#002131]" data-testid="eg-route-stop-name">{s.title}</h3>
       {s.subtitle && <RouteLine cities={s.subtitle.split(' → ')} className="mt-2" testId="eg-route-subtitle" />}
       <ul className="mt-4 flex flex-col gap-2.5" data-testid="eg-route-bullets">
-        {shown.map((b, i) => (isDayMark(b)
-          ? <li key={b} className={`eg-title-md font-bold text-[#002131] ${i > 0 ? 'mt-2' : ''}`} data-testid="eg-route-day-heading">{b.slice(DAY_MARK.length)}</li>
-          : <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>
-        ))}
+        {shown.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>)}
       </ul>
       {canToggle && (
         <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="mt-3 inline-flex items-center gap-1 eg-label-lg font-semibold text-[#174358] underline underline-offset-4 hover:text-[#002131] transition-colors" data-testid="eg-route-toggle">
@@ -60,7 +81,7 @@ function StopCarousel({ images, name }) {
   const [i, setI] = useState(0);
   const n = images.length;
   return (
-    <div className="relative flex-1 min-w-0 h-[220px] md:h-auto md:min-h-[268px] md:self-stretch rounded-xl overflow-hidden bg-[#EAE8E0]" data-testid="eg-stop-gallery">
+    <div className="relative shrink-0 md:flex-1 min-w-0 h-[220px] md:h-[300px] md:self-start rounded-xl overflow-hidden bg-[#EAE8E0]" data-testid="eg-stop-gallery">
       <img src={images[i]} alt={`${name} ${i + 1}`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
       <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
         <button type="button" onClick={() => setI((v) => Math.max(0, v - 1))} disabled={i === 0} className="eg-arrow pointer-events-auto disabled:opacity-40" aria-label="Back" data-testid="eg-stop-prev"><ChevronLeft size={24} /></button>
@@ -172,10 +193,12 @@ function Activities({ items }) {
 }
 
 export default function EgyptRoute({ onSummary, stops = route.stops }) {
+  const days = useMemo(() => toDays(stops), [stops]);
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
   const head = useRef(null);
   const refs = useRef([]);
+  const tabs = useRef([]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -192,6 +215,11 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    const t = tabs.current[active];
+    if (t && t.scrollIntoView) t.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+  }, [active]);
+
   const goTo = (i) => {
     const el = refs.current[i];
     if (el) { setActive(i); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - HEADER, behavior: 'smooth' }); }
@@ -206,21 +234,21 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
         </div>
         {!stuck && <p className="eg-body-md text-[#174358] pb-3" data-testid="eg-route-sub">{route.sub}</p>}
         <div role="tablist" className="flex overflow-x-auto no-scrollbar border-b border-[#E4E3DB]" data-testid="eg-route-tabs">
-          {stops.map((st, i) => (
-            <button key={st.letter} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`relative h-14 ${i ? 'pl-3' : 'pl-1'} pr-3 flex items-center gap-2 whitespace-nowrap ${active === i ? 'text-[#002131]' : 'text-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>
-              <span className={`w-6 h-6 rounded-full border flex items-center justify-center eg-label-lg ${active === i ? 'bg-[#174358] border-[#174358] text-white' : 'bg-white border-[#C4CBD0] text-[#174358]'}`}>{st.letter}</span>
-              <span className="eg-label-lg">{st.name}</span>
+          {days.map((d, i) => (
+            <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`relative h-14 ${i ? 'pl-3' : 'pl-1'} pr-3 flex items-center gap-2 whitespace-nowrap ${active === i ? 'text-[#002131]' : 'text-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>
+              <span className={`w-6 h-6 rounded-full border flex items-center justify-center eg-label-lg ${active === i ? 'bg-[#174358] border-[#174358] text-white' : 'bg-white border-[#C4CBD0] text-[#174358]'}`}>{d.letter}</span>
+              <span className="flex flex-col items-start leading-tight"><span className="eg-label-lg">{d.name}</span><span className="text-[11px] text-[#6F777C]" data-testid={`eg-route-tab-city-${i}`}>{d.city}</span></span>
               {active === i && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[#174358]" />}
             </button>
           ))}
         </div>
       </div>
       <div className="px-4 md:px-10 pt-8 pb-7 flex flex-col divide-y divide-[#DDD9CE]">
-        {stops.map((s, i) => (
-          <section key={s.letter} ref={(el) => { refs.current[i] = el; }} id={`stop-${i}`} className="py-8 first:pt-0 last:pb-0 flex flex-col gap-8" data-testid={`eg-route-section-${i}`}>
-            <div className="flex flex-col md:flex-row md:items-stretch gap-6 md:gap-8">
+        {days.map((s, i) => (
+          <section key={s.key} ref={(el) => { refs.current[i] = el; }} id={`stop-${i}`} className="py-8 first:pt-0 last:pb-0 flex flex-col gap-8" data-testid={`eg-route-section-${i}`}>
+            <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-8">
               <StopText s={s} />
-              <StopCarousel images={s.images} name={s.name} />
+              <StopCarousel images={s.images} name={s.title} />
             </div>
             {s.accommodation && <Accommodation a={s.accommodation} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}

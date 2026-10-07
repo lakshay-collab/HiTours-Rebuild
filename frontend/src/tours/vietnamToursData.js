@@ -38,7 +38,7 @@ const build = (p) => {
     const days = range
       ? p.itinerary.filter((d) => (d.day >= range[0] && d.day <= range[1]) || (isLast && d.day > range[1] && d.day <= lastDay && !d.overnight))
       : p.itinerary.filter((d) => d.overnight === city || (city === cruiseCity && (d.overnight === 'On board' || d.title.includes(cruiseCity))));
-    const bullets = uniq(days.flatMap((d) => (days.length > 1 ? [`${DAY_MARK}Day ${d.day}`, ...d.bullets] : d.bullets)));
+    const bullets = uniq(days.flatMap((d) => (days.length > 1 ? [`${DAY_MARK}Day ${d.day} · ${d.title}`, ...d.bullets] : d.bullets)));
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,

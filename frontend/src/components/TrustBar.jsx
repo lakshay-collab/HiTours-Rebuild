@@ -35,7 +35,7 @@ const SLIDES = [
       <Group>
         <Seg icon={CalendarDays} testId="trust-slide-heritage">Established in <B>1995</B></Seg>
         <Sep />
-        <Seg><B>{YEARS}</B> years of trust</Seg>
+        <Seg testId="trust-slide-years"><span className="hidden sm:inline">Over </span><B>{YEARS}</B> years of trust</Seg>
       </Group>
     )
   },
