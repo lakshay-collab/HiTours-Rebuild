@@ -19,8 +19,8 @@ const HEADER = 120;
 const BulletMark = ({ text }) => {
   const t = text.toLowerCase();
   const cls = 'mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0';
-  if (t.includes('flight') || t.includes('departure') || t.includes('fly ') || t.includes('airport')) return <span className={`${cls} bg-[#308BB6] text-white`}><Plane size={14} /></span>;
-  if (t.includes('transfer')) return <span className={`${cls} bg-[#FB7F26] text-white`}><Car size={14} /></span>;
+  if (/transfer|drive to|driven|pick-?up|drop-?off/.test(t)) return <span className={`${cls} bg-[#FB7F26] text-white`}><Car size={14} /></span>;
+  if (/\bflights?\b|\bfly\b|\bflying\b/.test(t)) return <span className={`${cls} bg-[#308BB6] text-white`}><Plane size={14} /></span>;
   return <span className={`${cls} bg-[#9ACDE5] text-[#002131]`}><span className="w-1.5 h-1.5 rounded-full bg-[#002131]" /></span>;
 };
 
@@ -179,7 +179,7 @@ function Activities({ items }) {
               </div>
               <div className="p-4 flex flex-col gap-1">
                 <h5 className="eg-title-md text-[#002131]" data-testid="eg-activity-name">{a.name}</h5>
-                <ActivityDesc text={a.description} />
+                {a.description && <ActivityDesc text={a.description} />}
               </div>
             </div>
           ))}

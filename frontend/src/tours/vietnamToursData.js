@@ -6,6 +6,12 @@ export const DAY_MARK = '__day__';
 const uniq = (a) => [...new Set(a)];
 const countMeals = (it) => it.reduce((n, d) => n + (d.meals ? d.meals.split(',').length : 0), 0);
 const fmt = (n) => `₹${n.toLocaleString('en-IN')}`;
+const LOGISTICS = /transfer|flight|\bfly\b|check[ -]?in|check[ -]?out|breakfast|disembark|embark|board the|set sail|suggested|optional|own cost|free time|at leisure|drop the bags|settle in|all meals|lunch and dinner|lunch or dinner|overnight|arrival|departure|drive to|driven|on the way|welcome/i;
+const isExperience = (b) => !LOGISTICS.test(b) && !/^(you could|alternatively|if you|feel free|you will be)/i.test(b) && b.length > 12;
+const LEAD = /^(in the (morning|afternoon|evening),?\s+|en route,?\s+|later,?\s+|next,?\s+|then,?\s+|afterwards?,?\s+|you will also\s+|once there,?\s+|today,?\s+)/i;
+const actName = (b) => { let n = b.replace(LEAD, '').split(/:|\s\(|, then |, the |, where /)[0].trim(); n = n.charAt(0).toUpperCase() + n.slice(1); return n.length > 64 ? `${n.slice(0, 60).replace(/\s\S*$/, '')}…` : n; };
+const actDesc = (b) => { const i = b.indexOf(':'); if (i > 0 && i < 70) { const r = b.slice(i + 1).trim(); return r.charAt(0).toUpperCase() + r.slice(1); } return actName(b).endsWith('…') || actName(b) !== b ? b : ''; };
+const actImage = (p, b, fallback) => { const hit = (p.actImg || []).find(([re]) => re.test(b)); return hit ? hit[1] : fallback; };
 
 // Generic adapters – ctx: { cityImages, expert, ctaHref, crumbs, base, cruiseCity }
 export const createAdapters = (ctx) => {
@@ -32,7 +38,7 @@ const build = (p) => {
   const stayFor = (city) => (p.stays.find((s) => s[0] === city) || [])[2] || '—';
   const dayRange = (label) => { const m = /(\d+)(?:\s*[–-]\s*(\d+))?/.exec(label || ''); return m ? [Number(m[1]), Number(m[2] || m[1])] : null; };
   const lastDay = Math.max(...p.itinerary.map((d) => d.day));
-  const stops = p.stays.map(([city, dayLabel, hotel], i) => {
+  const stops = p.stays.map(([city, dayLabel, hotel, hotelImages], i) => {
     const range = dayRange(dayLabel);
     const isLast = i === p.stays.length - 1;
     const days = range
@@ -42,8 +48,9 @@ const build = (p) => {
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,
-      activities: days.slice(0, 3).map((d, k) => ({ name: d.title, description: d.bullets.join('. ').replace(/\.\./g, '.'), optional: false, image: images[k % images.length] })),
-      accommodation: { name: hotel, description: `${dayLabel} · as per the package accommodation list`, images: images.slice(0, 3) }
+      dayImages: p.actImg ? Object.fromEntries(days.map((d) => [d.day, uniq([...d.bullets.filter(isExperience).map((b) => actImage(p, b, null)).filter(Boolean), ...images])])) : undefined,
+      activities: days.flatMap((d) => d.bullets.filter(isExperience).map((b, k) => ({ day: d.day, name: actName(b), description: actDesc(b), optional: false, image: actImage(p, b, images[(d.day + k) % images.length]) }))),
+      accommodation: { name: hotel, description: `${dayLabel} · as per the package accommodation list`, images: hotelImages || images.slice(0, 3) }
     };
   });
   const incl = `Included: ${p.inclusions.join('; ')}.`;
@@ -57,7 +64,7 @@ const build = (p) => {
       tag: p.tag, price: p.price, routeLabel: 'This holiday takes you to', routeCities: cities, tags: uniq([p.tag, ...p.styles]),
       stats: { days: prod.days, cities: prod.cities, hotels: prod.hotels, activities: prod.activities, transfers: prod.transfers }, gallery: p.gallery,
       services: [
-        [`${prod.hotels} hotels`, 'Accommodation'], [`${prod.activities} activities`, 'Activities'], [`${prod.transfers} transfers`, 'Transport'], [`${prod.meals} meals`, 'Meals'],
+        [`${prod.hotels} hotel${prod.hotels === 1 ? '' : 's'}`, 'Accommodation'], [`${prod.activities} activities`, 'Activities'], [`${prod.transfers} transfers`, 'Transport'], [`${prod.meals} meals`, 'Meals'],
         ['24/7 support', '24/7 Support'], [p.inclusions.some((x) => /flight/i.test(x)) ? 'Domestic flights' : 'Entrance fees', 'Customise', 'Included as listed']
       ],
       expert: { ...EXPERT, quote: p.summary, quoteMore: `${p.days} days / ${p.nights} nights from ${fmt(p.price)} per person. ${incl}` }
