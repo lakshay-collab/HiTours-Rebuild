@@ -38,11 +38,11 @@ const build = (p) => {
     const days = range
       ? p.itinerary.filter((d) => (d.day >= range[0] && d.day <= range[1]) || (isLast && d.day > range[1] && d.day <= lastDay && !d.overnight))
       : p.itinerary.filter((d) => d.overnight === city || (city === cruiseCity && (d.overnight === 'On board' || d.title.includes(cruiseCity))));
-    const bullets = uniq(days.flatMap((d) => (days.length > 1 ? [`${DAY_MARK}Day ${d.day} · ${d.title}`, ...d.bullets] : d.bullets)));
+    const bullets = uniq(days.flatMap((d) => [`${DAY_MARK}Day ${d.day} · ${d.title}`, ...d.bullets]));
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,
-      activities: days.slice(0, 3).map((d, k) => ({ name: d.title, description: d.bullets.join(' '), optional: false, image: images[k % images.length] })),
+      activities: days.slice(0, 3).map((d, k) => ({ name: d.title, description: d.bullets.join('. ').replace(/\.\./g, '.'), optional: false, image: images[k % images.length] })),
       accommodation: { name: hotel, description: `${dayLabel} · as per the package accommodation list`, images: images.slice(0, 3) }
     };
   });

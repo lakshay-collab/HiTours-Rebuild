@@ -1,7 +1,5 @@
 // Sri Lanka destination landing – same template/data shape as vietnamListingData (destination = Sri Lanka, continent = Asia).
-// The existing Emerald Isle Explorer package (asiaListingData / srilankaData.js) is reused as-is – not duplicated.
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
-import { products as asiaProducts } from './asiaListingData';
 import { srilankaProducts } from './tours/srilankaToursData';
 
 const CT = 'https://images.ctfassets.net/bth3mlrehms2';
@@ -63,9 +61,7 @@ export const tours = {
   readLess: 'Read less'
 };
 
-// Existing approved package – referenced from the Asia catalogue (same slug/href/data); only a `styles` field is added for the holidays filter.
-const emeraldIsle = asiaProducts.find((p) => p.slug === 'emerald-isle-explorer-sri-lanka');
-export const products = [{ ...emeraldIsle, styles: ['Culture', 'Family', 'Honeymoon'] }, ...srilankaProducts];
+export const products = srilankaProducts;
 
 export const planner = { ...egyptPlanner, h3: 'Plan your Sri Lanka trip', bg: ct('52ZxIJbx0zC3QmeXtTjVpo/b109083307d8ee990f394165679c4ccc/Sri_Lanka__Ella__Neun-Bogen-Br%C3%BCcke.jpg').replace('w=1080', 'w=2000') };
 
