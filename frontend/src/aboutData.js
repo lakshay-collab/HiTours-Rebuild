@@ -1,8 +1,16 @@
-// About us page – 1:1 copy of tourlane.com/about-us with Hi Tours branding.
+// About us page content – Hi Tours.
 import { destinations } from './destinationsData';
 
 const CT = 'https://images.ctfassets.net/rc3dlxapnu6k';
 const TL = 'https://www.tourlane.com/cfa-assets/media';
+
+export const CAREERS_URL = 'https://www.linkedin.com/company/hi-tours-group/jobs/';
+
+export const pageTabs = [
+  { label: 'About Us', to: '/about' },
+  { label: 'Booking Policy', to: '/care' },
+  { label: 'Careers', href: CAREERS_URL }
+];
 
 export const hero = {
   images: [
@@ -10,82 +18,110 @@ export const hero = {
     { src: `${CT}/1vyau2tbwjkDRCv588lHTC/0ca8e1daf46dd6ace6865506ce7ce3d8/Big-Ben_London_UK.png?w=800&q=60&fm=webp`, alt: 'Low-angle view of Big Ben in London against a partly cloudy sky' }
   ],
   h1: 'When travel means the world to you',
-  sub: 'Personalized travel. Easy planning. Transparent prices. Always-on support.'
+  sub: 'Personalised holidays, honest prices and a specialist who stays with you from the first call to the flight home.',
+  intro: 'Hi Tours is an Indian travel company planning tailor-made holidays across Asia, Africa and Europe since 2016. Every trip is built around you — your dates, your pace, your budget — by a holiday specialist who knows the destination first-hand, and backed by local partners we have worked with for years.',
+  stats: [
+    { value: '1,00,000+', label: 'travellers planned for' },
+    { value: '4.8 / 5', label: 'average review rating' },
+    { value: '40+', label: 'destinations across 3 continents' },
+    { value: 'ISO 45001', label: 'certified safety standards' }
+  ]
 };
 
-export const welcome = {
-  h2: 'Welcome to Hi Tours',
+export const ceo = {
+  eyebrow: 'A note from our CEO',
+  name: 'Hunar Syal',
+  role: 'Chief Executive Officer, Hi Tours',
+  image: '/about/ceo.webp',
+  initials: 'HS',
+  signature: 'Hunar Syal',
+  headline: 'Indian travellers have changed. So have we.',
   paragraphs: [
-    'Born in India, now planning trips for travellers who want to experience it like a local. Since 2016, we’ve crafted custom, multi-stop trips all across India that fit your budget and your travel style.',
-    'What makes us different? We bring our Indian roots and local know-how to to every step. By pairing you with an English-speaking, native Indian expert and focusing on the essential needs of our travellers, you get a seamless, authentic experience from start to finish.',
-    'Trusted by over 100,000 global travelers, our goal at Hi Tours is simple: Tailored, exclusive journeys and extraordinary experiences that fit your budget.'
+    'The Indian traveller of today is smarter, better informed and far more aware than ever before. You compare, you research, you ask AI for ideas before you ever speak to an agent. And yet, underneath all of that, what you want has not changed at all: a happy holiday. Whether it is a honeymoon you have dreamt of for years or a family getaway that has to work for grandparents and toddlers alike, the goal is the same — to come home with memories you will keep for a lifetime.',
+    'That is why we have built Hi Tours around specialists who are enabled by AI, not replaced by it. Technology helps our team move faster, see more options and personalise every itinerary down to the last detail. But it is our people — and the local connections and partnerships we have nurtured over years on the ground — who make sure the hotel is right, the guide is wonderful and someone answers the phone when it matters.',
+    'A safe, happy holiday is the only outcome we care about. Thank you for trusting us with yours.'
   ]
 };
 
 export const recognized = {
-  label: 'Recognized by:',
+  label: 'Recognised by',
   press: [
     { src: `${TL}/cnbc.svg`, alt: 'CNBC' },
     { src: `${TL}/forbes.svg`, alt: 'Forbes' },
     { src: `${TL}/lonely-planet.svg`, alt: 'Lonely Planet' }
   ],
   badges: [
-    { src: `${TL}/bbb-a-rating.svg`, alt: 'Better Business Bureau A+ Rating' },
-    { src: `${TL}/asta.png`, alt: 'American Society of Travel Advisors' }
+    { src: '/badges/iso45001-t.png', alt: 'ISO 45001 certified' },
+    { src: '/badges/travelife-t.png', alt: 'Travelife certified' },
+    { src: '/badges/cert3-t.png', alt: 'IATA accredited' }
   ]
 };
 
 export const why = {
-  h3: 'Why Choose Hi Tours?',
+  h2: 'Why choose Hi Tours?',
   items: [
-    { image: '/about/planning.webp', alt: 'Hi Tours team planning a trip together', h4: 'Easy planning with transparent prices', text: 'Get a personalized travel itinerary for free in minutes. Then, work with one of our travel experts to customize it to your preferences. Creating your perfect getaway is completely free — there are no hidden costs. When you book, you get a simple, all-in-one price. What you see is what you pay.' },
-    { image: '/about/expertise.webp', alt: 'Travellers exploring with a local guide', h4: 'Local expertise from private VIP guides', text: 'In a one-on-one consultation, we pair you with an English-speaking, native Indian travel expert and customize your itinerary even more. Our experts are locals to where you\'re going, providing in-depth knowledge on every destination.' },
-    { image: '/about/support.webp', alt: 'Hi Tours support advisor on a call', h4: 'Always-on support', text: 'Trusted by over 150,000 global travelers, get personalized support from real people before, during, and after your trip. Our services are designed specifically for our travellers, meaning we understand your unique needs to ensure an exceptional journey. We’re proud to consistently deliver ', link: { label: 'outstanding customer satisfaction', href: 'https://www.trustpilot.com/review/www.tourlane.de' }, textAfter: ', with travelers rating our support among the best in the industry.' }
+    { image: '/about/planning.webp', alt: 'Hi Tours team planning a trip together', title: 'Easy planning with transparent prices', text: 'Get a personalised itinerary for free in minutes, then refine it with your specialist until it is exactly right. There are no hidden costs — when you book, you get one simple, all-in price. What you see is what you pay.' },
+    { image: '/about/expertise.webp', alt: 'Travellers exploring with a local guide', title: 'Local expertise, private guides', text: 'Your specialist has been where you are going. Together with our hand-picked local partners and private guides, they bring in-depth knowledge of every destination so you see the real place, not just the postcard.' },
+    { image: '/about/support.webp', alt: 'Hi Tours support advisor on a call', title: 'Always-on support', text: 'Real people, before, during and after your trip. One dedicated specialist knows your booking inside out and is a phone call or WhatsApp message away — wherever you are in the world.' }
   ]
 };
 
 export const steps = {
-  h2: 'Custom travel packages don\'t have to be complicated',
+  h2: 'Custom travel packages don’t have to be complicated',
   items: [
-    { n: 1, title: 'Dream it', text: 'Give us a few details like destination, travel preferences, and budget to receive a free personalized travel itinerary in minutes.' },
-    { n: 2, title: 'Customize it', text: 'In a one-on-one consultation, we pair you with an English-speaking, native Indian travel expert to customize your trip even more, making it unique to you and providing in-depth knowledge on every destination.' },
-    { n: 3, title: 'Book it', text: 'Or better yet, we\'ll book it for you. Every detail is covered by us and you\'ll have dedicated guides with you every step of the way, so you can focus on the fun. No action needed — just enjoy the ride.' }
+    { n: 1, title: 'Dream it', text: 'Tell us your destination, dates, travel style and budget. You receive a free personalised itinerary in minutes.' },
+    { n: 2, title: 'Customise it', text: 'In a one-on-one call, your holiday specialist fine-tunes every detail — hotels, pace, experiences — until it feels like yours.' },
+    { n: 3, title: 'Book it', text: 'We book everything and stay with you throughout. Dedicated guides and 24/7 support mean you only have to enjoy the ride.' }
   ]
 };
 
 export const cta = { h2: 'Start planning your own Hi Tours' };
 
-const pick = (region, name) => destinations[region].find((d) => d.name === name);
-export const best = {
-  h2: 'Experience the best of Asia & Africa',
-  text: 'Handpicked, handcrafted, and unforgettable. Whether you dream of sunrise at the pyramids of Egypt, island-hopping in Thailand, a leopard safari in Sri Lanka, or diving into the historic charm of Vietnam and Japan, our destination experts design personalized travel itineraries just for you.',
-  items: [
-    { ...pick('Africa', 'Egypt'), href: '/afrika/aegypten' },
-    { ...pick('Asia', 'Thailand'), href: '/asien/thailand' },
-    { ...pick('Asia', 'Sri Lanka'), href: '/asien/sri-lanka' },
-    { ...pick('Asia', 'Maldives'), href: '/asien' },
-    { ...pick('Asia', 'Vietnam'), href: '/asien/vietnam' },
-    { ...pick('Asia', 'Japan'), href: '/asien' },
-    { ...pick('Asia', 'Indonesia'), href: '/asien' },
-    { ...pick('Africa', 'South Africa'), href: '/asien' },
-    { ...pick('Africa', 'Kenya'), href: '/asien' }
-  ]
+const find = (name) => Object.values(destinations).flat().find((d) => d.name === name);
+const TOP10 = [
+  ['Vietnam', '/asien/vietnam'], ['Thailand', '/asien/thailand'], ['Sri Lanka', '/asien/sri-lanka'], ['Egypt', '/afrika/aegypten'], ['Japan', '/asien/japan'],
+  ['Maldives', '/asien/maldives'], ['Bhutan', '/asien/bhutan'], ['Kazakhstan', '/asien/kazakhstan'], ['Italy', '/europa/italy'], ['Greece', '/europa/greece']
+];
+export const top10 = {
+  h2: 'Our top 10 countries',
+  text: 'The destinations our travellers book again and again — each one planned by a specialist who knows it first-hand.',
+  items: TOP10.map(([name, href], i) => ({ ...find(name), href, rank: i + 1 }))
+};
+
+export const guarantee = {
+  eyebrow: 'Our booking guarantee',
+  h2: 'Book worry-free, travel with certified peace of mind',
+  text: 'Hi Tours is one of the few travel brands in India with ISO 45001 certification — an internationally audited standard for health and safety. Every ground partner, transport provider and hotel we work with is held to it. Pair that with flexible rebooking and cancellation under Hi Tours Care, and you can book with confidence.',
+  points: [
+    'ISO 45001 certified safety and health standards',
+    'Flexible rebooking and cancellation with Hi Tours Care',
+    '24/7 crisis management and emergency assistance while you travel'
+  ],
+  badge: '/badges/iso45001.png',
+  button: 'Read our booking policy',
+  href: '/care'
+};
+
+export const careers = {
+  eyebrow: 'Careers',
+  h2: 'Help us plan the happiest holidays in India',
+  text: 'We are a team of travel specialists, planners and storytellers who love what we do. If you know a destination inside out, or simply love making someone’s trip unforgettable, we would like to meet you.',
+  button: 'View open roles',
+  href: CAREERS_URL,
+  image: '/about/planning.webp'
 };
 
 export const faq = {
   h2: 'Frequently asked questions',
   items: [
-    { q: 'What is Hi Tours?', a: ['Hi Tours is an Indian travel company that specializes in crafting personalized, tailor-made travel experiences. Since 2016, we have been working with local travel experts to design custom trips, covering everything from flights and accommodations to unique activities, ensuring your journey is just as seamless as it is memorable.', 'With over 100,000 trips booked, we’ve built a strong reputation for delivering exceptional travel experiences. Our commitment to customer satisfaction is reflected in our 4.4-star rating on Trustpilot, as well as the numerous awards we\'ve received for our service excellence.'] },
-    { q: 'How does Hi Tours work?', a: ['Hi Tours combines the power of technology with one-on-one services to turn your dream getaway into a reality. Start by giving us a few details like destination, travel preferences, and budget to receive a free personalized travel itinerary in minutes. Then, in a one-on-one consultation, we pair you with an English-speaking, native Indian travel expert to customize your itinerary even more, making it unique to you and providing in-depth knowledge on every destination.', 'Once your trip is exactly how you want it, we handle all the bookings. You\'ll get personalized support from your dedicated guides before, during, and after your trip. And since our services are designed specifically for our travellers, we understand your unique needs to ensure an exceptional journey.'] },
-    { q: 'Is Hi Tours only for luxury travel?', a: ['No — we create trips for all types of travelers and budgets! Our goal is to design a trip that matches your preferences, travel style, and budget, whether that means 5-star hotels or hidden gems off the beaten path.'] },
-    { q: 'How do I start planning a trip?', a: ['Start by filling out our trip planning form on our website to receive a free personalize travel itinerary in less than a minute. Then, we’ll pair you with a personal travel expert who will help you customize the details even further.'] },
-    { q: 'How much does a personalized trip from Hi Tours cost?', a: ['The cost of your trip depends on various factors, including the destination, duration, and type of accommodations and experiences you choose. We work with all budgets, so your personal travel expert will provide a tailored quote based on your preferences and budget.'] },
-    { q: 'How much does a personalized offer cost?', a: ['Consulting with our Hi Tours travel experts is free and without obligation, including the initial personalized itinerary for your trip.'] },
-    { q: 'Do I need to book my flights separately?', a: ['Not if you don\'t want to! We can take care of booking your flights as part of your customized itinerary. Our travel experts will ensure that everything from flights to accommodations are coordinated for your trip.'] },
-    { q: 'Can I modify or cancel my trip after booking?', a: ['We understand that plans can change, and our team is here to assist you with any modifications or cancellations. However, please note that some changes or cancellations may incur additional fees depending on the suppliers and policies in place.'] },
-    { q: 'Are the trips private or group-based?', a: ['We specialize in private trips, giving you and your family or friends the flexibility to travel on your terms. However, we can also arrange group tours if that’s what you prefer. If you can dream it, we can build it.'] },
-    { q: 'How do I contact Hi Tours for support during my trip?', a: ['Our team is available to support you throughout your entire journey. You’ll have a dedicated, personal travel expert you can reach via phone, email, or through our app for any assistance you need while traveling.'] },
-    { q: 'Can I book a private guide for my trip?', a: ['Yes, absolutely! If you’re interested in having a private guide during your trip, simply let your Hi Tours Travel Expert know. They’ll be happy to include this in your personalized itinerary and find the best guide to match your destination and interests.'] },
-    { q: 'Are you certified by the Better Business Bureau (BBB)?', a: ['Yes. Better Business Bureau (BBB) has reviewed Hi Tours, and we are recognized as a BBB-accredited business. This accreditation reflects our commitment to transparency, customer service, and trust. You can view our BBB profile and rating directly on their website for full details.'] }
+    { q: 'What is Hi Tours?', a: ['Hi Tours is an Indian travel company specialising in personalised, tailor-made holidays across Asia, Africa and Europe. Since 2016 we have worked with local partners to design custom trips covering everything from flights and hotels to unique experiences.', 'With over 1,00,000 travellers planned for and a 4.8-star average rating, we have built a reputation for holidays that simply work.'] },
+    { q: 'How does Hi Tours work?', a: ['Share a few details — destination, dates, travel style and budget — and receive a free personalised itinerary in minutes. Then your dedicated holiday specialist refines it with you one-on-one.', 'Once the trip is exactly how you want it, we handle every booking and stay with you before, during and after your journey.'] },
+    { q: 'Is Hi Tours only for luxury travel?', a: ['No — we plan for all travel styles and budgets. Whether that means 5-star resorts or boutique hideaways off the beaten path, your specialist designs around what matters to you.'] },
+    { q: 'How much does a personalised itinerary cost?', a: ['Nothing. Consulting with a Hi Tours specialist is free and without obligation, including your first personalised itinerary.'] },
+    { q: 'Do I need to book my flights separately?', a: ['Not unless you want to. We can book flights as part of your itinerary so everything — flights, hotels, transfers and experiences — is coordinated by one team.'] },
+    { q: 'Can I modify or cancel my trip after booking?', a: ['Yes. Our Booking Policy explains flexible rebooking and cancellation under Hi Tours Care. Some changes may incur supplier fees depending on timing, and your specialist will always tell you upfront.'] },
+    { q: 'Are the trips private or group-based?', a: ['We specialise in private trips for you and your family or friends, so you travel on your own terms. Small-group departures can be arranged on request.'] },
+    { q: 'How do I reach Hi Tours during my trip?', a: ['Your dedicated specialist is available by phone, WhatsApp or email throughout your journey, backed by 24/7 emergency assistance.'] },
+    { q: 'What does ISO 45001 certification mean for me?', a: ['It means our safety and health processes — from vetted ground handlers to transport partners and crisis management — are audited against an international standard, not just promised.'] }
   ]
 };

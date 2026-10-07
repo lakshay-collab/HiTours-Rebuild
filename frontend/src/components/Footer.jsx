@@ -3,11 +3,14 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Youtube, ChevronDown, X } from 'lucide-react';
 import Logo from './Logo';
 import { footer, trust } from '../mock';
+import { CAREERS_URL } from '../aboutData';
 import { BoxStars } from './Rating';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 
 const FOOTER_HREFS = {
   'About us': '/about',
+  'About Us': '/about',
+  'Booking Policy': '/care',
   'Vietnam': '/asien/vietnam',
   'Sri Lanka': '/asien/sri-lanka',
   'Thailand': '/asien/thailand',
@@ -127,6 +130,8 @@ export default function Footer() {
                 {col.links.map((l) => (
                   <li key={l}>{FOOTER_HREFS[l]
                     ? <Link to={FOOTER_HREFS[l]} className="t-body-md text-onsurface hover:underline text-left" data-testid={`footer-link-${l.toLowerCase().replace(/\s/g, '-')}`}>{l}</Link>
+                    : l === 'Careers'
+                      ? <a href={CAREERS_URL} target="_blank" rel="noreferrer" className="t-body-md text-onsurface hover:underline text-left" data-testid="footer-link-careers">{l}</a>
                     : l === 'Reviews'
                       ? <button onClick={() => goToSection('moments')} className="t-body-md text-onsurface hover:underline text-left" data-testid="footer-link-reviews">{l}</button>
                       : l === 'Travel with us' || l === 'More destinations'

@@ -543,3 +543,12 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - Hidden "Themes" nav: removed from `Header.jsx` MENUS and `MobileDrawer.jsx` SECTIONS. Theme pages/routes left intact (easy restore).
 - "Travel with us on social" section (`Ambassadors.jsx` + `PromoBanners.jsx`): reduced heading top padding (pt-8/md:10 → pt-5/md:6, socials pt/pb 4/md5); promo min-heights 300/400 → 256/340; desktop carousel slides fixed `md:h-[660px]` so social panel + both promo banners shrink proportionally. Section height 887px → 744px.
 - Removed India as a travel destination (user: "not featuring India as a country"): deleted from `destinationsData.js` Asia tab (feeds homepage grid + header/mobile menus), and `asiaListingData.js` (country card + "India tour with tigers…" package). Footer India market/locale selector (flag) kept — it's the operating country, not a destination.
+
+## 2026-06 – About Us page rebuild
+- Single H1 in hero; "Welcome to Hi Tours" H2 removed (now an intro paragraph + stats row). Each section has exactly one H2.
+- Page tabs (About Us | Booking Policy → /care | Careers → external) shown on About and Care heroes (`components/PageTabs.jsx`, data in `aboutData.js` `pageTabs`/`CAREERS_URL`).
+- Featured CEO note (Hunar Syal, photo `/public/about/ceo.webp`, styled signature via 'Mr Dafoe' font `.eg-signature`) placed directly after the intro.
+- "Why choose" now zigzag (alternating image/text). "Best of Asia & Africa" replaced by "Our top 10 countries" (Vietnam, Thailand, Sri Lanka, Egypt, Japan, Maldives, Bhutan, Kazakhstan, Italy, Greece).
+- New sections: Booking guarantee/ISO 45001 (`#guarantee`, links to /care), Careers (`#careers`, external), FAQ retained/trimmed.
+- Footer "Hi Tours" column now: About Us, Booking Policy, Careers (Travel with us / Reviews / Press hidden).
+- CAREERS_URL currently points to the Hi Tours LinkedIn jobs page – swap when a real careers URL is supplied.

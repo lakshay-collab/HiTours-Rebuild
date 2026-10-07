@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Check, ShieldCheck } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import PageTabs from '../components/PageTabs';
 import { hero, intro, graphic, assure, flex, iso, cta } from '../careData';
 
 const Bullet = ({ children }) => <li className="flex items-start gap-3 eg-body-lg text-[#002131]"><span className="mt-1 w-5 h-5 rounded-full bg-[#308BB6] text-white flex items-center justify-center shrink-0"><Check size={12} strokeWidth={3} /></span>{children}</li>;
@@ -61,9 +62,12 @@ export default function Care() {
         <div className="grid gap-1 grid-cols-2 md:grid-cols-[2fr_1fr] h-[186px] sm:h-[282px] lg:h-[328px] rounded-t-xl overflow-hidden">
           {hero.images.map((img) => <div key={img.src} className="relative overflow-hidden bg-[#EAE8E0]"><img src={img.src} alt={img.alt} className="absolute inset-0 w-full h-full object-cover" loading="eager" /></div>)}
         </div>
-        <div className="mt-1 bg-[#F6F4EB] rounded-b-xl px-4 pt-5 pb-7 md:px-4 md:pr-16 md:pt-7 md:pb-10 flex flex-col md:flex-row md:items-start gap-6 md:gap-16">
+        <div className="mt-1 bg-[#F6F4EB] rounded-b-xl px-4 pt-5 pb-7 md:px-4 md:pr-16 md:pt-7 md:pb-10 flex flex-col gap-5">
+          <PageTabs />
+          <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-16">
           <div className="flex-1 flex flex-col gap-3"><h1 className="eg-display-lg text-[#002131]" data-testid="care-title">{hero.h1}</h1><p className="eg-body-lg text-[#002131]">{hero.sub}</p></div>
           <div className="flex flex-col items-center gap-2 md:shrink-0"><Link to={hero.ctaHref} className="eg-btn-filled h-12 px-6 eg-title-md w-full md:w-auto" data-testid="care-hero-cta">{hero.cta}</Link><p className="eg-body-sm text-[#174358] text-center">{hero.note}</p></div>
+          </div>
         </div>
       </section>
       <main className="flex flex-col gap-14 md:gap-20 mt-12 md:mt-16 pb-16 md:pb-24">

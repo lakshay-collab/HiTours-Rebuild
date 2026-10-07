@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@300..700&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..600;1,400..600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@300..700&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..600;1,400..600&family=Mr+Dafoe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&family=Roboto+Serif:opsz,wght@8..144,400&display=swap');
 
 /* Egypt/Asia listing scope: Hi Tours brand tokens (Bricolage Grotesque / Inter / Instrument Sans, Ink + Harbor + Ember) */
@@ -17,6 +17,7 @@
 @media (min-width: 905px) { .eg-display-sm { font-size: 36px; line-height: 44px; } }
 .eg-title-lg { font-family: 'Instrument Sans', Inter, sans-serif; font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: 0; }
 .eg-quote { font-family: 'Lora', Georgia, serif; font-style: normal; font-size: 20px; line-height: 32px; letter-spacing: 0; }
+.eg-signature { font-family: 'Mr Dafoe', 'Brush Script MT', cursive; font-size: 40px; line-height: 1; letter-spacing: .5px; display: inline-block; }
 .eg-team-quote { font-family: 'Lora', Georgia, serif; font-style: normal; font-size: 19px; line-height: 27px; }
 .eg-headline-lg { font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -0.2px; }
 .eg-headline-md { font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 28px; line-height: 36px; font-weight: 600; letter-spacing: -0.2px; }
