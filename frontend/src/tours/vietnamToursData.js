@@ -11,6 +11,9 @@ const isExperience = (b) => !LOGISTICS.test(b) && !/^(you could|alternatively|if
 const LEAD = /^(in the (morning|afternoon|evening),?\s+|en route,?\s+|later,?\s+|next,?\s+|then,?\s+|afterwards?,?\s+|you will also\s+|once there,?\s+|today,?\s+)/i;
 const actName = (b) => { let n = b.replace(LEAD, '').split(/:|\s\(|, then |, the |, where /)[0].trim(); n = n.charAt(0).toUpperCase() + n.slice(1); return n.length > 64 ? `${n.slice(0, 60).replace(/\s\S*$/, '')}…` : n; };
 const actDesc = (b) => { const i = b.indexOf(':'); if (i > 0 && i < 70) { const r = b.slice(i + 1).trim(); return r.charAt(0).toUpperCase() + r.slice(1); } return actName(b).endsWith('…') || actName(b) !== b ? b : ''; };
+const OPTIONAL_NOTE = 'Optional add-on, not included in the price. Ask your specialist to pre-book it.';
+const isOptional = (b) => /^(optional|suggested)\s*:/i.test(b);
+const optionalItems = (b) => b.replace(/^(optional|suggested)\s*:/i, '').split(/\s\|\s/).map((x) => x.trim()).filter(Boolean).map((x) => x.charAt(0).toUpperCase() + x.slice(1));
 const actImage = (p, b, fallback) => { const hit = (p.actImg || []).find(([re]) => re.test(b)); return hit ? hit[1] : fallback; };
 
 // Generic adapters – ctx: { cityImages, expert, ctaHref, crumbs, base, cruiseCity }
@@ -48,8 +51,11 @@ const build = (p) => {
     const images = cityImages(city);
     return {
       letter: LETTERS[i], name: city, dayLabel, bullets, images,
-      dayImages: p.actImg ? Object.fromEntries(days.map((d) => [d.day, uniq([...d.bullets.filter(isExperience).map((b) => actImage(p, b, null)).filter(Boolean), ...images])])) : undefined,
-      activities: days.flatMap((d) => d.bullets.filter(isExperience).map((b, k) => ({ day: d.day, name: actName(b), description: actDesc(b), optional: false, image: actImage(p, b, images[(d.day + k) % images.length]) }))),
+      dayImages: p.actImg ? Object.fromEntries(days.map((d) => [d.day, uniq([...d.bullets.filter(isExperience).map((b) => actImage(p, b, null)).filter(Boolean), ...d.bullets.filter(isOptional).flatMap(optionalItems).map((o) => actImage(p, o, null)).filter(Boolean), ...images])])) : undefined,
+      activities: days.flatMap((d) => [
+        ...d.bullets.filter(isExperience).map((b, k) => ({ day: d.day, name: actName(b), description: actDesc(b), optional: false, image: actImage(p, b, images[(d.day + k) % images.length]) })),
+        ...d.bullets.filter(isOptional).flatMap((b) => optionalItems(b).map((o, k) => ({ day: d.day, name: o, description: OPTIONAL_NOTE, optional: true, image: actImage(p, o, images[(d.day + k + 1) % images.length]) })))
+      ]),
       accommodation: { name: hotel, description: `${dayLabel} · as per the package accommodation list`, images: hotelImages || images.slice(0, 3) }
     };
   });
