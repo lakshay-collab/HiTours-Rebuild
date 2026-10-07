@@ -5,11 +5,14 @@ const A = (f) => `${BASE}/activities/${f}`;
 const HOT = (f) => `${BASE}/hotels/${f}`;
 const HERO = (f) => `${BASE}/hero/${f}`;
 const DEST = (f) => `${BASE}/destinations/${f}`;
+const AUR = (f) => `${BASE}/aurora/${f}`;
 
 const DAY_MARK = '__day__';
 
+const aurora = [AUR('aurora-1.jpg'), AUR('aurora-2.jpg'), AUR('aurora-3.jpg'), AUR('aurora-4.jpg'), AUR('aurora-5.jpg')];
+
 const reykjavikHotelImages = ['iceland-scenery-2.jpg', 'iceland-village.jpg', 'iceland-scenery-3.jpg'].map(HOT);
-const akureyriHotelImages = ['iceland-scenery-5.jpg', 'iceland-scenery-6.jpg', 'iceland-scenery-7.jpg'].map(HOT);
+const akureyriHotelImages = [aurora[4], 'iceland-scenery-5.jpg', 'iceland-scenery-6.jpg', 'iceland-scenery-7.jpg'].map((f) => f.startsWith('/') ? f : HOT(f));
 
 const gullfoss = A('gullfoss-waterfall.jpg');
 const geysir = A('geysir-strokkur.jpg');
@@ -19,16 +22,16 @@ const godafoss = A('godafoss-waterfall.png');
 const myvatn = A('husavik.jpg');
 const diamond = [A('iceland-landscape-1.jpg'), A('iceland-scenery-9.jpg'), A('iceland-scenery-10.jpg'), A('iceland-jj.jpg')];
 
-const heroGallery = [HERO('iceland-landscape-1.jpg'), HERO('iceland-landscape-2.jpg'), HERO('iceland-landscape-4.jpg'), HERO('godafoss-waterfall.png'), HERO('husavik.jpg'), gullfoss, whales[0], thingvellir[0]];
+const heroGallery = [aurora[0], HERO('iceland-landscape-1.jpg'), aurora[1], HERO('iceland-landscape-2.jpg'), HERO('iceland-landscape-4.jpg'), HERO('godafoss-waterfall.png'), aurora[3], HERO('husavik.jpg'), gullfoss, whales[0], thingvellir[0]];
 
 const stops = [
   {
     letter: 'A',
     name: 'Reykjavík',
     dayLabel: 'Day 1–3',
-    images: [DEST('iceland-scenery-1.jpg'), gullfoss, geysir, ...thingvellir, ...whales],
+    images: [DEST('iceland-scenery-1.jpg'), aurora[0], aurora[1], gullfoss, geysir, ...thingvellir, ...whales],
     dayImages: {
-      1: [DEST('iceland-scenery-1.jpg'), A('iceland-scenery-4.jpg'), A('iceland-scenery-6.jpg')],
+      1: [DEST('iceland-scenery-1.jpg'), aurora[0], A('iceland-scenery-4.jpg')],
       2: [gullfoss, geysir, ...thingvellir],
       3: [...whales, HERO('iceland-landscape-4.jpg')]
     },
@@ -60,18 +63,19 @@ const stops = [
       { name: 'Þingvellir National Park', day: 2, optional: false, image: thingvellir[3], description: 'A UNESCO World Heritage Site where the North American and Eurasian tectonic plates drift apart, creating a dramatic rift valley you can literally walk through.' },
       { name: 'Reykjavík whale-watching cruise', day: 3, optional: false, image: whales[1], description: 'Sail into the North Atlantic aboard a sturdy vessel to spot humpback and minke whales, with panoramic views of the Reykjavík coastline as a bonus.' },
       { name: 'The Settlement Exhibition', day: 1, optional: true, image: A('iceland-scenery-4.jpg'), description: "Step back a thousand years into Reykjavík's Viking past — an underground museum built around the remains of a 10th-century longhouse." },
-      { name: 'Perlan Museum of Icelandic Natural Wonders', day: 1, optional: true, image: A('iceland-scenery-6.jpg'), description: "Iceland's natural drama under one roof: interactive exhibits, a planetarium and a panoramic observation deck over the city." }
+      { name: 'Perlan Museum of Icelandic Natural Wonders', day: 1, optional: true, image: A('iceland-scenery-6.jpg'), description: "Iceland's natural drama under one roof: interactive exhibits, a planetarium and a panoramic observation deck over the city." },
+      { name: 'Northern Lights hunt', day: 1, optional: true, image: aurora[1], description: 'On clear autumn and winter nights, head away from the city glow to watch the aurora borealis ripple in curtains of green and violet across the Icelandic sky.' }
     ]
   },
   {
     letter: 'B',
     name: 'Akureyri',
     dayLabel: 'Day 4–7',
-    images: [DEST('iceland-scenery-5.jpg'), godafoss, myvatn, ...diamond],
+    images: [DEST('iceland-scenery-5.jpg'), aurora[2], godafoss, myvatn, aurora[4], ...diamond],
     dayImages: {
       4: [DEST('iceland-scenery-5.jpg'), A('iceland-scenery-8.jpg'), A('botanical-garden.jpg')],
       5: [godafoss, myvatn, ...diamond],
-      6: [A('akureyri-church.jpg'), A('akureyri-art-museum.png'), DEST('iceland-scenery-5.jpg')],
+      6: [aurora[2], A('akureyri-church.jpg'), A('akureyri-art-museum.png')],
       7: [HERO('iceland-landscape-2.jpg'), DEST('iceland-scenery-5.jpg')]
     },
     bullets: [
@@ -105,7 +109,8 @@ const stops = [
       { name: 'The Old Town, Akureyri', day: 4, optional: true, image: A('iceland-scenery-8.jpg'), description: 'A picturesque quarter of brightly painted wooden houses that tell the story of this northern capital — perfect for a hand-in-hand afternoon stroll.' },
       { name: 'Akureyri Botanical Garden', day: 4, optional: true, image: A('botanical-garden.jpg'), description: 'A surprising oasis of green at the edge of the Arctic Circle, home to thousands of plant species from Iceland and around the world.' },
       { name: "St. Peter's Catholic Church", day: 6, optional: true, image: A('akureyri-church.jpg'), description: 'A serene little wooden church with elegant architecture and a peaceful atmosphere — a lovely spot for a quiet moment together.' },
-      { name: 'Akureyri Art Museum', day: 6, optional: true, image: A('akureyri-art-museum.png'), description: 'Contemporary Icelandic art in an intimate setting — a wonderful way to connect with the creative spirit of the north.' }
+      { name: 'Akureyri Art Museum', day: 6, optional: true, image: A('akureyri-art-museum.png'), description: 'Contemporary Icelandic art in an intimate setting — a wonderful way to connect with the creative spirit of the north.' },
+      { name: 'Aurora over the Arctic north', day: 6, optional: true, image: aurora[2], description: "Hotel Kjarnalundur sits under some of Iceland's darkest skies — step outside on a clear night and watch the Northern Lights dance over the Kjarnaskógur woodland." }
     ]
   }
 ];
