@@ -22,8 +22,7 @@ const Snow = () => (
 );
 
 const MENUS = [
-  { key: 'destinations', label: 'Destinations' },
-  { key: 'themes', label: 'Themes' }
+  { key: 'destinations', label: 'Destinations' }
 ];
 const LINKS = [
   { label: 'About us', href: '/about' },

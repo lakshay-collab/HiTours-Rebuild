@@ -16,7 +16,7 @@ const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
 }));
 
 const SECTIONS = [
-  [{ label: 'Destinations', sub: true }, { label: 'Themes', sub: true }],
+  [{ label: 'Destinations', sub: true }],
   [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Work with us' }, { label: 'Press', href: '/about' }, { label: 'Hi Tours Care', href: '/care' }],
   [{ label: 'Expert advice', sub: true }]
 ];
