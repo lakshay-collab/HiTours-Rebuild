@@ -522,3 +522,10 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - Newsletter WhatsApp CTA: green (#25D366) with WhatsApp glyph; number line removed.
 - TripShowcase: CTA opens lead modal (`useLeadModal().openLead`) with destination/trip; stats now include meals & flights (`mock.showcase.trips[].meals/flights`).
 - TrustBar: "Health and Safety is our priority" (≥sm) / "Health & Safety is our priority" (<sm).
+
+## 2026-10-07 — New itinerary page: Venice Gondolas & Vienna Palaces
+- Removed "1 Million+ happy travellers" segment from TrustBar heritage slide (duplicate of the hero pill).
+- New tour at `/europa/venice-gondolas-vienna-palaces` (uses existing `EgyptDetail` template via `/europa/:slug`).
+- Data: `src/tours/veniceViennaData.js` exports `detail`/`route`/`glance`/`crumbs`/`veniceViennaBySlug`; registered in `EgyptDetail.jsx` BY_SLUG + imports. Added `Venice`/`Vienna` → Italy planner/reviews to `DESTINATIONS`.
+- Content from the uploaded `venice-gondolas-vienna-palaces` zip (8 days / 7 nights, 2 cities, Ca San Polo + ibis Wien Mariahilf, 6 experiences). Real images copied to `public/tours/venice-vienna/{hero,activities,hotels,destinations}`.
+- Price ₹1,48,390 list → site-wide 5% sale shows ₹1,40,971 per person. Verified: top gallery, route pills, expert quote, price card, Venice/Vienna tabs render; no console errors.

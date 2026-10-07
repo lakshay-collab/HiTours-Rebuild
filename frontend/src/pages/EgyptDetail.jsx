@@ -76,6 +76,7 @@ import { swedenBySlug } from '../tours/swedenToursData';
 import { thailandBySlug } from '../tours/thailandToursData';
 import { planner as maldivesPlanner, reviews as maldivesReviews } from '../maldivesListingData';
 import { maldivesBySlug } from '../tours/maldivesToursData';
+import { veniceViennaBySlug } from '../tours/veniceViennaData';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
@@ -93,6 +94,8 @@ const DESTINATIONS = [
   ["Philippines", (d) => ({ planner: philippinesPlanner, reviews: philippinesReviews })],
   ["Iceland", (d) => ({ planner: icelandPlanner, reviews: icelandReviews })],
   ["Italy", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
+  ["Venice", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
+  ["Vienna", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
   ["Greece", (d) => ({ planner: greecePlanner, reviews: greeceReviews })],
   ["Norway", (d) => ({ planner: norwayPlanner, reviews: norwayReviews })],
   ["Ireland", (d) => ({ planner: irelandPlanner, reviews: irelandReviews })],
@@ -166,7 +169,8 @@ const BY_SLUG = {
   ...finlandBySlug,
   ...swedenBySlug,
   ...thailandBySlug,
-  ...maldivesBySlug
+  ...maldivesBySlug,
+  ...veniceViennaBySlug
 };
 
 const stop = (e) => e.preventDefault();
