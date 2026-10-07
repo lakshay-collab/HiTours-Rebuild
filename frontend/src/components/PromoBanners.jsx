@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Tag, Flame } from 'lucide-react';
 import { destinations } from '../destinationsData';
 import { COUNTRY_HREF } from './Destinations';
+import { SantaHat, Bells } from './sale/SaleIcons';
 
 const ICONS = { promotions: Tag, 'hot-deals': Flame };
 const TOP10 = destinations['Top 10'];
@@ -64,7 +65,7 @@ export function PromoBanner({ b, index = 0, className = '' }) {
 
       <div className={`relative z-[1] flex-1 flex flex-col justify-center gap-3 md:gap-4 p-6 sm:p-8 md:px-12 max-w-[640px] ${withDest ? 'md:pt-8 md:pb-4' : 'md:py-8'}`}>
         <span className="inline-flex items-center gap-2 self-start rounded-full bg-white/15 backdrop-blur-md ring-1 ring-white/25 px-3 py-1 t-label-md uppercase tracking-[.08em]" data-testid={`promo-tag-${b.id}`}>
-          <Icon size={14} strokeWidth={2} className="text-accent" />{b.tag}
+          {b.festive ? <SantaHat size={16} /> : <Icon size={14} strokeWidth={2} className="text-accent" />}{b.tag}{b.festive && <Bells size={16} />}
         </span>
         <h3 className="t-headline-md md:text-[32px] md:leading-[40px] [text-wrap:balance]" data-testid={`promo-headline-${b.id}`}>{b.headline}</h3>
         <p className="t-body-md md:t-body-lg text-white/85 max-w-[460px]" data-testid={`promo-text-${b.id}`}>{b.text}</p>

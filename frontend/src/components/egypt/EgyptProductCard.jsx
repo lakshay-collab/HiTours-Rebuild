@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BedIcon, TicketIcon, CarIcon, MealIcon, ChevronLeft, ChevronRight } from './EgyptIcons';
-import { formatInr } from '../../egyptListingData';
+import SaleBadge from '../sale/SaleBadge';
+import SalePrice from '../sale/SalePrice';
 
 const Stat = ({ icon: Icon, value, testId }) => (
   <span className="flex items-center gap-2.5 rounded-lg bg-[#FBEADB] px-3 h-11 text-[#002131] whitespace-nowrap" data-testid={testId}>
@@ -36,7 +37,6 @@ export default function EgyptProductCard({ p }) {
   const days = typeof p.days === 'number' ? `${p.days} days` : p.days;
   const cities = p.cities != null ? `${p.cities} ${p.cities === 1 ? 'city' : 'cities'}` : p.stations;
   const meals = p.meals != null ? p.meals : (typeof p.days === 'number' ? p.days : null);
-  const price = typeof p.price === 'number' ? formatInr(p.price) : p.price;
 
   return (
     <article className="relative flex flex-col h-full eg-card" data-testid="eg-product-card">
@@ -50,6 +50,7 @@ export default function EgyptProductCard({ p }) {
             <button type="button" onClick={() => go(1)} className="eg-arrow pointer-events-auto" aria-label="Next image" data-testid="eg-product-next"><ChevronRight size={24} /></button>
           </div>
           <ImageMeta days={days} cities={cities} />
+          <SaleBadge variant="chip" className="absolute right-3 top-3" testId="eg-product-sale-chip" />
         </div>
       </div>
 
@@ -64,11 +65,7 @@ export default function EgyptProductCard({ p }) {
               {meals != null && <Stat icon={MealIcon} value={`${meals} meals`} testId="eg-product-meals" />}
             </div>
           )}
-          <p className="mt-auto pt-4 flex items-baseline gap-1.5 text-[#6F777C]" data-testid="eg-product-price">
-            <span className="eg-body-md">From</span>
-            <span className="eg-price text-[#174358]">{price}</span>
-            <span className="eg-body-md">per person</span>
-          </p>
+          <SalePrice price={p.price} className="mt-auto pt-4" testId="eg-product-price" />
         </div>
       </Wrap>
     </article>

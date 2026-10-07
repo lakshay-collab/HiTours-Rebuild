@@ -2,6 +2,7 @@ import React from 'react';
 import { hero } from '../mock';
 import SearchBar from './SearchBar';
 import HappyCustomers from './HappyCustomers';
+import SaleBadge from './sale/SaleBadge';
 
 export default function Hero() {
   return (
@@ -26,7 +27,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.30)_0%,rgba(0,33,49,0.10)_40%,rgba(0,33,49,0.55)_100%)] pointer-events-none" />
 
       <div className="relative z-[2] w-full flex flex-col items-center gap-6 md:gap-8 px-4 sm:px-8 md:px-0 -mt-6 md:-mt-8">
-        <div className="min-w-[328px] sm:w-[536px] md:w-[857px] lg:w-[880px]">
+        <div className="min-w-[328px] sm:w-[536px] md:w-[857px] lg:w-[880px] flex flex-col items-center gap-4 md:gap-5">
+          <SaleBadge dismissible className="hidden md:inline-flex" testId="hero-sale-badge" />
           <h1 className="t-display-sm md:t-display-lg text-center text-white [text-wrap:balance] drop-shadow-[0_2px_12px_rgba(0,33,49,0.45)]" data-testid="hero-title">
             {hero.title[0]}<br className="hidden md:block" /> {hero.title[1]}
           </h1>

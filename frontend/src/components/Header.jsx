@@ -8,8 +8,18 @@ import ExpertAdvicePanel from './ExpertAdvicePanel';
 import { DestinationsMenu, ThemesMenu } from './DesktopMenus';
 import { useHomeLink, scrollToSection, WHY_ID } from '../lib/homeReturn';
 import { useLocation } from 'react-router-dom';
+import { SALE } from '../sale';
+import { SantaHat, Bells } from './sale/SaleIcons';
+import { SaleTooltip } from './sale/SaleBadge';
 
-const BANNER_KEY = 'hi-banner-dismissed';
+const BANNER_KEY = SALE ? `hi-banner-dismissed-${SALE.id}` : 'hi-banner-dismissed';
+
+// Drifting snowflakes for the festive top bar (pure CSS).
+const Snow = () => (
+  <span className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    {Array.from({ length: 14 }, (_, i) => <i key={i} className="snowflake" style={{ left: `${3 + i * 7}%`, width: `${3 + (i % 3)}px`, height: `${3 + (i % 3)}px`, animationDelay: `${(i * 0.7) % 5}s`, animationDuration: `${3.5 + (i % 4) * 0.8}s` }} />)}
+  </span>
+);
 
 const MENUS = [
   { key: 'destinations', label: 'Destinations' },
@@ -75,11 +85,26 @@ export default function Header({ overlay = false, floating = false }) {
   const dividerCls = overlay ? 'bg-white/30' : 'bg-outline-variant';
 
   const banner = bannerOpen ? (
-    <div className="relative bg-deep-water text-white px-10 py-2 t-body-md text-center" data-testid="top-banner">
-      {nav.banner}
-      <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors">
-        <X size={18} strokeWidth={2} />
-      </button>
+    <div className={`relative text-white px-4 sm:px-10 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
+      {SALE ? (
+        <SaleTooltip testId="top-banner-sale">
+          <span className="relative z-[1] inline-flex items-center justify-center gap-2 flex-wrap cursor-default">
+            <SantaHat size={22} className="shrink-0" />
+            <span className="font-semibold tracking-wide">{SALE.name}</span>
+            <span className="hidden sm:inline text-white/60">·</span>
+            <span className="text-[#FFD166] font-medium">{SALE.tagline}</span>
+            <span className="hidden sm:inline text-white/60">·</span>
+            <span className="hidden sm:inline text-white/90">{SALE.endsLabel}</span>
+            <Bells size={22} className="shrink-0" />
+          </span>
+        </SaleTooltip>
+      ) : nav.banner}
+      {SALE && <Snow />}
+      {!SALE && (
+        <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[2]">
+          <X size={18} strokeWidth={2} />
+        </button>
+      )}
     </div>
   ) : null;
 

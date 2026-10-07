@@ -14,6 +14,8 @@ import { detail as detail1, route as route1, glance as glance1, crumbs as crumbs
 import { detail as detail2, route as route2, glance as glance2, crumbs as crumbs2 } from '../srilankaData';
 import { detail as detail3, route as route3, glance as glance3, crumbs as crumbs3 } from '../thailandData';
 import { detail as detailGF, route as routeGF, glance as glanceGF, crumbs as crumbsGF } from '../tours/egyptGrandFestivalData';
+import SaleBadge from '../components/sale/SaleBadge';
+import SalePrice from '../components/sale/SalePrice';
 import { detail as detailMM, route as routeMM, glance as glanceMM, crumbs as crumbsMM } from '../tours/misrMayaData';
 import { detail as detailMKJ, route as routeMKJ, glance as glanceMKJ, crumbs as crumbsMKJ } from '../tours/misrKaJaaduData';
 import { detail as detailNP, route as routeNP, glance as glanceNP, crumbs as crumbsNP } from '../tours/nilePharaohsData';
@@ -266,11 +268,8 @@ const Crumbs = ({ crumbs }) => (
 const PriceCard = ({ detail, inr, onCta }) => (
   <div className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="eg-detail-price">
     <div className="flex flex-col gap-4">
-      <div className="flex flex-col shrink-0">
-        <span className="eg-body-md text-[#6F777C]">{price.from}</span>
-        <span className="eg-price text-[#174358]" data-testid="eg-detail-price-value">{inr}</span>
-        <span className="eg-body-md text-[#6F777C]">{price.perPerson}</span>
-      </div>
+      <SaleBadge variant="tag" className="self-start" testId="eg-detail-sale-tag" />
+      <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="detail" testId="eg-detail-price-value" />
       <Cta detail={detail} className="w-full !h-16 !text-[18px]" testId="eg-detail-price-cta" onClick={onCta} />
     </div>
     <hr className="border-[#E4E3DB]" />
@@ -458,7 +457,7 @@ function StickyBar({ detail, inr, onCta }) {
     <div className={`fixed bottom-0 inset-x-0 z-30 bg-[#FBF9F1]/95 backdrop-blur border-t border-[#E4E3DB] transition-transform duration-300 ${show ? 'translate-y-0' : 'translate-y-full'}`} data-testid="eg-detail-sticky-bar">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:justify-end md:items-center md:py-3 md:px-10">
         <div className="px-4 py-3 md:py-0 md:px-0 md:pl-6 flex items-center justify-between md:justify-end gap-3">
-          <div className="flex flex-col"><span className="eg-body-sm text-[#6F777C]">{price.from}</span><span className="eg-price !text-[20px] !leading-6 md:!text-[22px] text-[#174358]">{inr}</span><span className="eg-body-sm text-[#6F777C]">{price.perPerson}</span></div>
+          <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="bar" testId="eg-sticky-price" />
           <Cta detail={detail} className="w-auto !h-14 !px-8 eg-title-lg" testId="eg-sticky-cta" onClick={onCta} />
         </div>
       </div>

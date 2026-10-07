@@ -173,3 +173,25 @@ body {
 .heart-float-c { animation-delay: .6s; margin-left: -9px; animation-duration: 2.8s; }
 @keyframes avatar-swap { from { opacity: 0; transform: scale(.7); } to { opacity: 1; transform: scale(1); } }
 .avatar-swap { animation: avatar-swap .45s cubic-bezier(.2,.7,.2,1) both; }
+
+/* ---- Seasonal sale ---- */
+.sale-topbar { background: linear-gradient(90deg, #6E0F13 0%, #A3181D 45%, #0F3A4A 100%); }
+.snowflake { position: absolute; top: -8px; border-radius: 9999px; background: rgba(255,255,255,.95); box-shadow: 0 0 8px rgba(255,255,255,.8); animation: snow-fall linear infinite; }
+@keyframes snow-fall { 0% { transform: translate3d(0, -8px, 0); opacity: 0; } 12% { opacity: 1; } 100% { transform: translate3d(10px, 48px, 0) rotate(20deg); opacity: 0; } }
+@keyframes bell-swing { 0%, 100% { transform: rotate(0deg); } 20% { transform: rotate(16deg); } 50% { transform: rotate(-13deg); } 80% { transform: rotate(7deg); } }
+.bell-swing { animation: bell-swing 2.4s ease-in-out infinite; }
+.bell-swing-b { animation: bell-swing 2.4s ease-in-out .3s infinite; }
+@keyframes hat-wiggle { 0%, 70%, 100% { transform: rotate(0deg); } 78% { transform: rotate(-10deg); } 86% { transform: rotate(8deg); } 94% { transform: rotate(-4deg); } }
+.hat-wiggle { animation: hat-wiggle 3.6s ease-in-out infinite; transform-origin: 40% 85%; }
+@keyframes sparkle-twinkle { 0%, 100% { opacity: 0; transform: scale(.4) rotate(0deg); } 50% { opacity: 1; transform: scale(1.1) rotate(30deg); } }
+.sale-sparkle { position: absolute; animation: sparkle-twinkle 2.2s ease-in-out infinite; pointer-events: none; filter: drop-shadow(0 0 4px rgba(244,185,66,.8)); }
+.sale-sparkle-a { right: -4px; top: -6px; }
+.sale-sparkle-b { left: 34px; bottom: -5px; animation-delay: .9s; }
+.sale-sparkle-c { left: -3px; top: 10px; animation-delay: 1.5s; }
+@keyframes sale-glow { 0%, 100% { box-shadow: 0 6px 24px rgba(0,0,0,.25), 0 0 0 0 rgba(232,51,58,0); } 50% { box-shadow: 0 6px 24px rgba(0,0,0,.25), 0 0 0 6px rgba(232,51,58,.18); } }
+.sale-pill { animation: sale-glow 2.8s ease-in-out infinite; }
+@keyframes chip-pop { 0% { transform: scale(.8); opacity: 0; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+.sale-chip { position: relative; overflow: hidden; animation: chip-pop .5s cubic-bezier(.2,.7,.2,1) both; }
+.sale-chip::after { content: ""; position: absolute; top: -40%; bottom: -40%; width: 40%; left: -60%; background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.9) 50%, rgba(255,255,255,0) 100%); transform: skewX(-20deg); animation: chip-shine 3s ease-in-out 1s infinite; }
+@keyframes chip-shine { 0% { left: -60%; } 35% { left: 130%; } 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .snowflake, .bell-swing, .bell-swing-b, .hat-wiggle, .sale-sparkle, .sale-chip, .sale-pill, .sale-chip::after { animation: none; } .snowflake, .sale-sparkle { display: none; } }

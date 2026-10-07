@@ -37,7 +37,7 @@ const SLIDES = [
         <Sep />
         <Seg><B>{YEARS}</B> years of trust</Seg>
         <Sep />
-        <Seg><B>400,000+</B><span className="hidden sm:inline"> happy</span> travellers</Seg>
+        <Seg><B>1 Million+</B><span className="hidden sm:inline"> happy</span> travellers</Seg>
       </Group>
     )
   },

@@ -70,7 +70,7 @@ export const features = {
 };
 
 export const happyCustomers = {
-  text: '1M+ Happy Customers',
+  text: '1 Million+ Happy Travellers',
   avatars: ['01', '02', '04', '06', '07', '09', '11', '12', '13', '14'].map((n) => `/avatars/in-${n}.webp`)
 };
 
@@ -90,14 +90,15 @@ export const ambassadors = {
 export const promoBanners = [
   {
     id: 'promotions',
-    tag: 'Promotions',
-    headline: 'Summer Escapes Sale',
-    text: 'Up to ₹25,000 off handcrafted Europe & Asia itineraries planned by our experts.',
-    offer: 'Up to ₹25K off · Book by 30 June',
-    cta: 'Explore promotions',
-    href: '/europa/italy',
-    image: '/home/promo-summer.webp',
-    imageAlt: 'Couple on a sunlit Amalfi coast terrace'
+    tag: 'Christmas & New Year Sale',
+    festive: true,
+    headline: '5% off every holiday',
+    text: 'Celebrate the season with handcrafted Europe & Asia itineraries – every trip on Hi Tours is discounted until 5 January.',
+    offer: 'Ends 5 January · All destinations',
+    cta: 'Shop the sale',
+    href: '/asien',
+    image: '/home/promo-xmas.webp',
+    imageAlt: 'Couple enjoying a snowy European Christmas market'
   },
   {
     id: 'hot-deals',
