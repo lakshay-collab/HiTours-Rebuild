@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { MapPin, Compass, X, EyeOff, Heart, Users, Car, Binoculars, Umbrella, Mountain, Sparkles, TreePalm, Landmark, Gem, Sailboat, Timer } from 'lucide-react';
+import { MapPin, Compass, Search, X, EyeOff, Heart, Users, Car, Binoculars, Umbrella, Mountain, Sparkles, TreePalm, Landmark, Gem, Sailboat, Timer } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { hero } from '../mock';
 import { destinations } from '../destinationsData';
@@ -38,25 +38,13 @@ function buildDestinations() {
   return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
-const useIsMobile = () => {
-  const [mobile, setMobile] = useState(() => window.matchMedia('(max-width: 599px)').matches);
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 599px)');
-    const fn = (e) => setMobile(e.matches);
-    mq.addEventListener('change', fn);
-    return () => mq.removeEventListener('change', fn);
-  }, []);
-  return mobile;
-};
-
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const PLACEHOLDER = 'Search for destination';
 
 export default function SearchBar({ id = 'hero', className = '' }) {
   const [value, setValue] = useState('');
   const [selected, setSelected] = useState(null);
   const [focused, setFocused] = useState(false);
-  const [prompt, setPrompt] = useState(0);
-  const mobile = useIsMobile();
   const navigate = useNavigate();
   const wrapRef = useRef(null);
   const inputRef = useRef(null);
@@ -66,13 +54,6 @@ export default function SearchBar({ id = 'hero', className = '' }) {
   const destMatches = q ? all.filter((d) => d.name.toLowerCase().includes(q)) : all;
   const styleMatches = q ? STYLES.filter((s) => s.name.toLowerCase().includes(q)) : STYLES;
   const matches = [...destMatches, ...styleMatches];
-  const idle = !focused && !value && !selected;
-
-  useEffect(() => {
-    if (!idle) return undefined;
-    const t = setInterval(() => setPrompt((p) => (p + 1) % PROMPTS.length), 3500);
-    return () => clearInterval(t);
-  }, [idle]);
 
   useEffect(() => {
     const onDoc = (e) => { if (wrapRef.current && !wrapRef.current.contains(e.target)) setFocused(false); };
@@ -90,7 +71,6 @@ export default function SearchBar({ id = 'hero', className = '' }) {
   const clear = () => {
     setSelected(null);
     setValue('');
-    setPrompt(0);
     inputRef.current && inputRef.current.focus();
   };
 
@@ -100,22 +80,22 @@ export default function SearchBar({ id = 'hero', className = '' }) {
     if (target && target.to) navigate(target.to);
   };
 
-  const active = selected ? (selected.kind === 'style' ? PROMPTS[1] : PROMPTS[0]) : PROMPTS[focused || value ? 0 : prompt];
+  const active = selected && selected.kind === 'style' ? PROMPTS[1] : PROMPTS[0];
   const LeadIcon = selected && selected.kind === 'style' ? selected.icon : active.icon;
 
   return (
     <div ref={wrapRef} className="relative w-full">
       <form
         onSubmit={submit}
-        className={`flex items-center w-full h-14 bg-white rounded-full pl-6 pr-2 transition-[box-shadow,transform] duration-300 ease-out ${focused ? 'shadow-[0_0_0_2px_#FFFFFF,0_0_0_5px_rgba(23,67,88,0.6),0_12px_32px_rgba(0,33,49,0.25)] -translate-y-0.5 scale-[1.01]' : 'shadow-[0_1px_3px_rgba(0,0,0,0.12),0_4px_16px_rgba(0,0,0,0.06)]'} ${className}`}
+        className={`hi-search group flex items-center w-full h-14 sm:h-16 rounded-full pl-5 sm:pl-6 pr-2 ${focused ? 'is-focused' : ''} ${className}`}
         data-focused={focused}
         data-prompt={active === PROMPTS[1] ? 'style' : 'destination'}
         data-testid={`${id}-search-form`}
       >
         <span key={LeadIcon.displayName || active.text} className="shrink-0 flex animate-[hi-fade-in_300ms_ease-out]" data-testid={`${id}-search-icon`}>
-          <LeadIcon size={22} strokeWidth={1.75} className={`text-accent transition-transform duration-300 ${focused ? 'animate-[hi-pin-nudge_500ms_ease-out]' : ''}`} />
+          <LeadIcon size={20} strokeWidth={1.5} className={`text-primary/80 transition-[color,transform] duration-300 group-hover:text-primary ${focused ? 'text-primary animate-[hi-pin-nudge_500ms_ease-out]' : ''}`} />
         </span>
-        <div className="relative flex-1 min-w-0 h-full flex items-center px-4">
+        <div className="relative flex-1 min-w-0 h-full flex items-center px-3.5 sm:px-4">
           {selected ? (
             <span className="inline-flex items-center gap-1 max-w-full rounded-full bg-surface-variant pl-3 pr-1 h-9 t-body-lg text-onsurface" data-testid={`${id}-search-selected`}>
               <span className="truncate">{selected.name}</span>
@@ -129,20 +109,20 @@ export default function SearchBar({ id = 'hero', className = '' }) {
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 onFocus={() => setFocused(true)}
-                aria-label={active.text}
-                className="w-full min-w-0 bg-transparent outline-none t-body-lg text-onsurface"
+                aria-label={PLACEHOLDER}
+                className="w-full min-w-0 bg-transparent outline-none t-body-lg text-onsurface tracking-[0.01em]"
                 data-testid={`${id}-search-input`}
                 autoComplete="off"
               />
               {!value && (
-                <span key={active.text} className="absolute inset-y-0 left-4 right-4 flex items-center pointer-events-none t-body-lg text-onsurface-variant truncate animate-[hi-slide-up_450ms_cubic-bezier(.22,.61,.36,1)]" data-testid={`${id}-search-placeholder`}>
-                  {mobile ? active.short : active.text}
+                <span className="absolute inset-y-0 left-3.5 sm:left-4 right-4 flex items-center pointer-events-none t-body-lg text-primary/60 tracking-[0.01em] truncate transition-colors duration-300 group-hover:text-primary/75" data-testid={`${id}-search-placeholder`}>
+                  {PLACEHOLDER}
                 </span>
               )}
             </>
           )}
         </div>
-        <button type="submit" className="btn-sunset" data-testid={`${id}-search-submit`}>{hero.cta}</button>
+        <button type="submit" aria-label={hero.cta} title={hero.cta} className="hi-search-btn shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white" data-testid={`${id}-search-submit`}><Search size={20} strokeWidth={2} /></button>
       </form>
 
       {focused && !selected && (
