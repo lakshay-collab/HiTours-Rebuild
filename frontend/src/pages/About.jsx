@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Check, Quote, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, Check, ShieldCheck } from 'lucide-react';
 import Header from '../components/Header';
+import CeoEnvelope from '../components/CeoEnvelope';
 import Footer from '../components/Footer';
 import AdventureCTA from '../components/AdventureCTA';
 import PageTabs from '../components/PageTabs';
 import { ChevronDown, ChevronLeft, ChevronRight } from '../components/egypt/EgyptIcons';
-import { hero, ceo, recognized, why, steps, cta, top10, guarantee, careers, faq } from '../aboutData';
+import { hero, recognized, why, steps, cta, top10, guarantee, careers, faq } from '../aboutData';
 
 const Eyebrow = ({ children, light }) => <span className={`eg-label-lg uppercase tracking-[.08em] ${light ? 'text-[#9ACDE5]' : 'text-[#308BB6]'}`}>{children}</span>;
 
@@ -39,33 +40,6 @@ function Intro() {
           </div>
         ))}
       </dl>
-    </section>
-  );
-}
-
-function CeoNote() {
-  return (
-    <section className="eg-container" data-testid="about-ceo">
-      <div className="relative rounded-2xl bg-[#002131] text-white overflow-hidden grid md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr]">
-        <div className="relative min-h-[320px] md:min-h-full bg-[#113141]" data-testid="about-ceo-photo">
-          {ceo.image
-            ? <img src={ceo.image} alt={`${ceo.name} at Tiger's Nest monastery, Bhutan`} className="absolute inset-0 w-full h-full object-cover object-[50%_35%]" loading="lazy" />
-            : <div className="absolute inset-0 flex items-center justify-center"><span className="w-40 h-40 rounded-full bg-[#174358] ring-8 ring-white/10 flex items-center justify-center eg-display-lg !text-[56px] text-[#9ACDE5]">{ceo.initials}</span></div>}
-          <div className="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-[#002131] via-[#002131]/70 to-transparent md:hidden">
-            <p className="eg-title-lg">{ceo.name}</p><p className="eg-body-md text-white/75">{ceo.role}</p>
-          </div>
-        </div>
-        <div className="p-6 md:p-10 lg:p-12 flex flex-col gap-5">
-          <Eyebrow light>{ceo.eyebrow}</Eyebrow>
-          <h2 className="eg-headline-lg !text-[26px] !leading-8 md:!text-[34px] md:!leading-[42px] [text-wrap:balance]" data-testid="about-ceo-headline">{ceo.headline}</h2>
-          <Quote size={28} className="text-[#308BB6] fill-[#308BB6]" aria-hidden />
-          <div className="flex flex-col gap-4 eg-body-lg text-white/85" data-testid="about-ceo-message">{ceo.paragraphs.map((p) => <p key={p}>{p}</p>)}</div>
-          <div className="mt-2 pt-5 border-t border-white/15 flex flex-wrap items-end justify-between gap-4">
-            <div className="hidden md:block"><p className="eg-title-lg">{ceo.name}</p><p className="eg-body-md text-white/75">{ceo.role}</p></div>
-            <span className="eg-signature text-[#9ACDE5] -rotate-[4deg] origin-left" aria-label={`Signature of ${ceo.name}`} data-testid="about-ceo-signature">{ceo.signature}</span>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
@@ -188,8 +162,8 @@ export default function About() {
       <Hero />
       <main className="flex flex-col gap-14 md:gap-20 mt-12 md:mt-16 pb-16 md:pb-24">
         <Intro />
-        <CeoNote />
         <Recognized />
+        <CeoEnvelope />
         <Why />
         <Steps />
         <div className="-mt-14 md:-mt-20" data-testid="about-cta"><AdventureCTA heading={cta.h2} /></div>

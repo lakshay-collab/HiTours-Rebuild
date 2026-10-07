@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@300..700&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..600;1,400..600&family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter:wght@300..700&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..600;1,400..600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&family=Roboto+Serif:opsz,wght@8..144,400&display=swap');
 
 /* Egypt/Asia listing scope: Hi Tours brand tokens (Bricolage Grotesque / Inter / Instrument Sans, Ink + Harbor + Ember) */
@@ -17,7 +17,6 @@
 @media (min-width: 905px) { .eg-display-sm { font-size: 36px; line-height: 44px; } }
 .eg-title-lg { font-family: 'Instrument Sans', Inter, sans-serif; font-size: 22px; line-height: 28px; font-weight: 600; letter-spacing: 0; }
 .eg-quote { font-family: 'Lora', Georgia, serif; font-style: normal; font-size: 20px; line-height: 32px; letter-spacing: 0; }
-.eg-signature { font-family: 'Mr Dafoe', 'Brush Script MT', cursive; font-size: 40px; line-height: 1; letter-spacing: .5px; display: inline-block; }
 .eg-team-quote { font-family: 'Lora', Georgia, serif; font-style: normal; font-size: 19px; line-height: 27px; }
 .eg-headline-lg { font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -0.2px; }
 .eg-headline-md { font-family: 'Bricolage Grotesque', Inter, sans-serif; font-size: 28px; line-height: 36px; font-weight: 600; letter-spacing: -0.2px; }
@@ -139,6 +138,25 @@ body {
 @keyframes hi-overlay-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes hi-drawer-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
 @keyframes hi-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes eg-letter-in { from { opacity: 0; transform: translateY(48px) scale(.96); } to { opacity: 1; transform: none; } }
+.eg-envelope { position: relative; display: block; width: 100%; max-width: 520px; aspect-ratio: 3 / 2; margin: 0 auto; perspective: 1400px; cursor: pointer; transition: transform .35s ease; }
+.eg-envelope:hover { transform: translateY(-4px); }
+.eg-envelope-letter { position: absolute; left: 6%; right: 6%; top: 9%; height: 84%; padding: 16px 18px; text-align: left; background: #FFFDF7; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,33,49,.18); overflow: hidden; z-index: 2; transition: transform .75s cubic-bezier(.2,.8,.2,1) .3s; }
+.eg-envelope.is-open .eg-envelope-letter { transform: translateY(-46%) scale(1.03); }
+.eg-envelope-body { position: absolute; inset: 0; z-index: 3; pointer-events: none; filter: drop-shadow(0 18px 30px rgba(0,33,49,.28)); }
+.eg-envelope-left, .eg-envelope-right, .eg-envelope-bottom { position: absolute; inset: 0; border-radius: 12px; }
+.eg-envelope-left { background: #113141; clip-path: polygon(0 0, 50% 52%, 0 100%); }
+.eg-envelope-right { background: #113141; clip-path: polygon(100% 0, 50% 52%, 100% 100%); }
+.eg-envelope-bottom { background: #174358; clip-path: polygon(0 100%, 50% 50%, 100% 100%); }
+.eg-envelope-flap { position: absolute; inset: 0; z-index: 4; background: #002131; border-radius: 12px 12px 0 0; clip-path: polygon(0 0, 100% 0, 50% 52%); transform-origin: top center; transform: rotateX(0); transition: transform .65s cubic-bezier(.4,0,.2,1), z-index 0s .3s; backface-visibility: visible; }
+.eg-envelope.is-open .eg-envelope-flap { transform: rotateX(180deg); z-index: 1; }
+.eg-envelope-seal { position: absolute; left: 50%; top: 52%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 9999px; background: radial-gradient(circle at 35% 30%, #F28A5B, #E75E26 60%, #B9441A); color: #fff; font-family: 'Bricolage Grotesque', Inter, sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,.35), inset 0 0 0 3px rgba(255,255,255,.18); z-index: 5; transition: opacity .3s, transform .3s; }
+.eg-envelope.is-open .eg-envelope-seal { opacity: 0; transform: scale(.6); }
+.eg-envelope-stamp { position: absolute; right: 7%; top: 56%; width: 64px; height: 76px; padding: 4px; background: #FFFDF7; border: 2px dashed #9ACDE5; border-radius: 4px; overflow: hidden; z-index: 4; transform: rotate(3deg); }
+.eg-envelope-stamp img { border-radius: 2px; }
+.eg-envelope-address { position: absolute; left: 7%; bottom: 10%; max-width: 60%; display: flex; flex-direction: column; gap: 2px; text-align: left; padding: 10px 14px; background: #FFFDF7; border-radius: 8px; z-index: 4; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+.eg-letter-paper { background-image: linear-gradient(180deg, rgba(48,139,182,.06), transparent 120px); }
+@media (max-width: 600px) { .eg-envelope-stamp { width: 48px; height: 58px; } .eg-envelope-address { max-width: 68%; padding: 8px 10px; } .eg-envelope-address .eg-title-md { font-size: 13px; line-height: 18px; } }
 
 @keyframes hi-slide-up { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 @keyframes hi-drop-in { from { transform: translateY(-10px) scaleY(.96); opacity: 0; } to { transform: translateY(0) scaleY(1); opacity: 1; } }

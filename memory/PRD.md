@@ -547,7 +547,7 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 ## 2026-06 – About Us page rebuild
 - Single H1 in hero; "Welcome to Hi Tours" H2 removed (now an intro paragraph + stats row). Each section has exactly one H2.
 - Page tabs (About Us | Booking Policy → /care | Careers → external) shown on About and Care heroes (`components/PageTabs.jsx`, data in `aboutData.js` `pageTabs`/`CAREERS_URL`).
-- Featured CEO note (Hunar Syal, photo `/public/about/ceo.webp`, styled signature via 'Mr Dafoe' font `.eg-signature`) placed directly after the intro.
+- CEO note: 'Recognised by' bar sits ABOVE it. Section is an animated envelope (`components/CeoEnvelope.jsx`, CSS `.eg-envelope*` in index.css) with 'Read letter by the CEO' button; clicking flips the flap, slides the letter out, then opens the full letter in a compact overlay (not full-screen). No signature. Copy must not contain em/en dashes (user request).
 - "Why choose" now zigzag (alternating image/text). "Best of Asia & Africa" replaced by "Our top 10 countries" (Vietnam, Thailand, Sri Lanka, Egypt, Japan, Maldives, Bhutan, Kazakhstan, Italy, Greece).
 - New sections: Booking guarantee/ISO 45001 (`#guarantee`, links to /care), Careers (`#careers`, external), FAQ retained/trimmed.
 - Footer "Hi Tours" column now: About Us, Booking Policy, Careers (Travel with us / Reviews / Press hidden).
