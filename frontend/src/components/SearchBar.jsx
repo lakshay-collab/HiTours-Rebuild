@@ -85,7 +85,6 @@ export default function SearchBar({ id = 'hero', className = '' }) {
 
   return (
     <div ref={wrapRef} className="relative w-full">
-      <span aria-hidden className="hi-search-halo" />
       <form
         onSubmit={submit}
         className={`hi-search group flex items-center w-full h-14 sm:h-16 rounded-full pl-5 sm:pl-6 pr-2 ${focused ? 'is-focused' : ''} ${className}`}
