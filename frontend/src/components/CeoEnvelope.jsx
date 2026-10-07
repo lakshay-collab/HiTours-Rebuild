@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Mail, X } from 'lucide-react';
 import Logo from './Logo';
 import { ceo } from '../aboutData';
@@ -38,8 +38,15 @@ function Letter({ onClose }) {
 export default function CeoEnvelope() {
   const [opening, setOpening] = useState(false);
   const [open, setOpen] = useState(false);
-  const start = () => { if (opening) return; setOpening(true); setTimeout(() => setOpen(true), 900); };
+  const envRef = useRef(null);
+  const start = () => { if (opening) { setOpen(true); return; } setOpening(true); setTimeout(() => setOpen(true), 900); };
   const close = () => { setOpen(false); setOpening(false); };
+  useEffect(() => {
+    if (!envRef.current) return undefined;
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting && window.matchMedia('(max-width: 767px)').matches) { setOpening(true); io.disconnect(); } }, { threshold: 0.7 });
+    io.observe(envRef.current);
+    return () => io.disconnect();
+  }, []);
   return (
     <section className="eg-container" data-testid="about-ceo">
       <div className="grid md:grid-cols-[1fr_1.1fr] gap-8 md:gap-14 items-center">
@@ -49,11 +56,12 @@ export default function CeoEnvelope() {
           <p className="eg-body-lg text-[#174358]">{ceo.teaser}</p>
           <button type="button" onClick={start} className="eg-btn-filled h-12 px-7 eg-title-md self-start mt-2" data-testid="about-ceo-read-button"><Mail size={18} />{ceo.button}</button>
         </div>
-        <button type="button" onClick={start} aria-label={ceo.button} className={`eg-envelope order-1 md:order-2 ${opening ? 'is-open' : ''}`} data-testid="about-ceo-envelope">
+        <div ref={envRef} className="order-1 md:order-2 pt-36 pb-10 md:pt-0 md:pb-0">
+        <button type="button" onClick={start} aria-label={ceo.button} className={`eg-envelope ${opening ? 'is-open' : ''}`} data-testid="about-ceo-envelope">
           <div className="eg-envelope-letter">
             <div className="flex items-center justify-between pb-3 border-b border-[#E4E3DB]"><Logo className="h-5 w-auto" /><span className="eg-label-md uppercase tracking-[.08em] text-[#308BB6]">{ceo.eyebrow}</span></div>
             <p className="mt-3 eg-quote !text-[15px] !leading-6 text-[#002131]">{ceo.salutation}</p>
-            <p className="mt-2 eg-quote !text-[15px] !leading-6 text-[#002131]/80 line-clamp-3">{ceo.paragraphs[0]}</p>
+            <p className="mt-2 eg-quote !text-[15px] !leading-6 text-[#002131]/80 line-clamp-4">{ceo.paragraphs[0]}</p>
           </div>
           <div className="eg-envelope-body">
             <div className="eg-envelope-left" /><div className="eg-envelope-right" /><div className="eg-envelope-bottom" />
@@ -66,7 +74,9 @@ export default function CeoEnvelope() {
           </div>
           <div className="eg-envelope-flap" />
           <span className="eg-envelope-seal">HT</span>
+          {opening && !open && <span className="eg-envelope-hint md:hidden">Tap to read the full letter</span>}
         </button>
+        </div>
       </div>
       {open && <Letter onClose={close} />}
     </section>

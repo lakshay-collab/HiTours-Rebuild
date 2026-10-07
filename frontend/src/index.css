@@ -155,7 +155,9 @@ body {
 .eg-envelope-stamp { position: absolute; right: 7%; top: 56%; width: 64px; height: 76px; padding: 4px; background: #FFFDF7; border: 2px dashed #9ACDE5; border-radius: 4px; overflow: hidden; z-index: 4; transform: rotate(3deg); }
 .eg-envelope-stamp img { border-radius: 2px; }
 .eg-envelope-address { position: absolute; left: 7%; bottom: 10%; max-width: 60%; display: flex; flex-direction: column; gap: 2px; text-align: left; padding: 10px 14px; background: #FFFDF7; border-radius: 8px; z-index: 4; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+.eg-envelope-hint { position: absolute; left: 50%; bottom: -34px; transform: translateX(-50%); white-space: nowrap; font-family: 'Instrument Sans', Inter, sans-serif; font-size: 13px; font-weight: 600; color: #174358; animation: hi-fade-in .5s ease-out .9s both; }
 .eg-letter-paper { background-image: linear-gradient(180deg, rgba(48,139,182,.06), transparent 120px); }
+@media (max-width: 767px) { .eg-envelope { max-width: 420px; } .eg-envelope.is-open .eg-envelope-letter { transform: translateY(-68%) scale(1.04); } .eg-envelope-letter { transition-delay: .45s; transition-duration: .9s; } }
 @media (max-width: 600px) { .eg-envelope-stamp { width: 48px; height: 58px; } .eg-envelope-address { max-width: 68%; padding: 8px 10px; } .eg-envelope-address .eg-title-md { font-size: 13px; line-height: 18px; } }
 
 @keyframes hi-slide-up { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
