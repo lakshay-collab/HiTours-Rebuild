@@ -7,7 +7,7 @@ import DestinationCard from './DestinationCard';
 
 const SHOW_TABS = false; // region tabs hidden for now – Top 10 only
 
-export const COUNTRY_HREF = { 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
+export const COUNTRY_HREF = { 'Europe': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
 const REGION_HREF = { 'Asia': '/asien' };
 
 export default function Destinations() {
@@ -40,7 +40,7 @@ export default function Destinations() {
         </div>}
 
         <div className="w-full md:w-[calc(100vw-64px)] md:max-w-[1280px] grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-5 md:[&>*:nth-child(10)]:col-start-2 xl:[&>*:nth-child(10)]:col-start-auto" data-testid="destination-grid">
-          {list.map((d) => <DestinationCard key={d.name} {...d} href={COUNTRY_HREF[d.name]} />)}
+          {list.map((d, i) => <DestinationCard key={d.name} {...d} index={i} href={COUNTRY_HREF[d.name]} />)}
         </div>
         {regionHref && (
           <Link to={regionHref} className="inline-flex items-center gap-2 h-10 px-5 rounded-full border border-outline-variant t-label-lg text-onsurface hover:bg-onsurface/[0.06] transition-colors" data-testid="destination-region-link">

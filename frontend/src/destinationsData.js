@@ -14,7 +14,7 @@ export const destinations = {
     { name: 'Malaysia', badge: 'TOP PICK', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
     { name: 'Egypt', badge: 'TRENDING', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
     { name: 'Maldives', badge: 'POPULAR', region: 'Asia', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
-    { name: 'Kazakhstan', badge: 'TRENDING', region: 'Central Asia', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
+    { name: 'Europe', badge: 'TRENDING', region: 'Multi-country journeys', src: '/europe/alps.webp' },
     { name: 'Bhutan', badge: 'TOP PICK', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Japan', badge: 'POPULAR', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
   ],

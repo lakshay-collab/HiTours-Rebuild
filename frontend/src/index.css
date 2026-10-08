@@ -138,6 +138,11 @@ body {
 @keyframes hi-overlay-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes hi-drawer-in { from { transform: translateX(100%); } to { transform: translateX(0); } }
 @keyframes hi-fade-in { from { opacity: 0; } to { opacity: 1; } }
+.dest-card { opacity: 0; transform: perspective(1200px) rotateY(12deg) translateY(30px); transform-origin: 50% 50%; will-change: transform, opacity; transition: opacity 800ms cubic-bezier(.22,.61,.36,1) var(--reveal-delay, 0ms), transform 850ms cubic-bezier(.22,.61,.36,1) var(--reveal-delay, 0ms), box-shadow .5s ease; }
+.dest-card.is-in { opacity: 1; transform: perspective(1200px) rotateY(0deg) translateY(0); }
+.dest-card.is-in:hover { transform: perspective(1200px) rotateY(0deg) translateY(-4px); transition-delay: 0ms; }
+@media (max-width: 767px) { .dest-card { transform: perspective(1000px) rotateY(7deg) translateY(18px); transition-duration: 550ms, 600ms, .5s; } }
+@media (prefers-reduced-motion: reduce) { .dest-card { opacity: 1; transform: none; transition: box-shadow .3s ease; } .dest-card.is-in:hover { transform: none; } }
 .dest-title { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.01em; }
 .hi-search { position: relative; background: rgba(255,255,255,0.82); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 1px solid rgba(0,33,49,0.10); box-shadow: inset 0 1px 0 #FFFFFF, 0 1px 2px rgba(0,33,49,0.08), 0 8px 20px rgba(0,33,49,0.12), 0 24px 56px -12px rgba(0,33,49,0.30); transition: box-shadow .35s cubic-bezier(.22,.61,.36,1), transform .35s cubic-bezier(.22,.61,.36,1), border-color .35s ease, background-color .35s ease; }
 .hi-search:hover { transform: translateY(-1px); border-color: rgba(0,33,49,0.14); box-shadow: inset 0 1px 0 #FFFFFF, 0 2px 4px rgba(0,33,49,0.08), 0 12px 28px rgba(0,33,49,0.14), 0 32px 64px -14px rgba(0,33,49,0.34); }
