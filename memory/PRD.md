@@ -597,3 +597,8 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 
 ## Thrillophilia import playbook (user-supplied, 2026-06)
 - Saved at `/app/memory/THRILLOPHILIA_IMPORT.md`. When the user sends Thrillophilia links: build/reuse `scripts/thrillophilia/extract.py` (Playwright), gallery from "View All Images" only (never hero tiles), ALL hotel photos, price = round(INR × 0.95), fresh copy (no dashes, no banned words), data file per PART 7 template, register in EgyptDetail.jsx + <country>ToursData.js, report per PART 9.
+
+## 2026-06 – First Thrillophilia import: Thailand, Singapore, Malaysia & Hong Kong (13D/12N)
+- Source https://www.thrillophilia.com/tours/southeast-asia-highlights-tour. Tooling: `scripts/thrillophilia/extract.py` (JSON first: __NEXT_DATA__ + `website/api/products/<slug>/product_related_images?type=all` + `website/api/gallery_media/destination/<city>`; downloads to `import/<slug>/images`), `probe_gallery.py` (Playwright click probe, used once to discover the APIs), `build_sea.py` (image prep + data file for this trip). Work area `/app/import/` (not served).
+- Page `/asien/thailand-singapore-malaysia-hong-kong-13-days` via `tours/thailandSingaporeMalaysiaHongKong13DaysData.js` (registered in EgyptDetail.jsx slug map; Product appended to `thailandProducts` in thailandToursData.js, with `href` so the card links to /asien/...). Price 171000 = round(180000 × 0.95); the site-wide sale layer shows a further 5% on top (pre-existing behaviour for all packages).
+- 5 stops / 5 hotels (first hotel option per city, all gallery photos) / 10 included + 9 optional activities / 27 transfers / 14 meals. Flights BKK→SIN and KUL→HKG are NOT included (lines say "booked separately and not included").
