@@ -12,16 +12,16 @@ export const continentMeta = {
 
 export const destinations = {
   'Top 10': [
-    { name: 'Vietnam', badge: 'TOP PICK', region: 'Asia', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
-    { name: 'Sri Lanka', badge: 'POPULAR', region: 'Asia', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') },
-    { name: 'Thailand', badge: 'TOP PICK', region: 'Asia', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
-    { name: 'Singapore', badge: 'TRENDING', region: 'Asia', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
-    { name: 'Malaysia', badge: 'TOP PICK', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
-    { name: 'Egypt', badge: 'TRENDING', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
-    { name: 'Maldives', badge: 'POPULAR', region: 'Asia', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
-    { name: 'Europe', badge: 'TRENDING', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
-    { name: 'Bhutan', badge: 'TOP PICK', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
-    { name: 'Japan', badge: 'POPULAR', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
+    { name: 'Europe', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
+    { name: 'Vietnam', region: 'Asia', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
+    { name: 'Sri Lanka', region: 'Asia', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') },
+    { name: 'Thailand', region: 'Asia', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
+    { name: 'Singapore', region: 'Asia', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
+    { name: 'Malaysia', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
+    { name: 'Egypt', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
+    { name: 'Maldives', region: 'Asia', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
+    { name: 'Bhutan', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
+    { name: 'Japan', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
   ],
   'Africa': [
     { name: 'South Africa', src: img('11BIZmUhVTObt1mVYFtofn', 'f05f87c118cdb66b143bbb69eba50c62/Su__dafrika_Kapstadt_Zwo__lf_Apostel_Berge.jpg') },
