@@ -102,7 +102,7 @@ export const FiltersButton = ({ onClick, active = 0, testId = 'eg-filters-button
   </button>
 );
 
-export default function EgyptFilterBar({ title, cta = hero, extra = null, ...pills }) {
+export default function EgyptFilterBar({ title, cta = hero, extra = null, after = null, ...pills }) {
   const { openLead } = useLeadModal();
   const [stuck, setStuck] = useState(false);
   const ref = useRef(null);
@@ -118,6 +118,7 @@ export default function EgyptFilterBar({ title, cta = hero, extra = null, ...pil
         {stuck && <span className="eg-title-md text-[#002131] whitespace-nowrap truncate min-w-0 flex-1 animate-[hi-fade-in_150ms_ease-out]" data-testid="eg-filter-title">{title}</span>}
         {extra}
         <FilterPills {...pills} />
+        {after && <div className="hidden lg:block ml-2">{after}</div>}
         <a href={cta.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled ml-auto h-11 px-6 eg-title-md" data-testid="eg-filter-cta">{cta.stickyCta}</a>
       </div>
     </div>

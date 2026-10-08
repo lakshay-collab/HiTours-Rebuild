@@ -332,6 +332,7 @@ export const phuketKohSamuiBeachEscapeBySlug = { [detail.slug]: { detail, route,
 export const phuketKohSamuiBeachEscapeProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

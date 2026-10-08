@@ -406,6 +406,7 @@ export const romanticKrabiSamuiPhuketBySlug = { [detail.slug]: { detail, route, 
 export const romanticKrabiSamuiPhuketProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

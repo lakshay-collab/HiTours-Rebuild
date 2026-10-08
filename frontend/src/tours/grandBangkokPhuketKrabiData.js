@@ -376,6 +376,7 @@ export const grandBangkokPhuketKrabiBySlug = { [detail.slug]: { detail, route, g
 export const grandBangkokPhuketKrabiProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

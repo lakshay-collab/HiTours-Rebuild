@@ -463,6 +463,7 @@ export const islandTrailsPhuketSamuiKrabiBySlug = { [detail.slug]: { detail, rou
 export const islandTrailsPhuketSamuiKrabiProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -289,6 +289,7 @@ export const baliPhuketIslandEscapeBySlug = { [detail.slug]: { detail, route, gl
 export const baliPhuketIslandEscapeProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

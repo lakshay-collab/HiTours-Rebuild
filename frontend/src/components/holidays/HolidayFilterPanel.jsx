@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Check, Search } from 'lucide-react';
 import { ChevronDown } from '../egypt/EgyptIcons';
 import { NavIcon } from '../egypt/EgyptNavIcons';
-import { GROUP_LABELS } from '../../holidays/filterModel';
+import { GROUPS, GROUP_LABELS } from '../../holidays/filterModel';
 
 const Section = ({ id, title, children, defaultOpen = true, testPrefix }) => {
   const [open, setOpen] = useState(defaultOpen);
@@ -19,14 +19,14 @@ const Section = ({ id, title, children, defaultOpen = true, testPrefix }) => {
   );
 };
 
-const CheckRow = ({ item, checked, onToggle, icon, testId }) => (
+export const CheckRow = ({ item, checked, onToggle, icon, testId }) => (
   <button type="button" role="checkbox" aria-checked={checked} onClick={onToggle} disabled={!checked && item.count === 0}
-    className={`w-full flex items-center gap-3 py-2 text-left group disabled:opacity-40 disabled:cursor-not-allowed`} data-testid={testId}>
+    className="w-full flex items-center gap-3 py-2.5 text-left group disabled:opacity-40 disabled:cursor-not-allowed" data-testid={testId}>
     <span className={`w-5 h-5 shrink-0 rounded-[5px] border flex items-center justify-center transition-colors ${checked ? 'bg-[#174358] border-[#174358] text-white' : 'border-[#9AA3A8] bg-white group-hover:border-[#174358]'}`} aria-hidden>
       {checked && <Check size={14} strokeWidth={3} />}
     </span>
     {icon && <NavIcon name={icon} size={18} className="text-[#174358] shrink-0" />}
-    <span className={`flex-1 eg-body-lg text-[#002131] truncate ${checked ? 'font-semibold' : ''}`}>{item.label}</span>
+    <span className={`flex-1 eg-body-lg text-[#002131] leading-snug ${checked ? 'font-semibold' : ''}`}>{item.label}</span>
     <span className="eg-body-md text-[#6F777C] tabular-nums">({item.count})</span>
   </button>
 );
@@ -39,7 +39,7 @@ const ChipToggle = ({ item, checked, onToggle, testId }) => (
   </button>
 );
 
-function DestinationList({ items, selected, onToggle, testPrefix }) {
+function DestinationList({ items, selected, onToggle, testPrefix, maxHeight }) {
   const [q, setQ] = useState('');
   const shown = items.filter((i) => i.label.toLowerCase().includes(q.trim().toLowerCase()));
   return (
@@ -50,7 +50,7 @@ function DestinationList({ items, selected, onToggle, testPrefix }) {
           <Search size={18} className="text-[#174358] shrink-0" aria-hidden />
         </label>
       )}
-      <div className="max-h-[296px] overflow-y-auto pr-1 no-scrollbar" data-testid={`${testPrefix}-place-list`}>
+      <div className={`${maxHeight ? 'max-h-[296px] overflow-y-auto no-scrollbar' : ''} pr-1`} data-testid={`${testPrefix}-place-list`}>
         {shown.map((it) => <CheckRow key={it.value} item={it} checked={selected.includes(it.value)} onToggle={() => onToggle('place', it.value)} testId={`${testPrefix}-place-option`} />)}
         {!shown.length && <p className="py-2 eg-body-md text-[#6F777C]" data-testid={`${testPrefix}-place-empty`}>No destination matches “{q}”.</p>}
       </div>
@@ -58,27 +58,24 @@ function DestinationList({ items, selected, onToggle, testPrefix }) {
   );
 }
 
+// Options for a single filter group. `chips` renders duration/price as pills (desktop); otherwise as check rows (mobile).
+export function GroupOptions({ group, facets, sel, onToggle, testPrefix, chips = true, scrollPlaces = true }) {
+  if (group === 'place') return <DestinationList items={facets.place} selected={sel.place} onToggle={onToggle} testPrefix={testPrefix} maxHeight={scrollPlaces} />;
+  const items = facets[group];
+  if (chips && (group === 'days' || group === 'price')) {
+    return <div className="flex flex-wrap gap-2">{items.map((it) => <ChipToggle key={it.value} item={it} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />)}</div>;
+  }
+  return <div className="flex flex-col">{items.map((it) => <CheckRow key={it.value} item={it} icon={it.icon} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />)}</div>;
+}
+
 export default function HolidayFilterPanel({ facets, sel, onToggle, testPrefix = 'hf' }) {
   return (
     <div data-testid={`${testPrefix}-panel`}>
-      <Section id="theme" title={GROUP_LABELS.theme} testPrefix={testPrefix}>
-        <div className="flex flex-col">
-          {facets.theme.map((it) => <CheckRow key={it.value} item={it} icon={it.icon} checked={sel.theme.includes(it.value)} onToggle={() => onToggle('theme', it.value)} testId={`${testPrefix}-theme-option`} />)}
-        </div>
-      </Section>
-      <Section id="place" title={GROUP_LABELS.place} testPrefix={testPrefix}>
-        <DestinationList items={facets.place} selected={sel.place} onToggle={onToggle} testPrefix={testPrefix} />
-      </Section>
-      <Section id="days" title={GROUP_LABELS.days} testPrefix={testPrefix}>
-        <div className="flex flex-wrap gap-2">
-          {facets.days.map((it) => <ChipToggle key={it.value} item={it} checked={sel.days.includes(it.value)} onToggle={() => onToggle('days', it.value)} testId={`${testPrefix}-days-option`} />)}
-        </div>
-      </Section>
-      <Section id="price" title={GROUP_LABELS.price} testPrefix={testPrefix}>
-        <div className="flex flex-wrap gap-2">
-          {facets.price.map((it) => <ChipToggle key={it.value} item={it} checked={sel.price.includes(it.value)} onToggle={() => onToggle('price', it.value)} testId={`${testPrefix}-price-option`} />)}
-        </div>
-      </Section>
+      {GROUPS.map((g) => (
+        <Section key={g} id={g} title={GROUP_LABELS[g]} testPrefix={testPrefix}>
+          <GroupOptions group={g} facets={facets} sel={sel} onToggle={onToggle} testPrefix={testPrefix} />
+        </Section>
+      ))}
     </div>
   );
 }

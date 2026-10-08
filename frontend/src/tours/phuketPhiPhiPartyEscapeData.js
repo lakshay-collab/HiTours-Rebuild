@@ -323,6 +323,7 @@ export const phuketPhiPhiPartyEscapeBySlug = { [detail.slug]: { detail, route, g
 export const phuketPhiPhiPartyEscapeProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

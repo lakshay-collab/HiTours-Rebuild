@@ -358,6 +358,7 @@ export const bestOfThailandMalaysiaBySlug = { [detail.slug]: { detail, route, gl
 export const bestOfThailandMalaysiaProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
+  href: `/asien/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -32,7 +32,7 @@ import EnglandListing, { EnglandHolidays } from './pages/EnglandListing';
 import ScotlandListing, { ScotlandHolidays } from './pages/ScotlandListing';
 import FinlandListing, { FinlandHolidays } from './pages/FinlandListing';
 import SwedenListing, { SwedenHolidays } from './pages/SwedenListing';
-import ThailandListing, { ThailandHolidays } from './pages/ThailandListing';
+import ThailandListing, { ThailandHolidays, ThailandHoneymoons } from './pages/ThailandListing';
 import MaldivesListing, { MaldivesHolidays } from './pages/MaldivesListing';
 import TripStyleListing from './pages/TripStyleListing';
 import ThemeListing from './pages/ThemeListing';
@@ -145,6 +145,7 @@ function App() {
           <Route path="/asien/thailand" element={<ThailandListing />} />
           <Route path="/asien/thailand/holidays" element={<ThailandHolidays />} />
           <Route path="/asien/thailand/holidays/:style" element={<ThailandHolidays />} />
+          <Route path="/asien/thailand/honeymoons" element={<ThailandHoneymoons />} />
           <Route path="/asien/maldives" element={<MaldivesListing />} />
           <Route path="/asien/maldives/holidays" element={<MaldivesHolidays />} />
           <Route path="/asien/maldives/holidays/:style" element={<MaldivesHolidays />} />
