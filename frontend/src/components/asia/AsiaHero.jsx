@@ -31,7 +31,7 @@ export default function AsiaHero() {
         </div>
       </section>
 
-      <div className="mt-6" data-testid="as-trust-bar"><TrustBar /></div>
+      <div className="mt-6" data-testid="as-trust-bar"><TrustBar happy /></div>
 
       <StickyTabs tabs={tabs} testId="as" />
 

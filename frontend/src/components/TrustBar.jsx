@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { CalendarDays, ShieldCheck } from 'lucide-react';
-import { ratings } from '../mock';
+import { CalendarDays, Heart, ShieldCheck } from 'lucide-react';
+import { happyCustomers, ratings } from '../mock';
 import { GoogleLogo, TripAdvisorLogo } from './Rating';
 
 const INTERVAL = 5000;
@@ -17,6 +17,23 @@ const Seg = ({ icon: Icon, children, short, testId }) => (
 const Sep = () => <span className="block h-4 sm:h-5 w-px bg-outline-variant shrink-0" />;
 const Group = ({ children }) => <div className="flex items-center gap-x-2 sm:gap-6 flex-nowrap justify-center">{children}</div>;
 const B = ({ children }) => <span className="font-semibold">{children}</span>;
+
+const HAPPY_SLIDE = {
+    key: 'happy',
+    node: (
+      <Group>
+        <div className="flex items-center gap-2.5 whitespace-nowrap" data-testid="trust-slide-happy">
+          <span className="flex -space-x-2">
+            {happyCustomers.avatars.slice(0, 3).map((src) => (
+              <span key={src} className="relative w-7 h-7 rounded-full ring-2 ring-secondary-container overflow-hidden bg-surface-container"><img src={src} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" /></span>
+            ))}
+          </span>
+          <span className="t-label-lg text-xs sm:text-sm text-onsurface">{happyCustomers.text}</span>
+          <Heart size={18} className="heart-beat text-[#FF3B4A] fill-[#FF3B4A] drop-shadow-[0_2px_6px_rgba(255,59,74,0.45)]" aria-hidden="true" />
+        </div>
+      </Group>
+    )
+  };
 
 const SLIDES = [
   {
@@ -62,19 +79,20 @@ const useWide = () => {
   return wide;
 };
 
-export default function TrustBar() {
+export default function TrustBar({ happy = false }) {
+  const slides = happy ? [...SLIDES, HAPPY_SLIDE] : SLIDES;
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
   const wide = useWide();
 
   useEffect(() => {
     if (paused || !wide) return undefined;
-    const t = setTimeout(() => setI((v) => (v + 1) % SLIDES.length), INTERVAL);
+    const t = setTimeout(() => setI((v) => (v + 1) % slides.length), INTERVAL);
     return () => clearTimeout(t);
-  }, [paused, i, wide]);
+  }, [paused, i, wide, slides.length]);
 
-  const next = () => { if (wide) setI((v) => (v + 1) % SLIDES.length); };
-  const slide = wide ? SLIDES[i] : SLIDES[0];
+  const next = () => { if (wide) setI((v) => (v + 1) % slides.length); };
+  const slide = wide ? slides[i] : slides.find((s) => s.key === 'ratings');
   return (
     <div
       role="button"

@@ -28,7 +28,7 @@ export default function TripStyleHero({ hero, crumbs }) {
             <p className="eg-body-sm text-[#174358] text-center">{hero.note}</p>
           </div>
         </div>
-        <div className="rounded-b-xl overflow-hidden" data-testid="ts-trust-bar"><TrustBar /></div>
+        <div className="rounded-b-xl overflow-hidden" data-testid="ts-trust-bar"><TrustBar happy /></div>
       </section>
 
       <nav className="mt-8 w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[60px] flex items-center gap-1 eg-body-md text-[#174358]" aria-label="Breadcrumb" data-testid="ts-breadcrumb">

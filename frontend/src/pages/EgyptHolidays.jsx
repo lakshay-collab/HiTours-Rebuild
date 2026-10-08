@@ -60,7 +60,7 @@ const VideoHero = ({ video, image, title, count }) => (
         <button type="button" onClick={() => scrollToId('tours')} className="eg-btn-filled h-12 px-6 eg-title-md eg-rise !bg-none !bg-white !text-[#002131] hover:!bg-[#FBEADB] transition-colors" style={{ animationDelay: '120ms' }} data-testid="eg-hero-cta">{count}</button>
       </div>
     </section>
-    <div data-testid="eg-trust-bar"><TrustBar /></div>
+    <div data-testid="eg-trust-bar"><TrustBar happy /></div>
   </div>
 );
 

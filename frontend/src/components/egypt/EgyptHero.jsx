@@ -151,7 +151,7 @@ export default function EgyptHero({ style, title: titleProp, showTabs = true, cr
         </section>
       </div>
 
-      <div data-testid="eg-trust-bar"><TrustBar /></div>
+      <div data-testid="eg-trust-bar"><TrustBar happy /></div>
 
       {showTabs && <StickyTabs data={data} />}
 

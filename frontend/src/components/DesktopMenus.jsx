@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { destinationTabs, destinations } from '../destinationsData';
+import { destinationTabs, destinations, continentMeta } from '../destinationsData';
 import { themeGroups } from '../themesData';
 
 const COUNTRY_HREF = { 'Europe': '/europa', 'Europe multi-country': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
@@ -29,16 +29,20 @@ export function DestinationsMenu({ onNavigate, idPrefix = '' }) {
   return (
     <div className="tl-wide py-7" data-testid={`${idPrefix}menu-destinations`}>
       <div className="flex gap-8 min-h-[380px]">
-        <ul className="w-[220px] shrink-0 flex flex-col gap-1 border-r border-outline-variant pr-5" data-testid={`${idPrefix}menu-destinations-regions`}>
+        <ul className="w-[240px] shrink-0 flex flex-col gap-2.5 border-r border-outline-variant pr-6" data-testid={`${idPrefix}menu-destinations-regions`}>
           {destinationTabs.map((t) => {
             const on = active === t;
             return (
               <li key={t}>
                 <button type="button" onMouseEnter={() => setActive(t)} onFocus={() => setActive(t)} onClick={() => { if (REGION_HREF[t]) { navigate(REGION_HREF[t]); onNavigate?.(); } else setActive(t); }}
-                  className={`flex items-center justify-between w-full text-left px-3.5 py-2.5 rounded-lg transition-colors ${on ? 'bg-surface-highest text-onsurface' : 'text-onsurface-variant hover:bg-onsurface/[0.06]'}`}
+                  className={`group relative block w-full aspect-[2/1] rounded-xl overflow-hidden bg-surface-highest text-left transition-shadow ${on ? 'ring-2 ring-primary ring-offset-2 ring-offset-surface' : ''}`}
                   data-testid={regionTid(idPrefix, t)}>
-                  <span><span className="block t-label-lg">{t}</span><span className="block t-body-sm text-onsurface-variant">{(destinations[t] || []).length} destinations</span></span>
-                  <ArrowRight size={16} strokeWidth={2} className={`shrink-0 transition-opacity ${on ? 'opacity-100' : 'opacity-0'}`} />
+                  <img src={continentMeta[t]?.src} alt="" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${on ? 'scale-105' : 'group-hover:scale-105'}`} loading="lazy" />
+                  <span className={`absolute inset-0 transition-colors ${on ? 'bg-gradient-to-t from-onsurface/85 via-onsurface/25 to-onsurface/5' : 'bg-gradient-to-t from-onsurface/75 via-onsurface/15 to-transparent'}`} />
+                  <span className="absolute inset-x-0 bottom-0 px-3.5 py-3 flex items-center justify-between gap-2 text-white">
+                    <span className="t-title-md leading-tight drop-shadow">{t}</span>
+                    <span className={`shrink-0 w-7 h-7 rounded-full bg-white text-onsurface flex items-center justify-center transition-opacity ${on ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}><ArrowRight size={14} strokeWidth={2} /></span>
+                  </span>
                 </button>
               </li>
             );
@@ -54,7 +58,7 @@ export function DestinationsMenu({ onNavigate, idPrefix = '' }) {
               <Go key={d.name} href={COUNTRY_HREF[d.name] || '#'} onNavigate={onNavigate} className={`group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest ${d.highlight ? 'ring-2 ring-primary/70' : ''}`} testId={`${idPrefix}menu-country`}>
                 <img src={d.src} alt={d.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                 <span className="absolute inset-0 bg-gradient-to-t from-onsurface/70 via-onsurface/10 to-transparent" />
-                {d.highlight && <span className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-white/90 text-onsurface text-[10px] font-semibold uppercase tracking-[0.12em]">New</span>}
+                {d.badge && <span className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-white/90 text-onsurface text-[10px] font-semibold uppercase tracking-[0.12em]">{d.badge}</span>}
                 <span className="absolute left-3 bottom-2.5 t-label-lg text-white drop-shadow">{d.name}</span>
               </Go>
             ))}

@@ -12,7 +12,7 @@ const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
   name,
   href: REGION_HREF[name] || null,
   thumb: continentMeta[name]?.src || destinations[name][0].src,
-  countries: destinations[name].map((d) => d.name).filter((c) => c !== 'Europe multi-country')
+  countries: destinations[name].map((d) => d.name).filter((c) => c !== name)
 }));
 
 const SECTIONS = [
