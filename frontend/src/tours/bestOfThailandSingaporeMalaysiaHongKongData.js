@@ -337,12 +337,12 @@ const stops = [{
 }];
 
 const detail = {
-  slug: 'best-of-asia-13-days',
+  slug: 'best-of-thailand-singapore-malaysia-hong-kong',
   ctaHref: '/l/thailand/enquiry/passengers/',
   cta: 'Design Your Escape',
   sub: 'Your travel plan, no obligation and tailor made',
   banner: 'Worry free planning: flexible rebooking and cancellation options on your land programme.',
-  title: 'Best of Asia in 13 Days',
+  title: 'Best of Thailand, Singapore, Malaysia and Hong Kong',
   alt: 'Marina Bay Sands and the Merlion at sunset, Singapore',
   days: '13 days / 12 nights',
   stations: '5 stops',
@@ -413,9 +413,9 @@ const crumbs = [
   { label: detail.title }
 ];
 
-export const bestOfAsia13DaysBySlug = { [detail.slug]: { detail, route, glance, crumbs } };
+export const bestOfThailandSingaporeMalaysiaHongKongBySlug = { [detail.slug]: { detail, route, glance, crumbs } };
 
-export const bestOfAsia13DaysProduct = {
+export const bestOfThailandSingaporeMalaysiaHongKongProduct = {
   slug: detail.slug,
   href: '/asien/' + detail.slug,
   tag: detail.tag,

@@ -123,11 +123,11 @@ These counts must be identical in detail.stats, detail.services, the Product car
 The name is the first thing a buyer reads. It must sell the trip, not just list places. Write for a mass audience: English speaking travellers in India's tier one and tier two cities, and anywhere else. Simple words anyone understands, but still aspirational.
 
 ### Rules
-1. 3 to 6 words maximum. Numbers count as words.
-2. Always include the destination: the country, or the main city or region.
+1. Keep it as short as the trip allows, but the name must be complete: every country in the trip is named.
+2. Always name the destination in full: all countries on the trip, or the main city or region for a single country trip. Never a vague umbrella such as "Asia" or "Europe" when the countries are known.
 3. Always add one appealing hook, such as: Best of, Highlights of, Grand, Classic, Amazing, Magical, Wonders of, Holiday, Escape, Adventure, Explorer, or the signature experience (Northern Lights, Safari, Nile Cruise, Island Hopping, Swiss Alps).
-4. Never just list countries or cities. "Thailand, Singapore, Malaysia and Hong Kong" is wrong.
-5. For 3 or more countries, use one umbrella name plus a hook, or the trip size. For example: "Best of Asia in 13 Days", "Amazing Asia: 4 Countries, 13 Days", "Grand Southeast Asia Holiday".
+4. Never a bare list of places with no hook. "Thailand, Singapore, Malaysia and Hong Kong" is wrong because it has no hook, not because it names the countries.
+5. For 3 or more countries, name all of them after the hook, commas with "and" before the last one. For example: "Best of Thailand, Singapore, Malaysia and Hong Kong", "Highlights of France, Switzerland and Italy". Add the trip size only if it still reads cleanly.
 6. For 2 countries, name both with a hook. For example: "Thailand and Singapore Highlights", "Best of Morocco and Egypt".
 7. No jargon or fancy words: odyssey, sojourn, splendour, voyage, escapade, soirée, tapestry, rhapsody, mosaic, symphony, saga, or any foreign words the buyer may not know.
 8. No dashes. A colon is allowed. Title Case. Never reuse Thrillophilia's title.
@@ -137,7 +137,7 @@ The name is the first thing a buyer reads. It must sell the trip, not just list 
 
 | Trip | Bad | Good |
 |---|---|---|
-| Thailand, Singapore, Malaysia, Hong Kong, 13 days | Thailand, Singapore, Malaysia and Hong Kong | Best of Asia in 13 Days |
+| Thailand, Singapore, Malaysia, Hong Kong, 13 days | Best of Asia in 13 Days (too vague, hides the countries) | Best of Thailand, Singapore, Malaysia and Hong Kong |
 | Iceland, Reykjavík and Akureyri | Highlights of Iceland: Tracing City Sights | Iceland with Northern Lights |
 | Thailand, 9 days | Siam Splendour Odyssey | Amazing Thailand Holiday |
 | Switzerland and Paris | Alpine Rhapsody | Best of Switzerland and Paris |
