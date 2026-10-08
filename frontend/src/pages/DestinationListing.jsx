@@ -81,7 +81,7 @@ export default function DestinationListing({ d, testId = 'egypt-listing-page' })
           </p>
           <div className="mt-8 flex justify-end" data-testid="eg-sort-row"><SortPill sort={sort} onSort={setSort} /></div>
           <div className="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-testid="eg-product-grid">
-            {top.map((p, i) => <div key={p.slug || p.title} className={i >= 4 ? 'hidden sm:block' : ''}><EgyptProductCard p={p} /></div>)}
+            {top.map((p, i) => <div key={p.slug || p.title} className={i >= 4 ? 'hidden sm:block' : ''}><EgyptProductCard p={p} index={i} /></div>)}
           </div>
           <div className="mt-8 flex justify-center">
             <Link to={holidaysPath} onClick={viewAll} className="eg-btn-filled h-12 px-8 eg-title-md" data-testid="eg-view-all">{tours.viewAll}</Link>

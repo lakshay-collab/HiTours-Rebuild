@@ -137,7 +137,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
           )}
           {list.length ? (
             <div className="mt-6 md:mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-testid="eg-product-grid">
-              {shown.map((p, i) => <div key={p.slug} className={i < page ? 'eg-rise' : ''} style={i < page ? { animationDelay: `${200 + i * 60}ms` } : undefined}><EgyptProductCard p={p} /></div>)}
+              {shown.map((p, i) => <div key={p.slug} className={i < page ? 'eg-rise' : ''} style={i < page ? { animationDelay: `${200 + i * 60}ms` } : undefined}><EgyptProductCard p={p} index={i} /></div>)}
             </div>
           ) : (
             <p className="mt-8 eg-body-lg text-[#174358]" data-testid="eg-empty">{tours.empty}</p>

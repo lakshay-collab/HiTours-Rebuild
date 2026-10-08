@@ -40,7 +40,7 @@ import About from './pages/About';
 import Care from './pages/Care';
 import { Terms, Privacy } from './pages/Legal';
 import Press from './pages/Press';
-import EuropeLanding from './pages/EuropeLanding';
+import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
 
 const StyleRedirect = () => <Navigate to={`/afrika/aegypten/holidays/${useParams().style}`} replace />;
 
@@ -102,7 +102,9 @@ function App() {
           <Route path="/asien/philippines" element={<PhilippinesListing />} />
           <Route path="/asien/philippines/holidays" element={<PhilippinesHolidays />} />
           <Route path="/asien/philippines/holidays/:style" element={<PhilippinesHolidays />} />
-          <Route path="/europa" element={<EuropeLanding />} />
+          <Route path="/europa" element={<EuropeListing />} />
+          <Route path="/europa/holidays" element={<EuropeHolidays />} />
+          <Route path="/europa/holidays/:style" element={<EuropeHolidays />} />
           <Route path="/europa/iceland" element={<IcelandListing />} />
           <Route path="/europa/iceland/holidays" element={<IcelandHolidays />} />
           <Route path="/europa/iceland/holidays/:style" element={<IcelandHolidays />} />

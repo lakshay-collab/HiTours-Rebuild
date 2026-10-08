@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { BedIcon, TicketIcon, CarIcon, MealIcon, ChevronLeft, ChevronRight } from './EgyptIcons';
 import SaleBadge from '../sale/SaleBadge';
 import SalePrice from '../sale/SalePrice';
+import useReveal from '../../hooks/useReveal';
 
 const Stat = ({ icon: Icon, value, testId }) => (
   <span className="flex items-center gap-2.5 rounded-lg bg-[#FBEADB] px-3 h-11 text-[#002131] whitespace-nowrap" data-testid={testId}>
@@ -26,8 +27,9 @@ const ImageMeta = ({ days, cities }) => (
   </>
 );
 
-export default function EgyptProductCard({ p }) {
+export default function EgyptProductCard({ p, index = 0 }) {
   const [i, setI] = useState(0);
+  const [revealRef, inView] = useReveal();
   const n = p.images.length;
   const to = p.href || (p.slug ? `/afrika/aegypten/${p.slug}` : null);
   const go = (d) => setI((v) => (v + d + n) % n);
@@ -39,7 +41,7 @@ export default function EgyptProductCard({ p }) {
   const meals = p.meals != null ? p.meals : (typeof p.days === 'number' ? p.days : null);
 
   return (
-    <article className="relative flex flex-col h-full eg-card" data-testid="eg-product-card">
+    <article ref={revealRef} className={`relative flex flex-col h-full eg-card reveal-card ${inView ? 'is-in' : ''}`} style={{ '--reveal-delay': `${(index % 3) * 90}ms` }} data-testid="eg-product-card">
       <div className="relative group">
         <div className="relative w-full aspect-[1.59] overflow-hidden bg-[#EAE8E0]">
           <Wrap data-testid="eg-product-image-link">

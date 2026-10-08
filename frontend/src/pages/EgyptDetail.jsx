@@ -51,6 +51,8 @@ import { planner as philippinesPlanner, reviews as philippinesReviews } from '..
 import { philippinesBySlug } from '../tours/philippinesToursData';
 import { planner as icelandPlanner, reviews as icelandReviews } from '../icelandListingData';
 import { icelandBySlug } from '../tours/icelandToursData';
+import { europeBySlug } from '../tours/europeToursData';
+import { planner as europePlanner, reviews as europeReviews } from '../europeListingData';
 import { planner as italyPlanner, reviews as italyReviews } from '../italyListingData';
 import { italyBySlug } from '../tours/italyToursData';
 import { planner as greecePlanner, reviews as greeceReviews } from '../greeceListingData';
@@ -81,6 +83,7 @@ import { icelandGlaciersBySlug } from '../tours/icelandGlaciersData';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
+  ['Europe', (d) => ({ planner: europePlanner, reviews: europeReviews })],
   ['Vietnam', (d) => ({ planner: vietnamPlanner, reviews: vietnamReviews })],
   ['Sri Lanka', (d) => ({ planner: srilankaPlanner, reviews: srilankaReviews })],
   ['Malaysia', (d) => ({ planner: malaysiaPlanner, reviews: malaysiaReviews })],
@@ -112,7 +115,7 @@ const DESTINATIONS = [
   ['Morocco', (d) => ({ planner: { ...planner, h3: 'Plan your Morocco trip', bg: d.gallery?.[0] } })]
 ];
 const destinationFor = (d) => {
-  const hay = d.slug in vietnamBySlug ? 'vietnam' : `${d.title} ${d.slug} ${(d.routeCities || []).join(' ')}`.toLowerCase();
+  const hay = d.slug in vietnamBySlug ? 'vietnam' : d.slug in europeBySlug ? 'europe' : `${d.title} ${d.slug} ${(d.routeCities || []).join(' ')}`.toLowerCase();
   const hit = DESTINATIONS.find(([name]) => hay.includes(name.toLowerCase()));
   const name = hit ? hit[0] : 'Egypt';
   const extra = hit ? hit[1](d) : {};
@@ -158,6 +161,7 @@ const BY_SLUG = {
   ...cambodiaBySlug,
   ...philippinesBySlug,
   ...icelandBySlug,
+  ...europeBySlug,
   ...italyBySlug,
   ...greeceBySlug,
   ...norwayBySlug,
