@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { X, ArrowLeft, ArrowRight, MapPin, Sparkles, Info, Briefcase, Megaphone, Umbrella, Phone, BadgeCheck } from 'lucide-react';
-import { destinationTabs, destinations } from '../destinationsData';
+import { destinationTabs, destinations, continentMeta } from '../destinationsData';
 import { themeGroups } from '../themesData';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 
 const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Work with us': Briefcase, 'Press': Megaphone, 'Hi Tours Care': Umbrella, 'Expert advice': Phone };
 
-const REGION_HREF = { 'Asia': '/asien' };
-const COUNTRY_HREF = { 'Europe': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
+const REGION_HREF = { 'Asia': '/asien', 'Europe': '/europa' };
+const COUNTRY_HREF = { 'Europe': '/europa', 'Europe multi-country': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
 const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
   name,
   href: REGION_HREF[name] || null,
-  thumb: destinations[name][0].src.replace('w=520', 'w=80'),
-  countries: destinations[name].map((d) => d.name)
+  thumb: continentMeta[name]?.src || destinations[name][0].src,
+  countries: destinations[name].map((d) => d.name).filter((c) => c !== 'Europe multi-country')
 }));
 
 const SECTIONS = [

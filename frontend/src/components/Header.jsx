@@ -212,7 +212,7 @@ export default function Header({ overlay = false, floating = false }) {
         {menu && (
           <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[min(1240px,96vw)]" onMouseEnter={keepMenu} onMouseLeave={closeMenu} data-testid="floating-mega-panel">
             <div className="bg-surface rounded-2xl border border-outline-variant shadow-[0_16px_40px_rgba(0,33,49,0.18)] overflow-hidden animate-[hi-fade-in_180ms_ease-out]">
-              {menu === 'destinations' && <DestinationsMenu onNavigate={closeNow} />}
+              {menu === 'destinations' && <DestinationsMenu onNavigate={closeNow} idPrefix="float-" />}
               {menu === 'themes' && <ThemesMenu onNavigate={closeNow} />}
             </div>
           </div>

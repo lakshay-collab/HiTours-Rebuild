@@ -1,12 +1,12 @@
 // Regional destinations grid data (images reused from original site CDN).
 const img = (id, path) => `https://images.ctfassets.net/bth3mlrehms2/${id}/${path}?w=900&q=70&fm=webp`;
 
-export const destinationTabs = ['Asia', 'Europe', 'Middle East'];
-// Previously: 'Top 10', 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
+export const destinationTabs = ['Top 10', 'Asia', 'Europe', 'Middle East'];
+// Previously also: 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
 export const continentMeta = {
-  Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Temples, tea hills and turquoise bays', href: '/asien' },
-  Europe: { src: '/europe/alps.webp', tagline: 'One journey, multiple countries', href: '/europa' },
-  'Middle East': { src: '/destinations/jordan.webp', tagline: 'Pyramids, Petra and desert skylines', href: null }
+  Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Beaches, temples and city breaks', href: '/asien' },
+  Europe: { src: '/europe/alps.webp', tagline: 'Two or three countries in one holiday', href: '/europa' },
+  'Middle East': { src: '/destinations/jordan.webp', tagline: 'Pyramids, Petra and the Dubai skyline', href: null }
 };
 
 export const destinations = {
@@ -51,6 +51,7 @@ export const destinations = {
     { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') }
   ],
   'Europe': [
+    { name: 'Europe multi-country', highlight: true, src: '/europe/zermatt.webp' },
     { name: 'Iceland', src: img('19jS6gkSXrat4camgvmXdJ', '6d0914a835cfb184af0111735d4332cc/Island__Reynisfjara.jpg') },
     { name: 'Italy', src: img('6MDAdkdCjF16LaohT1os4R', 'a05331428849331be0c2fd266c8570db/Italien_Amalfi.jpg') },
     { name: 'Greece', src: img('4tPmbNB9QIZbfIWAsHnz3w', 'fd3191963fb012a8f8e1aeb42a2a6401/Griechenland_Santorini.jpg') },

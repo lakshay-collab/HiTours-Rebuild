@@ -576,3 +576,8 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - Homepage destination cards scaled to ~80% (grid max 1024px, 80% width on tablet, smaller type) per user request.
 - "We are social" (was "Travel with us on social"): hint removed, image shown at its full 1400×724 ratio (no cropping), less grey padding, slide heights auto.
 - TripShowcase: Europe honeymoon tab added before Vietnam (Rohan & Meera's Europe honeymoon); Vietnam → "Prajwal & Sneha's babymoon"; Sri Lanka → "the Sharma's family holiday". `trip()` accepts local image paths.
+
+## 2026-06 – Homepage destinations tabs restored + neutral Destinations dropdown (user: "Asia must not be the default")
+- `Destinations.jsx` reverted to the ORIGINAL tabbed section (pill tabs + bordered image cards, 150px photo + name). `destinationTabs` = ['Top 10','Asia','Europe','Middle East'], Top 10 open by default. `DestinationCard.jsx` no longer used on the homepage (still used by the unrouted EuropeLanding).
+- `DesktopMenus.DestinationsMenu`: no preselected region. Default = overview ("Where would you like to go?") with 3 equal photo cards Asia / Europe / Middle East (tagline + "Explore N destinations"); click a card → left column (3 small cards, hover switches, Asia/Europe click → listing) + country grid + featured panel + "← All regions" back. `idPrefix` prop ("float-" in the floating nav) fixes the duplicate `menu-region-*` test ids.
+- Data: Europe list starts with `{ name: 'Europe multi-country', highlight: true }` → /europa (NEW badge in menu grid; filtered out in the mobile drawer because the region row already links to /europa). Mobile drawer thumbs use `continentMeta` photos; nothing preselected there either.
