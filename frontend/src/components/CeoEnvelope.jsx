@@ -43,7 +43,7 @@ export default function CeoEnvelope() {
   const close = () => { setOpen(false); setOpening(false); };
   useEffect(() => {
     if (!envRef.current) return undefined;
-    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting && window.matchMedia('(max-width: 767px)').matches) { setOpening(true); io.disconnect(); } }, { threshold: 0.7 });
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setOpening(true); io.disconnect(); } }, { threshold: 0.6 });
     io.observe(envRef.current);
     return () => io.disconnect();
   }, []);
@@ -56,7 +56,7 @@ export default function CeoEnvelope() {
           <p className="eg-body-lg text-[#174358]">{ceo.teaser}</p>
           <button type="button" onClick={start} className="eg-btn-filled h-12 px-7 eg-title-md self-start mt-2" data-testid="about-ceo-read-button"><Mail size={18} />{ceo.button}</button>
         </div>
-        <div ref={envRef} className="order-1 md:order-2 pt-36 pb-10 md:pt-0 md:pb-0">
+        <div ref={envRef} className="order-1 md:order-2 pt-36 pb-10 md:pt-28 md:pb-0">
         <button type="button" onClick={start} aria-label={ceo.button} className={`eg-envelope ${opening ? 'is-open' : ''}`} data-testid="about-ceo-envelope">
           <div className="eg-envelope-letter">
             <div className="flex items-center justify-between pb-3 border-b border-[#E4E3DB]"><Logo className="h-5 w-auto" /><span className="eg-label-md uppercase tracking-[.08em] text-[#308BB6]">{ceo.eyebrow}</span></div>
@@ -74,7 +74,7 @@ export default function CeoEnvelope() {
           </div>
           <div className="eg-envelope-flap" />
           <span className="eg-envelope-seal">HT</span>
-          {opening && !open && <span className="eg-envelope-hint md:hidden">Tap to read the full letter</span>}
+          {opening && !open && <span className="eg-envelope-hint">Click the letter to read it in full</span>}
         </button>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const destinationTabs = ['Top 10', 'Asia', 'Europe', 'Middle East'];
 // Previously also: 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
 export const continentMeta = {
   Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Beaches, temples and city breaks', href: '/asien' },
-  Europe: { src: '/europe/alps.webp', tagline: 'Two or three countries in one holiday', href: '/europa' },
+  Europe: { src: '/europe/hero-paris.webp', tagline: 'Two or three countries in one holiday', href: '/europa' },
   'Middle East': { src: '/destinations/jordan.webp', tagline: 'Pyramids, Petra and the Dubai skyline', href: null }
 };
 
@@ -18,7 +18,7 @@ export const destinations = {
     { name: 'Malaysia', badge: 'TOP PICK', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
     { name: 'Egypt', badge: 'TRENDING', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
     { name: 'Maldives', badge: 'POPULAR', region: 'Asia', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
-    { name: 'Europe', badge: 'TRENDING', region: 'Multi-country journeys', src: '/europe/alps.webp' },
+    { name: 'Europe', badge: 'TRENDING', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
     { name: 'Bhutan', badge: 'TOP PICK', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Japan', badge: 'POPULAR', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
   ],
@@ -51,7 +51,7 @@ export const destinations = {
     { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') }
   ],
   'Europe': [
-    { name: 'Europe multi-country', highlight: true, src: '/europe/zermatt.webp' },
+    { name: 'Europe multi-country', highlight: true, src: '/europe/hero-paris.webp' },
     { name: 'Iceland', src: img('19jS6gkSXrat4camgvmXdJ', '6d0914a835cfb184af0111735d4332cc/Island__Reynisfjara.jpg') },
     { name: 'Italy', src: img('6MDAdkdCjF16LaohT1os4R', 'a05331428849331be0c2fd266c8570db/Italien_Amalfi.jpg') },
     { name: 'Greece', src: img('4tPmbNB9QIZbfIWAsHnz3w', 'fd3191963fb012a8f8e1aeb42a2a6401/Griechenland_Santorini.jpg') },

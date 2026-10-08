@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { destinationTabs, destinations, continentMeta } from '../destinationsData';
+import { Link, useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { destinationTabs, destinations } from '../destinationsData';
 import { themeGroups } from '../themesData';
 
 const COUNTRY_HREF = { 'Europe': '/europa', 'Europe multi-country': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
 const REGION_HREF = { 'Asia': '/asien', 'Europe': '/europa' };
 const REGION_TAGLINE = {
+  'Top 10': 'Our most loved destinations right now',
   'Asia': 'Beaches, temples and city breaks across Asia',
   'Europe': 'Two or three countries in one trip, planned as one holiday',
   'Middle East': 'Pyramids, Petra and the Dubai skyline'
@@ -17,62 +18,31 @@ const Go = ({ href, onNavigate, className, children, testId }) => isInternal(hre
   ? <Link to={href} onClick={onNavigate} className={className} data-testid={testId}>{children}</Link>
   : <a href="#" onClick={(e) => e.preventDefault()} className={className} data-testid={testId}>{children}</a>;
 
-const REGIONS = destinationTabs.filter((t) => t !== 'Top 10');
 const regionTid = (prefix, t) => `${prefix}menu-region-${t.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
-function RegionCard({ t, on, big, onSelect, onNavigate, testId }) {
-  const meta = continentMeta[t] || {};
-  const count = (destinations[t] || []).length;
-  const cls = `group relative block w-full overflow-hidden bg-surface-highest text-left focus-visible:outline-none ${big ? 'h-[380px] rounded-2xl' : 'aspect-[16/9] rounded-xl'}`;
-  const inner = (
-    <>
-      <img src={meta.src} alt="" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${on ? 'scale-105' : 'group-hover:scale-105'}`} loading="lazy" />
-      <span className={`absolute inset-0 ${on || big ? 'bg-gradient-to-t from-onsurface/90 via-onsurface/30 to-onsurface/5' : 'bg-gradient-to-t from-onsurface/80 via-onsurface/20 to-transparent'}`} />
-      <span className={`absolute inset-x-0 bottom-0 ${big ? 'p-6' : 'p-3.5'} flex items-end justify-between gap-3 text-white`}>
-        <span className="min-w-0">
-          <span className={`block leading-tight ${big ? 't-headline-sm' : 't-title-md'}`}>{t}</span>
-          {big && <span className="block t-body-md text-white/85 mt-1.5">{REGION_TAGLINE[t]}</span>}
-          <span className={`block t-body-sm text-white/80 ${big ? 'mt-3' : 'mt-0.5'}`}>{big ? `Explore ${count} destinations` : `${count} destinations`}</span>
-        </span>
-        <span className={`shrink-0 rounded-full flex items-center justify-center bg-white text-onsurface transition-transform duration-300 group-hover:translate-x-0.5 ${big ? 'w-10 h-10' : 'w-8 h-8'}`}><ArrowRight size={big ? 18 : 16} strokeWidth={2} /></span>
-      </span>
-      {on && <span className="absolute inset-0 rounded-xl ring-2 ring-primary ring-offset-2 ring-offset-surface-lowest pointer-events-none" />}
-    </>
-  );
-  if (!big && REGION_HREF[t]) return <Link to={REGION_HREF[t]} onClick={onNavigate} onMouseEnter={onSelect} onFocus={onSelect} className={cls} data-testid={testId}>{inner}</Link>;
-  return <button type="button" onClick={onSelect} onMouseEnter={big ? undefined : onSelect} onFocus={big ? undefined : onSelect} className={cls} data-testid={testId}>{inner}</button>;
-}
-
 export function DestinationsMenu({ onNavigate, idPrefix = '' }) {
-  const [active, setActive] = useState(null);
+  const navigate = useNavigate();
+  const [active, setActive] = useState(destinationTabs[0]);
   const list = destinations[active] || [];
-  const feature = active ? (list.find((d) => COUNTRY_HREF[d.name]) || list[0]) : null;
-
-  if (!active) {
-    return (
-      <div className="tl-wide py-7" data-testid={`${idPrefix}menu-destinations`}>
-        <div className="flex items-end justify-between gap-4 mb-5">
-          <div><h3 className="t-title-lg text-onsurface">Where would you like to go?</h3><p className="t-body-sm text-onsurface-variant">Pick a region to see all its destinations</p></div>
-        </div>
-        <div className="grid grid-cols-3 gap-5" data-testid={`${idPrefix}menu-destinations-overview`}>
-          {REGIONS.map((t) => <RegionCard key={t} t={t} big onSelect={() => setActive(t)} testId={regionTid(idPrefix, t)} />)}
-        </div>
-      </div>
-    );
-  }
+  const feature = list.find((d) => COUNTRY_HREF[d.name]) || list[0];
 
   return (
     <div className="tl-wide py-7" data-testid={`${idPrefix}menu-destinations`}>
       <div className="flex gap-8 min-h-[380px]">
-        <ul className="w-[260px] shrink-0 flex flex-col gap-3 border-r border-outline-variant pr-6" data-testid={`${idPrefix}menu-destinations-regions`}>
-          {REGIONS.map((t) => (
-            <li key={t}><RegionCard t={t} on={active === t} onSelect={() => setActive(t)} onNavigate={onNavigate} testId={regionTid(idPrefix, t)} /></li>
-          ))}
-          <li className="mt-auto">
-            <button type="button" onClick={() => setActive(null)} className="inline-flex items-center gap-1.5 t-label-lg text-onsurface-variant hover:text-onsurface transition-colors" data-testid={`${idPrefix}menu-regions-back`}>
-              <ArrowLeft size={16} strokeWidth={2} /> All regions
-            </button>
-          </li>
+        <ul className="w-[220px] shrink-0 flex flex-col gap-1 border-r border-outline-variant pr-5" data-testid={`${idPrefix}menu-destinations-regions`}>
+          {destinationTabs.map((t) => {
+            const on = active === t;
+            return (
+              <li key={t}>
+                <button type="button" onMouseEnter={() => setActive(t)} onFocus={() => setActive(t)} onClick={() => { if (REGION_HREF[t]) { navigate(REGION_HREF[t]); onNavigate?.(); } else setActive(t); }}
+                  className={`flex items-center justify-between w-full text-left px-3.5 py-2.5 rounded-lg transition-colors ${on ? 'bg-surface-highest text-onsurface' : 'text-onsurface-variant hover:bg-onsurface/[0.06]'}`}
+                  data-testid={regionTid(idPrefix, t)}>
+                  <span><span className="block t-label-lg">{t}</span><span className="block t-body-sm text-onsurface-variant">{(destinations[t] || []).length} destinations</span></span>
+                  <ArrowRight size={16} strokeWidth={2} className={`shrink-0 transition-opacity ${on ? 'opacity-100' : 'opacity-0'}`} />
+                </button>
+              </li>
+            );
+          })}
         </ul>
         <div className="flex-1 min-w-0 flex flex-col gap-4">
           <div className="flex items-end justify-between gap-4">

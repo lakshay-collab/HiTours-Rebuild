@@ -31,7 +31,7 @@ export const hero = {
 export const ceo = {
   eyebrow: 'A note from our CEO',
   teaserTitle: 'A letter to every traveller who plans with us',
-  teaser: 'Why Indian travellers today are smarter than ever, and why that makes us even more committed to specialists who are enabled by AI and grounded in real local partnerships.',
+  teaser: 'What a breathless climb to Tiger\u2019s Nest taught our CEO about happy holidays, and why the smarter Indian traveller makes us better.',
   button: 'Read letter by the CEO',
   name: 'Hunar Syal',
   role: 'Chief Executive Officer, Hi Tours',
@@ -40,10 +40,12 @@ export const ceo = {
   quote: 'Our specialists are enabled by AI. But it is our people, and the local partnerships we have built over years, that make your holiday safe and happy.',
   salutation: 'Dear traveller,',
   paragraphs: [
-    'Travel in India is changing, and it is changing fast. The Indian traveller today is smarter, better informed and far more aware than ever before. You compare, you research, and you ask AI for ideas long before you ever speak to a travel company. We think that is a wonderful thing.',
-    'What has not changed is what you want from a holiday. Whether it is a honeymoon you have dreamt of for years or a family getaway that has to work for grandparents and toddlers alike, the goal is the same: a genuinely happy holiday, and memories you will keep for a lifetime.',
-    'That is why we have built Hi Tours around specialists who are enabled by AI, not replaced by it. Technology helps our team move faster, see more options and personalise every itinerary down to the smallest detail. But it is our people, and the local connections and partnerships we have nurtured over years on the ground, who make sure the hotel is right, the guide is wonderful and someone picks up the phone when it matters.',
-    'A safe, happy holiday is the only outcome we care about. Thank you for trusting us with yours.'
+    'A few years ago I stood at the top of Tiger\u2019s Nest in Bhutan, completely out of breath, and watched three generations of one family hug each other because they had all made it up. Nobody reached for a phone. Nobody checked the time. That one minute is the reason Hi Tours exists.',
+    'The Indian traveller has changed, and I think it is wonderful. You read reviews, compare prices and ask AI for ideas long before you ever call us. A well informed traveller asks sharper questions, and sharper questions make us a better company.',
+    'Here is what three decades of planning holidays has taught us. The hotel can be perfect and the itinerary can be flawless, but a holiday becomes a happy one because of small things. The driver who waits an extra hour when your flight is late. The guide who knows which little stall in Hanoi makes the best pho. The specialist who quietly moves your Santorini sunset dinner because the forecast changed.',
+    'That is why our specialists are enabled by AI, not replaced by it. Technology helps our team see more options and plan faster. But it is our people, and the local partners we have worked with for years, who make sure every detail is right and someone picks up the phone when it matters.',
+    'Whether you are planning the honeymoon you have dreamt of for years or a family trip that has to work for grandparents and toddlers alike, we want one thing for you. A holiday that is safe, happy and full of stories you will still be telling at dinner tables years from now.',
+    'Thank you for trusting us with yours.'
   ],
   closing: 'Warm regards,'
 };
