@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Plane } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import FlightPath from './FlightPath';
 import { destinationTabs, destinations } from '../destinationsData';
 import { destinationsHeading, destinationsSubcopy } from '../mock';
 
@@ -16,10 +17,10 @@ export default function Destinations() {
     <section id="destinations" className="pt-16 md:pt-20 scroll-mt-24" data-testid="destinations-section">
       <div className="tl-container flex flex-col items-center gap-8 md:gap-10">
         <div className="flex flex-col items-center gap-3 text-center">
-          <div className="flex items-center gap-4 sm:gap-6">
-            <span aria-hidden className="flex items-center gap-2 text-primary-dim"><span className="dest-trail h-px w-8 sm:w-16 bg-gradient-to-r from-transparent to-primary-dim/70" /><Plane size={18} strokeWidth={1.75} className="dest-plane" /></span>
+          <div className="flex items-center gap-3 sm:gap-5">
+            <FlightPath side="left" className="w-[84px] sm:w-[160px] h-auto shrink-0" />
             <h2 className="t-section text-onsurface">{destinationsHeading}</h2>
-            <span aria-hidden className="flex items-center gap-2 text-primary-dim"><Plane size={18} strokeWidth={1.75} className="dest-plane dest-plane-r" /><span className="dest-trail dest-trail-r h-px w-8 sm:w-16 bg-gradient-to-l from-transparent to-primary-dim/70" /></span>
+            <FlightPath side="right" className="w-[84px] sm:w-[160px] h-auto shrink-0" />
           </div>
           <p className="t-body-lg text-onsurface-variant" data-testid="destinations-subcopy">{destinationsSubcopy}</p>
         </div>

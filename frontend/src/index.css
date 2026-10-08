@@ -201,15 +201,6 @@ body {
 .promo-marquee-track { animation: promo-marquee 36s linear infinite; will-change: transform; }
 .promo-marquee-track:hover { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .promo-marquee-track { animation-duration: 120s; } }
-.dest-plane { animation: dest-plane-fly 6s ease-in-out infinite; }
-.dest-plane-r { animation-delay: 3s; }
-@keyframes dest-plane-fly { 0%, 100% { transform: translate(0, 0) rotate(-12deg); } 50% { transform: translate(6px, -5px) rotate(-6deg); } }
-.dest-plane-r.dest-plane { animation-name: dest-plane-fly-r; }
-@keyframes dest-plane-fly-r { 0%, 100% { transform: translate(0, 0) rotate(12deg) scaleX(-1); } 50% { transform: translate(-6px, -5px) rotate(6deg) scaleX(-1); } }
-.dest-trail { animation: dest-trail 6s ease-in-out infinite; transform-origin: right center; }
-.dest-trail-r { transform-origin: left center; animation-delay: 3s; }
-@keyframes dest-trail { 0%, 100% { opacity: .6; transform: scaleX(1); } 50% { opacity: 1; transform: scaleX(1.12); } }
-@media (prefers-reduced-motion: reduce) { .dest-plane, .dest-trail { animation: none; } }
 
 
 @keyframes heart-beat { 0%, 100% { transform: scale(1); } 14% { transform: scale(1.22); } 28% { transform: scale(1); } 42% { transform: scale(1.14); } 70% { transform: scale(1); } }
