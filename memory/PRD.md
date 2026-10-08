@@ -570,3 +570,9 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - `/europa` → `pages/EuropeListing.jsx` → shared `DestinationListing` with `europeListingData.js` (generated from vietnamListingData by `scripts/gen_europe_listing.py`; same sections/components, Europe content). `/europa/holidays[/:style]` → EgyptHolidays. Detail pages `/europa/<slug>` via EgyptDetail (`europeBySlug`, destinationFor → 'Europe').
 - Packages: `europePackages.js` (Vietnam data model, 6 multi-country itineraries with rail/flight legs, 4-star hotels, optional extras) + adapters `tours/europeToursData.js`. Photos `/public/europe/*.webp`.
 - Card reveal animation added to the existing `EgyptProductCard` (`.reveal-card/.is-in`, useReveal, index stagger; mobile subtler; reduced-motion safe). `pages/EuropeLanding.jsx` + `europeData.js` are now unused (kept, not routed).
+
+## 2026-06 – Destinations menu (Asia / Europe / Middle East), social panel, showcase
+- `destinationTabs` = ['Asia','Europe','Middle East'] (other continents' data kept in `destinations`, hidden). Middle East = Egypt, Jordan (`/public/destinations/jordan.webp`), UAE (`uae.webp`). `continentMeta` gives each continent a photo + tagline. DesktopMenus left column = 3 photo cards (Asia/Europe link to listing), plain-English taglines, "View all … holidays" button, Europe grid starts with a "Europe multi-country" NEW tile → /europa; Europe featured panel = multi-country.
+- Homepage destination cards scaled to ~80% (grid max 1024px, 80% width on tablet, smaller type) per user request.
+- "We are social" (was "Travel with us on social"): hint removed, image shown at its full 1400×724 ratio (no cropping), less grey padding, slide heights auto.
+- TripShowcase: Europe honeymoon tab added before Vietnam (Rohan & Meera's Europe honeymoon); Vietnam → "Prajwal & Sneha's babymoon"; Sri Lanka → "the Sharma's family holiday". `trip()` accepts local image paths.

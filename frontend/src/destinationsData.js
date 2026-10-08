@@ -1,9 +1,13 @@
 // Regional destinations grid data (images reused from original site CDN).
 const img = (id, path) => `https://images.ctfassets.net/bth3mlrehms2/${id}/${path}?w=900&q=70&fm=webp`;
 
-export const destinationTabs = [
-  'Top 10', 'Africa', 'Asia', 'Europe', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas', 'Middle East'
-];
+export const destinationTabs = ['Asia', 'Europe', 'Middle East'];
+// Previously: 'Top 10', 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
+export const continentMeta = {
+  Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Temples, tea hills and turquoise bays', href: '/asien' },
+  Europe: { src: '/europe/alps.webp', tagline: 'One journey, multiple countries', href: '/europa' },
+  'Middle East': { src: '/destinations/jordan.webp', tagline: 'Pyramids, Petra and desert skylines', href: null }
+};
 
 export const destinations = {
   'Top 10': [
@@ -91,9 +95,9 @@ export const destinations = {
     { name: 'Cook Islands', src: img('3VPMGvou1zpVa6VDLkjRvm', 'ccbb502d028a6859e972d6665e9747db/Rarotonga__Cookinseln.jpg') }
   ],
   'Middle East': [
-    { name: 'Oman', src: img('7LxzvfAIz887oIr6pT0d9R', '762e9bff95a22701331ca2a79bddca4a/Bandar_Khayran__Oman.jpg') },
-    { name: 'Saudi Arabia', src: img('7hjTmD3GBdC7YGyGCcwwoZ', 'abd0651fca99b0f52b2dc6bf6f7314ec/Al-_Ula__Medina__Saudi-Arabien.png') },
-    { name: 'United Arab Emirates', src: img('3EnNa2rJ23mDnHSFxFaXU', 'ad7d721a9a162a0b8d5ef044fce3d7cb/Emirates_Palace_Abu_Dhabi__VAE.jpg') }
+    { name: 'Egypt', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
+    { name: 'Jordan', src: '/destinations/jordan.webp' },
+    { name: 'United Arab Emirates', src: '/destinations/uae.webp' }
   ]
 };
 

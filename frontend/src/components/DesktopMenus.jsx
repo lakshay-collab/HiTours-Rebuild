@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { destinationTabs, destinations } from '../destinationsData';
+import { destinationTabs, destinations, continentMeta } from '../destinationsData';
 import { themeGroups } from '../themesData';
 
 const COUNTRY_HREF = { 'Europe': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
-const REGION_HREF = { 'Asia': '/asien' };
+const REGION_HREF = { 'Asia': '/asien', 'Europe': '/europa' };
 const REGION_TAGLINE = {
-  'Top 10': 'Our most-loved destinations right now', 'Africa': 'Pyramids, safaris and Indian Ocean islands', 'Asia': 'Temples, tea hills and turquoise bays',
-  'Europe': 'Fjords, piazzas and fairy-tale castles', 'Central America': 'Rainforest, reefs and volcanoes', 'North America': 'Road trips, national parks and big cities',
-  'Oceania': 'Reefs, red deserts and glow-worm caves', 'South America': 'Andes, Amazon and tango nights', 'South Seas': 'Overwater villas and coral lagoons', 'Middle East': 'Deserts, souks and skyline luxury'
+  'Asia': 'Beaches, temples and city breaks across Asia',
+  'Europe': 'Two or three countries in one trip, planned as one holiday',
+  'Middle East': 'Egypt, Jordan and the UAE'
 };
 
 const isInternal = (href) => href && href.startsWith('/');
@@ -21,27 +21,50 @@ export function DestinationsMenu({ onNavigate }) {
   const navigate = useNavigate();
   const [active, setActive] = useState(destinationTabs[0]);
   const list = destinations[active] || [];
-  const feature = list.find((d) => COUNTRY_HREF[d.name]) || list[0];
+  const feature = active === 'Europe' ? { name: 'Europe multi-country', src: '/europe/zermatt.webp' } : (list.find((d) => COUNTRY_HREF[d.name]) || list[0]);
   return (
     <div className="tl-wide py-7" data-testid="menu-destinations">
       <div className="flex gap-8">
-        <ul className="w-[200px] shrink-0 flex flex-col gap-0.5 border-r border-outline-variant pr-5" data-testid="menu-destinations-regions">
-          {destinationTabs.map((t) => (
-            <li key={t}>
-              <button type="button" onMouseEnter={() => setActive(t)} onFocus={() => setActive(t)} onClick={() => { if (REGION_HREF[t]) { navigate(REGION_HREF[t]); onNavigate?.(); } else setActive(t); }}
-                className={`flex items-center justify-between w-full text-left px-3 py-2 rounded-lg t-label-lg transition-colors ${active === t ? 'bg-surface-highest text-onsurface' : 'text-onsurface-variant hover:bg-onsurface/[0.06]'}`}
-                data-testid={`menu-region-${t.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
-                {t}<ArrowRight size={16} strokeWidth={2} className={`transition-opacity ${active === t ? 'opacity-100' : 'opacity-0'}`} />
-              </button>
-            </li>
-          ))}
+        <ul className="w-[260px] shrink-0 flex flex-col gap-3 border-r border-outline-variant pr-6" data-testid="menu-destinations-regions">
+          {destinationTabs.map((t) => {
+            const meta = continentMeta[t] || {};
+            const on = active === t;
+            const inner = (
+              <>
+                <img src={meta.src} alt="" className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${on ? 'scale-105' : 'group-hover:scale-105'}`} loading="lazy" />
+                <span className={`absolute inset-0 transition-opacity ${on ? 'bg-gradient-to-t from-onsurface/90 via-onsurface/30 to-onsurface/10' : 'bg-gradient-to-t from-onsurface/80 via-onsurface/20 to-transparent'}`} />
+                <span className="absolute inset-x-0 bottom-0 p-3.5 flex items-end justify-between gap-2 text-white">
+                  <span><span className="block t-title-md leading-tight">{t}</span><span className="block t-body-sm text-white/80 mt-0.5">{(destinations[t] || []).length} destinations</span></span>
+                  <span className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${REGION_HREF[t] ? 'bg-white text-onsurface' : 'ring-1 ring-white/70'}`}><ArrowRight size={16} strokeWidth={2} /></span>
+                </span>
+                {on && <span className="absolute inset-0 rounded-xl ring-2 ring-primary ring-offset-2 ring-offset-surface-lowest pointer-events-none" />}
+              </>
+            );
+            const cls = 'group relative block w-full aspect-[16/9] rounded-xl overflow-hidden bg-surface-highest text-left';
+            const tid = `menu-region-${t.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+            return (
+              <li key={t} onMouseEnter={() => setActive(t)}>
+                {REGION_HREF[t]
+                  ? <Link to={REGION_HREF[t]} onClick={onNavigate} onFocus={() => setActive(t)} className={cls} data-testid={tid}>{inner}</Link>
+                  : <button type="button" onFocus={() => setActive(t)} onClick={() => setActive(t)} className={cls} data-testid={tid}>{inner}</button>}
+              </li>
+            );
+          })}
         </ul>
         <div className="flex-1 min-w-0 flex flex-col gap-4">
           <div className="flex items-end justify-between gap-4">
             <div><h3 className="t-title-lg text-onsurface">{active}</h3><p className="t-body-sm text-onsurface-variant">{REGION_TAGLINE[active]}</p></div>
-            {REGION_HREF[active] && <Link to={REGION_HREF[active]} onClick={onNavigate} className="t-label-lg text-primary hover:underline flex items-center gap-1 whitespace-nowrap" data-testid="menu-region-all">View all {active} holidays <ArrowRight size={16} strokeWidth={2} /></Link>}
+            {REGION_HREF[active] && <Link to={REGION_HREF[active]} onClick={onNavigate} className="t-label-lg text-white bg-primary hover:bg-primary/90 rounded-full h-9 px-4 flex items-center gap-1 whitespace-nowrap" data-testid="menu-region-all">View all {active} holidays <ArrowRight size={16} strokeWidth={2} /></Link>}
           </div>
           <div className="grid grid-cols-4 xl:grid-cols-5 gap-3" data-testid="menu-destinations-grid">
+            {active === 'Europe' && (
+              <Go href="/europa" onNavigate={onNavigate} className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest ring-2 ring-primary/70" testId="menu-country-europe-multi-country">
+                <img src="/europe/zermatt.webp" alt="Europe multi-country" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <span className="absolute inset-0 bg-gradient-to-t from-onsurface/80 via-onsurface/15 to-transparent" />
+                <span className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-white/90 text-onsurface text-[10px] font-semibold uppercase tracking-[0.12em]">New</span>
+                <span className="absolute left-3 bottom-2.5 t-label-lg text-white drop-shadow">Europe multi-country</span>
+              </Go>
+            )}
             {list.map((d) => (
               <Go key={d.name} href={COUNTRY_HREF[d.name] || '#'} onNavigate={onNavigate} className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest" testId="menu-country">
                 <img src={d.src} alt={d.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />

@@ -75,7 +75,7 @@ export const happyCustomers = {
 };
 
 export const ambassadors = {
-  heading: 'Travel with us on social',
+  heading: 'We are social',
   hint: 'Daily stories, reels and offers – swipe to explore',
   socials: [
     { key: 'instagram', label: 'Instagram', handle: '@hitours', href: 'https://www.instagram.com/hitours' },
@@ -165,7 +165,7 @@ export const steps = {
 
 const trip = (o) => ({
   ...o,
-  images: o.images.map(([path, tag]) => ({ src: /^https?:\/\//.test(path) ? path : cf(path, 'w=700&q=60&fm=webp'), tag }))
+  images: o.images.map(([path, tag]) => ({ src: /^(https?:\/\/|\/)/.test(path) ? path : cf(path, 'w=700&q=60&fm=webp'), tag }))
 });
 
 export const showcase = {
@@ -173,10 +173,23 @@ export const showcase = {
   createdFor: 'Crafted specially for',
   trips: [
     trip({
+      tab: 'Europe', title: 'Europe honeymoon', cta: 'Plan your Europe trip now',
+      duration: '11 days', stops: '5 stops', transport: 'High speed rail', activities: 12, hotels: 5, transfers: 9, meals: 10, flights: 0,
+      tags: [['bed', '4-star hotels'], ['boat', 'Lake Como cruise'], ['plane', 'Scenic trains'], ['food', 'Italian trattorias'], ['bike', 'Paris by bike']],
+      customer: "Rohan & Meera's Europe honeymoon", quote: 'Paris, the Jungfrau, Zermatt, Lake Como and Venice in eleven days and we never once worried about a connection.', avatar: '/moments/europe_couple.webp',
+      images: [
+        ['/europe/hero-paris.webp', 'Paris'],
+        ['/europe/interlaken.webp', 'Interlaken'],
+        ['/europe/zermatt.webp', 'Zermatt'],
+        ['/europe/como.webp', 'LakeComo'],
+        ['/europe/venice.webp', 'Venice']
+      ]
+    }),
+    trip({
       tab: 'Vietnam', title: 'Vietnam honeymoon', cta: 'Plan your Vietnam trip now',
       duration: '15 days', stops: '8 stops', transport: 'Private driver', activities: 11, hotels: 7, transfers: 6, meals: 14, flights: 2,
       tags: [['bed', 'Boutique hotels'], ['boat', 'Halong Bay cruise'], ['bike', 'Motorbike'], ['food', 'Street food'], ['plane', 'Direct flights']],
-      customer: "Prajwal & Sneha's honeymoon", quote: 'From a Halong Bay cruise to lantern-lit Hoi An nights, every single day felt handcrafted just for us.', avatar: '/moments/europe_couple.webp',
+      customer: "Prajwal & Sneha's babymoon", quote: 'From a Halong Bay cruise to lantern-lit Hoi An nights, every single day felt handcrafted just for us.', avatar: '/moments/europe_couple.webp',
       images: [
         ['3Z7A5HXNMctqsB6GE2jphI/4cef5ccca7d896a0b4f88281499fec30/Halong_Bucht_Vietnam.jpg', 'HalongBay'],
         ['1oona4EHxFNonfYfpgKQRu/fd45a84873954f50c0192a904b5c13db/Hoi_An_Vietnam_2.jpg', 'HoiAn'],
@@ -189,7 +202,7 @@ export const showcase = {
       tab: 'Sri Lanka', title: 'Sri Lanka family tour', cta: 'Plan your Sri Lanka trip now',
       duration: '12 days', stops: '6 stops', transport: 'Private driver', activities: 9, hotels: 6, transfers: 5, meals: 11, flights: 2,
       tags: [['bed', 'Heritage bungalows'], ['safari', 'Leopard safari'], ['leaf', 'Tea country'], ['food', 'Rice & curry'], ['plane', 'Direct flights']],
-      customer: 'the Sharma family', quote: 'Climbing Sigiriya rock at dawn and tea-tasting in the misty hills – the kids still talk about all of it.', avatar: '/moments/family_trip.webp',
+      customer: "the Sharma's family holiday", quote: 'Climbing Sigiriya rock at dawn and tea-tasting in the misty hills – the kids still talk about all of it.', avatar: '/moments/family_trip.webp',
       images: [
         ['4ty416HtZ5fnIJe5U94pUn/04e383acf72b20230360d6cdeb960993/Sigiriya_Sri_Lanka.jpg', 'Sigiriya'],
         ['52ZxIJbx0zC3QmeXtTjVpo/b109083307d8ee990f394165679c4ccc/Sri_Lanka__Ella__Neun-Bogen-Br%C3%BCcke.jpg', 'EllaBridge'],
