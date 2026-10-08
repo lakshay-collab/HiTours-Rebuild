@@ -54,7 +54,6 @@ export default function CeoEnvelope() {
           <span className="eg-label-lg uppercase tracking-[.08em] text-[#308BB6]">{ceo.eyebrow}</span>
           <h2 className="eg-display-sm text-[#002131] [text-wrap:balance]" data-testid="about-ceo-headline">{ceo.teaserTitle}</h2>
           <p className="eg-body-lg text-[#174358]">{ceo.teaser}</p>
-          <button type="button" onClick={start} className="eg-btn-filled h-12 px-7 eg-title-md self-start mt-2" data-testid="about-ceo-read-button"><Mail size={18} />{ceo.button}</button>
         </div>
         <div ref={envRef} className="order-1 md:order-2 pt-36 pb-10 md:pt-28 md:pb-0">
         <button type="button" onClick={start} aria-label={ceo.button} className={`eg-envelope ${opening ? 'is-open' : ''}`} data-testid="about-ceo-envelope">
@@ -66,16 +65,13 @@ export default function CeoEnvelope() {
           <div className="eg-envelope-body">
             <div className="eg-envelope-left" /><div className="eg-envelope-right" /><div className="eg-envelope-bottom" />
             <div className="eg-envelope-stamp"><img src={ceo.image} alt="" className="w-full h-full object-cover object-[50%_30%]" /></div>
-            <div className="eg-envelope-address">
-              <span className="eg-label-md text-[#6F777C]">To</span>
-              <span className="eg-title-md text-[#002131]">Every traveller planning a happy holiday</span>
-              <span className="eg-body-sm text-[#6F777C]">From the desk of {ceo.name}, CEO</span>
-            </div>
           </div>
           <div className="eg-envelope-flap" />
           <span className="eg-envelope-seal">HT</span>
-          {opening && !open && <span className="eg-envelope-hint">Click the letter to read it in full</span>}
         </button>
+        <div className="mt-8 flex justify-center">
+          <button type="button" onClick={start} className="eg-btn-filled h-14 px-9 eg-title-md shadow-[0_12px_30px_rgba(0,33,49,0.22)] hover:-translate-y-0.5 transition-transform" data-testid="about-ceo-read-button"><Mail size={20} />{ceo.button}</button>
+        </div>
         </div>
       </div>
       {open && <Letter onClose={close} />}
