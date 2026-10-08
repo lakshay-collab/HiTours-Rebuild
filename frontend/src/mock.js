@@ -291,7 +291,8 @@ export const testimonials = {
   ]
 };
 
-export const destinationsHeading = 'Discover our extraordinary destinations';
+export const destinationsHeading = 'Where to next?';
+export const destinationsSubcopy = 'Asia, Europe and Middle East holiday specialists since 1995';
 
 export const newsletter = {
   heading: 'Experience the best of travel',
