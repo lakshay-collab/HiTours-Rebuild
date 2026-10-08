@@ -81,6 +81,7 @@ import { maldivesBySlug } from '../tours/maldivesToursData';
 import { veniceViennaBySlug } from '../tours/veniceViennaData';
 import { icelandGlaciersBySlug } from '../tours/icelandGlaciersData';
 import { bestOfThailandSingaporeMalaysiaHongKongBySlug } from '../tours/bestOfThailandSingaporeMalaysiaHongKongData';
+import { bestOfPhuketKrabiBangkokBySlug } from '../tours/bestOfPhuketKrabiBangkokData';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
@@ -178,7 +179,8 @@ const BY_SLUG = {
   ...maldivesBySlug,
   ...veniceViennaBySlug,
   ...icelandGlaciersBySlug,
-  ...bestOfThailandSingaporeMalaysiaHongKongBySlug
+  ...bestOfThailandSingaporeMalaysiaHongKongBySlug,
+  ...bestOfPhuketKrabiBangkokBySlug
 };
 
 const stop = (e) => e.preventDefault();

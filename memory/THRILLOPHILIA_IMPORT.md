@@ -22,6 +22,7 @@ Instructions for the Emergent agent. When I send Thrillophilia links, turn each 
 
 1. **Hero and gallery images** come only from inside "View All Images" (fourth hero tile), never from the four hero tiles on the Thrillophilia page itself.
 2. **Hotel photos are never skipped.** For every hotel, click the hotel or "View photos" and open its own gallery. Note the photo count the gallery shows (for example "1/11"). Capture that many photo URLs. If you captured fewer than the gallery shows, click through photo by photo until you have them all. All of them go into that hotel's accommodation images.
+2b. **If a hotel genuinely has no photos on Thrillophilia** (empty gallery, no "View photos"), do not skip the trip. Take 3 to 6 photos of that same hotel from the hotel's own website, Booking.com, MakeMyTrip, Agoda or Google, download them into frontend/public/tours/<slug>/hotels/<hotel-slug>/, order them exterior or pool first, then room, then dining, and flag the source in the report.
 3. **Price:** read it in INR (switch the currency selector to INR ₹ if needed). Then price = round(INR price per adult × 0.95).
 4. **Copy:** every line rewritten fresh for tier one, English speaking travellers in Delhi NCR, Mumbai and Bangalore. Never copy or lightly reword Thrillophilia text, and never reuse their trip title.
 5. **No dashes** in any text: no em dash, no en dash, no hyphen as punctuation.

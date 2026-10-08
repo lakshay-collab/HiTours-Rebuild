@@ -607,3 +607,9 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - /app/memory/THRILLOPHILIA_IMPORT.md replaced with the fast version: images linked directly from Thrillophilia (pattern of frontend/src/moroccoEgyptData.js), one build and one check script at the end of a run.
 - Section 4B naming rule updated per user: multi-country trips must name every country plus a hook. No vague umbrella names like "Best of Asia".
 - The 13 day Southeast Asia trip renamed to "Best of Thailand, Singapore, Malaysia and Hong Kong", slug best-of-thailand-singapore-malaysia-hong-kong, data file frontend/src/tours/bestOfThailandSingaporeMalaysiaHongKongData.js. Images and copy unchanged (still local under /tours/thailand-singapore-malaysia-hong-kong-13-days/).
+
+## 2026-06 Import: Best of Phuket, Krabi and Bangkok
+- Source https://www.thrillophilia.com/tours/phuket-krabi-bangkok-package (Must-Do Thailand Family Tour, 7D/6N, INR 34625). Our price 32894 (5 percent off).
+- Page /asien/best-of-phuket-krabi-bangkok, listing /asien/thailand. Data file frontend/src/tours/bestOfPhuketKrabiBangkokData.js, images linked direct from Thrillophilia.
+- Krabi hotel Sugar Marina Cliffhanger has zero photos on the source, so 6 photos were taken from the hotel official website and saved under frontend/public/tours/best-of-phuket-krabi-bangkok/hotels/sugar-marina-cliffhanger/. Guide updated with rule 2b for this case.
+- Reusable scripts: scripts/thrillophilia/extract.py, build_phuket_krabi_bangkok.py, check_trip.py, check_hotel_photos.py.
