@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { X, Heart } from 'lucide-react';
+import { X } from 'lucide-react';
 import Header from '../components/Header';
 import TrustBar from '../components/TrustBar';
 import Footer from '../components/Footer';
@@ -84,12 +84,6 @@ const VideoHero = ({ video, image, poster, title, count }) => (
   </div>
 );
 
-const CrossLink = ({ to, text, testId }) => (
-  <Link to={to} className="inline-flex items-center gap-2 rounded-full bg-[#FBEADB] pl-3 pr-4 h-10 eg-label-lg text-[#002131] hover:bg-[#F6D9BF] transition-colors" data-testid={testId}>
-    <Heart size={16} className="text-[#B5472F]" />{text}<ChevronRight size={16} />
-  </Link>
-);
-
 const split = (v) => (v ? v.split(',').filter(Boolean) : []);
 const WIDE = 'w-full px-4 sm:px-8 lg:px-10 2xl:px-14';
 
@@ -156,9 +150,6 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   const crumbs = style ? [...holidaysCrumbs.slice(0, 2), { label: holidaysCrumbs[2].label, to: holidaysPath }, { label: style }] : holidaysCrumbs;
   const resultLabel = (n) => `${n} ${noun}${n === 1 ? '' : 's'}`;
   const sortPills = { sort, onSort: setSort, onStyle: () => {}, menuKeys: ['sort'] };
-  const crossLink = d.honeymoonPath
-    ? <CrossLink to={d.honeymoonPath} text={`See all ${products.length} ${holidaysCrumbs[1].label} honeymoons`} testId="eg-honeymoon-link" />
-    : d.allHolidaysPath ? <CrossLink to={d.allHolidaysPath} text={`Browse all ${holidaysCrumbs[1].label} holidays`} testId="eg-all-holidays-link" /> : null;
 
   return (
     <div className="eg" data-testid={d.testId}>
@@ -176,7 +167,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
         </div>
 
         <section className={`${WIDE} mt-2 md:mt-4 scroll-mt-20`} id="tours" data-testid="eg-tours">
-          <EgyptFilterBar title={title} cta={hero} {...sortPills} extra={<span className="eg-body-lg text-[#174358] whitespace-nowrap" data-testid="eg-result-count">{resultLabel(list.length)}</span>} after={crossLink} />
+          <EgyptFilterBar title={title} cta={hero} {...sortPills} extra={<span className="eg-body-lg text-[#174358] whitespace-nowrap" data-testid="eg-result-count">{resultLabel(list.length)}</span>} />
 
           <div className="md:hidden mt-4 flex flex-col gap-3">
             <div className="flex items-end justify-between gap-3">
@@ -191,7 +182,6 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
                 </button>
               ))}
             </div>
-            {crossLink}
           </div>
 
           <div className="mt-4 md:mt-2 lg:grid lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-8 xl:gap-10 lg:items-start">

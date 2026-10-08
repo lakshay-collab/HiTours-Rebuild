@@ -7,11 +7,11 @@ import { honeymoonVariant } from '../holidays/honeymoonVariant';
 export const thailandHoneymoonsPath = '/asien/thailand/honeymoons';
 
 export default function ThailandListing() {
-  return <DestinationListing d={{ ...thailand, honeymoonPath: thailandHoneymoonsPath }} testId="thailand-listing-page" />;
+  return <DestinationListing d={thailand} testId="thailand-listing-page" />;
 }
 
 export function ThailandHolidays() {
-  return <EgyptHolidays d={{ ...thailand, plannerSource: 'thailand-holidays', testId: 'thailand-holidays-page', honeymoonPath: thailandHoneymoonsPath }} />;
+  return <EgyptHolidays d={{ ...thailand, plannerSource: 'thailand-holidays', testId: 'thailand-holidays-page' }} />;
 }
 
 const honeymoons = honeymoonVariant(thailand, 'Thailand', thailandHoneymoonsPath);

@@ -637,3 +637,14 @@ All built with the reusable pipeline in /app/scripts/thrillophilia: extract_batc
 
 Verified: all 15 detail pages render with correct day tab counts and zero broken images; all appear on their country holidays listings (lazy loaded). The 16 day trip is the only one with included internal flights (4).
 Learning: img() paths must be escaped, a hotel name with an apostrophe (Fishermen' Harbour) broke the webpack build once.
+
+## 2026-06 Holidays filter redesign + hero fix + honeymoon marketing URL
+- Hero: country holidays pages (EgyptHolidays.jsx HeroMedia) now play local mp4/webm string videos (Thailand, Vietnam, Sri Lanka) and still use Vimeo for Egypt. Bug was the holidays page only knew Vimeo objects.
+- Filters (shared EgyptHolidays.jsx, all countries): URL driven ?theme=&place=&days=&price=&sort=. Model in frontend/src/holidays/filterModel.js (DURATIONS, PRICES, HOLIDAY_RULES / HONEYMOON_RULES keyword themes, buildFacets faceted counts). Products carry `places` (city names) for the Destination facet: added to createAdapters toProduct, the 17 standalone *Data.js product exports, siamProduct and the Egypt products.
+- Desktop (>=1280): edge to edge tours section, 280px sidebar (components/holidays/HolidayFilterPanel.jsx: Theme checks with icons, Destination search + checks, Duration + Price chips), theme quick chips row (ThemeChips.jsx), result count + Sort pill + CTA in the sticky bar. Grid 2 cols, 3 cols from 1500px (cards never squeezed).
+- Mobile: group pills row (Filters, Theme, Destination, Duration, Price range) under the heading and a Filters button in the bottom bar; both open MobileFilterSheet.jsx, a Thrillophilia style two pane sheet (left tabs with count badges, right options, Clear all + Show N apply, draft applied on Apply only).
+- Legacy /holidays/:style URLs preselect that theme. Any interaction navigates to /holidays?query.
+- Honeymoon marketing URL: /asien/thailand/honeymoons (holidays/honeymoonVariant.js + ThailandHoneymoons in pages/ThailandListing.jsx). Same 20 trips, romantic theme keywords (Beach romance, Island escapes, Luxury stays, Private & secluded, Adventure for two, Culture & temples, City & nightlife, Cruises & sunsets, Grand journeys, Short & sweet). NOT linked anywhere in the site by user decision; for Meta/Google campaigns and the sitemap only. Other countries can get one with a single honeymoonVariant(...) route.
+- Detail pages: "Other <Country> holidays you may like" now resolves the country via holidays/countryProducts.js (countryOf/productsOf) instead of falling back to Egypt. Also fixed destinationFor planner heading via the same lookup.
+- Bug fix: the 16 batch imported Thailand products lacked `href`, so cards linked to /afrika/aegypten/<slug>; all now use /asien/<slug>.
+- Tested: test_reports/iteration_44.json and iteration_45.json (all pass).

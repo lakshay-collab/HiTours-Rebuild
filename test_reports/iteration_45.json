@@ -1,0 +1,24 @@
+{
+  "summary": "Frontend-only retest of holidays filter iteration 2 (edge-to-edge desktop layout, mobile two-pane sheet, honeymoon landing page, cross-links, and Thailand href bug fix). All acceptance criteria pass. The href bug from iteration_44 is fixed — all 20 Thailand products now link to /asien/<slug>.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "EgyptProductCard.jsx still defaults to `/afrika/aegypten/${p.slug}` when href missing — now all 16 Thailand products carry explicit href so no live bug, but the fallback remains fragile. Suggest a country-aware fallback or dev warning when p.href is missing for non-Egypt products.",
+    "Several hf-*/mhf-* option testids share the same value across sibling rows — Playwright filtering by visible text works but suffixing with the option value (e.g. hf-place-option-phuket) would make selectors deterministic.",
+    "Vimeo captcha overlay on /afrika/aegypten/holidays sporadically blocks networkidle and shows 'We couldn\u2019t verify the security of your connection.' This is external (Vimeo preview-host rate limit) but could be masked by lazy-loading the iframe only when the hero scrolls into view."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "test_credentials": "N/A",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Verified on this run: (a) Desktop /asien/thailand/holidays at 1920 — eg-tours bbox width 1920, sidebar eg-filter-sidebar 280px, grid 3 cards per row (card x=360/874/1389, w\u2248490px). At 1440 — eg-tours width 1440, 2 cards per row (c0+c1 same y, c2 wraps), card w\u2248508. Header shows eg-result-count '20 holidays', Sort pill, eg-honeymoon-link (href /asien/thailand/honeymoons, text 'See all 20 Thailand honeymoons'), 'Plan your Thailand trip' CTA; theme-chips row present with All(20)+10 themes. (b) Desktop filters: hf-place-option Phuket -> ?place=Phuket, count 15, chip eg-filter-chip-place. eg-filter-clear-all resets. eg-filter-sort -> ?sort=price-asc. (c) HREF BUG FIXED: after scrolling to load all 20 cards, all 20 anchors start with /asien/ including /asien/luxury-bangkok-and-pattaya-escape. Navigating to that URL renders H1 'Luxury Bangkok and Pattaya Escape' + eg-detail-recommended 'Other Thailand holidays you may like'. (d) Mobile 390x844: eg-mobile-group-pills with eg-inline-filters-button + eg-mobile-group-theme/place/days/price all present. Clicking place pill opens mobile-filter-sheet with mobile-filter-group-place aria-selected=true, mobile-filter-options-place + mhf-place-search visible. Selecting Phuket + switching to days + selecting 7-9: badges mobile-filter-group-place-count=1 & days-count=1, apply text 'Show 10 holidays', URL unchanged until apply. Apply -> ?place=Phuket&days=7-9, sheet closes, eg-mobile-result-count '10 holidays', inline Filters button shows badge '2'. Reopen + mobile-filter-clear -> apply text 'Show 20 holidays'. mobile-filter-close without apply preserves URL. After scroll>600px eg-mobile-filters-button visible. (e) /asien/thailand/honeymoons: H1 'Thailand honeymoons', eg-result-count '20 honeymoons', theme chips are romantic set (Beach romance 14, Grand journeys 9, Island escapes 8, Private & secluded 8, City & nightlife 7, Culture & temples 7, Adventure for two 4, Luxury stays 2, Short & sweet 1) with NO Family and NO plain 'Honeymoon' chip; sidebar Theme section mirrors same set. Clicking Island escapes -> ?theme=Island+escapes, 8 honeymoons. eg-all-holidays-link href=/asien/thailand/holidays text 'Browse all Thailand holidays'. (f) /asien/thailand: eg-view-honeymoons present with href /asien/thailand/honeymoons alongside eg-view-all. (g) Regression: /asien/thailand/holidays/honeymoon (legacy) still returns 6 holidays. /afrika/aegypten/holidays renders eg-holidays-video-iframe (Vimeo) + sidebar. /asien/vietnam/holidays renders eg-holidays-video-file (mp4) + sidebar. Zero console errors on all tested pages (Vimeo captcha 401 unrelated).",
+  "rca of the issue": "N/A — previously reported Thailand href bug is confirmed fixed (all 20 cards now emit /asien/<slug>)."
+}
