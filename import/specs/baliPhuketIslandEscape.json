@@ -1,0 +1,115 @@
+{
+  "source_slug": "bali-phuket-tour-package",
+  "slug": "bali-and-phuket-island-escape",
+  "camel": "baliPhuketIslandEscape",
+  "title": "Bali and Phuket Island Escape",
+  "alt": "The cliffs above Kelingking beach on Nusa Penida in Bali",
+  "cta_country": "thailand",
+  "tag": "Beach",
+  "tags": ["Beach", "Honeymoon"],
+  "price": 47502,
+  "transport": "Private transfers with speedboat island crossings",
+  "route_cities": ["Kuta", "Nusa Penida", "Phuket", "Phi Phi Islands"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 3, "transfers": 13, "meals": 6},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Two very different islands in one week. Bali for the cliffs, Phuket for the boat days and the old town.",
+    "tip": "The Nusa Penida crossing can be choppy, so take something for motion sickness and sit at the back. Book the Bali to Phuket flight for late morning so you keep the Kuta breakfast."
+  },
+  "summary": "Six days across Bali and Phuket. Two nights in Kuta with a speedboat day to Nusa Penida and its four beaches, then three nights in Patong with the Phi Phi islands by boat and a Phuket city tour.",
+  "included": "Included: 5 nights in Kuta and Phuket with daily breakfast; Nusa Penida west coast tour with four beaches; Phi Phi islands speedboat tour with lunch; Phuket city tour; 13 airport, harbour and sightseeing transfers.",
+  "not_included": "Not included: international flights; the Bali to Phuket flight; visa charges; travel insurance; island and temple entry fees; lunches and dinners other than the Phi Phi tour lunch; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Nusa Penida and four beaches",
+    "3": "On to Phuket",
+    "4": "Phi Phi islands by speedboat",
+    "5": "Phuket city tour",
+    "6": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B, L", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Kuta Central Park Hotel, Bali",
+    "2": "Kuta Central Park Hotel, Bali",
+    "3": "Tony Resort",
+    "4": "Tony Resort",
+    "5": "Tony Resort",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your Kuta hotel",
+      "Check in at Kuta Central Park and keep the first day free",
+      "Optional: grilled seafood at Jimbaran, the Kuta night market or Petitenget temple"
+    ],
+    "2": [
+      "Breakfast, then private transfer across to Sanur harbour",
+      "Speedboat transfer over to Nusa Penida for the west coast tour",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Return speedboat and private transfer to your Kuta hotel"
+    ],
+    "3": [
+      "Breakfast, check out and private transfer to Ngurah Rai Airport",
+      "Optional: flight from Bali to Phuket, booked separately and not included",
+      "Private sedan transfer from Phuket airport to your Patong resort",
+      "Optional: the Big Buddha, Banana beach or Tiger Kingdom close by"
+    ],
+    "4": [
+      "Breakfast, then shared transfer down to the Phuket pier",
+      "Speedboat transfer out to the Phi Phi group for the whole day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch",
+      "Return speedboat and shared transfer to your resort"
+    ],
+    "5": [
+      "Breakfast, then shared transfer for the Phuket city tour",
+      "Wat Chalong, Old Phuket Town and Karon viewpoint on the west coast",
+      "Afternoon free beside the pool or down on the beach"
+    ],
+    "6": [
+      "Breakfast and an easy check out",
+      "Private sedan transfer to the airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Kuta Central Park Hotel, Bali",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 4\u2605 \u00b7 Kuta Central Park, a short walk from Kuta beach",
+      "program": {
+        "name": "Kuta base with a Nusa Penida day",
+        "description": "Two nights in Kuta with one big day on the water, crossing to Nusa Penida for Kelingking beach and the west coast lookouts."
+      },
+      "activities": [
+        {"name": "Nusa Penida West Coast Tour", "match": "Nusa Penida", "day": 2, "description": "A speedboat day to Nusa Penida taking in Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach."},
+        {"name": "Kuta Night Market", "match": "Kuta Night Market", "day": 1, "optional": true, "description": "Stalls of satay, grilled fish and sweets a few streets back from Kuta beach, busiest after eight."},
+        {"name": "Pura Petitenget Temple", "match": "Petitenget", "day": 1, "optional": true, "description": "A sea temple on the Seminyak sand, best at sunset when the offerings are laid out along the wall."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Tony Resort",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Tony Resort in Patong, close to the beach road",
+      "program": {
+        "name": "Patong, Phi Phi and the old town",
+        "description": "Three nights in Patong with a full day at the Phi Phi islands and a half day tour of Wat Chalong, the old town and Karon viewpoint."
+      },
+      "activities": [
+        {"name": "Phi Phi Islands by Speedboat", "match": "Phi Phi Island Tour", "day": 4, "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch on the tour."},
+        {"name": "Phuket City Tour", "match": "Phuket City Tour", "day": 5, "description": "A half day run through Wat Chalong, the painted shophouse streets of Old Phuket Town and Karon viewpoint."},
+        {"name": "Phuket Big Buddha", "match": "Big Buddha", "day": 3, "optional": true, "description": "A white marble Buddha on Nakkerd hill with views over Chalong bay and Kata on a clear afternoon."},
+        {"name": "Banana Beach", "match": "Banana Beach", "day": 3, "optional": true, "description": "A small bay on the north west coast with calm water and shade, reached down a steep track off the main road."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "source_slug": "phuket--bangkok-special-9-days-package",
+  "slug": "best-of-pattaya-bangkok-and-phuket",
+  "camel": "bestOfPattayaBangkokPhuket",
+  "title": "Best of Pattaya, Bangkok and Phuket",
+  "alt": "Speedboats moored in clear water off Coral Island near Pattaya",
+  "cta_country": "thailand",
+  "tag": "Family",
+  "tags": ["Family", "Beach"],
+  "price": 50255,
+  "transport": "Private sedan transfers with shared tours and speedboat crossings",
+  "route_cities": ["Pattaya", "Coral Island", "Bangkok", "Phuket", "Phi Phi Islands"],
+  "counts": {"days": 9, "nights": 8, "cities": 3, "hotels": 3, "experiences": 6, "transfers": 18, "meals": 10},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Nine days is enough to do Pattaya, Bangkok and Phuket without living out of a suitcase.",
+    "tip": "Safari World and the Phi Phi tour are both long days, so keep day eight for the pool. Book the Bangkok to Phuket flight before noon and you still get the afternoon on Patong beach."
+  },
+  "summary": "Nine days across the Gulf coast, the capital and the Andaman. Coral Island by speedboat from Pattaya, a river dinner cruise and Safari World in Bangkok, then four nights in Patong with a city tour, the Phi Phi islands and a tiger encounter.",
+  "included": "Included: 8 nights in 3 hotels with daily breakfast; Coral Island speedboat tour from Pattaya; Chao Phraya river dinner cruise; Safari World and Marine Park single day pass; Phuket city tour; Phi Phi islands speedboat tour with lunch; Tiger Kingdom big tiger encounter with private transfer; 18 airport, intercity and sightseeing transfers.",
+  "not_included": "Not included: international flights; the Bangkok to Phuket flight; visa charges; travel insurance; island entry fees; meals other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and on to Pattaya",
+    "2": "Coral Island day trip",
+    "3": "On to Bangkok and a river cruise",
+    "4": "Safari World and Marine Park",
+    "5": "On to Phuket",
+    "6": "Phuket city tour",
+    "7": "Phi Phi islands by speedboat",
+    "8": "Tiger Kingdom and a free afternoon",
+    "9": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, D", "4": "B", "5": "B", "6": "B", "7": "B, L", "8": "B", "9": "B"},
+  "hotel_by_day": {
+    "1": "Centara Pattaya Hotel",
+    "2": "Centara Pattaya Hotel",
+    "3": "Bangkok Palace Hotel",
+    "4": "Bangkok Palace Hotel",
+    "5": "Journeyhub Phuket Patong",
+    "6": "Journeyhub Phuket Patong",
+    "7": "Journeyhub Phuket Patong",
+    "8": "Journeyhub Phuket Patong",
+    "9": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Suvarnabhumi Airport and private sedan transfer down to Pattaya",
+      "Check in at the Centara and keep the first evening free",
+      "Optional: the Sanctuary of Truth, Art in Paradise or Jomtien beach"
+    ],
+    "2": [
+      "Breakfast, then shared transfer to the Bali Hai pier",
+      "Speedboat transfer across to Coral Island for the day",
+      "Swim and sunbathe at Tawaen beach, water sports payable on the sand",
+      "Return speedboat and shared transfer to your Pattaya hotel"
+    ],
+    "3": [
+      "Breakfast, check out and private sedan transfer up to Bangkok",
+      "Check in at the Bangkok Palace in the afternoon",
+      "Evening shared transfer to the Chao Phraya river dinner cruise",
+      "Buffet dinner on board with lit up temples along the banks"
+    ],
+    "4": [
+      "Breakfast, then shared transfer out to Safari World",
+      "Open safari loop past zebras, giraffes, lions and tigers",
+      "Marine Park shows through the afternoon on the single day pass",
+      "Evening free around the markets near your hotel"
+    ],
+    "5": [
+      "Breakfast, check out and private transfer to Suvarnabhumi Airport",
+      "Optional: flight from Bangkok to Phuket, booked separately and not included",
+      "Private sedan transfer from Phuket airport to Patong",
+      "Optional: an evening on Patong beach or the Trickeye museum"
+    ],
+    "6": [
+      "Breakfast, then shared transfer for the Phuket city tour",
+      "Wat Chalong, Old Phuket Town and Karon viewpoint over the three bays",
+      "Back by mid afternoon with the evening free"
+    ],
+    "7": [
+      "Breakfast, then shared transfer down to the Phuket pier",
+      "Speedboat transfer out to the Phi Phi group for the whole day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch",
+      "Return speedboat and shared transfer to Patong"
+    ],
+    "8": [
+      "Breakfast, then private transfer out to Tiger Kingdom",
+      "Big tiger encounter with the keepers alongside you throughout",
+      "Afternoon free beside the pool or down on the beach",
+      "Optional: the Phuket Aquarium at Cape Panwa or the Tha Rua shrine"
+    ],
+    "9": [
+      "Breakfast and an easy check out",
+      "Private sedan transfer to Phuket International Airport"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Pattaya",
+      "city": "Pattaya",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Centara Pattaya Hotel",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 4\u2605 \u00b7 Centara Pattaya, a short ride from the beach road",
+      "program": {
+        "name": "Coral Island and easy evenings",
+        "description": "Two nights on the Gulf coast with a speedboat day at Koh Larn and the Pattaya markets close by in the evening."
+      },
+      "activities": [
+        {"name": "Coral Island by Speedboat", "match": "Coral Island", "day": 2, "description": "A speedboat day out to Koh Larn with clear water at Tawaen beach, loungers on the sand and water sports if you want them."},
+        {"name": "Sanctuary of Truth", "match": "Sanctuary Of Truth", "day": 1, "optional": true, "description": "An enormous carved teak temple on the shore at Naklua, still being built by hand after forty years."},
+        {"name": "Art in Paradise Museum", "match": "Art In Paradise", "day": 1, "optional": true, "description": "A trick art gallery where the paintings are built for photographs. An easy hour with children in the heat."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Bangkok",
+      "city": "Bangkok",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "Bangkok Palace Hotel",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 5\u2605 \u00b7 Bangkok Palace, walking distance from Pratunam market",
+      "program": {
+        "name": "River cruise and Safari World",
+        "description": "Two nights in the capital with a buffet dinner cruise on the Chao Phraya and a full day at Safari World and Marine Park."
+      },
+      "activities": [
+        {"name": "Chao Phraya River Dinner Cruise", "match": "Chao Phraya", "day": 3, "description": "Two hours on the river with a buffet dinner, live music and lit up views of Wat Arun and the Grand Palace from the water."},
+        {"name": "Safari World and Marine Park", "match": "Safari World", "day": 4, "description": "An open safari loop with zebras, giraffes and big cats, then dolphin and sea lion shows at Marine Park, on a single day pass."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [5, 6, 7, 8, 9],
+      "dayLabel": "Day 5 to 9",
+      "hotel": "Journeyhub Phuket Patong",
+      "accom": "4 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Journeyhub in Patong, minutes from the beach",
+      "program": {
+        "name": "Patong, Phi Phi and the tigers",
+        "description": "Four nights in Patong with a city tour, a full day at the Phi Phi islands, a tiger encounter and an afternoon left open."
+      },
+      "activities": [
+        {"name": "Phuket City Tour", "match": "Phuket City Tour", "day": 6, "description": "A half day run through Wat Chalong, the painted shophouse streets of Old Phuket Town and Karon viewpoint."},
+        {"name": "Phi Phi Islands by Speedboat", "match": "Phi Phi Island Tour", "day": 7, "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch on the tour."},
+        {"name": "Tiger Kingdom Phuket", "match": "Tiger Kingdom", "day": 8, "description": "Time inside the enclosure with the big tigers, keepers beside you throughout, with a private transfer each way."},
+        {"name": "Evening on Patong Beach", "match": "Patong Beach", "day": 5, "optional": true, "description": "Walk the sand as the light goes, then browse the stalls and cafes a street back from the beach front."}
+      ]
+    }
+  ]
+}

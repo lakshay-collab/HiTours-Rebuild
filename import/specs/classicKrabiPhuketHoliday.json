@@ -1,0 +1,206 @@
+{
+  "source_slug": "phuket-and-krabi-tour-package",
+  "slug": "classic-krabi-and-phuket-holiday",
+  "camel": "classicKrabiPhuketHoliday",
+  "title": "Classic Krabi and Phuket Holiday",
+  "alt": "Long tail boats on the sand at Ao Nang beach below the Krabi cliffs",
+  "cta_country": "thailand",
+  "tag": "Beach",
+  "tags": [
+    "Beach",
+    "Family"
+  ],
+  "price": 50112,
+  "transport": "Private sedan transfers with shared tours and speedboat crossings",
+  "route_cities": [
+    "Krabi",
+    "Phuket",
+    "Phi Phi Islands"
+  ],
+  "counts": {
+    "days": 7,
+    "nights": 6,
+    "cities": 2,
+    "hotels": 2,
+    "experiences": 3,
+    "transfers": 12,
+    "meals": 8
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Thailand",
+      "/asien/thailand"
+    ]
+  ],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Krabi first, then four nights in Phuket. The last day is deliberately empty so you leave rested.",
+    "tip": "Land in Phuket and drive straight to Krabi while you are still fresh. Keep the 4 Islands tour and the Phi Phi tour apart by a day, as both are long on the water."
+  },
+  "summary": "Seven days on the Andaman coast. Two nights in Ao Nang with the Krabi 4 Islands tour, then four nights in Patong with a Phuket city tour, a Phi Phi island day and a final day with nothing booked.",
+  "included": "Included: 6 nights in Krabi and Phuket with daily breakfast; Krabi 4 Islands speedboat tour with a lunch box; Phuket city tour; Phi Phi islands speedboat tour with lunch; 12 airport, intercity and sightseeing transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; island and temple entry fees; meals other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and on to Krabi",
+    "2": "Krabi 4 Islands by speedboat",
+    "3": "On to Phuket",
+    "4": "Phuket city tour",
+    "5": "Phi Phi islands by speedboat",
+    "6": "A free day in Phuket",
+    "7": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B, L",
+    "3": "B",
+    "4": "B",
+    "5": "B, L",
+    "6": "B",
+    "7": "B"
+  },
+  "hotel_by_day": {
+    "1": "Timber House Resort, Krabi",
+    "2": "Timber House Resort, Krabi",
+    "3": "Club Bamboo Boutique Resort & Spa",
+    "4": "Club Bamboo Boutique Resort & Spa",
+    "5": "Club Bamboo Boutique Resort & Spa",
+    "6": "Club Bamboo Boutique Resort & Spa",
+    "7": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer on to Krabi",
+      "Check in at Timber House in Ao Nang and settle in",
+      "Optional: the Emerald Pool, the Ao Luk mangroves or Klong Thom hot springs"
+    ],
+    "2": [
+      "Breakfast, then shared transfer to the Ao Nang pier",
+      "Speedboat transfer out to Koh Poda, Tup island and Chicken island",
+      "Snorkel the shallows and stop at Phra Nang beach, lunch box on board",
+      "Return shared transfer to your hotel in the afternoon"
+    ],
+    "3": [
+      "Breakfast, check out and private sedan transfer by road to Phuket",
+      "Check in at Club Bamboo in Patong for the next four nights",
+      "Afternoon free on the beach or beside the pool",
+      "Optional: Freedom Beach by long tail boat or Wat Srisoonthorn"
+    ],
+    "4": [
+      "Breakfast, then shared transfer for the Phuket city tour",
+      "Wat Chalong, Old Phuket Town and Karon viewpoint over the three bays",
+      "Back by mid afternoon with the evening free"
+    ],
+    "5": [
+      "Breakfast, then shared transfer down to the Phuket pier",
+      "Speedboat transfer out to the Phi Phi group for the whole day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch",
+      "Return speedboat and shared transfer to Patong in the evening"
+    ],
+    "6": [
+      "Breakfast, then a full day with nothing at all booked",
+      "Optional: Kata beach, Banana beach or quiet Tri Trang beach",
+      "Optional: an evening along Bangla Road"
+    ],
+    "7": [
+      "Breakfast and an unhurried check out",
+      "Private sedan transfer to Phuket International Airport"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [
+        1,
+        2
+      ],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Timber House Resort, Krabi",
+      "accom": "2 nights · Breakfast included · Deluxe room · 3★ · Timber House in Ao Nang, close to the beach road",
+      "program": {
+        "name": "Ao Nang and the 4 Islands",
+        "description": "Two nights under the Ao Nang cliffs with a speedboat tour of Koh Poda, Tup island, Chicken island and Phra Nang beach."
+      },
+      "activities": [
+        {
+          "name": "Krabi 4 Islands by Speedboat",
+          "match": "Four Island",
+          "day": 2,
+          "description": "A speedboat day across Koh Poda, Tup island and Chicken island, with snorkelling, Phra Nang beach and a lunch box on board."
+        },
+        {
+          "name": "The Emerald Pool",
+          "match": "Emerald Pool",
+          "day": 1,
+          "optional": true,
+          "description": "A spring fed pool in the Khao Phra Bang Khram forest inland from Krabi, clear green and warm all year."
+        },
+        {
+          "name": "Klong Thom Hot Springs",
+          "match": "Hot Springs",
+          "day": 1,
+          "optional": true,
+          "description": "Warm water running over smooth rock into forest pools, usually paired with the Emerald Pool on the same drive."
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dayLabel": "Day 3 to 7",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "4 nights · Breakfast included · Deluxe room · 3★ · Club Bamboo in Patong, a short walk from the beach",
+      "program": {
+        "name": "Patong, the old town and Phi Phi",
+        "description": "Four nights in Patong with a city tour, a full day at the Phi Phi islands and a last day left completely open."
+      },
+      "activities": [
+        {
+          "name": "Phuket City Tour",
+          "match": "Phuket City Tour",
+          "day": 4,
+          "description": "A half day run through Wat Chalong, the painted shophouse streets of Old Phuket Town and Karon viewpoint."
+        },
+        {
+          "name": "Phi Phi Islands by Speedboat",
+          "match": "Phi Phi Island Tour",
+          "day": 5,
+          "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch on the tour."
+        },
+        {
+          "name": "Kata Beach",
+          "match": "Kata Beach",
+          "day": 6,
+          "optional": true,
+          "description": "A quieter curve of sand south of Patong, good for swimming and a short ride from the hotel."
+        },
+        {
+          "name": "Banana Beach",
+          "match": "Banana Beach",
+          "day": 6,
+          "optional": true,
+          "description": "A small bay on the north west coast with calm water and shade, reached down a steep track off the main road."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "source_slug": "best-of-singapore-and-thailand-tour",
+  "slug": "best-of-singapore-and-thailand",
+  "camel": "bestOfSingaporeThailand",
+  "title": "Best of Singapore and Thailand",
+  "alt": "Marina Bay in Singapore lit up after dark with the city skyline behind",
+  "cta_country": "thailand",
+  "tag": "Family",
+  "tags": ["Family", "Culture"],
+  "price": 76190,
+  "transport": "Private sedan transfers with shared city tours and a speedboat crossing",
+  "route_cities": ["Singapore", "Sentosa", "Pattaya", "Coral Island", "Bangkok"],
+  "counts": {"days": 8, "nights": 7, "cities": 3, "hotels": 3, "experiences": 4, "transfers": 13, "meals": 7},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Singapore first while everyone is fresh, then Thailand for the beach and the street food. Families love this order.",
+    "tip": "Keep the Sentosa day flexible and buy the Universal Studios ticket only if the children want the rides. The cable car pass alone is enough for the views."
+  },
+  "summary": "Eight days across Singapore and Thailand. Three nights in Singapore with a city tour and the Sentosa cable car, two on the Pattaya coast with a speedboat day at Coral Island, then two in Bangkok with a full day temple tour.",
+  "included": "Included: 7 nights in 3 hotels with daily breakfast; Singapore city tour; Sentosa cable car sky pass round trip; Coral Island speedboat tour from Pattaya; full day Bangkok city tour; 13 airport, intercity and sightseeing transfers; visa assistance.",
+  "not_included": "Not included: international flights; the Singapore to Bangkok flight; visa charges; travel insurance; Sentosa attraction tickets; lunches and dinners; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Singapore",
+    "2": "Singapore city tour",
+    "3": "Sentosa and the cable car",
+    "4": "On to Pattaya",
+    "5": "Coral Island day trip",
+    "6": "On to Bangkok",
+    "7": "Bangkok sightseeing",
+    "8": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B"},
+  "hotel_by_day": {
+    "1": "ibis Singapore Novena",
+    "2": "ibis Singapore Novena",
+    "3": "ibis Singapore Novena",
+    "4": "Bella Villa Prima, Pattaya",
+    "5": "Bella Villa Prima, Pattaya",
+    "6": "Convenient Park Hotel, Bangkok",
+    "7": "Convenient Park Hotel, Bangkok",
+    "8": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to your Singapore hotel",
+      "Check in at the ibis Novena and keep the first day free",
+      "Optional: the Singapore Zoo and the Night Safari out at Mandai"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the Singapore city tour",
+      "Merlion Park, Marina Bay, the Helix bridge and Chinatown",
+      "Past Raffles Hotel, the Esplanade and the civic district",
+      "Afternoon free around Orchard Road and the malls"
+    ],
+    "3": [
+      "Breakfast, then shared transfer across to Sentosa island",
+      "Round trip cable car sky pass with views over the harbour",
+      "Optional: Universal Studios, the SEA Aquarium or Adventure Cove",
+      "Return shared transfer to your hotel in the evening"
+    ],
+    "4": [
+      "Breakfast, check out and private transfer to Changi Airport",
+      "Optional: flight from Singapore to Bangkok, booked separately and not included",
+      "Private sedan transfer from Suvarnabhumi Airport down to Pattaya",
+      "Optional: the Sanctuary of Truth, Nong Nooch gardens or the floating market"
+    ],
+    "5": [
+      "Breakfast, then shared transfer to the Bali Hai pier",
+      "Speedboat transfer across to Coral Island for the day",
+      "Swim and sunbathe at Tawaen beach, water sports payable on the sand",
+      "Return speedboat and shared transfer to your Pattaya hotel"
+    ],
+    "6": [
+      "Breakfast, check out and private sedan transfer up to Bangkok",
+      "Check in and take the afternoon at your own pace",
+      "Optional: the Erawan Museum, Sea Life Bangkok or Art in Paradise"
+    ],
+    "7": [
+      "Breakfast, then shared transfer for the full day city tour",
+      "The Golden Buddha at Wat Traimit and Wat Maha Phruettharam",
+      "A stop at the gem gallery before the ride back to the hotel",
+      "Evening free for the markets near your hotel"
+    ],
+    "8": [
+      "Breakfast and an easy check out",
+      "Private sedan transfer to Suvarnabhumi Airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "ibis Singapore Novena",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 ibis Novena, two minutes from Novena MRT station",
+      "program": {
+        "name": "Marina Bay and Sentosa",
+        "description": "Three nights in the city with a tour of Marina Bay and Chinatown, and a Sentosa day built around the cable car."
+      },
+      "activities": [
+        {"name": "Singapore City Tour", "match": "Singapore City Tour", "day": 2, "description": "A shared coach tour past Merlion Park, Marina Bay, the Helix bridge, Chinatown, Raffles Hotel and the civic district."},
+        {"name": "Sentosa Cable Car Sky Pass", "match": "Cable Car", "day": 3, "description": "A round trip on the cable car between Mount Faber, HarbourFront and Sentosa, with the whole harbour below you."},
+        {"name": "Singapore Zoo", "match": "Singapore Zoo", "day": 1, "optional": true, "description": "An open enclosure zoo at Mandai with orangutans overhead and white tigers, best in the cooler morning hours."},
+        {"name": "Night Safari", "match": "Night Safari", "day": 1, "optional": true, "description": "A tram ride through the park after dark, when the lions, hyenas and leopards are actually awake."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Pattaya",
+      "city": "Pattaya",
+      "days": [4, 5],
+      "dayLabel": "Day 4 to 5",
+      "hotel": "Bella Villa Prima, Pattaya",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Bella Villa Prima, a short ride from the Pattaya beach road",
+      "program": {
+        "name": "Coral Island and easy evenings",
+        "description": "Two nights on the Gulf coast with a speedboat day at Koh Larn and the Pattaya markets close by."
+      },
+      "activities": [
+        {"name": "Coral Island by Speedboat", "match": "Coral Island", "day": 5, "description": "A speedboat day out to Koh Larn with clear water at Tawaen beach, loungers on the sand and water sports if you want them."},
+        {"name": "Sanctuary of Truth", "match": "Sanctuary Of Truth", "day": 4, "optional": true, "description": "An enormous carved teak temple on the shore at Naklua, still being built by hand after forty years."},
+        {"name": "Nong Nooch Tropical Garden", "match": "Nong Nooch", "day": 4, "optional": true, "description": "Formal gardens, a cycad collection and cultural shows on a huge estate south of the city."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Bangkok",
+      "city": "Bangkok",
+      "days": [6, 7, 8],
+      "dayLabel": "Day 6 to 8",
+      "hotel": "Convenient Park Hotel, Bangkok",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Convenient Park, close to the airport road and local markets",
+      "program": {
+        "name": "Temples, gems and city streets",
+        "description": "Two nights in the capital with a full day tour of the Golden Buddha and the old temple quarter, and a free afternoon for markets."
+      },
+      "activities": [
+        {"name": "Full Day Bangkok City Tour", "match": "Bangkok City Tour", "day": 7, "description": "A shared coach tour taking in the Golden Buddha at Wat Traimit, Wat Maha Phruettharam and a gem gallery."},
+        {"name": "Erawan Museum", "match": "Erawan", "day": 6, "optional": true, "description": "A three headed elephant in bronze above a hall of stained glass and gardens, out towards Samut Prakan."},
+        {"name": "Sea Life Bangkok Ocean World", "match": "Sea Life", "day": 6, "optional": true, "description": "A large aquarium under Siam Paragon with a walkthrough tunnel, easy to combine with the shopping on Rama I."}
+      ]
+    }
+  ]
+}

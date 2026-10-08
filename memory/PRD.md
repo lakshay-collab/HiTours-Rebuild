@@ -613,3 +613,27 @@ Migrate/clone https://www.tourlane.de/ into Emergent as a pixel-faithful, fully 
 - Page /asien/best-of-phuket-krabi-bangkok, listing /asien/thailand. Data file frontend/src/tours/bestOfPhuketKrabiBangkokData.js, images linked direct from Thrillophilia.
 - Krabi hotel Sugar Marina Cliffhanger has zero photos on the source, so 6 photos were taken from the hotel official website and saved under frontend/public/tours/best-of-phuket-krabi-bangkok/hotels/sugar-marina-cliffhanger/. Guide updated with rule 2b for this case.
 - Reusable scripts: scripts/thrillophilia/extract.py, build_phuket_krabi_bangkok.py, check_trip.py, check_hotel_photos.py.
+
+## 2026-06 Batch import: 15 Thrillophilia trips
+All built with the reusable pipeline in /app/scripts/thrillophilia: extract_batch.py, digest.py, build_trip.py (spec driven), register_trip.py, check_trip.py. Specs live in /app/import/specs/*.json, raw source data in /app/import/<source-slug>/raw.json. Images are linked direct from Thrillophilia (no downloads). First hotel option per city is used; multi country trips are registered on every country listing involved.
+
+| Trip | Slug | Days | Our price |
+|---|---|---|---|
+| Luxury Bangkok and Pattaya Escape | luxury-bangkok-and-pattaya-escape | 5 | 34675 |
+| Phuket and Phi Phi Party Escape | phuket-and-phi-phi-party-escape | 6 | 38000 |
+| Phuket and Koh Samui Beach Escape | phuket-and-koh-samui-beach-escape | 6 | 38475 |
+| Island Trails of Phuket, Koh Samui and Krabi | island-trails-phuket-koh-samui-krabi | 7 | 39244 |
+| Grand Bangkok, Phuket and Krabi | grand-bangkok-phuket-and-krabi | 8 | 41790 |
+| Romantic Krabi, Koh Samui and Phuket | romantic-krabi-koh-samui-and-phuket | 7 | 41799 |
+| Best of Thailand and Malaysia | best-of-thailand-and-malaysia | 7 | 43150 (thailand + malaysia) |
+| Coastal Magic of Phuket and Krabi | coastal-magic-of-phuket-and-krabi | 7 | 43225 |
+| Honeymoon Trail of Phuket, Krabi and Koh Samui | honeymoon-trail-phuket-krabi-koh-samui | 8 | 44650 |
+| Bali and Phuket Island Escape | bali-and-phuket-island-escape | 6 | 47502 (thailand + indonesia) |
+| Classic Krabi and Phuket Holiday | classic-krabi-and-phuket-holiday | 7 | 50112 |
+| Best of Pattaya, Bangkok and Phuket | best-of-pattaya-bangkok-and-phuket | 9 | 50255 |
+| Luxury Phuket, Koh Samui and Krabi | luxury-phuket-koh-samui-and-krabi | 11 | 54149 |
+| Best of Singapore and Thailand | best-of-singapore-and-thailand | 8 | 76190 (thailand + singapore) |
+| Grand Vietnam, Cambodia and Thailand | grand-vietnam-cambodia-and-thailand | 16 | 142186 (thailand + vietnam + cambodia) |
+
+Verified: all 15 detail pages render with correct day tab counts and zero broken images; all appear on their country holidays listings (lazy loaded). The 16 day trip is the only one with included internal flights (4).
+Learning: img() paths must be escaped, a hotel name with an apostrophe (Fishermen' Harbour) broke the webpack build once.

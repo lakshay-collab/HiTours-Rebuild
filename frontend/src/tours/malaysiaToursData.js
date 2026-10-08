@@ -1,6 +1,7 @@
 // Adapters: Malaysia packages → listing cards + detail-template data (reuses the shared createAdapters from vietnamToursData).
 import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../malaysiaPackages';
+import { bestOfThailandMalaysiaProduct } from './bestOfThailandMalaysiaData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/malaysia/enquiry/passengers/', cruiseCity: '—',
@@ -8,6 +9,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Malaysia', href: '/asien/malaysia' }]
 });
 
-export const malaysiaProducts = packages.map(toProduct);
+export const malaysiaProducts = [...packages.map(toProduct), bestOfThailandMalaysiaProduct];
 export const malaysiaTours = packages.map(build);
 export const malaysiaBySlug = Object.fromEntries(malaysiaTours.map((t) => [t.detail.slug, t]));

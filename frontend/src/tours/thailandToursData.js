@@ -3,6 +3,21 @@ import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../thailandPackages';
 import { bestOfThailandSingaporeMalaysiaHongKongProduct } from './bestOfThailandSingaporeMalaysiaHongKongData';
 import { bestOfPhuketKrabiBangkokProduct } from './bestOfPhuketKrabiBangkokData';
+import { luxuryBangkokPattayaEscapeProduct } from './luxuryBangkokPattayaEscapeData';
+import { phuketPhiPhiPartyEscapeProduct } from './phuketPhiPhiPartyEscapeData';
+import { phuketKohSamuiBeachEscapeProduct } from './phuketKohSamuiBeachEscapeData';
+import { islandTrailsPhuketSamuiKrabiProduct } from './islandTrailsPhuketSamuiKrabiData';
+import { grandBangkokPhuketKrabiProduct } from './grandBangkokPhuketKrabiData';
+import { romanticKrabiSamuiPhuketProduct } from './romanticKrabiSamuiPhuketData';
+import { bestOfThailandMalaysiaProduct } from './bestOfThailandMalaysiaData';
+import { coastalMagicPhuketKrabiProduct } from './coastalMagicPhuketKrabiData';
+import { honeymoonTrailPhuketKrabiSamuiProduct } from './honeymoonTrailPhuketKrabiSamuiData';
+import { baliPhuketIslandEscapeProduct } from './baliPhuketIslandEscapeData';
+import { classicKrabiPhuketHolidayProduct } from './classicKrabiPhuketHolidayData';
+import { bestOfPattayaBangkokPhuketProduct } from './bestOfPattayaBangkokPhuketData';
+import { luxuryPhuketSamuiKrabiProduct } from './luxuryPhuketSamuiKrabiData';
+import { bestOfSingaporeThailandProduct } from './bestOfSingaporeThailandData';
+import { grandVietnamCambodiaThailandProduct } from './grandVietnamCambodiaThailandData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/thailand/enquiry/passengers/', cruiseCity: '—',
@@ -10,6 +25,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Thailand', href: '/asien/thailand' }]
 });
 
-export const thailandProducts = [...packages.map(toProduct), bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct];
+export const thailandProducts = [...packages.map(toProduct), bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct, luxuryBangkokPattayaEscapeProduct, phuketPhiPhiPartyEscapeProduct, phuketKohSamuiBeachEscapeProduct, islandTrailsPhuketSamuiKrabiProduct, grandBangkokPhuketKrabiProduct, romanticKrabiSamuiPhuketProduct, bestOfThailandMalaysiaProduct, coastalMagicPhuketKrabiProduct, honeymoonTrailPhuketKrabiSamuiProduct, baliPhuketIslandEscapeProduct, classicKrabiPhuketHolidayProduct, bestOfPattayaBangkokPhuketProduct, luxuryPhuketSamuiKrabiProduct, bestOfSingaporeThailandProduct, grandVietnamCambodiaThailandProduct];
 export const thailandTours = packages.map(build);
 export const thailandBySlug = Object.fromEntries(thailandTours.map((t) => [t.detail.slug, t]));

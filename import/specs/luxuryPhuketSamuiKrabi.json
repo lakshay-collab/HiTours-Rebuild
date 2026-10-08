@@ -1,0 +1,176 @@
+{
+  "source_slug": "phuket-krabi-koh-samui-tour",
+  "slug": "luxury-phuket-koh-samui-and-krabi",
+  "camel": "luxuryPhuketSamuiKrabi",
+  "title": "Luxury Phuket, Koh Samui and Krabi",
+  "alt": "Limestone stacks rising out of the water in Phang Nga Bay, Thailand",
+  "cta_country": "thailand",
+  "tag": "Luxury",
+  "tags": ["Luxury", "Beach"],
+  "price": 54149,
+  "transport": "Private and shared transfers with long tail boat, speedboat and ferry crossings",
+  "route_cities": ["Phuket", "Phang Nga Bay", "Koh Samui", "Ang Thong", "Krabi"],
+  "counts": {"days": 11, "nights": 10, "cities": 3, "hotels": 3, "experiences": 5, "transfers": 22, "meals": 11},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Ten nights, three coasts and a free day in each place. This is the version that actually feels like a holiday.",
+    "tip": "Do Phang Nga Bay early in your Phuket stay while the sea is calmest. On the Krabi 7 Islands tour, stay in the water after the barbecue because the plankton only glows once it is properly dark."
+  },
+  "summary": "Eleven days along the Thai coast in four and five star resorts. Phang Nga Bay by long tail boat, the Siam Niramit show, a tiger encounter, the Ang Thong marine park by speedboat and the Krabi 7 Islands with a barbecue dinner on the sand.",
+  "included": "Included: 10 nights in 3 luxury resorts with daily breakfast; Siam Niramit show gold seats with shared transfers; James Bond island and Phang Nga Bay tour with sea canoeing; Tiger Kingdom big tiger encounter with private transfers; Ang Thong marine park speedboat tour; Krabi 7 Islands tour with barbecue dinner; 22 airport, pier and sightseeing transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; park and temple entry fees; meals other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket",
+    "2": "Siam Niramit evening show",
+    "3": "Phang Nga Bay and James Bond island",
+    "4": "Tiger Kingdom",
+    "5": "Ferry to Koh Samui",
+    "6": "Ang Thong marine park",
+    "7": "Koh Samui at leisure",
+    "8": "On to Krabi",
+    "9": "Krabi 7 Islands with a barbecue dinner",
+    "10": "A free day in Krabi",
+    "11": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B", "9": "B, D", "10": "B", "11": "B"},
+  "hotel_by_day": {
+    "1": "Fishermen's Harbour, Phuket",
+    "2": "Fishermen's Harbour, Phuket",
+    "3": "Fishermen's Harbour, Phuket",
+    "4": "Fishermen's Harbour, Phuket",
+    "5": "Nora Buri Resort & Spa",
+    "6": "Nora Buri Resort & Spa",
+    "7": "Nora Buri Resort & Spa",
+    "8": "Holiday Ao Nang Beach Resort, Krabi",
+    "9": "Holiday Ao Nang Beach Resort, Krabi",
+    "10": "Holiday Ao Nang Beach Resort, Krabi",
+    "11": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to your resort",
+      "Check in at Fishermen's Harbour and keep the first day free",
+      "Optional: the Phuket FantaSea show, Aquaria or the bird park"
+    ],
+    "2": [
+      "Breakfast, then a slow morning at the resort",
+      "Optional: Andamanda water park or the Phuket elephant sanctuary",
+      "Evening shared transfer to the Siam Niramit show with gold seats",
+      "A full stage production on Thai history, back by late evening"
+    ],
+    "3": [
+      "Breakfast, then shared transfer up to the Phang Nga pier",
+      "Long tail boat transfer into the bay past the limestone stacks",
+      "James Bond island, sea caves and sea canoeing through the lagoons",
+      "Return shared transfer to your resort in the late afternoon"
+    ],
+    "4": [
+      "Breakfast, then private transfer out to Tiger Kingdom",
+      "Big tiger encounter with the keepers alongside you throughout",
+      "Afternoon and evening free at the resort"
+    ],
+    "5": [
+      "Breakfast, check out and shared transfer to the ferry terminal",
+      "Ferry transfer across to Koh Samui, then on to Chaweng",
+      "Check in at Nora Buri, built into the headland above the bay",
+      "Optional: Fisherman's Village at Bophut or the stalls at The Wharf Samui"
+    ],
+    "6": [
+      "Breakfast, then shared transfer to the Samui pier",
+      "Speedboat transfer out to the Ang Thong marine park",
+      "Snorkelling, a hidden lagoon and the viewpoint climb on Koh Wua Talap",
+      "Return shared transfer to the resort in the afternoon"
+    ],
+    "7": [
+      "Breakfast, then a full day with nothing booked",
+      "Optional: the Big Buddha temple, Wat Plai Laem and the Secret Buddha Garden",
+      "Optional: Na Muang waterfall or the Hin Ta and Hin Yai rocks"
+    ],
+    "8": [
+      "Breakfast, check out and shared transfer to the Samui pier",
+      "Speedboat transfer across to the mainland, then on to Ao Nang",
+      "Check in at the Holiday Ao Nang Beach Resort and settle in",
+      "Optional: Wat Tham Sua, an elephant sanctuary or the night market"
+    ],
+    "9": [
+      "Breakfast, then shared transfer to the Ao Nang pier",
+      "Long tail boat transfer out across seven islands through the afternoon",
+      "Snorkel the shallows, then Phra Nang beach as the light drops",
+      "Barbecue dinner on the sand, then a swim with glowing plankton",
+      "Return shared transfer to the resort after dark"
+    ],
+    "10": [
+      "Breakfast, then a free day on the Ao Nang coast",
+      "Optional: the Emerald Pool and Klong Thom hot springs inland",
+      "Optional: the climb to Tiger Cave temple for the long view"
+    ],
+    "11": [
+      "Breakfast and an unhurried check out",
+      "Private sedan transfer to Krabi airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2, 3, 4],
+      "dayLabel": "Day 1 to 4",
+      "hotel": "Fishermen's Harbour, Phuket",
+      "hotel_label": "Fishermen's Harbour",
+      "accom": "4 nights \u00b7 Breakfast included \u00b7 Luxury room \u00b7 4\u2605 \u00b7 Fishermen's Harbour at the quiet end of Patong beach",
+      "program": {
+        "name": "Phang Nga Bay, tigers and a stage show",
+        "description": "Four nights in Patong with a long tail boat day in Phang Nga Bay, the Siam Niramit show and a close up tiger encounter."
+      },
+      "activities": [
+        {"name": "Siam Niramit Show", "match": "Siam Niramit", "day": 2, "description": "A large stage production on Thai history and legend with gold seats included, and shared transfers each way."},
+        {"name": "Phang Nga Bay and James Bond Island", "match": "James Bond", "day": 3, "description": "A long tail boat day into Phang Nga Bay, with the famous leaning stack, hidden sea caves and sea canoeing through the lagoons."},
+        {"name": "Tiger Kingdom Phuket", "match": "Tiger Kingdom", "day": 4, "description": "Time inside the enclosure with the big tigers, keepers beside you throughout, with private transfers each way."},
+        {"name": "Phuket Elephant Sanctuary", "match": "Elephant Sanctuary", "day": 2, "optional": true, "description": "A no riding sanctuary in the hills near Paklok where rescued elephants roam, bathe and feed at their own pace."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Koh Samui",
+      "city": "Koh Samui",
+      "days": [5, 6, 7],
+      "dayLabel": "Day 5 to 7",
+      "hotel": "Nora Buri Resort & Spa",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Luxury room \u00b7 5\u2605 \u00b7 Nora Buri, built into the headland above Chaweng bay",
+      "program": {
+        "name": "Chaweng and the Ang Thong islands",
+        "description": "Three nights on Samui with a speedboat day in the Ang Thong marine park and a full day left open on the beach."
+      },
+      "activities": [
+        {"name": "Ang Thong Marine Park by Speedboat", "match": "Ang Thong", "day": 6, "description": "A speedboat day out to forty two islands with a hidden lagoon, snorkelling stops and a viewpoint climb on Koh Wua Talap."},
+        {"name": "Fisherman's Village", "match": "Fisherman", "day": 5, "optional": true, "description": "Old wooden shophouses at Bophut turned into cafes and bars, with a walking street market on Friday evenings."},
+        {"name": "Big Buddha Temple", "match": "Big Buddha Temple", "day": 7, "optional": true, "description": "Wat Phra Yai on its small island, reached by causeway, with a golden seated Buddha looking out over the sea."},
+        {"name": "Na Muang Waterfall", "match": "Na Muang", "day": 7, "optional": true, "description": "Two falls in the island's interior, the lower one an easy walk and the upper one a steeper climb through forest."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [8, 9, 10, 11],
+      "dayLabel": "Day 8 to 11",
+      "hotel": "Holiday Ao Nang Beach Resort, Krabi",
+      "hotel_label": "Holiday Ao Nang Beach Resort",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Luxury room \u00b7 4\u2605 \u00b7 Holiday Ao Nang Beach Resort, steps from the beach road",
+      "program": {
+        "name": "Seven islands and a plankton swim",
+        "description": "Three nights in Ao Nang with a sunset tour of seven islands, a barbecue dinner on the sand and a free day for the rainforest."
+      },
+      "activities": [
+        {"name": "Krabi 7 Islands with Barbecue Dinner", "match": "7 Islands", "day": 9, "description": "An afternoon and evening across seven islands by long tail boat, with snorkelling, a barbecue dinner on the beach and a swim with glowing plankton."},
+        {"name": "Wat Tham Sua", "match": "Wat Tham Sua", "day": 8, "optional": true, "description": "The Tiger Cave temple, with over twelve hundred steps up to a golden Buddha and a long view across the Krabi plain."},
+        {"name": "The Emerald Pool", "match": "Emerald Pool", "day": 10, "optional": true, "description": "A spring fed pool in the Khao Phra Bang Khram forest inland from Krabi, clear green and warm all year."},
+        {"name": "Klong Thom Hot Springs", "match": "Hot Springs", "day": 10, "optional": true, "description": "Warm water running over smooth rock into forest pools, usually paired with the Emerald Pool on the same drive."}
+      ]
+    }
+  ]
+}

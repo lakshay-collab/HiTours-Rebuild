@@ -1,0 +1,149 @@
+{
+  "source_slug": "an-odyssey-to-thailand---bangkok-phuket--krabi",
+  "slug": "grand-bangkok-phuket-and-krabi",
+  "camel": "grandBangkokPhuketKrabi",
+  "title": "Grand Bangkok, Phuket and Krabi",
+  "alt": "Lit up temples on the banks of the Chao Phraya river in Bangkok",
+  "cta_country": "thailand",
+  "tag": "Family",
+  "tags": ["Family", "Beach"],
+  "price": 41790,
+  "transport": "Private sedan transfers with boat crossings and one shared city tour",
+  "route_cities": ["Bangkok", "Phuket", "Phi Phi Islands", "Krabi"],
+  "counts": {"days": 8, "nights": 7, "cities": 3, "hotels": 3, "experiences": 5, "transfers": 18, "meals": 9},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "City first, then two beaches. Seven nights is the shortest stretch that makes this route feel unhurried.",
+    "tip": "Book the Bangkok to Phuket flight before midday so you still get an afternoon on Patong beach. The Krabi road transfer from Phuket takes about three hours with a stop, so eat before you leave."
+  },
+  "summary": "Eight days from Bangkok to the Andaman coast. A private city tour and a dinner cruise in the capital, three nights in Patong with a Phi Phi excursion and a Phuket city tour, then two nights in Ao Nang with the Krabi 4 Islands tour.",
+  "included": "Included: 7 nights in 3 hotels with daily breakfast; full day private Bangkok city tour; Chao Phraya Princess dinner cruise with international buffet; Phi Phi islands excursion with lunch; half day Phuket city tour; Krabi 4 Islands long tail boat tour; 18 airport, intercity and sightseeing transfers.",
+  "not_included": "Not included: international flights; the Bangkok to Phuket flight; visa charges; travel insurance; island and temple entry fees; meals other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Bangkok",
+    "2": "Bangkok city tour and a river cruise",
+    "3": "On to Phuket",
+    "4": "Phi Phi island excursion",
+    "5": "Phuket city tour",
+    "6": "On to Krabi",
+    "7": "Krabi 4 Islands tour",
+    "8": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B, D", "3": "B", "4": "B, L", "5": "B", "6": "B", "7": "B", "8": "B"},
+  "hotel_by_day": {
+    "1": "Ibis Bangkok Sukhumvit 4",
+    "2": "Ibis Bangkok Sukhumvit 4",
+    "3": "Club Bamboo Boutique Resort & Spa",
+    "4": "Club Bamboo Boutique Resort & Spa",
+    "5": "Club Bamboo Boutique Resort & Spa",
+    "6": "Timber House Resort, Krabi",
+    "7": "Timber House Resort, Krabi",
+    "8": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Suvarnabhumi Airport and private sedan transfer to your hotel",
+      "Check in on Sukhumvit Soi 4 and keep the evening free",
+      "Optional: Chatuchak weekend market or the Amphawa floating market"
+    ],
+    "2": [
+      "Breakfast, then a private car and guide for the full day city tour",
+      "The Golden Buddha at Wat Traimit and Wat Maha Phruettharam",
+      "Evening private transfer to the ICONSIAM pier on the river",
+      "Chao Phraya Princess cruise with an international buffet on board"
+    ],
+    "3": [
+      "Breakfast, check out and private transfer to Don Mueang airport",
+      "Optional: flight from Bangkok to Phuket, booked separately and not included",
+      "Private transfer from Phuket airport to your Patong hotel",
+      "Optional: an evening on Patong beach or along Bangla Road"
+    ],
+    "4": [
+      "Breakfast, then private transfer down to the Phuket pier",
+      "Boat transfer out to the Phi Phi group for the whole day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch",
+      "Return boat and private transfer to Patong in the evening"
+    ],
+    "5": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Wat Chalong, Old Phuket Town and Karon viewpoint on the west coast",
+      "Back at the hotel by mid afternoon with the rest of the day free"
+    ],
+    "6": [
+      "Breakfast, check out and private sedan transfer by road to Krabi",
+      "Check in at Ao Nang, where the cliffs come down to the beach",
+      "Optional: an evening on Ao Nang beach or the Emerald Pool inland"
+    ],
+    "7": [
+      "Breakfast, then private transfer to the Ao Nang pier",
+      "Long tail boat transfer out to Koh Poda, Tup and Chicken island",
+      "Snorkel the shallows and see Phra Nang cave on the headland",
+      "Return boat and private transfer to your hotel in the afternoon"
+    ],
+    "8": [
+      "Breakfast and an easy check out",
+      "Private sedan transfer to Krabi airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Bangkok",
+      "city": "Bangkok",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Ibis Bangkok Sukhumvit 4",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 On Sukhumvit Soi 4, a minute from Nana Skytrain",
+      "program": {
+        "name": "Temples, gems and a dinner cruise",
+        "description": "Two nights in the capital with a private full day city tour and a buffet dinner cruise down the Chao Phraya after dark."
+      },
+      "activities": [
+        {"name": "Full Day Bangkok City Tour", "match": "Bangkok City Tour", "day": 2, "description": "A private car and guide for the day, taking in the Golden Buddha at Wat Traimit, Wat Maha Phruettharam and a gem gallery."},
+        {"name": "Chao Phraya Princess Dinner Cruise", "match": "Chao Phraya", "day": 2, "description": "Boarding at ICONSIAM pier for an international buffet, live music and lit up temples along the riverbanks."},
+        {"name": "Chatuchak Weekend Market", "match": "Chatuchak", "day": 1, "optional": true, "description": "Thousands of stalls across a vast weekend market, best reached by Skytrain and best walked early before the heat."},
+        {"name": "Amphawa Floating Market", "match": "Amphawa", "day": 1, "optional": true, "description": "A canal market outside the city where boats cook seafood at the water. Liveliest in the late afternoon."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [3, 4, 5],
+      "dayLabel": "Day 3 to 5",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Club Bamboo in Patong, a short walk from the beach",
+      "program": {
+        "name": "Patong, Phi Phi and the old town",
+        "description": "Three nights in Patong with a full day on the water at Phi Phi and a half day tour of Wat Chalong, the old town and Karon viewpoint."
+      },
+      "activities": [
+        {"name": "Phi Phi Islands Excursion", "match": "Phi Phi Island Tour", "day": 4, "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch on the tour."},
+        {"name": "Phuket City Tour", "match": "Phuket City Tour", "day": 5, "description": "A half day run through Wat Chalong, the painted shophouse streets of Old Phuket Town and Karon viewpoint over the west coast."},
+        {"name": "Evening on Patong Beach", "match": "Patong Beach", "day": 3, "optional": true, "description": "Walk the sand as the light goes, then browse the stalls and cafes a street back from the beach front."},
+        {"name": "Bangla Road After Dark", "match": "Bangla Road", "day": 3, "optional": true, "description": "Patong's night strip, closed to traffic after dark and lined with bars, street food and live music."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [6, 7, 8],
+      "dayLabel": "Day 6 to 8",
+      "hotel": "Timber House Resort, Krabi",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Timber House in Ao Nang, close to the beach road",
+      "program": {
+        "name": "Ao Nang and the 4 Islands",
+        "description": "Two nights under the Ao Nang cliffs with a long tail boat tour of Koh Poda, Tup island, Chicken island and Phra Nang cave."
+      },
+      "activities": [
+        {"name": "Krabi 4 Islands Tour", "match": "Krabi 4 Islands", "day": 7, "description": "A long tail boat day across Koh Poda, Tup island and Chicken island, with snorkelling stops and Phra Nang cave on the headland."},
+        {"name": "Ao Nang Beach", "match": "Ao Nang Beach", "day": 6, "optional": true, "description": "The main Krabi beach strip, with long tail boats pulled up on the sand and cliffs rising straight out of the sea."},
+        {"name": "The Emerald Pool", "match": "Emerald Pool", "day": 6, "optional": true, "description": "A spring fed pool in the Khao Phra Bang Khram forest inland from Krabi, clear green and warm all year."}
+      ]
+    }
+  ]
+}

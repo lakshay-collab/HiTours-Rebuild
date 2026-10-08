@@ -1,0 +1,168 @@
+{
+  "source_slug": "romantic-escape-to-thailand-with-koh-samui",
+  "slug": "honeymoon-trail-phuket-krabi-koh-samui",
+  "camel": "honeymoonTrailPhuketKrabiSamui",
+  "title": "Honeymoon Trail of Phuket, Krabi and Koh Samui",
+  "alt": "A white Buddha statue on a hilltop above the Phuket coast at sunset",
+  "cta_country": "thailand",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 44650,
+  "transport": "Private and shared transfers with speedboat and ferry crossings",
+  "route_cities": ["Phuket", "Krabi", "Koh Samui"],
+  "counts": {"days": 8, "nights": 7, "cities": 3, "hotels": 3, "experiences": 2, "transfers": 14, "meals": 7},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Eight days and three beaches, with the Big Buddha tour on day two so you get your bearings early.",
+    "tip": "The Krabi to Samui day is long, so take the early ferry and nap on the crossing. On Samui, ask the hotel to book a driver for the ring road rather than renting a scooter."
+  },
+  "summary": "Eight days across three Thai coasts. A Phuket city tour with the Big Buddha, two nights under the Ao Nang cliffs with the Krabi 4 Islands tour, two slow days on Koh Samui and a final Phuket night before you fly home.",
+  "included": "Included: 7 nights in 3 hotels with daily breakfast; Phuket city tour with the Big Buddha; Krabi 4 Islands speedboat tour with a lunch box; 14 airport, intercity and island transfers including the Samui ferry crossings both ways; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; temple and park entry fees; lunches and dinners other than the island tour lunch box; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket",
+    "2": "Phuket sightseeing with the Big Buddha",
+    "3": "On to Krabi",
+    "4": "Krabi 4 Islands by speedboat",
+    "5": "Ferry to Koh Samui",
+    "6": "Koh Samui at leisure",
+    "7": "Back to Phuket",
+    "8": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "No meals", "4": "B, L", "5": "B", "6": "B", "7": "B", "8": "B"},
+  "hotel_by_day": {
+    "1": "Club Bamboo Boutique Resort & Spa",
+    "2": "Club Bamboo Boutique Resort & Spa",
+    "3": "Timber House Resort, Krabi",
+    "4": "Timber House Resort, Krabi",
+    "5": "Montien House",
+    "6": "Montien House",
+    "7": "Club Bamboo Boutique Resort & Spa",
+    "8": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to Patong",
+      "Check in at Club Bamboo and keep the first evening free",
+      "Optional: Patong beach, quieter Kata beach or a walk down Bangla Road"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the Phuket city tour",
+      "Wat Chalong, the Big Buddha on Nakkerd hill and Old Phuket Town",
+      "Karon viewpoint over the three bays before the ride back",
+      "Evening free along the beach road"
+    ],
+    "3": [
+      "Check out and private sedan transfer by road to Krabi",
+      "Check in at Timber House in Ao Nang, under the limestone cliffs",
+      "Afternoon and evening free on the beach road",
+      "Optional: the weekend night market or an elephant sanctuary inland"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to the Ao Nang pier",
+      "Speedboat transfer out to Koh Poda, Tup island and Chicken island",
+      "Snorkel the shallows and stop at Phra Nang beach, lunch box on board",
+      "Return shared transfer to your hotel in the afternoon"
+    ],
+    "5": [
+      "Breakfast, check out and shared transfer to the ferry terminal",
+      "Ferry transfer across to Koh Samui, then on to Chaweng",
+      "Check in at Montien House among the palms behind the beach",
+      "Optional: the Big Buddha temple at Wat Phra Yai or Wat Plai Laem"
+    ],
+    "6": [
+      "Breakfast, then a full day with nothing booked",
+      "Chaweng beach is a short walk away, with loungers and shade",
+      "Optional: Ang Thong marine park by boat or Wat Khunaram inland",
+      "Optional: the Hin Ta and Hin Yai rocks on the south coast"
+    ],
+    "7": [
+      "Breakfast, check out and shared transfer to the Samui pier",
+      "Ferry transfer back across to Phuket and on to Patong",
+      "Check in for the final night and take the afternoon slowly",
+      "Optional: Muay Thai at Patong stadium or the Phuket FantaSea show"
+    ],
+    "8": [
+      "Breakfast and an unhurried check out",
+      "Private sedan transfer to Phuket International Airport"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Club Bamboo in Patong, a short walk from the beach",
+      "program": {
+        "name": "Patong and the Big Buddha",
+        "description": "Two nights in Patong with a city tour that takes in Wat Chalong, the Big Buddha and the old shophouse streets."
+      },
+      "activities": [
+        {"name": "Phuket City Tour with the Big Buddha", "match": "Phuket City Tour", "day": 2, "description": "A shared tour through Wat Chalong, the white Buddha on Nakkerd hill, Old Phuket Town and Karon viewpoint."},
+        {"name": "Kata Beach", "match": "Kata Beach", "day": 1, "optional": true, "description": "A quieter curve of sand south of Patong, good for swimming and a short ride from the hotel."},
+        {"name": "Bangla Road After Dark", "match": "Bangla Road", "day": 1, "optional": true, "description": "Patong's night strip, closed to traffic after dark and lined with bars, street food and live music."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "Timber House Resort, Krabi",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Timber House in Ao Nang, close to the beach road",
+      "program": {
+        "name": "Cliffs and the 4 Islands",
+        "description": "Two nights in Ao Nang with a speedboat tour of Koh Poda, Tup island, Chicken island and Phra Nang beach."
+      },
+      "activities": [
+        {"name": "Krabi 4 Islands by Speedboat", "match": "Four Island", "day": 4, "description": "A speedboat day across Koh Poda, Tup island and Chicken island, with snorkelling, Phra Nang beach and a lunch box on board."},
+        {"name": "Krabi Weekend Night Market", "match": "Night Market", "day": 3, "optional": true, "description": "Krabi town's Friday to Sunday market, with grilled seafood, curries and sweets sold from stalls along the river."},
+        {"name": "Krabi Elephant Sanctuary", "match": "Elephant Sanctuary", "day": 3, "optional": true, "description": "A no riding sanctuary inland from Ao Nang where you feed and walk with rescued elephants alongside their keepers."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Koh Samui",
+      "city": "Koh Samui",
+      "days": [5, 6],
+      "dayLabel": "Day 5 to 6",
+      "hotel": "Montien House",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Montien House among palms behind Chaweng beach",
+      "program": {
+        "name": "Two slow days on Samui",
+        "description": "Nothing booked on the island, with Chaweng beach on the doorstep and temples and viewpoints on the ring road."
+      },
+      "activities": [
+        {"name": "Big Buddha Temple", "match": "Big Buddha Temple", "day": 5, "optional": true, "description": "Wat Phra Yai on its small island, reached by causeway, with a golden seated Buddha looking out over the sea."},
+        {"name": "Wat Plai Laem", "match": "Wat Plai Laem", "day": 5, "optional": true, "description": "An eighteen armed Guanyin statue rising out of a lake, with carved halls and fish that come up to be fed."},
+        {"name": "Ang Thong Marine Park", "match": "Ang Thong", "day": 6, "optional": true, "description": "A boat day out to forty two islands with a hidden lagoon, snorkelling stops and a viewpoint climb on Koh Wua Talap."},
+        {"name": "Hin Ta and Hin Yai Rocks", "match": "Hin Ta", "day": 6, "optional": true, "description": "The grandfather and grandmother rocks on the south coast, a short stop with a boardwalk down to the sea."}
+      ]
+    },
+    {
+      "letter": "D",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [7, 8],
+      "dayLabel": "Day 7 to 8",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "1 night \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Back at Club Bamboo in Patong for the final night",
+      "program": {
+        "name": "A last Phuket night",
+        "description": "Back across from Samui for one more evening in Patong, with the stadium and the big shows close by."
+      },
+      "activities": [
+        {"name": "Muay Thai at Patong Stadium", "match": "Boxing Stadium", "day": 7, "optional": true, "description": "Live Muay Thai bouts most evenings at the Patong stadium, loud, quick and over by about ten."},
+        {"name": "Phuket FantaSea Show", "match": "Fanta", "day": 7, "optional": true, "description": "A large stage show on Thai myth with elephants, acrobatics and a buffet hall, out at Kamala beach."},
+        {"name": "Freedom Beach", "match": "Freedom Beach", "day": 7, "optional": true, "description": "A small bay south of Patong reached by longtail boat, with the clearest water on this stretch of coast."}
+      ]
+    }
+  ]
+}

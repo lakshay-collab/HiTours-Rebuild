@@ -1,5 +1,6 @@
 // Adapters: Vietnam packages (vietnamPackages.js, WorkDrive source) → listing product cards + EgyptDetail template data.
 import { packages, cityImages } from '../vietnamPackages';
+import { grandVietnamCambodiaThailandProduct } from './grandVietnamCambodiaThailandData';
 
 const LETTERS = 'ABCDEFGHIJ';
 export const DAY_MARK = '__day__';
@@ -95,6 +96,6 @@ const { toProduct, build } = createAdapters({
   expert: { name: 'Riya', image: '/experts/riya.webp', role: 'Vietnam expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Vietnam', href: '/asien/vietnam' }]
 });
-export const vietnamProducts = packages.map(toProduct);
+export const vietnamProducts = [...packages.map(toProduct), grandVietnamCambodiaThailandProduct];
 export const vietnamTours = packages.map(build);
 export const vietnamBySlug = Object.fromEntries(vietnamTours.map((t) => [t.detail.slug, t]));

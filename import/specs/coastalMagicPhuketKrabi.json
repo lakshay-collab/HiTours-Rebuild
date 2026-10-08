@@ -1,0 +1,125 @@
+{
+  "source_slug": "offshore-romance---phuket--krabi",
+  "slug": "coastal-magic-of-phuket-and-krabi",
+  "camel": "coastalMagicPhuketKrabi",
+  "title": "Coastal Magic of Phuket and Krabi",
+  "alt": "Turquoise shallows and limestone islands off the Krabi coast in Thailand",
+  "cta_country": "thailand",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 43225,
+  "transport": "Private sedan transfers with speedboat island crossings",
+  "route_cities": ["Phuket", "Phi Phi Islands", "Krabi"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 13, "meals": 8},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Three nights in each place, so you unpack twice in a week. Two island days and one rainforest day in between.",
+    "tip": "Do the Emerald Pool early because the water is clearest before the crowds. The Tiger Cave climb is over twelve hundred steps, so carry water and go before the heat builds."
+  },
+  "summary": "Seven days on the Andaman coast with three nights in Phuket and three in Ao Nang. A speedboat day at Phi Phi, a tiger encounter, the Krabi 4 Islands by boat and a rainforest day at the Emerald Pool and Tiger Cave temple.",
+  "included": "Included: 6 nights in 2 four star hotels with daily breakfast; Phi Phi islands speedboat tour with lunch; Tiger Kingdom big tiger encounter with private transfers; Krabi 4 Islands speedboat tour with a lunch box; Emerald Pool and Tiger Cave temple tour; 13 airport, pier and sightseeing transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; park and temple entry fees; meals other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket",
+    "2": "Phi Phi islands by speedboat",
+    "3": "Tiger Kingdom and a free afternoon",
+    "4": "On to Krabi",
+    "5": "Krabi 4 Islands by speedboat",
+    "6": "Emerald Pool and Tiger Cave temple",
+    "7": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B, L", "3": "B", "4": "B", "5": "B, L", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "The Marina Phuket Hotel",
+    "2": "The Marina Phuket Hotel",
+    "3": "The Marina Phuket Hotel",
+    "4": "Krabi Resort",
+    "5": "Krabi Resort",
+    "6": "Krabi Resort",
+    "7": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to your hotel",
+      "Check in at The Marina Phuket and keep the first day free",
+      "Optional: Wat Chalong, sunset at Promthep Cape or Old Phuket Town"
+    ],
+    "2": [
+      "Breakfast, then shared transfer down to the Phuket pier",
+      "Speedboat transfer out to the Phi Phi group for the whole day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch",
+      "Return speedboat and shared transfer to your hotel"
+    ],
+    "3": [
+      "Breakfast, then private transfer out to Tiger Kingdom",
+      "Big tiger encounter with the keepers alongside you throughout",
+      "Back by early afternoon with the rest of the day free",
+      "Optional: the Phuket Aquarium at Cape Panwa or the Tha Rua shrine"
+    ],
+    "4": [
+      "Breakfast, check out and private sedan transfer by road to Krabi",
+      "Check in at Krabi Resort on the Ao Nang beachfront",
+      "Afternoon free on the sand or along the beach road",
+      "Optional: Wat Kaew Korawaram in town or an elephant sanctuary inland"
+    ],
+    "5": [
+      "Breakfast, then shared transfer to the Ao Nang pier",
+      "Speedboat transfer out to Koh Poda, Tup island and Chicken island",
+      "Snorkel the shallows and stop at Phra Nang beach, lunch box on board",
+      "Return shared transfer to the resort in the afternoon"
+    ],
+    "6": [
+      "Breakfast, then shared transfer inland for the rainforest day",
+      "Swim in the Emerald Pool inside Thung Teao forest park",
+      "Climb to Tiger Cave temple for the long view across the Krabi plain",
+      "Back at the resort by evening"
+    ],
+    "7": [
+      "Breakfast and an unhurried check out",
+      "Private sedan transfer to Krabi airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "The Marina Phuket Hotel",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 The Marina Phuket, a short walk from the beach",
+      "program": {
+        "name": "Islands, tigers and slow evenings",
+        "description": "Three nights in Phuket with a full day at Phi Phi, a tiger encounter and an afternoon left open for the viewpoints."
+      },
+      "activities": [
+        {"name": "Phi Phi Islands by Speedboat", "match": "Phi Phi Island Tour", "day": 2, "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch on the tour."},
+        {"name": "Tiger Kingdom Phuket", "match": "Tiger Kingdom", "day": 3, "description": "Time inside the enclosure with the big tigers, keepers beside you throughout, with private transfers each way."},
+        {"name": "Sunset at Promthep Cape", "match": "Promthep", "day": 1, "optional": true, "description": "The southern tip of Phuket, where the headland drops into the sea and the sunset draws a crowd every evening."},
+        {"name": "Old Phuket Town", "match": "Old Phuket Town", "day": 1, "optional": true, "description": "Painted Sino Portuguese shophouses, coffee roasters and small galleries along Thalang and Dibuk roads."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "Krabi Resort",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Krabi Resort on the Ao Nang beachfront",
+      "program": {
+        "name": "Ao Nang, the islands and the rainforest",
+        "description": "Three nights in Ao Nang with a speedboat tour of the 4 Islands and a day inland at the Emerald Pool and Tiger Cave temple."
+      },
+      "activities": [
+        {"name": "Krabi 4 Islands by Speedboat", "match": "Four Island", "day": 5, "description": "A speedboat day across Koh Poda, Tup island and Chicken island, with snorkelling, Phra Nang beach and a lunch box on board."},
+        {"name": "Emerald Pool and Tiger Cave Temple", "match": "Emerald Pool", "day": 6, "description": "A spring fed pool inside Thung Teao forest park, then the climb up Wat Tham Suea for the view across the Krabi plain."},
+        {"name": "Krabi Elephant Sanctuary", "match": "Elephant Sanctuary", "day": 4, "optional": true, "description": "A no riding sanctuary inland from Ao Nang where you feed and walk with rescued elephants alongside their keepers."},
+        {"name": "Wat Kaew Korawaram", "match": "Wat Kaew", "day": 4, "optional": true, "description": "A white temple on a rise in Krabi town, reached by a long flight of steps and quiet in the late afternoon."}
+      ]
+    }
+  ]
+}

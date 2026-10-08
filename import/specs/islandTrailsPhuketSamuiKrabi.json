@@ -1,0 +1,141 @@
+{
+  "source_slug": "scenic-trails-of-thailand",
+  "slug": "island-trails-phuket-koh-samui-krabi",
+  "camel": "islandTrailsPhuketSamuiKrabi",
+  "title": "Island Trails of Phuket, Koh Samui and Krabi",
+  "alt": "Long tail boats anchored off a limestone island in the Andaman Sea",
+  "cta_country": "thailand",
+  "tag": "Beach",
+  "tags": ["Beach", "Adventure"],
+  "price": 39244,
+  "transport": "Shared coach transfers with long tail boat, speedboat and ferry crossings",
+  "route_cities": ["Phuket", "Phi Phi Islands", "Koh Samui", "Koh Phangan", "Krabi"],
+  "counts": {"days": 7, "nights": 6, "cities": 3, "hotels": 3, "experiences": 3, "transfers": 17, "meals": 11},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Three islands in six nights, with the Full Moon Party in the middle. It suits travellers in their twenties best.",
+    "tip": "The party runs all night on Koh Phangan and the boat back is in the early hours, so day four is deliberately empty. Keep valuables in the hotel safe and carry cash in a waterproof pouch."
+  },
+  "summary": "Seven days along the Thai coast with two nights each in Phuket, Koh Samui and Krabi. Long tail boat island hopping off Phi Phi, the Full Moon Party on Koh Phangan and a speedboat tour of the Krabi 4 Islands, with all meals covered on Samui.",
+  "included": "Included: 6 nights in 3 four star hotels; daily breakfast, plus lunch and dinner on both Koh Samui nights; Phi Phi island hopping by long tail boat with island fees; Full Moon Party at Koh Phangan with shared transfer; Krabi 4 Islands speedboat tour with lunch and island fees; 17 airport, pier and island transfers.",
+  "not_included": "Not included: international flights; the Phuket to Koh Samui flight; visa charges; travel insurance; drinks; lunches and dinners other than those listed; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket",
+    "2": "Phi Phi island hopping",
+    "3": "On to Koh Samui and the Full Moon Party",
+    "4": "Koh Samui at leisure",
+    "5": "Ferry to Krabi",
+    "6": "Krabi 4 Islands by speedboat",
+    "7": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, L, D", "4": "B, L, D", "5": "B", "6": "B, L", "7": "B"},
+  "hotel_by_day": {
+    "1": "Andakira Hotel",
+    "2": "Andakira Hotel",
+    "3": "Baan Laimai Beach Resort & Spa",
+    "4": "Baan Laimai Beach Resort & Spa",
+    "5": "Arawan Beach Resort Krabi",
+    "6": "Arawan Beach Resort Krabi",
+    "7": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to the Andakira",
+      "Check in near Patong and keep the first day completely free",
+      "Optional: Bangla Road after dark or the shophouse streets of Old Phuket Town"
+    ],
+    "2": [
+      "Breakfast, then shared transfer down to Tonsai pier",
+      "Long tail boat transfer around the Phi Phi islands through the morning",
+      "Island fees are covered, so every swimming stop is already paid for",
+      "Return shared transfer to your Phuket hotel in the afternoon"
+    ],
+    "3": [
+      "Breakfast, check out and private transfer to Phuket airport",
+      "Optional: flight from Phuket to Koh Samui, booked separately and not included",
+      "Private transfer from Samui airport to Baan Laimai on Chaweng beach",
+      "Lunch and dinner at the resort are included on both Samui nights",
+      "Evening speedboat transfer across to Koh Phangan for the Full Moon Party"
+    ],
+    "4": [
+      "Speedboat transfer back to Samui in the early hours, then sleep in",
+      "Breakfast, lunch and dinner at the resort with nothing else booked",
+      "Chaweng beach is right outside, with loungers and shade all day",
+      "Optional: a fire dance show on the sand or the stalls at The Wharf Samui"
+    ],
+    "5": [
+      "Breakfast, check out and shared transfer to the Samui pier",
+      "Ferry transfer across to the mainland, then on to Ao Nang",
+      "Check in at the Arawan Beach Resort and take the evening slowly",
+      "Optional: the Krabi weekend night market, cheap and very good"
+    ],
+    "6": [
+      "Breakfast, then shared transfer to the Ao Nang pier",
+      "Speedboat transfer out to Koh Poda, Tup island and Chicken island",
+      "Snorkel the shallows and walk across to Phra Nang beach, lunch included",
+      "Island fees are covered, return shared transfer in the afternoon"
+    ],
+    "7": [
+      "Breakfast and a slow check out",
+      "Private sedan transfer to Krabi airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Andakira Hotel",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Andakira, a short walk from Patong beach",
+      "program": {
+        "name": "Patong base with island hopping",
+        "description": "Two nights in Patong with a long tail boat morning around the Phi Phi islands and island fees already covered."
+      },
+      "activities": [
+        {"name": "Phi Phi Island Hopping by Long Tail Boat", "match": "Phi Phi Island Hopping", "day": 2, "description": "A morning weaving between the Phi Phi islands by long tail boat, with swim and snorkel stops and island fees included."},
+        {"name": "Bangla Road After Dark", "match": "Bangla Road", "day": 1, "optional": true, "description": "Patong's night strip, closed to traffic after dark and lined with bars, street food and live music."},
+        {"name": "Old Phuket Town", "match": "Old Phuket Town", "day": 1, "optional": true, "description": "Painted Sino Portuguese shophouses, coffee roasters and small galleries along Thalang and Dibuk roads."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Koh Samui",
+      "city": "Koh Samui",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "Baan Laimai Beach Resort & Spa",
+      "accom": "2 nights \u00b7 Breakfast, lunch and dinner \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Baan Laimai, directly on Chaweng beach",
+      "program": {
+        "name": "Chaweng beach and the Full Moon Party",
+        "description": "All meals at the resort, Chaweng beach on the doorstep and a speedboat across to Koh Phangan for the Full Moon Party."
+      },
+      "activities": [
+        {"name": "Full Moon Party at Koh Phangan", "match": "Moon Party", "day": 3, "description": "The long running beach party at Haad Rin, reached by speedboat from Samui, with sound systems running until sunrise."},
+        {"name": "Fire Dance Show on Chaweng", "match": "Fire Dance", "day": 4, "optional": true, "description": "Fire dancers on the sand outside the beach bars most evenings in season, free to watch with a drink in hand."},
+        {"name": "ARKbar Beach Club", "match": "ARKbar", "day": 4, "optional": true, "description": "Samui's best known beach club on Chaweng, with day beds, a pool at the sand and music from the afternoon."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Krabi",
+      "city": "Krabi",
+      "days": [5, 6, 7],
+      "dayLabel": "Day 5 to 7",
+      "hotel": "Arawan Beach Resort Krabi",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Arawan Beach Resort in Ao Nang, close to the pier",
+      "program": {
+        "name": "Ao Nang and the 4 Islands",
+        "description": "Two nights under the cliffs of Ao Nang with a speedboat tour of Koh Poda, Tup island, Chicken island and Phra Nang beach."
+      },
+      "activities": [
+        {"name": "Krabi 4 Islands by Speedboat", "match": "4 Island", "day": 6, "description": "A speedboat day across Koh Poda, Tup island and Chicken island, with snorkelling, Phra Nang beach, lunch and island fees included."},
+        {"name": "Krabi Weekend Night Market", "match": "Night Market", "day": 5, "optional": true, "description": "Krabi town's Friday to Sunday market, with grilled seafood, curries and sweets sold from stalls along the river."}
+      ]
+    }
+  ]
+}

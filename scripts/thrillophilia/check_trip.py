@@ -37,7 +37,7 @@ for line in blines:
     if line.lower().startswith('optional') and not line.startswith('Optional: '):
         fails.append('3b optional prefix %r' % line)
 
-nights = [int(m) for m in re.findall(r"description: '(\d+) nights", src)]
+nights = [int(m) for m in re.findall(r"description: '(\d+) nights?", src)]
 exp_nights = int(re.search(r"days: '\d+ days / (\d+) nights'", src).group(1))
 if sum(nights) != exp_nights:
     fails.append('4 nights %s != %s' % (nights, exp_nights))
@@ -96,15 +96,17 @@ for p in local:
         fails.append('12 missing file %s' % p)
 
 remote = sorted(set(re.findall(r"img\('([^']+)'\)", src)))
-bad = []
-for p in remote:
+def reach(p):
     u = 'https://media1.thrillophilia.com/filestore/' + p + '?w=400&dpr=1'
     try:
         r = urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0'}), timeout=30)
         if r.status != 200 or int(r.headers.get('content-length') or 1) < 500:
-            bad.append(p)
+            return p
     except Exception as ex:
-        bad.append('%s %s' % (p, ex))
+        return '%s %s' % (p, ex)
+from concurrent.futures import ThreadPoolExecutor
+with ThreadPoolExecutor(12) as pool:
+    bad = [x for x in pool.map(reach, remote) if x]
 if bad:
     fails.append('12b unreachable images %s' % bad[:5])
 

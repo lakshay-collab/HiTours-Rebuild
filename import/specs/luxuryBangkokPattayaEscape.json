@@ -1,0 +1,109 @@
+{
+  "source_slug": "a-luxurious-affair-to-bangkok-and-pattaya",
+  "slug": "luxury-bangkok-and-pattaya-escape",
+  "camel": "luxuryBangkokPattayaEscape",
+  "title": "Luxury Bangkok and Pattaya Escape",
+  "alt": "Lit up temples along the Chao Phraya river in Bangkok at dusk",
+  "cta_country": "thailand",
+  "tag": "Luxury",
+  "tags": ["Luxury", "Short trips"],
+  "price": 34675,
+  "transport": "Private sedan transfers with shared tour coaches",
+  "route_cities": ["Bangkok", "Pattaya", "Coral Island"],
+  "counts": {"days": 5, "nights": 4, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 11, "meals": 5},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Four nights, two five star hotels and no long drives. This is the easy luxury version of a first Thailand trip.",
+    "tip": "Ask for a high floor at the Royal Cliff so you get the bay from your balcony. On the cruise day, eat light at lunch because the buffet on board is generous."
+  },
+  "summary": "A short luxury run through Thailand with two nights in Bangkok and two on the Pattaya coast. Safari World, a Chao Phraya dinner cruise, the Alcazar cabaret and a speedboat day on Coral Island, with five star hotels throughout.",
+  "included": "Included: 4 nights in 2 five star hotels with daily breakfast; Safari World and Marine Park tickets; Chao Phraya river dinner cruise; Alcazar cabaret standard seats; Coral Island speedboat tour from Pattaya; 11 airport, intercity and sightseeing transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; water sports and personal expenses; lunches and dinners other than the cruise dinner.",
+  "day_titles": {
+    "1": "Arrival in Bangkok",
+    "2": "Safari World and a river dinner cruise",
+    "3": "On to Pattaya and the Alcazar show",
+    "4": "Coral Island day trip",
+    "5": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B, D", "3": "B", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "Hyatt Regency Bangkok Sukhumvit",
+    "2": "Hyatt Regency Bangkok Sukhumvit",
+    "3": "Royal Cliff Beach Hotel Pattaya",
+    "4": "Royal Cliff Beach Hotel Pattaya",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Suvarnabhumi Airport and private sedan transfer to your Bangkok hotel",
+      "Check in at the Hyatt Regency on Sukhumvit and take the evening slowly",
+      "Nana Skytrain station is a minute away if you want to wander",
+      "Optional: Erawan Museum, the floating market or Siam Park City"
+    ],
+    "2": [
+      "Breakfast at the hotel, then shared transfer out to Safari World",
+      "Open safari loop past zebras, giraffes and big cats in the morning",
+      "Marine Park shows after lunch, then back into the city",
+      "Evening shared transfer to the Chao Phraya river dinner cruise",
+      "Buffet dinner on board with live music and lit up temples on the banks"
+    ],
+    "3": [
+      "Breakfast, check out and private sedan transfer down to Pattaya",
+      "Check in at the Royal Cliff, set on its own headland above the bay",
+      "Afternoon free for the pool terraces and the private beach",
+      "Evening shared transfer to the Alcazar cabaret with standard seats"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to the Bali Hai pier",
+      "Speedboat transfer across to Coral Island for the day",
+      "Swim and sunbathe at Tawaen beach, water sports payable on the sand",
+      "Return speedboat and shared transfer to your Pattaya hotel"
+    ],
+    "5": [
+      "Breakfast and a slow check out at your own pace",
+      "Private sedan transfer to Suvarnabhumi Airport for your trip home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Bangkok",
+      "city": "Bangkok",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Hyatt Regency Bangkok Sukhumvit",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 5\u2605 \u00b7 On Sukhumvit beside Nana Skytrain, with a rooftop pool",
+      "program": {
+        "name": "City nights and Safari World",
+        "description": "Two nights on Sukhumvit with an open safari park by day and a buffet dinner cruise down the Chao Phraya after dark."
+      },
+      "activities": [
+        {"name": "Safari World and Marine Park", "match": "Safari World", "day": 2, "description": "An open safari loop with zebras, giraffes and big cats, then dolphin and sea lion shows at Marine Park next door."},
+        {"name": "Chao Phraya River Dinner Cruise", "match": "Chao Phraya", "day": 2, "description": "Two hours on the river with a buffet dinner, live music and lit up views of Wat Arun and the Grand Palace from the water."},
+        {"name": "Erawan Museum", "match": "Erawan", "day": 1, "optional": true, "description": "A three headed elephant in bronze above a hall of stained glass and gardens. An easy half day on your free first evening."},
+        {"name": "Floating Market", "match": "Floating Market", "day": 1, "optional": true, "description": "Narrow canals, boats loaded with fruit and noodles cooked over charcoal at the water. Best early in the day."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Pattaya",
+      "city": "Pattaya",
+      "days": [3, 4, 5],
+      "dayLabel": "Day 3 to 5",
+      "hotel": "Royal Cliff Beach Hotel Pattaya",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 5\u2605 \u00b7 On the Royal Cliff headland with private beach and pool terraces",
+      "program": {
+        "name": "Beach days and cabaret lights",
+        "description": "Two nights on the Pattaya coast with the Alcazar cabaret in the evening and a speedboat day out to Coral Island."
+      },
+      "activities": [
+        {"name": "Alcazar Cabaret Show", "match": "Alcazar", "day": 3, "description": "Pattaya's long running cabaret, an hour of costumes, live singing and big stage sets with standard seating included."},
+        {"name": "Coral Island by Speedboat", "match": "Coral Island", "day": 4, "description": "A speedboat day out to Koh Larn with clear water at Tawaen beach, sun loungers on the sand and water sports if you want them."}
+      ]
+    }
+  ]
+}

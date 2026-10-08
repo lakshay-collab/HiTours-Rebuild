@@ -82,6 +82,21 @@ import { veniceViennaBySlug } from '../tours/veniceViennaData';
 import { icelandGlaciersBySlug } from '../tours/icelandGlaciersData';
 import { bestOfThailandSingaporeMalaysiaHongKongBySlug } from '../tours/bestOfThailandSingaporeMalaysiaHongKongData';
 import { bestOfPhuketKrabiBangkokBySlug } from '../tours/bestOfPhuketKrabiBangkokData';
+import { grandVietnamCambodiaThailandBySlug } from '../tours/grandVietnamCambodiaThailandData';
+import { bestOfSingaporeThailandBySlug } from '../tours/bestOfSingaporeThailandData';
+import { luxuryPhuketSamuiKrabiBySlug } from '../tours/luxuryPhuketSamuiKrabiData';
+import { bestOfPattayaBangkokPhuketBySlug } from '../tours/bestOfPattayaBangkokPhuketData';
+import { classicKrabiPhuketHolidayBySlug } from '../tours/classicKrabiPhuketHolidayData';
+import { baliPhuketIslandEscapeBySlug } from '../tours/baliPhuketIslandEscapeData';
+import { honeymoonTrailPhuketKrabiSamuiBySlug } from '../tours/honeymoonTrailPhuketKrabiSamuiData';
+import { coastalMagicPhuketKrabiBySlug } from '../tours/coastalMagicPhuketKrabiData';
+import { bestOfThailandMalaysiaBySlug } from '../tours/bestOfThailandMalaysiaData';
+import { romanticKrabiSamuiPhuketBySlug } from '../tours/romanticKrabiSamuiPhuketData';
+import { grandBangkokPhuketKrabiBySlug } from '../tours/grandBangkokPhuketKrabiData';
+import { islandTrailsPhuketSamuiKrabiBySlug } from '../tours/islandTrailsPhuketSamuiKrabiData';
+import { phuketKohSamuiBeachEscapeBySlug } from '../tours/phuketKohSamuiBeachEscapeData';
+import { phuketPhiPhiPartyEscapeBySlug } from '../tours/phuketPhiPhiPartyEscapeData';
+import { luxuryBangkokPattayaEscapeBySlug } from '../tours/luxuryBangkokPattayaEscapeData';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
@@ -180,7 +195,22 @@ const BY_SLUG = {
   ...veniceViennaBySlug,
   ...icelandGlaciersBySlug,
   ...bestOfThailandSingaporeMalaysiaHongKongBySlug,
-  ...bestOfPhuketKrabiBangkokBySlug
+  ...bestOfPhuketKrabiBangkokBySlug,
+  ...grandVietnamCambodiaThailandBySlug,
+  ...bestOfSingaporeThailandBySlug,
+  ...luxuryPhuketSamuiKrabiBySlug,
+  ...bestOfPattayaBangkokPhuketBySlug,
+  ...classicKrabiPhuketHolidayBySlug,
+  ...baliPhuketIslandEscapeBySlug,
+  ...honeymoonTrailPhuketKrabiSamuiBySlug,
+  ...coastalMagicPhuketKrabiBySlug,
+  ...bestOfThailandMalaysiaBySlug,
+  ...romanticKrabiSamuiPhuketBySlug,
+  ...grandBangkokPhuketKrabiBySlug,
+  ...islandTrailsPhuketSamuiKrabiBySlug,
+  ...phuketKohSamuiBeachEscapeBySlug,
+  ...phuketPhiPhiPartyEscapeBySlug,
+  ...luxuryBangkokPattayaEscapeBySlug
 };
 
 const stop = (e) => e.preventDefault();

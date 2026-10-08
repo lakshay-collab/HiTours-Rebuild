@@ -1,0 +1,132 @@
+{
+  "source_slug": "the-incredible-thailand-deal",
+  "slug": "phuket-and-phi-phi-party-escape",
+  "camel": "phuketPhiPhiPartyEscape",
+  "title": "Phuket and Phi Phi Party Escape",
+  "alt": "Longtail boats below the limestone cliffs of Phi Phi island in Thailand",
+  "cta_country": "thailand",
+  "tag": "Beach",
+  "tags": ["Beach", "Adventure"],
+  "price": 38000,
+  "transport": "Private sedan transfers with speedboat island crossings",
+  "route_cities": ["Phuket", "Phi Phi Islands"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 3, "experiences": 3, "transfers": 9, "meals": 5},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "Two island nights on Phi Phi change this trip. You wake up with no traffic and swim before breakfast.",
+    "tip": "Pack a dry bag for the boat days and reef safe sunscreen. The pirate boat party is loud and brilliant, so keep the Phi Phi mornings free to recover on the sand."
+  },
+  "summary": "Six days around Phuket and Phi Phi for travellers who want beach days with music. Tiger Kingdom, the Yona floating club off Phuket, two nights on car free Phi Phi and a pirate boat party, with a last night back in Phuket.",
+  "included": "Included: 5 nights in 3 hotels with daily breakfast; Tiger Kingdom big tiger ticket with private transfer; Yona floating beach club experience; Phi Phi pirate boat party sailing; 9 airport, pier and island transfers including speedboat crossings.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; drinks on board; lunches and dinners; water sports and personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket and Tiger Kingdom",
+    "2": "Yona floating beach club",
+    "3": "On to car free Phi Phi",
+    "4": "Pirate boat party",
+    "5": "Back to Phuket",
+    "6": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Chalong Chalet Resort & Longstay",
+    "2": "Chalong Chalet Resort & Longstay",
+    "3": "Paradise Resort Phi Phi",
+    "4": "Paradise Resort Phi Phi",
+    "5": "Ramada Plaza by Wyndham Chao Fah",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to Chalong",
+      "Check in, then a private transfer out to Tiger Kingdom",
+      "Big tiger ticket with keepers alongside you in the enclosure",
+      "Evening free, with Rawai and Nai Harn beaches a short ride away"
+    ],
+    "2": [
+      "Breakfast at the resort, then private transfer to the Chalong pier",
+      "Boat out to Yona, a floating club moored in open water off Phuket",
+      "Pool deck, sun beds and music all afternoon, drinks payable on board",
+      "Back to shore by evening with the rest of the night free"
+    ],
+    "3": [
+      "Breakfast, check out and private transfer to the Phuket pier",
+      "Speedboat transfer across to Phi Phi, where there are no cars at all",
+      "Check in and spend the afternoon on the sand near Tonsai bay",
+      "Optional: snorkelling off the beach or the island pool party after dark"
+    ],
+    "4": [
+      "Breakfast, then board the Phi Phi pirate boat for the day",
+      "Swim stops, music on deck and limestone walls rising out of the sea",
+      "This party sailing is kept for guests staying on the island",
+      "Evening free along the Tonsai strip"
+    ],
+    "5": [
+      "Breakfast, check out and speedboat transfer back across to Phuket",
+      "Private transfer on to the Ramada Plaza for your last night",
+      "Afternoon free beside the pool or over at Patong beach",
+      "Optional: Bangla Road after dark or the Simon Cabaret show"
+    ],
+    "6": [
+      "Breakfast and an easy morning before check out",
+      "Private sedan transfer to Phuket International Airport"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Chalong Chalet Resort & Longstay",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Super Deluxe room \u00b7 4\u2605 \u00b7 Quiet Chalong base close to Rawai and Nai Harn beaches",
+      "program": {
+        "name": "Tigers and a floating club",
+        "description": "Two nights on the quiet south of Phuket with a close up tiger visit and an afternoon at the Yona club moored offshore."
+      },
+      "activities": [
+        {"name": "Tiger Kingdom Phuket", "match": "Tiger Kingdom", "day": 1, "description": "Time inside the enclosure with the big tigers, keepers beside you throughout, with a private transfer each way."},
+        {"name": "Yona Floating Beach Club", "match": "Yona", "day": 2, "description": "A club moored in open water off Phuket with a pool deck, sun beds and music through the afternoon."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Phi Phi Islands",
+      "city": "Phi Phi",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "Paradise Resort Phi Phi",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Walking distance from Tonsai bay on car free Phi Phi",
+      "program": {
+        "name": "Two nights on car free Phi Phi",
+        "description": "Island time with no traffic, swimming straight off the beach and a pirate boat party that is kept for people staying on Phi Phi."
+      },
+      "activities": [
+        {"name": "Phi Phi Pirate Boat Party", "match": "Pirate Boat", "day": 4, "description": "A full day sailing around the Phi Phi group with swim stops, music on deck and the limestone cliffs close enough to touch."},
+        {"name": "Snorkelling off the Beach", "match": "Snorkelling", "day": 3, "optional": true, "description": "Clear shallows right off the sand near Tonsai, with gear for hire a few steps from the resort."},
+        {"name": "Island Pool Party", "match": "pool party", "day": 3, "optional": true, "description": "Phi Phi runs an Ibiza style pool party most nights in season. Easy to add on your free island afternoon."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [5, 6],
+      "dayLabel": "Day 5 to 6",
+      "hotel": "Ramada Plaza by Wyndham Chao Fah",
+      "accom": "1 night \u00b7 Breakfast included \u00b7 Luxury room \u00b7 5\u2605 \u00b7 Off Chao Fah road, handy for the airport run and Phuket town",
+      "program": {
+        "name": "One last Phuket night",
+        "description": "Back across from the islands for a comfortable final night, with Patong close by if you want one more evening out."
+      },
+      "activities": [
+        {"name": "Bangla Road After Dark", "match": "Bangla Road", "day": 5, "optional": true, "description": "Patong's famous night strip, closed to traffic after dark and lined with bars, street food and live music."},
+        {"name": "Simon Cabaret Show", "match": "Simon Cabaret", "day": 5, "optional": true, "description": "Phuket's best known cabaret, an hour of costumes, live singing and big stage sets close to Patong beach."}
+      ]
+    }
+  ]
+}

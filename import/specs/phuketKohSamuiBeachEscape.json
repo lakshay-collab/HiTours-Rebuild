@@ -1,0 +1,133 @@
+{
+  "source_slug": "beachside-bliss-to-phuket-and-koh-samui",
+  "slug": "phuket-and-koh-samui-beach-escape",
+  "camel": "phuketKohSamuiBeachEscape",
+  "title": "Phuket and Koh Samui Beach Escape",
+  "alt": "Palm fringed sand and turquoise water on Chaweng beach in Koh Samui",
+  "cta_country": "thailand",
+  "tag": "Beach",
+  "tags": ["Beach", "Honeymoon"],
+  "price": 38475,
+  "transport": "Shared coach transfers with ferry and speedboat crossings",
+  "route_cities": ["Phuket", "Phi Phi Islands", "Koh Samui"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 1, "transfers": 12, "meals": 6},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Thailand", "/asien/thailand"]],
+  "expert": {
+    "name": "Ananya Iyer",
+    "image": "/team/asia-2.webp",
+    "role": "Thailand expert at Hi Tours",
+    "quote": "This one is built around slow days. One big island tour, then two mornings on Samui with nothing booked.",
+    "tip": "Hire a car with a driver for half a day on Samui and loop the ring road: Big Buddha temple, Wat Plai Laem, the Secret Buddha Garden and Lad Koh viewpoint in one easy run."
+  },
+  "summary": "Six easy days across two Thai islands. A speedboat tour of the Phi Phi group from Phuket, two unhurried nights near Chaweng beach on Koh Samui and a final Phuket night, with beach time built into every day.",
+  "included": "Included: 5 nights in Phuket and Koh Samui with daily breakfast; Phi Phi islands speedboat tour with lunch; 12 airport, pier and island transfers including the Samui ferry crossings both ways.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; island and temple entry fees; lunches and dinners other than the island tour lunch; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Phuket",
+    "2": "Phi Phi islands by speedboat",
+    "3": "Ferry to Koh Samui",
+    "4": "Koh Samui at leisure",
+    "5": "Back to Phuket",
+    "6": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B, L", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Club Bamboo Boutique Resort & Spa",
+    "2": "Club Bamboo Boutique Resort & Spa",
+    "3": "First Residence Hotel",
+    "4": "First Residence Hotel",
+    "5": "Club Bamboo Boutique Resort & Spa",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Phuket International Airport and private sedan transfer to Patong",
+      "Check in at Club Bamboo and keep the first day free",
+      "Patong beach is a short walk down the hill from the resort",
+      "Optional: an evening on Patong beach or Phuket Bird Park with children"
+    ],
+    "2": [
+      "Breakfast, then shared transfer to the Phuket pier",
+      "Speedboat transfer out to the Phi Phi group for the day",
+      "Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, with lunch on the tour",
+      "Return speedboat and shared transfer to Patong in the evening"
+    ],
+    "3": [
+      "Breakfast, check out and shared transfer to the ferry terminal",
+      "Ferry transfer across to Koh Samui, then a shared transfer to your hotel",
+      "Check in near Chaweng beach and spend the evening on the sand",
+      "Optional: Fisherman's Village or the stalls at The Wharf Samui"
+    ],
+    "4": [
+      "Breakfast, then the whole day is yours on the island",
+      "Optional: Big Buddha temple, Wat Plai Laem and the Secret Buddha Garden",
+      "Optional: Lad Koh viewpoint on the ring road, best in morning light",
+      "Long swims and a sunset on Chaweng beach cost nothing at all"
+    ],
+    "5": [
+      "Breakfast, check out and shared transfer to the Samui pier",
+      "Ferry transfer back across to Phuket and on to Patong",
+      "Afternoon free for the pool, the spa or one more hour on the beach",
+      "Optional: a dolphin show, the Siam Niramit show or Muay Thai at Patong stadium"
+    ],
+    "6": [
+      "Breakfast and an unhurried check out",
+      "Private sedan transfer to Phuket International Airport"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Club Bamboo in Patong, a short walk from the beach",
+      "program": {
+        "name": "Patong base with a Phi Phi day",
+        "description": "Two nights in Patong with one big day on the water, running out to Maya Bay and the Phi Phi group by speedboat."
+      },
+      "activities": [
+        {"name": "Phi Phi Islands by Speedboat", "match": "Phi Phi Island Tour", "day": 2, "description": "A full day across the Phi Phi group with Maya Bay, Viking Cave, Loh Samah Bay and Monkey Beach, and lunch served on the tour."},
+        {"name": "Evening on Patong Beach", "match": "Patong Beach", "day": 1, "optional": true, "description": "Walk the sand as the light goes, then browse the stalls and cafes a street back from the beach front."},
+        {"name": "Phuket Bird Park", "match": "Bird Park", "day": 1, "optional": true, "description": "A shaded park with macaws, hornbills and crowned cranes, plus short keeper talks. A simple hit with younger children."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Koh Samui",
+      "city": "Koh Samui",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "First Residence Hotel",
+      "accom": "2 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Close to Chaweng beach and the night market",
+      "program": {
+        "name": "Two slow days on Koh Samui",
+        "description": "Nothing booked and nowhere to be. Chaweng beach on the doorstep, temples and viewpoints on the ring road when you feel like moving."
+      },
+      "activities": [
+        {"name": "Fisherman's Village", "match": "Fisherman", "day": 3, "optional": true, "description": "Old wooden shophouses at Bophut turned into cafes and bars, with a walking street market on Friday evenings."},
+        {"name": "Big Buddha Temple", "match": "Big Buddha Temple", "day": 4, "optional": true, "description": "Wat Phra Yai on its small island, reached by causeway, with a golden seated Buddha looking out over the sea."},
+        {"name": "Secret Buddha Garden", "match": "Secret Buddha Garden", "day": 4, "optional": true, "description": "Stone figures set among streams and jungle up in the hills, reached on a steep track best driven with a local driver."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Phuket",
+      "city": "Phuket",
+      "days": [5, 6],
+      "dayLabel": "Day 5 to 6",
+      "hotel": "Club Bamboo Boutique Resort & Spa",
+      "accom": "1 night \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Back at Club Bamboo in Patong for the final night",
+      "program": {
+        "name": "A final Phuket night",
+        "description": "Back across from Samui for a last afternoon at the pool, with Patong close by for one more evening out."
+      },
+      "activities": [
+        {"name": "Siam Niramit Show", "match": "Siam Niramit", "day": 5, "optional": true, "description": "A big stage production on Thai history and legend, with a hundred performers and an outdoor village to walk beforehand."},
+        {"name": "Dolphin Show", "match": "Dolphin Show", "day": 5, "optional": true, "description": "An hour of dolphin and sea lion routines in a covered arena, easy to fit into a free Phuket afternoon."}
+      ]
+    }
+  ]
+}
