@@ -39,7 +39,7 @@ export default function Destinations() {
           </div>
         </div>}
 
-        <div className="w-full md:w-[calc(100vw-64px)] md:max-w-[1280px] grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-5 md:[&>*:nth-child(10)]:col-start-2 xl:[&>*:nth-child(10)]:col-start-auto" data-testid="destination-grid">
+        <div className="w-full md:w-[calc((100vw-64px)*0.8)] md:max-w-[1024px] grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-4 md:[&>*:nth-child(10)]:col-start-2 xl:[&>*:nth-child(10)]:col-start-auto" data-testid="destination-grid">
           {list.map((d, i) => <DestinationCard key={d.name} {...d} index={i} href={COUNTRY_HREF[d.name]} />)}
         </div>
         {regionHref && (
