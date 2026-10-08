@@ -6,20 +6,24 @@ import TrustBar from '../components/TrustBar';
 import Footer from '../components/Footer';
 import { ScrollTop, scrollToId } from '../components/egypt/EgyptHero';
 import EgyptProductCard from '../components/egypt/EgyptProductCard';
-import EgyptFilterBar, { MobileToursBars } from '../components/egypt/EgyptFilterBar';
+import EgyptFilterBar, { MobileToursBars, FiltersButton } from '../components/egypt/EgyptFilterBar';
+import HolidayFilterPanel from '../components/holidays/HolidayFilterPanel';
+import ThemeChips from '../components/holidays/ThemeChips';
+import MobileFilterSheet from '../components/holidays/MobileFilterSheet';
 import { usePageLead } from '../components/egypt/LeadModalProvider';
 import EgyptPlanner from '../components/egypt/EgyptPlanner';
 import EgyptCustomerReviews from '../components/egypt/EgyptCustomerReviews';
 import { EgyptFaq } from '../components/egypt/EgyptSections';
 import { ChevronRight } from '../components/egypt/EgyptIcons';
-import { hero as egHero, tours as egTours, products as egProducts, sorts, styles, styleBySlug, holidaysPath as egHolidaysPath, holidaysCrumbs as egCrumbs, faq as egFaq, planner as egPlanner, customerReviews as egCustomerReviews } from '../egyptListingData';
+import { hero as egHero, tours as egTours, products as egProducts, sorts, styleBySlug, holidaysPath as egHolidaysPath, holidaysCrumbs as egCrumbs, faq as egFaq, planner as egPlanner, customerReviews as egCustomerReviews } from '../egyptListingData';
+import { GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection, facetLabel } from '../holidays/filterModel';
 
 const egyptHolidays = { hero: egHero, tours: egTours, products: egProducts, holidaysPath: egHolidaysPath, holidaysCrumbs: egCrumbs, faq: egFaq, planner: egPlanner, plannerSource: 'egypt-holidays', testId: 'egypt-holidays-page', customerReviews: egCustomerReviews };
 
 const Chip = ({ label, value, onClear, testId }) => (
   <span className="inline-flex items-center gap-1 rounded-lg border border-[#C4CBD0] bg-white pl-3 pr-1.5 py-1 eg-label-lg text-[#002131]" data-testid={testId}>
     <span className="text-[#174358] font-normal">{label}</span> {value}
-    <button type="button" onClick={onClear} aria-label={`Clear ${label}`} className="ml-1 w-6 h-6 rounded-full flex items-center justify-center hover:bg-black/5" data-testid={`${testId}-clear`}><X size={16} /></button>
+    <button type="button" onClick={onClear} aria-label={`Clear ${label} ${value}`} className="ml-1 w-6 h-6 rounded-full flex items-center justify-center hover:bg-black/5" data-testid={`${testId}-clear`}><X size={16} /></button>
   </span>
 );
 
@@ -41,10 +45,17 @@ const sortFns = {
   'days-desc': (a, b) => b.days - a.days
 };
 
-const VideoHero = ({ video, image, title, count }) => (
-  <div className="relative">
-    <Header overlay />
-    <section className="relative h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] overflow-hidden bg-[#002131]" data-testid="eg-holidays-video">
+const HeroMedia = ({ video, image, poster }) => {
+  if (typeof video === 'string') {
+    return (
+      <video className="absolute inset-0 w-full h-full object-cover" poster={poster || image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" data-testid="eg-holidays-video-file">
+        <source src={video.replace(/\.mp4$/, '.webm')} type="video/webm" />
+        <source src={video} type="video/mp4" />
+      </video>
+    );
+  }
+  return (
+    <>
       <img src={image} alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
       {video && <iframe
         src={`https://player.vimeo.com/video/${video.vimeoId}?h=${video.h}&background=1&autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1`}
@@ -54,6 +65,15 @@ const VideoHero = ({ video, image, title, count }) => (
         referrerPolicy="strict-origin-when-cross-origin"
         data-testid="eg-holidays-video-iframe"
       />}
+    </>
+  );
+};
+
+const VideoHero = ({ video, image, poster, title, count }) => (
+  <div className="relative">
+    <Header overlay />
+    <section className="relative h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] overflow-hidden bg-[#002131]" data-testid="eg-holidays-video">
+      <HeroMedia video={video} image={image} poster={poster} />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.55)_0%,rgba(0,33,49,0.2)_45%,rgba(0,33,49,0.6)_100%)] pointer-events-none" />
       <div className="absolute inset-0 pt-[112px] md:pt-[108px] flex flex-col items-center justify-center gap-4 md:gap-5 px-4 text-center" data-testid="eg-hero-copy">
         <h1 className="eg-display-lg text-white drop-shadow-[0_2px_12px_rgba(0,33,49,0.45)] [text-wrap:balance] eg-rise" data-testid="eg-hero-title">{title}</h1>
@@ -64,23 +84,36 @@ const VideoHero = ({ video, image, title, count }) => (
   </div>
 );
 
+const split = (v) => (v ? v.split(',').filter(Boolean) : []);
+
 export default function EgyptHolidays({ d = egyptHolidays }) {
   const { hero, tours, products, holidaysPath, holidaysCrumbs, faq, planner } = d;
   usePageLead(holidaysCrumbs[1].label, hero.image, hero.imageAlt);
-  const styleLanding = (slug) => `${holidaysPath}/${slug}`;
   const navigate = useNavigate();
   const { style: styleSlug } = useParams();
   const [params] = useSearchParams();
   const style = styleSlug ? (styleBySlug(styleSlug) || {}).key || null : null;
   const sort = sorts.some((s) => s.key === params.get('sort')) ? params.get('sort') : null;
-  const go = (styleKey, sortKey) => {
-    const st = styles.find((s) => s.key === styleKey);
-    const q = sortKey ? `?sort=${sortKey}` : '';
-    navigate(`${st ? styleLanding(st.slug) : holidaysPath}${q}`);
+  const sel = useMemo(() => ({
+    place: split(params.get('place')),
+    days: split(params.get('days')),
+    price: split(params.get('price')),
+    theme: [...new Set([...(style ? [style] : []), ...split(params.get('theme'))])]
+  }), [params, style]);
+
+  const go = (next, nextSort) => {
+    const q = new URLSearchParams();
+    GROUPS.forEach((g) => { if (next[g].length) q.set(g, next[g].join(',')); });
+    if (nextSort) q.set('sort', nextSort);
+    const s = q.toString();
+    navigate(`${holidaysPath}${s ? `?${s}` : ''}`);
   };
-  const setStyle = (k) => go(k, sort);
-  const setSort = (k) => go(style, k);
-  const title = style ? tours.styleH2(style) : tours.allH2;
+  const setSel = (next) => go(next, sort);
+  const toggle = (g, v) => setSel(toggleIn(sel, g, v));
+  const setSort = (k) => go(sel, k);
+  const clearAll = () => go(emptySelection(), sort);
+  const nActive = activeCount(sel);
+  const title = sel.theme.length === 1 ? tours.styleH2(sel.theme[0]) : tours.allH2;
 
   useEffect(() => {
     if (styleSlug && !styleBySlug(styleSlug)) navigate(holidaysPath, { replace: true });
@@ -88,16 +121,18 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   useEffect(() => { document.title = `${title} | Hi Tours`; }, [title]);
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
+  const facets = useMemo(() => buildFacets(products, sel), [products, sel]);
   const list = useMemo(() => {
-    const f = style ? products.filter((p) => p.styles.includes(style)) : products;
+    const f = applyFilters(products, sel);
     return sort ? [...f].sort(sortFns[sort]) : f;
-  }, [style, sort, products]);
+  }, [sel, sort, products]);
   const mobile = useIsMobile();
+  const [sheet, setSheet] = useState(false);
   const page = mobile ? 3 : 6;
   const [count, setCount] = useState(page);
   const [loading, setLoading] = useState(false);
   const sentinel = useRef(null);
-  useEffect(() => { setCount(page); }, [style, sort, page]);
+  useEffect(() => { setCount(page); }, [sel, sort, page]);
   useEffect(() => {
     if (!sentinel.current || count >= list.length) return undefined;
     const io = new IntersectionObserver((entries) => {
@@ -111,11 +146,13 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   const shown = list.slice(0, count);
   const sortLabel = sort && sorts.find((s) => s.key === sort).label;
   const crumbs = style ? [...holidaysCrumbs.slice(0, 2), { label: holidaysCrumbs[2].label, to: holidaysPath }, { label: style }] : holidaysCrumbs;
+  const resultLabel = (n) => `${n} ${n === 1 ? 'holiday' : 'holidays'}`;
+  const sortPills = { sort, onSort: setSort, onStyle: () => {}, menuKeys: ['sort'] };
 
   return (
     <div className="eg" data-testid={d.testId}>
       <main>
-        <VideoHero video={hero.video} image={hero.image} title={style ? hero.styleH1(style) : hero.holidaysH1} count={tours.browse(list.length)} />
+        <VideoHero video={hero.video} image={hero.image} poster={hero.poster} title={style ? hero.styleH1(style) : hero.holidaysH1} count={tours.browse(list.length)} />
         <div className="eg-container mt-6 md:mt-8">
           <nav className="hidden sm:flex items-center gap-1 eg-body-md text-[#174358]" aria-label="Breadcrumb" data-testid="eg-breadcrumb">
             {crumbs.map((c, i) => (
@@ -128,25 +165,50 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
         </div>
 
         <section className="eg-container mt-2 md:mt-4 scroll-mt-20" id="tours" data-testid="eg-tours">
-          <EgyptFilterBar title={title} style={style} sort={sort} onStyle={setStyle} onSort={setSort} cta={hero} />
-          {(style || sort) && (
-            <div className="mt-4 md:mt-2 flex flex-wrap items-center gap-2" data-testid="eg-active-filters">
-              {style && <Chip label={tours.filterLabel} value={style} onClear={() => setStyle(null)} testId="eg-filter-chip-style" />}
-              {sort && <Chip label={tours.sortLabel} value={sortLabel} onClear={() => setSort(null)} testId="eg-filter-chip-sort" />}
+          <EgyptFilterBar title={title} cta={hero} {...sortPills} extra={<span className="eg-body-lg text-[#174358] whitespace-nowrap" data-testid="eg-result-count">{resultLabel(list.length)}</span>} />
+          <div className="md:hidden mt-4 flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <h2 className="eg-title-lg text-[#002131] truncate" data-testid="eg-mobile-tours-heading">{title}</h2>
+              <span className="eg-body-md text-[#174358] whitespace-nowrap" data-testid="eg-mobile-result-count">{resultLabel(list.length)}</span>
             </div>
-          )}
-          {list.length ? (
-            <div className="mt-6 md:mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-testid="eg-product-grid">
-              {shown.map((p, i) => <div key={p.slug} className={i < page ? 'eg-rise' : ''} style={i < page ? { animationDelay: `${200 + i * 60}ms` } : undefined}><EgyptProductCard p={p} index={i} /></div>)}
+            <FiltersButton onClick={() => setSheet(true)} active={nActive} testId="eg-inline-filters-button" />
+          </div>
+
+          <div className="mt-4 md:mt-2 lg:grid lg:grid-cols-[272px_minmax(0,1fr)] lg:gap-10 lg:items-start">
+            <aside className="hidden lg:block sticky top-[76px] max-h-[calc(100vh-92px)] overflow-y-auto no-scrollbar rounded-2xl bg-[#F0EEE6] px-5 py-6" data-testid="eg-filter-sidebar">
+              <div className="flex items-center justify-between mb-2">
+                <span className="eg-title-lg text-[#002131]">Filters</span>
+                {nActive > 0 && <button type="button" onClick={clearAll} className="eg-label-lg text-[#174358] underline underline-offset-2" data-testid="eg-filter-clear-all">Clear all</button>}
+              </div>
+              <HolidayFilterPanel facets={facets} sel={sel} onToggle={toggle} testPrefix="hf" />
+            </aside>
+
+            <div className="min-w-0">
+              <ThemeChips themes={facets.theme} selected={sel.theme} total={applyFilters(products, { ...sel, theme: [] }).length} onToggle={toggle} onClearThemes={() => setSel({ ...sel, theme: [] })} />
+              {(nActive > 0 || sort) && (
+                <div className="mt-4 flex flex-wrap items-center gap-2" data-testid="eg-active-filters">
+                  {GROUPS.flatMap((g) => sel[g].map((v) => <Chip key={`${g}-${v}`} label={`${GROUP_LABELS[g]}:`} value={facetLabel(g, v)} onClear={() => toggle(g, v)} testId={`eg-filter-chip-${g}`} />))}
+                  {sort && <Chip label={tours.sortLabel} value={sortLabel} onClear={() => setSort(null)} testId="eg-filter-chip-sort" />}
+                  {nActive > 1 && <button type="button" onClick={clearAll} className="eg-label-lg text-[#174358] underline underline-offset-2 px-1" data-testid="eg-active-clear-all">Clear all</button>}
+                </div>
+              )}
+              {list.length ? (
+                <div className="mt-6 md:mt-5 grid gap-6 sm:grid-cols-2 xl:grid-cols-3" data-testid="eg-product-grid">
+                  {shown.map((p, i) => <div key={p.slug} className={i < page ? 'eg-rise' : ''} style={i < page ? { animationDelay: `${200 + i * 60}ms` } : undefined}><EgyptProductCard p={p} index={i} /></div>)}
+                </div>
+              ) : (
+                <div className="mt-8 flex flex-col items-start gap-4" data-testid="eg-empty">
+                  <p className="eg-body-lg text-[#174358]">No holidays match these filters yet.</p>
+                  <button type="button" onClick={clearAll} className="eg-btn-outlined eg-label-lg" data-testid="eg-empty-clear">Clear all filters</button>
+                </div>
+              )}
+              {count < list.length && (
+                <div ref={sentinel} className="mt-6 flex justify-center h-10" data-testid="eg-lazy-sentinel">
+                  {loading && <span className="w-8 h-8 rounded-full border-[3px] border-[#E4E3DB] border-t-[#174358] animate-spin" data-testid="eg-lazy-spinner" aria-label="Loading more holidays" />}
+                </div>
+              )}
             </div>
-          ) : (
-            <p className="mt-8 eg-body-lg text-[#174358]" data-testid="eg-empty">{tours.empty}</p>
-          )}
-          {count < list.length && (
-            <div ref={sentinel} className="mt-6 flex justify-center h-10" data-testid="eg-lazy-sentinel">
-              {loading && <span className="w-8 h-8 rounded-full border-[3px] border-[#E4E3DB] border-t-[#174358] animate-spin" data-testid="eg-lazy-spinner" aria-label="Loading more holidays" />}
-            </div>
-          )}
+          </div>
         </section>
 
         <div id="planner" className="scroll-mt-20"><EgyptPlanner data={planner} source={d.plannerSource} /></div>
@@ -154,7 +216,8 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
         <EgyptFaq centered className="eg-container mt-12 md:mt-16 mb-16" data={faq} />
       </main>
       <ScrollTop className="bottom-40 left-4 md:bottom-10 md:left-12" />
-      <MobileToursBars title={title} style={style} sort={sort} onStyle={setStyle} onSort={setSort} cta={hero} />
+      <MobileToursBars title={title} cta={hero} {...sortPills} onOpenFilters={() => setSheet(true)} activeCount={nActive} />
+      <MobileFilterSheet open={sheet} onOpenChange={setSheet} products={products} sel={sel} onApply={setSel} countLabel={(n) => (n ? `Show ${resultLabel(n)}` : 'No matching holidays')} />
       <Footer />
     </div>
   );

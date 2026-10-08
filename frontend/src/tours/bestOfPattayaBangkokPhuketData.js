@@ -374,6 +374,7 @@ export const bestOfPattayaBangkokPhuketBySlug = { [detail.slug]: { detail, route
 
 export const bestOfPattayaBangkokPhuketProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

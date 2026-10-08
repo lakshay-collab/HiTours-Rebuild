@@ -378,6 +378,7 @@ export const bestOfSingaporeThailandBySlug = { [detail.slug]: { detail, route, g
 
 export const bestOfSingaporeThailandProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

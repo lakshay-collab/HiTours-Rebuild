@@ -70,6 +70,7 @@ const siamProduct = {
   days: siamDetail.stats.days,
   stops: siamDetail.stats.cities,
   cities: siamDetail.stats.cities,
+  places: [...new Set(siamDetail.routeCities)],
   hotels: siamDetail.stats.hotels,
   activities: siamDetail.stats.activities,
   transfers: siamDetail.stats.transfers,

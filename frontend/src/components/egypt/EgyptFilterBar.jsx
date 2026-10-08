@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, SlidersHorizontal } from 'lucide-react';
 import { styles, sorts, hero, tours } from '../../egyptListingData';
 import { ChevronDown } from './EgyptIcons';
 import { NavIcon } from './EgyptNavIcons';
@@ -94,7 +94,15 @@ const useToursInView = () => {
   return inView;
 };
 
-export default function EgyptFilterBar({ title, cta = hero, ...pills }) {
+export const FiltersButton = ({ onClick, active = 0, testId = 'eg-filters-button', className = '' }) => (
+  <button type="button" onClick={onClick} className={`shrink-0 inline-flex items-center gap-2 h-10 pl-4 pr-4 rounded-full border whitespace-nowrap eg-label-lg transition-colors ${active ? 'border-transparent eg-grad-harbor text-white shadow-[0_2px_8px_rgba(23,67,88,0.3)]' : 'border-[#6F777C] text-[#002131] bg-[#FBF9F1] hover:bg-[rgba(23,67,88,0.08)]'} ${className}`} data-testid={testId}>
+    <SlidersHorizontal size={18} />
+    Filters
+    {active > 0 && <span className="min-w-5 h-5 px-1.5 rounded-full bg-white text-[#174358] text-xs font-bold flex items-center justify-center" data-testid={`${testId}-count`}>{active}</span>}
+  </button>
+);
+
+export default function EgyptFilterBar({ title, cta = hero, extra = null, ...pills }) {
   const { openLead } = useLeadModal();
   const [stuck, setStuck] = useState(false);
   const ref = useRef(null);
@@ -108,6 +116,7 @@ export default function EgyptFilterBar({ title, cta = hero, ...pills }) {
     <div ref={ref} className={`hidden md:block sticky top-0 z-30 mt-6 bg-[#FBF9F1] transition-shadow ${stuck ? 'shadow-[0_6px_12px_-8px_rgba(0,33,49,0.25)]' : ''}`} data-testid="eg-filter-bar">
       <div className="flex items-center gap-3 h-16">
         {stuck && <span className="eg-title-md text-[#002131] whitespace-nowrap truncate min-w-0 flex-1 animate-[hi-fade-in_150ms_ease-out]" data-testid="eg-filter-title">{title}</span>}
+        {extra}
         <FilterPills {...pills} />
         <a href={cta.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled ml-auto h-11 px-6 eg-title-md" data-testid="eg-filter-cta">{cta.stickyCta}</a>
       </div>
@@ -115,7 +124,7 @@ export default function EgyptFilterBar({ title, cta = hero, ...pills }) {
   );
 }
 
-export function MobileToursBars({ title, filters = true, cta = hero, ...pills }) {
+export function MobileToursBars({ title, filters = true, cta = hero, onOpenFilters, activeCount = 0, ...pills }) {
   const { openLead } = useLeadModal();
   const inTours = useToursInView();
   const [show, setShow] = useState(false);
@@ -133,7 +142,12 @@ export function MobileToursBars({ title, filters = true, cta = hero, ...pills })
         </div>
       )}
       <div className={`md:hidden fixed inset-x-0 bottom-0 z-40 px-4 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))] bg-[#FBF9F1]/95 backdrop-blur border-t border-[#E4E3DB] flex flex-col gap-3 transition-transform duration-300 ${show ? 'translate-y-0' : 'translate-y-full'}`} data-testid="eg-mobile-cta" aria-hidden={!show}>
-        {filters && <FilterPills {...pills} up testPrefix="eg-mobile-filter" />}
+        {filters && (
+          <div className="flex items-center gap-2">
+            {onOpenFilters && <FiltersButton onClick={onOpenFilters} active={activeCount} testId="eg-mobile-filters-button" />}
+            <FilterPills {...pills} up testPrefix="eg-mobile-filter" />
+          </div>
+        )}
         <a href={cta.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled w-full h-14 eg-title-lg" data-testid="eg-mobile-cta-button">{cta.stickyCta}</a>
       </div>
     </>

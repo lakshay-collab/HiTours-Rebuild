@@ -308,6 +308,7 @@ export const coastalMagicPhuketKrabiBySlug = { [detail.slug]: { detail, route, g
 
 export const coastalMagicPhuketKrabiProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

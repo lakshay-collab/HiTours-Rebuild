@@ -334,6 +334,7 @@ export const bestOfPhuketKrabiBangkokBySlug = { [detail.slug]: { detail, route, 
 
 export const bestOfPhuketKrabiBangkokProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

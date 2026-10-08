@@ -758,6 +758,7 @@ export const grandVietnamCambodiaThailandBySlug = { [detail.slug]: { detail, rou
 
 export const grandVietnamCambodiaThailandProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

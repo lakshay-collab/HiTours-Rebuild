@@ -431,6 +431,7 @@ export const honeymoonTrailPhuketKrabiSamuiBySlug = { [detail.slug]: { detail, r
 
 export const honeymoonTrailPhuketKrabiSamuiProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

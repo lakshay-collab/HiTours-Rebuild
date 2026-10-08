@@ -24,7 +24,7 @@ const toProduct = (p) => {
   const cities = uniq(p.stays.map((s) => s[0]));
   const activities = p.itinerary.flatMap((d) => d.bullets).filter((b) => !/transfer|arrival|breakfast at|free time|free day|check-out|day at leisure|onward flight/i.test(b)).length;
   return {
-    slug: p.slug, title: p.name, tag: p.tag, styles: p.styles, days: p.days, stops: cities.length, cities: cities.length,
+    slug: p.slug, title: p.name, tag: p.tag, styles: p.styles, days: p.days, stops: cities.length, cities: cities.length, places: cities,
     hotels: p.included?.hotels ?? p.stays.length, activities: p.included?.activities ?? activities, transfers: p.included?.transfers ?? p.itinerary.length, meals: p.included?.meals ?? countMeals(p.itinerary),
     price: p.price, alt: p.alt, images: p.gallery, href: `${base}/${p.slug}`
   };

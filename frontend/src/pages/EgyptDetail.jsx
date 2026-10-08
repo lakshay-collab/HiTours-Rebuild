@@ -97,6 +97,7 @@ import { islandTrailsPhuketSamuiKrabiBySlug } from '../tours/islandTrailsPhuketS
 import { phuketKohSamuiBeachEscapeBySlug } from '../tours/phuketKohSamuiBeachEscapeData';
 import { phuketPhiPhiPartyEscapeBySlug } from '../tours/phuketPhiPhiPartyEscapeData';
 import { luxuryBangkokPattayaEscapeBySlug } from '../tours/luxuryBangkokPattayaEscapeData';
+import { countryOf, productsOf } from '../holidays/countryProducts';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
@@ -133,7 +134,8 @@ const DESTINATIONS = [
 ];
 const destinationFor = (d) => {
   const hay = d.slug in vietnamBySlug ? 'vietnam' : d.slug in europeBySlug ? 'europe' : `${d.title} ${d.slug} ${(d.routeCities || []).join(' ')}`.toLowerCase();
-  const hit = DESTINATIONS.find(([name]) => hay.includes(name.toLowerCase()));
+  const country = countryOf(d.slug);
+  const hit = DESTINATIONS.find(([name]) => name === country) || DESTINATIONS.find(([name]) => hay.includes(name.toLowerCase()));
   const name = hit ? hit[0] : 'Egypt';
   const extra = hit ? hit[1](d) : {};
   return {
@@ -454,10 +456,13 @@ const Features = () => (
 );
 
 const Recommended = ({ detail }) => {
+  const country = countryOf(detail.slug);
   const isVn = detail.slug in vietnamBySlug;
   const isSl = detail.slug in srilankaBySlug || detail.slug === 'emerald-isle-explorer-sri-lanka';
-  const pool = isVn ? vietnamProducts : isSl ? srilankaProducts : detail.region === 'asia' ? asiaProducts : products;
-  const title = isVn ? 'Other Vietnam holidays you may like' : isSl ? 'Other Sri Lanka holidays you may like' : detail.region === 'asia' ? 'Other Asia holidays you may like' : recommended.h2;
+  const fallbackPool = isVn ? vietnamProducts : isSl ? srilankaProducts : detail.region === 'asia' ? asiaProducts : products;
+  const fallbackTitle = isVn ? 'Other Vietnam holidays you may like' : isSl ? 'Other Sri Lanka holidays you may like' : detail.region === 'asia' ? 'Other Asia holidays you may like' : recommended.h2;
+  const pool = (country && productsOf(country)) || fallbackPool;
+  const title = country ? `Other ${country} holidays you may like` : fallbackTitle;
   return (
     <section className="eg-container flex flex-col gap-8" data-testid="eg-detail-recommended">
       <h2 className="eg-display-sm text-[#002131]">{title}</h2>

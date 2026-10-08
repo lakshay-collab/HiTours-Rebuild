@@ -278,6 +278,7 @@ export const luxuryBangkokPattayaEscapeBySlug = { [detail.slug]: { detail, route
 
 export const luxuryBangkokPattayaEscapeProduct = {
   slug: detail.slug,
+  places: stops.map((s) => s.name),
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,
