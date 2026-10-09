@@ -31,3 +31,4 @@
 - The two Singapore + Kuala Lumpur trips name both countries and are registered on both the Singapore and Malaysia holiday pages. Singapore listing now shows 22 holidays with a Cruise theme chip (5).
 - build_trip.py now emits `places` and `href` on every Product (the gap that previously sent Thailand cards to the Egypt route), plus new scripts apply_card_images.py / plan_card_images.py --freeze to assign globally unique listing-card photos.
 - Verified by testing agent iteration_46.json: 15/15 detail pages render with correct day tabs, zero broken images and country-correct recommendations; zero duplicate card photos on the Singapore, Malaysia and Thailand grids; Cruise filter returns 5.
+- 2026-06: Dynamic Theme + Experiences filters on all country holidays pages (tuned for Singapore/Thailand); Experiences strip above cards; tripIndex.js registry; suggest_highlights.py; FILTERS.md. Tests: iteration_47, iteration_48.
