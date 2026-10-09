@@ -1,5 +1,6 @@
 import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../laosPackages';
+import { vietnamLaosCambodiaTrioProduct } from './vietnamLaosCambodiaTrioData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/laos/enquiry/passengers/', cruiseCity: '—',
@@ -7,6 +8,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: "Laos", href: '/asien/laos' }]
 });
 
-export const laosProducts = packages.map(toProduct);
+export const laosProducts = [...packages.map(toProduct), vietnamLaosCambodiaTrioProduct];
 export const laosTours = packages.map(build);
 export const laosBySlug = Object.fromEntries(laosTours.map((t) => [t.detail.slug, t]));

@@ -1,0 +1,184 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-romantic-escape--honeymoon-special",
+ "camel": "vietnamRomanticEscapeIslands",
+ "slug": "vietnam-romantic-escape-with-phu-quoc",
+ "title": "Vietnam Romantic Escape with Phu Quoc",
+ "alt": "Basket boats among the water coconut palms at Cam Thanh",
+ "transport": "A domestic flight, private transfers and guided tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Beach"
+ ],
+ "price": 56696,
+ "route_cities": [
+  "Da Nang",
+  "Cam Thanh",
+  "Ba Na Hills",
+  "Phu Quoc"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 5,
+  "transfers": 8,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang, Cam Thanh and Ba Na",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Luxtery Da Nang",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Cam Thanh basket boat trip",
+     "day": 1,
+     "optional": false,
+     "match": "Half Day Cam Thanh Basket Boat Trip",
+     "description": "A round bamboo basket boat spun through the water coconut palms at Cam Thanh, with the rowers showing off in the creeks."
+    },
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 2,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "Three nights near the beach, with a basket boat ride at Cam Thanh on arrival, Ba Na Hills and a free day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Phu Quoc",
+   "city": "Phu Quoc",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Praha Phu Quoc Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Island hotel a short ride from Long Beach",
+   "activities": [
+    {
+     "name": "Grand World tour",
+     "day": 4,
+     "optional": false,
+     "match": "Grand World Tour Phu Quoc",
+     "description": "The canals, the bamboo museum and the Venice style boat ride at Grand World, the built up quarter in the north of the island."
+    },
+    {
+     "name": "Island tour with the cable car and Aquatopia",
+     "day": 5,
+     "optional": false,
+     "match": "Phu Quoc Cable Car and Island Tour Full Day",
+     "description": "The long cable car across the water to An Thoi, the island viewpoints, and a day at the Aquatopia water park."
+    }
+   ],
+   "program": {
+    "name": "Phu Quoc",
+    "description": "The flight to the island for two nights, with Grand World, the cable car over the sea and the water park."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Cam Thanh",
+  "2": "Ba Na Hills",
+  "3": "A free day in Da Nang",
+  "4": "Flight to Phu Quoc",
+  "5": "Cable car and Aquatopia",
+  "6": "Departure from Phu Quoc"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Da Nang and transfer to your hotel",
+   "Check in near My Khe beach",
+   "South to Cam Thanh in the afternoon",
+   "A basket boat spun through the water palms"
+  ],
+  "2": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "3": [
+   "Breakfast, then a free day on the coast",
+   "Optional: the Marble Mountains above the coast road",
+   "Optional: an afternoon on My Khe beach",
+   "Optional: the Dragon Bridge after dark"
+  ],
+  "4": [
+   "Breakfast and check out, then the flight to the island",
+   "Check in near Long Beach",
+   "The canals and bamboo museum at Grand World",
+   "A boat ride through the Venice style quarter"
+  ],
+  "5": [
+   "Breakfast, then the cable car across to An Thoi",
+   "The island viewpoints over the water",
+   "A day at the Aquatopia water park",
+   "Back to the hotel in the late afternoon"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Luxtery Da Nang",
+  "2": "Luxtery Da Nang",
+  "3": "Luxtery Da Nang",
+  "4": "Praha Phu Quoc Hotel",
+  "5": "Praha Phu Quoc Hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Coast and island rather than cities. For a honeymoon with five nights, this is the version with the least packing and unpacking.",
+  "tip": "The Phu Quoc cable car is the longest over water anywhere. Take the first car of the day and you will have it almost to yourselves."
+ },
+ "summary": "Six days for two on the coast and an island: three nights in Da Nang with a basket boat ride at Cam Thanh, Ba Na Hills and the Golden Bridge and a free day, then two on Phu Quoc with Grand World, the cable car over the sea and the Aquatopia water park.",
+ "included": "Included: 5 nights with breakfast and dinner daily; the domestic flight to Phu Quoc; private transfers throughout; a half day Cam Thanh basket boat trip; a full day up at Ba Na with the Golden Bridge; the Grand World tour; a full day island tour with the cable car and the Aquatopia water park.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches; travel insurance; personal expenses."
+}

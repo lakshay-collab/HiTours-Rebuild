@@ -1,0 +1,278 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-explorer-north-south-central",
+ "camel": "vietnamExplorerThreeRegions",
+ "slug": "vietnam-explorer-three-regions",
+ "title": "Vietnam Explorer Three Regions",
+ "alt": "Lanterns over the river in the old town at Hoi An",
+ "transport": "Two domestic flights, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Culture",
+  "Grand tour"
+ ],
+ "price": 70186,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Da Nang",
+  "Ba Na Hills",
+  "Hoi An",
+  "Ho Chi Minh City",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 7,
+  "transfers": 12,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "A first night in the old quarter with the evening free around Hoan Kiem lake."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Hanoi to Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the boat turns back."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The Surprise Cave on the way off the water, then a night back in the city."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang, Ba Na and Hoi An",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Hanoi city tour",
+     "day": 4,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter, before the flight south."
+    },
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "A guided morning in Hanoi, the flight to the central coast, and a full day up at Ba Na Hills."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Hoi An and Saigon",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Hoi An walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Half Day Hoi An Walking City Tour",
+     "description": "Half a day on foot through the old trading town, the Japanese bridge, the assembly halls and the merchant houses."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    },
+    {
+     "name": "Saigon city tour",
+     "day": 7,
+     "optional": false,
+     "match": "Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "A morning in Hoi An, the flight south, and a full day with the Cu Chi tunnels and the city."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Overnight on the bay",
+  "3": "Surprise Cave and back to Hanoi",
+  "4": "Hanoi tour and flight to Da Nang",
+  "5": "Ba Na Hills",
+  "6": "Hoi An and on to Saigon",
+  "7": "Cu Chi tunnels and the city",
+  "8": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "3": [
+   "Breakfast on board as the boat moves",
+   "The climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi",
+   "Check in and the evening free"
+  ],
+  "4": [
+   "Breakfast, then a guided morning of the city",
+   "The mausoleum, the one pillar pagoda and the Temple of Literature",
+   "The flight to Da Nang in the afternoon",
+   "Check in near the beach, evening free"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "6": [
+   "Breakfast and check out, then south to Hoi An",
+   "A walk through the old town and the Japanese bridge",
+   "The assembly halls and the merchant houses",
+   "The flight to Saigon, then check in"
+  ],
+  "7": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels, the trapdoors and the kitchens",
+   "Back in the city for the palace and the cathedral",
+   "The war remnants museum and Ben Thanh market"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Halong Royal Palace Cruise",
+  "3": "Hm Boutique Hotel Hanoi",
+  "4": "Luxtery Da Nang",
+  "5": "Luxtery Da Nang",
+  "6": "Avanti Saigon Hotel",
+  "7": "Avanti Saigon Hotel",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "All three regions in eight days, with two short flights doing the heavy lifting instead of the road.",
+  "tip": "Hoi An on the morning of a flight day works well. Be at the Japanese bridge by eight and you will have the lanes to yourself."
+ },
+ "summary": "Eight days through all three regions: Hanoi and an overnight cruise in Halong Bay with the Surprise Cave, a guided morning of the capital, two nights in Da Nang for Ba Na Hills and the Golden Bridge, a walk through Hoi An, then two nights in Saigon with the Cu Chi tunnels and a city tour.",
+ "included": "Included: 7 nights with breakfast daily, dinner at the northern and central hotels and all meals on the cruise boat; two domestic flights; private transfers throughout; a shared overnight cruise in Halong Bay with the Surprise Cave; a Hanoi city tour; a full day up at Ba Na with the Golden Bridge; a Hoi An walking tour; the Cu Chi tunnels half day tour; a Saigon city tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

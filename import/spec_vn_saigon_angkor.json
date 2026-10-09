@@ -1,0 +1,207 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "lovely-vietnam-and-cambodia-in-8-days",
+ "camel": "saigonAndAngkorEight",
+ "slug": "saigon-and-angkor-in-eight-days",
+ "title": "Saigon and Angkor in Eight Days",
+ "alt": "Angkor Wat towers reflected in the moat at sunrise",
+ "transport": "A flight between countries, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Culture",
+  "Grand tour"
+ ],
+ "price": 80274,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Siem Reap",
+  "Tonle Sap",
+  "Angkor Wat"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 8,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and Cu Chi",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Lotus Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Lotus Saigon Hotel",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Hotel in District 1, a few streets from the cathedral",
+   "activities": [
+    {
+     "name": "Saigon city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 3,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Four nights in District 1 with a city day, the Cu Chi tunnels and a day of your own."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Tonle Sap and Angkor",
+   "days": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Tonle Sap lake boat ride",
+     "day": 6,
+     "optional": false,
+     "match": "Boat Ride Tour of Tonle Sap Lake",
+     "description": "A boat out onto the great lake, through a floating village of houses, schools and shops built on stilts and pontoons."
+    },
+    {
+     "name": "Angkor Wat day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Angkor Wat Day Tour",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "Three nights in Cambodia, with the floating villages of Tonle Sap and a full day among the Angkor temples."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Saigon",
+  "2": "Saigon city tour",
+  "3": "Cu Chi tunnels",
+  "4": "A free day in Saigon",
+  "5": "On to Siem Reap",
+  "6": "Tonle Sap lake",
+  "7": "Angkor Wat",
+  "8": "Departure from Siem Reap"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "Check in in District 1",
+   "Rest of the day free at your own pace",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "2": [
+   "Breakfast, then a guided day of the city",
+   "The Reunification Palace and the old post office",
+   "The war remnants museum",
+   "Ben Thanh market in the afternoon"
+  ],
+  "3": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels, the trapdoors and the kitchens",
+   "A crawl through a widened section of the shafts",
+   "Afternoon free in the city"
+  ],
+  "4": [
+   "Breakfast, then a free day in Saigon",
+   "Optional: a Mekong Delta day trip",
+   "Optional: a cooking class or the Cao Dai temple"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight to Cambodia",
+   "Check in at Siem Reap",
+   "Rest of the day free at your own pace",
+   "Optional: the old market and Pub Street"
+  ],
+  "6": [
+   "Breakfast, then out to the great lake",
+   "A boat through a floating village on stilts",
+   "Houses, schools and shops on the water",
+   "Back in Siem Reap in the afternoon"
+  ],
+  "7": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Lotus Saigon Hotel",
+  "2": "Lotus Saigon Hotel",
+  "3": "Lotus Saigon Hotel",
+  "4": "Lotus Saigon Hotel",
+  "5": "HARI Residence and Spa Siem Reap",
+  "6": "HARI Residence and Spa Siem Reap",
+  "7": "HARI Residence and Spa Siem Reap",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Two countries, two hotels, one flight. Saigon and Angkor are an hour apart by air and nothing like each other.",
+  "tip": "Do Angkor Wat at sunrise if your guide will take you. The towers against the first light are worth losing the lie in."
+ },
+ "summary": "Eight days across two countries: four nights in Saigon with a city tour, the Cu Chi tunnels and a free day, then three in Siem Reap with the floating villages of Tonle Sap and a full day among the Angkor temples.",
+ "included": "Included: 7 nights with daily breakfast and dinner in Siem Reap; the flight between the two countries; private transfers throughout; a Saigon city tour; the Cu Chi tunnels half day tour; a Tonle Sap lake boat ride; an Angkor Wat day tour.",
+ "not_included": "Not included: international flights; Vietnam and Cambodia visa fees; lunches; travel insurance; personal expenses."
+}

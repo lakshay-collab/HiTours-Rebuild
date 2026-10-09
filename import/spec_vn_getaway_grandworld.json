@@ -1,0 +1,245 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "getaway-to-vietnam",
+ "camel": "getawayVietnamGrandWorld",
+ "slug": "getaway-to-vietnam-with-grand-world",
+ "title": "Getaway to Vietnam with Grand World",
+ "alt": "Train passing between houses on Hanoi train street",
+ "transport": "Two domestic flights, private transfers and guided tours",
+ "tag": "Bestseller",
+ "tags": [
+  "Culture",
+  "Grand tour"
+ ],
+ "price": 65540,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Ninh Binh",
+  "Da Nang",
+  "Hoi An",
+  "Ba Na Hills",
+  "Ho Chi Minh City",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 9,
+  "transfers": 12,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "La Passion Classic Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel in the old quarter, near the cathedral",
+   "activities": [
+    {
+     "name": "Hanoi city tour with the train street",
+     "day": 1,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The mausoleum and the Temple of Literature, the narrow lane where the train passes between the houses, and the canals of Mega Grand World."
+    },
+    {
+     "name": "Halong Bay full day cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Halong Cruise",
+     "description": "A full day on the bay by boat among the limestone islands and the floating villages, back in Hanoi by evening."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter with a city day including the train street, and a full day cruise on Halong Bay."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Ninh Binh, Da Nang and Hoi An",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "The Sail Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel on the Da Nang beachfront",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour with lunch",
+     "day": 3,
+     "optional": false,
+     "match": "Ninh Binh Tour with Lunch",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc, with lunch before the flight to the coast."
+    },
+    {
+     "name": "Marble Mountains, Son Tra and the coconut forest",
+     "day": 4,
+     "optional": false,
+     "match": "Day Trip to Marble Mountains and Son Tra Peninsula",
+     "description": "The caves and pagodas of the Marble Mountains, the Am Phu cave, the Son Tra peninsula, and a basket boat through the Cam Thanh coconut forest."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "A Ninh Binh day on the way out of the north, then two nights on the beachfront with the Marble Mountains and Hoi An."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Ba Na Hills and Saigon",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Acnos Grand Hotel, Ho Chi Minh",
+   "hotel_label": "Acnos Grand Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Hotel in District 1, a short walk from Saigon square",
+   "activities": [
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    },
+    {
+     "name": "Saigon city tour",
+     "day": 6,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum."
+    },
+    {
+     "name": "Cu Chi tunnels with the shooting range",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Cu Chi Tunnels",
+     "description": "The tunnel network north west of the city, the trapdoors and kitchens, and the range where you can fire a few rounds from an AK 47."
+    },
+    {
+     "name": "Shopping tour at Saigon square",
+     "day": 6,
+     "optional": false,
+     "match": "Shopping Tour in Ho Chi Minh",
+     "description": "An afternoon through Saigon square and the market stalls around it, where the tailoring and the copies are cheapest."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Ba Na Hills on the way south, then two nights in District 1 with the city, the tunnels and a shopping afternoon."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Hanoi city tour",
+  "2": "Halong Bay day cruise",
+  "3": "Ninh Binh and on to Da Nang",
+  "4": "Marble Mountains and Hoi An",
+  "5": "Ba Na Hills and on to Saigon",
+  "6": "Saigon, Cu Chi and the market",
+  "7": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "A guided day of the city with the train street",
+   "The canals and quarters of Mega Grand World",
+   "Check in and the evening free"
+  ],
+  "2": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay by boat",
+   "The limestone islands and the floating villages",
+   "Back in Hanoi in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then south to Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "Lunch included on the tour",
+   "The flight to Da Nang and check in"
+  ],
+  "4": [
+   "Breakfast, then the caves of the Marble Mountains",
+   "The Am Phu cave and the Son Tra peninsula",
+   "A basket boat through the Cam Thanh coconut forest",
+   "Hoi An in the evening, lanterns on the water"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "The flight to Saigon and check in"
+  ],
+  "6": [
+   "Breakfast, then a half day of the city",
+   "The palace, the cathedral and the war remnants museum",
+   "North west to Cu Chi for the tunnels and the range",
+   "An afternoon through Saigon square"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, L",
+  "4": "B",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "La Passion Classic Hotel",
+  "2": "La Passion Classic Hotel",
+  "3": "The Sail Hotel",
+  "4": "The Sail Hotel",
+  "5": "Acnos Grand Hotel",
+  "6": "Acnos Grand Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "This is the busiest week we sell. Nine separate things in seven days, and still two flights to keep you off the road.",
+  "tip": "The train street is best in the late afternoon. Check the timetable with your guide, it changes without notice."
+ },
+ "summary": "A full week north to south: Hanoi with the train street and Mega Grand World, a full day cruise on Halong Bay, Ninh Binh with lunch, two nights on the Da Nang beachfront with the Marble Mountains and Hoi An, Ba Na Hills, then Saigon with the Cu Chi tunnels and a shopping afternoon.",
+ "included": "Included: 6 nights with daily breakfast and dinner in Saigon; two domestic flights; private transfers throughout; a Hanoi city tour with the train street and Mega Grand World; a full day cruise on Halong Bay; a Ninh Binh day tour with lunch; the Marble Mountains, Son Tra peninsula and Cam Thanh basket boat day; a full day up at Ba Na with the Golden Bridge; a half day Saigon city tour; the Cu Chi tunnels with the shooting range; a shopping tour at Saigon square.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches; travel insurance; personal expenses."
+}

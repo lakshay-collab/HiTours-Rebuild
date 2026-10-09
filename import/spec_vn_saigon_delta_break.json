@@ -1,0 +1,149 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "cyling-in-the-mekong-delta-7-day-6-nights",
+ "camel": "saigonAndTheDeltaBreak",
+ "slug": "saigon-and-the-delta-break",
+ "title": "Saigon and the Delta Break",
+ "alt": "Floating market boats loaded with fruit in the Mekong Delta",
+ "transport": "Private transfers and guided day tours from the city",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Culture"
+ ],
+ "price": 42750,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Mekong Delta",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 3,
+  "transfers": 5,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Cap Town Hotel, Ho Chi Minh",
+   "hotel_label": "Cap Town Hotel",
+   "accom": "4 nights · Breakfast and dinner · Standard room · 3★ · Small hotel in District 1, close to the market lanes",
+   "activities": [
+    {
+     "name": "Saigon half day city tour",
+     "day": 1,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Mekong Delta full day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    },
+    {
+     "name": "Cu Chi tunnels in a small group",
+     "day": 3,
+     "optional": false,
+     "match": "Cu Chi Tunnels Half Day Tour - Small Group",
+     "description": "The tunnel network north west of the city in a small group, with the trapdoors, the kitchens and a crawl through the shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Four nights in District 1 with the city, a full day in the Mekong Delta, the Cu Chi tunnels and a day of your own."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Saigon city tour",
+  "2": "Mekong Delta",
+  "3": "Cu Chi tunnels",
+  "4": "A free day in Saigon",
+  "5": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "A half day of the city with a guide",
+   "The palace, the cathedral and the war remnants museum",
+   "Check in and the evening free"
+  ],
+  "2": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "3": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels in a small group with a guide",
+   "The trapdoors, the kitchens and the shafts",
+   "Afternoon free in the city"
+  ],
+  "4": [
+   "Breakfast, then a free day in Saigon",
+   "Optional: a cooking class or the Cao Dai temple",
+   "Optional: Saigon square and the market stalls"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Cap Town Hotel",
+  "2": "Cap Town Hotel",
+  "3": "Cap Town Hotel",
+  "4": "Cap Town Hotel",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "One hotel, four nights, three days out. The easiest way to see the south without moving your bags.",
+  "tip": "Take the small group Cu Chi tour rather than the coach. You get into the tunnels while they are still empty."
+ },
+ "summary": "A short southern break: four nights in District 1 in Saigon with a guided half day of the city on arrival, a full day in the Mekong Delta, the Cu Chi tunnels in a small group, and a free day before the flight home.",
+ "included": "Included: 4 nights with breakfast and dinner daily; private transfers throughout; a half day Saigon city tour; a full day Mekong Delta tour; a small group Cu Chi tunnels tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches; travel insurance; personal expenses."
+}

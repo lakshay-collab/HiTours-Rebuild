@@ -14,9 +14,9 @@ const heroGallery = [
   img('3doz8fuaz50k9iwyhnl7a7h6ud6y_shutterstock_1827923945-min.jpg'),
   img('hx1mex42a0hqgfl09mzf4titrit9_shutterstock_1272430873-min.jpg')
 ];
-// Listing-card photos: kept unique across every Thailand trip so no two cards repeat a shot.
+// Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
-  img('v19tslpbpelnwcjlb8vdysyvm403_shutterstock_1008532504-min.jpg'),
+  img('gy6ydvck32nkrqc0a957hn6qa1gn_shutterstock_1273928071.jpg'),
   img('o5bkskf1hm5ywiqtcl6lf5lps6zu_shutterstock_427872661.jpg'),
   img('hx1mex42a0hqgfl09mzf4titrit9_shutterstock_1272430873-min.jpg'),
   img('n0twhi7ong2znp7u8ifv5gk22d9h_shutterstock_449998630.jpg')

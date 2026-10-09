@@ -156,6 +156,49 @@ import { japanLegendsTempleStayBySlug } from './japanLegendsTempleStayData';
 import { japanAndSouthKoreaDiscoveryBySlug } from './japanAndSouthKoreaDiscoveryData';
 import { koreaAndJapanShortGroupTourBySlug } from './koreaAndJapanShortGroupTourData';
 import { koreaJapanHiroshimaGetawayBySlug } from './koreaJapanHiroshimaGetawayData';
+import { glimpseOfVietnamHanoiBySlug } from './glimpseOfVietnamHanoiData';
+import { delightsOfVietnamCruiseBySlug } from './delightsOfVietnamCruiseData';
+import { bestOfHanoiNinhBinhBayBySlug } from './bestOfHanoiNinhBinhBayData';
+import { hanoiAndHalongOnAJunkBySlug } from './hanoiAndHalongOnAJunkData';
+import { wondersOfVietnamSapaBayBySlug } from './wondersOfVietnamSapaBayData';
+import { northernVietnamSapaNinhBinhBySlug } from './northernVietnamSapaNinhBinhData';
+import { hanoiSapaAndTheBayBySlug } from './hanoiSapaAndTheBayData';
+import { northVietnamHamRongTrekBySlug } from './northVietnamHamRongTrekData';
+import { northVietnamSixDayCircuitBySlug } from './northVietnamSixDayCircuitData';
+import { vietnamBanGiocWaterfallsBySlug } from './vietnamBanGiocWaterfallsData';
+import { tasteNorthAndSouthVietnamBySlug } from './tasteNorthAndSouthVietnamData';
+import { bestSellingVietnamSixDaysBySlug } from './bestSellingVietnamSixDaysData';
+import { exoticVietnamBaNaHoiAnBySlug } from './exoticVietnamBaNaHoiAnData';
+import { vietnamExplorerThreeRegionsBySlug } from './vietnamExplorerThreeRegionsData';
+import { rediscoverVietnamCompleteBySlug } from './rediscoverVietnamCompleteData';
+import { rediscoverVietnamHoneymoonBySlug } from './rediscoverVietnamHoneymoonData';
+import { vietnamSightseeingPhongNhaBySlug } from './vietnamSightseeingPhongNhaData';
+import { getawayVietnamPhuQuocBySlug } from './getawayVietnamPhuQuocData';
+import { sixteenDaysAcrossVietnamBySlug } from './sixteenDaysAcrossVietnamData';
+import { luxuriousVietnamNhaTrangBySlug } from './luxuriousVietnamNhaTrangData';
+import { highlightsVietnamGroupTourBySlug } from './highlightsVietnamGroupTourData';
+import { vietnamGroupTourSouthNorthBySlug } from './vietnamGroupTourSouthNorthData';
+import { vietnameseDelightsGroupTourBySlug } from './vietnameseDelightsGroupTourData';
+import { vietnameseOdysseyGroupTourBySlug } from './vietnameseOdysseyGroupTourData';
+import { southAndCentralVietnamBySlug } from './southAndCentralVietnamData';
+import { vietnamRomanticEscapeIslandsBySlug } from './vietnamRomanticEscapeIslandsData';
+import { getawayVietnamGrandWorldBySlug } from './getawayVietnamGrandWorldData';
+import { daNangHoiAnCoastalBreakBySlug } from './daNangHoiAnCoastalBreakData';
+import { vietnamFullCountryFortnightBySlug } from './vietnamFullCountryFortnightData';
+import { saigonAndTheDeltaBreakBySlug } from './saigonAndTheDeltaBreakData';
+import { hanoiAndNhaTrangEscapeBySlug } from './hanoiAndNhaTrangEscapeData';
+import { vietnamNorthSouthSevenDaysBySlug } from './vietnamNorthSouthSevenDaysData';
+import { vietnamShortNorthSouthBySlug } from './vietnamShortNorthSouthData';
+import { saigonAndAngkorEightBySlug } from './saigonAndAngkorEightData';
+import { vietnamCambodiaFourCitiesBySlug } from './vietnamCambodiaFourCitiesData';
+import { saigonPhnomPenhAngkorBySlug } from './saigonPhnomPenhAngkorData';
+import { glimpseVietnamSouthToNorthBySlug } from './glimpseVietnamSouthToNorthData';
+import { vietnamLaosCambodiaTrioBySlug } from './vietnamLaosCambodiaTrioData';
+import { thailandCambodiaVietnamTenBySlug } from './thailandCambodiaVietnamTenData';
+import { bestOfVietnamCambodiaFifteenBySlug } from './bestOfVietnamCambodiaFifteenData';
+import { vietnamCambodiaHoneymoonTenBySlug } from './vietnamCambodiaHoneymoonTenData';
+import { cambodiaAndVietnamTenDaysBySlug } from './cambodiaAndVietnamTenDaysData';
+import { indochinaAndThailandGrandBySlug } from './indochinaAndThailandGrandData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -314,5 +357,48 @@ export const BY_SLUG = {
   ...japanLegendsTempleStayBySlug,
   ...japanAndSouthKoreaDiscoveryBySlug,
   ...koreaAndJapanShortGroupTourBySlug,
-  ...koreaJapanHiroshimaGetawayBySlug
+  ...koreaJapanHiroshimaGetawayBySlug,
+  ...glimpseOfVietnamHanoiBySlug,
+  ...delightsOfVietnamCruiseBySlug,
+  ...bestOfHanoiNinhBinhBayBySlug,
+  ...hanoiAndHalongOnAJunkBySlug,
+  ...wondersOfVietnamSapaBayBySlug,
+  ...northernVietnamSapaNinhBinhBySlug,
+  ...hanoiSapaAndTheBayBySlug,
+  ...northVietnamHamRongTrekBySlug,
+  ...northVietnamSixDayCircuitBySlug,
+  ...vietnamBanGiocWaterfallsBySlug,
+  ...tasteNorthAndSouthVietnamBySlug,
+  ...bestSellingVietnamSixDaysBySlug,
+  ...exoticVietnamBaNaHoiAnBySlug,
+  ...vietnamExplorerThreeRegionsBySlug,
+  ...rediscoverVietnamCompleteBySlug,
+  ...rediscoverVietnamHoneymoonBySlug,
+  ...vietnamSightseeingPhongNhaBySlug,
+  ...getawayVietnamPhuQuocBySlug,
+  ...sixteenDaysAcrossVietnamBySlug,
+  ...luxuriousVietnamNhaTrangBySlug,
+  ...highlightsVietnamGroupTourBySlug,
+  ...vietnamGroupTourSouthNorthBySlug,
+  ...vietnameseDelightsGroupTourBySlug,
+  ...vietnameseOdysseyGroupTourBySlug,
+  ...southAndCentralVietnamBySlug,
+  ...vietnamRomanticEscapeIslandsBySlug,
+  ...getawayVietnamGrandWorldBySlug,
+  ...daNangHoiAnCoastalBreakBySlug,
+  ...vietnamFullCountryFortnightBySlug,
+  ...saigonAndTheDeltaBreakBySlug,
+  ...hanoiAndNhaTrangEscapeBySlug,
+  ...vietnamNorthSouthSevenDaysBySlug,
+  ...vietnamShortNorthSouthBySlug,
+  ...saigonAndAngkorEightBySlug,
+  ...vietnamCambodiaFourCitiesBySlug,
+  ...saigonPhnomPenhAngkorBySlug,
+  ...glimpseVietnamSouthToNorthBySlug,
+  ...vietnamLaosCambodiaTrioBySlug,
+  ...thailandCambodiaVietnamTenBySlug,
+  ...bestOfVietnamCambodiaFifteenBySlug,
+  ...vietnamCambodiaHoneymoonTenBySlug,
+  ...cambodiaAndVietnamTenDaysBySlug,
+  ...indochinaAndThailandGrandBySlug
 };

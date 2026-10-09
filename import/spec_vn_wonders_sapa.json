@@ -1,0 +1,206 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "wonders-of-vietnam",
+ "camel": "wondersOfVietnamSapaBay",
+ "slug": "wonders-of-vietnam-sapa-and-the-bay",
+ "title": "Wonders of Vietnam Sapa and the Bay",
+ "alt": "Terraced rice fields on the hillsides around Sa Pa",
+ "transport": "Private transfers, a mountain cable car and a cruise boat",
+ "tag": "Short break",
+ "tags": [
+  "Nature",
+  "Short break"
+ ],
+ "price": 43652,
+ "route_cities": [
+  "Hanoi",
+  "Sa Pa",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 3,
+  "transfers": 8,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "A first night in the old quarter with the evening free around Hoan Kiem lake."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sa Pa",
+   "city": "Sa Pa",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Delta Sapa Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Simple hotel in the middle of Sa Pa town, near the lake",
+   "activities": [
+    {
+     "name": "Cat Cat village walk",
+     "day": 2,
+     "optional": false,
+     "match": "Cat Cat Village Half-day Tour",
+     "description": "A half day on foot down into Cat Cat, a Black Hmong village of terraced fields, water wheels and a waterfall below Sa Pa."
+    },
+    {
+     "name": "Fansipan mountain tour",
+     "day": 3,
+     "optional": false,
+     "match": "Fansipan Mountain Tour",
+     "description": "The cable car up Fansipan, the highest peak in Indochina, to the shrines and the viewing platform at the summit."
+    }
+   ],
+   "program": {
+    "name": "Sa Pa",
+    "description": "Up into the northern hills for the terraced fields of Cat Cat village and the cable car to the top of Fansipan."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 4,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back from the coast for the last two nights, with free time in the lanes."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Into the hills at Sa Pa",
+  "3": "Fansipan and back to Hanoi",
+  "4": "Overnight on the bay",
+  "5": "Back to Hanoi",
+  "6": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast and check out, then north into the hills",
+   "Check in at Sa Pa in the afternoon",
+   "A half day on foot down into Cat Cat village",
+   "Terraced fields, water wheels and a waterfall"
+  ],
+  "3": [
+   "Breakfast, then the cable car up Fansipan",
+   "The shrines and the viewing platform at the summit",
+   "Back down and the long run to Hanoi",
+   "Evening free in the city"
+  ],
+  "4": [
+   "Breakfast, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "5": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier in the late morning",
+   "On to Hanoi and check in",
+   "Rest of the day free in the lanes"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, L, D",
+  "5": "B, D",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Delta Sapa Hotel",
+  "3": "Hm Boutique Hotel Hanoi",
+  "4": "Halong Royal Palace Cruise",
+  "5": "Hm Boutique Hotel Hanoi",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Six days and you still get the hills and the bay. It is a lot of road, but the two landscapes are worth it.",
+  "tip": "Sa Pa is cold and often in cloud from December to February. Take a warm layer even if Hanoi is humid when you land."
+ },
+ "summary": "Six days in the north: a night in Hanoi, then up to Sa Pa for the terraced fields of Cat Cat village and the cable car to the summit of Fansipan, an overnight cruise among the limestone islands of Halong Bay, and two last nights in the city.",
+ "included": "Included: 5 nights with breakfast and dinner at the hotels, one of them on a cruise boat with lunch and dinner; private transfers throughout; a half day walk to Cat Cat village; the Fansipan mountain tour with the cable car; a shared overnight cruise in Halong Bay.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

@@ -1,0 +1,123 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "glimpse-of-vietnam",
+ "camel": "glimpseOfVietnamHanoi",
+ "slug": "glimpse-of-vietnam-in-hanoi",
+ "title": "Glimpse of Vietnam in Hanoi",
+ "alt": "Hoan Kiem lake and the red bridge in Hanoi, Vietnam",
+ "transport": "Private airport transfers and a guided half day tour",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Culture"
+ ],
+ "price": 30685,
+ "route_cities": [
+  "Hanoi"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 1,
+  "transfers": 4,
+  "meals": 3
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Mayflower Hotel Hanoi",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Small hotel in the old quarter, a short walk from Hoan Kiem lake",
+   "activities": [
+    {
+     "name": "Hanoi half day city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Three nights in the old quarter with a guided half day of the city and two days of your own."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Hanoi city tour",
+  "3": "A free day in Hanoi",
+  "4": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then a guided half day of the city",
+   "The Ho Chi Minh mausoleum and the one pillar pagoda",
+   "The Temple of Literature, the old university",
+   "Afternoon free in the old quarter"
+  ],
+  "3": [
+   "Breakfast, then a day of your own in Hanoi",
+   "Optional: the water puppet theatre near the lake",
+   "Optional: egg coffee in one of the old cafes",
+   "Optional: a cooking class or a street food walk"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Mayflower Hotel Hanoi",
+  "2": "Mayflower Hotel Hanoi",
+  "3": "Mayflower Hotel Hanoi",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Four days is enough for Hanoi if you treat it as a city break rather than a tour of the country.",
+  "tip": "Eat where the plastic stools are. The best bun cha in the old quarter is served from a doorway, not a dining room."
+ },
+ "summary": "A short city break: three nights in the Hanoi old quarter with a guided half day of the mausoleum, the one pillar pagoda and the Temple of Literature, and two free days for the lanes, the lake and the food.",
+ "included": "Included: 3 nights with daily breakfast; private airport transfers; a guided half day tour of Hanoi.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches and dinners; travel insurance; personal expenses."
+}

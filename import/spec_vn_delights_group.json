@@ -1,0 +1,205 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnamese-delights--group-tour-package",
+ "camel": "vietnameseDelightsGroupTour",
+ "slug": "vietnamese-delights-group-tour",
+ "title": "Vietnamese Delights Group Tour",
+ "alt": "One pillar pagoda standing over its pond in Hanoi",
+ "transport": "Two domestic flights, coach travel and guided tours",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Culture"
+ ],
+ "price": 62786,
+ "route_cities": [
+  "Hanoi",
+  "Da Nang",
+  "Ba Na Hills",
+  "Ho Chi Minh City",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 3,
+  "transfers": 10,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Beryl Charm Hotel and Spa",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel with a spa, a few streets from the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the capital with a guided day of the mausoleum, the pagoda and the old quarter."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Eden Hotel Vietnam",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel between the river and My Khe beach",
+   "activities": [
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 4,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The flight to the central coast for two nights near the beach, with a full day up at Ba Na."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and Cu Chi",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Liberty Hotel Saigon Parkview",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel beside the park in District 1, near the Ben Thanh market",
+   "activities": [
+    {
+     "name": "Saigon city tour with the Cu Chi tunnels",
+     "day": 6,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour with Cu Chi Tunnel",
+     "description": "The Reunification Palace, the cathedral and the war remnants museum, then north west to the tunnel network at Cu Chi."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "The flight south for the last two nights, with the city and the Cu Chi tunnels on one day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Hanoi city tour",
+  "3": "Flight to Da Nang",
+  "4": "Ba Na Hills",
+  "5": "On to Saigon",
+  "6": "Saigon and the Cu Chi tunnels",
+  "7": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in and meet the rest of the group",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then a guided day of the city",
+   "The mausoleum and the one pillar pagoda",
+   "The Temple of Literature, the old university",
+   "The old quarter lanes in the afternoon"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight to Da Nang",
+   "Check in between the river and the beach",
+   "Rest of the day free at your own pace",
+   "Optional: the Dragon Bridge after dark"
+  ],
+  "4": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight south",
+   "Check in beside the park in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "6": [
+   "Breakfast, then a half day of the city",
+   "The Reunification Palace and the cathedral",
+   "The war remnants museum",
+   "North west to the Cu Chi tunnels"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Beryl Charm Hotel and Spa",
+  "2": "Beryl Charm Hotel and Spa",
+  "3": "Eden Hotel Vietnam",
+  "4": "Eden Hotel Vietnam",
+  "5": "Liberty Hotel Saigon Parkview",
+  "6": "Liberty Hotel Saigon Parkview",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Three cities in a week with a group, two nights in each, and nothing on the itinerary you will wish you had skipped.",
+  "tip": "Da Nang is the one to use for an early swim. My Khe beach is twenty minutes on foot and calm before eight."
+ },
+ "summary": "A week in three cities with a small group: two nights in Hanoi with a guided city day, two in Da Nang with a full day at Ba Na Hills and the Golden Bridge, then two in Saigon with the city and the Cu Chi tunnels.",
+ "included": "Included: 6 nights with daily breakfast; two domestic flights; all coach travel and transfers; a guided Hanoi city tour; a full day up at Ba Na with the Golden Bridge; a half day Saigon city tour with the Cu Chi tunnels.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches and dinners; travel insurance; personal expenses."
+}

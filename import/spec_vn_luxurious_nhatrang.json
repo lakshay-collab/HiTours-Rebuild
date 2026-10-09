@@ -1,0 +1,219 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "luxurious-getaway-to-vietnam",
+ "camel": "luxuriousVietnamNhaTrang",
+ "slug": "luxurious-vietnam-with-nha-trang",
+ "title": "Luxurious Vietnam with Nha Trang",
+ "alt": "Five star seafront hotel pool overlooking the bay at Nha Trang",
+ "transport": "A domestic flight, private transfers and guided tours",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Beach"
+ ],
+ "price": 61228,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Nha Trang",
+  "Ninh Binh"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 5,
+  "transfers": 9,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Halong Bay day cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Halong Bay Cruise Ride",
+     "description": "A full day out on the bay by boat, through the limestone islands and the floating villages, back in Hanoi by evening."
+    },
+    {
+     "name": "Ba Ham lake",
+     "day": 2,
+     "optional": false,
+     "match": "Ba Ham Lake",
+     "description": "The three hidden lakes behind Dau Go island, reached through low tunnels in the rock that only open at low tide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day out on Halong Bay and the hidden lakes at Ba Ham."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nha Trang",
+   "city": "Nha Trang",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Emerald Bay Hotel & Spa Nha Trang",
+   "hotel_label": "Emerald Bay Hotel and Spa Nha Trang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 5★ · Five star hotel on the seafront at Nha Trang",
+   "activities": [
+    {
+     "name": "Nha Trang island tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nha Trang Island Tour",
+     "description": "A boat out to the islands in the bay for snorkelling over the reef, a floating bar and lunch on deck."
+    }
+   ],
+   "program": {
+    "name": "Nha Trang",
+    "description": "The flight south for two nights at a five star hotel on the seafront, with a boat out to the islands."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi for Ninh Binh",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 6,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 6,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back north for two nights, with a full day among the rowing boats and rice fields of Ninh Binh."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Halong Bay and Ba Ham",
+  "3": "Flight to Nha Trang",
+  "4": "Nha Trang islands",
+  "5": "Back to Hanoi",
+  "6": "Ninh Binh and Bich Dong",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Early breakfast, then east towards the coast",
+   "A full day out on the bay by boat",
+   "The tunnels through to the Ba Ham lakes",
+   "Back in Hanoi in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight south",
+   "Check in on the seafront at Nha Trang",
+   "Rest of the day free at your own pace",
+   "Optional: the mud baths at Thap Ba"
+  ],
+  "4": [
+   "Breakfast, then out to the islands by boat",
+   "Snorkelling over the reef",
+   "The floating bar and lunch on deck",
+   "Back to the hotel in the late afternoon"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight north",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free in the lanes",
+   "Optional: the water puppet theatre near the lake"
+  ],
+  "6": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Emerald Bay Hotel and Spa Nha Trang",
+  "4": "Emerald Bay Hotel and Spa Nha Trang",
+  "5": "Hm Boutique Hotel Hanoi",
+  "6": "Hm Boutique Hotel Hanoi",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Two nights at a five star on the Nha Trang seafront, and the bay as a day trip rather than a cruise. It suits people who would rather sleep on land.",
+  "tip": "Take the Halong day trip early. The boats leave the pier before the tour buses arrive and the bay is still."
+ },
+ "summary": "Seven days with a beach in the middle: two nights in Hanoi with a full day on Halong Bay and the hidden Ba Ham lakes, two at a five star hotel on the Nha Trang seafront with an island boat day, then two back in the capital with a day in Ninh Binh.",
+ "included": "Included: 6 nights with breakfast and dinner daily, two of them at a five star seafront hotel; return domestic flights; private transfers throughout; a Halong Bay day cruise with the Ba Ham lakes; a Nha Trang island tour; a Ninh Binh day tour; a cycle ride to Bich Dong.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the boat days; travel insurance; personal expenses."
+}

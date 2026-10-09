@@ -118,3 +118,11 @@ Remaining to build after 40 of 49: chronicles-of-japan, offbeat-wonders-of-japan
   inclusions text, and the dash in the Holiday Inn Express Osaka hotel name (handled with hotel_label).
 - Verified by testing agent, iteration_54.json: Japan listing 48 cards, South Korea 3 cards,
   all new detail routes render, 0 broken images, 100% frontend pass.
+
+### Vietnam import in progress (June 2026)
+User gave 45 Thrillophilia Vietnam links; all 45 extracted to import/<slug>/raw.json (list in import/vietnam_urls.txt).
+User approved: (1) remove the 6 legacy generic Vietnam packages from the listing - DONE, vietnamProducts now only
+imported trips; (2) register multi-country trips on Vietnam plus every country they visit (Cambodia, Laos, Thailand).
+Workflow per trip: python3 scripts/thrillophilia/digest2.py <source-slug> -> write import/spec_<name>.json ->
+build_trip.py -> check_trip.py -> register_trip.py <camel> vietnam [cambodia|laos|thailand].
+At the end: apply_card_images.py on all vietnam trip files, then testing agent.

@@ -1,0 +1,297 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-sightseeing-tour",
+ "camel": "vietnamSightseeingPhongNha",
+ "slug": "vietnam-sightseeing-with-phong-nha",
+ "title": "Vietnam Sightseeing with Phong Nha",
+ "alt": "Boat entering the mouth of Phong Nha cave in Quang Binh",
+ "transport": "Flights, private transfers and guided day tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Nature",
+  "Grand tour"
+ ],
+ "price": 75478,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Dong Hoi",
+  "Phong Nha",
+  "Da Nang",
+  "Ho Chi Minh City"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 7,
+  "transfers": 13,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to Ninh Binh and a cycle ride to Bich Dong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Dong Hoi",
+   "city": "Dong Hoi",
+   "subtitle": "Dong Hoi and the Phong Nha caves",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Phong Nha Lake House Resort, Vietnam",
+   "hotel_label": "Phong Nha Lake House Resort",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Lakeside resort in the Phong Nha valley, among the karst hills",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 4,
+     "optional": false,
+     "match": "Halong Bay Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the boat turns back."
+    },
+    {
+     "name": "Phong Nha cave day tour",
+     "day": 5,
+     "optional": false,
+     "match": "Full Day Phong Nha Cave Tour",
+     "description": "A boat into the mouth of Phong Nha, one of the great river caves of the world, through chambers the river has cut for millions of years."
+    },
+    {
+     "name": "Dark Cave with the mud bath",
+     "day": 5,
+     "optional": false,
+     "match": "Dark Cave",
+     "description": "A zip line across the river into the Dark Cave, then a wade and a swim through the mud pools inside it."
+    }
+   ],
+   "program": {
+    "name": "Dong Hoi",
+    "description": "Two nights in the Phong Nha valley for the great river cave and the mud pools of the Dark Cave."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 7,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "South to the coast for two nights near the beach, with a full day up at Ba Na Hills."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 8,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "The flight south for a last night, with the Cu Chi tunnels on the way in."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Overnight on the bay",
+  "4": "South to Dong Hoi",
+  "5": "Phong Nha and the Dark Cave",
+  "6": "On to Da Nang",
+  "7": "Ba Na Hills",
+  "8": "Saigon and Cu Chi",
+  "9": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board, then the climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi",
+   "The journey south to Dong Hoi",
+   "Check in at the lakeside resort in the valley"
+  ],
+  "5": [
+   "Breakfast, then into the national park",
+   "A boat into the mouth of Phong Nha cave",
+   "A zip line across the river to the Dark Cave",
+   "The mud pools inside, then back to the resort"
+  ],
+  "6": [
+   "Breakfast and check out, then south to Da Nang",
+   "Check in near My Khe beach",
+   "Rest of the day free at your own pace",
+   "Optional: the Marble Mountains above the coast road"
+  ],
+  "7": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "8": [
+   "Breakfast and check out, then the flight south",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts",
+   "Check in in District 1, evening free"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B",
+  "5": "B",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Phong Nha Lake House Resort",
+  "5": "Phong Nha Lake House Resort",
+  "6": "Luxtery Da Nang",
+  "7": "Luxtery Da Nang",
+  "8": "Avanti Saigon Hotel",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Phong Nha is the reason to take this one. Almost no itinerary stops in Quang Binh and the caves there are the biggest in the world.",
+  "tip": "Wear clothes you do not mind ruining on the Dark Cave day. The mud does not come out of anything pale."
+ },
+ "summary": "Nine days with a stop almost nobody makes: Hanoi with Ninh Binh and a Bich Dong cycle ride, an overnight cruise in Halong Bay, two nights in the Phong Nha valley for the great river cave and the Dark Cave mud pools, two in Da Nang for Ba Na Hills, then Saigon and the Cu Chi tunnels.",
+ "included": "Included: 8 nights with breakfast daily, dinner at the Hanoi and Da Nang hotels and all meals on the cruise boat; flights and transfers throughout; a Ninh Binh day tour; a cycle ride to Bich Dong; a shared overnight cruise in Halong Bay with the Surprise Cave; a full day Phong Nha cave tour; the Dark Cave with the mud bath; a full day up at Ba Na with the Golden Bridge; the Cu Chi tunnels half day tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

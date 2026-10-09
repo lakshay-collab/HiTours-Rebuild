@@ -1,0 +1,258 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "best-of-northern-vietnam-with-sapa",
+ "camel": "northernVietnamSapaNinhBinh",
+ "slug": "northern-vietnam-with-sapa-and-ninh-binh",
+ "title": "Northern Vietnam with Sapa and Ninh Binh",
+ "alt": "Hmong village houses among terraces below Sa Pa",
+ "transport": "Private transfers, a mountain cable car and a cruise boat",
+ "tag": "Grand tour",
+ "tags": [
+  "Nature",
+  "Culture"
+ ],
+ "price": 50208,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Sa Pa",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 10,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A private cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to the rivers, caves and rice fields of Ninh Binh."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sa Pa",
+   "city": "Sa Pa",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Delta Sapa Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Simple hotel in the middle of Sa Pa town, near the lake",
+   "activities": [
+    {
+     "name": "Cat Cat village walk",
+     "day": 3,
+     "optional": false,
+     "match": "Cat Cat Village Half-day Tour",
+     "description": "A half day on foot down into Cat Cat, a Black Hmong village of terraced fields, water wheels and a waterfall below Sa Pa."
+    }
+   ],
+   "program": {
+    "name": "Sa Pa",
+    "description": "North into the hills for an afternoon walk down to Cat Cat village, a Black Hmong settlement below Sa Pa."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Fansipan and back to Hanoi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Fansipan mountain tour",
+     "day": 4,
+     "optional": false,
+     "match": "Fansipan Mountain Tour",
+     "description": "The cable car up Fansipan, the highest peak in Indochina, to the shrines and the viewing platform at the summit."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The cable car to the summit of Fansipan in the morning, then the long run back to the city."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 5,
+     "optional": false,
+     "match": "Hanoi to Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 6,
+     "optional": false,
+     "match": "Halong Bay Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the boat turns back."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The Surprise Cave on the way off the water, then a last night in the old quarter."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Into the hills at Sa Pa",
+  "4": "Fansipan and back to Hanoi",
+  "5": "Overnight on the bay",
+  "6": "Surprise Cave and back to Hanoi",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Breakfast and check out, then north into the hills",
+   "Check in at Sa Pa in the afternoon",
+   "A half day on foot down into Cat Cat village",
+   "Terraced fields, water wheels and a waterfall"
+  ],
+  "4": [
+   "Breakfast, then the cable car up Fansipan",
+   "The shrines and the viewing platform at the summit",
+   "Back down and the long run to Hanoi",
+   "Evening free in the city"
+  ],
+  "5": [
+   "Breakfast, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "6": [
+   "Breakfast on board as the boat moves",
+   "The climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi",
+   "Rest of the day free in the lanes"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, L, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Delta Sapa Hotel",
+  "4": "Hm Boutique Hotel Hanoi",
+  "5": "Halong Royal Palace Cruise",
+  "6": "Hm Boutique Hotel Hanoi",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "This is the full north in a week: the flooded fields at Tam Coc, the terraces at Sa Pa and a night on the bay.",
+  "tip": "The Ninh Binh day is long. Eat a proper breakfast, and keep small notes for the woman rowing your boat."
+ },
+ "summary": "A week covering the whole north: two nights in Hanoi with a day among the rowing boats and rice fields of Ninh Binh, a night at Sa Pa for Cat Cat village and the Fansipan cable car, then an overnight cruise in Halong Bay with the Surprise Cave before a last night in the city.",
+ "included": "Included: 6 nights with breakfast and dinner at the hotels, one of them on a cruise boat with lunch and dinner; private transfers throughout; a Ninh Binh day tour; a private cycle ride to Bich Dong; a half day walk to Cat Cat village; the Fansipan mountain tour with the cable car; a shared overnight cruise in Halong Bay with the Surprise Cave.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

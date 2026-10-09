@@ -1,0 +1,168 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "hoi-an-prao-tribe-village-to-a-luoi-town-via-hamburger-hill-to-khe-sanh-to-vinh-moc-tunnels-to-hue-city-to-hoi-an",
+ "camel": "daNangHoiAnCoastalBreak",
+ "slug": "da-nang-and-hoi-an-coastal-break",
+ "title": "Da Nang and Hoi An Coastal Break",
+ "alt": "Lantern shop lane in the old town at Hoi An",
+ "transport": "Private transfers and guided half day tours",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Culture"
+ ],
+ "price": 39900,
+ "route_cities": [
+  "Da Nang",
+  "Ba Na Hills",
+  "Hoi An",
+  "Cam Thanh"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 6,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Ba Na Hills with the Golden Bridge",
+     "day": 2,
+     "optional": false,
+     "match": "Ba Na Hills Full Day Tour From Da Nang",
+     "description": "The long cable car up to Ba Na, the bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "Two nights near the beach, with a full day up at Ba Na Hills and the Golden Bridge."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Hoi An",
+   "city": "Hoi An",
+   "subtitle": "Hoi An and Cam Thanh",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Hoi An Rose Garden Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Garden hotel a short ride from the old town lanterns",
+   "activities": [
+    {
+     "name": "Hoi An walking tour",
+     "day": 3,
+     "optional": false,
+     "match": "Half Day Hoi An Walking City Tour",
+     "description": "Half a day on foot through the old trading town, the Japanese bridge, the assembly halls and the merchant houses."
+    },
+    {
+     "name": "Cam Thanh basket boat trip",
+     "day": 4,
+     "optional": false,
+     "match": "Half Day Cam Thanh Basket Boat Trip",
+     "description": "A round bamboo basket boat spun through the water coconut palms at Cam Thanh, with the rowers showing off in the creeks."
+    }
+   ],
+   "program": {
+    "name": "Hoi An",
+    "description": "Two nights by the old town, with a walking tour and a basket boat ride through the coconut palms."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Da Nang",
+  "2": "Ba Na Hills",
+  "3": "On to Hoi An",
+  "4": "Cam Thanh basket boats",
+  "5": "Departure from Da Nang"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Da Nang and transfer to your hotel",
+   "Check in near My Khe beach",
+   "Rest of the day free at your own pace",
+   "Optional: the Dragon Bridge after dark"
+  ],
+  "2": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then south to Hoi An",
+   "Check in at your garden hotel",
+   "A walk through the old town with a guide",
+   "The Japanese bridge and the merchant houses"
+  ],
+  "4": [
+   "Breakfast, then out to Cam Thanh",
+   "A basket boat spun through the water palms",
+   "The creeks and the rowers at work",
+   "Afternoon free among the lantern lanes"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Da Nang airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Luxtery Da Nang",
+  "2": "Luxtery Da Nang",
+  "3": "Hoi An Rose Garden Hotel",
+  "4": "Hoi An Rose Garden Hotel",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Five days on one stretch of coast. No flights inside the trip, no packing every morning.",
+  "tip": "Stay in Hoi An rather than commuting from Da Nang. The old town after the day trippers leave is the best part of it."
+ },
+ "summary": "A five day break on the central coast: two nights in Da Nang with a full day at Ba Na Hills and the Golden Bridge, then two by the old town in Hoi An with a walking tour and a basket boat ride through the Cam Thanh coconut palms.",
+ "included": "Included: 4 nights with breakfast and dinner daily; private transfers throughout; a full day at Ba Na Hills with the Golden Bridge; a Hoi An walking tour; a half day Cam Thanh basket boat trip.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches; travel insurance; personal expenses."
+}

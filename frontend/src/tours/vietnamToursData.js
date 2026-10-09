@@ -1,6 +1,49 @@
 // Adapters: Vietnam packages (vietnamPackages.js, WorkDrive source) → listing product cards + EgyptDetail template data.
 import { packages, cityImages } from '../vietnamPackages';
 import { grandVietnamCambodiaThailandProduct } from './grandVietnamCambodiaThailandData';
+import { glimpseOfVietnamHanoiProduct } from './glimpseOfVietnamHanoiData';
+import { delightsOfVietnamCruiseProduct } from './delightsOfVietnamCruiseData';
+import { bestOfHanoiNinhBinhBayProduct } from './bestOfHanoiNinhBinhBayData';
+import { hanoiAndHalongOnAJunkProduct } from './hanoiAndHalongOnAJunkData';
+import { wondersOfVietnamSapaBayProduct } from './wondersOfVietnamSapaBayData';
+import { northernVietnamSapaNinhBinhProduct } from './northernVietnamSapaNinhBinhData';
+import { hanoiSapaAndTheBayProduct } from './hanoiSapaAndTheBayData';
+import { northVietnamHamRongTrekProduct } from './northVietnamHamRongTrekData';
+import { northVietnamSixDayCircuitProduct } from './northVietnamSixDayCircuitData';
+import { vietnamBanGiocWaterfallsProduct } from './vietnamBanGiocWaterfallsData';
+import { tasteNorthAndSouthVietnamProduct } from './tasteNorthAndSouthVietnamData';
+import { bestSellingVietnamSixDaysProduct } from './bestSellingVietnamSixDaysData';
+import { exoticVietnamBaNaHoiAnProduct } from './exoticVietnamBaNaHoiAnData';
+import { vietnamExplorerThreeRegionsProduct } from './vietnamExplorerThreeRegionsData';
+import { rediscoverVietnamCompleteProduct } from './rediscoverVietnamCompleteData';
+import { rediscoverVietnamHoneymoonProduct } from './rediscoverVietnamHoneymoonData';
+import { vietnamSightseeingPhongNhaProduct } from './vietnamSightseeingPhongNhaData';
+import { getawayVietnamPhuQuocProduct } from './getawayVietnamPhuQuocData';
+import { sixteenDaysAcrossVietnamProduct } from './sixteenDaysAcrossVietnamData';
+import { luxuriousVietnamNhaTrangProduct } from './luxuriousVietnamNhaTrangData';
+import { highlightsVietnamGroupTourProduct } from './highlightsVietnamGroupTourData';
+import { vietnamGroupTourSouthNorthProduct } from './vietnamGroupTourSouthNorthData';
+import { vietnameseDelightsGroupTourProduct } from './vietnameseDelightsGroupTourData';
+import { vietnameseOdysseyGroupTourProduct } from './vietnameseOdysseyGroupTourData';
+import { southAndCentralVietnamProduct } from './southAndCentralVietnamData';
+import { vietnamRomanticEscapeIslandsProduct } from './vietnamRomanticEscapeIslandsData';
+import { getawayVietnamGrandWorldProduct } from './getawayVietnamGrandWorldData';
+import { daNangHoiAnCoastalBreakProduct } from './daNangHoiAnCoastalBreakData';
+import { vietnamFullCountryFortnightProduct } from './vietnamFullCountryFortnightData';
+import { saigonAndTheDeltaBreakProduct } from './saigonAndTheDeltaBreakData';
+import { hanoiAndNhaTrangEscapeProduct } from './hanoiAndNhaTrangEscapeData';
+import { vietnamNorthSouthSevenDaysProduct } from './vietnamNorthSouthSevenDaysData';
+import { vietnamShortNorthSouthProduct } from './vietnamShortNorthSouthData';
+import { saigonAndAngkorEightProduct } from './saigonAndAngkorEightData';
+import { vietnamCambodiaFourCitiesProduct } from './vietnamCambodiaFourCitiesData';
+import { saigonPhnomPenhAngkorProduct } from './saigonPhnomPenhAngkorData';
+import { glimpseVietnamSouthToNorthProduct } from './glimpseVietnamSouthToNorthData';
+import { vietnamLaosCambodiaTrioProduct } from './vietnamLaosCambodiaTrioData';
+import { thailandCambodiaVietnamTenProduct } from './thailandCambodiaVietnamTenData';
+import { bestOfVietnamCambodiaFifteenProduct } from './bestOfVietnamCambodiaFifteenData';
+import { vietnamCambodiaHoneymoonTenProduct } from './vietnamCambodiaHoneymoonTenData';
+import { cambodiaAndVietnamTenDaysProduct } from './cambodiaAndVietnamTenDaysData';
+import { indochinaAndThailandGrandProduct } from './indochinaAndThailandGrandData';
 
 const LETTERS = 'ABCDEFGHIJ';
 export const DAY_MARK = '__day__';
@@ -96,6 +139,6 @@ const { toProduct, build } = createAdapters({
   expert: { name: 'Riya', image: '/experts/riya.webp', role: 'Vietnam expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Vietnam', href: '/asien/vietnam' }]
 });
-export const vietnamProducts = [...packages.map(toProduct), grandVietnamCambodiaThailandProduct];
+export const vietnamProducts = [grandVietnamCambodiaThailandProduct, glimpseOfVietnamHanoiProduct, delightsOfVietnamCruiseProduct, bestOfHanoiNinhBinhBayProduct, hanoiAndHalongOnAJunkProduct, wondersOfVietnamSapaBayProduct, northernVietnamSapaNinhBinhProduct, hanoiSapaAndTheBayProduct, northVietnamHamRongTrekProduct, northVietnamSixDayCircuitProduct, vietnamBanGiocWaterfallsProduct, tasteNorthAndSouthVietnamProduct, bestSellingVietnamSixDaysProduct, exoticVietnamBaNaHoiAnProduct, vietnamExplorerThreeRegionsProduct, rediscoverVietnamCompleteProduct, rediscoverVietnamHoneymoonProduct, vietnamSightseeingPhongNhaProduct, getawayVietnamPhuQuocProduct, sixteenDaysAcrossVietnamProduct, luxuriousVietnamNhaTrangProduct, highlightsVietnamGroupTourProduct, vietnamGroupTourSouthNorthProduct, vietnameseDelightsGroupTourProduct, vietnameseOdysseyGroupTourProduct, southAndCentralVietnamProduct, vietnamRomanticEscapeIslandsProduct, getawayVietnamGrandWorldProduct, daNangHoiAnCoastalBreakProduct, vietnamFullCountryFortnightProduct, saigonAndTheDeltaBreakProduct, hanoiAndNhaTrangEscapeProduct, vietnamNorthSouthSevenDaysProduct, vietnamShortNorthSouthProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, glimpseVietnamSouthToNorthProduct, vietnamLaosCambodiaTrioProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];
 export const vietnamTours = packages.map(build);
 export const vietnamBySlug = Object.fromEntries(vietnamTours.map((t) => [t.detail.slug, t]));

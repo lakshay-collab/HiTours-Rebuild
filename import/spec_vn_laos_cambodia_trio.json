@@ -1,0 +1,274 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-laos-cambodia-tour-packages-from-india",
+ "camel": "vietnamLaosCambodiaTrio",
+ "slug": "vietnam-laos-and-cambodia",
+ "title": "Vietnam, Laos and Cambodia",
+ "alt": "Monks crossing the bamboo bridge over the Nam Khan at Luang Prabang",
+ "transport": "Flights between the countries, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Culture"
+ ],
+ "price": 106875,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Luang Prabang",
+  "Siem Reap",
+  "Tonle Sap",
+  "Angkor Wat",
+  "Phnom Kulen"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 8,
+  "transfers": 12,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi, Ninh Binh and the bay",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    },
+    {
+     "name": "Halong Bay full day dragon cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Full Day Dragon Cruise",
+     "description": "A full day out on the bay aboard a dragon boat, through the limestone islands and the floating villages, back in Hanoi by evening."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter with a Ninh Binh day, a cycle ride to Bich Dong and a full day on Halong Bay."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Luang Prabang",
+   "city": "Luang Prabang",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Villa Namkhan River",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Small riverside villa hotel on the Nam Khan at Luang Prabang",
+   "activities": [
+    {
+     "name": "Luang Prabang sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Luang Prabang Sightseeing Tour",
+     "description": "The royal palace museum, the gilded Wat Xieng Thong and the climb up Mount Phousi for the view over the two rivers."
+    },
+    {
+     "name": "Elephant village and mahout day",
+     "day": 6,
+     "optional": false,
+     "match": "Elephant Village and Mahout Experience Day Tour",
+     "description": "A day at a rescue camp on the Nam Khan, learning how the mahouts work with the elephants and walking them down to the water."
+    }
+   ],
+   "program": {
+    "name": "Luang Prabang",
+    "description": "Three nights on the Nam Khan in Laos, with the old royal town and a day at an elephant camp."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Tonle Sap, Angkor and Phnom Kulen",
+   "days": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Tonle Sap lake boat ride",
+     "day": 7,
+     "optional": false,
+     "match": "Boat Ride Tour of Tonle Sap Lake",
+     "description": "A boat out onto the great lake, through a floating village of houses, schools and shops built on stilts and pontoons."
+    },
+    {
+     "name": "Angkor Wat day tour",
+     "day": 8,
+     "optional": false,
+     "match": "Angkor Wat Day Tour",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    },
+    {
+     "name": "Phnom Kulen day trip",
+     "day": 9,
+     "optional": false,
+     "match": "Day Trip to Phnom Kulen",
+     "description": "The sacred mountain north of Angkor, with its waterfall, the reclining Buddha cut into the rock and the river of a thousand lingas."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "On to Cambodia for the floating villages of Tonle Sap, a full day at Angkor and the sacred mountain at Phnom Kulen."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Halong Bay day cruise",
+  "4": "On to Luang Prabang",
+  "5": "Luang Prabang sightseeing",
+  "6": "Elephant village day",
+  "7": "Siem Reap and Tonle Sap",
+  "8": "Angkor Wat",
+  "9": "Phnom Kulen",
+  "10": "Departure from Siem Reap"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay aboard a dragon boat",
+   "The limestone islands and the floating villages",
+   "Back in Hanoi in the evening"
+  ],
+  "4": [
+   "Check out, then the flight to Laos",
+   "Check in on the river at Luang Prabang",
+   "Rest of the day free at your own pace",
+   "Optional: the night market along Sisavangvong road"
+  ],
+  "5": [
+   "Breakfast, then a guided day of the old town",
+   "The royal palace museum and Wat Xieng Thong",
+   "The climb up Mount Phousi",
+   "Sunset over the two rivers"
+  ],
+  "6": [
+   "Breakfast, then out to the elephant camp",
+   "A morning with the mahouts and their elephants",
+   "Walking them down to the river",
+   "Back in town in the late afternoon"
+  ],
+  "7": [
+   "Breakfast and check out, then the flight to Cambodia",
+   "Check in at Siem Reap",
+   "A boat out onto the great lake",
+   "A floating village built on stilts and pontoons"
+  ],
+  "8": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "9": [
+   "Breakfast, then north to the sacred mountain",
+   "The waterfall and the pools at Phnom Kulen",
+   "The reclining Buddha cut into the rock",
+   "The river of a thousand lingas"
+  ],
+  "10": [
+   "Check out after an early breakfast",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "Travel",
+  "5": "B",
+  "6": "B",
+  "7": "B, D",
+  "8": "B, D",
+  "9": "B, D",
+  "10": "-"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Hm Boutique Hotel Hanoi",
+  "4": "Villa Namkhan River",
+  "5": "Villa Namkhan River",
+  "6": "Villa Namkhan River",
+  "7": "HARI Residence and Spa Siem Reap",
+  "8": "HARI Residence and Spa Siem Reap",
+  "9": "HARI Residence and Spa Siem Reap",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Three countries in ten days, and Luang Prabang is the one nobody expects to like most. It is the slowest, quietest town in the region.",
+  "tip": "Get up for the alms giving in Luang Prabang at dawn. Stand well back, buy nothing from the touts, and just watch."
+ },
+ "summary": "Ten days through three countries: two nights in Hanoi with Ninh Binh and a full day on Halong Bay, three on the river at Luang Prabang with the old royal town and an elephant camp day, then Siem Reap for Tonle Sap, Angkor and the sacred mountain at Phnom Kulen.",
+ "included": "Included: 9 nights with breakfast daily and dinner at the Vietnamese and Cambodian hotels; all flights between the countries; private transfers throughout; a Ninh Binh day tour; a cycle ride to Bich Dong; a full day dragon boat cruise on Halong Bay; a Luang Prabang sightseeing tour; an elephant village and mahout day; a Tonle Sap lake boat ride; an Angkor Wat day tour; a Phnom Kulen day trip.",
+ "not_included": "Not included: international flights; Vietnam, Laos and Cambodia visa fees; lunches; travel insurance; personal expenses."
+}

@@ -1,0 +1,228 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "cycling-in-the-mekong-delta-4-day-3-nights",
+ "camel": "vietnamNorthSouthSevenDays",
+ "slug": "vietnam-north-to-south-in-seven-days",
+ "title": "Vietnam North to South in Seven Days",
+ "alt": "Ben Thanh market entrance in Ho Chi Minh City",
+ "transport": "A domestic flight, private transfers and guided tours",
+ "tag": "Bestseller",
+ "tags": [
+  "Culture",
+  "Short break"
+ ],
+ "price": 52915,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Mekong Delta"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 9,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south among the rowing boats and rice fields of Ninh Binh."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, Cu Chi and the Mekong",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Cap Town Hotel, Ho Chi Minh",
+   "hotel_label": "Cap Town Hotel",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel in District 1, close to the market lanes",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 4,
+     "optional": false,
+     "match": "Halong Bay Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the boat turns back."
+    },
+    {
+     "name": "Saigon city tour",
+     "day": 5,
+     "optional": false,
+     "match": "Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 5,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    },
+    {
+     "name": "Mekong Delta day tour",
+     "day": 6,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "The flight south for three nights, with the city, the Cu Chi tunnels and a full day in the Mekong Delta."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh day trip",
+  "3": "Overnight on the bay",
+  "4": "South to Saigon",
+  "5": "Saigon and the Cu Chi tunnels",
+  "6": "Mekong Delta",
+  "7": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "The limestone country and the rice fields",
+   "Back in Hanoi in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board, then the climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi airport",
+   "The flight south to Saigon",
+   "Check in in District 1, evening free"
+  ],
+  "5": [
+   "Breakfast, then a half day of the city",
+   "The palace, the cathedral and the war remnants museum",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts"
+  ],
+  "6": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "7": [
+   "Check out after breakfast",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "-"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Cap Town Hotel",
+  "5": "Cap Town Hotel",
+  "6": "Cap Town Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "The standard week: north, a night on the bay, then the south. Nothing clever about it, which is why it works.",
+  "tip": "Three nights in Saigon is one more than most itineraries give you, and the city rewards the extra day."
+ },
+ "summary": "A week end to end: two nights in Hanoi with a Ninh Binh day, an overnight cruise in Halong Bay with the Surprise Cave, then three nights in Saigon with the city, the Cu Chi tunnels and a full day in the Mekong Delta.",
+ "included": "Included: 6 nights with breakfast and dinner daily and all meals on the cruise boat; the domestic flight south; private transfers throughout; a Ninh Binh day tour; a shared overnight cruise in Halong Bay with the Surprise Cave; a Saigon city tour; the Cu Chi tunnels half day tour; a Mekong Delta day tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

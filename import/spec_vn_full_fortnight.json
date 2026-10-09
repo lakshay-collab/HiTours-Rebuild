@@ -1,0 +1,385 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "cycling-from-saigon-to-hanoi-14-day-13-nights",
+ "camel": "vietnamFullCountryFortnight",
+ "slug": "vietnam-full-country-fortnight",
+ "title": "Vietnam Full Country Fortnight",
+ "alt": "Red sand dunes at Mui Ne on the south central coast",
+ "transport": "Flights, private transfers and guided day tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Nature"
+ ],
+ "price": 103422,
+ "route_cities": [
+  "Hanoi",
+  "Sa Pa",
+  "Ninh Binh",
+  "Halong Bay",
+  "Da Nang",
+  "Phu Quoc",
+  "Ho Chi Minh City",
+  "Mui Ne"
+ ],
+ "counts": {
+  "days": 14,
+  "nights": 13,
+  "cities": 6,
+  "hotels": 6,
+  "experiences": 9,
+  "transfers": 18,
+  "meals": 20
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "A first night in the old quarter with the evening free around Hoan Kiem lake."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sa Pa",
+   "city": "Sa Pa",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Delta Sapa Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Simple hotel in the middle of Sa Pa town, near the lake",
+   "activities": [
+    {
+     "name": "Cat Cat village walk",
+     "day": 2,
+     "optional": false,
+     "match": "Cat Cat Village Half-day Tour",
+     "description": "A half day on foot down into Cat Cat, a Black Hmong village of terraced fields, water wheels and a waterfall below Sa Pa."
+    }
+   ],
+   "program": {
+    "name": "Sa Pa",
+    "description": "North into the hills for a night, with an afternoon walk down to Cat Cat village."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Fansipan, Hanoi and Ninh Binh",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Fansipan mountain tour",
+     "day": 3,
+     "optional": false,
+     "match": "Fansipan Mountain Tour",
+     "description": "The cable car up Fansipan, the highest peak in Indochina, to the shrines and the viewing platform at the summit."
+    },
+    {
+     "name": "Ninh Binh day tour",
+     "day": 4,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The Fansipan summit on the way down from the hills, then a full day south in Ninh Binh."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 5,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 6,
+     "optional": false,
+     "match": "Halong Bay Half-Day Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the flight south."
+    },
+    {
+     "name": "Ba Na Hills with the Golden Bridge",
+     "day": 7,
+     "optional": false,
+     "match": "Ba Na Hills Full Day Tour From Da Nang",
+     "description": "The long cable car up to Ba Na, the bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "South by air for two nights near the beach, with a full day up at Ba Na Hills."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Phu Quoc",
+   "city": "Phu Quoc",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Amarin Resort & Spa, Phu Quoc",
+   "hotel_label": "Amarin Resort and Spa",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Beach resort with a spa on the west coast of the island",
+   "activities": [
+    {
+     "name": "Phu Quoc south island tour with snorkelling",
+     "day": 9,
+     "optional": false,
+     "match": "Phu Quoc South Island Tour",
+     "description": "A boat down to the An Thoi islets for snorkelling over the reef, with the pepper farms and fish sauce distilleries on the way back."
+    }
+   ],
+   "program": {
+    "name": "Phu Quoc",
+    "description": "Two nights at a beach resort on the island, with a boat day down to the southern islets."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, the Mekong and Mui Ne",
+   "days": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "dayLabel": "Day 10 to 14",
+   "hotel": "Acnos Grand Hotel, Ho Chi Minh",
+   "hotel_label": "Acnos Grand Hotel",
+   "accom": "4 nights · Breakfast and dinner · Standard room · 3★ · Hotel in District 1, a short walk from Saigon square",
+   "activities": [
+    {
+     "name": "Mekong Delta day tour",
+     "day": 11,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    },
+    {
+     "name": "Mui Ne sand dunes tour",
+     "day": 12,
+     "optional": false,
+     "match": "Mui Ne Sand Dunes Tour",
+     "description": "The red and white dunes above the fishing village at Mui Ne, with a jeep across the sand and the Fairy Stream below."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Four nights in District 1 to finish, with the Mekong Delta, the Mui Ne dunes and free days."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Into the hills at Sa Pa",
+  "3": "Fansipan and back to Hanoi",
+  "4": "Ninh Binh day trip",
+  "5": "Overnight on the bay",
+  "6": "Surprise Cave and on to Da Nang",
+  "7": "Ba Na Hills",
+  "8": "Flight to Phu Quoc",
+  "9": "Southern islets and snorkelling",
+  "10": "On to Saigon",
+  "11": "Mekong Delta",
+  "12": "Mui Ne sand dunes",
+  "13": "A free day in Saigon",
+  "14": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast and check out, then north into the hills",
+   "Check in at Sa Pa in the afternoon",
+   "A half day on foot down into Cat Cat village",
+   "Terraced fields, water wheels and a waterfall"
+  ],
+  "3": [
+   "Breakfast, then the cable car up Fansipan",
+   "The shrines and the viewing platform at the summit",
+   "Back down and the long run to Hanoi",
+   "Evening free in the city"
+  ],
+  "4": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "The limestone country and the rice fields",
+   "Back in Hanoi in the evening"
+  ],
+  "5": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "6": [
+   "Breakfast on board, then the climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi airport",
+   "The flight to Da Nang",
+   "Check in near the beach, evening free"
+  ],
+  "7": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "8": [
+   "Breakfast and check out, then the flight to the island",
+   "Check in at your beach resort",
+   "Rest of the day free at your own pace",
+   "Optional: sunset from the west coast"
+  ],
+  "9": [
+   "Breakfast, then a boat down to the An Thoi islets",
+   "Snorkelling over the reef",
+   "The pepper farms and fish sauce distilleries",
+   "Back to the resort in the late afternoon"
+  ],
+  "10": [
+   "Breakfast and check out, then the flight to Saigon",
+   "Check in in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "11": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "12": [
+   "Early breakfast, then east to Mui Ne",
+   "The red and white dunes above the village",
+   "A jeep across the sand",
+   "The Fairy Stream, then back to the city"
+  ],
+  "13": [
+   "Breakfast, then a free day in Saigon",
+   "Optional: the Cu Chi tunnels or a cooking class",
+   "Optional: Saigon square and the market stalls"
+  ],
+  "14": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, L, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B, D",
+  "9": "B, D",
+  "10": "B, D",
+  "11": "B, D",
+  "12": "B, D",
+  "13": "B, D",
+  "14": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Delta Sapa Hotel",
+  "3": "Hm Boutique Hotel Hanoi",
+  "4": "Hm Boutique Hotel Hanoi",
+  "5": "Halong Royal Palace Cruise",
+  "6": "Luxtery Da Nang",
+  "7": "Luxtery Da Nang",
+  "8": "Amarin Resort and Spa",
+  "9": "Amarin Resort and Spa",
+  "10": "Acnos Grand Hotel",
+  "11": "Acnos Grand Hotel",
+  "12": "Acnos Grand Hotel",
+  "13": "Acnos Grand Hotel",
+  "14": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Two weeks and almost nothing left out: the hills, the bay, the centre, an island and the dunes.",
+  "tip": "Mui Ne is an early start from Saigon. Go for the white dunes first, before the wind picks the sand up."
+ },
+ "summary": "A fortnight the length of the country: Sa Pa and the Fansipan summit, Ninh Binh, an overnight cruise in Halong Bay, Ba Na Hills from Da Nang, two nights at a beach resort on Phu Quoc with a snorkelling boat day, then four in Saigon with the Mekong Delta and the Mui Ne dunes.",
+ "included": "Included: 13 nights with breakfast and dinner daily and all meals on the cruise boat; all domestic flights; private transfers throughout; a Cat Cat village walk; the Fansipan mountain tour; a Ninh Binh day tour; a shared overnight cruise in Halong Bay with the Surprise Cave; a full day at Ba Na Hills with the Golden Bridge; a Phu Quoc south island tour with snorkelling; a Mekong Delta day tour; a Mui Ne sand dunes tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

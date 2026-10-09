@@ -14,12 +14,12 @@ const heroGallery = [
   img('myp0svt552xqngaztwvvsb6ugnaj_shutterstock_740293555.jpg'),
   img('5cmfpiy0kqs836pgf4xyqmoufngh_shutterstock_2337247939-min%20(1).jpg')
 ];
-// Listing-card photos: kept unique across every Thailand trip so no two cards repeat a shot.
+// Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
-  img('iw2v7abv38kapz6210mxe2whu5rp_shutterstock_1797497632.jpg'),
+  img('kipm6jnkwk1bxv9v2z08qubu57jy_shutterstock_2297244885-min.jpg'),
   img('gxoylnz315eksjm86jgiaix4lwkf_1579614981_Nang_Beach.jpg'),
-  img('hjzgromer6nz5ok3j4xq65ug8jz8_Longtail_Boat_At_Maya_Bay,_Krabi,_Thailand.jpg'),
-  img('mvj32z6oenuoj48cmfrktuih98q8_1569242743_similan1.jpg')
+  img('goahiuvxilncq43ac8db0v0rl8ac_shutterstock_394497928.jpg'),
+  img('rff04hp28q6uu4xgzym5r9g3ngqx_sbg4f813z1zgkxrswpl6gcs3hkb8_1559034252_00.jpg')
 ];
 
 const stops = [

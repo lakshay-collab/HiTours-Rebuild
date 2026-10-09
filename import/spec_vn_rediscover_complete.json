@@ -1,0 +1,274 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "rediscover-vietnam---a-complete-tour-package",
+ "camel": "rediscoverVietnamComplete",
+ "slug": "rediscover-vietnam-complete-tour",
+ "title": "Rediscover Vietnam Complete Tour",
+ "alt": "Sampan boats among the coconut palms of the Mekong Delta",
+ "transport": "Two domestic flights, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Culture"
+ ],
+ "price": 75040,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Da Nang",
+  "Ba Na Hills",
+  "Ho Chi Minh City",
+  "Mekong Delta",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 7,
+  "transfers": 12,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A private cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to Ninh Binh and a cycle ride to Bich Dong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Surprise Cave on Bo Hon island",
+     "day": 4,
+     "optional": false,
+     "match": "Halong Bay Cruise",
+     "description": "A morning climb into the Surprise Cave, three great chambers of stalactites above the water, before the boat turns back."
+    },
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The flight to the central coast for two nights near the beach, with a full day up at Ba Na Hills."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, the Mekong and Cu Chi",
+   "days": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 6 to 9",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Mekong Delta day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 8,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Three nights in District 1, with a full day in the Mekong Delta and the Cu Chi tunnels after."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Overnight on the bay",
+  "4": "South to Da Nang",
+  "5": "Ba Na Hills",
+  "6": "On to Saigon",
+  "7": "Mekong Delta",
+  "8": "Cu Chi tunnels",
+  "9": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A private cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board, then the climb into the Surprise Cave",
+   "Back to the pier and on to Hanoi airport",
+   "The flight to Da Nang",
+   "Check in near the beach, evening free"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "6": [
+   "Breakfast and check out, then the flight south",
+   "Check in in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "7": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "8": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels, the trapdoors and the kitchens",
+   "A crawl through a widened section of the shafts",
+   "Afternoon free in the city"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Luxtery Da Nang",
+  "5": "Luxtery Da Nang",
+  "6": "Avanti Saigon Hotel",
+  "7": "Avanti Saigon Hotel",
+  "8": "Avanti Saigon Hotel",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Nine days, all three regions and nothing rushed. Two flights save you three days of driving.",
+  "tip": "Put Cu Chi after the delta day as it is scheduled here. The tunnels are better understood once you have seen the country they run under."
+ },
+ "summary": "Nine days end to end: two nights in Hanoi with Ninh Binh and a Bich Dong cycle ride, an overnight cruise in Halong Bay with the Surprise Cave, two nights in Da Nang for Ba Na Hills and the Golden Bridge, then three in Saigon with the Mekong Delta and the Cu Chi tunnels.",
+ "included": "Included: 8 nights with breakfast daily, dinner at the northern and central hotels and all meals on the cruise boat; two domestic flights; private transfers throughout; a Ninh Binh day tour; a private cycle ride to Bich Dong; a shared overnight cruise in Halong Bay with the Surprise Cave; a full day up at Ba Na with the Golden Bridge; a Mekong Delta day tour; the Cu Chi tunnels half day tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

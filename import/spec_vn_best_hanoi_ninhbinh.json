@@ -1,0 +1,182 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "best-of-hanoi-with-halong-bay-tour-package",
+ "camel": "bestOfHanoiNinhBinhBay",
+ "slug": "best-of-hanoi-with-ninh-binh-and-the-bay",
+ "title": "Best of Hanoi with Ninh Binh and the Bay",
+ "alt": "Rowing boats on the river among karsts at Ninh Binh",
+ "transport": "Private transfers, an overnight cruise and guided tours",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Nature"
+ ],
+ "price": 37040,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 6,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A private cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to the rivers, caves and rice fields of Ninh Binh."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back from the coast for a last night and a free afternoon in the lanes."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Overnight on the bay",
+  "4": "Back to Hanoi",
+  "5": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Breakfast, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier in the late morning",
+   "On to Hanoi and check in",
+   "Rest of the day free in the lanes"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Hm Boutique Hotel Hanoi",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Ninh Binh and Halong in the same five days gives you both kinds of karst country, the flooded fields and the open sea.",
+  "tip": "Do Ninh Binh before the bay. The rowing boats at Tam Coc are quietest first thing and the light on the water is better."
+ },
+ "summary": "Five days out of Hanoi: two nights in the old quarter with a full day south to the rowing boats of Ninh Binh and a cycle ride to Bich Dong pagoda, then an overnight cruise in Halong Bay and a last night back in the city.",
+ "included": "Included: 4 nights with breakfast daily and dinner at the Hanoi hotel, one night on a cruise boat with lunch and dinner; private transfers throughout; a Ninh Binh day tour; a private cycle ride to Bich Dong; a shared overnight cruise in Halong Bay.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches; travel insurance; personal expenses."
+}

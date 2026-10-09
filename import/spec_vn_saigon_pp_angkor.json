@@ -1,0 +1,234 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-and-cambodia-packages-from-kolkata",
+ "camel": "saigonPhnomPenhAngkor",
+ "slug": "saigon-phnom-penh-and-angkor",
+ "title": "Saigon, Phnom Penh and Angkor",
+ "alt": "Royal Palace spires above the riverfront in Phnom Penh",
+ "transport": "Flights between the cities, private transfers and guided tours",
+ "tag": "Luxury",
+ "tags": [
+  "Culture",
+  "Luxury"
+ ],
+ "price": 123500,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Mekong Delta",
+  "Phnom Penh",
+  "Siem Reap",
+  "Tonle Sap",
+  "Angkor Wat"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 10,
+  "meals": 13
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, Cu Chi and the Mekong",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Acnos Grand Hotel, Ho Chi Minh",
+   "hotel_label": "Acnos Grand Hotel",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Hotel in District 1, a short walk from Saigon square",
+   "activities": [
+    {
+     "name": "Saigon city tour with the Cu Chi tunnels",
+     "day": 2,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour with Cu Chi Tunnel",
+     "description": "The Reunification Palace, the cathedral and the war remnants museum, then north west to the tunnel network at Cu Chi."
+    },
+    {
+     "name": "Mekong Delta day tour",
+     "day": 3,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Three nights in District 1 with the city, the Cu Chi tunnels and a full day in the Mekong Delta."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Phnom Penh",
+   "city": "Phnom Penh",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "The Balé Phnom Penh by LifestyleRetreats",
+   "hotel_label": "The Bale Phnom Penh",
+   "accom": "2 nights · Breakfast · Standard room · 5★ · Five star retreat on the Mekong riverbank outside the city",
+   "activities": [
+    {
+     "name": "Phnom Penh city tour",
+     "day": 5,
+     "optional": false,
+     "match": "Phnom Penh City Tour",
+     "description": "The Royal Palace and the Silver Pagoda, the national museum, and the Tuol Sleng memorial that records what the Khmer Rouge did here."
+    }
+   ],
+   "program": {
+    "name": "Phnom Penh",
+    "description": "Two nights at a five star riverside retreat, with a guided day of the palace, the museum and the memorial."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Tonle Sap and Angkor",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Tonle Sap lake boat ride",
+     "day": 6,
+     "optional": false,
+     "match": "Boat Ride Tour of Tonle Sap Lake",
+     "description": "A boat out onto the great lake, through a floating village of houses, schools and shops built on stilts and pontoons."
+    },
+    {
+     "name": "Angkor Wat day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Angkor Wat Day Tour",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "North for the last two nights, with the floating villages of Tonle Sap and a full day at Angkor."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Saigon",
+  "2": "Saigon and the Cu Chi tunnels",
+  "3": "Mekong Delta",
+  "4": "On to Phnom Penh",
+  "5": "Phnom Penh city tour",
+  "6": "Siem Reap and Tonle Sap",
+  "7": "Angkor Wat",
+  "8": "Departure from Siem Reap"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "Check in in District 1",
+   "Rest of the day free at your own pace",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "2": [
+   "Breakfast, then a half day of the city",
+   "The palace, the cathedral and the war remnants museum",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts"
+  ],
+  "3": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "4": [
+   "Breakfast and check out, then on to Cambodia",
+   "Check in at the riverside retreat",
+   "Rest of the day free at your own pace",
+   "Optional: an evening on the riverfront promenade"
+  ],
+  "5": [
+   "Breakfast, then a guided day of the capital",
+   "The Royal Palace and the Silver Pagoda",
+   "The national museum",
+   "The Tuol Sleng memorial in the afternoon"
+  ],
+  "6": [
+   "Breakfast and check out, then north to Siem Reap",
+   "Check in and a short rest",
+   "A boat out onto the great lake",
+   "A floating village built on stilts and pontoons"
+  ],
+  "7": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B",
+  "5": "B",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Acnos Grand Hotel",
+  "2": "Acnos Grand Hotel",
+  "3": "Acnos Grand Hotel",
+  "4": "The Bale Phnom Penh",
+  "5": "The Bale Phnom Penh",
+  "6": "HARI Residence and Spa Siem Reap",
+  "7": "HARI Residence and Spa Siem Reap",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Three cities, two countries and two nights at a five star on the Mekong at Phnom Penh. The capital is usually skipped and it should not be.",
+  "tip": "Tuol Sleng is hard going. Keep the afternoon light after it and sit on the riverfront with a coffee."
+ },
+ "summary": "Eight days through two countries: three nights in Saigon with the city, the Cu Chi tunnels and the Mekong Delta, two at a five star riverside retreat in Phnom Penh with a guided day of the capital, then two in Siem Reap for Tonle Sap and a full day at Angkor.",
+ "included": "Included: 7 nights with breakfast daily and dinner at the Saigon and Siem Reap hotels, including two at a five star riverside retreat; all flights between the cities; private transfers throughout; a Saigon city tour with the Cu Chi tunnels; a Mekong Delta day tour; a Phnom Penh city tour; a Tonle Sap lake boat ride; an Angkor Wat day tour.",
+ "not_included": "Not included: international flights; Vietnam and Cambodia visa fees; lunches; travel insurance; personal expenses."
+}

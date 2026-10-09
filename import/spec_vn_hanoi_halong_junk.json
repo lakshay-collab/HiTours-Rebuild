@@ -1,0 +1,163 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "4-days-hanoi-and-halong-on-traditional-junk",
+ "camel": "hanoiAndHalongOnAJunk",
+ "slug": "hanoi-and-halong-on-a-junk",
+ "title": "Hanoi and Halong on a Junk",
+ "alt": "Timber junk boat sailing between limestone islands in Halong Bay",
+ "transport": "Private transfers, a guided half day and a cruise boat",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Nature"
+ ],
+ "price": 36100,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 2,
+  "transfers": 5,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi half day city tour",
+     "day": 1,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "A first night in the old quarter with a guided half day of the city on arrival."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Halong Bay Royal Palace Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water aboard a timber junk, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back from the coast for a last night, with the afternoon free in the lanes."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Hanoi city tour",
+  "2": "Overnight on the bay",
+  "3": "Back to Hanoi",
+  "4": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "A guided half day of the city",
+   "The mausoleum, the one pillar pagoda and the Temple of Literature",
+   "Check in and the evening free in the old quarter"
+  ],
+  "2": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your junk in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "3": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier in the late morning",
+   "On to Hanoi and check in",
+   "Rest of the day free in the lanes"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L, D",
+  "3": "B, D",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Halong Royal Palace Cruise",
+  "3": "Hm Boutique Hotel Hanoi",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Four days, one night at sea. For a first visit with little time, this is the pair of things worth doing.",
+  "tip": "Take the city tour on arrival day as it is scheduled here. It gets you oriented before you lose two days to the coast."
+ },
+ "summary": "A four day taste of the north: a guided half day of Hanoi on arrival, a night aboard a timber junk among the limestone islands of Halong Bay with all meals on board, then a last night back in the old quarter.",
+ "included": "Included: 3 nights with breakfast daily and dinner at the Hanoi hotel, one night on a cruise boat with lunch and dinner; private transfers throughout; a guided half day tour of Hanoi; a shared overnight cruise in Halong Bay.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches; travel insurance; personal expenses."
+}

@@ -1,0 +1,247 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnamese-odyssey--group-tour-package",
+ "camel": "vietnameseOdysseyGroupTour",
+ "slug": "vietnamese-odyssey-group-tour",
+ "title": "Vietnamese Odyssey Group Tour",
+ "alt": "Cruise boat anchored among the karsts of Halong Bay at dusk",
+ "transport": "Two domestic flights, an overnight cruise and guided tours",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Nature"
+ ],
+ "price": 63760,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Da Nang",
+  "Ba Na Hills",
+  "Hoi An",
+  "Ho Chi Minh City",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 5,
+  "transfers": 12,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Beryl Charm Hotel and Spa",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel with a spa, a few streets from the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the capital with a guided day of the mausoleum, the pagoda and the old quarter."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Majestic Halong Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 4★ · Four star cruise boat moored among the limestone islands overnight",
+   "activities": [
+    {
+     "name": "Overnight stay on the bay",
+     "day": 3,
+     "optional": false,
+     "match": "Overnight Stay at Cruise",
+     "description": "Out among the limestone islands by boat, with lunch and dinner served on deck and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night aboard a four star cruise boat on the bay, with all meals included."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Da Nang and Ba Na Hills",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Eden Hotel Vietnam",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel between the river and My Khe beach",
+   "activities": [
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "Off the water and south by air for two nights near the beach, with a full day up at Ba Na."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Hoi An, Saigon and Cu Chi",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Liberty Hotel Saigon Parkview",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel beside the park in District 1, near the Ben Thanh market",
+   "activities": [
+    {
+     "name": "Hoi An city tour",
+     "day": 6,
+     "optional": false,
+     "match": "Hoi An City Tour",
+     "description": "The old trading town on foot, the Japanese covered bridge, the assembly halls and the merchant houses before the flight south."
+    },
+    {
+     "name": "Saigon city tour with the Cu Chi tunnels",
+     "day": 7,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour with Cu Chi Tunnel",
+     "description": "The Reunification Palace, the cathedral and the war remnants museum, then north west to the tunnel network at Cu Chi."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "A morning in Hoi An, the flight south, then the city and the Cu Chi tunnels."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Hanoi city tour",
+  "3": "Overnight on the bay",
+  "4": "South to Da Nang",
+  "5": "Ba Na Hills",
+  "6": "Hoi An and on to Saigon",
+  "7": "Saigon and the Cu Chi tunnels",
+  "8": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in and meet the rest of the group",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then a guided day of the city",
+   "The mausoleum and the one pillar pagoda",
+   "The Temple of Literature, the old university",
+   "The old quarter lanes in the afternoon"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner served on deck",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier and on to Hanoi airport",
+   "The flight to Da Nang",
+   "Check in between the river and the beach"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "6": [
+   "Breakfast and check out, then south to Hoi An",
+   "The Japanese bridge and the merchant houses",
+   "The assembly halls and the old lanes",
+   "The flight to Saigon, then check in"
+  ],
+  "7": [
+   "Breakfast, then a half day of the city",
+   "The Reunification Palace and the cathedral",
+   "The war remnants museum",
+   "North west to the Cu Chi tunnels"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, L, D",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Beryl Charm Hotel and Spa",
+  "2": "Beryl Charm Hotel and Spa",
+  "3": "Majestic Halong Cruise",
+  "4": "Eden Hotel Vietnam",
+  "5": "Eden Hotel Vietnam",
+  "6": "Liberty Hotel Saigon Parkview",
+  "7": "Liberty Hotel Saigon Parkview",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "The same route as our shorter group tour with a night on the bay added, which is the one thing worth the extra day.",
+  "tip": "The Majestic is a four star boat, so take the sun deck in the evening. The bay goes quiet once the day boats leave."
+ },
+ "summary": "Eight days north to south with a small group: two nights in Hanoi with a guided city day, a night aboard a four star cruise boat on Halong Bay, two in Da Nang with Ba Na Hills and the Golden Bridge, a morning in Hoi An, then two in Saigon with the city and the Cu Chi tunnels.",
+ "included": "Included: 7 nights with daily breakfast and all meals on the cruise boat; two domestic flights; all coach travel and transfers; a guided Hanoi city tour; an overnight cruise in Halong Bay; a full day up at Ba Na with the Golden Bridge; a Hoi An city tour; a half day Saigon city tour with the Cu Chi tunnels.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

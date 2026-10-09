@@ -1,0 +1,382 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "16-days-trip-to-vietnam",
+ "camel": "sixteenDaysAcrossVietnam",
+ "slug": "sixteen-days-across-vietnam",
+ "title": "Sixteen Days Across Vietnam",
+ "alt": "My Son sanctuary brick towers in the hills near Hoi An",
+ "transport": "Overnight trains, flights, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Culture"
+ ],
+ "price": 115881,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Sa Pa",
+  "Hoi An",
+  "My Son",
+  "Nha Trang",
+  "Ho Chi Minh City",
+  "Mekong Delta"
+ ],
+ "counts": {
+  "days": 16,
+  "nights": 15,
+  "cities": 6,
+  "hotels": 6,
+  "experiences": 8,
+  "transfers": 20,
+  "meals": 20
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi full day city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "A full day with a guide through the Ho Chi Minh mausoleum, the one pillar pagoda, the Temple of Literature and the old quarter, with lunch included."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter with a full guided day of the capital and lunch included."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Royal Palace Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Sa Pa",
+   "city": "Sapa",
+   "subtitle": "Sa Pa by overnight train",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Delta Sapa Hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · One night at a Sa Pa hotel, with a sleeper berth on the overnight train each way",
+   "activities": [
+    {
+     "name": "Cat Cat waterfall and Sin Chai village trek",
+     "day": 5,
+     "optional": false,
+     "match": "Trek to Cat Cat Waterfall- Sin Chai Village",
+     "description": "A walk down to the waterfall below Cat Cat and on to Sin Chai, a Black Hmong village at the end of the valley road."
+    },
+    {
+     "name": "Lao Chai and Ta Van village trek",
+     "day": 6,
+     "optional": false,
+     "match": "Trek to Lao Chai",
+     "description": "A longer walk through the Muong Hoa valley to Lao Chai and Ta Van, terraced fields worked by Hmong and Giay families."
+    }
+   ],
+   "program": {
+    "name": "Sa Pa",
+    "description": "Up to the hill country by sleeper train for two days of valley walks, then the night train back."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Hoi An",
+   "city": "Hoi An",
+   "subtitle": "Hoi An and My Son",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Hoi An Rose Garden Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Garden hotel a short ride from the old town lanterns",
+   "activities": [
+    {
+     "name": "My Son sanctuary tour",
+     "day": 8,
+     "optional": false,
+     "match": "My Son Holyland Sanctuary Tour",
+     "description": "The brick towers of My Son in their valley, built by the Cham kings over six centuries and still standing among the trees."
+    }
+   ],
+   "program": {
+    "name": "Hoi An",
+    "description": "The flight to the central coast for two nights by the old town, with the Cham towers of My Son."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Nha Trang",
+   "city": "Nha Trang",
+   "days": [
+    9,
+    10,
+    11
+   ],
+   "dayLabel": "Day 9 to 11",
+   "hotel": "Emerald Bay Hotel & Spa Nha Trang",
+   "hotel_label": "Emerald Bay Hotel and Spa Nha Trang",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 5★ · Five star hotel on the seafront at Nha Trang",
+   "activities": [
+    {
+     "name": "Nha Trang island tour",
+     "day": 10,
+     "optional": false,
+     "match": "Nha Trang Island Tour",
+     "description": "A boat out to the islands in the bay for snorkelling over the reef, a floating bar and lunch on deck."
+    }
+   ],
+   "program": {
+    "name": "Nha Trang",
+    "description": "Three nights on the seafront, with a boat out to the islands and two days of your own."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and the Mekong",
+   "days": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "dayLabel": "Day 12 to 16",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Saigon half day city tour",
+     "day": 13,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Mekong Delta full day tour",
+     "day": 14,
+     "optional": false,
+     "match": "Full Day Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Four nights in District 1 to finish, with a city tour, the Mekong Delta and free days."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Hanoi city tour",
+  "3": "Overnight on the bay",
+  "4": "Night train to Sa Pa",
+  "5": "Cat Cat and Sin Chai",
+  "6": "Lao Chai and the night train",
+  "7": "South to Hoi An",
+  "8": "My Son sanctuary",
+  "9": "On to Nha Trang",
+  "10": "Nha Trang islands",
+  "11": "A free day by the sea",
+  "12": "On to Saigon",
+  "13": "Saigon city tour",
+  "14": "Mekong Delta",
+  "15": "A free day in Saigon",
+  "16": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then a full guided day of the city",
+   "The mausoleum and the one pillar pagoda",
+   "The Temple of Literature, the old university",
+   "Lunch included, then the old quarter lanes"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier and on to Hanoi",
+   "Evening transfer to the station",
+   "A sleeper berth on the night train north"
+  ],
+  "5": [
+   "Arrival at Lao Cai and up to Sa Pa",
+   "Check in and a short rest",
+   "A walk down to the Cat Cat waterfall",
+   "On to Sin Chai at the end of the valley"
+  ],
+  "6": [
+   "Breakfast, then into the Muong Hoa valley",
+   "The terraced fields at Lao Chai",
+   "Ta Van, worked by Hmong and Giay families",
+   "Back to Lao Cai for the night train to Hanoi"
+  ],
+  "7": [
+   "Arrival in Hanoi and the flight to Da Nang",
+   "On to Hoi An and check in",
+   "Rest of the day free in the old town",
+   "Optional: the lantern lit lanes after dark"
+  ],
+  "8": [
+   "Breakfast, then out to the My Son valley",
+   "The brick towers built by the Cham kings",
+   "The small museum and the ruins among the trees",
+   "Afternoon free in Hoi An"
+  ],
+  "9": [
+   "Breakfast and check out, then south to Nha Trang",
+   "Check in on the seafront",
+   "Rest of the day free at your own pace",
+   "Optional: the mud baths at Thap Ba"
+  ],
+  "10": [
+   "Breakfast, then out to the islands by boat",
+   "Snorkelling over the reef",
+   "The floating bar and lunch on deck",
+   "Back to the hotel in the late afternoon"
+  ],
+  "11": [
+   "Breakfast, then a free day by the sea",
+   "Optional: the Po Nagar Cham towers above the river",
+   "Optional: the cable car across to Vinpearl"
+  ],
+  "12": [
+   "Breakfast and check out, then on to Saigon",
+   "Check in in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "13": [
+   "Breakfast, then a half day of the city",
+   "The Reunification Palace and the old post office",
+   "The war remnants museum",
+   "Ben Thanh market and the afternoon free"
+  ],
+  "14": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "15": [
+   "Breakfast, then a free day in Saigon",
+   "Optional: the Cao Dai temple or a cooking class",
+   "Optional: the antiques and silk shops of District 1"
+  ],
+  "16": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L, D",
+  "3": "B, L, D",
+  "4": "B",
+  "5": "Train",
+  "6": "B",
+  "7": "Travel",
+  "8": "B, D",
+  "9": "B, D",
+  "10": "B, D",
+  "11": "B, D",
+  "12": "B",
+  "13": "B",
+  "14": "B",
+  "15": "B",
+  "16": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Overnight train",
+  "5": "Delta Sapa Hotel",
+  "6": "Overnight train",
+  "7": "Hoi An Rose Garden Hotel",
+  "8": "Hoi An Rose Garden Hotel",
+  "9": "Emerald Bay Hotel and Spa Nha Trang",
+  "10": "Emerald Bay Hotel and Spa Nha Trang",
+  "11": "Emerald Bay Hotel and Spa Nha Trang",
+  "12": "Avanti Saigon Hotel",
+  "13": "Avanti Saigon Hotel",
+  "14": "Avanti Saigon Hotel",
+  "15": "Avanti Saigon Hotel",
+  "16": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Sixteen days is the version where you walk in the Sa Pa valleys and still get three nights by the sea.",
+  "tip": "The night train to Lao Cai is part of the trip, not a chore. Book a four berth soft sleeper and bring something to eat."
+ },
+ "summary": "Sixteen days from the hill country to the delta: Hanoi and an overnight cruise in Halong Bay, the sleeper train to Sa Pa for two days of valley walks, Hoi An with the Cham towers of My Son, three nights on the seafront at Nha Trang with an island boat day, then four in Saigon with a city tour and the Mekong Delta.",
+ "included": "Included: 15 nights of accommodation including a cruise boat and two sleeper berths on the overnight train; breakfast daily with dinner at most hotels; the domestic flight to Da Nang; private transfers throughout; a full day Hanoi city tour with lunch; a shared overnight cruise in Halong Bay; the Cat Cat waterfall and Sin Chai trek; the Lao Chai and Ta Van trek; the My Son sanctuary tour; a Nha Trang island tour; a half day Saigon city tour; a full day Mekong Delta tour.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than where stated; travel insurance; personal expenses."
+}

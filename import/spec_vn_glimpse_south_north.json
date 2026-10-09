@@ -1,0 +1,248 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "glimpse-of-vietnam-and-laos-7-nights-8-days",
+ "camel": "glimpseVietnamSouthToNorth",
+ "slug": "glimpse-of-vietnam-south-to-north",
+ "title": "Glimpse of Vietnam South to North",
+ "alt": "My Khe beach and the Da Nang skyline at dusk",
+ "transport": "Two domestic flights, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Culture",
+  "Nature"
+ ],
+ "price": 65550,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Mekong Delta",
+  "Cu Chi",
+  "Da Nang",
+  "Cam Thanh",
+  "Ba Na Hills",
+  "Hanoi",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 7,
+  "transfers": 11,
+  "meals": 13
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and the Mekong",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Saigon half day city tour",
+     "day": 1,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Mekong Delta full day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Two nights in District 1 with the city on arrival and a full day in the Mekong Delta."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Danang",
+   "subtitle": "Cu Chi, Da Nang and Ba Na",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Luxtery Da Nang",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Cu Chi tunnels in a small group",
+     "day": 3,
+     "optional": false,
+     "match": "Cu Chi Tunnels Half Day Tour - Small Group",
+     "description": "The tunnel network north west of Saigon in a small group, with the trapdoors and the kitchens, before the flight to the coast."
+    },
+    {
+     "name": "Cam Thanh basket boat trip",
+     "day": 4,
+     "optional": false,
+     "match": "Half Day Cam Thanh Basket Boat Trip",
+     "description": "A round bamboo basket boat spun through the water coconut palms at Cam Thanh, with the rowers showing off in the creeks."
+    },
+    {
+     "name": "Ba Na Hills with the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills Full Day Tour From Da Nang",
+     "description": "The long cable car up to Ba Na, the bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The tunnels on the way out of the south, then three nights on the central coast with Cam Thanh and Ba Na Hills."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi half day city tour",
+     "day": 6,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    },
+    {
+     "name": "Halong Bay full day dragon cruise",
+     "day": 7,
+     "optional": false,
+     "match": "Halong Bay Full Day Dragon Cruise",
+     "description": "A full day out on the bay aboard a dragon boat, through the limestone islands and the floating villages, back in Hanoi by evening."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "North for the last two nights, with a guided half day of the capital and a full day out on Halong Bay."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Saigon city tour",
+  "2": "Mekong Delta",
+  "3": "Cu Chi and on to Da Nang",
+  "4": "Cam Thanh basket boats",
+  "5": "Ba Na Hills",
+  "6": "Hanoi city tour",
+  "7": "Halong Bay day cruise",
+  "8": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "A half day of the city with a guide",
+   "The palace, the cathedral and the war remnants museum",
+   "Check in and the evening free"
+  ],
+  "2": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "3": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels in a small group with a guide",
+   "The flight to Da Nang in the afternoon",
+   "Check in near the beach, evening free"
+  ],
+  "4": [
+   "Breakfast, then out to Cam Thanh",
+   "A basket boat spun through the water palms",
+   "The creeks and the rowers at work",
+   "Afternoon free on the coast"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "6": [
+   "Breakfast and check out, then the flight north",
+   "A guided half day of Hanoi",
+   "The mausoleum and the Temple of Literature",
+   "Check in and the evening free in the lanes"
+  ],
+  "7": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay aboard a dragon boat",
+   "The limestone islands and the floating villages",
+   "Back in Hanoi in the evening"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Avanti Saigon Hotel",
+  "2": "Avanti Saigon Hotel",
+  "3": "Luxtery Da Nang",
+  "4": "Luxtery Da Nang",
+  "5": "Luxtery Da Nang",
+  "6": "Hm Boutique Hotel Hanoi",
+  "7": "Hm Boutique Hotel Hanoi",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "South to north with three nights in the middle on the coast, which is where most people wish they had more time.",
+  "tip": "The basket boats at Cam Thanh look like a gimmick and are the most fun half day on this itinerary."
+ },
+ "summary": "Eight days south to north: two nights in Saigon with the city and a Mekong Delta day, the Cu Chi tunnels on the way out, three nights on the central coast with Cam Thanh basket boats and Ba Na Hills, then two in Hanoi with a city tour and a full day cruise on Halong Bay.",
+ "included": "Included: 7 nights with breakfast daily and dinner at the central and northern hotels; two domestic flights; private transfers throughout; a half day Saigon city tour; a full day Mekong Delta tour; a small group Cu Chi tunnels tour; a half day Cam Thanh basket boat trip; a full day at Ba Na Hills with the Golden Bridge; a Hanoi city tour; a full day dragon boat cruise on Halong Bay.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches; travel insurance; personal expenses."
+}

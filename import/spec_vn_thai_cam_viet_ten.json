@@ -1,0 +1,316 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "thailand-cambodia-vietnam-itinerary-10-days",
+ "camel": "thailandCambodiaVietnamTen",
+ "slug": "thailand-cambodia-and-vietnam-in-ten-days",
+ "title": "Thailand, Cambodia and Vietnam in Ten Days",
+ "alt": "Longtail boats in the bay at Phi Phi island, Thailand",
+ "transport": "Flights between the countries, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Beach"
+ ],
+ "price": 98278,
+ "route_cities": [
+  "Phuket",
+  "Phi Phi",
+  "Bangkok",
+  "Phnom Penh",
+  "Siem Reap",
+  "Tonle Sap",
+  "Angkor Wat",
+  "Hanoi",
+  "Ninh Binh"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 8,
+  "transfers": 14,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Phuket",
+   "city": "Phuket",
+   "subtitle": "Phuket and Phi Phi",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Club Bamboo Boutique Resort",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Small resort in the hills above Patong beach",
+   "activities": [
+    {
+     "name": "Phuket half day discovery tour",
+     "day": 1,
+     "optional": false,
+     "match": "Phuket Discovery Half Day Tour",
+     "description": "The old town shophouses, the big Buddha on its hill and the Karon viewpoint over the three southern bays."
+    },
+    {
+     "name": "Phi Phi island day trip with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Phi Phi Island Tour from Phuket",
+     "description": "A boat out to the Phi Phi islands for the cliffs at Maya Bay and Pileh lagoon, with snorkelling and lunch on board."
+    }
+   ],
+   "program": {
+    "name": "Phuket",
+    "description": "Two nights above Patong, with a half day of the island and a boat day out to Phi Phi."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bangkok",
+   "city": "Bangkok",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Convenient Park Hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Simple hotel on the eastern side of Bangkok",
+   "activities": [
+    {
+     "name": "Bangkok half day city tour",
+     "day": 3,
+     "optional": false,
+     "match": "Bangkok Half-Day City Tour",
+     "description": "The Golden Buddha at Wat Traimit and the Marble Temple, with the gem and silk showrooms on the way back."
+    }
+   ],
+   "program": {
+    "name": "Bangkok",
+    "description": "A night in the Thai capital, with the Golden Buddha and the Marble Temple on arrival."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Phnom Penh",
+   "city": "Phnom Penh",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "The Balé Phnom Penh by LifestyleRetreats",
+   "hotel_label": "The Bale Phnom Penh",
+   "accom": "1 night · Breakfast · Standard room · 5★ · Five star retreat on the Mekong riverbank outside the city",
+   "activities": [
+    {
+     "name": "Phnom Penh city tour",
+     "day": 4,
+     "optional": false,
+     "match": "Phnom Penh City Tour",
+     "description": "The Royal Palace and the Silver Pagoda, the national museum, and the Tuol Sleng memorial that records what the Khmer Rouge did here."
+    }
+   ],
+   "program": {
+    "name": "Phnom Penh",
+    "description": "A night at a five star riverside retreat, with the palace, the museum and the memorial on arrival."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Tonle Sap and Angkor",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Tonle Sap lake boat ride",
+     "day": 5,
+     "optional": false,
+     "match": "Boat Ride Tour of Tonle Sap Lake",
+     "description": "A boat out onto the great lake, through a floating village of houses, schools and shops built on stilts and pontoons."
+    },
+    {
+     "name": "Angkor Wat day tour",
+     "day": 6,
+     "optional": false,
+     "match": "Angkor Wat Day Tour",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "Two nights north, with the floating villages of Tonle Sap and a full day among the Angkor temples."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi full day city tour with lunch",
+     "day": 8,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "A full day with a guide through the Ho Chi Minh mausoleum, the one pillar pagoda, the Temple of Literature and the old quarter, with lunch included."
+    },
+    {
+     "name": "Ninh Binh day tour",
+     "day": 9,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 9,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "On to Vietnam for the last nights, with a full guided day of the capital and a day in Ninh Binh."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Phuket tour",
+  "2": "Phi Phi islands",
+  "3": "On to Bangkok",
+  "4": "Phnom Penh",
+  "5": "Siem Reap and Tonle Sap",
+  "6": "Angkor Wat",
+  "7": "On to Hanoi",
+  "8": "Hanoi city tour",
+  "9": "Ninh Binh and Bich Dong",
+  "10": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Phuket and transfer to your resort",
+   "A half day of the island with a guide",
+   "The big Buddha and the Karon viewpoint",
+   "Check in and the evening free"
+  ],
+  "2": [
+   "Breakfast, then down to the pier",
+   "A boat out to the Phi Phi islands",
+   "Maya Bay, Pileh lagoon and snorkelling",
+   "Lunch on board, then back by late afternoon"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight to Bangkok",
+   "A half day of the city with a guide",
+   "The Golden Buddha and the Marble Temple",
+   "Check in and the evening free"
+  ],
+  "4": [
+   "Breakfast and check out, then the flight to Cambodia",
+   "The Royal Palace and the Silver Pagoda",
+   "The national museum and Tuol Sleng",
+   "Check in at the riverside retreat"
+  ],
+  "5": [
+   "Breakfast and check out, then north to Siem Reap",
+   "Check in and a short rest",
+   "A boat out onto the great lake",
+   "A floating village built on stilts and pontoons"
+  ],
+  "6": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "7": [
+   "Breakfast and check out, then the flight to Hanoi",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "8": [
+   "Breakfast, then a full guided day of the city",
+   "The mausoleum and the one pillar pagoda",
+   "The Temple of Literature, the old university",
+   "Lunch included, then the old quarter lanes"
+  ],
+  "9": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "10": [
+   "Check out after an early breakfast",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B, L, D",
+  "9": "B, D",
+  "10": "-"
+ },
+ "hotel_by_day": {
+  "1": "Club Bamboo Boutique Resort",
+  "2": "Club Bamboo Boutique Resort",
+  "3": "Convenient Park Hotel",
+  "4": "The Bale Phnom Penh",
+  "5": "HARI Residence and Spa Siem Reap",
+  "6": "HARI Residence and Spa Siem Reap",
+  "7": "Hm Boutique Hotel Hanoi",
+  "8": "Hm Boutique Hotel Hanoi",
+  "9": "Hm Boutique Hotel Hanoi",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Three countries, five cities and a beach at the start. It is the sampler, and it works best if you treat the flights as part of the trip.",
+  "tip": "Keep hand luggage light. You have four internal flights and you will be glad not to wait at a belt in each airport."
+ },
+ "summary": "Ten days across three countries: two nights above Patong in Phuket with a Phi Phi island boat day, a night in Bangkok, a night at a five star riverside retreat in Phnom Penh, two in Siem Reap for Tonle Sap and Angkor, then three in Hanoi with a full city day and a Ninh Binh day trip.",
+ "included": "Included: 9 nights with breakfast daily and dinner at the Cambodian and Vietnamese hotels, including a five star riverside retreat; all flights between the countries; private transfers throughout; a Phuket half day tour; a Phi Phi island day trip with lunch; a Bangkok half day city tour; a Phnom Penh city tour; a Tonle Sap lake boat ride; an Angkor Wat day tour; a full day Hanoi city tour with lunch; a Ninh Binh day tour with a cycle ride to Bich Dong.",
+ "not_included": "Not included: international flights; Thailand, Cambodia and Vietnam visa fees; other lunches; travel insurance; personal expenses."
+}

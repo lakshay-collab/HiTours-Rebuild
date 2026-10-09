@@ -1,0 +1,232 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "highlights-of-vietnam-group-tour",
+ "camel": "highlightsVietnamGroupTour",
+ "slug": "highlights-of-vietnam-group-tour",
+ "title": "Highlights of Vietnam Group Tour",
+ "alt": "Titop island beach and viewpoint in Halong Bay",
+ "transport": "Two domestic flights, coach travel and guided tours",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Culture"
+ ],
+ "price": 56040,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Da Nang",
+  "Hoi An",
+  "Ba Na Hills",
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 7,
+  "transfers": 11,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and Cu Chi",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Ramana Saigon, Ho Chi Minh",
+   "hotel_label": "Ramana Saigon",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel in District 3, with a garden pool",
+   "activities": [
+    {
+     "name": "Saigon half day sightseeing",
+     "day": 2,
+     "optional": false,
+     "match": "Half-Day Ho Chi Minh Sightseeing Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Cu Chi tunnels tour",
+     "day": 2,
+     "optional": false,
+     "match": "Cu Chi tunnels Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Two nights in the south, with the city and the Cu Chi tunnels on a single full day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Hoi An and Ba Na Hills",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Diamond Sea Hotel, Da Nang",
+   "hotel_label": "Diamond Sea Hotel",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel across the road from My Khe beach",
+   "activities": [
+    {
+     "name": "Hoi An walking tour with a boat ride",
+     "day": 3,
+     "optional": false,
+     "match": "Walking Tour of Hoi An",
+     "description": "The Japanese covered bridge, the Sa Huynh museum and the Phuoc Kien assembly hall on foot, then a boat out onto the river."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The flight to the central coast and an afternoon on foot in the old trading town of Hoi An."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi, Ninh Binh and the bay",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "The Light Hotel Hanoi",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Four star hotel on the edge of the old quarter",
+   "activities": [
+    {
+     "name": "Ba Na Hills with the Golden Bridge",
+     "day": 4,
+     "optional": false,
+     "match": "Ba na Hills & Golden Hands Bridge Tour",
+     "description": "The cable car up to Ba Na, the bridge held up by two stone hands and the flower gardens of Le Jardin d'Amour before the flight north."
+    },
+    {
+     "name": "Ninh Binh day tour",
+     "day": 5,
+     "optional": false,
+     "match": "Ninh Binh Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Halong Bay day cruise with Titop island",
+     "day": 6,
+     "optional": false,
+     "match": "Day cruise tour in Halong bay",
+     "description": "A full day on the bay by boat, with a climb to the viewpoint on Titop island and time on its beach."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Three nights in the capital, with Ba Na Hills on the way, a day in Ninh Binh and a full day cruise on Halong Bay."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Saigon",
+  "2": "Saigon and the Cu Chi tunnels",
+  "3": "Flight to Da Nang and Hoi An",
+  "4": "Ba Na Hills and on to Hanoi",
+  "5": "Ninh Binh day trip",
+  "6": "Halong Bay day cruise",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "Check in and meet the rest of the group",
+   "Rest of the day free at your own pace",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "2": [
+   "Breakfast, then a half day of the city",
+   "The Reunification Palace and the war remnants museum",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight to Da Nang",
+   "On to Hoi An and the old town on foot",
+   "The Japanese bridge and the Phuoc Kien assembly hall",
+   "A boat out onto the river at dusk"
+  ],
+  "4": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The bridge held up by two stone hands",
+   "The flower gardens of Le Jardin d'Amour",
+   "The flight to Hanoi and check in"
+  ],
+  "5": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "The limestone country and the rice fields",
+   "Back in Hanoi in the evening"
+  ],
+  "6": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay by boat",
+   "The climb to the viewpoint on Titop island",
+   "Back in Hanoi in the evening"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Ramana Saigon",
+  "2": "Ramana Saigon",
+  "3": "Diamond Sea Hotel",
+  "4": "The Light Hotel Hanoi",
+  "5": "The Light Hotel Hanoi",
+  "6": "The Light Hotel Hanoi",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "South to north with a group, four star hotels throughout and two flights so no day is spent on the road.",
+  "tip": "Climb Titop island on the cruise day. It is twenty minutes of steps and the best view of the bay you will get at sea level."
+ },
+ "summary": "A week south to north with a small group: two nights in Saigon with the city and the Cu Chi tunnels, the flight to Da Nang and an evening in Hoi An, Ba Na Hills and the Golden Bridge, then three nights in Hanoi with Ninh Binh and a full day cruise on Halong Bay.",
+ "included": "Included: 6 nights at four star hotels with daily breakfast; two domestic flights; all coach travel and transfers; a half day Saigon sightseeing tour; the Cu Chi tunnels; a Hoi An walking tour with a river boat ride; the Ba Na Hills tour with the cable car and the flower gardens; a Ninh Binh day tour; a full day cruise on Halong Bay with Titop island.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches and dinners; travel insurance; personal expenses."
+}

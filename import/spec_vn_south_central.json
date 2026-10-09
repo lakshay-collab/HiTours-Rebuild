@@ -1,0 +1,195 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "south-and-central-vietnam-tour-package",
+ "camel": "southAndCentralVietnam",
+ "slug": "south-and-central-vietnam",
+ "title": "South and Central Vietnam",
+ "alt": "Reunification Palace gates in Ho Chi Minh City",
+ "transport": "A domestic flight, private transfers and guided tours",
+ "tag": "Short break",
+ "tags": [
+  "Culture",
+  "Short break"
+ ],
+ "price": 47452,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Mekong Delta",
+  "Da Nang",
+  "Hoi An",
+  "Ba Na Hills"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 5,
+  "transfers": 8,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, Cu Chi and the Mekong",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Prague Hotel Ho Chi Minh",
+   "hotel_label": "Prague Hotel",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel in District 1, walking distance from the market",
+   "activities": [
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    },
+    {
+     "name": "Saigon city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Mekong Delta day tour",
+     "day": 3,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Three nights in District 1 with the Cu Chi tunnels, a city tour and a full day in the Mekong Delta."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Hoi An and Ba Na Hills",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Luxtery Da Nang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Hoi An with a Thu Bon river boat ride",
+     "day": 4,
+     "optional": false,
+     "match": "Hoi An Day Tour from Da Nang with Thu Bon River",
+     "description": "A day in the old trading town with the Japanese bridge and the merchant houses, and a boat out onto the Thu Bon river as the lanterns come on."
+    },
+    {
+     "name": "Ba Na Hills and the Golden Bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Ba Na Hills and Golden Bridge Day Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, and the French village and gardens at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The flight to the central coast for two nights, with Hoi An by lantern light and a full day up at Ba Na."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Saigon",
+  "2": "Saigon and the Cu Chi tunnels",
+  "3": "Mekong Delta",
+  "4": "North to Da Nang and Hoi An",
+  "5": "Ba Na Hills",
+  "6": "Departure from Da Nang"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "Check in in District 1",
+   "Rest of the day free at your own pace",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "2": [
+   "Breakfast, then north west to Cu Chi",
+   "The tunnels, the trapdoors and the kitchens",
+   "Back in the city for the palace and the cathedral",
+   "The war remnants museum and Ben Thanh market"
+  ],
+  "3": [
+   "Breakfast, then south into the delta",
+   "A boat through the coconut creeks at My Tho",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "4": [
+   "Breakfast and check out, then the flight north",
+   "Check in near My Khe beach in Da Nang",
+   "South to Hoi An for the afternoon",
+   "A boat on the Thu Bon as the lanterns come on"
+  ],
+  "5": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Da Nang airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Prague Hotel",
+  "2": "Prague Hotel",
+  "3": "Prague Hotel",
+  "4": "Luxtery Da Nang",
+  "5": "Luxtery Da Nang",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Six days without the long run north. The south and the centre are enough for a first visit if your leave is short.",
+  "tip": "Fly out of Da Nang rather than doubling back to Saigon. It saves you most of a day."
+ },
+ "summary": "Six days across the south and centre: three nights in Saigon with the Cu Chi tunnels, a city tour and a full day in the Mekong Delta, then two in Da Nang with Hoi An by lantern light and a day up at Ba Na Hills.",
+ "included": "Included: 5 nights with breakfast and dinner daily; the domestic flight north; private transfers throughout; the Cu Chi tunnels half day tour; a Saigon city tour; a Mekong Delta day tour; a Hoi An day tour with a Thu Bon river boat ride; a full day up at Ba Na with the Golden Bridge.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches; travel insurance; personal expenses."
+}

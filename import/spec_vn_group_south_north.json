@@ -1,0 +1,217 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-group-tour",
+ "camel": "vietnamGroupTourSouthNorth",
+ "slug": "vietnam-group-tour-south-to-north",
+ "title": "Vietnam Group Tour South to North",
+ "alt": "Cable car towers above the forest at Ba Na Hills",
+ "transport": "Two domestic flights, coach travel and guided tours",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Nature"
+ ],
+ "price": 56227,
+ "route_cities": [
+  "Ho Chi Minh City",
+  "Cu Chi",
+  "Mekong Delta",
+  "Da Nang",
+  "Hoi An",
+  "Ba Na Hills",
+  "Hanoi",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 11,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, Cu Chi and the Mekong",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Winsuites Saigon Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel in District 1, near the Ben Thanh market",
+   "activities": [
+    {
+     "name": "Cu Chi tunnels and the Mekong Delta",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Cu Chi Tunnels and Mekong Delta Tour",
+     "description": "The tunnel network at Cu Chi in the morning, then south to the delta for a boat into the coconut creeks and the candy workshops."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Two nights in District 1, with the Cu Chi tunnels and the Mekong Delta in one long day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Hoi An and Ba Na Hills",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Sunny Ocean Hotel & Spa",
+   "hotel_label": "Sunny Ocean Hotel and Spa",
+   "accom": "2 nights · All meals · Standard room · 4★ · Four star hotel a short walk from My Khe beach",
+   "activities": [
+    {
+     "name": "Hoi An evening walking tour",
+     "day": 3,
+     "optional": false,
+     "match": "Half Day Hoi An Walking City Tour",
+     "description": "The old trading town on foot as the lanterns come on, through the Japanese bridge, the assembly halls and the merchant houses."
+    },
+    {
+     "name": "Ba Na Hills full day with lunch",
+     "day": 4,
+     "optional": false,
+     "match": "Full-Day Ba Na Hills Tour",
+     "description": "The long cable car up to Ba Na, the Golden Bridge held up by two stone hands, the French village and gardens, with lunch at the top."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "The flight to the central coast for two nights by the beach, with Hoi An by lantern light and a full day at Ba Na."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "My Lan Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Small four star hotel in the Hanoi old quarter",
+   "activities": [
+    {
+     "name": "Halong Bay full day cruise",
+     "day": 6,
+     "optional": false,
+     "match": "Halong Bay Full-Day Cruise",
+     "description": "A full day on the bay by boat among the limestone islands and the floating villages, with lunch served on deck."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The flight north for the last nights, with a free afternoon and a full day cruise on Halong Bay."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Saigon",
+  "2": "Cu Chi and the Mekong Delta",
+  "3": "Flight to Da Nang and Hoi An",
+  "4": "Ba Na Hills",
+  "5": "On to Hanoi",
+  "6": "Halong Bay day cruise",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tan Son Nhat and transfer to your hotel",
+   "Check in and meet the rest of the group",
+   "Rest of the day free at your own pace",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "2": [
+   "Early breakfast, then north west to Cu Chi",
+   "The tunnels, the trapdoors and the kitchens",
+   "South to the delta in the afternoon",
+   "A boat through the coconut creeks, then back to the city"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight to Da Nang",
+   "Check in near My Khe beach",
+   "On to Hoi An in the late afternoon",
+   "The old town on foot as the lanterns come on"
+  ],
+  "4": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The Golden Bridge held up by two stone hands",
+   "The French village, the gardens and lunch at the top",
+   "Back down to Da Nang in the evening"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight to Hanoi",
+   "Check in in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "6": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay by boat",
+   "Lunch served on deck among the islands",
+   "Back in Hanoi in the evening"
+  ],
+  "7": [
+   "Check out after an early breakfast",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, D",
+  "4": "B, L, D",
+  "5": "B",
+  "6": "B, L",
+  "7": "-"
+ },
+ "hotel_by_day": {
+  "1": "Winsuites Saigon Hotel",
+  "2": "Winsuites Saigon Hotel",
+  "3": "Sunny Ocean Hotel and Spa",
+  "4": "Sunny Ocean Hotel and Spa",
+  "5": "My Lan Hotel",
+  "6": "My Lan Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "One long day in the south does both Cu Chi and the delta, which frees up the rest of the week for the centre and the bay.",
+  "tip": "The Hoi An walk here is in the evening, which is the right call. Lanterns on the water beat the midday heat."
+ },
+ "summary": "A week south to north with a group: two nights in Saigon with a long day covering the Cu Chi tunnels and the Mekong Delta, two in Da Nang with Hoi An by lantern light and a full day at Ba Na Hills, then Hanoi and a full day cruise on Halong Bay.",
+ "included": "Included: 6 nights at four star hotels with daily breakfast and full board in Da Nang; two domestic flights; all coach travel and transfers; one long guided day covering the Cu Chi tunnels and the delta; a Hoi An walking tour; a full day at Ba Na Hills with lunch; a full day cruise on Halong Bay with lunch.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

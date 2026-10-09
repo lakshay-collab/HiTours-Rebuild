@@ -1,0 +1,232 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "trip-to-hanoi-and-sapa-in-vietnam",
+ "camel": "hanoiSapaAndTheBay",
+ "slug": "hanoi-sapa-and-the-bay",
+ "title": "Hanoi, Sapa and the Bay",
+ "alt": "Cable car cabins rising towards the summit of Fansipan",
+ "transport": "Private transfers, a mountain cable car and a cruise boat",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Short break"
+ ],
+ "price": 52250,
+ "route_cities": [
+  "Hanoi",
+  "Sa Pa",
+  "Halong Bay"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 3,
+  "transfers": 9,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "A first night in the old quarter with the evening free around Hoan Kiem lake."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sa Pa",
+   "city": "Sa Pa",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Delta Sapa Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel in the middle of Sa Pa town, near the lake",
+   "activities": [
+    {
+     "name": "Cat Cat village walk",
+     "day": 2,
+     "optional": false,
+     "match": "Cat Cat Village Half-day Tour",
+     "description": "A half day on foot down into Cat Cat, a Black Hmong village of terraced fields, water wheels and a waterfall below Sa Pa."
+    },
+    {
+     "name": "Fansipan mountain tour",
+     "day": 3,
+     "optional": false,
+     "match": "Fansipan Mountain Tour",
+     "description": "The cable car up Fansipan, the highest peak in Indochina, to the shrines and the viewing platform at the summit."
+    }
+   ],
+   "program": {
+    "name": "Sa Pa",
+    "description": "Two nights in the hill town, with a walk down to Cat Cat village and the cable car to the summit of Fansipan."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Down from the hills for a night in the city before the coast."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 5,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Last nights in Hanoi",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back from the bay for a last night, with free time in the lanes."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Into the hills at Sa Pa",
+  "3": "Fansipan summit",
+  "4": "Back to Hanoi",
+  "5": "Overnight on the bay",
+  "6": "Back to Hanoi",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast and check out, then north into the hills",
+   "Check in at Sa Pa in the afternoon",
+   "A half day on foot down into Cat Cat village",
+   "Terraced fields, water wheels and a waterfall"
+  ],
+  "3": [
+   "Breakfast, then the cable car up Fansipan",
+   "The shrines and the viewing platform at the summit",
+   "Afternoon free in Sa Pa town",
+   "Optional: the market and the lake"
+  ],
+  "4": [
+   "Breakfast and check out, then the run back to Hanoi",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: the water puppet theatre near the lake"
+  ],
+  "5": [
+   "Breakfast, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "6": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier in the late morning",
+   "On to Hanoi and check in",
+   "Rest of the day free in the lanes"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, L, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Delta Sapa Hotel",
+  "3": "Delta Sapa Hotel",
+  "4": "Hm Boutique Hotel Hanoi",
+  "5": "Halong Royal Palace Cruise",
+  "6": "Hm Boutique Hotel Hanoi",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Two nights at Sa Pa rather than one makes the difference. You get the village walk and the summit without rushing either.",
+  "tip": "Go up Fansipan early. The cloud usually builds by late morning and the summit disappears into it."
+ },
+ "summary": "A week in the north at an easy pace: a night in Hanoi, two at Sa Pa for the terraces of Cat Cat village and the Fansipan cable car, a night back in the city, then an overnight cruise among the limestone islands of Halong Bay.",
+ "included": "Included: 6 nights with breakfast and dinner at the hotels, one of them on a cruise boat with lunch and dinner; private transfers throughout; a half day walk to Cat Cat village; the Fansipan mountain tour with the cable car; a shared overnight cruise in Halong Bay.",
+ "not_included": "Not included: international flights; Vietnam visa fees; lunches other than on the cruise; travel insurance; personal expenses."
+}

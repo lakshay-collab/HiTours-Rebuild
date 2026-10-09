@@ -1,0 +1,447 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "thailand-cambodia-vietnam-tour-package",
+ "camel": "indochinaAndThailandGrand",
+ "slug": "indochina-and-thailand-grand-tour",
+ "title": "Indochina and Thailand Grand Tour",
+ "alt": "Grand Palace rooftops and spires in Bangkok",
+ "transport": "Flights between the countries, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Beach"
+ ],
+ "price": 142186,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Ho Chi Minh City",
+  "Siem Reap",
+  "Bangkok",
+  "Pattaya",
+  "Phuket"
+ ],
+ "counts": {
+  "days": 16,
+  "nights": 15,
+  "cities": 7,
+  "hotels": 7,
+  "experiences": 11,
+  "transfers": 22,
+  "meals": 22
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    },
+    {
+     "name": "Cycle ride to Bich Dong pagoda",
+     "day": 2,
+     "optional": false,
+     "match": "Cycle Tour to Bich Dong",
+     "description": "A cycle ride through the rice fields to Bich Dong, a three tier pagoda built into the rock face."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to the rowing boats and rice fields of Ninh Binh."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Royal Palace Cruise",
+   "accom": "1 night · All meals · Cabin with a window · 3★ · Timber cruise boat moored among the karsts overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Dark and Bright caves",
+     "day": 4,
+     "optional": false,
+     "match": "Dark and Bright Cave",
+     "description": "A kayak or sampan through the low openings of the Dark and Bright caves on the way off the water."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "The bay caves in the morning, then a night back in the city before the flight south."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon, Cu Chi and the Mekong",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Saigon city tour",
+     "day": 6,
+     "optional": false,
+     "match": "Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum and the Ben Thanh market."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 6,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    },
+    {
+     "name": "Mekong Delta day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Mekong Delta Tour",
+     "description": "South to My Tho for a boat into the coconut creeks, a sampan through the palms, and the workshops where they make coconut candy."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Three nights in District 1 with the city, the Cu Chi tunnels and a full day in the Mekong Delta."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Tonle Sap and Angkor",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Tonle Sap lake boat ride",
+     "day": 8,
+     "optional": false,
+     "match": "Boat Ride Tour of Tonle Sap Lake",
+     "description": "A boat out onto the great lake, through a floating village of houses, schools and shops built on stilts and pontoons."
+    },
+    {
+     "name": "Angkor Wat day tour",
+     "day": 9,
+     "optional": false,
+     "match": "Angkor Wat Day Tour",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "Two nights in Cambodia, with the floating villages of Tonle Sap and a full day among the Angkor temples."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Bangkok",
+   "city": "Bangkok",
+   "days": [
+    10,
+    11
+   ],
+   "dayLabel": "Day 10 to 11",
+   "hotel": "Ambassador Hotel Bangkok",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel on Sukhumvit, near the skytrain",
+   "activities": [
+    {
+     "name": "Bangkok city tour with the Grand Palace",
+     "day": 11,
+     "optional": false,
+     "match": "Bangkok City Tour with Grand Palace & Emerald Buddha",
+     "description": "The Grand Palace and the Emerald Buddha, then the temple quarter and the river boats along the Chao Phraya."
+    }
+   ],
+   "program": {
+    "name": "Bangkok",
+    "description": "On to Thailand for two nights on Sukhumvit, with the Grand Palace and the Emerald Buddha."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Pattaya",
+   "city": "Pattaya",
+   "days": [
+    12,
+    13
+   ],
+   "dayLabel": "Day 12 to 13",
+   "hotel": "Golden Tulip Hotel Essential, Pattaya",
+   "hotel_label": "Golden Tulip Hotel Essential",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel a short walk from Pattaya beach road",
+   "activities": [
+    {
+     "name": "Coral Island tour",
+     "day": 13,
+     "optional": false,
+     "match": "Coral Island Tour From Pattaya",
+     "description": "A speedboat out to Koh Larn for the beaches, the clear water and the parasailing off the headland."
+    }
+   ],
+   "program": {
+    "name": "Pattaya",
+    "description": "Two nights on the gulf coast, with a speedboat day out to Coral Island."
+   }
+  },
+  {
+   "letter": "H",
+   "name": "Phuket",
+   "city": "Phuket",
+   "subtitle": "Phuket and Phi Phi",
+   "days": [
+    14,
+    15,
+    16
+   ],
+   "dayLabel": "Day 14 to 16",
+   "hotel": "Journeyhub Phuket Patong",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel a few minutes from Patong beach",
+   "activities": [
+    {
+     "name": "Phi Phi island day trip with lunch",
+     "day": 15,
+     "optional": false,
+     "match": "Phi Phi Island Tour from Phuket",
+     "description": "A boat out to the Phi Phi islands for the cliffs at Maya Bay and Pileh lagoon, with snorkelling and lunch on board."
+    }
+   ],
+   "program": {
+    "name": "Phuket",
+    "description": "Across to the Andaman coast for the last two nights, with a boat day out to the Phi Phi islands."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh and Bich Dong",
+  "3": "Overnight on the bay",
+  "4": "Bay caves and back to Hanoi",
+  "5": "South to Saigon",
+  "6": "Saigon and the Cu Chi tunnels",
+  "7": "Mekong Delta",
+  "8": "Siem Reap and Tonle Sap",
+  "9": "Angkor Wat",
+  "10": "On to Bangkok",
+  "11": "Bangkok city tour",
+  "12": "Down to Pattaya",
+  "13": "Coral Island",
+  "14": "Across to Phuket",
+  "15": "Phi Phi islands",
+  "16": "Departure from Phuket"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "A cycle ride through the rice fields",
+   "Bich Dong, a pagoda built into the rock"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board as the boat moves",
+   "The Dark and Bright caves by sampan",
+   "Back to the pier and on to Hanoi",
+   "Check in and the evening free"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight south",
+   "Check in in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "6": [
+   "Breakfast, then a half day of the city",
+   "The palace, the cathedral and the war remnants museum",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts"
+  ],
+  "7": [
+   "Breakfast, then south to My Tho in the delta",
+   "A boat through the coconut creeks",
+   "A sampan ride under the palms",
+   "The coconut candy workshops, then back to the city"
+  ],
+  "8": [
+   "Breakfast and check out, then the flight to Cambodia",
+   "Check in at Siem Reap",
+   "A boat out onto the great lake",
+   "A floating village built on stilts and pontoons"
+  ],
+  "9": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "10": [
+   "Breakfast and check out, then the flight to Thailand",
+   "Check in on Sukhumvit in Bangkok",
+   "Rest of the day free at your own pace",
+   "Optional: the night markets and the skytrain"
+  ],
+  "11": [
+   "Breakfast, then a guided day of the city",
+   "The Grand Palace and the Emerald Buddha",
+   "The temple quarter along the river",
+   "Afternoon free in the city"
+  ],
+  "12": [
+   "Breakfast and check out, then south to the gulf coast",
+   "Check in near Pattaya beach road",
+   "Rest of the day free at your own pace",
+   "Optional: the walking street after dark"
+  ],
+  "13": [
+   "Breakfast, then a speedboat out to Koh Larn",
+   "The beaches and the clear water",
+   "Optional: parasailing off the headland",
+   "Back in Pattaya in the evening"
+  ],
+  "14": [
+   "Breakfast and check out, then the flight to Phuket",
+   "Check in near Patong beach",
+   "Rest of the day free at your own pace",
+   "Optional: the big Buddha on its hill"
+  ],
+  "15": [
+   "Breakfast, then down to the pier",
+   "A boat out to the Phi Phi islands",
+   "Maya Bay, Pileh lagoon and snorkelling",
+   "Lunch on board, then back by late afternoon"
+  ],
+  "16": [
+   "Check out after an early breakfast",
+   "Private transfer to Phuket airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B, D",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B, D",
+  "9": "B, D",
+  "10": "B",
+  "11": "B",
+  "12": "B",
+  "13": "B",
+  "14": "B",
+  "15": "B, L",
+  "16": "-"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Royal Palace Cruise",
+  "4": "Hm Boutique Hotel Hanoi",
+  "5": "Avanti Saigon Hotel",
+  "6": "Avanti Saigon Hotel",
+  "7": "Avanti Saigon Hotel",
+  "8": "HARI Residence and Spa Siem Reap",
+  "9": "HARI Residence and Spa Siem Reap",
+  "10": "Ambassador Hotel Bangkok",
+  "11": "Ambassador Hotel Bangkok",
+  "12": "Golden Tulip Hotel Essential",
+  "13": "Golden Tulip Hotel Essential",
+  "14": "Journeyhub Phuket Patong",
+  "15": "Journeyhub Phuket Patong",
+  "16": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Sixteen days, three countries and seven hotels. It finishes on the Andaman coast, which is the right way round.",
+  "tip": "Do the shopping in Bangkok rather than earlier. You will not want to carry it through Cambodia and Vietnam."
+ },
+ "summary": "Sixteen days through Vietnam, Cambodia and Thailand: Hanoi with Ninh Binh and an overnight cruise in Halong Bay, three nights in Saigon with the Cu Chi tunnels and the Mekong Delta, Siem Reap for Tonle Sap and Angkor, then Bangkok and the Grand Palace, Coral Island from Pattaya and the Phi Phi islands from Phuket.",
+ "included": "Included: 15 nights with breakfast daily, dinner at the Vietnamese and Cambodian hotels and all meals on the cruise boat; all flights between the countries; private transfers throughout; a Ninh Binh day tour with a cycle ride to Bich Dong; a shared overnight cruise in Halong Bay with the Dark and Bright caves; a Saigon city tour; the Cu Chi tunnels half day tour; a Mekong Delta day tour; a Tonle Sap lake boat ride; an Angkor Wat day tour; a Bangkok city tour with the Grand Palace and the Emerald Buddha; a Coral Island tour from Pattaya; a Phi Phi island day trip with lunch.",
+ "not_included": "Not included: international flights; Vietnam, Cambodia and Thailand visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

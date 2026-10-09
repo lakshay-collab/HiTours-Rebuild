@@ -1,0 +1,205 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "cycling-from-hue-to-nha-trang-6-day-5-nights",
+ "camel": "hanoiAndNhaTrangEscape",
+ "slug": "hanoi-and-nha-trang-escape",
+ "title": "Hanoi and Nha Trang Escape",
+ "alt": "Beachfront promenade and high rises at Nha Trang",
+ "transport": "Return domestic flights, private transfers and guided tours",
+ "tag": "Beach",
+ "tags": [
+  "Beach",
+  "Short break"
+ ],
+ "price": 61750,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Nha Trang",
+  "Ninh Binh"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 9,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Halong Bay full day dragon cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Halong Bay Full Day Dragon Cruise",
+     "description": "A full day out on the bay aboard a dragon boat, through the limestone islands and the floating villages, back in Hanoi by evening."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day out on Halong Bay by boat."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nha Trang",
+   "city": "Nha Trang",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Emerald Bay Hotel & Spa Nha Trang",
+   "hotel_label": "Emerald Bay Hotel and Spa Nha Trang",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 5★ · Five star hotel on the seafront at Nha Trang",
+   "activities": [
+    {
+     "name": "Nha Trang island tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nha Trang Island Tour",
+     "description": "A boat out to the islands in the bay for snorkelling over the reef, a floating bar and lunch on deck."
+    }
+   ],
+   "program": {
+    "name": "Nha Trang",
+    "description": "The flight south for two nights at a five star hotel on the seafront, with a boat day out to the islands."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi for Ninh Binh",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 6,
+     "optional": false,
+     "match": "Ninh Binh Tour with Lunch",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back north for two nights, with a full day in Ninh Binh and lunch included."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Halong Bay day cruise",
+  "3": "Flight to Nha Trang",
+  "4": "Nha Trang islands",
+  "5": "Back to Hanoi",
+  "6": "Ninh Binh day trip",
+  "7": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Early breakfast, then east towards the coast",
+   "A full day on the bay aboard a dragon boat",
+   "The limestone islands and the floating villages",
+   "Back in Hanoi in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight south",
+   "Check in on the seafront at Nha Trang",
+   "Rest of the day free at your own pace",
+   "Optional: the mud baths at Thap Ba"
+  ],
+  "4": [
+   "Breakfast, then out to the islands by boat",
+   "Snorkelling over the reef",
+   "The floating bar and lunch on deck",
+   "Back to the hotel in the late afternoon"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight north",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free in the lanes",
+   "Optional: the water puppet theatre near the lake"
+  ],
+  "6": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "Lunch included on the tour",
+   "Back in Hanoi in the evening"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, L, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Emerald Bay Hotel and Spa Nha Trang",
+  "4": "Emerald Bay Hotel and Spa Nha Trang",
+  "5": "Hm Boutique Hotel Hanoi",
+  "6": "Hm Boutique Hotel Hanoi",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Two nights by the sea in the middle of a northern week. It breaks up the sightseeing without adding a long drive.",
+  "tip": "The Nha Trang boat day includes lunch on deck. Skip the big breakfast and save yourself for it."
+ },
+ "summary": "Seven days with a beach break in the middle: two nights in Hanoi with a full day dragon boat cruise on Halong Bay, two at a five star hotel on the Nha Trang seafront with an island snorkelling day, then two back in the capital with a Ninh Binh day and lunch.",
+ "included": "Included: 6 nights with breakfast and dinner daily, two of them at a five star seafront hotel; return domestic flights; private transfers throughout; a full day dragon boat cruise on Halong Bay; a Nha Trang island tour; a Ninh Binh day tour with lunch.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches; travel insurance; personal expenses."
+}

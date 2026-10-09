@@ -18,8 +18,8 @@ const heroGallery = [
 const cardImages = [
   img('e2agk3i6mkl215p79pi09wthtqij_shutterstock_132817514.jpg'),
   img('uhyclhw5d3ngfvigxaavcrl0getu_shutterstock_1111881161%20(1).jpg'),
-  img('kipm6jnkwk1bxv9v2z08qubu57jy_shutterstock_2297244885-min.jpg'),
-  img('q0rofzuv74wu1axaon9rmkcob0jh_shutterstock_448476727.jpg')
+  img('j8qqpvf20swcc9g66yo67jylfdtq_shutterstock_571418086.jpg'),
+  img('r6j9ygbrrhn1qmqenspvxmohyjxz_shutterstock_577260061.jpg')
 ];
 
 const stops = [

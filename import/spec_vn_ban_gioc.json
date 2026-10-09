@@ -1,0 +1,255 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "vietnam-getaway-with-free-ban-gioc-waterfalls",
+ "camel": "vietnamBanGiocWaterfalls",
+ "slug": "vietnam-with-the-ban-gioc-waterfalls",
+ "title": "Vietnam with the Ban Gioc Waterfalls",
+ "alt": "Ban Gioc waterfall on the border river in Cao Bang",
+ "transport": "Private transfers, an overnight cruise and guided day tours",
+ "tag": "Offbeat",
+ "tags": [
+  "Nature",
+  "Offbeat"
+ ],
+ "price": 46236,
+ "route_cities": [
+  "Hanoi",
+  "Ninh Binh",
+  "Halong Bay",
+  "Cao Bang",
+  "Ban Gioc"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 4,
+  "transfers": 10,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Ninh Binh",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Ninh Binh day tour",
+     "day": 2,
+     "optional": false,
+     "match": "Ninh Binh Day Tour",
+     "description": "South to Ninh Binh for a rowing boat through the flooded caves at Tam Coc and the limestone country around it."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a full day south to the rowing boats and rice fields of Ninh Binh."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Halong Bay",
+   "city": "Halong Bay",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Halong Bay overnight cruise",
+   "accom": "1 night · All meals · Cabin · 3★ · Cruise boat moored among the limestone islands overnight",
+   "activities": [
+    {
+     "name": "Halong Bay overnight cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Halong Bay Overnight Cruise",
+     "description": "A shared cruise out among the limestone islands, with lunch and dinner on board and a night moored in a quiet bay."
+    }
+   ],
+   "program": {
+    "name": "Halong Bay",
+    "description": "A night on the water among the limestone islands, with all meals served on board."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Back in Hanoi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "The Light Hotel Hanoi",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel on the edge of the old quarter",
+   "activities": [],
+   "program": {
+    "name": "Hanoi",
+    "description": "Off the water and back to the city for a quiet night before the mountains."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Cao Bang",
+   "city": "Cao Bang",
+   "subtitle": "Cao Bang and Ban Gioc",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Khach san So Oanh",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel in Cao Bang town, near the river",
+   "activities": [
+    {
+     "name": "Ban Gioc waterfall day trip",
+     "day": 6,
+     "optional": false,
+     "match": "Ban Gioc Waterfalls",
+     "description": "The widest waterfall in the country, dropping in tiers across the river that marks the Chinese border, with a bamboo raft out to the curtain."
+    }
+   ],
+   "program": {
+    "name": "Cao Bang",
+    "description": "Two nights in the far north east, with a full day out to the tiered curtain of Ban Gioc on the border river."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Last night in Hanoi",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "The Light Hotel Hanoi",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel on the edge of the old quarter",
+   "activities": [
+    {
+     "name": "Hanoi half day city tour",
+     "day": 7,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the lanes of the old quarter with a guide."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Back from the mountains for a guided half day of the capital and a last night in the lanes."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Ninh Binh day trip",
+  "3": "Overnight on the bay",
+  "4": "Back to Hanoi",
+  "5": "North to Cao Bang",
+  "6": "Ban Gioc waterfall",
+  "7": "Hanoi city tour",
+  "8": "Departure from Hanoi"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then south towards Ninh Binh",
+   "A rowing boat through the flooded caves at Tam Coc",
+   "The limestone country and the rice fields",
+   "Back in Hanoi in the evening"
+  ],
+  "3": [
+   "Breakfast and check out, then east towards the coast",
+   "Board your cruise boat in the early afternoon",
+   "Lunch and dinner on board",
+   "A night moored among the limestone islands"
+  ],
+  "4": [
+   "Breakfast on board as the boat moves",
+   "Back to the pier in the late morning",
+   "On to Hanoi and check in",
+   "Rest of the day free in the lanes"
+  ],
+  "5": [
+   "Breakfast and check out, then north east into the hills",
+   "The long climb up to Cao Bang",
+   "Check in and the rest of the day free",
+   "Optional: an evening walk by the river"
+  ],
+  "6": [
+   "Breakfast, then out to the border river",
+   "Ban Gioc, the widest waterfall in the country",
+   "A bamboo raft out towards the curtain",
+   "Back in Cao Bang in the evening"
+  ],
+  "7": [
+   "Breakfast and check out, then the run back to Hanoi",
+   "A guided half day of the city",
+   "The mausoleum, the one pillar pagoda and the Temple of Literature",
+   "Check in and the evening free"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, L, D",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Halong Bay overnight cruise",
+  "4": "The Light Hotel Hanoi",
+  "5": "Khach san So Oanh",
+  "6": "Khach san So Oanh",
+  "7": "The Light Hotel Hanoi",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Almost nobody goes to Cao Bang, and Ban Gioc is the best waterfall in the country. That is the whole point of this one.",
+  "tip": "The road to Cao Bang is slow and winding. Sit in the front if you are prone to car sickness, and go between September and November when the river is full."
+ },
+ "summary": "Eight days with a run into the far north east: two nights in Hanoi with a Ninh Binh day, an overnight cruise in Halong Bay, then two nights at Cao Bang for the tiered curtain of Ban Gioc on the Chinese border river, and a guided half day of the capital before the flight home.",
+ "included": "Included: 7 nights with daily breakfast, dinner at the first hotel and all meals on the cruise boat; private transfers throughout; a Ninh Binh day tour; a shared overnight cruise in Halong Bay; the Ban Gioc waterfall day trip; a guided half day tour of Hanoi.",
+ "not_included": "Not included: international flights; Vietnam visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

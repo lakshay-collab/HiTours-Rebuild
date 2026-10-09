@@ -20,6 +20,8 @@ import { bestOfSingaporeThailandProduct } from './bestOfSingaporeThailandData';
 import { grandVietnamCambodiaThailandProduct } from './grandVietnamCambodiaThailandData';
 import { bestOfThailandSingaporeMalaysiaBaliProduct } from './bestOfThailandSingaporeMalaysiaBaliData';
 import { baliAndPhuketHolidayProduct } from './baliAndPhuketHolidayData';
+import { thailandCambodiaVietnamTenProduct } from './thailandCambodiaVietnamTenData';
+import { indochinaAndThailandGrandProduct } from './indochinaAndThailandGrandData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/thailand/enquiry/passengers/', cruiseCity: '—',
@@ -27,6 +29,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Thailand', href: '/asien/thailand' }]
 });
 
-export const thailandProducts = [...packages.map(toProduct), bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct, luxuryBangkokPattayaEscapeProduct, phuketPhiPhiPartyEscapeProduct, phuketKohSamuiBeachEscapeProduct, islandTrailsPhuketSamuiKrabiProduct, grandBangkokPhuketKrabiProduct, romanticKrabiSamuiPhuketProduct, bestOfThailandMalaysiaProduct, coastalMagicPhuketKrabiProduct, honeymoonTrailPhuketKrabiSamuiProduct, baliPhuketIslandEscapeProduct, classicKrabiPhuketHolidayProduct, bestOfPattayaBangkokPhuketProduct, luxuryPhuketSamuiKrabiProduct, bestOfSingaporeThailandProduct, grandVietnamCambodiaThailandProduct, bestOfThailandSingaporeMalaysiaBaliProduct, baliAndPhuketHolidayProduct];
+export const thailandProducts = [...packages.map(toProduct), bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct, luxuryBangkokPattayaEscapeProduct, phuketPhiPhiPartyEscapeProduct, phuketKohSamuiBeachEscapeProduct, islandTrailsPhuketSamuiKrabiProduct, grandBangkokPhuketKrabiProduct, romanticKrabiSamuiPhuketProduct, bestOfThailandMalaysiaProduct, coastalMagicPhuketKrabiProduct, honeymoonTrailPhuketKrabiSamuiProduct, baliPhuketIslandEscapeProduct, classicKrabiPhuketHolidayProduct, bestOfPattayaBangkokPhuketProduct, luxuryPhuketSamuiKrabiProduct, bestOfSingaporeThailandProduct, grandVietnamCambodiaThailandProduct, bestOfThailandSingaporeMalaysiaBaliProduct, baliAndPhuketHolidayProduct, thailandCambodiaVietnamTenProduct, indochinaAndThailandGrandProduct];
 export const thailandTours = packages.map(build);
 export const thailandBySlug = Object.fromEntries(thailandTours.map((t) => [t.detail.slug, t]));

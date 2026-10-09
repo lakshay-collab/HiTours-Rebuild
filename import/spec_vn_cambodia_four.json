@@ -1,0 +1,259 @@
+{
+ "cta_country": "vietnam",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Vietnam",
+   "/asien/vietnam"
+  ]
+ ],
+ "source_slug": "cambodia-vietnam-tour-package-from-india",
+ "camel": "vietnamCambodiaFourCities",
+ "slug": "vietnam-and-cambodia-four-cities",
+ "title": "Vietnam and Cambodia Four Cities",
+ "alt": "Bayon stone faces at Angkor Thom near Siem Reap",
+ "transport": "Flights between the cities, private transfers and guided tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Culture"
+ ],
+ "price": 87400,
+ "route_cities": [
+  "Hanoi",
+  "Halong Bay",
+  "Da Nang",
+  "Ba Na Hills",
+  "Siem Reap",
+  "Angkor Wat",
+  "Ho Chi Minh City",
+  "Cu Chi"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 6,
+  "transfers": 12,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hanoi",
+   "city": "Hanoi",
+   "subtitle": "Hanoi and Halong Bay",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hm Boutique Hotel Hanoi",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter",
+   "activities": [
+    {
+     "name": "Halong Bay half day cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Half-Day Cruise at Halong Bay",
+     "description": "A half day out on the bay by boat, among the nearest of the limestone islands, back in Hanoi by evening."
+    }
+   ],
+   "program": {
+    "name": "Hanoi",
+    "description": "Two nights in the old quarter, with a half day cruise out on Halong Bay."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Da Nang",
+   "city": "Da Nang",
+   "subtitle": "Hanoi tour and Da Nang",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Luxtery Da Nang",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Simple hotel a few streets back from My Khe beach",
+   "activities": [
+    {
+     "name": "Hanoi half day city tour",
+     "day": 3,
+     "optional": false,
+     "match": "Hanoi City Tour",
+     "description": "The Ho Chi Minh mausoleum and the one pillar pagoda, the Temple of Literature and the old quarter, before the flight south."
+    }
+   ],
+   "program": {
+    "name": "Da Nang",
+    "description": "A guided morning in Hanoi, then the flight to the central coast for a night near the beach."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Siem Reap",
+   "city": "Siem Reap",
+   "subtitle": "Ba Na Hills and Angkor",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "HARI Residence & Spa - Siem Reap",
+   "hotel_label": "HARI Residence and Spa Siem Reap",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market",
+   "activities": [
+    {
+     "name": "Ba Na Hills with the Golden Bridge",
+     "day": 4,
+     "optional": false,
+     "match": "Ba Na Hills Full Day Tour From Da Nang",
+     "description": "The long cable car up to Ba Na, the bridge held up by two stone hands, and the French village and gardens before the flight on."
+    },
+    {
+     "name": "Siem Reap full day with Angkor Wat",
+     "day": 5,
+     "optional": false,
+     "match": "Siem Reap Full Day Tour with Angkor Wat",
+     "description": "Angkor Wat itself, the Bayon faces at Angkor Thom and the root covered ruins of Ta Prohm, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Siem Reap",
+    "description": "Ba Na Hills on the way out of Vietnam, then two nights in Cambodia for a full day among the Angkor temples."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ho Chi Minh City",
+   "city": "Ho Chi Minh",
+   "subtitle": "Saigon and Cu Chi",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Avanti Saigon Hotel, Ho Chi Minh",
+   "hotel_label": "Avanti Saigon Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Small hotel in District 1, a short walk from the opera house",
+   "activities": [
+    {
+     "name": "Saigon city tour",
+     "day": 7,
+     "optional": false,
+     "match": "Half Day Ho Chi Minh City Tour",
+     "description": "The Reunification Palace, the old post office and Notre Dame cathedral, then the war remnants museum."
+    },
+    {
+     "name": "Cu Chi tunnels half day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Cu Chi Tunnel Half Day Tour",
+     "description": "The tunnel network north west of the city, with the trapdoors, the kitchens and a crawl through a widened section of the original shafts."
+    }
+   ],
+   "program": {
+    "name": "Ho Chi Minh City",
+    "description": "Back into Vietnam for the last two nights, with the city and the Cu Chi tunnels on one day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hanoi",
+  "2": "Halong Bay half day cruise",
+  "3": "Hanoi tour and flight to Da Nang",
+  "4": "Ba Na Hills and on to Siem Reap",
+  "5": "Angkor Wat",
+  "6": "On to Saigon",
+  "7": "Saigon and the Cu Chi tunnels",
+  "8": "Departure from Saigon"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Noi Bai airport and transfer to your hotel",
+   "Check in at your hotel in the old quarter",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk around Hoan Kiem lake"
+  ],
+  "2": [
+   "Breakfast, then east towards the coast",
+   "A half day on the bay by boat",
+   "Back in Hanoi in the late afternoon",
+   "Evening free in the old quarter"
+  ],
+  "3": [
+   "Breakfast, then a guided morning of the city",
+   "The mausoleum and the Temple of Literature",
+   "The flight to Da Nang in the afternoon",
+   "Check in near the beach, evening free"
+  ],
+  "4": [
+   "Breakfast, then the cable car up to Ba Na",
+   "The bridge held up by two stone hands",
+   "The French village and the gardens at the top",
+   "The flight on to Siem Reap and check in"
+  ],
+  "5": [
+   "Early breakfast, then into the Angkor park",
+   "Angkor Wat and the Bayon faces at Angkor Thom",
+   "The root covered ruins of Ta Prohm",
+   "Back at the hotel by evening"
+  ],
+  "6": [
+   "Breakfast and check out, then the flight to Saigon",
+   "Check in in District 1",
+   "Rest of the day free in the city",
+   "Optional: the rooftop bars on Nguyen Hue"
+  ],
+  "7": [
+   "Breakfast, then a half day of the city",
+   "The palace, the cathedral and the war remnants museum",
+   "North west to Cu Chi for the tunnels",
+   "The trapdoors, the kitchens and the shafts"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Tan Son Nhat for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hm Boutique Hotel Hanoi",
+  "2": "Hm Boutique Hotel Hanoi",
+  "3": "Luxtery Da Nang",
+  "4": "HARI Residence and Spa Siem Reap",
+  "5": "HARI Residence and Spa Siem Reap",
+  "6": "Avanti Saigon Hotel",
+  "7": "Avanti Saigon Hotel",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Riya",
+  "image": "/experts/riya.webp",
+  "role": "Vietnam expert at Hi Tours",
+  "quote": "Four cities and two countries in eight days. It moves quickly, but every flight is short and every day has something in it.",
+  "tip": "Pack a light long sleeve for Angkor. Shoulders need covering at the temples and the sun is unforgiving by ten."
+ },
+ "summary": "Eight days across four cities in two countries: Hanoi with a half day cruise on Halong Bay, a guided morning of the capital, a night in Da Nang with Ba Na Hills and the Golden Bridge, two in Siem Reap for a full day at Angkor, then two in Saigon with the city and the Cu Chi tunnels.",
+ "included": "Included: 7 nights with breakfast daily and dinner at the Vietnamese and Cambodian hotels; all flights between the cities; private transfers throughout; a half day cruise on Halong Bay; a Hanoi city tour; a full day at Ba Na Hills with the Golden Bridge; a full day Siem Reap tour with Angkor Wat; a Saigon city tour; the Cu Chi tunnels half day tour.",
+ "not_included": "Not included: international flights; Vietnam and Cambodia visa fees; lunches; travel insurance; personal expenses."
+}
