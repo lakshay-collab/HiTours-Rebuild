@@ -32,3 +32,9 @@
 - build_trip.py now emits `places` and `href` on every Product (the gap that previously sent Thailand cards to the Egypt route), plus new scripts apply_card_images.py / plan_card_images.py --freeze to assign globally unique listing-card photos.
 - Verified by testing agent iteration_46.json: 15/15 detail pages render with correct day tabs, zero broken images and country-correct recommendations; zero duplicate card photos on the Singapore, Malaysia and Thailand grids; Cruise filter returns 5.
 - 2026-06: Dynamic Theme + Experiences filters on all country holidays pages (tuned for Singapore/Thailand); Experiences strip above cards; tripIndex.js registry; suggest_highlights.py; FILTERS.md. Tests: iteration_47, iteration_48.
+
+## 2026-06 — Country landing pages bypassed
+- All country root routes (e.g. /asien/singapore, /asien/thailand, /europa/italy, /afrika/aegypten) now redirect straight to their `/holidays` listing (App.js `COUNTRY_ROOTS`).
+- Intermediate country listing pages are hidden (components kept in /pages, no longer routed).
+- Region pages (/asien, /europa) unchanged.
+- Breadcrumbs drop the now-redundant country crumb on country holidays pages (EgyptHolidays.jsx).

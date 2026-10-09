@@ -149,7 +149,9 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   }, [count, list.length, loading, page]);
   const shown = list.slice(0, count);
   const sortLabel = sort && sorts.find((s) => s.key === sort).label;
-  const crumbs = style ? [...holidaysCrumbs.slice(0, 2), { label: holidaysCrumbs[2].label, to: holidaysPath }, { label: style }] : holidaysCrumbs;
+  const allCrumbs = style ? [...holidaysCrumbs.slice(0, 2), { label: holidaysCrumbs[2].label, to: holidaysPath }, { label: style }] : holidaysCrumbs;
+  // Country root links now redirect straight to this listing, so drop that redundant crumb.
+  const crumbs = allCrumbs.filter((c) => !(c.to && `${c.to}/holidays` === holidaysPath && c.to.split('/').length > 2));
   const resultLabel = (n) => `${n} ${noun}${n === 1 ? '' : 's'}`;
   const sortPills = { sort, onSort: setSort, onStyle: () => {}, menuKeys: ['sort'] };
 
