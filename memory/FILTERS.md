@@ -1,41 +1,45 @@
-# Holidays filters: Theme = fixed travel styles + dynamic destination highlights
+# Holidays filters: dynamic Themes + dynamic Experiences (per destination)
 
 Applies to every `/<region>/<country>/holidays` page (shared `pages/EgyptHolidays.jsx`) and the hidden honeymoon variants.
-Model: `frontend/src/holidays/filterModel.js`. Highlight library: `frontend/src/holidays/highlights.js`.
+Model: `frontend/src/holidays/filterModel.js`. Experience library: `frontend/src/holidays/experiences.js`.
 Itinerary registry: `frontend/src/tours/tripIndex.js` (every trip's detail/route/glance by slug, also used by the detail page).
+Tuned and verified on Singapore and Thailand (user: the two complete catalogues). Other countries get the same logic but were not tuned.
 
-## How the Theme list is built (per country, automatically)
-1. **Travel styles (fixed, same everywhere):** Honeymoon, Family, Short trips (≤5 days), Luxury, Beach, Culture, Adventure,
-   Nature & wildlife, City break, Nightlife & party, Grand tour. Matched on the trip title + its `tag`/`styles` tags only.
-   A style only shows when at least one trip in that country matches (counts are live).
-2. **Highlights (dynamic):** every row of `HIGHLIGHTS` is a `[label, regex, icon, alsoRequired?]`. The regex runs over the
-   trip's full text corpus = title + tags + places + detail title/tags/route cities + every day title/text/highlight bullet +
-   every route stop's bullets and activity names. If it matches (and the optional `alsoRequired` regex also matches, used to
-   scope ambiguous words like "sauna" or "castle" to a region), the trip gets that highlight.
-   Highlights appear for a country as soon as ONE trip there mentions them (user decision), sorted by number of trips.
-3. UI: one Theme group. Sidebar / mobile sheet list styles first, then a "HIGHLIGHTS" sub-heading with the first 8
-   and a "Show all N highlights" toggle (`hf-theme-highlights-more` / `mhf-theme-highlights-more`). The desktop quick-chip
-   strip shows all styles + the 8 most common highlights (divider `theme-chips-highlights-divider`).
-   URL stays `?theme=<label>` for both kinds, so legacy `/holidays/<style-slug>` links and the SearchBar links keep working
-   (e.g. Egypt `nile-cruise` → highlight "Nile cruise").
-4. Honeymoon variant (`mode: 'honeymoon'`) uses its own romantic style labels + the same highlights.
+## Two filter groups, both derived from the data (nothing configured per country)
+1. **Theme** (`?theme=`) = travel styles. `THEME_RULES` rows: `[label, regex, icon, { tags, maxDays, minStops, text }]`.
+   Regex runs on the title, or on the whole itinerary corpus when `text: true`; `tags` match the product's `tag`/`styles`;
+   `maxDays` (Short trips ≤5), `minStops` (Multi-city tours ≥3 base cities). A theme shows only where ≥1 trip matches.
+   Current set: Honeymoon, Family, Short trips, Luxury (always first), then by trip count: Beach, Island hopping,
+   Cruise holidays, Theme parks, Culture & temples, Adventure, Nature & wildlife, City break, Nightlife & party,
+   Food & markets, Wellness & spa, Shopping, Multi-city tours. ("Grand tour" removed per user.)
+2. **Experiences** (`?experience=`) = landmarks / activities. `EXPERIENCES` rows: `[label, regex, icon, alsoRequired?]` run over the
+   corpus = title + tags + places + detail title/tags/route cities + every day title/text/highlight bullet + every route stop's
+   bullets and activity names. `alsoRequired` scopes ambiguous words (sauna, castle, Red Sea, Venice gondolas) to a region.
+   Shows as soon as ONE trip mentions it (user decision), sorted by trip count.
+3. OR inside a group, AND across groups (Theme ∧ Experiences ∧ Destination ∧ Duration ∧ Price).
+
+## UI
+- Desktop: strip above the cards = **Experiences** only (`ThemeChips.jsx`: label "Experiences", All chip, top 10 + any selected).
+  Sidebar (`HolidayFilterPanel.jsx`): Theme section (all themes), Experiences section (first 8 + "Show all N experiences",
+  testid `hf-experience-more`), Destination, Duration, Price range.
+- Mobile: group pills Filters · Theme · Experiences · Destination · Duration · Price range → `MobileFilterSheet` tabs (same options,
+  `mhf-experience-more`).
+- Legacy `/holidays/<style-slug>` and SearchBar links: if the style key is an experience label (Egypt `nile-cruise` → "Nile cruise")
+  it preselects the Experiences group, otherwise Theme (`isExperience()` in filterModel).
+- Honeymoon variant (`mode: 'honeymoon'`) uses `HONEYMOON_RULES` for Theme and the same Experiences.
 
 ## Adding products later ("more products added for <country>")
 1. `python3 scripts/thrillophilia/suggest_highlights.py <new or all country data files> --min 1 --top 60`
-   prints capitalised phrases from the itinerary text with how many files mention them and whether a HIGHLIGHTS row already
-   covers them. Ignore cities (they are the Destination facet), hotel names, logistics words.
-2. For each real landmark/experience not covered, add a row to `highlights.js`. Keep regexes specific
+   prints capitalised phrases from the itinerary text with file counts and whether an EXPERIENCES row already covers them.
+   Ignore cities (Destination facet), hotel names, logistics words.
+2. Landmark/activity → add a row to `experiences.js`. New travel style → add a row to `THEME_RULES`. Keep regexes specific
    (`\b`, full names) and add `alsoRequired` when a word is ambiguous across countries.
-3. Reload `/<region>/<country>/holidays`; the new highlight shows with its count. Check 2 or 3 other countries for leaks
-   (the first version leaked "Ha Long" into "Chalong", "Flåm" into "flamenco", "Li River" into "Mahaweli River",
-   "etna" into "Vietnam", "fuji" into other words; all fixed with word boundaries).
+3. Reload `/<region>/<country>/holidays`; the new entries show with counts. Spot-check 2 or 3 other countries for leaks
+   (first version leaked "Ha Long"→"Chalong", "Flåm"→"flamenco", "Li River"→"Mahaweli River", "etna"→"Vietnam"; all fixed with `\b`).
 4. Nothing else to configure: counts, order, visibility and the mobile sheet all derive from the data.
 
-## Words we considered for "Themes"
-User kept "Theme" as the group label. The dynamic sub-group is labelled "Highlights" in the UI.
-
 ## Known limits
-- A highlight mentioned only as an optional add-on in a day's text still counts (the trip does offer it).
-- Multi-country trips carry highlights of all their countries (e.g. Petronas Towers on the Thailand page for the
-  Thailand + Malaysia trip). This is intended: the trip really includes it.
-- `(?<!indoor )waterfall` uses a lookbehind (supported in all evergreen browsers and Safari ≥16.4).
+- A landmark mentioned only as an optional add-on in a day's text still counts (the trip does offer it).
+- Multi-country trips carry experiences of all their countries (Petronas Towers on the Thailand page for Thailand + Malaysia). Intended.
+- A theme that matches almost every trip of a destination (Thailand: Multi-city tours 16/20, Beach 14/20) is simply what the catalogue is.
+- `(?<!indoor )waterfall` uses a lookbehind (all evergreen browsers, Safari ≥16.4).

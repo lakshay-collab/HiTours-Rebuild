@@ -1,6 +1,6 @@
 import { styles } from '../egyptListingData';
 import { BY_SLUG } from '../tours/tripIndex';
-import { HIGHLIGHTS } from './highlights';
+import { EXPERIENCES } from './experiences';
 
 export const DURATIONS = [
   { key: '1-3', label: '1–3 days', min: 1, max: 3 },
@@ -16,41 +16,51 @@ export const PRICES = [
   { key: '1l-plus', label: '₹1,00,000+', min: 100000, max: Infinity }
 ];
 
-// Theme filter = fixed travel styles (same on every country, matched on title + tags) + destination
-// highlights (holidays/highlights.js, matched on the full itinerary text, shown only where a trip has them).
-// Rule: [label, title regex | null, icon, matching travel-style tags, maxDays]
-const HOLIDAY_RULES = [
-  ['Honeymoon', /romantic|romance|honeymoon|couples?/i, 'heart', ['Honeymoon']],
-  ['Family', /family|kids|children/i, 'family', ['Family']],
-  ['Short trips', null, 'short', ['Short trips'], 5],
-  ['Luxury', /luxur|royal|grand luxury|5-star|five-star/i, 'gem', ['Luxury']],
-  ['Beach', /beach|coastal|offshore|bay\b|red sea|\bisland/i, 'beach', ['Beach', 'Island hopping']],
-  ['Culture', /culture|heritage|temple|palace|pyramid|pharaoh|medina|classic/i, 'culture', ['Culture']],
-  ['Adventure', /adventure|trails?\b|trek|glacier|safari/i, 'kayak', ['Adventure']],
-  ['Nature & wildlife', /nature|wild|national park|falls|scenic/i, 'leaf', ['Nature', 'Wildlife']],
-  ['City break', /city break|city escape|city lights|skyline/i, 'sun', ['City break', 'City']],
-  ['Nightlife & party', /party|nightlife/i, 'sun'],
-  ['Grand tour', /\bgrand\b|best of|odyssey|explorer|highlights|multi-country/i, 'globe', ['Multi-country']]
+// Two dynamic groups per country, both derived from the data (nothing configured per country):
+//  - Theme: travel styles. Rule = [label, regex, icon, { tags, maxDays, minCities, text }]. The regex runs on the title
+//    (and on the whole itinerary corpus when text: true). A theme shows only where at least one trip matches.
+//  - Experiences: landmarks / activities (holidays/experiences.js) matched on the full itinerary corpus.
+const THEME_RULES = [
+  ['Honeymoon', /romantic|romance|honeymoon|couples?/i, 'heart', { tags: ['Honeymoon'] }],
+  ['Family', /family|kids|children/i, 'family', { tags: ['Family'] }],
+  ['Short trips', null, 'short', { tags: ['Short trips'], maxDays: 5 }],
+  ['Luxury', /luxur|royal|grand luxury|5-star|five-star/i, 'gem', { tags: ['Luxury'] }],
+  ['Beach', /beach|coastal|offshore|bay\b|red sea|\bisland/i, 'beach', { tags: ['Beach'] }],
+  ['Island hopping', /island[- ]hopping|island hop|island tour|islands? (day )?trip|four islands?|4 islands?|hopping tour/i, 'island', { tags: ['Island hopping'], text: true }],
+  ['Cruise holidays', /genting dream|royal caribbean|disney adventure|cruise (ship|terminal|liner|holiday)|nights? (on board|aboard)|stateroom|\bcabin\b|overnight cruise|nile cruise|dahabiya/i, 'ship', { tags: ['Cruise', 'Nile cruise'], text: true }],
+  ['Theme parks', /universal studios|theme park|disney|safari world|dream world|legoland|adventure cove|waterpark|water park|cartoon network|nong nooch/i, 'ticket', { text: true }],
+  ['Culture & temples', /culture|heritage|temple|palace|pyramid|pharaoh|medina|classic/i, 'culture', { tags: ['Culture'] }],
+  ['Adventure', /adventure|trails?\b|trek|glacier|safari|rafting|zipline|zip line|atv|quad bik/i, 'kayak', { tags: ['Adventure'] }],
+  ['Nature & wildlife', /nature|wildlife|national park|falls|scenic|night safari|\bzoo\b|river wonders|elephant (sanctuary|camp|care|park)|bird park|rainforest|jungle/i, 'paw', { tags: ['Nature', 'Wildlife'], text: true }],
+  ['City break', /city break|city escape|city lights|skyline/i, 'sun', { tags: ['City break', 'City'] }],
+  ['Nightlife & party', /party|nightlife|bangla road|walking street|clarke quay|night ?club|pub crawl|beach club/i, 'moon', { text: true }],
+  ['Food & markets', /street food|hawker|food tour|food trail|cooking class|night market|floating market|michelin/i, 'food', { text: true }],
+  ['Wellness & spa', /massage|wellness|ayurved|spa (treatment|day|session|ritual)|thermal spa|hot spring|onsen/i, 'gem', { text: true }],
+  ['Shopping', /shopping|orchard road|bugis street|chatuchak|platinum mall|mbk|night bazaar|outlet mall|shopping mall/i, 'wallet', { text: true }],
+  ['Multi-city tours', /multi-country/i, 'globe', { tags: ['Multi-country'], minStops: 3 }]
 ];
 
 const HONEYMOON_RULES = [
-  ['Beach romance', /beach|coastal|offshore|bay\b|bliss|red sea/i, 'beach', ['Beach']],
-  ['Island escapes', /\bisland|phi phi|samui|bali|maldives|langkawi|sentosa/i, 'island'],
-  ['Luxury stays', /luxur|royal|grand luxury/i, 'gem', ['Luxury']],
-  ['Private & secluded', /escape|getaway|retreat|romantic|romance|honeymoon|couples?/i, 'heart', ['Honeymoon']],
-  ['Adventure for two', /adventure|trails?\b|trek|safari|glacier/i, 'kayak', ['Adventure']],
-  ['Culture & temples', /culture|heritage|temple|palace|pyramid|pharaoh|medina|classic/i, 'culture', ['Culture']],
-  ['City & nightlife', /bangkok|party|nightlife|city|singapore|hong kong/i, 'sun'],
-  ['Grand journeys', /\bgrand\b|best of|odyssey|explorer|highlights/i, 'globe'],
-  ['Short & sweet', null, 'short', ['Short trips'], 5]
+  ['Beach romance', /beach|coastal|offshore|bay\b|bliss|red sea/i, 'beach', { tags: ['Beach'] }],
+  ['Island escapes', /\bisland|phi phi|samui|bali|maldives|langkawi|sentosa/i, 'island', {}],
+  ['Luxury stays', /luxur|royal|grand luxury/i, 'gem', { tags: ['Luxury'] }],
+  ['Private & secluded', /escape|getaway|retreat|romantic|romance|honeymoon|couples?/i, 'heart', { tags: ['Honeymoon'] }],
+  ['Adventure for two', /adventure|trails?\b|trek|safari|glacier/i, 'kayak', { tags: ['Adventure'] }],
+  ['Culture & temples', /culture|heritage|temple|palace|pyramid|pharaoh|medina|classic/i, 'culture', { tags: ['Culture'] }],
+  ['City & nightlife', /bangkok|party|nightlife|city|singapore|hong kong/i, 'sun', {}],
+  ['Cruises & sunsets', /genting dream|royal caribbean|disney adventure|cruise (ship|terminal|liner)|stateroom|nile cruise|sunset cruise|dinner cruise/i, 'ship', { tags: ['Cruise', 'Nile cruise'], text: true }],
+  ['Multi-city journeys', /multi-country/i, 'globe', { tags: ['Multi-country'], minStops: 3 }],
+  ['Short & sweet', null, 'short', { tags: ['Short trips'], maxDays: 5 }]
 ];
 
-const SETS = { holidays: { rules: HOLIDAY_RULES }, honeymoon: { rules: HONEYMOON_RULES } };
-const STYLE_LABELS = new Set([...HOLIDAY_RULES, ...HONEYMOON_RULES].map(([t]) => t));
+const SETS = { holidays: THEME_RULES, honeymoon: HONEYMOON_RULES };
+// Who-you-are themes stay on top; the destination-type themes follow by number of trips.
+const FIRST = ['Honeymoon', 'Family', 'Short trips', 'Luxury', 'Private & secluded', 'Short & sweet', 'Luxury stays'];
 const STYLE_ICONS = Object.fromEntries(styles.map((s) => [s.key, s.icon]));
-const RULE_ICONS = Object.fromEntries([...HOLIDAY_RULES, ...HONEYMOON_RULES, ...HIGHLIGHTS].map(([t, , icon]) => [t, icon]));
-export const themeIcon = (t) => STYLE_ICONS[t] || RULE_ICONS[t] || 'star';
-export const themeKind = (t) => (STYLE_LABELS.has(t) ? 'style' : 'highlight');
+const RULE_ICONS = Object.fromEntries([...THEME_RULES, ...HONEYMOON_RULES, ...EXPERIENCES].map(([t, , icon]) => [t, icon]));
+export const themeIcon = (t) => RULE_ICONS[t] || STYLE_ICONS[t] || 'star';
+const EXPERIENCE_LABELS = new Set(EXPERIENCES.map(([t]) => t));
+export const isExperience = (t) => EXPERIENCE_LABELS.has(t);
 
 const uniq = (a) => [...new Set(a.filter(Boolean))];
 const tagsOf = (p) => uniq([p.tag, ...(p.styles || [])]);
@@ -71,22 +81,27 @@ export const corpusOf = (p) => {
   return text;
 };
 
-const highlightCache = new Map();
-export const highlightsOf = (p) => {
-  if (highlightCache.has(p.slug)) return highlightCache.get(p.slug);
+const expCache = new Map();
+export const experiencesOf = (p) => {
+  if (expCache.has(p.slug)) return expCache.get(p.slug);
   const text = corpusOf(p);
-  const hits = HIGHLIGHTS.filter(([, re, , also]) => re.test(text) && (!also || also.test(text))).map(([t]) => t);
-  highlightCache.set(p.slug, hits);
+  const hits = EXPERIENCES.filter(([, re, , also]) => re.test(text) && (!also || also.test(text))).map(([t]) => t);
+  expCache.set(p.slug, hits);
   return hits;
 };
 
+const themeCache = new Map();
 export const themesOf = (p, mode = 'holidays') => {
-  const { rules } = SETS[mode] || SETS.holidays;
+  const key = `${mode}:${p.slug}`;
+  if (themeCache.has(key)) return themeCache.get(key);
   const tags = tagsOf(p);
-  const derived = rules
-    .filter(([, re, , ruleTags = [], maxDays]) => (re && re.test(p.title)) || ruleTags.some((x) => tags.includes(x)) || (maxDays && typeof p.days === 'number' && p.days <= maxDays))
+  const hits = (SETS[mode] || THEME_RULES)
+    .filter(([, re, , { tags: ruleTags = [], maxDays, minStops, text } = {}]) =>
+      (re && re.test(text ? corpusOf(p) : p.title)) || ruleTags.some((x) => tags.includes(x)) ||
+      (maxDays && typeof p.days === 'number' && p.days <= maxDays) || (minStops && (p.stops || 0) >= minStops))
     .map(([t]) => t);
-  return uniq([...derived, ...highlightsOf(p)]);
+  themeCache.set(key, hits);
+  return hits;
 };
 
 export const placesOf = (p) => p.places || [];
@@ -94,12 +109,13 @@ export const placesOf = (p) => p.places || [];
 const inRange = (defs) => (v, keys) => keys.some((k) => { const d = defs.find((x) => x.key === k); return d && v >= d.min && v <= d.max; });
 const matchers = {
   theme: (p, sel, mode) => sel.some((t) => themesOf(p, mode).includes(t)),
+  experience: (p, sel) => sel.some((t) => experiencesOf(p).includes(t)),
   place: (p, sel) => sel.some((c) => placesOf(p).includes(c)),
   days: (p, sel) => inRange(DURATIONS)(p.days, sel),
   price: (p, sel) => inRange(PRICES)(p.price, sel)
 };
 export const GROUPS = Object.keys(matchers);
-export const emptySelection = () => ({ theme: [], place: [], days: [], price: [] });
+export const emptySelection = () => ({ theme: [], experience: [], place: [], days: [], price: [] });
 
 export const applyFilters = (products, sel, mode = 'holidays', except) =>
   products.filter((p) => GROUPS.every((g) => g === except || !sel[g].length || matchers[g](p, sel[g], mode)));
@@ -113,10 +129,13 @@ export function buildFacets(products, sel, mode = 'holidays') {
   const placeNow = countBy(pool('place'), placesOf);
   const themeAll = countBy(products, themes);
   const themeNow = countBy(pool('theme'), themes);
+  const expAll = countBy(products, experiencesOf);
+  const expNow = countBy(pool('experience'), experiencesOf);
   const byCount = (all) => (a, b) => all[b] - all[a] || a.localeCompare(b);
-  const rank = (v) => (themeKind(v) === 'style' ? 0 : 1);
+  const rank = (v) => (FIRST.includes(v) ? FIRST.indexOf(v) : FIRST.length);
   return {
-    theme: Object.keys(themeAll).sort((a, b) => rank(a) - rank(b) || byCount(themeAll)(a, b)).map((v) => ({ value: v, label: v, count: themeNow[v] || 0, icon: themeIcon(v), kind: themeKind(v) })),
+    theme: Object.keys(themeAll).sort((a, b) => rank(a) - rank(b) || byCount(themeAll)(a, b)).map((v) => ({ value: v, label: v, count: themeNow[v] || 0, icon: themeIcon(v) })),
+    experience: Object.keys(expAll).sort(byCount(expAll)).map((v) => ({ value: v, label: v, count: expNow[v] || 0, icon: themeIcon(v) })),
     place: Object.keys(placeAll).sort(byCount(placeAll)).map((v) => ({ value: v, label: v, count: placeNow[v] || 0 })),
     days: DURATIONS.map((d) => ({ value: d.key, label: d.label, count: pool('days').filter((p) => p.days >= d.min && p.days <= d.max).length })),
     price: PRICES.map((d) => ({ value: d.key, label: d.label, count: pool('price').filter((p) => p.price >= d.min && p.price <= d.max).length }))
@@ -135,4 +154,4 @@ export const toggleIn = (sel, group, value) => ({
 
 export const activeCount = (sel) => GROUPS.reduce((n, g) => n + sel[g].length, 0);
 
-export const GROUP_LABELS = { theme: 'Theme', place: 'Destination', days: 'Duration', price: 'Price range' };
+export const GROUP_LABELS = { theme: 'Theme', experience: 'Experiences', place: 'Destination', days: 'Duration', price: 'Price range' };

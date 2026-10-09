@@ -1,8 +1,8 @@
-// Destination highlights: landmark / experience keywords mined from each trip's itinerary text.
+// Destination experiences: landmark / experience keywords mined from each trip's itinerary text.
 // A highlight only appears on a country's holidays page when at least one trip there mentions it,
-// so the Theme filter grows by itself as products are added. Format: [label, regex, icon, alsoRequired regex?].
+// so the Experiences filter grows by itself as products are added. Format: [label, regex, icon, alsoRequired regex?].
 // To extend: run scripts/thrillophilia/suggest_highlights.py <new data files> and add the good phrases here.
-export const HIGHLIGHTS = [
+export const EXPERIENCES = [
   // Cruises & boats
   ['Disney Cruise', /disney (adventure|cruise)/i, 'ship'],
   ['Genting Dream Cruise', /genting dream/i, 'ship'],

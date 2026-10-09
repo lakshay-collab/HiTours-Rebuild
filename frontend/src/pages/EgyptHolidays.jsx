@@ -16,7 +16,7 @@ import EgyptCustomerReviews from '../components/egypt/EgyptCustomerReviews';
 import { EgyptFaq } from '../components/egypt/EgyptSections';
 import { ChevronRight, ChevronDown } from '../components/egypt/EgyptIcons';
 import { hero as egHero, tours as egTours, products as egProducts, sorts, styleBySlug, holidaysPath as egHolidaysPath, holidaysCrumbs as egCrumbs, faq as egFaq, planner as egPlanner, customerReviews as egCustomerReviews } from '../egyptListingData';
-import { GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection, facetLabel } from '../holidays/filterModel';
+import { GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection, facetLabel, isExperience } from '../holidays/filterModel';
 
 const egyptHolidays = { hero: egHero, tours: egTours, products: egProducts, holidaysPath: egHolidaysPath, holidaysCrumbs: egCrumbs, faq: egFaq, planner: egPlanner, plannerSource: 'egypt-holidays', testId: 'egypt-holidays-page', customerReviews: egCustomerReviews };
 
@@ -97,7 +97,8 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   const style = styleSlug ? (styleBySlug(styleSlug) || {}).key || null : null;
   const sort = sorts.some((s) => s.key === params.get('sort')) ? params.get('sort') : null;
   const sel = useMemo(() => ({
-    theme: [...new Set([...(style ? [style] : []), ...split(params.get('theme'))])],
+    theme: [...new Set([...(style && !isExperience(style) ? [style] : []), ...split(params.get('theme'))])],
+    experience: [...new Set([...(style && isExperience(style) ? [style] : []), ...split(params.get('experience'))])],
     place: split(params.get('place')),
     days: split(params.get('days')),
     price: split(params.get('price'))
@@ -115,7 +116,8 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   const setSort = (k) => go(sel, k);
   const clearAll = () => go(emptySelection(), sort);
   const nActive = activeCount(sel);
-  const title = sel.theme.length === 1 ? tours.styleH2(sel.theme[0]) : tours.allH2;
+  const picked = [...sel.theme, ...sel.experience];
+  const title = picked.length === 1 ? tours.styleH2(picked[0]) : tours.allH2;
 
   useEffect(() => {
     if (styleSlug && !styleBySlug(styleSlug)) navigate(holidaysPath, { replace: true });
@@ -194,7 +196,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
             </aside>
 
             <div className="min-w-0">
-              <div className="hidden md:block"><ThemeChips themes={facets.theme} selected={sel.theme} total={applyFilters(products, { ...sel, theme: [] }, mode).length} onToggle={toggle} onClearThemes={() => setSel({ ...sel, theme: [] })} /></div>
+              <div className="hidden md:block"><ThemeChips items={facets.experience} selected={sel.experience} total={applyFilters(products, { ...sel, experience: [] }, mode).length} onToggle={toggle} onClear={() => setSel({ ...sel, experience: [] })} /></div>
               {(nActive > 0 || sort) && (
                 <div className="mt-4 flex flex-wrap items-center gap-2" data-testid="eg-active-filters">
                   {GROUPS.flatMap((g) => sel[g].map((v) => <Chip key={`${g}-${v}`} label={`${GROUP_LABELS[g]}:`} value={facetLabel(g, v)} onClear={() => toggle(g, v)} testId={`eg-filter-chip-${g}`} />))}

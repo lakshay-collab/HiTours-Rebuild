@@ -4,8 +4,8 @@
 Usage: suggest_highlights.py <js files...> [--min N] [--top N]
 Scans every string literal in the given package/tour data modules, pulls out capitalised
 multi-word phrases (landmarks, parks, shows, cruises) and prints the ones not yet covered by
-frontend/src/holidays/highlights.js, most frequent first. Review the list and add the good
-ones to HIGHLIGHTS (label + regex). Nothing is written automatically.
+frontend/src/holidays/experiences.js, most frequent first. Review the list and add the good
+ones to EXPERIENCES (label + regex). Nothing is written automatically.
 """
 import re
 import sys
@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-HIGHLIGHTS = ROOT / 'frontend/src/holidays/highlights.js'
+HIGHLIGHTS = ROOT / 'frontend/src/holidays/experiences.js'
 
 STOP = set('''Day Days Night Nights Breakfast Lunch Dinner Arrival Departure Transfer Transfers Check Hotel Hotels Resort Private Return Morning Afternoon Evening Overnight
 Optional Suggested Free Time Leisure Flight Flights Airport International Domestic Included Not Pricing Per Person Standard Deluxe Superior Premium Luxury Comfort

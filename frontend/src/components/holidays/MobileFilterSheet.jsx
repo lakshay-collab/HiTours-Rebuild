@@ -16,7 +16,7 @@ export default function MobileFilterSheet({ open, onOpenChange, products, sel, m
       <SheetContent side="bottom" className="h-[86dvh] p-0 rounded-t-2xl bg-white border-0 flex flex-col [&>button]:hidden" data-testid="mobile-filter-sheet">
         <div className="flex items-center justify-between pl-5 pr-3 h-14 border-b border-[#E4E3DB] shrink-0">
           <SheetTitle className="eg-title-lg text-[#002131]">Filters{active ? ` (${active})` : ''}</SheetTitle>
-          <SheetDescription className="sr-only">Refine by theme, destination, duration and price</SheetDescription>
+          <SheetDescription className="sr-only">Refine by theme, experiences, destination, duration and price</SheetDescription>
           <button type="button" onClick={() => onOpenChange(false)} aria-label="Close filters" className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/5" data-testid="mobile-filter-close"><X size={22} /></button>
         </div>
         <div className="flex-1 min-h-0 flex">

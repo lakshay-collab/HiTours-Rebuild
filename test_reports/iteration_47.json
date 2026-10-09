@@ -1,0 +1,22 @@
+{
+  "summary": "Frontend-only testing of the dynamic Theme/Highlights filter across Singapore, Egypt, Finland, Thailand (and Thailand honeymoons variant), both desktop (1920) and mobile (390), plus detail-page regressions after the BY_SLUG registry move to src/tours/tripIndex.js. All critical flows pass: sidebar lists styles first then a HIGHLIGHTS sub-heading, mined highlights are destination-specific and reflect itinerary data; Show all N highlights toggle expands/collapses correctly; URL param ?theme=<label> drives filtering; active chip + clear button work; quick-chip strip caps highlights at 8 after divider with OR union across two selections; legacy /nile-cruise URL preselects theme; mobile sheet shows highlights, applies, URL updates and count matches; detail pages for Disney Cruise, Luxor, North & Central Vietnam, Phuket-Krabi-Bangkok render cleanly with 0 broken images and no console errors.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "data-testid naming divergence from the review spec: implementation uses hf-theme-option / mhf-theme-option for BOTH style rows and highlight rows (no separate hf-theme-highlights-option / mhf-theme-highlights-option). Chips use theme-chips-all and a shared theme-chips-chip (no theme-chip-style-<label> / theme-chip-highlight-<label>). Functionality is correct; selectors in the request were not literal. Consider adding kind-scoped testids (e.g. hf-theme-highlight-option) to make test automation more precise.",
+    "HolidayFilterPanel.jsx ThemeOptions preview correctly keeps already-selected highlights visible when collapsed; no functional issues."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Theme/Highlights UI uses a single testid for both style and highlight rows (hf-theme-option desktop, mhf-theme-option mobile) - filter by has_text when targeting a specific label. Chips strip testids: theme-chips (container), theme-chips-all, theme-chips-highlights-divider, theme-chips-chip for every other chip. Verified counts: Singapore All(22), Disney Cruise=1 ('1 holiday'), Universal Studios=11, Family+Universal (OR union)=16; Egypt Nile cruise=7 (legacy /afrika/aegypten/holidays/nile-cruise preselects chip 'Theme: Nile cruise'); Finland Northern Lights=8. Finland highlights include Northern Lights, Santa Claus Village, Glass igloos & ice hotels, Castles & fortresses, Sauna culture, Lapland & the Arctic, Husky & reindeer sledding. Thailand highlights include Phi Phi Islands(12), Four Islands tour(9), etc. Thailand honeymoons variant (/asien/thailand/honeymoons) renders romantic style labels: Beach romance, Grand journeys, Island escapes, Private & secluded, City & nightlife, Culture & temples, Adventure for two, Luxury stays - with HIGHLIGHTS heading present. Mobile Singapore: tap eg-mobile-group-theme -> mobile-filter-sheet opens, mhf-theme-highlights-heading present, 'Show all 33 highlights' expands, tick Universal Studios -> mobile-filter-apply reads 'Show 11 holidays', after apply URL is ?theme=Universal+Studios and eg-mobile-result-count = '11 holidays'. Detail pages tested OK: /asien/disney-adventure-cruise-from-singapore (contains 'Other Singapore holidays' section), /afrika/aegypten/luxor-strand-urlaub, /asien/north-central-vietnam-highlights-6d5n, /asien/best-of-phuket-krabi-bangkok - all h1 present, 0 broken images, 0 relevant console errors (only ignorable Turnstile/WebGL/font warnings). The BY_SLUG registry move to src/tours/tripIndex.js does not regress detail routing.",
+  "rca of the issue": "No issues found. Initial run reported 0 highlights because the test used a non-existent testid hf-theme-highlights-option; actual implementation uses hf-theme-option for both styles and highlights. Re-run with correct selector confirmed 18 rows (10 styles + 8 highlight preview) collapsed and 43 rows expanded on Singapore, matching 'Show all 33 highlights' label."
+}

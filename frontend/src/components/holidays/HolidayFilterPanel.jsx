@@ -66,32 +66,21 @@ export function GroupOptions({ group, facets, sel, onToggle, testPrefix, chips =
     return <div className="flex flex-wrap gap-2">{items.map((it) => <ChipToggle key={it.value} item={it} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />)}</div>;
   }
   const row = (it) => <CheckRow key={it.value} item={it} icon={it.icon} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />;
-  if (group === 'theme') return <ThemeOptions items={items} sel={sel} onToggle={onToggle} testPrefix={testPrefix} row={row} />;
+  if (group === 'experience') return <ExperienceOptions items={items} sel={sel} testPrefix={testPrefix} row={row} />;
   return <div className="flex flex-col">{items.map(row)}</div>;
 }
 
-const HL_PREVIEW = 8;
-function ThemeOptions({ items, sel, testPrefix, row }) {
+const PREVIEW = 8;
+function ExperienceOptions({ items, sel, testPrefix, row }) {
   const [all, setAll] = useState(false);
-  const stylesList = items.filter((it) => it.kind !== 'highlight');
-  const highlights = items.filter((it) => it.kind === 'highlight');
-  const shown = all ? highlights : highlights.filter((it, i) => i < HL_PREVIEW || sel.theme.includes(it.value));
+  const shown = all ? items : items.filter((it, i) => i < PREVIEW || sel.experience.includes(it.value));
   return (
     <div className="flex flex-col">
-      {stylesList.map(row)}
-      {highlights.length > 0 && (
-        <>
-          <div className={`flex items-center gap-2 ${stylesList.length ? 'mt-4 pt-4 border-t border-[#E4E3DB]' : ''} mb-1`} data-testid={`${testPrefix}-theme-highlights-heading`}>
-            <NavIcon name="star" size={16} className="text-[#E75E26]" />
-            <span className="eg-label-lg text-[#174358] uppercase tracking-wide text-xs">Highlights</span>
-          </div>
-          {shown.map(row)}
-          {highlights.length > HL_PREVIEW && (
-            <button type="button" onClick={() => setAll((a) => !a)} className="self-start mt-1 py-1.5 eg-label-lg text-[#174358] underline underline-offset-2" data-testid={`${testPrefix}-theme-highlights-more`}>
-              {all ? 'Show fewer highlights' : `Show all ${highlights.length} highlights`}
-            </button>
-          )}
-        </>
+      {shown.map(row)}
+      {items.length > PREVIEW && (
+        <button type="button" onClick={() => setAll((a) => !a)} className="self-start mt-1 py-1.5 eg-label-lg text-[#174358] underline underline-offset-2" data-testid={`${testPrefix}-experience-more`}>
+          {all ? 'Show fewer experiences' : `Show all ${items.length} experiences`}
+        </button>
       )}
     </div>
   );
