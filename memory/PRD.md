@@ -648,3 +648,35 @@ Learning: img() paths must be escaped, a hotel name with an apostrophe (Fisherme
 - Detail pages: "Other <Country> holidays you may like" now resolves the country via holidays/countryProducts.js (countryOf/productsOf) instead of falling back to Egypt. Also fixed destinationFor planner heading via the same lookup.
 - Bug fix: the 16 batch imported Thailand products lacked `href`, so cards linked to /afrika/aegypten/<slug>; all now use /asien/<slug>.
 - Tested: test_reports/iteration_44.json and iteration_45.json (all pass).
+
+## 2026-06 Singapore batch import + listing photo uniqueness
+
+### Singapore trips (15 new, live)
+| Trip | Slug | Days | Price INR |
+|---|---|---|---|
+| Romantic Singapore with Night Safari and Sentosa | romantic-singapore-night-safari-and-sentosa | 5 | 52026 |
+| Singapore Short Break with Night Safari | singapore-short-break-with-night-safari | 4 | 57950 |
+| Singapore Family Holiday with Universal Studios | singapore-family-holiday-with-universal-studios | 5 | 53476 |
+| Singapore Highlights with Sentosa and the Gardens | singapore-highlights-sentosa-and-gardens | 5 | 62778 |
+| Singapore Wildlife and Skyline Escape | singapore-wildlife-and-skyline-escape | 5 | 59577 |
+| Singapore for Couples with Adventure Cove | singapore-for-couples-with-adventure-cove | 6 | 57428 |
+| Singapore Couples Special with Jewel Changi | singapore-couples-special-with-jewel-changi | 5 | 71345 |
+| Singapore Family Safari and City Lights | singapore-family-safari-and-city-lights | 6 | 71684 |
+| Singapore Wild Trails and Island Days | singapore-wild-trails-and-island-days | 6 | 62308 |
+| Singapore with the Genting Dream Cruise | singapore-with-the-genting-dream-cruise | 6 | 56050 |
+| Singapore Honeymoon with the Genting Dream Cruise | singapore-honeymoon-with-the-genting-dream-cruise | 5 | 56460 |
+| Singapore and Penang on Royal Caribbean | singapore-and-penang-on-royal-caribbean | 4 | 60800 |
+| Disney Adventure Cruise from Singapore | disney-adventure-cruise-from-singapore | 4 | 61512 |
+| Singapore and Malaysia Honeymoon | singapore-and-malaysia-honeymoon | 7 | 57007 (singapore + malaysia) |
+| Singapore and Malaysia with Sentosa and Genting | singapore-and-malaysia-with-sentosa-and-genting | 7 | 59849 (singapore + malaysia) |
+
+Dropped as duplicate wrappers per user decision: singapore-cruise-package-from-delhi (same as the Genting trip) and economical-trip-to-singapore (same itinerary as the super deluxe version at a lower hotel tier).
+
+### Listing-card photo uniqueness (new hard rule)
+- Cause of the original complaint: imported trips used `heroGallery.slice(0, 4)` and neighbouring trips share source photos, so Romantic Krabi/Samui/Phuket, Phuket & Phi Phi Party Escape and the Honeymoon Trail all showed the same Phuket beach.
+- Every trip now declares an explicit 4-image `cardImages` array. Tooling: `scripts/thrillophilia/check_card_images.py` (fails on any shared card photo), `plan_card_images.py [files] --freeze [files]`, `apply_card_images.py`. Required by THRILLOPHILIA_IMPORT.md section 2 and checklist item 11.
+- Fixed: all 20 Thailand cards, Siam Splendour, the 2 legacy Thailand packages, 7 Vietnam packages (5 shared the Ha Long aerial) and all 15 new Singapore cards.
+
+### P1 backlog
+- 18 script-generated destinations (Japan, China, Indonesia, Cambodia, Laos, Philippines, Italy, Iceland, Greece, Norway, Ireland, Spain, Portugal, Croatia, England, Scotland, Finland, Sweden) ship ONE country hero photo, so every card on those listing pages is the same image. Needs ~8 sourced photos per country and a per-package gallery assignment. User has not yet chosen whether to fix all 18 or only the high-traffic ones.
+- No sitemap file exists in the repo; the honeymoon landing URL cannot be added until one is created.
