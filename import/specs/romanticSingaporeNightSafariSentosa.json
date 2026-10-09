@@ -1,0 +1,96 @@
+{
+  "source_slug": "glimpse-of-singapore",
+  "slug": "romantic-singapore-night-safari-and-sentosa",
+  "camel": "romanticSingaporeNightSafariSentosa",
+  "title": "Romantic Singapore with Night Safari and Sentosa",
+  "alt": "Gardens by the Bay Supertrees glowing above the Marina Bay skyline in Singapore",
+  "cta_country": "singapore",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "City break"],
+  "price": 52026,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": ["Singapore", "Marina Bay", "Sentosa"],
+  "counts": {"days": 5, "nights": 4, "cities": 1, "hotels": 1, "experiences": 8, "transfers": 9, "meals": 4},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Couples get the best of the city here. Wildlife after dark, the skyline from 57 floors up and a whole day on Sentosa.",
+    "tip": "Book the SkyPark slot before sunset and stay up there as the lights come on over Marina Bay. It is the one view everyone talks about afterwards."
+  },
+  "summary": "Five days in Singapore for two. Wildlife by tram on the first night, the city and Marina Bay on day two, a full day at Universal Studios, then Sentosa with the cable car, the oceanarium and the Wings of Time show on the beach.",
+  "included": "Included: 4 nights at the Aqueen Prestige Lavender with daily breakfast; Night Safari with tram ride; half day city tour; Marina Bay Sands SkyPark; Gardens by the Bay with Cloud Forest, Flower Dome and Jurassic World; Universal Studios one day pass; two way cable car sky pass; Singapore Oceanarium; Wings of Time; 9 private and shared transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; rides and games not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "City tour, SkyPark and the Gardens",
+    "3": "Universal Studios",
+    "4": "Sentosa, oceanarium and Wings of Time",
+    "5": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "Aqueen Prestige Hotel Lavender",
+    "2": "Aqueen Prestige Hotel Lavender",
+    "3": "Aqueen Prestige Hotel Lavender",
+    "4": "Aqueen Prestige Hotel Lavender",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to your hotel in Lavender",
+      "Check in and rest for a few hours before the evening out",
+      "Shared transfer to Mandai for the Night Safari with a tram ride through the park",
+      "Leopards, lions and tapirs are awake at this hour, which is the whole point"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, the Helix bridge, Chinatown and the colonial civic district",
+      "Marina Bay Sands SkyPark on level 57 for the view across the bay",
+      "Cloud Forest, Flower Dome and Jurassic World at Gardens by the Bay"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios with all seven themed zones",
+      "Battlestar Galactica, Transformers and the Mummy ride for the brave",
+      "Evening free for dinner in Chinatown or along Clarke Quay"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass across the harbour with Sentosa below you",
+      "Singapore Oceanarium with its open ocean tank and reef habitats",
+      "Wings of Time on Siloso beach after dark, water, fire and light"
+    ],
+    "5": [
+      "Breakfast and a relaxed check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3, 4, 5],
+      "dayLabel": "Day 1 to 5",
+      "hotel": "Aqueen Prestige Hotel Lavender",
+      "accom": "4 nights \u00b7 Breakfast included \u00b7 Deluxe room \u00b7 3\u2605 \u00b7 Aqueen Prestige Lavender, four minutes on foot from Lavender MRT",
+      "program": {
+        "name": "City nights and an island day",
+        "description": "Four nights in Lavender with the MRT at the door, a wildlife evening at Mandai, the Marina Bay skyline and a full day on Sentosa."
+      },
+      "activities": [
+        {"name": "Night Safari with Tram Ride", "match": "Night Safari", "day": 1, "description": "The world's first wildlife park built for after dark, with a tram circuit past the Asian elephants, hyenas and the big cats."},
+        {"name": "Half Day Singapore City Tour", "match": "City Tour", "day": 2, "description": "A shared coach run past Merlion Park, Marina Bay, the Helix bridge, Chinatown and the civic district buildings."},
+        {"name": "Marina Bay Sands SkyPark", "match": "SkyPark", "day": 2, "description": "The observation deck on level 57 of Marina Bay Sands, straight above the bay, the Gardens and the city towers."},
+        {"name": "Gardens by the Bay", "match": "Gardens By The Bay", "day": 2, "description": "Cloud Forest with its indoor waterfall, the Flower Dome and the Jurassic World walk among the Supertrees."},
+        {"name": "Universal Studios Singapore", "match": "Universal Studios", "day": 3, "description": "A one day pass for the Sentosa park, from Sci Fi City and Ancient Egypt to the Hollywood boulevard shows."},
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 4, "description": "A two way ride between Mount Faber, HarbourFront and Sentosa with the working harbour under your feet."},
+        {"name": "Singapore Oceanarium", "match": "Oceanarium", "day": 4, "description": "The rebuilt Sentosa aquarium with an open ocean tank, reef habitats and a research gallery for the children."},
+        {"name": "Wings of Time", "match": "Wings of Time", "day": 4, "description": "An open air night show on Siloso beach built from water jets, lasers, fire and a short story on screen."},
+        {"name": "Singapore River Cruise", "match": "River Cruise", "day": 2, "optional": true, "description": "A bumboat along the quays past the shophouses and the old bridges, best taken once the lights are on."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "source_slug": "honeymoon-cruise-package-of-singapore-super-deluxe",
+  "slug": "singapore-honeymoon-with-the-genting-dream-cruise",
+  "camel": "singaporeHoneymoonGentingCruise",
+  "title": "Singapore Honeymoon with the Genting Dream Cruise",
+  "alt": "Sun deck and pool on a cruise ship sailing out of Singapore",
+  "cta_country": "singapore",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Cruise"],
+  "price": 56460,
+  "transport": "Private airport and port transfers with shared coaches for tours",
+  "route_cities": ["Singapore", "Genting Dream", "Sentosa"],
+  "counts": {"days": 5, "nights": 4, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 10, "meals": 8},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Two nights at sea in the middle of a short honeymoon is the easiest way to slow a city trip down.",
+    "tip": "Ask for a late check out on the final day. You come off the ship in the morning and a room to shower in before the flight makes the whole day easier."
+  },
+  "summary": "Five honeymoon days. A wildlife evening on arrival, two nights aboard the Genting Dream with all meals, then back in port for Sentosa with the cable car, Madame Tussauds and the Wings of Time show.",
+  "included": "Included: 2 nights at the Hotel Mi Bencoolen with breakfast; 2 nights aboard the Genting Dream with breakfast, lunch and dinner; Night Safari with tram ride; two way cable car sky pass; Madame Tussauds with a digital photo; Wings of Time; 10 private and shared transfers including the cruise terminal.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; port charges and gratuities; speciality restaurants and paid decks on board; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "Aboard the Genting Dream",
+    "3": "A day at sea",
+    "4": "Back in port and Sentosa",
+    "5": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B, L, D", "3": "B, L, D", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "Hotel Mi Bencoolen",
+    "2": "Genting Dream Cruise",
+    "3": "Genting Dream Cruise",
+    "4": "Hotel Mi Bencoolen",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the Hotel Mi Bencoolen",
+      "Check in and rest for a few hours",
+      "Shared transfer to Mandai for the Night Safari with a tram ride",
+      "Late supper around Bencoolen Street when you are back"
+    ],
+    "2": [
+      "Breakfast, check out and private sedan transfer to the Marina Bay Cruise Centre",
+      "Board the Genting Dream and settle into your cabin",
+      "Lunch on board, then the pool deck as the ship sails out",
+      "Optional: the zipline, the Zouk beach club and the SportsPlex on deck"
+    ],
+    "3": [
+      "A full day at sea with all meals on board",
+      "Optional: the mini golf deck, the waterslide park and the rock climbing wall",
+      "Afternoon at the spa or on a quiet sun deck",
+      "Dinner and a show at the Zodiac theatre"
+    ],
+    "4": [
+      "Breakfast on board and disembark at the Marina Bay Cruise Centre",
+      "Shared transfer to Mount Faber and a two way cable car sky pass",
+      "Madame Tussauds on Sentosa with the Spirit of Singapore boat ride",
+      "Wings of Time on Siloso beach, then private transfer to your hotel"
+    ],
+    "5": [
+      "Breakfast and a relaxed check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1],
+      "dayLabel": "Day 1",
+      "hotel": "Hotel Mi Bencoolen, Singapore",
+      "hotel_label": "Hotel Mi Bencoolen",
+      "accom": "1 night \u00b7 Breakfast included \u00b7 Standard room \u00b7 4\u2605 \u00b7 Hotel Mi Bencoolen, a short walk from Bencoolen MRT and Bras Basah",
+      "program": {
+        "name": "One night and a wildlife evening",
+        "description": "A single night in the city centre to land, settle and get out to Mandai for the Night Safari before the sailing."
+      },
+      "activities": [
+        {"name": "Night Safari with Tram Ride", "match": "Night Safari", "day": 1, "description": "A tram circuit through the Mandai park after dark, past the elephants, hyenas and the big cats."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Genting Dream",
+      "city": "Singapore",
+      "days": [2, 3],
+      "dayLabel": "Day 2 to 3",
+      "hotel": "Genting Dream Cruise",
+      "hotel_label": "Genting Dream",
+      "accom": "2 nights \u00b7 Breakfast, lunch and dinner included \u00b7 Standard cabin \u00b7 Genting Dream, sailing from the Marina Bay Cruise Centre",
+      "program": {
+        "name": "Two nights at sea",
+        "description": "A short sailing with all meals on board, a waterslide park, a zipline above the deck and evening shows at the theatre."
+      },
+      "activities": [
+        {"name": "Zipline on Deck", "match": "Zipline", "day": 2, "optional": true, "description": "A zipline strung above the upper decks of the Genting Dream, with open sea on both sides of you."},
+        {"name": "Waterslide Park on Deck", "match": "Waterslide", "day": 3, "optional": true, "description": "Six slides and a splash pool on the top decks, open through the full day at sea."},
+        {"name": "Zodiac Theatre Show", "match": "Zodiac", "day": 3, "optional": true, "description": "The ship's main theatre with acrobatics and music sets, two performances most evenings."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "Sentosa",
+      "city": "Singapore",
+      "days": [4, 5],
+      "dayLabel": "Day 4 to 5",
+      "hotel": "Hotel Mi Bencoolen, Singapore",
+      "hotel_label": "Hotel Mi Bencoolen",
+      "accom": "1 night \u00b7 Breakfast included \u00b7 Standard room \u00b7 4\u2605 \u00b7 Hotel Mi Bencoolen, back in the city centre for the last night",
+      "program": {
+        "name": "An island day to finish",
+        "description": "Straight off the ship and onto the cable car, with Madame Tussauds and the beachfront night show before a final city night."
+      },
+      "activities": [
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 4, "description": "A two way ride between Mount Faber, HarbourFront and Sentosa, high above the working harbour."},
+        {"name": "Madame Tussauds Singapore", "match": "Madame Tussauds", "day": 4, "description": "Wax figures, the Spirit of Singapore boat ride through the city's history and a digital photo to keep."},
+        {"name": "Wings of Time", "match": "Wings Of Time", "day": 4, "description": "A twenty minute night show on Siloso beach built from water screens, lasers and flame jets."}
+      ]
+    }
+  ]
+}

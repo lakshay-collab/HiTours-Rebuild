@@ -1,69 +1,545 @@
 [
  {
-  "slug": "couples-getaway-to-thailand-with-koh-samui",
-  "title": "Romantic Escape to Thailand with FREE Visit to Krabi Four Islands",
-  "dur": "7D/6N",
-  "price": 43999,
-  "struck": 86990,
+  "slug": "glimpse-of-singapore",
+  "title": "Singapore Romantic Escape | Night Safari, Skyline Views & Sentosa Experiences",
+  "dur": "5D/4N",
+  "price": 54764,
+  "struck": 63507,
   "cur": "INR",
   "cities": [
    [
-    "Phuket",
-    1
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Aqueen Prestige Hotel Lavender",
+    "Singapore",
+    4,
+    13
+   ]
+  ],
+  "acts": 33,
+  "gallery": 147
+ },
+ {
+  "slug": "economical-trip-to-singapore",
+  "title": "Singapore Getaway | FREE Night Safari Zoo Visit",
+  "dur": "4D/3N",
+  "price": 56000,
+  "struck": 70000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    4
+   ]
+  ],
+  "days": 4,
+  "hotels": [
+   [
+    "ibis Styles Singapore Albert",
+    "Singapore",
+    3,
+    15
    ],
    [
-    "Krabi",
-    2
+    "ibis budget Singapore Clarke Quay",
+    "Singapore",
+    3,
+    9
+   ]
+  ],
+  "acts": 27,
+  "gallery": 111
+ },
+ {
+  "slug": "singapore-family-getaway",
+  "title": "Singapore Family Getaway | Universal Studios, City Highlights & Skyline Views",
+  "dur": "5D/4N",
+  "price": 56291,
+  "struck": 60000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Village Hotel Bugis by Far East Hospitality",
+    "Singapore",
+    4,
+    18
+   ]
+  ],
+  "acts": 26,
+  "gallery": 128
+ },
+ {
+  "slug": "singapore-vacation-with-genting-cruise",
+  "title": "Singapore City Lights and Ocean Nights | Genting Dream Cruise",
+  "dur": "6D/5N",
+  "price": 59000,
+  "struck": 81945,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    6
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
    ],
    [
-    "Koh Samui",
-    2
+    "ibis budget Singapore Clarke Quay",
+    "Singapore",
+    3,
+    9
    ],
    [
-    "Phuket",
-    2
+    "Genting Dream Cruise",
+    "Singapore",
+    2,
+    7
+   ]
+  ],
+  "acts": 33,
+  "gallery": 132
+ },
+ {
+  "slug": "singapore-cruise-package-from-delhi",
+  "title": "Singapore Cruise Package From Delhi",
+  "dur": "6D/5N",
+  "price": 59030,
+  "struck": 81975,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    6
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "ibis budget Singapore Clarke Quay",
+    "Singapore",
+    3,
+    9
+   ],
+   [
+    "Genting Dream Cruise",
+    "Singapore",
+    2,
+    7
+   ]
+  ],
+  "acts": 33,
+  "gallery": 132
+ },
+ {
+  "slug": "honeymoon-cruise-package-of-singapore-super-deluxe",
+  "title": "Offshore Romance in Singapore with Genting Dream Cruise",
+  "dur": "5D/4N",
+  "price": 59432,
+  "struck": 67000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Hotel Mi Bencoolen, Singapore",
+    "Singapore",
+    1,
+    10
+   ],
+   [
+    "Hotel Boss",
+    "Singapore",
+    1,
+    13
+   ],
+   [
+    "Genting Dream Cruise",
+    "Singapore",
+    2,
+    7
+   ]
+  ],
+  "acts": 14,
+  "gallery": 118
+ },
+ {
+  "slug": "6-nights-singapore-malaysia-honeymoon-package",
+  "title": "Unforgettable Honeymoon at Singapore & Malaysia",
+  "dur": "7D/6N",
+  "price": 60007,
+  "struck": 89907,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    3
+   ],
+   [
+    "Kuala Lumpur",
+    4
    ]
   ],
   "days": 7,
   "hotels": [
    [
-    "Club Bamboo Boutique Resort & Spa",
-    "Phuket",
-    1,
-    11
-   ],
-   [
-    "Jiraporn Hill resort, Phuket",
-    "Phuket",
-    1,
-    12
-   ],
-   [
-    "Timber House Resort, Krabi",
-    "Krabi",
-    2,
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
     14
    ],
    [
-    "Tetris Hotel, Krabi",
-    "Krabi",
-    2,
+    "Value Hotel Thomson, Singapore",
+    "Singapore",
+    3,
     12
    ],
    [
-    "Montien House",
-    "Koh Samui",
-    2,
-    12
+    "Arenaa Star Hotel, Kuala Lumpur",
+    "Kuala Lumpur",
+    3,
+    9
    ],
    [
-    "Chaweng Noi Pool Villa",
-    "Koh Samui",
-    2,
+    "Hilton Garden Inn Kuala Lumpur - North",
+    "Kuala Lumpur",
+    3,
     12
    ]
   ],
-  "acts": 21,
+  "acts": 32,
+  "gallery": 169
+ },
+ {
+  "slug": "singapore-couple-tour",
+  "title": "Singapore Couple Tour | Journey Through the Lion City",
+  "dur": "6D/5N",
+  "price": 60450,
+  "struck": 88750,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    6
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "One Farrer Hotel Singapore",
+    "Singapore",
+    5,
+    26
+   ]
+  ],
+  "acts": 35,
+  "gallery": 168
+ },
+ {
+  "slug": "singapore-wonders",
+  "title": "Singapore Wonders | From Heritage Hues to Modern Skylines",
+  "dur": "5D/4N",
+  "price": 62713,
+  "struck": 83408,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Holiday Inn Express & Suites Singapore Novena by IHG",
+    "Singapore",
+    4,
+    6
+   ],
+   [
+    "Furama RiverFront",
+    "Singapore",
+    4,
+    95
+   ]
+  ],
+  "acts": 35,
+  "gallery": 216
+ },
+ {
+  "slug": "economical-trip-to-singapore-super-deluxe",
+  "title": "Singapore Getaway | FREE Night Safari Zoo Visit",
+  "dur": "4D/3N",
+  "price": 61000,
+  "struck": 76250,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    4
+   ]
+  ],
+  "days": 4,
+  "hotels": [
+   [
+    "Hotel Boss, Singapore",
+    "Singapore",
+    3,
+    13
+   ],
+   [
+    "V Hotel Lavender, Singapore",
+    "Singapore",
+    3,
+    11
+   ]
+  ],
+  "acts": 27,
+  "gallery": 111
+ },
+ {
+  "slug": "singapore-royal-caribbean-cruise-package",
+  "title": "Royal Caribbean Singapore Voyage | Luxury on the Seas",
+  "dur": "4D/3N",
+  "price": 64000,
+  "struck": 88100,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    1
+   ],
+   [
+    "Penang",
+    1
+   ],
+   [
+    "Singapore",
+    2
+   ]
+  ],
+  "days": 4,
+  "hotels": [
+   [
+    "Royal Caribbean Cruise",
+    "Singapore",
+    3,
+    5
+   ]
+  ],
+  "acts": 12,
+  "gallery": 81
+ },
+ {
+  "slug": "holiday-tour-of-singapore-and-malaysia-for-7-days-flight-included",
+  "title": "Delights of Singapore and Malaysia with Sentosa Island",
+  "dur": "7D/6N",
+  "price": 62999,
+  "struck": 67830,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    3
+   ],
+   [
+    "Kuala Lumpur",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "Value Hotel Thomson, Singapore",
+    "Singapore",
+    3,
+    12
+   ],
+   [
+    "Arenaa Star Hotel, Kuala Lumpur",
+    "Kuala Lumpur",
+    3,
+    9
+   ],
+   [
+    "Hilton Garden Inn Kuala Lumpur - North",
+    "Kuala Lumpur",
+    3,
+    12
+   ]
+  ],
+  "acts": 35,
+  "gallery": 171
+ },
+ {
+  "slug": "trails-of-singapore",
+  "title": "Trails of Singapore | From Wild Wonders to Tropical Treasures",
+  "dur": "6D/5N",
+  "price": 65587,
+  "struck": 81324,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    6
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Hotel Grand Central",
+    "Singapore",
+    1,
+    10
+   ],
+   [
+    "Hotel Boss",
+    "Singapore",
+    1,
+    13
+   ]
+  ],
+  "acts": 41,
+  "gallery": 158
+ },
+ {
+  "slug": "singapore-disney-cruise-inside-stateroom-package",
+  "title": "Disney Cruise, Singapore",
+  "dur": "4D/3N",
+  "price": 64750,
+  "struck": 89355,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    4
+   ]
+  ],
+  "days": 4,
+  "hotels": [
+   [
+    "Inside Stateroom, The Disney Adventure Cruise in Singapore",
+    "Singapore",
+    3,
+    5
+   ]
+  ],
+  "acts": 13,
+  "gallery": 81
+ },
+ {
+  "slug": "5-day-tour-of-singapore",
+  "title": "Glimpse of Singapore | Gardens, Skies & City Lights",
+  "dur": "5D/4N",
+  "price": 66082,
+  "struck": 81922,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Holiday Inn Express & Suites Singapore Novena by IHG",
+    "Singapore",
+    4,
+    6
+   ]
+  ],
+  "acts": 35,
+  "gallery": 135
+ },
+ {
+  "slug": "singapore-couple-special",
+  "title": "Singapore Couple Special | From Heritage Tales to Starlit Trails",
+  "dur": "5D/4N",
+  "price": 75100,
+  "struck": 100134,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "V Hotel Lavender",
+    "Singapore",
+    4,
+    11
+   ],
+   [
+    "Hotel Boss",
+    "Singapore",
+    4,
+    13
+   ]
+  ],
+  "acts": 42,
+  "gallery": 192
+ },
+ {
+  "slug": "singapore-getaway",
+  "title": "Singapore Family Tour | City Lights & Safari Nights",
+  "dur": "6D/5N",
+  "price": 75457,
+  "struck": 85000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    6
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Village Hotel Bugis by Far East Hospitality",
+    "Singapore",
+    5,
+    18
+   ]
+  ],
+  "acts": 37,
   "gallery": 155
  }
 ]

@@ -54,11 +54,26 @@ Ignore the "Additional Information" section, because it is an old itinerary.
 | Where on the page | Images to take |
 |---|---|
 | Hero gallery | 10 images from the Destinations tab, none of them a hero tile. First one is a sharp landscape of the destination. |
-| Card images | The first 4 hero gallery images |
+| Card images | 4 images that no other trip of that country already uses on its card. Start from the hero gallery, then fall back to this trip's destination/day photos. Never `heroGallery.slice(0, 4)` blindly — neighbouring trips share source photos and the listing page then shows the same picture on several cards. |
 | Each stop | 4 destination images of that city |
 | Each day carousel (dayImages) | 3 to 5 images: that day's activity images, then city images. No repeats within a day. |
 | Each hotel | All photos from its own gallery |
 | Each activity card | 1 image that shows that activity |
+
+### Card images must be unique per country (hard rule)
+
+The listing page shows `product.images[0]`. If two trips share it, the grid looks duplicated.
+
+1. Write `cardImages` as an explicit 4-image array in the trip's data file (not a slice).
+2. Prefer hero-gallery photos; if they are already taken by another trip, use this trip's stop/`dayImages` photos. Skip hotel close-ups and anything with `Screen_Shot` in the filename.
+3. Verify before finishing:
+
+```bash
+python3 /app/scripts/thrillophilia/check_card_images.py <file1>Data.js <file2>Data.js ...
+# exit 0 = no card photo is shared by two trips
+# /app/scripts/thrillophilia/plan_card_images.py <files...> suggests a conflict-free set
+```
+4. Runtime check: open `/<region>/<country>/holidays`, scroll to load every card, and confirm each card's first `img` src is unique.
 
 Image helper (same as moroccoEgyptData.js):
 
@@ -261,6 +276,7 @@ Print PASS or FAIL per trip for:
 8. Zero dashes in text.
 9. No 8 word match with Thrillophilia text.
 10. The page renders at /<Region_Path>/<slug>/.
+11. `python3 /app/scripts/thrillophilia/check_card_images.py <country data files>` exits 0 — no card photo repeats across the country's trips.
 
 
 ## 7. REPORT (short, one block per link)

@@ -1,0 +1,124 @@
+{
+  "source_slug": "6-nights-singapore-malaysia-honeymoon-package",
+  "slug": "singapore-and-malaysia-honeymoon",
+  "camel": "singaporeMalaysiaHoneymoon",
+  "title": "Singapore and Malaysia Honeymoon",
+  "alt": "The Petronas Towers lit up at night in Kuala Lumpur, Malaysia",
+  "cta_country": "singapore",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "City break"],
+  "price": 57007,
+  "transport": "Private airport transfers, a coach crossing to Kuala Lumpur and shared city tours",
+  "route_cities": ["Singapore", "Sentosa", "Kuala Lumpur", "Genting Highlands", "Batu Caves"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 10, "meals": 6},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Two cities, one crossing and six nights. Singapore for the first half, Kuala Lumpur for the hills and the caves.",
+    "tip": "Keep the Genting day for clear weather if you can move it. The cable car up is the best part and cloud sits on the ridge most afternoons."
+  },
+  "summary": "Seven days across Singapore and Malaysia. Three nights in Singapore with a city tour and a Sentosa day, then three in Kuala Lumpur with a city tour and a day trip up to Genting Highlands by way of Batu Caves.",
+  "included": "Included: 3 nights at the ibis Novena in Singapore and 3 nights at the Arenaa Star in Kuala Lumpur, both with breakfast; Singapore half day city tour; two way cable car sky pass; Madame Tussauds with a digital photo; Kuala Lumpur half day city tour; Genting Highlands day trip with Batu Caves; 10 private and shared transfers including the crossing to Malaysia.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; the Genting Skyway cable car ticket; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Singapore",
+    "2": "Singapore city tour",
+    "3": "Sentosa and Madame Tussauds",
+    "4": "On to Kuala Lumpur",
+    "5": "Kuala Lumpur city tour",
+    "6": "Batu Caves and Genting Highlands",
+    "7": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "ibis Singapore Novena",
+    "2": "ibis Singapore Novena",
+    "3": "ibis Singapore Novena",
+    "4": "Arenaa Star Hotel, Kuala Lumpur",
+    "5": "Arenaa Star Hotel, Kuala Lumpur",
+    "6": "Arenaa Star Hotel, Kuala Lumpur",
+    "7": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the ibis Novena",
+      "Check in and keep the first evening easy",
+      "Optional: a river bumboat at Clarke Quay or supper in Little India",
+      "Optional: the Supertree light show at Gardens by the Bay"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, the Helix bridge and Chinatown",
+      "Past Raffles Hotel, the Esplanade and the civic district",
+      "Afternoon free around Orchard Road or Bugis"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass across the harbour to Sentosa",
+      "Madame Tussauds with the Spirit of Singapore boat ride",
+      "Evening free on Siloso beach or back in the city"
+    ],
+    "4": [
+      "Breakfast, check out and coach transfer across the causeway",
+      "Border formalities at Johor, then on up to Kuala Lumpur",
+      "Check in at the Arenaa Star and rest after the road day",
+      "Optional: the Petronas Towers park and its evening fountain show"
+    ],
+    "5": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "The King's Palace gates, the National Monument and Merdeka Square",
+      "The old railway station, Little India and the central market",
+      "Afternoon free at Bukit Bintang or the Petronas malls"
+    ],
+    "6": [
+      "Breakfast, then shared transfer out towards the hills",
+      "Batu Caves with its 272 steps and the limestone cave temple",
+      "On up to Genting Highlands for the theme park plateau and the casino floor",
+      "Return in the evening with a stop at a local market"
+    ],
+    "7": [
+      "Breakfast and check out",
+      "Private sedan transfer to Kuala Lumpur airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "ibis Singapore Novena",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Standard room \u00b7 3\u2605 \u00b7 ibis Novena, two minutes from Novena MRT station",
+      "program": {
+        "name": "Three nights in the city",
+        "description": "Novena as a base for the city tour, the Sentosa cable car and a free evening or two for the waterfront."
+      },
+      "activities": [
+        {"name": "Half Day Singapore City Tour", "match": "Sightseeing Tour", "day": 2, "description": "A shared coach tour of Merlion Park, Marina Bay, the Helix bridge, Chinatown and the civic district."},
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 3, "description": "A two way ride between Mount Faber, HarbourFront and Sentosa, high above the working harbour."},
+        {"name": "Madame Tussauds Singapore", "match": "Madame Tussauds", "day": 3, "description": "Wax figures, the Spirit of Singapore boat ride through the city's history and a digital photo to keep."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Kuala Lumpur",
+      "city": "Kuala Lumpur",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "Arenaa Star Hotel, Kuala Lumpur",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Standard room \u00b7 3\u2605 \u00b7 Arenaa Star in Bukit Bintang, walking distance from Jalan Alor",
+      "program": {
+        "name": "City, caves and the highlands",
+        "description": "Three nights in Bukit Bintang with a city tour, the Batu Caves temple and a full day up at Genting Highlands."
+      },
+      "activities": [
+        {"name": "Kuala Lumpur Half Day City Tour", "match": "Kuala Lumpur Half Day", "day": 5, "description": "A shared coach tour past the King's Palace, the National Monument, Merdeka Square and the central market."},
+        {"name": "Genting Highlands and Batu Caves", "match": "Genting Highlands", "day": 6, "description": "A day trip up to the Genting plateau with a stop at the Batu Caves limestone temple and its painted steps."},
+        {"name": "Petronas Twin Towers Skybridge", "match": "Petronas", "day": 4, "optional": true, "description": "The skybridge and observation deck of the twin towers, with timed tickets that sell out early in the day."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "source_slug": "5-day-tour-of-singapore",
+  "slug": "singapore-highlights-sentosa-and-gardens",
+  "camel": "singaporeHighlightsSentosaGardens",
+  "title": "Singapore Highlights with Sentosa and the Gardens",
+  "alt": "Cable car cabins crossing the harbour towards Sentosa island in Singapore",
+  "cta_country": "singapore",
+  "tag": "City break",
+  "tags": [
+    "City break",
+    "Family"
+  ],
+  "price": 62778,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Sentosa",
+    "Marina Bay"
+  ],
+  "counts": {
+    "days": 5,
+    "nights": 4,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 7,
+    "transfers": 9,
+    "meals": 4
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "This is the order I give first time visitors. Sentosa early while energy is high, the city and the Gardens at the end.",
+    "tip": "Give yourself two hours at Jewel on the way out. The waterfall and the canopy park sit inside the airport, so you lose nothing from the trip."
+  },
+  "summary": "Five days of the headline sights. The cable car, oceanarium and Wings of Time on Sentosa, a full day at Universal Studios, then the city tour with Gardens by the Bay and the Marina Bay Sands SkyPark.",
+  "included": "Included: 4 nights at the Holiday Inn Express Novena with daily breakfast; two way cable car sky pass; Singapore Oceanarium; Wings of Time; Universal Studios one day pass; half day city tour; Gardens by the Bay with Cloud Forest and Jurassic World; Marina Bay Sands SkyPark; 9 private and shared transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and Changi Jewel",
+    "2": "Cable car, oceanarium and Wings of Time",
+    "3": "Universal Studios",
+    "4": "City tour, Gardens and the SkyPark",
+    "5": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B",
+    "5": "B"
+  },
+  "hotel_by_day": {
+    "1": "Holiday Inn Express Novena",
+    "2": "Holiday Inn Express Novena",
+    "3": "Holiday Inn Express Novena",
+    "4": "Holiday Inn Express Novena",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to Novena",
+      "Time at Jewel on the way out of the terminal for the Rain Vortex",
+      "Check in and keep the first evening free",
+      "Optional: supper at a hawker centre near Novena MRT"
+    ],
+    "2": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass with the harbour and the container port below",
+      "Singapore Oceanarium on Sentosa with its open ocean tank",
+      "Wings of Time on Siloso beach once the sun is down"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Shows and coasters through the afternoon at your own pace",
+      "Evening free for the Sentosa boardwalk or VivoCity"
+    ],
+    "4": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, Chinatown and the civic district",
+      "Cloud Forest and the Jurassic World trail at Gardens by the Bay",
+      "Marina Bay Sands SkyPark on level 57 for the last view of the city"
+    ],
+    "5": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dayLabel": "Day 1 to 5",
+      "hotel": "Holiday Inn Express & Suites Singapore Novena by IHG",
+      "accom": "4 nights · Breakfast included · Super deluxe room · 4★ · Holiday Inn Express Novena, on the MRT line two stops from Orchard Road",
+      "program": {
+        "name": "The headline sights in order",
+        "description": "Four nights in Novena with Sentosa at the start, a theme park day in the middle and the city skyline saved for the end."
+      },
+      "activities": [
+        {
+          "name": "Singapore Cable Car Sky Pass",
+          "match": "Cable Car",
+          "day": 2,
+          "description": "A two way ride from Mount Faber over HarbourFront to Sentosa, with the port and the islands below."
+        },
+        {
+          "name": "Singapore Oceanarium",
+          "match": "Oceanarium",
+          "day": 2,
+          "description": "Sentosa's rebuilt aquarium with an open ocean tank, reef galleries and a research wing for the children."
+        },
+        {
+          "name": "Wings of Time",
+          "match": "Wings of Time",
+          "day": 2,
+          "description": "A twenty minute night show on the beachfront built from water jets, lasers, fire and a short film."
+        },
+        {
+          "name": "Universal Studios Singapore",
+          "match": "Universal Studios",
+          "day": 3,
+          "description": "A one day pass covering Sci Fi City, Ancient Egypt, Far Far Away and the Hollywood boulevard shows."
+        },
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "City Tour",
+          "day": 4,
+          "description": "A shared coach tour past Merlion Park, Marina Bay, the Helix bridge, Chinatown and the old civic quarter."
+        },
+        {
+          "name": "Gardens by the Bay",
+          "match": "Gardens By The Bay",
+          "day": 4,
+          "description": "The Cloud Forest dome with its indoor waterfall and the Jurassic World trail among the Supertrees."
+        },
+        {
+          "name": "Marina Bay Sands SkyPark",
+          "match": "SkyPark",
+          "day": 4,
+          "description": "The observation deck on level 57, straight above the bay, the Gardens and the financial district."
+        },
+        {
+          "name": "Singapore Flyer",
+          "match": "Singapore Flyer",
+          "day": 1,
+          "optional": true,
+          "description": "A slow turn on the observation wheel beside Marina Bay, with the Strait and the skyline in one sweep."
+        }
+      ],
+      "hotel_label": "Holiday Inn Express Novena"
+    }
+  ]
+}

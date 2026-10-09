@@ -1,0 +1,209 @@
+{
+  "source_slug": "singapore-couple-special",
+  "slug": "singapore-couples-special-with-jewel-changi",
+  "camel": "singaporeCouplesSpecialJewel",
+  "title": "Singapore Couples Special with Jewel Changi",
+  "alt": "The Rain Vortex waterfall inside Jewel Changi Airport in Singapore",
+  "cta_country": "singapore",
+  "tag": "Honeymoon",
+  "tags": [
+    "Honeymoon",
+    "Culture"
+  ],
+  "price": 71345,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Chinatown",
+    "Sentosa",
+    "Marina Bay",
+    "Changi"
+  ],
+  "counts": {
+    "days": 5,
+    "nights": 4,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 13,
+    "transfers": 15,
+    "meals": 4
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "This is the fullest Singapore we sell. Thirteen experiences in four nights, and still a river cruise and a coastal walk in there.",
+    "tip": "Do the Chinatown Heritage Centre before the Night Safari on day one. It is indoors, it is air conditioned and it fills the slow afternoon after a morning flight."
+  },
+  "summary": "Five busy days for two. Chinatown heritage and the Night Safari on arrival, a Sentosa day with SkyHelix and HydroDash, the ArtScience Museum with a river cruise, the SkyPark with a coastal walk and Harry Potter, then Jewel Changi on the way out.",
+  "included": "Included: 4 nights at the V Hotel Lavender with daily breakfast; Chinatown Heritage Centre; Night Safari with tram ride; two way cable car sky pass; SkyHelix Sentosa; HydroDash; Wings of Time; ArtScience Museum Future World; half day city tour; Singapore River Cruise; Marina Bay Sands SkyPark; guided coastal walk at Labrador Park; Harry Potter Visions of Magic; Jewel Changi attractions; 15 private and shared transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival, Chinatown and the Night Safari",
+    "2": "Sentosa with SkyHelix and HydroDash",
+    "3": "ArtScience Museum and the river",
+    "4": "SkyPark, Labrador Park and Harry Potter",
+    "5": "Jewel Changi and departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B",
+    "5": "B"
+  },
+  "hotel_by_day": {
+    "1": "V Hotel Lavender",
+    "2": "V Hotel Lavender",
+    "3": "V Hotel Lavender",
+    "4": "V Hotel Lavender",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the V Hotel Lavender",
+      "Shared transfer to the Chinatown Heritage Centre and its restored shophouse rooms",
+      "Evening shared transfer to Mandai for the Night Safari with a tram ride",
+      "Supper near Lavender MRT when you get back"
+    ],
+    "2": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass across to Sentosa with the harbour below",
+      "SkyHelix for an open air seat 79 metres up, then HydroDash on the water",
+      "Wings of Time on Siloso beach to close the day"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to the ArtScience Museum",
+      "Future World with its light rooms and the digital waterfall",
+      "Half day city tour through Merlion Park, Chinatown and the civic district",
+      "Singapore River Cruise from Clarke Quay as the lights come on"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Marina Bay Sands",
+      "SkyPark on level 57 for the view over the bay and the Gardens",
+      "Guided coastal walk at Labrador Nature Park along the old sea wall",
+      "Harry Potter Visions of Magic in the afternoon, an indoor walkthrough"
+    ],
+    "5": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport with time to spare",
+      "Changi Experience Studio and the Canopy Park bridges at Jewel",
+      "Last look at the Rain Vortex before your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dayLabel": "Day 1 to 5",
+      "hotel": "V Hotel Lavender",
+      "accom": "4 nights · Breakfast included · Standard room · 4★ · V Hotel Lavender, directly above Lavender MRT with a 24 hour food court below",
+      "program": {
+        "name": "Heritage, heights and the airport garden",
+        "description": "Four nights above an MRT station, with a heritage museum, two island viewpoints, a river cruise and the Jewel canopy on the last morning."
+      },
+      "activities": [
+        {
+          "name": "Chinatown Heritage Centre",
+          "match": "Chinatown Heritage",
+          "day": 1,
+          "description": "Three restored shophouses on Pagoda Street, furnished as the cubicle homes of early Chinese migrants to Singapore."
+        },
+        {
+          "name": "Night Safari with Tram Ride",
+          "match": "Night Safari",
+          "day": 1,
+          "description": "A tram circuit through the Mandai park after dark, past the elephants, hyenas and leopards."
+        },
+        {
+          "name": "Singapore Cable Car Sky Pass",
+          "match": "Cable Car",
+          "day": 2,
+          "description": "A two way ride between Mount Faber, HarbourFront and Sentosa, high above the working harbour."
+        },
+        {
+          "name": "SkyHelix Sentosa",
+          "match": "SkyHelix",
+          "day": 2,
+          "description": "An open air gondola that rises 79 metres above Sentosa and turns slowly for a full view of the southern islands."
+        },
+        {
+          "name": "HydroDash",
+          "match": "HydroDash",
+          "day": 2,
+          "description": "A floating obstacle course off Palawan beach with climbing walls, slides and trampolines on the water."
+        },
+        {
+          "name": "Wings of Time",
+          "match": "Wings of Time",
+          "day": 2,
+          "description": "A night show on Siloso beach built from water screens, lasers, flame jets and a short film."
+        },
+        {
+          "name": "ArtScience Museum Future World",
+          "match": "ArtScience",
+          "day": 3,
+          "description": "The permanent teamLab exhibition at Marina Bay Sands, with light installations and a digital waterfall room."
+        },
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "City Tour",
+          "day": 3,
+          "description": "A shared coach tour of Merlion Park, Marina Bay, Chinatown and the colonial civic district."
+        },
+        {
+          "name": "Singapore River Cruise",
+          "match": "River Cruise",
+          "day": 3,
+          "description": "A bumboat from Clarke Quay past the godowns and bridges of the old trading river, about forty minutes."
+        },
+        {
+          "name": "Marina Bay Sands SkyPark",
+          "match": "SkyPark",
+          "day": 4,
+          "description": "The level 57 observation deck looking down on the bay, the Gardens and the financial district."
+        },
+        {
+          "name": "Guided Coastal Walk at Labrador Park",
+          "match": "Keppel",
+          "day": 4,
+          "description": "A guided walk at Labrador Nature Park along the old sea wall and gun batteries, with the Strait on one side."
+        },
+        {
+          "name": "Harry Potter Visions of Magic",
+          "match": "Harry Potter",
+          "day": 4,
+          "description": "An indoor walkthrough of nine art installations drawn from the films, at Resorts World Sentosa."
+        },
+        {
+          "name": "Jewel Changi Attractions",
+          "match": "Jewel Changi",
+          "day": 5,
+          "description": "The Changi Experience Studio and Canopy Park bridges beside the Rain Vortex, inside the airport itself."
+        }
+      ]
+    }
+  ]
+}

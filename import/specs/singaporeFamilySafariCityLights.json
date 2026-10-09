@@ -1,0 +1,198 @@
+{
+  "source_slug": "singapore-getaway",
+  "slug": "singapore-family-safari-and-city-lights",
+  "camel": "singaporeFamilySafariCityLights",
+  "title": "Singapore Family Safari and City Lights",
+  "alt": "Supertrees lit up at Gardens by the Bay in Singapore",
+  "cta_country": "singapore",
+  "tag": "Family",
+  "tags": [
+    "Family",
+    "Nature"
+  ],
+  "price": 71684,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Marina Bay",
+    "Sentosa",
+    "Mandai"
+  ],
+  "counts": {
+    "days": 6,
+    "nights": 5,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 10,
+    "transfers": 10,
+    "meals": 5
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Three parks at Mandai in one day is a lot, so we put them late in the trip when the children know the pace.",
+    "tip": "Pack swimwear for the hotel rooftop. Most families end up back at the pool every afternoon between the big outings."
+  },
+  "summary": "Six days for a family. The city tour with the SkyPark and Gardens by the Bay, a full day at Universal Studios, Sentosa with the cable car, oceanarium and Wings of Time, then a long Mandai day with Bird Paradise, River Wonders and the Night Safari.",
+  "included": "Included: 5 nights at the Village Hotel Bugis with daily breakfast; half day city tour; Marina Bay Sands SkyPark; the Gardens by the Bay domes with the Jurassic World trail; Universal Studios one day pass; two way cable car sky pass; Singapore Oceanarium; Wings of Time; Bird Paradise; River Wonders; Night Safari with tram ride; 10 private and shared transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Singapore",
+    "2": "City tour, SkyPark and the Gardens",
+    "3": "Universal Studios",
+    "4": "Sentosa, oceanarium and Wings of Time",
+    "5": "Mandai parks and the Night Safari",
+    "6": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B",
+    "5": "B",
+    "6": "B"
+  },
+  "hotel_by_day": {
+    "1": "Village Hotel Bugis by Far East Hospitality",
+    "2": "Village Hotel Bugis by Far East Hospitality",
+    "3": "Village Hotel Bugis by Far East Hospitality",
+    "4": "Village Hotel Bugis by Far East Hospitality",
+    "5": "Village Hotel Bugis by Far East Hospitality",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to Bugis",
+      "Check in and let the children loose in the rooftop pool",
+      "Easy first evening at the Bugis street market and food court",
+      "Optional: the Rain Vortex at Jewel on the way out of the airport"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, the Helix bridge, Chinatown and the civic district",
+      "Marina Bay Sands SkyPark on level 57 for the view across the bay",
+      "Cloud Forest, Flower Dome and Jurassic World at Gardens by the Bay"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Minion Land and Far Far Away first, the coasters after lunch",
+      "Back to the hotel in your own time on the Sentosa Express"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass over the harbour with the port below",
+      "Singapore Oceanarium with its open ocean tank and reef galleries",
+      "Wings of Time on Siloso beach after dark"
+    ],
+    "5": [
+      "Breakfast, then shared transfer out to the Mandai reserve",
+      "Bird Paradise with its walk through aviaries and keeper talks",
+      "River Wonders next door for the giant otters and manatees",
+      "Night Safari with a tram ride to finish the day"
+    ],
+    "6": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dayLabel": "Day 1 to 6",
+      "hotel": "Village Hotel Bugis by Far East Hospitality",
+      "accom": "5 nights · Breakfast included · Super deluxe room · 4★ · Village Hotel Bugis with a rooftop pool and Bugis MRT two minutes away",
+      "program": {
+        "name": "City, island and three wildlife parks",
+        "description": "Five nights in Bugis with a pool for the afternoons, two island days and a full day at Mandai with the Night Safari to close it."
+      },
+      "activities": [
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "City Tour",
+          "day": 2,
+          "description": "A shared coach tour past Merlion Park, Marina Bay, the Helix bridge, Chinatown and the civic district."
+        },
+        {
+          "name": "Marina Bay Sands SkyPark",
+          "match": "SkyPark",
+          "day": 2,
+          "description": "The level 57 observation deck above the bay, the Gardens and the towers of the business district."
+        },
+        {
+          "name": "Gardens by the Bay",
+          "match": "Gardens By The Bay",
+          "day": 2,
+          "description": "Cloud Forest with its indoor waterfall, the Flower Dome and the Jurassic World trail under the Supertrees."
+        },
+        {
+          "name": "Universal Studios Singapore",
+          "match": "Universal Studios",
+          "day": 3,
+          "description": "A one day pass with Minion Land, Far Far Away, Ancient Egypt and the Sci Fi City coasters."
+        },
+        {
+          "name": "Singapore Cable Car Sky Pass",
+          "match": "Cable Car",
+          "day": 4,
+          "description": "A two way ride from Mount Faber over HarbourFront to Sentosa, above the container port."
+        },
+        {
+          "name": "Singapore Oceanarium",
+          "match": "Oceanarium",
+          "day": 4,
+          "description": "Sentosa's rebuilt aquarium with an open ocean tank, reef habitats and a research gallery for the children."
+        },
+        {
+          "name": "Wings of Time",
+          "match": "Wings of Time",
+          "day": 4,
+          "description": "A short beachfront night show of water screens, lasers and fire on Siloso beach."
+        },
+        {
+          "name": "Bird Paradise",
+          "match": "Bird Parad",
+          "day": 5,
+          "description": "Eight walk through aviaries at Mandai, from African wetlands to Amazon river birds, with daily keeper talks."
+        },
+        {
+          "name": "River Wonders",
+          "match": "River Wond",
+          "day": 5,
+          "description": "The river themed Mandai park with giant otters, manatees and a boat ride through the Amazon section."
+        },
+        {
+          "name": "Night Safari with Tram Ride",
+          "match": "Night Safari",
+          "day": 5,
+          "description": "A tram circuit through the park after dark, past elephants, rhinos and the cats that only wake at night."
+        }
+      ]
+    }
+  ]
+}

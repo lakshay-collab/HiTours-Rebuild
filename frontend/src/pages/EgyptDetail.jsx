@@ -97,6 +97,21 @@ import { islandTrailsPhuketSamuiKrabiBySlug } from '../tours/islandTrailsPhuketS
 import { phuketKohSamuiBeachEscapeBySlug } from '../tours/phuketKohSamuiBeachEscapeData';
 import { phuketPhiPhiPartyEscapeBySlug } from '../tours/phuketPhiPhiPartyEscapeData';
 import { luxuryBangkokPattayaEscapeBySlug } from '../tours/luxuryBangkokPattayaEscapeData';
+import { romanticSingaporeNightSafariSentosaBySlug } from '../tours/romanticSingaporeNightSafariSentosaData';
+import { singaporeShortBreakNightSafariBySlug } from '../tours/singaporeShortBreakNightSafariData';
+import { singaporeFamilyUniversalStudiosBySlug } from '../tours/singaporeFamilyUniversalStudiosData';
+import { singaporeHighlightsSentosaGardensBySlug } from '../tours/singaporeHighlightsSentosaGardensData';
+import { singaporeWildlifeSkylineEscapeBySlug } from '../tours/singaporeWildlifeSkylineEscapeData';
+import { singaporeCouplesAdventureCoveBySlug } from '../tours/singaporeCouplesAdventureCoveData';
+import { singaporeCouplesSpecialJewelBySlug } from '../tours/singaporeCouplesSpecialJewelData';
+import { singaporeFamilySafariCityLightsBySlug } from '../tours/singaporeFamilySafariCityLightsData';
+import { singaporeWildTrailsIslandDaysBySlug } from '../tours/singaporeWildTrailsIslandDaysData';
+import { singaporeGentingDreamCruiseBySlug } from '../tours/singaporeGentingDreamCruiseData';
+import { singaporeHoneymoonGentingCruiseBySlug } from '../tours/singaporeHoneymoonGentingCruiseData';
+import { singaporePenangRoyalCaribbeanBySlug } from '../tours/singaporePenangRoyalCaribbeanData';
+import { disneyAdventureCruiseSingaporeBySlug } from '../tours/disneyAdventureCruiseSingaporeData';
+import { singaporeMalaysiaHoneymoonBySlug } from '../tours/singaporeMalaysiaHoneymoonData';
+import { singaporeMalaysiaSentosaGentingBySlug } from '../tours/singaporeMalaysiaSentosaGentingData';
 import { countryOf, productsOf } from '../holidays/countryProducts';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
@@ -212,7 +227,22 @@ const BY_SLUG = {
   ...islandTrailsPhuketSamuiKrabiBySlug,
   ...phuketKohSamuiBeachEscapeBySlug,
   ...phuketPhiPhiPartyEscapeBySlug,
-  ...luxuryBangkokPattayaEscapeBySlug
+  ...luxuryBangkokPattayaEscapeBySlug,
+  ...romanticSingaporeNightSafariSentosaBySlug,
+  ...singaporeShortBreakNightSafariBySlug,
+  ...singaporeFamilyUniversalStudiosBySlug,
+  ...singaporeHighlightsSentosaGardensBySlug,
+  ...singaporeWildlifeSkylineEscapeBySlug,
+  ...singaporeCouplesAdventureCoveBySlug,
+  ...singaporeCouplesSpecialJewelBySlug,
+  ...singaporeFamilySafariCityLightsBySlug,
+  ...singaporeWildTrailsIslandDaysBySlug,
+  ...singaporeGentingDreamCruiseBySlug,
+  ...singaporeHoneymoonGentingCruiseBySlug,
+  ...singaporePenangRoyalCaribbeanBySlug,
+  ...disneyAdventureCruiseSingaporeBySlug,
+  ...singaporeMalaysiaHoneymoonBySlug,
+  ...singaporeMalaysiaSentosaGentingBySlug
 };
 
 const stop = (e) => e.preventDefault();

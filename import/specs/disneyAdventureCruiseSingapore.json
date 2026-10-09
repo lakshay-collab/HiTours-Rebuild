@@ -1,0 +1,85 @@
+{
+  "source_slug": "singapore-disney-cruise-inside-stateroom-package",
+  "slug": "disney-adventure-cruise-from-singapore",
+  "camel": "disneyAdventureCruiseSingapore",
+  "title": "Disney Adventure Cruise from Singapore",
+  "alt": "Family cruise ship sailing out of Singapore at sunset",
+  "cta_country": "singapore",
+  "tag": "Cruise",
+  "tags": ["Cruise", "Family"],
+  "price": 61512,
+  "transport": "Private airport and cruise terminal transfers",
+  "route_cities": ["Singapore"],
+  "counts": {"days": 4, "nights": 3, "cities": 1, "hotels": 1, "experiences": 3, "transfers": 2, "meals": 9},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Children stop asking what is next on this one. Everything is on board and all of it is included in the fare.",
+    "tip": "Register the children at the Oceaneer Club on the first afternoon. Slots for the themed sessions fill up fast once the ship sails."
+  },
+  "summary": "Four days on the Disney Adventure out of Singapore. Three nights in an inside stateroom with every meal included, themed zones across the decks, shows at the Walt Disney Theatre and character meetings through the day.",
+  "included": "Included: 3 nights aboard the Disney Adventure in an inside stateroom with breakfast, lunch and dinner; the themed immersive zones; shows at the Walt Disney Theatre; the Avengers deck show; private transfers between Changi Airport and the cruise terminal.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; port charges and gratuities; speciality dining, the spa and paid activities on board; personal expenses.",
+  "day_titles": {
+    "1": "Board the Disney Adventure",
+    "2": "A day of rides and shows",
+    "3": "Characters, clubs and the spa",
+    "4": "Back in port and departure"
+  },
+  "meals": {"1": "L, D", "2": "B, L, D", "3": "B, L, D", "4": "B"},
+  "hotel_by_day": {
+    "1": "Disney Adventure",
+    "2": "Disney Adventure",
+    "3": "Disney Adventure",
+    "4": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the cruise terminal",
+      "Board the Disney Adventure and settle into your inside stateroom",
+      "Lunch on board, then the first walk through the themed zones",
+      "Dinner at the Animators Palette and a film under the stars"
+    ],
+    "2": [
+      "Breakfast on board, then the Ironcycle test run for the older children",
+      "Toy Story Palace and WayFinder Bay through the morning",
+      "Marvel Landing in the afternoon with character meetings",
+      "An evening show at the Walt Disney Theatre"
+    ],
+    "3": [
+      "Breakfast on board and a slower morning",
+      "Oceaneer Club sessions for the children while the adults take the Rainforest spa",
+      "San Fransokyo Street and the Imagination Garden after lunch",
+      "The Avengers deck show in the evening"
+    ],
+    "4": [
+      "Breakfast on board and disembark at the cruise terminal",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Disney Adventure",
+      "city": "Singapore",
+      "days": [1, 2, 3, 4],
+      "dayLabel": "Day 1 to 4",
+      "hotel": "Inside Stateroom, The Disney Adventure Cruise in Singapore",
+      "hotel_label": "Disney Adventure",
+      "accom": "3 nights \u00b7 Breakfast, lunch and dinner included \u00b7 Inside stateroom \u00b7 Disney Adventure, sailing from Singapore",
+      "program": {
+        "name": "Three nights of Disney at sea",
+        "description": "Themed zones from Toy Story to Marvel, theatre shows every evening, kids clubs by age group and all main meals in the fare."
+      },
+      "activities": [
+        {"name": "Disney Immersive Zones", "match": "Immersive", "day": 1, "description": "Seven themed districts across the decks, from Disney classics to Pixar and Marvel, open to every guest on board."},
+        {"name": "Shows at the Walt Disney Theatre", "match": "Walt Disney Theatre", "day": 2, "description": "Full stage productions with live orchestra in the ship's main theatre, a different show each evening."},
+        {"name": "Avengers Assemble Show", "match": "Avengers", "day": 3, "description": "A stunt and effects show on the open deck built around the Marvel characters, staged after sunset."},
+        {"name": "Oceaneer Club", "match": "Oceaneer", "day": 3, "optional": true, "description": "Supervised play spaces split by age, with themed sessions, crafts and games through the day."},
+        {"name": "Rainforest Spa", "match": "Rainforest Spa", "day": 3, "optional": true, "description": "Heated loungers, steam rooms and treatment cabins for the adults, booked on board."}
+      ]
+    }
+  ]
+}

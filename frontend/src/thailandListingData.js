@@ -2,7 +2,7 @@
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
 import { thailandProducts } from './tours/thailandToursData';
 import { IMG } from './thailandPackages';
-import { detail as siamDetail } from './thailandData';
+import { detail as siamDetail, cardImages as siamCardImages } from './thailandData';
 
 const CT = 'https://images.ctfassets.net/bth3mlrehms2';
 const ct = (p) => `${CT}/${p}?w=1080&q=60&fm=webp`;
@@ -77,7 +77,7 @@ const siamProduct = {
   meals: 9,
   price: siamDetail.price,
   alt: siamDetail.alt,
-  images: siamDetail.gallery,
+  images: siamCardImages,
   href: `/asien/${siamDetail.slug}`
 };
 

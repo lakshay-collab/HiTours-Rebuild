@@ -49,7 +49,7 @@ export const packages = [
     price: 69999,
     inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room', 'Domestic flight Bangkok–Phuket', 'Island speedboat tours as listed'],
     exclusions: ['International flights', ...EXCL_BASE],
-    gallery: [IMG.mayabay, IMG.phuket, IMG.freedom, IMG.palace], alt: 'Longtail boat and limestone cliffs at Maya Bay, Thailand'
+    gallery: [IMG.mayabay, IMG.phuket, IMG.freedom, IMG.khaosok], alt: 'Longtail boat and limestone cliffs at Maya Bay, Thailand'
   },
   {
     slug: 'northern-thailand-explorer-7d6n', name: 'Northern Thailand Explorer', code: 'TH-3', days: 7, nights: 6, tag: 'Culture', styles: ['Culture', 'Adventure', 'Family'],
@@ -68,6 +68,6 @@ export const packages = [
     price: 58999,
     inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room', 'Domestic flight Bangkok–Chiang Mai', 'Ethical elephant sanctuary visit'],
     exclusions: ['International flights', ...EXCL_BASE],
-    gallery: [IMG.falls, IMG.elephant, IMG.wachi, IMG.palace], alt: 'Waterfall and lush forest in Doi Inthanon, northern Thailand'
+    gallery: [IMG.falls, IMG.elephant, IMG.wachi, IMG.natur], alt: 'Waterfall and lush forest in Doi Inthanon, northern Thailand'
   }
 ];

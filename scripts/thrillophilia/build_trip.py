@@ -297,6 +297,8 @@ export const %sBySlug = { [detail.slug]: { detail, route, glance, crumbs } };
 
 export const %sProduct = {
   slug: detail.slug,
+  places: [%s],
+  href: `%s/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,
@@ -322,6 +324,7 @@ export const %sProduct = {
        q(spec['expert']['quote']), q(spec['expert']['tip']),
        q(spec['summary']), q(spec['included']), q(spec['not_included']),
        ',\n'.join(glance_rows), q(spec['not_included']), crumbs, camel, camel,
+       ', '.join(q(c) for c in dict.fromkeys(spec['route_cities'])), spec.get('base', '/asien'),
        counts['days'], len(spec['stops']), counts['hotels'], counts['cities'],
        counts['experiences'], counts['transfers'], counts['meals'])
 

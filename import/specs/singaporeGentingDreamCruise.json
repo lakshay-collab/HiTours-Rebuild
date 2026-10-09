@@ -1,0 +1,119 @@
+{
+  "source_slug": "singapore-vacation-with-genting-cruise",
+  "slug": "singapore-with-the-genting-dream-cruise",
+  "camel": "singaporeGentingDreamCruise",
+  "title": "Singapore with the Genting Dream Cruise",
+  "alt": "Cruise ship berthed at the Marina Bay Cruise Centre in Singapore",
+  "cta_country": "singapore",
+  "tag": "Cruise",
+  "tags": ["Cruise", "Family"],
+  "price": 56050,
+  "transport": "Private airport and port transfers with shared coaches for tours",
+  "route_cities": ["Singapore", "Sentosa", "Genting Dream"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 8, "meals": 9},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Three nights on land then two at sea works beautifully. You see the whole city, then stop deciding anything for two days.",
+    "tip": "Book a balcony cabin if the budget stretches. The sail out past the anchored tankers at dusk is worth sitting outside for."
+  },
+  "summary": "Six days split between the city and the sea. The Night Safari, a city tour with the Sentosa cable car and a full day at Universal Studios, then two nights aboard the Genting Dream with all meals included.",
+  "included": "Included: 3 nights at the ibis Novena with breakfast; 2 nights aboard the Genting Dream with breakfast, lunch and dinner; Night Safari with tram ride; half day city tour; two way cable car sky pass; Universal Studios one day pass; 8 private and shared transfers including the cruise terminal.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; port charges and gratuities; speciality restaurants and paid decks on board; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "City tour and the Sentosa cable car",
+    "3": "Universal Studios",
+    "4": "Aboard the Genting Dream",
+    "5": "A day at sea",
+    "6": "Back in port and departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B, L, D", "5": "B, L, D", "6": "B"},
+  "hotel_by_day": {
+    "1": "ibis Singapore Novena",
+    "2": "ibis Singapore Novena",
+    "3": "ibis Singapore Novena",
+    "4": "Genting Dream Cruise",
+    "5": "Genting Dream Cruise",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the ibis Novena",
+      "Check in and take a few hours to settle",
+      "Shared transfer to Mandai for the Night Safari with a tram ride",
+      "Back in town for a late supper near Novena MRT"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, Chinatown and the civic district",
+      "Two way cable car sky pass from Mount Faber across to Sentosa",
+      "Evening free on the island or back at VivoCity"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Afternoon shows and the themed streets at your own pace",
+      "Early night before the sailing"
+    ],
+    "4": [
+      "Breakfast, check out and private sedan transfer to the Marina Bay Cruise Centre",
+      "Board the Genting Dream and find your cabin",
+      "Lunch on board, then the pool deck and the waterslides",
+      "Optional: the zipline, the rope course and the Zouk beach club on deck"
+    ],
+    "5": [
+      "A full day at sea with all meals on board",
+      "Optional: the spa, the waterslide park and the Zodiac theatre shows",
+      "Rock climbing wall and the sports deck through the afternoon",
+      "Dinner and a show before the last night on board"
+    ],
+    "6": [
+      "Breakfast on board and disembark at the Marina Bay Cruise Centre",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "ibis Singapore Novena",
+      "accom": "3 nights \u00b7 Breakfast included \u00b7 Standard room \u00b7 3\u2605 \u00b7 ibis Novena, two minutes from Novena MRT station",
+      "program": {
+        "name": "Three city nights",
+        "description": "Novena as a base for the Night Safari, a city tour with the Sentosa cable car and a full theme park day."
+      },
+      "activities": [
+        {"name": "Night Safari with Tram Ride", "match": "Night Safari", "day": 1, "description": "A tram circuit through the Mandai park after dark, past the elephants, hyenas and the big cats."},
+        {"name": "Half Day Singapore City Tour", "match": "City Tour", "day": 2, "description": "A shared coach tour of Merlion Park, Marina Bay, the Helix bridge, Chinatown and the civic district."},
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 2, "description": "A two way ride from Mount Faber over HarbourFront to Sentosa, with the container port below."},
+        {"name": "Universal Studios Singapore", "match": "Universal Studios", "day": 3, "description": "A one day pass covering Sci Fi City, Ancient Egypt, Far Far Away and the Hollywood boulevard shows."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Genting Dream",
+      "city": "Singapore",
+      "days": [4, 5, 6],
+      "dayLabel": "Day 4 to 6",
+      "hotel": "Genting Dream Cruise",
+      "hotel_label": "Genting Dream",
+      "accom": "2 nights \u00b7 Breakfast, lunch and dinner included \u00b7 Standard cabin \u00b7 Genting Dream, sailing from the Marina Bay Cruise Centre",
+      "program": {
+        "name": "Two nights at sea",
+        "description": "A short sailing on the Genting Dream with all meals on board, a waterslide park, a zipline over the deck and evening shows."
+      },
+      "activities": [
+        {"name": "Waterslide Park on Deck", "match": "Waterslide", "day": 5, "optional": true, "description": "Six slides and a splash pool on the upper decks of the Genting Dream, open through the day at sea."},
+        {"name": "Zipline and Rope Course", "match": "Rope course", "day": 4, "optional": true, "description": "A zipline and a ropes circuit strung above the deck, with the sea on both sides of you."},
+        {"name": "Zouk Beach Club", "match": "Zouk", "day": 4, "optional": true, "description": "The ship's pool and club deck, quiet in the afternoon and busy once the sun goes down."},
+        {"name": "Crystal Life Spa", "match": "Crystal Life", "day": 5, "optional": true, "description": "The spa deck with saunas, a thalassotherapy pool and treatment rooms, booked on board."}
+      ]
+    }
+  ]
+}

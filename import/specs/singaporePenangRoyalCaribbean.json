@@ -1,0 +1,117 @@
+{
+  "source_slug": "singapore-royal-caribbean-cruise-package",
+  "slug": "singapore-and-penang-on-royal-caribbean",
+  "camel": "singaporePenangRoyalCaribbean",
+  "title": "Singapore and Penang on Royal Caribbean",
+  "alt": "Royal Caribbean cruise ship at sea off the Malacca Strait",
+  "cta_country": "singapore",
+  "tag": "Cruise",
+  "tags": ["Cruise", "Luxury"],
+  "price": 60800,
+  "transport": "Private airport and cruise terminal transfers",
+  "route_cities": ["Singapore", "Penang"],
+  "counts": {"days": 4, "nights": 3, "cities": 2, "hotels": 1, "experiences": 1, "transfers": 2, "meals": 9},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "A short sailing with one port call. Three nights, every meal included and a morning ashore in Penang.",
+    "tip": "Go ashore early at Penang and walk George Town before the heat. The street art and the clan jetties are within twenty minutes of the pier."
+  },
+  "summary": "Four days at sea from Singapore. Board at the Marina Bay Cruise Centre, a morning ashore in George Town on Penang, a full day at sea, then back into port with all meals included throughout.",
+  "included": "Included: 3 nights aboard Royal Caribbean with breakfast, lunch and dinner; the Penang port call with time ashore in George Town; private transfers between Changi Airport and the Marina Bay Cruise Centre.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; port charges and gratuities; shore excursions in Penang; speciality restaurants and paid activities on board; personal expenses.",
+  "day_titles": {
+    "1": "Board at Marina Bay",
+    "2": "Ashore in Penang",
+    "3": "A day at sea",
+    "4": "Back in port and departure"
+  },
+  "meals": {"1": "L, D", "2": "B, L, D", "3": "B, L, D", "4": "B"},
+  "hotel_by_day": {
+    "1": "Royal Caribbean Cruise",
+    "2": "Royal Caribbean Cruise",
+    "3": "Royal Caribbean Cruise",
+    "4": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the Marina Bay Cruise Centre",
+      "Board your Royal Caribbean ship and find your stateroom",
+      "Lunch on board, then the pool deck as Singapore falls away",
+      "Optional: the spa, the arcade zone and an outdoor film under the stars"
+    ],
+    "2": [
+      "Breakfast on board as the ship comes into Penang",
+      "Morning ashore in George Town, a short walk from the pier",
+      "Street art lanes, the clan jetties and Chulia Street food stalls",
+      "Back on board by late afternoon for dinner and the evening show"
+    ],
+    "3": [
+      "A full day at sea with all meals on board",
+      "Optional: wine tasting, salsa classes and the rock climbing wall",
+      "Afternoon on the sports court or at the art gallery",
+      "Last dinner on board and a show in the main theatre"
+    ],
+    "4": [
+      "Breakfast on board and disembark at the Marina Bay Cruise Centre",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1],
+      "dayLabel": "Day 1",
+      "hotel": "Royal Caribbean Cruise",
+      "hotel_label": "Royal Caribbean",
+      "accom": "1 night \u00b7 Breakfast, lunch and dinner included \u00b7 Stateroom \u00b7 Royal Caribbean, sailing from the Marina Bay Cruise Centre",
+      "program": {
+        "name": "Embarkation day",
+        "description": "Straight from the airport to the cruise terminal, on board by the afternoon and out past the anchorage by evening."
+      },
+      "activities": [
+        {"name": "Spa at Sea", "match": "Spa at Sea", "day": 1, "optional": true, "description": "The ship's spa with saunas, a thermal suite and treatment rooms, quietest on the first afternoon."},
+        {"name": "Outdoor Movie Night", "match": "Movie Night", "day": 1, "optional": true, "description": "A screen above the pool deck showing films after dinner, with blankets handed out when it cools."}
+      ]
+    },
+    {
+      "letter": "B",
+      "name": "Penang",
+      "city": "Penang",
+      "days": [2],
+      "dayLabel": "Day 2",
+      "hotel": "Royal Caribbean Cruise",
+      "hotel_label": "Royal Caribbean",
+      "accom": "1 night \u00b7 Breakfast, lunch and dinner included \u00b7 Stateroom \u00b7 Royal Caribbean, berthed at Swettenham Pier for the day",
+      "program": {
+        "name": "A morning in George Town",
+        "description": "The ship berths at Swettenham Pier, so the old town, the jetties and the street food are within walking distance."
+      },
+      "activities": [
+        {"name": "Time Ashore in George Town", "match": "Penang", "day": 2, "description": "A free morning in the Penang old town, with the street art lanes, the clan jetties and the Chulia Street hawkers."}
+      ]
+    },
+    {
+      "letter": "C",
+      "name": "At sea",
+      "city": "Singapore",
+      "days": [3, 4],
+      "dayLabel": "Day 3 to 4",
+      "hotel": "Royal Caribbean Cruise",
+      "hotel_label": "Royal Caribbean",
+      "accom": "1 night \u00b7 Breakfast, lunch and dinner included \u00b7 Stateroom \u00b7 Royal Caribbean, at sea on the way back to Singapore",
+      "program": {
+        "name": "A day at sea and back in",
+        "description": "A full sea day with the decks, the theatre and the dining rooms to yourself, then an early morning arrival in Singapore."
+      },
+      "activities": [
+        {"name": "Wine Tasting on Board", "match": "Wine Tasting", "day": 3, "optional": true, "description": "A guided tasting in one of the ship's bars, booked on board and usually held in the late afternoon."},
+        {"name": "Rock Climbing Wall", "match": "Rock Climbing", "day": 3, "optional": true, "description": "The climbing wall on the upper deck, with harnesses and instructors provided through the day."}
+      ]
+    }
+  ]
+}

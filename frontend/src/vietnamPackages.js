@@ -96,7 +96,7 @@ export const packages = [
     price: hanoiSapaSeasonPrice(),
     inclusions: ['Meals as indicated in this itinerary. (B = Breakfast, L = Lunch, D = Dinner)', 'Accommodations based in 2 people/room.', 'Entrance fees to the attractions mentioned in this program', 'Sightseeing and excursions mentioned in this itinerary', 'English-speaking local guide', 'SIC tour in Sapa', 'Transportation used in the program.'],
     exclusions: ['International Flights', 'Tips for guides and drivers.', 'Personal expenses such as telephone, laundry, drinks, etc.', 'Meals not mentioned in the program', 'Bank fees related to payment', 'Other services not clearly indicated under "INCLUDED".', 'GST/ TCS/Any Bank Charges'],
-    gallery: [IMG.sapa, IMG.hanoi, IMG.hanoiTrain, IMG.mausoleum], alt: 'Rice terraces around Sapa, Vietnam'
+    gallery: [IMG.sapa, IMG.hanoiTrain, IMG.mausoleum, IMG.hanoi], alt: 'Rice terraces around Sapa, Vietnam'
   },
   {
     slug: 'north-vietnam-ninh-binh-6d5n', name: 'North of Vietnam with Ninh Binh – 6 days 5 nights', code: 'PKG-2', days: 6, nights: 5, tag: 'Nature', styles: STYLES_ALL, included: { hotels: 2, activities: 11, transfers: 6, meals: 10 },
@@ -114,7 +114,7 @@ export const packages = [
     price: 59999,
     inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room'],
     exclusions: ['All flights', ...EXCL_BASE],
-    gallery: [IMG.trangan, IMG.halongCover, IMG.hanoi, IMG.halong, IMG.mausoleum], alt: 'Trang An, Ninh Binh, Vietnam'
+    gallery: [IMG.trangan, IMG.ninhbinh, IMG.catba, IMG.halong], alt: 'Trang An, Ninh Binh, Vietnam'
   },
   {
     slug: 'north-vietnam-6d5n', name: 'North of Vietnam – 6 days 5 nights', code: 'PKG-3', days: 6, nights: 5, tag: 'Short trips', styles: STYLES_ALL, included: { hotels: 2, activities: 8, transfers: 5, meals: 9 },
@@ -132,7 +132,7 @@ export const packages = [
     price: 48249,
     inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room'],
     exclusions: ['All flights', ...EXCL_BASE],
-    gallery: [IMG.halongCover, IMG.hanoi, IMG.catba, IMG.hanoiTrain], alt: 'Ha Long Bay from above, Vietnam'
+    gallery: [IMG.halongCover, IMG.catba, IMG.hanoi, IMG.halong], alt: 'Ha Long Bay from above, Vietnam'
   },
   {
     slug: 'north-central-vietnam-highlights-6d5n', name: '6D5N North & Central Vietnam Highlights', code: 'PKG-4', days: 6, nights: 5, tag: 'Culture', styles: STYLES_ALL, included: { hotels: 2, activities: 10, transfers: 6, meals: 9 },
@@ -150,7 +150,7 @@ export const packages = [
     price: 61749,
     inclusions: [...INCL_BASE, 'Accommodation based on 2 people per room or triple room', 'SIC tours in Da Nang, Ha Long Bay and Ninh Binh', 'Flight ticket Hanoi – Da Nang'],
     exclusions: ['All international flights', ...EXCL_BASE],
-    gallery: [IMG.danang, IMG.halongCover, IMG.trangan, IMG.hanoi, IMG.hoianBoats], alt: 'Marble Mountains, Da Nang, Vietnam'
+    gallery: [IMG.danang, IMG.hoian, IMG.hoianRiver, IMG.hanoi], alt: 'Marble Mountains, Da Nang, Vietnam'
   },
   {
     slug: 'vietnam-highlights-reverse-halong-8d7n', name: '8D7N Vietnam Highlights in Reverse with Ha Long', code: 'PKG-5', days: 8, nights: 7, tag: 'Culture', styles: STYLES_ALL, included: { hotels: 3, activities: 13, transfers: 8, meals: 12 },
@@ -170,7 +170,7 @@ export const packages = [
     price: 97649,
     inclusions: [...INCL_BASE, 'Domestic flights: Ho Chi Minh City – Da Nang, Da Nang – Hanoi', 'Accommodation based on 2 or 3 people per room'],
     exclusions: ['International flights', ...EXCL_BASE],
-    gallery: [IMG.halongCover, IMG.hcmc, IMG.mekong, IMG.hoianBoats, IMG.danang], alt: 'Ha Long Bay, Vietnam'
+    gallery: [IMG.hoianBoats, IMG.halong, IMG.hcmc, IMG.danang], alt: 'Boats on the river in Hoi An, Vietnam'
   },
   {
     slug: 'north-central-vietnam-phu-quoc-8d7n', name: '8D7N North & Central Vietnam with Phu Quoc', code: 'PKG-6', days: 8, nights: 7, tag: 'Beach', styles: STYLES_ALL,
@@ -190,7 +190,7 @@ export const packages = [
     price: 99999,
     inclusions: [...INCL_BASE, 'Domestic flights: Hanoi – Da Nang, Da Nang – Phu Quoc', 'Accommodation based on 2 or 3 people per room'],
     exclusions: ['International flights', ...EXCL_BASE],
-    gallery: [IMG.phuquocCover, IMG.halongCover, IMG.hoianBoats, IMG.phuquoc, IMG.snorkel], alt: 'Beach on Phu Quoc island, Vietnam'
+    gallery: [IMG.phuquocCover, IMG.phuquoc, IMG.snorkel, IMG.hoian], alt: 'Beach on Phu Quoc island, Vietnam'
   },
   {
     slug: 'vietnam-full-package-9d8n', name: 'Vietnam Full Package: 9 days exploring North, Central & South', code: 'PKG-7', days: 9, nights: 8, tag: 'Culture', styles: STYLES_ALL, included: { hotels: 4, activities: 18, transfers: 9, meals: 15 },
@@ -211,7 +211,7 @@ export const packages = [
     price: 128799,
     inclusions: [...INCL_BASE, 'Domestic flights: Hanoi – Da Nang, Da Nang – Ho Chi Minh City', 'Accommodation based on 2 people per room'],
     exclusions: ['International flights', ...EXCL_BASE],
-    gallery: [IMG.halongCover, IMG.hoian, IMG.hcmc, IMG.mekong, IMG.hanoi], alt: 'Ha Long Bay, Vietnam'
+    gallery: [IMG.hcmc, IMG.mekong, IMG.food, IMG.trangan], alt: 'Ho Chi Minh City skyline, Vietnam'
   }
 ];
 

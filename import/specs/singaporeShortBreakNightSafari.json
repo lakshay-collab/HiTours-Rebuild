@@ -1,0 +1,147 @@
+{
+  "source_slug": "economical-trip-to-singapore-super-deluxe",
+  "slug": "singapore-short-break-with-night-safari",
+  "camel": "singaporeShortBreakNightSafari",
+  "title": "Singapore Short Break with Night Safari",
+  "alt": "The Merlion fountain with the Marina Bay Sands towers behind it in Singapore",
+  "cta_country": "singapore",
+  "tag": "Short trips",
+  "tags": [
+    "Short trips",
+    "City break"
+  ],
+  "price": 57950,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Sentosa"
+  ],
+  "counts": {
+    "days": 4,
+    "nights": 3,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 4,
+    "transfers": 8,
+    "meals": 3
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Four days is enough for a first look at Singapore if you keep it to the city, the cable car and one wildlife evening.",
+    "tip": "Hotel Boss sits a short walk from Lavender MRT, so skip taxis and use the trains. Three days of travel cost less than one airport cab."
+  },
+  "summary": "A four day first look at Singapore. Wildlife by tram on arrival night, a half day city tour with a free afternoon, then the Sentosa cable car and Madame Tussauds before the flight home.",
+  "included": "Included: 3 nights at Hotel Boss with daily breakfast; Night Safari with tram ride; half day city tour; two way cable car sky pass; Madame Tussauds with a digital photo; 8 private and shared transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; entry to sights not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "City tour and a free afternoon",
+    "3": "Cable car and Madame Tussauds",
+    "4": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B"
+  },
+  "hotel_by_day": {
+    "1": "Hotel Boss, Singapore",
+    "2": "Hotel Boss, Singapore",
+    "3": "Hotel Boss, Singapore",
+    "4": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to Hotel Boss",
+      "Check in and take a couple of hours to settle",
+      "Shared transfer out to Mandai for the Night Safari and its tram ride",
+      "Back in town for late supper on Beach Road near the hotel"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, Chinatown and the civic district",
+      "Afternoon at your own pace around Bugis and Orchard Road",
+      "Optional: the observation wheel at Marina Bay or a river bumboat at dusk"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Mount Faber station",
+      "Two way cable car sky pass across the harbour to Sentosa",
+      "Madame Tussauds with the Spirit of Singapore boat ride and a digital photo",
+      "Return shared transfer to the hotel in the evening"
+    ],
+    "4": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "dayLabel": "Day 1 to 4",
+      "hotel": "Hotel Boss, Singapore",
+      "accom": "3 nights · Breakfast included · Standard room · 4★ · Hotel Boss on Victoria Street, a short walk from Lavender MRT",
+      "program": {
+        "name": "A first look at the city",
+        "description": "Three nights on the edge of Kampong Glam with the Night Safari, a city tour and the Sentosa cable car in easy reach."
+      },
+      "activities": [
+        {
+          "name": "Night Safari with Tram Ride",
+          "match": "Night Safari",
+          "day": 1,
+          "description": "A tram circuit through the Mandai reserve after dark, past elephants, hyenas, leopards and the nocturnal houses."
+        },
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "Sightseeing Tour",
+          "day": 2,
+          "description": "A shared coach tour of Merlion Park, Marina Bay, Chinatown and the old civic quarter with a local guide."
+        },
+        {
+          "name": "Singapore Cable Car Sky Pass",
+          "match": "Cable Car",
+          "day": 3,
+          "description": "A round trip between Mount Faber, HarbourFront and Sentosa with the harbour and the islands below."
+        },
+        {
+          "name": "Madame Tussauds Singapore",
+          "match": "Madame Tussauds",
+          "day": 3,
+          "description": "Wax figures, the Spirit of Singapore boat ride through the city's history and a digital photo to take home."
+        },
+        {
+          "name": "Singapore Flyer",
+          "match": "Singapore Flyer",
+          "day": 2,
+          "optional": true,
+          "description": "A half hour turn on the observation wheel at Marina Bay, with the Strait and the city laid out beneath you."
+        }
+      ]
+    }
+  ]
+}

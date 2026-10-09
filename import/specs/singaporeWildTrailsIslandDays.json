@@ -1,0 +1,104 @@
+{
+  "source_slug": "trails-of-singapore",
+  "slug": "singapore-wild-trails-and-island-days",
+  "camel": "singaporeWildTrailsIslandDays",
+  "title": "Singapore Wild Trails and Island Days",
+  "alt": "Macaw in flight at Bird Paradise in the Mandai wildlife reserve, Singapore",
+  "cta_country": "singapore",
+  "tag": "Nature",
+  "tags": ["Nature", "Family"],
+  "price": 62308,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": ["Singapore", "Mandai", "Marina Bay", "Sentosa"],
+  "counts": {"days": 6, "nights": 5, "cities": 1, "hotels": 1, "experiences": 9, "transfers": 11, "meals": 5},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Six days lets you take the parks slowly. One wildlife day, one city day, one island day, one theme park day and nothing rushed.",
+    "tip": "The hotel sits on Orchard Road, so the last evening is best spent walking the length of it rather than booking anything."
+  },
+  "summary": "Six days through the green and the glass. Bird Paradise and the Night Safari at Mandai, the city tour with the SkyPark and Floral Fantasy, Sentosa with the cable car, oceanarium and Wings of Time, then a full day at Universal Studios.",
+  "included": "Included: 5 nights at the Hotel Grand Central with daily breakfast; Bird Paradise; Night Safari with tram ride; half day city tour; Marina Bay Sands SkyPark; Gardens by the Bay with Floral Fantasy; two way cable car sky pass; Singapore Oceanarium; Wings of Time; Universal Studios one day pass; 11 private and shared transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Singapore",
+    "2": "Bird Paradise and the Night Safari",
+    "3": "City tour, SkyPark and Floral Fantasy",
+    "4": "Sentosa, oceanarium and Wings of Time",
+    "5": "Universal Studios",
+    "6": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Hotel Grand Central",
+    "2": "Hotel Grand Central",
+    "3": "Hotel Grand Central",
+    "4": "Hotel Grand Central",
+    "5": "Hotel Grand Central",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to Orchard Road",
+      "Time at Jewel before you leave the airport if the flight lands early",
+      "Check in at the Hotel Grand Central and keep the evening free",
+      "Optional: supper at a hawker centre or the Orchard Road food halls"
+    ],
+    "2": [
+      "Breakfast, then shared transfer out to the Mandai reserve",
+      "Bird Paradise with eight walk through aviaries and the Penguin Cove",
+      "Long lunch at the reserve, then rest before the evening",
+      "Night Safari with a tram ride and the nocturnal walking trails"
+    ],
+    "3": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, Chinatown and the civic district",
+      "Marina Bay Sands SkyPark on level 57 above the bay",
+      "Floral Fantasy and the Supertree grove at Gardens by the Bay"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass over the harbour to Sentosa",
+      "Singapore Oceanarium with its open ocean tank and reef galleries",
+      "Wings of Time on Siloso beach once it is dark"
+    ],
+    "5": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Shows, coasters and the themed streets at your own pace",
+      "Return shared transfer in the evening"
+    ],
+    "6": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3, 4, 5, 6],
+      "dayLabel": "Day 1 to 6",
+      "hotel": "Hotel Grand Central",
+      "accom": "5 nights \u00b7 Breakfast included \u00b7 Standard room \u00b7 4\u2605 \u00b7 Hotel Grand Central on Orchard Road, beside Somerset MRT and the malls",
+      "program": {
+        "name": "Parks, skyline and one theme park",
+        "description": "Five nights on Orchard Road with a full wildlife day at Mandai, a city day at Marina Bay and two island days on Sentosa."
+      },
+      "activities": [
+        {"name": "Bird Paradise", "match": "Bird Parad", "day": 2, "description": "Eight walk through aviaries at Mandai, from African wetlands to the Amazon, with keeper talks through the day."},
+        {"name": "Night Safari with Tram Ride", "match": "Night Safari", "day": 2, "description": "A tram circuit through the Mandai park after dark, then walking trails past the smaller nocturnal animals."},
+        {"name": "Half Day Singapore City Tour", "match": "City Tour", "day": 3, "description": "A shared coach tour of Merlion Park, Marina Bay, the Helix bridge, Chinatown and the colonial quarter."},
+        {"name": "Marina Bay Sands SkyPark", "match": "SkyPark", "day": 3, "description": "The level 57 observation deck above the bay, the Gardens and the financial district towers."},
+        {"name": "Gardens by the Bay", "match": "Gardens By The Bay", "day": 3, "description": "Floral Fantasy with its hanging gardens and the Supertree grove, best as the lights come on."},
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 4, "description": "A two way ride between Mount Faber, HarbourFront and Sentosa, high above the working harbour."},
+        {"name": "Singapore Oceanarium", "match": "Oceanarium", "day": 4, "description": "Sentosa's rebuilt aquarium with an open ocean tank, reef habitats and a research wing."},
+        {"name": "Wings of Time", "match": "Wings of Time", "day": 4, "description": "A twenty minute night show on Siloso beach built from water screens, lasers and fire."},
+        {"name": "Universal Studios Singapore", "match": "Universal Studios", "day": 5, "description": "A one day pass covering Sci Fi City, Ancient Egypt, Far Far Away and the Hollywood boulevard."}
+      ]
+    }
+  ]
+}

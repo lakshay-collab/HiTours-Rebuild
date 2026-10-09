@@ -1,0 +1,198 @@
+{
+  "source_slug": "singapore-couple-tour",
+  "slug": "singapore-for-couples-with-adventure-cove",
+  "camel": "singaporeCouplesAdventureCove",
+  "title": "Singapore for Couples with Adventure Cove",
+  "alt": "Marina Bay Sands and the Singapore skyline seen across the water at dusk",
+  "cta_country": "singapore",
+  "tag": "Honeymoon",
+  "tags": [
+    "Honeymoon",
+    "Luxury"
+  ],
+  "price": 57428,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Marina Bay",
+    "Sentosa"
+  ],
+  "counts": {
+    "days": 6,
+    "nights": 5,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 9,
+    "transfers": 10,
+    "meals": 5
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Five nights in one good hotel, no packing and unpacking, and a different side of the city every day. Couples like that rhythm.",
+    "tip": "Keep the Adventure Cove day for last. After two theme park days you will want the lazy river more than another queue."
+  },
+  "summary": "Six days in the city for two. A wildlife evening at Mandai, the skyline from level 57, Gardens by the Bay, a full day at Universal Studios, Sentosa by cable car with the oceanarium and Wings of Time, then the water park at Adventure Cove.",
+  "included": "Included: 5 nights at the One Farrer Hotel with daily breakfast; Night Safari with tram ride; half day city tour; Marina Bay Sands SkyPark; the Gardens by the Bay domes with the Jurassic World trail; Universal Studios one day pass; two way cable car sky pass; Singapore Oceanarium; Wings of Time; Adventure Cove Waterpark; 10 private and shared transfers.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "City tour, SkyPark and the Gardens",
+    "3": "Universal Studios",
+    "4": "Sentosa, oceanarium and Wings of Time",
+    "5": "Adventure Cove Waterpark",
+    "6": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B",
+    "5": "B",
+    "6": "B"
+  },
+  "hotel_by_day": {
+    "1": "One Farrer Hotel Singapore",
+    "2": "One Farrer Hotel Singapore",
+    "3": "One Farrer Hotel Singapore",
+    "4": "One Farrer Hotel Singapore",
+    "5": "One Farrer Hotel Singapore",
+    "6": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the One Farrer Hotel",
+      "Check in to your super deluxe room and take the afternoon slowly",
+      "Shared transfer to Mandai for the Night Safari and its tram circuit",
+      "Nocturnal walking trails afterwards if you still have the energy"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, the Helix bridge, Chinatown and the civic district",
+      "Marina Bay Sands SkyPark on level 57 above the bay",
+      "Cloud Forest, Flower Dome and Jurassic World at Gardens by the Bay"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Lunch inside the park and the stunt show in the afternoon",
+      "Evening free along the Sentosa boardwalk"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass over the harbour to Sentosa",
+      "Singapore Oceanarium with its open ocean tank and reef galleries",
+      "Wings of Time on Siloso beach once it is dark"
+    ],
+    "5": [
+      "Breakfast, then shared transfer back across to Sentosa",
+      "A full day at Adventure Cove with the lazy river and the slides",
+      "Snorkel with the rays at Rainbow Reef, gear provided at the park",
+      "Quiet evening in Little India near the hotel"
+    ],
+    "6": [
+      "Breakfast and a late check out where possible",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dayLabel": "Day 1 to 6",
+      "hotel": "One Farrer Hotel Singapore",
+      "accom": "5 nights · Breakfast included · Super deluxe room · 4★ · One Farrer Hotel with a garden pool, beside Farrer Park MRT and Little India",
+      "program": {
+        "name": "One base, six different days",
+        "description": "Five nights at Farrer Park with wildlife, the skyline, two theme parks and a water park all inside half an hour on the MRT."
+      },
+      "activities": [
+        {
+          "name": "Night Safari with Tram Ride",
+          "match": "Night Safari",
+          "day": 1,
+          "description": "A tram circuit through the Mandai park after dark, past elephants, rhinos, hyenas and the big cats."
+        },
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "City Tour",
+          "day": 2,
+          "description": "A shared coach tour of Merlion Park, Marina Bay, the Helix bridge, Chinatown and the colonial quarter."
+        },
+        {
+          "name": "Marina Bay Sands SkyPark",
+          "match": "SkyPark",
+          "day": 2,
+          "description": "The level 57 observation deck above Marina Bay, the Gardens and the towers of the business district."
+        },
+        {
+          "name": "Gardens by the Bay",
+          "match": "Gardens By The Bay",
+          "day": 2,
+          "description": "Cloud Forest with its indoor waterfall, the Flower Dome and the Jurassic World trail among the Supertrees."
+        },
+        {
+          "name": "Universal Studios Singapore",
+          "match": "Universal Studios",
+          "day": 3,
+          "description": "A one day pass covering Sci Fi City, Ancient Egypt, Far Far Away and the Hollywood boulevard shows."
+        },
+        {
+          "name": "Singapore Cable Car Sky Pass",
+          "match": "Cable Car",
+          "day": 4,
+          "description": "A two way ride from Mount Faber over HarbourFront to Sentosa, with the container port below."
+        },
+        {
+          "name": "Singapore Oceanarium",
+          "match": "Oceanarium",
+          "day": 4,
+          "description": "Sentosa's rebuilt aquarium with an open ocean tank, reef habitats and a research gallery."
+        },
+        {
+          "name": "Wings of Time",
+          "match": "Wings of Time",
+          "day": 4,
+          "description": "A twenty minute beachfront show of water screens, lasers and fire, staged on Siloso beach."
+        },
+        {
+          "name": "Adventure Cove Waterpark",
+          "match": "Adventure Cove",
+          "day": 5,
+          "description": "Slides, a lazy river and a snorkel reef with rays and thousands of fish, all on the Sentosa waterfront."
+        },
+        {
+          "name": "Singapore River Cruise",
+          "match": "River Cruise",
+          "day": 2,
+          "optional": true,
+          "description": "A bumboat along the quays past the old shophouses and warehouses, at its best after sunset."
+        }
+      ]
+    }
+  ]
+}

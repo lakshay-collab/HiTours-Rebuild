@@ -1,0 +1,178 @@
+{
+  "source_slug": "singapore-wonders",
+  "slug": "singapore-wildlife-and-skyline-escape",
+  "camel": "singaporeWildlifeSkylineEscape",
+  "title": "Singapore Wildlife and Skyline Escape",
+  "alt": "Flamingos at the Mandai wildlife reserve in Singapore",
+  "cta_country": "singapore",
+  "tag": "Nature",
+  "tags": [
+    "Nature",
+    "Family"
+  ],
+  "price": 59577,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": [
+    "Singapore",
+    "Mandai",
+    "Marina Bay",
+    "Sentosa"
+  ],
+  "counts": {
+    "days": 5,
+    "nights": 4,
+    "cities": 1,
+    "hotels": 1,
+    "experiences": 7,
+    "transfers": 9,
+    "meals": 4
+  },
+  "crumbs": [
+    [
+      "Destinations",
+      "/reiseziele/"
+    ],
+    [
+      "Asia",
+      "#"
+    ],
+    [
+      "Singapore",
+      "/asien/singapore"
+    ]
+  ],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Mandai deserves a full day. Bird Paradise in the morning, a long lunch, then the Night Safari when the park cools down.",
+    "tip": "Carry a light poncho for Bird Paradise. The walk through aviaries are misted every afternoon and the birds are most active right after."
+  },
+  "summary": "Five days split between wildlife and the skyline. A full day at Mandai with Bird Paradise and the Night Safari, the city tour with Gardens by the Bay and the SkyPark, then Universal Studios and the Wings of Time show.",
+  "included": "Included: 4 nights at the Holiday Inn Express Novena with daily breakfast; Bird Paradise; Night Safari with tram ride; half day city tour; Marina Bay Sands SkyPark; Gardens by the Bay with Floral Fantasy; Universal Studios one day pass; Wings of Time; 9 private and shared transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; attractions not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival in Singapore",
+    "2": "Bird Paradise and the Night Safari",
+    "3": "City tour, Gardens and the SkyPark",
+    "4": "Universal Studios and Wings of Time",
+    "5": "Departure"
+  },
+  "meals": {
+    "1": "Arrival",
+    "2": "B",
+    "3": "B",
+    "4": "B",
+    "5": "B"
+  },
+  "hotel_by_day": {
+    "1": "Holiday Inn Express Novena",
+    "2": "Holiday Inn Express Novena",
+    "3": "Holiday Inn Express Novena",
+    "4": "Holiday Inn Express Novena",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to Novena",
+      "Walk through Jewel before you leave the airport if your flight lands early",
+      "Check in and keep the evening light",
+      "Optional: Changi Experience Studio or the Canopy Park bridges at Jewel"
+    ],
+    "2": [
+      "Breakfast, then shared transfer out to the Mandai reserve",
+      "Bird Paradise with eight walk through aviaries and the Penguin Cove",
+      "Afternoon rest, then the Night Safari with its tram circuit",
+      "Nocturnal houses on foot afterwards for the pangolins and civets"
+    ],
+    "3": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, Marina Bay, Chinatown and the civic district",
+      "Marina Bay Sands SkyPark on level 57 above the bay",
+      "Floral Fantasy and the Supertree grove at Gardens by the Bay"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Early evening on Siloso beach before the show",
+      "Wings of Time on the beachfront, water, light and fire"
+    ],
+    "5": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "dayLabel": "Day 1 to 5",
+      "hotel": "Holiday Inn Express & Suites Singapore Novena by IHG",
+      "accom": "4 nights · Breakfast included · Standard room · 4★ · Holiday Inn Express Novena, on the MRT line and a short ride from Mandai",
+      "program": {
+        "name": "Mandai, Marina Bay and Sentosa",
+        "description": "Four nights in Novena with a full wildlife day at Mandai, the skyline from level 57 and a theme park day on Sentosa."
+      },
+      "activities": [
+        {
+          "name": "Bird Paradise",
+          "match": "Bird Parad",
+          "day": 2,
+          "description": "Eight walk through aviaries at Mandai, from African wetlands to Amazon river birds, with keeper talks through the day."
+        },
+        {
+          "name": "Night Safari with Tram Ride",
+          "match": "Night Safari",
+          "day": 2,
+          "description": "A tram circuit through the park after dark, then walking trails past the smaller nocturnal animals."
+        },
+        {
+          "name": "Half Day Singapore City Tour",
+          "match": "City Tour",
+          "day": 3,
+          "description": "A shared coach tour of Merlion Park, Marina Bay, the Helix bridge, Chinatown and the colonial quarter."
+        },
+        {
+          "name": "Marina Bay Sands SkyPark",
+          "match": "SkyPark",
+          "day": 3,
+          "description": "The level 57 observation deck looking down on the bay, the Gardens and the towers of the business district."
+        },
+        {
+          "name": "Gardens by the Bay",
+          "match": "Gardens By The Bay",
+          "day": 3,
+          "description": "Floral Fantasy with its hanging gardens and the Supertree grove, best seen as the lights come on."
+        },
+        {
+          "name": "Universal Studios Singapore",
+          "match": "Universal Studios",
+          "day": 4,
+          "description": "A one day pass for the Sentosa park with coasters, stunt shows and the themed streets in between."
+        },
+        {
+          "name": "Wings of Time",
+          "match": "Wings of Time",
+          "day": 4,
+          "description": "A short outdoor night show on Siloso beach built from water screens, lasers and pyrotechnics."
+        },
+        {
+          "name": "River Wonders",
+          "match": "River Wond",
+          "day": 2,
+          "optional": true,
+          "description": "The river themed park next door at Mandai, with giant otters, manatees and a boat ride through the Amazon section."
+        }
+      ],
+      "hotel_label": "Holiday Inn Express Novena"
+    }
+  ]
+}

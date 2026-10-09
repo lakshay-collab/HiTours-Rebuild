@@ -1,0 +1,94 @@
+{
+  "source_slug": "singapore-family-getaway",
+  "slug": "singapore-family-holiday-with-universal-studios",
+  "camel": "singaporeFamilyUniversalStudios",
+  "title": "Singapore Family Holiday with Universal Studios",
+  "alt": "The Universal Studios globe on Sentosa island in Singapore",
+  "cta_country": "singapore",
+  "tag": "Family",
+  "tags": ["Family", "City break"],
+  "price": 53476,
+  "transport": "Private airport transfers with shared coaches for tours and tickets",
+  "route_cities": ["Singapore", "Marina Bay", "Sentosa"],
+  "counts": {"days": 5, "nights": 4, "cities": 1, "hotels": 1, "experiences": 6, "transfers": 9, "meals": 4},
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "#"], ["Singapore", "/asien/singapore"]],
+  "expert": {
+    "name": "Nisha Rao",
+    "image": "/experts/riya.webp",
+    "role": "Singapore expert at Hi Tours",
+    "quote": "Families do well in Bugis. Food courts, a pool, the MRT downstairs and every attraction within half an hour.",
+    "tip": "Start Universal Studios at opening and do the big rides first. By noon the queues double and the children are ready for the indoor shows."
+  },
+  "summary": "Five family days in Singapore. The Night Safari on arrival, a city tour and the domes at Gardens by the Bay, a full day at Universal Studios, then the Sentosa cable car and the Wings of Time show.",
+  "included": "Included: 4 nights at the Village Hotel Bugis with daily breakfast; Night Safari with tram ride; half day city tour; Gardens by the Bay with Cloud Forest, Flower Dome and Jurassic World; Universal Studios one day pass; two way cable car sky pass; Wings of Time; 9 private and shared transfers; visa assistance.",
+  "not_included": "Not included: international flights; visa charges; travel insurance; lunches and dinners; rides and games not named above; personal expenses.",
+  "day_titles": {
+    "1": "Arrival and the Night Safari",
+    "2": "City tour and Gardens by the Bay",
+    "3": "Universal Studios",
+    "4": "Sentosa and Wings of Time",
+    "5": "Departure"
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "Village Hotel Bugis by Far East Hospitality",
+    "2": "Village Hotel Bugis by Far East Hospitality",
+    "3": "Village Hotel Bugis by Far East Hospitality",
+    "4": "Village Hotel Bugis by Far East Hospitality",
+    "5": "Departure"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private sedan transfer to the Village Hotel Bugis",
+      "Check in, then a swim and an early dinner at the hawker centre next door",
+      "Shared transfer to Mandai for the Night Safari with a tram ride",
+      "Children usually last the whole circuit, the elephants come first"
+    ],
+    "2": [
+      "Breakfast, then shared transfer for the half day city tour",
+      "Merlion Park, the Helix bridge, Chinatown and the civic district",
+      "Cloud Forest, Flower Dome and the Jurassic World walk at Gardens by the Bay",
+      "Supertree light show in the evening, free to watch from the lawn"
+    ],
+    "3": [
+      "Breakfast, then shared transfer to Resorts World Sentosa",
+      "One day pass for Universal Studios across all seven zones",
+      "Minion Land and Far Far Away for the youngest, Sci Fi City for the rest",
+      "Return in your own time, the Sentosa Express runs until late"
+    ],
+    "4": [
+      "Breakfast, then shared transfer to Mount Faber for the cable car",
+      "Two way sky pass over the harbour with the port below",
+      "Afternoon free on Siloso beach or at the Sentosa boardwalk",
+      "Wings of Time after dark, water jets, lasers and fire on the beachfront"
+    ],
+    "5": [
+      "Breakfast and check out",
+      "Private sedan transfer to Changi Airport for your flight home"
+    ]
+  },
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "days": [1, 2, 3, 4, 5],
+      "dayLabel": "Day 1 to 5",
+      "hotel": "Village Hotel Bugis by Far East Hospitality",
+      "accom": "4 nights \u00b7 Breakfast included \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Village Hotel Bugis with a rooftop pool and Bugis MRT two minutes away",
+      "program": {
+        "name": "Theme parks and city nights",
+        "description": "Four nights in Bugis with a pool for the afternoons, a wildlife evening at Mandai and a full day at Universal Studios."
+      },
+      "activities": [
+        {"name": "Night Safari with Tram Ride", "match": "Night Safari", "day": 1, "description": "A tram ride through the Mandai park after dark, past elephants, rhinos and the cats that only wake at night."},
+        {"name": "Half Day Singapore City Tour", "match": "City Tour", "day": 2, "description": "A shared coach tour past Merlion Park, Marina Bay, the Helix bridge, Chinatown and the colonial district."},
+        {"name": "Gardens by the Bay", "match": "Gardens By The Bay", "day": 2, "description": "Cloud Forest with its indoor waterfall, the Flower Dome and a Jurassic World trail under the Supertrees."},
+        {"name": "Universal Studios Singapore", "match": "Universal Studios", "day": 3, "description": "A full day pass with Minion Land, Far Far Away, Ancient Egypt and the Sci Fi City coasters."},
+        {"name": "Singapore Cable Car Sky Pass", "match": "Cable Car", "day": 4, "description": "A two way cable car ride between Mount Faber, HarbourFront and Sentosa high above the harbour."},
+        {"name": "Wings of Time", "match": "Wings of Time", "day": 4, "description": "A night show on Siloso beach made of water screens, lasers and fire, about twenty minutes long."},
+        {"name": "Singapore Zoo", "match": "Singapore Zoo", "day": 1, "optional": true, "description": "An open enclosure zoo at Mandai, easy to pair with the Night Safari if the children are up for a long day."}
+      ]
+    }
+  ]
+}

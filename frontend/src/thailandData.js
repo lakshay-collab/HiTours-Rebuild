@@ -12,7 +12,8 @@ const DANCE = P('img3.webp');
 
 const H = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => P(`hotel${n}.webp`));
 
-export const cardImages = [PHI, PALACE, FALLS, ELEPHANT];
+// Listing-card photos: kept unique so the Siam Splendour card does not repeat another Thailand card's shot.
+export const cardImages = [PHI, PALACE, DANCE, H[8]];
 
 export const detail = {
   slug: 'siam-splendour-thailand',
