@@ -154,7 +154,7 @@ export default function Footer() {
 
       <div className="border-t border-outline-variant">
         <div className="tl-wide py-8 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-0">
-          <button className="flex items-center gap-2 t-body-md text-onsurface" data-testid="footer-country">
+          <span className="flex items-center gap-2 t-body-md text-onsurface" data-testid="footer-country">
             <svg viewBox="0 0 30 20" className="w-6 h-4 rounded-[2px] shrink-0" aria-hidden data-testid="footer-flag-india">
               <rect width="30" height="20" fill="#FF9933" />
               <rect y="6.667" width="30" height="6.667" fill="#FFFFFF" />
@@ -166,8 +166,7 @@ export default function Footer() {
               ))}
             </svg>
             {footer.country}
-            <ChevronDown size={16} />
-          </button>
+          </span>
           <span className="hidden sm:block h-6 w-px bg-outline-variant mx-6" />
           <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6">
             {footer.legal.map((l) => (

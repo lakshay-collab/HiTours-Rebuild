@@ -1,0 +1,102 @@
+{
+  "summary": "Frontend batch verification for Hi Tours: Singapore planner (desktop + mobile), customer reviews (Singapore/Laos/Egypt), header search overlay, sale banner, /our-office page, Thailand itinerary planner, and lead POST. All 9 feature groups PASS.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "detailed_findings": {
+    "singapore_desktop_planner": {
+      "flight-path-through_present": true,
+      "flight-path-left/right_absent": true,
+      "quote_no_ellipsis": true,
+      "quote_no_dashes": true,
+      "star_row_green_numeric": true,
+      "dots_count": 12,
+      "dot_rotation_works": true,
+      "sample_quote": "This was our first trip abroad together and Hi Tours made it feel easy..."
+    },
+    "singapore_mobile_planner_390px": {
+      "card_height_px": 636,
+      "order_name_phone_email_ratings_submit": true,
+      "ratings_block_between_email_and_submit": true
+    },
+    "singapore_reviews": {
+      "count_label": "1,871 Singapore reviews",
+      "count_in_1500_2000": true,
+      "categories": ["Hotels 4.7", "Activities 4.7", "Transport 4.3", "Holiday expert advice 4.4", "Post-booking service 4.8"],
+      "no_trustpilot_word": true,
+      "no_august_2026_date": true,
+      "initial_card_count": 3,
+      "show_more_expands_to_6": true,
+      "button_toggle_label": "Show more reviews -> Show fewer reviews",
+      "read_more_works": true,
+      "indian_names_sg": ["Mitali and Sahil", "The Agarwal family", "Meghna"],
+      "summary_no_dashes": true,
+      "summary_shows_reviewer_name_and_type": true
+    },
+    "laos_reviews": {
+      "count_label": "845 Laos reviews",
+      "count_in_500_850": true,
+      "indian_names_laos": ["Neha and Siddharth", "The Kapoor family", "Rohit"],
+      "differs_from_singapore": true
+    },
+    "egypt_reviews_section_renders": true,
+    "thailand_itinerary_detail_planner": {
+      "heading": "Customize your Thailand trip",
+      "quote_sample": "Abhay planned our Thailand honeymoon around what we love and it showed. The Phuket sunset was pure magic...",
+      "star_row_present": true
+    },
+    "header_search_desktop": {
+      "nav-search_present": true,
+      "overlay_opens": true,
+      "typing_thai_shows_suggestion": true,
+      "suggestion_click_navigates_to_thailand_holidays": true,
+      "overlay_closes_on_navigation": true,
+      "escape_closes_overlay": true
+    },
+    "header_search_mobile_390px": {
+      "mobile-search-toggle_present": true,
+      "overlay_opens": true
+    },
+    "sale_banner_first_visit": {
+      "top-banner_shown_after_fresh_session": true,
+      "tag-swing_svg_present": true,
+      "no_santa_hat": true,
+      "has_christmas_text": true,
+      "has_5_percent_off_text": true,
+      "sale-countdown_dhms_present": true,
+      "countdown_ticks_in_2s": true
+    },
+    "our_office_page": {
+      "office-page_renders": true,
+      "office_name_present": true,
+      "vatika_city_point_address_present": true,
+      "office-hours-sales_present": true,
+      "office-hours-operations_present": true,
+      "office-map-iframe_present": true,
+      "enquire_online_opens_dye_modal": true,
+      "footer-link-our-office_present": true
+    },
+    "lead_submission_singapore_desktop": {
+      "payload": "name=QA Batch Test, phone=9876543210, email=qa.batch@example.com",
+      "eg-planner-success_shown": true,
+      "no_error_toast": true,
+      "backend_POST_api_leads": "200 OK (success state rendered)"
+    }
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Both desktop and mobile planner render simultaneously (hidden by Tailwind responsive classes). Multiple elements share data-testid like eg-planner-ratings and eg-star-row; this made our selectors ambiguous. Not a bug but consider scoping testids with -desktop/-mobile suffix for robustness.",
+    "QuoteScroller shows 12 dots which is a lot visually; UX fine but worth considering on narrow screens."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "none required",
+  "seed_data_creation": "One lead was POSTed via UI with name 'QA Batch Test' (per request).",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Phone input selector is [data-testid=\"eg-planner-phone\"] (direct input element). Sale banner only renders if sessionStorage key is unset; clear before testing. Both desktop and mobile planners are in DOM simultaneously - scope selectors to [data-testid=\"eg-planner-card-mobile\"] when checking mobile layout. Thailand detail pages live at /asien/<slug> (e.g. /asien/siam-splendour-thailand)."
+}

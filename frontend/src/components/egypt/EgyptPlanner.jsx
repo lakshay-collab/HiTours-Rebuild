@@ -57,13 +57,13 @@ const Social = ({ data, compact = false }) => (
 );
 
 const Ratings = ({ className = '' }) => (
-  <div className={`flex flex-wrap items-center justify-center gap-x-4 gap-y-1 ${className}`} data-testid="eg-planner-ratings">
-    <span className="flex items-center gap-1.5 whitespace-nowrap eg-body-md text-[#174358]" data-testid="eg-planner-acc-google">
-      <GoogleLogo size={16} />Rated <b className="font-semibold text-[#002131]">{ratings.google.score}</b> on Google
+  <div className={`flex items-center justify-center gap-x-3 sm:gap-x-4 whitespace-nowrap ${className}`} data-testid="eg-planner-ratings">
+    <span className="flex items-center gap-1 sm:gap-1.5 text-[12px] sm:text-[14px] leading-5 text-[#174358]" data-testid="eg-planner-acc-google">
+      <GoogleLogo size={15} /><span className="hidden sm:inline">Rated&nbsp;</span><b className="font-semibold text-[#002131]">{ratings.google.score}</b> on Google
     </span>
-    <span className="w-px h-4 bg-[#C4CBD0] hidden sm:block" />
-    <span className="flex items-center gap-1.5 whitespace-nowrap eg-body-md text-[#174358]" data-testid="eg-planner-acc-tripadvisor">
-      <TripAdvisorLogo size={16} />Rated <b className="font-semibold text-[#002131]">{ratings.tripadvisor.score}</b> on TripAdvisor
+    <span className="w-px h-4 bg-[#C4CBD0]" />
+    <span className="flex items-center gap-1 sm:gap-1.5 text-[12px] sm:text-[14px] leading-5 text-[#174358]" data-testid="eg-planner-acc-tripadvisor">
+      <TripAdvisorLogo size={15} /><span className="hidden sm:inline">Rated&nbsp;</span><b className="font-semibold text-[#002131]">{ratings.tripadvisor.score}</b> on TripAdvisor
     </span>
   </div>
 );
@@ -102,7 +102,7 @@ const QuoteScroller = ({ quotes, className = '' }) => {
   return (
     <div className={`text-center ${className}`} data-testid="eg-planner-quotes">
       <div key={i} className="animate-[hi-fade-in_450ms_ease-out]">
-        <p className="eg-quote !text-[17px] !leading-[26px] text-[#002131]" data-testid="eg-planner-quote-text">&ldquo;{text}{/[.!?]$/.test(text) ? '' : '.'}&rdquo;</p>
+        <p className="eg-quote !text-[15px] !leading-[22px] lg:!text-[17px] lg:!leading-[26px] text-[#002131] eg-clamp-2-lt-lg" data-testid="eg-planner-quote-text">&ldquo;{text}{/[.!?]$/.test(text) ? '' : '.'}&rdquo;</p>
         <div className="mt-2.5 flex items-center justify-center gap-2.5 flex-wrap">
           <span className="eg-title-md text-[#002131]" data-testid="eg-planner-quote-author">{q.name}</span>
           <StarRow value={q.stars || 5} />

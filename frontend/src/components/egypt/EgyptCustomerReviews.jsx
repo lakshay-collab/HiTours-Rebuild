@@ -63,16 +63,32 @@ export default function EgyptCustomerReviews({ className = 'eg-wide mt-12 md:mt-
         <SparkleRight className="text-[#174358]" />
       </div>
 
-      <div className="mt-8 max-w-[860px] mx-auto rounded-2xl bg-[#FBEADB] p-5 md:p-7 flex gap-4" data-testid="eg-cr-summary">
-        <span className="eg-quote !text-[64px] !leading-[56px] text-[#002131] -mt-1 shrink-0">“</span>
-        <div className="flex flex-col gap-3 min-w-0 flex-1">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="eg-title-md text-[#002131]" data-testid="eg-cr-summary-by">{by.name}</span>
-            <span className="eg-label-md text-[#6F777C]">{by.type} in {destination}</span>
-            <StarRow value={by.stars} size={14} />
+      <div className="mt-8 grid gap-2 md:grid-cols-[620fr_740fr]" data-testid="eg-cr-mosaic">
+        <img src={d.photos[0]} alt="" className="w-full h-[220px] md:h-[412px] object-cover rounded-xl" loading="lazy" />
+        <div className="grid md:grid-rows-[202px_202px] gap-2">
+          <div className="grid md:grid-cols-[467fr_257fr] gap-2 md:h-[202px]">
+            <div className="rounded-xl bg-[#FBEADB] p-4 md:p-5 flex gap-3 md:h-[202px] overflow-hidden" data-testid="eg-cr-summary">
+              <span className="eg-quote !text-[64px] !leading-[64px] text-[#002131] -mt-2">“</span>
+              <div className="flex flex-col justify-between gap-2 min-w-0">
+                <div className="flex flex-col gap-1">
+                  <span className="eg-label-md text-[#6F777C]" data-testid="eg-cr-summary-by"><b className="font-semibold text-[#002131]">{by.name}</b>, {by.type.toLowerCase()} in {destination}</span>
+                  <p className="eg-title-md text-[#002131]" data-testid="eg-cr-summary-text">{(d.summary || '').replace(/\s*[-–—]\s*/g, ', ')}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center rounded-full bg-[#002131] h-4 pl-0.5 pr-1.5">
+                    {d.avatars.map((a, i) => <img key={a} src={a} alt="" className="w-[13px] h-[13px] rounded-full object-cover" style={{ marginLeft: i ? -4 : 0 }} />)}
+                    <span className="ml-1 text-white text-[11px] leading-3 font-medium">+{live.countN.toLocaleString('en-IN')}</span>
+                  </span>
+                  <span className="text-[11px] leading-4 text-[#6F777C] font-medium flex items-center gap-1">{d.summaryTag}<SparklesIcon size={12} className="text-[#174358]" /></span>
+                </div>
+              </div>
+            </div>
+            <img src={d.photos[1]} alt="" className="hidden md:block w-full h-[202px] object-cover rounded-xl" loading="lazy" />
           </div>
-          <p className="eg-headline-md !text-[22px] !leading-[30px] md:!text-[24px] md:!leading-[32px] text-[#002131]" data-testid="eg-cr-summary-text">{(d.summary || '').replace(/\s*[-–—]\s*/g, ', ')}</p>
-          <span className="eg-label-md text-[#6F777C] flex items-center gap-1.5"><SparklesIcon size={14} className="text-[#174358]" />{d.summaryTag} from {live.countN.toLocaleString('en-IN')} {destination} reviews</span>
+          <div className="hidden md:grid grid-cols-[257fr_467fr] gap-2 h-[202px]">
+            <img src={d.photos[2]} alt="" className="w-full h-[202px] object-cover rounded-xl" loading="lazy" />
+            <img src={d.photos[3]} alt="" className="w-full h-[202px] object-cover rounded-xl" loading="lazy" />
+          </div>
         </div>
       </div>
 
