@@ -34,7 +34,6 @@ export const BrandStars = ({ rating = 5, size = 16, className = '' }) => (
 );
 
 // Boxed review stars in review green, used for every rating on the site. Unfilled tiles are a lighter neutral.
-export const BRAND_BLUE = '#00B67A';
 export const RATING_GREEN = '#00B67A';
 const EMPTY_TILE = '#D6DCE0';
 

@@ -1,7 +1,7 @@
 import { useLeadModal } from './LeadModalProvider';
 import React, { useEffect, useState } from 'react';
 import { reviews, plan, faq, trust } from '../../egyptListingData';
-import { BoxStars, BRAND_BLUE } from '../Rating';
+import { BoxStars, RATING_GREEN as BRAND_BLUE } from '../Rating';
 import { ChevronRight, ChevronDown } from './EgyptIcons';
 import EgyptTileRow from './EgyptTileRow';
 

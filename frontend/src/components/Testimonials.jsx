@@ -1,6 +1,6 @@
 import React from 'react';
 import { testimonials } from '../mock';
-import { BoxStars, BRAND_BLUE as BLUE } from './Rating';
+import { BoxStars, RATING_GREEN as BLUE } from './Rating';
 import Carousel from './Carousel';
 
 export default function Testimonials() {

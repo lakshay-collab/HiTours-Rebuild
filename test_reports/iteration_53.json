@@ -1,0 +1,21 @@
+{
+  "summary": "Frontend-only regression test for 7 feature areas requested by main agent. All seven items pass. Hero background videos play (not paused), muted, loop, playsinline, cover with poster across Bhutan, Japan, Malaysia, Maldives, Singapore (matches Thailand/Egypt treatment, 1280x720, readyState 4, both webm and mp4 sources). Indonesia (/asien/indonesia/holidays) shows 37 Bali-only trips with no 'Classic Indonesia/Grand Tour of Indonesia' names and no broken images. Japan (/asien/japan/holidays) shows 13 imported titles only, no 'Classic Japan/Grand Tour of Japan', no broken images. Search: typing 'bali' lists both 'Bali' and 'Indonesia'; clicking Bali lands at /asien/indonesia/holidays. Full suggestion list excludes Australia. Star ratings are green (#00B67A = rgb(0,182,122)) in Egypt listing reviews block, homepage footer '4.8 out of 5' and homepage testimonials; brand-stars uses RATING_GREEN by default in Rating.jsx (BrandStars & BoxStars). Promotion: Diwali is active today - top banner & hero pill read 'Celebrate Diwali, Discover the World | 10% off every holiday | Ends 5 November', countdown 27d 04h, sparkle/diya motif (no Santa hat), dismiss button present. Egypt first visible product card: struck \u20B91,51,579 and from \u20B91,36,800 (ratio 1.108 \u2248 1.05/0.95); 'Misr Maya' card: struck \u20B92,53,592 and from \u20B92,28,866 as expected. Detail page /asien/discover-japan-with-mount-fuji-and-kyoto shows Diwali tag, struck \u20B91,33,500, SAVE 10% and from \u20B91,20,484 as expected. Careers: h1='Join Hi Tours', team photo renders, YouTube iframe (GKPwXS3CKBw, start=660 end=690, controls=0, modestbranding=1, mute=1) loaded with 0 error cards.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Rating.jsx: BRAND_BLUE constant retained but value changed to #00B67A - rename constant to avoid confusion (cosmetic).",
+    "Rating.jsx GoldStars still uses amber #FBBC04 (if unused in UI it's fine; otherwise harmonize to green per request)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "100%"},
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All 7 feature areas in iteration 53 verified green. Live Diwali promo window active (today 9-Oct-2026 IST). Hero videos are served from /hero/<country>.webm|mp4 and verified via JS state (paused=false, readyState=4, 1280x720). Search suggestions testids are hero-search-suggestion-<slug>. Sale testids are sale-price-original/-value/-save and eg-product-sale-chip / eg-detail-sale-tag."
+}
