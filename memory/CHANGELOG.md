@@ -100,3 +100,21 @@ with an empty southKoreaProducts array - the first Korea trip must be added ther
 Japan duplicates skipped (identical itinerary to an already built trip, only the marketing title differs):
 - japan-autumn-highlights-in-tokyo-mt-fuji-hiroshima-and-osaka = best-of-japan-tokyo-and-hokkaido (same hotels, same 9 days, INR 206000 vs 206044)
 Remaining to build after 40 of 49: chronicles-of-japan, offbeat-wonders-of-japan, panoramic-japan, scenic-trails-of-japan, japan-landscapes-and-legends, japan-south-korea-tour-package, getaway-to-south-korea-japan, south-korea-and-japan-group-tour.
+
+### Japan import complete (2026-06)
+- All 49 Thrillophilia Japan links processed: 48 live Japan trips, 1 skipped as a duplicate
+  (japan-autumn-highlights-in-tokyo-mt-fuji-hiroshima-and-osaka is the same itinerary, hotels and
+  price as best-of-japan-tokyo-and-hokkaido, only the marketing title differs).
+- Final batch built, validated with scripts/thrillophilia/check_trip.py and registered:
+  journeyNorthTohokuHokkaido, cherryBlossomTrailsJapan, japanRomanceTrailHokkaido, bestOfTokyoAndHokkaido,
+  scenicTrailsJapanNagano, chroniclesOfJapanIslandRoute, panoramicJapanParksAndTemples,
+  offbeatJapanHiroshimaRoute, japanLegendsTempleStay, japanAndSouthKoreaDiscovery,
+  koreaAndJapanShortGroupTour, koreaJapanHiroshimaGetaway.
+- New South Korea destination (/asien/south-korea/holidays) carries the 3 Japan + South Korea combos,
+  which are registered in both japanToursData.js and southKoreaToursData.js.
+- Listing-card photos regenerated across all 48 Japan trips with apply_card_images.py so no two cards repeat a shot.
+- Source inconsistencies fixed rather than bypassed: hotel night totals that did not add up to the stated
+  nights (panoramic-japan, japan-romance-trail, the two Korea combos), source-copy overlap in the
+  inclusions text, and the dash in the Holiday Inn Express Osaka hotel name (handled with hotel_label).
+- Verified by testing agent, iteration_54.json: Japan listing 48 cards, South Korea 3 cards,
+  all new detail routes render, 0 broken images, 100% frontend pass.

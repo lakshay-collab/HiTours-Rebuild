@@ -708,7 +708,13 @@ Dropped as duplicate wrappers per user decision: singapore-cruise-package-from-d
 Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore); search cleaned up so only live destinations show, with Bali findable; one green (#00B67A) for every star rating; a date-driven promotion calendar with per-festival artwork and 10%-look pricing on a 5% real saving; Careers hero renamed "Join Hi Tours" with a looping YouTube background; Indonesia and Japan listings now show only imported trips.
 
 ### Backlog
-- P0: build the remaining 36 Japan Thrillophilia links (13 of 49 done). Three need a new South Korea country page/route.
+- DONE (June 2026): all 49 Japan Thrillophilia links processed. 48 live Japan trips; 1 skipped as a duplicate itinerary
+  (japan-autumn-highlights... = best-of-japan-tokyo-and-hokkaido). New South Korea destination at /asien/south-korea/holidays
+  holds the 3 Japan + South Korea combos, which are also listed under Japan. Card photos unique across all 48 Japan trips.
+  Verified by testing agent iteration_54.json (100% frontend pass, 0 broken images).
+- P1: Careers hero still uses the embedded YouTube clip (GKPwXS3CKBw, 11:00-11:30). The watermark-free, control-free
+  seamless 30s loop the user asked for is NOT verified; a clean local clip could not be downloaded from YouTube.
+- P1: 18 script-generated destinations still ship a single country hero photo for every card (see line above on photo sourcing).
 - P0: Careers background video - confirm playback in a real browser, or self-host a 30 s clip (mp4 + webm in /public/hero) to guarantee no YouTube branding and no play button.
 - P1: decide what to do with the five skipped Bali sources (one 404, four with itinerary/duration mismatches).
 - P1: machine-readable /sitemap.xml (still deferred).
