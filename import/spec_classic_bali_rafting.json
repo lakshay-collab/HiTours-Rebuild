@@ -1,0 +1,43 @@
+{
+ "source_slug": "bali-sightseeing-tour",
+ "camel": "classicBaliBreakRafting",
+ "slug": "classic-bali-break-with-rafting",
+ "title": "Classic Bali Break with Rafting",
+ "alt": "Rafts on the Ayung river below Ubud, Bali",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers and private guided tours",
+ "tag": "Adventure",
+ "tags": ["Adventure", "Short trips"],
+ "price": 36765,
+ "route_cities": ["Ubud", "Kintamani", "Ayung River", "Padang Padang", "Uluwatu"],
+ "counts": {"days": 5, "nights": 4, "cities": 1, "hotels": 1, "experiences": 3, "transfers": 5, "meals": 5},
+ "stops": [
+  {"letter": "A", "name": "Ubud", "city": "Ubud", "subtitle": "Ubud to Kintamani and Uluwatu", "days": [1, 2, 3, 4, 5], "dayLabel": "Day 1 to 5",
+   "hotel": "Bakung Ubud Resort & Villa",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+   "activities": [
+    {"name": "Kintamani with the coffee plantation", "day": 2, "optional": false, "match": "Kintamani with Coffee Plantations", "description": "A private day with a coffee plantation tasting, the crater lake view at Kintamani and the royal palace and market lanes of Ubud."},
+    {"name": "Quad bikes and Ayung river rafting", "day": 3, "optional": false, "match": "Bali ATV Bike Ride and White Water Rafting", "description": "A quad bike route in the morning and twelve kilometres of grade two rapids on the Ayung river in the afternoon, with lunch included."},
+    {"name": "Padang Padang, Uluwatu and the Kecak dance", "day": 4, "optional": false, "match": "Uluwatu Sunset Tour with Padang Padang", "description": "The cove at Padang Padang beach, the cliff top temple at Uluwatu for sunset, then the Kecak fire dance in the amphitheatre."}
+   ],
+   "program": {"name": "Ubud", "description": "Four nights in one garden resort near the Ubud market, with a coffee plantation day, quad bikes and rafting, and a south coast sunset."}}
+ ],
+ "day_titles": {"1": "Arrival in Ubud", "2": "Kintamani and coffee country", "3": "Quad bikes and rafting", "4": "Padang Padang and Uluwatu", "5": "Departure from Bali"},
+ "bullets": {
+  "1": ["Arrival at Ngurah Rai Airport and private transfer to your hotel", "Check in at your Ubud resort and settle in", "Rest of the day free in the town lanes", "Optional: the Monkey Forest or the Ubud art market"],
+  "2": ["Breakfast, then a private day out with your own guide", "Coffee plantation tasting on the climb to Kintamani", "The crater lake view across Mount Batur", "The royal palace and market lanes back in Ubud"],
+  "3": ["Breakfast, then a quad bike route through the fields", "Lunch is included between the two activities", "Twelve kilometres of rafting on the Ayung river", "Jungle gorges and carved rock faces along the way"],
+  "4": ["Breakfast, then a half day to the southern cliffs", "Padang Padang beach in its limestone cove", "Uluwatu temple above the surf at sunset", "Kecak fire dance in the temple amphitheatre afterwards"],
+  "5": ["Breakfast at the resort and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B, L", "4": "B", "5": "B"},
+ "hotel_by_day": {"1": "Bakung Ubud Resort & Villa", "2": "Bakung Ubud Resort & Villa", "3": "Bakung Ubud Resort & Villa", "4": "Bakung Ubud Resort & Villa", "5": "Departure"},
+ "expert": {"name": "Putu", "image": "/experts/riya.webp", "role": "Indonesia expert at Hi Tours",
+  "quote": "One hotel, four nights, and a day on the river. The short Bali trip for people who do not want to pack twice.",
+  "tip": "Rafting and quad bikes fall on the same day on purpose, they are ten minutes apart. Carry a dry bag and a change of clothes, and keep the Uluwatu evening for the day after."},
+ "summary": "Five days from a single base near the Ubud market, with a private coffee plantation day up to Kintamani, a morning of quad bikes and an afternoon of rafting on the Ayung river, and sunset at Uluwatu with the Kecak dance.",
+ "included": "Included: 4 nights with daily breakfast; private airport transfers; private Kintamani tour with the coffee plantation and Ubud palace; quad bike ride and Ayung river rafting with lunch; Padang Padang and Uluwatu sunset tour with the Kecak dance.",
+ "not_included": "Not included: international flights; Indonesia visa fees; other lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

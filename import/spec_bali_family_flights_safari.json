@@ -1,0 +1,50 @@
+{
+ "source_slug": "bali-package-from-delhi-for-family",
+ "camel": "baliFamilyFlightsSafari",
+ "slug": "bali-family-holiday-with-flights-and-safari",
+ "title": "Bali Family Holiday with Flights and Safari",
+ "alt": "Elephants at Bali Safari and Marine Park",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Return flights, private transfers and guided tours",
+ "tag": "Family",
+ "tags": ["Family", "Culture"],
+ "price": 43396,
+ "route_cities": ["Kuta", "Bedugul", "Bali Safari", "Ubud", "Kintamani"],
+ "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 3, "transfers": 6, "meals": 5},
+ "stops": [
+  {"letter": "A", "name": "Kuta", "city": "Kuta", "subtitle": "Kuta to Bedugul and the safari park", "days": [1, 2, 3], "dayLabel": "Day 1 to 3",
+   "hotel": "Bliss Surfer Hotel, Kuta", "hotel_label": "Bliss Surfer Hotel",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+   "activities": [
+    {"name": "Bedugul lakes and Tanah Lot", "day": 2, "optional": false, "match": "Full Day Bedugul Tour", "description": "The Handara gate, the lake temple of Ulun Danu Beratan and a hill waterfall, finishing at the sea temple of Tanah Lot for sunset."},
+    {"name": "Bali Safari and Marine Park", "day": 3, "optional": false, "match": "Bali Safari", "description": "A safari ride through the African and Indian enclosures, the elephant and bird shows, and the water park included in the ticket."}
+   ],
+   "program": {"name": "Kuta", "description": "Three nights on the coast to open the holiday, with a full day up to the Bedugul lakes and a safari park day the children will like."}},
+  {"letter": "B", "name": "Ubud", "city": "Ubud", "subtitle": "Ubud to Kintamani", "days": [4, 5, 6], "dayLabel": "Day 4 to 6",
+   "hotel": "Bakung Ubud Resort & Villa",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+   "activities": [
+    {"name": "Kintamani with the jungle swing", "day": 5, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."}
+   ],
+   "program": {"name": "Ubud", "description": "Two nights inland to finish, with a free afternoon in town and a full day through the coffee country up to the Kintamani crater."}}
+ ],
+ "day_titles": {"1": "Flight to Bali and Kuta", "2": "Bedugul lakes and Tanah Lot", "3": "A day at Bali Safari", "4": "On to Ubud", "5": "Kintamani and the jungle swing", "6": "Departure from Bali"},
+ "bullets": {
+  "1": ["Flight from Delhi to Denpasar, included in your package", "Arrival at Ngurah Rai Airport and private transfer to your hotel", "Check in at your Kuta hotel near the beach", "Rest of the day free on the south coast"],
+  "2": ["Breakfast, then a full day north to the lake country", "The Handara gate and Ulun Danu Beratan temple", "A hill waterfall in the afternoon", "Sunset at Tanah Lot, the sea temple on the rocks"],
+  "3": ["Breakfast, then a full day at Bali Safari and Marine Park", "Safari ride through the African and Indian enclosures", "Elephant and bird shows, then the water park", "Back at the hotel in the evening"],
+  "4": ["Breakfast and check out, then private transfer up to Ubud", "Check in at your garden resort near the market", "Afternoon free in the town lanes", "Optional: the Monkey Forest or the art market"],
+  "5": ["Breakfast, then a full day out with your own car and guide", "Coffee plantation tasting on the climb to Kintamani", "Tegenungan waterfall and the Tegalalang rice terraces", "A turn on the jungle swing above the valley"],
+  "6": ["Breakfast at the resort and check out", "Private transfer to Ngurah Rai Airport for your return flight"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+ "hotel_by_day": {"1": "Bliss Surfer Hotel, Kuta", "2": "Bliss Surfer Hotel, Kuta", "3": "Bliss Surfer Hotel, Kuta", "4": "Bakung Ubud Resort & Villa", "5": "Bakung Ubud Resort & Villa", "6": "Departure"},
+ "expert": {"name": "Putu", "image": "/experts/riya.webp", "role": "Indonesia expert at Hi Tours",
+  "quote": "Flights, a safari day and a free afternoon in Ubud. For a family of four this is the simplest Bali week to book.",
+  "tip": "Bali Safari takes a full day, so carry swimwear for the water park and book the elephant show slot in the morning. Ubud at the end keeps the last two days slow."},
+ "summary": "Six days with return flights from Delhi: three nights in Kuta with the Bedugul lakes, sunset at Tanah Lot and a full day at Bali Safari, then two nights in Ubud with a coffee plantation day up to the Kintamani crater.",
+ "included": "Included: return flights from Delhi; 5 nights with daily breakfast; private airport and inter city transfers; full day Bedugul tour with Tanah Lot; Bali Safari and Marine Park tickets; Kintamani and jungle swing tour.",
+ "not_included": "Not included: Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

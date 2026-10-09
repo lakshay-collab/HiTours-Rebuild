@@ -1,0 +1,122 @@
+{
+  "source_slug": "tour-of-bali-and-singapore-for-7-days-and-6-nights",
+  "camel": "baliSingaporeFamilyHoliday",
+  "slug": "bali-and-singapore-family-holiday",
+  "title": "Bali and Singapore Family Holiday",
+  "alt": "Sentosa island cable car above the water in Singapore",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers, city tours and guided day tours",
+  "tag": "Family",
+  "tags": ["Family", "Beach"],
+  "price": 29525,
+  "route_cities": ["Kuta", "Kintamani", "Tanjung Benoa", "Singapore", "Sentosa"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 6, "transfers": 15, "meals": 7},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Kintamani and Tanjung Benoa",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 2, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Water sports with the pirate dinner cruise", "day": 3, "optional": false, "match": "Water Sports in Bali with Pirate Dinner Cruise", "description": "Banana boat, jet ski and parasailing at Tanjung Benoa by day, then the pirate ship cruise in the evening with dinner and a deck show."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights in Bali to open the holiday, with a coffee plantation day up to Kintamani and a pirate ship dinner cruise the children will remember."}
+    },
+    {
+      "letter": "B",
+      "name": "Singapore",
+      "city": "Singapore",
+      "subtitle": "Singapore to Sentosa",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "ibis Singapore Novena",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Novena hotel one stop from Orchard Road on the metro",
+      "activities": [
+        {"name": "Singapore city tour", "day": 5, "optional": false, "match": "Singapore City Tour", "description": "A half day tour past Merlion Park, the Marina Bay waterfront, Chinatown and the colonial quarter, with a guide on a shared coach."},
+        {"name": "Sentosa cable car sky pass", "day": 6, "optional": false, "match": "Singapore Cable Car", "description": "Two cable car lines over the harbour and across Sentosa, the easiest way to see the island and the port from above."},
+        {"name": "Adventure Cove Waterpark", "day": 6, "optional": false, "match": "Adventure Cove Waterpark", "description": "Six water slides, a lazy river and a reef you can snorkel, the best Sentosa attraction for families with younger children."},
+        {"name": "Wings of Time show", "day": 6, "optional": false, "match": "Wings Of Time", "description": "An evening show on Siloso beach with water jets, lasers and fire, staged over the sea at the end of your Sentosa day."}
+      ],
+      "program": {"name": "Singapore", "description": "Three nights in the city with a guided city tour and a full Sentosa day of cable cars, the water park and the Wings of Time show."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Kintamani and the jungle swing",
+    "3": "Water sports and pirate cruise",
+    "4": "On to Singapore",
+    "5": "Singapore city tour",
+    "6": "A day on Sentosa island",
+    "7": "Departure from Singapore"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Kuta hotel near the beach",
+      "Rest of the day free on the south coast",
+      "Optional: Kuta beach, the art market or Waterbom park"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing with an instructor",
+      "Evening pirate ship cruise with dinner and a deck show",
+      "Back at the hotel late in the evening"
+    ],
+    "4": [
+      "Breakfast and check out, then private transfer to the airport",
+      "Optional: flight from Denpasar to Singapore, which we can add",
+      "Arrival at Changi and private transfer to your hotel",
+      "Rest of the day free around Novena and Orchard Road"
+    ],
+    "5": [
+      "Breakfast, then a half day city tour with a guide",
+      "Merlion Park, Marina Bay and the colonial quarter",
+      "Chinatown lanes and the Sri Mariamman temple",
+      "Optional: the Supertree light show at Gardens by the Bay"
+    ],
+    "6": [
+      "Breakfast, then across to Sentosa island",
+      "Cable car sky pass over the harbour and the island",
+      "Adventure Cove Waterpark for the rest of the day",
+      "Wings of Time show on Siloso beach in the evening"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Changi Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, D", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Bliss Surfer Hotel, Kuta",
+    "2": "Bliss Surfer Hotel, Kuta",
+    "3": "Bliss Surfer Hotel, Kuta",
+    "4": "ibis Singapore Novena",
+    "5": "ibis Singapore Novena",
+    "6": "ibis Singapore Novena",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Bali for the sea and the swing, Singapore for Sentosa. Two countries, six nights, and children who never get bored.",
+    "tip": "Keep the Sentosa day for last, children sleep on the flight home afterwards. Book Adventure Cove for the morning when the slides are quiet and carry a change of clothes for the Wings of Time show."
+  },
+  "summary": "Seven days across two countries for families: three nights in Bali with Kintamani, the jungle swing, water sports and a pirate ship dinner cruise, then three in Singapore with a city tour and a full Sentosa day.",
+  "included": "Included: 6 nights with daily breakfast; private airport and city transfers; Kintamani and jungle swing tour; water sports with the pirate dinner cruise; Singapore city tour; Sentosa cable car sky pass; Adventure Cove Waterpark; Wings of Time show.",
+  "not_included": "Not included: international flights; the Denpasar to Singapore flight, which we can add; visa fees; lunches and other dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

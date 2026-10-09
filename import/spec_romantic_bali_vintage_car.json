@@ -1,0 +1,114 @@
+{
+  "source_slug": "bali-couple-tour",
+  "camel": "romanticBaliVintageCar",
+  "slug": "romantic-bali-with-vintage-car-tour",
+  "title": "Romantic Bali with Vintage Car Tour",
+  "alt": "Tirta Empul holy spring temple in central Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Adventure"],
+  "price": 35352,
+  "route_cities": ["Ubud", "Tirta Empul", "Kuta", "Uluwatu", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 6, "transfers": 15, "meals": 5},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Tirta Empul",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Ubud Raya Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Villa resort with a pool, a short ride from Ubud town",
+      "activities": [
+        {"name": "Central Bali in a vintage Volkswagen", "day": 2, "optional": false, "match": "Central Bali Sightseeing Tour with Tirta Empul", "description": "A day out in an open top vintage Volkswagen taking in the Bali swing, Tegenungan waterfall, the holy spring temple at Tirta Empul and the rice terraces."},
+        {"name": "Ubud Monkey Forest", "day": 1, "optional": true, "match": "Monkey Forest", "description": "Banyan trees, moss covered shrines and a few hundred macaques in a sanctuary ten minutes on foot from the Ubud market."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights in a villa near Ubud, with a vintage car day through the temples, waterfalls and rice terraces of central Bali."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Desamuda Village",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden hotel in Seminyak, ten minutes from the beach",
+      "activities": [
+        {"name": "Tandem ATV ride", "day": 3, "optional": false, "match": "ATV Adventure", "description": "A two seat quad bike route through rice fields, a river crossing and a cave tunnel, with helmets, boots and a guide ahead of you."},
+        {"name": "Cretya Ubud day club", "day": 3, "optional": false, "match": "Cretya Ubud", "description": "Infinity pools and daybeds above the Ayung valley, with lunch and drinks available, and transfers from the ATV base included."},
+        {"name": "Water sports, Melasti and Uluwatu", "day": 4, "optional": false, "match": "Day Trip to Uluwatu Temple", "description": "Banana boat and jet ski at Tanjung Benoa, the white sand of Melasti beach, then Uluwatu temple and the Kecak fire dance at sunset."},
+        {"name": "Nusa Penida west with Paluang cliff", "day": 5, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for Kelingking beach, Angel's Billabong, Broken Bay and the Paluang cliff viewpoint above the water."},
+        {"name": "Balinese massage for two", "day": 5, "optional": false, "match": "Balinese Massage", "description": "An hour of traditional Balinese massage for both of you after the island day, warm oil and long pressure strokes at a spa in Kuta."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the coast with a quad bike morning, a cliff top day club, water sports at Tanjung Benoa and a full day on Nusa Penida."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Central Bali by vintage car",
+    "3": "Quad bikes and on to Kuta",
+    "4": "Water sports and Uluwatu",
+    "5": "Nusa Penida and a spa evening",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your villa resort near Ubud",
+      "Rest of the day free by the pool",
+      "Optional: the Monkey Forest or the Ubud art market"
+    ],
+    "2": [
+      "Breakfast, then a day out in an open top vintage Volkswagen",
+      "The Bali swing and Tegenungan waterfall",
+      "Tirta Empul, the holy spring temple",
+      "The Tegalalang rice terraces on the way back"
+    ],
+    "3": [
+      "Breakfast and check out, then a tandem quad bike route",
+      "Rice fields, a river crossing and a cave tunnel",
+      "Afternoon at the Cretya day club above the Ayung valley",
+      "Private transfer down to Kuta and check in"
+    ],
+    "4": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat and jet ski with an instructor",
+      "Melasti beach, white sand below the cliffs",
+      "Uluwatu temple and the Kecak fire dance at sunset"
+    ],
+    "5": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong and the Paluang cliff",
+      "An hour of Balinese massage for two back in Kuta"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Ubud Raya Villa",
+    "2": "Ubud Raya Villa",
+    "3": "Desamuda Village",
+    "4": "Desamuda Village",
+    "5": "Desamuda Village",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "The vintage car day is the one couples talk about afterwards. Open sides, no windows, and the whole of central Bali.",
+    "tip": "Quad bikes and the day club work best on the same day because they are ten minutes apart. Carry a change of clothes, the river crossing soaks everyone, and keep the massage for the evening after Nusa Penida."
+  },
+  "summary": "Six days for two with a vintage Volkswagen day through central Bali, a tandem quad bike route, a cliff top day club above the Ayung valley, water sports at Tanjung Benoa, Uluwatu at sunset and a full day on Nusa Penida.",
+  "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; central Bali tour in a vintage Volkswagen; tandem ATV ride; Cretya Ubud day club; water sports with Melasti and Uluwatu; Nusa Penida west coast tour; Balinese massage for two.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

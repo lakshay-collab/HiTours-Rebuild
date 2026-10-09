@@ -85,12 +85,15 @@ for h in raw['hotels']:
 stop_cities = [s['city'] for s in spec['stops']]
 hero = []
 while len(hero) < 10:
+    before = len(hero)
     for c in stop_cities:
         if len(hero) >= 10:
             break
         pick = [u for u in (cities.get(c) or []) if u not in hero]
         if pick:
             hero.append(pick[0] if not hero else pick[len(hero) % len(pick)])
+    if len(hero) == before:
+        break
 hero = list(dict.fromkeys(hero))
 extra = [u for c in stop_cities for u in (cities.get(c) or [])]
 for u in extra:

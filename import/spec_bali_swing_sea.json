@@ -1,0 +1,186 @@
+{
+ "source_slug": "honeymoon-getaway-to-bali",
+ "camel": "baliHoneymoonSwingAndSafari",
+ "slug": "bali-honeymoon-with-swing-and-sea-shores",
+ "title": "Bali Honeymoon with Swing and Sea Shores",
+ "alt": "Jungle swing above the Tegalalang rice terraces, Bali",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Indonesia",
+   "/asien/indonesia"
+  ]
+ ],
+ "transport": "Private transfers and guided day tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Culture"
+ ],
+ "price": 34979,
+ "route_cities": [
+  "Ubud",
+  "Bedugul",
+  "Kuta",
+  "Uluwatu",
+  "Nusa Penida"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 13,
+  "meals": 5
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to Bedugul",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Ubud Raya Villa",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Small villa property in the rice fields near Ubud town",
+   "activities": [
+    {
+     "name": "Central Bali in a vintage Volkswagen",
+     "day": 2,
+     "optional": false,
+     "match": "Central Bali Sightseeing Tour with Tirta Empul",
+     "description": "An open top vintage Volkswagen for the day through the rice fields, with the jungle swing, Tegenungan waterfall and the holy spring temple at Tirta Empul."
+    },
+    {
+     "name": "Bedugul lakes and Tanah Lot sunset",
+     "day": 3,
+     "optional": false,
+     "match": "Full Day Bedugul Tour",
+     "description": "The Handara gate, the lake temple of Ulun Danu Beratan in the cool highlands, then Tanah Lot on the rocks as the sun goes down."
+    }
+   ],
+   "program": {
+    "name": "Ubud",
+    "description": "Three nights inland with a vintage Volkswagen day through central Bali and a highland day up to the Bedugul lake temples."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Uluwatu and Nusa Penida",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Desamuda Village",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Garden hotel with a pool, a short walk from Seminyak beach",
+   "activities": [
+    {
+     "name": "Melasti beach, water sports and Uluwatu",
+     "day": 4,
+     "optional": false,
+     "match": "Day Trip to Uluwatu Temple",
+     "description": "The white sand of Melasti beach, parasailing and a jet ski at Tanjung Benoa, then Uluwatu at sunset with the Kecak fire dance."
+    },
+    {
+     "name": "Nusa Penida west with Paluang cliff",
+     "day": 5,
+     "optional": false,
+     "match": "Nusa Penida West Tour",
+     "description": "Speedboat across for the Paluang cliff viewpoint, Kelingking beach, Angel's Billabong and Broken Bay with your own guide."
+    }
+   ],
+   "program": {
+    "name": "Kuta",
+    "description": "Two nights on the coast with a south Bali day that ends at Uluwatu, and a full island day on Nusa Penida."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Ubud",
+  "2": "Central Bali by vintage Volkswagen",
+  "3": "Bedugul lakes and Tanah Lot",
+  "4": "Melasti beach and Uluwatu",
+  "5": "Nusa Penida west coast",
+  "6": "Departure from Bali"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Ngurah Rai Airport and private transfer to Ubud",
+   "Check in at your villa in the rice fields",
+   "Rest of the day free at your own pace",
+   "Optional: the Ubud market lanes or the Monkey Forest"
+  ],
+  "2": [
+   "Breakfast, then an open top vintage Volkswagen for the day",
+   "A turn on the jungle swing above the valley",
+   "Tegenungan waterfall and the rice terraces",
+   "Tirta Empul, the holy spring temple, before the drive back"
+  ],
+  "3": [
+   "Breakfast, then north into the highlands",
+   "The Handara gate for photographs",
+   "Ulun Danu Beratan, the temple standing on the lake",
+   "Sunset at Tanah Lot on the way back"
+  ],
+  "4": [
+   "Breakfast and check out, then south to Melasti beach",
+   "Parasailing and a jet ski at Tanjung Benoa",
+   "Uluwatu temple on the cliffs at sunset",
+   "Kecak fire dance, then check in near Seminyak"
+  ],
+  "5": [
+   "Early breakfast, then private transfer to Sanur harbour",
+   "Speedboat across to Nusa Penida",
+   "The Paluang cliff viewpoint and Kelingking beach",
+   "Angel's Billabong and Broken Bay before the boat back"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Ngurah Rai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Ubud Raya Villa",
+  "2": "Ubud Raya Villa",
+  "3": "Ubud Raya Villa",
+  "4": "Desamuda Village",
+  "5": "Desamuda Village",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "The vintage Volkswagen day is the one couples put on the wall when they get home. Open top, rice fields, no hurry.",
+  "tip": "Keep the Nusa Penida day for the end so a rough sea morning can be swapped with the Uluwatu day. Both work either way around."
+ },
+ "summary": "Six days for two with three nights in the Ubud rice fields for a vintage Volkswagen day and the Bedugul lake temples, then two nights near Seminyak with Melasti beach, water sports, Uluwatu at sunset and a full day on Nusa Penida.",
+ "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; central Bali tour in a vintage Volkswagen with Tirta Empul; full day Bedugul tour with Tanah Lot sunset; Melasti beach with water sports, Uluwatu and the Kecak dance; Nusa Penida west coast tour with the Paluang cliff.",
+ "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses."
+}

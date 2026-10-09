@@ -1,0 +1,294 @@
+{
+ "source_slug": "singapore-malaysia-bali-honeymoon-package",
+ "camel": "singaporeMalaysiaBaliHoneymoon",
+ "slug": "best-of-singapore-malaysia-and-bali-honeymoon",
+ "title": "Best of Singapore, Malaysia and Bali Honeymoon",
+ "alt": "The Petronas Twin Towers at dusk in Kuala Lumpur",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers, city tours and guided day tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Luxury"
+ ],
+ "price": 104500,
+ "route_cities": [
+  "Singapore",
+  "Sentosa",
+  "Kuala Lumpur",
+  "Genting Highlands",
+  "Kuta"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 11,
+  "transfers": 21,
+  "meals": 15
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Singapore",
+   "city": "Singapore",
+   "subtitle": "Singapore to Sentosa",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "ibis Singapore on Bencoolen",
+   "accom": "3 nights · Breakfast and one main meal daily · Standard room · 3★ · Bencoolen hotel, five minutes on foot from the metro",
+   "activities": [
+    {
+     "name": "Night Safari with tram ride",
+     "day": 1,
+     "optional": false,
+     "match": "Singapore Night Safari",
+     "description": "The world's first nocturnal zoo, with a tram ride through seven habitats and walking trails where the animals are at their most active."
+    },
+    {
+     "name": "Singapore sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Singapore Half-Day Sightseeing",
+     "description": "A half day tour past Merlion Park, the Marina Bay waterfront, Chinatown and the colonial quarter, with a guide on a shared coach."
+    },
+    {
+     "name": "Marina Bay Sands SkyPark",
+     "day": 2,
+     "optional": false,
+     "match": "Marina Bay Sands Skypark",
+     "description": "The observation deck fifty seven floors above Marina Bay, with the whole city, the port and the Gardens by the Bay domes below you."
+    },
+    {
+     "name": "Gardens by the Bay",
+     "day": 2,
+     "optional": false,
+     "match": "Gardens By The Bay",
+     "description": "Entry to the Cloud Forest and Flower Dome, with the Supertree light show in the evening a short walk away."
+    },
+    {
+     "name": "Universal Studios Singapore",
+     "day": 3,
+     "optional": false,
+     "match": "Universal Studios",
+     "description": "A full day ticket for the Sentosa theme park, with seven themed zones, the duelling roller coasters and the street shows."
+    },
+    {
+     "name": "Singapore river cruise",
+     "day": 3,
+     "optional": false,
+     "match": "Singapore River Cruise",
+     "description": "A bumboat along the river past the old godowns of Clarke Quay and Boat Quay, with the Marina Bay skyline lighting up ahead."
+    }
+   ],
+   "program": {
+    "name": "Singapore",
+    "description": "Three nights in the city with a night safari, the Marina Bay SkyPark, Gardens by the Bay, Universal Studios and the river by bumboat."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kuala Lumpur",
+   "city": "Kuala Lumpur",
+   "subtitle": "Kuala Lumpur to Genting Highlands",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Hilton Garden Inn Kuala Lumpur - North",
+   "hotel_label": "Hilton Garden Inn Kuala Lumpur North",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Four star hotel a short ride from Bukit Bintang",
+   "activities": [
+    {
+     "name": "Genting Highlands and Batu Caves",
+     "day": 5,
+     "optional": false,
+     "match": "Genting Highlands and Batu Caves",
+     "description": "A private day up to the hill resort by cable car, with the theme park and casino floor, and the Batu Caves temple steps on the way back."
+    },
+    {
+     "name": "Kuala Lumpur sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Kuala Lumpur Sightseeing",
+     "description": "The King's palace gates, the National Monument, Merdeka Square and the old railway station, with a stop for photographs at the towers."
+    },
+    {
+     "name": "Petronas Twin Towers tickets",
+     "day": 6,
+     "optional": false,
+     "match": "Petronas Twin Towers",
+     "description": "Entry to the sky bridge and the observation deck on the eighty sixth floor, with the city spread out on both sides."
+    }
+   ],
+   "program": {
+    "name": "Kuala Lumpur",
+    "description": "Three nights in the Malaysian capital, with a hill day at Genting and Batu Caves, a city tour and the Petronas towers from the inside."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Uluwatu",
+   "days": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "Bliss Surfer Hotel, Kuta",
+   "hotel_label": "Bliss Surfer Hotel",
+   "accom": "3 nights · Breakfast and one main meal daily · Standard room · 3★ · Surf style hotel five minutes from Kuta beach",
+   "activities": [
+    {
+     "name": "Uluwatu and Padang Padang beach",
+     "day": 8,
+     "optional": false,
+     "match": "Uluwatu Sunset Tour",
+     "description": "A half day along the southern cliffs: Padang Padang beach in its limestone cove, then Uluwatu temple as the sun drops into the ocean."
+    },
+    {
+     "name": "Balinese massage for two",
+     "day": 9,
+     "optional": false,
+     "match": "Balinese Massage",
+     "description": "A traditional Balinese massage for both of you on your free day, warm oil and long pressure strokes at a spa near the hotel."
+    }
+   ],
+   "program": {
+    "name": "Kuta",
+    "description": "Three nights in Bali to finish, with a candlelight dinner on arrival, the Uluwatu cliffs at sunset and a spa day before you fly home."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and night safari",
+  "2": "Marina Bay and the Gardens",
+  "3": "Universal Studios and the river",
+  "4": "On to Kuala Lumpur",
+  "5": "Genting Highlands and Batu Caves",
+  "6": "City tour and Petronas towers",
+  "7": "On to Bali and a candlelight dinner",
+  "8": "Uluwatu and Padang Padang",
+  "9": "Spa day in Kuta",
+  "10": "Departure from Bali"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Changi Airport and private transfer to your hotel",
+   "Check in and freshen up near Bencoolen",
+   "Evening tram ride at the Singapore Night Safari",
+   "Dinner is included at the hotel tonight"
+  ],
+  "2": [
+   "Breakfast, then a half day city tour with a guide",
+   "Merlion Park, the colonial quarter and Chinatown",
+   "The SkyPark deck above Marina Bay Sands",
+   "Cloud Forest and Flower Dome at Gardens by the Bay"
+  ],
+  "3": [
+   "Breakfast, then across to Sentosa island",
+   "Full day ticket for Universal Studios Singapore",
+   "Coasters, themed zones and the street shows",
+   "Evening bumboat cruise along the Singapore river"
+  ],
+  "4": [
+   "Breakfast and check out, then private transfer to Changi",
+   "Optional: flight from Singapore to Kuala Lumpur, which we can add",
+   "Arrival and private transfer to your Kuala Lumpur hotel",
+   "Rest of the day free around Bukit Bintang"
+  ],
+  "5": [
+   "Breakfast, then a private day up to Genting Highlands",
+   "Cable car to the hill resort and its theme park",
+   "Batu Caves and the temple steps on the way back",
+   "Evening free in the city"
+  ],
+  "6": [
+   "Breakfast, then a city tour with a guide",
+   "The palace gates, Merdeka Square and the old station",
+   "Sky bridge and observation deck at the Petronas towers",
+   "Optional: dinner on Jalan Alor street food lane"
+  ],
+  "7": [
+   "Breakfast and check out, then private transfer to the airport",
+   "Optional: flight from Kuala Lumpur to Denpasar, which we can add",
+   "Arrival in Bali and private transfer to your Kuta hotel",
+   "Candlelight dinner for two in the evening, set up privately"
+  ],
+  "8": [
+   "Breakfast, then a half day to the southern cliffs",
+   "Padang Padang beach in its limestone cove",
+   "Uluwatu temple above the surf at sunset",
+   "Dinner is included at the hotel tonight"
+  ],
+  "9": [
+   "Breakfast and a free day on the coast",
+   "A traditional Balinese massage for two at a nearby spa",
+   "Optional: Kuta Square, the art market or a surf lesson",
+   "Dinner is included at the hotel tonight"
+  ],
+  "10": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Ngurah Rai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B, D",
+  "8": "B, D",
+  "9": "B, D",
+  "10": "B"
+ },
+ "hotel_by_day": {
+  "1": "ibis Singapore on Bencoolen",
+  "2": "ibis Singapore on Bencoolen",
+  "3": "ibis Singapore on Bencoolen",
+  "4": "Hilton Garden Inn Kuala Lumpur North",
+  "5": "Hilton Garden Inn Kuala Lumpur North",
+  "6": "Hilton Garden Inn Kuala Lumpur North",
+  "7": "Bliss Surfer Hotel, Kuta",
+  "8": "Bliss Surfer Hotel, Kuta",
+  "9": "Bliss Surfer Hotel, Kuta",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Three countries in ten days, and the order matters. Cities first, then the hills, then Bali to slow down.",
+  "tip": "Both inter country hops are short, so take morning flights and you keep the afternoons. We book your Singapore to Kuala Lumpur and Kuala Lumpur to Denpasar legs with the package when you ask."
+ },
+ "summary": "Ten days across three countries: Singapore for the night safari, Marina Bay and Universal Studios, Kuala Lumpur for Genting, Batu Caves and the Petronas towers, then Bali for a candlelight dinner, Uluwatu at sunset and a spa day.",
+ "included": "Included: 9 nights with daily breakfast, plus one main meal daily in Singapore and Bali; private airport and city transfers; Night Safari; Singapore sightseeing; Marina Bay Sands SkyPark; Gardens by the Bay; Universal Studios; river cruise; Genting and Batu Caves; Kuala Lumpur city tour; Petronas tickets; Uluwatu sunset tour; candlelight dinner; Balinese massage.",
+ "not_included": "Not included: international flights; the Singapore to Kuala Lumpur and Kuala Lumpur to Denpasar flights, which we can add; visa fees; travel insurance; personal expenses.",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Indonesia",
+   "/asien/indonesia"
+  ]
+ ]
+}

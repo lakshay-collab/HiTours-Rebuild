@@ -1,0 +1,76 @@
+{
+ "source_slug": "family-getaway-to-bali",
+ "camel": "baliFamilyHolidayNusaPenida",
+ "slug": "bali-family-holiday-with-nusa-penida",
+ "title": "Bali Family Holiday with Nusa Penida",
+ "alt": "Melasti beach below the cliffs in south Bali",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers and guided day tours",
+ "tag": "Family",
+ "tags": ["Family", "Beach"],
+ "price": 34562,
+ "route_cities": ["Ubud", "Bedugul", "Kuta", "Nusa Penida", "Uluwatu"],
+ "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 13, "meals": 5},
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to Bedugul",
+   "days": [1, 2, 3],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Ubud Heaven Sayan",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Villa resort above the Ayung valley at Sayan",
+   "activities": [
+    {"name": "Central Bali in a vintage Volkswagen", "day": 2, "optional": false, "match": "Central Bali Sightseeing Tour with Tirta Empul", "description": "A day out in an open top vintage Volkswagen taking in the Bali swing, Tegenungan waterfall, the spring temple at Tirta Empul and the rice terraces."},
+    {"name": "Bedugul lakes and Tanah Lot", "day": 3, "optional": false, "match": "Full Day Bedugul Tour", "description": "The Handara gate, the lake temple of Ulun Danu Beratan and a hill waterfall, finishing at the sea temple of Tanah Lot for sunset."}
+   ],
+   "program": {"name": "Ubud", "description": "Three nights in a valley villa at Sayan, with a vintage car day through central Bali and a full day up to the Bedugul lakes."}
+  },
+  {
+   "letter": "B",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Nusa Penida and Uluwatu",
+   "days": [4, 5, 6],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Desamuda Village",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden hotel in Seminyak, ten minutes from the beach",
+   "activities": [
+    {"name": "Nusa Penida west with Paluang cliff", "day": 4, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for the Paluang cliff viewpoint, Kelingking beach and the rock arch at Angel's Billabong, with Broken Bay after it."},
+    {"name": "Melasti beach, water sports and Uluwatu", "day": 5, "optional": false, "match": "Day Trip to Uluwatu Temple", "description": "The white sand at Melasti beach, banana boat and jet ski at Tanjung Benoa, then Uluwatu temple and the Kecak fire dance at sunset."}
+   ],
+   "program": {"name": "Kuta", "description": "Two nights on the coast with a full island day on Nusa Penida and a south Bali day of beaches, water sports and the Kecak dance."}
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Ubud",
+  "2": "Central Bali by vintage car",
+  "3": "Bedugul lakes and Tanah Lot",
+  "4": "Nusa Penida and on to Kuta",
+  "5": "Melasti beach and Uluwatu",
+  "6": "Departure from Bali"
+ },
+ "bullets": {
+  "1": ["Arrival at Ngurah Rai Airport and private transfer to your hotel", "Check in at your valley villa at Sayan", "Rest of the day free by the pool", "Optional: the Monkey Forest or the Ubud art market"],
+  "2": ["Breakfast, then a day out in an open top vintage Volkswagen", "The Bali swing and Tegenungan waterfall", "Tirta Empul, the holy spring temple", "The Tegalalang rice terraces on the way back"],
+  "3": ["Breakfast, then a full day north to the lake country", "The Handara gate and Ulun Danu Beratan temple", "A hill waterfall in the afternoon", "Sunset at Tanah Lot, the sea temple on the rocks"],
+  "4": ["Early breakfast and check out, then on to Sanur harbour", "Speedboat across to Nusa Penida for the west coast", "the Paluang cliff viewpoint, then Kelingking beach and Broken Bay", "Private transfer to your hotel near Kuta in the evening"],
+  "5": ["Breakfast, then south to Melasti beach", "Banana boat and jet ski at Tanjung Benoa", "Uluwatu temple on the cliffs at sunset", "Kecak fire dance in the temple amphitheatre afterwards"],
+  "6": ["Breakfast at the hotel and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+ "hotel_by_day": {"1": "Ubud Heaven Sayan", "2": "Ubud Heaven Sayan", "3": "Ubud Heaven Sayan", "4": "Desamuda Village", "5": "Desamuda Village", "6": "Departure"},
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "The vintage car morning and the Kecak dance are what children remember. Parents remember the valley villa.",
+  "tip": "Nusa Penida is a long day for small children, so we book the first boat and keep the following morning free. Carry motion sickness tablets, the crossing can be choppy after eleven."
+ },
+ "summary": "Six days for a family with three nights in a valley villa above Sayan and two on the coast, taking in a vintage car day through central Bali, the Bedugul lakes, Tanah Lot, Nusa Penida and the Kecak dance at Uluwatu.",
+ "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; central Bali tour in a vintage Volkswagen; full day Bedugul tour with Tanah Lot; Nusa Penida west coast tour; Melasti beach with water sports, Uluwatu and the Kecak dance.",
+ "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

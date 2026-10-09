@@ -1,0 +1,226 @@
+{
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Indonesia",
+   "/asien/indonesia"
+  ]
+ ],
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Eight included activities in seven days, and two of them are water parks. This is the family trip that earns its keep.",
+  "tip": "Pair the GWK park with Waterbom, they are fifteen minutes apart. Carry swimwear from the morning and the children will happily skip the statue photographs."
+ },
+ "source_slug": "bali-family-vacation",
+ "camel": "grandBaliFamilyWaterbom",
+ "slug": "grand-bali-family-holiday-with-waterbom",
+ "title": "Grand Bali Family Holiday with Waterbom",
+ "alt": "Waterbom park slides in Kuta, Bali",
+ "transport": "Private transfers and guided day tours",
+ "tag": "Family",
+ "tags": [
+  "Family",
+  "Adventure"
+ ],
+ "price": 39852,
+ "route_cities": [
+  "Ubud",
+  "Bali Safari",
+  "Kuta",
+  "Nusa Penida",
+  "Uluwatu"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 8,
+  "transfers": 17,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to the safari park",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Alam Ubud Culture Villas & Residences",
+   "hotel_label": "Alam Ubud Culture Villas",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Villa resort in the valley west of Ubud town",
+   "activities": [
+    {
+     "name": "Kanto Lampo waterfall",
+     "day": 2,
+     "optional": false,
+     "match": "Kanto Lampo",
+     "description": "The wide stepped fan of Kanto Lampo, one of the easiest waterfalls in Bali to reach and the best for photographs with children."
+    },
+    {
+     "name": "Bali Safari and Marine Park",
+     "day": 2,
+     "optional": false,
+     "match": "Bali Safari",
+     "description": "A safari ride through the African and Indian enclosures, the elephant and bird shows, and the water park on the same ticket."
+    },
+    {
+     "name": "Central Bali with Tirta Empul",
+     "day": 3,
+     "optional": false,
+     "match": "Central Bali Sightseeing Tour with Tirta Empul",
+     "description": "The Bali swing, Tegenungan waterfall, the holy spring temple at Tirta Empul and a photo stop at the Tegalalang rice terraces."
+    }
+   ],
+   "program": {
+    "name": "Ubud",
+    "description": "Three nights in a valley resort with a waterfall and safari day and a full day through the temples of central Bali."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Nusa Penida and Uluwatu",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Cross Vibe Paasha Atelier Bali Kuta",
+   "hotel_label": "Cross Vibe Paasha Atelier",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Design hotel in Kuta with a rooftop pool",
+   "activities": [
+    {
+     "name": "Nusa Penida west coast",
+     "day": 4,
+     "optional": false,
+     "match": "Nusa Penida West Tour",
+     "description": "Speedboat across for the Paluang cliff viewpoint, Kelingking beach and the rock arch at Angel's Billabong, with Broken Bay after it."
+    },
+    {
+     "name": "Balinese massage",
+     "day": 4,
+     "optional": false,
+     "match": "Balinese Massage",
+     "description": "An hour of traditional Balinese massage after the island day, warm oil and long pressure strokes at a spa near the hotel."
+    },
+    {
+     "name": "GWK cultural park",
+     "day": 5,
+     "optional": false,
+     "match": "GWK Cultural Park",
+     "description": "Entry to the Garuda Wisnu Kencana park, with its giant statue, the amphitheatre and the dance performances through the afternoon."
+    },
+    {
+     "name": "Waterbom Bali",
+     "day": 5,
+     "optional": false,
+     "match": "Waterbom Bali",
+     "description": "The best water park in Asia by most lists, with slides for every age, a lazy river and gardens to sit in between them."
+    },
+    {
+     "name": "Water sports and Uluwatu with Kecak",
+     "day": 6,
+     "optional": false,
+     "match": "Day Trip to Uluwatu Temple",
+     "description": "Parasailing, jet ski and a banana boat at Tanjung Benoa, then Uluwatu temple at sunset and the Kecak fire dance."
+    }
+   ],
+   "program": {
+    "name": "Kuta",
+    "description": "Three nights on the coast with an island day, the GWK park, Waterbom and a south Bali day that ends with the Kecak dance."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Ubud",
+  "2": "Waterfall and safari park",
+  "3": "Central Bali and Tirta Empul",
+  "4": "Nusa Penida and on to Kuta",
+  "5": "GWK park and Waterbom",
+  "6": "Water sports and Uluwatu",
+  "7": "Departure from Bali"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+   "Check in at your valley resort near Ubud",
+   "Rest of the day free by the pool",
+   "Optional: the Monkey Forest or the Ubud art market"
+  ],
+  "2": [
+   "Breakfast, then on to Kanto Lampo waterfall",
+   "A full afternoon at Bali Safari and Marine Park",
+   "Safari ride, animal shows and the water park",
+   "Back at the resort in the evening"
+  ],
+  "3": [
+   "Breakfast, then a full day in central Bali",
+   "The Bali swing and Tegenungan waterfall",
+   "Tirta Empul, the holy spring temple",
+   "The Tegalalang rice terraces on the way back"
+  ],
+  "4": [
+   "Early breakfast and check out, then on to Sanur harbour",
+   "Speedboat across to Nusa Penida for the west coast",
+   "The Paluang cliff, Kelingking beach and Angel's Billabong",
+   "An hour of Balinese massage once you reach Kuta"
+  ],
+  "5": [
+   "Breakfast, then entry to the Garuda Wisnu Kencana park",
+   "The giant statue and the afternoon dance performances",
+   "The rest of the day at Waterbom Bali",
+   "Slides, the lazy river and the gardens"
+  ],
+  "6": [
+   "Breakfast, then a morning at Tanjung Benoa beach",
+   "Parasailing, jet ski and a banana boat with an instructor",
+   "Uluwatu temple on the cliffs at sunset",
+   "Kecak fire dance in the amphitheatre afterwards"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Ngurah Rai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Alam Ubud Culture Villas & Residences",
+  "2": "Alam Ubud Culture Villas & Residences",
+  "3": "Alam Ubud Culture Villas & Residences",
+  "4": "Cross Vibe Paasha Atelier Bali Kuta",
+  "5": "Cross Vibe Paasha Atelier Bali Kuta",
+  "6": "Cross Vibe Paasha Atelier Bali Kuta",
+  "7": "Departure"
+ },
+ "summary": "Seven days for a family with three nights near Ubud for Kanto Lampo waterfall, Bali Safari and the temples of central Bali, then three in Kuta with Nusa Penida, the GWK park, Waterbom and the Kecak dance at Uluwatu.",
+ "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; Kanto Lampo waterfall; Bali Safari and Marine Park; central Bali tour with Tirta Empul; Nusa Penida west coast tour; a Balinese massage; GWK park entry; Waterbom Bali tickets; water sports with Uluwatu and the Kecak dance.",
+ "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -17,6 +17,26 @@ import { shortBaliEscapeFlightsProduct } from './shortBaliEscapeFlightsData';
 import { classicBaliHoneymoonSwingProduct } from './classicBaliHoneymoonSwingData';
 import { highlightsOfBaliNusaPenidaUluwatuProduct } from './highlightsOfBaliNusaPenidaUluwatuData';
 import { bestOfBaliSunsetCruiseProduct } from './bestOfBaliSunsetCruiseData';
+import { romanticBaliVintageCarProduct } from './romanticBaliVintageCarData';
+import { baliEscapeBeachClubAtvProduct } from './baliEscapeBeachClubAtvData';
+import { singaporeMalaysiaBaliHoneymoonProduct } from './singaporeMalaysiaBaliHoneymoonData';
+import { baliSingaporeFamilyHolidayProduct } from './baliSingaporeFamilyHolidayData';
+import { classicBaliGroupHolidayProduct } from './classicBaliGroupHolidayData';
+import { baliFamilyHolidayNusaPenidaProduct } from './baliFamilyHolidayNusaPenidaData';
+import { hongKongBaliHolidayProduct } from './hongKongBaliHolidayData';
+import { baliFamilyEscapeBaturJeepProduct } from './baliFamilyEscapeBaturJeepData';
+import { grandSingaporeMalaysiaBaliProduct } from './grandSingaporeMalaysiaBaliData';
+import { bestOfThailandSingaporeMalaysiaBaliProduct } from './bestOfThailandSingaporeMalaysiaBaliData';
+import { romanticBaliSidemenSeminyakProduct } from './romanticBaliSidemenSeminyakData';
+import { baliFamilyFlightsSafariProduct } from './baliFamilyFlightsSafariData';
+import { classicBaliBreakRaftingProduct } from './classicBaliBreakRaftingData';
+import { baliHoneymoonRooftopDinnerProduct } from './baliHoneymoonRooftopDinnerData';
+import { baliCouplesEscapeRaftingProduct } from './baliCouplesEscapeRaftingData';
+import { grandBaliCouplesNusaPenidaProduct } from './grandBaliCouplesNusaPenidaData';
+import { grandBaliFamilyWaterbomProduct } from './grandBaliFamilyWaterbomData';
+import { baliBucketListFlightsProduct } from './baliBucketListFlightsData';
+import { baliCouplesHolidayFlightsProduct } from './baliCouplesHolidayFlightsData';
+import { baliAndPhuketHolidayProduct } from './baliAndPhuketHolidayData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/indonesia/enquiry/passengers/', cruiseCity: '—',
@@ -24,6 +44,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: "Indonesia", href: '/asien/indonesia' }]
 });
 
-export const indonesiaProducts = [...packages.map(toProduct), baliPhuketIslandEscapeProduct, bestOfBaliUbudAndKutaProduct, magicalBaliHolidayWithFlightsProduct, luxuryBaliEscapeMountBaturProduct, baliHoneymoonCandlelightDinnerProduct, romanticBaliNusaPenidaProduct, baliAdventureRaftingNusaPenidaProduct, baliCouplesEscapeNightSafariProduct, baliHoneymoonSeminyakProduct, singaporeBaliHoneymoonProduct, romanticBaliSunsetCruiseProduct, bestOfBaliFlightsNusaPenidaProduct, grandBaliSafariKecakProduct, shortBaliEscapeFlightsProduct, classicBaliHoneymoonSwingProduct, highlightsOfBaliNusaPenidaUluwatuProduct, bestOfBaliSunsetCruiseProduct];
+export const indonesiaProducts = [baliPhuketIslandEscapeProduct, bestOfBaliUbudAndKutaProduct, magicalBaliHolidayWithFlightsProduct, luxuryBaliEscapeMountBaturProduct, baliHoneymoonCandlelightDinnerProduct, romanticBaliNusaPenidaProduct, baliAdventureRaftingNusaPenidaProduct, baliCouplesEscapeNightSafariProduct, baliHoneymoonSeminyakProduct, singaporeBaliHoneymoonProduct, romanticBaliSunsetCruiseProduct, bestOfBaliFlightsNusaPenidaProduct, grandBaliSafariKecakProduct, shortBaliEscapeFlightsProduct, classicBaliHoneymoonSwingProduct, highlightsOfBaliNusaPenidaUluwatuProduct, bestOfBaliSunsetCruiseProduct, romanticBaliVintageCarProduct, baliEscapeBeachClubAtvProduct, singaporeMalaysiaBaliHoneymoonProduct, baliSingaporeFamilyHolidayProduct, classicBaliGroupHolidayProduct, baliFamilyHolidayNusaPenidaProduct, hongKongBaliHolidayProduct, baliFamilyEscapeBaturJeepProduct, grandSingaporeMalaysiaBaliProduct, bestOfThailandSingaporeMalaysiaBaliProduct, romanticBaliSidemenSeminyakProduct, baliFamilyFlightsSafariProduct, classicBaliBreakRaftingProduct, baliHoneymoonRooftopDinnerProduct, baliCouplesEscapeRaftingProduct, grandBaliCouplesNusaPenidaProduct, grandBaliFamilyWaterbomProduct, baliBucketListFlightsProduct, baliCouplesHolidayFlightsProduct, baliAndPhuketHolidayProduct];
 export const indonesiaTours = packages.map(build);
 export const indonesiaBySlug = Object.fromEntries(indonesiaTours.map((t) => [t.detail.slug, t]));

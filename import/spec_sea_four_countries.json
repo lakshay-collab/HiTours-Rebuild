@@ -1,0 +1,119 @@
+{
+ "source_slug": "singapore-malaysia-indonesia-and-thailand-tour-package-from-india",
+ "camel": "bestOfThailandSingaporeMalaysiaBali",
+ "slug": "best-of-thailand-singapore-malaysia-and-bali",
+ "title": "Best of Thailand, Singapore, Malaysia and Bali",
+ "alt": "Coral Island beach off Pattaya, Thailand",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers, city tours and guided day tours",
+ "tag": "Culture",
+ "tags": ["Family", "Culture"],
+ "price": 118798,
+ "route_cities": ["Pattaya", "Singapore", "Sentosa", "Kuala Lumpur", "Ubud"],
+ "counts": {"days": 11, "nights": 10, "cities": 4, "hotels": 4, "experiences": 11, "transfers": 21, "meals": 10},
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Pattaya",
+   "city": "Pattaya",
+   "days": [1, 2],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Centara Pattaya Hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Four star hotel near Pattaya beach with a rooftop pool",
+   "activities": [
+    {"name": "Coral Island day trip", "day": 2, "optional": false, "match": "Coral Island Tour", "description": "Speedboat out to Koh Larn for a day on the white sand at Tawaen beach, with water sports available on the beach at your own cost."}
+   ],
+   "program": {"name": "Pattaya", "description": "Two nights on the Gulf of Thailand to open the trip, with a speedboat day out to the white sand of Coral Island."}
+  },
+  {
+   "letter": "B",
+   "name": "Singapore",
+   "city": "Singapore",
+   "subtitle": "Singapore to Sentosa",
+   "days": [3, 4, 5, 6],
+   "dayLabel": "Day 3 to 6",
+   "hotel": "ibis Styles Singapore Albert",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Albert Street hotel beside Bugis, close to two metro lines",
+   "activities": [
+    {"name": "Night Safari with tram ride", "day": 3, "optional": false, "match": "Singapore Night Safari", "description": "The world's first nocturnal zoo, with a tram ride through seven habitats and walking trails where the animals are at their most active."},
+    {"name": "Marina Bay Sands SkyPark", "day": 4, "optional": false, "match": "Marina Bay Sands Skypark", "description": "The observation deck fifty seven floors above Marina Bay, with the city, the port and the Gardens by the Bay domes below you."},
+    {"name": "Gardens by the Bay", "day": 4, "optional": false, "match": "Gardens By The Bay", "description": "Entry to the Cloud Forest with its indoor waterfall, and the Supertree light show in the evening a short walk away."},
+    {"name": "Universal Studios Singapore", "day": 5, "optional": false, "match": "Universal Studios", "description": "A full day ticket for the Sentosa theme park, with seven themed zones, the duelling roller coasters and the street shows."},
+    {"name": "Singapore city tour", "day": 6, "optional": false, "match": "Singapore City Tour", "description": "A half day tour past Merlion Park, the Marina Bay waterfront, Chinatown and the colonial quarter, with a guide on a shared coach."}
+   ],
+   "program": {"name": "Singapore", "description": "Four nights in the city with a night safari, the Marina Bay SkyPark, Gardens by the Bay, a full day at Universal Studios and a guided city tour."}
+  },
+  {
+   "letter": "C",
+   "name": "Kuala Lumpur",
+   "city": "Kuala Lumpur",
+   "subtitle": "Kuala Lumpur to Genting Highlands",
+   "days": [7, 8],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Arenaa Star Hotel, Kuala Lumpur",
+   "hotel_label": "Arenaa Star Hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Bukit Bintang hotel close to the food streets and the monorail",
+   "activities": [
+    {"name": "Kuala Lumpur half day city tour", "day": 7, "optional": false, "match": "Kuala Lumpur Half Day City Tour", "description": "The King's palace gates, the National Monument, Merdeka Square and the old railway station, with a photo stop at the towers."},
+    {"name": "Batu Caves", "day": 8, "optional": false, "match": "Trip to Batu Caves", "description": "The golden Murugan statue and the two hundred and seventy two painted steps up to the limestone cave temples above the city."},
+    {"name": "Awana SkyWay cable car", "day": 8, "optional": false, "match": "Awana SkyWay", "description": "The glass fronted cable car up the hillside to Genting, with the rainforest canopy and the Chin Swee temple below you."},
+    {"name": "Genting Highlands day trip", "day": 8, "optional": false, "match": "Genting Highlands Day Trip", "description": "The hill resort at eighteen hundred metres, with its indoor theme park, shopping floors and cool mountain air all afternoon."}
+   ],
+   "program": {"name": "Kuala Lumpur", "description": "Two nights in Bukit Bintang, with a city tour on arrival and a full hill day taking in Batu Caves and Genting by cable car."}
+  },
+  {
+   "letter": "D",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to Kintamani",
+   "days": [9, 10, 11],
+   "dayLabel": "Day 9 to 11",
+   "hotel": "Bakung Ubud Resort & Villa",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+   "activities": [
+    {"name": "Kintamani and rice terrace day tour", "day": 10, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."}
+   ],
+   "program": {"name": "Ubud", "description": "Two nights in Bali to finish, with a coffee plantation day up to the Kintamani crater and the rice terraces at Tegalalang."}
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Bangkok and Pattaya",
+  "2": "Coral Island by speedboat",
+  "3": "On to Singapore and night safari",
+  "4": "Marina Bay and the Gardens",
+  "5": "A day at Universal Studios",
+  "6": "Singapore city tour",
+  "7": "On to Kuala Lumpur",
+  "8": "Batu Caves and Genting",
+  "9": "On to Bali and Ubud",
+  "10": "Kintamani and rice terraces",
+  "11": "Departure from Bali"
+ },
+ "bullets": {
+  "1": ["Arrival at Suvarnabhumi Airport and private transfer to Pattaya", "Check in at your hotel near the beach", "Rest of the day free on the Gulf coast", "Optional: the Alcazar cabaret or Walking Street in the evening"],
+  "2": ["Breakfast, then down to Bali Hai pier", "Speedboat across to Coral Island", "Free time on the white sand at Tawaen beach", "Water sports on the beach at your own cost"],
+  "3": ["Breakfast and check out, then on to the airport", "Optional: flight from Bangkok to Singapore, which we can add", "Arrival at Changi and private transfer to your hotel", "Evening tram ride at the Singapore Night Safari"],
+  "4": ["Breakfast, then across to Marina Bay", "The SkyPark deck above Marina Bay Sands", "Cloud Forest and its indoor waterfall at Gardens by the Bay", "The Supertree light show after dark"],
+  "5": ["Breakfast, then across to Sentosa island", "Full day ticket for Universal Studios Singapore", "Coasters, themed zones and the street shows", "Evening free around Bugis and Albert Street"],
+  "6": ["Breakfast, then a half day city tour with a guide", "Merlion Park, Marina Bay and the colonial quarter", "Chinatown lanes and the Sri Mariamman temple", "Optional: Orchard Road or a hawker centre dinner"],
+  "7": ["Breakfast and check out, then on to the airport", "Optional: flight from Singapore to Kuala Lumpur, which we can add", "City tour: the palace gates, Merdeka Square, the old station", "Check in at your Bukit Bintang hotel"],
+  "8": ["Breakfast, then north to Batu Caves", "The golden statue and the painted temple steps", "Awana SkyWay cable car up to Genting Highlands", "The hill resort and its indoor theme park"],
+  "9": ["Breakfast and check out, then on to the airport", "Optional: flight from Kuala Lumpur to Denpasar, which we can add", "Arrival in Bali and private transfer to your Ubud resort", "Rest of the day free among the rice fields"],
+  "10": ["Breakfast, then a full day out with your own car and guide", "Coffee plantation tasting on the climb to Kintamani", "Tegenungan waterfall and the Tegalalang rice terraces", "A turn on the jungle swing above the valley"],
+  "11": ["Breakfast at the resort and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B", "9": "B", "10": "B", "11": "B"},
+ "hotel_by_day": {"1": "Centara Pattaya Hotel", "2": "Centara Pattaya Hotel", "3": "ibis Styles Singapore Albert", "4": "ibis Styles Singapore Albert", "5": "ibis Styles Singapore Albert", "6": "ibis Styles Singapore Albert", "7": "Arenaa Star Hotel, Kuala Lumpur", "8": "Arenaa Star Hotel, Kuala Lumpur", "9": "Bakung Ubud Resort & Villa", "10": "Bakung Ubud Resort & Villa", "11": "Departure"},
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Four countries in eleven days sounds like a lot, but the hops are all under three hours. Nothing feels rushed.",
+  "tip": "Take the morning service on each hop and you keep every afternoon. Pack one small bag you can live out of, because you change hotels four times and the full cases stay packed."
+ },
+ "summary": "Eleven days and four countries: Coral Island from Pattaya, four nights in Singapore for the night safari, Marina Bay and Universal Studios, Kuala Lumpur for Batu Caves and Genting, then Bali for Kintamani and the rice terraces.",
+ "included": "Included: 10 nights with daily breakfast; private airport and city transfers; Coral Island day trip; Night Safari; Marina Bay Sands SkyPark; Gardens by the Bay; Universal Studios; Singapore city tour; Kuala Lumpur city tour; Batu Caves; Awana SkyWay and Genting day trip; Kintamani and rice terrace tour.",
+ "not_included": "Not included: international flights; the Bangkok to Singapore, Singapore to Kuala Lumpur and Kuala Lumpur to Denpasar flights, which we can add; visa fees; lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

@@ -19,6 +19,10 @@ import { singaporeMalaysiaHoneymoonProduct } from './singaporeMalaysiaHoneymoonD
 import { singaporeMalaysiaSentosaGentingProduct } from './singaporeMalaysiaSentosaGentingData';
 
 import { singaporeBaliHoneymoonProduct } from './singaporeBaliHoneymoonData';
+import { singaporeMalaysiaBaliHoneymoonProduct } from './singaporeMalaysiaBaliHoneymoonData';
+import { baliSingaporeFamilyHolidayProduct } from './baliSingaporeFamilyHolidayData';
+import { grandSingaporeMalaysiaBaliProduct } from './grandSingaporeMalaysiaBaliData';
+import { bestOfThailandSingaporeMalaysiaBaliProduct } from './bestOfThailandSingaporeMalaysiaBaliData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/singapore/enquiry/passengers/', cruiseCity: '—',
@@ -44,7 +48,11 @@ export const singaporeProducts = [
   disneyAdventureCruiseSingaporeProduct,
   singaporeMalaysiaHoneymoonProduct,
   singaporeMalaysiaSentosaGentingProduct,
-  singaporeBaliHoneymoonProduct
+  singaporeBaliHoneymoonProduct,
+  singaporeMalaysiaBaliHoneymoonProduct,
+  baliSingaporeFamilyHolidayProduct,
+  grandSingaporeMalaysiaBaliProduct,
+  bestOfThailandSingaporeMalaysiaBaliProduct
 ];
 export const singaporeTours = packages.map(build);
 export const singaporeBySlug = Object.fromEntries(singaporeTours.map((t) => [t.detail.slug, t]));

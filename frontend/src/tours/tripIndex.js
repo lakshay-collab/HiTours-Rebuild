@@ -88,6 +88,26 @@ import { shortBaliEscapeFlightsBySlug } from './shortBaliEscapeFlightsData';
 import { classicBaliHoneymoonSwingBySlug } from './classicBaliHoneymoonSwingData';
 import { highlightsOfBaliNusaPenidaUluwatuBySlug } from './highlightsOfBaliNusaPenidaUluwatuData';
 import { bestOfBaliSunsetCruiseBySlug } from './bestOfBaliSunsetCruiseData';
+import { romanticBaliVintageCarBySlug } from './romanticBaliVintageCarData';
+import { baliEscapeBeachClubAtvBySlug } from './baliEscapeBeachClubAtvData';
+import { singaporeMalaysiaBaliHoneymoonBySlug } from './singaporeMalaysiaBaliHoneymoonData';
+import { baliSingaporeFamilyHolidayBySlug } from './baliSingaporeFamilyHolidayData';
+import { classicBaliGroupHolidayBySlug } from './classicBaliGroupHolidayData';
+import { baliFamilyHolidayNusaPenidaBySlug } from './baliFamilyHolidayNusaPenidaData';
+import { hongKongBaliHolidayBySlug } from './hongKongBaliHolidayData';
+import { baliFamilyEscapeBaturJeepBySlug } from './baliFamilyEscapeBaturJeepData';
+import { grandSingaporeMalaysiaBaliBySlug } from './grandSingaporeMalaysiaBaliData';
+import { bestOfThailandSingaporeMalaysiaBaliBySlug } from './bestOfThailandSingaporeMalaysiaBaliData';
+import { romanticBaliSidemenSeminyakBySlug } from './romanticBaliSidemenSeminyakData';
+import { baliFamilyFlightsSafariBySlug } from './baliFamilyFlightsSafariData';
+import { classicBaliBreakRaftingBySlug } from './classicBaliBreakRaftingData';
+import { baliHoneymoonRooftopDinnerBySlug } from './baliHoneymoonRooftopDinnerData';
+import { baliCouplesEscapeRaftingBySlug } from './baliCouplesEscapeRaftingData';
+import { grandBaliCouplesNusaPenidaBySlug } from './grandBaliCouplesNusaPenidaData';
+import { grandBaliFamilyWaterbomBySlug } from './grandBaliFamilyWaterbomData';
+import { baliBucketListFlightsBySlug } from './baliBucketListFlightsData';
+import { baliCouplesHolidayFlightsBySlug } from './baliCouplesHolidayFlightsData';
+import { baliAndPhuketHolidayBySlug } from './baliAndPhuketHolidayData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -178,5 +198,25 @@ export const BY_SLUG = {
   ...shortBaliEscapeFlightsBySlug,
   ...classicBaliHoneymoonSwingBySlug,
   ...highlightsOfBaliNusaPenidaUluwatuBySlug,
-  ...bestOfBaliSunsetCruiseBySlug
+  ...bestOfBaliSunsetCruiseBySlug,
+  ...romanticBaliVintageCarBySlug,
+  ...baliEscapeBeachClubAtvBySlug,
+  ...singaporeMalaysiaBaliHoneymoonBySlug,
+  ...baliSingaporeFamilyHolidayBySlug,
+  ...classicBaliGroupHolidayBySlug,
+  ...baliFamilyHolidayNusaPenidaBySlug,
+  ...hongKongBaliHolidayBySlug,
+  ...baliFamilyEscapeBaturJeepBySlug,
+  ...grandSingaporeMalaysiaBaliBySlug,
+  ...bestOfThailandSingaporeMalaysiaBaliBySlug,
+  ...romanticBaliSidemenSeminyakBySlug,
+  ...baliFamilyFlightsSafariBySlug,
+  ...classicBaliBreakRaftingBySlug,
+  ...baliHoneymoonRooftopDinnerBySlug,
+  ...baliCouplesEscapeRaftingBySlug,
+  ...grandBaliCouplesNusaPenidaBySlug,
+  ...grandBaliFamilyWaterbomBySlug,
+  ...baliBucketListFlightsBySlug,
+  ...baliCouplesHolidayFlightsBySlug,
+  ...baliAndPhuketHolidayBySlug
 };

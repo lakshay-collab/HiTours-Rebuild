@@ -1,0 +1,105 @@
+{
+  "source_slug": "bali-at-a-glance-group-tour-package",
+  "camel": "classicBaliGroupHoliday",
+  "slug": "classic-bali-group-holiday",
+  "title": "Classic Bali Group Holiday",
+  "alt": "Tukad Cepung waterfall inside its cave in east Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Shared group tours and private airport transfers",
+  "tag": "Culture",
+  "tags": ["Culture", "Short trips"],
+  "price": 32330,
+  "route_cities": ["Legian", "Kintamani", "Tanah Lot", "Uluwatu", "North Bali"],
+  "counts": {"days": 7, "nights": 6, "cities": 1, "hotels": 1, "experiences": 3, "transfers": 5, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Legian",
+      "city": "Bali",
+      "subtitle": "Legian to Kintamani, Tanah Lot and north Bali",
+      "days": [1, 2, 3, 4, 5, 6, 7],
+      "dayLabel": "Day 1 to 7",
+      "hotel": "Mercure Bali Legian",
+      "accom": "6 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Four star hotel in Legian, a short walk from the beach",
+      "activities": [
+        {"name": "Kintamani village and Tukad Cepung", "day": 2, "optional": false, "match": "Kintamani Village Tour", "description": "A shared day up to the Kintamani crater rim, with a coffee plantation stop and the light shafts inside the Tukad Cepung cave waterfall."},
+        {"name": "Tanah Lot, Uluwatu and the Kecak dance", "day": 3, "optional": false, "match": "Tanah Lot & Uluwatu Temple", "description": "The sea temple at Tanah Lot, then the cliff top temple at Uluwatu for sunset and the Kecak fire dance in the amphitheatre."},
+        {"name": "North Bali sightseeing tour", "day": 4, "optional": false, "match": "North Bali Sightseeing", "description": "A shared day north through the hills to the lake temple at Beratan, the twin lakes viewpoint and a waterfall in the rainforest."}
+      ],
+      "program": {"name": "Legian", "description": "Six nights in one four star hotel in Legian, with three shared touring days and two free days for the beach, Ubud or the shops."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Bali",
+    "2": "Kintamani and Tukad Cepung",
+    "3": "Tanah Lot and Uluwatu",
+    "4": "North Bali and the lakes",
+    "5": "Free day for Ubud",
+    "6": "Free day in Kuta",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Legian hotel for the whole week",
+      "Rest of the day free near the beach",
+      "Optional: an evening walk along Legian and Kuta beach"
+    ],
+    "2": [
+      "Breakfast, then a shared tour up to the Kintamani crater",
+      "Coffee plantation tasting on the climb",
+      "The crater rim view across Mount Batur and its lake",
+      "Light shafts inside the Tukad Cepung cave waterfall"
+    ],
+    "3": [
+      "Breakfast, then a shared tour to the west coast",
+      "Tanah Lot, the sea temple on its rock shelf",
+      "Uluwatu temple on the cliffs at sunset",
+      "Kecak fire dance in the temple amphitheatre afterwards"
+    ],
+    "4": [
+      "Breakfast, then a shared day north through the hills",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "The twin lakes viewpoint above Bedugul",
+      "A rainforest waterfall before the road back"
+    ],
+    "5": [
+      "Breakfast and a free day",
+      "Optional: Ubud for the Monkey Forest and the art market",
+      "Optional: a cooking class or a Balinese massage",
+      "Optional: the rice terraces at Tegalalang"
+    ],
+    "6": [
+      "Breakfast and a second free day",
+      "Optional: a surf lesson with an instructor on Kuta beach",
+      "Optional: Waterbom park or Beachwalk mall",
+      "Optional: grilled seafood on the sand at Jimbaran"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Mercure Bali Legian",
+    "2": "Mercure Bali Legian",
+    "3": "Mercure Bali Legian",
+    "4": "Mercure Bali Legian",
+    "5": "Mercure Bali Legian",
+    "6": "Mercure Bali Legian",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "One hotel, six nights, three touring days. Unpack once and let the island come to you.",
+    "tip": "The shared tours are good value and start early, so breakfast opens before pick up. Use the two free days for Ubud and the beach, and we can add a private car on either if you prefer."
+  },
+  "summary": "Seven days from one four star base in Legian, with shared touring days to the Kintamani crater and Tukad Cepung waterfall, Tanah Lot and Uluwatu with the Kecak dance, and the lakes of north Bali, plus two free days.",
+  "included": "Included: 6 nights with daily breakfast; private airport transfers; Kintamani village tour with Tukad Cepung waterfall; Tanah Lot and Uluwatu with the Kecak fire dance; north Bali sightseeing tour, all on a shared basis.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

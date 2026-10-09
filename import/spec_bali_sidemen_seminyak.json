@@ -1,0 +1,53 @@
+{
+ "source_slug": "bali-couple-special",
+ "camel": "romanticBaliSidemenSeminyak",
+ "slug": "romantic-bali-with-sidemen-and-seminyak",
+ "title": "Romantic Bali with Sidemen and Seminyak",
+ "alt": "Rice terraces in the Sidemen valley, east Bali",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers and guided day tours",
+ "tag": "Honeymoon",
+ "tags": ["Honeymoon", "Culture"],
+ "price": 46750,
+ "route_cities": ["Sidemen", "Tirta Gangga", "Seminyak", "Nusa Penida", "Uluwatu"],
+ "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 7, "transfers": 16, "meals": 7},
+ "stops": [
+  {"letter": "A", "name": "Sidemen", "city": "Sidemen", "subtitle": "Sidemen to east Bali", "days": [1, 2, 3], "dayLabel": "Day 1 to 3",
+   "hotel": "Astana swaha Villa", "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Valley villa in the rice terraces above Sidemen",
+   "activities": [
+    {"name": "East Bali sightseeing tour", "day": 2, "optional": false, "match": "East Bali Tour", "description": "The water palace at Tirta Gangga, the split gate at Lempuyang and the Bukit Cinta viewpoint, a quiet side of the island few visitors see."},
+    {"name": "ATV ride with the Bali swing", "day": 3, "optional": false, "match": "ATV Adventure", "description": "A quad bike route through rice fields and a cave tunnel, then a turn on the jungle swing with the valley below your feet."}
+   ],
+   "program": {"name": "Sidemen", "description": "Three nights in a valley villa above the Sidemen rice terraces, with east Bali temples, a quad bike route and the jungle swing."}},
+  {"letter": "B", "name": "Seminyak", "city": "Seminyak", "subtitle": "Seminyak to Nusa Penida and Uluwatu", "days": [4, 5, 6, 7], "dayLabel": "Day 4 to 7",
+   "hotel": "The Bali Bliss Villa", "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Private pool villa a short ride from Seminyak beach",
+   "activities": [
+    {"name": "Sidemen terraces, Kanto Lampo and Goa Gajah", "day": 4, "optional": false, "match": "Trip to Sidemen Rice Terrace", "description": "The terraces on the way out of the valley, the wide fan of Kanto Lampo waterfall and the carved doorway at Goa Gajah cave temple."},
+    {"name": "Nusa Penida west coast", "day": 5, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for Kelingking beach, Angel's Billabong and Broken Bay, the three viewpoints that make the early start worth it."},
+    {"name": "Snorkelling off Nusa Penida", "day": 5, "optional": false, "match": "Snorkeling", "description": "Mask and fins in the clear water on the way back, with coral heads and reef fish close enough to the shore for beginners."},
+    {"name": "Balinese massage for two", "day": 6, "optional": false, "match": "Balinese Massage", "description": "An hour of traditional Balinese massage for both of you, warm oil and long pressure strokes, booked privately near the villa."},
+    {"name": "Melasti beach and Uluwatu with Kecak", "day": 6, "optional": false, "match": "Day Trip to Uluwatu", "description": "The white sand at Melasti beach, then the cliff top temple at Uluwatu for sunset and the Kecak fire dance in the amphitheatre."}
+   ],
+   "program": {"name": "Seminyak", "description": "Three nights in a private pool villa with a candlelight dinner on arrival, a Nusa Penida day, a couples massage and the Kecak dance."}}
+ ],
+ "day_titles": {"1": "Arrival in Sidemen", "2": "East Bali and Tirta Gangga", "3": "Quad bikes and the Bali swing", "4": "Waterfalls and on to Seminyak", "5": "Nusa Penida and snorkelling", "6": "Melasti beach and Uluwatu", "7": "Departure from Bali"},
+ "bullets": {
+  "1": ["Arrival at Ngurah Rai Airport and private transfer to your villa", "Check in above the Sidemen rice terraces", "Rest of the day free on the valley terrace", "Optional: a walk through the rice fields before dinner"],
+  "2": ["Breakfast, then a full day in east Bali", "The water palace and pools at Tirta Gangga", "The split gate at Lempuyang temple", "The Bukit Cinta viewpoint on the way back"],
+  "3": ["Breakfast, then a quad bike route through the fields", "A cave tunnel and a river crossing on the way", "A turn on the jungle swing above the valley", "Evening free at the villa"],
+  "4": ["Breakfast and check out, then on towards the coast", "The Sidemen rice terraces and Kanto Lampo waterfall", "Goa Gajah, the carved elephant cave temple", "Candlelight dinner for two at your Seminyak villa"],
+  "5": ["Early breakfast, then private transfer to Sanur harbour", "Speedboat across to Nusa Penida for the west coast", "Kelingking beach, Angel's Billabong and Broken Bay", "Snorkelling in the clear water before the boat back"],
+  "6": ["Breakfast, then an hour of Balinese massage for two", "Melasti beach, white sand below the cliffs", "Uluwatu temple on the cliffs at sunset", "Kecak fire dance in the amphitheatre afterwards"],
+  "7": ["Breakfast at the villa and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B, D", "5": "B", "6": "B", "7": "B"},
+ "hotel_by_day": {"1": "Astana swaha Villa", "2": "Astana swaha Villa", "3": "Astana swaha Villa", "4": "The Bali Bliss Villa", "5": "The Bali Bliss Villa", "6": "The Bali Bliss Villa", "7": "Departure"},
+ "expert": {"name": "Putu", "image": "/experts/riya.webp", "role": "Indonesia expert at Hi Tours",
+  "quote": "Sidemen is the Bali people picture before they arrive. Three nights there, three in Seminyak, and you have seen both islands.",
+  "tip": "Sidemen is an hour and a half from the airport and worth every minute. Carry light walking shoes for the terraces, and let us set the candlelight dinner for your first Seminyak evening."},
+ "summary": "Seven days for two with three nights in a valley villa above the Sidemen rice terraces and three in a private pool villa near Seminyak, taking in east Bali temples, a quad bike route, waterfalls, Nusa Penida and the Kecak dance at Uluwatu.",
+ "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; east Bali tour; ATV ride with the Bali swing; Sidemen terraces with Kanto Lampo and Goa Gajah; candlelight dinner; Nusa Penida west coast tour with snorkelling; Balinese massage for two; Melasti beach and Uluwatu with the Kecak dance.",
+ "not_included": "Not included: international flights; Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

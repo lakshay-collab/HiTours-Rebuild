@@ -1,0 +1,81 @@
+{
+ "source_slug": "bali-family-getaway",
+ "camel": "baliFamilyEscapeBaturJeep",
+ "slug": "bali-family-escape-with-mount-batur-jeep",
+ "title": "Bali Family Escape with Mount Batur Jeep",
+ "alt": "Jeep on the lava field below Mount Batur, Bali",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers and guided day tours",
+ "tag": "Family",
+ "tags": ["Family", "Adventure"],
+ "price": 37245,
+ "route_cities": ["Bedugul", "Mount Batur", "Seminyak", "Nusa Penida", "Uluwatu"],
+ "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 7, "transfers": 17, "meals": 5},
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Bedugul",
+   "city": "Bedugul",
+   "subtitle": "Bedugul to Mount Batur",
+   "days": [1, 2],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Handara Golf & Resort Bali, Bedugul",
+   "hotel_label": "Handara Golf & Resort Bali",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Hill resort beside the Handara gate, cool evenings and a golf course",
+   "activities": [
+    {"name": "Mount Batur sunrise by jeep", "day": 2, "optional": false, "match": "Sunrise At Mount Batur by Jeep", "description": "A four wheel drive up the volcano in the dark for sunrise on the black lava field, easy enough for children who cannot trek."},
+    {"name": "Balinese massage", "day": 2, "optional": false, "match": "Balinese Massage", "description": "An hour of traditional Balinese massage at the resort spa after the early start, warm oil and long pressure strokes."}
+   ],
+   "program": {"name": "Bedugul", "description": "Two nights up in the hills beside the Handara gate, with a jeep sunrise on Mount Batur and a spa hour afterwards."}
+  },
+  {
+   "letter": "B",
+   "name": "Seminyak",
+   "city": "Seminyak",
+   "subtitle": "Seminyak to Nusa Penida and Uluwatu",
+   "days": [3, 4, 5, 6],
+   "dayLabel": "Day 3 to 6",
+   "hotel": "Bali Prime Villa by Kanaya Hospitality",
+   "hotel_label": "Bali Prime Villa",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 2\u2605 \u00b7 Private pool villa a short ride from Seminyak beach",
+   "activities": [
+    {"name": "Bedugul lakes and Tanah Lot", "day": 3, "optional": false, "match": "Full Day Bedugul Tour", "description": "The Handara gate, the lake temple of Ulun Danu Beratan and a hill waterfall, finishing at the sea temple of Tanah Lot for sunset."},
+    {"name": "Nusa Penida west coast", "day": 4, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for Kelingking beach, Angel's Billabong, Broken Bay and the Paluang cliff viewpoint above the water."},
+    {"name": "Snorkelling off Nusa Penida", "day": 4, "optional": false, "match": "Snorkeling", "description": "Mask and fins in the clear water on the way back, with coral heads and reef fish close enough to the shore for beginners."},
+    {"name": "Trans Studio theme park", "day": 5, "optional": false, "match": "Trans Studio Theme Park", "description": "Indoor rides, shows and a cinema in Denpasar, which is the easiest wet weather day in Bali with younger children."},
+    {"name": "Uluwatu sunset with the Kecak dance", "day": 5, "optional": false, "match": "Uluwatu Sunset Tour With Kecak", "description": "The cliff top temple at Uluwatu as the sun drops, followed by the Kecak fire dance in the open amphitheatre above the sea."}
+   ],
+   "program": {"name": "Seminyak", "description": "Three nights in a private pool villa, with the Bedugul lakes on the way down, a Nusa Penida day with snorkelling and a theme park afternoon."}
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Bedugul",
+  "2": "Mount Batur jeep sunrise",
+  "3": "Bedugul lakes and Tanah Lot",
+  "4": "Nusa Penida and snorkelling",
+  "5": "Theme park and Uluwatu",
+  "6": "Departure from Bali"
+ },
+ "bullets": {
+  "1": ["Arrival at Ngurah Rai Airport and private transfer to your hotel", "Check in at the hill resort beside the Handara gate", "Rest of the day free on the resort grounds", "Optional: the strawberry farms and lake viewpoints nearby"],
+  "2": ["Very early jeep ride up the lava slopes of Mount Batur", "Sunrise over the caldera and the lake", "Back at the resort for a late breakfast", "An hour of Balinese massage at the resort spa"],
+  "3": ["Breakfast and check out, then a full day in the lake country", "The Handara gate and Ulun Danu Beratan temple", "A hill waterfall, then sunset at Tanah Lot", "Check in at your pool villa near Seminyak"],
+  "4": ["Early breakfast, then private transfer to Sanur harbour", "Speedboat across to Nusa Penida for the west coast", "Kelingking beach, Angel's Billabong and the Paluang cliff", "Snorkelling in the clear water before the boat back"],
+  "5": ["Breakfast, then indoor rides at the Trans Studio park", "Shows, the cinema and the arcade floor", "Uluwatu temple on the cliffs at sunset", "Kecak fire dance in the amphitheatre afterwards"],
+  "6": ["Breakfast at the villa and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+ "hotel_by_day": {"1": "Handara Golf & Resort Bali, Bedugul", "2": "Handara Golf & Resort Bali, Bedugul", "3": "Bali Prime Villa by Kanaya Hospitality", "4": "Bali Prime Villa by Kanaya Hospitality", "5": "Bali Prime Villa by Kanaya Hospitality", "6": "Departure"},
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "The jeep gets you to the Batur sunrise without the two hour climb. That is what makes this one work with children.",
+  "tip": "Bedugul is a thousand metres up and cold at dawn, so carry a fleece for everyone. The Handara gate photograph is free for resort guests, which saves you the queue outside."
+ },
+ "summary": "Six days for a family with two nights in a hill resort beside the Handara gate and three in a private pool villa near Seminyak, taking in a jeep sunrise on Mount Batur, Tanah Lot, Nusa Penida with snorkelling and the Kecak dance.",
+ "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; Mount Batur jeep sunrise; a Balinese massage; full day Bedugul tour with Tanah Lot; Nusa Penida west coast tour with snorkelling; Trans Studio tickets; Uluwatu sunset with the Kecak dance.",
+ "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

@@ -1,0 +1,197 @@
+{
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Indonesia",
+   "/asien/indonesia"
+  ]
+ ],
+ "source_slug": "bali-tour-packages-for-couple-including-flights",
+ "camel": "baliCouplesHolidayFlights",
+ "slug": "bali-couples-holiday-with-flights",
+ "title": "Bali Couples Holiday with Flights",
+ "alt": "Handara gate in the hills at Bedugul, Bali",
+ "transport": "Return flights, private transfers and guided tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Culture"
+ ],
+ "price": 91133,
+ "route_cities": [
+  "Ubud",
+  "Bedugul",
+  "Tanah Lot",
+  "Kuta",
+  "Uluwatu"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 7,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to Bedugul and Kintamani",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Bakung Ubud Resort & Villa",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Garden resort a short walk from the Ubud market",
+   "activities": [
+    {
+     "name": "Bedugul lakes and Tanah Lot sunset",
+     "day": 2,
+     "optional": false,
+     "match": "Handara Gate",
+     "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."
+    },
+    {
+     "name": "Kintamani and rice terrace day tour",
+     "day": 3,
+     "optional": false,
+     "match": "Full Day Bali Sightseeing",
+     "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the terraces and the jungle swing."
+    }
+   ],
+   "program": {
+    "name": "Ubud",
+    "description": "Three nights inland with a candlelight dinner on arrival, the Bedugul lake temples and a coffee plantation day up to Kintamani."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Uluwatu",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Diamond Hotel Kuta, Bali",
+   "hotel_label": "Diamond Hotel Kuta",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Quiet pool hotel walking distance from Kuta beach",
+   "activities": [
+    {
+     "name": "Water sports with Uluwatu temple",
+     "day": 5,
+     "optional": false,
+     "match": "Water Sports with Uluwatu",
+     "description": "Banana boat, jet ski and parasailing at Tanjung Benoa in the morning, then the cliff top temple at Uluwatu in the late afternoon."
+    },
+    {
+     "name": "Balinese massage for two",
+     "day": 6,
+     "optional": false,
+     "match": "Balinese Massage",
+     "description": "An hour of traditional Balinese massage for both of you on your free day, warm oil and long pressure strokes at a spa in Kuta."
+    }
+   ],
+   "program": {
+    "name": "Kuta",
+    "description": "Three nights on the coast with a water sports and Uluwatu day, a free day on the beach and a spa hour before you fly home."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Flight to Bali and a dinner",
+  "2": "Bedugul lakes and Tanah Lot",
+  "3": "Kintamani and rice terraces",
+  "4": "On to Kuta",
+  "5": "Water sports and Uluwatu",
+  "6": "Spa day in Kuta",
+  "7": "Departure from Bali"
+ },
+ "bullets": {
+  "1": [
+   "Flight from Delhi to Denpasar, included in your package",
+   "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+   "Check in at your Ubud resort and settle in",
+   "Candlelight dinner for two in the evening"
+  ],
+  "2": [
+   "Breakfast, then north to the Handara gate for photographs",
+   "Ulun Danu Beratan, the temple standing on the lake",
+   "Sunset at Tanah Lot, the sea temple on the rocks",
+   "Evening back in Ubud at your own pace"
+  ],
+  "3": [
+   "Breakfast, then a full day out with your own car and guide",
+   "Coffee plantation tasting on the climb to Kintamani",
+   "Tegenungan waterfall and the Tegalalang rice terraces",
+   "A turn on the jungle swing above the valley"
+  ],
+  "4": [
+   "Breakfast and check out, then private transfer to Kuta",
+   "Check in at your hotel near the beach",
+   "Rest of the day free on the south coast",
+   "Optional: Kuta Square, the art market or a sunset walk"
+  ],
+  "5": [
+   "Breakfast, then a morning at Tanjung Benoa beach",
+   "Banana boat, jet ski and parasailing with an instructor",
+   "Uluwatu temple on the cliffs in the late afternoon",
+   "Optional: the Kecak fire dance at the temple"
+  ],
+  "6": [
+   "Breakfast and a free day on the coast",
+   "An hour of Balinese massage for two at a nearby spa",
+   "Optional: a surf lesson on Kuta beach with an instructor",
+   "Optional: grilled seafood on the sand at Jimbaran"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Ngurah Rai Airport for your return flight"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Bakung Ubud Resort & Villa",
+  "2": "Bakung Ubud Resort & Villa",
+  "3": "Bakung Ubud Resort & Villa",
+  "4": "Diamond Hotel Kuta, Bali",
+  "5": "Diamond Hotel Kuta, Bali",
+  "6": "Diamond Hotel Kuta, Bali",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Flights included and a candlelight dinner on the first night. Couples land, eat well and sleep, and the trip starts right.",
+  "tip": "Three nights in each base is the sweet spot for a week. Keep the sixth day completely free, it is the one couples thank us for when they get home."
+ },
+ "summary": "Seven days for two with return flights, three nights in Ubud for a candlelight dinner, the Bedugul lake temples and Kintamani, then three nights in Kuta with water sports, Uluwatu, a free beach day and a couples massage.",
+ "included": "Included: return flights from Delhi; 6 nights with daily breakfast; private airport and inter city transfers; candlelight dinner; Bedugul and Tanah Lot sunset tour; Kintamani and rice terrace tour; water sports with Uluwatu; Balinese massage for two.",
+ "not_included": "Not included: Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses."
+}

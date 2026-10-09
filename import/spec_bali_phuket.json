@@ -1,0 +1,179 @@
+{
+ "source_slug": "bali-phuket-tour-package",
+ "camel": "baliAndPhuketHoliday",
+ "slug": "bali-and-phuket-holiday",
+ "title": "Bali and Phuket Holiday",
+ "alt": "Longtail boats in the bay at Phi Phi island, Thailand",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Indonesia",
+   "/asien/indonesia"
+  ]
+ ],
+ "transport": "Flights between the islands, private transfers and guided tours",
+ "tag": "Two countries",
+ "tags": [
+  "Beach",
+  "Island hopping"
+ ],
+ "price": 47502,
+ "route_cities": [
+  "Kuta",
+  "Nusa Penida",
+  "Phuket",
+  "Phi Phi"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 13,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Nusa Penida",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Kuta Central Park Hotel, Bali",
+   "hotel_label": "Kuta Central Park Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel with a large pool, ten minutes from Kuta beach",
+   "activities": [
+    {
+     "name": "Nusa Penida and four beaches",
+     "day": 2,
+     "optional": false,
+     "match": "Nusa Penida West Tour",
+     "description": "Speedboat across to the island for Kelingking, Crystal Bay, Angel's Billabong and Broken Bay, the four stops people come to Bali for."
+    }
+   ],
+   "program": {
+    "name": "Kuta",
+    "description": "Two nights on the south coast of Bali, with a full day across the water on Nusa Penida."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Phuket",
+   "city": "Phuket",
+   "subtitle": "Phuket to Phi Phi",
+   "days": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 3 to 6",
+   "hotel": "Tony Resort",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Pool resort a short walk from Patong beach",
+   "activities": [
+    {
+     "name": "Phi Phi island day trip",
+     "day": 4,
+     "optional": false,
+     "match": "Phi Phi Island Tour",
+     "description": "A speedboat day to Phi Phi Don and Phi Phi Leh, with Maya Bay from the water, snorkelling at Monkey Beach and lunch on the island."
+    },
+    {
+     "name": "Phuket city tour",
+     "day": 5,
+     "optional": false,
+     "match": "Phuket City Tour",
+     "description": "Karon viewpoint, the Big Buddha on the hill, Wat Chalong and the old Sino Portuguese shophouse streets of Phuket town."
+    }
+   ],
+   "program": {
+    "name": "Phuket",
+    "description": "Three nights near Patong, with a speedboat day out to Phi Phi and a half day through the viewpoints and temples of the island."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Bali",
+  "2": "Nusa Penida and four beaches",
+  "3": "Flight to Phuket",
+  "4": "Phi Phi island by speedboat",
+  "5": "Phuket viewpoints and temples",
+  "6": "Departure from Phuket"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+   "Check in at your Kuta hotel and settle in",
+   "Rest of the day free near the beach",
+   "Optional: a sunset walk along Kuta beach"
+  ],
+  "2": [
+   "Early breakfast, then private transfer to Sanur harbour",
+   "Speedboat across to Nusa Penida",
+   "Kelingking beach and Crystal Bay",
+   "Angel's Billabong and Broken Bay before the boat back"
+  ],
+  "3": [
+   "Breakfast and check out, then transfer to the airport",
+   "Flight from Denpasar to Phuket",
+   "Arrival and private transfer to your resort",
+   "Rest of the day free near Patong beach"
+  ],
+  "4": [
+   "Breakfast, then transfer to the pier for your speedboat",
+   "Phi Phi Leh and Maya Bay from the water",
+   "Snorkelling at Monkey Beach",
+   "Lunch on Phi Phi Don before the boat back"
+  ],
+  "5": [
+   "Breakfast, then a half day tour of the island",
+   "Karon viewpoint over the three bays",
+   "The Big Buddha on the hill and Wat Chalong",
+   "Phuket town's old shophouse streets in the afternoon"
+  ],
+  "6": [
+   "Breakfast at the resort and check out",
+   "Private transfer to Phuket Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B, L",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Kuta Central Park Hotel, Bali",
+  "2": "Kuta Central Park Hotel, Bali",
+  "3": "Tony Resort",
+  "4": "Tony Resort",
+  "5": "Tony Resort",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Two island countries in six days, and only one flight in between. It is the shortest way to see both coasts properly.",
+  "tip": "Do Nusa Penida on the first full day while you are still fresh, the boat is early. Keep the Phuket town streets for the late afternoon when the shophouse cafes open."
+ },
+ "summary": "Six days across two countries: two nights in Kuta with a full day on Nusa Penida for Kelingking and Crystal Bay, then three nights near Patong in Phuket with a speedboat day to Phi Phi and a tour of the island's viewpoints and temples.",
+ "included": "Included: 5 nights with daily breakfast; flight from Denpasar to Phuket; private airport transfers in both countries; Nusa Penida west coast tour with four beaches; Phi Phi island speedboat day with lunch; Phuket city tour.",
+ "not_included": "Not included: international flights to Bali and home from Phuket; Indonesia and Thailand visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

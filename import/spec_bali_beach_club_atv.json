@@ -1,0 +1,113 @@
+{
+  "source_slug": "the-unbelievable-bali-deal",
+  "camel": "baliEscapeBeachClubAtv",
+  "slug": "bali-escape-with-beach-club-and-atv",
+  "title": "Bali Escape with Beach Club and ATV",
+  "alt": "Beach club pool above the sand at Canggu, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Adventure",
+  "tags": ["Adventure", "Luxury"],
+  "price": 28500,
+  "route_cities": ["Ubud", "Tirta Empul", "Kuta", "Uluwatu", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 13, "meals": 3},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Tirta Empul",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Kori Maharani Villas",
+      "accom": "2 nights \u00b7 Room only \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Private pool villas in the rice fields near Sanur",
+      "activities": [
+        {"name": "Central Bali with Tirta Empul", "day": 2, "optional": false, "match": "Central Bali Sightseeing Tour with Tirta Empul", "description": "A full day through central Bali: the Bali swing, Tegenungan waterfall, the holy spring temple at Tirta Empul and a photo stop at the rice terraces."},
+        {"name": "Ubud art market", "day": 1, "optional": true, "match": "Ubud Art Market", "description": "Two floors of carvings, batik, woven bags and silver in the middle of town, quietest and cheapest when the stalls first open."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights in a private pool villa, with a full day through the swings, waterfalls and spring temples of central Bali."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Pandawa and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Mamaka by Ovolo",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Design hotel facing Kuta beach with a rooftop pool",
+      "activities": [
+        {"name": "Tandem ATV ride", "day": 3, "optional": false, "match": "ATV Adventure", "description": "A two seat quad bike route through rice fields, a river crossing and a cave tunnel, with helmets, boots and a guide ahead of you."},
+        {"name": "Finns Beach Club", "day": 3, "optional": false, "match": "Finns Beach Club", "description": "Day beds, pools and a sound system on the sand at Canggu, with entry and transfers included for an easy afternoon by the sea."},
+        {"name": "Pandawa beach and Uluwatu", "day": 4, "optional": false, "match": "Day Trip to Uluwatu Temple", "description": "The limestone cut road down to Pandawa beach, then the cliff top temple at Uluwatu timed for sunset over the Indian Ocean."},
+        {"name": "Nusa Penida west with Paluang cliff", "day": 5, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for Kelingking beach, Angel's Billabong, Broken Bay and the Paluang cliff viewpoint above the water."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights in a design hotel on Kuta beach, with a quad bike morning, a Canggu beach club, Pandawa and Uluwatu, and a Nusa Penida day."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Bali",
+    "2": "Central Bali and Tirta Empul",
+    "3": "Quad bikes and beach club",
+    "4": "Pandawa beach and Uluwatu",
+    "5": "Nusa Penida and four beaches",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your private pool villa",
+      "Rest of the day free in the rice fields",
+      "Optional: the Ubud art market or a floating breakfast at the villa"
+    ],
+    "2": [
+      "A full day out with your own car and guide",
+      "The Bali swing and Tegenungan waterfall",
+      "Tirta Empul, the holy spring temple",
+      "A photo stop at the Tegalalang rice terraces"
+    ],
+    "3": [
+      "Check out, then a tandem quad bike route in the morning",
+      "Rice fields, a river crossing and a cave tunnel",
+      "Afternoon at Finns Beach Club on the Canggu sand",
+      "Private transfer to your beachfront hotel in Kuta"
+    ],
+    "4": [
+      "Breakfast, then south to the Bukit peninsula",
+      "Pandawa beach below its limestone cliffs",
+      "Uluwatu temple above the surf at sunset",
+      "Optional: the Kecak fire dance at the temple"
+    ],
+    "5": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong and the Paluang cliff",
+      "Return boat to Bali and back to your hotel"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "No meals", "3": "No meals", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Kori Maharani Villas",
+    "2": "Kori Maharani Villas",
+    "3": "Mamaka by Ovolo",
+    "4": "Mamaka by Ovolo",
+    "5": "Mamaka by Ovolo",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Four star hotels, a private pool villa and a beach club, under thirty thousand rupees. The best value week we sell.",
+    "tip": "The villa nights come without breakfast, which is why the price works, and there are good warungs two minutes away. Add a floating breakfast for one morning if you want the photograph."
+  },
+  "summary": "Six days on a small budget with a private pool villa and a design hotel on Kuta beach, a central Bali day with Tirta Empul, a tandem quad bike route, Finns Beach Club, Pandawa and Uluwatu, and a full day on Nusa Penida.",
+  "included": "Included: 5 nights, with breakfast on the three Kuta nights; private airport and inter city transfers; central Bali tour with Tirta Empul; tandem ATV ride; Finns Beach Club entry; Pandawa beach and Uluwatu sunset tour; Nusa Penida west coast tour.",
+  "not_included": "Not included: international flights; Indonesia visa fees; breakfast on the villa nights; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

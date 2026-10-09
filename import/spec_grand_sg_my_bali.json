@@ -1,0 +1,108 @@
+{
+ "source_slug": "singapore-malaysia-bali-tour-package-from-delhi",
+ "camel": "grandSingaporeMalaysiaBali",
+ "slug": "grand-singapore-malaysia-and-bali-holiday",
+ "title": "Grand Singapore, Malaysia and Bali Holiday",
+ "alt": "Gardens by the Bay Supertrees lit up in Singapore",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Return flights, private transfers and guided tours",
+ "tag": "Family",
+ "tags": ["Family", "Luxury"],
+ "price": 163685,
+ "route_cities": ["Singapore", "Sentosa", "Kuala Lumpur", "Genting Highlands", "Kuta"],
+ "counts": {"days": 10, "nights": 9, "cities": 3, "hotels": 3, "experiences": 13, "transfers": 23, "meals": 18},
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Singapore",
+   "city": "Singapore",
+   "subtitle": "Singapore to Sentosa",
+   "days": [1, 2, 3],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "ibis Singapore on Bencoolen",
+   "accom": "3 nights \u00b7 Breakfast and one main meal daily \u00b7 Standard room \u00b7 3\u2605 \u00b7 Bencoolen hotel, five minutes on foot from the metro",
+   "activities": [
+    {"name": "Night Safari with tram ride", "day": 1, "optional": false, "match": "Singapore Night Safari", "description": "The world's first nocturnal zoo, with a tram ride through seven habitats and walking trails where the animals are at their most active."},
+    {"name": "Sentosa cable car sky pass", "day": 2, "optional": false, "match": "Singapore Cable Car", "description": "Two cable car lines over the harbour and across Sentosa, the easiest way to see the island and the port from above."},
+    {"name": "S.E.A. Aquarium", "day": 2, "optional": false, "match": "SEA Aquarium", "description": "One of the largest aquariums anywhere, with a ten metre viewing panel, reef sharks, manta rays and forty five thousand animals."},
+    {"name": "Madame Tussauds Singapore", "day": 2, "optional": false, "match": "Madame Tussauds", "description": "Wax figures, the Images of Singapore ride and the Spirit of Singapore boat ride, all on the Imbiah lookout at Sentosa."},
+    {"name": "Wings of Time show", "day": 2, "optional": false, "match": "Wings Of Time", "description": "An evening show on Siloso beach with water jets, lasers and fire, staged over the sea at the end of your Sentosa day."},
+    {"name": "Singapore sightseeing tour", "day": 3, "optional": false, "match": "Singapore Half-Day Sightseeing", "description": "A half day tour past Merlion Park, the Marina Bay waterfront, Chinatown and the colonial quarter, with a guide on a shared coach."},
+    {"name": "Marina Bay Sands SkyPark", "day": 3, "optional": false, "match": "Marina Bay Sands Skypark", "description": "The observation deck fifty seven floors above Marina Bay, with the city, the port and the Gardens by the Bay domes below you."}
+   ],
+   "program": {"name": "Singapore", "description": "Three nights in the city with a night safari, a full Sentosa day of cable cars, the aquarium and Wings of Time, and the Marina Bay SkyPark."}
+  },
+  {
+   "letter": "B",
+   "name": "Kuala Lumpur",
+   "city": "Kuala Lumpur",
+   "subtitle": "Kuala Lumpur to Genting and Sunway",
+   "days": [4, 5, 6],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Metro Hotel Bukit Bintang, Kuala Lumpur",
+   "hotel_label": "Metro Hotel Bukit Bintang",
+   "accom": "3 nights \u00b7 Breakfast and one main meal daily \u00b7 Standard room \u00b7 3\u2605 \u00b7 Bukit Bintang hotel in the middle of the shopping and food streets",
+   "activities": [
+    {"name": "Kuala Lumpur sightseeing tour", "day": 4, "optional": false, "match": "Kuala Lumpur Sightseeing", "description": "The King's palace gates, the National Monument, Merdeka Square and the old railway station, with a photo stop at the towers."},
+    {"name": "Genting Highlands and Batu Caves", "day": 5, "optional": false, "match": "Genting Highlands and Batu Caves", "description": "A private day up to the hill resort by cable car, with the theme park and casino floor, and the Batu Caves temple steps on the way back."},
+    {"name": "Petronas Twin Towers tickets", "day": 5, "optional": false, "match": "Petronas Twin Towers", "description": "Entry to the sky bridge and the observation deck on the eighty sixth floor, with the city spread out on both sides."},
+    {"name": "Sunway Lagoon park", "day": 6, "optional": false, "match": "Sunway Lagoon", "description": "Six parks on one ticket with water slides, a surf beach, a wildlife section and the longest suspension bridge in the country."}
+   ],
+   "program": {"name": "Kuala Lumpur", "description": "Three nights in Bukit Bintang, with a city tour, a hill day at Genting and Batu Caves, the Petronas towers and a full day at Sunway Lagoon."}
+  },
+  {
+   "letter": "C",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Kintamani and Tanah Lot",
+   "days": [7, 8, 9, 10],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "Diamond Hotel Kuta, Bali",
+   "hotel_label": "Diamond Hotel Kuta",
+   "accom": "3 nights \u00b7 Breakfast and one main meal daily \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet pool hotel walking distance from Kuta beach",
+   "activities": [
+    {"name": "Kintamani with the jungle swing", "day": 8, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+    {"name": "Bedugul lakes and Tanah Lot sunset", "day": 9, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."}
+   ],
+   "program": {"name": "Kuta", "description": "Three nights in Bali to finish, with a coffee plantation day up to Kintamani and a temple run that ends at Tanah Lot for sunset."}
+  }
+ ],
+ "day_titles": {
+  "1": "Flight out and night safari",
+  "2": "A full day on Sentosa",
+  "3": "City tour and Marina Bay",
+  "4": "On to Kuala Lumpur",
+  "5": "Genting, Batu Caves and Petronas",
+  "6": "A day at Sunway Lagoon",
+  "7": "On to Bali and Kuta",
+  "8": "Kintamani and the jungle swing",
+  "9": "Bedugul lakes and Tanah Lot",
+  "10": "Departure from Bali"
+ },
+ "bullets": {
+  "1": ["Flight from Delhi to Singapore, included in your package", "Arrival at Changi Airport and private transfer to your hotel", "Evening tram ride at the Singapore Night Safari", "Dinner is included at the hotel tonight"],
+  "2": ["Breakfast, then across to Sentosa island", "Cable car sky pass over the harbour and the island", "S.E.A. Aquarium and Madame Tussauds", "Wings of Time show on Siloso beach in the evening"],
+  "3": ["Breakfast, then a half day city tour with a guide", "Merlion Park, the colonial quarter and Chinatown", "The SkyPark deck above Marina Bay Sands", "Optional: the Supertree light show at Gardens by the Bay"],
+  "4": ["Breakfast and check out, then private transfer to Changi", "Optional: flight from Singapore to Kuala Lumpur, which we can add", "Arrival and city tour: palace gates, Merdeka Square, the old station", "Check in at your Bukit Bintang hotel"],
+  "5": ["Breakfast, then a private day up to Genting Highlands", "Cable car to the hill resort and its theme park", "Batu Caves and the temple steps on the way back", "Sky bridge and observation deck at the Petronas towers"],
+  "6": ["Breakfast, then a full day at Sunway Lagoon", "Water slides, the surf beach and the wildlife park", "The suspension bridge above the lagoon", "Optional: dinner on Jalan Alor street food lane"],
+  "7": ["Breakfast and check out, then private transfer to the airport", "Optional: flight from Kuala Lumpur to Denpasar, which we can add", "Arrival in Bali and private transfer to your Kuta hotel", "Rest of the day free near the beach"],
+  "8": ["Breakfast, then a full day out with your own car and guide", "Coffee plantation tasting on the climb to Kintamani", "Tegenungan waterfall and the Tegalalang rice terraces", "A turn on the jungle swing above the valley"],
+  "9": ["Breakfast, then north to the Handara gate for photographs", "Ulun Danu Beratan, the temple standing on the lake", "Sunset at Tanah Lot, the sea temple on the rocks", "Dinner is included at the hotel tonight"],
+  "10": ["Breakfast at the hotel and check out", "Private transfer to Ngurah Rai Airport for your return flight"]
+ },
+ "meals": {"1": "D", "2": "B, D", "3": "B, D", "4": "B, D", "5": "B, D", "6": "B, D", "7": "B, D", "8": "B, D", "9": "B, D", "10": "B"},
+ "hotel_by_day": {"1": "ibis Singapore on Bencoolen", "2": "ibis Singapore on Bencoolen", "3": "ibis Singapore on Bencoolen", "4": "Metro Hotel Bukit Bintang, Kuala Lumpur", "5": "Metro Hotel Bukit Bintang, Kuala Lumpur", "6": "Metro Hotel Bukit Bintang, Kuala Lumpur", "7": "Diamond Hotel Kuta, Bali", "8": "Diamond Hotel Kuta, Bali", "9": "Diamond Hotel Kuta, Bali", "10": "Departure"},
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Three countries, nine nights, and a main meal every day. For a family of four this is the package that works out cheapest.",
+  "tip": "Sentosa is a long day, so start with the cable car and finish with Wings of Time. In Kuala Lumpur we keep Sunway Lagoon for after Genting, because the children sleep through the drive back."
+ },
+ "summary": "Ten days with return flights across Singapore, Malaysia and Bali: a night safari and a full Sentosa day, the Marina Bay SkyPark, Genting and Batu Caves, the Petronas towers, Sunway Lagoon, then Kintamani and sunset at Tanah Lot.",
+ "included": "Included: return flights from Delhi; 9 nights with daily breakfast and one main meal daily; private airport and city transfers; Night Safari; Sentosa cable car, S.E.A. Aquarium, Madame Tussauds and Wings of Time; Singapore sightseeing; Marina Bay Sands SkyPark; Kuala Lumpur city tour; Genting and Batu Caves; Petronas tickets; Sunway Lagoon; Kintamani tour; Bedugul and Tanah Lot tour.",
+ "not_included": "Not included: the Singapore to Kuala Lumpur and Kuala Lumpur to Denpasar flights, which we can add; visa fees; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

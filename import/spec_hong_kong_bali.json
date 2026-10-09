@@ -1,0 +1,96 @@
+{
+ "source_slug": "hong-kong-and-bali-holiday-package",
+ "camel": "hongKongBaliHoliday",
+ "slug": "best-of-hong-kong-and-bali-holiday",
+ "title": "Best of Hong Kong and Bali Holiday",
+ "alt": "Victoria Harbour and the Hong Kong skyline at dusk",
+ "cta_country": "indonesia",
+ "base": "/asien",
+ "transport": "Private transfers, city tours and guided day tours",
+ "tag": "Family",
+ "tags": ["Family", "Culture"],
+ "price": 94002,
+ "route_cities": ["Hong Kong", "Ocean Park", "Ubud", "Kuta", "Nusa Penida"],
+ "counts": {"days": 8, "nights": 7, "cities": 3, "hotels": 3, "experiences": 5, "transfers": 13, "meals": 7},
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hong Kong",
+   "city": "Hong Kong",
+   "days": [1, 2, 3],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Regal Kowloon Hotel, Hong Kong",
+   "hotel_label": "Regal Kowloon Hotel",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Tsim Sha Tsui East hotel, walking distance from the harbour",
+   "activities": [
+    {"name": "Hong Kong sightseeing tour", "day": 2, "optional": false, "match": "Hong Kong Day Sightseeing", "description": "Victoria Peak by tram, Aberdeen harbour and its sampans, Repulse Bay and the jewellery workshops, with a guide for the day."},
+    {"name": "Ocean Park Hong Kong", "day": 3, "optional": false, "match": "Ocean Park Hong Kong", "description": "A full day ticket for the marine park on the south side, with the cable car over the headland, the aquarium and the pandas."}
+   ],
+   "program": {"name": "Hong Kong", "description": "Three nights in Kowloon with a city day by peak tram and sampan, and a full day at Ocean Park on the south side of the island."}
+  },
+  {
+   "letter": "B",
+   "name": "Ubud",
+   "city": "Ubud",
+   "subtitle": "Ubud to Kintamani",
+   "days": [4, 5],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Asri Sari Villa, Ubud",
+   "hotel_label": "Asri Sari Villa",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small villa property on the quiet edge of Ubud",
+   "activities": [
+    {"name": "Kintamani with the jungle swing", "day": 5, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."}
+   ],
+   "program": {"name": "Ubud", "description": "Two nights inland after the city, with a coffee plantation road up to the Kintamani crater and the rice terraces at Tegalalang."}
+  },
+  {
+   "letter": "C",
+   "name": "Kuta",
+   "city": "Kuta",
+   "subtitle": "Kuta to Tanah Lot and Nusa Penida",
+   "days": [6, 7, 8],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Kuta Central Park Hotel, Bali",
+   "hotel_label": "Kuta Central Park Hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Large pool hotel ten minutes from Kuta beach",
+   "activities": [
+    {"name": "Monkey forest with Tanah Lot sunset", "day": 6, "optional": false, "match": "Ketadon Monkey Forest", "description": "Taman Ayun, the Alas Kedaton monkey forest and the lake temple at Beratan, finishing with sunset at the sea temple of Tanah Lot."},
+    {"name": "Nusa Penida west coast by speedboat", "day": 7, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across to Nusa Penida for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, the island's four best known stops."}
+   ],
+   "program": {"name": "Kuta", "description": "Two nights on the coast to finish, with a temple day that ends at Tanah Lot and a full island day on Nusa Penida."}
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hong Kong",
+  "2": "Hong Kong sightseeing",
+  "3": "A day at Ocean Park",
+  "4": "On to Bali and Ubud",
+  "5": "Kintamani and the jungle swing",
+  "6": "Tanah Lot and on to Kuta",
+  "7": "Nusa Penida and four beaches",
+  "8": "Departure from Bali"
+ },
+ "bullets": {
+  "1": ["Arrival at Hong Kong Airport and private transfer to your hotel", "Check in at your hotel in Kowloon", "Rest of the day free near the harbour", "Optional: the Symphony of Lights show from the promenade"],
+  "2": ["Breakfast, then a full day in the city with a guide", "Victoria Peak by the old tram line", "Aberdeen harbour and its sampan boats", "Repulse Bay and the jewellery workshops"],
+  "3": ["Breakfast, then a full day at Ocean Park", "Cable car over the headland to the Summit", "The aquarium, the pandas and the rides", "Evening free in Kowloon"],
+  "4": ["Breakfast and check out, then private transfer to the airport", "Optional: flight from Hong Kong to Denpasar, which we can add", "Arrival in Bali and private transfer to your Ubud villa", "Rest of the day free among the rice fields"],
+  "5": ["Breakfast, then a full day out with your own car and guide", "Coffee plantation tasting on the climb to Kintamani", "Tegenungan waterfall and the Tegalalang rice terraces", "A turn on the jungle swing above the valley"],
+  "6": ["Breakfast and check out, then on to the west coast", "Taman Ayun and the Alas Kedaton monkey forest", "Sunset at Tanah Lot, the sea temple on the rocks", "Check in at your Kuta hotel for two nights"],
+  "7": ["Early breakfast, then private transfer to Sanur harbour", "Speedboat across to Nusa Penida for the west coast", "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach", "Return boat to Bali and back to your hotel"],
+  "8": ["Breakfast at the hotel and check out", "Private transfer to Ngurah Rai Airport for your flight home"]
+ },
+ "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B"},
+ "hotel_by_day": {"1": "Regal Kowloon Hotel, Hong Kong", "2": "Regal Kowloon Hotel, Hong Kong", "3": "Regal Kowloon Hotel, Hong Kong", "4": "Asri Sari Villa, Ubud", "5": "Asri Sari Villa, Ubud", "6": "Kuta Central Park Hotel, Bali", "7": "Kuta Central Park Hotel, Bali", "8": "Departure"},
+ "expert": {
+  "name": "Putu",
+  "image": "/experts/riya.webp",
+  "role": "Indonesia expert at Hi Tours",
+  "quote": "Hong Kong for three nights is exactly right. Long enough for the peak and Ocean Park, short enough to still want Bali.",
+  "tip": "Take an Octopus card on arrival in Hong Kong, it works on the tram, the metro and the Star Ferry. Fly to Bali in the morning so you still have a rice field evening in Ubud."
+ },
+ "summary": "Eight days across two very different places: three nights in Kowloon for Victoria Peak, Aberdeen harbour and Ocean Park, then five in Bali for Kintamani, the jungle swing, sunset at Tanah Lot and a day on Nusa Penida.",
+ "included": "Included: 7 nights with daily breakfast; private airport and inter city transfers; Hong Kong sightseeing tour; Ocean Park day ticket; Kintamani and jungle swing tour; monkey forest with Tanah Lot sunset; Nusa Penida west coast tour.",
+ "not_included": "Not included: international flights; the Hong Kong to Denpasar flight, which we can add; visa fees; lunches and dinners; travel insurance; personal expenses.",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}
