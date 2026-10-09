@@ -2,17 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { planner } from '../../egyptListingData';
 import { CheckCircleIcon } from './EgyptIcons';
 import PhoneInput, { EMPTY_PHONE, phoneError, phonePayload } from './PhoneInput';
-import FlightPath from '../FlightPath';
+import { FlightThrough } from '../FlightPath';
 import { GoogleLogo, TripAdvisorLogo } from '../Rating';
 import { Heart, Star } from 'lucide-react';
 import { ratings } from '../../mock';
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL;
+const GREEN = '#00B67A';
 
 const inputCls = 'h-11 w-full rounded-lg border border-[#C4CBD0] bg-white px-3.5 eg-body-lg text-[#002131] placeholder:text-[#8A9297] focus:border-[#308BB6] focus:shadow-[0_0_0_3px_rgba(48,139,182,0.15)] focus:outline-none';
 const labelCls = 'eg-label-lg text-[#174358]';
 
-function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix }) {
+function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix, between = null }) {
   if (status === 'done') {
     return (
       <div className="py-6 flex flex-col items-center text-center gap-2" data-testid={`${prefix}-success`}>
@@ -36,6 +37,7 @@ function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix }) 
         <span className={labelCls}>{data.emailLabel}</span>
         <input type="email" autoComplete="email" value={form.email} onChange={set('email')} placeholder={data.emailPlaceholder} className={inputCls} data-testid={`${prefix}-email`} />
       </label>
+      {between}
       {status === 'error' && <p className="eg-body-md text-[#B42318]" data-testid={`${prefix}-error`}>Something went wrong. Please try again.</p>}
       <button type="submit" disabled={!valid || status === 'sending'} className="eg-btn-filled w-full !h-12 mt-1 eg-title-md disabled:opacity-60 disabled:cursor-not-allowed" data-testid={`${prefix}-submit`}>
         {status === 'sending' ? data.sending : data.cta}
@@ -66,45 +68,53 @@ const Ratings = ({ className = '' }) => (
   </div>
 );
 
-const Stars = () => (
-  <span className="flex gap-0.5 text-[#F4B400]" aria-label="5 star review">
-    {[0, 1, 2, 3, 4].map((k) => <Star key={k} size={12} className="fill-current" />)}
+export const StarRow = ({ value = 5, size = 14 }) => (
+  <span className="inline-flex items-center gap-1.5" aria-label={`${value} out of 5 stars`} data-testid="eg-star-row">
+    <span className="flex gap-[2px]">
+      {[0, 1, 2, 3, 4].map((k) => {
+        const fill = Math.max(0, Math.min(1, value - k));
+        return (
+          <span key={k} className="relative inline-flex" style={{ width: size, height: size }}>
+            <Star size={size} className="absolute inset-0 text-[#D9DEE2] fill-current" />
+            <span className="absolute inset-0 overflow-hidden" style={{ width: `${fill * 100}%` }}><Star size={size} style={{ color: GREEN }} className="fill-current" /></span>
+          </span>
+        );
+      })}
+    </span>
+    <b className="eg-label-lg font-semibold" style={{ color: GREEN }}>{Number(value).toFixed(1)}</b>
   </span>
 );
 
-// Rotating traveller quote: one crisp line clamp, avatar initial, stars, no separators.
-const QuoteScroller = ({ quotes, destination, className = '', lines = 2 }) => {
+const clean = (s) => (s || '').trim().replace(/\s*[-–—]\s*/g, ', ').replace(/\.{2,}$/, '').replace(/[,;:\s]+$/, '');
+
+// Rotating traveller quote: the words are the hero, then name + visible star rating.
+const QuoteScroller = ({ quotes, className = '' }) => {
   const [i, setI] = useState(0);
   const list = (quotes || []).filter((q) => q && q.text);
   useEffect(() => {
     if (list.length < 2) return undefined;
-    const t = setTimeout(() => setI((v) => (v + 1) % list.length), 6000);
+    const t = setTimeout(() => setI((v) => (v + 1) % list.length), 7000);
     return () => clearTimeout(t);
   }, [i, list.length]);
   if (!list.length) return null;
   const q = list[i % list.length];
-  const text = q.text.trim().replace(/\s*[-–—]\s*/g, ', ').replace(/[.,;:\s]+$/, '').replace(/\.{3,}$/, '');
+  const text = clean(q.text);
   return (
-    <div className={`relative rounded-xl bg-white border border-[#E4E3DB] px-4 py-3.5 shadow-[0_2px_10px_rgba(0,33,49,0.05)] ${className}`} data-testid="eg-planner-quotes">
-      <span className="absolute -top-3 left-4 h-6 px-2 rounded-full bg-[#308BB6] text-white eg-label-md uppercase tracking-[0.12em] flex items-center">Traveller stories</span>
-      <div key={i} className="flex gap-3 animate-[hi-fade-in_400ms_ease-out]">
-        <span className="shrink-0 w-9 h-9 rounded-full bg-[#174358] text-white eg-title-md flex items-center justify-center" aria-hidden="true">{(q.name || '?')[0]}</span>
-        <div className="min-w-0 flex-1">
-          <p className={`eg-body-md text-[#002131] ${lines === 3 ? 'line-clamp-3' : 'line-clamp-2'}`} data-testid="eg-planner-quote-text">&ldquo;{text}.&rdquo;</p>
-          <div className="mt-1.5 flex items-center gap-2 flex-wrap">
-            <span className="eg-label-lg text-[#002131]" data-testid="eg-planner-quote-author">{q.name}</span>
-            <Stars />
-            {destination && <span className="eg-body-sm text-[#6F777C]">{destination} trip</span>}
-          </div>
+    <div className={`text-center ${className}`} data-testid="eg-planner-quotes">
+      <div key={i} className="animate-[hi-fade-in_450ms_ease-out]">
+        <p className="eg-quote !text-[17px] !leading-[26px] text-[#002131]" data-testid="eg-planner-quote-text">&ldquo;{text}{/[.!?]$/.test(text) ? '' : '.'}&rdquo;</p>
+        <div className="mt-2.5 flex items-center justify-center gap-2.5 flex-wrap">
+          <span className="eg-title-md text-[#002131]" data-testid="eg-planner-quote-author">{q.name}</span>
+          <StarRow value={q.stars || 5} />
         </div>
-        {list.length > 1 && (
-          <div className="shrink-0 flex flex-col justify-center gap-1" aria-hidden="true">
-            {list.slice(0, 4).map((x, k) => (
-              <button key={x.name + k} type="button" onClick={() => setI(k)} aria-label={`Review ${k + 1}`} className={`w-1.5 rounded-full transition-all ${k === i % Math.min(list.length, 4) ? 'h-4 bg-[#174358]' : 'h-1.5 bg-[#C4CBD0] hover:bg-[#8A9297]'}`} data-testid="eg-planner-quote-dot" />
-            ))}
-          </div>
-        )}
       </div>
+      {list.length > 1 && (
+        <div className="mt-3 flex justify-center gap-1.5">
+          {list.map((x, k) => (
+            <button key={x.name + k} type="button" onClick={() => setI(k)} aria-label={`Review ${k + 1}`} className={`h-1.5 rounded-full transition-all ${k === i % list.length ? 'w-5 bg-[#174358]' : 'w-1.5 bg-[#C4CBD0] hover:bg-[#8A9297]'}`} data-testid="eg-planner-quote-dot" />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -137,10 +147,16 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
     }
   };
   const formProps = { data, form, set, setPhone, status, valid, submit };
+  const trust = (cls) => (
+    <div className={cls}>
+      <Ratings />
+      <QuoteScroller quotes={quotes} />
+    </div>
+  );
 
   return (
     <section className={className} data-testid="eg-planner">
-      <div className="relative h-[720px] hidden lg:block">
+      <div className="relative hidden lg:block">
         <div className="relative h-[372px] rounded-2xl overflow-hidden">
           <img src={data.bg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className={overlay} />
@@ -148,39 +164,29 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
             <h3 className={`${titleClass} text-white text-center`}>{data.h3}</h3>
             <Social data={data} />
           </div>
+          {/* Plane crosses the planner at phone-field height and disappears behind the card */}
+          <div className="absolute inset-x-0 top-[236px] h-[90px] pointer-events-none" data-testid="eg-planner-flight">
+            <FlightThrough className="w-full h-full" />
+          </div>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 top-[141px] w-[600px] rounded-2xl bg-[#FEFCF4] shadow-[0_1px_2px_rgba(0,0,0,0.3),0_12px_32px_rgba(0,33,49,0.18)] z-10 overflow-hidden" data-testid="eg-planner-card">
+        <div className="relative z-10 -mt-[231px] mx-auto w-[600px] rounded-2xl bg-[#FEFCF4] shadow-[0_1px_2px_rgba(0,0,0,0.3),0_12px_32px_rgba(0,33,49,0.18)] overflow-hidden" data-testid="eg-planner-card">
           <div className="pt-6 px-10 pb-5">
             <LeadForm {...formProps} prefix="eg-planner" />
           </div>
-          <div className="bg-[#F0EEE6] px-10 pt-4 pb-5 flex flex-col gap-5">
-            <Ratings />
-            <QuoteScroller quotes={quotes} destination={destination} />
-          </div>
-        </div>
-
-        <div className="absolute inset-x-0 bottom-0 flex items-end justify-center gap-6 pointer-events-none" data-testid="eg-planner-flight">
-          <FlightPath side="left" className="w-[220px] h-auto" />
-          <FlightPath side="right" className="w-[220px] h-auto" />
+          {trust('bg-[#F0EEE6] px-10 pt-4 pb-5 flex flex-col gap-4')}
         </div>
       </div>
 
-      {/* Compact layout below lg */}
+      {/* Compact layout below lg: quote sits between the fields and the CTA so the button closes the card */}
       <div className="lg:hidden relative rounded-2xl overflow-hidden">
         <img src={data.bg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
         <div className={overlay} />
         <div className="relative p-3 pt-5 sm:p-5 flex flex-col items-center gap-3">
           <h3 className="eg-headline-md text-white text-center">{data.h3}</h3>
           <Social data={data} compact />
-          <div className="w-full max-w-[560px] rounded-2xl bg-[#FEFCF4] overflow-hidden" data-testid="eg-planner-card-mobile">
-            <div className="p-4 pb-4">
-              <LeadForm {...formProps} prefix="eg-planner-m" />
-            </div>
-            <div className="bg-[#F0EEE6] px-4 pt-3 pb-4 flex flex-col gap-4">
-              <Ratings />
-              <QuoteScroller quotes={quotes} destination={destination} />
-            </div>
+          <div className="w-full max-w-[560px] rounded-2xl bg-[#FEFCF4] p-4" data-testid="eg-planner-card-mobile">
+            <LeadForm {...formProps} prefix="eg-planner-m" between={trust('-mx-4 my-1 bg-[#F0EEE6] px-4 py-3.5 flex flex-col gap-3')} />
           </div>
         </div>
       </div>

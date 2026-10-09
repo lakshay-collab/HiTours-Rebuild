@@ -103,6 +103,7 @@ const tagIcon = Object.fromEntries(styles.map((s) => [s.key, s.icon]));
 import { ratings as trustBar } from '../mock';
 
 import { BY_SLUG } from '../tours/tripIndex';
+import { buildDestinationReviews } from '../reviews/dynamicReviews';
 
 const stop = (e) => e.preventDefault();
 
@@ -440,7 +441,7 @@ export default function EgyptDetail() {
             </aside>
           </div>
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />
-          <EgyptPlanner className="eg-wide" titleClass="eg-headline-lg" data={dest.planner} tripTitle={detail.title} source="egypt-detail" quotes={dest.reviews?.items} />
+          <EgyptPlanner className="eg-wide" titleClass="eg-headline-lg" data={dest.planner} tripTitle={detail.title} source="egypt-detail" quotes={buildDestinationReviews(dest.name).items} />
           <Features />
           <EgyptReviews centered className="eg-container" h2={dest.reviewsH2} count={dest.reviewsCount} items={dest.reviewItems} cta={detail.cta} />
           <Recommended detail={detail} />

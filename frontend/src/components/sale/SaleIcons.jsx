@@ -30,3 +30,14 @@ export const Sparkle = ({ size = 10, className = '' }) => (
     <path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z" fill="currentColor" />
   </svg>
 );
+
+// Festive price tag with a bold % and a gold ribbon; reads cleanly on red, dark and photo backgrounds.
+export const SaleTag = ({ size = 18, className = '' }) => (
+  <svg viewBox="0 0 32 32" width={size} height={size} className={`tag-swing ${className}`} aria-hidden="true">
+    <path d="M4 14.5V6.2C4 5 5 4 6.2 4h8.3c.6 0 1.1.2 1.5.6L28.4 17c.9.9.9 2.3 0 3.1l-8.3 8.3c-.9.9-2.3.9-3.1 0L4.6 16c-.4-.4-.6-.9-.6-1.5z" fill="#FFD166" stroke="#C98A1C" strokeWidth="1" strokeLinejoin="round" />
+    <circle cx="9.5" cy="9.5" r="2" fill="#FFFFFF" stroke="#C98A1C" strokeWidth="1" />
+    <path d="M9.5 9.5 3 3" stroke="#C98A1C" strokeWidth="1.4" strokeLinecap="round" />
+    <text x="17.4" y="21.6" textAnchor="middle" fontFamily="Instrument Sans, Inter, sans-serif" fontSize="10.5" fontWeight="700" fill="#A3181D" transform="rotate(-45 17.4 18.6)">%</text>
+    <path d="M26 5l.9 2.3 2.3.9-2.3.9L26 11.4l-.9-2.3-2.3-.9 2.3-.9z" fill="#FFFFFF" />
+  </svg>
+);

@@ -13,6 +13,7 @@ import MobileFilterSheet from '../components/holidays/MobileFilterSheet';
 import { usePageLead } from '../components/egypt/LeadModalProvider';
 import EgyptPlanner from '../components/egypt/EgyptPlanner';
 import EgyptCustomerReviews from '../components/egypt/EgyptCustomerReviews';
+import { buildDestinationReviews } from '../reviews/dynamicReviews';
 import { EgyptFaq } from '../components/egypt/EgyptSections';
 import { ChevronRight, ChevronDown } from '../components/egypt/EgyptIcons';
 import { hero as egHero, tours as egTours, products as egProducts, sorts, styleBySlug, holidaysPath as egHolidaysPath, holidaysCrumbs as egCrumbs, faq as egFaq, planner as egPlanner, customerReviews as egCustomerReviews } from '../egyptListingData';
@@ -89,6 +90,8 @@ const WIDE = 'w-full px-4 sm:px-8 lg:px-10 2xl:px-14';
 
 export default function EgyptHolidays({ d = egyptHolidays }) {
   const { hero, tours, products, holidaysPath, holidaysCrumbs, faq, planner, mode = 'holidays' } = d;
+  const country = (planner?.h3 || '').replace(/^Customize your\s+/i, '').replace(/\s+trip$/i, '') || 'Egypt';
+  const liveReviews = useMemo(() => buildDestinationReviews(country), [country]);
   const noun = mode === 'honeymoon' ? 'honeymoon' : 'holiday';
   usePageLead(holidaysCrumbs[1].label, hero.image, hero.imageAlt);
   const navigate = useNavigate();
@@ -225,8 +228,8 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
           </div>
         </section>
 
-        <div id="planner" className="scroll-mt-20"><EgyptPlanner data={planner} source={d.plannerSource} quotes={d.customerReviews?.items} /></div>
-        <EgyptCustomerReviews data={d.customerReviews} />
+        <div id="planner" className="scroll-mt-20"><EgyptPlanner data={planner} source={d.plannerSource} quotes={liveReviews.items} /></div>
+        <EgyptCustomerReviews data={d.customerReviews} destination={country} />
         <EgyptFaq centered className="eg-container mt-12 md:mt-16 mb-16" data={faq} />
       </main>
       <ScrollTop className="bottom-40 left-4 md:bottom-10 md:left-12" />

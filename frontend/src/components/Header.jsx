@@ -1,15 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Phone, Menu, X, ChevronDown } from 'lucide-react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Phone, Menu, X, ChevronDown, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { nav } from '../mock';
 import MobileDrawer from './MobileDrawer';
+import SearchOverlay from './SearchOverlay';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 import { DestinationsMenu, ThemesMenu } from './DesktopMenus';
 import { useHomeLink, scrollToSection, WHY_ID } from '../lib/homeReturn';
 import { useLocation } from 'react-router-dom';
 import { SALE } from '../sale';
-import { SantaHat, Bells } from './sale/SaleIcons';
+import { SaleTag, Bells } from './sale/SaleIcons';
 import { SaleTooltip } from './sale/SaleBadge';
 
 const BANNER_KEY = SALE ? `hi-banner-dismissed-${SALE.id}` : 'hi-banner-dismissed';
@@ -24,6 +25,24 @@ const Snow = () => (
 const MENUS = [
   { key: 'destinations', label: 'Destinations' }
 ];
+
+const pad = (n) => String(n).padStart(2, '0');
+// Live "ends in" ticker for the sale bar (sale ends end-of-day IST).
+const SaleCountdown = ({ className = '' }) => {
+  const end = new Date(`${SALE.ends}T23:59:59+05:30`).getTime();
+  const [left, setLeft] = useState(() => Math.max(0, end - Date.now()));
+  useEffect(() => { const t = setInterval(() => setLeft(Math.max(0, end - Date.now())), 1000); return () => clearInterval(t); }, [end]);
+  const s = Math.floor(left / 1000);
+  const parts = [[Math.floor(s / 86400), 'd'], [Math.floor((s % 86400) / 3600), 'h'], [Math.floor((s % 3600) / 60), 'm'], [s % 60, 's']];
+  return (
+    <span className={`inline-flex items-center gap-1 ${className}`} data-testid="sale-countdown" aria-live="off">
+      <span className="text-white/80">Ends in</span>
+      {parts.map(([v, u]) => (
+        <span key={u} className="inline-flex items-baseline rounded-md bg-white/15 px-1.5 py-px font-semibold tabular-nums text-white">{pad(v)}<span className="text-[10px] text-white/70 ml-px">{u}</span></span>
+      ))}
+    </span>
+  );
+};
 const LINKS = [
   { label: 'About us', href: '/about' },
   { label: 'Why Us?', href: `/#${WHY_ID}`, hash: WHY_ID }
@@ -31,6 +50,8 @@ const LINKS = [
 
 export default function Header({ overlay = false, floating = false }) {
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const closeSearch = useCallback(() => setSearchOpen(false), []);
   const [adviceOpen, setAdviceOpen] = useState(false);
   const [menu, setMenu] = useState(null);
   const home = useHomeLink();
@@ -96,13 +117,13 @@ export default function Header({ overlay = false, floating = false }) {
       {SALE ? (
         <SaleTooltip testId="top-banner-sale">
           <span className="relative z-[1] inline-flex items-center justify-center gap-2 flex-wrap cursor-default">
-            <SantaHat size={22} className="shrink-0" />
+            <SaleTag size={22} className="shrink-0" />
             <span className="font-semibold tracking-wide">{SALE.name}</span>
             <span className="hidden sm:inline text-white/60">·</span>
             <span className="text-[#FFD166] font-medium">{SALE.tagline}</span>
             <span className="hidden sm:inline text-white/60">·</span>
-            <span className="hidden sm:inline text-white/90">{SALE.endsLabel}</span>
-            <Bells size={22} className="shrink-0" />
+            <SaleCountdown className="basis-full sm:basis-auto justify-center text-[12px] sm:text-[13px]" />
+            <Bells size={22} className="shrink-0 hidden sm:inline" />
           </span>
         </SaleTooltip>
       ) : nav.banner}
@@ -140,6 +161,9 @@ export default function Header({ overlay = false, floating = false }) {
           </Link>
         ))}
         <span className={`h-6 w-px ${dividerCls} mx-4`} />
+        <button onClick={() => setSearchOpen(true)} aria-label="Search destinations" className={`w-10 h-10 rounded-full flex items-center justify-center ${textCls} hover:bg-black/5 ${overlay ? 'hover:bg-white/10' : ''} transition-colors mr-2`} data-testid="nav-search">
+          <Search size={20} strokeWidth={1.75} />
+        </button>
         <div className="relative h-full flex items-center" ref={adviceRef} onMouseEnter={hoverIn} onMouseLeave={hoverOut}>
           <button onClick={() => setAdviceOpen((v) => !v)} className={`flex items-center gap-2 t-body-md ${textCls} hover:opacity-75 transition-opacity`} data-testid="nav-phone" aria-expanded={adviceOpen}>
             <Phone size={18} strokeWidth={1.75} />
@@ -156,9 +180,14 @@ export default function Header({ overlay = false, floating = false }) {
         </div>
       </nav>
 
-      <button className={`lg:hidden ${textCls} w-10 h-10 -mr-2 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setOpen(true)} aria-label="Open menu" data-testid="mobile-menu-toggle">
-        <Menu size={24} strokeWidth={1.75} />
-      </button>
+      <div className="lg:hidden flex items-center -mr-2">
+        <button className={`${textCls} w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="mobile-search-toggle">
+          <Search size={22} strokeWidth={1.75} />
+        </button>
+        <button className={`${textCls} w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setOpen(true)} aria-label="Open menu" data-testid="mobile-menu-toggle">
+          <Menu size={24} strokeWidth={1.75} />
+        </button>
+      </div>
     </div>
   );
 
@@ -201,6 +230,7 @@ export default function Header({ overlay = false, floating = false }) {
             <Link key={l.label} to={l.href} onClick={onLink(l)} className="t-body-md rounded-full px-4 py-2 text-onsurface hover:bg-onsurface/[0.05] transition-colors whitespace-nowrap" data-testid={`float-nav-${l.label.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}`}>{l.label}</Link>
           ))}
           <span className="h-6 w-px bg-onsurface/15 mx-1" />
+          <button onClick={() => setSearchOpen(true)} aria-label="Search destinations" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors" data-testid="float-nav-search"><Search size={18} strokeWidth={1.75} /></button>
           <div className="relative" ref={adviceRefFloat} onMouseEnter={hoverIn} onMouseLeave={hoverOut}>
             <button onClick={() => setAdviceOpen((v) => !v)} className="flex items-center gap-2 t-body-md rounded-full px-4 py-2 text-onsurface hover:bg-onsurface/[0.05] transition-colors" data-testid="float-nav-phone" aria-expanded={adviceOpen}>
               <Phone size={18} strokeWidth={1.75} />
@@ -229,7 +259,10 @@ export default function Header({ overlay = false, floating = false }) {
       <div className={`lg:hidden fixed top-3 left-1/2 -translate-x-1/2 z-[60] transition-all duration-500 ease-out ${scrolled ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-5 pointer-events-none'}`} data-testid="floating-nav-mobile">
         <div className="flex items-center gap-3 rounded-full bg-white/75 backdrop-blur-xl ring-1 ring-black/5 shadow-[0_10px_30px_rgba(0,33,49,0.16)] pl-4 pr-2 py-1.5">
           <a href={home.href} onClick={home.onClick} aria-label="Hi Tours"><Logo className="h-6 w-auto" /></a>
-          <button onClick={() => setOpen(true)} aria-label="Open menu" data-testid="floating-mobile-menu" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
+          <button onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="floating-mobile-search" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
+            <Search size={19} strokeWidth={1.75} />
+          </button>
+          <button onClick={() => setOpen(true)} aria-label="Open menu" data-testid="floating-mobile-menu" className="w-9 h-9 -ml-2 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
             <Menu size={20} strokeWidth={1.75} />
           </button>
         </div>
@@ -257,6 +290,7 @@ export default function Header({ overlay = false, floating = false }) {
         </>
       )}
       <MobileDrawer open={open} onClose={() => setOpen(false)} />
+      <SearchOverlay open={searchOpen} onClose={closeSearch} />
       {floatingNav}
     </>
   );

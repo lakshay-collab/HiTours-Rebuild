@@ -41,13 +41,15 @@ function buildDestinations() {
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 const PLACEHOLDER = 'Search for destination';
 
-export default function SearchBar({ id = 'hero', className = '' }) {
+export default function SearchBar({ id = 'hero', className = '', autoFocus = false, inline = false, onPick }) {
   const [value, setValue] = useState('');
   const [selected, setSelected] = useState(null);
-  const [focused, setFocused] = useState(false);
+  const [focused, setFocused] = useState(inline);
   const navigate = useNavigate();
   const wrapRef = useRef(null);
   const inputRef = useRef(null);
+
+  useEffect(() => { if (autoFocus) setTimeout(() => inputRef.current?.focus(), 60); }, [autoFocus]);
 
   const all = useMemo(buildDestinations, []);
   const q = value.trim().toLowerCase();
@@ -56,16 +58,17 @@ export default function SearchBar({ id = 'hero', className = '' }) {
   const matches = [...destMatches, ...styleMatches];
 
   useEffect(() => {
+    if (inline) return undefined;
     const onDoc = (e) => { if (wrapRef.current && !wrapRef.current.contains(e.target)) setFocused(false); };
     document.addEventListener('mousedown', onDoc);
     return () => document.removeEventListener('mousedown', onDoc);
-  }, []);
+  }, [inline]);
 
   const pick = (d) => {
     setSelected(d);
     setValue('');
-    setFocused(false);
-    if (d.to) navigate(d.to);
+    setFocused(inline);
+    if (d.to) { navigate(d.to); onPick?.(d); }
   };
 
   const clear = () => {
@@ -77,7 +80,7 @@ export default function SearchBar({ id = 'hero', className = '' }) {
   const submit = (e) => {
     e.preventDefault();
     const target = selected || matches.find((d) => d.to);
-    if (target && target.to) navigate(target.to);
+    if (target && target.to) { navigate(target.to); onPick?.(target); }
   };
 
   const active = selected && selected.kind === 'style' ? PROMPTS[1] : PROMPTS[0];
@@ -127,10 +130,12 @@ export default function SearchBar({ id = 'hero', className = '' }) {
 
       {focused && !selected && (
         <div
-          className="absolute left-0 right-0 top-full mt-2 z-50 bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.12),0_12px_32px_rgba(0,0,0,0.18)] overflow-hidden origin-top animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]"
+          className={inline
+            ? 'mt-3 bg-white rounded-3xl border border-outline-variant/60 overflow-hidden animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]'
+            : 'absolute left-0 right-0 top-full mt-2 z-50 bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.12),0_12px_32px_rgba(0,0,0,0.18)] overflow-hidden origin-top animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]'}
           data-testid={`${id}-search-suggestions`}
         >
-          <div className="max-h-[360px] overflow-y-auto py-2">
+          <div className={`${inline ? 'max-h-[min(52vh,420px)]' : 'max-h-[360px]'} overflow-y-auto py-2`}>
             {matches.length === 0 && (
               <div className="flex items-center gap-4 px-5 py-4" data-testid={`${id}-search-empty`}>
                 <span className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 text-onsurface"><EyeOff size={26} strokeWidth={1.75} /></span>

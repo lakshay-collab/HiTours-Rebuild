@@ -55,3 +55,39 @@ export default function FlightPath({ side = 'left', className = '' }) {
     </svg>
   );
 }
+
+// One wide route that crosses the whole planner: takes off at the far left, passes behind the form card and lands on a pin at the far right.
+const THROUGH = 'M10 70 C 120 70, 200 22, 330 22 S 560 30, 700 30 S 900 58, 990 40';
+export function FlightThrough({ className = '', color = '#FFFFFF' }) {
+  const id = 'fp-through';
+  return (
+    <svg viewBox="0 0 1000 90" preserveAspectRatio="none" className={`overflow-visible ${className}`} aria-hidden="true" data-testid="flight-path-through">
+      <path id={id} d={THROUGH} fill="none" stroke={color} strokeOpacity="0.35" strokeWidth="1.4" strokeDasharray="3 6" strokeLinecap="round" />
+      {!reduce && (
+        <>
+          <path d={THROUGH} fill="none" stroke={color} strokeOpacity="0.9" strokeWidth="1.8" strokeLinecap="round" pathLength="1" strokeDasharray="1" strokeDashoffset="1">
+            <animate attributeName="stroke-dashoffset" values="1;1;0;0;0" keyTimes="0;0.02;0.84;0.9;1" dur={DUR} repeatCount="indefinite" />
+            <animate attributeName="opacity" values="1;1;1;0;0" keyTimes="0;0.86;0.9;0.96;1" dur={DUR} repeatCount="indefinite" />
+          </path>
+          <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.83;0.86;1" dur={DUR} repeatCount="indefinite" />
+            <animateMotion dur={DUR} repeatCount="indefinite" rotate="auto" keyPoints="0;0;1;1" keyTimes="0;0.02;0.84;1" calcMode="linear"><mpath href={`#${id}`} /></animateMotion>
+            <g transform="rotate(45) scale(1.15) translate(-12 -12)"><path d={PLANE} fill={color} /></g>
+          </g>
+          <g transform="translate(990 40)">
+            <circle r="4" fill="none" stroke="#F4B49A" strokeWidth="1.5" opacity="0">
+              <animate attributeName="r" values="3;3;16;16" keyTimes="0;0.84;0.96;1" dur={DUR} repeatCount="indefinite" />
+              <animate attributeName="opacity" values="0;0;0.9;0;0" keyTimes="0;0.84;0.86;0.96;1" dur={DUR} repeatCount="indefinite" />
+            </circle>
+            <g opacity="0">
+              <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.83;0.86;0.95;0.99;1" dur={DUR} repeatCount="indefinite" />
+              <animateTransform attributeName="transform" type="translate" values="0 -12;0 -12;0 1.5;0 0;0 0" keyTimes="0;0.83;0.87;0.9;1" dur={DUR} repeatCount="indefinite" />
+              <g transform="scale(0.95) translate(-12 -22)"><path d={PIN} fill="#F4B49A" stroke="#174358" strokeWidth="1.6" strokeLinejoin="round" /><circle cx="12" cy="10" r="3" fill="#174358" /></g>
+            </g>
+          </g>
+        </>
+      )}
+      {reduce && <g transform="translate(990 40) rotate(45) translate(-12 -12)"><path d={PLANE} fill={color} /></g>}
+    </svg>
+  );
+}

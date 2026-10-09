@@ -11,6 +11,7 @@ const FOOTER_HREFS = {
   'About us': '/about',
   'About Us': '/about',
   'Booking Policy': '/care',
+  'Our Office': '/our-office',
   'Vietnam': '/asien/vietnam',
   'Sri Lanka': '/asien/sri-lanka',
   'Thailand': '/asien/thailand',

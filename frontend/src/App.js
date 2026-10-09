@@ -41,6 +41,7 @@ import { Terms, Privacy } from './pages/Legal';
 import Press from './pages/Press';
 import Careers from './pages/Careers';
 import Sitemap from './pages/Sitemap';
+import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
 
 const COUNTRY_ROOTS = [
@@ -164,6 +165,7 @@ function App() {
           <Route path="/press" element={<Press />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/our-office" element={<OurOffice />} />
         </Routes>
         </LeadModalProvider>
       </BrowserRouter>
