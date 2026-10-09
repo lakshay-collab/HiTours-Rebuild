@@ -1,0 +1,30 @@
+{
+  "summary": "Re-verified Careers page redesign, Singapore destination planner (desktop + mobile), lead submission to /api/leads with Kraya sync, Thailand itinerary detail planner heading regression, Singapore country-root redirect, and Christmas sale banner. All 7 requested scenarios pass. Only a minor observation: the Singapore planner lead stored source='singapore-holidays' instead of spec's 'singapore-planner' — the lead otherwise persists correctly with destination='Singapore' and kraya_status='synced'.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/leads (via Singapore planner)", "issue": "Lead source stored as 'singapore-holidays' instead of 'singapore-planner' as mentioned in test spec. Review request wording may have been illustrative; implementation uses the listing page's source string. Lead is persisted correctly with destination='Singapore', kraya_status='synced'."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Optional: if 'singapore-planner' is the intended source string, update EgyptListing/wiring on /asien/singapore/holidays to pass source='singapore-planner' when rendering EgyptPlanner."
+  ],
+  "critical_code_review_comments": [
+    "QuoteScroller renders twice in DOM (desktop + mobile variants) sharing the same data-testid 'eg-planner-quotes', 'eg-planner-quote-text', etc. Tests must disambiguate via container ancestor (eg-planner-card vs eg-planner-card-mobile). Consider suffixing testids for the mobile variant to avoid ambiguity.",
+    "EgyptPlanner.jsx mounts two independent LeadForm/QuoteScroller instances (one for lg+, one for <lg) — doubles DOM weight. Could be collapsed to a single instance with CSS layout changes."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100% (lead POST + GET verified)", "frontend": "100% (7/7 scenarios)"},
+  "test_credentials": "N/A — public pages",
+  "seed_data_creation": "Created one lead via UI on /asien/singapore/holidays: name='QA Planner Test', email='qa.planner@example.com', phone='+91 9876543210', destination='Singapore', source='singapore-holidays', kraya_status='synced' (id 1fd8de1a-b522-4bf8-9594-2ac9f7404d7c).",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Preview URL https://tourlane-rebuild.preview.emergentagent.com. Careers page: 6 departments (Marketing, Sales, Travel Product, Operations, Technology, Finance), 5 values, 8 perks, 4 awards, no careers-accolades element. Mobile sticky CTA testid='careers-sticky-positions' links to LinkedIn jobs. EgyptPlanner now has 3 fields (name/phone/email) with CTA 'Customize my escape'; phone input testid is the input itself: '<prefix>-phone' (prefix 'eg-planner' desktop, 'eg-planner-m' mobile). QuoteScroller testids ('eg-planner-quotes', '-quote-text', '-quote-author', '-quote-dot') exist in BOTH desktop and mobile — scope selectors by card. Thailand detail planner heading fix (EgyptDetail.jsx L79-80 'Customize your Thailand trip') confirmed working. /asien/singapore -> /asien/singapore/holidays redirect works. Christmas sale banner shows on homepage.",
+  "rca of the issue": "N/A — previous iteration_49 Thailand detail heading bug is fixed."
+}
