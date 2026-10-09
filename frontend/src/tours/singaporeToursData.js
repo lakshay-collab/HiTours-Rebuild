@@ -18,6 +18,8 @@ import { disneyAdventureCruiseSingaporeProduct } from './disneyAdventureCruiseSi
 import { singaporeMalaysiaHoneymoonProduct } from './singaporeMalaysiaHoneymoonData';
 import { singaporeMalaysiaSentosaGentingProduct } from './singaporeMalaysiaSentosaGentingData';
 
+import { singaporeBaliHoneymoonProduct } from './singaporeBaliHoneymoonData';
+
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asien', ctaHref: '/l/singapore/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Nisha Rao', image: '/experts/riya.webp', role: 'Singapore expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
@@ -41,7 +43,8 @@ export const singaporeProducts = [
   singaporePenangRoyalCaribbeanProduct,
   disneyAdventureCruiseSingaporeProduct,
   singaporeMalaysiaHoneymoonProduct,
-  singaporeMalaysiaSentosaGentingProduct
+  singaporeMalaysiaSentosaGentingProduct,
+  singaporeBaliHoneymoonProduct
 ];
 export const singaporeTours = packages.map(build);
 export const singaporeBySlug = Object.fromEntries(singaporeTours.map((t) => [t.detail.slug, t]));

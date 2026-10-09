@@ -1,0 +1,121 @@
+{
+  "source_slug": "7-days-mesmerizing-trip-to-bali",
+  "camel": "grandBaliSafariKecak",
+  "slug": "grand-bali-holiday-with-safari-and-kecak",
+  "title": "Grand Bali Holiday with Safari and Kecak",
+  "alt": "Ulun Danu Beratan temple at Bedugul, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Family",
+  "tags": ["Family", "Culture"],
+  "price": 40280,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Uluwatu"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 7, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani and the safari park",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Asri Sari Villa, Ubud",
+      "hotel_label": "Asri Sari Villa",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small villa property on the quiet edge of Ubud",
+      "activities": [
+        {"name": "Kintamani and rice terrace day tour", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Bali Safari and Marine Park", "day": 3, "optional": false, "match": "Bali Safari", "description": "Jungle Hopper entry with a safari ride through the African and Indian enclosures, the elephant and bird shows and the water park included."}
+      ],
+      "program": {"name": "Ubud", "description": "Three nights inland with a coffee plantation day up to Kintamani and a full day at the safari park, good for families with children."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Bedugul and Uluwatu",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 4, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."},
+        {"name": "Water sports with the Kecak dance", "day": 5, "optional": false, "match": "Water Sports with Kecak", "description": "Banana boat and jet ski at Tanjung Benoa, Uluwatu temple in the late afternoon, then the Kecak fire dance in the cliff amphitheatre."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the coast, reached by way of the Bedugul lakes, with water sports at Tanjung Benoa, Uluwatu and a free beach day."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and rice terraces",
+    "3": "A day at Bali Safari",
+    "4": "Bedugul and on to Kuta",
+    "5": "Water sports and Kecak dance",
+    "6": "Free day in Kuta",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud villa and settle in",
+      "Rest of the day free in Bali's green interior",
+      "Optional: the Monkey Forest or the Ubud art market"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast, then a full day at Bali Safari and Marine Park",
+      "Safari ride through the African and Indian enclosures",
+      "Elephant and bird shows, then the water park",
+      "Back at the villa in the evening"
+    ],
+    "4": [
+      "Breakfast and check out, then north to the Handara gate",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Check in at your Kuta hotel for three nights"
+    ],
+    "5": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat and jet ski with an instructor",
+      "Uluwatu temple on the cliffs in the late afternoon",
+      "Kecak fire dance in the temple amphitheatre afterwards"
+    ],
+    "6": [
+      "Breakfast and a full day free on the coast",
+      "Optional: a surf lesson with an instructor on Kuta beach",
+      "Optional: Waterbom park, good for families",
+      "Optional: Kuta Square and the art market"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Asri Sari Villa, Ubud",
+    "2": "Asri Sari Villa, Ubud",
+    "3": "Asri Sari Villa, Ubud",
+    "4": "Bliss Surfer Hotel, Kuta",
+    "5": "Bliss Surfer Hotel, Kuta",
+    "6": "Bliss Surfer Hotel, Kuta",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "The safari park and the water park make this one work for children. Parents get the temples in between.",
+    "tip": "Bali Safari needs a full day, so go early and carry swimwear for the water park. On the Bedugul day we leave Ubud by nine so you reach Tanah Lot comfortably before sunset."
+  },
+  "summary": "Seven days with three nights inland and three on the coast: Kintamani and the rice terraces, a full day at Bali Safari, the lake temples of Bedugul, sunset at Tanah Lot, water sports and the Kecak fire dance at Uluwatu.",
+  "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace tour; Bali Safari Jungle Hopper entry; Bedugul and Tanah Lot sunset tour; water sports with Uluwatu and the Kecak dance.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

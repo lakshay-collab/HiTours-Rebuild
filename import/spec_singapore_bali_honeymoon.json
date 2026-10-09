@@ -1,0 +1,123 @@
+{
+  "source_slug": "bali-and-singapore-honeymoon-package",
+  "camel": "singaporeBaliHoneymoon",
+  "slug": "best-of-singapore-and-bali-honeymoon",
+  "title": "Best of Singapore and Bali Honeymoon",
+  "alt": "Marina Bay at night in Singapore",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers, city tours and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Luxury"],
+  "price": 75990,
+  "route_cities": ["Singapore", "Sentosa", "Kuta", "Kintamani", "Bedugul"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 6, "transfers": 11, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Singapore",
+      "city": "Singapore",
+      "subtitle": "Singapore to Sentosa",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "ibis Singapore Novena",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Novena hotel one stop from Orchard Road on the metro",
+      "activities": [
+        {"name": "Night Safari with tram ride", "day": 1, "optional": false, "match": "Singapore Night Safari", "description": "The world's first nocturnal zoo, with a tram ride through seven habitats and walking trails where the animals are at their most active."},
+        {"name": "Singapore city tour", "day": 2, "optional": false, "match": "Singapore City Tour", "description": "A half day tour past Merlion Park, the Marina Bay waterfront, Chinatown and the colonial quarter, with a guide on a shared coach."},
+        {"name": "Singapore river cruise", "day": 2, "optional": false, "match": "Singapore River Cruise", "description": "A bumboat along the river past the old godowns of Clarke Quay and Boat Quay, with the Marina Bay skyline lighting up ahead."},
+        {"name": "Universal Studios Singapore", "day": 3, "optional": false, "match": "Universal Studios", "description": "A full day ticket for the Sentosa theme park, with seven themed zones, the Battlestar Galactica duelling coasters and the street shows."}
+      ],
+      "program": {"name": "Singapore", "description": "Three nights in the city for your first days together, with a night safari, the river by bumboat and a full day at Universal Studios."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Kintamani and Bedugul",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 5, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting, the crater lake view at Kintamani, Tegenungan waterfall, the Tegalalang terraces and a turn on the jungle swing."},
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 6, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."},
+        {"name": "Kuta beach and the art market", "day": 4, "optional": true, "match": "Kuta Beach", "description": "The surf beach a few minutes from your hotel, with boards for hire, and the Kuta art market for sarongs, bags and carvings."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights in Bali to finish, with a coffee plantation day up to Kintamani and a temple run that ends at Tanah Lot for sunset."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival and night safari",
+    "2": "Singapore city and river",
+    "3": "A day at Universal Studios",
+    "4": "On to Bali and Kuta beach",
+    "5": "Kintamani and the jungle swing",
+    "6": "Bedugul lakes and Tanah Lot",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Changi Airport and private transfer to your hotel",
+      "Check in and freshen up in Novena",
+      "Evening tram ride at the Singapore Night Safari",
+      "Walking trails past the leopards, tapirs and slow lorises"
+    ],
+    "2": [
+      "Breakfast, then a half day city tour with a guide",
+      "Merlion Park, Marina Bay and the colonial quarter",
+      "Chinatown lanes and the Sri Mariamman temple",
+      "Evening bumboat cruise along the Singapore river"
+    ],
+    "3": [
+      "Breakfast, then across to Sentosa island",
+      "Full day ticket for Universal Studios Singapore",
+      "Seven themed zones, coasters and street shows",
+      "Optional: the Wings of Time show on the beach afterwards"
+    ],
+    "4": [
+      "Breakfast and check out, then private transfer to Changi",
+      "Optional: flight from Singapore to Denpasar, which we can add",
+      "Arrival in Bali and private transfer to your Kuta hotel",
+      "Rest of the day free near the beach"
+    ],
+    "5": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "6": [
+      "Breakfast, then north to the Handara gate for photographs",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Evening back in Kuta at your own pace"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "ibis Singapore Novena",
+    "2": "ibis Singapore Novena",
+    "3": "ibis Singapore Novena",
+    "4": "Bliss Surfer Hotel, Kuta",
+    "5": "Bliss Surfer Hotel, Kuta",
+    "6": "Bliss Surfer Hotel, Kuta",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "City first, island second. Singapore is for the big nights out, Bali is for the slow mornings that follow.",
+    "tip": "Fly Singapore to Denpasar in the morning so you still get a Kuta sunset on moving day. We can add that leg to your package, along with seats together on both flights."
+  },
+  "summary": "Seven days across two countries: three nights in Singapore with a night safari, a city tour, the river by bumboat and Universal Studios, then three nights in Bali for Kintamani, the rice terraces and sunset at Tanah Lot.",
+  "included": "Included: 6 nights with daily breakfast; private airport transfers in both cities; Night Safari with tram ride; Singapore city tour; Singapore river cruise; Universal Studios day ticket; Kintamani and jungle swing tour; Bedugul and Tanah Lot sunset tour.",
+  "not_included": "Not included: international flights; the Singapore to Denpasar flight, which we can add; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

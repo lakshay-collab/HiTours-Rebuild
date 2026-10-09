@@ -1,0 +1,2180 @@
+{
+ "source": "https://www.thrillophilia.com/tours/uncover-bali",
+ "captured_at": "2026-10-09",
+ "title": "Uncover Bali | A Family Escape From Landscapes to Coasts",
+ "slug": "uncover-bali",
+ "duration": "7D/6N",
+ "city_split": [
+  [
+   "Canggu",
+   4
+  ],
+  [
+   "Ubud",
+   4
+  ]
+ ],
+ "country": "Bali",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Best Seller",
+ "highlights": [
+  "Explore Bali’s scenic central side on a Volkswagen vintage car tour, where timeless charm meets stunning landscapes and classic adventure.",
+  "Rejuvenate at handpicked Bali spas with authentic therapies, serene ambience, and Thrillophilia's exclusive deals of up to 50% off for the perfect escape.",
+  "Stay at selected hotels offering beachfront views, spacious rooms, and trusted brands, ensuring comfort and quality throughout your trip.",
+  "Sail into luxury with a 5-hour private yacht party with food, drinks, and music for an unforgettable celebration at sea in Canggu.",
+  "Enjoy free entry to Tropical Temptation Beach Club, where infinity pools, ocean views, and live beats create the ultimate seaside vibe."
+ ],
+ "overview": "About the Tour:\nEmbark on a 6-day family adventure through Bali, where culture, nature, and fun-filled experiences await. Start in Ubud, where you can explore the ancient Goa Gajah, meet vibrant birds at Bali Bird Park, or enjoy slides and pools at Waterbom Bali. Discover Tegenungan Waterfall, soar on the Bali Swing, and experience spiritual traditions at Tirta Empul Temple before visiting the scenic Tegallalang Rice Terraces. Enjoy close encounters with exotic wildlife at Bali Safari & Marine Park, and dive into excitement at Trans Studio Theme Park. Relax in Kuta and unwind with a traditional Balinese massage. End your trip at the majestic Uluwatu Temple with panoramic ocean views, followed by the captivating Kecak Fire Dance. ﻿",
+ "price_per_adult": 35000,
+ "struck_price": 49000,
+ "currency": "INR",
+ "inr_price": 35000,
+ "inclusions": [
+  "Transfer from Ngurah Rai to Standard Hotel",
+  "4 nights stay in Canggu with breakfast",
+  "Private Yacht Party, Canggu",
+  "Trip to Melasti Beach & Pandawa Beach",
+  "Day Trip to Uluwatu Temple - Uluwatu Temple Sunset Tour",
+  "Balinese Massage in Bali - 1-Hour Balinese Massage in Canggu",
+  "ATV Adventure in Bali - ATV Ride (Dual Rider) +  White Water Rafting at Ayung River",
+  "Cretya Ubud, Bali - Visit to Cretya Ubud with Transfers",
+  "3 nights stay in Ubud with breakfast",
+  "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beraton + Leke Leke Waterfalls",
+  "Central Bali Sightseeing Tour with Tirta Empul Temple - Bali Swing + Tegenungan Waterfall + Tirta Empul + Sari Timbul + Tegallang Rice Terrace Tour on a Vintage Volkswagen",
+  "Transfer from Super Deluxe Resort to Ngurah Rai"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions"
+ ],
+ "know_before_you_go": [
+  "Visa on Arrival (VOA) for Indonesia is not included in your package and must be obtained and paid for at the airport upon your arrival. Please ensure you have the necessary documents ready.",
+  "Complimentary activities included in your package are provided as a value addition, but if any of these are missed for any reason, they cannot be refunded, exchanged, or compensated.",
+  "Where your itinerary mentions “local lunch,” it refers to an authentic Balinese meal featuring traditional flavors and dishes. Indian food will not be served during these local lunch experiences unless specifically mentioned.",
+  "Vehicles will follow a fixed point-to-point route as per the itinerary. Any changes or additional sightseeing requests may incur extra charges.",
+  "Bahasa Indonesia is the official language, and Balinese is also widely spoken. However, English is commonly understood in most tourist areas.",
+  "The local currency is the Indonesian Rupiah (IDR). While credit cards are accepted in many restaurants and hotels, cash is often preferred in smaller shops and markets.",
+  "When visiting temples or sacred sites, dress respectfully: cover your shoulders and knees, and wear a sarong and sash when required (often available at the entrance)."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Bali | Transfer to Canggu | Visit to Tropical Temptation Beach Club",
+   "city": "Canggu",
+   "desc": "Welcome to Bali! Upon arrival at Ngurah Rai Airport, board your transfer and get driven to your hotel in Canggu. Once there, check in to your room and relax for a while. Later, get transferred to Tropical Temptation Beach Club, an adults-only club that is an ideal spot in South Bali. Relax on sunbeds, take a dip in infinity pools, or sip signature cocktails as you soak in sweeping ocean views. With live DJ sets and a lively vibe, this beachfront haven sets the perfect tone for your Bali escape.",
+   "leisure": true,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Standard Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Swiss-Belhotel Rainforest"
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Activity",
+     "title": "Lounge by the infinity pools with ocean views",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/6695zs9qmxc53tzxyy6wr4p99iq9_83fac60cb92825607f0a0a78cec002c1e833eacd90515a80fa30b6d188f0f2db.jpg"
+     ]
+    },
+    {
+     "type": "Activity",
+     "title": "Enjoy gourmet dining & signature cocktails",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/onypx5fagrrumkwkvwzjiffnivey_d70ce1a350b7f29ea5ce55e632bb372103c90bdb3cef63f8dfc9af469e51720b.jpg"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/quvw99lbn2pe6s6wqglzqhiyhu66_1574682332_Canggu.jpg.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Private Yacht Party",
+   "city": "Canggu",
+   "desc": "Today, get driven to Sanur Port and set sail into luxury with a private yacht party. Bask in the sun on spacious decks, sip cocktails, and dance to lively music as you cruise along Bali’s coastline. Take a refreshing dip in turquoise waters or simply relax as the sea breeze adds to the charm. With personalized service, stunning views, and a vibrant atmosphere, this exclusive yacht experience offers the perfect blend of adventure, relaxation, & celebration at sea. Later, get driven to the hotel.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Standard Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Private Yacht Party, Canggu",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/b3diflitxotckzurzneva0hhuxti_235CDF82-F56B-4CB8-ADEA-D8FA79BF8C58.webp",
+      "https://media1.thrillophilia.com/filestore/p0h6hahtzviyvjucjnzz2rwww84a_yacht-party-group-img.jpg",
+      "https://media1.thrillophilia.com/filestore/g8000dq7bmdh6y18q7eyt8xtpcjn_caption%20-%202025-10-16T035501.192.jpg",
+      "https://media1.thrillophilia.com/filestore/rsx9jujvqw1xx0858nw65bduq0ca_private-charter-cruise-in-bali-with-our-private-boat-burjuman-vessel-boat-party-in-bali.webp",
+      "https://media1.thrillophilia.com/filestore/f4ghytl4on7h1cd7g9m1yx6fi7k3_Foto-Sunset-Cruise-Table-16.webp"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Visit to Melasti & Pandawa Beach | Visit to Tropical Temptation",
+   "city": "Canggu",
+   "desc": "Today, explore the stunning beaches of Bali, starting at Melasti Beach, where white sands and towering cliffs create one of Bali’s most dramatic landscapes. Next, visit the Pandawa Beach, a once-hidden treasure now known for calm waters and scenic charm, perfect for swimming or sunbathing. Later, get transferred to Tropical Temptation Beach Club, where infinity pools, cabanas, and ocean views await. After spending an amazing time, return to your hotel on your own.",
+   "leisure": true,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Standard Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Trip to Melasti Beach & Pandawa Beach",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/goy2h31unpbyi7dtjc1tq6dmnbef_o437ek06ky3ma8atw6yn2z8bftab_20pewolvrtdt3ljtrhxj5lxislsx_The-cliffs-of-Melasti-Beach-1.jpg",
+      "https://media1.thrillophilia.com/filestore/x6nwzf2ctahzr9u3hqj67azxz0r3_x2gvs5nlnglhs8imbcycm7g4wn8o_c6ayuourpxsrehu7qv6tdaak3p09_Melasti-Beach-1.jpg",
+      "https://media1.thrillophilia.com/filestore/azevax70n16bz24arvo6x8fwlwpw_shutterstock_2242431871.jpg",
+      "https://media1.thrillophilia.com/filestore/0j6fbtrplvk3t7imovzi6f0yt81p_shutterstock_2462800047.jpg",
+      "https://media1.thrillophilia.com/filestore/9iivo14uxy5r5e3lth0oiik0dxvt_shutterstock_2471477211.jpg",
+      "https://media1.thrillophilia.com/filestore/nll66eo7zj3vuzqqo2fjjav5dmpb_shutterstock_1145818916.jpg",
+      "https://media1.thrillophilia.com/filestore/hedo81l1o35p7ztb8s12rhkbj576_shutterstock_2207923179.jpg",
+      "https://media1.thrillophilia.com/filestore/u1odhwudwcmvqtdia09frrwj7uod_shutterstock_2260914495.jpg",
+      "https://media1.thrillophilia.com/filestore/zemu3zga06tkqpvw8xx6kvdmw7sc_shutterstock_791746717.jpg",
+      "https://media1.thrillophilia.com/filestore/h6zxtmos1zbqswmtvtuq41n1bw6d_shutterstock_2018159621.jpg",
+      "https://media1.thrillophilia.com/filestore/v4i29j28zm6fic2s5hm5231e67ar_1498545551_meslastidronestagram.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Pandawa Beach",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/hedo81l1o35p7ztb8s12rhkbj576_shutterstock_2207923179.jpg",
+      "https://media1.thrillophilia.com/filestore/u1odhwudwcmvqtdia09frrwj7uod_shutterstock_2260914495.jpg",
+      "https://media1.thrillophilia.com/filestore/zemu3zga06tkqpvw8xx6kvdmw7sc_shutterstock_791746717.jpg",
+      "https://media1.thrillophilia.com/filestore/h6zxtmos1zbqswmtvtuq41n1bw6d_shutterstock_2018159621.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Melasti Beach",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/v4i29j28zm6fic2s5hm5231e67ar_1498545551_meslastidronestagram.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Activity",
+     "title": "Take a dip in their multiple pool zones",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/a1396sg8ef483tez070gf7x0xath_tt.jpg"
+     ]
+    },
+    {
+     "type": "Activity",
+     "title": "Catch the sunset & live DJ ",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ko3nrf1ndkkrl0i107uoro3v4j43_Sep-19-Daily-Photos-41-scaled.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 4,
+   "title": "Sunset Uluwatu Temple Tour | Balinese Massage",
+   "city": "Canggu",
+   "desc": "This afternoon, get driven to the famous Uluwatu Temple, dramatically perched above the ocean, offering panoramic views and spiritual allure. Once there, soak in the calming atmosphere, and you can witness the iconic Kecak Fire Dance at sunset, as rhythmic chants and fiery skies create a stunning scene. Afterward, get driven to indulge in a Balinese massage, renowned for its healing touch and soothing oils. After an amazing experience, get driven back to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Standard Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Day Trip to Uluwatu Temple - Uluwatu Temple Sunset Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/aakojllysuugpfup7hs0mrgzat9c_g64p0bgnyopzxl48412tn5huwdfr_jcr_content.webp",
+      "https://media1.thrillophilia.com/filestore/h9f58bj2wyzb35wgm84hgv6n5olg_ayxmjr2sxjsj25mejzcwep1zlj8f_ezgif-2-428e7b81bb85.webp",
+      "https://media1.thrillophilia.com/filestore/6ui0iunn016u37fuatw9qym85v0u_52ufj5wviu7ibfq6di1v2bb8pcwt_shutterstock_2403581917.webp",
+      "https://media1.thrillophilia.com/filestore/e8tic9drjlb0yxayctj6vroal0ip_a7si1cfzev5ub900khayirpr8tv1_Uluwatu-Temple-Bali-Feature-Image.jpg",
+      "https://media1.thrillophilia.com/filestore/qp9ny238fkhx5r8hyn9reoj6ne4e_shutterstock_1227767932.jpg",
+      "https://media1.thrillophilia.com/filestore/29f1qs68fnfxoe8tdupdgrk1ejws_shutterstock_2640276799.jpg",
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Uluwatu Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Balinese Massage in Bali - 1-Hour Balinese Massage in Canggu",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+      "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+      "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+      "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+      "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+      "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+      "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+      "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+      "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 5,
+   "title": "Transfer to Ubud | ATV Ride Experience | White Water Rafting on Ayung River | Visit to Cretya Ubud ",
+   "city": "Ubud",
+   "desc": "After check-out, get driven to Ubud. En route, indulge in an adrenaline-pumping ATV ride, navigating rugged trails, rice fields, and lush jungles. Continue the thrill with white water rafting on the Ayung River, where rushing rapids meet stunning river gorges and waterfalls. After the adventure, get driven to the Cretya Ubud, a stylish jungle club with infinity pools and breathtaking views. Also, soak-in its vibrant tropical vibe before getting driven to your hotel for check-in.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Standard Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "ATV Adventure in Bali - ATV Ride (Dual Rider) +  White Water Rafting at Ayung River",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/s6oia0oiagnkeq420r3mvctsnzst_1595487162_shutterstock_670236505.jpg",
+      "https://media1.thrillophilia.com/filestore/jl32x9tubmc0fqcgkzpwfl2ofx1j_1595487163_shutterstock_478562920.jpg",
+      "https://media1.thrillophilia.com/filestore/izal4k5950kmq3hblzi51czyxoya_shutterstock_1973282951.jpg",
+      "https://media1.thrillophilia.com/filestore/mdvcm34jvkm7kstyyqdkvw2gmvmr_ATV%20Ride-2.jpg",
+      "https://media1.thrillophilia.com/filestore/4u0oi9gtsud1plyx4a5a8q8ez1ee_ATV%20Ride-1.jpg",
+      "https://media1.thrillophilia.com/filestore/ibp1ql56chugu54m1a5c6tqawhfd_ATV%20Ride-3.jpg",
+      "https://media1.thrillophilia.com/filestore/xhclda6bp8hbogiy9u6fv9lppr2n_yiq1nkgis0i5nj7mvhdk454pmyqo_shutterstock_2283813647.webp",
+      "https://media1.thrillophilia.com/filestore/mzmfvstelkamxehz9ahzm5oewgv9_tnonctwuh2cntqvo4azjz0c1gxvs_bali-white-water-rafting.webp",
+      "https://media1.thrillophilia.com/filestore/1e7i6wngrjcf6pk0qhbc5dby758l_qsa7dla2c9mudnmx7f45k5apqaem_shutterstock_2214250063.webp"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Cretya Ubud, Bali - Visit to Cretya Ubud with Transfers",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/31zu0xhezdzs012q3bgdac8wqgxj_Cretya%20Ubud%203.jpg",
+      "https://media1.thrillophilia.com/filestore/spmwbfunwfk36a8tv42zs9xiwhhm_Cretya%20Ubud%205.jpg",
+      "https://media1.thrillophilia.com/filestore/xgtpagz16t6n06q8mrgvieqqcflk_Cretya%20Ubud%201.jpg",
+      "https://media1.thrillophilia.com/filestore/0sosp9kwbo5r2nsd4mvxr4m8leqf_Cretya%20Ubud%204.jpg",
+      "https://media1.thrillophilia.com/filestore/gll3egxjmanwedj324eavipb8y9w_Cretya%20Ubud%202.jpg",
+      "https://media1.thrillophilia.com/filestore/9q7yigbsl54wb1a7rguuuztbttx6_Cretya%20Ubud%206.webp"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Super Deluxe Resort",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Alam Ubud Culture Villas & Residences"
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg"
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Floating Breakfast Experience | Bedugul Sightseeing Tour",
+   "city": "Ubud",
+   "desc": "Start your morning with a serene floating breakfast, a unique way to enjoy Bali’s calm surroundings. Then, get driven to explore North Bali on a sightseeing tour. Visit the iconic Handara Gate, framed by mountains and famed as a photography hotspot. Next, visit Ulun Danu Beratan Temple, a lakeside sanctuary appearing to float on Lake Beratan’s calm waters & enjoy a refreshing trek to Leke Leke Waterfall, a hidden gem where crystal-clear cascades tumble gracefully amidst lush tropical greenery.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Resort",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beraton + Leke Leke Waterfalls",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/973natt55orxsysivg2b1xutcf22_3q6hx7s6er01ldwrq9sgh4twbokj_shutterstock_2474005447.webp",
+      "https://media1.thrillophilia.com/filestore/2v3h5zrqb1a6nn10cjvput8xou94_77xbyfcw7vdk9xugvigm6t1sgus1_Ulun%20Danu-3.webp",
+      "https://media1.thrillophilia.com/filestore/lgshtbjb88t40im2o583aht6j7fc_3ov78ka240ge05pe93u0z0ndln7c_shutterstock_2269187465.webp",
+      "https://media1.thrillophilia.com/filestore/moadl1izvkc5o6xo1rznmqk1e1ew_fo45sh3zy0o1gjvt82wenqmpawwr_shutterstock_2404165329.webp",
+      "https://media1.thrillophilia.com/filestore/scebpkg9xw6lbemk44xeycz8yzkr_9f9pom2d486sn1hrxvws8ntlf3ro_Ulun%20Danu-4.webp",
+      "https://media1.thrillophilia.com/filestore/5lkgjgwb0hq67eujjkpjldul0bwu_879cq9m1m7p1mflgw6tsbr3i4ary_Ulun%20Danu-009.webp",
+      "https://media1.thrillophilia.com/filestore/o53bc01f8l6hv1tcl4nl2qce5xqo_f36wj65s5djhj7jzrar5ske6njmp_Ulun%20Danu-.webp",
+      "https://media1.thrillophilia.com/filestore/tt30v8m38bdcswqv8mmrr9azfhto_yubbjrokkg0qiq1gdz0zpir7i2d4_shutterstock_2410527845.webp",
+      "https://media1.thrillophilia.com/filestore/emtpctdkhyp7x31tztqzmbb6m7dk_shutterstock_2481226837.jpg",
+      "https://media1.thrillophilia.com/filestore/i7eialfq1hhn93w2gzst2nx19164_shutterstock_2642565923.jpg",
+      "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg",
+      "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg",
+      "https://media1.thrillophilia.com/filestore/357v9kk3cmxv2zbksyw0pxsixy9b_Leke%20Leke%20Waterfall-1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Ulun Danu Beratan Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bali Handara Gate",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Leke Leke Waterfall",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/357v9kk3cmxv2zbksyw0pxsixy9b_Leke%20Leke%20Waterfall-1.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 7,
+   "title": "Central Bali Tour on a vintage Volkswagen | Visit to OMMA Day Club",
+   "city": "Ubud",
+   "desc": "Today, board the vintage Volkswagen and get driven to explore the famous central Bali. Feel the thrill of unlimited rides on the Bali Swing & visit the scenic Tegenungan Waterfall, then head to Tirta Empul Temple, famed for its sacred spring pools and purification rituals. Also, capture moments with a complimentary photoshoot at Sari Timbul & explore the layered beauty of the Tegallalang Rice Terrace. Later, get driven to the OMMA Day Club, where you can relax by the poolside with sunset views.",
+   "leisure": true,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Resort",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Central Bali Sightseeing Tour with Tirta Empul Temple - Bali Swing + Tegenungan Waterfall + Tirta Empul + Sari Timbul + Tegallang Rice Terrace Tour on a Vintage Volkswagen",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/q77aw23cnynqx76tj5h7hs0ehogc_Tirta%20Empul-2.jpg",
+      "https://media1.thrillophilia.com/filestore/r6igiti3wpea4oldzzmkiwa7a1o4_Tegallalang%20Rice%20Terrace.jpg",
+      "https://media1.thrillophilia.com/filestore/ofhlzwxsr2zeva7igqh5dk9n6osy_Ubud%20palace-2.jpg",
+      "https://media1.thrillophilia.com/filestore/hs6ku73hvntokd0vojg4d8deafcr_Tegenungan%20Waterfalls.jpg",
+      "https://media1.thrillophilia.com/filestore/vv90aaqhrm1zoquehwjvi02zydjn_Ubud%20palace.jpg",
+      "https://media1.thrillophilia.com/filestore/w81rcdtahxn6mi7hp9hmvt5f0uzg_Bali%20Swing.jpg",
+      "https://media1.thrillophilia.com/filestore/wjybvgzopnt7m6uc4gid3adg4ugz_Ubud%20Market.jpg",
+      "https://media1.thrillophilia.com/filestore/yvscd24lln9s7l5otyghghii6oke_Tegenungan%20Waterfalls-2.jpg",
+      "https://media1.thrillophilia.com/filestore/m1zov2cm3lvp5vz0bgwux1ocy9xf_caption%20-%202025-10-15T152015.066.jpg",
+      "https://media1.thrillophilia.com/filestore/j1wlaewg543xb1zzmiqc4deze50z_caption%20-%202025-10-15T152005.016.jpg",
+      "https://media1.thrillophilia.com/filestore/nodnh6wk26xazqovwbeynk9645vz_caption%20-%202025-10-15T152010.271.jpg",
+      "https://media1.thrillophilia.com/filestore/okdpp5r2jk8n1supuht7ammeunzt_caption%20-%202025-10-15T152019.021.jpg",
+      "https://media1.thrillophilia.com/filestore/6bq3j26024ak27tjkrg9nx241ctc_caption%20-%202025-10-15T151951.807.jpg",
+      "https://media1.thrillophilia.com/filestore/2culn1ep9ggkxlwlndfxpxf5hddd_1470728585_9699341652_4f918fdd16_b.jpg",
+      "https://media1.thrillophilia.com/filestore/do3h4druulrvx7vbvz7h5m8molzh_shutterstock_1794010471.jpg",
+      "https://media1.thrillophilia.com/filestore/lcxzahazefj36wc78mzddrqxepjr_shutterstock_1839057952.jpg",
+      "https://media1.thrillophilia.com/filestore/9rvkvtjuyldsn3awrkoc0zphg667_shutterstock_1939650022.jpg",
+      "https://media1.thrillophilia.com/filestore/tn1ow4lnbf9v90ldgk4uzkvgvle6_1498632417_big_tegenungan.jpg",
+      "https://media1.thrillophilia.com/filestore/3r3neh3crb6zhumt5p1i97tuyzyh_shutterstock_1709259697.jpg",
+      "https://media1.thrillophilia.com/filestore/1jrufxoxj31lga84ca11mtjkp03c_shutterstock_1709259706.jpg",
+      "https://media1.thrillophilia.com/filestore/ap5cn6ta7agiv2wnsc0g4chiy1lu_shutterstock_1709259730.jpg",
+      "https://media1.thrillophilia.com/filestore/2kpx79s3vxrjrh07k2kaajmjalmw_shutterstock_2313711741.jpg",
+      "https://media1.thrillophilia.com/filestore/5z5pwl10sl0ae0tkl2j5973ixgmy_1470739774_Pura_Tirta_Empul__Bali.JPG",
+      "https://media1.thrillophilia.com/filestore/80el6y9oi92epkai9az87cmzxk2w_shutterstock_2184020513.jpg",
+      "https://media1.thrillophilia.com/filestore/11kxm99527x2ww3vx7rvxpp69q4t_1570175723_1562050066_zzzzzzzz.jpg.jpg",
+      "https://media1.thrillophilia.com/filestore/trjzhndz7yk86ckokdl90fmojr8a_shutterstock_1152429674.jpg",
+      "https://media1.thrillophilia.com/filestore/kop3i1ri2329gpm5j2jxdvtaup4r_shutterstock_1157444725.jpg",
+      "https://media1.thrillophilia.com/filestore/pj42nkkk0nzyub4wl9qpzdetnyxh_Sari-Timbul-Glass-Factory-Foto.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Tegallalang Rice Terraces",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/2culn1ep9ggkxlwlndfxpxf5hddd_1470728585_9699341652_4f918fdd16_b.jpg",
+      "https://media1.thrillophilia.com/filestore/do3h4druulrvx7vbvz7h5m8molzh_shutterstock_1794010471.jpg",
+      "https://media1.thrillophilia.com/filestore/lcxzahazefj36wc78mzddrqxepjr_shutterstock_1839057952.jpg",
+      "https://media1.thrillophilia.com/filestore/9rvkvtjuyldsn3awrkoc0zphg667_shutterstock_1939650022.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Tegenungan Waterfall",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/tn1ow4lnbf9v90ldgk4uzkvgvle6_1498632417_big_tegenungan.jpg",
+      "https://media1.thrillophilia.com/filestore/3r3neh3crb6zhumt5p1i97tuyzyh_shutterstock_1709259697.jpg",
+      "https://media1.thrillophilia.com/filestore/1jrufxoxj31lga84ca11mtjkp03c_shutterstock_1709259706.jpg",
+      "https://media1.thrillophilia.com/filestore/ap5cn6ta7agiv2wnsc0g4chiy1lu_shutterstock_1709259730.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Tirta Empul Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/2kpx79s3vxrjrh07k2kaajmjalmw_shutterstock_2313711741.jpg",
+      "https://media1.thrillophilia.com/filestore/5z5pwl10sl0ae0tkl2j5973ixgmy_1470739774_Pura_Tirta_Empul__Bali.JPG",
+      "https://media1.thrillophilia.com/filestore/80el6y9oi92epkai9az87cmzxk2w_shutterstock_2184020513.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bali Swing",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/11kxm99527x2ww3vx7rvxpp69q4t_1570175723_1562050066_zzzzzzzz.jpg.jpg",
+      "https://media1.thrillophilia.com/filestore/trjzhndz7yk86ckokdl90fmojr8a_shutterstock_1152429674.jpg",
+      "https://media1.thrillophilia.com/filestore/kop3i1ri2329gpm5j2jxdvtaup4r_shutterstock_1157444725.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Sari Timbul by Kubu Bali",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/pj42nkkk0nzyub4wl9qpzdetnyxh_Sari-Timbul-Glass-Factory-Foto.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Activity",
+     "title": "Infinity Pool Overlooking the Waterfall",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/gkyseeu0vl8blkjfd122tmgbab1a_OmmaDayclubinUbudBali.jpg"
+     ]
+    },
+    {
+     "type": "Activity",
+     "title": "Indulge in Gourmet Dining & Signature Cocktails",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/1ap8a2sn500406b6biwtwuerpepg_hinh6.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 8,
+   "title": "Departure Day",
+   "city": "Ubud",
+   "desc": "In the morning, check out from your hotel and get driven to the airport for your onward flight. As you depart, bid farewell to Bali while carrying memories of golden beaches, sacred temples, hidden waterfalls, and thrilling adventures. Though your tour ends today, the island’s warmth, charm, and beauty will linger long after your return, making this escape an unforgettable journey filled with moments to cherish forever.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Resort",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Cross Vibe Paasha Atelier Bali Kuta",
+   "stars": 4,
+   "category": "Standard",
+   "tripadvisor": null,
+   "city": "Canggu",
+   "room_type": "Standard",
+   "meal_plan": "European Plan",
+   "check_in_day": 1,
+   "nights": 4,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ce2oeybx4mt3fs7bjj7mst419cnc_download%20-%202024-07-10T160615.777.jpg",
+    "https://media1.thrillophilia.com/filestore/zy6vtjd399cc5vzpsuccim8m1xis_download%20-%202024-07-10T160628.652.jpg",
+    "https://media1.thrillophilia.com/filestore/rl185lf361eo0bg1rwuv117godel_download%20-%202024-07-10T160637.967.jpg",
+    "https://media1.thrillophilia.com/filestore/uxgieudy2gtcin8n3lz6f09b282h_download%20-%202024-07-10T160703.848.jpg",
+    "https://media1.thrillophilia.com/filestore/ug2051jbqdib1yu5htdnysmv4fn4_download%20-%202024-07-10T160634.294.jpg",
+    "https://media1.thrillophilia.com/filestore/nxjs331lpigkwdbvmqklq5dzlruh_download%20-%202024-07-10T160709.481.jpg",
+    "https://media1.thrillophilia.com/filestore/szrucswzfgdraflrpwt6ee34zzge_rossvibepaashaatelierbalikuta.jpg",
+    "https://media1.thrillophilia.com/filestore/0bnenrgl55ym54yiizzz1cx2xce6_download%20-%202024-07-10T160741.457.jpg",
+    "https://media1.thrillophilia.com/filestore/3rosxwy3d4zaj3i8kn5qr7w5cv5u_download%20-%202024-07-10T160720.921.jpg",
+    "https://media1.thrillophilia.com/filestore/pro7ql9xkx40hbub7cjm0lrzhwpn_download%20-%202024-07-10T160653.804.jpg",
+    "https://media1.thrillophilia.com/filestore/pvwpooe3z4lo83tdzi6hwqhtkr23_download%20-%202024-07-10T160735.743.jpg",
+    "https://media1.thrillophilia.com/filestore/sih89zy8wlp3z83uogumh3nti3yi_download%20-%202024-07-10T160611.892.jpg",
+    "https://media1.thrillophilia.com/filestore/venvfwwyngtycjgjyp4og04yck64_download%20-%202024-07-10T160716.832.jpg",
+    "https://media1.thrillophilia.com/filestore/rtftwdlzqbwslty23dph4pi5b315_download%20-%202024-07-10T160624.001.jpg",
+    "https://media1.thrillophilia.com/filestore/g6dp6geoj8uykjcgd3u5vnqpgy4c_download%20-%202024-07-10T160648.973.jpg",
+    "https://media1.thrillophilia.com/filestore/lsj3hqu56a7fac38g1d06ruaele9_download%20-%202024-07-10T160748.245.jpg",
+    "https://media1.thrillophilia.com/filestore/ogcglhwqigjc00a1otnudysmqyhr_download%20-%202024-07-10T160619.736.jpg"
+   ]
+  },
+  {
+   "name": "Swiss-Belhotel Rainforest",
+   "stars": 4,
+   "category": "Standard",
+   "tripadvisor": null,
+   "city": "Canggu",
+   "room_type": "Standard",
+   "meal_plan": "European Plan",
+   "check_in_day": 1,
+   "nights": 4,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/kg5icf35gxs6jyu98n7cttyqwekb_download%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/4tz3zv5w2a6h1d3qf4ljcl2hl778_download%20(14).jpg",
+    "https://media1.thrillophilia.com/filestore/h1aq1ukf07hgue5dts8x9bbrdra8_download%20(4).jpg",
+    "https://media1.thrillophilia.com/filestore/klezdhbnu0re2bgma6qa9am13ggf_download%20(6).jpg",
+    "https://media1.thrillophilia.com/filestore/l1hdm7k58dyj1fjk47k6oxsnw6dy_download%20(2).jpg",
+    "https://media1.thrillophilia.com/filestore/urq9ef4lki0lwz7rmx7avnqw8ulp_download%20(3).jpg",
+    "https://media1.thrillophilia.com/filestore/4jisshjirabexvjj0l1m42izyowf_download%20(11).jpg",
+    "https://media1.thrillophilia.com/filestore/upc8y2pddmsdxtv0av9odks129wk_download%20(12).jpg",
+    "https://media1.thrillophilia.com/filestore/pa8rbjzw4ych73zkrvuf2rofqcl5_download%20(9).jpg",
+    "https://media1.thrillophilia.com/filestore/1ezeux3vwzpgmt7gkmhmlhgcce3p_download%20(10).jpg",
+    "https://media1.thrillophilia.com/filestore/30pxpnesu67d6p9swgtio16rh2te_download%20(13).jpg",
+    "https://media1.thrillophilia.com/filestore/wyam343bt3ohylaxzv950pkqx1st_download%20(16).jpg",
+    "https://media1.thrillophilia.com/filestore/x9p9f34c19ekuedbfdz5a18r1v5u_download%20(7).jpg",
+    "https://media1.thrillophilia.com/filestore/zbv90ewk0tnbwncmwgbul2giw1qx_download%20(8).jpg",
+    "https://media1.thrillophilia.com/filestore/7ycjfzief4e1ojjepikktj9moxn6_download%20(5).jpg",
+    "https://media1.thrillophilia.com/filestore/8fp77ulfkcls0e401i7m8j5zr0qb_download%20(15).jpg"
+   ]
+  },
+  {
+   "name": "Ubud Raya Villa",
+   "stars": 4,
+   "category": "Super Deluxe",
+   "tripadvisor": null,
+   "city": "Ubud",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 5,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/f8f6c0enql3nc2t5t4zej497ve2z_137adf09efe929bb30c35a5632e7cd3a34591259.JPEG",
+    "https://media1.thrillophilia.com/filestore/8upqx7nh8ilbr65kslssl80uuw10_6af0fae2530455539112de991fbd52fa5d3176be.JPEG",
+    "https://media1.thrillophilia.com/filestore/0mmojw8lypn0ao9v2yln31gbjmxi_4f389bc77d0650c8bd34e7be222984ac361a5466.jpeg",
+    "https://media1.thrillophilia.com/filestore/au8z442kmjzjvs39bsor1afjlzpw_5fcc6898fbf069c1a42ce3f2e83dc3e4972d3b18.jpeg",
+    "https://media1.thrillophilia.com/filestore/vidslljirg0ncemsstmlvlc0ybrb_91d6657239a5957a4d34122aec75ee53ebbbfdb1.jpeg",
+    "https://media1.thrillophilia.com/filestore/6i1qu1ytgqp6mwnhyjm880b8cv7h_e66be96b7da8774494dae44a60527f489089f961.jpeg",
+    "https://media1.thrillophilia.com/filestore/wgb8wynk0bylqlvv6rjdbrpxaq3k_d283ffe9cee43f5d96ef63c56bd4dd00599cacb5.jpeg",
+    "https://media1.thrillophilia.com/filestore/82pftugcsu7mp5kvw5jiwx2ntgkp_c8a87f52234389f8743ca23947fe776c00222af1.jpeg",
+    "https://media1.thrillophilia.com/filestore/wm87qpedv9mtqy57l3h4i7j5s2x6_0a9c888a61041c1deff45e6e3481cf9f6e4d8cdf.jpeg",
+    "https://media1.thrillophilia.com/filestore/8f5alaxve7we1allf36eu80gdhu9_1a864a1e24c24528cee9356755aac39c44ab1ac2.jpeg",
+    "https://media1.thrillophilia.com/filestore/a1nsxmg49gwg48q2kt8oqdgylko7_414ca3b9a26cc2781ff1000bee02b92140cf1d73.jpeg",
+    "https://media1.thrillophilia.com/filestore/ebc1idwd1m3iq3lv0wrsbuq76x7k_165e519d62a0b49b666dd5f20267620926e6afaa.jpeg",
+    "https://media1.thrillophilia.com/filestore/dsc6ivue69d6tbdb4q6uequ5fa1h_b730df7ae35d084549e8bb143095a6e342219a62.jpeg",
+    "https://media1.thrillophilia.com/filestore/uq40his17pht9ui79weriyeplzql_ee427b2fb149bb1454d81d919e69356fd2c72db7.JPEG",
+    "https://media1.thrillophilia.com/filestore/x9smr8uuvun15tfckzmg7p0a8x9d_f17346da73f9d4e7d7b1894b55060ef5ec8d0ff9.JPEG"
+   ]
+  },
+  {
+   "name": "Alam Ubud Culture Villas & Residences",
+   "stars": 4,
+   "category": "Super Deluxe",
+   "tripadvisor": null,
+   "city": "Ubud",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 5,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/pnv27xiiuppljhciu8xb8isw8rmg_72394098.jpg",
+    "https://media1.thrillophilia.com/filestore/z2z86mbmacaqtuuwjl8civbm7jo1_184825958.jpg",
+    "https://media1.thrillophilia.com/filestore/xnhxv3ldp0pnrs6ksy95bpo9lrvl_148955459.jpg",
+    "https://media1.thrillophilia.com/filestore/mivkfq90mt2fjmuxnhfdqn2oql48_75854437.jpg",
+    "https://media1.thrillophilia.com/filestore/okvt1r5ylu96kazwjfjhu5mq5rrk_41175357.jpg",
+    "https://media1.thrillophilia.com/filestore/xceav5imnq3it4u0u79tizinsi8c_215151935.jpg",
+    "https://media1.thrillophilia.com/filestore/dtwjlks2vuzt4uqeuzyuwh5hwz0t_72406388.jpg",
+    "https://media1.thrillophilia.com/filestore/ty1s00y5v6fjdlpavst4e9uodm8t_72393623.jpg",
+    "https://media1.thrillophilia.com/filestore/wvnlawyj174q0v7mfj89nvangvkg_215143418.jpg",
+    "https://media1.thrillophilia.com/filestore/3cxelnto1hqs85cq1ruucweejpv4_215143605.jpg"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "Lounge by the infinity pools with ocean views",
+   "day": 1,
+   "city": "Canggu",
+   "label": "Suggestion",
+   "start_time": "16:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/6695zs9qmxc53tzxyy6wr4p99iq9_83fac60cb92825607f0a0a78cec002c1e833eacd90515a80fa30b6d188f0f2db.jpg"
+   ]
+  },
+  {
+   "name": "Enjoy gourmet dining & signature cocktails",
+   "day": 1,
+   "city": "Canggu",
+   "label": "Suggestion",
+   "start_time": "18:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/onypx5fagrrumkwkvwzjiffnivey_d70ce1a350b7f29ea5ce55e632bb372103c90bdb3cef63f8dfc9af469e51720b.jpg"
+   ]
+  },
+  {
+   "name": "Private Yacht Party, Canggu",
+   "day": 2,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/b3diflitxotckzurzneva0hhuxti_235CDF82-F56B-4CB8-ADEA-D8FA79BF8C58.webp",
+    "https://media1.thrillophilia.com/filestore/p0h6hahtzviyvjucjnzz2rwww84a_yacht-party-group-img.jpg",
+    "https://media1.thrillophilia.com/filestore/g8000dq7bmdh6y18q7eyt8xtpcjn_caption%20-%202025-10-16T035501.192.jpg",
+    "https://media1.thrillophilia.com/filestore/rsx9jujvqw1xx0858nw65bduq0ca_private-charter-cruise-in-bali-with-our-private-boat-burjuman-vessel-boat-party-in-bali.webp",
+    "https://media1.thrillophilia.com/filestore/f4ghytl4on7h1cd7g9m1yx6fi7k3_Foto-Sunset-Cruise-Table-16.webp"
+   ]
+  },
+  {
+   "name": "Trip to Melasti Beach & Pandawa Beach",
+   "day": 3,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    2,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/goy2h31unpbyi7dtjc1tq6dmnbef_o437ek06ky3ma8atw6yn2z8bftab_20pewolvrtdt3ljtrhxj5lxislsx_The-cliffs-of-Melasti-Beach-1.jpg",
+    "https://media1.thrillophilia.com/filestore/x6nwzf2ctahzr9u3hqj67azxz0r3_x2gvs5nlnglhs8imbcycm7g4wn8o_c6ayuourpxsrehu7qv6tdaak3p09_Melasti-Beach-1.jpg",
+    "https://media1.thrillophilia.com/filestore/azevax70n16bz24arvo6x8fwlwpw_shutterstock_2242431871.jpg",
+    "https://media1.thrillophilia.com/filestore/0j6fbtrplvk3t7imovzi6f0yt81p_shutterstock_2462800047.jpg",
+    "https://media1.thrillophilia.com/filestore/9iivo14uxy5r5e3lth0oiik0dxvt_shutterstock_2471477211.jpg",
+    "https://media1.thrillophilia.com/filestore/nll66eo7zj3vuzqqo2fjjav5dmpb_shutterstock_1145818916.jpg",
+    "https://media1.thrillophilia.com/filestore/hedo81l1o35p7ztb8s12rhkbj576_shutterstock_2207923179.jpg",
+    "https://media1.thrillophilia.com/filestore/u1odhwudwcmvqtdia09frrwj7uod_shutterstock_2260914495.jpg",
+    "https://media1.thrillophilia.com/filestore/zemu3zga06tkqpvw8xx6kvdmw7sc_shutterstock_791746717.jpg",
+    "https://media1.thrillophilia.com/filestore/h6zxtmos1zbqswmtvtuq41n1bw6d_shutterstock_2018159621.jpg",
+    "https://media1.thrillophilia.com/filestore/v4i29j28zm6fic2s5hm5231e67ar_1498545551_meslastidronestagram.jpg"
+   ]
+  },
+  {
+   "name": "Pandawa Beach",
+   "day": 3,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/hedo81l1o35p7ztb8s12rhkbj576_shutterstock_2207923179.jpg",
+    "https://media1.thrillophilia.com/filestore/u1odhwudwcmvqtdia09frrwj7uod_shutterstock_2260914495.jpg",
+    "https://media1.thrillophilia.com/filestore/zemu3zga06tkqpvw8xx6kvdmw7sc_shutterstock_791746717.jpg",
+    "https://media1.thrillophilia.com/filestore/h6zxtmos1zbqswmtvtuq41n1bw6d_shutterstock_2018159621.jpg"
+   ]
+  },
+  {
+   "name": "Melasti Beach",
+   "day": 3,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/v4i29j28zm6fic2s5hm5231e67ar_1498545551_meslastidronestagram.jpg"
+   ]
+  },
+  {
+   "name": "Take a dip in their multiple pool zones",
+   "day": 3,
+   "city": "Canggu",
+   "label": "Suggestion",
+   "start_time": "16:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/a1396sg8ef483tez070gf7x0xath_tt.jpg"
+   ]
+  },
+  {
+   "name": "Catch the sunset & live DJ ",
+   "day": 3,
+   "city": "Canggu",
+   "label": "Suggestion",
+   "start_time": "18:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ko3nrf1ndkkrl0i107uoro3v4j43_Sep-19-Daily-Photos-41-scaled.jpg"
+   ]
+  },
+  {
+   "name": "Day Trip to Uluwatu Temple - Uluwatu Temple Sunset Tour",
+   "day": 4,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    2,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/aakojllysuugpfup7hs0mrgzat9c_g64p0bgnyopzxl48412tn5huwdfr_jcr_content.webp",
+    "https://media1.thrillophilia.com/filestore/h9f58bj2wyzb35wgm84hgv6n5olg_ayxmjr2sxjsj25mejzcwep1zlj8f_ezgif-2-428e7b81bb85.webp",
+    "https://media1.thrillophilia.com/filestore/6ui0iunn016u37fuatw9qym85v0u_52ufj5wviu7ibfq6di1v2bb8pcwt_shutterstock_2403581917.webp",
+    "https://media1.thrillophilia.com/filestore/e8tic9drjlb0yxayctj6vroal0ip_a7si1cfzev5ub900khayirpr8tv1_Uluwatu-Temple-Bali-Feature-Image.jpg",
+    "https://media1.thrillophilia.com/filestore/qp9ny238fkhx5r8hyn9reoj6ne4e_shutterstock_1227767932.jpg",
+    "https://media1.thrillophilia.com/filestore/29f1qs68fnfxoe8tdupdgrk1ejws_shutterstock_2640276799.jpg",
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+   ]
+  },
+  {
+   "name": "Uluwatu Temple",
+   "day": 4,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+   ]
+  },
+  {
+   "name": "Balinese Massage in Bali - 1-Hour Balinese Massage in Canggu",
+   "day": 4,
+   "city": "Canggu",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    1,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+    "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+    "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+    "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+    "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+    "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+    "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+    "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+    "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg"
+   ]
+  },
+  {
+   "name": "ATV Adventure in Bali - ATV Ride (Dual Rider) +  White Water Rafting at Ayung River",
+   "day": 5,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/s6oia0oiagnkeq420r3mvctsnzst_1595487162_shutterstock_670236505.jpg",
+    "https://media1.thrillophilia.com/filestore/jl32x9tubmc0fqcgkzpwfl2ofx1j_1595487163_shutterstock_478562920.jpg",
+    "https://media1.thrillophilia.com/filestore/izal4k5950kmq3hblzi51czyxoya_shutterstock_1973282951.jpg",
+    "https://media1.thrillophilia.com/filestore/mdvcm34jvkm7kstyyqdkvw2gmvmr_ATV%20Ride-2.jpg",
+    "https://media1.thrillophilia.com/filestore/4u0oi9gtsud1plyx4a5a8q8ez1ee_ATV%20Ride-1.jpg",
+    "https://media1.thrillophilia.com/filestore/ibp1ql56chugu54m1a5c6tqawhfd_ATV%20Ride-3.jpg",
+    "https://media1.thrillophilia.com/filestore/xhclda6bp8hbogiy9u6fv9lppr2n_yiq1nkgis0i5nj7mvhdk454pmyqo_shutterstock_2283813647.webp",
+    "https://media1.thrillophilia.com/filestore/mzmfvstelkamxehz9ahzm5oewgv9_tnonctwuh2cntqvo4azjz0c1gxvs_bali-white-water-rafting.webp",
+    "https://media1.thrillophilia.com/filestore/1e7i6wngrjcf6pk0qhbc5dby758l_qsa7dla2c9mudnmx7f45k5apqaem_shutterstock_2214250063.webp"
+   ]
+  },
+  {
+   "name": "Cretya Ubud, Bali - Visit to Cretya Ubud with Transfers",
+   "day": 5,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    3,
+    30,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/31zu0xhezdzs012q3bgdac8wqgxj_Cretya%20Ubud%203.jpg",
+    "https://media1.thrillophilia.com/filestore/spmwbfunwfk36a8tv42zs9xiwhhm_Cretya%20Ubud%205.jpg",
+    "https://media1.thrillophilia.com/filestore/xgtpagz16t6n06q8mrgvieqqcflk_Cretya%20Ubud%201.jpg",
+    "https://media1.thrillophilia.com/filestore/0sosp9kwbo5r2nsd4mvxr4m8leqf_Cretya%20Ubud%204.jpg",
+    "https://media1.thrillophilia.com/filestore/gll3egxjmanwedj324eavipb8y9w_Cretya%20Ubud%202.jpg",
+    "https://media1.thrillophilia.com/filestore/9q7yigbsl54wb1a7rguuuztbttx6_Cretya%20Ubud%206.webp"
+   ]
+  },
+  {
+   "name": "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beraton + Leke Leke Waterfalls",
+   "day": 6,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    8,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/973natt55orxsysivg2b1xutcf22_3q6hx7s6er01ldwrq9sgh4twbokj_shutterstock_2474005447.webp",
+    "https://media1.thrillophilia.com/filestore/2v3h5zrqb1a6nn10cjvput8xou94_77xbyfcw7vdk9xugvigm6t1sgus1_Ulun%20Danu-3.webp",
+    "https://media1.thrillophilia.com/filestore/lgshtbjb88t40im2o583aht6j7fc_3ov78ka240ge05pe93u0z0ndln7c_shutterstock_2269187465.webp",
+    "https://media1.thrillophilia.com/filestore/moadl1izvkc5o6xo1rznmqk1e1ew_fo45sh3zy0o1gjvt82wenqmpawwr_shutterstock_2404165329.webp",
+    "https://media1.thrillophilia.com/filestore/scebpkg9xw6lbemk44xeycz8yzkr_9f9pom2d486sn1hrxvws8ntlf3ro_Ulun%20Danu-4.webp",
+    "https://media1.thrillophilia.com/filestore/5lkgjgwb0hq67eujjkpjldul0bwu_879cq9m1m7p1mflgw6tsbr3i4ary_Ulun%20Danu-009.webp",
+    "https://media1.thrillophilia.com/filestore/o53bc01f8l6hv1tcl4nl2qce5xqo_f36wj65s5djhj7jzrar5ske6njmp_Ulun%20Danu-.webp",
+    "https://media1.thrillophilia.com/filestore/tt30v8m38bdcswqv8mmrr9azfhto_yubbjrokkg0qiq1gdz0zpir7i2d4_shutterstock_2410527845.webp",
+    "https://media1.thrillophilia.com/filestore/emtpctdkhyp7x31tztqzmbb6m7dk_shutterstock_2481226837.jpg",
+    "https://media1.thrillophilia.com/filestore/i7eialfq1hhn93w2gzst2nx19164_shutterstock_2642565923.jpg",
+    "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg",
+    "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg",
+    "https://media1.thrillophilia.com/filestore/357v9kk3cmxv2zbksyw0pxsixy9b_Leke%20Leke%20Waterfall-1.jpg"
+   ]
+  },
+  {
+   "name": "Ulun Danu Beratan Temple",
+   "day": 6,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg"
+   ]
+  },
+  {
+   "name": "Bali Handara Gate",
+   "day": 6,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg"
+   ]
+  },
+  {
+   "name": "Leke Leke Waterfall",
+   "day": 6,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/357v9kk3cmxv2zbksyw0pxsixy9b_Leke%20Leke%20Waterfall-1.jpg"
+   ]
+  },
+  {
+   "name": "Central Bali Sightseeing Tour with Tirta Empul Temple - Bali Swing + Tegenungan Waterfall + Tirta Empul + Sari Timbul + Tegallang Rice Terrace Tour on a Vintage Volkswagen",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    7,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/q77aw23cnynqx76tj5h7hs0ehogc_Tirta%20Empul-2.jpg",
+    "https://media1.thrillophilia.com/filestore/r6igiti3wpea4oldzzmkiwa7a1o4_Tegallalang%20Rice%20Terrace.jpg",
+    "https://media1.thrillophilia.com/filestore/ofhlzwxsr2zeva7igqh5dk9n6osy_Ubud%20palace-2.jpg",
+    "https://media1.thrillophilia.com/filestore/hs6ku73hvntokd0vojg4d8deafcr_Tegenungan%20Waterfalls.jpg",
+    "https://media1.thrillophilia.com/filestore/vv90aaqhrm1zoquehwjvi02zydjn_Ubud%20palace.jpg",
+    "https://media1.thrillophilia.com/filestore/w81rcdtahxn6mi7hp9hmvt5f0uzg_Bali%20Swing.jpg",
+    "https://media1.thrillophilia.com/filestore/wjybvgzopnt7m6uc4gid3adg4ugz_Ubud%20Market.jpg",
+    "https://media1.thrillophilia.com/filestore/yvscd24lln9s7l5otyghghii6oke_Tegenungan%20Waterfalls-2.jpg",
+    "https://media1.thrillophilia.com/filestore/m1zov2cm3lvp5vz0bgwux1ocy9xf_caption%20-%202025-10-15T152015.066.jpg",
+    "https://media1.thrillophilia.com/filestore/j1wlaewg543xb1zzmiqc4deze50z_caption%20-%202025-10-15T152005.016.jpg",
+    "https://media1.thrillophilia.com/filestore/nodnh6wk26xazqovwbeynk9645vz_caption%20-%202025-10-15T152010.271.jpg",
+    "https://media1.thrillophilia.com/filestore/okdpp5r2jk8n1supuht7ammeunzt_caption%20-%202025-10-15T152019.021.jpg",
+    "https://media1.thrillophilia.com/filestore/6bq3j26024ak27tjkrg9nx241ctc_caption%20-%202025-10-15T151951.807.jpg",
+    "https://media1.thrillophilia.com/filestore/2culn1ep9ggkxlwlndfxpxf5hddd_1470728585_9699341652_4f918fdd16_b.jpg",
+    "https://media1.thrillophilia.com/filestore/do3h4druulrvx7vbvz7h5m8molzh_shutterstock_1794010471.jpg",
+    "https://media1.thrillophilia.com/filestore/lcxzahazefj36wc78mzddrqxepjr_shutterstock_1839057952.jpg",
+    "https://media1.thrillophilia.com/filestore/9rvkvtjuyldsn3awrkoc0zphg667_shutterstock_1939650022.jpg",
+    "https://media1.thrillophilia.com/filestore/tn1ow4lnbf9v90ldgk4uzkvgvle6_1498632417_big_tegenungan.jpg",
+    "https://media1.thrillophilia.com/filestore/3r3neh3crb6zhumt5p1i97tuyzyh_shutterstock_1709259697.jpg",
+    "https://media1.thrillophilia.com/filestore/1jrufxoxj31lga84ca11mtjkp03c_shutterstock_1709259706.jpg",
+    "https://media1.thrillophilia.com/filestore/ap5cn6ta7agiv2wnsc0g4chiy1lu_shutterstock_1709259730.jpg",
+    "https://media1.thrillophilia.com/filestore/2kpx79s3vxrjrh07k2kaajmjalmw_shutterstock_2313711741.jpg",
+    "https://media1.thrillophilia.com/filestore/5z5pwl10sl0ae0tkl2j5973ixgmy_1470739774_Pura_Tirta_Empul__Bali.JPG",
+    "https://media1.thrillophilia.com/filestore/80el6y9oi92epkai9az87cmzxk2w_shutterstock_2184020513.jpg",
+    "https://media1.thrillophilia.com/filestore/11kxm99527x2ww3vx7rvxpp69q4t_1570175723_1562050066_zzzzzzzz.jpg.jpg",
+    "https://media1.thrillophilia.com/filestore/trjzhndz7yk86ckokdl90fmojr8a_shutterstock_1152429674.jpg",
+    "https://media1.thrillophilia.com/filestore/kop3i1ri2329gpm5j2jxdvtaup4r_shutterstock_1157444725.jpg",
+    "https://media1.thrillophilia.com/filestore/pj42nkkk0nzyub4wl9qpzdetnyxh_Sari-Timbul-Glass-Factory-Foto.jpg"
+   ]
+  },
+  {
+   "name": "Tegallalang Rice Terraces",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/2culn1ep9ggkxlwlndfxpxf5hddd_1470728585_9699341652_4f918fdd16_b.jpg",
+    "https://media1.thrillophilia.com/filestore/do3h4druulrvx7vbvz7h5m8molzh_shutterstock_1794010471.jpg",
+    "https://media1.thrillophilia.com/filestore/lcxzahazefj36wc78mzddrqxepjr_shutterstock_1839057952.jpg",
+    "https://media1.thrillophilia.com/filestore/9rvkvtjuyldsn3awrkoc0zphg667_shutterstock_1939650022.jpg"
+   ]
+  },
+  {
+   "name": "Tegenungan Waterfall",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/tn1ow4lnbf9v90ldgk4uzkvgvle6_1498632417_big_tegenungan.jpg",
+    "https://media1.thrillophilia.com/filestore/3r3neh3crb6zhumt5p1i97tuyzyh_shutterstock_1709259697.jpg",
+    "https://media1.thrillophilia.com/filestore/1jrufxoxj31lga84ca11mtjkp03c_shutterstock_1709259706.jpg",
+    "https://media1.thrillophilia.com/filestore/ap5cn6ta7agiv2wnsc0g4chiy1lu_shutterstock_1709259730.jpg"
+   ]
+  },
+  {
+   "name": "Tirta Empul Temple",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/2kpx79s3vxrjrh07k2kaajmjalmw_shutterstock_2313711741.jpg",
+    "https://media1.thrillophilia.com/filestore/5z5pwl10sl0ae0tkl2j5973ixgmy_1470739774_Pura_Tirta_Empul__Bali.JPG",
+    "https://media1.thrillophilia.com/filestore/80el6y9oi92epkai9az87cmzxk2w_shutterstock_2184020513.jpg"
+   ]
+  },
+  {
+   "name": "Bali Swing",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/11kxm99527x2ww3vx7rvxpp69q4t_1570175723_1562050066_zzzzzzzz.jpg.jpg",
+    "https://media1.thrillophilia.com/filestore/trjzhndz7yk86ckokdl90fmojr8a_shutterstock_1152429674.jpg",
+    "https://media1.thrillophilia.com/filestore/kop3i1ri2329gpm5j2jxdvtaup4r_shutterstock_1157444725.jpg"
+   ]
+  },
+  {
+   "name": "Sari Timbul by Kubu Bali",
+   "day": 7,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/pj42nkkk0nzyub4wl9qpzdetnyxh_Sari-Timbul-Glass-Factory-Foto.jpg"
+   ]
+  },
+  {
+   "name": "Infinity Pool Overlooking the Waterfall",
+   "day": 7,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": "18:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/gkyseeu0vl8blkjfd122tmgbab1a_OmmaDayclubinUbudBali.jpg"
+   ]
+  },
+  {
+   "name": "Indulge in Gourmet Dining & Signature Cocktails",
+   "day": 7,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": "20:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/1ap8a2sn500406b6biwtwuerpepg_hinh6.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/azirhm9jrdf2drekilpn8syb2aoy_shutterstock_2275037781.jpg",
+   "caption": "Strike an amazing pose at the stunning Handara Gate",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/096ce90dxljx96hp9ldrbvoox1ps_shutterstock_2403581917.jpg",
+   "caption": "Feel the magic of Uluwatu Temple with sunset views over the ocean",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9b9untaxl80ik3voz08dbkpdn63z_z5y7yy32vaouneujz0ao6lnkvl3w_shutterstock_130109834.jpg",
+   "caption": "Indulge in a Balinese massage, feeling relaxed, renewed, and recharged",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zyxkml48g8c4t8k8fcfluhg4gdvf_shutterstock_1451983274.jpg",
+   "caption": "Soar above the lush landscapes of Bali on the iconic Bali Swing",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/asx0rdaak7ayjbjsin6t8ctpes6d_q77aw23cnynqx76tj5h7hs0ehogc_Tirta%20Empul-2.jpg",
+   "caption": "Visit the famous Tirta Empul, where holy springs meet ancient rituals",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mix4tdowjaywtz0sfmaw3f8sguaj_shutterstock_1518703259.jpg",
+   "caption": "Marvel at the stunning architectures of the Tirta Empul Temple",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/k6iayd7u6i78r5z0r0bq4783whih_caption%20-%202025-10-16T035501.192.jpg",
+   "caption": "Get a chance to party on a private Yaccht",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9j3gcdt7jemqum64auy8muttm1tu_o437ek06ky3ma8atw6yn2z8bftab_20pewolvrtdt3ljtrhxj5lxislsx_The-cliffs-of-Melasti-Beach-1.jpg",
+   "caption": "Relax on the golden sands of the Melasti Beach",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hq6zxh800i3ukmw8il9tw55y43ld_caption%20-%202025-10-15T151951.807.jpg",
+   "caption": "Enjoy a journey through Central Bali on a Vintage Volkswagen",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ce2oeybx4mt3fs7bjj7mst419cnc_download%20-%202024-07-10T160615.777.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zy6vtjd399cc5vzpsuccim8m1xis_download%20-%202024-07-10T160628.652.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rl185lf361eo0bg1rwuv117godel_download%20-%202024-07-10T160637.967.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uxgieudy2gtcin8n3lz6f09b282h_download%20-%202024-07-10T160703.848.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ug2051jbqdib1yu5htdnysmv4fn4_download%20-%202024-07-10T160634.294.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nxjs331lpigkwdbvmqklq5dzlruh_download%20-%202024-07-10T160709.481.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/szrucswzfgdraflrpwt6ee34zzge_rossvibepaashaatelierbalikuta.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0bnenrgl55ym54yiizzz1cx2xce6_download%20-%202024-07-10T160741.457.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3rosxwy3d4zaj3i8kn5qr7w5cv5u_download%20-%202024-07-10T160720.921.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pro7ql9xkx40hbub7cjm0lrzhwpn_download%20-%202024-07-10T160653.804.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pvwpooe3z4lo83tdzi6hwqhtkr23_download%20-%202024-07-10T160735.743.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sih89zy8wlp3z83uogumh3nti3yi_download%20-%202024-07-10T160611.892.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/venvfwwyngtycjgjyp4og04yck64_download%20-%202024-07-10T160716.832.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rtftwdlzqbwslty23dph4pi5b315_download%20-%202024-07-10T160624.001.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g6dp6geoj8uykjcgd3u5vnqpgy4c_download%20-%202024-07-10T160648.973.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/lsj3hqu56a7fac38g1d06ruaele9_download%20-%202024-07-10T160748.245.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ogcglhwqigjc00a1otnudysmqyhr_download%20-%202024-07-10T160619.736.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/kg5icf35gxs6jyu98n7cttyqwekb_download%20(1).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4tz3zv5w2a6h1d3qf4ljcl2hl778_download%20(14).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h1aq1ukf07hgue5dts8x9bbrdra8_download%20(4).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/klezdhbnu0re2bgma6qa9am13ggf_download%20(6).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l1hdm7k58dyj1fjk47k6oxsnw6dy_download%20(2).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/urq9ef4lki0lwz7rmx7avnqw8ulp_download%20(3).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4jisshjirabexvjj0l1m42izyowf_download%20(11).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/upc8y2pddmsdxtv0av9odks129wk_download%20(12).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pa8rbjzw4ych73zkrvuf2rofqcl5_download%20(9).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1ezeux3vwzpgmt7gkmhmlhgcce3p_download%20(10).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/30pxpnesu67d6p9swgtio16rh2te_download%20(13).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wyam343bt3ohylaxzv950pkqx1st_download%20(16).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x9p9f34c19ekuedbfdz5a18r1v5u_download%20(7).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zbv90ewk0tnbwncmwgbul2giw1qx_download%20(8).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7ycjfzief4e1ojjepikktj9moxn6_download%20(5).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8fp77ulfkcls0e401i7m8j5zr0qb_download%20(15).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f8f6c0enql3nc2t5t4zej497ve2z_137adf09efe929bb30c35a5632e7cd3a34591259.JPEG",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8upqx7nh8ilbr65kslssl80uuw10_6af0fae2530455539112de991fbd52fa5d3176be.JPEG",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0mmojw8lypn0ao9v2yln31gbjmxi_4f389bc77d0650c8bd34e7be222984ac361a5466.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/au8z442kmjzjvs39bsor1afjlzpw_5fcc6898fbf069c1a42ce3f2e83dc3e4972d3b18.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vidslljirg0ncemsstmlvlc0ybrb_91d6657239a5957a4d34122aec75ee53ebbbfdb1.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6i1qu1ytgqp6mwnhyjm880b8cv7h_e66be96b7da8774494dae44a60527f489089f961.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wgb8wynk0bylqlvv6rjdbrpxaq3k_d283ffe9cee43f5d96ef63c56bd4dd00599cacb5.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/82pftugcsu7mp5kvw5jiwx2ntgkp_c8a87f52234389f8743ca23947fe776c00222af1.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wm87qpedv9mtqy57l3h4i7j5s2x6_0a9c888a61041c1deff45e6e3481cf9f6e4d8cdf.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8f5alaxve7we1allf36eu80gdhu9_1a864a1e24c24528cee9356755aac39c44ab1ac2.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a1nsxmg49gwg48q2kt8oqdgylko7_414ca3b9a26cc2781ff1000bee02b92140cf1d73.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ebc1idwd1m3iq3lv0wrsbuq76x7k_165e519d62a0b49b666dd5f20267620926e6afaa.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dsc6ivue69d6tbdb4q6uequ5fa1h_b730df7ae35d084549e8bb143095a6e342219a62.jpeg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uq40his17pht9ui79weriyeplzql_ee427b2fb149bb1454d81d919e69356fd2c72db7.JPEG",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x9smr8uuvun15tfckzmg7p0a8x9d_f17346da73f9d4e7d7b1894b55060ef5ec8d0ff9.JPEG",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pnv27xiiuppljhciu8xb8isw8rmg_72394098.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z2z86mbmacaqtuuwjl8civbm7jo1_184825958.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xnhxv3ldp0pnrs6ksy95bpo9lrvl_148955459.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mivkfq90mt2fjmuxnhfdqn2oql48_75854437.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/okvt1r5ylu96kazwjfjhu5mq5rrk_41175357.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xceav5imnq3it4u0u79tizinsi8c_215151935.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dtwjlks2vuzt4uqeuzyuwh5hwz0t_72406388.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ty1s00y5v6fjdlpavst4e9uodm8t_72393623.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wvnlawyj174q0v7mfj89nvangvkg_215143418.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3cxelnto1hqs85cq1ruucweejpv4_215143605.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b3diflitxotckzurzneva0hhuxti_235CDF82-F56B-4CB8-ADEA-D8FA79BF8C58.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/p0h6hahtzviyvjucjnzz2rwww84a_yacht-party-group-img.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g8000dq7bmdh6y18q7eyt8xtpcjn_caption%20-%202025-10-16T035501.192.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rsx9jujvqw1xx0858nw65bduq0ca_private-charter-cruise-in-bali-with-our-private-boat-burjuman-vessel-boat-party-in-bali.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f4ghytl4on7h1cd7g9m1yx6fi7k3_Foto-Sunset-Cruise-Table-16.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/goy2h31unpbyi7dtjc1tq6dmnbef_o437ek06ky3ma8atw6yn2z8bftab_20pewolvrtdt3ljtrhxj5lxislsx_The-cliffs-of-Melasti-Beach-1.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x6nwzf2ctahzr9u3hqj67azxz0r3_x2gvs5nlnglhs8imbcycm7g4wn8o_c6ayuourpxsrehu7qv6tdaak3p09_Melasti-Beach-1.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/azevax70n16bz24arvo6x8fwlwpw_shutterstock_2242431871.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0j6fbtrplvk3t7imovzi6f0yt81p_shutterstock_2462800047.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9iivo14uxy5r5e3lth0oiik0dxvt_shutterstock_2471477211.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nll66eo7zj3vuzqqo2fjjav5dmpb_shutterstock_1145818916.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g64p0bgnyopzxl48412tn5huwdfr_jcr_content.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/o67ktd1wp0oe4ty4pwqw21ois2fe_Kecak-Dance-Ubud-Bali-Feature-Image.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a7si1cfzev5ub900khayirpr8tv1_Uluwatu-Temple-Bali-Feature-Image.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ayxmjr2sxjsj25mejzcwep1zlj8f_ezgif-2-428e7b81bb85.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e679jnk5srnj8or8ulzob0am4cfn_1595484242_shutterstock_413419141.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rwsjpiatt4ipiw1ojz8wbfyv3vz6_1595484240_shutterstock_346118666.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hbjbyrh1ubeln0yvchdki7c5lfyo_shutterstock_2568860355.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3k3yqei03w3dws596yi6pqyusphv_shutterstock_2527231847.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/52ufj5wviu7ibfq6di1v2bb8pcwt_shutterstock_2403581917.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s6oia0oiagnkeq420r3mvctsnzst_1595487162_shutterstock_670236505.jpg",
+   "caption": "Get adrenaline rush driving through rice terraces, jungles, rivers and enjoy panoramic views",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jl32x9tubmc0fqcgkzpwfl2ofx1j_1595487163_shutterstock_478562920.jpg",
+   "caption": "Have fun in the open air ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/izal4k5950kmq3hblzi51czyxoya_shutterstock_1973282951.jpg",
+   "caption": "Drive with your squad",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mdvcm34jvkm7kstyyqdkvw2gmvmr_ATV%20Ride-2.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4u0oi9gtsud1plyx4a5a8q8ez1ee_ATV%20Ride-1.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ibp1ql56chugu54m1a5c6tqawhfd_ATV%20Ride-3.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/31zu0xhezdzs012q3bgdac8wqgxj_Cretya%20Ubud%203.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/spmwbfunwfk36a8tv42zs9xiwhhm_Cretya%20Ubud%205.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xgtpagz16t6n06q8mrgvieqqcflk_Cretya%20Ubud%201.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0sosp9kwbo5r2nsd4mvxr4m8leqf_Cretya%20Ubud%204.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gll3egxjmanwedj324eavipb8y9w_Cretya%20Ubud%202.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9q7yigbsl54wb1a7rguuuztbttx6_Cretya%20Ubud%206.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b5grhpy6gbinxn5gvsa6ebyqlnq1_shutterstock_631736717.jpg",
+   "caption": "Full Day Bedugul Tour in Bali",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/szjvf4vdg5t2bevv1ixaj1uvzg5h_shutterstock_1151728820.jpg",
+   "caption": "Aerial view of Ulun Danu Bratan Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e68by3v8axxgfordtefmv0qbqm77_shutterstock_1039981642.jpg",
+   "caption": "Gates to one of the Hindu temples in Bedugul",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/k76yxfryyog9qy9w4k9hg602qtlv_shutterstock_1059984710.jpg",
+   "caption": "Have mesmerizing views of Taman Ayun Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1j943bphwtrkj0fzxtrci2370a59_shutterstock_725111986.jpg",
+   "caption": "See the majestic Tanah Lot Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ktoyq1k5cbo5yb1gon0075bmuu4t_caption.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/glhbnzybcaorgf7qkgsiymp158zo_11.jpeg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/q77aw23cnynqx76tj5h7hs0ehogc_Tirta%20Empul-2.jpg",
+   "caption": "Tirta Empul",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/r6igiti3wpea4oldzzmkiwa7a1o4_Tegallalang%20Rice%20Terrace.jpg",
+   "caption": "Tegallalang Rice Terrace",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ofhlzwxsr2zeva7igqh5dk9n6osy_Ubud%20palace-2.jpg",
+   "caption": "Ubud Palace",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hs6ku73hvntokd0vojg4d8deafcr_Tegenungan%20Waterfalls.jpg",
+   "caption": "Tegenungan Waterfalls",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vv90aaqhrm1zoquehwjvi02zydjn_Ubud%20palace.jpg",
+   "caption": "Ubud Palace in Bali",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w81rcdtahxn6mi7hp9hmvt5f0uzg_Bali%20Swing.jpg",
+   "caption": "Bali Swing",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wjybvgzopnt7m6uc4gid3adg4ugz_Ubud%20Market.jpg",
+   "caption": "Ubud Market",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yvscd24lln9s7l5otyghghii6oke_Tegenungan%20Waterfalls-2.jpg",
+   "caption": "Tegenungan Waterfalls",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/quvw99lbn2pe6s6wqglzqhiyhu66_1574682332_Canggu.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/quvw99lbn2pe6s6wqglzqhiyhu66_1574682332_Canggu.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Canggu"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  }
+ ],
+ "dest_gallery": {
+  "Canggu": [
+   "https://media1.thrillophilia.com/filestore/quvw99lbn2pe6s6wqglzqhiyhu66_1574682332_Canggu.jpg.jpg"
+  ],
+  "Ubud": [
+   "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/azirhm9jrdf2drekilpn8syb2aoy_shutterstock_2275037781.jpg"
+ ]
+}

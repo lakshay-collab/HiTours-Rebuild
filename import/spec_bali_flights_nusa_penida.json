@@ -1,0 +1,120 @@
+{
+  "source_slug": "7-day-exotic-bali-tour-package",
+  "camel": "bestOfBaliFlightsNusaPenida",
+  "slug": "best-of-bali-with-flights-and-nusa-penida",
+  "title": "Best of Bali with Flights and Nusa Penida",
+  "alt": "Cliffs above Kelingking beach on Nusa Penida, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Return flights, private transfers and guided tours",
+  "tag": "Beach",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 70870,
+  "route_cities": ["Kuta", "Uluwatu", "Nusa Penida", "Ubud", "Kintamani"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 3, "transfers": 9, "meals": 7},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu and Nusa Penida",
+      "days": [1, 2, 3, 4],
+      "dayLabel": "Day 1 to 4",
+      "hotel": "Bliss Surfer Hotel Legian",
+      "accom": "4 nights \u00b7 Breakfast \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Legian hotel with a rooftop pool, ten minutes from Kuta beach",
+      "activities": [
+        {"name": "Water sports, Uluwatu and the Kecak dance", "day": 2, "optional": false, "match": "Uluwatu Sunset Tour Combo", "description": "Parasailing, jet ski and a banana boat at Tanjung Benoa, then Uluwatu temple at sunset and the Kecak fire dance in the cliff amphitheatre."},
+        {"name": "Nusa Penida west coast with snorkelling", "day": 3, "optional": false, "match": "Nusa Penida West Tour", "description": "Speedboat across for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, with snorkelling and a local lunch included."},
+        {"name": "Kuta beach and Legian", "day": 4, "optional": true, "match": "Kuta Beach", "description": "The long surf beach below Legian, with boards and lessons on the sand, and beach bars that stay busy until the sun drops."}
+      ],
+      "program": {"name": "Kuta", "description": "Four nights in Legian with a water sports and Uluwatu day, a full island day on Nusa Penida and a free day on the beach."}
+    },
+    {
+      "letter": "B",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [5, 6, 7],
+      "dayLabel": "Day 5 to 7",
+      "hotel": "Alam Puisi Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Villa resort in the rice fields west of Ubud town",
+      "activities": [
+        {"name": "Kintamani highlands tour", "day": 5, "optional": false, "match": "Kintamani Highlands Tour", "description": "The Mount Batur viewpoint, a coffee plantation tasting, Tegenungan waterfall and a turn on the Bali jungle swing on the way to Ubud."},
+        {"name": "Ubud Monkey Forest", "day": 6, "optional": true, "match": "Monkey Forest", "description": "Banyan trees, moss covered shrines and a few hundred macaques in a sanctuary ten minutes on foot from the Ubud market."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights in a rice field villa to finish, reached by way of the Kintamani highlands, with a free day for the town and its temples."}
+    }
+  ],
+  "day_titles": {
+    "1": "Flight to Bali and Kuta",
+    "2": "Water sports and Uluwatu",
+    "3": "Nusa Penida and snorkelling",
+    "4": "Free day in Kuta",
+    "5": "Kintamani and on to Ubud",
+    "6": "Free day in Ubud",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Flight from Delhi to Denpasar, included in your package",
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Legian hotel and settle in",
+      "Rest of the day free near the beach"
+    ],
+    "2": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Parasailing, jet ski and a banana boat with an instructor",
+      "Uluwatu temple on the cliffs at sunset",
+      "Kecak fire dance in the temple amphitheatre afterwards"
+    ],
+    "3": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Snorkelling and a local lunch before the boat back"
+    ],
+    "4": [
+      "Breakfast and a full day free on the coast",
+      "Optional: a surf lesson with an instructor on Kuta beach",
+      "Optional: Beachwalk mall or the Legian bars in the evening",
+      "Optional: a spa afternoon near the hotel"
+    ],
+    "5": [
+      "Breakfast and check out, then north through the highlands",
+      "Mount Batur viewpoint and a coffee plantation tasting",
+      "Tegenungan waterfall and the Bali jungle swing",
+      "Check in at your villa in the Ubud rice fields"
+    ],
+    "6": [
+      "Breakfast and a full day free in Ubud",
+      "Optional: the Monkey Forest and the Saraswati water temple",
+      "Optional: the art market and the palace in the town centre",
+      "Optional: a cooking class or a yoga session at the villa"
+    ],
+    "7": [
+      "Breakfast at the villa and check out",
+      "Private transfer to Ngurah Rai Airport for your return flight"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, L", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Bliss Surfer Hotel Legian",
+    "2": "Bliss Surfer Hotel Legian",
+    "3": "Bliss Surfer Hotel Legian",
+    "4": "Bliss Surfer Hotel Legian",
+    "5": "Alam Puisi Villa",
+    "6": "Alam Puisi Villa",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Flights, a four star beach hotel and a rice field villa in one price. This is the package I send most often.",
+    "tip": "Four nights on the coast means you can split the island days with a lazy one in between. Ask for a rooftop pool room in Legian and a garden villa in Ubud when we confirm."
+  },
+  "summary": "Seven days with return flights included: four nights in Legian for water sports, Uluwatu at sunset and a full day on Nusa Penida with snorkelling, then two nights in a rice field villa near Ubud by way of the Kintamani highlands.",
+  "included": "Included: return flights from Delhi; 6 nights with daily breakfast; private airport and inter city transfers; water sports with Uluwatu and the Kecak dance; Nusa Penida west coast tour with snorkelling and lunch; Kintamani highlands tour.",
+  "not_included": "Not included: Indonesia visa fees; lunches and dinners other than the one stated; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

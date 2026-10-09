@@ -1,0 +1,113 @@
+{
+  "source_slug": "bali-and-the-beautiful-honeymoon-days",
+  "camel": "baliHoneymoonPirateCruise",
+  "slug": "bali-honeymoon-with-pirate-dinner-cruise",
+  "title": "Bali Honeymoon with Pirate Dinner Cruise",
+  "alt": "Boats at Tanjung Benoa beach in south Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 33012,
+  "route_cities": ["Ubud", "Kintamani", "Kuta", "Tanjung Benoa", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 10, "meals": 9},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Bakung Ubud Resort & Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 2, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing, with lunch included."},
+        {"name": "Ubud art market", "day": 1, "optional": true, "match": "Ubud Art Market", "description": "Two floors of carvings, batik, woven bags and silver in the middle of town, quietest and cheapest when the stalls first open."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights inland to start, with a coffee plantation road up to Kintamani, a waterfall stop and the rice terraces at Tegalalang."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Tanjung Benoa and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Diamond Hotel Kuta, Bali",
+      "hotel_label": "Diamond Hotel Kuta",
+      "accom": "3 nights \u00b7 Breakfast and one main meal daily \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet pool hotel walking distance from Kuta beach",
+      "activities": [
+        {"name": "Balinese massage for two", "day": 3, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage for both of you on your first afternoon in Kuta, warm oil and long pressure strokes at a private spa."},
+        {"name": "Water sports with the pirate dinner cruise", "day": 4, "optional": false, "match": "Water Sports in Bali with Pirate Dinner Cruise", "description": "Banana boat, jet ski and parasailing at Tanjung Benoa by day, then the pirate ship cruise in the evening with dinner and a deck show."},
+        {"name": "Nusa Penida west coast by speedboat", "day": 5, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across to Nusa Penida for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, the island's four best known stops."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the coast with a couples massage, water sports at Tanjung Benoa, a pirate ship dinner cruise and a full day on Nusa Penida."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and the jungle swing",
+    "3": "Spa day and on to Kuta",
+    "4": "Water sports and pirate cruise",
+    "5": "Nusa Penida and four beaches",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud resort and settle in",
+      "First evening free among the rice fields",
+      "Optional: the art market, Goa Gajah or the bird park"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing, with lunch included"
+    ],
+    "3": [
+      "Breakfast and check out, then private transfer to Kuta",
+      "Check in and a traditional Balinese massage for two",
+      "Afternoon free near the beach",
+      "Dinner at the hotel is included tonight"
+    ],
+    "4": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing with an instructor",
+      "Evening pirate ship cruise with dinner and a deck show",
+      "Back at the hotel late in the evening"
+    ],
+    "5": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Return boat to Bali and dinner at the hotel"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B, L", "3": "B, D", "4": "B, D", "5": "B, D", "6": "B"},
+  "hotel_by_day": {
+    "1": "Bakung Ubud Resort & Villa, Ubud",
+    "2": "Bakung Ubud Resort & Villa, Ubud",
+    "3": "Diamond Hotel Kuta, Bali",
+    "4": "Diamond Hotel Kuta, Bali",
+    "5": "Diamond Hotel Kuta, Bali",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "This is the best value honeymoon we sell. Meals are covered in Kuta, so your spending money goes on the fun.",
+    "tip": "The pirate cruise is a loud, cheerful evening rather than a romantic one, so we usually put it before the Nusa Penida day and keep your last night free for dinner on the beach."
+  },
+  "summary": "Six days for two with meals largely covered: two nights in Ubud for Kintamani and the rice terraces, then three in Kuta with a couples massage, water sports at Tanjung Benoa, a pirate ship dinner cruise and a day on Nusa Penida.",
+  "included": "Included: 5 nights with daily breakfast; breakfast and one main meal daily in Kuta; private airport and inter city transfers; Kintamani and jungle swing tour with lunch; Balinese massage for two; water sports with the pirate dinner cruise; Nusa Penida west coast tour; visa assistance.",
+  "not_included": "Not included: international flights; Indonesia visa fees; meals beyond those stated; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

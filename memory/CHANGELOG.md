@@ -42,3 +42,11 @@
 ## 2026-06 Our retail office page + Thrillophilia batch mode
 - /our-office: banner now "Our retail office" with new pan-India copy; removed head office / Hi Tours India Gurgaon / planning studio copy; Sales and Operations opening times always visible as two cards; map is a shorter rounded card.
 - THRILLOPHILIA_IMPORT.md: added section 0 BATCH MODE (urls file, batches of 10, resume rule, per-link fail fast, single end-of-run gate), section 5B country route table, section 5C new country procedure. Trip page output and report format unchanged.
+
+## 2026-06 Thrillophilia Bali import, batches 1 and 2 (17 trips live)
+Built from 48 user supplied links. Pipeline: extract_batch -> spec json -> build_trip -> register_trip -> check_trip -> apply_card_images -> check_card_images.
+register_trip.py was fixed: the slug registry is tours/tripIndex.js (BY_SLUG), not EgyptDetail.jsx, and country product arrays are multi line.
+Live (all /asien/<slug>/, registered on /asien/indonesia/holidays):
+best-of-bali-with-ubud-and-kuta, magical-bali-holiday-with-flights, luxury-bali-escape-with-mount-batur, bali-honeymoon-with-candlelight-dinner, romantic-bali-honeymoon-with-nusa-penida, bali-adventure-with-rafting-and-nusa-penida, bali-couples-escape-with-night-safari, best-of-bali-honeymoon-with-seminyak, best-of-singapore-and-bali-honeymoon (also on singapore listing), bali-honeymoon-with-pirate-dinner-cruise, romantic-bali-getaway-with-sunset-cruise, best-of-bali-with-flights-and-nusa-penida, grand-bali-holiday-with-safari-and-kecak, short-bali-escape-with-flights, classic-bali-honeymoon-with-bali-swing, highlights-of-bali-with-nusa-penida-and-uluwatu, best-of-bali-with-sunset-cruise
+Skipped, source itinerary has more days than the duration label (needs a decision): uncover-bali (8 days vs 7D), highlights-of-bali (10 days vs 7D, one hotel with 0 photos), bali-honeymoon-special (8 days vs 6D).
+Remaining links: /app/import/urls_b3.txt, urls_b4.txt, urls_b5.txt (28 links, all extracted to /app/import/<slug>/raw.json).

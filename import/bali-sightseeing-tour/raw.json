@@ -1,0 +1,1147 @@
+{
+ "source": "https://www.thrillophilia.com/tours/bali-sightseeing-tour",
+ "captured_at": "2026-10-09",
+ "title": "Bali Adventure with White Water Rafting",
+ "slug": "bali-sightseeing-tour",
+ "duration": "5D/4N",
+ "city_split": [
+  [
+   "Ubud",
+   5
+  ]
+ ],
+ "country": "Bali",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Featured",
+ "highlights": [
+  "Discover Bali's serene rice terraces, a UNESCO World Heritage site, and witness the breathtaking beauty of lush landscapes carved into hillsides.",
+  "Admire the breathtaking views of Mount Batur and its stunning crater lake while experiencing the serene beauty of this charming highland village.",
+  "Explore the historical Ubud Palace, a cultural landmark known for its intricate Balinese architecture and connection to the island's royal heritage.",
+  "Ride through sandy shores and rugged terrains on an exciting ATV adventure, offering an exhilarating way to experience Bali’s coastal beauty.",
+  "Relax on the golden sands of Padang Padang Beach, a surfer's paradise famous for its crystal-clear waters and dramatic cliffside views."
+ ],
+ "overview": "About the Tour:\nEscape the crowds and immerse yourself in the heart of Bali in Ubud. Known for its artistic charm and serene atmosphere, Ubud offers a perfect blend of culture, nature, and relaxation. Explore lush rice terraces, visit sacred temples, and discover hidden waterfalls. Explore iconic landmarks like Tegallalang Rice Terraces and the Monkey Forest. Discover the artistic soul of Bali through local galleries and workshops. Indulge in authentic Balinese cuisine, shop for unique handicrafts, and witness traditional dance performances. Whether you're seeking adventure, relaxation, or cultural immersion, Ubud promises an unforgettable experience.",
+ "price_per_adult": 38700,
+ "struck_price": 65196,
+ "currency": "INR",
+ "inr_price": 38700,
+ "inclusions": [
+  "Transfer from Bali Airport to Deluxe Hotel",
+  "4 nights stay in Ubud with breakfast",
+  "Kintamani with Coffee Plantations and Ubud Palace on a Private basis",
+  "Bali ATV Bike Ride and White Water Rafting with Lunch - ATV Bike Ride | White Water Rafting | Bali Jungle Swing with Lunch on a Private basis",
+  "Uluwatu Sunset Tour with Padang Padang Beach - Half Day Padang Padang Beach | Uluwatu Sunset tour on a Private basis",
+  "Transfer from Deluxe Hotel to Ngurah Rai"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions"
+ ],
+ "know_before_you_go": [
+  "Thrillophilia reserves the right to rearrange the itinerary due to any kind of disturbance that occurred (i.e weather condition, political condition or any others) without changing the total number of days and without compromising any service.",
+  "ID proof is mandatory for each individual guest at the time of booking, and also upon arrival. PAN card will not be considered as a valid address proof. All foreign nationals must carry their passport as a proof of identity.",
+  "International/domestic flight tickets are not included in the package.",
+  "It is recommended that you purchase travel insurance at your own cost.",
+  "Prices may fluctuate with any change in services/hotels. The difference in the cost shall be borne by the client in case of any amendment in the package due to an increase in the number of guests.",
+  "The hotels are subject to availability. In case they are not available, the travellers will be accommodated in a property of similar standard.",
+  "Any breakage or damage of any items at the stay property will be charged at actuals.",
+  "Images are for representation purposes only."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Ubud | Day at Leisure ",
+   "city": "Ubud",
+   "desc": "Welcome to Bali! Upon arrival at Ngurah Rai Airport, you'll be transferred to your hotel. Check in and spend the day at your leisure. Today, you can explore Goa Gajah, an ancient elephant cave with intricate carvings. Discover Bali Bird Park, home to over 1,000 birds from around the world. Explore the Neka Art Museum to view traditional and contemporary Balinese art. You can enjoy thrilling rides at Waterbom Waterpark. Later, return to your hotel for an overnight stay.",
+   "leisure": true,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan, SUV or similar",
+     "label": "",
+     "desc": "SUV, Sedan or similar will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "The Evitel Resort, Ubud"
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Attraction",
+     "title": "Waterbom Waterpark",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/4qzfjlhp9rb7opyc8dzvjjpgi0cy_1470896048_9396103363_d354fd2bc4_b.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Goa Gajah",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/kmleb6ur2b7j83f6gt2jg3z1kaw0_1470727921_Goa_Gajah_Front.JPG"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bali Bird Park",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/blc7rv8lvishrrzjuxwmcwyxm2ev_1464182679_Bali-Bird-Park-42414.jpg",
+      "https://media1.thrillophilia.com/filestore/7ri358l6jhxullyjetpvwqwbiat2_shutterstock_173794667.jpg",
+      "https://media1.thrillophilia.com/filestore/toexr1w94ptt7qijzos5uq26trt5_shutterstock_1316340080.jpg",
+      "https://media1.thrillophilia.com/filestore/laqbtgy63fkdfl6malq4mysej7id_shutterstock_2133566697.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Blanco Renaissance Museum",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/8pw6xmdbulw0nv2o1mn4hytq1m9j_1470728820_Antonio_Blanco_le_mus_C3_A9e.JPG"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Neka Art Museum",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/8bm13clac8rshjxo7jsvhae8gb18_1464184881_NEKA_Art_Museum.JPG"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Kintamani Village Tour with Coffee Plantation and Ubud Palace",
+   "city": "Ubud",
+   "desc": "Today, you will be transferred to explore Ubud, starting with a visit to Kintamani Village, famous for its breathtaking views of Mount Batur and its volcanic surroundings. You can then head to the coffee plantations and learn about the process of making Luwak coffee. Next, visit Ubud Palace, the historic home of Ubud’s royal family. You can also shop for traditional arts and crafts at Ubud Market. Later, you'll be driven to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan, SUV or similar",
+     "label": "",
+     "desc": "SUV, Sedan or similar will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Kintamani with Coffee Plantations and Ubud Palace on a Private basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/wzc294pdhssd5mnlos094w06oqw1_view-kintamani-tours_20160326064036.jpg",
+      "https://media1.thrillophilia.com/filestore/kvoca6fp0dtq9tx34vibq62h4f80_shutterstock_1745717843.jpg",
+      "https://media1.thrillophilia.com/filestore/a62c2zy4si2iztni5oo2bq0s6xlv_1464771249_kint2.jpg",
+      "https://media1.thrillophilia.com/filestore/f3ynhwq0zwga41sengut5l275ly1_shutterstock_454932379.jpg",
+      "https://media1.thrillophilia.com/filestore/4bm9wdm9oabdygp669vs36j1636r_shutterstock_1041613789.jpg",
+      "https://media1.thrillophilia.com/filestore/v236kip36vovvgz130hsw1we6rcg_shutterstock_175907606.jpg",
+      "https://media1.thrillophilia.com/filestore/d2hwj275pkvemyvq680oenhn0iqe_shutterstock_1724300611.jpg",
+      "https://media1.thrillophilia.com/filestore/ew4gyp2wl7v8x518s6wq0devx64u_shutterstock_1236060937.jpg",
+      "https://media1.thrillophilia.com/filestore/yr3fpbu13cn8stfjp0zts9b4f588_1470742724_ubud-royal-palace.jpg",
+      "https://media1.thrillophilia.com/filestore/p1tzfipjpmq6677grx16krlrwx9v_shutterstock_243349891.jpg",
+      "https://media1.thrillophilia.com/filestore/jrblx4blirvruv63sujojwshxopu_shutterstock_2228776841.jpg",
+      "https://media1.thrillophilia.com/filestore/9x55lih3g7bdia3uwj17gxqtaizg_shutterstock_2229214939.jpg",
+      "https://media1.thrillophilia.com/filestore/fituk1t9968dv382m8vq998q8jyu_shutterstock_2232100949.jpg",
+      "https://media1.thrillophilia.com/filestore/s2xmfuay34243sefryz3tmjndwmm_shutterstock_2017587758.jpg",
+      "https://media1.thrillophilia.com/filestore/0jvjotjk6d8ehikcc9djtaatmx6o_ezgif-2-b317c67e3b.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Ubud Royal Palace",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yr3fpbu13cn8stfjp0zts9b4f588_1470742724_ubud-royal-palace.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Kintamani Highlands",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/p1tzfipjpmq6677grx16krlrwx9v_shutterstock_243349891.jpg",
+      "https://media1.thrillophilia.com/filestore/jrblx4blirvruv63sujojwshxopu_shutterstock_2228776841.jpg",
+      "https://media1.thrillophilia.com/filestore/9x55lih3g7bdia3uwj17gxqtaizg_shutterstock_2229214939.jpg",
+      "https://media1.thrillophilia.com/filestore/fituk1t9968dv382m8vq998q8jyu_shutterstock_2232100949.jpg",
+      "https://media1.thrillophilia.com/filestore/s2xmfuay34243sefryz3tmjndwmm_shutterstock_2017587758.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Satria Coffee Plantation",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/0jvjotjk6d8ehikcc9djtaatmx6o_ezgif-2-b317c67e3b.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Bali ATV Bike Ride and White Water Rafting",
+   "city": "Ubud",
+   "desc": "Get ready for an action-filled day with a transfer from the hotel in Ubud. Begin with an adrenaline-pumping ATV bike ride through Bali's rugged terrain. Later, enjoy a whitewater rafting adventure on the Ayung River through rapids and admire the stunning scenery. Enjoy a swing high above the jungle on the Bali Swing, offering spectacular vistas. Also, savor a delectable Balinese lunch, tasting authentic flavors. Conclude your day by getting transferred to the hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan, SUV or similar",
+     "label": "",
+     "desc": "SUV, Sedan or similar will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Bali ATV Bike Ride and White Water Rafting with Lunch - ATV Bike Ride | White Water Rafting | Bali Jungle Swing with Lunch on a Private basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/wks4cbgv6wmu4rczwoeiz1tz4vhb_shutterstock_2214240181.jpg",
+      "https://media1.thrillophilia.com/filestore/fn9me0x99ydcqbgpl9q96474iknq_shutterstock_1157444725.jpg",
+      "https://media1.thrillophilia.com/filestore/hxnduq4k85kgll2wvscmv0g7s1s0_shutterstock_1366106609.jpg",
+      "https://media1.thrillophilia.com/filestore/f3c6fwccbm8milu6zu7gq4uw404o_shutterstock_1470518579.jpg",
+      "https://media1.thrillophilia.com/filestore/4xy14jucn06uz5fy15c2bz2ue3nd_shutterstock_1513778909-min.jpg",
+      "https://media1.thrillophilia.com/filestore/6jfvpgljudxb84lkdotvmsafgqdg_shutterstock_2214240191.jpg",
+      "https://media1.thrillophilia.com/filestore/bzqbhch936mfjuljukoamroh21pr_shutterstock_1789215083.jpg",
+      "https://media1.thrillophilia.com/filestore/h07hpe08grb53ngw0opaki541jad_shutterstock_1673148079.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 4,
+   "title": "Padang Padang Beach with Uluwatu Sunset Tour and Kecak Dance Show",
+   "city": "Ubud",
+   "desc": "Start your day with a transfer to Padang Padang Beach, famous for its clear turquoise waters and soft sandy shores. You can relax or enjoy swimming in this stunning paradise. Next, head to Uluwatu Temple, an ancient sea temple perched on dramatic cliffs, offering panoramic views of the Indian Ocean. At sunset, you can witness the traditional Kecak dance performance, showcasing Balinese culture. Later, you'll be transferred to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan, SUV or similar",
+     "label": "",
+     "desc": "SUV, Sedan or similar will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Uluwatu Sunset Tour with Padang Padang Beach - Half Day Padang Padang Beach | Uluwatu Sunset tour on a Private basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/55zrzs76oi5ijmcfe6pam0ngqzkk_shutterstock_1453687076.jpg",
+      "https://media1.thrillophilia.com/filestore/pvlpnm2s4304dmzpyno2xgspbblr_shutterstock_2234608763.jpg",
+      "https://media1.thrillophilia.com/filestore/xfgm9gl63viltlk9dwmesalyif6c_shutterstock_1429062791.jpg",
+      "https://media1.thrillophilia.com/filestore/1thohmmi8buxhim5dn5yfnpqg727_shutterstock_1285953226.jpg",
+      "https://media1.thrillophilia.com/filestore/2pg1h2xmjhrybvau2l6ss0861nnm_shutterstock_2223833793.jpg",
+      "https://media1.thrillophilia.com/filestore/gqz4khetf7zeeos8sp06ye8xy9ki_shutterstock_2223833749.jpg",
+      "https://media1.thrillophilia.com/filestore/i9r2cgqfc3s0gshkp4whndnguhwk_shutterstock_527971615.jpg",
+      "https://media1.thrillophilia.com/filestore/nj6vc0rtywoyp2nxv9ycmbw2of84_shutterstock_1716389701.jpg",
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Uluwatu Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 5,
+   "title": "Departure Day",
+   "city": "Ubud",
+   "desc": "In the morning, check out of your hotel and board your transfer to the Ngurah Rai Airport for your onward journey. This marks the end of your trip.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan, SUV or similar",
+     "label": "",
+     "desc": "Sedan, SUV or similar will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Bakung Ubud Resort & Villa",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4,
+   "city": "Ubud",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 4,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/q6zgelz98v5kbftom1frp3ue32g1_173822791.jpg",
+    "https://media1.thrillophilia.com/filestore/iz5cujufuwfqtntxg636u4gy8tuv_173822761.jpg",
+    "https://media1.thrillophilia.com/filestore/hcvkzwnjgr94hwetf4dl0oket9t9_173822678.jpg",
+    "https://media1.thrillophilia.com/filestore/upfjfdwka8me9tpttnoucqns6bhl_173822709.jpg",
+    "https://media1.thrillophilia.com/filestore/5w92c9d49j3xgci27zz4ci5v9hju_173822673.jpg",
+    "https://media1.thrillophilia.com/filestore/x2gjvzwlcxzxepv8oj66z4kya8rw_173822721.jpg",
+    "https://media1.thrillophilia.com/filestore/6dmfjxqmk42rm2yuboamz9edv1rt_173822779.jpg",
+    "https://media1.thrillophilia.com/filestore/j9qn1ykahshgxluwm6zed5j4fgo4_173825040.jpg",
+    "https://media1.thrillophilia.com/filestore/980vtfp7zvo1jb1y0sf4g6sro4k1_59584268.jpg",
+    "https://media1.thrillophilia.com/filestore/6gdmnd7cj4egkuk7hgepou1we1bo_173866707.jpg",
+    "https://media1.thrillophilia.com/filestore/nbus5yxsh83tm8tz0qt283avv8ua_173822675.jpg",
+    "https://media1.thrillophilia.com/filestore/uhhu92jn9usu53pjc2llrkm2vqqp_173822684.jpg",
+    "https://media1.thrillophilia.com/filestore/z32dunr9mw486f91h5balma9mvei_173867651.jpg",
+    "https://media1.thrillophilia.com/filestore/tch6q3pwlyue02esd15qrl2hew08_173867130.jpg",
+    "https://media1.thrillophilia.com/filestore/hii71e6wq2ldnjskkz8cw4luo0z2_173822763.jpg",
+    "https://media1.thrillophilia.com/filestore/sqyres45da5veqed7cte9x086102_173822785.jpg"
+   ]
+  },
+  {
+   "name": "The Evitel Resort, Ubud",
+   "stars": 3,
+   "category": "Standard",
+   "tripadvisor": 4,
+   "city": "Ubud",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 4,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ba9q6ilkkfrs17dwcd7t4o2jlnw7_544222a_hb_l_001.jpg",
+    "https://media1.thrillophilia.com/filestore/kdtoufjopaqr4zlhjeg8sgddtqbp_3ef6bd82118e11e995270242ac110002.jpg",
+    "https://media1.thrillophilia.com/filestore/suvlxn8iq0apcd2i9sbxw72wlwe8_201603100433021314-e06ffdfa118d11e9a8da0242ac110002.jpg",
+    "https://media1.thrillophilia.com/filestore/k6kn79meafnlfq2hu9yiwrnke8c7_1186057af9f111e7b18a0a209fbd0127.png",
+    "https://media1.thrillophilia.com/filestore/y3z6xu1i8k8trmq86e0v60yv39ge_243269626.jpg",
+    "https://media1.thrillophilia.com/filestore/bhk91cj5w5706as6hvsx6q9t6ccx_201603100433021314-f6c1d676627511ee98960a58a9feac02.jpg",
+    "https://media1.thrillophilia.com/filestore/c2myz7lwy2kv9qq69rpt5bmaw1us_90cf9df4118e11e9b1b60242ac110002.jpg",
+    "https://media1.thrillophilia.com/filestore/um91jooaw2fczb8nb0uxe9t2fyha_201603100433021314-0dac89a0118911e9b1b60242ac110002.jpg",
+    "https://media1.thrillophilia.com/filestore/qfg32dug40z3w3f7v89dnbc3zy4w_ba9e564af9f011e79bff02755708f0b3.jpg",
+    "https://media1.thrillophilia.com/filestore/nn3tqco2723u9nll3muu4j2qi8fi_2%20(3).jpg"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "Waterbom Waterpark",
+   "day": 1,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/4qzfjlhp9rb7opyc8dzvjjpgi0cy_1470896048_9396103363_d354fd2bc4_b.jpg"
+   ]
+  },
+  {
+   "name": "Goa Gajah",
+   "day": 1,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/kmleb6ur2b7j83f6gt2jg3z1kaw0_1470727921_Goa_Gajah_Front.JPG"
+   ]
+  },
+  {
+   "name": "Bali Bird Park",
+   "day": 1,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/blc7rv8lvishrrzjuxwmcwyxm2ev_1464182679_Bali-Bird-Park-42414.jpg",
+    "https://media1.thrillophilia.com/filestore/7ri358l6jhxullyjetpvwqwbiat2_shutterstock_173794667.jpg",
+    "https://media1.thrillophilia.com/filestore/toexr1w94ptt7qijzos5uq26trt5_shutterstock_1316340080.jpg",
+    "https://media1.thrillophilia.com/filestore/laqbtgy63fkdfl6malq4mysej7id_shutterstock_2133566697.jpg"
+   ]
+  },
+  {
+   "name": "Blanco Renaissance Museum",
+   "day": 1,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/8pw6xmdbulw0nv2o1mn4hytq1m9j_1470728820_Antonio_Blanco_le_mus_C3_A9e.JPG"
+   ]
+  },
+  {
+   "name": "Neka Art Museum",
+   "day": 1,
+   "city": "Ubud",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/8bm13clac8rshjxo7jsvhae8gb18_1464184881_NEKA_Art_Museum.JPG"
+   ]
+  },
+  {
+   "name": "Kintamani with Coffee Plantations and Ubud Palace on a Private basis",
+   "day": 2,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    9,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/wzc294pdhssd5mnlos094w06oqw1_view-kintamani-tours_20160326064036.jpg",
+    "https://media1.thrillophilia.com/filestore/kvoca6fp0dtq9tx34vibq62h4f80_shutterstock_1745717843.jpg",
+    "https://media1.thrillophilia.com/filestore/a62c2zy4si2iztni5oo2bq0s6xlv_1464771249_kint2.jpg",
+    "https://media1.thrillophilia.com/filestore/f3ynhwq0zwga41sengut5l275ly1_shutterstock_454932379.jpg",
+    "https://media1.thrillophilia.com/filestore/4bm9wdm9oabdygp669vs36j1636r_shutterstock_1041613789.jpg",
+    "https://media1.thrillophilia.com/filestore/v236kip36vovvgz130hsw1we6rcg_shutterstock_175907606.jpg",
+    "https://media1.thrillophilia.com/filestore/d2hwj275pkvemyvq680oenhn0iqe_shutterstock_1724300611.jpg",
+    "https://media1.thrillophilia.com/filestore/ew4gyp2wl7v8x518s6wq0devx64u_shutterstock_1236060937.jpg",
+    "https://media1.thrillophilia.com/filestore/yr3fpbu13cn8stfjp0zts9b4f588_1470742724_ubud-royal-palace.jpg",
+    "https://media1.thrillophilia.com/filestore/p1tzfipjpmq6677grx16krlrwx9v_shutterstock_243349891.jpg",
+    "https://media1.thrillophilia.com/filestore/jrblx4blirvruv63sujojwshxopu_shutterstock_2228776841.jpg",
+    "https://media1.thrillophilia.com/filestore/9x55lih3g7bdia3uwj17gxqtaizg_shutterstock_2229214939.jpg",
+    "https://media1.thrillophilia.com/filestore/fituk1t9968dv382m8vq998q8jyu_shutterstock_2232100949.jpg",
+    "https://media1.thrillophilia.com/filestore/s2xmfuay34243sefryz3tmjndwmm_shutterstock_2017587758.jpg",
+    "https://media1.thrillophilia.com/filestore/0jvjotjk6d8ehikcc9djtaatmx6o_ezgif-2-b317c67e3b.jpg"
+   ]
+  },
+  {
+   "name": "Ubud Royal Palace",
+   "day": 2,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yr3fpbu13cn8stfjp0zts9b4f588_1470742724_ubud-royal-palace.jpg"
+   ]
+  },
+  {
+   "name": "Kintamani Highlands",
+   "day": 2,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/p1tzfipjpmq6677grx16krlrwx9v_shutterstock_243349891.jpg",
+    "https://media1.thrillophilia.com/filestore/jrblx4blirvruv63sujojwshxopu_shutterstock_2228776841.jpg",
+    "https://media1.thrillophilia.com/filestore/9x55lih3g7bdia3uwj17gxqtaizg_shutterstock_2229214939.jpg",
+    "https://media1.thrillophilia.com/filestore/fituk1t9968dv382m8vq998q8jyu_shutterstock_2232100949.jpg",
+    "https://media1.thrillophilia.com/filestore/s2xmfuay34243sefryz3tmjndwmm_shutterstock_2017587758.jpg"
+   ]
+  },
+  {
+   "name": "Satria Coffee Plantation",
+   "day": 2,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/0jvjotjk6d8ehikcc9djtaatmx6o_ezgif-2-b317c67e3b.jpg"
+   ]
+  },
+  {
+   "name": "Bali ATV Bike Ride and White Water Rafting with Lunch - ATV Bike Ride | White Water Rafting | Bali Jungle Swing with Lunch on a Private basis",
+   "day": 3,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    6,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/wks4cbgv6wmu4rczwoeiz1tz4vhb_shutterstock_2214240181.jpg",
+    "https://media1.thrillophilia.com/filestore/fn9me0x99ydcqbgpl9q96474iknq_shutterstock_1157444725.jpg",
+    "https://media1.thrillophilia.com/filestore/hxnduq4k85kgll2wvscmv0g7s1s0_shutterstock_1366106609.jpg",
+    "https://media1.thrillophilia.com/filestore/f3c6fwccbm8milu6zu7gq4uw404o_shutterstock_1470518579.jpg",
+    "https://media1.thrillophilia.com/filestore/4xy14jucn06uz5fy15c2bz2ue3nd_shutterstock_1513778909-min.jpg",
+    "https://media1.thrillophilia.com/filestore/6jfvpgljudxb84lkdotvmsafgqdg_shutterstock_2214240191.jpg",
+    "https://media1.thrillophilia.com/filestore/bzqbhch936mfjuljukoamroh21pr_shutterstock_1789215083.jpg",
+    "https://media1.thrillophilia.com/filestore/h07hpe08grb53ngw0opaki541jad_shutterstock_1673148079.jpg"
+   ]
+  },
+  {
+   "name": "Uluwatu Sunset Tour with Padang Padang Beach - Half Day Padang Padang Beach | Uluwatu Sunset tour on a Private basis",
+   "day": 4,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    6,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/55zrzs76oi5ijmcfe6pam0ngqzkk_shutterstock_1453687076.jpg",
+    "https://media1.thrillophilia.com/filestore/pvlpnm2s4304dmzpyno2xgspbblr_shutterstock_2234608763.jpg",
+    "https://media1.thrillophilia.com/filestore/xfgm9gl63viltlk9dwmesalyif6c_shutterstock_1429062791.jpg",
+    "https://media1.thrillophilia.com/filestore/1thohmmi8buxhim5dn5yfnpqg727_shutterstock_1285953226.jpg",
+    "https://media1.thrillophilia.com/filestore/2pg1h2xmjhrybvau2l6ss0861nnm_shutterstock_2223833793.jpg",
+    "https://media1.thrillophilia.com/filestore/gqz4khetf7zeeos8sp06ye8xy9ki_shutterstock_2223833749.jpg",
+    "https://media1.thrillophilia.com/filestore/i9r2cgqfc3s0gshkp4whndnguhwk_shutterstock_527971615.jpg",
+    "https://media1.thrillophilia.com/filestore/nj6vc0rtywoyp2nxv9ycmbw2of84_shutterstock_1716389701.jpg",
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+   ]
+  },
+  {
+   "name": "Uluwatu Temple",
+   "day": 4,
+   "city": "Ubud",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/37bzldr36014333a9z2fvserixu2_shutterstock_1789215083.jpg",
+   "caption": "Lush landscape of Ayung River, Bali",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3xjedee15hlqxzxi1levuip0zugc_shutterstock_2214240191.jpg",
+   "caption": "Tourists enjoying ATV ride in Bali",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c5k43fq69pnw5bzqig37819cfnys_shutterstock_1470518147.jpg",
+   "caption": "Tourist sitting in a bird nest at Bali",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/kfil9duwr03opb7oe51kfmubytru_shutterstock_1433767703.jpg",
+   "caption": "Aerial view of Pura Luhur Uluwatu temple at sunrise",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tdg8fkxdqrckc4gk57heig2gqpm2_shutterstock_2214250045.jpg",
+   "caption": "White Water Rafting, Ayung River",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yaeymy22v8kl5chmgxskbpax3zcw_shutterstock_1085549162.jpg",
+   "caption": "Silhouettes of people enjoying on Padang Padang beach",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5ipe0laq1c0uytcm79ioy61ar7rn_shutterstock_1236060937.jpg",
+   "caption": "Entrance leading to Ubud Palace",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w1px84o4z7nt9y1ebbf4mjcv8lcd_shutterstock_1724300611.jpg",
+   "caption": "Handicrafts at Ubud market",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/q6zgelz98v5kbftom1frp3ue32g1_173822791.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/iz5cujufuwfqtntxg636u4gy8tuv_173822761.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hcvkzwnjgr94hwetf4dl0oket9t9_173822678.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/upfjfdwka8me9tpttnoucqns6bhl_173822709.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5w92c9d49j3xgci27zz4ci5v9hju_173822673.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x2gjvzwlcxzxepv8oj66z4kya8rw_173822721.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6dmfjxqmk42rm2yuboamz9edv1rt_173822779.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/j9qn1ykahshgxluwm6zed5j4fgo4_173825040.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/980vtfp7zvo1jb1y0sf4g6sro4k1_59584268.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6gdmnd7cj4egkuk7hgepou1we1bo_173866707.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nbus5yxsh83tm8tz0qt283avv8ua_173822675.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uhhu92jn9usu53pjc2llrkm2vqqp_173822684.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z32dunr9mw486f91h5balma9mvei_173867651.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tch6q3pwlyue02esd15qrl2hew08_173867130.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hii71e6wq2ldnjskkz8cw4luo0z2_173822763.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sqyres45da5veqed7cte9x086102_173822785.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ba9q6ilkkfrs17dwcd7t4o2jlnw7_544222a_hb_l_001.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/kdtoufjopaqr4zlhjeg8sgddtqbp_3ef6bd82118e11e995270242ac110002.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/suvlxn8iq0apcd2i9sbxw72wlwe8_201603100433021314-e06ffdfa118d11e9a8da0242ac110002.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/k6kn79meafnlfq2hu9yiwrnke8c7_1186057af9f111e7b18a0a209fbd0127.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/y3z6xu1i8k8trmq86e0v60yv39ge_243269626.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bhk91cj5w5706as6hvsx6q9t6ccx_201603100433021314-f6c1d676627511ee98960a58a9feac02.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c2myz7lwy2kv9qq69rpt5bmaw1us_90cf9df4118e11e9b1b60242ac110002.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/um91jooaw2fczb8nb0uxe9t2fyha_201603100433021314-0dac89a0118911e9b1b60242ac110002.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qfg32dug40z3w3f7v89dnbc3zy4w_ba9e564af9f011e79bff02755708f0b3.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nn3tqco2723u9nll3muu4j2qi8fi_2%20(3).jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wzc294pdhssd5mnlos094w06oqw1_view-kintamani-tours_20160326064036.jpg",
+   "caption": "Mount Batur",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/kvoca6fp0dtq9tx34vibq62h4f80_shutterstock_1745717843.jpg",
+   "caption": "Ubud Palace",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a62c2zy4si2iztni5oo2bq0s6xlv_1464771249_kint2.jpg",
+   "caption": "Mount Batur View",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f3ynhwq0zwga41sengut5l275ly1_shutterstock_454932379.jpg",
+   "caption": "Coffee Tasting ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4bm9wdm9oabdygp669vs36j1636r_shutterstock_1041613789.jpg",
+   "caption": "Roasted Luwak Coffee",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v236kip36vovvgz130hsw1we6rcg_shutterstock_175907606.jpg",
+   "caption": "Luwak Coffee Making",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/d2hwj275pkvemyvq680oenhn0iqe_shutterstock_1724300611.jpg",
+   "caption": "Ubud Market",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ew4gyp2wl7v8x518s6wq0devx64u_shutterstock_1236060937.jpg",
+   "caption": "Ubud Palace",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wks4cbgv6wmu4rczwoeiz1tz4vhb_shutterstock_2214240181.jpg",
+   "caption": "ATV Ride",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fn9me0x99ydcqbgpl9q96474iknq_shutterstock_1157444725.jpg",
+   "caption": "Bali Swing",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hxnduq4k85kgll2wvscmv0g7s1s0_shutterstock_1366106609.jpg",
+   "caption": "White Water Rafting, Ayung River",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f3c6fwccbm8milu6zu7gq4uw404o_shutterstock_1470518579.jpg",
+   "caption": "Bali Nest",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4xy14jucn06uz5fy15c2bz2ue3nd_shutterstock_1513778909-min.jpg",
+   "caption": "Balinese Local Lunch",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6jfvpgljudxb84lkdotvmsafgqdg_shutterstock_2214240191.jpg",
+   "caption": "ATV Ride",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bzqbhch936mfjuljukoamroh21pr_shutterstock_1789215083.jpg",
+   "caption": "Ayung River",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h07hpe08grb53ngw0opaki541jad_shutterstock_1673148079.jpg",
+   "caption": "Bali Swing",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/55zrzs76oi5ijmcfe6pam0ngqzkk_shutterstock_1453687076.jpg",
+   "caption": "Padang Padang Beach ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pvlpnm2s4304dmzpyno2xgspbblr_shutterstock_2234608763.jpg",
+   "caption": "Padang Padang Beach ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xfgm9gl63viltlk9dwmesalyif6c_shutterstock_1429062791.jpg",
+   "caption": "Crystal Clear Waters at Padang Padang Beach",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1thohmmi8buxhim5dn5yfnpqg727_shutterstock_1285953226.jpg",
+   "caption": "Uluwatu Beach",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2pg1h2xmjhrybvau2l6ss0861nnm_shutterstock_2223833793.jpg",
+   "caption": "Uluwatu Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gqz4khetf7zeeos8sp06ye8xy9ki_shutterstock_2223833749.jpg",
+   "caption": "Uluwatu Temple on the Cliff",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i9r2cgqfc3s0gshkp4whndnguhwk_shutterstock_527971615.jpg",
+   "caption": "Padang Padang Beach ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nj6vc0rtywoyp2nxv9ycmbw2of84_shutterstock_1716389701.jpg",
+   "caption": "Padang Padang Beach ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Ubud"
+  }
+ ],
+ "dest_gallery": {
+  "Ubud": [
+   "https://media1.thrillophilia.com/filestore/9gr4ao6781z2k027hdqu4fssznlx_shutterstock_1059984695.jpg",
+   "https://media1.thrillophilia.com/filestore/57aawesqzlg4nmxhg88d3bdmsze9_Ubud-3.jpg",
+   "https://media1.thrillophilia.com/filestore/ks4p5sp0hujf9j9p5ny6lewe5iuf_shutterstock_758638468.jpg",
+   "https://media1.thrillophilia.com/filestore/yuvqwpy0ygrdyymcob5uhszpa3go_Ubud-2.jpg",
+   "https://media1.thrillophilia.com/filestore/vaf9vgs1dkk4fpuu0r78nxnehhat_shutterstock_1507517912%20(1).jpg",
+   "https://media1.thrillophilia.com/filestore/5t4monlh12ki9eu3vkpb3264k212_shutterstock_1463319173%20(1).jpg",
+   "https://media1.thrillophilia.com/filestore/jfgxmy9291779dt23uiy471h7zz1_shutterstock_1724300611.jpg",
+   "https://media1.thrillophilia.com/filestore/yoldjsp1frobz5bhu7698525831a_Ubud-1.jpg",
+   "https://media1.thrillophilia.com/filestore/8nznsvvkw8k3re558a9phmzu8azc_Ubud-5.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/37bzldr36014333a9z2fvserixu2_shutterstock_1789215083.jpg"
+ ]
+}

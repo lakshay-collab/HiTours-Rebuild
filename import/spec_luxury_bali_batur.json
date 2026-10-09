@@ -1,0 +1,123 @@
+{
+  "source_slug": "7-days-luxurious-getaway-to-bali",
+  "camel": "luxuryBaliEscapeMountBatur",
+  "slug": "luxury-bali-escape-with-mount-batur",
+  "title": "Luxury Bali Escape with Mount Batur",
+  "alt": "Sunrise over the crater rim of Mount Batur, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and private guided tours",
+  "tag": "Luxury",
+  "tags": ["Luxury", "Adventure"],
+  "price": 39188,
+  "route_cities": ["Kuta", "Uluwatu", "Ubud", "Mount Batur", "Mount Agung"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 8, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Bintang Bali Resort, Kuta",
+      "hotel_label": "Bintang Bali Resort",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 5\u2605 \u00b7 Beachfront resort on Tuban beach with three pools",
+      "activities": [
+        {"name": "Uluwatu sunset with Padang Padang", "day": 2, "optional": false, "match": "Uluwatu Sunset", "description": "A private half day along the southern cliffs: the cove at Padang Padang beach, then Uluwatu temple perched above the surf as the sun goes down."},
+        {"name": "Kuta beach and Kuta Square", "day": 1, "optional": true, "match": "Kuta Square", "description": "The long surf beach on your doorstep, with boards for hire, and the shops, bakeries and cafes of Kuta Square a few streets inland."}
+      ],
+      "program": {"name": "Kuta", "description": "Two nights beachfront in the south to begin, with an afternoon along the cliffs at Padang Padang and Uluwatu temple for sunset."}
+    },
+    {
+      "letter": "B",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Mount Batur and Mount Agung",
+      "days": [3, 4, 5, 6, 7],
+      "dayLabel": "Day 3 to 7",
+      "hotel": "The Payogan Villa Resort & Spa, Ubud",
+      "hotel_label": "The Payogan Villa Resort & Spa",
+      "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Villa resort in the valley north of Ubud town",
+      "activities": [
+        {"name": "Central Bali with Tirta Empul", "day": 3, "optional": false, "match": "Central Bali Sightseeing", "description": "A private tour through central Bali: the Tegalalang rice terraces, Tegenungan waterfall and the holy spring temple at Tirta Empul."},
+        {"name": "Mount Batur sunrise trek", "day": 4, "optional": false, "match": "Mount Batur", "description": "A guided climb up the volcano in the dark to reach the rim for sunrise, with breakfast cooked in the steam vents at the top."},
+        {"name": "Mount Agung and Besakih temple", "day": 5, "optional": false, "match": "Mount Agung", "description": "A private day on the slopes of Bali's highest volcano, taking in Besakih, the mother temple, and the water gardens at Lempuyang."},
+        {"name": "Balinese massage in Ubud", "day": 6, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage with warm oil and long pressure strokes, booked privately at a spa in Ubud on your free day."}
+      ],
+      "program": {"name": "Ubud", "description": "Four nights in a valley villa with two volcano days, the holy spring temple at Tirta Empul and a spa afternoon to finish."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Padang Padang and Uluwatu",
+    "3": "Central Bali and on to Ubud",
+    "4": "Mount Batur at sunrise",
+    "5": "Mount Agung and Besakih",
+    "6": "Spa day in Ubud",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your beachfront resort in Kuta",
+      "Rest of the day free by the pool or on the sand",
+      "Optional: Kuta Square, the night market or a sunset surf"
+    ],
+    "2": [
+      "Breakfast, then a private half day to the southern cliffs",
+      "Padang Padang beach in its narrow limestone cove",
+      "Uluwatu temple above the surf as the sun drops",
+      "Optional: the Kecak fire dance in the temple amphitheatre"
+    ],
+    "3": [
+      "Breakfast and check out, then private transfer up to Ubud",
+      "Tegalalang rice terraces and Tegenungan waterfall",
+      "The holy spring temple at Tirta Empul",
+      "Check in at your villa resort in the Ubud valley"
+    ],
+    "4": [
+      "Very early start for the guided climb up Mount Batur",
+      "Reach the crater rim in time for sunrise over the lake",
+      "Breakfast cooked in the volcanic steam at the top",
+      "Back at the villa by late morning for a slow afternoon"
+    ],
+    "5": [
+      "Breakfast, then a private day on the slopes of Mount Agung",
+      "Besakih, the mother temple of Bali, on the mountainside",
+      "The water gardens and split gate at Lempuyang",
+      "Optional: the old village lanes of Penglipuran"
+    ],
+    "6": [
+      "Breakfast and a free morning at the villa",
+      "A traditional Balinese massage at an Ubud spa",
+      "Optional: the Monkey Forest or the Saraswati water temple",
+      "Optional: dinner above the valley at a hillside restaurant"
+    ],
+    "7": [
+      "Breakfast at the villa and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Bintang Bali Resort, Kuta",
+    "2": "Bintang Bali Resort, Kuta",
+    "3": "The Payogan Villa Resort & Spa, Ubud",
+    "4": "The Payogan Villa Resort & Spa, Ubud",
+    "5": "The Payogan Villa Resort & Spa, Ubud",
+    "6": "The Payogan Villa Resort & Spa, Ubud",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Do the beach first and the volcanoes after. Ubud at the end means you fly home rested rather than sunburnt.",
+    "tip": "The Batur climb starts around two in the morning, so pack a light jacket, a head torch and trainers with grip. Keep the following afternoon completely free and let the villa spa do the rest."
+  },
+  "summary": "Seven days split between a beachfront resort in Kuta and a villa in the Ubud valley, with Uluwatu at sunset, the holy spring temple at Tirta Empul, a sunrise trek up Mount Batur and a private day on Mount Agung.",
+  "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; Uluwatu and Padang Padang tour; central Bali tour with Tirta Empul; Mount Batur sunrise trek; Mount Agung and Besakih day; a Balinese massage in Ubud.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

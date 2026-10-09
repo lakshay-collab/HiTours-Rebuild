@@ -1,0 +1,122 @@
+{
+  "source_slug": "honeymoon-stories-in-bali",
+  "camel": "baliHoneymoonSeminyak",
+  "slug": "best-of-bali-honeymoon-with-seminyak",
+  "title": "Best of Bali Honeymoon with Seminyak",
+  "alt": "Sunset over the beach at Seminyak, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 38000,
+  "route_cities": ["Kuta", "Mount Batur", "Uluwatu", "Seminyak", "Tanjung Benoa"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 9, "meals": 8},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Mount Batur and the temples",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Mount Batur sunrise trek", "day": 2, "optional": false, "match": "Mount Batur Trek", "description": "A guided climb up the volcano in the dark to reach the rim for sunrise, with breakfast cooked in the steam vents at the top."},
+        {"name": "Temple tour with the monkey forest", "day": 3, "optional": false, "match": "Bali Temple Tour", "description": "A private day taking in Taman Ayun, the Alas Kedaton monkey forest and the cliff temple at Uluwatu, with Padang Padang beach on the way."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the south coast to begin, with a sunrise climb up Mount Batur and a temple day that ends on the Uluwatu cliffs."}
+    },
+    {
+      "letter": "B",
+      "name": "Seminyak",
+      "city": "Seminyak",
+      "subtitle": "Seminyak to Tanjung Benoa",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "THE 1O1 Bali Fontana Seminyak",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Pool hotel in Seminyak, a short walk from Eat Street",
+      "activities": [
+        {"name": "Balinese massage for two", "day": 4, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage for both of you on your first afternoon in Seminyak, warm oil and long pressure strokes at a private spa."},
+        {"name": "Water sports at Tanjung Benoa", "day": 5, "optional": false, "match": "Water Sports at Tanjung Benoa", "description": "A half day combo at Tanjung Benoa with banana boat, jet ski and parasailing, all with life jackets and an instructor in the water."},
+        {"name": "Sunset dinner cruise", "day": 5, "optional": false, "match": "Sunset Dinner Cruise", "description": "A half day cruise out of Benoa harbour with dinner on board and live music, timed for sunset over the Bukit peninsula."},
+        {"name": "Seminyak beach and Eat Street", "day": 6, "optional": true, "match": "Seminyak Beach", "description": "The long grey sand beach with its beach clubs, and the restaurants of Jalan Kayu Aya a few minutes inland for a last dinner out."}
+      ],
+      "program": {"name": "Seminyak", "description": "Three nights in Seminyak with a couples massage, water sports at Tanjung Benoa, a sunset cruise with dinner and a private candlelight dinner."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Mount Batur at sunrise",
+    "3": "Temples and the monkey forest",
+    "4": "Spa day in Seminyak",
+    "5": "Water sports and sunset cruise",
+    "6": "Candlelight dinner for two",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Kuta hotel near the beach",
+      "First evening free on the south coast",
+      "Optional: the night market, Kuta theatre or Karma beach"
+    ],
+    "2": [
+      "Very early start for the guided climb up Mount Batur",
+      "Sunrise on the crater rim above the lake",
+      "Breakfast cooked in the volcanic steam at the top",
+      "Back at the hotel by midday for a slow afternoon"
+    ],
+    "3": [
+      "Breakfast, then a private day among the temples",
+      "Taman Ayun and the Alas Kedaton monkey forest",
+      "Padang Padang beach in its limestone cove",
+      "Uluwatu temple on the cliffs in the late afternoon"
+    ],
+    "4": [
+      "Breakfast and check out, then private transfer to Seminyak",
+      "Check in and a traditional Balinese massage for two",
+      "Afternoon free on Seminyak beach",
+      "Optional: dinner along Eat Street or Jalan Laksmana"
+    ],
+    "5": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing with an instructor",
+      "Sunset dinner cruise out of Benoa harbour",
+      "Live music and dinner on board as the light goes"
+    ],
+    "6": [
+      "Breakfast and a full day free in Seminyak",
+      "Optional: a beach club afternoon or the Nyaman gallery",
+      "Candlelight dinner for two in the evening, set up privately",
+      "Optional: a late walk along Double Six beach"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B, D", "6": "B, D", "7": "B"},
+  "hotel_by_day": {
+    "1": "Bliss Surfer Hotel, Kuta",
+    "2": "Bliss Surfer Hotel, Kuta",
+    "3": "Bliss Surfer Hotel, Kuta",
+    "4": "THE 1O1 Bali Fontana Seminyak",
+    "5": "THE 1O1 Bali Fontana Seminyak",
+    "6": "THE 1O1 Bali Fontana Seminyak",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Kuta first, Seminyak second. The second half is quieter, smarter and exactly where a honeymoon should finish.",
+    "tip": "Do the Batur climb on your first full day while you are still on Indian time, it makes the two in the morning start far easier. Keep Seminyak for late dinners and nothing more demanding."
+  },
+  "summary": "Seven days for two across the south coast: three nights in Kuta with a sunrise climb up Mount Batur and a temple day at Uluwatu, then three in Seminyak with a couples massage, water sports, a sunset cruise and a candlelight dinner.",
+  "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; Mount Batur sunrise trek; temple tour with the monkey forest and Uluwatu; Balinese massage for two; water sports at Tanjung Benoa; sunset dinner cruise; candlelight dinner.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

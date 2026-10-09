@@ -1,0 +1,1829 @@
+{
+ "source": "https://www.thrillophilia.com/tours/bali-family-getaway",
+ "captured_at": "2026-10-09",
+ "title": "Bali Family Getaway | From Highlands to Hidden Bays",
+ "slug": "bali-family-getaway",
+ "duration": "6D/5N",
+ "city_split": [
+  [
+   "Bedugul",
+   2
+  ],
+  [
+   "Seminyak",
+   4
+  ]
+ ],
+ "country": "Bali",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Featured",
+ "highlights": [
+  "From jungle adventures and lush terrace trails in Bedugul to beachside wonders and sunset strolls in Seminyak, explore Bali's best with your family in one seamless journey.",
+  "Climb Mount Batur in the early hours and witness a sunrise casting a scenic glow on Lake Batur, distant mountain ranges, and Bali’s lush green highlands.",
+  "Relax in naturally heated pools of Angseri Hot Springs, a hidden gem in Bali’s highland jungle, where rice terraces and bamboo groves create a peaceful and soothing escape.",
+  "Dive into Bali’s wildest snorkeling adventure at Nusa Penida, where dramatic cliffs, colorful reefs, and diverse marine animals offer an amazing ocean experience.",
+  "Explore Trans Studio Theme Park, one of Indonesia’s largest indoor theme parks, where thrilling rides and various theme zones deliver excitement for the whole family."
+ ],
+ "overview": "About the Tour:\nEnjoy a perfect blend of leisure, nature, and culture on this well-paced Bali getaway. Begin with a refreshing day at Tegenungan Waterfall, followed by the thrill of the Bali Swing and a scenic stroll through the iconic Tegallalang Rice Terrace. Also, visit the sacred Tirta Empul Temple, known for its holy spring water rituals. Get a chance to spend a wild day at Taman Safari, and unleash your inner child at Trans Studio Bali, one of Southeast Asia’s top indoor theme parks. Relax with a dreamy floating breakfast and a rejuvenating Balinese massage. Conclude your trip at Uluwatu Temple, ending the day with a mesmerizing Kecak Dance at sunset.",
+ "price_per_adult": 39205,
+ "struck_price": 58790,
+ "currency": "INR",
+ "inr_price": 39205,
+ "inclusions": [
+  "Transfer from Ngurah Rai to Super Deluxe Resort",
+  "2 nights stay in Bedugul with breakfast",
+  "Sunrise At Mount Batur by Jeep - Sunrise at Mount Batur by Jeep and ticket",
+  "Balinese Massage in Bali and ticket",
+  "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beratan + Jatiluwih Rice Terraces + Angseri Hot Springs and ticket",
+  "3 nights stay in Seminyak with breakfast",
+  "Nusa Penida West Tour - Kelingking Beach + Angel Billabong + Broken Bay + Crystal Bay + Snorkeling + Local Lunch",
+  "Trans Studio Theme Park Tickets, Bali and ticket",
+  "Uluwatu Sunset Tour With Kecak Fire Dance - Sunset Tour + Kecak & Fire Dance Show and ticket",
+  "Transfer from Super Deluxe Villa to Ngurah Rai"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions"
+ ],
+ "know_before_you_go": [
+  "Visa on Arrival (VOA) for Indonesia is not included in your package and must be obtained and paid for at the airport upon your arrival. Please ensure you have the necessary documents ready.",
+  "Complimentary activities included in your package are provided as a value addition, but if any of these are missed for any reason, they cannot be refunded, exchanged, or compensated.",
+  "Where your itinerary mentions “local lunch,” it refers to an authentic Balinese meal featuring traditional flavors and dishes. Indian food will not be served during these local lunch experiences unless specifically mentioned.",
+  "Vehicles will follow a fixed point-to-point route as per the itinerary. Any changes or additional sightseeing requests may incur extra charges.",
+  "Bahasa Indonesia is the official language, and Balinese is also widely spoken. However, English is commonly understood in most tourist areas.",
+  "The local currency is the Indonesian Rupiah (IDR). While credit cards are accepted in many restaurants and hotels, cash is often preferred in smaller shops and markets.",
+  "When visiting temples or sacred sites, dress respectfully: cover your shoulders and knees, and wear a sarong and sash when required (often available at the entrance)."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Bali | Transfer to Bedugul | Day at Leisure",
+   "city": "Bedugul",
+   "desc": "Welcome to Bedugul, Bali’s serene highland escape! Upon arrival at the airport, board your transfer and get driven to your hotel. Post check-in, spend the rest of the day at leisure, where you can relax or explore the city on your own. You can head out and take a stroll by the scenic Lake Beratan, offering cool mountain air and tranquil views. Also, you can visit the Bali Botanical Garden, which is perfect for a romantic walk amidst lush greenery.",
+   "leisure": true,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Super Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Shankara Munduk Bali"
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Attraction",
+     "title": "Lake Beratan",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yypn4ifqplle2k6xycas2byxrje8_The-beautiful-looks-of-Ulun-Danu-temple-at-Beratan-lakeside-in-Bedugul-highland-Buleleng-regency-Bali-island-Bali-Hello-Travel-21.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bali Botanic Garden",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/sv46d4k4ptuwymzm8glrch2taeyj_1498891116_botanicalgarden.jpg"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/27vmc3i1e6jfu0g7gfxmmoawg7o2_Bedugul-2.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Mt Batur Jeep Trek | Balinese Massage Experience",
+   "city": "Bedugul",
+   "desc": "Drive to Jeep Parking Area along the ridge of Mount Batur. From here, enjoy an exciting jeep ride to the volcanic slopes. Upon reaching the summit, witness an amazing sunrise as the sky lights up with stunning shades, revealing views of Lake Batur & nearby mountains. After that, explore volcanic crater & feel the warmth rising from the steam vents. Later, enjoy a Balinese Massage, releasing all your stress & tension with traditional therapies. Afterwards, get driven back to the hotel.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Jeep",
+     "label": "",
+     "desc": "1 X Jeep will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Sunrise At Mount Batur by Jeep - Sunrise at Mount Batur by Jeep",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yvosa32byiuuv3uuy24bizexm13i_Batur-4.jpg",
+      "https://media1.thrillophilia.com/filestore/rec45jtfaghd8yfi8vfnq4l95lj9_Batur-7.jpg",
+      "https://media1.thrillophilia.com/filestore/utb987nuyeq4u3ypl203onbcaodh_Batur-Jeep-1.jpg",
+      "https://media1.thrillophilia.com/filestore/cfydv07hqdsonp5ahcb0k8hxd2ne_Batur-5.jpg",
+      "https://media1.thrillophilia.com/filestore/5vyovbdao728p1dmhqpfj8qy9nqj_Batur-6.jpg",
+      "https://media1.thrillophilia.com/filestore/56jsophbhgenelqawit5bj24jiz4_Batur-2.jpg",
+      "https://media1.thrillophilia.com/filestore/vwb4bxs5zgxtw54pe66h8duewkci_Batur-3.jpg",
+      "https://media1.thrillophilia.com/filestore/yx9uedsyf0x9qg3xk4d8v711tcfz_Mount%20Batur%201.jpg",
+      "https://media1.thrillophilia.com/filestore/rtf582v0m2gv7zqf11jjeruobjbk_1577704131_shutterstock_651446692.jpg",
+      "https://media1.thrillophilia.com/filestore/d41jpi6v8acgzgsng0b9p1pu3uxt_Mount%20Batur.jpg",
+      "https://media1.thrillophilia.com/filestore/ww0ew1hzw2vypimkh7auis5nap0w_shutterstock_2282319959.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Mount Batur",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yx9uedsyf0x9qg3xk4d8v711tcfz_Mount%20Batur%201.jpg",
+      "https://media1.thrillophilia.com/filestore/rtf582v0m2gv7zqf11jjeruobjbk_1577704131_shutterstock_651446692.jpg",
+      "https://media1.thrillophilia.com/filestore/d41jpi6v8acgzgsng0b9p1pu3uxt_Mount%20Batur.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Batur Natural Hot Spring",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ww0ew1hzw2vypimkh7auis5nap0w_shutterstock_2282319959.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Balinese Massage in Bali",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+      "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+      "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+      "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+      "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+      "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+      "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+      "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+      "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Bedugul Sightseeing Tour | Transfer to Seminyak",
+   "city": "Seminyak",
+   "desc": "After check out, get transferred to Seminyak. Upon arrival, explore North Bali with a visit to the iconic Handara Gate, known for its traditional Balinese design. Visit the Ulun Danu Beratan Temple, a beautiful shrine that appears to float on Lake Beratan. Also, visit the scenic Jatiluwih Rice Terrace, a UNESCO site famed for its layered green fields, and relax at Angseri Hot Springs. Later, get driven to your hotel in Bali and check in for a comfortable overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beratan + Jatiluwih Rice Terraces + Angseri Hot Springs",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/01c2779ip74j9xr8707m1owtd2e2_angseri-hot-springs.webp",
+      "https://media1.thrillophilia.com/filestore/7jmz36s4vv4tuep2q52xcdqk5pax_dl.beatsnoop.com-3000-aseRlNbUCV.jpg",
+      "https://media1.thrillophilia.com/filestore/nzbbt97b6f62bzqxszoyf1178ifv_shutterstock_2269187465.jpg",
+      "https://media1.thrillophilia.com/filestore/rf8xqkbad78l67fszozra8shje26_dl.beatsnoop.com-3000-eFDtSwGkox.jpg",
+      "https://media1.thrillophilia.com/filestore/j13klsyb0szjmpafbnnlx0fbc4ri_dl.beatsnoop.com-3000-6m8PO1svM5.jpg",
+      "https://media1.thrillophilia.com/filestore/7sfzydde0t7h1ip2tsc8fbee23kt_302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.webp",
+      "https://media1.thrillophilia.com/filestore/92s0e2rza5kgvvut7zoksjx22dvn_dl.beatsnoop.com-3000-iB9P7oKIfF.jpg",
+      "https://media1.thrillophilia.com/filestore/sg6y3xsd65f7srf1vs0ffvtplr1e_dl.beatsnoop.com-3000-42EywXdDKq.jpg",
+      "https://media1.thrillophilia.com/filestore/yolja5nq7bxo1r0sait2udjoz12v_shutterstock_2404165329.jpg",
+      "https://media1.thrillophilia.com/filestore/sc3ozex5df6rk6e2v6w4cgizunmg_67a1b15d03b9228fab914872_Angseri%20Hot%20Spring.webp",
+      "https://media1.thrillophilia.com/filestore/302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.JPG",
+      "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg",
+      "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg",
+      "https://media1.thrillophilia.com/filestore/nw6j7wr8udw90mkjlws1h4oqg2c8_pb8denvsywdyk6tz89p4rkythtru_1559286199_shutterstock_534449596.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Angseri Hot Springs",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.JPG"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Ulun Danu Beratan Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bali Handara Gate",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Jatiluwih Rice Terraces",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/nw6j7wr8udw90mkjlws1h4oqg2c8_pb8denvsywdyk6tz89p4rkythtru_1559286199_shutterstock_534449596.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Super Deluxe Villa",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "The Bali Bliss Villa"
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/28l0mtv3v8g1z78gnzjsxjx0zbhd_shutterstock_1346345108.jpg"
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Nusa Penida West Tour with Snorkeling Experience",
+   "city": "Seminyak",
+   "desc": "Get transferred to Sanur Port & catch a speedboat to Nusa Penida for a tour of its west coast. Visit Kelingking Beach, famous for its T-Rex-shaped cliff & scenic ocean views. Explore Broken Bay, a dramatic coastal spot formed by a collapsed cave, now a natural sea arch. Also, wander at Crystal Bay, known for its calm, clear waters. While there, don't miss the snorkeling experience & also savor a local lunch before getting driven back to the hotel.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Villa",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Speed Boat",
+     "label": "",
+     "desc": "1 X Speed Boat will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Nusa Penida West Tour - Kelingking Beach + Angel Billabong + Broken Bay + Crystal Bay + Snorkeling + Local Lunch",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/lrt2zsu6jyqlgqjvc2q9mn7dtt63_hr1pqdhfpxau4k7xzg517d1m7ht1_Broken-Beach-3.jpg",
+      "https://media1.thrillophilia.com/filestore/mnn96kaxyixpasp5l8292yhautrf_0vqx80ahthabguiqgtf6wz676azt_1652850565-product_image-18-05-2022-aln5jNLI1vBHzkgT.jpg",
+      "https://media1.thrillophilia.com/filestore/e5yfebbmaa257xh7ww5qz3nawpb2_pd7rv4kqnfcqx2e6s7yr9j4uimhx_dl.beatsnoop.com-3000-hMGuoqYSfn.jpg",
+      "https://media1.thrillophilia.com/filestore/rtitamm1vyn91jumdol6hdbun4wm_68hb9hcrfe2zvetat8g6x1jomxvd_efeba0c3-9e97-45c0-a79b-e9bb833c4304.jpg",
+      "https://media1.thrillophilia.com/filestore/iygsv1u8ei4ykpl8yjoh1zcz5dfc_vtnru04z39do33a8gidx56b2ac32_dl.beatsnoop.com-3000-sHNUjcdheM.jpg",
+      "https://media1.thrillophilia.com/filestore/hcrbqt9jx38um6ipaukf37b2n1th_5vypuz59sdnia5qufsjvhxmocvha_kelingking-beach.webp",
+      "https://media1.thrillophilia.com/filestore/qgvtzb4r4qe2evopfqetumdmwde2_shutterstock_1841834419.jpg",
+      "https://media1.thrillophilia.com/filestore/h1gqtvjh86u7vs2grqw610r5nayb_shutterstock_1832483269%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/9meo0hidjgs6eeli8nfqjg1vjrd8_CrystalBay3%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/xxjdwssfts50rzk5wfvzelladqqu_1498724507_beach.jpg",
+      "https://media1.thrillophilia.com/filestore/raz6i8qsplkduo2ddqpr2tqbahzi_download%20(11).jpg",
+      "https://media1.thrillophilia.com/filestore/rll9ulp5az3k4bcemra7x8rymw0d_download%20(13).jpg",
+      "https://media1.thrillophilia.com/filestore/h3u15krnodbositrrz3g8qerp30x_download%20(9).jpg",
+      "https://media1.thrillophilia.com/filestore/8pj7k5qcuzcsgqxzn587qyq7ziv2_download%20(12).jpg",
+      "https://media1.thrillophilia.com/filestore/o974vnhozbrtaa60gdp3uzoxorjz_37530932040_49a7318d15_o.jpg",
+      "https://media1.thrillophilia.com/filestore/5l33zey01b3l8m83kqljihz1xef6_52967248237_dce4bfe915_o.jpg",
+      "https://media1.thrillophilia.com/filestore/tt4anlnrmb8od801di2viod8ku6z_35570722194_fa571e2466_o.jpg",
+      "https://media1.thrillophilia.com/filestore/e8q1lt539ei1ha6y9gqt9bjslj16_27524921880_0dfcbb50f7_o.jpg",
+      "https://media1.thrillophilia.com/filestore/u5qal8zwe9pm027bypz54llpprb9_Koh-Samui-Snorkeling.jpg",
+      "https://media1.thrillophilia.com/filestore/juwl1o8l3l3t7cd3tign11f5qbwb_23cfa5a555774cb793ff972ba1311093.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Kelingking Beach",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/xxjdwssfts50rzk5wfvzelladqqu_1498724507_beach.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Broken Bay",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/raz6i8qsplkduo2ddqpr2tqbahzi_download%20(11).jpg",
+      "https://media1.thrillophilia.com/filestore/rll9ulp5az3k4bcemra7x8rymw0d_download%20(13).jpg",
+      "https://media1.thrillophilia.com/filestore/h3u15krnodbositrrz3g8qerp30x_download%20(9).jpg",
+      "https://media1.thrillophilia.com/filestore/8pj7k5qcuzcsgqxzn587qyq7ziv2_download%20(12).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Crystal Bay",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/o974vnhozbrtaa60gdp3uzoxorjz_37530932040_49a7318d15_o.jpg",
+      "https://media1.thrillophilia.com/filestore/5l33zey01b3l8m83kqljihz1xef6_52967248237_dce4bfe915_o.jpg",
+      "https://media1.thrillophilia.com/filestore/tt4anlnrmb8od801di2viod8ku6z_35570722194_fa571e2466_o.jpg",
+      "https://media1.thrillophilia.com/filestore/e8q1lt539ei1ha6y9gqt9bjslj16_27524921880_0dfcbb50f7_o.jpg"
+     ]
+    },
+    {
+     "type": "Activity",
+     "title": "Snorkeling",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/u5qal8zwe9pm027bypz54llpprb9_Koh-Samui-Snorkeling.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Angel’s Billabong",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/juwl1o8l3l3t7cd3tign11f5qbwb_23cfa5a555774cb793ff972ba1311093.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Speed Boat",
+     "label": "",
+     "desc": "1 X Speed Boat will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 5,
+   "title": "Visit Trans Studio Theme Park | Uluwatu Temple Sunset Tour & Kecak Fire Dance Show",
+   "city": "Seminyak",
+   "desc": "Experience an action-packed day combining fun and culture. Begin at Trans Studio Theme Park, one of Southeast Asia’s largest indoor amusement parks, offering thrilling rides, shows, and attractions for all ages. Later, get driven to the iconic Uluwatu Temple, perched dramatically on a cliff above the Indian Ocean. Enjoy a breathtaking sunset and witness the famous Kecak fire dance performance, making this tour the perfect mix of excitement, scenery, and tradition.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Villa",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Trans Studio Theme Park Tickets, Bali",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ijj51cr2n2dkk9f9n7006iw9tlq1_16a496bd-6775-40af-84e2-edf6316fb324.jpg",
+      "https://media1.thrillophilia.com/filestore/t883w3bll5eyfzskdgt07id39bhm_933cd213-29c8-4938-8bd3-666ed3ca99d5.jpg",
+      "https://media1.thrillophilia.com/filestore/r02baq8euwhrrhb8kwxpw54vyewi_1cb71ece-f979-4b75-9bd2-f32b00a07ae7.jpg",
+      "https://media1.thrillophilia.com/filestore/yr8t4t3de1ejl6pfgwi5nw5y7pze_7bd749e6-6e16-4feb-a755-906e2bf97665.jpg",
+      "https://media1.thrillophilia.com/filestore/3t35qpscr82jr10htytwtbnxm8ii_da1459a2-0a47-4c50-9bfc-39ba6984646b.jpg",
+      "https://media1.thrillophilia.com/filestore/w8rh9w8df34vz78n5zqnau0eauhk_45b054e5-2b9d-4900-900d-b3a99cd2cbe8.jpg",
+      "https://media1.thrillophilia.com/filestore/p6mx1i5sog85340qixzepjf1a9s6_fd3ff689-927c-4766-ac02-d31138360179.jpg",
+      "https://media1.thrillophilia.com/filestore/5nfzci29gar439unnwmgpy8q6tqn_f7e535fd-6520-4b17-9d42-64758817e61d.jpg",
+      "https://media1.thrillophilia.com/filestore/zodvkddud9f5l3j9wjj3vio83bgr_trans-studio-bali-11-1024x560.webp",
+      "https://media1.thrillophilia.com/filestore/1l5pgkj7fbqaz5ksuc6415g2szwx_1000001470-1-edited.jpg",
+      "https://media1.thrillophilia.com/filestore/qr0mjpn2e8jdz1xe4td6g4axphfk_caption%20(87).jpg",
+      "https://media1.thrillophilia.com/filestore/r7la0ahjjivs7q0zz281aqk04flo_b228695e-1b5b-495c-9dc9-fc919abda736.jpg",
+      "https://media1.thrillophilia.com/filestore/bgs60vd5w6frnv6ila3pof9xqddl_e94fa848-87dc-4278-96d6-e051d4f08df1.jpg",
+      "https://media1.thrillophilia.com/filestore/y1x72ssabvefqh7qvjqokuhc02cc_cc.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Trans Studio Bali Theme Park",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/y1x72ssabvefqh7qvjqokuhc02cc_cc.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Uluwatu Sunset Tour With Kecak Fire Dance - Sunset Tour + Kecak & Fire Dance Show",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/3wbl1quszkxet87fhjkyh05yce0t_Uluwatu-1.jpg",
+      "https://media1.thrillophilia.com/filestore/ermwev8zaifimkvi66bm0lhvld51_Uluwatu%20Temple-6.jpg",
+      "https://media1.thrillophilia.com/filestore/rnb1lg31u3ak06pkp5qt5jqsjaj4_Uluwatu%20Temple-5.jpg",
+      "https://media1.thrillophilia.com/filestore/y7bwpg3zhhgiielxr1s0n5spa64g_Uluwatu%20Temple-3.jpg",
+      "https://media1.thrillophilia.com/filestore/sn71ko5amehco4wawd370y6ypm7u_Uluwatu%20Temple-4.jpg",
+      "https://media1.thrillophilia.com/filestore/t2f7c09u7qe0a87oiua422nkffa2_Uluwatu%20Temple-2.jpg",
+      "https://media1.thrillophilia.com/filestore/wzflunvakw7g7dkbwwoxr2kjlxzu_Uluwatu%20Temple-7.jpg",
+      "https://media1.thrillophilia.com/filestore/ehe2zgu0d70x4z74xyn9bpb3vhh7_Uluwatu-2.jpg",
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg",
+      "https://media1.thrillophilia.com/filestore/usdgmsoaand8ytcb34q674qu6c2p_1470909118_Hanoman_Kecak_Dance_Uluwatu_sunset.jpg",
+      "https://media1.thrillophilia.com/filestore/yshzr7uwi40a9tn8yjuhb22bh5mt_shutterstock_1170234892.jpg",
+      "https://media1.thrillophilia.com/filestore/qqgt4nz1c6htkcq4y90ncckqx18z_shutterstock_1215046294.jpg",
+      "https://media1.thrillophilia.com/filestore/4cjfax9ccqmra3b1b2hho5nzz7s8_shutterstock_1170234895.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Uluwatu Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+      "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Tari Kecak",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/usdgmsoaand8ytcb34q674qu6c2p_1470909118_Hanoman_Kecak_Dance_Uluwatu_sunset.jpg",
+      "https://media1.thrillophilia.com/filestore/yshzr7uwi40a9tn8yjuhb22bh5mt_shutterstock_1170234892.jpg",
+      "https://media1.thrillophilia.com/filestore/qqgt4nz1c6htkcq4y90ncckqx18z_shutterstock_1215046294.jpg",
+      "https://media1.thrillophilia.com/filestore/4cjfax9ccqmra3b1b2hho5nzz7s8_shutterstock_1170234895.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 6,
+   "title": "Departure Day",
+   "city": "Seminyak",
+   "desc": "In the morning, check out from your hotel and board your transfer to the airport. As you head for your flight back home, take with you the unforgettable memories of your romantic escape in Bali, filled with scenic landscapes, cultural wonders, and cherished moments together.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Super Deluxe Villa",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in SUV",
+     "label": "",
+     "desc": "1 X SUV will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Handara Golf & Resort Bali, Bedugul",
+   "stars": 4,
+   "category": "Super Deluxe",
+   "tripadvisor": 4,
+   "city": "Bedugul",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/g6fbtnu015ogm27mimmrp14tf580_669842241.jpg",
+    "https://media1.thrillophilia.com/filestore/ji86x895w76g3gtiu04h8llzdr8m_669842179.jpg",
+    "https://media1.thrillophilia.com/filestore/3se3ogk4xn39jpy3tc9n3xym4ofz_669841937.jpg",
+    "https://media1.thrillophilia.com/filestore/n2m6lh4rw0nmyuth1z24sg97eapz_669841905.jpg",
+    "https://media1.thrillophilia.com/filestore/o1hir041xjxmf4rpbvcmmsvjv7zb_669841839.jpg",
+    "https://media1.thrillophilia.com/filestore/s2em3weaskwj74jp9cfi4apex13h_423248468.jpg",
+    "https://media1.thrillophilia.com/filestore/n4zoi1bjo08ymp2tg5jyoexe0ymh_669842136.jpg"
+   ]
+  },
+  {
+   "name": "Shankara Munduk Bali",
+   "stars": 4,
+   "category": "Super Deluxe",
+   "tripadvisor": 5,
+   "city": "Bedugul",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/p2mxyiz2g9o3l132lvwhn0s9edxl_Shankara-1.webp",
+    "https://media1.thrillophilia.com/filestore/fxduu364i88debpja4xupqkan1un_Shankara-3.webp",
+    "https://media1.thrillophilia.com/filestore/egb66d2wqsf6rujpnzpl8f0oaqcq_Shankara-2.webp",
+    "https://media1.thrillophilia.com/filestore/9ui126d0g8x167golw6bugnvkbk8_Shankara-5.webp",
+    "https://media1.thrillophilia.com/filestore/z58ap4xu0ujaiq5thhusc23pr2cr_Shankara-6.webp",
+    "https://media1.thrillophilia.com/filestore/6csy7r3ufed8749ak7bq15mdig3v_Shankara-4.webp",
+    "https://media1.thrillophilia.com/filestore/hic7mdwqvs3f5p6yc7s9vm2y93vq_Shankara-8.webp",
+    "https://media1.thrillophilia.com/filestore/30k58oog0jd0urvpgg9l8hr66mwq_Shankara-7.webp"
+   ]
+  },
+  {
+   "name": "Bali Prime Villa by Kanaya Hospitality",
+   "stars": 2,
+   "category": "Super Deluxe",
+   "tripadvisor": 4,
+   "city": "Seminyak",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 3,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/u3pp4hz5fnrftoor4all75s8tmdt_641331596.jpg",
+    "https://media1.thrillophilia.com/filestore/7dpom63qbl4vu9ejmpug8fu8ptq3_639726836.jpg",
+    "https://media1.thrillophilia.com/filestore/m0d71k8czz7d7egg367ilncwat7s_639726852.jpg",
+    "https://media1.thrillophilia.com/filestore/3ljy09ycm1fav4f71e0zxiy2qrwq_639726851.jpg",
+    "https://media1.thrillophilia.com/filestore/i7elq9gq12uca6xvqr7p03yjuqas_639726863.jpg",
+    "https://media1.thrillophilia.com/filestore/2ounqkxe9p48oebrjokyyyv0jx5q_639726844.jpg"
+   ]
+  },
+  {
+   "name": "The Bali Bliss Villa",
+   "stars": 4,
+   "category": "Super Deluxe",
+   "tripadvisor": 4,
+   "city": "Seminyak",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 3,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/xuep3g9hc9cmlrw57uh0aftpz16y_34176265.jpg",
+    "https://media1.thrillophilia.com/filestore/aaeuf73rawbvgtfie68u8jkkj5ea_34176289.jpg",
+    "https://media1.thrillophilia.com/filestore/7ynvty872zgtswdt9jip5n3xeqev_34176494.jpg",
+    "https://media1.thrillophilia.com/filestore/3pkzf400g3m1mg9i6esn0sh06tmc_34010888.jpg",
+    "https://media1.thrillophilia.com/filestore/v8kd3stydymdzd4rk6z4dul5c1cu_34010899.jpg",
+    "https://media1.thrillophilia.com/filestore/ebjrb5emwj6rc4fzxdb3kawm2yve_34176449.jpg"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "Lake Beratan",
+   "day": 1,
+   "city": "Bedugul",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yypn4ifqplle2k6xycas2byxrje8_The-beautiful-looks-of-Ulun-Danu-temple-at-Beratan-lakeside-in-Bedugul-highland-Buleleng-regency-Bali-island-Bali-Hello-Travel-21.jpg"
+   ]
+  },
+  {
+   "name": "Bali Botanic Garden",
+   "day": 1,
+   "city": "Bedugul",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/sv46d4k4ptuwymzm8glrch2taeyj_1498891116_botanicalgarden.jpg"
+   ]
+  },
+  {
+   "name": "Sunrise At Mount Batur by Jeep - Sunrise at Mount Batur by Jeep",
+   "day": 2,
+   "city": "Bedugul",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yvosa32byiuuv3uuy24bizexm13i_Batur-4.jpg",
+    "https://media1.thrillophilia.com/filestore/rec45jtfaghd8yfi8vfnq4l95lj9_Batur-7.jpg",
+    "https://media1.thrillophilia.com/filestore/utb987nuyeq4u3ypl203onbcaodh_Batur-Jeep-1.jpg",
+    "https://media1.thrillophilia.com/filestore/cfydv07hqdsonp5ahcb0k8hxd2ne_Batur-5.jpg",
+    "https://media1.thrillophilia.com/filestore/5vyovbdao728p1dmhqpfj8qy9nqj_Batur-6.jpg",
+    "https://media1.thrillophilia.com/filestore/56jsophbhgenelqawit5bj24jiz4_Batur-2.jpg",
+    "https://media1.thrillophilia.com/filestore/vwb4bxs5zgxtw54pe66h8duewkci_Batur-3.jpg",
+    "https://media1.thrillophilia.com/filestore/yx9uedsyf0x9qg3xk4d8v711tcfz_Mount%20Batur%201.jpg",
+    "https://media1.thrillophilia.com/filestore/rtf582v0m2gv7zqf11jjeruobjbk_1577704131_shutterstock_651446692.jpg",
+    "https://media1.thrillophilia.com/filestore/d41jpi6v8acgzgsng0b9p1pu3uxt_Mount%20Batur.jpg",
+    "https://media1.thrillophilia.com/filestore/ww0ew1hzw2vypimkh7auis5nap0w_shutterstock_2282319959.jpg"
+   ]
+  },
+  {
+   "name": "Mount Batur",
+   "day": 2,
+   "city": "Bedugul",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yx9uedsyf0x9qg3xk4d8v711tcfz_Mount%20Batur%201.jpg",
+    "https://media1.thrillophilia.com/filestore/rtf582v0m2gv7zqf11jjeruobjbk_1577704131_shutterstock_651446692.jpg",
+    "https://media1.thrillophilia.com/filestore/d41jpi6v8acgzgsng0b9p1pu3uxt_Mount%20Batur.jpg"
+   ]
+  },
+  {
+   "name": "Batur Natural Hot Spring",
+   "day": 2,
+   "city": "Bedugul",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ww0ew1hzw2vypimkh7auis5nap0w_shutterstock_2282319959.jpg"
+   ]
+  },
+  {
+   "name": "Balinese Massage in Bali",
+   "day": 2,
+   "city": "Bedugul",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    1,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+    "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+    "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+    "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+    "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+    "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+    "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+    "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+    "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg"
+   ]
+  },
+  {
+   "name": "Full Day Bedugul Tour in Bali - Handara Gate + Ulun Danu Beratan + Jatiluwih Rice Terraces + Angseri Hot Springs",
+   "day": 3,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    7,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/01c2779ip74j9xr8707m1owtd2e2_angseri-hot-springs.webp",
+    "https://media1.thrillophilia.com/filestore/7jmz36s4vv4tuep2q52xcdqk5pax_dl.beatsnoop.com-3000-aseRlNbUCV.jpg",
+    "https://media1.thrillophilia.com/filestore/nzbbt97b6f62bzqxszoyf1178ifv_shutterstock_2269187465.jpg",
+    "https://media1.thrillophilia.com/filestore/rf8xqkbad78l67fszozra8shje26_dl.beatsnoop.com-3000-eFDtSwGkox.jpg",
+    "https://media1.thrillophilia.com/filestore/j13klsyb0szjmpafbnnlx0fbc4ri_dl.beatsnoop.com-3000-6m8PO1svM5.jpg",
+    "https://media1.thrillophilia.com/filestore/7sfzydde0t7h1ip2tsc8fbee23kt_302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.webp",
+    "https://media1.thrillophilia.com/filestore/92s0e2rza5kgvvut7zoksjx22dvn_dl.beatsnoop.com-3000-iB9P7oKIfF.jpg",
+    "https://media1.thrillophilia.com/filestore/sg6y3xsd65f7srf1vs0ffvtplr1e_dl.beatsnoop.com-3000-42EywXdDKq.jpg",
+    "https://media1.thrillophilia.com/filestore/yolja5nq7bxo1r0sait2udjoz12v_shutterstock_2404165329.jpg",
+    "https://media1.thrillophilia.com/filestore/sc3ozex5df6rk6e2v6w4cgizunmg_67a1b15d03b9228fab914872_Angseri%20Hot%20Spring.webp",
+    "https://media1.thrillophilia.com/filestore/302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.JPG",
+    "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg",
+    "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg",
+    "https://media1.thrillophilia.com/filestore/nw6j7wr8udw90mkjlws1h4oqg2c8_pb8denvsywdyk6tz89p4rkythtru_1559286199_shutterstock_534449596.jpg"
+   ]
+  },
+  {
+   "name": "Angseri Hot Springs",
+   "day": 3,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/302hs2or99l3ik0dbkx59nt2p9jb_1498888842_angseri.JPG"
+   ]
+  },
+  {
+   "name": "Ulun Danu Beratan Temple",
+   "day": 3,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/63rp5vt6fg9lnhd2bsolet8cpft3_ezgif-4-1fcf41f031.jpg"
+   ]
+  },
+  {
+   "name": "Bali Handara Gate",
+   "day": 3,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/zwzrpc8zhw3jl7ltwuqtrh8zmm8s_bali%20handara%20gate.jpg"
+   ]
+  },
+  {
+   "name": "Jatiluwih Rice Terraces",
+   "day": 3,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/nw6j7wr8udw90mkjlws1h4oqg2c8_pb8denvsywdyk6tz89p4rkythtru_1559286199_shutterstock_534449596.jpg"
+   ]
+  },
+  {
+   "name": "Nusa Penida West Tour - Kelingking Beach + Angel Billabong + Broken Bay + Crystal Bay + Snorkeling + Local Lunch",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    7,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/lrt2zsu6jyqlgqjvc2q9mn7dtt63_hr1pqdhfpxau4k7xzg517d1m7ht1_Broken-Beach-3.jpg",
+    "https://media1.thrillophilia.com/filestore/mnn96kaxyixpasp5l8292yhautrf_0vqx80ahthabguiqgtf6wz676azt_1652850565-product_image-18-05-2022-aln5jNLI1vBHzkgT.jpg",
+    "https://media1.thrillophilia.com/filestore/e5yfebbmaa257xh7ww5qz3nawpb2_pd7rv4kqnfcqx2e6s7yr9j4uimhx_dl.beatsnoop.com-3000-hMGuoqYSfn.jpg",
+    "https://media1.thrillophilia.com/filestore/rtitamm1vyn91jumdol6hdbun4wm_68hb9hcrfe2zvetat8g6x1jomxvd_efeba0c3-9e97-45c0-a79b-e9bb833c4304.jpg",
+    "https://media1.thrillophilia.com/filestore/iygsv1u8ei4ykpl8yjoh1zcz5dfc_vtnru04z39do33a8gidx56b2ac32_dl.beatsnoop.com-3000-sHNUjcdheM.jpg",
+    "https://media1.thrillophilia.com/filestore/hcrbqt9jx38um6ipaukf37b2n1th_5vypuz59sdnia5qufsjvhxmocvha_kelingking-beach.webp",
+    "https://media1.thrillophilia.com/filestore/qgvtzb4r4qe2evopfqetumdmwde2_shutterstock_1841834419.jpg",
+    "https://media1.thrillophilia.com/filestore/h1gqtvjh86u7vs2grqw610r5nayb_shutterstock_1832483269%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/9meo0hidjgs6eeli8nfqjg1vjrd8_CrystalBay3%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/xxjdwssfts50rzk5wfvzelladqqu_1498724507_beach.jpg",
+    "https://media1.thrillophilia.com/filestore/raz6i8qsplkduo2ddqpr2tqbahzi_download%20(11).jpg",
+    "https://media1.thrillophilia.com/filestore/rll9ulp5az3k4bcemra7x8rymw0d_download%20(13).jpg",
+    "https://media1.thrillophilia.com/filestore/h3u15krnodbositrrz3g8qerp30x_download%20(9).jpg",
+    "https://media1.thrillophilia.com/filestore/8pj7k5qcuzcsgqxzn587qyq7ziv2_download%20(12).jpg",
+    "https://media1.thrillophilia.com/filestore/o974vnhozbrtaa60gdp3uzoxorjz_37530932040_49a7318d15_o.jpg",
+    "https://media1.thrillophilia.com/filestore/5l33zey01b3l8m83kqljihz1xef6_52967248237_dce4bfe915_o.jpg",
+    "https://media1.thrillophilia.com/filestore/tt4anlnrmb8od801di2viod8ku6z_35570722194_fa571e2466_o.jpg",
+    "https://media1.thrillophilia.com/filestore/e8q1lt539ei1ha6y9gqt9bjslj16_27524921880_0dfcbb50f7_o.jpg",
+    "https://media1.thrillophilia.com/filestore/u5qal8zwe9pm027bypz54llpprb9_Koh-Samui-Snorkeling.jpg",
+    "https://media1.thrillophilia.com/filestore/juwl1o8l3l3t7cd3tign11f5qbwb_23cfa5a555774cb793ff972ba1311093.jpg"
+   ]
+  },
+  {
+   "name": "Kelingking Beach",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/xxjdwssfts50rzk5wfvzelladqqu_1498724507_beach.jpg"
+   ]
+  },
+  {
+   "name": "Broken Bay",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/raz6i8qsplkduo2ddqpr2tqbahzi_download%20(11).jpg",
+    "https://media1.thrillophilia.com/filestore/rll9ulp5az3k4bcemra7x8rymw0d_download%20(13).jpg",
+    "https://media1.thrillophilia.com/filestore/h3u15krnodbositrrz3g8qerp30x_download%20(9).jpg",
+    "https://media1.thrillophilia.com/filestore/8pj7k5qcuzcsgqxzn587qyq7ziv2_download%20(12).jpg"
+   ]
+  },
+  {
+   "name": "Crystal Bay",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/o974vnhozbrtaa60gdp3uzoxorjz_37530932040_49a7318d15_o.jpg",
+    "https://media1.thrillophilia.com/filestore/5l33zey01b3l8m83kqljihz1xef6_52967248237_dce4bfe915_o.jpg",
+    "https://media1.thrillophilia.com/filestore/tt4anlnrmb8od801di2viod8ku6z_35570722194_fa571e2466_o.jpg",
+    "https://media1.thrillophilia.com/filestore/e8q1lt539ei1ha6y9gqt9bjslj16_27524921880_0dfcbb50f7_o.jpg"
+   ]
+  },
+  {
+   "name": "Snorkeling",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": "14:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/u5qal8zwe9pm027bypz54llpprb9_Koh-Samui-Snorkeling.jpg"
+   ]
+  },
+  {
+   "name": "Angel’s Billabong",
+   "day": 4,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/juwl1o8l3l3t7cd3tign11f5qbwb_23cfa5a555774cb793ff972ba1311093.jpg"
+   ]
+  },
+  {
+   "name": "Trans Studio Theme Park Tickets, Bali",
+   "day": 5,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ijj51cr2n2dkk9f9n7006iw9tlq1_16a496bd-6775-40af-84e2-edf6316fb324.jpg",
+    "https://media1.thrillophilia.com/filestore/t883w3bll5eyfzskdgt07id39bhm_933cd213-29c8-4938-8bd3-666ed3ca99d5.jpg",
+    "https://media1.thrillophilia.com/filestore/r02baq8euwhrrhb8kwxpw54vyewi_1cb71ece-f979-4b75-9bd2-f32b00a07ae7.jpg",
+    "https://media1.thrillophilia.com/filestore/yr8t4t3de1ejl6pfgwi5nw5y7pze_7bd749e6-6e16-4feb-a755-906e2bf97665.jpg",
+    "https://media1.thrillophilia.com/filestore/3t35qpscr82jr10htytwtbnxm8ii_da1459a2-0a47-4c50-9bfc-39ba6984646b.jpg",
+    "https://media1.thrillophilia.com/filestore/w8rh9w8df34vz78n5zqnau0eauhk_45b054e5-2b9d-4900-900d-b3a99cd2cbe8.jpg",
+    "https://media1.thrillophilia.com/filestore/p6mx1i5sog85340qixzepjf1a9s6_fd3ff689-927c-4766-ac02-d31138360179.jpg",
+    "https://media1.thrillophilia.com/filestore/5nfzci29gar439unnwmgpy8q6tqn_f7e535fd-6520-4b17-9d42-64758817e61d.jpg",
+    "https://media1.thrillophilia.com/filestore/zodvkddud9f5l3j9wjj3vio83bgr_trans-studio-bali-11-1024x560.webp",
+    "https://media1.thrillophilia.com/filestore/1l5pgkj7fbqaz5ksuc6415g2szwx_1000001470-1-edited.jpg",
+    "https://media1.thrillophilia.com/filestore/qr0mjpn2e8jdz1xe4td6g4axphfk_caption%20(87).jpg",
+    "https://media1.thrillophilia.com/filestore/r7la0ahjjivs7q0zz281aqk04flo_b228695e-1b5b-495c-9dc9-fc919abda736.jpg",
+    "https://media1.thrillophilia.com/filestore/bgs60vd5w6frnv6ila3pof9xqddl_e94fa848-87dc-4278-96d6-e051d4f08df1.jpg",
+    "https://media1.thrillophilia.com/filestore/y1x72ssabvefqh7qvjqokuhc02cc_cc.jpg"
+   ]
+  },
+  {
+   "name": "Trans Studio Bali Theme Park",
+   "day": 5,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/y1x72ssabvefqh7qvjqokuhc02cc_cc.jpg"
+   ]
+  },
+  {
+   "name": "Uluwatu Sunset Tour With Kecak Fire Dance - Sunset Tour + Kecak & Fire Dance Show",
+   "day": 5,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    3,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/3wbl1quszkxet87fhjkyh05yce0t_Uluwatu-1.jpg",
+    "https://media1.thrillophilia.com/filestore/ermwev8zaifimkvi66bm0lhvld51_Uluwatu%20Temple-6.jpg",
+    "https://media1.thrillophilia.com/filestore/rnb1lg31u3ak06pkp5qt5jqsjaj4_Uluwatu%20Temple-5.jpg",
+    "https://media1.thrillophilia.com/filestore/y7bwpg3zhhgiielxr1s0n5spa64g_Uluwatu%20Temple-3.jpg",
+    "https://media1.thrillophilia.com/filestore/sn71ko5amehco4wawd370y6ypm7u_Uluwatu%20Temple-4.jpg",
+    "https://media1.thrillophilia.com/filestore/t2f7c09u7qe0a87oiua422nkffa2_Uluwatu%20Temple-2.jpg",
+    "https://media1.thrillophilia.com/filestore/wzflunvakw7g7dkbwwoxr2kjlxzu_Uluwatu%20Temple-7.jpg",
+    "https://media1.thrillophilia.com/filestore/ehe2zgu0d70x4z74xyn9bpb3vhh7_Uluwatu-2.jpg",
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg",
+    "https://media1.thrillophilia.com/filestore/usdgmsoaand8ytcb34q674qu6c2p_1470909118_Hanoman_Kecak_Dance_Uluwatu_sunset.jpg",
+    "https://media1.thrillophilia.com/filestore/yshzr7uwi40a9tn8yjuhb22bh5mt_shutterstock_1170234892.jpg",
+    "https://media1.thrillophilia.com/filestore/qqgt4nz1c6htkcq4y90ncckqx18z_shutterstock_1215046294.jpg",
+    "https://media1.thrillophilia.com/filestore/4cjfax9ccqmra3b1b2hho5nzz7s8_shutterstock_1170234895.jpg"
+   ]
+  },
+  {
+   "name": "Uluwatu Temple",
+   "day": 5,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/a62p0paetrwut5oyqetviies2zrd_uluwatu-temple.jpg",
+    "https://media1.thrillophilia.com/filestore/5mto1q1ekw5avsb3ujz8ac8t3d3m_1498899217_Pura-Luhur-Uluwatu1.jpg"
+   ]
+  },
+  {
+   "name": "Tari Kecak",
+   "day": 5,
+   "city": "Seminyak",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/usdgmsoaand8ytcb34q674qu6c2p_1470909118_Hanoman_Kecak_Dance_Uluwatu_sunset.jpg",
+    "https://media1.thrillophilia.com/filestore/yshzr7uwi40a9tn8yjuhb22bh5mt_shutterstock_1170234892.jpg",
+    "https://media1.thrillophilia.com/filestore/qqgt4nz1c6htkcq4y90ncckqx18z_shutterstock_1215046294.jpg",
+    "https://media1.thrillophilia.com/filestore/4cjfax9ccqmra3b1b2hho5nzz7s8_shutterstock_1170234895.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6i2v116d3u3ruvkr5twbcjo341hd_Family-Bali-Gallery.jpg",
+   "caption": "Strike a pose with your family amidst the Jatiluwih Rice Terraces",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l1jbj0rf1ia7h03ufmqf48ww0j4p_shutterstock_695392744.jpg",
+   "caption": "Witness an array of marine animals as you snorkel in Nusa Penida Island",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ia4yqew69g7txwopy6qp0c9fkg4a_shutterstock_1903756630.jpg",
+   "caption": "Beauty of Bali's Rice Terrace",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/chjuc7qquiy7qxzh9hhh2eovlf4v_Bali%20Hot%20Spring-Gallery-1.jpg",
+   "caption": "Feel refreshed as you take a dip in Batur Hot Springs",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b7jbvgh7i7cdojun3qhl0pg09pdp_Ulun%20Danu-Gallery-1.jpg",
+   "caption": "Spend a memorable time with your kid at Ulun Danu Temple",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/br525dg9ym79l3d0kzhsvadrgu2r_shutterstock_1851632536.jpg",
+   "caption": "Soak-in the stunning views of Nusa Penida's West Coast",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w9eygg7lmbnknp72v498et37d6np_Massage-Gallery-1.jpg",
+   "caption": "Relax as you enjoy Balinese Massage in a calming atmosphere",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/umows4byxkia3a71hqhqxg6cr1zt_Trans%20Studio-Bali-Gallery-1.jpg",
+   "caption": "Have fun enjoying entertaining shows at Trans Studio",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/o0wdeltswy46xmghleb8dlhwk133_Ulun%20Danu-Gallery-2.jpg",
+   "caption": "Admire the stunning Ulun Danu Temple, famed for its architecture",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tbpzq08t9cwci9mp9ijdatdoijug_shutterstock_2403581917.jpg",
+   "caption": "Take in the views of the Indian Ocean on your visit to Uluwatu Temple",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0cssx2r323j5ufgr25pxxbeefiar_Batur-Gallery-Family-1.jpg",
+   "caption": "Marvel at the surrounding beauty as you ascend Mt. Batur",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l4dzowet7rjsns0xqjs9q3w5hgcn_Trans%20Studio-Bali-Gallery-2.webp",
+   "caption": "Have a fun-filled time with your family at Trans Studio",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/p2mxyiz2g9o3l132lvwhn0s9edxl_Shankara-1.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fxduu364i88debpja4xupqkan1un_Shankara-3.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/egb66d2wqsf6rujpnzpl8f0oaqcq_Shankara-2.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9ui126d0g8x167golw6bugnvkbk8_Shankara-5.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z58ap4xu0ujaiq5thhusc23pr2cr_Shankara-6.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6csy7r3ufed8749ak7bq15mdig3v_Shankara-4.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hic7mdwqvs3f5p6yc7s9vm2y93vq_Shankara-8.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/30k58oog0jd0urvpgg9l8hr66mwq_Shankara-7.webp",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g6fbtnu015ogm27mimmrp14tf580_669842241.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ji86x895w76g3gtiu04h8llzdr8m_669842179.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3se3ogk4xn39jpy3tc9n3xym4ofz_669841937.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n2m6lh4rw0nmyuth1z24sg97eapz_669841905.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/o1hir041xjxmf4rpbvcmmsvjv7zb_669841839.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s2em3weaskwj74jp9cfi4apex13h_423248468.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n4zoi1bjo08ymp2tg5jyoexe0ymh_669842136.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xuep3g9hc9cmlrw57uh0aftpz16y_34176265.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/aaeuf73rawbvgtfie68u8jkkj5ea_34176289.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7ynvty872zgtswdt9jip5n3xeqev_34176494.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3pkzf400g3m1mg9i6esn0sh06tmc_34010888.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v8kd3stydymdzd4rk6z4dul5c1cu_34010899.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ebjrb5emwj6rc4fzxdb3kawm2yve_34176449.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/u3pp4hz5fnrftoor4all75s8tmdt_641331596.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7dpom63qbl4vu9ejmpug8fu8ptq3_639726836.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/m0d71k8czz7d7egg367ilncwat7s_639726852.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3ljy09ycm1fav4f71e0zxiy2qrwq_639726851.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i7elq9gq12uca6xvqr7p03yjuqas_639726863.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2ounqkxe9p48oebrjokyyyv0jx5q_639726844.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wyrnt7i591r0tjiu8pmowudlhays_Mount%20Batur%20Jeep%20Sunrise%20Combo%20Experience%20in%20Bali.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uhm0dsqspbk2gj4i90ygoayjfpvq_shutterstock_1206047506.jpg",
+   "caption": "Golden-hued sunrise at Mount Batur",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/k37qp597crl19lba7vx40k4jb8vp_shutterstock_1653263992.jpg",
+   "caption": "Witness the breathtaking sunrise at Mount Batur while cruising in a Jeep towards the summit",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/unbtyg5ycsqba70yogiwuiu0whyv_shutterstock_1985320544.jpg",
+   "caption": "Adventure meets relaxation with Mount Batur and Batur Hot Spring",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/re6tkje436ll1gvaczff46p654vq_shutterstock_2254939811.jpg",
+   "caption": "Combine adventure and relaxation with a sunrise Jeep tour at Mount Batur",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v9qlih4xzddybiu9ktstc2ww7y7k_shutterstock_2176976827.jpg",
+   "caption": "Relax and rejuvenate at Batur Hot Spring",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2lqubqpwc7pgzj7podybztx47o8g_k1pjs1b8l54axfq37sc0s10so5j1_shutterstock_132434978.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xyts9zlfim5cd0e8hk60gsw0r91e_dmk5afwlx9qmum4donq3glrv92aw_shutterstock_2202090329.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pxqlaz52g88f2esj2k12r4n7thc5_jr7vvnd1b6ci9sp4r3y50mmfutl0_shutterstock_794085016.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rzl2u9632yt6ev8tn63ijkohyujm_tq178vgl2vd5kfs9ovvrho6udc6e_shutterstock_1384811777.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i7p3kdo9h6to3fl3s8c64pm3qzkk_xz637zs0hdo3cv1aznd151q9l08u_shutterstock_578908483.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xbhogfbp4ufl0wid5xnhei4f9op5_mcc5xdqqotsst1n7qdn8qfab6l14_shutterstock_1911509977.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h7ixt5j6tlqm4urxc0u9u8ck0tno_pntcqhuq42iqwedahw0vddb29dat_shutterstock_635175203.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/772sr8hml0wem9034fohtnbi9tfh_Balinese%20Massage%207.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dg0b7mz3eog3wxmiintpjej2qnez_Balinese%20Massage%204.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b5grhpy6gbinxn5gvsa6ebyqlnq1_shutterstock_631736717.jpg",
+   "caption": "Full Day Bedugul Tour in Bali",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/szjvf4vdg5t2bevv1ixaj1uvzg5h_shutterstock_1151728820.jpg",
+   "caption": "Aerial view of Ulun Danu Bratan Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e68by3v8axxgfordtefmv0qbqm77_shutterstock_1039981642.jpg",
+   "caption": "Gates to one of the Hindu temples in Bedugul",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/k76yxfryyog9qy9w4k9hg602qtlv_shutterstock_1059984710.jpg",
+   "caption": "Have mesmerizing views of Taman Ayun Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1j943bphwtrkj0fzxtrci2370a59_shutterstock_725111986.jpg",
+   "caption": "See the majestic Tanah Lot Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ktoyq1k5cbo5yb1gon0075bmuu4t_caption.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/glhbnzybcaorgf7qkgsiymp158zo_11.jpeg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5vypuz59sdnia5qufsjvhxmocvha_kelingking-beach.webp",
+   "caption": "See the beauty of Nusa Penida West on a full-day tour, exploring stunning beaches, dramatic cliffs & crystal-clear waters",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0vqx80ahthabguiqgtf6wz676azt_1652850565-product_image-18-05-2022-aln5jNLI1vBHzkgT.jpg",
+   "caption": "Behold the stunning beauty of Kelingking Beach, with its breathtaking cliffs & turquoise waters",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/68hb9hcrfe2zvetat8g6x1jomxvd_efeba0c3-9e97-45c0-a79b-e9bb833c4304.jpg",
+   "caption": "Gaze at majestic cliffs creating a natural infinity pool in clear turquoise waters",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hr1pqdhfpxau4k7xzg517d1m7ht1_Broken-Beach-3.jpg",
+   "caption": "Marvel at the Broken Beach, where towering cliffs encircle a natural arch above the pool of turquoise water",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pk0wyrzz6zagrbgdu9vs580uf8en_color-fish-scaled.jpg",
+   "caption": "Dive into the underwater wonders of Nusa Penida through exhilarating snorkelling adventures",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ijj51cr2n2dkk9f9n7006iw9tlq1_16a496bd-6775-40af-84e2-edf6316fb324.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/t883w3bll5eyfzskdgt07id39bhm_933cd213-29c8-4938-8bd3-666ed3ca99d5.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/r02baq8euwhrrhb8kwxpw54vyewi_1cb71ece-f979-4b75-9bd2-f32b00a07ae7.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yr8t4t3de1ejl6pfgwi5nw5y7pze_7bd749e6-6e16-4feb-a755-906e2bf97665.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3t35qpscr82jr10htytwtbnxm8ii_da1459a2-0a47-4c50-9bfc-39ba6984646b.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w8rh9w8df34vz78n5zqnau0eauhk_45b054e5-2b9d-4900-900d-b3a99cd2cbe8.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/p6mx1i5sog85340qixzepjf1a9s6_fd3ff689-927c-4766-ac02-d31138360179.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5nfzci29gar439unnwmgpy8q6tqn_f7e535fd-6520-4b17-9d42-64758817e61d.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zodvkddud9f5l3j9wjj3vio83bgr_trans-studio-bali-11-1024x560.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1l5pgkj7fbqaz5ksuc6415g2szwx_1000001470-1-edited.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qr0mjpn2e8jdz1xe4td6g4axphfk_caption%20(87).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/r7la0ahjjivs7q0zz281aqk04flo_b228695e-1b5b-495c-9dc9-fc919abda736.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bgs60vd5w6frnv6ila3pof9xqddl_e94fa848-87dc-4278-96d6-e051d4f08df1.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qrysgfe6syzbzqpaeaaboh1pve2m_shutterstock_207542026.jpg",
+   "caption": "Watch beautiful sunset from Uluwatu Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7e4fzd7sbn3e3upychk6pulvw3px_cropped-tari-kecak-uluwatu.jpg",
+   "caption": "Enjoy the dance performance along with the setting sun",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8vr4vboe6yxvsdyic9lusvvtc8oq_shutterstock_725111986.jpg",
+   "caption": "Visit Tanah Lot Temple, built on a huge 3-acre rock",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/smq4e38s76huvx20cdl84o83x7gk_1562073467_0.jpg",
+   "caption": "Sit in a circle and watch the powerful Kecak Fire Dance ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ujnfyw82qgfqxzs3ynfvyqr2w7oy_shutterstock_725465248.jpg",
+   "caption": "Spend some time at Padang Padang Beach or explore other beaches of Bali",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/27vmc3i1e6jfu0g7gfxmmoawg7o2_Bedugul-2.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n11wn15k976zk4guzejyz8wykl4k_Bedugul-1.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4ccbcv4u7v4jzlazowggkgkjlomz_Bedugul-3.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/28l0mtv3v8g1z78gnzjsxjx0zbhd_shutterstock_1346345108.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sp71g4gjrrcnxd24gznzr7ejpldf_Seminyak-Beach-Umbrellas-Tile-Image.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1fniznkys3hs4t18hsind858z8ok_shutterstock_464526401.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x7ihmxsmcxo1ds6acpzc3vxyr4x5_shutterstock_1179917983.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ni2vsnbwe3rqwxohjdor002i2nha_shutterstock_559730524.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qzqg7qbx8pq33i7so7acy1c8d9c8_shutterstock_1346342258.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bfd9i7vnfl0rfpza6aodswecrybt_shutterstock_524421913.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/y62r8ggt0rho68aopabqyheu469s_shutterstock_620692622.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/27vmc3i1e6jfu0g7gfxmmoawg7o2_Bedugul-2.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Bedugul"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n11wn15k976zk4guzejyz8wykl4k_Bedugul-1.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Bedugul"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4ccbcv4u7v4jzlazowggkgkjlomz_Bedugul-3.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Bedugul"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/28l0mtv3v8g1z78gnzjsxjx0zbhd_shutterstock_1346345108.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sp71g4gjrrcnxd24gznzr7ejpldf_Seminyak-Beach-Umbrellas-Tile-Image.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1fniznkys3hs4t18hsind858z8ok_shutterstock_464526401.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x7ihmxsmcxo1ds6acpzc3vxyr4x5_shutterstock_1179917983.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ni2vsnbwe3rqwxohjdor002i2nha_shutterstock_559730524.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qzqg7qbx8pq33i7so7acy1c8d9c8_shutterstock_1346342258.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bfd9i7vnfl0rfpza6aodswecrybt_shutterstock_524421913.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/y62r8ggt0rho68aopabqyheu469s_shutterstock_620692622.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Seminyak"
+  }
+ ],
+ "dest_gallery": {
+  "Bedugul": [
+   "https://media1.thrillophilia.com/filestore/27vmc3i1e6jfu0g7gfxmmoawg7o2_Bedugul-2.jpg",
+   "https://media1.thrillophilia.com/filestore/n11wn15k976zk4guzejyz8wykl4k_Bedugul-1.jpg",
+   "https://media1.thrillophilia.com/filestore/4ccbcv4u7v4jzlazowggkgkjlomz_Bedugul-3.jpg"
+  ],
+  "Seminyak": [
+   "https://media1.thrillophilia.com/filestore/28l0mtv3v8g1z78gnzjsxjx0zbhd_shutterstock_1346345108.jpg",
+   "https://media1.thrillophilia.com/filestore/sp71g4gjrrcnxd24gznzr7ejpldf_Seminyak-Beach-Umbrellas-Tile-Image.jpg",
+   "https://media1.thrillophilia.com/filestore/1fniznkys3hs4t18hsind858z8ok_shutterstock_464526401.jpg",
+   "https://media1.thrillophilia.com/filestore/x7ihmxsmcxo1ds6acpzc3vxyr4x5_shutterstock_1179917983.jpg",
+   "https://media1.thrillophilia.com/filestore/ni2vsnbwe3rqwxohjdor002i2nha_shutterstock_559730524.jpg",
+   "https://media1.thrillophilia.com/filestore/qzqg7qbx8pq33i7so7acy1c8d9c8_shutterstock_1346342258.jpg",
+   "https://media1.thrillophilia.com/filestore/bfd9i7vnfl0rfpza6aodswecrybt_shutterstock_524421913.jpg",
+   "https://media1.thrillophilia.com/filestore/y62r8ggt0rho68aopabqyheu469s_shutterstock_620692622.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/6i2v116d3u3ruvkr5twbcjo341hd_Family-Bali-Gallery.jpg"
+ ]
+}

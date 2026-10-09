@@ -1,0 +1,114 @@
+{
+  "source_slug": "rediscover-bali-in-6-days",
+  "camel": "magicalBaliHolidayWithFlights",
+  "slug": "magical-bali-holiday-with-flights",
+  "title": "Magical Bali Holiday with Flights",
+  "alt": "Kelingking beach on Nusa Penida, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Return flights, private transfers and guided tours",
+  "tag": "Beach",
+  "tags": ["Beach", "Family"],
+  "price": 73150,
+  "route_cities": ["Ubud", "Kintamani", "Kuta", "Tanah Lot", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 10, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Asri Sari Villa, Ubud",
+      "hotel_label": "Asri Sari Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small villa property on the quiet edge of Ubud",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 2, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting, the Tegalalang rice terraces, Tegenungan waterfall and a turn on the jungle swing, with lunch included along the way."},
+        {"name": "Ubud art market", "day": 1, "optional": true, "match": "Ubud Art Market", "description": "Two floors of carvings, batik, woven bags and silver, best in the early morning when the stalls open and the prices are softest."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights inland to start, with a coffee plantation road up to Kintamani, the rice terraces at Tegalalang and a waterfall stop."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Tanah Lot and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Kuta Central Park Hotel, Bali",
+      "hotel_label": "Kuta Central Park Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Large pool hotel ten minutes from Kuta beach",
+      "activities": [
+        {"name": "Temple tour with Tanah Lot sunset", "day": 3, "optional": false, "match": "Ketadon Monkey Forest", "description": "Taman Ayun, the Alas Kedaton monkey forest and the lake temple at Beratan, finishing with sunset at the sea temple of Tanah Lot."},
+        {"name": "Water sports and Uluwatu temple", "day": 4, "optional": false, "match": "Water Sports with Uluwatu", "description": "Banana boat, jet ski and parasailing at Tanjung Benoa in the morning, then the cliff top temple at Uluwatu in the late afternoon."},
+        {"name": "Nusa Penida west coast by speedboat", "day": 5, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across to Nusa Penida for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, the island's four most photographed stops."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the south coast, with a temple day that ends at Tanah Lot, water sports at Tanjung Benoa and a full day on Nusa Penida."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and the jungle swing",
+    "3": "Temples and Tanah Lot sunset",
+    "4": "Water sports and Uluwatu",
+    "5": "Nusa Penida and four beaches",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud villa and unwind",
+      "Evening free among the rice fields",
+      "Optional: the Ubud art market or Goa Gajah cave temple"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegalalang rice terraces and Tegenungan waterfall",
+      "A turn on the jungle swing, with lunch included"
+    ],
+    "3": [
+      "Breakfast and check out, then private transfer towards Kuta",
+      "Taman Ayun temple and the Alas Kedaton monkey forest",
+      "Lake Beratan, then sunset at the sea temple of Tanah Lot",
+      "Check in at your Kuta hotel for the next three nights"
+    ],
+    "4": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing at the water sports club",
+      "Uluwatu temple on the cliffs in the late afternoon",
+      "Evening free in Kuta"
+    ],
+    "5": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Return boat to Bali and back to your hotel"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your return flight"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B, L", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Asri Sari Villa, Ubud",
+    "2": "Asri Sari Villa, Ubud",
+    "3": "Kuta Central Park Hotel, Bali",
+    "4": "Kuta Central Park Hotel, Bali",
+    "5": "Kuta Central Park Hotel, Bali",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Six days is enough for Bali if you split them. Two nights inland, three on the coast, one big island day.",
+    "tip": "Nusa Penida days start early because the sea is calmest before noon. Carry flat shoes for the Kelingking steps, keep a dry bag for your phone, and plan a slow evening afterwards."
+  },
+  "summary": "A short Bali holiday with return flights built in. Two nights in Ubud for the rice terraces and Kintamani, then three on the south coast with a temple day at Tanah Lot, water sports at Tanjung Benoa and a full day on Nusa Penida.",
+  "included": "Included: return international flights; 5 nights with daily breakfast; private airport and inter city transfers; Kintamani and jungle swing tour with lunch; temple tour with Tanah Lot sunset; water sports with Uluwatu; Nusa Penida west coast tour; visa assistance.",
+  "not_included": "Not included: Indonesia visa fees; lunches and dinners other than the one stated; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

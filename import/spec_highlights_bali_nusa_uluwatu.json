@@ -1,0 +1,113 @@
+{
+  "source_slug": "6-days-tour-of-bali-with-balinese-spa",
+  "camel": "highlightsOfBaliNusaPenidaUluwatu",
+  "slug": "highlights-of-bali-with-nusa-penida-and-uluwatu",
+  "title": "Highlights of Bali with Nusa Penida and Uluwatu",
+  "alt": "Garuda Wisnu Kencana park in south Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Culture",
+  "tags": ["Culture", "Luxury"],
+  "price": 34485,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 12, "meals": 5},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Ubud Green",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Luxury room \u00b7 5\u2605 \u00b7 Villa resort set in the rice fields south of Ubud",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 2, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and a turn on the jungle swing."},
+        {"name": "Ubud Monkey Forest", "day": 1, "optional": true, "match": "Monkey Forest", "description": "Banyan trees, moss covered shrines and a few hundred macaques in a sanctuary ten minutes on foot from the Ubud market."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights in a five star villa resort among the rice fields, with a full day up through the coffee country to the Kintamani crater."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Bedugul and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Ramada by Wyndham Bali Sunset Road Kuta",
+      "hotel_label": "Ramada by Wyndham Bali Sunset Road",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Super deluxe room \u00b7 4\u2605 \u00b7 Four star hotel on Sunset Road with a large pool deck",
+      "activities": [
+        {"name": "Ulun Danu with Git Git waterfall", "day": 3, "optional": false, "match": "Full Day Ulun Danu Temple Combo", "description": "The Handara gate, the lake temple of Ulun Danu Beratan and the tall Git Git waterfall in the hills, on the way down to the coast."},
+        {"name": "Nusa Penida west coast by speedboat", "day": 4, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, the island's four most photographed stops."},
+        {"name": "GWK park with Uluwatu and Padang Padang", "day": 5, "optional": false, "match": "GWK Cultural Park", "description": "Entry to the Garuda Wisnu Kencana cultural park and its giant statue, then Padang Padang beach and Uluwatu temple for sunset."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the coast with the Bedugul lake temples and Git Git waterfall on the way, a full island day and the GWK park."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and the jungle swing",
+    "3": "Ulun Danu and on to Kuta",
+    "4": "Nusa Penida and four beaches",
+    "5": "GWK park and Uluwatu",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your villa resort in the Ubud rice fields",
+      "Rest of the day free by the pool",
+      "Optional: the Monkey Forest or the Ubud art market"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast and check out, then north to the Handara gate",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "The tall Git Git waterfall in the hills",
+      "Private transfer down to Kuta and check in"
+    ],
+    "4": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Return boat to Bali and back to your hotel"
+    ],
+    "5": [
+      "Breakfast, then on to the Garuda Wisnu Kencana park",
+      "The giant Garuda statue and the park amphitheatre",
+      "Padang Padang beach in its limestone cove",
+      "Uluwatu temple on the cliffs at sunset"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Ubud Green",
+    "2": "Ubud Green",
+    "3": "Ramada by Wyndham Bali Sunset Road Kuta",
+    "4": "Ramada by Wyndham Bali Sunset Road Kuta",
+    "5": "Ramada by Wyndham Bali Sunset Road Kuta",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Five nights, a five star villa in Ubud and a four star on the coast. The hotels are the reason to pick this one.",
+    "tip": "Ubud Green is spread over a hillside, so ask for a villa near the pool if steps are a problem. On the Nusa Penida day we book the first boat out of Sanur and you are back by six."
+  },
+  "summary": "Six days with a five star villa in the Ubud rice fields and a four star on the coast, taking in Kintamani, the Ulun Danu lake temple, Git Git waterfall, a full day on Nusa Penida and the GWK park with Uluwatu at sunset.",
+  "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; Kintamani and jungle swing tour; Ulun Danu with Git Git waterfall; Nusa Penida west coast tour; GWK park with Padang Padang and Uluwatu.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

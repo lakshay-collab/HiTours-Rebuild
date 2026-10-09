@@ -71,6 +71,23 @@ import { singaporePenangRoyalCaribbeanBySlug } from './singaporePenangRoyalCarib
 import { disneyAdventureCruiseSingaporeBySlug } from './disneyAdventureCruiseSingaporeData';
 import { singaporeMalaysiaHoneymoonBySlug } from './singaporeMalaysiaHoneymoonData';
 import { singaporeMalaysiaSentosaGentingBySlug } from './singaporeMalaysiaSentosaGentingData';
+import { bestOfBaliUbudAndKutaBySlug } from './bestOfBaliUbudAndKutaData';
+import { magicalBaliHolidayWithFlightsBySlug } from './magicalBaliHolidayWithFlightsData';
+import { luxuryBaliEscapeMountBaturBySlug } from './luxuryBaliEscapeMountBaturData';
+import { baliHoneymoonCandlelightDinnerBySlug } from './baliHoneymoonCandlelightDinnerData';
+import { romanticBaliNusaPenidaBySlug } from './romanticBaliNusaPenidaData';
+import { baliAdventureRaftingNusaPenidaBySlug } from './baliAdventureRaftingNusaPenidaData';
+import { baliCouplesEscapeNightSafariBySlug } from './baliCouplesEscapeNightSafariData';
+import { baliHoneymoonSeminyakBySlug } from './baliHoneymoonSeminyakData';
+import { singaporeBaliHoneymoonBySlug } from './singaporeBaliHoneymoonData';
+import { baliHoneymoonPirateCruiseBySlug } from './baliHoneymoonPirateCruiseData';
+import { romanticBaliSunsetCruiseBySlug } from './romanticBaliSunsetCruiseData';
+import { bestOfBaliFlightsNusaPenidaBySlug } from './bestOfBaliFlightsNusaPenidaData';
+import { grandBaliSafariKecakBySlug } from './grandBaliSafariKecakData';
+import { shortBaliEscapeFlightsBySlug } from './shortBaliEscapeFlightsData';
+import { classicBaliHoneymoonSwingBySlug } from './classicBaliHoneymoonSwingData';
+import { highlightsOfBaliNusaPenidaUluwatuBySlug } from './highlightsOfBaliNusaPenidaUluwatuData';
+import { bestOfBaliSunsetCruiseBySlug } from './bestOfBaliSunsetCruiseData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -144,5 +161,22 @@ export const BY_SLUG = {
   ...singaporePenangRoyalCaribbeanBySlug,
   ...disneyAdventureCruiseSingaporeBySlug,
   ...singaporeMalaysiaHoneymoonBySlug,
-  ...singaporeMalaysiaSentosaGentingBySlug
+  ...singaporeMalaysiaSentosaGentingBySlug,
+  ...bestOfBaliUbudAndKutaBySlug,
+  ...magicalBaliHolidayWithFlightsBySlug,
+  ...luxuryBaliEscapeMountBaturBySlug,
+  ...baliHoneymoonCandlelightDinnerBySlug,
+  ...romanticBaliNusaPenidaBySlug,
+  ...baliAdventureRaftingNusaPenidaBySlug,
+  ...baliCouplesEscapeNightSafariBySlug,
+  ...baliHoneymoonSeminyakBySlug,
+  ...singaporeBaliHoneymoonBySlug,
+  ...baliHoneymoonPirateCruiseBySlug,
+  ...romanticBaliSunsetCruiseBySlug,
+  ...bestOfBaliFlightsNusaPenidaBySlug,
+  ...grandBaliSafariKecakBySlug,
+  ...shortBaliEscapeFlightsBySlug,
+  ...classicBaliHoneymoonSwingBySlug,
+  ...highlightsOfBaliNusaPenidaUluwatuBySlug,
+  ...bestOfBaliSunsetCruiseBySlug
 };

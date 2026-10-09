@@ -1,0 +1,113 @@
+{
+  "source_slug": "bali-tour-for-honeymoon-couples",
+  "camel": "romanticBaliNusaPenida",
+  "slug": "romantic-bali-honeymoon-with-nusa-penida",
+  "title": "Romantic Bali Honeymoon with Nusa Penida",
+  "alt": "Angel's Billabong rock pool on Nusa Penida, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 32775,
+  "route_cities": ["Ubud", "Kintamani", "Kuta", "Uluwatu", "Nusa Penida"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 10, "meals": 5},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Bakung Ubud Resort & Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+      "activities": [
+        {"name": "Kintamani and rice terrace day tour", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting on the road to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Ubud Monkey Forest", "day": 1, "optional": true, "match": "Monkey Forest", "description": "Banyan trees, moss covered shrines and a few hundred macaques in a sanctuary ten minutes on foot from the Ubud market."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights inland to begin, with the crater lake at Kintamani, a coffee plantation stop and the rice terraces at Tegalalang."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu and Nusa Penida",
+      "days": [3, 4, 5, 6],
+      "dayLabel": "Day 3 to 6",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Water sports, Padang Padang and Uluwatu", "day": 3, "optional": false, "match": "Water Sports with Uluwatu Temple Tour", "description": "Banana boat and jet ski at Tanjung Benoa, the cove at Padang Padang beach, then Uluwatu temple above the surf for sunset."},
+        {"name": "Nusa Penida west coast by speedboat", "day": 4, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across to Nusa Penida for Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, the island's four best known stops."},
+        {"name": "Balinese massage for two", "day": 5, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage for both of you, warm oil and long pressure strokes, booked privately at a spa near your hotel."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the south coast, with water sports and Uluwatu, a full day on Nusa Penida and a spa afternoon before you fly home."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and rice terraces",
+    "3": "Uluwatu and on to Kuta",
+    "4": "Nusa Penida and four beaches",
+    "5": "Spa day in Kuta",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud resort and settle in",
+      "First evening free among the rice fields",
+      "Optional: the Monkey Forest or the Ubud art market"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast and check out, then private transfer to the coast",
+      "Water sports at Tanjung Benoa: banana boat and jet ski",
+      "Padang Padang beach, then Uluwatu temple for sunset",
+      "Check in at your Kuta hotel for three nights"
+    ],
+    "4": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Return boat to Bali and back to your hotel"
+    ],
+    "5": [
+      "Breakfast and a slow morning by the pool",
+      "A traditional Balinese massage for two at a nearby spa",
+      "Optional: a sunset dinner cruise from Benoa harbour",
+      "Optional: the Kuta night market or dinner on the beach"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Bakung Ubud Resort & Villa, Ubud",
+    "2": "Bakung Ubud Resort & Villa, Ubud",
+    "3": "Bliss Surfer Hotel, Kuta",
+    "4": "Bliss Surfer Hotel, Kuta",
+    "5": "Bliss Surfer Hotel, Kuta",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Keep Nusa Penida for the middle of the trip. It is the big day out, and you want the spa after it.",
+    "tip": "The Kelingking viewpoint has a steep path down and most couples stop at the top, which is the better photograph anyway. Flat shoes, water and an early boat make the day easy."
+  },
+  "summary": "Six days for two, with two nights in Ubud for the crater lake at Kintamani and the rice terraces, then three on the coast with water sports, Uluwatu at sunset, a full day on Nusa Penida and a couples massage.",
+  "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace tour; water sports with Padang Padang and Uluwatu; Nusa Penida west coast tour; Balinese massage for two; visa assistance.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

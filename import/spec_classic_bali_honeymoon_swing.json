@@ -1,0 +1,105 @@
+{
+  "source_slug": "cheap-bali-honeymoon-package",
+  "camel": "classicBaliHoneymoonSwing",
+  "slug": "classic-bali-honeymoon-with-bali-swing",
+  "title": "Classic Bali Honeymoon with Bali Swing",
+  "alt": "The Bali jungle swing above the Tegalalang valley",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Short trips"],
+  "price": 28690,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Uluwatu"],
+  "counts": {"days": 5, "nights": 4, "cities": 2, "hotels": 2, "experiences": 3, "transfers": 6, "meals": 4},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "Asri Sari Villa, Ubud",
+      "hotel_label": "Asri Sari Villa",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small villa property on the quiet edge of Ubud",
+      "activities": [
+        {"name": "Kintamani with the Bali swing", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting, the crater lake view at Kintamani, Tegenungan waterfall, the Tegalalang terraces and a ride on the Bali jungle swing."},
+        {"name": "Goa Gajah cave temple", "day": 1, "optional": true, "match": "Goa Gajah", "description": "The elephant cave, an eleventh century meditation site with a carved doorway and bathing pools, fifteen minutes from central Ubud."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights inland for the first half, with the crater lake at Kintamani, a waterfall stop and the Bali swing over the Tegalalang valley."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Bedugul and Uluwatu",
+      "days": [3, 4, 5],
+      "dayLabel": "Day 3 to 5",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 3, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."},
+        {"name": "Water sports, Padang Padang and Uluwatu", "day": 4, "optional": false, "match": "Water Sports with Uluwatu", "description": "Banana boat and jet ski at Tanjung Benoa, the cove at Padang Padang beach, then Uluwatu temple above the surf for sunset."}
+      ],
+      "program": {"name": "Kuta", "description": "Two nights on the coast, with the Bedugul lake temples on the way down, water sports at Tanjung Benoa and the Uluwatu cliffs."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and the Bali swing",
+    "3": "Bedugul and on to Kuta",
+    "4": "Water sports and Uluwatu",
+    "5": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud villa and settle in",
+      "First evening free among the rice fields",
+      "Optional: Goa Gajah cave temple or the art market"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A ride on the Bali jungle swing, included in your package"
+    ],
+    "3": [
+      "Breakfast and check out, then north to the Handara gate",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Check in at your Kuta hotel near the beach"
+    ],
+    "4": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat and jet ski with an instructor",
+      "Padang Padang beach in its limestone cove",
+      "Uluwatu temple on the cliffs at sunset"
+    ],
+    "5": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "Asri Sari Villa, Ubud",
+    "2": "Asri Sari Villa, Ubud",
+    "3": "Bliss Surfer Hotel, Kuta",
+    "4": "Bliss Surfer Hotel, Kuta",
+    "5": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Our most affordable honeymoon. Four nights, both sides of Bali, and the swing photo everyone comes home with.",
+    "tip": "The swing queues are shortest before eleven, so we start the Kintamani day early. Bring a dress or shirt with some colour, it makes a real difference in those valley photographs."
+  },
+  "summary": "A five day honeymoon on a sensible budget: two nights in Ubud for the crater lake, the rice terraces and the Bali jungle swing, then two on the coast with the Bedugul lake temples, water sports and sunset at Uluwatu.",
+  "included": "Included: 4 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace tour with the Bali swing; Bedugul and Tanah Lot sunset tour; water sports with Padang Padang and Uluwatu.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

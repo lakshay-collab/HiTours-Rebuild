@@ -1,0 +1,123 @@
+{
+  "source_slug": "bali-tour-package-with-water-sports",
+  "camel": "baliAdventureRaftingNusaPenida",
+  "slug": "bali-adventure-with-rafting-and-nusa-penida",
+  "title": "Bali Adventure with Rafting and Nusa Penida",
+  "alt": "Rafting on the Ayung river near Ubud, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Return flights, private transfers and guided tours",
+  "tag": "Adventure",
+  "tags": ["Adventure", "Family"],
+  "price": 79705,
+  "route_cities": ["Ubud", "Mount Batur", "Ayung River", "Kuta", "Nusa Penida"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 7, "transfers": 16, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Mount Batur and the Ayung river",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Bakung Ubud Resort & Villa",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+      "activities": [
+        {"name": "Kintamani with Ubud and coffee plantation", "day": 2, "optional": false, "match": "Kintamani With Ubud Tour", "description": "A full day through central Bali with a coffee plantation tasting, the Tegalalang rice terraces, the Ubud palace and the crater lake view at Kintamani."},
+        {"name": "Mount Batur sunrise by jeep", "day": 3, "optional": false, "match": "Sunrise At Mount Batur by Jeep", "description": "A four wheel drive up the volcano in the dark for sunrise on the black lava field, followed by a soak in the Batur hot springs."},
+        {"name": "Campuhan ridge walk and Tegenungan", "day": 3, "optional": false, "match": "Campuhan Ridge Walk", "description": "The green ridge path between two rivers on the edge of Ubud town, then the wide curtain of Tegenungan waterfall in the afternoon."}
+      ],
+      "program": {"name": "Ubud", "description": "Three nights inland with a coffee plantation day, a jeep sunrise on Mount Batur, the Campuhan ridge path and a waterfall in the afternoon."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Nusa Penida and Uluwatu",
+      "days": [4, 5, 6, 7],
+      "dayLabel": "Day 4 to 7",
+      "hotel": "Diamond Hotel Kuta, Bali",
+      "hotel_label": "Diamond Hotel Kuta",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet hotel with a pool, walking distance from Kuta beach",
+      "activities": [
+        {"name": "Ayung river white water rafting", "day": 4, "optional": false, "match": "White Water Rafting", "description": "Twelve kilometres of grade two and three rapids on the Ayung river, past jungle walls and carved rock faces, with all gear and a guide in the raft."},
+        {"name": "Nusa Penida west coast by speedboat", "day": 5, "optional": false, "match": "Nusa Penida West", "description": "Speedboat across for Kelingking beach, Angel's Billabong and Broken Bay, the three viewpoints that make Nusa Penida worth the early start."},
+        {"name": "Snorkelling at Crystal Bay", "day": 5, "optional": false, "match": "Snorkeling at Crystal Bay", "description": "Mask and fins in the clear water of Crystal Bay on the way back, with coral heads and reef fish close to the shore."},
+        {"name": "Uluwatu and Padang Padang beach", "day": 6, "optional": false, "match": "Day Trip to Uluwatu", "description": "The cove at Padang Padang beach and the cliff top temple at Uluwatu, timed so you are there as the sun goes into the ocean."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the coast with rafting on the Ayung river, a full day on Nusa Penida with snorkelling, and the cliffs of Uluwatu at sunset."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and coffee country",
+    "3": "Mount Batur jeep sunrise",
+    "4": "Rafting and on to Kuta",
+    "5": "Nusa Penida and Crystal Bay",
+    "6": "Uluwatu and Padang Padang",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud resort and settle in",
+      "Rest of the day free in Bali's green interior",
+      "Optional: the Monkey Forest, Celuk silver village or the art market"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "The crater lake view, then the Tegalalang rice terraces",
+      "Ubud palace and the market lanes on the way back"
+    ],
+    "3": [
+      "Very early jeep ride up the lava slopes of Mount Batur",
+      "Sunrise over the caldera, then the Batur hot springs",
+      "The Campuhan ridge walk between two rivers",
+      "Tegenungan waterfall in the afternoon"
+    ],
+    "4": [
+      "Breakfast and check out, then on to the Ayung river",
+      "Twelve kilometres of rafting through jungle gorges",
+      "Private transfer down to Kuta and check in",
+      "Evening free near the beach"
+    ],
+    "5": [
+      "Early breakfast, then private transfer to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong and Broken Bay",
+      "Snorkelling at Crystal Bay before the boat back"
+    ],
+    "6": [
+      "Breakfast, then a half day to the southern cliffs",
+      "Padang Padang beach in its limestone cove",
+      "Uluwatu temple above the surf at sunset",
+      "Optional: the Kecak fire dance at the temple"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your return flight"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B"},
+  "hotel_by_day": {
+    "1": "Bakung Ubud Resort & Villa, Ubud",
+    "2": "Bakung Ubud Resort & Villa, Ubud",
+    "3": "Bakung Ubud Resort & Villa, Ubud",
+    "4": "Diamond Hotel Kuta, Bali",
+    "5": "Diamond Hotel Kuta, Bali",
+    "6": "Diamond Hotel Kuta, Bali",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "This is the active Bali. Volcano at dawn, river rapids by day, island beaches after. Families with teenagers love it.",
+    "tip": "Rafting and the Batur jeep both need a change of clothes and shoes you do not mind soaking. Keep the camera in a dry bag and let us hold your main luggage at the hotel on moving day."
+  },
+  "summary": "Seven days of active Bali with return flights: a jeep sunrise on Mount Batur, the Campuhan ridge walk, rafting on the Ayung river, Nusa Penida with snorkelling at Crystal Bay and the cliffs of Uluwatu at sunset.",
+  "included": "Included: return international flights; 6 nights with daily breakfast; private airport and inter city transfers; Kintamani and coffee plantation tour; Mount Batur jeep sunrise with hot springs; Campuhan ridge walk and Tegenungan; Ayung river rafting; Nusa Penida tour with snorkelling; Uluwatu and Padang Padang.",
+  "not_included": "Not included: Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

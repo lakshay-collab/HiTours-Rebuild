@@ -1,0 +1,131 @@
+{
+  "source_slug": "best-of-bali-in-8-days-with-kuta-and-ubud",
+  "camel": "bestOfBaliUbudAndKuta",
+  "slug": "best-of-bali-with-ubud-and-kuta",
+  "title": "Best of Bali with Ubud and Kuta",
+  "alt": "Rice terraces above Ubud in central Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Culture",
+  "tags": ["Culture", "Family"],
+  "price": 45362,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Uluwatu"],
+  "counts": {"days": 8, "nights": 7, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 10, "meals": 7},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani and Bedugul",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Bakung Ubud Resort & Villa",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Garden resort a short walk from the Ubud market",
+      "activities": [
+        {"name": "Kintamani and rice terrace day tour", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "A full day with your own car and guide: coffee plantation tasting, the Tegalalang rice terraces, Tegenungan waterfall and the Bali jungle swing."},
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 3, "optional": false, "match": "Handara Gate", "description": "North to the Handara gate and Ulun Danu Beratan, the temple that sits on the lake, then the sea temple at Tanah Lot for sunset."},
+        {"name": "Ubud Monkey Forest", "day": 1, "optional": true, "match": "Monkey Forest", "description": "A sanctuary of banyan trees, moss covered shrines and several hundred long tailed macaques, ten minutes on foot from the Ubud market."}
+      ],
+      "program": {"name": "Ubud", "description": "Three nights in the green heart of Bali, with temple mornings, a coffee plantation on the way to Kintamani and lake country to the north."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Serangan Island and Uluwatu",
+      "days": [4, 5, 6, 7, 8],
+      "dayLabel": "Day 4 to 8",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Bali Safari and Marine Park", "day": 4, "optional": false, "match": "Bali Safari", "description": "Jungle Hopper entry to Bali Safari and Marine Park, with a safari ride through the African and Indian enclosures, animal shows and the water park."},
+        {"name": "Water sports and Serangan Island", "day": 5, "optional": false, "match": "Water Sports at Benoa", "description": "Banana boat, jet ski and parasailing at Tanjung Benoa, then a boat across to Serangan Island and its turtle conservation centre."},
+        {"name": "Uluwatu and Padang Padang beach", "day": 6, "optional": false, "match": "Uluwatu Sunset", "description": "A half day along the southern cliffs: Padang Padang beach between its limestone walls, then Uluwatu temple as the sun drops into the ocean."},
+        {"name": "Kuta beach and Kuta Square", "day": 7, "optional": true, "match": "Kuta Square", "description": "Bali's best known surf beach with boards for hire and beginner lessons, and the shops and cafes of Kuta Square two streets back."}
+      ],
+      "program": {"name": "Kuta", "description": "Four nights on the south coast with a safari park day, water sports at Tanjung Benoa, the cliffs of Uluwatu and a free day on the beach."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and rice terraces",
+    "3": "Bedugul lakes and Tanah Lot",
+    "4": "Bali Safari and on to Kuta",
+    "5": "Water sports and Serangan Island",
+    "6": "Uluwatu and Padang Padang",
+    "7": "Free day in Kuta",
+    "8": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud resort and settle in",
+      "Rest of the day free in Bali's green interior",
+      "Optional: the Monkey Forest, the art market or the water palace"
+    ],
+    "2": [
+      "Breakfast at the hotel, then a full day tour with your own guide",
+      "Coffee plantation tasting on the road up to Kintamani",
+      "Views across Mount Batur and its crater lake",
+      "Tegenungan waterfall, Tegalalang rice terrace and the jungle swing"
+    ],
+    "3": [
+      "Breakfast, then north to the Handara gate for photographs",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Evening back in Ubud at your own pace"
+    ],
+    "4": [
+      "Breakfast and check out, then private transfer towards Kuta",
+      "Jungle Hopper entry at Bali Safari and Marine Park",
+      "Safari ride, animal shows and the water park",
+      "Check in at your Kuta hotel near the beach"
+    ],
+    "5": [
+      "Breakfast, then private transfer to Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing at the water sports club",
+      "Boat across to Serangan Island and the turtle centre",
+      "Back in Kuta for the evening"
+    ],
+    "6": [
+      "Breakfast, then a half day along the southern cliffs",
+      "Padang Padang beach, framed by limestone walls",
+      "Uluwatu temple at sunset, high above the ocean",
+      "Optional: the Kecak fire dance in the temple amphitheatre"
+    ],
+    "7": [
+      "Breakfast and a full day free on the coast",
+      "Optional: a surf lesson with an instructor on Kuta beach",
+      "Optional: shopping at Kuta Square or the night market",
+      "Optional: Waterbom park or a Balinese spa afternoon"
+    ],
+    "8": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B"},
+  "hotel_by_day": {
+    "1": "Bakung Ubud Resort & Villa, Ubud",
+    "2": "Bakung Ubud Resort & Villa, Ubud",
+    "3": "Bakung Ubud Resort & Villa, Ubud",
+    "4": "Bliss Surfer Hotel, Kuta",
+    "5": "Bliss Surfer Hotel, Kuta",
+    "6": "Bliss Surfer Hotel, Kuta",
+    "7": "Bliss Surfer Hotel, Kuta",
+    "8": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Give Ubud the first three nights. The island slows you down there, and the coast feels like a reward afterwards.",
+    "tip": "Leave Uluwatu for late afternoon and buy Kecak tickets as you arrive. The show starts as the sun sets and the amphitheatre fills quickly, so being early gets you a seat facing the ocean."
+  },
+  "summary": "Eight days across the two sides of Bali: three nights in Ubud for rice terraces, crater lakes and temple sunsets, then four nights in Kuta with a safari park day, water sports at Tanjung Benoa and the cliffs of Uluwatu.",
+  "included": "Included: 7 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace day tour; Bedugul and Tanah Lot sunset tour; Bali Safari Jungle Hopper entry; water sports and Serangan Island; Uluwatu and Padang Padang tour.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

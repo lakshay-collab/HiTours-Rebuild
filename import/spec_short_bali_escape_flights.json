@@ -1,0 +1,105 @@
+{
+  "source_slug": "bali-tour-package-with-kuta-and-ubud-from-india",
+  "camel": "shortBaliEscapeFlights",
+  "slug": "short-bali-escape-with-flights",
+  "title": "Short Bali Escape with Flights",
+  "alt": "Tanah Lot sea temple at sunset, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Return flights, private transfers and guided tours",
+  "tag": "Short trips",
+  "tags": ["Short trips", "Beach"],
+  "price": 71154,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Uluwatu"],
+  "counts": {"days": 5, "nights": 4, "cities": 2, "hotels": 2, "experiences": 3, "transfers": 6, "meals": 4},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [1, 2],
+      "dayLabel": "Day 1 to 2",
+      "hotel": "The Evitel Resort, Ubud",
+      "hotel_label": "The Evitel Resort",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Pool resort a short ride from central Ubud",
+      "activities": [
+        {"name": "Kintamani and rice terrace day tour", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Ubud art market", "day": 1, "optional": true, "match": "Ubud Art Market", "description": "Two floors of carvings, batik, woven bags and silver in the middle of town, quietest and cheapest when the stalls first open."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights inland to open the trip, with a coffee plantation road up to Kintamani and the rice terraces at Tegalalang."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Bedugul and Uluwatu",
+      "days": [3, 4, 5],
+      "dayLabel": "Day 3 to 5",
+      "hotel": "Diamond Hotel Kuta, Bali",
+      "hotel_label": "Diamond Hotel Kuta",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet pool hotel walking distance from Kuta beach",
+      "activities": [
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 3, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then the sea temple of Tanah Lot as the sun goes down."},
+        {"name": "Water sports, Padang Padang and Uluwatu", "day": 4, "optional": false, "match": "Water Sports with Uluwatu", "description": "Banana boat and jet ski at Tanjung Benoa, the cove at Padang Padang beach, then Uluwatu temple above the surf for sunset."}
+      ],
+      "program": {"name": "Kuta", "description": "Two nights on the coast, reached by way of the Bedugul lakes, with water sports at Tanjung Benoa and the Uluwatu cliffs."}
+    }
+  ],
+  "day_titles": {
+    "1": "Flight to Bali and Ubud",
+    "2": "Kintamani and rice terraces",
+    "3": "Bedugul and on to Kuta",
+    "4": "Water sports and Uluwatu",
+    "5": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Flight from Delhi to Denpasar, included in your package",
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud resort and settle in",
+      "Rest of the day free among the rice fields"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast and check out, then north to the Handara gate",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Check in at your Kuta hotel near the beach"
+    ],
+    "4": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat and jet ski with an instructor",
+      "Padang Padang beach in its limestone cove",
+      "Uluwatu temple on the cliffs at sunset"
+    ],
+    "5": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your return flight"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B"},
+  "hotel_by_day": {
+    "1": "The Evitel Resort, Ubud",
+    "2": "The Evitel Resort, Ubud",
+    "3": "Diamond Hotel Kuta, Bali",
+    "4": "Diamond Hotel Kuta, Bali",
+    "5": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Four nights, flights included, both sides of the island. This is the long weekend Bali that actually works.",
+    "tip": "With only four nights, keep the touring to one day in each base and fly out on an evening service so you still get a last morning by the pool. We will hold your bags after check out."
+  },
+  "summary": "A five day Bali break with return flights: two nights in Ubud for Kintamani and the rice terraces, then two in Kuta by way of the Bedugul lake temples, with water sports and Uluwatu at sunset on the last full day.",
+  "included": "Included: return flights from Delhi; 4 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace tour; Bedugul and Tanah Lot sunset tour; water sports with Padang Padang and Uluwatu.",
+  "not_included": "Not included: Indonesia visa fees; lunches and dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

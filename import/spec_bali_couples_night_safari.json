@@ -1,0 +1,123 @@
+{
+  "source_slug": "mystical-bali-tour-package---a-luxurious-escapade",
+  "camel": "baliCouplesEscapeNightSafari",
+  "slug": "bali-couples-escape-with-night-safari",
+  "title": "Bali Couples Escape with Night Safari",
+  "alt": "Tegalalang rice terraces near Ubud, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Culture"],
+  "price": 40612,
+  "route_cities": ["Ubud", "Kintamani", "Bedugul", "Kuta", "Nusa Penida"],
+  "counts": {"days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 6, "transfers": 10, "meals": 7},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Bedugul and the safari park",
+      "days": [1, 2, 3, 4],
+      "dayLabel": "Day 1 to 4",
+      "hotel": "Asri Sari Villa, Ubud",
+      "hotel_label": "Asri Sari Villa",
+      "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small villa property on the quiet edge of Ubud",
+      "activities": [
+        {"name": "Kintamani and rice terrace day tour", "day": 2, "optional": false, "match": "Full Day Bali Sightseeing", "description": "Coffee plantation tasting on the way to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Bedugul lakes and Tanah Lot sunset", "day": 3, "optional": false, "match": "Handara Gate", "description": "The Handara gate, the lake temple of Ulun Danu Beratan at Bedugul, then Tanah Lot on its rock shelf as the light goes."},
+        {"name": "Bali Night Safari", "day": 4, "optional": false, "match": "Bali Safari", "description": "An evening tram ride through Bali Safari and Marine Park to see the night animals, with a fire dance performance and dinner at the park."}
+      ],
+      "program": {"name": "Ubud", "description": "Four nights in a villa on the edge of town, with the crater lake at Kintamani, the lake temples of Bedugul and an evening safari."}
+    },
+    {
+      "letter": "B",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Nusa Penida",
+      "days": [5, 6, 7],
+      "dayLabel": "Day 5 to 7",
+      "hotel": "Kuta Central Park Hotel, Bali",
+      "hotel_label": "Kuta Central Park Hotel",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Large pool hotel ten minutes from Kuta beach",
+      "activities": [
+        {"name": "Nusa Penida west coast by speedboat", "day": 5, "optional": false, "match": "Nusa Penida West", "description": "A private island day: Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach, with a speedboat each way from Sanur."},
+        {"name": "Balinese massage for two", "day": 6, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage for both of you, warm oil and long pressure strokes, booked privately at a spa near your hotel."},
+        {"name": "Sunset dinner cruise", "day": 6, "optional": false, "match": "Sunset Dinner Cruise", "description": "A half day cruise out of Benoa harbour with dinner on board and live music, timed for sunset over the Bukit peninsula."}
+      ],
+      "program": {"name": "Kuta", "description": "Two nights on the coast with a private island day on Nusa Penida, a couples massage and a sunset cruise with dinner on the water."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Ubud",
+    "2": "Kintamani and rice terraces",
+    "3": "Bedugul lakes and Tanah Lot",
+    "4": "An evening at the night safari",
+    "5": "Nusa Penida and on to Kuta",
+    "6": "Spa and sunset cruise",
+    "7": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Ubud villa and settle in",
+      "First evening free among the rice fields",
+      "Optional: Goa Gajah, the art market or the ARMA museum"
+    ],
+    "2": [
+      "Breakfast, then a full day out with your own car and guide",
+      "Coffee plantation tasting on the climb to Kintamani",
+      "Tegenungan waterfall and the Tegalalang rice terraces",
+      "A turn on the jungle swing above the valley"
+    ],
+    "3": [
+      "Breakfast, then north to the Handara gate for photographs",
+      "Ulun Danu Beratan, the temple standing on the lake",
+      "Sunset at Tanah Lot, the sea temple on the rocks",
+      "Evening back in Ubud at your own pace"
+    ],
+    "4": [
+      "Breakfast and a slow morning at the villa",
+      "Afternoon at Bali Safari and Marine Park",
+      "Night tram ride past the lions, tigers and rhinos",
+      "Fire dance performance and dinner at the park"
+    ],
+    "5": [
+      "Early breakfast and check out, then on to Sanur harbour",
+      "Speedboat across to Nusa Penida for the west coast",
+      "Kelingking beach, Angel's Billabong, Broken Bay and Bubu beach",
+      "Private transfer to your Kuta hotel in the evening"
+    ],
+    "6": [
+      "Breakfast and a slow morning by the pool",
+      "A traditional Balinese massage for two at a nearby spa",
+      "Sunset dinner cruise out of Benoa harbour",
+      "Optional: Kuta Square or the art market before the cruise"
+    ],
+    "7": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B, D", "7": "B"},
+  "hotel_by_day": {
+    "1": "Asri Sari Villa, Ubud",
+    "2": "Asri Sari Villa, Ubud",
+    "3": "Asri Sari Villa, Ubud",
+    "4": "Asri Sari Villa, Ubud",
+    "5": "Kuta Central Park Hotel, Bali",
+    "6": "Kuta Central Park Hotel, Bali",
+    "7": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Four nights in Ubud is the luxury here. You unpack once, and the island comes to you day by day.",
+    "tip": "The night safari runs late, so keep the next morning gentle. Couples usually ask for the cruise on the last full evening, and it is the better order because you fly home relaxed."
+  },
+  "summary": "Seven days for two with four nights in a villa near Ubud, the crater lake at Kintamani, lake temples at Bedugul, an evening safari with dinner, then Nusa Penida, a couples massage and a sunset dinner cruise from Kuta.",
+  "included": "Included: 6 nights with daily breakfast; private airport and inter city transfers; Kintamani and rice terrace tour; Bedugul and Tanah Lot sunset tour; Bali Night Safari with dinner; private Nusa Penida west coast tour; Balinese massage for two; sunset dinner cruise.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

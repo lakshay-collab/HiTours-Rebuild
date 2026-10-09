@@ -1,0 +1,113 @@
+{
+  "source_slug": "romance-and-tranquillity-together-in-bali",
+  "camel": "romanticBaliSunsetCruise",
+  "slug": "romantic-bali-getaway-with-sunset-cruise",
+  "title": "Romantic Bali Getaway with Sunset Cruise",
+  "alt": "Sunset over the sea off Tanjung Benoa, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Honeymoon",
+  "tags": ["Honeymoon", "Beach"],
+  "price": 32299,
+  "route_cities": ["Kuta", "Uluwatu", "Tanjung Benoa", "Seminyak"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 4, "transfers": 8, "meals": 7},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu and Tanjung Benoa",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Bliss Surfer Hotel, Kuta",
+      "hotel_label": "Bliss Surfer Hotel",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Surf style hotel five minutes from Kuta beach",
+      "activities": [
+        {"name": "Temple tour with the monkey forest", "day": 2, "optional": false, "match": "Bali Temple Tour", "description": "A private day among the temples, taking in Taman Ayun, the Alas Kedaton monkey forest and the cliff top temple at Uluwatu."},
+        {"name": "Water sports at Tanjung Benoa", "day": 3, "optional": false, "match": "Water Sports at Tanjung Benoa", "description": "A half day combo at Tanjung Benoa with banana boat, jet ski and parasailing, all with life jackets and an instructor in the water."},
+        {"name": "Sunset dinner cruise", "day": 3, "optional": false, "match": "Sunset Dinner Cruise", "description": "A half day cruise out of Benoa harbour with dinner on board and live music, timed for sunset over the Bukit peninsula."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights on the south coast, with a private temple day, water sports at Tanjung Benoa and a sunset cruise with dinner on the water."}
+    },
+    {
+      "letter": "B",
+      "name": "Seminyak",
+      "city": "Seminyak",
+      "days": [4, 5, 6],
+      "dayLabel": "Day 4 to 6",
+      "hotel": "Furamaxclusive Ocean Beach, Seminyak",
+      "hotel_label": "Furamaxclusive Ocean Beach",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Pool hotel a few minutes from Seminyak beach",
+      "activities": [
+        {"name": "Balinese massage for two", "day": 4, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage for both of you on your first afternoon in Seminyak, warm oil and long pressure strokes at a private spa."},
+        {"name": "Seminyak beach and Eat Street", "day": 5, "optional": true, "match": "Seminyak Beach", "description": "The long grey sand beach with its beach clubs, and the restaurants of Jalan Kayu Aya a short walk inland for a slow dinner."}
+      ],
+      "program": {"name": "Seminyak", "description": "Two quiet nights in Seminyak to finish, with a couples massage on arrival and a private candlelight dinner on the last evening."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Temples and the monkey forest",
+    "3": "Water sports and sunset cruise",
+    "4": "Spa day in Seminyak",
+    "5": "Candlelight dinner for two",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your Kuta hotel near the beach",
+      "First evening free on the south coast",
+      "Optional: the Kuta night market or a walk on the sand"
+    ],
+    "2": [
+      "Breakfast, then a private day among the temples",
+      "Taman Ayun and the Alas Kedaton monkey forest",
+      "Uluwatu temple on the cliffs in the late afternoon",
+      "Optional: the Kecak fire dance at the temple"
+    ],
+    "3": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing with an instructor",
+      "Sunset cruise out of Benoa harbour in the evening",
+      "Dinner and live music on board as the light goes"
+    ],
+    "4": [
+      "Breakfast and check out, then private transfer to Seminyak",
+      "Check in and a traditional Balinese massage for two",
+      "Afternoon free on Seminyak beach",
+      "Optional: dinner along Eat Street or Jalan Laksmana"
+    ],
+    "5": [
+      "Breakfast and a full day free in Seminyak",
+      "Optional: a beach club afternoon or the Nyaman gallery",
+      "Candlelight dinner for two in the evening, set up privately",
+      "Optional: a late walk along Double Six beach"
+    ],
+    "6": [
+      "Breakfast at the hotel and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, D", "4": "B", "5": "B, D", "6": "B"},
+  "hotel_by_day": {
+    "1": "Bliss Surfer Hotel, Kuta",
+    "2": "Bliss Surfer Hotel, Kuta",
+    "3": "Bliss Surfer Hotel, Kuta",
+    "4": "Furamaxclusive Ocean Beach, Seminyak",
+    "5": "Furamaxclusive Ocean Beach, Seminyak",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Two beaches, two moods. Kuta for the activity, Seminyak for the dinners. Five nights, nothing rushed.",
+    "tip": "Book the sunset cruise for your second evening while you still have energy, and keep Seminyak for late starts. We can set the candlelight dinner on the sand if you prefer it to the hotel."
+  },
+  "summary": "Six days for two on the south coast: three nights in Kuta with a private temple day, water sports at Tanjung Benoa and a sunset dinner cruise, then two quieter nights in Seminyak with a couples massage and a candlelight dinner.",
+  "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; private temple tour with the monkey forest and Uluwatu; water sports at Tanjung Benoa; sunset dinner cruise; Balinese massage for two; candlelight dinner.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

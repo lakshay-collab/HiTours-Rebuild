@@ -1,0 +1,114 @@
+{
+  "source_slug": "best-of-bali-tour-package",
+  "camel": "bestOfBaliSunsetCruise",
+  "slug": "best-of-bali-with-sunset-cruise",
+  "title": "Best of Bali with Sunset Cruise",
+  "alt": "Boats off Benoa harbour at sunset, Bali",
+  "cta_country": "indonesia",
+  "base": "/asien",
+  "transport": "Private transfers and guided day tours",
+  "tag": "Culture",
+  "tags": ["Honeymoon", "Culture"],
+  "price": 66452,
+  "route_cities": ["Kuta", "Uluwatu", "Tanjung Benoa", "Ubud", "Kintamani"],
+  "counts": {"days": 6, "nights": 5, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 9, "meals": 6},
+  "stops": [
+    {
+      "letter": "A",
+      "name": "Kuta",
+      "city": "Kuta",
+      "subtitle": "Kuta to Uluwatu and Tanjung Benoa",
+      "days": [1, 2, 3],
+      "dayLabel": "Day 1 to 3",
+      "hotel": "Rama Beach Resort & Villas, Kuta",
+      "hotel_label": "Rama Beach Resort & Villas",
+      "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Beachfront resort at Tuban with two pools and a spa",
+      "activities": [
+        {"name": "Temple tour with the monkey forest", "day": 2, "optional": false, "match": "Bali Temple Tour with Monkey Forest", "description": "A full day among the temples, taking in Taman Ayun, the Alas Kedaton monkey forest and the cliff top temple at Uluwatu."},
+        {"name": "Water sports at Tanjung Benoa", "day": 3, "optional": false, "match": "Water Sports at Tanjung Benoa", "description": "A half day combo at Tanjung Benoa with banana boat, jet ski and parasailing, all with life jackets and an instructor in the water."},
+        {"name": "Sunset dinner cruise", "day": 3, "optional": false, "match": "Sunset Dinner Cruise", "description": "A half day cruise out of Benoa harbour with dinner on board and live music, timed for sunset over the Bukit peninsula."}
+      ],
+      "program": {"name": "Kuta", "description": "Three nights beachfront at Tuban, with a temple day that ends at Uluwatu, water sports at Tanjung Benoa and a sunset cruise with dinner."}
+    },
+    {
+      "letter": "B",
+      "name": "Ubud",
+      "city": "Ubud",
+      "subtitle": "Ubud to Kintamani",
+      "days": [4, 5, 6],
+      "dayLabel": "Day 4 to 6",
+      "hotel": "The Sun Of Granary Resort And Villas, Ubud",
+      "hotel_label": "The Sun Of Granary Resort And Villas",
+      "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Rice field resort with a pool, a short ride from Ubud town",
+      "activities": [
+        {"name": "Kintamani with the jungle swing", "day": 4, "optional": false, "match": "Kintamani With Bali Jungle Swing", "description": "Coffee plantation tasting on the climb to Kintamani, the crater lake view, Tegenungan waterfall, the Tegalalang terraces and the jungle swing."},
+        {"name": "Balinese massage in Ubud", "day": 5, "optional": false, "match": "Balinese Massage", "description": "A traditional Balinese massage with warm oil and long pressure strokes, booked privately at a spa in Ubud on your free day."}
+      ],
+      "program": {"name": "Ubud", "description": "Two nights in a rice field resort to finish, reached by way of Kintamani, with a spa afternoon and a free day for the town."}
+    }
+  ],
+  "day_titles": {
+    "1": "Arrival in Kuta",
+    "2": "Temples and the monkey forest",
+    "3": "Water sports and sunset cruise",
+    "4": "Kintamani and on to Ubud",
+    "5": "Spa day in Ubud",
+    "6": "Departure from Bali"
+  },
+  "bullets": {
+    "1": [
+      "Arrival at Ngurah Rai Airport and private transfer to your hotel",
+      "Check in at your beachfront resort at Tuban",
+      "Rest of the day free by the pool or on the sand",
+      "Optional: Kuta Square, the art market or a sunset walk"
+    ],
+    "2": [
+      "Breakfast, then a full day among the temples",
+      "Taman Ayun and the Alas Kedaton monkey forest",
+      "Uluwatu temple on the cliffs in the late afternoon",
+      "Optional: the Kecak fire dance at the temple"
+    ],
+    "3": [
+      "Breakfast, then a morning at Tanjung Benoa beach",
+      "Banana boat, jet ski and parasailing with an instructor",
+      "Sunset cruise out of Benoa harbour in the evening",
+      "Dinner and live music on board as the light goes"
+    ],
+    "4": [
+      "Breakfast and check out, then north through coffee country",
+      "The crater lake view at Kintamani",
+      "Tegenungan waterfall, the rice terraces and the jungle swing",
+      "Check in at your rice field resort near Ubud"
+    ],
+    "5": [
+      "Breakfast and a free morning at the resort",
+      "A traditional Balinese massage at an Ubud spa",
+      "Optional: the Monkey Forest or the Saraswati water temple",
+      "Optional: the art market and the palace in the town centre"
+    ],
+    "6": [
+      "Breakfast at the resort and check out",
+      "Private transfer to Ngurah Rai Airport for your flight home"
+    ]
+  },
+  "meals": {"1": "Arrival", "2": "B", "3": "B, D", "4": "B", "5": "B", "6": "B"},
+  "hotel_by_day": {
+    "1": "Rama Beach Resort & Villas, Kuta",
+    "2": "Rama Beach Resort & Villas, Kuta",
+    "3": "Rama Beach Resort & Villas, Kuta",
+    "4": "The Sun Of Granary Resort And Villas, Ubud",
+    "5": "The Sun Of Granary Resort And Villas, Ubud",
+    "6": "Departure"
+  },
+  "expert": {
+    "name": "Putu",
+    "image": "/experts/riya.webp",
+    "role": "Indonesia expert at Hi Tours",
+    "quote": "Beach first, rice fields second, and a four star hotel at both ends. It is the easiest Bali week to recommend.",
+    "tip": "Ask for a pool view room at Rama Beach and a garden villa at Granary. On the cruise day have a light lunch, dinner on board is generous and starts around seven."
+  },
+  "summary": "Six days with four star hotels at both ends: three nights beachfront at Tuban with a temple day at Uluwatu, water sports and a sunset dinner cruise, then two nights in the Ubud rice fields by way of Kintamani, with a spa afternoon.",
+  "included": "Included: 5 nights with daily breakfast; private airport and inter city transfers; temple tour with the monkey forest and Uluwatu; water sports at Tanjung Benoa; sunset dinner cruise; Kintamani and jungle swing tour; a Balinese massage in Ubud.",
+  "not_included": "Not included: international flights; Indonesia visa fees; lunches and other dinners; travel insurance; personal expenses.",
+  "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Indonesia", "/asien/indonesia"]]
+}

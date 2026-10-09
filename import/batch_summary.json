@@ -1,202 +1,441 @@
 [
  {
-  "slug": "glimpse-of-singapore",
-  "title": "Singapore Romantic Escape | Night Safari, Skyline Views & Sentosa Experiences",
-  "dur": "5D/4N",
-  "price": 54764,
-  "struck": 63507,
+  "slug": "best-of-bali-in-8-days-with-kuta-and-ubud",
+  "title": "Eternal Bali | Discovering Seashore Temples & Island Wonders",
+  "dur": "8D/7N",
+  "price": 47750,
+  "struck": 64462,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
     5
    ]
   ],
-  "days": 5,
+  "days": 8,
   "hotels": [
    [
-    "Aqueen Prestige Hotel Lavender",
-    "Singapore",
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    3,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
     4,
-    13
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    4,
+    12
    ]
   ],
   "acts": 33,
-  "gallery": 147
+  "gallery": 133
  },
  {
-  "slug": "economical-trip-to-singapore",
-  "title": "Singapore Getaway | FREE Night Safari Zoo Visit",
-  "dur": "4D/3N",
-  "price": 56000,
-  "struck": 70000,
+  "slug": "rediscover-bali-in-6-days",
+  "title": "Escape to Bali | Round Trip Flight Inclusive Deal From Delhi",
+  "dur": "6D/5N",
+  "price": 77000,
+  "struck": 110000,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
     4
    ]
   ],
-  "days": 4,
+  "days": 6,
   "hotels": [
    [
-    "ibis Styles Singapore Albert",
-    "Singapore",
-    3,
-    15
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
    ],
    [
-    "ibis budget Singapore Clarke Quay",
-    "Singapore",
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
     3,
-    9
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
    ]
   ],
-  "acts": 27,
-  "gallery": 111
+  "acts": 23,
+  "gallery": 126
  },
  {
-  "slug": "singapore-family-getaway",
-  "title": "Singapore Family Getaway | Universal Studios, City Highlights & Skyline Views",
-  "dur": "5D/4N",
-  "price": 56291,
-  "struck": 60000,
+  "slug": "7-days-luxurious-getaway-to-bali",
+  "title": "Ultimate Bali Adventure | From Sun-Kissed Shores to Rugged Peaks",
+  "dur": "7D/6N",
+  "price": 41250,
+  "struck": 54862,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
+    "Kuta",
+    2
+   ],
+   [
+    "Ubud",
     5
    ]
   ],
-  "days": 5,
+  "days": 7,
   "hotels": [
    [
-    "Village Hotel Bugis by Far East Hospitality",
-    "Singapore",
+    "Bintang Bali Resort, Kuta",
+    "Kuta",
+    2,
+    15
+   ],
+   [
+    "Anantara Vacation Club Legian, Kuta",
+    "Kuta",
+    2,
+    22
+   ],
+   [
+    "The Payogan Villa Resort & Spa, Ubud",
+    "Ubud",
+    4,
+    16
+   ],
+   [
+    "Kupu Kupu Barong Villas, Ubud",
+    "Ubud",
     4,
     18
    ]
   ],
-  "acts": 26,
-  "gallery": 128
+  "acts": 29,
+  "gallery": 155
  },
  {
-  "slug": "singapore-vacation-with-genting-cruise",
-  "title": "Singapore City Lights and Ocean Nights | Genting Dream Cruise",
-  "dur": "6D/5N",
-  "price": 59000,
-  "struck": 81945,
+  "slug": "bali-exotic-honeymoon-tour-with-cruise",
+  "title": "Bali Retreat | Round Trip Flight Inclusive Deal From Delhi",
+  "dur": "7D/6N",
+  "price": 78999,
+  "struck": 85400,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
-    6
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Denpasar",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    3,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    3,
+    14
+   ]
+  ],
+  "acts": 32,
+  "gallery": 146
+ },
+ {
+  "slug": "bali-tour-for-honeymoon-couples",
+  "title": "Romantic Escape to Bali | From Hills to Horizon",
+  "dur": "6D/5N",
+  "price": 34500,
+  "struck": 46575,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
    ]
   ],
   "days": 6,
   "hotels": [
    [
-    "ibis Singapore Novena",
-    "Singapore",
-    3,
-    14
-   ],
-   [
-    "ibis budget Singapore Clarke Quay",
-    "Singapore",
-    3,
-    9
-   ],
-   [
-    "Genting Dream Cruise",
-    "Singapore",
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
     2,
-    7
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
    ]
   ],
-  "acts": 33,
-  "gallery": 132
+  "acts": 24,
+  "gallery": 125
  },
  {
-  "slug": "singapore-cruise-package-from-delhi",
-  "title": "Singapore Cruise Package From Delhi",
+  "slug": "bali-and-the-beautiful-honeymoon-days",
+  "title": "Best Of Bali | FREE Balinese Couple Massage",
   "dur": "6D/5N",
-  "price": 59030,
-  "struck": 81975,
+  "price": 34750,
+  "struck": 46912,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
-    6
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
    ]
   ],
   "days": 6,
   "hotels": [
    [
-    "ibis Singapore Novena",
-    "Singapore",
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
     3,
     14
-   ],
-   [
-    "ibis budget Singapore Clarke Quay",
-    "Singapore",
-    3,
-    9
-   ],
-   [
-    "Genting Dream Cruise",
-    "Singapore",
-    2,
-    7
    ]
   ],
-  "acts": 33,
-  "gallery": 132
+  "acts": 23,
+  "gallery": 127
  },
  {
-  "slug": "honeymoon-cruise-package-of-singapore-super-deluxe",
-  "title": "Offshore Romance in Singapore with Genting Dream Cruise",
-  "dur": "5D/4N",
-  "price": 59432,
-  "struck": 67000,
+  "slug": "bali-tour-package-with-water-sports",
+  "title": "Bali in a Nutshell | Round Trip Flight Inclusive Deal From Delhi",
+  "dur": "7D/6N",
+  "price": 83900,
+  "struck": 111586,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
-    5
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Denpasar",
+    1
    ]
   ],
-  "days": 5,
+  "days": 7,
   "hotels": [
    [
-    "Hotel Mi Bencoolen, Singapore",
-    "Singapore",
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    1,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
     1,
     10
    ],
    [
-    "Hotel Boss",
-    "Singapore",
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
     1,
-    13
+    12
    ],
    [
-    "Genting Dream Cruise",
-    "Singapore",
-    2,
-    7
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    1,
+    14
    ]
   ],
-  "acts": 14,
-  "gallery": 118
+  "acts": 26,
+  "gallery": 140
  },
  {
-  "slug": "6-nights-singapore-malaysia-honeymoon-package",
-  "title": "Unforgettable Honeymoon at Singapore & Malaysia",
+  "slug": "mystical-bali-tour-package---a-luxurious-escapade",
+  "title": "The Instagrammable Bali | Couple Special",
   "dur": "7D/6N",
-  "price": 60007,
-  "struck": 89907,
+  "price": 42750,
+  "struck": 77727,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    4
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    4,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    4,
+    16
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    2,
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    2,
+    12
+   ]
+  ],
+  "acts": 27,
+  "gallery": 133
+ },
+ {
+  "slug": "honeymoon-stories-in-bali",
+  "title": "Bali Honeymoon Package | Coastal Adventures and Romantic Nights",
+  "dur": "7D/6N",
+  "price": 40000,
+  "struck": 55000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Seminyak",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "THE 1O1 Bali Fontana Seminyak",
+    "Seminyak",
+    3,
+    12
+   ],
+   [
+    "Furamaxclusive Ocean Beach, Seminyak",
+    "Seminyak",
+    3,
+    15
+   ]
+  ],
+  "acts": 28,
+  "gallery": 140
+ },
+ {
+  "slug": "bali-and-singapore-honeymoon-package",
+  "title": "Singapore and Bali Honeymoon Bliss | City Romance to Tropical Retreat",
+  "dur": "7D/6N",
+  "price": 79990,
+  "struck": 84616,
   "cur": "INR",
   "cities": [
    [
@@ -204,7 +443,7 @@
     3
    ],
    [
-    "Kuala Lumpur",
+    "Kuta",
     4
    ]
   ],
@@ -223,7 +462,822 @@
     12
    ],
    [
-    "Arenaa Star Hotel, Kuala Lumpur",
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 34,
+  "gallery": 193
+ },
+ {
+  "slug": "romance-and-tranquillity-together-in-bali",
+  "title": "Bali Honeymoon Getaway | Romantic Offshore Retreat",
+  "dur": "6D/5N",
+  "price": 33999,
+  "struck": 47221,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Seminyak",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Furamaxclusive Ocean Beach, Seminyak",
+    "Seminyak",
+    2,
+    15
+   ],
+   [
+    "The 101 Fontana Hotel, Kuta",
+    "Seminyak",
+    2,
+    12
+   ]
+  ],
+  "acts": 20,
+  "gallery": 133
+ },
+ {
+  "slug": "7-day-exotic-bali-tour-package",
+  "title": "Bali Flight Inclusive Couple Escape | Island Tours & Adventure Experiences",
+  "dur": "7D/6N",
+  "price": 74600,
+  "struck": 92000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    4
+   ],
+   [
+    "Ubud",
+    3
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Bliss Surfer Hotel Legian",
+    "Kuta",
+    4,
+    19
+   ],
+   [
+    "Alam Puisi Villa",
+    "Ubud",
+    2,
+    18
+   ]
+  ],
+  "acts": 23,
+  "gallery": 104
+ },
+ {
+  "slug": "7-days-mesmerizing-trip-to-bali",
+  "title": "Highlights of Bali | Swings, Safaris and Sunset Splendors",
+  "dur": "7D/6N",
+  "price": 42400,
+  "struck": 76900,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    3,
+    16
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 27,
+  "gallery": 123
+ },
+ {
+  "slug": "bali-tour-package-with-kuta-and-ubud-from-india",
+  "title": "Bali Tour Package with Kuta and Ubud from India",
+  "dur": "5D/4N",
+  "price": 74899,
+  "struck": 99800,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "The Evitel Resort, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    2,
+    12
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    2,
+    12
+   ]
+  ],
+  "acts": 18,
+  "gallery": 117
+ },
+ {
+  "slug": "cheap-bali-honeymoon-package",
+  "title": "Bali Honeymoon Special | FREE Bali Swing Tickets",
+  "dur": "5D/4N",
+  "price": 30200,
+  "struck": 47935,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    2,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    2,
+    12
+   ]
+  ],
+  "acts": 18,
+  "gallery": 115
+ },
+ {
+  "slug": "6-days-tour-of-bali-with-balinese-spa",
+  "title": "Treasures of Bali | From Sacred Sites to Beach Side",
+  "dur": "6D/5N",
+  "price": 36300,
+  "struck": 45012,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Ubud Green",
+    "Ubud",
+    2,
+    45
+   ],
+   [
+    "Ramada by Wyndham Bali Sunset Road Kuta",
+    "Kuta",
+    3,
+    13
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 21,
+  "gallery": 154
+ },
+ {
+  "slug": "uncover-bali",
+  "title": "Uncover Bali | A Family Escape From Landscapes to Coasts",
+  "dur": "7D/6N",
+  "price": 35000,
+  "struck": 49000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Canggu",
+    4
+   ],
+   [
+    "Ubud",
+    4
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Cross Vibe Paasha Atelier Bali Kuta",
+    "Canggu",
+    4,
+    17
+   ],
+   [
+    "Swiss-Belhotel Rainforest",
+    "Canggu",
+    4,
+    16
+   ],
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    3,
+    10
+   ]
+  ],
+  "acts": 25,
+  "gallery": 143
+ },
+ {
+  "slug": "best-of-bali-tour-package",
+  "title": "Gems of Bali | Temple Trails and Sunset Sails",
+  "dur": "6D/5N",
+  "price": 69950,
+  "struck": 105900,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Ubud",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Rama Beach Resort & Villas, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Solia Legian, Kuta",
+    "Kuta",
+    3,
+    13
+   ],
+   [
+    "The Sun Of Granary Resort And Villas, Ubud",
+    "Ubud",
+    2,
+    15
+   ],
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    2,
+    14
+   ]
+  ],
+  "acts": 25,
+  "gallery": 137
+ },
+ {
+  "slug": "highlights-of-bali",
+  "title": "Scenic Routes of Bali | Culture, Coastlines, Cascades",
+  "dur": "7D/6N",
+  "price": 150000,
+  "struck": 210000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Nusa Penida",
+    2
+   ],
+   [
+    "Gili Island",
+    2
+   ],
+   [
+    "Canggu",
+    4
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    1,
+    15
+   ],
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    1,
+    10
+   ],
+   [
+    "BB Resort Villa and Spa Nusa Penida",
+    "Nusa Penida",
+    1,
+    5
+   ],
+   [
+    "Bintang Penida Resort",
+    "Nusa Penida",
+    1,
+    5
+   ],
+   [
+    "Santorini Beach Resort",
+    "Gili Island",
+    2,
+    9
+   ],
+   [
+    "Sense Canggu Beach Hotel",
+    "Canggu",
+    3,
+    0
+   ]
+  ],
+  "acts": 40,
+  "gallery": 156
+ },
+ {
+  "slug": "bali-honeymoon-special",
+  "title": "Bali Honeymoon Special | From Offbeat Roads to Sunlit Shores",
+  "dur": "6D/5N",
+  "price": 46846,
+  "struck": 58089,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Sidemen",
+    2
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Kupu Kupu Barong Villas, Ubud",
+    "Ubud",
+    2,
+    18
+   ],
+   [
+    "Pelangi Villas Sidemen",
+    "Sidemen",
+    2,
+    8
+   ],
+   [
+    "Cepik Villa Sidemen",
+    "Sidemen",
+    2,
+    10
+   ],
+   [
+    "Swiss-Belhotel Rainforest",
+    "Kuta",
+    3,
+    16
+   ],
+   [
+    "Cross Vibe Paasha Atelier Bali Kuta",
+    "Kuta",
+    3,
+    17
+   ]
+  ],
+  "acts": 34,
+  "gallery": 181
+ },
+ {
+  "slug": "bali-couple-tour",
+  "title": "Bali Romantic Journey | Discovering Highlands, Heritage & Hideaways",
+  "dur": "6D/5N",
+  "price": 37213,
+  "struck": 48376,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    2,
+    15
+   ],
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    2,
+    14
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    3,
+    29
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    3,
+    25
+   ]
+  ],
+  "acts": 24,
+  "gallery": 171
+ },
+ {
+  "slug": "the-unbelievable-bali-deal",
+  "title": "The Unbelievable Bali Deal | Floating Breakfast, Five-Star Stays &  Vintage Car Tours",
+  "dur": "6D/5N",
+  "price": 30000,
+  "struck": 36300,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Kori Maharani Villas",
+    "Ubud",
+    2,
+    11
+   ],
+   [
+    "Mamaka by Ovolo",
+    "Kuta",
+    3,
+    14
+   ]
+  ],
+  "acts": 21,
+  "gallery": 106
+ },
+ {
+  "slug": "singapore-malaysia-bali-honeymoon-package",
+  "title": "Singapore Malaysia Bali Honeymoon Package",
+  "dur": "10D/9N",
+  "price": 110000,
+  "struck": 143000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    3
+   ],
+   [
+    "Kuala Lumpur",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "ibis Singapore on Bencoolen",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "Hilton Garden Inn Kuala Lumpur - North",
+    "Kuala Lumpur",
+    3,
+    12
+   ],
+   [
+    "Metro Hotel Bukit Bintang, Kuala Lumpur",
+    "Kuala Lumpur",
+    3,
+    9
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 46,
+  "gallery": 286
+ },
+ {
+  "slug": "tour-of-bali-and-singapore-for-7-days-and-6-nights",
+  "title": "Bali and Singapore | From Tropical Paradise to Urban Oasis",
+  "dur": "7D/6N",
+  "price": 31079,
+  "struck": 40500,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Singapore",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "ibis budget Singapore Clarke Quay",
+    "Singapore",
+    3,
+    9
+   ]
+  ],
+  "acts": 36,
+  "gallery": 167
+ },
+ {
+  "slug": "bali-at-a-glance-group-tour-package",
+  "title": "Bali at a Glance | Group Tour Package",
+  "dur": "7D/6N",
+  "price": 34031.2,
+  "struck": 45261.5,
+  "cur": "INR",
+  "cities": [
+   [
+    "Bali",
+    7
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Mercure Bali Legian",
+    "Bali",
+    6,
+    46
+   ],
+   [
+    "Solia Legian Bali Hotel",
+    "Bali",
+    6,
+    13
+   ]
+  ],
+  "acts": 29,
+  "gallery": 126
+ },
+ {
+  "slug": "family-getaway-to-bali",
+  "title": "Family Vacation in Bali | From Island Trails to Beachside Tales",
+  "dur": "7D/6N",
+  "price": 36381,
+  "struck": 57981,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    3,
+    14
+   ],
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    2,
+    29
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    2,
+    25
+   ]
+  ],
+  "acts": 24,
+  "gallery": 155
+ },
+ {
+  "slug": "singapore-malaysia-bali-tour-package-from-delhi",
+  "title": "Singapore Malaysia Bali Tour Package From Delhi",
+  "dur": "10D/9N",
+  "price": 172300,
+  "struck": 215375,
+  "cur": "INR",
+  "cities": [
+   [
+    "Singapore",
+    3
+   ],
+   [
+    "Kuala Lumpur",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "ibis Singapore on Bencoolen",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    3,
+    14
+   ],
+   [
+    "Metro Hotel Bukit Bintang, Kuala Lumpur",
     "Kuala Lumpur",
     3,
     9
@@ -233,313 +1287,1054 @@
     "Kuala Lumpur",
     3,
     12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 52,
+  "gallery": 271
+ },
+ {
+  "slug": "singapore-malaysia-indonesia-and-thailand-tour-package-from-india",
+  "title": "Singapore, Malaysia, Indonesia and Thailand Tour Package from India",
+  "dur": "11D/10N",
+  "price": 125050,
+  "struck": 162550,
+  "cur": "INR",
+  "cities": [
+   [
+    "Pattaya",
+    2
+   ],
+   [
+    "Singapore",
+    4
+   ],
+   [
+    "Kuala Lumpur",
+    2
+   ],
+   [
+    "Ubud",
+    3
+   ]
+  ],
+  "days": 11,
+  "hotels": [
+   [
+    "Centara Pattaya Hotel",
+    "Pattaya",
+    2,
+    11
+   ],
+   [
+    "Golden Sea Pattaya",
+    "Pattaya",
+    2,
+    12
+   ],
+   [
+    "ibis Styles Singapore Albert",
+    "Singapore",
+    4,
+    15
+   ],
+   [
+    "ibis Singapore Novena",
+    "Singapore",
+    4,
+    14
+   ],
+   [
+    "Arenaa Star Hotel, Kuala Lumpur",
+    "Kuala Lumpur",
+    2,
+    9
+   ],
+   [
+    "Hilton Garden Inn Kuala Lumpur - North",
+    "Kuala Lumpur",
+    2,
+    12
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ]
+  ],
+  "acts": 57,
+  "gallery": 329
+ },
+ {
+  "slug": "hong-kong-and-bali-holiday-package",
+  "title": "Hong Kong and Bali Holiday Package",
+  "dur": "8D/7N",
+  "price": 98950,
+  "struck": 131599,
+  "cur": "INR",
+  "cities": [
+   [
+    "Hong Kong",
+    3
+   ],
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Regal Kowloon Hotel, Hong Kong",
+    "Hong Kong",
+    3,
+    14
+   ],
+   [
+    "Gateway Hotel",
+    "Hong Kong",
+    3,
+    14
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    2,
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    2,
+    12
+   ]
+  ],
+  "acts": 31,
+  "gallery": 239
+ },
+ {
+  "slug": "bali-family-getaway",
+  "title": "Bali Family Getaway | From Highlands to Hidden Bays",
+  "dur": "6D/5N",
+  "price": 39205,
+  "struck": 58790,
+  "cur": "INR",
+  "cities": [
+   [
+    "Bedugul",
+    2
+   ],
+   [
+    "Seminyak",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Handara Golf & Resort Bali, Bedugul",
+    "Bedugul",
+    2,
+    7
+   ],
+   [
+    "Shankara Munduk Bali",
+    "Bedugul",
+    2,
+    8
+   ],
+   [
+    "Bali Prime Villa by Kanaya Hospitality",
+    "Seminyak",
+    3,
+    6
+   ],
+   [
+    "The Bali Bliss Villa",
+    "Seminyak",
+    3,
+    6
+   ]
+  ],
+  "acts": 22,
+  "gallery": 106
+ },
+ {
+  "slug": "bali-couple-special",
+  "title": "Bali Beyond Ordinary | A Romantic Getaway",
+  "dur": "7D/6N",
+  "price": 49210,
+  "struck": 61020,
+  "cur": "INR",
+  "cities": [
+   [
+    "Sidemen",
+    3
+   ],
+   [
+    "Seminyak",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Astana swaha Villa",
+    "Sidemen",
+    3,
+    8
+   ],
+   [
+    "Arta Nadi Villa",
+    "Sidemen",
+    3,
+    11
+   ],
+   [
+    "The Bali Bliss Villa",
+    "Seminyak",
+    3,
+    6
+   ],
+   [
+    "Bali Prime Villa by Kanaya Hospitality",
+    "Seminyak",
+    3,
+    6
+   ]
+  ],
+  "acts": 26,
+  "gallery": 118
+ },
+ {
+  "slug": "honeymoon-getaway-to-bali",
+  "title": "Honeymoon Getaway to Bali | Swing, Safari & Sea Shores",
+  "dur": "7D/6N",
+  "price": 36820,
+  "struck": 45656,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    3,
+    14
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    2,
+    29
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    2,
+    25
+   ]
+  ],
+  "acts": 24,
+  "gallery": 156
+ },
+ {
+  "slug": "bali-package-from-delhi-for-family",
+  "title": "Bali Package from Delhi for Family",
+  "dur": "6D/5N",
+  "price": 45680,
+  "struck": 60750,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Ubud",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Bliss Surfer Hotel, Kuta",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ]
+  ],
+  "acts": 26,
+  "gallery": 113
+ },
+ {
+  "slug": "bali-tour-package-with-water-sports-from-mumbai",
+  "title": "Bali in a Nutshell | Round Trip Flight Inclusive Deal From Mumbai",
+  "dur": "7D/6N",
+  "price": 86900,
+  "struck": 115577,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Denpasar",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    1,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    1,
+    16
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    1,
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    1,
+    12
+   ]
+  ],
+  "acts": 26,
+  "gallery": 140
+ },
+ {
+  "slug": "bali-honeymoon-retreat",
+  "title": "Romantic Bali Honeymoon | Free 5 Star Rooftop Candlelight Dinner",
+  "dur": "7D/6N",
+  "price": 46942,
+  "struck": 58208,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    3,
+    14
+   ],
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    1,
+    29
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    1,
+    25
+   ]
+  ],
+  "acts": 28,
+  "gallery": 173
+ },
+ {
+  "slug": "bali-couple-escape",
+  "title": "Bali Couple Escape | Sea, Sunsets & Sands",
+  "dur": "7D/6N",
+  "price": 46335,
+  "struck": 57455,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    3,
+    14
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    3,
+    25
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    3,
+    29
+   ]
+  ],
+  "acts": 26,
+  "gallery": 176
+ },
+ {
+  "slug": "rediscover-bali-in-6-days-from-mumbai",
+  "title": "Escape to Bali | Round Trip Flight Inclusive Deal From Mumbai",
+  "dur": "6D/5N",
+  "price": 80000,
+  "struck": 117000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    2
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    2,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    2,
+    10
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    3,
+    14
+   ]
+  ],
+  "acts": 23,
+  "gallery": 126
+ },
+ {
+  "slug": "bali-trip-for-couples",
+  "title": "Bali Couple Highlights with Flights | Nusa Penida, Ubud & Kuta",
+  "dur": "7D/6N",
+  "price": 92750,
+  "struck": 133560,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    2
+   ],
+   [
+    "Nusa Penida",
+    1
+   ],
+   [
+    "Ubud",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Ramada by Wyndham Bali Sunset Road Kuta",
+    "Kuta",
+    2,
+    13
+   ],
+   [
+    "The Angkal Resort Nusa Penida Bali",
+    "Nusa Penida",
+    1,
+    10
+   ],
+   [
+    "FuramaXclusive Resort & Villas, Ubud Resort",
+    "Ubud",
+    3,
+    29
+   ]
+  ],
+  "acts": 19,
+  "gallery": 149
+ },
+ {
+  "slug": "bali-honeymoon-getaway",
+  "title": "Bali Honeymoon Getaway | Temples, Tides & Tropical Isles",
+  "dur": "6D/5N",
+  "price": 53382,
+  "struck": 66173,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    4
+   ],
+   [
+    "Nusa Penida",
+    2
+   ],
+   [
+    "Kuta",
+    3
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    4,
+    10
+   ],
+   [
+    "Jungle Retreat by Kupu Kupu Barong",
+    "Ubud",
+    4,
+    17
+   ],
+   [
+    "BB Resort Villa and Spa Nusa Penida",
+    "Nusa Penida",
+    2,
+    5
+   ],
+   [
+    "Bintang Penida Resort",
+    "Nusa Penida",
+    2,
+    5
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    1,
+    25
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    1,
+    29
+   ]
+  ],
+  "acts": 41,
+  "gallery": 209
+ },
+ {
+  "slug": "bali-tour-packages-for-couple-including-flights",
+  "title": "Bali Tour Package for Couple Including Flights",
+  "dur": "7D/6N",
+  "price": 95929,
+  "struck": 127583,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    3,
+    16
+   ],
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    3,
+    14
+   ]
+  ],
+  "acts": 18,
+  "gallery": 126
+ },
+ {
+  "slug": "bali-exotic-honeymoon-tour-with-cruise-from-mumbai",
+  "title": "Bali Retreat | Round Trip Flight Inclusive Deal From Mumbai",
+  "dur": "7D/6N",
+  "price": 68000,
+  "struck": 90400,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    3
+   ],
+   [
+    "Denpasar",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Asri Sari Villa, Ubud",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    3,
+    16
+   ],
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    3,
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    3,
+    12
+   ]
+  ],
+  "acts": 32,
+  "gallery": 145
+ },
+ {
+  "slug": "romantic-retreat-in-bali",
+  "title": "Celebrate Love in Bali | Free Vintage Car Tour & Photoshoot",
+  "dur": "6D/5N",
+  "price": 52329,
+  "struck": 64887,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    5
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Ubud Raya Villa",
+    "Ubud",
+    3,
+    15
+   ],
+   [
+    "Ubud Heaven Sayan",
+    "Ubud",
+    3,
+    14
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    4,
+    29
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    4,
+    25
+   ]
+  ],
+  "acts": 30,
+  "gallery": 181
+ },
+ {
+  "slug": "bali-phuket-tour-package",
+  "title": "Bali Phuket Tour Package",
+  "dur": "6D/5N",
+  "price": 50002,
+  "struck": 66502,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kuta",
+    2
+   ],
+   [
+    "Phuket",
+    4
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    2,
+    14
+   ],
+   [
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
+    2,
+    12
+   ],
+   [
+    "Tony Resort",
+    "Phuket",
+    3,
+    14
+   ],
+   [
+    "Casa Del M Resort",
+    "Phuket",
+    3,
+    15
+   ]
+  ],
+  "acts": 20,
+  "gallery": 128
+ },
+ {
+  "slug": "bali-family-vacation",
+  "title": "Journey to Bali | A Family Getaway in Ubud & Kuta",
+  "dur": "7D/6N",
+  "price": 41949,
+  "struck": 59524,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    3
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    3,
+    10
+   ],
+   [
+    "Jungle Retreat by Kupu Kupu Barong",
+    "Ubud",
+    3,
+    17
+   ],
+   [
+    "Cross Vibe Paasha Atelier Bali Kuta",
+    "Kuta",
+    3,
+    17
+   ],
+   [
+    "Swiss-Belhotel Rainforest",
+    "Kuta",
+    3,
+    16
    ]
   ],
   "acts": 32,
   "gallery": 169
  },
  {
-  "slug": "singapore-couple-tour",
-  "title": "Singapore Couple Tour | Journey Through the Lion City",
-  "dur": "6D/5N",
-  "price": 60450,
-  "struck": 88750,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    6
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "One Farrer Hotel Singapore",
-    "Singapore",
-    5,
-    26
-   ]
-  ],
-  "acts": 35,
-  "gallery": 168
- },
- {
-  "slug": "singapore-wonders",
-  "title": "Singapore Wonders | From Heritage Hues to Modern Skylines",
-  "dur": "5D/4N",
-  "price": 62713,
-  "struck": 83408,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Holiday Inn Express & Suites Singapore Novena by IHG",
-    "Singapore",
-    4,
-    6
-   ],
-   [
-    "Furama RiverFront",
-    "Singapore",
-    4,
-    95
-   ]
-  ],
-  "acts": 35,
-  "gallery": 216
- },
- {
-  "slug": "economical-trip-to-singapore-super-deluxe",
-  "title": "Singapore Getaway | FREE Night Safari Zoo Visit",
-  "dur": "4D/3N",
-  "price": 61000,
-  "struck": 76250,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    4
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Hotel Boss, Singapore",
-    "Singapore",
-    3,
-    13
-   ],
-   [
-    "V Hotel Lavender, Singapore",
-    "Singapore",
-    3,
-    11
-   ]
-  ],
-  "acts": 27,
-  "gallery": 111
- },
- {
-  "slug": "singapore-royal-caribbean-cruise-package",
-  "title": "Royal Caribbean Singapore Voyage | Luxury on the Seas",
-  "dur": "4D/3N",
-  "price": 64000,
-  "struck": 88100,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    1
-   ],
-   [
-    "Penang",
-    1
-   ],
-   [
-    "Singapore",
-    2
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Royal Caribbean Cruise",
-    "Singapore",
-    3,
-    5
-   ]
-  ],
-  "acts": 12,
-  "gallery": 81
- },
- {
-  "slug": "holiday-tour-of-singapore-and-malaysia-for-7-days-flight-included",
-  "title": "Delights of Singapore and Malaysia with Sentosa Island",
+  "slug": "bali-tour-package-with-water-sports-from-ahmedabad",
+  "title": "Bali in a Nutshell | Round Trip Flight Inclusive Deal From Ahemdabad",
   "dur": "7D/6N",
-  "price": 62999,
-  "struck": 67830,
+  "price": 84900,
+  "struck": 112917,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
+    "Ubud",
     3
    ],
    [
-    "Kuala Lumpur",
-    4
+    "Kuta",
+    3
+   ],
+   [
+    "Denpasar",
+    1
    ]
   ],
   "days": 7,
   "hotels": [
    [
-    "ibis Singapore Novena",
-    "Singapore",
-    3,
-    14
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    1,
+    16
    ],
    [
-    "Value Hotel Thomson, Singapore",
-    "Singapore",
-    3,
-    12
-   ],
-   [
-    "Arenaa Star Hotel, Kuala Lumpur",
-    "Kuala Lumpur",
-    3,
-    9
-   ],
-   [
-    "Hilton Garden Inn Kuala Lumpur - North",
-    "Kuala Lumpur",
-    3,
-    12
-   ]
-  ],
-  "acts": 35,
-  "gallery": 171
- },
- {
-  "slug": "trails-of-singapore",
-  "title": "Trails of Singapore | From Wild Wonders to Tropical Treasures",
-  "dur": "6D/5N",
-  "price": 65587,
-  "struck": 81324,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    6
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Hotel Grand Central",
-    "Singapore",
+    "Asri Sari Villa, Ubud",
+    "Ubud",
     1,
     10
    ],
    [
-    "Hotel Boss",
-    "Singapore",
+    "Diamond Hotel Kuta, Bali",
+    "Kuta",
     1,
-    13
-   ]
-  ],
-  "acts": 41,
-  "gallery": 158
- },
- {
-  "slug": "singapore-disney-cruise-inside-stateroom-package",
-  "title": "Disney Cruise, Singapore",
-  "dur": "4D/3N",
-  "price": 64750,
-  "struck": 89355,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    4
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Inside Stateroom, The Disney Adventure Cruise in Singapore",
-    "Singapore",
-    3,
-    5
-   ]
-  ],
-  "acts": 13,
-  "gallery": 81
- },
- {
-  "slug": "5-day-tour-of-singapore",
-  "title": "Glimpse of Singapore | Gardens, Skies & City Lights",
-  "dur": "5D/4N",
-  "price": 66082,
-  "struck": 81922,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Holiday Inn Express & Suites Singapore Novena by IHG",
-    "Singapore",
-    4,
-    6
-   ]
-  ],
-  "acts": 35,
-  "gallery": 135
- },
- {
-  "slug": "singapore-couple-special",
-  "title": "Singapore Couple Special | From Heritage Tales to Starlit Trails",
-  "dur": "5D/4N",
-  "price": 75100,
-  "struck": 100134,
-  "cur": "INR",
-  "cities": [
-   [
-    "Singapore",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "V Hotel Lavender",
-    "Singapore",
-    4,
-    11
+    12
    ],
    [
-    "Hotel Boss",
-    "Singapore",
-    4,
-    13
+    "Kuta Central Park Hotel, Bali",
+    "Kuta",
+    1,
+    14
    ]
   ],
-  "acts": 42,
-  "gallery": 192
+  "acts": 26,
+  "gallery": 140
  },
  {
-  "slug": "singapore-getaway",
-  "title": "Singapore Family Tour | City Lights & Safari Nights",
-  "dur": "6D/5N",
-  "price": 75457,
-  "struck": 85000,
+  "slug": "bali-bucket-list-getaway",
+  "title": "Bali Bucket-List Getaway with Flights | Water Sports, Nusa Penida & Off-Road ATV Adventure",
+  "dur": "7D/6N",
+  "price": 82000,
+  "struck": 100000,
   "cur": "INR",
   "cities": [
    [
-    "Singapore",
-    6
+    "Kuta",
+    4
+   ],
+   [
+    "Ubud",
+    3
    ]
   ],
-  "days": 6,
+  "days": 7,
   "hotels": [
    [
-    "Village Hotel Bugis by Far East Hospitality",
-    "Singapore",
-    5,
+    "Bliss Surfer Hotel Legian",
+    "Kuta",
+    4,
+    19
+   ],
+   [
+    "Alam Puisi Villa",
+    "Ubud",
+    2,
     18
    ]
   ],
-  "acts": 37,
-  "gallery": 155
+  "acts": 22,
+  "gallery": 120
+ },
+ {
+  "slug": "romantic-bali-hideaway",
+  "title": "Bali Vacation for Couples | From Jungle Swings to Sacred Springs",
+  "dur": "7D/6N",
+  "price": 55422,
+  "struck": 68723,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    4
+   ],
+   [
+    "Kuta",
+    4
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Jungle Retreat by Kupu Kupu Barong",
+    "Ubud",
+    4,
+    17
+   ],
+   [
+    "Alam Ubud Culture Villas & Residences",
+    "Ubud",
+    4,
+    10
+   ],
+   [
+    "Fairfield by Marriott Bali Legian",
+    "Kuta",
+    3,
+    25
+   ],
+   [
+    "Desamuda Village",
+    "Kuta",
+    3,
+    29
+   ]
+  ],
+  "acts": 33,
+  "gallery": 177
+ },
+ {
+  "slug": "bali-sightseeing-tour",
+  "title": "Bali Adventure with White Water Rafting",
+  "dur": "5D/4N",
+  "price": 38700,
+  "struck": 65196,
+  "cur": "INR",
+  "cities": [
+   [
+    "Ubud",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Bakung Ubud Resort & Villa",
+    "Ubud",
+    4,
+    16
+   ],
+   [
+    "The Evitel Resort, Ubud",
+    "Ubud",
+    4,
+    10
+   ]
+  ],
+  "acts": 12,
+  "gallery": 76
  }
 ]
