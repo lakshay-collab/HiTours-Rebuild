@@ -240,3 +240,17 @@ body {
 @keyframes tag-swing { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(8deg); } }
 .tag-swing { animation: tag-swing 2.6s ease-in-out infinite; transform-origin: 15% 15%; }
 @media (prefers-reduced-motion: reduce) { .tag-swing { animation: none; } }
+
+/* --- Promotion calendar themes --- */
+.promo-bar-diwali { background: linear-gradient(90deg, #4A1B06 0%, #8A3B00 42%, #C2410C 72%, #0F3A4A 100%); }
+.promo-bar-year-end { background: linear-gradient(90deg, #06332B 0%, #0B5748 45%, #0F3A4A 100%); }
+.promo-bar-india { background: linear-gradient(90deg, #B35A00 0%, #0A3B8C 50%, #0F6B36 100%); }
+.promo-bar-spring { background: linear-gradient(90deg, #4A2E59 0%, #7A5490 45%, #0F3A4A 100%); }
+
+.promo-particle { position: absolute; top: -10px; width: var(--p-size); height: var(--p-size); animation: snow-fall linear infinite; }
+.promo-particle-snow { border-radius: 9999px; background: rgba(255,255,255,.95); box-shadow: 0 0 8px rgba(255,255,255,.8); }
+.promo-particle-diwali { border-radius: 9999px; background: radial-gradient(circle at 50% 40%, #FFF2C2 0%, #FFD166 45%, rgba(255,138,61,0) 70%); box-shadow: 0 0 10px rgba(255,209,102,.9); }
+.promo-particle-kites { background: #FF9933; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); box-shadow: 0 0 8px rgba(255,153,51,.6); }
+.promo-particle-petals { border-radius: 60% 40% 55% 45% / 55% 50% 50% 45%; background: #F7D4DD; box-shadow: 0 0 8px rgba(247,212,221,.7); }
+
+@media (prefers-reduced-motion: reduce) { .promo-particle { display: none; } }

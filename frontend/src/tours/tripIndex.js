@@ -108,6 +108,19 @@ import { grandBaliFamilyWaterbomBySlug } from './grandBaliFamilyWaterbomData';
 import { baliBucketListFlightsBySlug } from './baliBucketListFlightsData';
 import { baliCouplesHolidayFlightsBySlug } from './baliCouplesHolidayFlightsData';
 import { baliAndPhuketHolidayBySlug } from './baliAndPhuketHolidayData';
+import { discoverJapanFujiKyotoBySlug } from './discoverJapanFujiKyotoData';
+import { jewelsOfJapanMountFujiBySlug } from './jewelsOfJapanMountFujiData';
+import { legendsOfJapanHiroshimaBySlug } from './legendsOfJapanHiroshimaData';
+import { japanUnveiledShortBreakBySlug } from './japanUnveiledShortBreakData';
+import { bestOfJapanThemeParksBySlug } from './bestOfJapanThemeParksData';
+import { bestOfJapanShrinesSkylinesBySlug } from './bestOfJapanShrinesSkylinesData';
+import { urbanWondersTokyoOsakaBySlug } from './urbanWondersTokyoOsakaData';
+import { treasuresOfJapanKyotoBySlug } from './treasuresOfJapanKyotoData';
+import { taleOfTwoCitiesJapanBySlug } from './taleOfTwoCitiesJapanData';
+import { japanThroughTimeHistoricTrailsBySlug } from './japanThroughTimeHistoricTrailsData';
+import { japanRomanticEscapeImperialBySlug } from './japanRomanticEscapeImperialData';
+import { classicWondersJapanGroupTourBySlug } from './classicWondersJapanGroupTourData';
+import { japanCulturalTrailsGroupTourBySlug } from './japanCulturalTrailsGroupTourData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -218,5 +231,18 @@ export const BY_SLUG = {
   ...grandBaliFamilyWaterbomBySlug,
   ...baliBucketListFlightsBySlug,
   ...baliCouplesHolidayFlightsBySlug,
-  ...baliAndPhuketHolidayBySlug
+  ...baliAndPhuketHolidayBySlug,
+  ...discoverJapanFujiKyotoBySlug,
+  ...jewelsOfJapanMountFujiBySlug,
+  ...legendsOfJapanHiroshimaBySlug,
+  ...japanUnveiledShortBreakBySlug,
+  ...bestOfJapanThemeParksBySlug,
+  ...bestOfJapanShrinesSkylinesBySlug,
+  ...urbanWondersTokyoOsakaBySlug,
+  ...treasuresOfJapanKyotoBySlug,
+  ...taleOfTwoCitiesJapanBySlug,
+  ...japanThroughTimeHistoricTrailsBySlug,
+  ...japanRomanticEscapeImperialBySlug,
+  ...classicWondersJapanGroupTourBySlug,
+  ...japanCulturalTrailsGroupTourBySlug
 };

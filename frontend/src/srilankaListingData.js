@@ -23,7 +23,7 @@ export const hero = {
   ctaHref: '/l/sri-lanka/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: ct('4ty416HtZ5fnIJe5U94pUn/04e383acf72b20230360d6cdeb960993/Sigiriya_Sri_Lanka.jpg').replace('w=1080', 'w=2400'),
-  video: '/hero/sri-lanka.mp4', poster: '/hero/sri-lanka.webp',
+  video: '/hero/sri-lanka.mp4', webm: '/hero/sri-lanka.webm', poster: '/hero/sri-lanka.webp',
   imageAlt: 'Sigiriya Lion Rock at sunset, Sri Lanka'
 };
 

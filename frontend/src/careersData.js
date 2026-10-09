@@ -10,7 +10,8 @@ export { CAREERS_URL };
 export const hero = {
   image: un('photo-1577962917302-cd874c4e31d2', 2000),
   alt: 'The Hi Tours team planning holidays together in the Mumbai office',
-  h1: 'Working with Hi Tours',
+  h1: 'Join Hi Tours',
+  video: { id: 'GKPwXS3CKBw', start: 660, end: 690 },
   cta: 'Learn more',
   positions: 'Open Positions'
 };

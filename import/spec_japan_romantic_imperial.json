@@ -1,0 +1,198 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "delights-of-japan-honeymoon-days",
+ "camel": "japanRomanticEscapeImperial",
+ "slug": "japan-romantic-escape-with-imperial-hotel",
+ "title": "Japan Romantic Escape with the Imperial Hotel",
+ "alt": "Cherry blossom along a quiet canal in Osaka, Japan",
+ "transport": "Shinkansen bullet train, private transfers and guided tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Luxury"
+ ],
+ "price": 142215,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 7,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Keio Presso Inn Hamamatsucho, Tokyo",
+   "hotel_label": "Keio Presso Inn Hamamatsucho",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Neat hotel in Hamamatsucho, close to the monorail",
+   "activities": [
+    {
+     "name": "Tokyo city tour by coach",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from Matsuya Ginza through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    },
+    {
+     "name": "Mount Fuji and Hakone day trip",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour",
+     "description": "The fifth station on Mount Fuji, Lake Ashi and the Hakone ropeway, with the bullet train back into Tokyo in the evening."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Tokyo for the two of you, with a city day and a day out to Mount Fuji and the Hakone lakes."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Imperial Hotel Osaka",
+   "accom": "3 nights · Breakfast · Standard room · 5★ · Five star riverside landmark, a short drive from Umeda",
+   "activities": [
+    {
+     "name": "Kyoto and Nara day trip",
+     "day": 5,
+     "optional": false,
+     "match": "Kyoto and Nara Sightseeing Day Tour",
+     "description": "A full day out of Osaka for Kinkaku-ji, the golden pavilion, and then the deer park and Todai-ji temple in Nara."
+    },
+    {
+     "name": "Osaka walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Osaka Half-Day Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Three nights at a five star riverside hotel, with a day in Kyoto and Nara and a walking tour of the food streets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Bullet train to Osaka",
+  "5": "Kyoto and Nara",
+  "6": "Osaka on foot",
+  "7": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your hotel in Hamamatsucho",
+   "Rest of the day free at your own pace",
+   "Optional: an evening at the Tokyo Tower observatory"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone ropeway",
+   "Bullet train back into Tokyo in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then transfer to the station",
+   "Shinkansen bullet train south to Osaka",
+   "Check in at the Imperial Hotel on the river",
+   "Rest of the day free for the two of you"
+  ],
+  "5": [
+   "Breakfast, then a full day out of Osaka",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The deer park and Todai-ji temple in Nara",
+   "Back in Osaka for the evening"
+  ],
+  "6": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free, or a riverside walk from the hotel"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "-",
+  "6": "-",
+  "7": "-"
+ },
+ "hotel_by_day": {
+  "1": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "2": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "3": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "4": "Imperial Hotel Osaka",
+  "5": "Imperial Hotel Osaka",
+  "6": "Imperial Hotel Osaka",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Three simple nights in Tokyo, then three at the Imperial in Osaka. Spend the hotel money where you will actually sit still.",
+  "tip": "Ask for a river view room at the Imperial. The cherry trees along the Okawa are a five minute walk from the lobby in spring."
+ },
+ "summary": "Seven days for two: three nights in Tokyo with a city tour and a Mount Fuji day, then the bullet train to Osaka for three nights at the five star Imperial Hotel, with Kyoto, Nara and a walking tour of the food streets.",
+ "included": "Included: 6 nights accommodation including three at the Imperial Hotel Osaka, with breakfast on the first four mornings; bullet train from Tokyo to Osaka; private airport transfers; full day Tokyo city tour; Mount Fuji and Hakone day trip; Kyoto and Nara day trip; Osaka half day walking tour.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

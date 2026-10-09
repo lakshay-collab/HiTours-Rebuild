@@ -23,6 +23,7 @@ export const hero = {
   ctaHref: '/l/bhutan/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: wide(IMG.RAW.tigersNest, 2400),
+  video: '/hero/bhutan.mp4', webm: '/hero/bhutan.webm', poster: '/hero/bhutan.webp',
   imageAlt: 'The Tiger’s Nest monastery clinging to a cliff above the Paro valley, Bhutan'
 };
 

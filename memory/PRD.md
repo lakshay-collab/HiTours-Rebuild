@@ -702,3 +702,14 @@ Dropped as duplicate wrappers per user decision: singapore-cruise-package-from-d
 - /our-office (pages/OurOffice.jsx + officeData.js): Audley-style office page: hero, eyebrow "Head office · Sales · Operations", Hi Tours India Gurgaon (Vatika City Point), phone/email, Visit our office (Maps) + Get in touch (mailto), landmarks, two accordions (Sales / Operations and back office, today highlighted), Google Maps embed, "Inside our office" 4 photo gallery (placeholders until user sends photos). Footer "Hi Tours" column + sitemap link. Footer India flag arrow removed.
 - Tested: test_reports/iteration_51.json + iteration_52.json all pass.
 - Sale bar mobile: single line (SALE.short, "5% off", "Ends 88d 07h 22m", seconds + dots hidden below sm, close at right-1.5), verified at 360px; auto-hide is now 20s (Header.jsx).
+
+## Status update - 9 October 2026 (see CHANGELOG.md for detail)
+
+Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore); search cleaned up so only live destinations show, with Bali findable; one green (#00B67A) for every star rating; a date-driven promotion calendar with per-festival artwork and 10%-look pricing on a 5% real saving; Careers hero renamed "Join Hi Tours" with a looping YouTube background; Indonesia and Japan listings now show only imported trips.
+
+### Backlog
+- P0: build the remaining 36 Japan Thrillophilia links (13 of 49 done). Three need a new South Korea country page/route.
+- P0: Careers background video - confirm playback in a real browser, or self-host a 30 s clip (mp4 + webm in /public/hero) to guarantee no YouTube branding and no play button.
+- P1: decide what to do with the five skipped Bali sources (one 404, four with itinerary/duration mismatches).
+- P1: machine-readable /sitemap.xml (still deferred).
+- P2: promotion calendar admin - today the dates live in sale.js; could read from a sheet or an /api endpoint later.

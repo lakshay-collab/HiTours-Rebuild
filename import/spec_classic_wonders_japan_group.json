@@ -1,0 +1,415 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "scenic-trip-to-the-japanese-heritage",
+ "camel": "classicWondersJapanGroupTour",
+ "slug": "classic-wonders-of-japan-group-tour",
+ "title": "Classic Wonders of Japan Group Tour",
+ "alt": "Snow monkeys in a steaming hot spring at Yamanouchi, Japan",
+ "transport": "Bullet trains, coaches and guided touring throughout",
+ "tag": "Group tour",
+ "tags": [
+  "Culture",
+  "Adventure"
+ ],
+ "price": 278985,
+ "route_cities": [
+  "Tokyo",
+  "Hiroshima",
+  "Miyajima",
+  "Matsuyama",
+  "Kobe",
+  "Mount Koya",
+  "Kyoto",
+  "Nagano",
+  "Nikko"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 8,
+  "hotels": 8,
+  "experiences": 16,
+  "transfers": 38,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station to begin, with a free evening in Shinjuku and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima to Miyajima",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hilton Hiroshima",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in the centre, walking distance from the park",
+   "activities": [
+    {
+     "name": "Hiroshima walking tour",
+     "day": 3,
+     "optional": false,
+     "match": "Hiroshima Walking Tour",
+     "description": "On foot through the Peace Memorial Park, the cenotaph and the A-Bomb Dome with a guide who tells the city's story properly."
+    },
+    {
+     "name": "Miyajima island",
+     "day": 3,
+     "optional": false,
+     "match": "Visit to Miyajima Island",
+     "description": "The ferry across to Miyajima for the floating torii gate, Itsukushima shrine and the tame deer along the shore."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "A night in Hiroshima, arriving by bullet train, with the Peace Memorial Park and the island shrine at Miyajima the same day."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Matsuyama",
+   "city": "Matsuyama",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "ANA Crowne Plaza Matsuyama, an IHG Hotel",
+   "hotel_label": "ANA Crowne Plaza Matsuyama",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel on Shikoku island, close to the castle hill",
+   "activities": [
+    {
+     "name": "Matsuyama castle",
+     "day": 4,
+     "optional": false,
+     "match": "Matsuyama Castle",
+     "description": "One of only twelve original castle keeps left in Japan, up on its hill with a view across the Seto inland sea."
+    },
+    {
+     "name": "Ishiteji temple",
+     "day": 4,
+     "optional": false,
+     "match": "Ishiteji Temple",
+     "description": "A pilgrimage temple on the Shikoku circuit, with its gate, three storey pagoda and cave shrine behind the main hall."
+    },
+    {
+     "name": "Dogo Onsen",
+     "day": 4,
+     "optional": false,
+     "match": "Dogo Onsen",
+     "description": "The oldest hot spring bath house in the country, a wooden warren of pools said to be three thousand years old."
+    }
+   ],
+   "program": {
+    "name": "Matsuyama",
+    "description": "A night on Shikoku island with the original castle keep, a pilgrimage temple and Japan's oldest hot spring bath house."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Kobe",
+   "city": "Kobe",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Kobe Meriken Park Oriental Hotel",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel out on the harbour pier at Meriken Park",
+   "activities": [
+    {
+     "name": "Kotohira shrine, Ritsurin garden and Uzu no Michi",
+     "day": 5,
+     "optional": false,
+     "match": "Journey from Matsuyama to Kobe",
+     "description": "A touring day across Shikoku: the hillside Kotohira shrine, the landscaped Ritsurin garden and the glass floor walkway above the Naruto whirlpools."
+    }
+   ],
+   "program": {
+    "name": "Kobe",
+    "description": "A night on the Kobe waterfront, reached on a touring day through Shikoku's gardens, shrines and the Naruto whirlpools."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Mount Koya",
+   "city": "Koyasan",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Fukuchi-in Temple",
+   "accom": "1 night · Breakfast · Temple room · 3★ · Working temple lodging on Mount Koya, with its own hot spring bath",
+   "activities": [
+    {
+     "name": "Kobe earthquake memorial museum",
+     "day": 6,
+     "optional": false,
+     "match": "Earthquake Memorial Museum",
+     "description": "The museum built after the 1995 quake, which explains in plain terms what happened to the city and how it rebuilt."
+    },
+    {
+     "name": "Mount Koya sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Mount Koya Sightseeing Tour",
+     "description": "The temple town itself: the Garan complex, Kongobu-ji and the cedar lined Okunoin cemetery with its two hundred thousand graves."
+    }
+   ],
+   "program": {
+    "name": "Mount Koya",
+    "description": "A night in a working temple lodging on the mountain, with the Garan complex and the Okunoin cemetery walked in the afternoon."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "The Prince Kyoto Takaragaike, Autograph Collection",
+   "hotel_label": "The Prince Kyoto Takaragaike",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in gardens north of the city centre",
+   "activities": [
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 7,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital, taking in the golden pavilion, a Zen garden and the torii gate paths above Fushimi."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "A night in Kyoto with a guided day through the temples and a free evening in the Gion lanes."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Nagano",
+   "city": "Nagano",
+   "subtitle": "Nagano to Tsumago and Matsumoto",
+   "days": [
+    8
+   ],
+   "dayLabel": "Day 8",
+   "hotel": "Hotel Metropolitan Nagano",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel attached to Nagano station",
+   "activities": [
+    {
+     "name": "Tsumago post town",
+     "day": 8,
+     "optional": false,
+     "match": "Leisure Time at Tsumago",
+     "description": "A preserved post town on the old Nakasendo road, where the wooden inns and shopfronts look much as travellers found them."
+    },
+    {
+     "name": "Matsumoto castle",
+     "day": 8,
+     "optional": false,
+     "match": "Crow Castle",
+     "description": "The black keep they call the crow castle, standing on its moat with the Alps behind it, another original from the sixteenth century."
+    }
+   ],
+   "program": {
+    "name": "Nagano",
+    "description": "A night in Nagano, reached through the old post town of Tsumago and the black keep of Matsumoto castle."
+   }
+  },
+  {
+   "letter": "H",
+   "name": "Ikaho",
+   "city": "Shibukawa",
+   "subtitle": "Ikaho to Kusatsu and Nikko",
+   "days": [
+    9,
+    10
+   ],
+   "dayLabel": "Day 9 to 10",
+   "hotel": "Moriaki Ryokan",
+   "accom": "1 night · Breakfast · Ryokan room · 3★ · Traditional inn at Ikaho hot spring, with tatami rooms and shared baths",
+   "activities": [
+    {
+     "name": "Zenkoji temple",
+     "day": 9,
+     "optional": false,
+     "match": "Zenkoji Temple",
+     "description": "Nagano's great temple, home to what is said to be the first Buddhist statue brought to Japan, kept hidden behind the altar."
+    },
+    {
+     "name": "Snow monkey park",
+     "day": 9,
+     "optional": false,
+     "match": "Snow Monkey Park",
+     "description": "The hot spring at Jigokudani where wild macaques sit chest deep in the steaming water, often with snow on their heads."
+    },
+    {
+     "name": "Kusatsu hot spring town",
+     "day": 9,
+     "optional": false,
+     "match": "Leisure Time in Kusatsu",
+     "description": "Free time in Kusatsu, where the hot water runs down wooden channels through the middle of the town square."
+    },
+    {
+     "name": "Nikko sightseeing tour",
+     "day": 10,
+     "optional": false,
+     "match": "Nikko Sightseeing Tour",
+     "description": "The lacquered Toshogu shrine in its cedar forest, the Shinkyo bridge and the Kegon falls on the way back to Tokyo."
+    }
+   ],
+   "program": {
+    "name": "Ikaho",
+    "description": "A ryokan night at a hot spring, with the snow monkeys, Zenkoji temple and Kusatsu on the way, and Nikko on the final day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Hiroshima and Miyajima",
+  "4": "Across to Matsuyama",
+  "5": "Shikoku gardens and Kobe",
+  "6": "Mount Koya temple stay",
+  "7": "Kyoto sightseeing",
+  "8": "Tsumago and Matsumoto",
+  "9": "Snow monkeys and Ikaho",
+  "10": "Nikko and departure"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Evening at your own pace"
+  ],
+  "2": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast and check out, then the bullet train west",
+   "Walking tour of the Peace Memorial Park and the A-Bomb Dome",
+   "Ferry across to Miyajima for the floating torii gate",
+   "Check in at your Hiroshima hotel"
+  ],
+  "4": [
+   "Breakfast, then on across to Shikoku island",
+   "Matsuyama castle, an original keep on its hill",
+   "Ishiteji temple and its cave shrine",
+   "Dogo Onsen, the oldest bath house in Japan"
+  ],
+  "5": [
+   "Breakfast and check out, then a touring day to Kobe",
+   "Kotohira shrine on its long stone stairway",
+   "Ritsurin garden, one of the finest in the country",
+   "The Uzu no Michi walkway above the Naruto whirlpools"
+  ],
+  "6": [
+   "Breakfast, then the Kobe earthquake memorial museum",
+   "On up to Mount Koya in the afternoon",
+   "The Garan complex and Kongobu-ji temple",
+   "Temple lodging, with dinner and morning prayers offered"
+  ],
+  "7": [
+   "Breakfast at the temple, then down to Kyoto",
+   "A guided day through the old capital",
+   "The golden pavilion and the torii gate paths",
+   "Free time in the Gion lanes in the evening"
+  ],
+  "8": [
+   "Breakfast and check out, then north into the mountains",
+   "Free time in the old post town of Tsumago",
+   "Matsumoto castle, the black crow keep on its moat",
+   "Check in at your Nagano hotel"
+  ],
+  "9": [
+   "Breakfast, then Zenkoji temple in Nagano",
+   "The snow monkey park at Jigokudani",
+   "Free time in the hot spring town of Kusatsu",
+   "Ryokan night at Ikaho, tatami rooms and shared baths"
+  ],
+  "10": [
+   "Breakfast at the ryokan and check out",
+   "A guided morning at Nikko",
+   "The Toshogu shrine and the Shinkyo bridge",
+   "Transfer to Tokyo or the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Hilton Hiroshima",
+  "4": "ANA Crowne Plaza Matsuyama, an IHG Hotel",
+  "5": "Kobe Meriken Park Oriental Hotel",
+  "6": "Fukuchi-in Temple",
+  "7": "The Prince Kyoto Takaragaike, Autograph Collection",
+  "8": "Hotel Metropolitan Nagano",
+  "9": "Moriaki Ryokan",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "This is the Japan that regulars come back for. Temple lodgings, an island shrine, a monkey hot spring and the old post towns.",
+  "tip": "The night at Fukuchi-in on Mount Koya is the highlight. Eat the vegetarian temple dinner, then join the morning prayers at six."
+ },
+ "summary": "Ten days on a group tour that leaves the usual trail: Tokyo and Hiroshima, then Shikoku island for an original castle and the oldest bath house in Japan, a temple lodging on Mount Koya, Kyoto, the old post town of Tsumago, the snow monkeys and a ryokan night before Nikko.",
+ "included": "Included: 9 nights across eight towns with daily breakfast, including a temple lodging on Mount Koya and a ryokan at Ikaho; bullet trains and coaches throughout; guided sightseeing in Tokyo, Hiroshima, Kyoto, Mount Koya and Nikko; Miyajima island; Matsuyama castle, Ishiteji temple and Dogo Onsen; Kotohira shrine, Ritsurin garden and the Uzu no Michi walkway; Kobe earthquake memorial museum; Tsumago and Matsumoto castle; Zenkoji temple, the snow monkey park and Kusatsu.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

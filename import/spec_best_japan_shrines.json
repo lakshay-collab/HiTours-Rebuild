@@ -1,0 +1,235 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "best-of-japan",
+ "camel": "bestOfJapanShrinesSkylines",
+ "slug": "best-of-japan-shrines-and-skylines",
+ "title": "Best of Japan: Shrines and Skylines",
+ "alt": "Lanterns at a shrine gate in Tokyo, Japan",
+ "transport": "Shinkansen bullet train, private transfers and guided tours",
+ "tag": "Best seller",
+ "tags": [
+  "Culture",
+  "First time"
+ ],
+ "price": 192627,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hiroshima",
+  "Miyajima",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 4,
+  "transfers": 11,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "APA Hotel Shinjuku Kabukicho Chuo",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Well placed hotel in Shinjuku, minutes from the station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone day trip",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour",
+     "description": "The fifth station on Mount Fuji, Lake Ashi and the Hakone ropeway, with the bullet train back into Tokyo in the evening."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Shinjuku, with a full city day and a day out to Mount Fuji and the Hakone lakes."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima to Miyajima",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Hotel Granvia Hiroshima",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel attached to Hiroshima station",
+   "activities": [
+    {
+     "name": "Hiroshima and Miyajima tour",
+     "day": 5,
+     "optional": false,
+     "match": "Hiroshima and Miyajima Tour",
+     "description": "The Peace Memorial Park and museum in the morning, then the ferry to Miyajima for the floating torii gate and Itsukushima shrine."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "Two nights beside the station, with a day that pairs the Peace Memorial Park with the island shrine at Miyajima."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 6 to 9",
+   "hotel": "Sotetsu Fresa Inn Osaka Namba",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Clean modern hotel a short walk from Namba station",
+   "activities": [
+    {
+     "name": "Kyoto and Nara day trip",
+     "day": 7,
+     "optional": false,
+     "match": "Full-Day Tour to Kyoto & Nara",
+     "description": "Kinkaku-ji, the golden pavilion, then the deer park and Todai-ji temple in Nara, with a buffet lunch and coach travel from Namba."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Three nights in Namba with a full day in Kyoto and Nara, and a free day for the food streets or a castle."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Bullet train to Hiroshima",
+  "5": "Hiroshima and Miyajima",
+  "6": "On to Osaka",
+  "7": "Kyoto and Nara",
+  "8": "A free day in Osaka",
+  "9": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone ropeway",
+   "Bullet train back into Tokyo in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then transfer to the station",
+   "Shinkansen bullet train west to Hiroshima",
+   "Check in at your hotel beside the station",
+   "Rest of the day free in the city"
+  ],
+  "5": [
+   "Breakfast, then the Peace Memorial Park and museum",
+   "The A-Bomb Dome and the memorial cenotaph",
+   "Ferry across to Miyajima island",
+   "The floating torii gate and Itsukushima shrine"
+  ],
+  "6": [
+   "Breakfast and check out, then back to the station",
+   "Bullet train east to Osaka",
+   "Check in at your hotel near Namba",
+   "Rest of the day free in the city"
+  ],
+  "7": [
+   "Breakfast, then a full day out to Kyoto and Nara",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "Buffet lunch included",
+   "The deer park and Todai-ji temple in Nara"
+  ],
+  "8": [
+   "Breakfast and a free day in Osaka",
+   "Optional: Dotonbori and the Kuromon market stalls",
+   "Optional: Osaka castle and its park",
+   "Optional: a day trip to Himeji or Kobe by train"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B, L",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "APA Hotel Shinjuku Kabukicho Chuo",
+  "2": "APA Hotel Shinjuku Kabukicho Chuo",
+  "3": "APA Hotel Shinjuku Kabukicho Chuo",
+  "4": "Hotel Granvia Hiroshima",
+  "5": "Hotel Granvia Hiroshima",
+  "6": "Sotetsu Fresa Inn Osaka Namba",
+  "7": "Sotetsu Fresa Inn Osaka Namba",
+  "8": "Sotetsu Fresa Inn Osaka Namba",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Three cities in nine days is the honest Japan. Shinjuku for the lights, Hiroshima for the quiet, Kansai for the temples.",
+  "tip": "The Hiroshima hotel is inside the station building, so the early train west costs you nothing in the morning."
+ },
+ "summary": "Nine days through three cities: Shinjuku with a city day and Mount Fuji, Hiroshima for the Peace Memorial Park and the floating torii gate at Miyajima, then Osaka with Kyoto, Nara and a free day.",
+ "included": "Included: 8 nights with daily breakfast; Shinkansen bullet train between Tokyo, Hiroshima and Osaka; private airport transfers; full day Tokyo city tour with lunch; Mount Fuji and Hakone day trip; Hiroshima and Miyajima tour; Kyoto and Nara day trip with buffet lunch.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

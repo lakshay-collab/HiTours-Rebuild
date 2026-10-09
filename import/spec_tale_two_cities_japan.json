@@ -1,0 +1,208 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "highlights-of-tokyo-and-osaka-in-8-days",
+ "camel": "taleOfTwoCitiesJapan",
+ "slug": "tokyo-and-osaka-tale-of-two-cities",
+ "title": "Tokyo and Osaka: A Tale of Two Cities",
+ "alt": "Skyscrapers above the Shinjuku streets, Tokyo",
+ "transport": "Shinkansen bullet train, private transfers and shared day tours",
+ "tag": "Best seller",
+ "tags": [
+  "First time",
+  "Short trips"
+ ],
+ "price": 142405,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 7,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "APA Hotel Keikyu Kamata Ekimae, Tokyo",
+   "hotel_label": "APA Hotel Keikyu Kamata Ekimae",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Handy hotel beside Kamata station, direct to Haneda",
+   "activities": [
+    {
+     "name": "Tokyo city tour by coach",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A shared full day coach tour through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    },
+    {
+     "name": "Mount Fuji and Hakone day trip",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour",
+     "description": "The fifth station on Mount Fuji, Lake Ashi and the Hakone ropeway, with the bullet train back into Tokyo in the evening."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Tokyo with a shared city tour and a day out to Mount Fuji and the Hakone lakes."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 4 to 8",
+   "hotel": "The Rise Osaka Kitashinchi",
+   "accom": "4 nights · Breakfast · Standard room · 4★ · New four star hotel in Kitashinchi, central Osaka",
+   "activities": [
+    {
+     "name": "Kyoto and Nara day trip",
+     "day": 5,
+     "optional": false,
+     "match": "Full Day Tour to Kyoto & Nara",
+     "description": "A shared day from Kyoto station taking in the golden pavilion at Kinkaku-ji, then the deer park and Todai-ji temple in Nara."
+    },
+    {
+     "name": "Osaka walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Osaka Half-Day Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights in one hotel with a Kyoto and Nara day, a walking tour of the food streets and two free days."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Bullet train to Osaka",
+  "5": "Kyoto and Nara",
+  "6": "Osaka on foot",
+  "7": "A free day in Osaka",
+  "8": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Kamata station",
+   "Rest of the day free at your own pace",
+   "Optional: a first bowl of ramen in the lanes nearby"
+  ],
+  "2": [
+   "Breakfast, then a shared full day coach tour",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone ropeway",
+   "Bullet train back into Tokyo in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then transfer to the station",
+   "Shinkansen bullet train south to Osaka",
+   "Check in at your hotel in Kitashinchi",
+   "Rest of the day free in the city"
+  ],
+  "5": [
+   "Breakfast, then the train across to Kyoto",
+   "A shared day tour from Kyoto station",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The deer park and Todai-ji temple in Nara"
+  ],
+  "6": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free in the city"
+  ],
+  "7": [
+   "Breakfast and a free day in Osaka",
+   "Optional: Universal Studios Japan for the day",
+   "Optional: Osaka castle and its park",
+   "Optional: a day trip to Himeji or Kobe by train"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "APA Hotel Keikyu Kamata Ekimae, Tokyo",
+  "2": "APA Hotel Keikyu Kamata Ekimae, Tokyo",
+  "3": "APA Hotel Keikyu Kamata Ekimae, Tokyo",
+  "4": "The Rise Osaka Kitashinchi",
+  "5": "The Rise Osaka Kitashinchi",
+  "6": "The Rise Osaka Kitashinchi",
+  "7": "The Rise Osaka Kitashinchi",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Shared tours keep the price down without losing the sights. Four nights in Osaka then buys you two days of your own.",
+  "tip": "Use one free day for Himeji castle, an hour away by train, and the other for Universal Studios if there are teenagers with you."
+ },
+ "summary": "Eight days between two cities on a shared tour basis: three nights in Tokyo with a city tour and Mount Fuji, then four nights in one Osaka hotel with Kyoto, Nara, a walking tour of the food streets and two free days.",
+ "included": "Included: 7 nights with daily breakfast; Shinkansen bullet train from Tokyo to Osaka; private airport transfers; shared full day Tokyo city tour; Mount Fuji and Hakone day trip with bullet train return; shared Kyoto and Nara day tour; Osaka half day walking tour.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

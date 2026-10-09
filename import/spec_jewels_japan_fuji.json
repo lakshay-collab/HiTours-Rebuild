@@ -1,0 +1,192 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "jewels-of-japan-mount-fuji-special",
+ "camel": "jewelsOfJapanMountFuji",
+ "slug": "jewels-of-japan-with-mount-fuji",
+ "title": "Jewels of Japan with Mount Fuji",
+ "alt": "The Shinkansen bullet train passing Mount Fuji, Japan",
+ "transport": "Shinkansen bullet train, private transfers and guided tours",
+ "tag": "Best seller",
+ "tags": [
+  "Culture",
+  "First time"
+ ],
+ "price": 161206,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 8,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Mitsui Garden Hotel Kyobashi, Tokyo",
+   "hotel_label": "Mitsui Garden Hotel Kyobashi",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Smart hotel in Kyobashi, a short walk from Tokyo station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from Matsuya Ginza through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone day trip",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour",
+     "description": "The fifth station on Mount Fuji, Lake Ashi and the Hakone ropeway, with the bullet train back into Tokyo at the end of the day."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights beside Tokyo station, with a full city day and a day out to Mount Fuji and Hakone that returns by bullet train."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Hotel Monterery Osaka",
+   "hotel_label": "Hotel Monterey Osaka",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · European styled hotel in Kita, close to Osaka station",
+   "activities": [
+    {
+     "name": "Kyoto and Nara day trip",
+     "day": 5,
+     "optional": false,
+     "match": "Kyoto and Nara Sightseeing Day Tour",
+     "description": "Kinkaku-ji, the golden pavilion, Fushimi Inari's torii gates and then the deer park and Todai-ji temple in Nara, departing from Osaka."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Three nights in Osaka with a full day in Kyoto and Nara, and a free day for the food streets or a castle."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Bullet train to Osaka",
+  "5": "Kyoto and Nara",
+  "6": "A free day in Osaka",
+  "7": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your hotel in Kyobashi",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk through Ginza"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone ropeway",
+   "Bullet train back into Tokyo in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then transfer to the station",
+   "Shinkansen bullet train south to Osaka",
+   "Check in at your hotel in Kita",
+   "Rest of the day free in the city"
+  ],
+  "5": [
+   "Breakfast, then a full day out to Kyoto and Nara",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The torii gate paths at Fushimi Inari",
+   "The deer park and Todai-ji temple in Nara"
+  ],
+  "6": [
+   "Breakfast and a free day in Osaka",
+   "Optional: Dotonbori and the Kuromon market stalls",
+   "Optional: Osaka castle and its park",
+   "Optional: Universal Studios Japan for the day"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Mitsui Garden Hotel Kyobashi, Tokyo",
+  "2": "Mitsui Garden Hotel Kyobashi, Tokyo",
+  "3": "Mitsui Garden Hotel Kyobashi, Tokyo",
+  "4": "Hotel Monterery Osaka",
+  "5": "Hotel Monterery Osaka",
+  "6": "Hotel Monterery Osaka",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "A week is enough for Tokyo and Kansai if you let the bullet train do the work. This is that trip, nothing wasted.",
+  "tip": "Both hotels sit next to a main station, so the free day can become Himeji, Kobe or Nara again without a transfer."
+ },
+ "summary": "Seven days with three nights in central Tokyo for a city day and Mount Fuji with Hakone, then the Shinkansen to Osaka for three nights with a full day in Kyoto and Nara and a free day in the city.",
+ "included": "Included: 6 nights with daily breakfast; Shinkansen bullet train from Tokyo to Osaka; private airport transfers; full day Tokyo city tour with lunch; Mount Fuji and Hakone day trip with bullet train return; Kyoto and Nara sightseeing day tour.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

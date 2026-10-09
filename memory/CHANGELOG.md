@@ -57,3 +57,32 @@ Skip as exact duplicates of an already built itinerary (only the departure city 
 Still to build: bali-couple-special, honeymoon-getaway-to-bali, bali-package-from-delhi-for-family, bali-honeymoon-retreat, bali-couple-escape, bali-trip-for-couples, bali-honeymoon-getaway, bali-tour-packages-for-couple-including-flights, romantic-retreat-in-bali, bali-phuket-tour-package, bali-family-vacation, bali-bucket-list-getaway, romantic-bali-hideaway, bali-sightseeing-tour.
 Rule used when the duration label disagrees with the itinerary: trust the itinerary when hotel nights plus one equals the itinerary day count.
 Workflow per trip: digest2.py <slug> -> write /app/import/spec_*.json -> build_trip.py -> check_trip.py -> register_trip.py <camel> indonesia [other countries] -> at the end apply_card_images.py + check_card_images.py over every Bali data file.
+
+## 9 October 2026
+
+### Destination hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore)
+- User supplied five mp4s; transcoded to 720p H.264 (~3.5-4.7 MB) plus VP9 WebM in `/app/frontend/public/hero/<country>.mp4|.webm`, poster frame as `<country>.webp`.
+- Wired via `hero.video` / `hero.webm` / `hero.poster` in each `<country>ListingData.js`; rendered by the existing Egypt/Thailand treatment (`EgyptHero.jsx`, `EgyptHolidays.jsx` `HeroMedia`).
+- `EgyptHero` and `HeroMedia` now render the WebM `<source>` only when `hero.webm` exists (previously derived blindly from the mp4 path, which 404'd). Thailand/Sri Lanka/Vietnam data updated with explicit `webm` keys.
+- Verified: all five autoplay, muted, loop, playsInline, object-cover, dark gradient overlay unchanged.
+
+### Search (`components/SearchBar.jsx`)
+- Only destinations with a live country route appear (irrelevant entries such as Australia removed).
+- Added a REGIONS entry for `Bali` -> `/asien/indonesia`, and an alias string on Indonesia so "bali" matches both Bali and Indonesia.
+
+### Star ratings
+- Single rating colour site-wide: `#00B67A` (the green already used in the Egypt reviews block). `Rating.jsx` `BoxStars`/`BrandStars` default to it, so footer, testimonials and all review blocks match.
+
+### Promotion calendar (`sale.js`, `components/sale/*`)
+- Five dated promotions from the merchandising sheet: Diwali (11 Oct - 5 Nov 26, started early on request), Year-End (6 Nov - 22 Dec 26), Republic Day (5 - 26 Jan 27), Good Friday (1 Feb - 20 Mar 27), Independence Day (15 Jul - 15 Aug 27). Active one picked by IST date; no `forceActive` flags.
+- Pricing: `markup` (5%) lifts the struck list price, `percent` (5%) is the real saving, `saleBadgePercent()` = 10. Badges and SAVE chip read 10%, net saving stays 5%.
+- Per-occasion art in `saleThemes.js` + new SVGs in `SaleIcons.jsx`: Diwali = diya + firework + rangoli; Year-End = glass bauble + champagne (no Santa hats); Republic/Independence = tricolour + kite; Good Friday = dove + blossom. `SaleConfetti.jsx` swaps the drifting particles (diya sparks, snow, kites, petals) and `promo-bar-*` gradients in `index.css` recolour the top bar.
+
+### Careers page
+- Hero heading changed to "Join Hi Tours".
+- `components/CareersHeroVideo.jsx` embeds YouTube `GKPwXS3CKBw` via the IFrame API, muted, controls hidden, 11:00-11:30 window looped by seeking back on ENDED. Iframe is oversized (scale 1.45) so the player's logo/title overlays fall outside the frame, and only fades in on PLAYING so the team photo stays visible if playback is blocked.
+- NOT VISUALLY VERIFIABLE from this environment: YouTube returns "Video unavailable" to the datacenter IP (yt-dlp is likewise blocked by the bot check). Self-hosting a 30 s clip would remove all YouTube branding for certain.
+
+### Thrillophilia imports
+- Bali/SE Asia batch finished: 36 trips live on Indonesia (old generic `indonesiaPackages` removed from the listing on request). Four source links were skipped as city-variant duplicates of trips already built; `rediscover-bali-in-6-days` 404s; `uncover-bali`, `highlights-of-bali`, `bali-honeymoon-special`, `bali-honeymoon-getaway` have itinerary days that contradict their duration labels.
+- Japan batch started: all 49 links extracted, 13 trips built, checked and registered; old generic `japanPackages` removed from the Japan listing on request. 36 Japan links still to build, including three that need a South Korea country page.

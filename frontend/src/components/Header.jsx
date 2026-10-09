@@ -9,18 +9,15 @@ import ExpertAdvicePanel from './ExpertAdvicePanel';
 import { DestinationsMenu, ThemesMenu } from './DesktopMenus';
 import { useHomeLink, scrollToSection, WHY_ID } from '../lib/homeReturn';
 import { useLocation } from 'react-router-dom';
-import { SALE } from '../sale';
-import { SaleTag, Bells } from './sale/SaleIcons';
+import { SALE, saleBadgePercent } from '../sale';
+import { themeOf } from './sale/saleThemes';
+import SaleConfetti from './sale/SaleConfetti';
 import { SaleTooltip } from './sale/SaleBadge';
 
-const BANNER_KEY = SALE ? `hi-banner-dismissed-${SALE.id}` : 'hi-banner-dismissed';
+const T = themeOf(SALE);
+const OFF = saleBadgePercent();
 
-// Drifting snowflakes for the festive top bar (pure CSS).
-const Snow = () => (
-  <span className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-    {Array.from({ length: 14 }, (_, i) => <i key={i} className="snowflake" style={{ left: `${3 + i * 7}%`, width: `${3 + (i % 3)}px`, height: `${3 + (i % 3)}px`, animationDelay: `${(i * 0.7) % 5}s`, animationDuration: `${3.5 + (i % 4) * 0.8}s` }} />)}
-  </span>
-);
+const BANNER_KEY = SALE ? `hi-banner-dismissed-${SALE.id}` : 'hi-banner-dismissed';
 
 const MENUS = [
   { key: 'destinations', label: 'Destinations' }
@@ -113,22 +110,22 @@ export default function Header({ overlay = false, floating = false }) {
   const dividerCls = overlay ? 'bg-white/30' : 'bg-outline-variant';
 
   const banner = bannerOpen ? (
-    <div className={`relative text-white pl-2 pr-8 sm:px-12 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
+    <div className={`relative text-white pl-2 pr-8 sm:px-12 py-2 t-body-md text-center overflow-visible ${SALE ? T.bar : 'bg-deep-water'}`} data-testid="top-banner">
       {SALE ? (
         <SaleTooltip testId="top-banner-sale">
           <span className="relative z-[1] flex sm:inline-flex items-center justify-center gap-1 sm:gap-2 whitespace-nowrap text-[11px] sm:text-[14px] leading-5 cursor-default">
-            <SaleTag size={18} className="shrink-0 sm:hidden" />
-            <SaleTag size={22} className="shrink-0 hidden sm:block" />
+            <T.Lead size={18} className="shrink-0 sm:hidden" />
+            <T.Lead size={22} className="shrink-0 hidden sm:block" />
             <span className="font-semibold tracking-wide"><span className="sm:hidden">{SALE.short}</span><span className="hidden sm:inline">{SALE.name}</span></span>
             <span className="hidden sm:inline text-white/60">·</span>
-            <span className="text-[#FFD166] font-medium"><span className="sm:hidden">{SALE.percent}% off</span><span className="hidden sm:inline">{SALE.tagline}</span></span>
+            <span className="font-medium" style={{ color: T.accent }}><span className="sm:hidden">{OFF}% off</span><span className="hidden sm:inline">{SALE.tagline}</span></span>
             <span className="hidden sm:inline text-white/60">·</span>
             <SaleCountdown className="text-[10.5px] sm:text-[13px]" />
-            <Bells size={22} className="shrink-0 hidden sm:inline" />
+            <T.Trail size={22} className="shrink-0 hidden sm:inline" />
           </span>
         </SaleTooltip>
       ) : nav.banner}
-      {SALE && <Snow />}
+      {SALE && <SaleConfetti />}
       <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-1.5 sm:right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[3]">
         <X size={18} strokeWidth={2} />
       </button>

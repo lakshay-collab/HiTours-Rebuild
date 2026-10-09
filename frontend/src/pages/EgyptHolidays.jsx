@@ -46,11 +46,11 @@ const sortFns = {
   'days-desc': (a, b) => b.days - a.days
 };
 
-const HeroMedia = ({ video, image, poster }) => {
+const HeroMedia = ({ video, webm, image, poster }) => {
   if (typeof video === 'string') {
     return (
       <video className="absolute inset-0 w-full h-full object-cover" poster={poster || image} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" data-testid="eg-holidays-video-file">
-        <source src={video.replace(/\.mp4$/, '.webm')} type="video/webm" />
+        {webm && <source src={webm} type="video/webm" />}
         <source src={video} type="video/mp4" />
       </video>
     );
@@ -70,11 +70,11 @@ const HeroMedia = ({ video, image, poster }) => {
   );
 };
 
-const VideoHero = ({ video, image, poster, title, count }) => (
+const VideoHero = ({ video, webm, image, poster, title, count }) => (
   <div className="relative">
     <Header overlay />
     <section className="relative h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] overflow-hidden bg-[#002131]" data-testid="eg-holidays-video">
-      <HeroMedia video={video} image={image} poster={poster} />
+      <HeroMedia video={video} webm={webm} image={image} poster={poster} />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.55)_0%,rgba(0,33,49,0.2)_45%,rgba(0,33,49,0.6)_100%)] pointer-events-none" />
       <div className="absolute inset-0 pt-[112px] md:pt-[108px] flex flex-col items-center justify-center gap-4 md:gap-5 px-4 text-center" data-testid="eg-hero-copy">
         <h1 className="eg-display-lg text-white drop-shadow-[0_2px_12px_rgba(0,33,49,0.45)] [text-wrap:balance] eg-rise" data-testid="eg-hero-title">{title}</h1>
@@ -161,7 +161,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   return (
     <div className="eg" data-testid={d.testId}>
       <main>
-        <VideoHero video={hero.video} image={hero.image} poster={hero.poster} title={style ? hero.styleH1(style) : hero.holidaysH1} count={tours.browse(list.length)} />
+        <VideoHero video={hero.video} webm={hero.webm} image={hero.image} poster={hero.poster} title={style ? hero.styleH1(style) : hero.holidaysH1} count={tours.browse(list.length)} />
         <div className={`${WIDE} mt-6 md:mt-8`}>
           <nav className="hidden sm:flex items-center gap-1 eg-body-md text-[#174358]" aria-label="Breadcrumb" data-testid="eg-breadcrumb">
             {crumbs.map((c, i) => (

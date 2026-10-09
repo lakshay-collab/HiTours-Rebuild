@@ -14,7 +14,7 @@ export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asi
 export const hero = {
   h1: `${N} Honeymoons and holidays`, holidaysH1: `${N} tours & holidays`, styleH1: (style) => `${N} ${style.toLowerCase()} holidays`,
   tabAbout: `About ${N}`, tabTours: `${N} holidays`, cta: 'Plan for free', stickyCta: `Plan your ${N} trip`, ctaHref: '/l/japan/enquiry/passengers/',
-  sub: 'Your travel plan – no obligation & tailor-made', image: wide(IMG.RAW.hero, 2400), imageAlt: "Tokyo, Japan"
+  sub: 'Your travel plan – no obligation & tailor-made', image: wide(IMG.RAW.hero, 2400), video: '/hero/japan.mp4', webm: '/hero/japan.webm', poster: '/hero/japan.webp', imageAlt: "Tokyo, Japan"
 };
 
 export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: N }];

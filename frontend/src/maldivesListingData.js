@@ -23,6 +23,7 @@ export const hero = {
   ctaHref: '/l/maldives/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: wide(IMG.RAW.overwater, 2400),
+  video: '/hero/maldives.mp4', webm: '/hero/maldives.webm', poster: '/hero/maldives.webp',
   imageAlt: 'Overwater villas over a turquoise lagoon in the Maldives'
 };
 

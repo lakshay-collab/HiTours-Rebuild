@@ -23,7 +23,7 @@ export const hero = {
   ctaHref: '/l/vietnam/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: ct('3Z7A5HXNMctqsB6GE2jphI/4cef5ccca7d896a0b4f88281499fec30/Halong_Bucht_Vietnam.jpg').replace('w=1080', 'w=2400'),
-  video: '/hero/vietnam.mp4', poster: '/hero/vietnam.webp',
+  video: '/hero/vietnam.mp4', webm: '/hero/vietnam.webm', poster: '/hero/vietnam.webp',
   imageAlt: 'Traditional boats between limestone karsts, Ha Long Bay, Vietnam'
 };
 

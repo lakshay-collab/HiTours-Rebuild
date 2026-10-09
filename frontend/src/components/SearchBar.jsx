@@ -9,6 +9,8 @@ const ASIA_IMG = 'https://images.ctfassets.net/bth3mlrehms2/27MnAH4RS1zTSFygAmnq
 const BALI_IMG = 'https://images.ctfassets.net/bth3mlrehms2/61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png?w=160&q=60&fm=webp';
 // Island and region names people search for that sit inside a country page.
 const REGIONS = [{ name: 'Bali', src: BALI_IMG, to: '/asien/indonesia', kind: 'destination' }];
+// Extra words a country should also match on, so 'Bali' finds Indonesia too.
+const ALIASES = new Map([['Indonesia', 'Bali Ubud Seminyak Kuta Nusa Penida']]);
 
 const STYLES = [
   { name: 'Northern Lights', icon: Sparkles, to: '/trip-styles/northern-lights' },
@@ -34,10 +36,13 @@ function buildDestinations() {
   const map = new Map();
   Object.values(destinations).forEach((list) => {
     list.forEach((d) => {
-      if (!map.has(d.name)) map.set(d.name, { name: d.name, src: d.src, to: ROUTES[d.name] || null, kind: 'destination' });
+      if (!ROUTES[d.name] || map.has(d.name)) return;
+      map.set(d.name, { name: d.name, src: d.src, to: ROUTES[d.name], kind: 'destination' });
     });
   });
   map.set('Asia', { name: 'Asia', src: ASIA_IMG, to: '/asien', kind: 'destination' });
+  REGIONS.forEach((r) => map.set(r.name, r));
+  ALIASES.forEach((alias, name) => { const d = map.get(name); if (d) map.set(name, { ...d, alias }); });
   return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -56,7 +61,7 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
 
   const all = useMemo(buildDestinations, []);
   const q = value.trim().toLowerCase();
-  const destMatches = q ? all.filter((d) => d.name.toLowerCase().includes(q)) : all;
+  const destMatches = q ? all.filter((d) => `${d.name} ${d.alias || ''}`.toLowerCase().includes(q)) : all;
   const styleMatches = q ? STYLES.filter((s) => s.name.toLowerCase().includes(q)) : STYLES;
   const matches = [...destMatches, ...styleMatches];
 

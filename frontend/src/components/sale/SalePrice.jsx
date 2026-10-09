@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { SALE, salePrice, formatInr } from '../../sale';
+import { SALE, salePrice, listPrice, saleBadgePercent, formatInr } from '../../sale';
+import { themeOf } from './saleThemes';
+
+const T = themeOf(SALE);
+const OFF = saleBadgePercent();
 
 const easeOut = (t) => 1 - Math.pow(1 - t, 3);
 
@@ -32,7 +36,8 @@ const useCountDown = (from, to, duration = 1400) => {
 // Props: price (number) · from/per labels · size: 'card' | 'detail' | 'bar'
 export default function SalePrice({ price, fromLabel = 'From', perLabel = 'per person', size = 'card', testId = 'sale-price', className = '' }) {
   const discounted = salePrice(price);
-  const [ref, shown] = useCountDown(price, discounted);
+  const struck = listPrice(price);
+  const [ref, shown] = useCountDown(struck, discounted);
   const priceCls = { card: 'eg-price', detail: 'eg-price', bar: 'eg-price !text-[20px] !leading-6 md:!text-[22px]' }[size];
   const labelCls = size === 'bar' ? 'eg-body-sm' : 'eg-body-md';
 
@@ -49,8 +54,8 @@ export default function SalePrice({ price, fromLabel = 'From', perLabel = 'per p
   return (
     <div ref={ref} className={`flex flex-col gap-0.5 ${className}`} data-testid={testId}>
       <span className="flex items-center gap-2 text-[#6F777C]">
-        <span className={`${labelCls} line-through decoration-[#E03A3E]/70 decoration-[1.5px]`} data-testid={`${testId}-original`}>{formatInr(price)}</span>
-        <span className="inline-flex items-center rounded-md bg-[#FDECEC] text-[#9B1C1F] px-1.5 h-5 text-[11px] leading-none font-semibold tracking-wide" data-testid={`${testId}-save`}>SAVE {SALE.percent}%</span>
+        <span className={`${labelCls} line-through decoration-[1.5px] decoration-[#E03A3E]/70`} data-testid={`${testId}-original`}>{formatInr(struck)}</span>
+        <span className="inline-flex items-center rounded-md px-1.5 h-5 text-[11px] leading-none font-semibold tracking-wide" style={{ background: T.inkSoft, color: T.ink }} data-testid={`${testId}-save`}>SAVE {OFF}%</span>
       </span>
       <span className="flex items-baseline gap-1.5 text-[#6F777C]">
         <span className={labelCls}>{fromLabel}</span>

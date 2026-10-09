@@ -30,6 +30,7 @@ export const hero = {
   ctaHref: '/l/singapore/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: un('photo-1525625293386-3f8f99389edd', 2400),
+  video: '/hero/singapore.mp4', webm: '/hero/singapore.webm', poster: '/hero/singapore.webp',
   imageAlt: 'Marina Bay Sands and the Singapore skyline reflected in the bay at dusk'
 };
 

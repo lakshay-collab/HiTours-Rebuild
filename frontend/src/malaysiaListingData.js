@@ -21,6 +21,7 @@ export const hero = {
   ctaHref: '/l/malaysia/enquiry/passengers/',
   sub: 'Your travel plan – no obligation & tailor-made',
   image: ct('7v9STD4EzC9uO1vB6vl2SC/2d6be37e8ab85ac375ae2d2ac46ec9b0/Malaysia__Kuala_Lumpur__Petronas_Towers.jpg').replace('w=1080', 'w=2400'),
+  video: '/hero/malaysia.mp4', webm: '/hero/malaysia.webm', poster: '/hero/malaysia.webp',
   imageAlt: 'The Petronas Twin Towers lit up above the Kuala Lumpur skyline, Malaysia'
 };
 

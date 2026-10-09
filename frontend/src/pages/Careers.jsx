@@ -3,6 +3,7 @@ import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { ValueArt } from '../components/CareersIllustrations';
+import CareersHeroVideo from '../components/CareersHeroVideo';
 import { hero, intro, departments, departmentCta, values, life, perks, awards, page, ROLES_URL } from '../careersData';
 
 const SECTION = 'eg-container mt-20 md:mt-28';
@@ -35,6 +36,7 @@ export default function Careers() {
         <section className="eg-container pt-6 md:pt-8" data-testid="careers-hero">
           <div className="relative h-[320px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden">
             <img src={hero.image} alt={hero.alt} className="absolute inset-0 w-full h-full object-cover" />
+            <CareersHeroVideo videoId={hero.video.id} start={hero.video.start} end={hero.video.end} />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.35)_0%,rgba(0,33,49,0.3)_55%,rgba(0,33,49,0.6)_100%)]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-4 text-center">
               <h1 className="eg-display-lg text-white drop-shadow-[0_2px_14px_rgba(0,33,49,0.45)]" data-testid="careers-h1">{hero.h1}</h1>

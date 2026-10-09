@@ -29,12 +29,13 @@ const Row = ({ rating = 5, size = 16, Shape, on, off, gap = 2 }) => (
 // Our own branded review stars (brand Amber)
 export const BrandStars = ({ rating = 5, size = 16, className = '' }) => (
   <span className={`inline-flex ${className}`} data-testid="brand-stars">
-    <Row rating={rating} size={size} Shape={Star} on="#FB7F26" off="#E7E2D6" />
+    <Row rating={rating} size={size} Shape={Star} on="#00B67A" off="#E7E2D6" />
   </span>
 );
 
-// Boxed review stars in Hi Tours brand blue (Harbor). Unfilled tiles are a clearly lighter neutral.
-export const BRAND_BLUE = '#174358';
+// Boxed review stars in review green, used for every rating on the site. Unfilled tiles are a lighter neutral.
+export const BRAND_BLUE = '#00B67A';
+export const RATING_GREEN = '#00B67A';
 const EMPTY_TILE = '#D6DCE0';
 
 const StarTile = ({ fill = 1, size = 20, color }) => (
@@ -44,7 +45,7 @@ const StarTile = ({ fill = 1, size = 20, color }) => (
   </span>
 );
 
-export const BoxStars = ({ rating = 5, size = 20, color = BRAND_BLUE, className = '' }) => (
+export const BoxStars = ({ rating = 5, size = 20, color = RATING_GREEN, className = '' }) => (
   <span className={`inline-flex gap-[3px] ${className}`} data-testid="brand-stars">
     {[0, 1, 2, 3, 4].map((i) => <StarTile key={i} size={size} color={color} fill={Math.max(0, Math.min(1, rating - i))} />)}
   </span>
