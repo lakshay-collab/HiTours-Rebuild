@@ -35,10 +35,10 @@ const SaleCountdown = ({ className = '' }) => {
   const s = Math.floor(left / 1000);
   const parts = [[Math.floor(s / 86400), 'd'], [Math.floor((s % 86400) / 3600), 'h'], [Math.floor((s % 3600) / 60), 'm'], [s % 60, 's']];
   return (
-    <span className={`inline-flex items-center gap-1 ${className}`} data-testid="sale-countdown" aria-live="off">
-      <span className="text-white/80">Ends in</span>
+    <span className={`inline-flex items-center gap-[3px] sm:gap-1 whitespace-nowrap ${className}`} data-testid="sale-countdown" aria-live="off">
+      <span className="text-white/80"><span className="sm:hidden">Ends</span><span className="hidden sm:inline">Ends in</span></span>
       {parts.map(([v, u]) => (
-        <span key={u} className="inline-flex items-baseline rounded-md bg-white/15 px-1.5 py-px font-semibold tabular-nums text-white">{pad(v)}<span className="text-[10px] text-white/70 ml-px">{u}</span></span>
+        <span key={u} className={`${u === 's' ? 'hidden sm:inline-flex' : 'inline-flex'} items-baseline rounded-md bg-white/15 px-1 sm:px-1.5 py-px font-semibold tabular-nums text-white`}>{pad(v)}<span className="text-[9px] sm:text-[10px] text-white/70 ml-px">{u}</span></span>
       ))}
     </span>
   );
@@ -97,7 +97,7 @@ export default function Header({ overlay = false, floating = false }) {
   useEffect(() => {
     if (!bannerOpen) return undefined;
     try { sessionStorage.setItem(BANNER_KEY, '1'); } catch (e) { /* noop */ }
-    const t = setTimeout(() => setBannerOpen(false), 15000);
+    const t = setTimeout(() => setBannerOpen(false), 20000);
     return () => clearTimeout(t);
   }, [bannerOpen]);
 
@@ -113,22 +113,23 @@ export default function Header({ overlay = false, floating = false }) {
   const dividerCls = overlay ? 'bg-white/30' : 'bg-outline-variant';
 
   const banner = bannerOpen ? (
-    <div className={`relative text-white px-10 sm:px-12 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
+    <div className={`relative text-white pl-2 pr-8 sm:px-12 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
       {SALE ? (
         <SaleTooltip testId="top-banner-sale">
-          <span className="relative z-[1] inline-flex items-center justify-center gap-2 flex-wrap cursor-default">
-            <SaleTag size={22} className="shrink-0" />
-            <span className="font-semibold tracking-wide">{SALE.name}</span>
+          <span className="relative z-[1] flex sm:inline-flex items-center justify-center gap-1 sm:gap-2 whitespace-nowrap text-[11px] sm:text-[14px] leading-5 cursor-default">
+            <SaleTag size={18} className="shrink-0 sm:hidden" />
+            <SaleTag size={22} className="shrink-0 hidden sm:block" />
+            <span className="font-semibold tracking-wide"><span className="sm:hidden">{SALE.short}</span><span className="hidden sm:inline">{SALE.name}</span></span>
             <span className="hidden sm:inline text-white/60">·</span>
-            <span className="text-[#FFD166] font-medium">{SALE.tagline}</span>
+            <span className="text-[#FFD166] font-medium"><span className="sm:hidden">{SALE.percent}% off</span><span className="hidden sm:inline">{SALE.tagline}</span></span>
             <span className="hidden sm:inline text-white/60">·</span>
-            <SaleCountdown className="basis-full sm:basis-auto justify-center text-[12px] sm:text-[13px]" />
+            <SaleCountdown className="text-[10.5px] sm:text-[13px]" />
             <Bells size={22} className="shrink-0 hidden sm:inline" />
           </span>
         </SaleTooltip>
       ) : nav.banner}
       {SALE && <Snow />}
-      <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[3]">
+      <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-1.5 sm:right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[3]">
         <X size={18} strokeWidth={2} />
       </button>
     </div>
