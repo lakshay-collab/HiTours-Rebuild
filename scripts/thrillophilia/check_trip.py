@@ -82,7 +82,7 @@ for s in text:
         if tuple(w[i:i + 8]) in src_8:
             fails.append('9 copy overlap %r' % ' '.join(w[i:i + 8]))
 
-for day, imgs in re.findall(r'\n      (\d+): \[(.*?)\]', src, re.S):
+for day, imgs in re.findall(r'\n      (\d+): \[\n(.*?)\n      \]', src, re.S):
     items = re.findall(r"img\('([^']+)'\)", imgs)
     if not 3 <= len(items) <= 7:
         fails.append('9c day %s has %d carousel images' % (day, len(items)))

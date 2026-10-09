@@ -1,0 +1,193 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "glimpse-of-japan",
+ "camel": "glimpseOfJapanShortGroup",
+ "slug": "glimpse-of-japan-short-group-tour",
+ "title": "Glimpse of Japan Short Group Tour",
+ "alt": "Neon lanes of Shinjuku after dark, Tokyo",
+ "transport": "Bullet train, coaches and guided touring throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Culture",
+  "Short trips"
+ ],
+ "price": 144709,
+ "route_cities": [
+  "Tokyo",
+  "Kyoto",
+  "Nara",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 10,
+  "meals": 2
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel, Tokyo",
+   "hotel_label": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Shinjuku district tour",
+     "day": 1,
+     "optional": false,
+     "match": "Shinjuku District Tour",
+     "description": "An easy first evening through Shinjuku's lanes, from the neon of Kabukicho to the tiny bars of Omoide Yokocho."
+    },
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station, with a guided first evening in Shinjuku and a full city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "The Prince Kyoto Takaragaike, Autograph Collection",
+   "hotel_label": "The Prince Kyoto Takaragaike",
+   "accom": "1 night · Standard room · 4★ · Four star hotel in gardens north of the city centre",
+   "activities": [
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital, taking in the golden pavilion, a Zen garden and the torii gate paths above Fushimi."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "A night in a garden hotel north of the centre, with a guided day and free time in the Gion lanes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Nara",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Holiday Inn Express Osaka City Centre - Midosuji, an IHG Hotel",
+   "hotel_label": "Holiday Inn Express Osaka Midosuji",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Straightforward hotel on Midosuji, walking distance to Dotonbori",
+   "activities": [
+    {
+     "name": "Nara sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nara Sightseeing Tour",
+     "description": "Todai-ji with its great bronze Buddha, the lantern lined Kasuga shrine and the deer park on the walk between them."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "A last night on Midosuji, reached through Nara's temples and deer park, with Dotonbori on your doorstep."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and Shinjuku",
+  "2": "Tokyo sightseeing",
+  "3": "Bullet train to Kyoto",
+  "4": "Nara and on to Osaka",
+  "5": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "A guided walk through the Shinjuku lanes",
+   "Kabukicho, Omoide Yokocho and the neon streets"
+  ],
+  "2": [
+   "A guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Tokyo"
+  ],
+  "3": [
+   "Check out, then the bullet train west to Kyoto",
+   "Check in at your garden hotel north of the centre",
+   "A guided afternoon through the old capital",
+   "Free time in the Gion lanes in the evening"
+  ],
+  "4": [
+   "Check out, then on to Nara",
+   "Todai-ji and its great bronze Buddha",
+   "The Kasuga shrine and the deer park",
+   "Check in on Midosuji in Osaka"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "-",
+  "3": "-",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "The Prince Kyoto Takaragaike",
+  "4": "Holiday Inn Express Osaka Midosuji",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Five days, three cities and four star hotels. If you only have a week of leave, this is the Japan trip that fits.",
+  "tip": "The guided Shinjuku walk on the first evening is the trick that beats the jet lag. Eat late, sleep well, start fresh."
+ },
+ "summary": "Five days through three cities on a small group tour: two nights beside Shinagawa with a guided Shinjuku evening and a full Tokyo day, a night in a Kyoto garden hotel with its temples, then Nara and a last night in central Osaka.",
+ "included": "Included: 4 nights in four star hotels; bullet train from Tokyo to Kyoto and coaches throughout; private airport transfers; guided Shinjuku district tour; Tokyo sightseeing tour; Kyoto sightseeing tour; Nara sightseeing tour; breakfast on the last two mornings.",
+ "not_included": "Not included: international flights; Japan visa fees; most meals; travel insurance; personal expenses."
+}

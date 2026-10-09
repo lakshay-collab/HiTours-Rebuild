@@ -1,0 +1,255 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-f1-race-tour",
+ "camel": "japanRaceWeekendTour",
+ "slug": "japan-race-weekend-tour",
+ "title": "Japan Race Weekend Tour",
+ "alt": "Floodlit grandstand and track in Japan at dusk",
+ "transport": "Coaches, trains and guided touring throughout",
+ "tag": "Group tour",
+ "tags": [
+  "Adventure",
+  "Culture"
+ ],
+ "price": 183246,
+ "route_cities": [
+  "Osaka",
+  "Kyoto",
+  "Nara",
+  "Nagoya",
+  "Hakone",
+  "Tokyo"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 7,
+  "transfers": 18,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Eins Osaka Kadoma City Station",
+   "accom": "4 nights · Breakfast and dinner · Standard room · 3★ · Simple hotel at Kadoma, on the line into central Osaka",
+   "activities": [
+    {
+     "name": "Osaka sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Osaka Sightseeing Tour",
+     "description": "A guided day through the city: Osaka castle and its park, the Dotonbori canal and the market lanes around Kuromon."
+    },
+    {
+     "name": "Kyoto and Arashiyama day trip",
+     "day": 4,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "Kinkaku-ji, the golden pavilion, then the bamboo grove at Arashiyama and the lanes along the Katsura river."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights at Kadoma with a free day for the race or optional tours, a city day and a day out to Kyoto with Arashiyama."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nagoya",
+   "city": "Nagoya",
+   "subtitle": "Nagoya to Nara and Nabana no Sato",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Prince Smart Inn Nagoya Sakae",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Modern hotel in the Sakae district of Nagoya",
+   "activities": [
+    {
+     "name": "Todai-ji temple and Nara deer park",
+     "day": 5,
+     "optional": false,
+     "match": "Trip to Todai-ji Temple & Nara Deer Park",
+     "description": "The great bronze Buddha inside Todai-ji, then the deer park where the tame sika deer bow for biscuits."
+    },
+    {
+     "name": "Nabana no Sato illumination",
+     "day": 5,
+     "optional": false,
+     "match": "Nabana no Sato Tickets",
+     "description": "The flower park near Nagoya, where millions of lights are strung into tunnels and fields once the sun goes down."
+    }
+   ],
+   "program": {
+    "name": "Nagoya",
+    "description": "A night in Nagoya, reached through Nara's temple and deer park, with the Nabana no Sato lights after dark."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Hakone",
+   "days": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 6 to 9",
+   "hotel": "Richmond Hotel Premier Musashikosugi",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Comfortable hotel at Musashi-Kosugi, fifteen minutes from Shibuya",
+   "activities": [
+    {
+     "name": "Hakone ropeway",
+     "day": 6,
+     "optional": false,
+     "match": "Hakone Ropeway Cable Car Tickets",
+     "description": "The cable car over the sulphur vents of Owakudani, with Mount Fuji across the valley when the sky is clear."
+    },
+    {
+     "name": "Lake Ashi cruise",
+     "day": 6,
+     "optional": false,
+     "match": "Lake Ashi Cruise",
+     "description": "A cruise across Lake Ashi past the red torii gate standing in the water at Hakone shrine."
+    },
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 7,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights at Musashi-Kosugi, reached over the Hakone ropeway and Lake Ashi, with a city day and a free day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Osaka",
+  "2": "A free day in Osaka",
+  "3": "Osaka sightseeing",
+  "4": "Kyoto and Arashiyama",
+  "5": "Nara and Nabana no Sato",
+  "6": "Hakone and on to Tokyo",
+  "7": "Tokyo sightseeing",
+  "8": "A free day in Tokyo",
+  "9": "Departure from Tokyo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Kansai Airport and transfer to your hotel",
+   "Check in at Kadoma in Osaka",
+   "Rest of the day free at your own pace",
+   "Dinner at the hotel in the evening"
+  ],
+  "2": [
+   "Breakfast, then a free day in Osaka",
+   "Optional: race tickets and the transfer to the circuit",
+   "Optional: Universal Studios Japan for the day",
+   "Dinner at the hotel in the evening"
+  ],
+  "3": [
+   "Breakfast, then a guided day around Osaka",
+   "Osaka castle and its park",
+   "The Dotonbori canal and Kuromon market",
+   "Dinner at the hotel in the evening"
+  ],
+  "4": [
+   "Breakfast, then across to Kyoto for the day",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The bamboo grove at Arashiyama",
+   "The lanes along the Katsura river"
+  ],
+  "5": [
+   "Breakfast and check out, then on to Nara",
+   "Todai-ji and its great bronze Buddha",
+   "The deer park and its tame sika deer",
+   "Nabana no Sato illuminations, then Nagoya"
+  ],
+  "6": [
+   "Breakfast and check out, then east to Hakone",
+   "The ropeway over the Owakudani vents",
+   "A cruise across Lake Ashi",
+   "On to Tokyo and check in at Musashi-Kosugi"
+  ],
+  "7": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "8": [
+   "Breakfast and a free day in Tokyo",
+   "Optional: teamLab Planets or the Skytree",
+   "Optional: Shibuya, Harajuku and the Omotesando lanes",
+   "Optional: a day trip to Nikko by train"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Transfer to Narita or Haneda for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B",
+  "5": "B, D",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Eins Osaka Kadoma City Station",
+  "2": "Eins Osaka Kadoma City Station",
+  "3": "Eins Osaka Kadoma City Station",
+  "4": "Eins Osaka Kadoma City Station",
+  "5": "Prince Smart Inn Nagoya Sakae",
+  "6": "Richmond Hotel Premier Musashikosugi",
+  "7": "Richmond Hotel Premier Musashikosugi",
+  "8": "Richmond Hotel Premier Musashikosugi",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Built around a race weekend in Kansai, with two free days to use for the circuit and the rest of Japan around it.",
+  "tip": "Tell us your race dates and we will line the free days up with practice and the main event, then keep the touring for the days between."
+ },
+ "summary": "Nine days built around a race weekend: four nights near Osaka with a free day for the circuit, a city tour and Kyoto with Arashiyama, a night in Nagoya via Nara and the Nabana no Sato lights, then three nights in Tokyo reached over the Hakone ropeway.",
+ "included": "Included: 8 nights with daily breakfast and dinner on four evenings; coaches and trains throughout; Osaka sightseeing tour; Kyoto tour with the Arashiyama bamboo grove; Todai-ji temple and Nara deer park; Nabana no Sato tickets; Hakone ropeway and Lake Ashi cruise; Tokyo sightseeing tour; two free days for the race or optional tours.",
+ "not_included": "Not included: international flights; Japan visa fees; race tickets and circuit transfers; lunches and other dinners; travel insurance; personal expenses."
+}

@@ -121,6 +121,41 @@ import { japanThroughTimeHistoricTrailsBySlug } from './japanThroughTimeHistoric
 import { japanRomanticEscapeImperialBySlug } from './japanRomanticEscapeImperialData';
 import { classicWondersJapanGroupTourBySlug } from './classicWondersJapanGroupTourData';
 import { japanCulturalTrailsGroupTourBySlug } from './japanCulturalTrailsGroupTourData';
+import { scenicJapanThreeCitiesBySlug } from './scenicJapanThreeCitiesData';
+import { centralJapanFujiGroupTourBySlug } from './centralJapanFujiGroupTourData';
+import { exploreJapanTokyoOsakaBySlug } from './exploreJapanTokyoOsakaData';
+import { japanFamilyOdysseyParksBySlug } from './japanFamilyOdysseyParksData';
+import { bestOfHokkaidoNorthernJapanBySlug } from './bestOfHokkaidoNorthernJapanData';
+import { japanFamilyTempleThemeBySlug } from './japanFamilyTempleThemeData';
+import { talesOfJapanRyokanFamilyBySlug } from './talesOfJapanRyokanFamilyData';
+import { japanGrandTourBlossomBySlug } from './japanGrandTourBlossomData';
+import { romanticJapanTowersTemplesBySlug } from './romanticJapanTowersTemplesData';
+import { japanDelightsRyokanTrailBySlug } from './japanDelightsRyokanTrailData';
+import { classicJapanTrailsShortBySlug } from './classicJapanTrailsShortData';
+import { japanInBloomGroupTourBySlug } from './japanInBloomGroupTourData';
+import { japanCulturalTalesWestBySlug } from './japanCulturalTalesWestData';
+import { southernJapanInlandSeaBySlug } from './southernJapanInlandSeaData';
+import { glimpseOfJapanShortGroupBySlug } from './glimpseOfJapanShortGroupData';
+import { japanCoupleSnowMonkeysBySlug } from './japanCoupleSnowMonkeysData';
+import { coupleGetawayRisingSunBySlug } from './coupleGetawayRisingSunData';
+import { japanNutshellGrandCircuitBySlug } from './japanNutshellGrandCircuitData';
+import { romanticJapanCulturalOdysseyBySlug } from './romanticJapanCulturalOdysseyData';
+import { japanCulturalScenicKansaiFirstBySlug } from './japanCulturalScenicKansaiFirstData';
+import { japanSignatureJourneyBySlug } from './japanSignatureJourneyData';
+import { japanAutumnNikkoKaruizawaBySlug } from './japanAutumnNikkoKaruizawaData';
+import { japanRaceWeekendTourBySlug } from './japanRaceWeekendTourData';
+import { journeyNorthTohokuHokkaidoBySlug } from './journeyNorthTohokuHokkaidoData';
+import { cherryBlossomTrailsJapanBySlug } from './cherryBlossomTrailsJapanData';
+import { japanRomanceTrailHokkaidoBySlug } from './japanRomanceTrailHokkaidoData';
+import { bestOfTokyoAndHokkaidoBySlug } from './bestOfTokyoAndHokkaidoData';
+import { scenicTrailsJapanNaganoBySlug } from './scenicTrailsJapanNaganoData';
+import { chroniclesOfJapanIslandRouteBySlug } from './chroniclesOfJapanIslandRouteData';
+import { panoramicJapanParksAndTemplesBySlug } from './panoramicJapanParksAndTemplesData';
+import { offbeatJapanHiroshimaRouteBySlug } from './offbeatJapanHiroshimaRouteData';
+import { japanLegendsTempleStayBySlug } from './japanLegendsTempleStayData';
+import { japanAndSouthKoreaDiscoveryBySlug } from './japanAndSouthKoreaDiscoveryData';
+import { koreaAndJapanShortGroupTourBySlug } from './koreaAndJapanShortGroupTourData';
+import { koreaJapanHiroshimaGetawayBySlug } from './koreaJapanHiroshimaGetawayData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -244,5 +279,40 @@ export const BY_SLUG = {
   ...japanThroughTimeHistoricTrailsBySlug,
   ...japanRomanticEscapeImperialBySlug,
   ...classicWondersJapanGroupTourBySlug,
-  ...japanCulturalTrailsGroupTourBySlug
+  ...japanCulturalTrailsGroupTourBySlug,
+  ...scenicJapanThreeCitiesBySlug,
+  ...centralJapanFujiGroupTourBySlug,
+  ...exploreJapanTokyoOsakaBySlug,
+  ...japanFamilyOdysseyParksBySlug,
+  ...bestOfHokkaidoNorthernJapanBySlug,
+  ...japanFamilyTempleThemeBySlug,
+  ...talesOfJapanRyokanFamilyBySlug,
+  ...japanGrandTourBlossomBySlug,
+  ...romanticJapanTowersTemplesBySlug,
+  ...japanDelightsRyokanTrailBySlug,
+  ...classicJapanTrailsShortBySlug,
+  ...japanInBloomGroupTourBySlug,
+  ...japanCulturalTalesWestBySlug,
+  ...southernJapanInlandSeaBySlug,
+  ...glimpseOfJapanShortGroupBySlug,
+  ...japanCoupleSnowMonkeysBySlug,
+  ...coupleGetawayRisingSunBySlug,
+  ...japanNutshellGrandCircuitBySlug,
+  ...romanticJapanCulturalOdysseyBySlug,
+  ...japanCulturalScenicKansaiFirstBySlug,
+  ...japanSignatureJourneyBySlug,
+  ...japanAutumnNikkoKaruizawaBySlug,
+  ...japanRaceWeekendTourBySlug,
+  ...journeyNorthTohokuHokkaidoBySlug,
+  ...cherryBlossomTrailsJapanBySlug,
+  ...japanRomanceTrailHokkaidoBySlug,
+  ...bestOfTokyoAndHokkaidoBySlug,
+  ...scenicTrailsJapanNaganoBySlug,
+  ...chroniclesOfJapanIslandRouteBySlug,
+  ...panoramicJapanParksAndTemplesBySlug,
+  ...offbeatJapanHiroshimaRouteBySlug,
+  ...japanLegendsTempleStayBySlug,
+  ...japanAndSouthKoreaDiscoveryBySlug,
+  ...koreaAndJapanShortGroupTourBySlug,
+  ...koreaJapanHiroshimaGetawayBySlug
 };

@@ -1,0 +1,181 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "explore-japan",
+ "camel": "exploreJapanTokyoOsaka",
+ "slug": "explore-japan-tokyo-and-osaka",
+ "title": "Explore Japan: Tokyo and Osaka",
+ "alt": "Senso-ji temple gate in Asakusa, Tokyo",
+ "transport": "Bullet train, private transfers and guided day tours",
+ "tag": "Value",
+ "tags": [
+  "First time",
+  "Short trips"
+ ],
+ "price": 157217,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 8,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Keio Presso Inn Hamamatsucho, Tokyo",
+   "hotel_label": "Keio Presso Inn Hamamatsucho",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Neat hotel in Hamamatsucho, close to the monorail",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from Matsuya Ginza through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone day trip",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour",
+     "description": "The fifth station on Mount Fuji, Lake Ashi and the Hakone ropeway, with the bullet train back into Tokyo in the evening."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Hamamatsucho, with a full city day and a day out to Mount Fuji and the Hakone lakes."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Osaka Tokyu REI Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Reliable hotel in central Osaka, a short walk to the subway",
+   "activities": [
+    {
+     "name": "Kyoto and Nara day trip",
+     "day": 5,
+     "optional": false,
+     "match": "Kyoto and Nara Sightseeing Day Tour",
+     "description": "A full day out of Osaka for Kinkaku-ji, the golden pavilion, and then the deer park and Todai-ji temple in Nara."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Two nights in central Osaka with a full day in Kyoto and Nara, and the food streets on your doorstep."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Bullet train to Osaka",
+  "5": "Kyoto and Nara",
+  "6": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your hotel in Hamamatsucho",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk through the Shiba park gardens"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone ropeway",
+   "Bullet train back into Tokyo in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then transfer to the station",
+   "Bullet train south to Osaka",
+   "Check in at your hotel in the centre",
+   "Rest of the day free in the city"
+  ],
+  "5": [
+   "Breakfast, then a full day out of Osaka",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The deer park and Todai-ji temple in Nara",
+   "Back in Osaka for the evening"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "2": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "3": "Keio Presso Inn Hamamatsucho, Tokyo",
+  "4": "Osaka Tokyu REI Hotel",
+  "5": "Osaka Tokyu REI Hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "The shortest trip that still gets you Fuji, Kyoto and Nara. Simple hotels, strong days out.",
+  "tip": "Keep the last evening for Dotonbori. Osaka eats late and the hotel is a short subway ride from the stalls."
+ },
+ "summary": "Six days between Tokyo and Osaka: three nights in Hamamatsucho with a guided city day and a Mount Fuji and Hakone trip, then two nights in central Osaka with a full day in Kyoto and Nara.",
+ "included": "Included: 5 nights with daily breakfast; bullet train from Tokyo to Osaka; private airport transfers; full day Tokyo city tour with lunch; Mount Fuji and Hakone day trip with bullet train return; Kyoto and Nara sightseeing day tour.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

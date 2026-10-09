@@ -1,0 +1,292 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "panoramic-japan",
+ "camel": "panoramicJapanParksAndTemples",
+ "slug": "panoramic-japan-parks-and-temples",
+ "title": "Panoramic Japan Parks and Temples",
+ "alt": "Fushimi Inari shrine gates on the hillside in Kyoto",
+ "transport": "Bullet trains, private transfers and guided day tours",
+ "tag": "Family",
+ "tags": [
+  "Family",
+  "Theme parks"
+ ],
+ "price": 271861,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Disneyland",
+  "DisneySea",
+  "Kyoto",
+  "Nara",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 13,
+  "nights": 12,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 7,
+  "transfers": 16,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo, Mount Fuji and the Disney parks",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 1 to 6",
+   "hotel": "Premier Hotel Cabin Shinjuku",
+   "accom": "6 nights · Breakfast · Standard room · 4★ · Four star hotel in Shinjuku, a few minutes from the station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone by bullet train",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour From Tokyo",
+     "description": "The fifth station on Mount Fuji and Lake Ashi in Hakone, returning to Tokyo on the bullet train in the evening."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 4,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    },
+    {
+     "name": "Tokyo DisneySea",
+     "day": 5,
+     "optional": false,
+     "match": "Tokyo Disney Sea Tickets",
+     "description": "A one day passport to DisneySea, the harbour park built around a volcano that exists nowhere else in the world."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Five nights in Shinjuku with a city day, Mount Fuji and Hakone, both Disney parks and a day of your own."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Kyoto and Nara",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "ibis Styles Kyoto Shijo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Bright hotel on Shijo street, close to the Gion lanes",
+   "activities": [
+    {
+     "name": "Kyoto and Nara with buffet lunch",
+     "day": 8,
+     "optional": false,
+     "match": "Full-Day Tour to Kyoto & Nara",
+     "description": "Kinkaku-ji and Fushimi Inari in Kyoto, then Todai-ji and the deer park at Nara, with a buffet lunch on the way."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "Two nights on Shijo street, with a free arrival afternoon and a full day through Kyoto and Nara."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "days": [
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "dayLabel": "Day 9 to 13",
+   "hotel": "Richmond Hotel Namba Daikokucho",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Well run hotel near Namba, two subway stops from Dotonbori",
+   "activities": [
+    {
+     "name": "Universal Studios Japan",
+     "day": 10,
+     "optional": false,
+     "match": "Universal Studios Japan Tickets",
+     "description": "A full day at Universal Studios Japan with tickets included, home to Super Nintendo World and the Harry Potter area."
+    },
+    {
+     "name": "Osaka half day walking tour",
+     "day": 11,
+     "optional": false,
+     "match": "Osaka Half-Day Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights near Namba with Universal Studios Japan, a walking tour and two free days for the city."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Tokyo Disneyland",
+  "5": "Tokyo DisneySea",
+  "6": "A free day in Tokyo",
+  "7": "Bullet train to Kyoto",
+  "8": "Kyoto and Nara",
+  "9": "On to Osaka",
+  "10": "Universal Studios Japan",
+  "11": "Osaka on foot",
+  "12": "A free day in Osaka",
+  "13": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "Back to Tokyo by bullet train"
+  ],
+  "4": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in Shinjuku"
+  ],
+  "5": [
+   "Early breakfast, then across to Tokyo DisneySea",
+   "A one day passport, included",
+   "Evening free back in Shinjuku"
+  ],
+  "6": [
+   "Breakfast, then a day of your own in Tokyo",
+   "Optional: the Shibuya crossing and Harajuku lanes",
+   "Optional: teamLab Planets or the Skytree deck"
+  ],
+  "7": [
+   "Breakfast and check out, then the bullet train west",
+   "Check in on Shijo street in Kyoto",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk through Gion"
+  ],
+  "8": [
+   "Breakfast, then a full day out with your guide",
+   "Kinkaku-ji and the shrine gates of Fushimi Inari",
+   "Buffet lunch included",
+   "Todai-ji and the deer park at Nara"
+  ],
+  "9": [
+   "Breakfast and check out, then the short hop to Osaka",
+   "Check in near Namba",
+   "Rest of the day free in the city",
+   "Optional: an evening along the Dotonbori canal"
+  ],
+  "10": [
+   "Early breakfast, then across to Universal Studios Japan",
+   "Tickets included for the full day",
+   "Super Nintendo World and the Harry Potter area",
+   "Evening free in the city"
+  ],
+  "11": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free in the city"
+  ],
+  "12": [
+   "Breakfast, then a day of your own in Osaka",
+   "Optional: Osaka castle and its park",
+   "Optional: the aquarium at Osaka Bay"
+  ],
+  "13": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B, L",
+  "9": "B",
+  "10": "B",
+  "11": "B",
+  "12": "B",
+  "13": "B"
+ },
+ "hotel_by_day": {
+  "1": "Premier Hotel Cabin Shinjuku",
+  "2": "Premier Hotel Cabin Shinjuku",
+  "3": "Premier Hotel Cabin Shinjuku",
+  "4": "Premier Hotel Cabin Shinjuku",
+  "5": "Premier Hotel Cabin Shinjuku",
+  "6": "Premier Hotel Cabin Shinjuku",
+  "7": "ibis Styles Kyoto Shijo",
+  "8": "ibis Styles Kyoto Shijo",
+  "9": "Richmond Hotel Namba Daikokucho",
+  "10": "Richmond Hotel Namba Daikokucho",
+  "11": "Richmond Hotel Namba Daikokucho",
+  "12": "Richmond Hotel Namba Daikokucho",
+  "13": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Thirteen days with both Disney parks and Universal, and still enough free days that nobody is worn out by the end.",
+  "tip": "Do DisneySea on a weekday if you can, and start at Journey to the Center of the Earth before the queues build."
+ },
+ "summary": "Thirteen days at a comfortable pace: five nights in Shinjuku with a city tour, Mount Fuji and Hakone and both Disney parks, two in Kyoto with a Kyoto and Nara day, then four in Osaka with Universal Studios Japan, a walking tour and free days.",
+ "included": "Included: 12 nights with daily breakfast; bullet trains between the cities; private airport transfers; a full day of guided sightseeing in Tokyo with lunch; the Mount Fuji fifth station and Lake Ashi, returning by bullet train; admission to Tokyo Disneyland; a one day passport for Tokyo DisneySea; a guided day through Kyoto and Nara with a buffet lunch; admission to Universal Studios Japan; a guided walk through central Osaka.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

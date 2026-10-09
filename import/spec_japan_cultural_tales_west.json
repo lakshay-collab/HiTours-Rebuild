@@ -1,0 +1,277 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-cultural-tales",
+ "camel": "japanCulturalTalesWest",
+ "slug": "japan-cultural-tales-tokyo-to-hiroshima",
+ "title": "Japan Cultural Tales: Tokyo to Hiroshima",
+ "alt": "Himeji castle, the white heron keep, Japan",
+ "transport": "Bullet trains, coaches and guided touring throughout",
+ "tag": "Group tour",
+ "tags": [
+  "Culture",
+  "Value"
+ ],
+ "price": 175968,
+ "route_cities": [
+  "Tokyo",
+  "Kyoto",
+  "Nara",
+  "Osaka",
+  "Himeji",
+  "Okayama",
+  "Kurashiki",
+  "Hiroshima"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 8,
+  "transfers": 16,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station, with free time in Shinjuku and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel opposite Kyoto station, handy for the trains",
+   "activities": [
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital, taking in the golden pavilion, a Zen garden and the torii gate paths above Fushimi."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "A night in the old capital with a guided afternoon and free time in the Gion lanes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Nara",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Candeo Hotels Osaka Namba",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in Namba with a rooftop bath house",
+   "activities": [
+    {
+     "name": "Nara sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nara Sightseeing Tour",
+     "description": "Todai-ji with its great bronze Buddha, the lantern lined Kasuga shrine and the deer park on the walk between them."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "A night in Namba, reached through Nara's temples and deer park, with the food streets on your doorstep."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Okayama",
+   "city": "Okayama",
+   "subtitle": "Okayama to Himeji",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "ANA Crowne Plaza Narita, Hiroshima",
+   "hotel_label": "ANA Crowne Plaza Okayama",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in central Okayama, near the Korakuen garden",
+   "activities": [
+    {
+     "name": "Himeji castle",
+     "day": 5,
+     "optional": false,
+     "match": "Visit to Himeji Castle",
+     "description": "The white heron castle, the finest surviving fortress in Japan and the first site here to be listed by UNESCO."
+    },
+    {
+     "name": "Okayama sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Okayama Sightseeing Tour",
+     "description": "The Korakuen garden, counted among the three great gardens of Japan, and the black keep of Okayama castle beside it."
+    }
+   ],
+   "program": {
+    "name": "Okayama",
+    "description": "A night in Okayama, with Himeji castle on the way west and the Korakuen garden in the afternoon."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima to Kurashiki and Miyajima",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Hilton Hiroshima",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in the centre, walking distance from the park",
+   "activities": [
+    {
+     "name": "Kurashiki canal quarter",
+     "day": 6,
+     "optional": false,
+     "match": "Leisure Time in Kurashiki",
+     "description": "Free time in the old merchant quarter, where white walled storehouses line a willow canal that still has punts on it."
+    },
+    {
+     "name": "Hiroshima walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Hiroshima Walking Tour",
+     "description": "On foot through the Peace Memorial Park, the cenotaph and the A-Bomb Dome with a guide who tells the city's story properly."
+    },
+    {
+     "name": "Itsukushima shrine",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Itsukushima Shrine",
+     "description": "The ferry to Miyajima for the shrine built out over the water, with its torii gate standing in the sea at high tide."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "A last night in Hiroshima, with Kurashiki's canal quarter on the way and the island shrine at Miyajima the same day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Bullet train to Kyoto",
+  "4": "Nara and on to Osaka",
+  "5": "Himeji castle and Okayama",
+  "6": "Kurashiki, Hiroshima and Miyajima",
+  "7": "Departure from Hiroshima"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Evening at your own pace"
+  ],
+  "2": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast and check out, then the bullet train west",
+   "Check in opposite Kyoto station",
+   "A guided afternoon through the old capital",
+   "Free time in the Gion lanes in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then on to Nara",
+   "Todai-ji and its great bronze Buddha",
+   "The lantern lined Kasuga shrine and the deer park",
+   "Check in at Namba in Osaka"
+  ],
+  "5": [
+   "Breakfast, then west along the inland sea",
+   "Himeji castle, the white heron keep",
+   "The Korakuen garden and Okayama castle",
+   "Check in at your Okayama hotel"
+  ],
+  "6": [
+   "Breakfast, then the canal quarter at Kurashiki",
+   "On to Hiroshima for a walking tour of the park",
+   "The cenotaph and the A-Bomb Dome",
+   "Ferry across to Miyajima for Itsukushima shrine"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the station or airport for your journey home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Miyako Hotel Kyoto Hachijo",
+  "4": "Candeo Hotels Osaka Namba",
+  "5": "ANA Crowne Plaza Okayama",
+  "6": "Hilton Hiroshima",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "One direction, five towns and four star hotels all the way. Travelling west by train is the easiest way to see old Japan.",
+  "tip": "The Candeo in Namba has a rooftop bath house. After a day with the Nara deer it is the best twenty minutes of the trip."
+ },
+ "summary": "Seven days west from Tokyo: two nights in Shinagawa with a guided city day, a night in Kyoto, Nara's temples on the way to Osaka, Himeji castle with Okayama's Korakuen garden, then Hiroshima with Kurashiki and the island shrine at Miyajima.",
+ "included": "Included: 6 nights across five towns with daily breakfast in four star hotels; bullet trains and coaches throughout; guided sightseeing in Tokyo, Kyoto, Nara, Okayama and Hiroshima; Himeji castle entry; free time at Kurashiki; the ferry and visit to Itsukushima shrine.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

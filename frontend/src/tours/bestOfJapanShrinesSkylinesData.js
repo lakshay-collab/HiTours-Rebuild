@@ -14,7 +14,13 @@ const heroGallery = [
   img('n6o4af4ttsz5fvnf4luy4m8mkuit_shutterstock_1873243030.jpg'),
   img('udkn4h8at26lrvvwwmlaxguh16hf_shutterstock_1836078037.jpg')
 ];
-const cardImages = heroGallery.slice(0, 4);
+// Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
+const cardImages = [
+  img('62uzveq9j4kgn1dqm9wgyg6n0zg3_shutterstock_1443072128.jpg'),
+  img('xetrn73mv4uqd247nxnoobi5fxsz_shutterstock_1906828666%20(1).jpg'),
+  img('jrtz4vq56xhqb8xes2py7d0u61a2_shutterstock_519395710.jpg'),
+  img('xrahfic90qj47tsgysqanrchcxhl_shutterstock_1269393457.jpg')
+];
 
 const stops = [
   {

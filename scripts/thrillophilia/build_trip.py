@@ -155,12 +155,12 @@ def day_images(stop, day):
             out.append(u)
         if len(out) == 4:
             break
-    i = 0
-    pool_ = cities.get(stop['city']) or []
-    while len(out) < 4 and i < len(pool_):
-        if pool_[i] not in out:
-            out.append(pool_[i])
-        i += 1
+    pool_ = (cities.get(stop['city']) or []) + sum(cities.values(), [])
+    for u in pool_:
+        if len(out) >= 4:
+            break
+        if u not in out:
+            out.append(u)
     return out[:4]
 
 

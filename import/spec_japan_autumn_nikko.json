@@ -1,0 +1,199 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-autumn-getaway-in-tokyo-nikko-yudanaka-and-matsumoto",
+ "camel": "japanAutumnNikkoKaruizawa",
+ "slug": "japan-autumn-getaway-nikko-and-karuizawa",
+ "title": "Japan Autumn Getaway: Nikko and Karuizawa",
+ "alt": "Autumn maples around the Shinkyo bridge at Nikko, Japan",
+ "transport": "Private transfers, trains and guided touring",
+ "tag": "Short trips",
+ "tags": [
+  "Nature",
+  "Culture"
+ ],
+ "price": 172188,
+ "route_cities": [
+  "Tokyo",
+  "Nikko",
+  "Takasaki",
+  "Karuizawa",
+  "Yudanaka",
+  "Matsumoto"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 8,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "APA Hotel Shinjuku Kabukicho Chuo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Well placed hotel in Shinjuku, minutes from the station",
+   "activities": [],
+   "program": {
+    "name": "Tokyo",
+    "description": "A first night in Shinjuku with the evening free, before the trip heads north into the hills."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nikko",
+   "city": "Nikko",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Fairfield by Marriott Tochigi Nikko",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Quiet hotel in the hills outside Nikko",
+   "activities": [
+    {
+     "name": "Nikko heritage and scenic highlights",
+     "day": 2,
+     "optional": false,
+     "match": "Nikko Heritage & Scenic Highlights Tour",
+     "description": "Rinno-ji temple and the Shoyoen garden, then the lacquered Toshogu shrine in its cedar forest and the Shinkyo bridge."
+    }
+   ],
+   "program": {
+    "name": "Nikko",
+    "description": "A night in the hills at Nikko, with its shrines, gardens and the red Shinkyo bridge over the river."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Karuizawa",
+   "city": "Karuizawa",
+   "subtitle": "Karuizawa to Yudanaka and Matsumoto",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "APA HOTEL KARUIZAWA-EKIMAE KARUIZAWASO",
+   "hotel_label": "APA Hotel Karuizawa Ekimae",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Simple hotel beside Karuizawa station in the highlands",
+   "activities": [
+    {
+     "name": "Shorinzan Daruma temple",
+     "day": 3,
+     "optional": false,
+     "match": "Shorinzan Daruma Temple",
+     "description": "The temple at Takasaki where the round daruma dolls come from, thousands of them left behind as wishes fulfilled."
+    },
+    {
+     "name": "The Stone Church at Karuizawa",
+     "day": 3,
+     "optional": false,
+     "match": "Stone Church, Karuizawa",
+     "description": "A chapel of stone arches and glass built into the hillside, one of the quietest pieces of architecture in the country."
+    },
+    {
+     "name": "Jigokudani monkey park",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Jigokudani Monkey Park",
+     "description": "The hot spring at Yudanaka where wild macaques sit chest deep in the steaming water, often with snow on their heads."
+    },
+    {
+     "name": "Matsumoto castle",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Matsumoto Castle",
+     "description": "The black keep they call the crow castle, standing on its moat with the Alps behind it, an original from the sixteenth century."
+    }
+   ],
+   "program": {
+    "name": "Karuizawa",
+    "description": "A highland night at Karuizawa, with the Daruma temple and Stone Church on the way, then the monkeys and Matsumoto castle before Tokyo."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Nikko shrines and gardens",
+  "3": "Daruma temple and Karuizawa",
+  "4": "Snow monkeys and Matsumoto",
+  "5": "Departure from Tokyo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Free time to explore the neighbourhood",
+   "Optional: Omoide Yokocho for dinner"
+  ],
+  "2": [
+   "Breakfast and check out, then north to Nikko",
+   "Rinno-ji temple and the Shoyoen garden",
+   "The Toshogu shrine in its cedar forest",
+   "The red Shinkyo bridge over the river"
+  ],
+  "3": [
+   "Breakfast and check out, then west via Takasaki",
+   "The Shorinzan Daruma temple and its dolls",
+   "The Stone Church at Karuizawa",
+   "Check in beside Karuizawa station"
+  ],
+  "4": [
+   "Breakfast and check out, then on to Yudanaka",
+   "The macaques bathing at Jigokudani",
+   "Matsumoto castle on its moat",
+   "Back to Tokyo in the evening"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Narita or Haneda for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "APA Hotel Shinjuku Kabukicho Chuo",
+  "2": "Fairfield by Marriott Tochigi Nikko",
+  "3": "APA Hotel Karuizawa Ekimae",
+  "4": "APA Hotel Shinjuku Kabukicho Chuo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Five days in the hills north of Tokyo, timed for the maples. Nikko and Karuizawa in autumn are worth the short nights.",
+  "tip": "Go in the first half of November for the colour at Nikko. The monkeys are there all year, but the maples are not."
+ },
+ "summary": "Five days in the hills north of Tokyo: a first night in Shinjuku, then Nikko's shrines and gardens, the Daruma temple and Stone Church on the way to Karuizawa, and the Jigokudani monkeys with Matsumoto castle before you fly home.",
+ "included": "Included: 4 nights with daily breakfast; private transfers and trains throughout; Nikko heritage tour with Rinno-ji, the Shoyoen garden and Toshogu shrine; Shorinzan Daruma temple; the Stone Church at Karuizawa; Jigokudani monkey park; Matsumoto castle entry.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

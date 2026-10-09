@@ -1,0 +1,274 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "scenic-trails-of-japan",
+ "camel": "scenicTrailsJapanNagano",
+ "slug": "scenic-trails-of-japan-with-nagano",
+ "title": "Scenic Trails of Japan with Nagano",
+ "alt": "Hot spring village under snow in Nagano, Japan",
+ "transport": "Bullet trains, private transfers and guided day tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Family",
+  "Nature"
+ ],
+ "price": 257757,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Disneyland",
+  "Nagano",
+  "Osaka",
+  "Kyoto",
+  "Nara"
+ ],
+ "counts": {
+  "days": 11,
+  "nights": 10,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 7,
+  "transfers": 18,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Disneyland",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Shinjuku Washington Hotel Annex",
+   "accom": "4 nights · Breakfast · Super deluxe room · 4★ · Four star hotel in Shinjuku, a short walk from the station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    },
+    {
+     "name": "Mount Fuji, Hakone and Gotemba outlets",
+     "day": 3,
+     "optional": false,
+     "match": "Trip to Mt Fuji 5th Station, Hakone & Gotemba Outlets",
+     "description": "The fifth station on Mount Fuji, Lake Ashi in Hakone and a shopping stop at the Gotemba outlets on the way back."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 4,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Four nights in Shinjuku with a guided city day, Mount Fuji with the Gotemba outlets and a day at Disneyland."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nagano",
+   "city": "Nagano",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Nozawa Grand Hotel",
+   "accom": "2 nights · Breakfast · Deluxe room · 3★ · Mountain hotel at Nozawa Onsen, with hot spring baths",
+   "activities": [
+    {
+     "name": "Snow monkeys, Zenkoji temple and a sake tasting",
+     "day": 6,
+     "optional": false,
+     "match": "Snow Monkeys, Zenkoji Temple & Sake Day Trip",
+     "description": "The macaques bathing at Jigokudani, Nagano's great Zenkoji temple and a tasting at one of the valley's old sake breweries."
+    }
+   ],
+   "program": {
+    "name": "Nagano",
+    "description": "Two nights in the mountains at Nozawa Onsen, with a quiet arrival day and the snow monkeys, Zenkoji and sake the next."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto, Nara and Arashiyama",
+   "days": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "dayLabel": "Day 7 to 11",
+   "hotel": "APA Hotel Shin Osaka Ekimae",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Simple hotel opposite Shin-Osaka station, handy for the trains",
+   "activities": [
+    {
+     "name": "Osaka walking tour",
+     "day": 8,
+     "optional": false,
+     "match": "Osaka Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    },
+    {
+     "name": "Kyoto, Nara and Arashiyama",
+     "day": 9,
+     "optional": false,
+     "match": "Kyoto & Nara Sightseeing Tour",
+     "description": "Kinkaku-ji and the deer park at Nara, then the bamboo grove at Arashiyama with a ride on the open sided Sagano scenic train."
+    },
+    {
+     "name": "Sakura Magic and Nabana no Sato illumination",
+     "day": 10,
+     "optional": false,
+     "match": "Sakura Magic & Nabana no Sato Tour",
+     "description": "Blossom gardens by day and then Nabana no Sato after dark, where millions of lights are strung into tunnels and fields."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights in Osaka with a walking tour, a day through Kyoto, Nara and Arashiyama, and the Nabana no Sato lights."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Mount Fuji and Gotemba",
+  "4": "Tokyo Disneyland",
+  "5": "Into the Nagano mountains",
+  "6": "Snow monkeys and sake",
+  "7": "South to Osaka",
+  "8": "Osaka on foot",
+  "9": "Kyoto, Nara and Arashiyama",
+  "10": "Blossom and illuminations",
+  "11": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Shinjuku"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "A shopping stop at the Gotemba outlets"
+  ],
+  "4": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in Shinjuku"
+  ],
+  "5": [
+   "Breakfast and check out, then the train north",
+   "Check in at Nozawa Onsen in the mountains",
+   "Rest of the day free at the hot spring baths",
+   "Optional: a walk through the old village lanes"
+  ],
+  "6": [
+   "Breakfast, then a full day out with your guide",
+   "The macaques bathing at Jigokudani",
+   "Zenkoji temple in Nagano",
+   "A tasting at an old sake brewery"
+  ],
+  "7": [
+   "Breakfast and check out, then the journey south",
+   "Check in opposite Shin-Osaka station",
+   "Rest of the day free in the city",
+   "Optional: an evening along the Dotonbori canal"
+  ],
+  "8": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free in the city"
+  ],
+  "9": [
+   "Breakfast, then a full day out with your guide",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The deer park and Todai-ji temple in Nara",
+   "The bamboo grove and Sagano scenic train at Arashiyama"
+  ],
+  "10": [
+   "Breakfast, then a day out to the blossom gardens",
+   "Nabana no Sato in the late afternoon",
+   "The light tunnels and fields after dark",
+   "Back in Osaka in the evening"
+  ],
+  "11": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinjuku Washington Hotel Annex",
+  "2": "Shinjuku Washington Hotel Annex",
+  "3": "Shinjuku Washington Hotel Annex",
+  "4": "Shinjuku Washington Hotel Annex",
+  "5": "Nozawa Grand Hotel",
+  "6": "Nozawa Grand Hotel",
+  "7": "APA Hotel Shin Osaka Ekimae",
+  "8": "APA Hotel Shin Osaka Ekimae",
+  "9": "APA Hotel Shin Osaka Ekimae",
+  "10": "APA Hotel Shin Osaka Ekimae",
+  "11": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Eleven days with a mountain village in the middle. The two nights at Nozawa Onsen are what people remember.",
+  "tip": "Nozawa has thirteen free public baths through the village. Walk between a few in the evening with a small towel, it is a local ritual."
+ },
+ "summary": "Eleven days with a mountain break in the middle: four nights in Shinjuku with a city day, Mount Fuji and Disneyland, two at Nozawa Onsen for the snow monkeys and a sake tasting, then four in Osaka with Kyoto, Nara, Arashiyama and the Nabana no Sato lights.",
+ "included": "Included: 10 nights with daily breakfast, including a mountain hotel at Nozawa Onsen; bullet trains throughout; private airport transfers; Tokyo sightseeing tour; Mount Fuji fifth station with Hakone and the Gotemba outlets; Tokyo Disneyland tickets; snow monkeys, Zenkoji temple and sake day trip; Osaka walking tour; Kyoto and Nara tour with Arashiyama and the Sagano train; Sakura Magic and Nabana no Sato tour.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

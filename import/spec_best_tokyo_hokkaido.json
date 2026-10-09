@@ -1,0 +1,231 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "best-of-japan-tokyo-and-hokkaido",
+ "camel": "bestOfTokyoAndHokkaido",
+ "slug": "best-of-tokyo-and-hokkaido",
+ "title": "Best of Tokyo and Hokkaido",
+ "alt": "Odori park and the Sapporo TV tower, Hokkaido",
+ "transport": "Domestic flight, private transfers and guided day tours",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Nature"
+ ],
+ "price": 195742,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone",
+  "Disneyland",
+  "Sapporo",
+  "Otaru",
+  "Lake Toya"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 6,
+  "transfers": 13,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Disneyland",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "The Peninsula Tokyo",
+   "accom": "4 nights · Breakfast · Standard room · 5★ · Five star hotel facing the Imperial Palace gardens in Marunouchi",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone tour",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji & Hakone Tour",
+     "description": "The fifth station on Mount Fuji, then Lake Ashi and the Hakone ropeway over the sulphur vents of Owakudani."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 4,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Four nights at a five star hotel by the palace gardens, with a city day, Mount Fuji with Hakone and a day at Disneyland."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sapporo",
+   "city": "Sapporo",
+   "subtitle": "Sapporo to Otaru and Lake Toya",
+   "days": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 5 to 9",
+   "hotel": "Hotel Emion SAPPORO",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Comfortable hotel in Sapporo, close to the subway",
+   "activities": [
+    {
+     "name": "Sapporo sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Sapporo Sightseeing Tour",
+     "description": "The clock tower, Odori park, the old government building and the Hokkaido shrine, with a stop at the beer museum."
+    },
+    {
+     "name": "Jozankei, Otaru and Shiroi Koibito park",
+     "day": 7,
+     "optional": false,
+     "match": "Jozankei Onsen, Otaru & Shiroi Koibito Park Day Tour",
+     "description": "The hot spring valley at Jozankei, the canal and glass workshops of Otaru, and the chocolate factory at Shiroi Koibito park."
+    },
+    {
+     "name": "Noboribetsu and Lake Toya",
+     "day": 8,
+     "optional": false,
+     "match": "Noboribetsu & Lake Toya Tour",
+     "description": "The steaming Jigokudani hell valley at Noboribetsu, then the caldera lake at Toya with Mount Usu above it."
+    }
+   ],
+   "program": {
+    "name": "Sapporo",
+    "description": "Four nights in the island capital with a city tour, Otaru's canal quarter and a day out to the hell valley and Lake Toya."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Tokyo Disneyland",
+  "5": "Flight to Hokkaido",
+  "6": "Sapporo sightseeing",
+  "7": "Jozankei and Otaru",
+  "8": "Noboribetsu and Lake Toya",
+  "9": "Departure from Sapporo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your hotel by the palace gardens",
+   "Rest of the day free at your own pace",
+   "Optional: an evening walk through Ginza"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "A cruise on Lake Ashi",
+   "The Hakone ropeway over the Owakudani vents"
+  ],
+  "4": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in the city"
+  ],
+  "5": [
+   "Breakfast and check out, then the flight to Hokkaido",
+   "Transfer into Sapporo and check in",
+   "Rest of the day free in the city",
+   "Optional: dinner in the Susukino lanes"
+  ],
+  "6": [
+   "Breakfast, then a guided day around Sapporo",
+   "The clock tower, Odori park and the old government building",
+   "The Hokkaido shrine in its woodland",
+   "A stop at the Sapporo beer museum"
+  ],
+  "7": [
+   "Breakfast, then the hot spring valley at Jozankei",
+   "Otaru's canal, warehouses and glass workshops",
+   "Shiroi Koibito chocolate park",
+   "Evening free in Sapporo"
+  ],
+  "8": [
+   "Breakfast, then south to Noboribetsu",
+   "The steaming Jigokudani hell valley",
+   "Lake Toya, a caldera lake with Mount Usu above it",
+   "Back in Sapporo in the evening"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to New Chitose Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "The Peninsula Tokyo",
+  "2": "The Peninsula Tokyo",
+  "3": "The Peninsula Tokyo",
+  "4": "The Peninsula Tokyo",
+  "5": "Hotel Emion SAPPORO",
+  "6": "Hotel Emion SAPPORO",
+  "7": "Hotel Emion SAPPORO",
+  "8": "Hotel Emion SAPPORO",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Four nights at the Peninsula and then four in Hokkaido. City polish first, open country second, and only one flight between them.",
+  "tip": "Ask for a palace view room at the Peninsula. In Sapporo, keep the evenings for Susukino, the seafood there is the best in the country."
+ },
+ "summary": "Nine days split between two islands: four nights at a five star hotel by the Imperial Palace gardens with a city tour, Mount Fuji with Hakone and Tokyo Disneyland, then a flight north for four nights in Sapporo with Otaru, the hell valley and Lake Toya.",
+ "included": "Included: 8 nights with daily breakfast, including four at The Peninsula Tokyo; the domestic flight to Hokkaido; private airport and city transfers; full day Tokyo city tour with lunch; Mount Fuji and Hakone tour; Tokyo Disneyland tickets; Sapporo sightseeing tour; Jozankei, Otaru and Shiroi Koibito park day tour; Noboribetsu and Lake Toya tour.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

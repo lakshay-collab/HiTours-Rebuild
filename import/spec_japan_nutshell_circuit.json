@@ -1,0 +1,316 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-in-a-nutshell",
+ "camel": "japanNutshellGrandCircuit",
+ "slug": "japan-in-a-nutshell-grand-circuit",
+ "title": "Japan in a Nutshell Grand Circuit",
+ "alt": "Thatched farmhouses below Mount Fuji at Iyashi no Sato, Japan",
+ "transport": "Coaches, trains and guided touring throughout",
+ "tag": "Group tour",
+ "tags": [
+  "Culture",
+  "Nature"
+ ],
+ "price": 226603,
+ "route_cities": [
+  "Tokyo",
+  "Kawaguchiko",
+  "Mount Fuji",
+  "Kyoto",
+  "Nagano",
+  "Ikaho",
+  "Nikko"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 11,
+  "transfers": 22,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station, with free time in Shinjuku and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kawaguchiko",
+   "city": "Kawaguchiko",
+   "subtitle": "Kawaguchiko to Mount Fuji",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Fuji Kawaguchiko Resort",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Lakeside resort with Mount Fuji across the water on a clear day",
+   "activities": [
+    {
+     "name": "Lake Kawaguchi boat ride",
+     "day": 3,
+     "optional": false,
+     "match": "Boat Ride on Kawaguchi Lake",
+     "description": "A cruise out onto the lake, with the mountain reflected in the water when the cloud lifts."
+    },
+    {
+     "name": "Mount Fuji fifth station",
+     "day": 3,
+     "optional": false,
+     "match": "Mt. Fuji-5th Station",
+     "description": "Up the mountain road to the fifth station at 2,300 metres, where the treeline ends and the climbing trail begins."
+    }
+   ],
+   "program": {
+    "name": "Kawaguchiko",
+    "description": "A lakeside night below Mount Fuji, with a boat ride on the lake and the drive up to the fifth station."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Kyoto to Shiraito falls and Nagoya",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel opposite Kyoto station, handy for the trains",
+   "activities": [
+    {
+     "name": "Iyashi no Sato Nenba village",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Iyashi No Sato Nenba",
+     "description": "A rebuilt village of thatched farmhouses below Mount Fuji, now craft workshops where you can try dyeing or pottery."
+    },
+    {
+     "name": "Watanabe house museum and the water mill",
+     "day": 4,
+     "optional": false,
+     "match": "Watanabe House Museum",
+     "description": "An old silk merchant's house kept as it was, and the traditional wooden water mill still turning beside the stream."
+    },
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital, taking in the golden pavilion, a Zen garden and the torii gate paths above Fushimi."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "Two nights by Kyoto station, reached through the thatched village and water mill of the Fuji foothills, with a full guided day."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Nagano",
+   "city": "Nagano",
+   "subtitle": "Nagano to Tsumago and Matsumoto",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Hotel Metropolitan Nagano",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel attached to Nagano station",
+   "activities": [
+    {
+     "name": "Tsumago post town",
+     "day": 6,
+     "optional": false,
+     "match": "Leisure Time in Tsumago",
+     "description": "A preserved post town on the old Nakasendo road, where the wooden inns and shopfronts look much as travellers found them."
+    },
+    {
+     "name": "Matsumoto crow castle",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Crow Castle",
+     "description": "The black keep they call the crow castle, standing on its moat with the Alps behind it, an original from the sixteenth century."
+    }
+   ],
+   "program": {
+    "name": "Nagano",
+    "description": "A night in Nagano, reached through Tsumago on the old post road and the black keep at Matsumoto."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Ikaho",
+   "city": "Shibukawa",
+   "subtitle": "Ikaho to the monkey park, Kusatsu and Nikko",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Moriaki Ryokan",
+   "accom": "1 night · Breakfast · Ryokan room · 3★ · Traditional inn at Ikaho hot spring, with tatami rooms and shared baths",
+   "activities": [
+    {
+     "name": "Zenkoji temple",
+     "day": 7,
+     "optional": false,
+     "match": "Visit Zenko Ji Temple",
+     "description": "Nagano's great temple, home to what is said to be the first Buddhist statue brought to Japan, kept hidden behind the altar."
+    },
+    {
+     "name": "Snow monkey park",
+     "day": 7,
+     "optional": false,
+     "match": "Visit Monkey Park",
+     "description": "The hot spring at Jigokudani where wild macaques sit chest deep in the steaming water, often with snow on their heads."
+    },
+    {
+     "name": "Kusatsu hot spring town",
+     "day": 7,
+     "optional": false,
+     "match": "Leisure Time in Kusatsu",
+     "description": "Free time in Kusatsu, where the hot water runs down wooden channels through the middle of the town square."
+    },
+    {
+     "name": "Nikko sightseeing tour",
+     "day": 8,
+     "optional": false,
+     "match": "Nikko Sightseeing Tour",
+     "description": "The lacquered Toshogu shrine in its cedar forest, the Shinkyo bridge and the Kegon falls before the drive back to Tokyo."
+    }
+   ],
+   "program": {
+    "name": "Ikaho",
+    "description": "A ryokan night at a hot spring, with Zenkoji, the snow monkeys and Kusatsu on the way, and Nikko on the final day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Mount Fuji and Kawaguchiko",
+  "4": "Thatched village and on to Kyoto",
+  "5": "Kyoto sightseeing",
+  "6": "Tsumago and Matsumoto",
+  "7": "Snow monkeys and Ikaho",
+  "8": "Nikko and departure"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Evening at your own pace"
+  ],
+  "2": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast and check out, then west towards Mount Fuji",
+   "Sightseeing stops on the journey out",
+   "A boat ride on Lake Kawaguchi",
+   "Up the mountain road to the fifth station"
+  ],
+  "4": [
+   "Breakfast, then the thatched village of Iyashi no Sato",
+   "The Watanabe house museum and the old water mill",
+   "Shiraito falls and the Toyota museum on the way",
+   "On to Kyoto and check in by the station"
+  ],
+  "5": [
+   "Breakfast, then a guided day through the old capital",
+   "The golden pavilion and a Zen garden",
+   "The torii gate paths above Fushimi",
+   "Free time in the Gion lanes in the evening"
+  ],
+  "6": [
+   "Breakfast and check out, then north into the mountains",
+   "Free time in the old post town of Tsumago",
+   "The crow castle at Matsumoto on its moat",
+   "Check in at your Nagano hotel"
+  ],
+  "7": [
+   "Breakfast, then Zenkoji temple in Nagano",
+   "The snow monkey park at Jigokudani",
+   "Free time in the hot spring town of Kusatsu",
+   "Ryokan night at Ikaho, tatami rooms and shared baths"
+  ],
+  "8": [
+   "Breakfast at the ryokan and check out",
+   "A guided morning at Nikko",
+   "The Toshogu shrine and the Shinkyo bridge",
+   "Transfer to Tokyo or the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Fuji Kawaguchiko Resort",
+  "4": "Miyako Hotel Kyoto Hachijo",
+  "5": "Miyako Hotel Kyoto Hachijo",
+  "6": "Hotel Metropolitan Nagano",
+  "7": "Moriaki Ryokan",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Eight days, five towns and eleven included visits. It is the fullest circuit we sell at this price.",
+  "tip": "Two nights in Kyoto is the breather in the middle. Use the free evening in Gion rather than planning anything."
+ },
+ "summary": "Eight days on a full circuit: Tokyo, a lakeside night below Mount Fuji with a boat ride and the fifth station, two nights in Kyoto reached through the thatched village of Iyashi no Sato, Tsumago and Matsumoto castle, then the snow monkeys, a ryokan night and Nikko.",
+ "included": "Included: 7 nights across five towns with daily breakfast, including a lakeside resort below Mount Fuji and a ryokan at Ikaho; coaches and trains throughout; guided sightseeing in Tokyo, Kyoto and Nikko; Lake Kawaguchi boat ride and the Mount Fuji fifth station; Iyashi no Sato Nenba, the Watanabe house museum and the water mill; free time at Tsumago and Kusatsu; Matsumoto crow castle; Zenkoji temple and the snow monkey park.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

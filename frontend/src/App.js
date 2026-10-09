@@ -19,6 +19,7 @@ import { IndonesiaHolidays } from './pages/IndonesiaListing';
 import { ChinaHolidays } from './pages/ChinaListing';
 import { CambodiaHolidays } from './pages/CambodiaListing';
 import { PhilippinesHolidays } from './pages/PhilippinesListing';
+import { SouthKoreaHolidays } from './pages/SouthKoreaListing';
 import { IcelandHolidays } from './pages/IcelandListing';
 import { ItalyHolidays } from './pages/ItalyListing';
 import { GreeceHolidays } from './pages/GreeceListing';
@@ -58,6 +59,7 @@ const COUNTRY_ROOTS = [
   '/asien/china',
   '/asien/cambodia',
   '/asien/philippines',
+  '/asien/south-korea',
   '/europa/iceland',
   '/europa/italy',
   '/europa/greece',
@@ -122,6 +124,8 @@ function App() {
           <Route path="/asien/cambodia/holidays/:style" element={<CambodiaHolidays />} />
           <Route path="/asien/philippines/holidays" element={<PhilippinesHolidays />} />
           <Route path="/asien/philippines/holidays/:style" element={<PhilippinesHolidays />} />
+          <Route path="/asien/south-korea/holidays" element={<SouthKoreaHolidays />} />
+          <Route path="/asien/south-korea/holidays/:style" element={<SouthKoreaHolidays />} />
           <Route path="/europa" element={<EuropeListing />} />
           <Route path="/europa/holidays" element={<EuropeHolidays />} />
           <Route path="/europa/holidays/:style" element={<EuropeHolidays />} />

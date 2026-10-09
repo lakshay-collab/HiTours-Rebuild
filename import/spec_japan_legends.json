@@ -1,0 +1,425 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-landscapes-and-legends",
+ "camel": "japanLegendsTempleStay",
+ "slug": "japan-legends-with-a-temple-stay",
+ "title": "Japan Legends with a Temple Stay",
+ "alt": "Lantern lined path at a temple on Mount Koya, Japan",
+ "transport": "Bullet trains, a ferry crossing and guided sightseeing",
+ "tag": "Grand tour",
+ "tags": [
+  "Culture",
+  "Grand tour"
+ ],
+ "price": 221009,
+ "route_cities": [
+  "Tokyo",
+  "Kyoto",
+  "Nara",
+  "Osaka",
+  "Okayama",
+  "Hiroshima",
+  "Matsuyama",
+  "Kobe",
+  "Mount Koya"
+ ],
+ "counts": {
+  "days": 11,
+  "nights": 10,
+  "cities": 8,
+  "hotels": 8,
+  "experiences": 14,
+  "transfers": 20,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights by Shinagawa station, with a free first evening in Shinjuku and a guided city day after."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel on the south side of Kyoto station",
+   "activities": [
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided afternoon through Kinkaku-ji, Nijo castle and the shrine gates of Fushimi Inari."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "The bullet train west, a guided afternoon in the old capital and free time in the Gion lanes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka by way of Nara",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Candeo Hotels Osaka Namba",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel at Namba with a rooftop bath",
+   "activities": [
+    {
+     "name": "Nara sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nara Sightseeing Tour",
+     "description": "Todai-ji with its great bronze Buddha, the old timber halls of Horyu-ji and the deer that wander the park."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "A night at Namba, reached through Nara, with the evening free along the Dotonbori canal."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Okayama",
+   "city": "Okayama",
+   "subtitle": "Okayama by way of Himeji castle",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Mitsui Garden Hotel Okayama",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel by Okayama station",
+   "activities": [
+    {
+     "name": "Himeji castle",
+     "day": 5,
+     "optional": false,
+     "match": "Himeji Castle Tickets",
+     "description": "The white heron castle, the finest surviving fortress in the country, with its maze of gates and its timber keep."
+    },
+    {
+     "name": "Okayama sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Okayama Sightseeing Tour",
+     "description": "Korakuen, one of the three great gardens of Japan, and the black keep of Okayama castle beside it."
+    }
+   ],
+   "program": {
+    "name": "Okayama",
+    "description": "A night by the station, with Himeji castle on the way and Korakuen garden in the afternoon."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima and Miyajima",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Hilton Hiroshima",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in the city centre",
+   "activities": [
+    {
+     "name": "Kurashiki canal quarter",
+     "day": 6,
+     "optional": false,
+     "match": "Leisure Time at Kurashiki",
+     "description": "Free time in the white walled merchant quarter of Kurashiki, where willow trees lean over a stone lined canal."
+    },
+    {
+     "name": "Hiroshima walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Hiorshima Walking Tour",
+     "description": "The peace park, the dome left standing after 1945 and the memorial museum, on foot with a guide."
+    },
+    {
+     "name": "Itsukushima shrine at Miyajima",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Itsukushima Shrine",
+     "description": "The ferry across to Miyajima and the vermilion gate that stands in the water in front of the shrine."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "A full day through Kurashiki, the peace park and the island shrine at Miyajima, with a night in the city."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Matsuyama",
+   "city": "Matsuyama",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "ANA Crowne Plaza Matsuyama, an IHG Hotel",
+   "hotel_label": "ANA Crowne Plaza Matsuyama",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel in the middle of Matsuyama",
+   "activities": [
+    {
+     "name": "Matsuyama castle with the cable car",
+     "day": 7,
+     "optional": false,
+     "match": "Cable Car Ride to Matsuyama Castle",
+     "description": "A cable car up the hill to one of the twelve original castle keeps left in the country, with the Inland Sea below."
+    },
+    {
+     "name": "Ishite-ji temple",
+     "day": 7,
+     "optional": false,
+     "match": "Ishiteji Temple Tickets",
+     "description": "One of the eighty eight temples on the Shikoku pilgrimage, with its old gate and pilgrims in white."
+    },
+    {
+     "name": "Dogo Onsen bath house",
+     "day": 7,
+     "optional": false,
+     "match": "Dogo Onsen",
+     "description": "The oldest hot spring in the country, a timber bath house with a wooden tower that inspired the bath in Spirited Away."
+    }
+   ],
+   "program": {
+    "name": "Matsuyama",
+    "description": "Across the Inland Sea to Shikoku for the castle by cable car, a pilgrimage temple and the old Dogo bath house."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Kobe",
+   "city": "Kobe",
+   "subtitle": "Kobe by way of Kotohira and Naruto",
+   "days": [
+    8
+   ],
+   "dayLabel": "Day 8",
+   "hotel": "Kobe Meriken Park Oriental Hotel",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel on the harbour pier at Meriken park",
+   "activities": [
+    {
+     "name": "Kotohira shrine, Ritsurin garden and Uzu no Michi",
+     "day": 8,
+     "optional": false,
+     "match": "Journey from Matsuyama to Kobe",
+     "description": "The hillside shrine at Kotohira, the pine garden of Ritsurin and the glass floored walkway over the Naruto whirlpools."
+    }
+   ],
+   "program": {
+    "name": "Kobe",
+    "description": "A night on the harbour pier, reached through Kotohira, Ritsurin garden and the Naruto whirlpools."
+   }
+  },
+  {
+   "letter": "H",
+   "name": "Mount Koya",
+   "city": "Koyasan",
+   "days": [
+    9
+   ],
+   "dayLabel": "Day 9",
+   "hotel": "Fukuchi-in Temple",
+   "accom": "1 night · Breakfast · Temple room · 3★ · Working temple lodging on Mount Koya, with its own hot spring bath",
+   "activities": [
+    {
+     "name": "Kobe earthquake memorial museum",
+     "day": 9,
+     "optional": false,
+     "match": "Earthquake Memorial Museum Tickets",
+     "description": "The museum built after the 1995 earthquake, which recreates the morning it struck and how the city was rebuilt."
+    },
+    {
+     "name": "Mount Koya sightseeing tour",
+     "day": 9,
+     "optional": false,
+     "match": "Mount Koya Sightseeing Tour",
+     "description": "The Okunoin cemetery under its cedars, the Danjo Garan halls and the gate at Daimon, on the mountain where Shingon Buddhism began."
+    }
+   ],
+   "program": {
+    "name": "Mount Koya",
+    "description": "Up the mountain for a night in a working temple, with the Okunoin cemetery and the Danjo Garan halls."
+   }
+  },
+  {
+   "letter": "I",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Back to Kyoto",
+   "days": [
+    10,
+    11
+   ],
+   "dayLabel": "Day 10 to 11",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel on the south side of Kyoto station",
+   "activities": [],
+   "program": {
+    "name": "Kyoto",
+    "description": "Down from the mountain for a last free day in Kyoto before the flight home."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Bullet train to Kyoto",
+  "4": "Nara and into Osaka",
+  "5": "Himeji castle and Okayama",
+  "6": "Kurashiki, Hiroshima and Miyajima",
+  "7": "Across to Matsuyama",
+  "8": "Kotohira, Naruto and Kobe",
+  "9": "Up to Mount Koya",
+  "10": "A free day in Kyoto",
+  "11": "Departure from Kyoto"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Tokyo"
+  ],
+  "3": [
+   "Breakfast and check out, then the bullet train west",
+   "Check in on the south side of Kyoto station",
+   "Kinkaku-ji, Nijo castle and Fushimi Inari with your guide",
+   "Free time in the Gion lanes"
+  ],
+  "4": [
+   "Breakfast and check out, then south by way of Nara",
+   "Todai-ji and its great bronze Buddha",
+   "The old timber halls of Horyu-ji",
+   "Check in at Namba, evening free in Dotonbori"
+  ],
+  "5": [
+   "Breakfast and check out, then west to Himeji",
+   "The white keep of Himeji castle",
+   "Korakuen garden and Okayama castle",
+   "Night by the station in Okayama"
+  ],
+  "6": [
+   "Breakfast, then the canal quarter of Kurashiki",
+   "A walking tour of the Hiroshima peace park and museum",
+   "The ferry to Miyajima and Itsukushima shrine",
+   "Night in Hiroshima"
+  ],
+  "7": [
+   "Breakfast and check out, then across to Shikoku",
+   "A cable car up to Matsuyama castle",
+   "Ishite-ji, a temple on the Shikoku pilgrimage",
+   "The old timber bath house at Dogo Onsen"
+  ],
+  "8": [
+   "Breakfast, then north towards Kobe",
+   "Kotohira shrine and the pines of Ritsurin garden",
+   "The glass walkway over the Naruto whirlpools",
+   "Check in on the harbour pier at Kobe"
+  ],
+  "9": [
+   "Breakfast, then the Kobe earthquake memorial museum",
+   "On to Mount Koya in the afternoon",
+   "The Okunoin cemetery under its cedars",
+   "Night in a working temple, with its hot spring bath"
+  ],
+  "10": [
+   "Breakfast at the temple, then down to Kyoto",
+   "Check in and the rest of the day free",
+   "Optional: the bamboo grove at Arashiyama",
+   "Optional: Kiyomizu-dera and the Higashiyama lanes"
+  ],
+  "11": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Miyako Hotel Kyoto Hachijo",
+  "4": "Candeo Hotels Osaka Namba",
+  "5": "Mitsui Garden Hotel Okayama",
+  "6": "Hilton Hiroshima",
+  "7": "ANA Crowne Plaza Matsuyama",
+  "8": "Kobe Meriken Park Oriental Hotel",
+  "9": "Fukuchi-in Temple",
+  "10": "Miyako Hotel Kyoto Hachijo",
+  "11": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "The night on Mount Koya in a working temple is the part people talk about afterwards, not the castles.",
+  "tip": "Set an alarm on the mountain. The monks hold the morning fire ritual just after six and guests are welcome to sit in."
+ },
+ "summary": "Eleven days down the Inland Sea and across to Shikoku, finishing on a sacred mountain: Tokyo and Kyoto, Nara and Osaka, Himeji castle, Korakuen garden, the Hiroshima peace park and Miyajima, Matsuyama castle with Dogo Onsen, the Naruto whirlpools, and a night in a temple on Mount Koya.",
+ "included": "Included: 10 nights with daily breakfast, including a night in a temple lodging on Mount Koya; bullet trains and the crossing to Shikoku; private airport transfers; guided sightseeing in Tokyo and in Kyoto; a guided day through Nara; Himeji castle; guided sightseeing in Okayama; Kurashiki, a walking tour of the Hiroshima peace park and the island shrine at Miyajima; Matsuyama castle with the cable car, Ishite-ji and Dogo Onsen; Kotohira, Ritsurin garden and the Naruto walkway; the Kobe earthquake memorial museum; a guided tour of Mount Koya.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

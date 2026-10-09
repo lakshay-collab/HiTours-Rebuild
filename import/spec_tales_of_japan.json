@@ -1,0 +1,248 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "tales-of-japan",
+ "camel": "talesOfJapanRyokanFamily",
+ "slug": "tales-of-japan-with-a-ryokan-night",
+ "title": "Tales of Japan with a Ryokan Night",
+ "alt": "Tatami room with futons laid out in a Kyoto ryokan",
+ "transport": "Bullet train, private transfers and guided day tours",
+ "tag": "Family",
+ "tags": [
+  "Family",
+  "Culture"
+ ],
+ "price": 274020,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Disneyland",
+  "Kyoto",
+  "Nara",
+  "Arashiyama",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 17,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Disneyland",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Shinjuku Washington Hotel Annex",
+   "accom": "4 nights · Breakfast · Super deluxe room · 4★ · Four star hotel in Shinjuku, a short walk from the station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    },
+    {
+     "name": "Mount Fuji, Hakone and Gotemba outlets",
+     "day": 3,
+     "optional": false,
+     "match": "Trip to Mt Fuji 5th Station, Hakone & Gotemba Outlets",
+     "description": "The fifth station on Mount Fuji, Lake Ashi in Hakone and a shopping stop at the Gotemba outlets on the way back."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 4,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Four nights in Shinjuku with a guided city day, Mount Fuji with the Gotemba outlets and a full day at Disneyland."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Kyoto to Nara and Arashiyama",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Kyoto Ryokan Gion Sano",
+   "accom": "2 nights · Breakfast · Deluxe room · 3★ · Small ryokan in the Gion lanes, tatami rooms and a shared bath",
+   "activities": [
+    {
+     "name": "Kyoto, Nara and Arashiyama",
+     "day": 6,
+     "optional": false,
+     "match": "Kyoto & Nara Sightseeing Tour",
+     "description": "Kinkaku-ji and the deer park at Nara, then the bamboo grove at Arashiyama with a ride on the open sided Sagano scenic train."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "Two ryokan nights in the Gion lanes, with a quiet arrival day and a full day through Kyoto, Nara and Arashiyama."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Nabana no Sato and Universal Studios",
+   "days": [
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 7 to 9",
+   "hotel": "APA Hotel Shin Osaka Ekimae",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel opposite Shin-Osaka station, handy for the trains",
+   "activities": [
+    {
+     "name": "Sakura Magic and Nabana no Sato illumination",
+     "day": 7,
+     "optional": false,
+     "match": "Sakura Magic & Nabana no Sato Tour",
+     "description": "Blossom gardens by day and then Nabana no Sato after dark, where millions of lights are strung into tunnels and fields."
+    },
+    {
+     "name": "Universal Studios Japan",
+     "day": 8,
+     "optional": false,
+     "match": "Universal Studios Tickets",
+     "description": "A full day at Universal Studios Japan with tickets included, home to Super Nintendo World and the Harry Potter area."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Two nights in Osaka to finish, with the Nabana no Sato lights on arrival and a full day at Universal Studios Japan."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Mount Fuji and Gotemba",
+  "4": "Tokyo Disneyland",
+  "5": "Bullet train to Kyoto",
+  "6": "Kyoto, Nara and Arashiyama",
+  "7": "On to Osaka and the illuminations",
+  "8": "Universal Studios Japan",
+  "9": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Shinjuku"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "A shopping stop at the Gotemba outlets"
+  ],
+  "4": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in Shinjuku"
+  ],
+  "5": [
+   "Breakfast and check out, then transfer to the station",
+   "Bullet train west to Kyoto",
+   "Check in at your ryokan in Gion",
+   "Futons, tatami and a soak in the shared bath"
+  ],
+  "6": [
+   "Breakfast, then a full day out with your guide",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "The deer park and Todai-ji temple in Nara",
+   "The bamboo grove and Sagano scenic train at Arashiyama"
+  ],
+  "7": [
+   "Breakfast and check out, then on towards Osaka",
+   "The blossom gardens in the afternoon",
+   "Nabana no Sato and its light tunnels after dark",
+   "Check in opposite Shin-Osaka station"
+  ],
+  "8": [
+   "Early breakfast, then across to Universal Studios Japan",
+   "Tickets included for the full day",
+   "Super Nintendo World and the Harry Potter area",
+   "Evening free in the city"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "-",
+  "7": "-",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinjuku Washington Hotel Annex",
+  "2": "Shinjuku Washington Hotel Annex",
+  "3": "Shinjuku Washington Hotel Annex",
+  "4": "Shinjuku Washington Hotel Annex",
+  "5": "Kyoto Ryokan Gion Sano",
+  "6": "Kyoto Ryokan Gion Sano",
+  "7": "APA Hotel Shin Osaka Ekimae",
+  "8": "APA Hotel Shin Osaka Ekimae",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "A ryokan in the middle of a family trip is the memory that sticks. Futons on the floor beat any hotel bed at that age.",
+  "tip": "The Gion ryokan has a shared bath, so go early in the evening when it is quiet. Slippers on, phones away, it is part of the fun."
+ },
+ "summary": "Nine days through three cities: four nights in Shinjuku with a city day, Mount Fuji and Tokyo Disneyland, two ryokan nights in the Gion lanes with Kyoto, Nara and Arashiyama, then two in Osaka with the Nabana no Sato lights and Universal Studios Japan.",
+ "included": "Included: 8 nights with breakfast on most mornings, including two ryokan nights in Kyoto; bullet trains between Tokyo, Kyoto and Osaka; private airport transfers; Tokyo sightseeing tour; Mount Fuji fifth station with Hakone and the Gotemba outlets; Tokyo Disneyland tickets; Kyoto and Nara tour with Arashiyama and the Sagano train; Sakura Magic and Nabana no Sato tour; Universal Studios Japan tickets.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

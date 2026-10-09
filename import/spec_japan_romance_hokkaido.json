@@ -1,0 +1,249 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-romance-trail",
+ "camel": "japanRomanceTrailHokkaido",
+ "slug": "japan-romance-trail-with-hokkaido",
+ "title": "Japan Romance Trail with Hokkaido",
+ "alt": "Lavender rows at Tomita Farm in Furano, Hokkaido",
+ "transport": "Flights, bullet trains and guided day tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Nature"
+ ],
+ "price": 271360,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Sapporo",
+  "Furano",
+  "Biei",
+  "Lake Toya",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 14,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Shinjuku Washington Hotel Annex",
+   "accom": "3 nights · Breakfast · Super deluxe room · 4★ · Four star hotel in Shinjuku, a short walk from the station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa.",
+     "day": 2
+    },
+    {
+     "name": "Mount Fuji, Hakone and Gotemba outlets",
+     "day": 3,
+     "optional": false,
+     "match": "Trip to Mt Fuji 5th Station, Hakone & Gotemba Outlets",
+     "description": "The fifth station on Mount Fuji, Lake Ashi in Hakone and a shopping stop at the Gotemba outlets on the way back."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Shinjuku with a guided city day and the Mount Fuji fifth station with the Gotemba outlets."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sapporo",
+   "city": "Sapporo",
+   "subtitle": "Sapporo to Furano and Lake Toya",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Dormy Inn PREMIUM Sapporo",
+   "hotel_label": "Dormy Inn Premium Sapporo",
+   "accom": "3 nights · Breakfast · Deluxe room · 3★ · Central Sapporo hotel with its own hot spring bath on the top floor",
+   "activities": [
+    {
+     "name": "Furano, Shikisai Hill and the Blue Pond",
+     "day": 5,
+     "optional": false,
+     "match": "Trip to Furano Tomita Farm, Shikisai Hill, Blue Pond & Campana",
+     "description": "The lavender rows of Tomita Farm, the flower slopes of Shikisai Hill, the Blue Pond at Shirogane and a stop at Campana Rokkatei."
+    },
+    {
+     "name": "Lake Toya, Showa-shinzan and the hell valley",
+     "day": 6,
+     "optional": false,
+     "match": "Day Tour to Lake Toya, Showa-shinzan & Jigokudani Volcano Valley",
+     "description": "The caldera lake at Toya, the young volcano of Showa-shinzan and the steaming Jigokudani valley at Noboribetsu."
+    }
+   ],
+   "program": {
+    "name": "Sapporo",
+    "description": "Two nights in Sapporo with the flower fields of Furano and Biei, and a volcano day around Lake Toya."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Osaka",
+   "city": "Osaka",
+   "days": [
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 7 to 9",
+   "hotel": "APA Hotel Shin Osaka Ekimae",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel opposite Shin-Osaka station, handy for the trains",
+   "activities": [
+    {
+     "name": "Sumo show experience",
+     "day": 7,
+     "optional": false,
+     "match": "Osaka Sumo Show",
+     "description": "A demonstration bout with retired wrestlers who explain the rituals, let you into the ring and serve the stew they live on."
+    },
+    {
+     "name": "Universal Studios Japan",
+     "day": 8,
+     "optional": false,
+     "match": "Universal Studios Tickets",
+     "description": "A full day at Universal Studios Japan with tickets included, home to Super Nintendo World and the Harry Potter area."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Two nights in Osaka to finish, with a sumo show on arrival and a full day at Universal Studios Japan."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Mount Fuji and Gotemba",
+  "4": "North to Sapporo",
+  "5": "Furano flower fields",
+  "6": "Lake Toya and the hell valley",
+  "7": "South to Osaka and sumo",
+  "8": "Universal Studios Japan",
+  "9": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Shinjuku"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "A shopping stop at the Gotemba outlets"
+  ],
+  "4": [
+   "Breakfast and check out, then on to Hokkaido",
+   "Transfer into central Sapporo and check in",
+   "Rest of the day free in the city",
+   "Optional: the hot spring bath on the top floor"
+  ],
+  "5": [
+   "Breakfast, then a full day out to Furano",
+   "The lavender rows of Tomita Farm",
+   "Shikisai Hill and the Blue Pond at Shirogane",
+   "A stop at Campana Rokkatei on the way back"
+  ],
+  "6": [
+   "Breakfast, then south to Lake Toya",
+   "The caldera lake and Showa-shinzan volcano",
+   "The steaming Jigokudani valley at Noboribetsu",
+   "Back in Sapporo in the evening"
+  ],
+  "7": [
+   "Breakfast and check out, then the journey south to Osaka",
+   "Check in opposite Shin-Osaka station",
+   "A sumo show with retired wrestlers",
+   "The stew the wrestlers live on, served afterwards"
+  ],
+  "8": [
+   "Early breakfast, then across to Universal Studios Japan",
+   "Tickets included for the full day",
+   "Super Nintendo World and the Harry Potter area",
+   "Evening free in the city"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "-",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinjuku Washington Hotel Annex",
+  "2": "Shinjuku Washington Hotel Annex",
+  "3": "Shinjuku Washington Hotel Annex",
+  "4": "Dormy Inn Premium Sapporo",
+  "5": "Dormy Inn Premium Sapporo",
+  "6": "Dormy Inn Premium Sapporo",
+  "7": "APA Hotel Shin Osaka Ekimae",
+  "8": "APA Hotel Shin Osaka Ekimae",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Tokyo, the Hokkaido flower fields and then Osaka. Three very different weeks of Japan squeezed into nine days.",
+  "tip": "Go in July for the lavender at Tomita Farm. The Dormy Inn has a rooftop hot spring, which is the right way to end a long touring day."
+ },
+ "summary": "Nine days for two: three nights in Shinjuku with a city day and Mount Fuji, two in Sapporo for the Furano flower fields and a volcano day at Lake Toya, then two in Osaka with a sumo show and Universal Studios Japan.",
+ "included": "Included: 8 nights with breakfast on most mornings; flights and trains within Japan; private airport transfers; Tokyo sightseeing tour; Mount Fuji fifth station with Hakone and the Gotemba outlets; Furano Tomita Farm, Shikisai Hill and the Blue Pond; Lake Toya, Showa-shinzan and the Jigokudani valley; Osaka sumo show; Universal Studios Japan tickets.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

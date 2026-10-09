@@ -1,0 +1,320 @@
+{
+ "base": "/asien",
+ "cta_country": "japan",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-south-korea-tour-package",
+ "camel": "japanAndSouthKoreaDiscovery",
+ "slug": "japan-and-south-korea-discovery",
+ "title": "Japan and South Korea Discovery",
+ "alt": "Gyeongbokgung palace gate with Seoul skyline behind",
+ "transport": "Bullet trains, two flights and guided day tours",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Culture"
+ ],
+ "price": 280672,
+ "route_cities": [
+  "Tokyo",
+  "Mount Fuji",
+  "Disneyland",
+  "Osaka",
+  "Kyoto",
+  "Nara",
+  "Busan",
+  "Seoul"
+ ],
+ "counts": {
+  "days": 13,
+  "nights": 12,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 8,
+  "transfers": 18,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo, Mount Fuji and Disneyland",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Premier Hotel Cabin Shinjuku",
+   "accom": "4 nights · Breakfast · Standard room · 4★ · Four star hotel in Shinjuku, a few minutes from the station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone by bullet train",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour From Tokyo",
+     "description": "The fifth station on Mount Fuji and Lake Ashi in Hakone, returning to Tokyo on the bullet train in the evening."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 4,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Four nights in Shinjuku with a full day city tour, Mount Fuji with Hakone and a day at Disneyland."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka, Kyoto and Nara",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Richmond Hotel Namba Daikokucho",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Well run hotel near Namba, two subway stops from Dotonbori",
+   "activities": [
+    {
+     "name": "Osaka half day walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Osaka Half-Day Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    },
+    {
+     "name": "Kyoto and Nara with buffet lunch",
+     "day": 7,
+     "optional": false,
+     "match": "Full-Day Tour to Kyoto & Nara",
+     "description": "Kinkaku-ji and Fushimi Inari in Kyoto, then Todai-ji and the deer park at Nara, with a buffet lunch on the way."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Three nights near Namba with a walking tour of the city and a full day through Kyoto and Nara."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Busan",
+   "city": "Busan",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Commodore Hotel Busan",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel above the harbour, near Busan station",
+   "activities": [
+    {
+     "name": "Busan city tour",
+     "day": 9,
+     "optional": false,
+     "match": "Full-Day Busan Sightseeing Tour",
+     "description": "The painted houses of Gamcheon, the cliffside temple at Haedong Yonggungsa and the fish market at Jagalchi, with a guide for the full day."
+    }
+   ],
+   "program": {
+    "name": "Busan",
+    "description": "The short flight across to Korea for two nights in the port city, with a full day of sightseeing."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Seoul",
+   "city": "Seoul",
+   "subtitle": "Seoul, the DMZ and Nami Island",
+   "days": [
+    10,
+    11,
+    12,
+    13
+   ],
+   "dayLabel": "Day 10 to 13",
+   "hotel": "Four Points by Sheraton Josun, Seoul Station",
+   "hotel_label": "Four Points by Sheraton Josun Seoul Station",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Four star hotel beside Seoul station, on the airport train line",
+   "activities": [
+    {
+     "name": "Korean DMZ tour",
+     "day": 11,
+     "optional": false,
+     "match": "DMZ Tour From Seoul",
+     "description": "North to the demilitarised zone for the third infiltration tunnel, the Dora observatory and the station built for trains that never ran."
+    },
+    {
+     "name": "Nami Island day tour",
+     "day": 12,
+     "optional": false,
+     "match": "Nami Island Full Day Tour",
+     "description": "The tree lined avenues of Nami Island, reached by ferry, with the Garden of Morning Calm or a rail bike ride on the way."
+    }
+   ],
+   "program": {
+    "name": "Seoul",
+    "description": "Three nights by Seoul station with the demilitarised zone one day and Nami Island the next."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Mount Fuji and Hakone",
+  "4": "Tokyo Disneyland",
+  "5": "On to Osaka",
+  "6": "Osaka on foot",
+  "7": "Kyoto and Nara",
+  "8": "Flight to Busan",
+  "9": "Busan city tour",
+  "10": "On to Seoul",
+  "11": "The Korean DMZ",
+  "12": "Nami Island",
+  "13": "Departure from Seoul"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "Back to Tokyo by bullet train"
+  ],
+  "4": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in Shinjuku"
+  ],
+  "5": [
+   "Breakfast and check out, then the bullet train west",
+   "Check in near Namba in Osaka",
+   "Rest of the day free in the city",
+   "Optional: an evening along the Dotonbori canal"
+  ],
+  "6": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free in the city"
+  ],
+  "7": [
+   "Breakfast, then a full day out with your guide",
+   "Kinkaku-ji and the shrine gates of Fushimi Inari",
+   "Buffet lunch included",
+   "Todai-ji and the deer park at Nara"
+  ],
+  "8": [
+   "Breakfast and check out, then the flight to Busan",
+   "Transfer into the city and check in",
+   "Rest of the day free at your own pace",
+   "Optional: an evening at Haeundae beach"
+  ],
+  "9": [
+   "Breakfast, then a full day out with your guide",
+   "The painted houses of Gamcheon culture village",
+   "Haedong Yonggungsa, a temple on the cliffs",
+   "The fish market at Jagalchi"
+  ],
+  "10": [
+   "Breakfast and check out, then north to Seoul",
+   "Check in beside Seoul station",
+   "Rest of the day free in the city",
+   "Optional: the lanes of Insadong and Bukchon"
+  ],
+  "11": [
+   "Breakfast, then north to the demilitarised zone",
+   "The third infiltration tunnel",
+   "The Dora observatory looking into the north",
+   "Back in Seoul in the afternoon"
+  ],
+  "12": [
+   "Breakfast, then a full day out to Nami Island",
+   "The ferry across and the tree lined avenues",
+   "The Garden of Morning Calm or a rail bike ride",
+   "Back in Seoul in the evening"
+  ],
+  "13": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Incheon Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B, L",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B",
+  "12": "B",
+  "13": "B"
+ },
+ "hotel_by_day": {
+  "1": "Premier Hotel Cabin Shinjuku",
+  "2": "Premier Hotel Cabin Shinjuku",
+  "3": "Premier Hotel Cabin Shinjuku",
+  "4": "Premier Hotel Cabin Shinjuku",
+  "5": "Richmond Hotel Namba Daikokucho",
+  "6": "Richmond Hotel Namba Daikokucho",
+  "7": "Richmond Hotel Namba Daikokucho",
+  "8": "Commodore Hotel Busan",
+  "9": "Commodore Hotel Busan",
+  "10": "Four Points by Sheraton Josun Seoul Station",
+  "11": "Four Points by Sheraton Josun Seoul Station",
+  "12": "Four Points by Sheraton Josun Seoul Station",
+  "13": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan and Korea expert at Hi Tours",
+  "quote": "Two countries in thirteen days, and only one short flight in the middle. Japan for the detail, Korea for the energy.",
+  "tip": "Keep an evening free in Busan for Haeundae beach. The city feels completely different after dark."
+ },
+ "summary": "Thirteen days across two countries: four nights in Shinjuku with a city tour, Mount Fuji and Disneyland, three in Osaka with Kyoto and Nara, then across to Korea for two nights in Busan and three in Seoul with the DMZ and Nami Island.",
+ "included": "Included: 12 nights with daily breakfast; bullet trains in Japan and the flight across to Busan; private airport transfers; a full day of guided sightseeing in Tokyo with lunch; the Mount Fuji fifth station and Lake Ashi, returning by bullet train; admission to Tokyo Disneyland; a guided walk through central Osaka; a guided day through Kyoto and Nara with a buffet lunch; a full day of sightseeing in Busan; a shared tour to the demilitarised zone; a full day out to Nami Island.",
+ "not_included": "Not included: international flights; Japan and Korea visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

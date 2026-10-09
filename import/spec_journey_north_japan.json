@@ -1,0 +1,324 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "journey-to-japan",
+ "camel": "journeyNorthTohokuHokkaido",
+ "slug": "journey-north-through-tohoku-and-hokkaido",
+ "title": "Journey North through Tohoku and Hokkaido",
+ "alt": "Matsushima Bay islands seen from the water, Japan",
+ "transport": "Bullet trains, coaches and guided touring throughout",
+ "tag": "Offbeat",
+ "tags": [
+  "Culture",
+  "Nature"
+ ],
+ "price": 207084,
+ "route_cities": [
+  "Tokyo",
+  "Nikko",
+  "Sendai",
+  "Matsushima",
+  "Morioka",
+  "Hirosaki",
+  "Hakodate",
+  "Sapporo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 12,
+  "transfers": 20,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel, Tokyo",
+   "hotel_label": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station, with free time in Shinjuku and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Sendai",
+   "city": "Sendai",
+   "subtitle": "Sendai via Nikko",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hotel Metropolitan Sendai East",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel beside Sendai station",
+   "activities": [
+    {
+     "name": "Nikko sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Nikko Sightseeing Tour",
+     "description": "The lacquered Toshogu shrine in its cedar forest, the Shinkyo bridge and the Kegon falls on the way north."
+    }
+   ],
+   "program": {
+    "name": "Sendai",
+    "description": "A night in Sendai, reached through Nikko's shrines and waterfalls on the drive north."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Morioka",
+   "city": "Morioka",
+   "subtitle": "Morioka via Matsushima and Hiraizumi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel Metropolitan Morioka New Wing",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Reliable hotel at Morioka station in northern Tohoku",
+   "activities": [
+    {
+     "name": "Kanrantei tea house",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Kanrantei Tea House",
+     "description": "A sixteenth century tea pavilion looking out over Matsushima bay, given to the local lord by Toyotomi Hideyoshi."
+    },
+    {
+     "name": "Matsushima bay cruise",
+     "day": 4,
+     "optional": false,
+     "match": "Matsushima Bay Cruise",
+     "description": "A cruise through the pine topped islands of Matsushima, counted among the three great views of Japan."
+    },
+    {
+     "name": "Hiraizumi sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Hiraizumi Sightseeing Tour",
+     "description": "The gold leaf hall of Chuson-ji and the garden temple of Motsu-ji, all that is left of a northern capital."
+    }
+   ],
+   "program": {
+    "name": "Morioka",
+    "description": "A night in Morioka, with a tea house and bay cruise at Matsushima and the gold hall at Hiraizumi on the way."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Hakodate",
+   "city": "Hakodate",
+   "subtitle": "Hakodate via Hirosaki and Aomori",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Premier Hotel - Cabin President - Hakodate",
+   "hotel_label": "Premier Hotel Cabin President Hakodate",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Harbour hotel in Hakodate, on the southern tip of Hokkaido",
+   "activities": [
+    {
+     "name": "Hirosaki castle",
+     "day": 5,
+     "optional": false,
+     "match": "Hirosaki Castle Tickets",
+     "description": "A small keep inside a wide moat, ringed by two and a half thousand cherry trees that draw crowds every spring."
+    },
+    {
+     "name": "Nebuta museum",
+     "day": 5,
+     "optional": false,
+     "match": "Nebuta Museum Tickets",
+     "description": "The hall in Aomori that keeps the giant painted lantern floats from the summer festival, lit and close enough to touch."
+    }
+   ],
+   "program": {
+    "name": "Hakodate",
+    "description": "A night on the Hokkaido coast, reached through Hirosaki castle and the lantern floats of Aomori."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Sapporo",
+   "city": "Sapporo",
+   "subtitle": "Sapporo via Onuma and Noboribetsu",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Mercure Sapporo",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel in central Sapporo, near Susukino",
+   "activities": [
+    {
+     "name": "Goryokaku tower",
+     "day": 6,
+     "optional": false,
+     "match": "Goryokaku Tower Tickets",
+     "description": "The tower above Hakodate's star shaped fort, best seen from the air with the ramparts laid out below."
+    },
+    {
+     "name": "Onuma Quasi-National Park",
+     "day": 6,
+     "optional": false,
+     "match": "Leisure Time in Onuma Quasi National Park",
+     "description": "Free time among the lakes and islets below Mount Hokkaido-Komagatake, linked by small bridges and walking paths."
+    },
+    {
+     "name": "Oyunuma lake at Noboribetsu",
+     "day": 6,
+     "optional": false,
+     "match": "Oyunuma Lake",
+     "description": "A steaming sulphur lake in the hell valley at Noboribetsu, with a hot stream you can soak your feet in."
+    },
+    {
+     "name": "Sapporo sightseeing tour",
+     "day": 7,
+     "optional": false,
+     "match": "Sapporo Sightseeing Tour",
+     "description": "The clock tower, Odori park and the old government building, with a stop at the Sapporo beer museum."
+    },
+    {
+     "name": "Hill of the Buddha",
+     "day": 7,
+     "optional": false,
+     "match": "Hill of Buddha Tour",
+     "description": "Tadao Ando's lavender ringed hill, where a great stone Buddha sits with only its head showing above the rim."
+    },
+    {
+     "name": "Otaru canal town",
+     "day": 7,
+     "optional": false,
+     "match": "Leisure Time in Otaru",
+     "description": "Free time in Otaru, where the canal, stone warehouses and glass workshops make the best afternoon in Hokkaido."
+    }
+   ],
+   "program": {
+    "name": "Sapporo",
+    "description": "Two nights in the island capital, reached through Onuma park and the Noboribetsu hell valley, with a city day, the Hill of the Buddha and Otaru."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Nikko and on to Sendai",
+  "4": "Matsushima bay and Hiraizumi",
+  "5": "Hirosaki castle and Hakodate",
+  "6": "Onuma, Noboribetsu and Sapporo",
+  "7": "Sapporo, the Buddha and Otaru",
+  "8": "Departure from Sapporo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Evening at your own pace"
+  ],
+  "2": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast and check out, then north towards Nikko",
+   "The Toshogu shrine in its cedar forest",
+   "The Shinkyo bridge and Kegon falls",
+   "On to Sendai and check in by the station"
+  ],
+  "4": [
+   "Breakfast, then out to Matsushima bay",
+   "The Kanrantei tea house above the water",
+   "A cruise through the pine topped islands",
+   "The gold hall at Hiraizumi, then Morioka"
+  ],
+  "5": [
+   "Breakfast and check out, then on to Hirosaki",
+   "The castle keep inside its wide moat",
+   "The lantern floats at the Nebuta museum in Aomori",
+   "Across to Hakodate on Hokkaido"
+  ],
+  "6": [
+   "Breakfast, then up Goryokaku tower for the star fort",
+   "Free time in Onuma Quasi-National Park",
+   "The steaming Oyunuma lake at Noboribetsu",
+   "On to Sapporo and check in"
+  ],
+  "7": [
+   "Breakfast, then a guided morning in Sapporo",
+   "The clock tower, Odori park and the beer museum",
+   "The Hill of the Buddha outside the city",
+   "Free time in Otaru's canal quarter"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to New Chitose Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Hotel Metropolitan Sendai East",
+  "4": "Hotel Metropolitan Morioka New Wing",
+  "5": "Premier Hotel Cabin President Hakodate",
+  "6": "Mercure Sapporo",
+  "7": "Mercure Sapporo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "North from Tokyo through Tohoku to Hokkaido, with twelve included visits and barely another foreign traveller in sight.",
+  "tip": "This is a moving trip with four single nights, so pack light. The reward is Matsushima and Otaru without a queue anywhere."
+ },
+ "summary": "Eight days north from Tokyo: a guided city day, Nikko on the way to Sendai, the bay cruise at Matsushima and the gold hall at Hiraizumi, Hirosaki castle and the Aomori lantern floats, then Hakodate and two nights in Sapporo with Otaru.",
+ "included": "Included: 7 nights across five towns with daily breakfast; bullet trains and coaches throughout; guided sightseeing in Tokyo, Nikko and Sapporo; Kanrantei tea house and Matsushima bay cruise; Hiraizumi sightseeing; Hirosaki castle and Nebuta museum tickets; Goryokaku tower; free time at Onuma park and Otaru; Oyunuma lake at Noboribetsu; the Hill of the Buddha.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -1,0 +1,232 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "best-of-hokkaido",
+ "camel": "bestOfHokkaidoNorthernJapan",
+ "slug": "best-of-hokkaido-northern-japan",
+ "title": "Best of Hokkaido: Northern Japan",
+ "alt": "Lavender fields below the hills at Furano, Hokkaido",
+ "transport": "Private transfers and guided day tours",
+ "tag": "New",
+ "tags": [
+  "Nature",
+  "Adventure"
+ ],
+ "price": 190009,
+ "route_cities": [
+  "Sapporo",
+  "Noboribetsu",
+  "Lake Toya",
+  "Otaru",
+  "Asahikawa",
+  "Furano",
+  "Biei"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 6,
+  "transfers": 17,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Sapporo",
+   "city": "Sapporo",
+   "subtitle": "Sapporo to Lake Toya and Otaru",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Hotel Emion SAPPORO",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Comfortable hotel in Sapporo, close to the subway",
+   "activities": [
+    {
+     "name": "Sapporo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Sapporo Sightseeing Tour",
+     "description": "The clock tower, Odori park, the old government building and the Hokkaido shrine, with a stop at the beer museum."
+    },
+    {
+     "name": "Noboribetsu and Lake Toya",
+     "day": 3,
+     "optional": false,
+     "match": "Noboribetsu & Lake Toya Tour",
+     "description": "The steaming Jigokudani hell valley at Noboribetsu, then the caldera lake at Toya with Mount Usu above it."
+    },
+    {
+     "name": "Jozankei, Otaru and Shiroi Koibito park",
+     "day": 4,
+     "optional": false,
+     "match": "Jozankei Onsen, Otaru & Shiroi Koibito Park Day Tour",
+     "description": "The hot spring valley at Jozankei, the canal and glass workshops of Otaru, and the chocolate factory at Shiroi Koibito park."
+    }
+   ],
+   "program": {
+    "name": "Sapporo",
+    "description": "Four nights in the island capital with a city tour and two full days out, to the hell valley and lake, and to Otaru's canal."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Asahikawa",
+   "city": "Asahikawa",
+   "subtitle": "Asahikawa to Furano and Daisetsuzan",
+   "days": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 5 to 9",
+   "hotel": "Hotel Wing International Asahikawa Ekimae",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Straightforward hotel opposite Asahikawa station",
+   "activities": [
+    {
+     "name": "Asahikawa with Hokuryu sunflower village",
+     "day": 6,
+     "optional": false,
+     "match": "Asahikawa Sightseeing Tour with Hokuryu Sunflower Village",
+     "description": "The city sights and then the sunflower fields at Hokuryu, two million flowers in bloom across the hillside in season."
+    },
+    {
+     "name": "Furano and Biei day tour",
+     "day": 7,
+     "optional": false,
+     "match": "Furano & Biei Day Tour",
+     "description": "The lavender farms of Furano and the patchwork hills of Biei, with the blue pond at Shirogane on the way back."
+    },
+    {
+     "name": "Daisetsuzan national park",
+     "day": 8,
+     "optional": false,
+     "match": "Daisetsuzan National Park Tour",
+     "description": "Hokkaido's roof: the ropeway up Asahidake, the alpine trails and the gorge at Sounkyo with its waterfalls."
+    }
+   ],
+   "program": {
+    "name": "Asahikawa",
+    "description": "Four nights inland with the sunflower fields, the lavender and patchwork hills of Furano and Biei, and a day in Daisetsuzan national park."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Hokkaido",
+  "2": "Sapporo sightseeing",
+  "3": "Noboribetsu and Lake Toya",
+  "4": "Jozankei and Otaru",
+  "5": "On to Asahikawa",
+  "6": "Asahikawa and sunflowers",
+  "7": "Furano and Biei",
+  "8": "Daisetsuzan national park",
+  "9": "Departure from Asahikawa"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at New Chitose Airport and private transfer to Sapporo",
+   "Check in at your hotel",
+   "Rest of the day free at your own pace",
+   "Optional: dinner in the Susukino lanes"
+  ],
+  "2": [
+   "Breakfast, then a guided day around Sapporo",
+   "The clock tower, Odori park and the old government building",
+   "The Hokkaido shrine in its woodland",
+   "A stop at the Sapporo beer museum"
+  ],
+  "3": [
+   "Breakfast, then south to Noboribetsu",
+   "The steaming Jigokudani hell valley",
+   "Lake Toya, a caldera lake with Mount Usu above it",
+   "Back in Sapporo in the evening"
+  ],
+  "4": [
+   "Breakfast, then the hot spring valley at Jozankei",
+   "Otaru's canal, warehouses and glass workshops",
+   "Shiroi Koibito chocolate park",
+   "Evening free in Sapporo"
+  ],
+  "5": [
+   "Breakfast and check out, then inland to Asahikawa",
+   "Check in opposite the station",
+   "Rest of the day free in town",
+   "Optional: the Asahiyama zoo for the afternoon"
+  ],
+  "6": [
+   "Breakfast, then a guided day around Asahikawa",
+   "The city sights and local markets",
+   "The sunflower fields at Hokuryu village",
+   "Back at the hotel in the evening"
+  ],
+  "7": [
+   "Breakfast, then south to Furano",
+   "The lavender farms and flower fields",
+   "The patchwork hills of Biei",
+   "The blue pond at Shirogane on the way back"
+  ],
+  "8": [
+   "Breakfast, then east into Daisetsuzan national park",
+   "The ropeway up Asahidake and the alpine trails",
+   "Sounkyo gorge and its waterfalls",
+   "Back in Asahikawa for the evening"
+  ],
+  "9": [
+   "Check out and private transfer to the airport",
+   "Flight home or on to Tokyo"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "-"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Emion SAPPORO",
+  "2": "Hotel Emion SAPPORO",
+  "3": "Hotel Emion SAPPORO",
+  "4": "Hotel Emion SAPPORO",
+  "5": "Hotel Wing International Asahikawa Ekimae",
+  "6": "Hotel Wing International Asahikawa Ekimae",
+  "7": "Hotel Wing International Asahikawa Ekimae",
+  "8": "Hotel Wing International Asahikawa Ekimae",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Hokkaido is the Japan nobody expects: lavender hills, volcanic lakes and space to breathe. Two bases, six guided days.",
+  "tip": "Go between July and early September for the lavender and the sunflowers, or February if you want the snow festival instead. Both are worth the trip."
+ },
+ "summary": "Nine days in northern Japan: four nights in Sapporo with a city tour, the Noboribetsu hell valley with Lake Toya and Otaru's canal, then four in Asahikawa for the sunflower fields, the lavender hills of Furano and Biei, and Daisetsuzan national park.",
+ "included": "Included: 8 nights with daily breakfast; private airport and inter city transfers; Sapporo sightseeing tour; Noboribetsu and Lake Toya tour; Jozankei, Otaru and Shiroi Koibito park day tour; Asahikawa tour with Hokuryu sunflower village; Furano and Biei day tour; Daisetsuzan national park tour.",
+ "not_included": "Not included: international and domestic flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

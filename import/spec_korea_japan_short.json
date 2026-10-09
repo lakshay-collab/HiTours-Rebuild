@@ -1,0 +1,224 @@
+{
+ "base": "/asien",
+ "cta_country": "japan",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "South Korea",
+   "/asien/south-korea"
+  ]
+ ],
+ "source_slug": "south-korea-and-japan-group-tour",
+ "camel": "koreaAndJapanShortGroupTour",
+ "slug": "korea-and-japan-short-group-tour",
+ "title": "Korea and Japan Short Group Tour",
+ "alt": "Seoul city skyline at dusk from Namsan",
+ "transport": "A flight between countries, bullet trains and shared tours",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Culture"
+ ],
+ "price": 172039,
+ "route_cities": [
+  "Seoul",
+  "Osaka",
+  "Kyoto",
+  "Nara",
+  "Tokyo",
+  "Mount Fuji"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 4,
+  "transfers": 12,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Seoul",
+   "city": "Seoul",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Four Points by Sheraton Josun, Seoul Station",
+   "hotel_label": "Four Points by Sheraton Josun Seoul Station",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel beside Seoul station, on the airport train line",
+   "activities": [
+    {
+     "name": "Korean DMZ tour",
+     "day": 2,
+     "optional": false,
+     "match": "DMZ Tour From Seoul",
+     "description": "North to the demilitarised zone for the third infiltration tunnel, the Dora observatory and the station built for trains that never ran."
+    }
+   ],
+   "program": {
+    "name": "Seoul",
+    "description": "Two nights beside Seoul station, with a free arrival day and the demilitarised zone after."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka, Kyoto and Nara",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Richmond Hotel Namba Daikokucho",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Well run hotel near Namba, two subway stops from Dotonbori",
+   "activities": [
+    {
+     "name": "Kyoto and Nara with buffet lunch",
+     "day": 4,
+     "optional": false,
+     "match": "Full-Day Tour to Kyoto & Nara",
+     "description": "Kinkaku-ji and Fushimi Inari in Kyoto, then Todai-ji and the deer park at Nara, with a buffet lunch on the way."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "The flight across to Japan, then a full day through Kyoto and Nara from Namba."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo and Mount Fuji",
+   "days": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "Premier Hotel Cabin Shinjuku",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Four star hotel in Shinjuku, a few minutes from the station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 6,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    },
+    {
+     "name": "Mount Fuji and Hakone by bullet train",
+     "day": 7,
+     "optional": false,
+     "match": "Mount Fuji and Hakone 1 Day Tour From Tokyo",
+     "description": "The fifth station on Mount Fuji and Lake Ashi in Hakone, returning to Tokyo on the bullet train in the evening."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Shinjuku to finish, with a full day city tour and Mount Fuji with Hakone."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Seoul",
+  "2": "The Korean DMZ",
+  "3": "Flight to Osaka",
+  "4": "Kyoto and Nara",
+  "5": "Bullet train to Tokyo",
+  "6": "Tokyo city tour",
+  "7": "Mount Fuji and Hakone",
+  "8": "Departure from Tokyo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Incheon and transfer to your hotel",
+   "Check in beside Seoul station",
+   "Rest of the day free at your own pace",
+   "Optional: the lanes of Insadong and Bukchon"
+  ],
+  "2": [
+   "Breakfast, then north to the demilitarised zone",
+   "The third infiltration tunnel",
+   "The Dora observatory looking into the north",
+   "Back in Seoul in the afternoon"
+  ],
+  "3": [
+   "Breakfast and check out, then the flight to Osaka",
+   "Transfer into the city and check in near Namba",
+   "Rest of the day free at your own pace",
+   "Optional: an evening along the Dotonbori canal"
+  ],
+  "4": [
+   "Breakfast, then a full day out with your guide",
+   "Kinkaku-ji and the shrine gates of Fushimi Inari",
+   "Buffet lunch included",
+   "Todai-ji and the deer park at Nara"
+  ],
+  "5": [
+   "Breakfast and check out, then the bullet train east",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free in the city",
+   "Optional: the Shibuya crossing and Harajuku lanes"
+  ],
+  "6": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "7": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "Back to Tokyo by bullet train"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Narita or Haneda for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B, L",
+  "5": "B",
+  "6": "B, L",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Four Points by Sheraton Josun Seoul Station",
+  "2": "Four Points by Sheraton Josun Seoul Station",
+  "3": "Richmond Hotel Namba Daikokucho",
+  "4": "Richmond Hotel Namba Daikokucho",
+  "5": "Premier Hotel Cabin Shinjuku",
+  "6": "Premier Hotel Cabin Shinjuku",
+  "7": "Premier Hotel Cabin Shinjuku",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan and Korea expert at Hi Tours",
+  "quote": "Eight days, two countries, one flight. The shortest way to see whether you prefer Seoul or Tokyo.",
+  "tip": "Book the DMZ run early in the trip. It is shared and the morning slots fill weeks ahead in spring."
+ },
+ "summary": "Eight days split between two countries: two nights by Seoul station with a day at the demilitarised zone, two in Osaka with a Kyoto and Nara day, then three in Shinjuku with a city tour and Mount Fuji with Hakone.",
+ "included": "Included: 7 nights with daily breakfast; the flight from Seoul to Osaka and bullet trains in Japan; private airport transfers; a shared tour to the demilitarised zone; a guided day through Kyoto and Nara with a buffet lunch; a full day of guided sightseeing in Tokyo with lunch; the Mount Fuji fifth station and Lake Ashi, returning by bullet train.",
+ "not_included": "Not included: international flights; Japan and Korea visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

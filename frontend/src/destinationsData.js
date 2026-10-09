@@ -49,6 +49,7 @@ export const destinations = {
     { name: 'Bhutan', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Maldives', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
     { name: 'Philippines', src: img('1o2rtINxvG8y4nqhK5Bvgp', 'd09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png') },
+    { name: 'South Korea', src: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') }
   ],
   'Europe': [

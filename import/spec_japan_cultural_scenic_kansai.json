@@ -1,0 +1,215 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "japan-cultural-and-scenic-tour-in-osaka-kyoto-and-tokyo",
+ "camel": "japanCulturalScenicKansaiFirst",
+ "slug": "japan-cultural-and-scenic-tour-kansai-first",
+ "title": "Japan Cultural and Scenic Tour, Kansai First",
+ "alt": "The Umeda Sky Building floating garden deck, Osaka",
+ "transport": "Shinkansen bullet train, private transfers and guided tours",
+ "tag": "Value",
+ "tags": [
+  "Culture",
+  "First time"
+ ],
+ "price": 153900,
+ "route_cities": [
+  "Osaka",
+  "Kyoto",
+  "Nara",
+  "Tokyo",
+  "Mount Fuji",
+  "Hakone"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 5,
+  "transfers": 9,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Kyoto and Nara",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Mitsui Garden Hotel Osaka Premier",
+   "accom": "4 nights · Breakfast · Standard room · 4★ · Four star hotel on the river in Osaka, with a top floor bath house",
+   "activities": [
+    {
+     "name": "Kyoto cultural highlights",
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital: the golden pavilion, a Zen garden and the torii gate paths climbing the hill above Fushimi.",
+     "day": 2
+    },
+    {
+     "name": "Nara park, Todai-ji and the Umeda Sky Building",
+     "optional": false,
+     "match": "Nara City Experience",
+     "description": "Todai-ji with its great bronze Buddha and the tame deer of Nara park, then the floating garden deck of the Umeda Sky Building.",
+     "day": 3
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights on the river in Osaka, with a guided Kyoto day, Nara and the Umeda Sky Building, and a free day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Mount Fuji and Hakone",
+   "days": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "Mitsui Garden Hotel Shiodome Italia-gai Tokyo",
+   "hotel_label": "Mitsui Garden Hotel Shiodome",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Four star hotel in Shiodome, a short walk from the bay",
+   "activities": [
+    {
+     "name": "teamLab Planets",
+     "optional": false,
+     "match": "TeamLab Planets",
+     "description": "The barefoot digital art museum in Toyosu, where you wade through water gardens and mirrored rooms of light.",
+     "day": 5
+    },
+    {
+     "name": "Mount Fuji and Hakone with the ropeway",
+     "optional": false,
+     "match": "Mount Fuji & Hakone Tour",
+     "description": "The fifth station on Mount Fuji, a cruise on Lake Ashi and the Hakone ropeway over the sulphur vents of Owakudani.",
+     "day": 6
+    },
+    {
+     "name": "Tokyo sightseeing with the Skytree",
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "Asakusa and Senso-ji with the Nakamise shopping street, then up the Tokyo Skytree for the view across the whole city.",
+     "day": 7
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Three nights in Shiodome, arriving by bullet train for teamLab Planets, then Mount Fuji with Hakone and a city day up the Skytree."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Osaka",
+  "2": "Kyoto highlights",
+  "3": "Nara and Osaka city",
+  "4": "A free day in Osaka",
+  "5": "Bullet train to Tokyo and teamLab",
+  "6": "Mount Fuji and Hakone",
+  "7": "Tokyo and the Skytree",
+  "8": "Departure from Tokyo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Kansai Airport and transfer to your hotel",
+   "Check in at your riverside hotel in Osaka",
+   "Free time to explore the neighbourhood",
+   "Optional: an evening along the Dotonbori canal"
+  ],
+  "2": [
+   "Breakfast, then a guided day in Kyoto",
+   "The golden pavilion on its pond",
+   "A Zen garden and the temple district",
+   "The torii gate paths above Fushimi"
+  ],
+  "3": [
+   "Breakfast, then across to Nara",
+   "Todai-ji and its great bronze Buddha",
+   "The deer park and its tame sika deer",
+   "The Umeda Sky Building deck back in Osaka"
+  ],
+  "4": [
+   "Breakfast and a free day in Osaka",
+   "Optional: Osaka castle and its park",
+   "Optional: Universal Studios Japan for the day",
+   "Optional: Kobe or Himeji by train"
+  ],
+  "5": [
+   "Breakfast and check out, then the Shinkansen to Tokyo",
+   "Check in at your hotel in Shiodome",
+   "teamLab Planets, the barefoot art museum",
+   "Evening free near the bay"
+  ],
+  "6": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "A cruise on Lake Ashi",
+   "The Hakone ropeway over the Owakudani vents"
+  ],
+  "7": [
+   "Breakfast, then a guided day in the city",
+   "Asakusa, Senso-ji and the Nakamise street",
+   "Up the Tokyo Skytree for the view",
+   "Evening free in Tokyo"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Narita or Haneda for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Mitsui Garden Hotel Osaka Premier",
+  "2": "Mitsui Garden Hotel Osaka Premier",
+  "3": "Mitsui Garden Hotel Osaka Premier",
+  "4": "Mitsui Garden Hotel Osaka Premier",
+  "5": "Mitsui Garden Hotel Shiodome",
+  "6": "Mitsui Garden Hotel Shiodome",
+  "7": "Mitsui Garden Hotel Shiodome",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Starting in Kansai and finishing in Tokyo means the long flight home leaves from the busier airport, and you never double back.",
+  "tip": "Both Mitsui Garden hotels have a top floor bath house with a view. Go up after the Nara day, it is better than any spa treatment."
+ },
+ "summary": "Eight days from Kansai to Tokyo: four nights on the river in Osaka with a guided Kyoto day, Nara and the Umeda Sky Building and a free day, then the bullet train to Tokyo for teamLab Planets, Mount Fuji with Hakone and a city day up the Skytree.",
+ "included": "Included: 7 nights in four star hotels with daily breakfast; Shinkansen bullet train from Osaka to Tokyo; private airport transfers; Kyoto sightseeing tour; Nara park and Todai-ji with the Umeda Sky Building; teamLab Planets tickets; Mount Fuji and Hakone tour with the Lake Ashi cruise and ropeway; Tokyo sightseeing tour with the Skytree.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

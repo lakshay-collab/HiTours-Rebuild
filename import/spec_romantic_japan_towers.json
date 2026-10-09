@@ -1,0 +1,222 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "romantic-journey-through-japan",
+ "camel": "romanticJapanTowersTemples",
+ "slug": "romantic-japan-towers-and-temples",
+ "title": "Romantic Japan: Towers and Temples",
+ "alt": "Tokyo Tower lit at dusk above the rooftops, Japan",
+ "transport": "Bullet train, private transfers and guided day tours",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Culture"
+ ],
+ "price": 199548,
+ "route_cities": [
+  "Tokyo",
+  "Disneyland",
+  "Mount Fuji",
+  "Gotemba",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 5,
+  "transfers": 13,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "subtitle": "Tokyo to Disneyland and Mount Fuji",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Shinjuku Washington Hotel Annex",
+   "accom": "4 nights · Breakfast · Super deluxe room · 4★ · Four star hotel in Shinjuku, a short walk from the station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and the temple lanes of Asakusa."
+    },
+    {
+     "name": "Tokyo Disneyland",
+     "day": 3,
+     "optional": false,
+     "match": "Tokyo Disneyland Tickets",
+     "description": "A full day at Tokyo Disneyland with your admission tickets included, so you can be at the gates when the park opens."
+    },
+    {
+     "name": "Mount Fuji, Hakone and Gotemba outlets",
+     "day": 4,
+     "optional": false,
+     "match": "Trip to Mt Fuji 5th Station, Hakone & Gotemba Outlets",
+     "description": "The fifth station on Mount Fuji, Lake Ashi in Hakone and a shopping stop at the Gotemba outlets on the way back."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Four nights in Shinjuku for the two of you, with a city day, Disneyland and the mountain with the outlets."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka to Universal Studios",
+   "days": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 5 to 9",
+   "hotel": "APA Hotel Shin Osaka Ekimae",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Simple hotel opposite Shin-Osaka station, handy for the trains",
+   "activities": [
+    {
+     "name": "Osaka walking tour",
+     "day": 6,
+     "optional": false,
+     "match": "Osaka Walking Tour",
+     "description": "Half a day on foot through Dotonbori, the Kuromon market and the lanes around Shinsekai with a guide who knows where to eat."
+    },
+    {
+     "name": "Universal Studios Japan",
+     "day": 7,
+     "optional": false,
+     "match": "Universal Studios Tickets",
+     "description": "A full day at Universal Studios Japan with tickets included, home to Super Nintendo World and the Harry Potter area."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "Four nights in Osaka with a walking tour, Universal Studios Japan and two free days for Kyoto, Kobe or the food streets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Tokyo Disneyland",
+  "4": "Mount Fuji and Gotemba",
+  "5": "Bullet train to Osaka",
+  "6": "Osaka on foot",
+  "7": "Universal Studios Japan",
+  "8": "A free day in Osaka",
+  "9": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a guided day through the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in Shinjuku"
+  ],
+  "3": [
+   "Early breakfast, then across to Tokyo Disneyland",
+   "Admission tickets included for the full day",
+   "Evening free back in Shinjuku"
+  ],
+  "4": [
+   "Breakfast, then out of the city towards Mount Fuji",
+   "The fifth station on the mountain, weather permitting",
+   "Lake Ashi and the Hakone viewpoints",
+   "A shopping stop at the Gotemba outlets"
+  ],
+  "5": [
+   "Breakfast and check out, then transfer to the station",
+   "Bullet train south to Osaka",
+   "Check in opposite Shin-Osaka station",
+   "Rest of the day free in the city"
+  ],
+  "6": [
+   "Breakfast, then a half day walking tour of Osaka",
+   "Dotonbori and the Kuromon market stalls",
+   "The lanes around Shinsekai with your guide",
+   "Afternoon free in the city"
+  ],
+  "7": [
+   "Early breakfast, then across to Universal Studios Japan",
+   "Tickets included for the full day",
+   "Super Nintendo World and the Harry Potter area",
+   "Evening free in the city"
+  ],
+  "8": [
+   "Breakfast and a free day in Osaka",
+   "Optional: a day in Kyoto, fifteen minutes by bullet train",
+   "Optional: Osaka castle and its park",
+   "Optional: Kobe for beef and the harbour"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinjuku Washington Hotel Annex",
+  "2": "Shinjuku Washington Hotel Annex",
+  "3": "Shinjuku Washington Hotel Annex",
+  "4": "Shinjuku Washington Hotel Annex",
+  "5": "APA Hotel Shin Osaka Ekimae",
+  "6": "APA Hotel Shin Osaka Ekimae",
+  "7": "APA Hotel Shin Osaka Ekimae",
+  "8": "APA Hotel Shin Osaka Ekimae",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Two hotels, nine days and two free days. Couples who want Japan without a packing schedule book this one.",
+  "tip": "Kyoto is fifteen minutes from Shin-Osaka by bullet train, so use a free day for it and go early before the coaches arrive."
+ },
+ "summary": "Nine days for two between Tokyo and Osaka: four nights in Shinjuku with a city day, Tokyo Disneyland and the Mount Fuji fifth station with the Gotemba outlets, then four nights in Osaka with a walking tour, Universal Studios and free days for Kyoto or Kobe.",
+ "included": "Included: 8 nights with daily breakfast; bullet train from Tokyo to Osaka; private airport transfers; Tokyo sightseeing tour; Tokyo Disneyland tickets; Mount Fuji fifth station with Hakone and the Gotemba outlets; Osaka walking tour; Universal Studios Japan tickets.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

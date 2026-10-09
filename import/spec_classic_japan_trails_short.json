@@ -1,0 +1,248 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "classic-japan-trails",
+ "camel": "classicJapanTrailsShort",
+ "slug": "classic-japan-trails-short-group-tour",
+ "title": "Classic Japan Trails Short Group Tour",
+ "alt": "Matsumoto castle reflected in its moat, Japan",
+ "transport": "Coaches, trains and guided touring throughout",
+ "tag": "Group tour",
+ "tags": [
+  "Culture",
+  "Short trips"
+ ],
+ "price": 175968,
+ "route_cities": [
+  "Tokyo",
+  "Kyoto",
+  "Nagano",
+  "Ikaho",
+  "Nikko"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 8,
+  "transfers": 18,
+  "meals": 5
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Shinagawa Prince Hotel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large four star hotel beside Shinagawa station",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day through the city, from the Meiji shrine and the Imperial Palace gardens to the old temple lanes of Asakusa."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights beside Shinagawa station, with free time in Shinjuku and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel opposite Kyoto station, handy for the trains",
+   "activities": [
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day through the old capital, taking in the golden pavilion, a Zen garden and the torii gate paths above Fushimi."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "A night in the old capital with a guided afternoon through the temples and free time in the Gion lanes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Nagano",
+   "city": "Nagano",
+   "subtitle": "Nagano to Tsumago and Matsumoto",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel Metropolitan Nagano",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel attached to Nagano station",
+   "activities": [
+    {
+     "name": "Tsumago post town",
+     "day": 4,
+     "optional": false,
+     "match": "Leisure Time at Tsumago",
+     "description": "A preserved post town on the old Nakasendo road, where the wooden inns and shopfronts look much as travellers found them."
+    },
+    {
+     "name": "Matsumoto crow castle",
+     "day": 4,
+     "optional": false,
+     "match": "Crow Castle Tickets",
+     "description": "The black keep they call the crow castle, standing on its moat with the Alps behind it, an original from the sixteenth century."
+    }
+   ],
+   "program": {
+    "name": "Nagano",
+    "description": "A night in Nagano, reached through Tsumago on the old post road and the black keep at Matsumoto."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ikaho",
+   "city": "Shibukawa",
+   "subtitle": "Ikaho to the monkey park, Kusatsu and Nikko",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Moriaki Ryokan",
+   "accom": "1 night · Breakfast · Ryokan room · 3★ · Traditional inn at Ikaho hot spring, with tatami rooms and shared baths",
+   "activities": [
+    {
+     "name": "Zenkoji temple",
+     "day": 5,
+     "optional": false,
+     "match": "Zenkoji Temple Tickets",
+     "description": "Nagano's great temple, home to what is said to be the first Buddhist statue brought to Japan, kept hidden behind the altar."
+    },
+    {
+     "name": "Snow monkey park",
+     "day": 5,
+     "optional": false,
+     "match": "Snow Monkey Park Tickets",
+     "description": "The hot spring at Jigokudani where wild macaques sit chest deep in the steaming water, often with snow on their heads."
+    },
+    {
+     "name": "Kusatsu hot spring town",
+     "day": 5,
+     "optional": false,
+     "match": "Leisure Time in Kusatsu",
+     "description": "Free time in Kusatsu, where the hot water runs down wooden channels through the middle of the town square."
+    },
+    {
+     "name": "Nikko sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Nikko Sightseeing Tour",
+     "description": "The lacquered Toshogu shrine in its cedar forest, the Shinkyo bridge and the Kegon falls before the drive back to Tokyo."
+    }
+   ],
+   "program": {
+    "name": "Ikaho",
+    "description": "A ryokan night at a hot spring, with Zenkoji, the snow monkeys and Kusatsu on the way, and Nikko on the final morning."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo sightseeing",
+  "3": "Bullet train to Kyoto",
+  "4": "Tsumago and Matsumoto",
+  "5": "Snow monkeys and Ikaho",
+  "6": "Nikko and departure"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in beside Shinagawa station",
+   "Free time in the Shinjuku district",
+   "Evening at your own pace"
+  ],
+  "2": [
+   "Breakfast, then a guided day through Tokyo",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Asakusa and the Senso-ji temple lanes",
+   "Evening free in the city"
+  ],
+  "3": [
+   "Breakfast and check out, then the bullet train west",
+   "Check in opposite Kyoto station",
+   "A guided afternoon through the old capital",
+   "Free time in the Gion lanes in the evening"
+  ],
+  "4": [
+   "Breakfast and check out, then north into the mountains",
+   "Free time in the old post town of Tsumago",
+   "The crow castle at Matsumoto on its moat",
+   "Check in at your Nagano hotel"
+  ],
+  "5": [
+   "Breakfast, then Zenkoji temple in Nagano",
+   "The snow monkey park at Jigokudani",
+   "Free time in the hot spring town of Kusatsu",
+   "Ryokan night at Ikaho, tatami rooms and shared baths"
+  ],
+  "6": [
+   "Breakfast at the ryokan and check out",
+   "A guided morning at Nikko",
+   "The Toshogu shrine and the Shinkyo bridge",
+   "Transfer to Tokyo or the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Shinagawa Prince Hotel",
+  "2": "Shinagawa Prince Hotel",
+  "3": "Miyako Hotel Kyoto Hachijo",
+  "4": "Hotel Metropolitan Nagano",
+  "5": "Moriaki Ryokan",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Six days, four towns and a ryokan night. The shortest way to see the mountains as well as the cities.",
+  "tip": "Day five is the long one, with Zenkoji, the monkeys and Kusatsu before the inn. Keep your camera charged and your bag small."
+ },
+ "summary": "Six days on a short group tour: Tokyo with a guided city day, a night in Kyoto with its temples, the post town of Tsumago and Matsumoto castle, then the snow monkeys and a ryokan night at Ikaho before Nikko on the final morning.",
+ "included": "Included: 5 nights across four towns with daily breakfast, including a ryokan at Ikaho; coaches and trains throughout; guided sightseeing in Tokyo, Kyoto and Nikko; free time at Tsumago and Kusatsu; Matsumoto crow castle tickets; Zenkoji temple and snow monkey park tickets.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -1,0 +1,216 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "short-getaway-to-scenic-japan",
+ "camel": "scenicJapanThreeCities",
+ "slug": "scenic-japan-in-three-cities",
+ "title": "Scenic Japan in Three Cities",
+ "alt": "Itsukushima shrine torii gate at high tide, Miyajima",
+ "transport": "Shinkansen bullet train, private transfers and guided tours",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "First time"
+ ],
+ "price": 161537,
+ "route_cities": [
+  "Tokyo",
+  "Hiroshima",
+  "Miyajima",
+  "Kyoto",
+  "Nara",
+  "Osaka"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 3,
+  "transfers": 9,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Premier Hotel Cabin Shinjuku",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel in Shinjuku, minutes from the station",
+   "activities": [
+    {
+     "name": "Tokyo city tour with lunch",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Tokyo City Tour",
+     "description": "A full day by coach from the LOVE statue in Shinjuku through Meiji shrine, the Imperial Palace gardens and Asakusa, with lunch included."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights in Shinjuku to start, with a free first evening and a full guided city day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima to Miyajima",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Hotel Granvia Hiroshima",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Four star hotel attached to Hiroshima station",
+   "activities": [
+    {
+     "name": "Hiroshima and Miyajima tour",
+     "day": 4,
+     "optional": false,
+     "match": "Hiroshima and Miyajima Tour",
+     "description": "The Peace Memorial Park and museum in the morning, then the ferry to Miyajima for the floating torii gate and Itsukushima shrine."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "Two nights beside the station, with a quiet arrival day and the Peace Memorial Park paired with Miyajima."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Kyoto to Nara and Osaka",
+   "days": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "ibis Styles Kyoto Shijo",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Bright hotel on Shijo street, close to the Gion lanes",
+   "activities": [
+    {
+     "name": "Kyoto and Nara with buffet lunch",
+     "day": 6,
+     "optional": false,
+     "match": "Full-Day Tour to Kyoto & Nara",
+     "description": "A full day from Kyoto for Kinkaku-ji, the golden pavilion, then the deer park and Todai-ji temple in Nara, with a buffet lunch."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "Three nights in the old capital with a guided day to Nara, a free day for the temples and a short hop to Osaka to fly home."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tokyo",
+  "2": "Tokyo city tour",
+  "3": "Bullet train to Hiroshima",
+  "4": "Hiroshima and Miyajima",
+  "5": "On to Kyoto",
+  "6": "Kyoto and Nara",
+  "7": "A free day in Kyoto",
+  "8": "Departure from Osaka"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Narita or Haneda and transfer to your hotel",
+   "Check in at your Shinjuku hotel",
+   "Rest of the day free at your own pace",
+   "Optional: the Tokyo Metropolitan Building viewing decks, free of charge"
+  ],
+  "2": [
+   "Breakfast, then a full day coach tour of the city",
+   "Meiji shrine and the Imperial Palace gardens",
+   "Lunch included on the tour",
+   "Asakusa and the Senso-ji temple lanes"
+  ],
+  "3": [
+   "Breakfast and check out, then transfer to the station",
+   "Shinkansen bullet train west to Hiroshima",
+   "Check in at your hotel beside the station",
+   "Rest of the day free in the city"
+  ],
+  "4": [
+   "Breakfast, then the Peace Memorial Park and museum",
+   "The A-Bomb Dome and the memorial cenotaph",
+   "Ferry across to Miyajima island",
+   "The floating torii gate and Itsukushima shrine"
+  ],
+  "5": [
+   "Breakfast and check out, then back to the station",
+   "Bullet train east to Kyoto",
+   "Check in at your hotel on Shijo street",
+   "Optional: an evening walk through Gion and Pontocho"
+  ],
+  "6": [
+   "Breakfast, then a full day with your guide",
+   "Kinkaku-ji, the golden pavilion, on its pond",
+   "Buffet lunch included",
+   "The deer park and Todai-ji temple in Nara"
+  ],
+  "7": [
+   "Breakfast and a free day in Kyoto",
+   "Optional: the bamboo grove and monkey park at Arashiyama",
+   "Optional: Fushimi Inari's torii gate paths at dawn",
+   "Optional: Nishiki market and the Gion lanes"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to Osaka and on to Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B, L",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Premier Hotel Cabin Shinjuku",
+  "2": "Premier Hotel Cabin Shinjuku",
+  "3": "Hotel Granvia Hiroshima",
+  "4": "Hotel Granvia Hiroshima",
+  "5": "ibis Styles Kyoto Shijo",
+  "6": "ibis Styles Kyoto Shijo",
+  "7": "ibis Styles Kyoto Shijo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Three nights in Kyoto with one of them free is the right shape. Fushimi Inari at seven in the morning is worth the alarm.",
+  "tip": "Each hotel is a step from a main station, so the two travel days cost you almost nothing in time."
+ },
+ "summary": "Eight days across three cities: Shinjuku with a guided city day, two nights in Hiroshima for the Peace Memorial Park and Miyajima, then three in Kyoto with Nara, a free day and a short hop to Osaka for the flight home.",
+ "included": "Included: 7 nights with daily breakfast; bullet train from Tokyo to Hiroshima and on to Kyoto; private airport transfers; full day Tokyo city tour with lunch; Hiroshima and Miyajima tour; Kyoto and Nara day tour with buffet lunch.",
+ "not_included": "Not included: international flights; Japan visa fees; other lunches and dinners; travel insurance; personal expenses."
+}

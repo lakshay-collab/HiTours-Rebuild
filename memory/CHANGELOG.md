@@ -86,3 +86,17 @@ Workflow per trip: digest2.py <slug> -> write /app/import/spec_*.json -> build_t
 ### Thrillophilia imports
 - Bali/SE Asia batch finished: 36 trips live on Indonesia (old generic `indonesiaPackages` removed from the listing on request). Four source links were skipped as city-variant duplicates of trips already built; `rediscover-bali-in-6-days` 404s; `uncover-bali`, `highlights-of-bali`, `bali-honeymoon-special`, `bali-honeymoon-getaway` have itinerary days that contradict their duration labels.
 - Japan batch started: all 49 links extracted, 13 trips built, checked and registered; old generic `japanPackages` removed from the Japan listing on request. 36 Japan links still to build, including three that need a South Korea country page.
+
+### Japan import progress (9 Oct 2026, in flight)
+36 of 49 Japan links built, checked and registered (tripIndex + japanToursData). Still to build:
+chronicles-of-japan, offbeat-wonders-of-japan, panoramic-japan, scenic-trails-of-japan, japan-romance-trail,
+japan-autumn-highlights-in-tokyo-mt-fuji-hiroshima-and-osaka, best-of-japan-tokyo-and-hokkaido,
+japan-landscapes-and-legends, japan-south-korea-tour-package, getaway-to-south-korea-japan,
+south-korea-and-japan-group-tour. (38 of 49 built as of this note.)
+Process per trip: digest2.py <slug> -> write /app/import/spec_*.json -> build_trip.py -> check_trip.py -> register_trip.py <camel> japan.
+South Korea page is live at /asien/south-korea (southKoreaListingData.js, pages/SouthKoreaListing.jsx, tours/southKoreaToursData.js
+with an empty southKoreaProducts array - the first Korea trip must be added there by hand since register_trip.py needs an existing import line).
+
+Japan duplicates skipped (identical itinerary to an already built trip, only the marketing title differs):
+- japan-autumn-highlights-in-tokyo-mt-fuji-hiroshima-and-osaka = best-of-japan-tokyo-and-hokkaido (same hotels, same 9 days, INR 206000 vs 206044)
+Remaining to build after 40 of 49: chronicles-of-japan, offbeat-wonders-of-japan, panoramic-japan, scenic-trails-of-japan, japan-landscapes-and-legends, japan-south-korea-tour-package, getaway-to-south-korea-japan, south-korea-and-japan-group-tour.

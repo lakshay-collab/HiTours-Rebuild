@@ -1,0 +1,281 @@
+{
+ "cta_country": "japan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Japan",
+   "/asien/japan"
+  ]
+ ],
+ "source_slug": "southern-japan-highlights",
+ "camel": "southernJapanInlandSea",
+ "slug": "southern-japan-and-the-inland-sea",
+ "title": "Southern Japan and the Inland Sea",
+ "alt": "Kotohira shrine stairway through the cedars, Shikoku",
+ "transport": "Trains, coaches and a ferry, with guided touring throughout",
+ "tag": "Offbeat",
+ "tags": [
+  "Culture",
+  "Value"
+ ],
+ "price": 126222,
+ "route_cities": [
+  "Osaka",
+  "Himeji",
+  "Okayama",
+  "Kurashiki",
+  "Hiroshima",
+  "Matsuyama",
+  "Kobe"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 10,
+  "transfers": 14,
+  "meals": 5
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Osaka",
+   "city": "Osaka",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Candeo Hotels Osaka Namba",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in Namba with a rooftop bath house",
+   "activities": [],
+   "program": {
+    "name": "Osaka",
+    "description": "A first night in Namba, with the Dotonbori food streets a few minutes from the lobby."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Okayama",
+   "city": "Okayama",
+   "subtitle": "Okayama to Himeji",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "ANA Crowne Plaza Narita, Hiroshima",
+   "hotel_label": "ANA Crowne Plaza Okayama",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in central Okayama, near the Korakuen garden",
+   "activities": [
+    {
+     "name": "Himeji castle",
+     "day": 2,
+     "optional": false,
+     "match": "Visit to Himeji Castle",
+     "description": "The white heron castle, the finest surviving fortress in Japan and the first site here to be listed by UNESCO."
+    },
+    {
+     "name": "Okayama sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Okayama Sightseeing Tour",
+     "description": "The Korakuen garden, counted among the three great gardens of Japan, and the black keep of Okayama castle beside it."
+    }
+   ],
+   "program": {
+    "name": "Okayama",
+    "description": "A night in Okayama, with Himeji castle on the way west and the Korakuen garden in the afternoon."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima to Kurashiki and Miyajima",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hilton Hiroshima",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel in the centre, walking distance from the park",
+   "activities": [
+    {
+     "name": "Kurashiki canal quarter",
+     "day": 3,
+     "optional": false,
+     "match": "Leisure Time in Kurashiki",
+     "description": "Free time in the old merchant quarter, where white walled storehouses line a willow canal that still has punts on it."
+    },
+    {
+     "name": "Hiroshima walking tour",
+     "day": 3,
+     "optional": false,
+     "match": "Hiroshima Walking Tour",
+     "description": "On foot through the Peace Memorial Park, the cenotaph and the A-Bomb Dome with a guide who tells the city's story properly."
+    },
+    {
+     "name": "Itsukushima shrine",
+     "day": 3,
+     "optional": false,
+     "match": "Visit to Itsukushima Shrine",
+     "description": "The ferry to Miyajima for the shrine built out over the water, with its torii gate standing in the sea at high tide."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "A night in Hiroshima, with Kurashiki's canals on the way and the island shrine at Miyajima the same day."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Matsuyama",
+   "city": "Matsuyama",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "ANA Crowne Plaza Matsuyama, an IHG Hotel",
+   "hotel_label": "ANA Crowne Plaza Matsuyama",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel on Shikoku island, close to the castle hill",
+   "activities": [
+    {
+     "name": "Matsuyama castle by cable car",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Matsuyama Castle with Cable Car Ride",
+     "description": "A cable car up the hill to one of only twelve original castle keeps left in Japan, with the inland sea spread out below."
+    },
+    {
+     "name": "Ishiteji temple",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Ishite Ji Temple",
+     "description": "A pilgrimage temple on the Shikoku circuit, with its gate, three storey pagoda and cave shrine behind the main hall."
+    },
+    {
+     "name": "Dogo Onsen",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Dogo Onsen",
+     "description": "The oldest hot spring bath house in the country, a wooden warren of pools said to be three thousand years old."
+    }
+   ],
+   "program": {
+    "name": "Matsuyama",
+    "description": "A night on Shikoku island, reached by boat, with the original castle keep, a pilgrimage temple and Dogo Onsen."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Kobe",
+   "city": "Kobe",
+   "subtitle": "Kobe to Kotohira and Naruto",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Kobe Meriken Park Oriental Hotel",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Four star hotel out on the harbour pier at Meriken Park",
+   "activities": [
+    {
+     "name": "Kotohira shrine, Ritsurin garden and the Naruto bridge",
+     "day": 5,
+     "optional": false,
+     "match": "Journey from Matsuyama to Kobe",
+     "description": "A touring day across Shikoku: the hillside Kotohira shrine, the landscaped Ritsurin garden and the bridge above the Naruto whirlpools."
+    },
+    {
+     "name": "Kobe earthquake memorial museum",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Kobe Earthquake Memorial Museum",
+     "description": "The museum built after the 1995 quake, which explains in plain terms what happened to the city and how it rebuilt."
+    }
+   ],
+   "program": {
+    "name": "Kobe",
+    "description": "A last night on the Kobe waterfront, reached on a touring day through Shikoku's shrines, gardens and whirlpools."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Osaka",
+  "2": "Himeji castle and Okayama",
+  "3": "Kurashiki, Hiroshima and Miyajima",
+  "4": "By boat to Matsuyama",
+  "5": "Shikoku gardens and Kobe",
+  "6": "Kobe and departure"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Kansai Airport and transfer to your hotel",
+   "Check in at Namba in Osaka",
+   "Rest of the day free at your own pace",
+   "Optional: the Dotonbori canal and Kuromon market"
+  ],
+  "2": [
+   "Breakfast and check out, then west along the inland sea",
+   "Himeji castle, the white heron keep",
+   "The Korakuen garden and Okayama castle",
+   "Check in at your Okayama hotel"
+  ],
+  "3": [
+   "Breakfast, then the canal quarter at Kurashiki",
+   "On to Hiroshima for a walking tour of the park",
+   "The cenotaph and the A-Bomb Dome",
+   "Ferry across to Miyajima for Itsukushima shrine"
+  ],
+  "4": [
+   "Breakfast and check out, then the boat to Shikoku",
+   "A cable car up to Matsuyama castle",
+   "Ishiteji temple and its cave shrine",
+   "Dogo Onsen, the oldest bath house in Japan"
+  ],
+  "5": [
+   "Breakfast, then a touring day towards Kobe",
+   "Kotohira shrine on its long stone stairway",
+   "Ritsurin garden, one of the finest in the country",
+   "The bridge above the Naruto whirlpools, then Kobe"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "The Kobe earthquake memorial museum",
+   "Transfer to Osaka or Kansai Airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Candeo Hotels Osaka Namba",
+  "2": "ANA Crowne Plaza Okayama",
+  "3": "Hilton Hiroshima",
+  "4": "ANA Crowne Plaza Matsuyama, an IHG Hotel",
+  "5": "Kobe Meriken Park Oriental Hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aiko",
+  "image": "/experts/riya.webp",
+  "role": "Japan expert at Hi Tours",
+  "quote": "Six days along the inland sea with ten included visits and not one of them crowded. This is the Japan regulars come back for.",
+  "tip": "The boat to Matsuyama is part of the pleasure, not just transport. Sit outside and watch the islands go past."
+ },
+ "summary": "Six days along the Seto inland sea: Osaka, then Himeji castle with Okayama's Korakuen garden, Hiroshima with Kurashiki and Miyajima, a boat across to Matsuyama for its castle and Dogo Onsen, and a last night on the Kobe waterfront.",
+ "included": "Included: 5 nights across five towns with daily breakfast; trains, coaches and the ferry to Shikoku; Himeji castle entry; Okayama sightseeing tour; free time at Kurashiki; Hiroshima walking tour and the visit to Itsukushima shrine; Matsuyama castle with the cable car, Ishiteji temple and Dogo Onsen; Kotohira shrine, Ritsurin garden and the Naruto bridge; Kobe earthquake memorial museum.",
+ "not_included": "Not included: international flights; Japan visa fees; lunches and dinners; travel insurance; personal expenses."
+}
