@@ -62,7 +62,7 @@ export const tours = {
 
 export const products = kazakhstanProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Kazakhstan trip', bg: wide(IMG.RAW.mountains2, 2000) };
+export const planner = { ...egyptPlanner, h3: 'Customize your Kazakhstan trip', bg: wide(IMG.RAW.mountains2, 2000) };
 
 export const reviews = {
   h2: 'What customers say about booking Kazakhstan with Hi Tours',

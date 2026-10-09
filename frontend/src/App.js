@@ -39,6 +39,8 @@ import About from './pages/About';
 import Care from './pages/Care';
 import { Terms, Privacy } from './pages/Legal';
 import Press from './pages/Press';
+import Careers from './pages/Careers';
+import Sitemap from './pages/Sitemap';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
 
 const COUNTRY_ROOTS = [
@@ -160,6 +162,8 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/press" element={<Press />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/sitemap" element={<Sitemap />} />
         </Routes>
         </LeadModalProvider>
       </BrowserRouter>

@@ -72,6 +72,14 @@ export default function Header({ overlay = false, floating = false }) {
     setBannerOpen(false);
   };
 
+  // Seen once per session: mark immediately, then fade the sale bar out after 15s.
+  useEffect(() => {
+    if (!bannerOpen) return undefined;
+    try { sessionStorage.setItem(BANNER_KEY, '1'); } catch (e) { /* noop */ }
+    const t = setTimeout(() => setBannerOpen(false), 15000);
+    return () => clearTimeout(t);
+  }, [bannerOpen]);
+
   const hoverIn = () => { clearTimeout(hoverTimer.current); setAdviceOpen(true); };
   const hoverOut = () => { hoverTimer.current = setTimeout(() => setAdviceOpen(false), 120); };
 
@@ -84,7 +92,7 @@ export default function Header({ overlay = false, floating = false }) {
   const dividerCls = overlay ? 'bg-white/30' : 'bg-outline-variant';
 
   const banner = bannerOpen ? (
-    <div className={`relative text-white px-4 sm:px-10 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
+    <div className={`relative text-white px-10 sm:px-12 py-2 t-body-md text-center overflow-visible ${SALE ? 'sale-topbar' : 'bg-deep-water'}`} data-testid="top-banner">
       {SALE ? (
         <SaleTooltip testId="top-banner-sale">
           <span className="relative z-[1] inline-flex items-center justify-center gap-2 flex-wrap cursor-default">
@@ -99,11 +107,9 @@ export default function Header({ overlay = false, floating = false }) {
         </SaleTooltip>
       ) : nav.banner}
       {SALE && <Snow />}
-      {!SALE && (
-        <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[2]">
-          <X size={18} strokeWidth={2} />
-        </button>
-      )}
+      <button onClick={dismissBanner} aria-label="Dismiss" data-testid="banner-close" className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white transition-colors z-[3]">
+        <X size={18} strokeWidth={2} />
+      </button>
     </div>
   ) : null;
 

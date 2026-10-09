@@ -60,7 +60,7 @@ export const tours = {
 
 export const products = malaysiaProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Malaysia trip', bg: ct('6tQ0fuewJsT1XGyPtk1feM/46e2bf106f4544461abd40528a72610e/Sonnenaufgang_Wolken_Cameron-Highlands_Malaysia.png').replace('w=1080', 'w=2000') };
+export const planner = { ...egyptPlanner, h3: 'Customize your Malaysia trip', bg: ct('6tQ0fuewJsT1XGyPtk1feM/46e2bf106f4544461abd40528a72610e/Sonnenaufgang_Wolken_Cameron-Highlands_Malaysia.png').replace('w=1080', 'w=2000') };
 
 export const reviews = {
   h2: 'What customers say about booking Malaysia with Hi Tours',

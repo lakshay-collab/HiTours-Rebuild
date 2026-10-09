@@ -296,37 +296,21 @@ export const brandFeatures = {
 export const recommended = { h2: 'Other Egypt holidays you may like' };
 
 export const planner = {
-  h3: 'Plan your Egypt trip',
-  question: 'For how many people are you planning your trip?',
-  rows: [
-    { label: 'Adults', sub: '13+ years', value: 2, min: 1 },
-    { label: 'Children', sub: '2 to 12 years', value: 0, min: 0 },
-    { label: 'Infants', sub: 'Under 2 years', value: 0, min: 0 }
-  ],
-  next: 'Continue',
-  social: '4,00,000+ travellers trust Hi Tours',
-  formTitle: 'Start customising your trip',
-  formSub: 'A few quick details and your Hi Tours expert takes it from here — free, no obligation.',
+  h3: 'Customize your Egypt trip',
+  social: 'Over one million happy travellers trust Hi Tours',
   nameLabel: 'Full name',
   namePlaceholder: 'e.g. Priya Sharma',
   phoneLabel: 'Phone number',
   phonePlaceholder: '98765 43210',
   emailLabel: 'Email address',
   emailPlaceholder: 'you@example.com',
-  cta: 'Design Your Escape',
-  ctaIdle: 'Fill above to design your escape',
+  cta: 'Customize my escape',
   sending: 'Sending…',
   successTitle: 'Thank you!',
   successText: 'Your request is in. A Hi Tours expert will reach out shortly to build your trip.',
-  known: 'As seen in:',
+  known: 'Our accreditations:',
   bg: '/egypt/planner-bg.jpg',
-  decoration: '/egypt/L.svg',
   avatars: ['/egypt/tourlaner1.webp', '/egypt/tourlaner2.webp', '/egypt/tourlaner3.webp', '/egypt/tourlaner4.webp'],
-  press: [
-    { src: '/egypt/sueddeutsche-zeitung.svg', alt: 'Süddeutsche Zeitung', w: 96, h: 36 },
-    { src: '/egypt/stern.svg', alt: 'Stern', w: 96, h: 33 },
-    { src: '/egypt/die-zeit.svg', alt: 'Die Zeit', w: 123, h: 19 }
-  ]
 };
 
 export const crumbs = [

@@ -1,30 +1,16 @@
 import React, { useState } from 'react';
 import { planner } from '../../egyptListingData';
-import { CheckCircleIcon, MinusIcon, PlusIcon } from './EgyptIcons';
+import { CheckCircleIcon } from './EgyptIcons';
 import PhoneInput, { EMPTY_PHONE, phoneError, phonePayload } from './PhoneInput';
+import FlightPath from '../FlightPath';
+import { GoogleLogo, TripAdvisorLogo } from '../Rating';
+import { ratings } from '../../mock';
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL;
 
 const inputCls = 'h-12 w-full rounded-lg border border-[#C4CBD0] bg-white px-3 eg-body-lg text-[#002131] focus:border-[#308BB6] focus:outline-none';
 
-function CounterRow({ row, value, onChange, prefix }) {
-  const dis = value <= row.min;
-  return (
-    <div className="flex items-center justify-between gap-2 py-4" data-testid={`${prefix}-row`}>
-      <div>
-        <p className="eg-title-md text-[#002131]">{row.label}</p>
-        <span className="block eg-body-md text-[#174358]">{row.sub}</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <button type="button" disabled={dis} onClick={() => onChange(value - 1)} className={`w-10 h-10 rounded-full border border-[#6F777C] text-[#174358] flex items-center justify-center ${dis ? 'opacity-40' : 'hover:bg-black/5'}`} aria-label="Fewer" data-testid={`${prefix}-minus`}><MinusIcon size={24} /></button>
-        <span className="w-5 text-center eg-title-md text-[#002131]" data-testid={`${prefix}-value`}>{value}</span>
-        <button type="button" onClick={() => onChange(value + 1)} className="w-10 h-10 rounded-full border border-[#6F777C] text-[#174358] flex items-center justify-center hover:bg-black/5" aria-label="More" data-testid={`${prefix}-plus`}><PlusIcon size={24} /></button>
-      </div>
-    </div>
-  );
-}
-
-function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix, step, setStep, vals, setVals }) {
+function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix }) {
   if (status === 'done') {
     return (
       <div className="py-8 flex flex-col items-center text-center gap-2" data-testid={`${prefix}-success`}>
@@ -34,26 +20,8 @@ function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix, st
       </div>
     );
   }
-  if (step === 0 && data.rows) {
-    return (
-      <div data-testid={`${prefix}-step-passengers`}>
-        <h3 className="eg-title-lg text-[#002131] text-center">{data.question}</h3>
-        <div className="mt-[33px] rounded-xl border border-[#C4CBD0] px-4">
-          {data.rows.map((r, i) => <CounterRow key={r.label} row={r} value={vals[i]} onChange={(v) => setVals(vals.map((x, k) => (k === i ? Math.max(r.min, v) : x)))} prefix={prefix} />)}
-        </div>
-        <div className="mt-[104px]">
-          <div className="h-[2px] bg-[#E4E3DB] rounded-full"><div className="h-full w-[12.5%] bg-[#174358] rounded-full" /></div>
-          <button type="button" onClick={() => setStep(1)} className="eg-btn-filled w-full h-10 mt-4 eg-label-lg" data-testid={`${prefix}-next`}>{data.next}</button>
-        </div>
-      </div>
-    );
-  }
   return (
     <form onSubmit={submit} className="flex flex-col gap-4" data-testid={`${prefix}-form`}>
-      <div className="flex flex-col gap-1 text-center">
-        <h3 className="eg-title-lg text-[#002131]">{data.formTitle}</h3>
-        <p className="eg-body-md text-[#174358]">{data.formSub}</p>
-      </div>
       <div className="rounded-xl border border-[#C4CBD0] p-4 flex flex-col gap-4">
         <label className="flex flex-col gap-1">
           <span className="eg-label-lg text-[#002131]">{data.nameLabel}</span>
@@ -69,9 +37,8 @@ function LeadForm({ data, form, set, setPhone, status, valid, submit, prefix, st
         </label>
       </div>
       {status === 'error' && <p className="eg-body-md text-[#B42318]" data-testid={`${prefix}-error`}>Something went wrong. Please try again.</p>}
-      {data.rows && <div className="h-[2px] bg-[#E4E3DB] rounded-full"><div className="h-full w-[25%] bg-[#174358] rounded-full" /></div>}
       <button type="submit" disabled={!valid || status === 'sending'} className="eg-btn-filled w-full !h-12 eg-label-lg disabled:opacity-60 disabled:cursor-not-allowed" data-testid={`${prefix}-submit`}>
-        {status === 'sending' ? data.sending : (valid ? data.cta : (data.ctaIdle || data.cta))}
+        {status === 'sending' ? data.sending : data.cta}
       </button>
     </form>
   );
@@ -86,13 +53,29 @@ const Social = ({ data, size = 'w-6 h-6' }) => (
   </div>
 );
 
+// ISO certification + live review scores, shown under the form instead of press logos.
+const Accreditations = ({ label, className = '' }) => (
+  <div className={`flex flex-wrap items-center justify-center gap-x-4 gap-y-2 ${className}`} data-testid="eg-planner-accreditations">
+    <span className="eg-title-md text-[#002131] whitespace-nowrap">{label}</span>
+    <span className="flex items-center gap-2 whitespace-nowrap" data-testid="eg-planner-acc-iso">
+      <img src="/badges/iso45001-t.png" alt="ISO 45001 certified" className="h-9 w-auto" />
+    </span>
+    <span className="w-px h-6 bg-[#C4CBD0] hidden sm:block" />
+    <span className="flex items-center gap-2 whitespace-nowrap eg-body-md text-[#174358]" data-testid="eg-planner-acc-google">
+      <GoogleLogo size={18} />Rated <b className="font-semibold text-[#002131]">{ratings.google.score}</b> on Google
+    </span>
+    <span className="w-px h-6 bg-[#C4CBD0] hidden sm:block" />
+    <span className="flex items-center gap-2 whitespace-nowrap eg-body-md text-[#174358]" data-testid="eg-planner-acc-tripadvisor">
+      <TripAdvisorLogo size={18} />Rated <b className="font-semibold text-[#002131]">{ratings.tripadvisor.score}</b> on TripAdvisor
+    </span>
+  </div>
+);
+
 const overlay = 'absolute inset-0 bg-[linear-gradient(135deg,rgba(0,33,49,0.72)_0%,rgba(23,67,88,0.45)_60%,rgba(48,139,182,0.35)_100%)]';
 
 export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 lg:px-10', titleClass = 'eg-display-sm', data = planner, tripTitle = '', source = 'egypt-planner' }) {
   const [form, setForm] = useState({ name: '', phone: EMPTY_PHONE, email: '' });
   const [status, setStatus] = useState('idle'); // idle | sending | done | error
-  const [step, setStep] = useState(0);
-  const [vals, setVals] = useState((data.rows || []).map((r) => r.value));
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
   const setPhone = (v) => setForm((f) => ({ ...f, phone: v }));
   const valid = form.name.trim().length > 1 && !phoneError(form.phone) && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email.trim());
@@ -105,7 +88,7 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
       const res = await fetch(`${BACKEND}/api/leads`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: form.name.trim(), ...phonePayload(form.phone), email: form.email.trim(), trip_title: tripTitle, source, passengers: data.rows ? Object.fromEntries(data.rows.map((r, i) => [r.label.toLowerCase(), vals[i]])) : undefined })
+        body: JSON.stringify({ name: form.name.trim(), ...phonePayload(form.phone), email: form.email.trim(), destination: (data.h3 || '').replace(/^Customize your\s+/i, '').replace(/\s+trip$/i, ''), trip_title: tripTitle, source })
       });
       if (!res.ok) throw new Error('bad');
       setStatus('done');
@@ -113,13 +96,13 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
       setStatus('error');
     }
   };
-  const formProps = { data, form, set, setPhone, status, valid, submit, step, setStep, vals, setVals };
+  const formProps = { data, form, set, setPhone, status, valid, submit };
 
   return (
     <section className={className} data-testid="eg-planner">
-      <div className="relative h-[760px] hidden lg:block" style={{ backgroundImage: `url(${data.decoration})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center 500px', backgroundSize: '1200px 258px' }}>
+      <div className="relative h-[680px] hidden lg:block">
         <div className="relative h-[372px] rounded-2xl overflow-hidden">
-          <img src={data.bg} alt="Egypt" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <img src={data.bg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className={overlay} />
           <div className="absolute inset-x-0 top-0 pt-[43px] px-6 flex flex-col items-center gap-1 text-white">
             <h3 className={`${titleClass} text-white text-center`}>{data.h3}</h3>
@@ -131,29 +114,25 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
           <div className="pt-7 px-16">
             <LeadForm {...formProps} prefix="eg-planner" />
           </div>
-          <div className="mt-6 h-16 rounded-b-xl bg-[#F0EEE6] px-8 py-3 flex items-center gap-8">
-            <span className="eg-title-md text-[#002131] whitespace-nowrap">{data.known}</span>
-            <div className="flex-1 flex items-center justify-center gap-4">
-              {data.press.map((l, i) => (
-                <React.Fragment key={l.alt}>
-                  {i > 0 && <span className="w-px h-6 bg-[#C4CBD0]" />}
-                  <img src={l.src} alt={l.alt} width={l.w} height={l.h} style={{ width: l.w, height: l.h }} />
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
+          <Accreditations label={data.known} className="mt-6 min-h-16 rounded-b-xl bg-[#F0EEE6] px-8 py-3" />
+        </div>
+
+        <div className="absolute inset-x-0 bottom-0 flex items-end justify-center gap-6 pointer-events-none" data-testid="eg-planner-flight">
+          <FlightPath side="left" className="w-[220px] h-auto" />
+          <FlightPath side="right" className="w-[220px] h-auto" />
         </div>
       </div>
 
       {/* Compact layout below lg */}
       <div className="lg:hidden relative rounded-2xl overflow-hidden">
-        <img src={data.bg} alt="Egypt" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <img src={data.bg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
         <div className={overlay} />
         <div className="relative p-4 pt-6 flex flex-col items-center gap-4">
           <h3 className="eg-display-sm text-white text-center">{data.h3}</h3>
           <Social data={data} />
           <div className="w-full max-w-[650px] rounded-xl bg-[#FEFCF4] p-4" data-testid="eg-planner-card-mobile">
             <LeadForm {...formProps} prefix="eg-planner-m" />
+            <Accreditations label={data.known} className="mt-4 pt-4 border-t border-[#E4E3DB]" />
           </div>
         </div>
       </div>

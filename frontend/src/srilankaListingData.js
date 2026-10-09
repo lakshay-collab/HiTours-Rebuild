@@ -63,7 +63,7 @@ export const tours = {
 
 export const products = srilankaProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Sri Lanka trip', bg: ct('52ZxIJbx0zC3QmeXtTjVpo/b109083307d8ee990f394165679c4ccc/Sri_Lanka__Ella__Neun-Bogen-Br%C3%BCcke.jpg').replace('w=1080', 'w=2000') };
+export const planner = { ...egyptPlanner, h3: 'Customize your Sri Lanka trip', bg: ct('52ZxIJbx0zC3QmeXtTjVpo/b109083307d8ee990f394165679c4ccc/Sri_Lanka__Ella__Neun-Bogen-Br%C3%BCcke.jpg').replace('w=1080', 'w=2000') };
 
 export const reviews = {
   ...egyptReviews,

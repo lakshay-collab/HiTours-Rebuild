@@ -83,7 +83,7 @@ const siamProduct = {
 
 export const products = [siamProduct, ...thailandProducts];
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Thailand trip', bg: ct('SM5V0pOzqkcZYtxbL69wU/62ac1dea663f5d24355ac47b579002c5/THA_-_-FreedomBeach.png').replace('w=1080', 'w=2000') };
+export const planner = { ...egyptPlanner, h3: 'Customize your Thailand trip', bg: ct('SM5V0pOzqkcZYtxbL69wU/62ac1dea663f5d24355ac47b579002c5/THA_-_-FreedomBeach.png').replace('w=1080', 'w=2000') };
 
 export const reviews = {
   h2: 'What customers say about booking Thailand with Hi Tours',

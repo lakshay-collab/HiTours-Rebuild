@@ -63,7 +63,7 @@ export const tours = {
 
 export const products = vietnamProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Vietnam trip', bg: ct('5ujKcctP43Y7HHOFAKvWIU/4e29a70d5c0657d946762c42bd2f1eb5/Sapa_Vietname.jpg').replace('w=1080', 'w=2000') };
+export const planner = { ...egyptPlanner, h3: 'Customize your Vietnam trip', bg: ct('5ujKcctP43Y7HHOFAKvWIU/4e29a70d5c0657d946762c42bd2f1eb5/Sapa_Vietname.jpg').replace('w=1080', 'w=2000') };
 
 export const reviews = {
   h2: 'What customers say about booking Vietnam with Hi Tours',

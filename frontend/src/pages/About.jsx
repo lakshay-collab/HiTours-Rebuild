@@ -131,7 +131,7 @@ const Careers = () => (
         <Eyebrow light>{careers.eyebrow}</Eyebrow>
         <h2 className="eg-display-sm">{careers.h2}</h2>
         <p className="eg-body-lg text-white/85">{careers.text}</p>
-        <a href={careers.href} target="_blank" rel="noreferrer" className="mt-2 self-start inline-flex items-center gap-2 h-12 px-7 rounded-full bg-white text-[#002131] eg-title-md hover:bg-[#E0F7FF] transition-colors" data-testid="about-careers-button">{careers.button}<ArrowUpRight size={18} /></a>
+        <a href={careers.href} className="mt-2 self-start inline-flex items-center gap-2 h-12 px-7 rounded-full bg-white text-[#002131] eg-title-md hover:bg-[#E0F7FF] transition-colors" data-testid="about-careers-button">{careers.button}<ArrowUpRight size={18} /></a>
       </div>
     </div>
   </section>

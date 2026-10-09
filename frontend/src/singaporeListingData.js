@@ -69,7 +69,7 @@ export const tours = {
 
 export const products = singaporeProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Singapore trip', bg: un('photo-1605425183435-25b7e99104a4', 2000) };
+export const planner = { ...egyptPlanner, h3: 'Customize your Singapore trip', bg: un('photo-1605425183435-25b7e99104a4', 2000) };
 
 export const reviews = {
   h2: 'What customers say about booking Singapore with Hi Tours',

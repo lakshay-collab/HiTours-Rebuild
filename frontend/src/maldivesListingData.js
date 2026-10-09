@@ -62,7 +62,7 @@ export const tours = {
 
 export const products = maldivesProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Maldives trip', bg: wide(IMG.RAW.lagoon, 2000) };
+export const planner = { ...egyptPlanner, h3: 'Customize your Maldives trip', bg: wide(IMG.RAW.lagoon, 2000) };
 
 export const reviews = {
   h2: 'What customers say about booking the Maldives with Hi Tours',

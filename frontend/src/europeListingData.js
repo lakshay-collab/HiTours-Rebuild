@@ -63,7 +63,7 @@ export const tours = {
 
 export const products = europeProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Europe trip', bg: E('alps') };
+export const planner = { ...egyptPlanner, h3: 'Customize your Europe trip', bg: E('alps') };
 
 export const reviews = {
   h2: 'What customers say about booking Europe with Hi Tours',

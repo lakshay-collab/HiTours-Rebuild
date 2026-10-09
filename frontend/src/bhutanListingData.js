@@ -62,7 +62,7 @@ export const tours = {
 
 export const products = bhutanProducts;
 
-export const planner = { ...egyptPlanner, h3: 'Plan your Bhutan trip', bg: wide(IMG.RAW.punakha, 2000) };
+export const planner = { ...egyptPlanner, h3: 'Customize your Bhutan trip', bg: wide(IMG.RAW.punakha, 2000) };
 
 export const reviews = {
   h2: 'What customers say about booking Bhutan with Hi Tours',

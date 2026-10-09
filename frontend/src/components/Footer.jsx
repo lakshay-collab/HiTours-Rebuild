@@ -131,7 +131,7 @@ export default function Footer() {
                   <li key={l}>{FOOTER_HREFS[l]
                     ? <Link to={FOOTER_HREFS[l]} className="t-body-md text-onsurface hover:underline text-left" data-testid={`footer-link-${l.toLowerCase().replace(/\s/g, '-')}`}>{l}</Link>
                     : l === 'Careers'
-                      ? <a href={CAREERS_URL} target="_blank" rel="noreferrer" className="t-body-md text-onsurface hover:underline text-left" data-testid="footer-link-careers">{l}</a>
+                      ? <Link to={CAREERS_URL} className="t-body-md text-onsurface hover:underline text-left" data-testid="footer-link-careers">{l}</Link>
                     : l === 'Reviews'
                       ? <button onClick={() => goToSection('moments')} className="t-body-md text-onsurface hover:underline text-left" data-testid="footer-link-reviews">{l}</button>
                       : l === 'Travel with us' || l === 'More destinations'

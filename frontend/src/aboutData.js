@@ -4,12 +4,12 @@ import { destinations } from './destinationsData';
 const CT = 'https://images.ctfassets.net/rc3dlxapnu6k';
 const TL = 'https://www.tourlane.com/cfa-assets/media';
 
-export const CAREERS_URL = 'https://www.linkedin.com/company/hi-tours-group/jobs/';
+export const CAREERS_URL = '/careers';
 
 export const pageTabs = [
   { label: 'About Us', to: '/about' },
   { label: 'Booking Policy', to: '/care' },
-  { label: 'Careers', href: CAREERS_URL }
+  { label: 'Careers', to: CAREERS_URL }
 ];
 
 export const hero = {
