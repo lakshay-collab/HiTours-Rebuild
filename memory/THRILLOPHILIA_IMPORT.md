@@ -29,6 +29,28 @@ Instructions for the Emergent agent. When I send Thrillophilia links, turn each 
 6. **No design changes.** Do not edit any component, style, route or other trip.
 
 
+## 0. BATCH MODE (how a run of many links is executed)
+
+Nothing in this section changes the trip page, the data file or the report. It only fixes the order of work.
+
+1. Write every link to `/app/import/urls_<batch>.txt`, one per line. Run links in batches of 10. 30 links = 3 batches.
+2. Per batch, in this order:
+   1. `python3 /app/scripts/thrillophilia/extract_batch.py /app/import/urls_<batch>.txt` → `/app/import/<slug>/raw.json` + `batch_summary.json`
+   2. one spec JSON per trip → `python3 /app/scripts/thrillophilia/build_trip.py <spec.json>` → `frontend/src/tours/<camel>Data.js`
+   3. `python3 /app/scripts/thrillophilia/register_trip.py <camelName> <country> [<country2> ...]`
+   4. end-of-run gate (step 4 below)
+   5. the report from section 7, one block per link, unchanged
+3. **Resume rule:** a link whose `/app/import/<slug>/raw.json` already exists is not extracted again. On any retry, reuse the existing raw.json. Never re-open Thrillophilia for a link that already extracted.
+4. **One end-of-run gate per batch,** never per trip:
+   1. `check_trip.py` for every new trip
+   2. `check_hotel_photos.py`
+   3. `check_card_images.py <all data files of each affected country>`
+   4. `suggest_highlights.py <new data files> --min 1 --top 40`
+   5. one `yarn build` (or one dev-server render check) at the very end
+5. **Fail fast per link, never per batch.** A link that trips a stop rule in section 1 is dropped, listed in the report with the reason, and the batch continues. Do not pause the run to ask about one bad link.
+6. Links of different countries can be mixed freely in one batch. Group the spec writing by country so card-image uniqueness is checked once per country.
+
+
 ## 1. EXTRACT (per link)
 
 Use Playwright and headless Chromium. Use the default trip duration selected on the page. Capture:
@@ -259,6 +281,31 @@ export const <camelName>Product = {
   price: detail.price, images: cardImages
 };
 ```
+
+
+## 5B. COUNTRY ROUTES AND FILES
+
+| Region | Path prefix | Countries live today |
+|---|---|---|
+| Asia | `/asien/<country>` | thailand, vietnam, sri-lanka (file `srilanka`), malaysia, singapore, maldives, kazakhstan, bhutan, laos, japan, indonesia, china, cambodia, philippines |
+| Europe | `/europa/<country>` | iceland, italy, greece, norway, ireland, spain, portugal, croatia, england, scotland, finland, sweden, plus `/europa` for multi country |
+| Africa | `/afrika/aegypten` | egypt |
+
+For a live country only the two edits in section 5 are needed: `EgyptDetail.jsx` and `frontend/src/tours/<country>ToursData.js`.
+
+
+## 5C. NEW COUNTRY (no listing page yet)
+
+If a link is for a country that is not in the table above, build the country first, then the trip. Clone the newest country of the same region (Sweden for Europe, Laos for Asia) and change only content. No design, component or style changes.
+
+1. `frontend/src/<country>Packages.js` - clone `swedenPackages.js`: hero image, destination block, city images.
+2. `frontend/src/<country>ListingData.js` - clone `swedenListingData.js`: destination, holidaysPath, crumbs, hero, intro, tours, planner, reviews, FAQ. Copy written fresh under the section 4 writing rules.
+3. `frontend/src/tours/<country>ToursData.js` - clone `laosToursData.js` (uses `createAdapters` from `vietnamToursData`). Set base `/asien` or `/europa`, ctaHref, expert, crumbs.
+4. `frontend/src/pages/<Country>Listing.jsx` - clone `SwedenListing.jsx`: default export `DestinationListing`, named export `<Country>Holidays` wrapping `EgyptHolidays`.
+5. `frontend/src/App.js` - import `<Country>Holidays`, add the country root to the redirect list, add `/(asien|europa)/<country>/holidays` and `/holidays/:style` routes.
+6. Register the country in: `holidays/countryProducts.js`, `tours/tripIndex.js`, `catalog.js`, `destinationsData.js`, `relatedAsia.js` or `relatedEurope.js`, `components/Destinations.jsx`, `components/DesktopMenus.jsx`, `components/MobileDrawer.jsx`, `components/SearchBar.jsx`, `components/Footer.jsx`, `sitemapData.js`, `reviews/dynamicReviews.js` (popularity tier and landmark lines).
+7. Then do the normal section 5 edits for the trip, and add the country's new experiences and themes per section 6 point 12.
+8. Report the new country page path with the trip blocks.
 
 
 ## 6. ONE CHECK SCRIPT (all trips together)

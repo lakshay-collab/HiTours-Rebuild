@@ -38,3 +38,7 @@
 - Intermediate country listing pages are hidden (components kept in /pages, no longer routed).
 - Region pages (/asien, /europa) unchanged.
 - Breadcrumbs drop the now-redundant country crumb on country holidays pages (EgyptHolidays.jsx).
+
+## 2026-06 Our retail office page + Thrillophilia batch mode
+- /our-office: banner now "Our retail office" with new pan-India copy; removed head office / Hi Tours India Gurgaon / planning studio copy; Sales and Operations opening times always visible as two cards; map is a shorter rounded card.
+- THRILLOPHILIA_IMPORT.md: added section 0 BATCH MODE (urls file, batches of 10, resume rule, per-link fail fast, single end-of-run gate), section 5B country route table, section 5C new country procedure. Trip page output and report format unchanged.
