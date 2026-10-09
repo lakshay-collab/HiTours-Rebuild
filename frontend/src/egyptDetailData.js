@@ -297,7 +297,7 @@ export const recommended = { h2: 'Other Egypt holidays you may like' };
 
 export const planner = {
   h3: 'Customize your Egypt trip',
-  social: 'Over one million happy travellers trust Hi Tours',
+  social: 'One million happy travellers trust Hi Tours',
   nameLabel: 'Full name',
   namePlaceholder: 'e.g. Priya Sharma',
   phoneLabel: 'Phone number',

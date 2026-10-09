@@ -1,11 +1,15 @@
 // Careers page content – layout mirrors careers.tourlane.com, copy adapted to Hi Tours.
+import { CAREERS_URL } from './aboutData';
+
 const un = (id, w = 1200) => `https://images.unsplash.com/${id}?crop=entropy&cs=srgb&fm=jpg&q=80&w=${w}`;
 
 export const CAREERS_EMAIL = 'careers@hitours.in';
+export const ROLES_URL = 'https://www.linkedin.com/company/hi-tours-group/jobs/';
+export { CAREERS_URL };
 
 export const hero = {
-  image: un('photo-1758691737584-a8f17fb34475', 2000),
-  alt: 'The Hi Tours team together at an all-hands gathering',
+  image: un('photo-1577962917302-cd874c4e31d2', 2000),
+  alt: 'The Hi Tours team planning holidays together in the Mumbai office',
   h1: 'Working with Hi Tours',
   cta: 'Learn more'
 };
@@ -29,16 +33,18 @@ export const departments = [
   { name: 'Travel Product', text: 'Ensuring our customers have the best experience while travelling.', image: un('photo-1626863905121-3b0c0ed7b94c') }
 ];
 
+export const departmentCta = 'View roles';
+
 export const values = {
   eyebrow: 'What Hi Tours Stands For',
   h2: 'Our culture & values',
-  text: 'Hi Tours is rooted in strong beliefs, passion and a set of non-negotiable core values. They help us set sail in the right direction and they serve as our North Star. Company culture is what everyone is doing when nobody is looking. Our values are the foundation for our culture and they ensure cohesion. They sum up some of our core beliefs and form a reliable basis for all processes, decisions and behaviours at Hi Tours.',
+  text: 'Hi Tours is rooted in strong beliefs, passion and a set of non-negotiable core values. They help us set sail in the right direction and they serve as our North Star. Company culture is what everyone is doing when nobody is looking. Our values are the foundation for our culture and they ensure cohesion.',
   items: [
-    { label: 'We love travel', icon: 'plane' },
-    { label: 'Take the call', icon: 'phone' },
-    { label: 'Set foot on Mars', icon: 'rocket' },
-    { label: 'Be the customer', icon: 'smile' },
-    { label: 'Act humble & respectful', icon: 'umbrella' }
+    { label: 'We love travel', text: 'Curiosity is the job description. We go, we look, we come back with better itineraries.', icon: 'globe' },
+    { label: 'Take the call', text: 'Someone always picks up. Ownership beats process, every single time.', icon: 'phone' },
+    { label: 'Set foot on Mars', text: 'We aim far beyond the obvious and build what has not been tried in travel yet.', icon: 'rocket' },
+    { label: 'Be the customer', text: 'Every decision is judged from the traveller’s seat, not from a spreadsheet.', icon: 'compass' },
+    { label: 'Act humble & respectful', text: 'Local partners, colleagues, travellers – we treat everyone as a guest.', icon: 'handshake' }
   ]
 };
 
@@ -81,13 +87,15 @@ export const awards = {
     { src: '/badges/iso45001-t.png', alt: 'ISO 45001 certified', title: 'ISO 45001 certified', text: 'One of the few travel brands in India audited to the international health and safety standard.' },
     { src: '/badges/cert3-t.png', alt: 'IATA accredited', title: 'IATA accredited', text: 'Accredited agent for air travel, so your flights and holiday are coordinated by one team.' },
     { src: '/badges/travelife-t.png', alt: 'Travelife certified', title: 'Travelife certified', text: 'Committed to sustainable travel practices across our partners and itineraries.' },
-    { src: '/badges/tripadvisor.svg', alt: 'TripAdvisor', title: 'Rated 4.9 on TripAdvisor', text: 'Alongside 4.7 on Google from travellers who planned their holiday with us.' }
+    { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPDSLzOsrBKfYCkkYxZ5Et-XNF2oZhgbP6MUDIyK_eg&s=10', alt: 'Ministry of Tourism, Government of India', title: 'Ministry of Tourism approved', text: 'Recognised tour operator approved by the Ministry of Tourism, Government of India.' }
   ],
   accolades: [
-    '“Best Tailor-made Tour Operator” – India Travel Awards',
-    'Over one million happy travellers since 1995',
-    'ISO 45001 certified health and safety management',
-    'IATA accredited and Travelife certified'
+    { title: 'Best Tailor Made Tour Operator', text: 'Awarded at the India Travel Awards for itineraries built around the traveller.' },
+    { title: 'One Million Happy Travellers', text: 'Holidays planned for over a million travellers since 1995.' },
+    { title: 'ISO 45001 Certified', text: 'Health and safety management audited to an international standard.' },
+    { title: 'IATA Accredited & Travelife Certified', text: 'Recognised for air-travel expertise and sustainable tourism practices.' },
+    { title: 'Rated 4.9 on Tripadvisor', text: 'Alongside 4.7 on Google from travellers who planned their holiday with us.' },
+    { title: 'Ministry of Tourism Approved', text: 'Approved tour operator recognised by the Ministry of Tourism, Government of India.' }
   ]
 };
 

@@ -107,7 +107,7 @@ export const planner = {
   bg: '/egypt/planner-bg.jpg',
   h3: 'Customize your Egypt trip',
   avatars: ['/egypt/tourlaner1.webp', '/egypt/tourlaner2.webp', '/egypt/tourlaner3.webp', '/egypt/tourlaner4.webp'],
-  social: 'Over one million happy travellers trust Hi Tours',
+  social: 'One million happy travellers trust Hi Tours',
   nameLabel: 'Full name',
   namePlaceholder: 'e.g. Priya Sharma',
   phoneLabel: 'Phone number',

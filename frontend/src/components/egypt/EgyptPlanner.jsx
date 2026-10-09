@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { planner } from '../../egyptListingData';
 import { CheckCircleIcon } from './EgyptIcons';
 import PhoneInput, { EMPTY_PHONE, phoneError, phonePayload } from './PhoneInput';
 import FlightPath from '../FlightPath';
 import { GoogleLogo, TripAdvisorLogo } from '../Rating';
+import { Heart, Quote } from 'lucide-react';
 import { ratings } from '../../mock';
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL;
@@ -50,17 +51,13 @@ const Social = ({ data, size = 'w-6 h-6' }) => (
       {data.avatars.map((a, i) => <img key={a} src={a} alt="" className={`${size} rounded-full border border-white object-cover`} style={{ marginLeft: i ? -4 : 0 }} />)}
     </div>
     <span className="eg-title-md text-white">{data.social}</span>
+    <Heart size={18} className="heart-beat text-[#FF6B6B] fill-[#FF6B6B] drop-shadow-[0_2px_6px_rgba(255,107,107,0.45)]" aria-hidden="true" />
   </div>
 );
 
-// ISO certification + live review scores, shown under the form instead of press logos.
-const Accreditations = ({ label, className = '' }) => (
-  <div className={`flex flex-wrap items-center justify-center gap-x-4 gap-y-2 ${className}`} data-testid="eg-planner-accreditations">
-    <span className="eg-title-md text-[#002131] whitespace-nowrap">{label}</span>
-    <span className="flex items-center gap-2 whitespace-nowrap" data-testid="eg-planner-acc-iso">
-      <img src="/badges/iso45001-t.png" alt="ISO 45001 certified" className="h-9 w-auto" />
-    </span>
-    <span className="w-px h-6 bg-[#C4CBD0] hidden sm:block" />
+// Review scores + a rotating traveller quote, shown under the form.
+const Ratings = ({ className = '' }) => (
+  <div className={`flex flex-wrap items-center justify-center gap-x-5 gap-y-2 ${className}`} data-testid="eg-planner-ratings">
     <span className="flex items-center gap-2 whitespace-nowrap eg-body-md text-[#174358]" data-testid="eg-planner-acc-google">
       <GoogleLogo size={18} />Rated <b className="font-semibold text-[#002131]">{ratings.google.score}</b> on Google
     </span>
@@ -71,9 +68,39 @@ const Accreditations = ({ label, className = '' }) => (
   </div>
 );
 
+const QuoteScroller = ({ quotes, className = '' }) => {
+  const [i, setI] = useState(0);
+  const list = (quotes || []).filter((q) => q && q.text);
+  useEffect(() => {
+    if (list.length < 2) return undefined;
+    const t = setTimeout(() => setI((v) => (v + 1) % list.length), 7000);
+    return () => clearTimeout(t);
+  }, [i, list.length]);
+  if (!list.length) return null;
+  const q = list[i % list.length];
+  return (
+    <div className={className} data-testid="eg-planner-quotes">
+      <div key={i} className="flex gap-3 animate-[hi-fade-in_400ms_ease-out]">
+        <Quote size={18} className="shrink-0 mt-[3px] text-[#308BB6]" />
+        <div className="min-w-0">
+          <p className="eg-body-md text-[#174358] line-clamp-3" data-testid="eg-planner-quote-text">{q.text}</p>
+          <p className="mt-1 eg-label-lg text-[#002131]" data-testid="eg-planner-quote-author">{q.name}{q.title ? ` · ${q.title}` : ''}</p>
+        </div>
+      </div>
+      {list.length > 1 && (
+        <div className="mt-3 flex justify-center gap-1.5">
+          {list.map((x, k) => (
+            <button key={x.name + k} type="button" onClick={() => setI(k)} aria-label={`Review ${k + 1}`} className={`h-1.5 rounded-full transition-all ${k === i % list.length ? 'w-5 bg-[#174358]' : 'w-1.5 bg-[#C4CBD0] hover:bg-[#8A9297]'}`} data-testid="eg-planner-quote-dot" />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const overlay = 'absolute inset-0 bg-[linear-gradient(135deg,rgba(0,33,49,0.72)_0%,rgba(23,67,88,0.45)_60%,rgba(48,139,182,0.35)_100%)]';
 
-export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 lg:px-10', titleClass = 'eg-display-sm', data = planner, tripTitle = '', source = 'egypt-planner' }) {
+export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 lg:px-10', titleClass = 'eg-display-sm', data = planner, tripTitle = '', source = 'egypt-planner', quotes = [] }) {
   const [form, setForm] = useState({ name: '', phone: EMPTY_PHONE, email: '' });
   const [status, setStatus] = useState('idle'); // idle | sending | done | error
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
@@ -100,7 +127,7 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
 
   return (
     <section className={className} data-testid="eg-planner">
-      <div className="relative h-[680px] hidden lg:block">
+      <div className="relative h-[800px] hidden lg:block">
         <div className="relative h-[372px] rounded-2xl overflow-hidden">
           <img src={data.bg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           <div className={overlay} />
@@ -114,7 +141,10 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
           <div className="pt-7 px-16">
             <LeadForm {...formProps} prefix="eg-planner" />
           </div>
-          <Accreditations label={data.known} className="mt-6 min-h-16 rounded-b-xl bg-[#F0EEE6] px-8 py-3" />
+          <div className="mt-6 rounded-b-xl bg-[#F0EEE6] px-8 py-4 flex flex-col gap-3">
+            <Ratings />
+            <QuoteScroller quotes={quotes} className="border-t border-[#DEDCD2] pt-3" />
+          </div>
         </div>
 
         <div className="absolute inset-x-0 bottom-0 flex items-end justify-center gap-6 pointer-events-none" data-testid="eg-planner-flight">
@@ -132,7 +162,8 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
           <Social data={data} />
           <div className="w-full max-w-[650px] rounded-xl bg-[#FEFCF4] p-4" data-testid="eg-planner-card-mobile">
             <LeadForm {...formProps} prefix="eg-planner-m" />
-            <Accreditations label={data.known} className="mt-4 pt-4 border-t border-[#E4E3DB]" />
+            <Ratings className="mt-4 pt-4 border-t border-[#E4E3DB]" />
+            <QuoteScroller quotes={quotes} className="mt-3" />
           </div>
         </div>
       </div>

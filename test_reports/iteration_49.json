@@ -1,0 +1,32 @@
+{
+  "summary": "Frontend-only testing for Hi Tours: Christmas sale bar, /sitemap, /careers page, Singapore + Thailand destination planners, lead submission to Kraya, and country-root redirects. 10/11 scenarios pass. Only issue: on Thailand itinerary detail pages, the planner heading reads 'Plan your Thailand trip' instead of the required 'Customize your Thailand trip'.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "EgyptDetail.jsx (planner on itinerary detail)",
+        "issue": "Thailand (and Morocco) itinerary detail pages override planner.h3 to 'Plan your Thailand trip' / 'Plan your Morocco trip' instead of the required 'Customize your Thailand trip'. Reproduced on /asien/siam-splendour-thailand — planner heading shows 'Plan your Thailand trip'. The listing page /asien/thailand/holidays correctly shows 'Customize your Thailand trip'.",
+        "selector": "[data-testid='eg-planner'] h2",
+        "priority": "MEDIUM"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "In /app/frontend/src/pages/EgyptDetail.jsx lines 79-80, change h3 override from 'Plan your Thailand trip' / 'Plan your Morocco trip' to 'Customize your Thailand trip' / 'Customize your Morocco trip' so the detail-page planner matches the listing-page copy specified in this round's requirements."
+  ],
+  "critical_code_review_comments": [
+    "EgyptDetail.jsx line 79-80 duplicates planner-heading copy that already exists in egyptListingData/egyptDetailData — this diverged from the listing config. Prefer a single source of truth per country (e.g. a map keyed by country returning the planner config) to avoid future drift.",
+    "The country-override list in EgyptDetail.jsx is a growing array ([ 'Thailand', 'Morocco', ...]). As more countries are added it will keep growing — consider moving to a config object in a data file."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (not tested per request)", "frontend": "91%"},
+  "test_credentials": "N/A — no auth",
+  "seed_data_creation": "Created test leads via UI: 'TEST Singapore Lead 1791539605' (synced to Kraya, source=singapore-holidays, confirmed via GET /api/leads). Also attempted 'TEST Popup SG …' via sticky CTA modal — UI showed success state but the lead was not visible in GET /api/leads at time of check (may be the modal CTA 'Get my quote' not wired via /api/leads, or a delayed/different source string; worth a quick confirm by main agent).",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Preview URL https://tourlane-rebuild.preview.emergentagent.com. Session banner key: hi-banner-dismissed-xmas-ny-2026 (clear sessionStorage to re-trigger). Sitemap at /sitemap has 322 links across 33 groups (not linked from header/footer). Careers at /careers has 10 department cards, 3-quote carousel using data-testid='careers-quote-next'/'careers-quote-prev', footer link via data-testid='footer-link-careers'. Singapore planner /asien/singapore/holidays passes all specs; Thailand holidays listing passes; Thailand itinerary detail (e.g. /asien/siam-splendour-thailand) has wrong planner heading — see action_items.",
+  "rca of the issue": "In /app/frontend/src/pages/EgyptDetail.jsx the country-specific planner overrides (lines ~79-80) explicitly set h3 to 'Plan your <Country> trip' for Thailand and Morocco. This override runs AFTER the planner config was already set correctly to 'Customize your Thailand trip' from egyptDetailData.js, so the override wins and the detail-page planner heading becomes 'Plan your Thailand trip'. Fix: change the string in those two lines to 'Customize your <Country> trip', or remove the h3 override entirely so the shared planner config is used."
+}

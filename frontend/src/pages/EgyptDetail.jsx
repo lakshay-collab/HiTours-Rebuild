@@ -76,8 +76,8 @@ const DESTINATIONS = [
   ["Finland", (d) => ({ planner: finlandPlanner, reviews: finlandReviews })],
   ["Sweden", (d) => ({ planner: swedenPlanner, reviews: swedenReviews })],
   ['Maldives', (d) => ({ planner: maldivesPlanner, reviews: maldivesReviews })],
-  ['Thailand', (d) => ({ planner: { ...planner, h3: 'Plan your Thailand trip', bg: d.gallery?.[0] } })],
-  ['Morocco', (d) => ({ planner: { ...planner, h3: 'Plan your Morocco trip', bg: d.gallery?.[0] } })]
+  ['Thailand', (d) => ({ planner: { ...planner, h3: 'Customize your Thailand trip', bg: d.gallery?.[0] } })],
+  ['Morocco', (d) => ({ planner: { ...planner, h3: 'Customize your Morocco trip', bg: d.gallery?.[0] } })]
 ];
 const destinationFor = (d) => {
   const hay = d.slug in vietnamBySlug ? 'vietnam' : d.slug in europeBySlug ? 'europe' : `${d.title} ${d.slug} ${(d.routeCities || []).join(' ')}`.toLowerCase();
@@ -440,7 +440,7 @@ export default function EgyptDetail() {
             </aside>
           </div>
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />
-          <EgyptPlanner className="eg-wide" titleClass="eg-headline-lg" data={dest.planner} tripTitle={detail.title} source="egypt-detail" />
+          <EgyptPlanner className="eg-wide" titleClass="eg-headline-lg" data={dest.planner} tripTitle={detail.title} source="egypt-detail" quotes={dest.reviews?.items} />
           <Features />
           <EgyptReviews centered className="eg-container" h2={dest.reviewsH2} count={dest.reviewsCount} items={dest.reviewItems} cta={detail.cta} />
           <Recommended detail={detail} />

@@ -225,7 +225,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
           </div>
         </section>
 
-        <div id="planner" className="scroll-mt-20"><EgyptPlanner data={planner} source={d.plannerSource} /></div>
+        <div id="planner" className="scroll-mt-20"><EgyptPlanner data={planner} source={d.plannerSource} quotes={d.customerReviews?.items} /></div>
         <EgyptCustomerReviews data={d.customerReviews} />
         <EgyptFaq centered className="eg-container mt-12 md:mt-16 mb-16" data={faq} />
       </main>
