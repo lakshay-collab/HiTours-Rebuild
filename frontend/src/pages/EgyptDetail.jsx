@@ -9,19 +9,9 @@ import { ScrollTop } from '../components/egypt/EgyptHero';
 import { EgyptReviews } from '../components/egypt/EgyptSections';
 import { GoogleLogo, TripAdvisorLogo } from '../components/Rating';
 import { CalendarIcon, PinIcon, ChevronRight, ChevronDown, ServiceIcon, CheckBadge, UserIcon, SparklesIcon, WalletIcon, SparkleLeft, SparkleRight, GalleryIcon } from '../components/egypt/EgyptIcons';
-import { detail as detail0, route as route0, glance as glance0, crumbs as crumbs0, experts, brandFeatures, recommended, steps, trust, price, planner, reviewsHeading } from '../egyptDetailData';
-import { detail as detail1, route as route1, glance as glance1, crumbs as crumbs1 } from '../moroccoEgyptData';
-import { detail as detail2, route as route2, glance as glance2, crumbs as crumbs2 } from '../srilankaData';
-import { detail as detail3, route as route3, glance as glance3, crumbs as crumbs3 } from '../thailandData';
-import { detail as detailGF, route as routeGF, glance as glanceGF, crumbs as crumbsGF } from '../tours/egyptGrandFestivalData';
+import { experts, brandFeatures, recommended, steps, trust, price, planner, reviewsHeading } from '../egyptDetailData';
 import SaleBadge from '../components/sale/SaleBadge';
 import SalePrice from '../components/sale/SalePrice';
-import { detail as detailMM, route as routeMM, glance as glanceMM, crumbs as crumbsMM } from '../tours/misrMayaData';
-import { detail as detailMKJ, route as routeMKJ, glance as glanceMKJ, crumbs as crumbsMKJ } from '../tours/misrKaJaaduData';
-import { detail as detailNP, route as routeNP, glance as glanceNP, crumbs as crumbsNP } from '../tours/nilePharaohsData';
-import { detail as detailPF, route as routePF, glance as glancePF, crumbs as crumbsPF } from '../tours/pharaohsFeluccasData';
-import { detail as detailND, route as routeND, glance as glanceND, crumbs as crumbsND } from '../tours/nileDarshanData';
-import { detail as detailNN, route as routeNN, glance as glanceNN, crumbs as crumbsNN } from '../tours/nileNoorData';
 import ReelGallery from '../components/egypt/ReelGallery';
 import { vietnamBySlug } from '../tours/vietnamToursData';
 import DesignEscapeModal from '../components/egypt/DesignEscapeModal';
@@ -30,88 +20,30 @@ import { products as vietnamProducts, planner as vietnamPlanner, reviews as viet
 import { planner as srilankaPlanner, reviews as srilankaReviews, products as srilankaProducts } from '../srilankaListingData';
 import { srilankaBySlug } from '../tours/srilankaToursData';
 import { planner as malaysiaPlanner, reviews as malaysiaReviews } from '../malaysiaListingData';
-import { malaysiaBySlug } from '../tours/malaysiaToursData';
 import { planner as singaporePlanner, reviews as singaporeReviews } from '../singaporeListingData';
-import { singaporeBySlug } from '../tours/singaporeToursData';
 import { planner as kazakhstanPlanner, reviews as kazakhstanReviews } from '../kazakhstanListingData';
-import { kazakhstanBySlug } from '../tours/kazakhstanToursData';
 import { planner as bhutanPlanner, reviews as bhutanReviews } from '../bhutanListingData';
-import { bhutanBySlug } from '../tours/bhutanToursData';
 import { planner as laosPlanner, reviews as laosReviews } from '../laosListingData';
-import { laosBySlug } from '../tours/laosToursData';
 import { planner as japanPlanner, reviews as japanReviews } from '../japanListingData';
-import { japanBySlug } from '../tours/japanToursData';
 import { planner as indonesiaPlanner, reviews as indonesiaReviews } from '../indonesiaListingData';
-import { indonesiaBySlug } from '../tours/indonesiaToursData';
 import { planner as chinaPlanner, reviews as chinaReviews } from '../chinaListingData';
-import { chinaBySlug } from '../tours/chinaToursData';
 import { planner as cambodiaPlanner, reviews as cambodiaReviews } from '../cambodiaListingData';
-import { cambodiaBySlug } from '../tours/cambodiaToursData';
 import { planner as philippinesPlanner, reviews as philippinesReviews } from '../philippinesListingData';
-import { philippinesBySlug } from '../tours/philippinesToursData';
 import { planner as icelandPlanner, reviews as icelandReviews } from '../icelandListingData';
-import { icelandBySlug } from '../tours/icelandToursData';
 import { europeBySlug } from '../tours/europeToursData';
 import { planner as europePlanner, reviews as europeReviews } from '../europeListingData';
 import { planner as italyPlanner, reviews as italyReviews } from '../italyListingData';
-import { italyBySlug } from '../tours/italyToursData';
 import { planner as greecePlanner, reviews as greeceReviews } from '../greeceListingData';
-import { greeceBySlug } from '../tours/greeceToursData';
 import { planner as norwayPlanner, reviews as norwayReviews } from '../norwayListingData';
-import { norwayBySlug } from '../tours/norwayToursData';
 import { planner as irelandPlanner, reviews as irelandReviews } from '../irelandListingData';
-import { irelandBySlug } from '../tours/irelandToursData';
 import { planner as spainPlanner, reviews as spainReviews } from '../spainListingData';
-import { spainBySlug } from '../tours/spainToursData';
 import { planner as portugalPlanner, reviews as portugalReviews } from '../portugalListingData';
-import { portugalBySlug } from '../tours/portugalToursData';
 import { planner as croatiaPlanner, reviews as croatiaReviews } from '../croatiaListingData';
-import { croatiaBySlug } from '../tours/croatiaToursData';
 import { planner as englandPlanner, reviews as englandReviews } from '../englandListingData';
-import { englandBySlug } from '../tours/englandToursData';
 import { planner as scotlandPlanner, reviews as scotlandReviews } from '../scotlandListingData';
-import { scotlandBySlug } from '../tours/scotlandToursData';
 import { planner as finlandPlanner, reviews as finlandReviews } from '../finlandListingData';
-import { finlandBySlug } from '../tours/finlandToursData';
 import { planner as swedenPlanner, reviews as swedenReviews } from '../swedenListingData';
-import { swedenBySlug } from '../tours/swedenToursData';
-import { thailandBySlug } from '../tours/thailandToursData';
 import { planner as maldivesPlanner, reviews as maldivesReviews } from '../maldivesListingData';
-import { maldivesBySlug } from '../tours/maldivesToursData';
-import { veniceViennaBySlug } from '../tours/veniceViennaData';
-import { icelandGlaciersBySlug } from '../tours/icelandGlaciersData';
-import { bestOfThailandSingaporeMalaysiaHongKongBySlug } from '../tours/bestOfThailandSingaporeMalaysiaHongKongData';
-import { bestOfPhuketKrabiBangkokBySlug } from '../tours/bestOfPhuketKrabiBangkokData';
-import { grandVietnamCambodiaThailandBySlug } from '../tours/grandVietnamCambodiaThailandData';
-import { bestOfSingaporeThailandBySlug } from '../tours/bestOfSingaporeThailandData';
-import { luxuryPhuketSamuiKrabiBySlug } from '../tours/luxuryPhuketSamuiKrabiData';
-import { bestOfPattayaBangkokPhuketBySlug } from '../tours/bestOfPattayaBangkokPhuketData';
-import { classicKrabiPhuketHolidayBySlug } from '../tours/classicKrabiPhuketHolidayData';
-import { baliPhuketIslandEscapeBySlug } from '../tours/baliPhuketIslandEscapeData';
-import { honeymoonTrailPhuketKrabiSamuiBySlug } from '../tours/honeymoonTrailPhuketKrabiSamuiData';
-import { coastalMagicPhuketKrabiBySlug } from '../tours/coastalMagicPhuketKrabiData';
-import { bestOfThailandMalaysiaBySlug } from '../tours/bestOfThailandMalaysiaData';
-import { romanticKrabiSamuiPhuketBySlug } from '../tours/romanticKrabiSamuiPhuketData';
-import { grandBangkokPhuketKrabiBySlug } from '../tours/grandBangkokPhuketKrabiData';
-import { islandTrailsPhuketSamuiKrabiBySlug } from '../tours/islandTrailsPhuketSamuiKrabiData';
-import { phuketKohSamuiBeachEscapeBySlug } from '../tours/phuketKohSamuiBeachEscapeData';
-import { phuketPhiPhiPartyEscapeBySlug } from '../tours/phuketPhiPhiPartyEscapeData';
-import { luxuryBangkokPattayaEscapeBySlug } from '../tours/luxuryBangkokPattayaEscapeData';
-import { romanticSingaporeNightSafariSentosaBySlug } from '../tours/romanticSingaporeNightSafariSentosaData';
-import { singaporeShortBreakNightSafariBySlug } from '../tours/singaporeShortBreakNightSafariData';
-import { singaporeFamilyUniversalStudiosBySlug } from '../tours/singaporeFamilyUniversalStudiosData';
-import { singaporeHighlightsSentosaGardensBySlug } from '../tours/singaporeHighlightsSentosaGardensData';
-import { singaporeWildlifeSkylineEscapeBySlug } from '../tours/singaporeWildlifeSkylineEscapeData';
-import { singaporeCouplesAdventureCoveBySlug } from '../tours/singaporeCouplesAdventureCoveData';
-import { singaporeCouplesSpecialJewelBySlug } from '../tours/singaporeCouplesSpecialJewelData';
-import { singaporeFamilySafariCityLightsBySlug } from '../tours/singaporeFamilySafariCityLightsData';
-import { singaporeWildTrailsIslandDaysBySlug } from '../tours/singaporeWildTrailsIslandDaysData';
-import { singaporeGentingDreamCruiseBySlug } from '../tours/singaporeGentingDreamCruiseData';
-import { singaporeHoneymoonGentingCruiseBySlug } from '../tours/singaporeHoneymoonGentingCruiseData';
-import { singaporePenangRoyalCaribbeanBySlug } from '../tours/singaporePenangRoyalCaribbeanData';
-import { disneyAdventureCruiseSingaporeBySlug } from '../tours/disneyAdventureCruiseSingaporeData';
-import { singaporeMalaysiaHoneymoonBySlug } from '../tours/singaporeMalaysiaHoneymoonData';
-import { singaporeMalaysiaSentosaGentingBySlug } from '../tours/singaporeMalaysiaSentosaGentingData';
 import { countryOf, productsOf } from '../holidays/countryProducts';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
@@ -170,80 +102,7 @@ import { NavIcon } from '../components/egypt/EgyptNavIcons';
 const tagIcon = Object.fromEntries(styles.map((s) => [s.key, s.icon]));
 import { ratings as trustBar } from '../mock';
 
-const BY_SLUG = {
-  [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
-  [detail1.slug]: { detail: detail1, route: route1, glance: glance1, crumbs: crumbs1 },
-  [detail2.slug]: { detail: detail2, route: route2, glance: glance2, crumbs: crumbs2 },
-  [detail3.slug]: { detail: detail3, route: route3, glance: glance3, crumbs: crumbs3 },
-  [detailGF.slug]: { detail: detailGF, route: routeGF, glance: glanceGF, crumbs: crumbsGF },
-  [detailMM.slug]: { detail: detailMM, route: routeMM, glance: glanceMM, crumbs: crumbsMM },
-  [detailMKJ.slug]: { detail: detailMKJ, route: routeMKJ, glance: glanceMKJ, crumbs: crumbsMKJ },
-  [detailNP.slug]: { detail: detailNP, route: routeNP, glance: glanceNP, crumbs: crumbsNP },
-  [detailPF.slug]: { detail: detailPF, route: routePF, glance: glancePF, crumbs: crumbsPF },
-  [detailND.slug]: { detail: detailND, route: routeND, glance: glanceND, crumbs: crumbsND },
-  [detailNN.slug]: { detail: detailNN, route: routeNN, glance: glanceNN, crumbs: crumbsNN },
-  ...vietnamBySlug,
-  ...srilankaBySlug,
-  ...malaysiaBySlug,
-  ...singaporeBySlug,
-  ...kazakhstanBySlug,
-  ...bhutanBySlug,
-  ...laosBySlug,
-  ...japanBySlug,
-  ...indonesiaBySlug,
-  ...chinaBySlug,
-  ...cambodiaBySlug,
-  ...philippinesBySlug,
-  ...icelandBySlug,
-  ...europeBySlug,
-  ...italyBySlug,
-  ...greeceBySlug,
-  ...norwayBySlug,
-  ...irelandBySlug,
-  ...spainBySlug,
-  ...portugalBySlug,
-  ...croatiaBySlug,
-  ...englandBySlug,
-  ...scotlandBySlug,
-  ...finlandBySlug,
-  ...swedenBySlug,
-  ...thailandBySlug,
-  ...maldivesBySlug,
-  ...veniceViennaBySlug,
-  ...icelandGlaciersBySlug,
-  ...bestOfThailandSingaporeMalaysiaHongKongBySlug,
-  ...bestOfPhuketKrabiBangkokBySlug,
-  ...grandVietnamCambodiaThailandBySlug,
-  ...bestOfSingaporeThailandBySlug,
-  ...luxuryPhuketSamuiKrabiBySlug,
-  ...bestOfPattayaBangkokPhuketBySlug,
-  ...classicKrabiPhuketHolidayBySlug,
-  ...baliPhuketIslandEscapeBySlug,
-  ...honeymoonTrailPhuketKrabiSamuiBySlug,
-  ...coastalMagicPhuketKrabiBySlug,
-  ...bestOfThailandMalaysiaBySlug,
-  ...romanticKrabiSamuiPhuketBySlug,
-  ...grandBangkokPhuketKrabiBySlug,
-  ...islandTrailsPhuketSamuiKrabiBySlug,
-  ...phuketKohSamuiBeachEscapeBySlug,
-  ...phuketPhiPhiPartyEscapeBySlug,
-  ...luxuryBangkokPattayaEscapeBySlug,
-  ...romanticSingaporeNightSafariSentosaBySlug,
-  ...singaporeShortBreakNightSafariBySlug,
-  ...singaporeFamilyUniversalStudiosBySlug,
-  ...singaporeHighlightsSentosaGardensBySlug,
-  ...singaporeWildlifeSkylineEscapeBySlug,
-  ...singaporeCouplesAdventureCoveBySlug,
-  ...singaporeCouplesSpecialJewelBySlug,
-  ...singaporeFamilySafariCityLightsBySlug,
-  ...singaporeWildTrailsIslandDaysBySlug,
-  ...singaporeGentingDreamCruiseBySlug,
-  ...singaporeHoneymoonGentingCruiseBySlug,
-  ...singaporePenangRoyalCaribbeanBySlug,
-  ...disneyAdventureCruiseSingaporeBySlug,
-  ...singaporeMalaysiaHoneymoonBySlug,
-  ...singaporeMalaysiaSentosaGentingBySlug
-};
+import { BY_SLUG } from '../tours/tripIndex';
 
 const stop = (e) => e.preventDefault();
 

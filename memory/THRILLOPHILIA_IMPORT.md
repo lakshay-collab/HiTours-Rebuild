@@ -277,6 +277,7 @@ Print PASS or FAIL per trip for:
 9. No 8 word match with Thrillophilia text.
 10. The page renders at /<Region_Path>/<slug>/.
 11. `python3 /app/scripts/thrillophilia/check_card_images.py <country data files>` exits 0 — no card photo repeats across the country's trips.
+12. **Theme filter highlights:** run `python3 /app/scripts/thrillophilia/suggest_highlights.py <new trip data files> --min 1 --top 40`. Any real landmark, park, show, cruise or experience in the list that is marked `-` (not covered) gets a new `[label, regex, icon]` row in `frontend/src/holidays/highlights.js` (see memory/FILTERS.md). Then open `/<region>/<country>/holidays` and confirm the Theme panel shows the new highlight with the right count.
 
 
 ## 7. REPORT (short, one block per link)
