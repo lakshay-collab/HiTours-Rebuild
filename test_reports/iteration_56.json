@@ -1,0 +1,30 @@
+{
+  "summary": "Frontend-only review of the Thrillophilia Kazakhstan (14) + Bhutan (34) import. Tested both listing pages, 14/14 Kazakhstan detail pages and 13/34 Bhutan detail pages (including the shortest and the longest), plus filters, sort, Venice regression and China/Vietnam/Japan regression pages. Everything passes - 100% success. Listings show the correct counts, infinite-scroll loads all 14 and all 34 cards with unique lead images, old generic packages are gone, every detail page renders H1 + a correct number of Day tabs + the included-stats tile + no broken images and no 4xx on CDN assets. Filter chips (incl. all the required Theme + Experience chips) return non-empty filtered sets and clear restores the full count. The 'Venice canals & gondolas' chip no longer appears on Kazakhstan. Regression pages still load.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Trip detail (all countries)", "issues": ["There is no explicit 'What's not included' / 'Exclusions' section on any detail page. The sidebar only shows the included-stats tile (hotels/experiences/transfers/meals). This is NOT a regression - it is the same on the China/Vietnam/Japan trips that were previously marked 100% pass - but the review-request wording ('the included and not-included sections render') implies one should exist. Flagging as a design gap for the main agent to decide."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Minor: /app/frontend/src/tours/*Data.js files are growing fast (48 new) - fine as data, but consider lazy-importing them in the trip registry so the main JS bundle does not keep ballooning.",
+    "No 'not-included' / exclusions component exists in /app/frontend/src/components - if that section is intended, it is missing globally, not just on the new imports."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a (not tested per request)", "frontend": "100%"},
+  "test_credentials": "none - all pages public",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Checked slugs: KZ ALL 14 (almaty-short-break-with-shymbulak-cable-car, grand-almaty-with-charyn-canyon-and-kolsai-lake, almaty-explorer-with-kok-tobe-and-lake-issyk, almaty-week-with-flights-from-delhi, classic-almaty-with-flights-from-delhi, almaty-highlights-with-flights-from-delhi, seven-days-in-almaty-with-altyn-emel, almaty-and-baku-mountains-and-the-caspian, almaty-and-baku-with-the-tufandag-cable-car, almaty-baku-and-the-shahdag-mountains, grand-almaty-baku-and-sheki, almaty-winter-group-tour-with-flights, almaty-and-nature-wonders-for-18-to-39s, silk-road-crossing-tashkent-samarkand-and-almaty). BH 13/34 (paro-short-break-with-taktsang [3d], bhutan-exclusive-four-night-break, gems-of-bhutan-thimphu-punakha-and-paro, wonders-of-bhutan-with-a-paro-excursion, bhutan-over-the-dochula-pass-to-phobjikha, bhutan-adventure-group-tour, bhutan-getaway-with-the-gangtey-cranes, best-of-bhutan-with-the-thimphu-tshechu, bhutan-in-ten-days-with-phobjikha, bhutan-with-phobjikha-luxury, bhutan-sikkim-and-darjeeling, nepal-bhutan-and-sikkim-grand-tour [12d], nepal-and-bhutan-himalayan-journey). The remaining 21 Bhutan detail pages were not individually opened but all 34 cards link out from the listing page and all share the same generator template, so the sampling should be representative. KZ chips verified: Short trips(3), Nature & wildlife(10), Adventure(5), Culture & temples(5), Multi-city tours(5), City break(4), Cable car rides(13), Shymbulak & Big Almaty Lake(13), Charyn Canyon(6), Kolsai & Kaindy lakes(6). Venice chip ABSENT. Short-trips filter 14 -> 3 -> clear -> 14 OK. China 16, Vietnam 44, Japan 49 still load clean.",
+  "data_integrity_spot_checks": {
+    "almaty-and-baku-with-the-tufandag-cable-car": "9 days, 2 accommodation blocks of 4+4 nights = 8 nights total, matches (9d-1)",
+    "paro-short-break-with-taktsang": "3 days, 1 hotel stop (confirmed intentional fallback hotel label)",
+    "nepal-bhutan-and-sikkim-grand-tour": "12 days with 12 Day tabs rendered (max Day 12) and 7 stops implied by itinerary"
+  },
+  "rca of the issue": "No bugs found. All imported trips render correctly, images are unique per card and non-broken, filters/sort/regression pages all work."
+}
