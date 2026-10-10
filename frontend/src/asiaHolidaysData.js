@@ -19,7 +19,7 @@ import { laosProducts } from './tours/laosToursData';
 const BY_COUNTRY = [
   ['Vietnam', vietnamProducts], ['China', chinaProducts], ['Japan', japanProducts],
   ['South Korea', southKoreaProducts], ['Bhutan', bhutanProducts], ['Kazakhstan', kazakhstanProducts],
-  ['Indonesia', indonesiaProducts], ['Singapore', singaporeProducts], ['Thailand', thailandProducts],
+  ['Bali', indonesiaProducts], ['Singapore', singaporeProducts], ['Thailand', thailandProducts],
   ['Malaysia', malaysiaProducts], ['Cambodia', cambodiaProducts], ['Laos', laosProducts]
 ];
 

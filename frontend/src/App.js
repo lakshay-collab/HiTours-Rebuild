@@ -46,7 +46,7 @@ const COUNTRY_ROOTS = [
   '/asia/kazakhstan',
   '/asia/bhutan',
   '/asia/japan',
-  '/asia/indonesia',
+  '/asia/bali',
   '/asia/china',
   '/asia/south-korea',
   '/europe/greece',
@@ -60,7 +60,7 @@ const COUNTRY_ROOTS = [
 const StyleRedirect = () => <Navigate to={`/africa/egypt/holidays/${useParams().style}`} replace />;
 
 // Legacy German slugs (/europa, /asien, /afrika/aegypten) now redirect to their English equivalents.
-const LEGACY_PREFIXES = [['/europa', '/europe'], ['/asien', '/asia'], ['/afrika/aegypten', '/africa/egypt'], ['/afrika', '/africa/egypt'], ['/reiseziele', '/']];
+const LEGACY_PREFIXES = [['/asia/indonesia', '/asia/bali'], ['/europa', '/europe'], ['/asien', '/asia'], ['/afrika/aegypten', '/africa/egypt'], ['/afrika', '/africa/egypt'], ['/reiseziele', '/']];
 const LegacyRedirect = () => {
   const { pathname, search } = useLocation();
   const match = LEGACY_PREFIXES.find(([from]) => pathname === from || pathname.startsWith(`${from}/`));
@@ -116,8 +116,8 @@ function App() {
           <Route path="/asia/bhutan/holidays/:style" element={<BhutanHolidays />} />
           <Route path="/asia/japan/holidays" element={<JapanHolidays />} />
           <Route path="/asia/japan/holidays/:style" element={<JapanHolidays />} />
-          <Route path="/asia/indonesia/holidays" element={<IndonesiaHolidays />} />
-          <Route path="/asia/indonesia/holidays/:style" element={<IndonesiaHolidays />} />
+          <Route path="/asia/bali/holidays" element={<IndonesiaHolidays />} />
+          <Route path="/asia/bali/holidays/:style" element={<IndonesiaHolidays />} />
           <Route path="/asia/china/holidays" element={<ChinaHolidays />} />
           <Route path="/asia/china/holidays/:style" element={<ChinaHolidays />} />
           <Route path="/asia/south-korea/holidays" element={<SouthKoreaHolidays />} />
@@ -179,6 +179,8 @@ function App() {
           <Route path="/europe/croatia" element={<Navigate to="/europe/holidays" replace />} />
           <Route path="/europe/england" element={<Navigate to="/europe/holidays" replace />} />
           <Route path="/europe/scotland" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/asia/indonesia" element={<LegacyRedirect />} />
+          <Route path="/asia/indonesia/*" element={<LegacyRedirect />} />
           <Route path="/europa/*" element={<LegacyRedirect />} />
           <Route path="/asien/*" element={<LegacyRedirect />} />
           <Route path="/afrika/aegypten/*" element={<LegacyRedirect />} />

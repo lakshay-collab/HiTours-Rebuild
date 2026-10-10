@@ -21,7 +21,7 @@ const FOOTER_HREFS = {
   'Bhutan': '/asia/bhutan',
   "Laos": '/asia/laos',
   "Japan": '/asia/japan',
-  "Indonesia": '/asia/indonesia',
+  "Bali": '/asia/bali',
   "China": '/asia/china',
   "Cambodia": '/asia/cambodia',
   "Italy": '/europe/italy',
@@ -163,7 +163,7 @@ export default function Footer() {
             {footer.legal.map((l) => (
               <li key={l}>{LEGAL_HREFS[l]
                 ? <Link to={LEGAL_HREFS[l]} className="t-body-md text-onsurface hover:underline" data-testid={`footer-legal-${l.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{l}</Link>
-                : l === 'Expert advice'
+                : l === 'Speak to a holiday expert'
                   ? <button onClick={() => setAdviceOpen(true)} className="t-body-md text-onsurface hover:underline" data-testid="footer-legal-expert-advice">{l}</button>
                   : <button className="t-body-md text-onsurface hover:underline" data-testid="footer-legal-link">{l}</button>}</li>
             ))}

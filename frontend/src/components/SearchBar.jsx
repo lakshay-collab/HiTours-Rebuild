@@ -1,54 +1,29 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { MapPin, Compass, Search, X, EyeOff, Heart, Users, Car, Binoculars, Umbrella, Mountain, Sparkles, TreePalm, Landmark, Gem, Sailboat, Timer } from 'lucide-react';
+import { MapPin, Search, X, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { hero } from '../mock';
-import { destinations } from '../destinationsData';
+import { destinations, COUNTRY_HREF } from '../destinationsData';
 
-const ROUTES = { 'Egypt': '/africa/egypt', 'Asia': '/asia', 'Europe': '/europe', 'Vietnam': '/asia/vietnam', 'Thailand': '/asia/thailand', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "South Korea": '/asia/south-korea', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
 const ASIA_IMG = 'https://images.ctfassets.net/bth3mlrehms2/27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg?w=160&q=60&fm=webp';
 const EUROPE_IMG = '/europe/hero-paris.webp';
-const BALI_IMG = 'https://images.ctfassets.net/bth3mlrehms2/61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png?w=160&q=60&fm=webp';
-// Island and region names people search for that sit inside a country page.
-const REGIONS = [{ name: 'Bali', src: BALI_IMG, to: '/asia/indonesia', kind: 'destination' }];
-// Extra words a country should also match on, so 'Bali' finds Indonesia too.
-// Europe carries the countries that have no page of their own yet, so 'Switzerland' or 'Paris'
-// still lands the searcher on the continent page where those trips are listed.
+// Extra words a destination should also match on. Europe carries the countries that have no page of
+// their own, so 'Switzerland' or 'Paris' still lands the searcher on the continent page.
 const ALIASES = new Map([
-  ['Indonesia', 'Bali Ubud Seminyak Kuta Nusa Penida'],
+  ['Bali', 'Indonesia Ubud Seminyak Kuta Nusa Penida'],
   ['Europe', 'Switzerland Swiss France Paris Germany Netherlands Austria Belgium Alps Rome Venice Florence Milan Pisa Zurich Lucerne Interlaken Amsterdam Frankfurt Brussels Disneyland Eiffel']
 ]);
 
-const STYLES = [
-  { name: 'Northern Lights', icon: Sparkles, to: '/trip-styles/northern-lights' },
-  { name: 'Honeymoons', icon: Heart, to: '/africa/egypt/holidays/honeymoon' },
-  { name: 'Family holidays', icon: Users, to: '/africa/egypt/holidays/family' },
-  { name: 'Road trips', icon: Car },
-  { name: 'Safari', icon: Binoculars },
-  { name: 'Beach & relaxation', icon: Umbrella, to: '/africa/egypt/holidays/beach' },
-  { name: 'Adventure', icon: Mountain },
-  { name: 'Island hopping', icon: TreePalm },
-  { name: 'Culture', icon: Landmark, to: '/africa/egypt/holidays/culture' },
-  { name: 'Luxury', icon: Gem, to: '/africa/egypt/holidays/luxury' },
-  { name: 'Nile cruise', icon: Sailboat, to: '/africa/egypt/holidays/nile-cruise' },
-  { name: 'Short trips', icon: Timer, to: '/africa/egypt/holidays/short-trips' }
-].map((s) => ({ ...s, kind: 'style' }));
-
-const PROMPTS = [
-  { icon: MapPin, text: hero.searchPlaceholder, short: hero.searchPlaceholderMobile },
-  { icon: Compass, text: hero.searchPlaceholderStyle, short: hero.searchPlaceholderStyleMobile }
-];
-
+// Destination-only search: every live country page plus the two continent listings.
 function buildDestinations() {
   const map = new Map();
   Object.values(destinations).forEach((list) => {
     list.forEach((d) => {
-      if (!ROUTES[d.name] || map.has(d.name)) return;
-      map.set(d.name, { name: d.name, src: d.src, to: ROUTES[d.name], kind: 'destination' });
+      if (!COUNTRY_HREF[d.name] || map.has(d.name)) return;
+      map.set(d.name, { name: d.name, src: d.src, to: COUNTRY_HREF[d.name] });
     });
   });
-  map.set('Asia', { name: 'Asia', src: ASIA_IMG, to: '/asia', kind: 'destination' });
-  map.set('Europe', { name: 'Europe', src: EUROPE_IMG, to: '/europe', kind: 'destination' });
-  REGIONS.forEach((r) => map.set(r.name, r));
+  map.set('Asia', { name: 'Asia', src: ASIA_IMG, to: '/asia' });
+  map.set('Europe', { name: 'Europe', src: EUROPE_IMG, to: '/europe' });
   ALIASES.forEach((alias, name) => { const d = map.get(name); if (d) map.set(name, { ...d, alias }); });
   return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
@@ -68,9 +43,7 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
 
   const all = useMemo(buildDestinations, []);
   const q = value.trim().toLowerCase();
-  const destMatches = q ? all.filter((d) => `${d.name} ${d.alias || ''}`.toLowerCase().includes(q)) : all;
-  const styleMatches = q ? STYLES.filter((s) => s.name.toLowerCase().includes(q)) : STYLES;
-  const matches = [...destMatches, ...styleMatches];
+  const matches = q ? all.filter((d) => `${d.name} ${d.alias || ''}`.toLowerCase().includes(q)) : all;
 
   useEffect(() => {
     if (inline) return undefined;
@@ -83,7 +56,8 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
     setSelected(d);
     setValue('');
     setFocused(inline);
-    if (d.to) { navigate(d.to); onPick?.(d); }
+    navigate(d.to);
+    onPick?.(d);
   };
 
   const clear = () => {
@@ -94,12 +68,9 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
 
   const submit = (e) => {
     e.preventDefault();
-    const target = selected || matches.find((d) => d.to);
-    if (target && target.to) { navigate(target.to); onPick?.(target); }
+    const target = selected || matches[0];
+    if (target) { navigate(target.to); onPick?.(target); }
   };
-
-  const active = selected && selected.kind === 'style' ? PROMPTS[1] : PROMPTS[0];
-  const LeadIcon = selected && selected.kind === 'style' ? selected.icon : active.icon;
 
   return (
     <div ref={wrapRef} className={`relative w-full ${focused && !inline ? 'z-[120]' : ''}`}>
@@ -107,11 +78,11 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
         onSubmit={submit}
         className={`hi-search group flex items-center w-full h-14 sm:h-16 rounded-full pl-5 sm:pl-6 pr-2 ${focused ? 'is-focused' : ''} ${className}`}
         data-focused={focused}
-        data-prompt={active === PROMPTS[1] ? 'style' : 'destination'}
+        data-prompt="destination"
         data-testid={`${id}-search-form`}
       >
-        <span key={LeadIcon.displayName || active.text} className="shrink-0 flex animate-[hi-fade-in_300ms_ease-out]" data-testid={`${id}-search-icon`}>
-          <LeadIcon size={20} strokeWidth={1.5} className={`text-primary/80 transition-[color,transform] duration-300 group-hover:text-primary ${focused ? 'text-primary animate-[hi-pin-nudge_500ms_ease-out]' : ''}`} />
+        <span className="shrink-0 flex" data-testid={`${id}-search-icon`}>
+          <MapPin size={20} strokeWidth={1.5} className={`text-primary/80 transition-[color,transform] duration-300 group-hover:text-primary ${focused ? 'text-primary animate-[hi-pin-nudge_500ms_ease-out]' : ''}`} />
         </span>
         <div className="relative flex-1 min-w-0 h-full flex items-center px-3.5 sm:px-4">
           {selected ? (
@@ -163,20 +134,15 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
             {matches.map((d, idx) => (
               <button
                 type="button"
-                key={`${d.kind}-${d.name}`}
+                key={d.name}
                 onClick={() => pick(d)}
                 style={{ animationDelay: `${Math.min(idx, 8) * 35}ms` }}
                 className="w-full flex items-center gap-4 px-5 py-2.5 text-left hover:bg-onsurface/[0.05] transition-colors opacity-0 animate-[hi-row-in_300ms_ease-out_forwards]"
                 data-testid={`${id}-search-suggestion-${slug(d.name)}`}
-                data-kind={d.kind}
+                data-kind="destination"
               >
-                {d.kind === 'style' ? (
-                  <span className="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center shrink-0 text-primary"><d.icon size={22} strokeWidth={1.75} /></span>
-                ) : (
-                  <img src={d.src} alt={d.name} loading="lazy" className="w-12 h-12 rounded-full object-cover shrink-0 bg-surface-highest" />
-                )}
+                <img src={d.src} alt={d.name} loading="lazy" className="w-12 h-12 rounded-full object-cover shrink-0 bg-surface-highest" />
                 <span className="t-body-lg text-onsurface">{d.name}</span>
-                {d.kind === 'style' && <span className="ml-auto t-label-md text-onsurface-variant">{hero.searchStyleTag}</span>}
               </button>
             ))}
           </div>

@@ -7,6 +7,40 @@ import { IMG } from './cambodiaPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Cambodia";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/nbcr7heyyhnurhlmcy06gf55nb4v_Phnom%20Kulen%20Waterfall%202.jpg?w=2000&dpr=1', // Tourists enjoying views of Phnom Kulen Waterfall
+  places: [
+    'https://media1.thrillophilia.com/filestore/xaa9ytoxcpmjrwbnf7ucnl11wo30_shutterstock_289362896.jpg?w=1200&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/iaqnbtm5mds71h4u750titpq91uj_shutterstock_1982536544.jpg?w=1200&dpr=1', // Phnom Penh
+    'https://media1.thrillophilia.com/filestore/0eeolh4m5vco2tlqhjedbgoybppc_shutterstock_172914194.jpg?w=1200&dpr=1', // Tonle Sap Lake, Siem Reap
+    'https://media1.thrillophilia.com/filestore/1i89mdw0hjjxnkzcal9u7ad6845p_shutterstock_559574212.jpg?w=1200&dpr=1', // Bayon Temple, Siem Reap
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/0owxv2o768ytz8ah0yyw3gglcrds_shutterstock_200175419.jpg?w=1200&dpr=1', // Take blessings at the Angkor Wat
+    'https://media1.thrillophilia.com/filestore/841qrc36jc65aaxes82iy6zy448w_shutterstock_378872509.jpg?w=1200&dpr=1', // Tonle Sap Lake, Siem Reap
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/ampw9fxdcl9klvkgvunx4lxgb7ur_Tonle%20Sap%20Lake,%20Siem%20Reap%202.jpg?w=900&dpr=1', // Tourists enjoying boating on Tonle Sap Lake, Cambodia
+    'https://media1.thrillophilia.com/filestore/6n3scmd5rlsnaop1pb6iwv19uv23_shutterstock_601657496.jpg?w=900&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/ynhhbvyz5wx9z88wwhtsk4jb3eee_shutterstock_128239889.jpg?w=900&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/tiuvxkux663ncun5lwbu02kv3n8i_shutterstock_707816683.jpg?w=900&dpr=1', // Siem Reap
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/8t8tbzlhfgky047nhali974ytiim_shutterstock_616405904.jpg?w=600&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/1xf3c51dyd41hxizgyq99uie61d9_shutterstock_381559081.jpg?w=600&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/kz2o1i094vsaodj2hkv3prbsrbsy_shutterstock_237338044.jpg?w=600&dpr=1', // Siem Reap
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/1eu5uztqkmk9jeqmyxxiqgseqhqx_Angkor%20Wat%20with%20reflection%20in%20water%20during%20sunset,%20Siem%20Reap.jpg?w=1200&dpr=1', // Angkor Wat with its reflection in water during sunset, Siem Reap
+    'https://media1.thrillophilia.com/filestore/awesjidyay7lv06s2swx2fpzc8g9_shutterstock_733867591.jpg?w=1200&dpr=1', // Angkor Wat Temple
+    'https://media1.thrillophilia.com/filestore/17gev5dob1lg6s5iuef76mu9qjih_shutterstock_224188177%20(1).jpg?w=1200&dpr=1', // Siem Reap
+    'https://media1.thrillophilia.com/filestore/l8le5jsf0zjy5vkbw0xxxoolymwc_Phnom%20Kulen%20Waterfall%201.jpg?w=1200&dpr=1', // Phnom Kulen Waterfall, Cambodia
+    'https://media1.thrillophilia.com/filestore/2pwn7e3jpn5shijh2g1pk8ur5sbk_shutterstock_707816683%20(1).jpg?w=1200&dpr=1', // The majestic Angkor Wat
+    'https://media1.thrillophilia.com/filestore/y9n6en3cr0guoqh4o7cfmlxd1sd6_shutterstock_68665828.jpg?w=1200&dpr=1', // Angkor Wat Temple
+  ],
+};
+
 export const destination = { name: N, continent: 'Asia', primary: ["Siem Reap", "Phnom Penh", "Battambang", "Koh Rong"] };
 export const holidaysPath = '/asia/cambodia/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/cambodia' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = cambodiaProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Cambodia was spot on. Siem Reap was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Phnom Penh to Battambang, the pace was perfect for the kids and the guides were wonderful. We would book Cambodia with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Cambodia inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Cambodia was spot on. Siem Reap was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Phnom Penh to Battambang, the pace was perfect for the kids and the guides were wonderful. We would book Cambodia with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Cambodia inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Cambodia trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Cambodia trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Siem Reap", IMG.hero],
-  ["Phnom Penh", IMG.hero],
-  ["Battambang", IMG.hero],
-  ["Koh Rong", IMG.hero]
+  ["Siem Reap", P.places[0]],
+  ["Phnom Penh", P.places[1]],
+  ["Tonle Sap", P.places[2]],
+  ["Ta Prohm", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Sunrise at Angkor Wat and the faces of Bayon", alt: "Siem Reap, Cambodia", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Royal Palace and the Silver Pagoda", alt: "Phnom Penh, Cambodia", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Sunrise at Angkor Wat and the faces of Bayon", alt: "Siem Reap, Cambodia", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Royal Palace and the Silver Pagoda", alt: "Phnom Penh, Cambodia", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

@@ -7,6 +7,40 @@ import { IMG } from './norwayPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Norway";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/e3ovt4pioeczfzvc6b548jiaonef_Aerial%20View%20of%20Tromso.jpg?w=2000&dpr=1', // Aerial View of Tromso
+  places: [
+    'https://media1.thrillophilia.com/filestore/3w9p7pa82fs2yb7g7nisjedyd5rp_shutterstock_684917530.jpg?w=1200&dpr=1', // Oslo Opera House
+    'https://media1.thrillophilia.com/filestore/mqt5yd7kyvxahsmkazbmehhq4ufl_shutterstock_1174168732.jpg?w=1200&dpr=1', // Bergen
+    'https://media1.thrillophilia.com/filestore/557y5kxaxej2exye3olk64k9nlzb_shutterstock_540279448.jpg?w=1200&dpr=1', // Flåmsbana
+    'https://media1.thrillophilia.com/filestore/am2siiai8euxbwvj35knqv7hcj2f_shutterstock_2243667335.jpg?w=1200&dpr=1', // Tromso
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/tpol6on17kj0dnzpjv0536tm9qdd_Scenic%20Bridge%20Along%20a%20Fjord.jpeg?w=1200&dpr=1', // Scenic Bridge Along a Fjord
+    'https://media1.thrillophilia.com/filestore/nbflve5b8ju78h12lcbi02e72hkd_shutterstock_1120772963%20(2).jpg?w=1200&dpr=1', // Tourist enjoying the view of Aurora Lights
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/21jkpyek1b3n46h6jbtidxpp9x98_dl.beatsnoop.com-1716453865.jpg?w=900&dpr=1', // People at Pulpit Rock
+    'https://media1.thrillophilia.com/filestore/3l6771ed6guemzhlgz6p7seso6va_dl.beatsnoop.com-6vK3LmEhaX.jpg?w=900&dpr=1', // People Watching Geiranger Fjord from Cruise
+    'https://media1.thrillophilia.com/filestore/1y2rj9hm9xeobm3qn1q3ibwoz9ie_shutterstock_1614182680.jpg?w=900&dpr=1', // Woman admiring the views of Norwegian Geiranger fjord
+    'https://media1.thrillophilia.com/filestore/21ciifaoz9ykm4q6tpa2j6zluolo_shutterstock_1333899290.jpg?w=900&dpr=1', // People watching Aurora Borealis
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/l75kykdrmqteoocfi6phs6govqs4_shutterstock_1014479395%20(1).jpg?w=600&dpr=1', // People Camping for Northern Lights
+    'https://media1.thrillophilia.com/filestore/y7lzw9hc4rygyh77tpqgm1wb1it2_itacy9ucux69fzdsqbwddeeax7i1_1585046136_b.jpg?w=600&dpr=1', // Visitors can enjoy the ride on the bus
+    'https://media1.thrillophilia.com/filestore/tjuql1wv0zo0hy8qjpq2d816izi2_20yoieh26xdldwrmzeazt2x5suh7_shu.jpg?w=600&dpr=1', // Chilean Flamingo
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/ilgsjh5uy463mw89ms3vr26nq1d8_shutterstock_1664486461.jpg?w=1200&dpr=1', // Sunset in Helsinki
+    'https://media1.thrillophilia.com/filestore/ollhema7t6vjmfc6nzbjs2ifj2w5_shutterstock_426726232.jpg?w=1200&dpr=1', // The Royal Palace, Stockholm
+    'https://media1.thrillophilia.com/filestore/e1i9rzy2zpsf712eomi9wprnw2hb_Bergen,%20Fish%20market%201.jpg?w=1200&dpr=1', // Fish Market
+    'https://media1.thrillophilia.com/filestore/uh9a3pirss5x98eg0bzufs9s5nyn_shutterstock_2140670125.jpg?w=1200&dpr=1', // Panoramic views of Tromso
+    'https://media1.thrillophilia.com/filestore/nyvbc9uek5h0ikvxo7owo52my5at_shutterstock_597095582.jpg?w=1200&dpr=1', // Beautiful view of Santa Claus Village
+    'https://media1.thrillophilia.com/filestore/0tmwcchrejumg8wxstz1unh4b020_shutterstock_2088774592.jpg?w=1200&dpr=1', // Cityscape of Bergen
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Oslo", "Bergen", "Flåm & Sognefjord", "Tromsø"] };
 export const holidaysPath = '/europe/norway/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/norway' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = norwayProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Norway was spot on. Oslo was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Bergen to Flåm & Sognefjord, the pace was perfect for the kids and the guides were wonderful. We would book Norway with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Norway inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Norway was spot on. Oslo was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Bergen to Flåm & Sognefjord, the pace was perfect for the kids and the guides were wonderful. We would book Norway with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Norway inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Norway trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Norway trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Oslo", IMG.hero],
-  ["Bergen", IMG.hero],
-  ["Flåm & Sognefjord", IMG.hero],
-  ["Tromsø", IMG.hero]
+  ["Oslo", P.places[0]],
+  ["Bergen", P.places[1]],
+  ["Flåm & Sognefjord", P.places[2]],
+  ["Tromsø", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Vigeland Park and the Opera House roof walk", alt: "Oslo, Norway", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Bryggen wharf and the Fløibanen funicular", alt: "Bergen, Norway", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Vigeland Park and the Opera House roof walk", alt: "Oslo, Norway", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Bryggen wharf and the Fløibanen funicular", alt: "Bergen, Norway", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

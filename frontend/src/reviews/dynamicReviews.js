@@ -11,7 +11,7 @@ const DEST = {
   Singapore: ['popular', ['Gardens by the Bay after dark', 'the Night Safari', 'the Universal Studios day', 'the Marina Bay skyline', 'Jewel Changi']],
   Maldives: ['popular', ['the overwater villa', 'snorkelling with turtles', 'the sunset dolphin cruise', 'the private sandbank dinner']],
   Egypt: ['popular', ['the Nile cruise between Luxor and Aswan', 'the sunrise at the pyramids', 'Abu Simbel', 'the Red Sea snorkelling', 'the Valley of the Kings']],
-  Indonesia: ['popular', ['the Ubud rice terrace walk', 'the Nusa Penida day trip', 'the Uluwatu sunset', 'the Gili Islands snorkelling']],
+  Bali: ['popular', ['the Ubud rice terrace walk', 'the Nusa Penida day trip', 'the Uluwatu sunset', 'the Gili Islands snorkelling']],
   'Sri Lanka': ['mid', ['the Kandy to Ella train', 'the Yala safari', 'Sigiriya rock', 'the Galle fort evenings', 'the Mirissa whale watching']],
   Malaysia: ['mid', ['the Petronas Towers night view', 'the Langkawi cable car', 'Penang street food', 'the Cameron Highlands tea estate visit']],
   Japan: ['mid', ['the bullet train', 'the dawn temple walk in Kyoto', 'the Tokyo food tour', 'Mount Fuji views from Hakone', 'the deer park in Nara']],

@@ -7,6 +7,40 @@ import { IMG } from './laosPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Laos";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/0oqzefyz9s9mfqufs6y60a49i9we_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=2000&dpr=1', // View of Luang Prabang from Phousi Hill, Laos
+  places: [
+    'https://media1.thrillophilia.com/filestore/jjcvr2idpexgno7z6ckbks66jjg2_1597047076_shutterstock_1724354677.jpg.jpg?w=1200&dpr=1', // Luang Prabang
+    'https://media1.thrillophilia.com/filestore/ia8wypz56r113ohsgzy0dlqzaeut_Royal%20Palace,%20Luang%20Prabang%202.jpg?w=1200&dpr=1', // Royal Palace Museum in Luang Prabang, Laos
+    'https://media1.thrillophilia.com/filestore/0oqzefyz9s9mfqufs6y60a49i9we_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=1200&dpr=1', // View of Luang Prabang from Phousi Hill, Laos
+    'https://media1.thrillophilia.com/filestore/cdvq3huajftzqbq33yskuhjbobx8_Elephant%20Village%205.jpg?w=1200&dpr=1', // Elephant Village, Laos
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/o67u9vyzta2jlmhcsfjnu3tx311t_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=1200&dpr=1', // Panoramic views of Luang Prabang from Phousi Hill
+    'https://media1.thrillophilia.com/filestore/cdvq3huajftzqbq33yskuhjbobx8_Elephant%20Village%205.jpg?w=1200&dpr=1', // Elephant Village, Laos
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/jjcvr2idpexgno7z6ckbks66jjg2_1597047076_shutterstock_1724354677.jpg.jpg?w=900&dpr=1', // Luang Prabang
+    'https://media1.thrillophilia.com/filestore/ia8wypz56r113ohsgzy0dlqzaeut_Royal%20Palace,%20Luang%20Prabang%202.jpg?w=900&dpr=1', // Royal Palace Museum in Luang Prabang, Laos
+    'https://media1.thrillophilia.com/filestore/o67u9vyzta2jlmhcsfjnu3tx311t_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=900&dpr=1', // Panoramic views of Luang Prabang from Phousi Hill
+    'https://media1.thrillophilia.com/filestore/jjcvr2idpexgno7z6ckbks66jjg2_1597047076_shutterstock_1724354677.jpg.jpg?w=900&dpr=1', // Luang Prabang
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/ia8wypz56r113ohsgzy0dlqzaeut_Royal%20Palace,%20Luang%20Prabang%202.jpg?w=600&dpr=1', // Royal Palace Museum in Luang Prabang, Laos
+    'https://media1.thrillophilia.com/filestore/0oqzefyz9s9mfqufs6y60a49i9we_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=600&dpr=1', // View of Luang Prabang from Phousi Hill, Laos
+    'https://media1.thrillophilia.com/filestore/cdvq3huajftzqbq33yskuhjbobx8_Elephant%20Village%205.jpg?w=600&dpr=1', // Elephant Village, Laos
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/o67u9vyzta2jlmhcsfjnu3tx311t_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=1200&dpr=1', // Panoramic views of Luang Prabang from Phousi Hill
+    'https://media1.thrillophilia.com/filestore/ia8wypz56r113ohsgzy0dlqzaeut_Royal%20Palace,%20Luang%20Prabang%202.jpg?w=1200&dpr=1', // Royal Palace Museum in Luang Prabang, Laos
+    'https://media1.thrillophilia.com/filestore/jjcvr2idpexgno7z6ckbks66jjg2_1597047076_shutterstock_1724354677.jpg.jpg?w=1200&dpr=1', // Luang Prabang
+    'https://media1.thrillophilia.com/filestore/0oqzefyz9s9mfqufs6y60a49i9we_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=1200&dpr=1', // View of Luang Prabang from Phousi Hill, Laos
+    'https://media1.thrillophilia.com/filestore/cdvq3huajftzqbq33yskuhjbobx8_Elephant%20Village%205.jpg?w=1200&dpr=1', // Elephant Village, Laos
+    'https://media1.thrillophilia.com/filestore/o67u9vyzta2jlmhcsfjnu3tx311t_Phousi%20Hill,%20Luang%20Prabang%201.jpg?w=1200&dpr=1', // Panoramic views of Luang Prabang from Phousi Hill
+  ],
+};
+
 export const destination = { name: N, continent: 'Asia', primary: ["Luang Prabang", "Vang Vieng", "Vientiane", "Pakse & 4000 Islands"] };
 export const holidaysPath = '/asia/laos/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/laos' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = laosProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Laos was spot on. Luang Prabang was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Vang Vieng to Vientiane, the pace was perfect for the kids and the guides were wonderful. We would book Laos with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Laos inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Laos was spot on. Luang Prabang was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Vang Vieng to Vientiane, the pace was perfect for the kids and the guides were wonderful. We would book Laos with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Laos inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Laos trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Laos trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Luang Prabang", IMG.hero],
-  ["Vang Vieng", IMG.hero],
-  ["Vientiane", IMG.hero],
-  ["Pakse & 4000 Islands", IMG.hero]
+  ["Luang Prabang", P.places[0]],
+  ["Vang Vieng", P.places[1]],
+  ["Vientiane", P.places[2]],
+  ["Pakse & 4000 Islands", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Alms-giving ceremony at dawn and the Royal Palace Museum", alt: "Luang Prabang, Laos", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Blue Lagoon swim and Tham Chang cave", alt: "Vang Vieng, Laos", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Alms-giving ceremony at dawn and the Royal Palace Museum", alt: "Luang Prabang, Laos", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Blue Lagoon swim and Tham Chang cave", alt: "Vang Vieng, Laos", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

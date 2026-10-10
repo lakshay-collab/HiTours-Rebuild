@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import FlightPath from './FlightPath';
-import { destinationTabs, destinations } from '../destinationsData';
+import { destinationTabs, destinations, COUNTRY_HREF, COMING_SOON } from '../destinationsData';
 import { destinationsHeading, destinationsSubcopy } from '../mock';
 
-export const COUNTRY_HREF = { 'Europe': '/europe', 'Europe multi-country': '/europe', 'Egypt': '/africa/egypt', 'Thailand': '/asia/thailand', 'Vietnam': '/asia/vietnam', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
+export { COUNTRY_HREF };
 const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
+
+export const ComingSoonTag = ({ className = '' }) => (
+  <span className={`inline-flex items-center rounded-full bg-surface-variant text-onsurface-variant px-2 py-0.5 text-[11px] font-semibold tracking-[0.04em] whitespace-nowrap shrink-0 ${className}`} data-testid="coming-soon-tag">{COMING_SOON}</span>
+);
 
 export default function Destinations() {
   const [active, setActive] = useState(destinationTabs[0]);
@@ -46,11 +50,20 @@ export default function Destinations() {
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6" data-testid="destination-grid">
           {list.map((d) => {
             const href = COUNTRY_HREF[d.name];
-            const cls = 'group block rounded-xl border border-outline-variant overflow-hidden bg-surface-lowest hover:shadow-[0_2px_8px_rgba(0,0,0,0.12)] transition-shadow';
+            const cls = 'group block rounded-xl border border-outline-variant overflow-hidden bg-surface-lowest transition-shadow';
+            if (!href) {
+              return (
+                <div key={d.name} className={`${cls} cursor-default`} aria-disabled="true" data-testid="destination-card-coming-soon">
+                  <div className="relative h-[150px] overflow-hidden">
+                    <img src={d.src} alt={d.name} className="w-full h-full object-cover opacity-80" loading="lazy" />
+                    <ComingSoonTag className="absolute top-2 left-2 bg-white/95 shadow-sm" />
+                  </div>
+                  <div className="px-2 py-2 t-body-lg text-onsurface">{d.name}</div>
+                </div>
+              );
+            }
             const inner = <><div className="h-[150px] overflow-hidden"><img src={d.src} alt={d.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" /></div><div className="px-2 py-2 t-body-lg text-onsurface">{d.name}</div></>;
-            return href
-              ? <Link key={d.name} to={href} className={cls} data-testid="destination-card">{inner}</Link>
-              : <a key={d.name} href="#" onClick={(e) => e.preventDefault()} className={cls} data-testid="destination-card">{inner}</a>;
+            return <Link key={d.name} to={href} className={`${cls} hover:shadow-[0_2px_8px_rgba(0,0,0,0.12)]`} data-testid="destination-card">{inner}</Link>;
           })}
         </div>
         {regionHref && (

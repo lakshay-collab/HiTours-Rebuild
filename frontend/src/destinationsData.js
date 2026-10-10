@@ -1,7 +1,13 @@
 // Regional destinations grid data (images reused from original site CDN).
 const img = (id, path) => `https://images.ctfassets.net/bth3mlrehms2/${id}/${path}?w=900&q=70&fm=webp`;
+const th = (file) => `https://media1.thrillophilia.com/filestore/${file}?w=900&dpr=1`;
 
 export const destinationTabs = ['Top 10', 'Asia', 'Europe', 'Middle East'];
+
+// Live destination pages. Anything listed below without an entry here is shown as "Coming soon" (not clickable).
+export const COUNTRY_HREF = { 'Europe': '/europe', 'Europe multi-country': '/europe', 'Egypt': '/africa/egypt', 'Thailand': '/asia/thailand', 'Vietnam': '/asia/vietnam', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', 'Laos': '/asia/laos', 'Japan': '/asia/japan', 'Bali': '/asia/bali', 'China': '/asia/china', 'Cambodia': '/asia/cambodia', 'South Korea': '/asia/south-korea', 'Italy': '/europe/italy', 'Switzerland': '/europe/holidays?country=Switzerland', 'France': '/europe/holidays?country=France', 'Germany': '/europe/holidays?country=Germany', 'Netherlands': '/europe/holidays?country=Netherlands', 'Greece': '/europe/greece', 'Norway': '/europe/norway', 'Ireland': '/europe/ireland', 'Finland': '/europe/finland', 'Sweden': '/europe/sweden' };
+export const COMING_SOON = 'Coming soon';
+export const isComingSoon = (name) => !COUNTRY_HREF[name];
 // Previously also: 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
 export const continentMeta = {
   'Top 10': { src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg'), tagline: 'Our most loved destinations right now', href: null },
@@ -13,13 +19,15 @@ export const continentMeta = {
 export const destinations = {
   'Top 10': [
     { name: 'Europe', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
+    { name: 'Japan', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') },
     { name: 'Vietnam', region: 'Asia', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
+    { name: 'Bali', region: 'Asia', src: img('61b5ymnc76Gat5QEm4R7Uv', '236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png') },
+    { name: 'Bhutan', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Thailand', region: 'Asia', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
     { name: 'Singapore', region: 'Asia', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
-    { name: 'Malaysia', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
-    { name: 'Egypt', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
-    { name: 'Bhutan', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
-    { name: 'Japan', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
+    { name: 'China', region: 'Asia', src: img('3FwBvWPMIiVGThJdqClYD1', 'bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png') },
+    { name: 'Kazakhstan', region: 'Asia', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
+    { name: 'Egypt', region: 'Middle East', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') }
   ],
   'Africa': [
     { name: 'South Africa', src: img('11BIZmUhVTObt1mVYFtofn', 'f05f87c118cdb66b143bbb69eba50c62/Su__dafrika_Kapstadt_Zwo__lf_Apostel_Berge.jpg') },
@@ -38,7 +46,7 @@ export const destinations = {
     { name: 'Thailand', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
     { name: 'Vietnam', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
     { name: 'Japan', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') },
-    { name: 'Indonesia', src: img('61b5ymnc76Gat5QEm4R7Uv', '236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png') },
+    { name: 'Bali', src: img('61b5ymnc76Gat5QEm4R7Uv', '236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png') },
     { name: 'China', src: img('3FwBvWPMIiVGThJdqClYD1', 'bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png') },
     { name: 'Cambodia', src: img('3zbplvZU8SZYLZqdmaPsZv', 'c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg') },
     { name: 'Malaysia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
@@ -51,8 +59,12 @@ export const destinations = {
   'Europe': [
     { name: 'Europe', highlight: true, badge: 'Bestseller', src: '/europe/hero-paris.webp' },
     { name: 'Italy', src: img('6MDAdkdCjF16LaohT1os4R', 'a05331428849331be0c2fd266c8570db/Italien_Amalfi.jpg') },
+    { name: 'Switzerland', src: th('ehq0rpky73oyanmiklwr59ha4fje_shutterstock_1265181466.jpg') },
+    { name: 'France', src: th('oz8oa456lnrmxysb40s01a6muuzt_shutterstock_667652551.jpg') },
     { name: 'Greece', src: img('4tPmbNB9QIZbfIWAsHnz3w', 'fd3191963fb012a8f8e1aeb42a2a6401/Griechenland_Santorini.jpg') },
     { name: 'Norway', src: img('UHqJkdKkOhjiJeqqdlBtb', '7f7ab850458b9aad4024ef52c5834ade/MAIN_Norwegen_Hardangerfjord_TCG.jpg') },
+    { name: 'Germany', src: th('dh32j5dplbklfcgss2cnb1ar6djf_Downpic.cc-image328420529.jpg') },
+    { name: 'Netherlands', src: th('smtjwzuglcyvrflfo5sbjl1g7cw6_shutterstock_555885793.jpg') },
     { name: 'Ireland', src: img('W4uVx0uUt86jnByPHjutE', '306e7fb7b3d77e101f5fbde7cb9cab1d/Irland_CliffsofMoher-2.jpg') },
     { name: 'Finland', src: img('5bPB8dEQGT5Hl1icMTfEiM', '2393b18a187a961b249dfd4ed7a22d7d/iStock-1256670045.jpg') },
     { name: 'Sweden', src: img('4pwuirTK8DaLqHIejBCzWU', '63b0406c67aa2f3b1a18260f86b7e6a1/iStock-1364945953.jpg') }
@@ -90,7 +102,7 @@ export const destinations = {
   'Middle East': [
     { name: 'Egypt', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
     { name: 'Jordan', src: '/destinations/jordan.webp' },
-    { name: 'United Arab Emirates', src: '/destinations/uae.webp' }
+    { name: 'UAE', src: '/destinations/uae.webp' }
   ]
 };
 

@@ -12,12 +12,12 @@ export const nav = {
     { label: 'Deals' },
     { label: 'About us' }
   ],
-  phone: 'Expert advice',
+  phone: 'Speak to a holiday expert',
   login: 'Login'
 };
 
 export const expertAdvice = {
-  title: 'Expert advice',
+  title: 'Speak to a holiday expert',
   openLabel: 'Available now!',
   closedLabel: 'Outside opening hours.',
   existing: 'For questions about an existing trip',
@@ -318,9 +318,9 @@ export const footer = {
   description: 'Hi Tours creates unforgettable travel experiences and supports you with real expertise and individual service – from inspiration to return.',
   columns: [
     { title: 'Hi Tours', links: ['About Us', 'Booking Policy', 'Careers', 'Our Office'] },
-    { title: 'Destinations', links: ['Vietnam', 'Sri Lanka', 'Thailand', 'Singapore', 'Malaysia', 'Egypt', 'Maldives', 'Kazakhstan', 'Bhutan', 'More destinations'] }
+    { title: 'Destinations', links: ['Vietnam', 'Thailand', 'Bali', 'Singapore', 'Malaysia', 'Egypt', 'Japan', 'Bhutan', 'Kazakhstan', 'More destinations'] }
   ],
-  care: { title: 'Hi Tours Care', lines: ['Book worry-free', 'Flexible rebooking and cancellation'], cta: 'Learn more' },
+  care: { title: 'Hi Tours cares', lines: ['Book worry-free', 'Flexible rebooking and cancellation'], cta: 'Learn more' },
   country: 'India',
-  legal: ['Privacy', 'Terms & Conditions', 'Expert advice']
+  legal: ['Privacy', 'Terms & Conditions', 'Speak to a holiday expert']
 };

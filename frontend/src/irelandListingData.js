@@ -7,6 +7,40 @@ import { IMG } from './irelandPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Ireland";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/wb5h4w7dg3jccd1ff7vo8d195xtw_shutterstock_2078633215.jpg?w=2000&dpr=1', // Dublin
+  places: [
+    'https://media1.thrillophilia.com/filestore/a6lds961q74iwol2u1qrqzmuac5g_shutterstock_1670900953.jpg?w=1200&dpr=1', // Dublin
+    'https://media1.thrillophilia.com/filestore/8ndte5qsul47o3qjvhfkd0ax4hkg_1620197366_shutterstock_1712683192.jpg.jpg?w=1200&dpr=1', // Galway
+    'https://media1.thrillophilia.com/filestore/9d5j7s7yiln65k2wpqrkeha6z69b_shutterstock_1930581248.jpg?w=1200&dpr=1', // Dublin
+    'https://media1.thrillophilia.com/filestore/4nu0rdr0wti09890ltk4nx2qocla_1620197018_shutterstock_570685774.jpg.jpg?w=1200&dpr=1', // Limerick
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/0haqpexpcv42uh1pmchz56ojuwtj_shutterstock_2140777789.jpg?w=1200&dpr=1', // Dublin
+    'https://media1.thrillophilia.com/filestore/p8foamktllxhkisxp1rz647spth9_shutterstock_717478675.jpg?w=1200&dpr=1', // Dublin
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/ewkt9z88zbavvk5w483x11ym15q8_shutterstock_1877663632.jpg?w=900&dpr=1', // Dublin
+    'https://media1.thrillophilia.com/filestore/k1txx23sluz4qv3tlss1rwug1wwp_shutterstock_1098315935.jpg?w=900&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/udxlu803rq5izg27of36zzda1exw_shutterstock_531710473.jpg?w=900&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/m3of452si5zl7vy3va8ab67n8aai_shutterstock_638585515.jpg?w=900&dpr=1', // 7 days ireland tour package
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/wlb5zzphgnw95fxvdfa73aya80es_shutterstock_84517771.jpg?w=600&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/cu5adgjabrunj7n86mrv2nfla9i3_shutterstock_1234337506.jpg?w=600&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/a5bfr7tbphpat87il8osv01zhr8t_shutterstock_1242247285.jpg?w=600&dpr=1', // 7 days ireland tour package
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/uj8mcznj0fltb6iavswch0cptv5o_shutterstock_431693263%20(1).jpg?w=1200&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/kkwr3ovkj2o52lctqdg1u3assygv_shutterstock_1297045075%20(1).jpg?w=1200&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/l2cgdparev5wo4pvpmo27ofcpz92_shutterstock_751236664%20(1).jpg?w=1200&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/b6yuowiya4r012ks9utt5ey1zeqp_shutterstock_540433816.jpg?w=1200&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/jkaq0ecgla6bfkk6gydy84gpijjh_shutterstock_141772114.jpg?w=1200&dpr=1', // 7 days ireland tour package
+    'https://media1.thrillophilia.com/filestore/7t2hpiz015an48eedbazmabndilq_shutterstock_99092945%20(1).jpg?w=1200&dpr=1', // 7 days ireland tour package
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Dublin", "Galway", "Killarney", "Belfast & Antrim"] };
 export const holidaysPath = '/europe/ireland/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/ireland' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = irelandProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Ireland was spot on. Dublin was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Galway to Killarney, the pace was perfect for the kids and the guides were wonderful. We would book Ireland with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Ireland inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Ireland was spot on. Dublin was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Galway to Killarney, the pace was perfect for the kids and the guides were wonderful. We would book Ireland with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Ireland inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Ireland trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Ireland trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Dublin", IMG.hero],
-  ["Galway", IMG.hero],
-  ["Killarney", IMG.hero],
-  ["Belfast & Antrim", IMG.hero]
+  ["Dublin", P.places[0]],
+  ["Galway", P.places[1]],
+  ["Killarney", P.places[2]],
+  ["Belfast & Antrim", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Trinity College and the Book of Kells", alt: "Dublin, Ireland", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Cliffs of Moher and the Burren", alt: "Galway, Ireland", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Trinity College and the Book of Kells", alt: "Dublin, Ireland", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Cliffs of Moher and the Burren", alt: "Galway, Ireland", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

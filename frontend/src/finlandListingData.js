@@ -7,6 +7,40 @@ import { IMG } from './finlandPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Finland";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/ulri44rknvwh0wlnrdamx5szhveh_shutterstock_1174168732%20(1).jpg?w=2000&dpr=1', // Aerial view of Bergen cityscape
+  places: [
+    'https://media1.thrillophilia.com/filestore/jcox76rh9q7glfppf480l35kjrze_shutterstock_1917056663.jpg?w=1200&dpr=1', // Helsinki
+    'https://media1.thrillophilia.com/filestore/5nnpt2ljyhh5kg14l2mnro9th552_shutterstock_2165338049.jpg?w=1200&dpr=1', // Rovaniemi
+    'https://media1.thrillophilia.com/filestore/nbflve5b8ju78h12lcbi02e72hkd_shutterstock_1120772963%20(2).jpg?w=1200&dpr=1', // Tourist enjoying the view of Aurora Lights
+    'https://media1.thrillophilia.com/filestore/dajxorz42u0ynguus7kjosvhsrub_Reindeer%20Sledding.jpeg?w=1200&dpr=1', // Thrilling Reindeer Sledding
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/nyvbc9uek5h0ikvxo7owo52my5at_shutterstock_597095582.jpg?w=1200&dpr=1', // Beautiful view of Santa Claus Village
+    'https://media1.thrillophilia.com/filestore/8g6xnzvqm5nxc0cwwd56qkrvw6eu_shutterstock_1442994608.jpg?w=1200&dpr=1', // Husky Sledding in Inari
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/21ciifaoz9ykm4q6tpa2j6zluolo_shutterstock_1333899290.jpg?w=900&dpr=1', // People watching Aurora Borealis
+    'https://media1.thrillophilia.com/filestore/l75kykdrmqteoocfi6phs6govqs4_shutterstock_1014479395%20(1).jpg?w=900&dpr=1', // People Camping for Northern Lights
+    'https://media1.thrillophilia.com/filestore/k57rz1b9audjuelse4ftyame9mvo_shutterstock_322256108.jpg?w=900&dpr=1', // Helsinki
+    'https://media1.thrillophilia.com/filestore/lxv5apgpvtsl1zr9gczzmqsvezk1_shutterstock_160053437.jpg?w=900&dpr=1', // Helsinki
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/q9fnoq5e4v4bky9bq94sa4hoehnm_shutterstock_367648301.jpg?w=600&dpr=1', // Helsinki
+    'https://media1.thrillophilia.com/filestore/dtuaegof6dik995yy9zz5ekkbyon_shutterstock_1342334081-min.jpg?w=600&dpr=1', // Helsinki
+    'https://media1.thrillophilia.com/filestore/ktbgl3irkkzljs27lb6zeg6avbxs_shutterstock_122850553.jpg?w=600&dpr=1', // Helsinki
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/ilgsjh5uy463mw89ms3vr26nq1d8_shutterstock_1664486461.jpg?w=1200&dpr=1', // Sunset in Helsinki
+    'https://media1.thrillophilia.com/filestore/z647pj52n4g0dlaexypshfqmrhqi_3fwrm43l3n3v5trkji62bxgdvbpf_1619081223_shutterstock_1170906319.webp?w=1200&dpr=1', // Impressive Christiansborg Palace, Copenhagen
+    'https://media1.thrillophilia.com/filestore/t89oiqt0vu0x69a6fo3nosem254t_Panoramic%20of%20the%20Market%20Square.jpeg?w=1200&dpr=1', // Panoramic views of the Market Square
+    'https://media1.thrillophilia.com/filestore/zrbum3o8f3ya2tiedcy6j5ykx87r_Skyview.webp?w=1200&dpr=1', // View of Skyview Gondola, Stockholm
+    'https://media1.thrillophilia.com/filestore/8vsaponvghlapftkv1f0mlqiat64_shutterstock_1904886709.jpg?w=1200&dpr=1', // Aerial view of Santa Claus Village
+    'https://media1.thrillophilia.com/filestore/ctsf6xhembh0cqd66wrkawc6wvk0_Stockholm%20cityscape.jpg?w=1200&dpr=1', // Stunning Stockholm City Views
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Helsinki", "Rovaniemi", "Saariselkä", "Lakeland"] };
 export const holidaysPath = '/europe/finland/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/finland' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = finlandProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Finland was spot on. Helsinki was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Rovaniemi to Saariselkä, the pace was perfect for the kids and the guides were wonderful. We would book Finland with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Finland inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Finland was spot on. Helsinki was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Rovaniemi to Saariselkä, the pace was perfect for the kids and the guides were wonderful. We would book Finland with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Finland inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Finland trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Finland trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Helsinki", IMG.hero],
-  ["Rovaniemi", IMG.hero],
-  ["Saariselkä", IMG.hero],
-  ["Lakeland", IMG.hero]
+  ["Helsinki", P.places[0]],
+  ["Rovaniemi", P.places[1]],
+  ["Saariselkä", P.places[2]],
+  ["Lakeland", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Design District and the Oodi library", alt: "Helsinki, Finland", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Santa Claus Village and the Arctic Circle", alt: "Rovaniemi, Finland", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Design District and the Oodi library", alt: "Helsinki, Finland", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Santa Claus Village and the Arctic Circle", alt: "Rovaniemi, Finland", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

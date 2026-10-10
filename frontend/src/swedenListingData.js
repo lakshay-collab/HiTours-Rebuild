@@ -7,6 +7,40 @@ import { IMG } from './swedenPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Sweden";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/soagzlcglrjrt8rzoaszph8m8221_shutterstock_318130976.jpg?w=2000&dpr=1', // Aerial view of Stockholm
+  places: [
+    'https://media1.thrillophilia.com/filestore/aocun7agtofeiohv74ijhf3dfc1g_shutterstock_1012565155.jpg?w=1200&dpr=1', // Stockholm City Hall
+    'https://media1.thrillophilia.com/filestore/f68yny953886zu6irwbh4lyqipep_shutterstock_1896884041.jpg?w=1200&dpr=1', // Gamla Stan
+    'https://media1.thrillophilia.com/filestore/ft76v45j1a5y54m0meghm3b5p2qi_shutterstock_316647848.jpg?w=1200&dpr=1', // Ship Wreck at Vasa Museum, Sweden
+    'https://media1.thrillophilia.com/filestore/ollhema7t6vjmfc6nzbjs2ifj2w5_shutterstock_426726232.jpg?w=1200&dpr=1', // The Royal Palace, Stockholm
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/jkotfah0gw75wgoc0s17na4a05vo_shutterstock_1113751088%20(1).jpg?w=1200&dpr=1', // The Royal Palace, Stockholm
+    'https://media1.thrillophilia.com/filestore/3h31e7zkvvcbilsn9u6vigs3zipf_icebar.webp?w=1200&dpr=1', // Icebar, Stockholm
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/0fhfdaiw6cprdtafsczd6wzxtath_shutterstock_613199033.jpg?w=900&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/lh5jtsx0mu30jd4kq1clkjtui5ot_shutterstock_769571116.jpg?w=900&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/qow4w6ig9878so6jl0sl6uevv8by_shutterstock_203577481.jpg?w=900&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/aa1isye2rbzq3391or61cbzzw64s_shutterstock_485404870.jpg?w=900&dpr=1', // Stockholm
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/8dxp5784ir4d9c8z1rrrierbzebz_shutterstock_2130119159.jpg?w=600&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/aiuzh0pm43jg4qnnhj513zanomey_shutterstock_1518000098.jpg?w=600&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/bbt7wjk12om1delgz4yj7ugbq1u0_shutterstock_314554589.jpg?w=600&dpr=1', // Stockholm
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/xbnkgapjb02ai9b5tn9yf1bxpll2_shutterstock_1023801190.jpg?w=1200&dpr=1', // Stockholm
+    'https://media1.thrillophilia.com/filestore/zyd5irxc8bmcunmcg6id01zxjjsd_shutterstock_443768356.jpg?w=1200&dpr=1', // Stockholm hop on hop off tour
+    'https://media1.thrillophilia.com/filestore/jttla37o9vc1fte14m1vgegqm5qt_shutterstock_549332203.jpg?w=1200&dpr=1', // Vasa Museum
+    'https://media1.thrillophilia.com/filestore/zrbum3o8f3ya2tiedcy6j5ykx87r_Skyview.webp?w=1200&dpr=1', // View of Skyview Gondola, Stockholm
+    'https://media1.thrillophilia.com/filestore/dax7yc397pzejktret7gi9wdudoq_shutterstock_1548563657.jpg?w=1200&dpr=1', // Vasa Museum
+    'https://media1.thrillophilia.com/filestore/ctsf6xhembh0cqd66wrkawc6wvk0_Stockholm%20cityscape.jpg?w=1200&dpr=1', // Stunning Stockholm City Views
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Stockholm", "Gothenburg", "Swedish Lapland", "Visby, Gotland"] };
 export const holidaysPath = '/europe/sweden/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/sweden' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = swedenProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Sweden was spot on. Stockholm was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Gothenburg to Swedish Lapland, the pace was perfect for the kids and the guides were wonderful. We would book Sweden with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Sweden inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Sweden was spot on. Stockholm was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Gothenburg to Swedish Lapland, the pace was perfect for the kids and the guides were wonderful. We would book Sweden with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Sweden inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Sweden trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Sweden trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Stockholm", IMG.hero],
-  ["Gothenburg", IMG.hero],
-  ["Swedish Lapland", IMG.hero],
-  ["Visby, Gotland", IMG.hero]
+  ["Stockholm", P.places[0]],
+  ["Gamla Stan", P.places[1]],
+  ["Vasa Museum", P.places[2]],
+  ["Royal Palace", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Gamla Stan old town and the Royal Palace", alt: "Stockholm, Sweden", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Haga district and Feskekôrka fish market", alt: "Gothenburg, Sweden", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Gamla Stan old town and the Royal Palace", alt: "Stockholm, Sweden", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Haga district and Feskekôrka fish market", alt: "Gothenburg, Sweden", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

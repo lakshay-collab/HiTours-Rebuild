@@ -7,6 +7,40 @@ import { IMG } from './chinaPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "China";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/5nidweabel7pjfqjs2ggli65y8mm_shutterstock_2308664077.jpg?w=2000&dpr=1', // Marvel at the amazing views of Shanghai
+  places: [
+    'https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg?w=1200&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/3dairf4dgw62c4pcwyff8tkju09q_Xian-4.jpg?w=1200&dpr=1', // Xi An
+    'https://media1.thrillophilia.com/filestore/c9o1ysgd405jmdm28z76ptq4gad1_dl.beatsnoop.com-3000-gUTC1rGJdu.jpg?w=1200&dpr=1', // Marvel at the stunning Great Wall of China
+    'https://media1.thrillophilia.com/filestore/bpw4f5x8yiuj4w7ss6pwzxbfc0c4_1573798748_shutterstock_1081693688.jpg.jpg?w=1200&dpr=1', // Shanghai
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/offw231ijmnfpbyh1vzapiiq1gvr_ux7cbrp2jopf9v7co1k3903ybxez_br2bnwd3xa9klj7u3jl7ylw3kx2r_shutterstock_1296100681-min.webp?w=1200&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/nisf4h2y85rreelypebq7wt9aq75_b85ozxideim4e20fymacfrmii2so_dl.beatsnoop.com-final-xQKnzFV6U7.webp?w=1200&dpr=1', // Shanghai
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/7kapt01u3qxgs99fz91puudjscok_0g2mtmjgqtbr2alw8qd2tp65s99k_shutterstock_1828179890.webp?w=900&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/du5si782iyi1mjepe8f9t4otd6q4_zpj91ebq8vav36dm43zv5pu3vccv_n3hbx0upk69gc5ft63mq30np7nxt_shutterstock_1849707601-min.webp?w=900&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/owkvwbmwingdtidbq988gbfd9nnu_shutterstock_2087531707.jpg?w=900&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/43dx6rkbgygjjtpijdtev6b6cvgt_shutterstock_2167583435.jpg?w=900&dpr=1', // Beijing
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/5mmylunyg0k99s2tx9cgx15zqy87_shutterstock_324699287.jpg?w=600&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/8ce2hkhxec4510t1416uci3j9l1s_9rbtq82wxkcf00epyti53cehezub_Downpic.cc-image440642400.webp?w=600&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg?w=600&dpr=1', // Beijing
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/n3hbx0upk69gc5ft63mq30np7nxt_shutterstock_1849707601-min.jpg?w=1200&dpr=1', // Witness the beautiful sunset over The Imperial Summer Palace in Beijing
+    'https://media1.thrillophilia.com/filestore/5g2pemyegbqwdx393xd0uehfptfq_shutterstock_1717059565.jpg?w=1200&dpr=1', // Marvel at the stunning Temple of Heaven
+    'https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg?w=1200&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/4hoaxbf8tysv69zbypukfbfk1ssh_shutterstock_2065816652.jpg?w=1200&dpr=1', // Beautiful view of the Gyeongbokgung Palace, China
+    'https://media1.thrillophilia.com/filestore/oyw3zp0aim6r7vr5i96w3r6l5mjm_huangpu-river-cruise-jpeg.webp?w=1200&dpr=1', // Beijing
+    'https://media1.thrillophilia.com/filestore/kp8w60bom4yopqv3c1bkwyyex59q_dl.beatsnoop.com-3000-xOvguw03yA.jpg?w=1200&dpr=1', // Marvel at the amazing view of the Shanghai City
+  ],
+};
+
 export const destination = { name: N, continent: 'Asia', primary: ["Beijing", "Xi'an", "Guilin & Yangshuo", "Shanghai"] };
 export const holidaysPath = '/asia/china/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/china' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = chinaProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in China was spot on. Beijing was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Xi'an to Guilin & Yangshuo, the pace was perfect for the kids and the guides were wonderful. We would book China with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew China inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in China was spot on. Beijing was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Xi'an to Guilin & Yangshuo, the pace was perfect for the kids and the guides were wonderful. We would book China with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew China inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing China trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing China trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Beijing", IMG.hero],
-  ["Xi'an", IMG.hero],
-  ["Guilin & Yangshuo", IMG.hero],
-  ["Shanghai", IMG.hero]
+  ["Beijing", P.places[0]],
+  ["Xi'an", P.places[1]],
+  ["Great Wall", P.places[2]],
+  ["Shanghai", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Forbidden City, Tiananmen Square and the Temple of Heaven", alt: "Beijing, China", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Terracotta Army and the ancient city wall by bicycle", alt: "Xi'an, China", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Forbidden City, Tiananmen Square and the Temple of Heaven", alt: "Beijing, China", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Terracotta Army and the ancient city wall by bicycle", alt: "Xi'an, China", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

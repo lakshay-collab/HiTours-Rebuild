@@ -40,8 +40,8 @@ import { baliAndPhuketHolidayProduct } from './baliAndPhuketHolidayData';
 
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asia', ctaHref: '/l/indonesia/enquiry/passengers/', cruiseCity: '—',
-  expert: { name: "Putu", image: '/experts/riya.webp', role: 'Indonesia expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: "Indonesia", href: '/asia/indonesia' }]
+  expert: { name: "Putu", image: '/experts/riya.webp', role: 'Bali expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: "Bali", href: '/asia/bali' }]
 });
 
 export const indonesiaProducts = [baliPhuketIslandEscapeProduct, bestOfBaliUbudAndKutaProduct, magicalBaliHolidayWithFlightsProduct, luxuryBaliEscapeMountBaturProduct, baliHoneymoonCandlelightDinnerProduct, romanticBaliNusaPenidaProduct, baliAdventureRaftingNusaPenidaProduct, baliCouplesEscapeNightSafariProduct, baliHoneymoonSeminyakProduct, singaporeBaliHoneymoonProduct, romanticBaliSunsetCruiseProduct, bestOfBaliFlightsNusaPenidaProduct, grandBaliSafariKecakProduct, shortBaliEscapeFlightsProduct, classicBaliHoneymoonSwingProduct, highlightsOfBaliNusaPenidaUluwatuProduct, bestOfBaliSunsetCruiseProduct, romanticBaliVintageCarProduct, baliEscapeBeachClubAtvProduct, singaporeMalaysiaBaliHoneymoonProduct, baliSingaporeFamilyHolidayProduct, classicBaliGroupHolidayProduct, baliFamilyHolidayNusaPenidaProduct, hongKongBaliHolidayProduct, baliFamilyEscapeBaturJeepProduct, grandSingaporeMalaysiaBaliProduct, bestOfThailandSingaporeMalaysiaBaliProduct, romanticBaliSidemenSeminyakProduct, baliFamilyFlightsSafariProduct, classicBaliBreakRaftingProduct, baliHoneymoonRooftopDinnerProduct, baliCouplesEscapeRaftingProduct, grandBaliCouplesNusaPenidaProduct, grandBaliFamilyWaterbomProduct, baliBucketListFlightsProduct, baliCouplesHolidayFlightsProduct, baliAndPhuketHolidayProduct];

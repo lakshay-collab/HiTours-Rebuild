@@ -25,6 +25,10 @@ export const usePageMeta = (title, description) => {
       link.setAttribute('rel', 'canonical');
       document.head.appendChild(link);
     }
-    link.setAttribute('href', `${window.location.origin}${window.location.pathname}`);
+    const url = `${window.location.origin}${window.location.pathname}`;
+    link.setAttribute('href', url);
+    setMeta('meta[property="og:url"]', 'property', 'og:url', url);
+    setMeta('meta[property="og:image"]', 'property', 'og:image', `${window.location.origin}/hero-poster.jpg`);
+    setMeta('meta[name="twitter:image"]', 'name', 'twitter:image', `${window.location.origin}/hero-poster.jpg`);
   }, [title, description]);
 };

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { destinationTabs, destinations, continentMeta } from '../destinationsData';
+import { destinationTabs, destinations, continentMeta, COUNTRY_HREF } from '../destinationsData';
 import { themeGroups } from '../themesData';
+import { ComingSoonTag } from './Destinations';
 
-const COUNTRY_HREF = { 'Europe': '/europe', 'Europe multi-country': '/europe', 'Egypt': '/africa/egypt', 'Thailand': '/asia/thailand', 'Vietnam': '/asia/vietnam', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
 const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
 const REGION_TAGLINE = {
   'Top 10': 'Our most loved destinations right now',
@@ -54,14 +54,21 @@ export function DestinationsMenu({ onNavigate, idPrefix = '' }) {
             {REGION_HREF[active] && <Link to={REGION_HREF[active]} onClick={onNavigate} className="t-label-lg text-white bg-primary hover:bg-primary/90 rounded-full h-9 px-4 flex items-center gap-1 whitespace-nowrap" data-testid={`${idPrefix}menu-region-all`}>View all {active} holidays <ArrowRight size={16} strokeWidth={2} /></Link>}
           </div>
           <div className="grid grid-cols-4 xl:grid-cols-5 gap-3" data-testid={`${idPrefix}menu-destinations-grid`}>
-            {list.map((d) => (
-              <Go key={d.name} href={COUNTRY_HREF[d.name] || '#'} onNavigate={onNavigate} className={`group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest ${d.highlight ? 'ring-2 ring-primary/70' : ''}`} testId={`${idPrefix}menu-country`}>
+            {list.map((d) => (COUNTRY_HREF[d.name] ? (
+              <Go key={d.name} href={COUNTRY_HREF[d.name]} onNavigate={onNavigate} className={`group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest ${d.highlight ? 'ring-2 ring-primary/70' : ''}`} testId={`${idPrefix}menu-country`}>
                 <img src={d.src} alt={d.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                 <span className="absolute inset-0 bg-gradient-to-t from-onsurface/70 via-onsurface/10 to-transparent" />
                 {d.badge && <span className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-white/90 text-onsurface text-[10px] font-semibold uppercase tracking-[0.12em]">{d.badge}</span>}
                 <span className="absolute left-3 bottom-2.5 t-label-lg text-white drop-shadow">{d.name}</span>
               </Go>
-            ))}
+            ) : (
+              <div key={d.name} className="relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-highest cursor-default" aria-disabled="true" data-testid={`${idPrefix}menu-country-coming-soon`}>
+                <img src={d.src} alt={d.name} className="absolute inset-0 w-full h-full object-cover opacity-80" loading="lazy" />
+                <span className="absolute inset-0 bg-gradient-to-t from-onsurface/70 via-onsurface/10 to-transparent" />
+                <ComingSoonTag className="absolute top-2 left-2 bg-white/90" />
+                <span className="absolute left-3 bottom-2.5 t-label-lg text-white drop-shadow">{d.name}</span>
+              </div>
+            )))}
           </div>
         </div>
         {feature && (

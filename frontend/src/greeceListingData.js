@@ -7,6 +7,40 @@ import { IMG } from './greecePackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Greece";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/14mmoqwv144xc8sgff01inqwm6li_shutterstock_2383392321.jpg?w=2000&dpr=1', // Athens
+  places: [
+    'https://media1.thrillophilia.com/filestore/h85co8qgkhleoa9jalnjgo4p008u_shutterstock_2055397688.jpg?w=1200&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/1w4xocyvk1pjx2g7k9r99m5dipp3_shutterstock_427675363.jpg?w=1200&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/w5gmocvwqej55egqpk2v2oqudyrq_shutterstock_2044614554.jpg?w=1200&dpr=1', // Santorini
+    'https://media1.thrillophilia.com/filestore/e8cu79ko4jdu2len8qt9mghtrtbn_shutterstock_1670430790.jpg?w=1200&dpr=1', // Delphi
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/ag3fojtvv5hg2ttbs58l92zvo9y8_shutterstock_1013455141.jpg?w=1200&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/d4yhk0q36ak73jca4q5e6o4lqqpx_shutterstock_1371491243.jpg?w=1200&dpr=1', // Santorini
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/m2pbxs8f4144rcv6w3imaysb3n69_shutterstock_1193397715.jpg?w=900&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/m99ypfp1aswmogx22ba8rvi15vx9_shutterstock_719305414.jpg?w=900&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/t1g1793nds3me6f367gq3ua6anom_shutterstock_2025620126.jpg?w=900&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/b40yksgqm1wsa7v8sykw391nsgfd_shutterstock_1614715330.jpg?w=900&dpr=1', // Athens
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/c6v2jyerh0znzcm1c8oozrn12q3d_shutterstock_2076775708.jpg?w=600&dpr=1', // Athens
+    'https://media1.thrillophilia.com/filestore/kyjcqcd7mi1oh4m37xs5mwywy4g0_shutterstock_428874820.jpg?w=600&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/poehrkj1p31e4ve62j4r38gzwc22_shutterstock_1760881922.jpg?w=600&dpr=1', // Mykonos
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/kfzwrzf6avcex4aiz65ec2quqr0l_shutterstock_2155315083.jpg?w=1200&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/xgm3zv0tlhxcoohf5jy7skt6qbbq_shutterstock_510889714.jpg?w=1200&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/ljjt12jdpj7gwdpmsxp7nundj7y6_shutterstock_2158007085.jpg?w=1200&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/7c56sqbazyfylnioxrdqd29qj67d_shutterstock_458827315.jpg?w=1200&dpr=1', // Mykonos
+    'https://media1.thrillophilia.com/filestore/s5yg4hv7hleoi9lbtvf6ssjsuc22_shutterstock_1031949604.jpg?w=1200&dpr=1', // Santorini
+    'https://media1.thrillophilia.com/filestore/3ugkni6mjh98r8cw50de7xtcn5aa_gal2.jpg?w=1200&dpr=1', // Don't harbor any resent for me- Taking some Me-konos time.
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Athens", "Mykonos", "Santorini", "Crete"] };
 export const holidaysPath = '/europe/greece/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/greece' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = greeceProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Greece was spot on. Athens was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Mykonos to Santorini, the pace was perfect for the kids and the guides were wonderful. We would book Greece with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Greece inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Greece was spot on. Athens was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Mykonos to Santorini, the pace was perfect for the kids and the guides were wonderful. We would book Greece with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Greece inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Greece trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Greece trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Athens", IMG.hero],
-  ["Mykonos", IMG.hero],
-  ["Santorini", IMG.hero],
-  ["Crete", IMG.hero]
+  ["Athens", P.places[0]],
+  ["Mykonos", P.places[1]],
+  ["Santorini", P.places[2]],
+  ["Crete", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Acropolis, Parthenon and the Acropolis Museum", alt: "Athens, Greece", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Little Venice and the windmills", alt: "Mykonos, Greece", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Acropolis, Parthenon and the Acropolis Museum", alt: "Athens, Greece", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Little Venice and the windmills", alt: "Mykonos, Greece", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

@@ -8,6 +8,40 @@ const IMG = { RAW: { hero: ROME_HERO } };
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Italy";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/wcdzw21th5dybtpgzeerxx8ynseo_Have%20an%20amazing%20experience%20of%20Venice.webp?w=2000&dpr=1', // Spectacular view of Murano Burano
+  places: [
+    'https://media1.thrillophilia.com/filestore/e0j8aq86ko1r63ejgi2al3i8ptvc_shutterstock_2248023259.jpg?w=1200&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/yihjb3btwbvmxls92vf5xc481f1a_shutterstock_2233718341.jpg?w=1200&dpr=1', // Florence
+    'https://media1.thrillophilia.com/filestore/4q9qvmd7ccmkiuzkl8qmb6qtov90_shutterstock_322397525.jpg?w=1200&dpr=1', // Venice
+    'https://media1.thrillophilia.com/filestore/etm08uyzmt35w1w5eoectnpe2jjh_shutterstock_201883006.jpg?w=1200&dpr=1', // Milan
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/jroa440xml60kq47by26b5hus98t_shutterstock_724115215.jpg?w=1200&dpr=1', // Colosseum
+    'https://media1.thrillophilia.com/filestore/dllz5bnkwd6mw08hzt7uekph847e_shutterstock_696042793.jpg?w=1200&dpr=1', // Venice
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/b56xdg915h3mct1e7aqjf7fp0lgi_shutterstock_366487271.jpg?w=900&dpr=1', // Enjoy a gondola ride in Venice, Italy
+    'https://media1.thrillophilia.com/filestore/xbmme517sltp4i4ivp79vq1avfbm_shutterstock_1218983827-min.jpg?w=900&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/krzy8lbrlz0fh9peaed4r8csar1f_shutterstock_1439825942.jpg?w=900&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/b530x4w1tyu2lbdaog1e931ckne0_shutterstock_2360655211.jpg?w=900&dpr=1', // Rome
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/ba2z2z14ryiz4c62f2lcwahjagbh_shutterstock_439742272.jpg?w=600&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/a7kh1hfevmvnvm0xqrw2bb9pz32x_shutterstock_110843582.jpg?w=600&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/zcbehqaimfgz4umgw4a6auls000y_shutterstock_1537654718.jpg?w=600&dpr=1', // Rome
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/vtw4fhf72oymnmah1mno7ccgnmtv_shutterstock_788995654.jpg?w=1200&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/g0axiw14syceqh1wt0m8nyakx0sr_1577972413_shutterstock_1046762236.jpg?w=1200&dpr=1', // Milan Cathedral - Duomo di Milano
+    'https://media1.thrillophilia.com/filestore/1qizw32j154ok6bsa6lnot3a8v0e_shutterstock_575605027.jpg?w=1200&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/9sqeizv9zlasuc102vjy2zxjpjah_Spectacular%20view%20of%20Murano%20Burano.jpg?w=1200&dpr=1', // Murano Burano Tour Venice
+    'https://media1.thrillophilia.com/filestore/as9n3wymhizlhwz3t9z3s9waur6b_shutterstock_1656063637.jpg?w=1200&dpr=1', // Rome
+    'https://media1.thrillophilia.com/filestore/a8m1s0fqcajfb11u20ntte9axhf8_d2w3t9fyt6fb9f09zf6pf9k7g0ny_shutterstock_2042610296.jpg?w=1200&dpr=1', // Hop-On Hop-Off City Sightseeing Bus Tour, Rome
+  ],
+};
+
 export const destination = { name: N, continent: 'Europe', primary: ["Rome", "Florence", "Venice", "Amalfi Coast"] };
 export const holidaysPath = '/europe/italy/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/italy' }, { label: `${N} tours & holidays` }];
@@ -41,28 +75,28 @@ export const tours = {
 };
 
 export const products = italyProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Italy was spot on. Rome was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Florence to Venice, the pace was perfect for the kids and the guides were wonderful. We would book Italy with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Italy inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Italy was spot on. Rome was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Florence to Venice, the pace was perfect for the kids and the guides were wonderful. We would book Italy with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Italy inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Italy trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Italy trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Rome", IMG.hero],
-  ["Florence", IMG.hero],
-  ["Venice", IMG.hero],
-  ["Amalfi Coast", IMG.hero]
+  ["Rome", P.places[0]],
+  ["Florence", P.places[1]],
+  ["Venice", P.places[2]],
+  ["Milan", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Colosseum, Roman Forum and the Pantheon", alt: "Rome, Italy", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Uffizi Gallery and Michelangelo's David", alt: "Florence, Italy", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Colosseum, Roman Forum and the Pantheon", alt: "Rome, Italy", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Uffizi Gallery and Michelangelo's David", alt: "Florence, Italy", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -77,12 +111,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [

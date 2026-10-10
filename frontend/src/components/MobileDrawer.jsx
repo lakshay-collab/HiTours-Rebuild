@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { X, ArrowLeft, ArrowRight, MapPin, Sparkles, Info, Briefcase, Megaphone, Umbrella, Phone, BadgeCheck } from 'lucide-react';
-import { destinationTabs, destinations, continentMeta } from '../destinationsData';
+import { X, ArrowLeft, ArrowRight, MapPin, Sparkles, Info, Briefcase, Umbrella, Phone, BadgeCheck } from 'lucide-react';
+import { destinationTabs, destinations, continentMeta, COUNTRY_HREF } from '../destinationsData';
+import { ComingSoonTag } from './Destinations';
 import { themeGroups } from '../themesData';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 
-const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Work with us': Briefcase, 'Press': Megaphone, 'Hi Tours Care': Umbrella, 'Expert advice': Phone };
+const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Careers': Briefcase, 'Hi Tours cares': Umbrella, 'Speak to a holiday expert': Phone };
 
 const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
-const COUNTRY_HREF = { 'Europe': '/europe', 'Europe multi-country': '/europe', 'Egypt': '/africa/egypt', 'Thailand': '/asia/thailand', 'Vietnam': '/asia/vietnam', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
 const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
   name,
   href: REGION_HREF[name] || null,
@@ -17,8 +17,9 @@ const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
 
 const SECTIONS = [
   [{ label: 'Destinations', sub: true }],
-  [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Work with us' }, { label: 'Press', href: '/about' }, { label: 'Hi Tours Care', href: '/care' }],
-  [{ label: 'Expert advice', sub: true }]
+  [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Hi Tours cares', href: '/care' }],
+  [{ label: 'Speak to a holiday expert', sub: true }],
+  [{ label: 'Careers', href: '/careers' }]
 ];
 
 const DropIcon = ({ up }) => (
@@ -28,7 +29,7 @@ const DropIcon = ({ up }) => (
 const rowCls = (active, thumb) =>
   `relative flex items-center justify-between w-full ${thumb ? 'py-2 pl-2 pr-4' : 'p-4'} gap-3 rounded-full t-label-lg transition-colors duration-200 select-none ${active ? 'bg-surface-highest text-onsurface' : 'text-onsurface-variant hover:bg-onsurface/[0.08] active:bg-secondary-container'}`;
 
-function Row({ icon: Icon, thumb, label, arrow, drop, active, href, onClick, indent, testId }) {
+function Row({ icon: Icon, thumb, label, arrow, drop, active, href, onClick, indent, testId, disabled }) {
   const inner = (
     <>
       <span className={`flex items-center ${thumb ? 'gap-4' : 'gap-3'} ${indent ? 'pl-12' : ''}`}>
@@ -42,7 +43,7 @@ function Row({ icon: Icon, thumb, label, arrow, drop, active, href, onClick, ind
   );
   return href
     ? <a href={href} onClick={onClick} className={rowCls(active, thumb)} role="menuitem" data-testid={testId}>{inner}</a>
-    : <button type="button" onClick={onClick} className={rowCls(active, thumb)} role="menuitem" data-testid={testId}>{inner}</button>;
+    : <button type="button" onClick={onClick} disabled={disabled} className={`${rowCls(active, thumb)} ${disabled ? 'cursor-default hover:bg-transparent' : ''}`} role="menuitem" aria-disabled={disabled || undefined} data-testid={testId}>{inner}</button>;
 }
 
 const Divider = () => <hr className="border-outline-variant my-1 mx-4" />;
@@ -81,7 +82,9 @@ function DestinationsLevel({ close }) {
                   const href = i === 0 ? r.href : COUNTRY_HREF[c];
                   return (
                     <li key={c}>
-                      <Row indent label={c} href={href || '#'} onClick={(e) => { if (!href) e.preventDefault(); else close(); }} testId="drawer-country" />
+                      {href
+                        ? <Row indent label={c} href={href} onClick={close} testId="drawer-country" />
+                        : <Row indent label={<span className="flex items-center gap-2 text-onsurface-variant">{c}<ComingSoonTag /></span>} testId="drawer-country-coming-soon" disabled />}
                     </li>
                   );
                 })}
@@ -152,7 +155,7 @@ export default function MobileDrawer({ open, onClose }) {
             {!level && <RootLevel go={setLevel} close={onClose} />}
             {level === 'Destinations' && <DestinationsLevel close={onClose} />}
             {level === 'Themes' && <ThemesLevel close={onClose} />}
-            {level === 'Expert advice' && <ExpertAdvicePanel />}
+            {level === 'Speak to a holiday expert' && <ExpertAdvicePanel />}
           </div>
         </nav>
       </div>

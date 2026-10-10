@@ -18,12 +18,12 @@ export const themeGroups = [
     key: 'travel-styles',
     title: 'Travel styles',
     items: [
-      { label: 'Honeymoons', href: themeHref('Honeymoons'), image: pic('Asia', 'Indonesia') },
+      { label: 'Honeymoons', href: themeHref('Honeymoons'), image: pic('Asia', 'Bali') },
       { label: 'Romantic escapes', href: themeHref('Romantic escapes'), image: pic('Europe', 'Greece') },
       { label: 'Solo travel', href: themeHref('Solo travel'), image: pic('Asia', 'Japan') },
       { label: 'Family holidays', href: themeHref('Family holidays'), image: pic('Asia', 'Thailand') },
       { label: 'Group & friends', href: themeHref('Group & friends'), image: pic('Central America', 'Costa Rica') },
-      { label: 'Luxury', href: themeHref('Luxury'), image: pic('Middle East', 'United Arab Emirates') }
+      { label: 'Luxury', href: themeHref('Luxury'), image: pic('Middle East', 'UAE') }
     ]
   },
   {

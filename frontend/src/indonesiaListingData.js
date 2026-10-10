@@ -5,27 +5,63 @@ import { RELATED_ASIA } from './relatedAsia';
 import { IMG } from './indonesiaPackages';
 
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
-const N = "Indonesia";
+const N = "Bali";
 
-export const destination = { name: N, continent: 'Asia', primary: ["Ubud", "Seminyak", "Nusa Penida", "Yogyakarta"] };
-export const holidaysPath = '/asia/indonesia/holidays';
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/9imq1yroyvb3vealbz87u6n38cfe_shutterstock_2246108303.jpg?w=2000&dpr=1', // Bali Swing Aerial View
+  places: [
+    'https://media1.thrillophilia.com/filestore/mpsr7p1240tcmhdov1503b3vi29y_shutterstock_1421032712.jpg?w=1200&dpr=1', // Landscapes of Tegalalang Rice Terraces
+    'https://media1.thrillophilia.com/filestore/28l0mtv3v8g1z78gnzjsxjx0zbhd_shutterstock_1346345108.jpg?w=1200&dpr=1', // Seminyak
+    'https://media1.thrillophilia.com/filestore/18t1pd37r15w7yzaxkw1zgye9km4_0pn8d3l2d4dlj6gfrs6pwluh8ds9_oi24b9jflb6w6w3kjuaq7orr76g7_Product-Images.webp?w=1200&dpr=1', // Soak-in the beauty of the Nusa Penida West Coast
+    'https://media1.thrillophilia.com/filestore/orzlk9ycyv7py9ir9ffnf08qfvka_shutterstock_1433767703.jpg?w=1200&dpr=1', // Aerial view of the Uluwatu Temple, perched dramatically on a cliff above the vast Indian Ocean
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/ki0nflk570vvhbrhzrux9lv4krgc_shutterstock_2313629089.jpg?w=1200&dpr=1', // Tegalalang Rice Terrace
+    'https://media1.thrillophilia.com/filestore/uowfz2u1lizxp0ynx27dnc8uedut_shutterstock_639746914.jpg?w=1200&dpr=1', // Tanah Lot temple perched on a rocky outcrop
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/qwpa47hfz248aozxrqbnavxfahs9_Bali%20swing.jpeg?w=900&dpr=1', // Tourist enjoying the Bali Swing
+    'https://media1.thrillophilia.com/filestore/rq8yyk002l8klmkf1ql6cz3pphf7_shutterstock_2324082951.jpg?w=900&dpr=1', // Couple at Ulun Danu Temple, Bali
+    'https://media1.thrillophilia.com/filestore/tgs6doqne8d7n4v80zpkimup2ljg_shutterstock_1398574868.jpg?w=900&dpr=1', // Women enjoying the Bali Swing
+    'https://media1.thrillophilia.com/filestore/hz46847qwb2h6vetjnyaxky4mr3p_230227APRK-Night%20Safari-COTNP-A1R02330-owl%202694-v5.jpg?w=900&dpr=1', // Enjoy engaging keeper shows and learn about wildlife at the night safari
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/1n0jodb9dma51ahhl0lp2qndx4bc_shutterstock_608357039.jpg?w=600&dpr=1', // Enjoy 40-minutes boat cruise on the Singapore River
+    'https://media1.thrillophilia.com/filestore/d33lwqdb9mk4ml0qwdat0daij9n8_shutterstock_210555943.jpg?w=600&dpr=1', // Enjoy the magic of Universal Studios Singapore
+    'https://media1.thrillophilia.com/filestore/mj597jmbggb7itfxbkwpnsc62x1u__MAR0965_v1.jpg?w=600&dpr=1', // Enjoy a magical fusion of iconic Sesame Street moments with energetic, traditional Indian dance routines
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/4piti474wbi8i30veuczpajm7q6u_a5ev7wua4r2nssyuxehpd1pzqtz8_agung1.jpg?w=1200&dpr=1', // A Beautiful Sunset at Mount Agung
+    'https://media1.thrillophilia.com/filestore/ylf6z30ivii8dhwjm9f52f233chi_6s1tbtt2wk95g2ynxodpuejuti88_lj08s22ynfphwmy57ahc8yh7cj5k_ztvxkbxpyyna86a5dbrnb03bvitk_shutterstock_2324082947.webp?w=1200&dpr=1', // Admire the stunning architecture of Ulun Danu Beratan Temple, a floating lakeside icon
+    'https://media1.thrillophilia.com/filestore/u79as4qxt3hiwc1912ik3x6a4xwp_candle-dinner-1200x675.jpg?w=1200&dpr=1', // Indulge in a romantic candlelight dinner with your partner at the famous Sadara resort
+    'https://media1.thrillophilia.com/filestore/gmy4udlbz6yev401cjiq35sajc8b_Batur%20trek%202.jpg?w=1200&dpr=1', // View of lush landscape from Mount Batur, Bali
+    'https://media1.thrillophilia.com/filestore/r9hlubc9ar76ptg7gitrifmstof3_Penglipuran%20Village%201.jpg?w=1200&dpr=1', // Penglipuran Village
+    'https://media1.thrillophilia.com/filestore/2yfbdqidd5t3pmxuuezowus1idl5_shutterstock_300749444.jpg?w=1200&dpr=1', // Facade of Suntec City Mall, Singapore
+  ],
+};
+
+
+
+export const destination = { name: N, continent: 'Asia', primary: ["Ubud", "Seminyak", "Nusa Penida", "Uluwatu"] };
+export const holidaysPath = '/asia/bali/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/indonesia' }, { label: `${N} tours & holidays` }];
 
 export const hero = {
   h1: `${N} Honeymoons and holidays`, holidaysH1: `${N} tours & holidays`, styleH1: (style) => `${N} ${style.toLowerCase()} holidays`,
   tabAbout: `About ${N}`, tabTours: `${N} holidays`, cta: 'Plan for free', stickyCta: `Plan your ${N} trip`, ctaHref: '/l/indonesia/enquiry/passengers/',
-  sub: 'Your travel plan – no obligation & tailor-made', image: wide(IMG.RAW.hero, 2400), imageAlt: "Ubud, Indonesia"
+  sub: 'Your travel plan – no obligation & tailor-made', image: wide(IMG.RAW.hero, 2400), imageAlt: "Kelingking Beach, Nusa Penida, Bali"
 };
 
 export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: N }];
 
 export const intro = {
   h2: `About ${N}`,
-  text: "Ancient temples, emerald landscapes and legendary hospitality – Indonesia rewards travellers who look beyond the postcard. Our experts tailor every journey, from first-time highlights to hidden corners.",
-  more: " Highlights include tegallalang rice terraces and the sacred monkey forest; tanah lot sea temple at sunset; kelingking beach and broken beach viewpoints; borobudur sunrise and prambanan temples. April to October (dry season) is ideal for Bali and Java; July–August is peak, while May–June and September offer great weather with fewer crowds.",
+  text: "Emerald rice terraces, cliff-top temples and some of the warmest hospitality in Asia – Bali rewards travellers who look beyond the postcard. Our experts tailor every journey, from first-time highlights to hidden corners.",
+  more: " Highlights include the Tegallalang rice terraces and the Sacred Monkey Forest; Tanah Lot sea temple at sunset; the Kelingking Beach and Broken Beach viewpoints on Nusa Penida; and the Kecak fire dance at Uluwatu. April to October (dry season) is ideal; July–August is peak, while May–June and September offer great weather with fewer crowds.",
   learnMore: 'Learn more', learnLess: 'Show less',
-  quote: "Give yourself time in Ubud before moving on – it sets the tone for the whole trip. And ask us about the smaller places between the big names; that is where Indonesia really comes alive.",
-  quoteMore: "Indonesian food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and Balinese babi guling; plenty of vegetarian and vegan options in Ubud.",
+  quote: "Give yourself time in Ubud before moving on – it sets the tone for the whole trip. And ask us about the smaller places between the big names; that is where Bali really comes alive.",
+  quoteMore: "Balinese food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and the island's own babi guling; plenty of vegetarian and vegan options in Ubud.",
   readMore: 'Read more', readLess: 'Read less',
   expert: { image: '/experts/riya.webp', name: "Putu", role: `Travel expert for ${N}` }
 };
@@ -34,60 +70,60 @@ export const tours = {
   h2: `Top-selling ${N} holiday ideas`, allH2: `${N} tours & holidays`, styleH2: (style) => `${N} ${style.toLowerCase()} holidays`,
   browse: (n) => `Browse ${n} package ${n === 1 ? 'idea' : 'ideas'}`, filterLabel: 'Travel style:', sortLabel: 'Sorted by:', filterBy: 'Filter by', sortBy: 'Sort by',
   empty: `No holidays match this travel style yet – clear the filter to see all ${N} holidays.`, viewAll: `View all ${N} holidays`,
-  short: ['Embark on an ', ['unforgettable journey'], " through Ubud, Seminyak, Nusa Penida and Yogyakarta – every Indonesia holiday is tailor-made by our experts."],
-  intro: [" Discover Indonesia your way. Whether you are looking for a ", ['romantic honeymoon, a family adventure or a cultural grand tour'], ' – our travel experts will be happy to advise you personally.'],
+  short: ['Embark on an ', ['unforgettable journey'], " through Ubud, Seminyak, Nusa Penida and Uluwatu – every Bali holiday is tailor-made by our experts."],
+  intro: [" Discover Bali your way. Whether you are looking for a ", ['romantic honeymoon, a family adventure or a cultural grand tour'], ' – our travel experts will be happy to advise you personally.'],
   readMore: 'Read more', readLess: 'Read less'
 };
 
 export const products = indonesiaProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Indonesia was spot on. Ubud was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Seminyak to Nusa Penida, the pace was perfect for the kids and the guides were wonderful. We would book Indonesia with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Indonesia inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Bali was spot on. Ubud was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Seminyak to Nusa Penida, the pace was perfect for the kids and the guides were wonderful. We would book Bali with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Bali inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Indonesia trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Bali trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Ubud", IMG.hero],
-  ["Seminyak", IMG.hero],
-  ["Nusa Penida", IMG.hero],
-  ["Yogyakarta", IMG.hero]
+  ["Ubud", P.places[0]],
+  ["Seminyak", P.places[1]],
+  ["Nusa Penida", P.places[2]],
+  ["Uluwatu", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Tegallalang rice terraces and the Sacred Monkey Forest", alt: "Ubud, Indonesia", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Tanah Lot sea temple at sunset", alt: "Seminyak, Indonesia", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Tegallalang rice terraces and the Sacred Monkey Forest", alt: "Ubud, Bali", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Tanah Lot sea temple at sunset", alt: "Seminyak, Bali", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
-  h2: `How to plan your ${N} trip`, intro: "Ancient temples, emerald landscapes and legendary hospitality – Indonesia rewards travellers who look beyond the postcard. Our experts tailor every journey, from first-time highlights to hidden corners.", more: 'Show more details', less: 'Show fewer details',
+  h2: `How to plan your ${N} trip`, intro: "Emerald rice terraces, cliff-top temples and some of the warmest hospitality in Asia – Bali rewards travellers who look beyond the postcard. Our experts tailor every journey, from first-time highlights to hidden corners.", more: 'Show more details', less: 'Show fewer details',
   sections: [
-    { h4: 'Best time to travel & climate', text: "April to October (dry season) is ideal for Bali and Java; July–August is peak, while May–June and September offer great weather with fewer crowds.", links: [[`Best time to visit ${N}`, '#']] },
-    { h4: 'Trip duration & route suggestions', text: "7 days cover Ubud and Seminyak; 10 days add Nusa Penida; two weeks let you reach Yogyakarta at a relaxed pace.", links: [['Ideal trip duration', '#']] },
-    { h4: 'Sights & culture', text: "Highlights include tegallalang rice terraces and the sacred monkey forest; tanah lot sea temple at sunset; kelingking beach and broken beach viewpoints; borobudur sunrise and prambanan temples.", links: [[`Top sights in ${N}`, '#']] },
-    { h4: 'Food & drink', text: "Indonesian food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and Balinese babi guling; plenty of vegetarian and vegan options in Ubud.", links: [[`Food in ${N}`, '#']] },
-    { h4: 'Safety & entry', text: "Indian citizens get a visa on arrival (30 days, extendable) at Bali and Jakarta airports; Hi Tours assists with the e-VoA in advance.", links: [['Travel advice', '#']] }
+    { h4: 'Best time to travel & climate', text: "April to October (dry season) is ideal; July–August is peak, while May–June and September offer great weather with fewer crowds.", links: [[`Best time to visit ${N}`, '#']] },
+    { h4: 'Trip duration & route suggestions', text: "5 to 7 days cover Ubud and Seminyak; 8 to 10 days add Nusa Penida and Uluwatu; two weeks let you slow right down with a few beach-club days.", links: [['Ideal trip duration', '#']] },
+    { h4: 'Sights & culture', text: "Highlights include the Tegallalang rice terraces and the Sacred Monkey Forest; Tanah Lot sea temple at sunset; the Kelingking Beach and Broken Beach viewpoints; and the Kecak fire dance at Uluwatu.", links: [[`Top sights in ${N}`, '#']] },
+    { h4: 'Food & drink', text: "Balinese food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and the island's own babi guling; plenty of vegetarian and vegan options in Ubud.", links: [[`Food in ${N}`, '#']] },
+    { h4: 'Safety & entry', text: "Indian citizens get a visa on arrival (30 days, extendable) at Bali's Ngurah Rai airport; Hi Tours assists with the e-VoA in advance.", links: [['Travel advice', '#']] }
   ]
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [
-    { q: "When is the best time to visit Indonesia?", a: ["April to October (dry season) is ideal for Bali and Java; July–August is peak, while May–June and September offer great weather with fewer crowds."] },
-    { q: "What is typical food in Indonesia?", a: ["Indonesian food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and Balinese babi guling; plenty of vegetarian and vegan options in Ubud."] },
-    { q: "Do Indian citizens need a visa for Indonesia?", a: ["Indian citizens get a visa on arrival (30 days, extendable) at Bali and Jakarta airports; Hi Tours assists with the e-VoA in advance."] },
+    { q: "When is the best time to visit Bali?", a: ["April to October (dry season) is ideal; July–August is peak, while May–June and September offer great weather with fewer crowds."] },
+    { q: "What is typical food in Bali?", a: ["Balinese food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and the island's own babi guling; plenty of vegetarian and vegan options in Ubud."] },
+    { q: "Do Indian citizens need a visa for Bali?", a: ["Indian citizens get a visa on arrival (30 days, extendable) at Bali's Ngurah Rai airport; Hi Tours assists with the e-VoA in advance."] },
     { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
@@ -96,5 +132,5 @@ export const related = { h2: `More destinations in ${destination.continent}`, it
 export const indonesia = {
   pageTitle: `${N} Honeymoons and holidays | Hi Tours`,
   hero, crumbs, intro, tours, products, features, places, activities, themes, related, holidaysPath, holidaysCrumbs, plan, faq, planner,
-  reviews: { ...egyptReviews, ...reviews }, customerReviews, plannerSource: 'indonesia-planner'
+  reviews: { ...egyptReviews, ...reviews }, customerReviews, plannerSource: 'bali-planner'
 };

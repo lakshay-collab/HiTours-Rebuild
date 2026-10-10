@@ -21,7 +21,7 @@ import { products as europe } from '../europeListingData';
 // Country name → that country's holidays listing products (order matters: specific countries before Europe).
 export const COUNTRY_PRODUCTS = [
   ['Thailand', thailand], ['Vietnam', vietnam], ['Malaysia', malaysia], ['Singapore', singapore],
-  ['Kazakhstan', kazakhstan], ['Bhutan', bhutan], ['Laos', laos], ['Japan', japan], ['Indonesia', indonesia], ['China', china],
+  ['Kazakhstan', kazakhstan], ['Bhutan', bhutan], ['Laos', laos], ['Japan', japan], ['Bali', indonesia], ['China', china],
   ['Cambodia', cambodia], ['Italy', italy],
   ['Greece', greece], ['Norway', norway], ['Ireland', ireland], ['Finland', finland], ['Sweden', sweden], ['Europe', europe], ['Egypt', egypt]
 ];

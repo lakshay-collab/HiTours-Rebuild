@@ -160,11 +160,11 @@ const asiaList = [
   ['Thailand', ct('27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg')],
   ['Vietnam', ct('3Z7A5HXNMctqsB6GE2jphI/4cef5ccca7d896a0b4f88281499fec30/Halong_Bucht_Vietnam.jpg')],
   ['Singapore', ct('4B5tE96BHxRVFYUVJQibEE/efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg')],
-  ['Indonesia', ct('61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png')],
+  ['Bali', ct('61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png')],
   ['Malaysia', ct('X7b0PdKpWDMzl19jytcJ6/d0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg')],
   ['Bhutan', un('photo-1638246439638-b37095b34879')]
 ];
-const ASIA_HREF = { Japan: '/asia/japan', Thailand: '/asia/thailand', Vietnam: '/asia/vietnam', Singapore: '/asia/singapore', Indonesia: '/asia/indonesia', Malaysia: '/asia/malaysia', Bhutan: '/asia/bhutan' };
+const ASIA_HREF = { Japan: '/asia/japan', Thailand: '/asia/thailand', Vietnam: '/asia/vietnam', Singapore: '/asia/singapore', Bali: '/asia/bali', Malaysia: '/asia/malaysia', Bhutan: '/asia/bhutan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const southKorea = {

@@ -7,6 +7,40 @@ import { IMG } from './japanPackages';
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Japan";
 
+// Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
+const P = {
+  planner: 'https://media1.thrillophilia.com/filestore/h52dskxf3vmv41o7hxsw76oc8zzw_Downpic.cc-image552133328.jpg?w=2000&dpr=1', // Aerial view of the stunning views during the cruise
+  places: [
+    'https://media1.thrillophilia.com/filestore/yxn041uwbb0gfw9m9a978t9zo6b9_shutterstock_2310917627.jpg?w=1200&dpr=1', // Tokyo
+    'https://media1.thrillophilia.com/filestore/dh54gzjb4liu11lrxo4cbid1fgb0_shutterstock_1242702637.jpg?w=1200&dpr=1', // Lake Ashi Cruise, Hakone
+    'https://media1.thrillophilia.com/filestore/e0q6h7smzeb2ecapas5xaz4mi238_shutterstock_762780751.jpg?w=1200&dpr=1', // Kinkakuji Temple, Kyoto
+    'https://media1.thrillophilia.com/filestore/nperxppzyea8k9fcvudr94ss24x6_shutterstock_272327813.jpg?w=1200&dpr=1', // Osaka
+  ],
+  activities: [
+    'https://media1.thrillophilia.com/filestore/oj5eocvwd5au1vpfuazquva3pcc9_shutterstock_1524921077.jpg?w=1200&dpr=1', // Senso-ji Temple, Tokyo
+    'https://media1.thrillophilia.com/filestore/phlv0o7phtixop8uin9ie10d26ss_bijl9w634ugxf584yk9wvrw1pixm_1589560365_fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg?w=1200&dpr=1', // Explore the breathtaking beauty of Mount Fuji and its reflection in the serene waters of Lake Kawaguchi.
+  ],
+  customers: [
+    'https://media1.thrillophilia.com/filestore/0s1k29pf30ofqstt7bxukqy9dknj_9hnszectybzlvifwehv9ov88m5sd_dl.beatsnoop.com-3000-e8dxbAwRVZ-2.jpg?w=900&dpr=1', // Relax in Jozankei Onsen’s soothing waters, surrounded by lush mountain scenery.
+    'https://media1.thrillophilia.com/filestore/jsal0qj8y0mj8u0fqw4k1b3hmtce_shutterstock_1720970440.jpg?w=900&dpr=1', // Group of deer relaxing at the Nara Park, Nara
+    'https://media1.thrillophilia.com/filestore/xer8g2tbs03ggbarukfkobfhsx4y_shutterstock_1432779605.jpg?w=900&dpr=1', // Enjoy beautiful views from Hakone Cable Car, Hakone
+    'https://media1.thrillophilia.com/filestore/7so2sb02d6mqzol1g87fuccjw5ba_Universal%20Studios,%20Japan%204.jpg?w=900&dpr=1', // Join the battle on the Spider-Man 4D Adventure
+  ],
+  reviews: [
+    'https://media1.thrillophilia.com/filestore/akfb8pqzr1qd8yl8pwbuvdmme6e3_dl.beatsnoop.com-3000-HPaTGfxzUe.jpg?w=600&dpr=1', // Couple at bamboo forest in Kyoto
+    'https://media1.thrillophilia.com/filestore/y98bog4opd96t1psai4282o2e0pf_Nara%20Park-1.jpg?w=600&dpr=1', // Tourist playing with deer at Nara Park, Nara
+    'https://media1.thrillophilia.com/filestore/52612l9t3onk4hta149u2n17ipa3_dl.beatsnoop.com-3000-ZrXvjq1Rak.jpg?w=600&dpr=1', // Enjoy the vibrant energy of the Dotonbori District
+  ],
+  themes: [
+    'https://media1.thrillophilia.com/filestore/gh33bs127ecpp7v0793he2zpnco2_dl.beatsnoop.com-3000-wTpP1ML3St.jpg?w=1200&dpr=1', // Stunning view of Haedong Yonggungsa Temple during sunset
+    'https://media1.thrillophilia.com/filestore/es36g57zvyilaikdrvg1h98ym406_shutterstock_721643926.jpg?w=1200&dpr=1', // Senso-ji Temple, Tokyo
+    'https://media1.thrillophilia.com/filestore/z5g6z4uy1fhd4bwzyo79854p9a1g_Dotonbori-Gallery-2.jpg?w=1200&dpr=1', // Stroll through Dotonbori, famed for its canal side views & local street food
+    'https://media1.thrillophilia.com/filestore/1nffkvbltiqzaub1j1m78fynw219_dl.beatsnoop.com-3000-AvHKVek0W8.jpg?w=1200&dpr=1', // Gaze at Mount Fuji’s snow-capped peak from the breathtaking 5th Station viewpoint.
+    'https://media1.thrillophilia.com/filestore/grklzkjgzef8s005q2nxwe5a6o22_dl.beatsnoop.com-3000-CEmHvigLRb.jpg?w=1200&dpr=1', // Witness endless golden blooms at Hokuryu Sunflower Village, a summer paradise.
+    'https://media1.thrillophilia.com/filestore/5kxhw9hcsiak643j5wsda2atmjo1_ux3wd351zlxy9muex5bryxgwf7ea_1620711377_shutterstock_173091185.jpg?w=1200&dpr=1', // Explore Tokyo’s vibrant streets, where ancient traditions and futuristic wonders blend seamlessly into city life.
+  ],
+};
+
 export const destination = { name: N, continent: 'Asia', primary: ["Tokyo", "Hakone", "Kyoto", "Osaka"] };
 export const holidaysPath = '/asia/japan/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/japan' }, { label: `${N} tours & holidays` }];
@@ -40,28 +74,28 @@ export const tours = {
 };
 
 export const products = japanProducts;
-export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: wide(IMG.RAW.hero, 2000) };
+export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Every hotel, transfer and guide in Japan was spot on. Tokyo was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "From Hakone to Kyoto, the pace was perfect for the kids and the guides were wonderful. We would book Japan with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: wide(IMG.RAW.hero, 600), text: "Our expert knew Japan inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Japan was spot on. Tokyo was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Hakone to Kyoto, the pace was perfect for the kids and the guides were wonderful. We would book Japan with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Japan inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
-export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Japan trip – perfectly organised, wonderful guides and unforgettable places.", photos: [wide(IMG.RAW.hero, 600), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 300), wide(IMG.RAW.hero, 450)], planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
+export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Japan trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };
 
 const placeList = [
-  ["Tokyo", IMG.hero],
-  ["Hakone", IMG.hero],
-  ["Kyoto", IMG.hero],
-  ["Osaka", IMG.hero]
+  ["Tokyo", P.places[0]],
+  ["Hakone", P.places[1]],
+  ["Kyoto", P.places[2]],
+  ["Osaka", P.places[3]]
 ];
 export const places = { h2: `Discover these places in ${N}`, items: placeList.map(([title, image], i) => ({ title, alt: title, tag: null, href: `#place-${i}`, image })) };
 export const activities = { h2: 'The best activities on your trip', items: [
-  { href: '#', title: "Senso-ji temple, Shibuya crossing and the Meiji Shrine", alt: "Tokyo, Japan", tag: 'Highlight', image: IMG.hero },
-  { href: '#', title: "Lake Ashi cruise with Fuji views and the Hakone ropeway", alt: "Hakone, Japan", tag: 'Highlight', image: IMG.hero }
+  { href: '#', title: "Senso-ji temple, Shibuya crossing and the Meiji Shrine", alt: "Tokyo, Japan", tag: 'Highlight', image: P.activities[0] },
+  { href: '#', title: "Lake Ashi cruise with Fuji views and the Hakone ropeway", alt: "Hakone, Japan", tag: 'Highlight', image: P.activities[1] }
 ] };
 
 export const plan = {
@@ -76,12 +110,12 @@ export const plan = {
 };
 
 export const themes = { h2: 'Travel guide & inspiration', more: 'Show more', less: 'Show less', items: [
-  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: IMG.hero },
-  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: IMG.hero },
-  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: IMG.hero },
-  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: IMG.hero },
-  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: IMG.hero },
-  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: IMG.hero }
+  { href: '#', title: `The best time to visit ${N}`, tag: 'Travel guide', icon: 'sun', image: P.themes[0] },
+  { href: '#', title: `The ideal trip duration for ${N}`, tag: 'Travel guide', icon: 'calendar', image: P.themes[1] },
+  { href: '#', title: `Food & drink in ${N}`, tag: 'Inspiration', icon: 'food', image: P.themes[2] },
+  { href: '#', title: `The best sights in ${N} in 2026`, tag: 'Inspiration', icon: 'landscape', image: P.themes[3] },
+  { href: '#', title: `${N} for honeymooners`, tag: 'Inspiration', icon: 'beach', image: P.themes[4] },
+  { href: '#', title: `${N} holiday: costs at a glance`, tag: 'Travel guide', icon: 'wallet', image: P.themes[5] }
 ].map((t) => ({ ...t, alt: t.title })) };
 
 export const faq = { h2: 'Practical information for your trip', items: [
