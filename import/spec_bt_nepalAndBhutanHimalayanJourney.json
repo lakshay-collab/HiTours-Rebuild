@@ -1,0 +1,259 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "nepal-bhutan-tour-package",
+ "camel": "nepalAndBhutanHimalayanJourney",
+ "slug": "nepal-and-bhutan-himalayan-journey",
+ "title": "Nepal and Bhutan: A Himalayan Journey",
+ "alt": "Boudhanath stupa in Kathmandu with prayer flags",
+ "transport": "Private vehicles, a licensed guide and the Kathmandu to Paro flight",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Multi-country"
+ ],
+ "price": 156750,
+ "route_cities": [
+  "Kathmandu",
+  "Thimphu",
+  "Punakha",
+  "Paro"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 7,
+  "transfers": 14,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kathmandu",
+   "city": "Kathmandu",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Hotel Prince plaza, Kathmandu",
+   "hotel_label": "Hotel Prince plaza, Kathmandu",
+   "accom": "3 nights · Breakfast and dinner · Standard room · 3★ · Central hotel within reach of Thamel",
+   "activities": [
+    {
+     "name": "Kathmandu sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Kathmandu Sightseeing Tour",
+     "description": "A guided day with Durbar Square, the stupa at Boudhanath, Swayambhunath and Pashupatinath on the Bagmati."
+    },
+    {
+     "name": "Kathmandu sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Half-Day Kathmandu Sightseeing Tour",
+     "description": "A guided day with Durbar Square, the stupa at Boudhanath, Swayambhunath and Pashupatinath on the Bagmati."
+    }
+   ],
+   "program": {
+    "name": "Kathmandu",
+    "description": "Days in the Nepali capital, with Durbar Square, Boudhanath and Pashupatinath."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel Ugyen, Thimpu",
+   "hotel_label": "Hotel Ugyen, Thimpu",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [],
+   "program": {
+    "name": "Thimphu",
+    "description": "Time in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "White Dragon Hotel Punakha",
+   "hotel_label": "White Dragon Hotel Punakha",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Time in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Tshang Tshang Villa, Paro",
+   "hotel_label": "Tshang Tshang Villa, Paro",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Half-Day Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    },
+    {
+     "name": "Paro sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Paro Sightseeing Tour",
+     "description": "A guided round of the valley with the National Museum, Rinpung Dzong and the ruins of Drukgyel Dzong."
+    },
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 7,
+     "optional": false,
+     "match": "Visit to Ta Dzong and Rinpung Dzong",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 7,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Kathmandu",
+  "2": "Kathmandu sightseeing",
+  "3": "Kathmandu sightseeing",
+  "4": "Onward to Thimphu",
+  "5": "To Punakha: Thimphu sightseeing",
+  "6": "To Paro: Punakha Dzong",
+  "7": "Ta dzong and rinpung dzong and tiger's nest hike",
+  "8": "Departure from Paro"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Kathmandu Tribhuvan and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then out into Kathmandu",
+   "Durbar Square and the old palace courtyards",
+   "Boudhanath stupa and Pashupatinath"
+  ],
+  "3": [
+   "Breakfast, then out into Kathmandu",
+   "Durbar Square and the old palace courtyards",
+   "Boudhanath stupa and Pashupatinath"
+  ],
+  "4": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "Optional: the Zorig Chusum school of arts",
+   "Arrival transfer and check in for the night"
+  ],
+  "5": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve"
+  ],
+  "6": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water",
+   "The National Museum in the old watchtower",
+   "Rinpung Dzong and the Drukgyel ruins"
+  ],
+  "7": [
+   "Breakfast, then out into the Paro valley",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Paro International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B, L",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Prince plaza, Kathmandu",
+  "2": "Hotel Prince plaza, Kathmandu",
+  "3": "Hotel Prince plaza, Kathmandu",
+  "4": "Hotel Ugyen, Thimpu",
+  "5": "White Dragon Hotel Punakha",
+  "6": "Tshang Tshang Villa, Paro",
+  "7": "Tshang Tshang Villa, Paro",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Kathmandu first, then the flight into Paro. Landing between the ridges at Paro is a story people tell for years.",
+  "tip": "Ask for a left hand window on the Kathmandu to Paro leg. On a clear morning you get Everest, Makalu and Kanchenjunga in one run."
+ },
+ "summary": "8 days through Kathmandu, Thimphu, Punakha, Paro, with 7 nights, daily breakfast and a licensed Bhutanese guide: the kathmandu sightseeing tour, the thimphu sightseeing tour, the punakha sightseeing tour, the paro sightseeing tour.",
+ "included": "Included: 7 nights across Kathmandu, Thimphu, Punakha, Paro with daily breakfast; all land transfers by private vehicle; the Kathmandu sightseeing tour; the Thimphu sightseeing tour; the Punakha sightseeing tour; the Paro sightseeing tour; the Ta Dzong and Rinpung Dzong; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international flights; the Kathmandu to Paro flight; Nepal and Bhutan visa and permit fees; lunches and dinners; travel insurance; personal expenses."
+}

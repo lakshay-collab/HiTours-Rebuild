@@ -1,0 +1,222 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "bhutan-adventure-tour--group-tour-package",
+ "camel": "bhutanAdventureGroupTour",
+ "slug": "bhutan-adventure-group-tour",
+ "title": "Bhutan Adventure Group Tour",
+ "alt": "Chimi Lhakhang temple across the Punakha paddy fields",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Adventure",
+ "tags": [
+  "Adventure",
+  "Culture"
+ ],
+ "price": 49390,
+ "route_cities": [
+  "Thimphu",
+  "Punakha",
+  "Paro"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 10,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Nordenma",
+   "hotel_label": "Hotel Nordenma",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu weekend market",
+     "day": 1,
+     "optional": false,
+     "match": "Leisure Time at Thimphu Local Market",
+     "description": "The riverside market halls where farmers bring chillies, ferns, yak cheese and strings of dried beef."
+    },
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Hotel Rivervalley, Punakha",
+   "hotel_label": "Hotel Rivervalley, Punakha",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Punakha Dzong and Chimi Lhakhang",
+     "day": 3,
+     "optional": false,
+     "match": "Visit to Punakha Dzong and Chimi L Hakhang Temple",
+     "description": "The fortress where the kings are crowned, set between two rivers, and the fertility temple of Chimi Lhakhang."
+    },
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Days in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Tshang Tshang Villa, Paro",
+   "hotel_label": "Tshang Tshang Villa, Paro",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 5,
+     "optional": false,
+     "match": "Ta Dzong & Rinpung Dzong Tour",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Paro sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Paro Sightseeing Tour",
+     "description": "A guided round of the valley with the National Museum, Rinpung Dzong and the ruins of Drukgyel Dzong."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Thimphu",
+  "2": "Thimphu sightseeing",
+  "3": "To Punakha: Punakha Dzong",
+  "4": "Punakha dzong",
+  "5": "To Paro: Ta Dzong and Rinpung Dzong",
+  "6": "Paro sightseeing",
+  "7": "Departure from Paro"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Paro International and transfer to Thimphu",
+   "The road east along the Pa Chhu and the Wang Chhu",
+   "The riverside market halls by the Wang Chhu",
+   "Chillies, ferns and strings of dried beef"
+  ],
+  "2": [
+   "Breakfast, then out into the capital",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve"
+  ],
+  "3": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "Chimi Lhakhang across the paddy fields"
+  ],
+  "4": [
+   "Breakfast in the warm Punakha valley",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water"
+  ],
+  "5": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river"
+  ],
+  "6": [
+   "Breakfast, then out into the Paro valley",
+   "The National Museum in the old watchtower",
+   "Rinpung Dzong and the Drukgyel ruins"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Paro International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Nordenma",
+  "2": "Hotel Nordenma",
+  "3": "Hotel Rivervalley, Punakha",
+  "4": "Hotel Rivervalley, Punakha",
+  "5": "Tshang Tshang Villa, Paro",
+  "6": "Tshang Tshang Villa, Paro",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "A fixed departure group tour, so you travel with others and the price stays down. Two nights each in Thimphu, Punakha and Paro.",
+  "tip": "Two nights in Punakha is rare on a group tour. Use the spare afternoon for a float down the Mo Chhu rather than another temple."
+ },
+ "summary": "7 days through Thimphu, Punakha, Paro, with 6 nights, all meals and a licensed Bhutanese guide: the thimphu weekend market, the thimphu sightseeing tour, the punakha dzong and chimi lhakhang, the punakha sightseeing tour.",
+ "included": "Included: 6 nights across Thimphu, Punakha, Paro with all meals; all land transfers by private vehicle; the Thimphu weekend market; the Thimphu sightseeing tour; the Punakha Dzong and Chimi Lhakhang; the Punakha sightseeing tour; the Ta Dzong and Rinpung Dzong; the Paro sightseeing tour; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

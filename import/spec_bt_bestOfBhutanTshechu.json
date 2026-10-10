@@ -1,0 +1,234 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "best-of-bhutan",
+ "camel": "bestOfBhutanTshechu",
+ "slug": "best-of-bhutan-with-the-thimphu-tshechu",
+ "title": "Best of Bhutan with the Thimphu Tshechu",
+ "alt": "Cham dancers in brocade at the Thimphu Tshechu",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Culture",
+ "tags": [
+  "Culture"
+ ],
+ "price": 37981,
+ "route_cities": [
+  "Phuentsholing",
+  "Thimphu",
+  "Paro",
+  "Phuentsholing"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 5,
+  "transfers": 11,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Alem Hotel & Resort",
+   "hotel_label": "Alem Hotel & Resort",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Forest Boutique",
+   "hotel_label": "Forest Boutique",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Half-Day Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    },
+    {
+     "name": "Punakha suspension bridge",
+     "day": 3,
+     "optional": false,
+     "match": "Visit to Punakha Suspension Bridge",
+     "description": "One of the longest suspension bridges in Bhutan, strung with prayer flags high over the Po Chhu."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Khamsum Inn, Paro",
+   "hotel_label": "Khamsum Inn, Paro",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    },
+    {
+     "name": "Thimphu Tshechu festival",
+     "day": 4,
+     "optional": false,
+     "match": "Thimphu Tshechu Festival Tour",
+     "description": "The capital’s biggest festival, with masked cham dancers in brocade turning in the dzong courtyard over three days."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 5,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Legphel Hotel",
+   "hotel_label": "Legphel Hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Phuentsholing",
+  "2": "Onward to Thimphu",
+  "3": "Punakha dzong and the suspension bridge",
+  "4": "To Paro: Thimphu sightseeing",
+  "5": "Tiger's nest hike",
+  "6": "Onward to Phuentsholing",
+  "7": "Departure from Siliguri"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bagdogra or Siliguri and transfer to Phuentsholing",
+   "Border formalities at the Bhutan Gate",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "Optional: the Zorig Chusum school of arts",
+   "Arrival transfer and check in for the night"
+  ],
+  "3": [
+   "Breakfast, then out into the capital",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water",
+   "The long suspension bridge over the Po Chhu",
+   "Prayer flags strung the length of the span"
+  ],
+  "4": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve",
+   "Masked cham dancers in the dzong courtyard",
+   "Brocade robes, long horns and the crowd in kira"
+  ],
+  "5": [
+   "Breakfast, then out into the Paro valley",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "6": [
+   "Breakfast, then the long run back south",
+   "Down through the Chukha gorge to the plains",
+   "Optional: Zangto Pelri Lhakhang in the town",
+   "Arrival transfer and check in for the night"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Border formalities and transfer to Siliguri"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B",
+  "3": "B",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Alem Hotel & Resort",
+  "2": "Forest Boutique",
+  "3": "Forest Boutique",
+  "4": "Khamsum Inn, Paro",
+  "5": "Khamsum Inn, Paro",
+  "6": "Legphel Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Timed for the Thimphu Tshechu, when the whole capital turns out in kira and gho for three days of masked dance.",
+  "tip": "Get to the Tendrel Thang ground by eight on festival day. The courtyard fills fast and the best dances are in the morning."
+ },
+ "summary": "7 days through Phuentsholing, Thimphu, Paro, with 6 nights, Breakfast and dinner each day and a licensed Bhutanese guide: the punakha sightseeing tour, the punakha suspension bridge, the thimphu sightseeing tour, the thimphu tshechu festival.",
+ "included": "Included: 6 nights across Phuentsholing, Thimphu, Paro with Breakfast and dinner each day; all land transfers by private vehicle; the Punakha sightseeing tour; the Punakha suspension bridge; the Thimphu sightseeing tour; the Thimphu Tshechu festival; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

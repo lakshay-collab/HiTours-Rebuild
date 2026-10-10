@@ -1,0 +1,218 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "glimpse-of-bhutan-tour-package",
+ "camel": "glimpseOfBhutanSacredSites",
+ "slug": "glimpse-of-bhutan-sacred-sites-and-valleys",
+ "title": "Glimpse of Bhutan: Sacred Sites and Valleys",
+ "alt": "Prayer flags above the Dochula pass in Bhutan",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Culture",
+ "tags": [
+  "Culture"
+ ],
+ "price": 43652,
+ "route_cities": [
+  "Phuentsholing",
+  "Thimphu",
+  "Paro",
+  "Phuentsholing"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 3,
+  "transfers": 9,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Meto Pema Hotel, Phuentsholing",
+   "hotel_label": "Meto Pema Hotel, Phuentsholing",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Hotel Ugyen, Thimpu",
+   "hotel_label": "Hotel Ugyen, Thimpu",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing with Simtokha Dzong",
+     "day": 3,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour with Simtokha Dzong",
+     "description": "The capital on foot and by road, finishing at Simtokha Dzong, the oldest fortress still standing in the country."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Ananda Resort, Paro",
+   "hotel_label": "Ananda Resort, Paro",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 5,
+     "optional": false,
+     "match": "Ta Dzong and Rinpung Dzong Visit",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 5,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Alem Hotel & Resort, Bhutan",
+   "hotel_label": "Alem Hotel & Resort, Bhutan",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Phuentsholing",
+  "2": "Onward to Thimphu",
+  "3": "Thimphu and simtokha",
+  "4": "Onward to Paro",
+  "5": "Ta dzong and rinpung dzong and tiger's nest hike",
+  "6": "Onward to Phuentsholing",
+  "7": "Departure from Siliguri"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bagdogra or Siliguri and transfer to Phuentsholing",
+   "Border formalities at the Bhutan Gate",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "Optional: the Zorig Chusum school of arts",
+   "Arrival transfer and check in for the night"
+  ],
+  "3": [
+   "Breakfast, then out into the capital",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and Simtokha Dzong"
+  ],
+  "4": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "Optional: Zuri Dzong and the Five Chortens",
+   "Arrival transfer and check in for the night"
+  ],
+  "5": [
+   "Breakfast, then out into the Paro valley",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "6": [
+   "Breakfast, then the long run back south",
+   "Down through the Chukha gorge to the plains",
+   "Optional: Zangto Pelri Lhakhang in the town",
+   "Arrival transfer and check in for the night"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Border formalities and transfer to Siliguri"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Meto Pema Hotel, Phuentsholing",
+  "2": "Hotel Ugyen, Thimpu",
+  "3": "Hotel Ugyen, Thimpu",
+  "4": "Ananda Resort, Paro",
+  "5": "Ananda Resort, Paro",
+  "6": "Alem Hotel & Resort, Bhutan",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Two nights each in Thimphu and Paro, with free days built in. It suits people who hate being marched round on a schedule.",
+  "tip": "Keep the free afternoon in Thimphu for a Saturday if you can. The riverside market is only properly busy at weekends."
+ },
+ "summary": "7 days through Phuentsholing, Thimphu, Paro, with 6 nights, Breakfast and dinner each day and a licensed Bhutanese guide: the thimphu sightseeing with simtokha dzong, the ta dzong and rinpung dzong, the hike to the tiger's nest.",
+ "included": "Included: 6 nights across Phuentsholing, Thimphu, Paro with Breakfast and dinner each day; all land transfers by private vehicle; the Thimphu sightseeing with Simtokha Dzong; the Ta Dzong and Rinpung Dzong; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

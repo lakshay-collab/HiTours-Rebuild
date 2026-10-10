@@ -1,0 +1,172 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "bhutan-exclusive-tour-package",
+ "camel": "bhutanExclusiveFourNights",
+ "slug": "bhutan-exclusive-four-night-break",
+ "title": "Bhutan Exclusive Four Night Break",
+ "alt": "Tashichho Dzong beside the Wang Chhu in Thimphu",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "Culture"
+ ],
+ "price": 27075,
+ "route_cities": [
+  "Thimphu",
+  "Paro"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 8,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Druk Noryang, Thimpu",
+   "hotel_label": "Hotel Druk Noryang, Thimpu",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing with Simtokha Dzong",
+     "day": 2,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour with Simtokha Dzong on a Private basis",
+     "description": "The capital on foot and by road, finishing at Simtokha Dzong, the oldest fortress still standing in the country."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Khamsum Inn, Paro",
+   "hotel_label": "Khamsum Inn, Paro",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Paro sightseeing with Kyichu Lhakhang",
+     "day": 3,
+     "optional": false,
+     "match": "Paro Sightseeing Tour with Kichu Lhakhang on a Private basis",
+     "description": "A guided day around Paro finishing at Kyichu Lhakhang, one of the oldest temples standing in Bhutan."
+    },
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Ta Dzong and Rinpung Dzong",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 4,
+     "optional": false,
+     "match": "Tigers Nest Trek | Bhutan on a Private basis",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Thimphu",
+  "2": "Thimphu and simtokha",
+  "3": "To Paro: Paro and Kyichu Lhakhang",
+  "4": "Ta dzong and rinpung dzong and tiger's nest hike",
+  "5": "Departure from Paro"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Paro International and transfer to Thimphu",
+   "The road east along the Pa Chhu and the Wang Chhu",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then out into the capital",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and Simtokha Dzong"
+  ],
+  "3": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "A guided round of the Paro valley",
+   "Kyichu Lhakhang, among the oldest temples in Bhutan"
+  ],
+  "4": [
+   "Breakfast, then out into the Paro valley",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Paro International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Druk Noryang, Thimpu",
+  "2": "Hotel Druk Noryang, Thimpu",
+  "3": "Khamsum Inn, Paro",
+  "4": "Khamsum Inn, Paro",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Four nights and two valleys, flying both ways. The shortest Bhutan that still earns the trip.",
+  "tip": "With only four nights, skip Punakha and give the time to Paro. Taktsang the day after a travel day is a mistake."
+ },
+ "summary": "5 days through Thimphu, Paro, with 4 nights, daily breakfast and a licensed Bhutanese guide: the thimphu sightseeing with simtokha dzong, the paro sightseeing with kyichu lhakhang, the ta dzong and rinpung dzong, the hike to the tiger's nest.",
+ "included": "Included: 4 nights across Thimphu, Paro with daily breakfast; all land transfers by private vehicle; the Thimphu sightseeing with Simtokha Dzong; the Paro sightseeing with Kyichu Lhakhang; the Ta Dzong and Rinpung Dzong; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

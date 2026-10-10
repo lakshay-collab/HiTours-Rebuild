@@ -1,0 +1,73 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "discover-kazakhstan-almaty-nature-wonders-for-18-35s",
+ "camel": "almatyNatureWondersYoung",
+ "slug": "almaty-and-nature-wonders-for-18-to-39s",
+ "title": "Almaty and Nature Wonders for 18 to 39s",
+ "alt": "Turquoise water of the Kolsai lakes in the Tien Shan foothills",
+ "transport": "Group transfers and shared day tours for young travellers",
+ "tag": "Adventure",
+ "tags": ["Adventure", "Nature"],
+ "price": 45600,
+ "route_cities": ["Almaty", "Charyn Canyon", "Kolsai Lakes"],
+ "counts": { "days": 6, "nights": 5, "cities": 1, "hotels": 1, "experiences": 8, "transfers": 14, "meals": 5 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [1, 2, 3, 4, 5, 6],
+   "dayLabel": "Day 1 to 6",
+   "hotel": "Regardal Hotel, Almaty",
+   "accom": "5 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Warm city hotel with a sauna and indoor pool",
+   "activities": [
+    { "name": "Almaty city tour", "day": 2, "optional": false, "match": "Almaty City Tour", "description": "Republic Square and the Monument of Independence, the Presidential Palace, Panfilov Park and Abai Square with the group." },
+    { "name": "Rakhat chocolate factory tour", "day": 2, "optional": false, "match": "Rakhat Chocolate Factory Tour", "description": "A look round the factory floor of the brand every Kazakh grew up on, finishing in the shop where the bars cost almost nothing." },
+    { "name": "Medeu and Shymbulak resort tour", "day": 3, "optional": false, "match": "Meadows & Shymbulak Tour", "description": "Up the valley to the Medeu dam and the Shymbulak resort, with the Zailiysky Alatau peaks standing over the gondola line." },
+    { "name": "Zelyony bazaar visit", "day": 3, "optional": false, "match": "Visit Zelyony bazaar", "description": "The Green Bazaar halls where horse meat, kurt cheese balls, dried apricots and spices are sold off the same long counters." },
+    { "name": "Charyn Canyon sightseeing tour", "day": 4, "optional": false, "match": "Charyn Canyon Sightseeing Tour", "description": "The red sandstone Valley of Castles, a canyon cut by the Charyn river and walked along its floor between sheer walls." },
+    { "name": "Kolsai Lakes excursion", "day": 4, "optional": false, "match": "Excursion to Kolsai Lakes", "description": "The first of the three Kolsai lakes, a stretch of cold turquoise water ringed by spruce forest in the Tien Shan foothills." },
+    { "name": "Kok Tobe mountain", "day": 5, "optional": false, "match": "Kok Tobe Mountain", "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top." },
+    { "name": "Mega Mall stop", "day": 6, "optional": false, "match": "Visit Mega Mall", "description": "A last stop at the city's biggest mall for souvenirs and lunch before the group transfer out to the airport." }
+   ],
+   "program": { "name": "Almaty", "description": "Five nights in the old capital for a younger group, with the city, Shymbulak, Charyn Canyon, the Kolsai lakes and Kok Tobe." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Almaty",
+  "2": "City tour and the chocolate factory",
+  "3": "Medeu, Shymbulak and the bazaar",
+  "4": "Charyn Canyon and the Kolsai Lakes",
+  "5": "Kok Tobe mountain",
+  "6": "Mega Mall and departure"
+ },
+ "bullets": {
+  "1": ["Arrival at Almaty International and transfer to your hotel", "Check in and meet the rest of the group", "The evening free to find your feet", "Optional: dinner on Panfilov street"],
+  "2": ["Breakfast, then out with the group into the city", "Republic Square and the Monument of Independence", "Panfilov Park and Abai Square", "The Rakhat chocolate factory and its shop"],
+  "3": ["Breakfast, then up the Malaya Almatinka valley", "The Medeu dam and the Shymbulak resort", "Peaks of the Zailiysky Alatau above the gondola", "Back down for the Zelyony bazaar halls"],
+  "4": ["Early breakfast and a long day out east", "The red walls of the Valley of Castles", "The canyon floor path beside the Charyn river", "On to the cold turquoise water of Kolsai"],
+  "5": ["Breakfast, then across town to Kok Tobe", "The cable car up the hillside", "The whole city laid out below the mountains", "The Alley of Lovers and the evening free"],
+  "6": ["Breakfast at the hotel and check out", "A last stop at the Mega Mall for souvenirs", "Group transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B" },
+ "hotel_by_day": {
+  "1": "Regardal Hotel, Almaty",
+  "2": "Regardal Hotel, Almaty",
+  "3": "Regardal Hotel, Almaty",
+  "4": "Regardal Hotel, Almaty",
+  "5": "Regardal Hotel, Almaty",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Built for travellers in their twenties and thirties, so you land in a group rather than on your own. It is also the cheapest Kazakhstan we sell.",
+  "tip": "Day four runs to twelve hours with two hundred kilometres each way. Sleep on the outward leg and save your energy for the canyon floor."
+ },
+ "summary": "Six days in Almaty for travellers aged 18 to 39: a group city tour with the Rakhat chocolate factory, Medeu and Shymbulak, the Zelyony bazaar, a long day at Charyn Canyon and the Kolsai lakes, and the Kok Tobe cable car.",
+ "included": "Included: 5 nights in Almaty with daily breakfast; group airport transfers; Almaty city tour; Rakhat chocolate factory tour; Medeu and Shymbulak resort tour; Zelyony bazaar visit; Charyn Canyon sightseeing tour; Kolsai Lakes excursion; Kok Tobe mountain; a Mega Mall stop on the last day.",
+ "not_included": "Not included: international flights; Kazakhstan visa fees; meals beyond breakfast; travel insurance; personal expenses."
+}

@@ -1,0 +1,67 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "kazakhstan-winter-splendour-group-tour-package",
+ "camel": "almatyWinterGroupTourFlights",
+ "slug": "almaty-winter-group-tour-with-flights",
+ "title": "Almaty Winter Group Tour with Flights",
+ "alt": "Skiers on the slopes of the Shymbulak resort above Almaty",
+ "transport": "Return flights from Delhi, group transfers and shared day tours",
+ "tag": "Short trips",
+ "tags": ["Short trips", "Nature"],
+ "price": 77900,
+ "route_cities": ["Almaty", "Medeu", "Almarasan"],
+ "counts": { "days": 5, "nights": 4, "cities": 1, "hotels": 1, "experiences": 5, "transfers": 9, "meals": 4 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [1, 2, 3, 4, 5],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Regardal Hotel, Almaty",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Warm city hotel with a sauna and indoor pool",
+   "activities": [
+    { "name": "Medeu rink and Shymbulak ski resort", "day": 2, "optional": false, "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort", "description": "A shared day up to the Olympic skating rink at Medeu and on by gondola to Shymbulak, with the lift ticket included." },
+    { "name": "Green Bazaar, Rakhat factory and Abay Street walk", "day": 2, "optional": false, "match": "Walking Tour of Green Bazar, Rakhat Chocolate Factory & Abay", "description": "A walking tour of the Green Bazaar halls and the Rakhat chocolate shop, finishing along the cafes of Abay Street." },
+    { "name": "Almaty sightseeing tour", "day": 3, "optional": false, "match": "Almaty Sightseeing Tour", "description": "A shared tour taking in the Central Market, Arbat street, the President Park and the Monument of Independence." },
+    { "name": "Kok Tobe hill and the gondola", "day": 3, "optional": false, "match": "Day Trip to Kok Tobe from Almaty", "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top." },
+    { "name": "Almarasan National Park", "day": 4, "optional": false, "match": "Day Trip to Almarsan National Park", "description": "A shared day in the Alma Arasan gorge, a forested valley of spruce and hot springs on the edge of the Ile Alatau range." }
+   ],
+   "program": { "name": "Almaty", "description": "Four nights in the old capital on a shared group basis, with Shymbulak, the Green Bazaar, Kok Tobe and the Almarasan gorge." }
+  }
+ ],
+ "day_titles": {
+  "1": "Delhi to Almaty",
+  "2": "Shymbulak and the Green Bazaar",
+  "3": "City tour and Kok Tobe",
+  "4": "Almarasan National Park",
+  "5": "Almaty to Delhi"
+ },
+ "bullets": {
+  "1": ["Flight Delhi to Almaty included in the price", "Arrival at Almaty International and transfer to your hotel", "The day at leisure once you have checked in", "Optional: the Palace of the Republic and Abai Square"],
+  "2": ["Breakfast, then up the Malaya Almatinka valley", "The Medeu dam and its Olympic skating rink", "On by gondola to Shymbulak with the lift ticket", "A walk round the Green Bazaar and Abay Street"],
+  "3": ["Breakfast, then a shared tour of the city", "The Central Market and Arbat street", "The President Park and the Monument of Independence", "Up the Kok Tobe cable car for the city at dusk"],
+  "4": ["Breakfast, then southwest into the Alma Arasan gorge", "Spruce forest and hot springs in Almarasan park", "The Ile Alatau ridges rising behind the valley", "Evening transfer back into the city"],
+  "5": ["Breakfast at the hotel and check out", "Airport transfer and your flight Almaty to Delhi"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B" },
+ "hotel_by_day": {
+  "1": "Regardal Hotel, Almaty",
+  "2": "Regardal Hotel, Almaty",
+  "3": "Regardal Hotel, Almaty",
+  "4": "Regardal Hotel, Almaty",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "A shared group tour with the Delhi flights in it. For snow in January this is the cheapest way out of India that still feels like abroad.",
+  "tip": "Hire boots and a jacket at Shymbulak rather than packing your own. Almaty rates are a fraction of what the Alps charge."
+ },
+ "summary": "Five days in Almaty on a shared group basis with return flights from Delhi: the Medeu rink and Shymbulak gondola with lift ticket, a Green Bazaar and chocolate factory walk, a city tour with Kok Tobe, and a day in the Almarasan gorge.",
+ "included": "Included: return flights Delhi to Almaty; 4 nights in Almaty with daily breakfast; group airport transfers; shared Medeu and Shymbulak day trip with lift ticket; Green Bazaar, Rakhat chocolate factory and Abay Street walking tour; shared Almaty sightseeing tour; shared Kok Tobe day trip; shared Almarasan National Park day trip; visa assistance.",
+ "not_included": "Not included: Kazakhstan visa fees; meals beyond breakfast; tips for the driver, guide and hotel staff; personal expenses."
+}

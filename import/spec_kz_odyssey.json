@@ -1,0 +1,134 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "azerbaijan-and-kazakhstan-odyssey",
+ "camel": "almatyBakuShahdagMountains",
+ "slug": "almaty-baku-and-the-shahdag-mountains",
+ "title": "Almaty, Baku and the Shahdag Mountains",
+ "alt": "Ridges of the Greater Caucasus above the Shahdag mountain resort",
+ "transport": "Private transfers, private day tours and an internal flight",
+ "tag": "Adventure",
+ "tags": ["Adventure", "Multi-country"],
+ "price": 109250,
+ "route_cities": ["Almaty", "Baku", "Shahdag"],
+ "counts": { "days": 12, "nights": 11, "cities": 4, "hotels": 3, "experiences": 10, "transfers": 18, "meals": 11 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "subtitle": "Almaty \u2192 Charyn Canyon and Kolsai",
+   "days": [1, 2, 3, 4, 5, 6],
+   "dayLabel": "Day 1 to 6",
+   "hotel": "Hotel Kazzhol Almaty",
+   "accom": "6 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Well run hotel in the centre with a garden courtyard",
+   "activities": [
+    { "name": "Almaty city sightseeing tour", "day": 2, "optional": false, "match": "Almaty City Sightseeing Tour", "description": "A private tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral." },
+    { "name": "Medeu rink and Shymbulak ski resort", "day": 3, "optional": false, "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort", "description": "A day up the Malaya Almatinka valley to the Olympic skating rink at Medeu, then by gondola to the Shymbulak slopes." },
+    { "name": "Green Bazaar and the Rakhat chocolate factory", "day": 4, "optional": false, "match": "Trip to Green Bazaar & Rakhat Chocolate Factory, Almaty", "description": "The spice and dried fruit halls of the Green Bazaar, then the Rakhat factory whose chocolate every Kazakh family grew up on." },
+    { "name": "Kok Tobe hill and the gondola", "day": 4, "optional": false, "match": "Day Trip to Kok Tobe from Almaty", "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top." },
+    { "name": "Lake Issyk day tour", "day": 5, "optional": false, "match": "Issyk Lake Day Tour From Almaty", "description": "A private day east to the turquoise water of Lake Issyk, with the Saka burial mounds and the small site museum nearby." },
+    { "name": "Charyn Canyon and Kolsai Lake", "day": 6, "optional": false, "match": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty", "description": "A long day out to the red sandstone Valley of Castles in Charyn Canyon, then up to the forested shore of Kolsai lake." }
+   ],
+   "program": { "name": "Almaty", "description": "Six nights in the old Kazakh capital with five private day tours, from Shymbulak and Kok Tobe to Lake Issyk and Charyn Canyon." }
+  },
+  {
+   "letter": "B",
+   "name": "Baku",
+   "city": "Baku",
+   "subtitle": "Baku \u2192 Gobustan",
+   "days": [7, 8],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Atlas Hotel Baku",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel close to the walled Old City",
+   "activities": [
+    { "name": "Baku Old City tour", "day": 8, "optional": false, "match": "Baku Old City Tour", "description": "The walled Icherisheher with the Maiden Tower, the Shirvanshahs' palace, Fountain Square and the boating canals on the boulevard." },
+    { "name": "Gobustan rock art and the mud volcanoes", "day": 8, "optional": false, "match": "Gobustan National Park & Mud Volcanoes Tour from Baku", "description": "Petroglyphs carved into the Gobustan boulders thousands of years ago, then the cold grey mud volcanoes bubbling on the flats." }
+   ],
+   "program": { "name": "Baku", "description": "Two nights on the Caspian for the walled Old City, the Gobustan rock carvings and the mud volcanoes." }
+  },
+  {
+   "letter": "C",
+   "name": "Shahdag",
+   "city": "Shahdag",
+   "days": [9, 10],
+   "dayLabel": "Day 9 to 10",
+   "hotel": "Zirve Hotel,Shahdag",
+   "hotel_label": "Zirve Hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Mountain hotel in the resort village at 1,700 metres",
+   "activities": [
+    { "name": "Shahdag mountain ski resort", "day": 9, "optional": false, "match": "Day Trip to Shahdag Mountain Ski Resort", "description": "The largest resort in the Caucasus, with gondola lines running up bare ridges and an alpine coaster for the summer months." },
+    { "name": "A free day in the mountains", "day": 10, "optional": true, "match": "Gondola Ride", "description": "Skiing in winter or the gondola, zipline and walking trails in summer, all bookable on the spot at the resort." }
+   ],
+   "program": { "name": "Shahdag", "description": "Two nights high in the Greater Caucasus at the largest mountain resort in Azerbaijan, with a full day at leisure." }
+  },
+  {
+   "letter": "D",
+   "name": "Baku",
+   "city": "Baku",
+   "subtitle": "Baku \u2192 Absheron",
+   "days": [11, 12],
+   "dayLabel": "Day 11 to 12",
+   "hotel": "Atlas Hotel Baku",
+   "accom": "1 night \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel close to the walled Old City",
+   "activities": [
+    { "name": "Absheron peninsula tour", "day": 11, "optional": false, "match": "Absheron Peninsula Tour from Baku", "description": "The Ateshgah fire temple, the Mardakan castle and Yanar Dagh, a hillside where escaping gas has burned for centuries." }
+   ],
+   "program": { "name": "Baku", "description": "A final night back on the coast after the Absheron fire temples and the Heydar Aliyev Centre." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Almaty",
+  "2": "Almaty city tour",
+  "3": "Shymbulak ski resort",
+  "4": "Green Bazaar, chocolate and Kok Tobe",
+  "5": "Lake Issyk day trip",
+  "6": "Charyn Canyon and Kolsai Lake",
+  "7": "Almaty to Baku",
+  "8": "Old City, Gobustan and mud volcanoes",
+  "9": "Up to the Shahdag mountains",
+  "10": "A free day at Shahdag",
+  "11": "Back to Baku and the Absheron peninsula",
+  "12": "Departure from Baku"
+ },
+ "bullets": {
+  "1": ["Arrival at Almaty International and transfer to your hotel", "Check in and the rest of the day free", "Optional: the stalls of the Zelyony bazaar", "Optional: an evening in Panfilov Park"],
+  "2": ["Breakfast, then a private tour of the city", "The Monument of Independence on Republic Square", "Panfilov Park and the wooden Ascension Cathedral", "Afternoon free along Zhibek Zholy"],
+  "3": ["Breakfast, then up the Malaya Almatinka valley", "The Medeu dam and its Olympic skating rink", "On by gondola to the Shymbulak ski resort", "Snow peaks of the Zailiysky Alatau above you"],
+  "4": ["Breakfast, then into the Green Bazaar halls", "Horse meat counters, dried fruit and spice stalls", "The Rakhat chocolate factory and its shop", "Up the Kok Tobe cable car for the city at dusk"],
+  "5": ["Breakfast, then east towards the Issyk gorge", "The turquoise water of Lake Issyk", "The Saka burial mounds and the site museum", "Evening transfer back into Almaty"],
+  "6": ["Early breakfast and a long day out east", "The red walls of the Valley of Castles", "The canyon floor path beside the Charyn river", "On to the forested shore of Kolsai lake"],
+  "7": ["Breakfast and check out of your Almaty hotel", "Optional: flight Almaty to Baku, booked with us", "Arrival transfer from Heydar Aliyev to your hotel", "Optional: the Baku Eye and the Teze Pir mosque"],
+  "8": ["Breakfast, then into the walled Old City", "The Maiden Tower and the Shirvanshahs' palace", "South to the Gobustan rock carvings after lunch", "The grey mud volcanoes bubbling out on the flats"],
+  "9": ["Breakfast and check out of your Baku hotel", "North into the Greater Caucasus towards Shahdag", "The mountain resort and its gondola lines", "Check in high up with the ridges all around"],
+  "10": ["Breakfast with the mountains at the window", "The whole day free at the resort", "Optional: skiing, the gondola or the zipline", "Optional: the alpine coaster and the walking trails"],
+  "11": ["Breakfast and check out of the mountain hotel", "Back down to the coast and out to Absheron", "The Ateshgah fire temple and the flames of Yanar Dagh", "Mardakan castle before checking in at Baku"],
+  "12": ["Breakfast at the hotel and check out", "Private transfer to Heydar Aliyev for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B", "9": "B", "10": "B", "11": "B", "12": "B" },
+ "hotel_by_day": {
+  "1": "Hotel Kazzhol Almaty",
+  "2": "Hotel Kazzhol Almaty",
+  "3": "Hotel Kazzhol Almaty",
+  "4": "Hotel Kazzhol Almaty",
+  "5": "Hotel Kazzhol Almaty",
+  "6": "Hotel Kazzhol Almaty",
+  "7": "Atlas Hotel Baku",
+  "8": "Atlas Hotel Baku",
+  "9": "Zirve Hotel",
+  "10": "Zirve Hotel",
+  "11": "Atlas Hotel Baku",
+  "12": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Eleven nights and three very different landscapes: the Kazakh steppe, the Caspian oil coast and two nights up in the Caucasus.",
+  "tip": "Shahdag works in both seasons. Snow from December to March, and from June the gondola and the coaster run instead."
+ },
+ "summary": "Twelve days from the Kazakh steppe to the Greater Caucasus: six nights of private day tours out of Almaty, the Gobustan rock carvings and mud volcanoes from Baku, two nights high at Shahdag and the Absheron fire temples to finish.",
+ "included": "Included: 11 nights with daily breakfast across Almaty, Baku and Shahdag; private airport transfers; private Almaty city sightseeing tour; Medeu and Shymbulak day trip; Green Bazaar and Rakhat chocolate factory trip; Kok Tobe day trip; Lake Issyk day tour; Charyn Canyon and Kolsai Lake day trip; private Baku Old City tour; Gobustan National Park and mud volcanoes tour; Shahdag mountain resort day trip; Absheron peninsula tour.",
+ "not_included": "Not included: international flights; the Almaty to Baku internal flight; Kazakhstan and Azerbaijan visa fees; lunches and dinners; travel insurance; laundry and personal expenses."
+}

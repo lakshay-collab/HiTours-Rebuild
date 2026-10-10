@@ -1,0 +1,128 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "grand-kazakhstan-and-azerbaijan-tour",
+ "camel": "grandAlmatyBakuSheki",
+ "slug": "grand-almaty-baku-and-sheki",
+ "title": "Grand Almaty, Baku and Sheki",
+ "alt": "Stained glass shebeke windows of the Palace of Sheki Khans",
+ "transport": "Private transfers, private day tours and an internal flight",
+ "tag": "Culture",
+ "tags": ["Culture", "Multi-country"],
+ "price": 94990,
+ "route_cities": ["Almaty", "Baku", "Gabala", "Sheki"],
+ "counts": { "days": 11, "nights": 10, "cities": 4, "hotels": 3, "experiences": 9, "transfers": 16, "meals": 9 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [1, 2, 3, 4, 5],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Hotel Kazzhol Almaty",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 4\u2605 \u00b7 Well run hotel in the centre with a garden courtyard",
+   "activities": [
+    { "name": "Almaty city sightseeing tour", "day": 2, "optional": false, "match": "Almaty City Sightseeing Tour", "description": "A guided tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral." },
+    { "name": "Medeu rink and Shymbulak ski resort", "day": 3, "optional": false, "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort", "description": "A day up the Malaya Almatinka valley to the Olympic skating rink at Medeu, then by gondola to the Shymbulak slopes." },
+    { "name": "Green Bazaar and the Rakhat chocolate factory", "day": 4, "optional": false, "match": "Trip to Green Bazaar & Rakhat Chocolate Factory, Almaty", "description": "The spice and dried fruit halls of the Green Bazaar, then the Rakhat factory whose chocolate every Kazakh family grew up on." },
+    { "name": "Lake Issyk day tour", "day": 5, "optional": false, "match": "Issyk Lake Day Tour From Almaty", "description": "A private day east to the turquoise water of Lake Issyk, with the Saka burial mounds and the small site museum nearby." }
+   ],
+   "program": { "name": "Almaty", "description": "Four nights in the old Kazakh capital with the city tour, the Shymbulak gondola, the Green Bazaar and Lake Issyk." }
+  },
+  {
+   "letter": "B",
+   "name": "Baku",
+   "city": "Baku",
+   "subtitle": "Baku \u2192 Gobustan",
+   "days": [6, 7],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Atlas Hotel Baku",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel close to the walled Old City",
+   "activities": [
+    { "name": "Baku Old City tour", "day": 7, "optional": false, "match": "Baku Old City Tour", "description": "The walled Icherisheher with the Maiden Tower, the Shirvanshahs' palace, Fountain Square and the boating canals on the boulevard." },
+    { "name": "Gobustan rock art and the mud volcanoes", "day": 7, "optional": false, "match": "Gobustan National Park & Mud Volcanoes Tour from Baku", "description": "Petroglyphs carved into the Gobustan boulders thousands of years ago, then the cold grey mud volcanoes bubbling on the flats." }
+   ],
+   "program": { "name": "Baku", "description": "Two nights on the Caspian for the walled Old City, the Gobustan rock carvings and the mud volcanoes." }
+  },
+  {
+   "letter": "C",
+   "name": "Gabala",
+   "city": "Gabala",
+   "subtitle": "Gabala \u2192 Sheki",
+   "days": [8, 9],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Qabala Yeddi Gozel Hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet hotel in the hills near the Seven Beauties waterfall",
+   "activities": [
+    { "name": "Gabala and Tufandag mountain", "day": 8, "optional": false, "match": "Day Trip to Gabala and Tufandag Mountain from Baku", "description": "Nohur lake with its drowned trees, then the Tufandag cable car climbing above the town into the Greater Caucasus." },
+    { "name": "Sheki city sightseeing tour", "day": 9, "optional": false, "match": "Sheki City Sightseeing Tour", "description": "The Palace of Sheki Khans with its shebeke stained glass set without glue or nails, and the stone caravanserai in the old lanes." }
+   ],
+   "program": { "name": "Gabala", "description": "Two nights in the Caucasus foothills with the Tufandag cable car and a day in the old silk town of Sheki." }
+  },
+  {
+   "letter": "D",
+   "name": "Baku",
+   "city": "Baku",
+   "subtitle": "Baku \u2192 Absheron",
+   "days": [10, 11],
+   "dayLabel": "Day 10 to 11",
+   "hotel": "Atlas Hotel Baku",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel close to the walled Old City",
+   "activities": [
+    { "name": "Absheron peninsula tour", "day": 10, "optional": false, "match": "Absheron Peninsula Tour from Baku", "description": "The Ateshgah fire temple, the Mardakan castle and Yanar Dagh, a hillside where escaping gas has burned for centuries." }
+   ],
+   "program": { "name": "Baku", "description": "Two final nights back on the coast after the Absheron fire temples and the Heydar Aliyev Centre." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Almaty",
+  "2": "Almaty city tour",
+  "3": "Medeu rink and Shymbulak",
+  "4": "Green Bazaar and chocolate factory",
+  "5": "Lake Issyk day trip",
+  "6": "Almaty to Baku",
+  "7": "Old City, Gobustan and mud volcanoes",
+  "8": "On to Gabala and Tufandag",
+  "9": "A day in Sheki",
+  "10": "Back to Baku and the Absheron peninsula",
+  "11": "Departure from Baku"
+ },
+ "bullets": {
+  "1": ["Arrival at Almaty International and transfer to your hotel", "Check in and the rest of the day free", "Optional: the stalls of the Zelyony bazaar", "Optional: an evening on Abai Square"],
+  "2": ["Breakfast, then a guided tour of the city", "The Monument of Independence on Republic Square", "Panfilov Park and the wooden Ascension Cathedral", "Afternoon free along Zhibek Zholy"],
+  "3": ["Breakfast, then up the Malaya Almatinka valley", "The Medeu dam and its Olympic skating rink", "On by gondola to the Shymbulak ski resort", "Snow peaks of the Zailiysky Alatau above you"],
+  "4": ["Breakfast, then into the Green Bazaar halls", "Horse meat counters, dried fruit and spice stalls", "The Rakhat chocolate factory and its shop", "Afternoon free in the city centre"],
+  "5": ["Breakfast, then east towards the Issyk gorge", "The turquoise water of Lake Issyk", "The Saka burial mounds and the site museum", "Evening transfer back into Almaty"],
+  "6": ["Check out of your Almaty hotel after an early start", "Optional: flight Almaty to Baku, booked with us", "Arrival transfer from Heydar Aliyev to your hotel", "Optional: the Baku Eye and the Teze Pir mosque"],
+  "7": ["Breakfast, then into the walled Old City", "The Maiden Tower and the Shirvanshahs' palace", "South to the Gobustan rock carvings after lunch", "The grey mud volcanoes bubbling out on the flats"],
+  "8": ["Breakfast and check out of your Baku hotel", "Northwest through the foothills to Gabala", "Nohur lake with its drowned trees", "The Tufandag cable car high above the town"],
+  "9": ["Breakfast, then east along the Caucasus road", "The stained glass of the Palace of Sheki Khans", "The old caravanserai and its stone courtyard", "Halva and silk workshops in the lanes"],
+  "10": ["Breakfast and check out of the Gabala hotel", "Back down to the coast and out to Absheron", "The Ateshgah fire temple and the flames of Yanar Dagh", "Mardakan castle before checking in at Baku"],
+  "11": ["Breakfast at the hotel and check out", "Private transfer to Heydar Aliyev for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "Travel day", "7": "B", "8": "B", "9": "B", "10": "B", "11": "B" },
+ "hotel_by_day": {
+  "1": "Hotel Kazzhol Almaty",
+  "2": "Hotel Kazzhol Almaty",
+  "3": "Hotel Kazzhol Almaty",
+  "4": "Hotel Kazzhol Almaty",
+  "5": "Atlas Hotel Baku",
+  "6": "Atlas Hotel Baku",
+  "7": "Qabala Yeddi Gozel Hotel",
+  "8": "Qabala Yeddi Gozel Hotel",
+  "9": "Atlas Hotel Baku",
+  "10": "Atlas Hotel Baku",
+  "11": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Sheki is the reason to take this one over the shorter Baku trips. That palace is the finest building in the Caucasus and almost nobody from India has seen it.",
+  "tip": "Buy the halva in Sheki rather than at Baku airport. It is made in the lanes behind the caravanserai and costs a third of the price."
+ },
+ "summary": "Eleven days from Almaty to the Caucasus: the Kazakh city and Shymbulak, Lake Issyk, then the Baku Old City with Gobustan and the mud volcanoes, the Tufandag cable car at Gabala, the stained glass palace at Sheki and the Absheron fire temples.",
+ "included": "Included: 10 nights with daily breakfast across Almaty, Baku and Gabala; private airport transfers; Almaty city sightseeing tour; Medeu and Shymbulak day trip; Green Bazaar and Rakhat chocolate factory trip; private Lake Issyk day tour; private Baku Old City tour; Gobustan National Park and mud volcanoes tour; Gabala and Tufandag mountain day trip; private Sheki city sightseeing tour; Absheron peninsula tour.",
+ "not_included": "Not included: international flights; the Almaty to Baku internal flight; Kazakhstan and Azerbaijan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

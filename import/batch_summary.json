@@ -1,732 +1,2688 @@
 [
  {
-  "slug": "best-of-shanghai",
-  "title": "Best of Shanghai",
-  "dur": "5D/4N",
-  "price": 62300,
-  "struck": 82859,
+  "slug": "bhutan-tour-from-india-5n-6d",
+  "title": "Wonders of Bhutan | FREE Excursion to Paro",
+  "dur": "6D/5N",
+  "price": 42990,
+  "struck": 55999,
   "cur": "INR",
   "cities": [
    [
-    "Shanghai",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    4,
-    8
+    "Phuntsholing",
+    1
    ],
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    4,
-    10
-   ]
-  ],
-  "acts": 14,
-  "gallery": 68
- },
- {
-  "slug": "highlights-of-beijing",
-  "title": "Highlights of Beijing",
-  "dur": "4D/3N",
-  "price": 29500,
-  "struck": 39235,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    4
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    3,
-    11
+    "Thimphu City",
+    1
    ],
    [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    3,
-    11
-   ]
-  ],
-  "acts": 6,
-  "gallery": 48
- },
- {
-  "slug": "highlights-of-shanghai",
-  "title": "Highlights of Shanghai | A Journey Through Culture & Cityscapes",
-  "dur": "5D/4N",
-  "price": 33500,
-  "struck": 44555,
-  "cur": "INR",
-  "cities": [
-   [
-    "Shanghai",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    4,
-    8
+    "Punakha",
+    1
    ],
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    4,
-    10
-   ]
-  ],
-  "acts": 16,
-  "gallery": 68
- },
- {
-  "slug": "discover-beijing",
-  "title": "Discover Beijing | A Journey of Wonders",
-  "dur": "4D/3N",
-  "price": 35000,
-  "struck": 50000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    4
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    4,
-    11
-   ],
-   [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    4,
-    11
-   ]
-  ],
-  "acts": 6,
-  "gallery": 46
- },
- {
-  "slug": "glimpse-of-shanghai",
-  "title": "Glimpse of Shanghai | From Ancient Temples to Modern Skylines",
-  "dur": "3D/2N",
-  "price": 25000,
-  "struck": 33250,
-  "cur": "INR",
-  "cities": [
-   [
-    "Shanghai",
-    3
-   ]
-  ],
-  "days": 3,
-  "hotels": [
-   [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    2,
-    10
-   ],
-   [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    2,
-    8
-   ]
-  ],
-  "acts": 12,
-  "gallery": 52
- },
- {
-  "slug": "best-of-china",
-  "title": "Best of China | A Journey Through the Golden Triangle",
-  "dur": "10D/9N",
-  "price": 100000,
-  "struck": 124000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    4
-   ],
-   [
-    "Xi An",
+    "Paro",
     2
    ],
    [
-    "Shanghai",
-    4
+    "Siliguri",
+    1
    ]
   ],
-  "days": 10,
+  "days": 6,
   "hotels": [
    [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    4,
-    11
+    "Gadhen Hotel, Bhutan",
+    "Phuntsholing",
+    1,
+    8
    ],
    [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    4,
-    11
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
    ],
    [
-    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
-    "Xi An",
-    2,
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    1,
+    12
+   ],
+   [
+    "Bhutan Boutique Residency",
+    "Thimphu City",
+    1,
     9
    ],
    [
-    "Holiday Inn Express Xi'An Ancient Town West",
-    "Xi An",
-    2,
-    13
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
    ],
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    3,
+    "Punakha Residency, Bhutan",
+    "Punakha",
+    1,
     8
    ],
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    3,
-    10
-   ]
-  ],
-  "acts": 30,
-  "gallery": 144
- },
- {
-  "slug": "hidden-trails-of-japan",
-  "title": "Hidden Trails of China and Japan | Group Tour Package",
-  "dur": "15D/14N",
-  "price": 355665,
-  "struck": 473036,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    3
-   ],
-   [
-    "Nanjing",
-    1
-   ],
-   [
-    "Shanghai",
-    2
-   ],
-   [
-    "Tokyo",
-    2
-   ],
-   [
-    "Kawaguchiko",
-    1
-   ],
-   [
-    "Kyoto",
-    2
-   ],
-   [
-    "Osaka",
-    1
-   ],
-   [
-    "Okayama",
-    1
-   ],
-   [
-    "Hiroshima",
-    2
-   ]
-  ],
-  "days": 15,
-  "hotels": [
-   [
-    "Mercure Beijing Downtown",
-    "Beijing",
-    3,
-    13
-   ],
-   [
-    "Novotel Nanjing Central",
-    "Nanjing",
-    1,
-    12
-   ],
-   [
-    "Hilton Nanjing Riverside",
-    "Nanjing",
-    1,
-    14
-   ],
-   [
-    "Novotel Shanghai Atlantis",
-    "Shanghai",
+    "Khamsum Inn, Paro",
+    "Paro",
     2,
-    14
-   ],
-   [
-    "Shinagawa Prince Hotel, Tokyo",
-    "Tokyo",
-    2,
-    19
-   ],
-   [
-    "Fuji Kawaguchiko Resort",
-    "Kawaguchiko",
-    1,
     10
    ],
    [
-    "Fuji View Hotel, Kawaguchiko",
-    "Kawaguchiko",
-    1,
-    13
-   ],
-   [
-    "Miyako Hotel Kyoto Hachijo",
-    "Kyoto",
+    "Tshang Tshang Villa, Paro",
+    "Paro",
     2,
-    12
-   ],
-   [
-    "The Prince Kyoto Takaragaike, Autograph Collection",
-    "Kyoto",
-    2,
-    15
-   ],
-   [
-    "Holiday Inn Express Osaka City Centre - Midosuji, an IHG Hotel",
-    "Osaka",
-    1,
-    14
-   ],
-   [
-    "Candeo Hotels Osaka Namba",
-    "Osaka",
-    1,
-    15
-   ],
-   [
-    "ANA Crowne Plaza Narita, Hiroshima",
-    "Okayama",
-    1,
-    13
-   ],
-   [
-    "Hotel Granvia Okayama",
-    "Okayama",
-    1,
-    13
-   ],
-   [
-    "Hilton Hiroshima",
-    "Hiroshima",
-    1,
-    16
+    6
    ]
   ],
-  "acts": 89,
-  "gallery": 586
+  "acts": 22,
+  "gallery": 165
  },
  {
-  "slug": "gems-of-china",
-  "title": "Gems of China | Discover Shanghai and Xian",
+  "slug": "glimpse-of-bhutan-tour-package",
+  "title": "Glimpse of Bhutan | From Sacred Sites to Scenic Wonders",
   "dur": "7D/6N",
-  "price": 70000,
-  "struck": 93100,
+  "price": 45950,
+  "struck": 63900,
   "cur": "INR",
   "cities": [
    [
-    "Shanghai",
-    4
+    "Phuntsholing",
+    1
    ],
    [
-    "Xi An",
-    3
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
    ]
   ],
   "days": 7,
   "hotels": [
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    4,
-    8
-   ],
-   [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    4,
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
     10
    ],
    [
-    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
-    "Xi An",
-    2,
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
     9
    ],
    [
-    "Holiday Inn Express Xi'An Ancient Town West",
-    "Xi An",
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
     2,
-    13
-   ]
-  ],
-  "acts": 20,
-  "gallery": 106
- },
- {
-  "slug": "glimpse-of-beijing",
-  "title": "Glimpse of Beijing",
-  "dur": "5D/4N",
-  "price": 39700,
-  "struck": 52801,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    4,
-    11
+    12
    ],
    [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    4,
-    11
-   ]
-  ],
-  "acts": 8,
-  "gallery": 55
- },
- {
-  "slug": "discover-china",
-  "title": "Discover China | Beijing-Shanghai Symphony",
-  "dur": "7D/6N",
-  "price": 56500,
-  "struck": 80700,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    3
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
    ],
    [
-    "Shanghai",
-    4
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    3,
-    11
+    "Ananda Resort, Paro",
+    "Paro",
+    2,
+    8
    ],
    [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    3,
-    11
-   ],
-   [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    3,
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
     10
    ],
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    3,
-    8
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
    ]
   ],
-  "acts": 15,
-  "gallery": 95
+  "acts": 31,
+  "gallery": 134
  },
  {
-  "slug": "highlights-of-china",
-  "title": "Highlights of China | A Journey Through The Land of Dragon",
+  "slug": "experience-bhutan-with-amankora-lodges",
+  "title": "Experiential Bhutan | Free Gangtey Gompa Monastery Excursion",
   "dur": "8D/7N",
-  "price": 189200,
-  "struck": 234608,
+  "price": 48299,
+  "struck": 69000,
   "cur": "INR",
   "cities": [
    [
-    "Shanghai",
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
     2
    ],
    [
-    "Xi An",
+    "Punakha",
     2
    ],
    [
-    "Beijing",
-    4
+    "Paro",
+    3
    ]
   ],
   "days": 8,
   "hotels": [
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    2,
-    10
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
    ],
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
     2,
     8
    ],
    [
-    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
-    "Xi An",
+    "White Dragon Hotel Punakha",
+    "Punakha",
     2,
+    7
+   ],
+   [
+    "Punakha Dragon Nest Resort",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ]
+  ],
+  "acts": 33,
+  "gallery": 161
+ },
+ {
+  "slug": "nepal-bhutan-tour-package",
+  "title": "Bhutan & Nepal Vacation | COMBO DEAL",
+  "dur": "8D/7N",
+  "price": 165000,
+  "struck": 190699,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kathmandu",
+    3
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Hotel Prince plaza, Kathmandu",
+    "Kathmandu",
+    3,
+    10
+   ],
+   [
+    "Shivam Plaza, Kathmandu",
+    "Kathmandu",
+    3,
+    10
+   ],
+   [
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    1,
+    12
+   ],
+   [
+    "Bhutan Boutique Residency",
+    "Thimphu City",
+    1,
     9
    ],
    [
-    "Holiday Inn Express Xi'An Ancient Town West",
-    "Xi An",
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
+   ],
+   [
+    "Punakha Residency, Bhutan",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Tshang Tshang Villa, Paro",
+    "Paro",
+    2,
+    6
+   ],
+   [
+    "Hotel Pema Yangsel, Paro",
+    "Paro",
+    2,
+    9
+   ]
+  ],
+  "acts": 42,
+  "gallery": 176
+ },
+ {
+  "slug": "7-days-bhutan-tour-from-india-with-dochu-la-pass",
+  "title": "Holidays in Bhutan | FREE Dochu La Pass Excursion",
+  "dur": "7D/6N",
+  "price": 49350,
+  "struck": 69623,
+  "cur": "INR",
+  "cities": [
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Nubding",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Hotel Druk Noryang, Thimpu",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "ABC Lodge, Gangtey",
+    "Nubding",
+    1,
+    10
+   ],
+   [
+    "Odiyana Hotel, Gangtey",
+    "Nubding",
+    1,
+    9
+   ],
+   [
+    "Punakha Residency, Bhutan",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
+   ],
+   [
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
+    10
+   ],
+   [
+    "Ananda Resort, Paro",
+    "Paro",
+    2,
+    8
+   ]
+  ],
+  "acts": 29,
+  "gallery": 164
+ },
+ {
+  "slug": "8-days-bhutan-tour-with-paro-taktsang",
+  "title": "Explore Bhutan with FREE Taktsang Monastery Tour",
+  "dur": "8D/7N",
+  "price": 52990,
+  "struck": 69900,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
+   ],
+   [
+    "Kingaling Hotel",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ]
+  ],
+  "acts": 25,
+  "gallery": 170
+ },
+ {
+  "slug": "bhutan-sightseeing-tour",
+  "title": "Gems of Bhutan | Thimphu Punakha & Paro",
+  "dur": "6D/5N",
+  "price": 39290,
+  "struck": 46690,
+  "cur": "INR",
+  "cities": [
+   [
+    "Thimphu",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [],
+  "acts": 4,
+  "gallery": 49
+ },
+ {
+  "slug": "escape-to-bhutan-tour-package",
+  "title": "Escape to Bhutan | From Sacred Trails to Highland Tales",
+  "dur": "6D/5N",
+  "price": 38586,
+  "struck": 45696,
+  "cur": "INR",
+  "cities": [
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "dusitD2 Yarkay Thimphu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Thimphu",
+    "Thimphu City",
     2,
     13
    ],
    [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    3,
-    11
+    "RKPO Green Resort",
+    "Punakha",
+    2,
+    13
    ],
    [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    3,
-    11
+    "DHENSA BOUTIQUE",
+    "Punakha",
+    2,
+    9
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    2,
+    12
    ]
   ],
-  "acts": 26,
-  "gallery": 128
+  "acts": 20,
+  "gallery": 143
  },
  {
-  "slug": "timeless-wonders-of-china--shanghai-yangtze--beijing",
-  "title": "Timeless Wonders of China | Shanghai, Yangtze & Beijing",
-  "dur": "9D/8N",
-  "price": 265000,
-  "struck": 352450,
+  "slug": "bhutan-sightseeing-tour-journey-to-the-peaks",
+  "title": "Instagrammable Bhutan | Couple Special",
+  "dur": "7D/6N",
+  "price": 79999,
+  "struck": 95890,
   "cur": "INR",
   "cities": [
    [
-    "Shanghai",
+    "Phuntsholing",
     1
    ],
    [
-    "Chongqing",
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
     1
    ],
    [
-    "Highseas",
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Meto Pema Hotel",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 38,
+  "gallery": 137
+ },
+ {
+  "slug": "bhutan-sikkim-darjeeling-tour",
+  "title": "Bhutan Sikkim and Darjeeling Tour Package",
+  "dur": "11D/10N",
+  "price": 61000,
+  "struck": 79300,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Paro",
     2
    ],
    [
-    "Shanghai",
-    2
+    "Phuntsholing",
+    1
    ],
    [
-    "Beijing",
+    "Gangtok",
     3
+   ],
+   [
+    "Darjeeling",
+    2
+   ],
+   [
+    "Bagdogra",
+    1
+   ]
+  ],
+  "days": 11,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    1,
+    8
+   ],
+   [
+    "Hotel Ugyen",
+    "Thimphu City",
+    1,
+    12
+   ],
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "The Royal Heritage Gangtok",
+    "Gangtok",
+    3,
+    11
+   ],
+   [
+    "The Regal",
+    "Gangtok",
+    3,
+    11
+   ],
+   [
+    "New Mandala",
+    "Darjeeling",
+    2,
+    8
+   ],
+   [
+    "Hotel Taksa",
+    "Darjeeling",
+    2,
+    10
+   ]
+  ],
+  "acts": 50,
+  "gallery": 224
+ },
+ {
+  "slug": "mesmerizing-bhutan-tour-package",
+  "title": "Getaway to Bhutan | FREE Hike to Taktsang Monastery",
+  "dur": "6D/5N",
+  "price": 28500,
+  "struck": 37905,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    1,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    1,
+    11
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Meto Pema Hotel",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 20,
+  "gallery": 131
+ },
+ {
+  "slug": "discovering-bhutan-tour-package",
+  "title": "INSTAGRAMMABLE Bhutan Group Tour | Excursion to Chele La Pass",
+  "dur": "7D/6N",
+  "price": 39890,
+  "struck": 57841,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
+    10
+   ],
+   [
+    "Ananda Resort, Paro",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 31,
+  "gallery": 141
+ },
+ {
+  "slug": "exclusive-trip-to-bhutan",
+  "title": "EXCLUSIVE Bhutan | FREE Tiger Nest Hiking Experience",
+  "dur": "6D/5N",
+  "price": 38990,
+  "struck": 60500,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    1,
+    12
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    1,
+    8
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Gadhen Hotel, Bhutan",
+    "Phuntsholing",
+    1,
+    8
+   ]
+  ],
+  "acts": 31,
+  "gallery": 145
+ },
+ {
+  "slug": "10-days-bhutan-tour-package-with-phobjikha",
+  "title": "Bhutan Horizons | From Dzongs to Himalayan Peaks",
+  "dur": "10D/9N",
+  "price": 68990,
+  "struck": 98377,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Nubding",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "Hotel Phobjikha",
+    "Nubding",
+    1,
+    8
+   ],
+   [
+    "Dewachen Hotel & Spa",
+    "Nubding",
+    1,
+    10
+   ],
+   [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
+   ],
+   [
+    "Punakha Dragon Nest Resort",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    3,
+    8
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    3,
+    13
+   ]
+  ],
+  "acts": 45,
+  "gallery": 213
+ },
+ {
+  "slug": "nepal-bhutan-and-sikkim-tour-package",
+  "title": "Nepal Bhutan and Sikkim Tour Package",
+  "dur": "12D/11N",
+  "price": 95427,
+  "struck": 124055,
+  "cur": "INR",
+  "cities": [
+   [
+    "Kathmandu",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Kalimpong",
+    1
+   ],
+   [
+    "Gangtok",
+    1
+   ],
+   [
+    "Darjeeling",
+    2
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 12,
+  "hotels": [
+   [
+    "Hotel Vaishali",
+    "Kathmandu",
+    2,
+    14
+   ],
+   [
+    "Hotel Arts Kathmandu",
+    "Kathmandu",
+    2,
+    14
+   ],
+   [
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
+    10
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Sood's Himalayan Vista",
+    "Kalimpong",
+    1,
+    10
+   ],
+   [
+    "Greystone Hotel",
+    "Kalimpong",
+    1,
+    7
+   ],
+   [
+    "The Regal",
+    "Gangtok",
+    1,
+    11
+   ],
+   [
+    "Hotel Helia",
+    "Gangtok",
+    1,
+    17
+   ],
+   [
+    "Yangs Inn",
+    "Darjeeling",
+    2,
+    12
+   ],
+   [
+    "Hotel Taksa",
+    "Darjeeling",
+    2,
+    10
+   ]
+  ],
+  "acts": 42,
+  "gallery": 329
+ },
+ {
+  "slug": "bhutan-adventure-tour--group-tour-package",
+  "title": "Best of Bhutan | Group Tour Package",
+  "dur": "7D/6N",
+  "price": 51990,
+  "struck": 68106,
+  "cur": "INR",
+  "cities": [
+   [
+    "Thimphu",
+    2
+   ],
+   [
+    "Punakha",
+    2
+   ],
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Hotel Nordenma",
+    "Thimphu",
+    2,
+    8
+   ],
+   [
+    "Silverpine Boutique, Thimpu",
+    "Thimphu",
+    2,
+    11
+   ],
+   [
+    "Hotel Rivervalley, Punakha",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    2,
+    7
+   ],
+   [
+    "Tshang Tshang Villa, Paro",
+    "Paro",
+    2,
+    6
+   ],
+   [
+    "Mandala Resort, Paro",
+    "Paro",
+    2,
+    13
+   ]
+  ],
+  "acts": 23,
+  "gallery": 100
+ },
+ {
+  "slug": "bhutan-tour-package-from-siliguri",
+  "title": "Bhutan Tour Package From Siliguri",
+  "dur": "6D/5N",
+  "price": 38990,
+  "struck": 60500,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    1,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    1,
+    11
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Gadhen Hotel, Bhutan",
+    "Phuntsholing",
+    1,
+    8
+   ]
+  ],
+  "acts": 25,
+  "gallery": 139
+ },
+ {
+  "slug": "bhutan-new-year-special-tour",
+  "title": "Bhutan New Year Special Tour | Group Departure",
+  "dur": "7D/6N",
+  "price": 42990,
+  "struck": 57176,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Bagdogra",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Gadhen Hotel, Bhutan",
+    "Phuntsholing",
+    1,
+    8
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Cholay khangzang",
+    "Thimphu City",
+    2,
+    9
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Hotel Ratna Vara",
+    "Paro",
+    2,
+    11
+   ],
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 22,
+  "gallery": 133
+ },
+ {
+  "slug": "premium-bhutan-group-tour",
+  "title": "Signature Bhutan Group Tour | Thimphu, Punakha & Paro Circuit",
+  "dur": "8D/7N",
+  "price": 45990,
+  "struck": 57300,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Punakha",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Bagdogra",
+    1
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Park Hotel Bhutan",
+    "Phuntsholing",
+    1,
+    136
+   ],
+   [
+    "Hotel Palm Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Seven Suites Thimphu",
+    "Thimphu City",
+    1,
+    5
+   ],
+   [
+    "Pelyang Boutique",
+    "Thimphu City",
+    1,
+    7
+   ],
+   [
+    "Punakha Hotel River Valley",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "Zhingkham Resort",
+    "Punakha",
+    2,
+    11
+   ],
+   [
+    "Paro Grand Resort",
+    "Paro",
+    2,
+    7
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    2,
+    9
+   ]
+  ],
+  "acts": 27,
+  "gallery": 292
+ },
+ {
+  "slug": "bhutan-tour-package-from-jaigaon",
+  "title": "Bhutan Tour Package from Jaigaon",
+  "dur": "9D/8N",
+  "price": 55232,
+  "struck": 73458,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ],
+   [
+    "Phuntsholing",
+    2
    ]
   ],
   "days": 9,
   "hotels": [
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    2,
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
     10
    ],
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
     2,
     8
    ],
    [
-    "Victoria Jenna, Yangtze River Cruise",
-    "Chongqing",
-    3,
-    5
-   ],
-   [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
+    "Hotel Ugyen",
+    "Thimphu City",
     2,
-    11
+    12
    ],
    [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    2,
-    11
-   ]
-  ],
-  "acts": 33,
-  "gallery": 136
- },
- {
-  "slug": "discover-the-ancient-wonders-of-beijing",
-  "title": "Discover the Ancient Wonders of Beijing",
-  "dur": "3D/2N",
-  "price": 25000,
-  "struck": 33250,
-  "cur": "INR",
-  "cities": [
+    "Kingaling Hotel",
+    "Punakha",
+    1,
+    8
+   ],
    [
-    "Beijing",
-    3
-   ]
-  ],
-  "days": 3,
-  "hotels": [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    1,
+    7
+   ],
    [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
+    "HOTEL KHAMSUM INN",
+    "Paro",
     3,
-    11
+    13
    ],
    [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
+    "Ananda Resort",
+    "Paro",
     3,
-    11
-   ]
-  ],
-  "acts": 4,
-  "gallery": 38
- },
- {
-  "slug": "getaway-to-shanghai",
-  "title": "Getaway to Shanghai | Timeless Treasures & Towering Heights",
-  "dur": "6D/5N",
-  "price": 65000,
-  "struck": 86450,
-  "cur": "INR",
-  "cities": [
-   [
-    "Shanghai",
-    6
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    5,
-    10
-   ],
-   [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    5,
     8
    ]
   ],
-  "acts": 17,
-  "gallery": 76
+  "acts": 27,
+  "gallery": 167
  },
  {
-  "slug": "best-of-beijing",
-  "title": "Best of Beijing | A Journey Through Culture & Capital Wonders",
-  "dur": "6D/5N",
-  "price": 46900,
-  "struck": 58156,
-  "cur": "INR",
-  "cities": [
-   [
-    "Beijing",
-    6
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Holiday Inn Express Beijing Airport Zone",
-    "Beijing",
-    5,
-    11
-   ],
-   [
-    "Holiday Inn Express Beijing Huacai",
-    "Beijing",
-    5,
-    11
-   ]
-  ],
-  "acts": 14,
-  "gallery": 63
- },
- {
-  "slug": "discover-shanghai",
-  "title": "Discover Shanghai | From Dynasty Tales to Modern Trails",
+  "slug": "bhutan-exclusive-tour-package",
+  "title": "Vacation in Bhutan | FREE Excursion to Taktsang",
   "dur": "5D/4N",
-  "price": 58500,
-  "struck": 72540,
+  "price": 28500,
+  "struck": 37335,
   "cur": "INR",
   "cities": [
    [
-    "Shanghai",
-    5
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    3
    ]
   ],
   "days": 5,
   "hotels": [
    [
-    "Holiday Inn Express Shanghai Putuo",
-    "Shanghai",
-    4,
+    "Hotel Druk Noryang, Thimpu",
+    "Thimphu City",
+    2,
     8
    ],
    [
-    "Holiday Inn Express Shanghai Gongkang",
-    "Shanghai",
-    4,
+    "Hotel Ugyen, Thimpu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
     10
+   ],
+   [
+    "Hotel Pema Yangsel, Paro",
+    "Paro",
+    2,
+    9
    ]
   ],
-  "acts": 15,
-  "gallery": 68
+  "acts": 22,
+  "gallery": 100
+ },
+ {
+  "slug": "best-of-bhutan-visit-to-taktsang-monastery",
+  "title": "Best of Bhutan FREE Visit to Taktsang Monastery",
+  "dur": "9D/8N",
+  "price": 59000,
+  "struck": 67850,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Meto Pema Hotel, Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "White Dragon Hotel Punakha",
+    "Punakha",
+    2,
+    7
+   ],
+   [
+    "Kingaling Hotel",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "Ananda Resort",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "HOTEL KHAMSUM INN",
+    "Paro",
+    2,
+    13
+   ]
+  ],
+  "acts": 29,
+  "gallery": 176
+ },
+ {
+  "slug": "best-of-bhutan",
+  "title": "Best of Bhutan | Thimphu Tshechu Festival & Cultural Highlights",
+  "dur": "7D/6N",
+  "price": 39980,
+  "struck": 57841,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "Khamsum Inn, Paro",
+    "Paro",
+    2,
+    10
+   ],
+   [
+    "Ananda Resort, Paro",
+    "Paro",
+    2,
+    8
+   ],
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 33,
+  "gallery": 149
+ },
+ {
+  "slug": "7-days-tour-in-paradisic-bhutan-super-deluxe",
+  "title": "Glimpse of Bhutan | Dzong Special",
+  "dur": "7D/6N",
+  "price": 67100,
+  "struck": 88300,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Hotel Ga Me Ga",
+    "Phuntsholing",
+    1,
+    12
+   ],
+   [
+    "Hotel Druk",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Hotel Osel",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Hotel Ariya",
+    "Thimphu City",
+    2,
+    10
+   ],
+   [
+    "Tashi Namgay Resort",
+    "Paro",
+    2,
+    11
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    2,
+    9
+   ]
+  ],
+  "acts": 31,
+  "gallery": 140
+ },
+ {
+  "slug": "8-days-bhutan-tour-with-paro-taktsang-luxury",
+  "title": "Explore Bhutan with FREE Taktsang Monastery Tour",
+  "dur": "8D/7N",
+  "price": 106000,
+  "struck": 116600,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    2
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Tashi Namgay Grand Resort",
+    "Phuntsholing",
+    1,
+    6
+   ],
+   [
+    "dusitD2 Yarkay Thimphu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Thimphu",
+    "Thimphu City",
+    2,
+    13
+   ],
+   [
+    "RKPO Green Resort",
+    "Punakha",
+    1,
+    13
+   ],
+   [
+    "Dhensa Boutique Resort",
+    "Punakha",
+    1,
+    9
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    2,
+    12
+   ]
+  ],
+  "acts": 31,
+  "gallery": 167
+ },
+ {
+  "slug": "bhutan-getaway",
+  "title": "Bhutan Getaway | Black-Necked Crane Festival & Sacred Monasteries",
+  "dur": "9D/8N",
+  "price": 46980,
+  "struck": 57841,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Gangtey",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Alem Hotel & Resort",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Legphel Hotel",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Forest Boutique",
+    "Thimphu City",
+    2,
+    8
+   ],
+   [
+    "Hotel Taktsang",
+    "Thimphu City",
+    2,
+    11
+   ],
+   [
+    "ABC Lodge, Gangtey",
+    "Gangtey",
+    1,
+    10
+   ],
+   [
+    "Odiyana Hotel, Gangtey",
+    "Gangtey",
+    1,
+    9
+   ],
+   [
+    "Punakha Residency",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Khuru Resort",
+    "Punakha",
+    1,
+    9
+   ],
+   [
+    "Paro Grand Resort",
+    "Paro",
+    2,
+    7
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    2,
+    9
+   ],
+   [
+    "Alem Hotel & Resort, Bhutan",
+    "Phuntsholing",
+    1,
+    9
+   ]
+  ],
+  "acts": 36,
+  "gallery": 197
+ },
+ {
+  "slug": "8-days-bhutan-tour-with-paro-taktsang-super-deluxe",
+  "title": "Explore Bhutan with FREE Taktsang Monastery Tour",
+  "dur": "8D/7N",
+  "price": 78000,
+  "struck": 85800,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    2
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Hotel Ga Me Ga",
+    "Phuntsholing",
+    1,
+    12
+   ],
+   [
+    "Hotel Druk",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Hotel Osel",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Hotel Ariya",
+    "Thimphu City",
+    2,
+    10
+   ],
+   [
+    "Hotel Rivervalley",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Zhingkham Resort",
+    "Punakha",
+    1,
+    11
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    2,
+    12
+   ]
+  ],
+  "acts": 31,
+  "gallery": 176
+ },
+ {
+  "slug": "bhutan-thimphu-tshechu-festival-tour",
+  "title": "Bhutan Thimphu Tshechu Festival Tour | Monasteries, Valleys & Mountains",
+  "dur": "8D/7N",
+  "price": 45990,
+  "struck": 57300,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Punakha",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Bagdogra",
+    1
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Park Hotel Bhutan",
+    "Phuntsholing",
+    1,
+    136
+   ],
+   [
+    "Hotel Palm Phuentsholing",
+    "Phuntsholing",
+    1,
+    10
+   ],
+   [
+    "Seven Suites Thimphu",
+    "Thimphu City",
+    1,
+    5
+   ],
+   [
+    "Pelyang Boutique",
+    "Thimphu City",
+    1,
+    7
+   ],
+   [
+    "Punakha Hotel River Valley",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "Zhingkham Resort",
+    "Punakha",
+    2,
+    11
+   ],
+   [
+    "Paro Grand Resort",
+    "Paro",
+    2,
+    7
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    2,
+    9
+   ]
+  ],
+  "acts": 29,
+  "gallery": 302
+ },
+ {
+  "slug": "10-days-bhutan-tour-with-phobjikha-luxury",
+  "title": "Bhutan Horizons | From Dzongs to Himalayan Peaks",
+  "dur": "10D/9N",
+  "price": 128000,
+  "struck": 155600,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Nubding",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "Tashi Namgay Grand Resort",
+    "Phuntsholing",
+    1,
+    6
+   ],
+   [
+    "dusitD2 Yarkay Thimphu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Thimphu",
+    "Thimphu City",
+    2,
+    13
+   ],
+   [
+    "Gangtey Lodge Bhutan",
+    "Nubding",
+    1,
+    12
+   ],
+   [
+    "Six Senses",
+    "Nubding",
+    1,
+    8
+   ],
+   [
+    "Dhensa Boutique Resort",
+    "Punakha",
+    1,
+    9
+   ],
+   [
+    "RKPO Green Resort",
+    "Punakha",
+    1,
+    13
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    3,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    3,
+    12
+   ]
+  ],
+  "acts": 43,
+  "gallery": 216
+ },
+ {
+  "slug": "bhutan-tour-package-from-siliguri-luxury",
+  "title": "EXCLUSIVE Bhutan | FREE Tiger Nest Hiking Experience",
+  "dur": "6D/5N",
+  "price": 75120,
+  "struck": 99100,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    1
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 6,
+  "hotels": [
+   [
+    "Tashi Namgay Grand Resort",
+    "Phuntsholing",
+    1,
+    6
+   ],
+   [
+    "dusitD2 Yarkay Thimphu",
+    "Thimphu City",
+    1,
+    12
+   ],
+   [
+    "Le Méridien Thimphu",
+    "Thimphu City",
+    1,
+    13
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    2,
+    12
+   ]
+  ],
+  "acts": 31,
+  "gallery": 132
+ },
+ {
+  "slug": "best-of-bhutan-visit-to-taktsang-monastery-super-deluxe",
+  "title": "Best of Bhutan FREE Visit to Taktsang Monastery",
+  "dur": "9D/8N",
+  "price": 88000,
+  "struck": 92000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Punakha",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    2
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Hotel Ga Me Ga",
+    "Phuntsholing",
+    1,
+    12
+   ],
+   [
+    "Hotel Druk",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Hotel Osel",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Hotel Ariya",
+    "Thimphu City",
+    2,
+    10
+   ],
+   [
+    "Hotel Rivervalley",
+    "Punakha",
+    2,
+    8
+   ],
+   [
+    "Zhingkham Resort",
+    "Punakha",
+    2,
+    11
+   ],
+   [
+    "Tashi Namgay Resort",
+    "Paro",
+    2,
+    11
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    2,
+    9
+   ]
+  ],
+  "acts": 34,
+  "gallery": 185
+ },
+ {
+  "slug": "10-days-bhutan-tour-with-phobjikha-super-deluxe",
+  "title": "Bhutan Horizons | From Dzongs to Himalayan Peaks",
+  "dur": "10D/9N",
+  "price": 95120,
+  "struck": 133400,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Nubding",
+    1
+   ],
+   [
+    "Punakha",
+    1
+   ],
+   [
+    "Paro",
+    3
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "Hotel Ga Me Ga",
+    "Phuntsholing",
+    1,
+    12
+   ],
+   [
+    "Hotel Druk",
+    "Phuntsholing",
+    1,
+    9
+   ],
+   [
+    "Hotel Osel",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Hotel Ariya",
+    "Thimphu City",
+    2,
+    10
+   ],
+   [
+    "RKPO Gangtey Lodge, Green Resort",
+    "Nubding",
+    1,
+    7
+   ],
+   [
+    "Wangdue Ecolodge",
+    "Nubding",
+    1,
+    7
+   ],
+   [
+    "Zhingkham Resort",
+    "Punakha",
+    1,
+    11
+   ],
+   [
+    "Hotel Rivervalley",
+    "Punakha",
+    1,
+    8
+   ],
+   [
+    "Tashi Namgay Resort",
+    "Paro",
+    3,
+    11
+   ],
+   [
+    "Udumwara Resort",
+    "Paro",
+    3,
+    9
+   ]
+  ],
+  "acts": 43,
+  "gallery": 215
+ },
+ {
+  "slug": "7-days-tour-in-paradisic-bhutan-luxury",
+  "title": "Glimpse of Bhutan | Dzong Special",
+  "dur": "7D/6N",
+  "price": 85210,
+  "struck": 121000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Thimphu City",
+    2
+   ],
+   [
+    "Paro",
+    2
+   ],
+   [
+    "Phuntsholing",
+    1
+   ],
+   [
+    "Siliguri",
+    1
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Tashi Namgay Grand Resort",
+    "Phuntsholing",
+    1,
+    6
+   ],
+   [
+    "dusitD2 Yarkay Thimphu",
+    "Thimphu City",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Thimphu",
+    "Thimphu City",
+    2,
+    13
+   ],
+   [
+    "Himalayan Keys Forest Resort",
+    "Paro",
+    2,
+    12
+   ],
+   [
+    "Le Méridien Paro, Riverfront",
+    "Paro",
+    2,
+    12
+   ]
+  ],
+  "acts": 31,
+  "gallery": 132
+ },
+ {
+  "slug": "paro-tour-package",
+  "title": "Paro Getaway |  FREE Private Transfers",
+  "dur": "3D/2N",
+  "price": 19500,
+  "struck": 25935,
+  "cur": "INR",
+  "cities": [
+   [
+    "Paro",
+    3
+   ]
+  ],
+  "days": 3,
+  "hotels": [],
+  "acts": 2,
+  "gallery": 27
  }
 ]

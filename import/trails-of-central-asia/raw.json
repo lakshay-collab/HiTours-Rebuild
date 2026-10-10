@@ -1,0 +1,2854 @@
+{
+ "source": "https://www.thrillophilia.com/tours/trails-of-central-asia",
+ "captured_at": "2026-10-10",
+ "title": "Trails of Central Asia | Uncover Kazakhstan & Uzbekistan",
+ "slug": "trails-of-central-asia",
+ "duration": "11D/10N",
+ "city_split": [
+  [
+   "Tashkent",
+   2
+  ],
+  [
+   "Samarkand",
+   2
+  ],
+  [
+   "Tashkent",
+   1
+  ],
+  [
+   "Astana",
+   2
+  ],
+  [
+   "Almaty",
+   4
+  ]
+ ],
+ "country": "Uzbekistan",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Newly Added",
+ "highlights": [
+  "Uncover Kazakhstan and Uzbekistan’s blend of vast steppes, ancient cities, and vibrant cultures—offering a unique journey through Central Asia’s historic crossroads.",
+  "Explore Khodjand Fortress, known for its massive walls and rich history as a key Silk Road defense, offering insight into Tajikistan’s past and strategic importance.",
+  "Walk through Shah-i-Zinda, a sacred Samarkand necropolis famed for its vibrant tilework and centuries-old mausoleums, reflecting artistic heritage.",
+  "Discover Burabay National Park, famed for its stunning lakes, unique rock formations, and rich wildlife—a peaceful escape blending nature and culture in Kazakhstan.",
+  "Visit Charyn Canyon, famed for its towering red rock formations and rugged landscapes—often called Kazakhstan’s Grand Canyon for its breathtaking views."
+ ],
+ "overview": "Start your adventure in Tashkent with a city walking tour, exploring its vibrant streets and historic sites. Next, head to Khujand, Tajikistan, where you’ll discover ancient fortresses, cultural landmarks, and bustling bazaars. Then, transfer to Samarkand to visit iconic places like Registan Square, Gur-e-Amir Mausoleum, and Shah-i-Zinda. Journey to the Seven Lakes in Tajikistan’s Fann Mountains, enjoying stunning landscapes and local village life. Return to Tashkent for some leisure time before flying to Astana to explore its futuristic architecture and nearby Burabay National Park’s natural beauty. Fly to Almaty for city highlights and experience the Medeu Ice Skating Rink and Shymbulak Ski Resort. Finally, take a day trip to Charyn Canyon and Kolsai Lake, known for dramatic rock formations and pristine alpine lakes, before your departure.",
+ "price_per_adult": 125000,
+ "struck_price": 166250,
+ "currency": "INR",
+ "inr_price": 125000,
+ "inclusions": [
+  "Transfer from Tashkent International Airport to Deluxe Hotel",
+  "3 nights stay in Tashkent with breakfast",
+  "Tashkent Walking Tour",
+  "Trip to Khujand, Tajikistan",
+  "2 nights stay in Samarkand with breakfast",
+  "Samarkand Historic Walking Tour",
+  "Tajikistan Seven Lakes Tour",
+  "Transfer from Deluxe Hotel to Tashkent International Airport",
+  "Transfer from Nursultan Nazarbayev International Airport to Deluxe Hotel",
+  "2 nights stay in Astana with breakfast",
+  "Astana Sightseeing Tour",
+  "Trip to Burabay National Park",
+  "Transfer from Deluxe Hotel to Nursultan Nazarbayev International Airport",
+  "Transfer from Almaty International Airport to Deluxe Hotel",
+  "3 nights stay in Almaty with breakfast",
+  "Almaty City Sightseeing Tour",
+  "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+  "Day Trip to Charyn Canyon and Kolsai Lake From Almaty",
+  "Transfer from Deluxe Hotel to Almaty International Airport"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions",
+  "Visa Charges",
+  "Travel Insurance",
+  "Internal Flights",
+  "International flight tickets"
+ ],
+ "know_before_you_go": [
+  "Carry a valid ID proof.",
+  "Check visa rules for Uzbekistan and Kazakhstan; some nationalities require visas in advance.",
+  "Uzbekistan uses the Uzbek som; Kazakhstan uses the Kazakhstan tenge. Carry some cash, as cards may not be widely accepted.",
+  "Dress modestly when visiting mosques and religious sites.",
+  "Internet access can be limited in remote areas. Plan accordingly.",
+  "Uzbek and kazakh are official languages; Russian is widely spoken. English may be limited outside major cities.",
+  "The region is generally safe for tourists but always follow local advice and keep valuables secure.",
+  "Some excursions involve moderate walking and altitude changes (Seven Lakes, Burabay, Charyn Canyon)."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Tashkent | Tashkent Walking Tour",
+   "city": "Tashkent",
+   "desc": "Welcome to Tashkent! Upon arrival at the airport, get driven to your hotel. Check in and rest for some time. From hotel, begin your walking tour in Amir Temur Square, where locals gather near the statue of Uzbekistan’s most iconic leader. Head to Broadway Alley, lined with painters, snack stalls, and weekend musicians. Nearby, the Alisher Navoiy Theater stands proud, hosting classic operas and modern shows. Conclude your tour at Chorsu Bazaar, where every corner bursts with color and spices.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Hotel New York Tashkent"
+    },
+    {
+     "type": "Activity",
+     "title": "Tashkent Walking Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/w091v8rswgx141iwtnv913h4k2zp_caption%20(73).jpg",
+      "https://media1.thrillophilia.com/filestore/siymaxkhxzy8rj6m21vwl11j4muv_Downpic.cc-image571446552.jpg",
+      "https://media1.thrillophilia.com/filestore/nohi9dy8x1vlgrrh6fthfnch90fv_caption%20(71).jpg",
+      "https://media1.thrillophilia.com/filestore/dxh0bavprmopa7rdr53fy4iimwyv_caption%20(70).jpg",
+      "https://media1.thrillophilia.com/filestore/qz51wff75ngnnvanvtoq3ki3jl5e_caption%20(72).jpg",
+      "https://media1.thrillophilia.com/filestore/ztagj54b5imq4vj0mll0x8ieae3a_Downpic.cc-image571446553.jpg",
+      "https://media1.thrillophilia.com/filestore/v9trmjyc0ylgj8s5xqlgl21or9h2_caption%20(69).jpg",
+      "https://media1.thrillophilia.com/filestore/vxjqgvnu95b0zfougxph7c1k4chy_opera-ballet-2.jpg",
+      "https://media1.thrillophilia.com/filestore/etk664ktd4eab7v3zo8zp3bxfsiy_dc77d033f2187581aee9f331dba66bdd.jpg",
+      "https://media1.thrillophilia.com/filestore/wzo62gp7xhup4wfc0e1apjy8x2wc_amir_temur_square_5.jpg",
+      "https://media1.thrillophilia.com/filestore/ke07varu208obzdi0r9c77gosid4_kosmonavtlar-metro-station-interior-tashkent_78361-19496.jpg",
+      "https://media1.thrillophilia.com/filestore/8q6v9fuyut7uexvvsbj1apks4pwe_navoi-theatre.webp"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Chorsu Bazaar",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/etk664ktd4eab7v3zo8zp3bxfsiy_dc77d033f2187581aee9f331dba66bdd.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Amir Temur Square",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/wzo62gp7xhup4wfc0e1apjy8x2wc_amir_temur_square_5.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Kosmonavtlar",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ke07varu208obzdi0r9c77gosid4_kosmonavtlar-metro-station-interior-tashkent_78361-19496.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Alisher Navoiy Theater",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/8q6v9fuyut7uexvvsbj1apks4pwe_navoi-theatre.webp"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Trip to Khujand, Tajikistan",
+   "city": "Tashkent",
+   "desc": "Today, set off to Khujand, a historic city once rebuilt by Alexander the Great. Visit Khudjant Palace, inspired by St. Petersburg’s Petergof, known for its ornate halls. Next, walk through Khodjand Fortress and explore its archaeology museum with ancient regional artifacts. See the Mosque and Mausoleum of Sheikh Muslihiddin, a spiritual landmark, and the 19th-century Orthodox Church of Mary Magdalene. Conclude your day at Panjshanbe Bazaar, filled with local life, food, and crafts.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Trip to Khujand, Tajikistan",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/b3lv18zabxnurnm5fi0yv2nr89to_shutterstockeditorial1542863342.jpg",
+      "https://media1.thrillophilia.com/filestore/cedzho0ax6ztn6qsmloq4sixtqgb_q89b82zx1dtz164ba5kpggm817qkkr1f.jpg",
+      "https://media1.thrillophilia.com/filestore/llpk82qed0n2jq0j3d9d7s0t6uwk_Downpic.cc-image432831946.jpg",
+      "https://media1.thrillophilia.com/filestore/tzao3lpbmowed8bqe6led707qdlh_new-panjakent-bazar13.jpg",
+      "https://media1.thrillophilia.com/filestore/01exihl387j5dmtesi15oe7q6ee3_dda0786878-12-g.jpg",
+      "https://media1.thrillophilia.com/filestore/9rytbazlkfky1mrhf6mtkcw23y29_panchshanbe-bazaar3.jpg",
+      "https://media1.thrillophilia.com/filestore/mutfmfi5bbizvfwn72wjmj0ffw13_253558039_10159898841443701_3904579417577793363_n_10159898841448701.jpg",
+      "https://media1.thrillophilia.com/filestore/5myujvht2fj78bwka3lvyyh9zoy9_new-panjakent-bazar13%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/mrxqhp5k5ygof1ntxbx9kifj2d3k_q89b82zx1dtz164ba5kpggm817qkkr1f%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/heqav0g9oxn1ybyfyaz7e3jt6oae_panchshanbe-bazaar3%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/r0lrqj290equlegvzud5ih5ahqjl_dda0786878-12-g%20(1).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Uzbek Border Crossing Point-Oybek",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/5myujvht2fj78bwka3lvyyh9zoy9_new-panjakent-bazar13%20(1).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Arbob Palace, Khujand",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/mrxqhp5k5ygof1ntxbx9kifj2d3k_q89b82zx1dtz164ba5kpggm817qkkr1f%20(1).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Panjshanbe Market, Khujand",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/heqav0g9oxn1ybyfyaz7e3jt6oae_panchshanbe-bazaar3%20(1).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Sughd Region Museum, Khujand",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/r0lrqj290equlegvzud5ih5ahqjl_dda0786878-12-g%20(1).jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Transfer to Samarkand | Samarkand Walking Tour",
+   "city": "Samarkand",
+   "desc": "Post check out, get driven to Samarkand. Upon arrival, check into your hotel and rest. Later, get transferred to Gur-i Amir Сomplex for your walking tour. Begin at Registan Square, where the mosaic-covered madrasahs echo stories of past. Next, head to Gur-e-Amir, the final resting place of Timur, and learn about his legacy. Afterward, walk the quiet path of Shah-i-Zinda, where each mausoleum tells its own sacred tale. Conclude your walk at Siyob Bazaar, where locals gather for produce & sweets.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Orient Star Samarkand"
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Samarkand Historic Walking Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/hmg8h631xdd3ym3t7ml19sgvq4n3_74472ea26534254c192e98c9afe465d169a9617beafec38fa76263a9137a76ff.jpg",
+      "https://media1.thrillophilia.com/filestore/xwzjemd2kyn08ciq9gs24pmxrjg3_11d04f6ae1ba431180311c8a81d77075962f40e5f2021f63614ef6a0062ba0a1.jpg",
+      "https://media1.thrillophilia.com/filestore/cwrq311fie702g4f3ofkjyqsy851_caption%20(79).jpg",
+      "https://media1.thrillophilia.com/filestore/s83sqo7bvkha8moiivoiwwlasq0j_caption%20(82).jpg",
+      "https://media1.thrillophilia.com/filestore/fqyvxegruqagg2szlrxvycz508mq_caption%20(80).jpg",
+      "https://media1.thrillophilia.com/filestore/jchkyiley6gqxucsmhnnjth86iq3_caption%20(78).jpg",
+      "https://media1.thrillophilia.com/filestore/l7eo9hb6h6s4whp2rnc6s1wpg1y0_caption%20(81).jpg",
+      "https://media1.thrillophilia.com/filestore/jamz0nnprxzksngywcfgmhgavl8e_caption%20(77).jpg",
+      "https://media1.thrillophilia.com/filestore/26pl8rdmbxmjhecmqz7wxmod35u6_3e53a830c5e3d001f75c1d26692c4ea83e61ef78d874580c950915439654fe5d.jpg",
+      "https://media1.thrillophilia.com/filestore/d4vs1pqpovszbha561cyk3ck8v3g_3308px-Shah-i-Zinda_01.jpg",
+      "https://media1.thrillophilia.com/filestore/9ym0dkt828cuh7m1ua5m9ogaofkx_Samarkand_Gur_Emir_Mausoleum.jpeg",
+      "https://media1.thrillophilia.com/filestore/thghzrrw12295u1fu0b4drw2u1si_siab-bazaar1.jpg",
+      "https://media1.thrillophilia.com/filestore/eeiulsmzmbq78k2a88o7ysra80vt_Bibikhanum_mosque%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/bjyco1gmfmnr0rup2ui5y7guoitr_dl.beatsnoop.com-3000-456MPYlh9i.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Shah-i-Zinda",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/d4vs1pqpovszbha561cyk3ck8v3g_3308px-Shah-i-Zinda_01.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Amir Temur Mausoleum Gur-i Amir Сomplex",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/9ym0dkt828cuh7m1ua5m9ogaofkx_Samarkand_Gur_Emir_Mausoleum.jpeg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Siyob Bozor",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/thghzrrw12295u1fu0b4drw2u1si_siab-bazaar1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Bibi-Khanym Mosque",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/eeiulsmzmbq78k2a88o7ysra80vt_Bibikhanum_mosque%20(1).jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Registan Square",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/bjyco1gmfmnr0rup2ui5y7guoitr_dl.beatsnoop.com-3000-456MPYlh9i.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/vxre8auhby7j47twl68hoo3a1bmg_1617611087_Samarkand.jpg.jpg"
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Tajikistan Seven Lakes Tour",
+   "city": "Samarkand",
+   "desc": "Today, take a scenic drive into Tajikistan’s Fann Mountains to explore the Seven Lakes. Begin at Nezhigon, where the water shifts color with the sun. Continue to Soya and Hushyor, quiet lakes nestled among steep hills. At Marguzor, the largest lake of the 7 lakes, enjoy a walk and listen to local stories. Afterward, meet villagers living close to nature, offering insight into mountain life. This trip blends stunning views with simple moments, giving you an experience of the region’s beauty.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Tajikistan Seven Lakes Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/7d2ljduqj57ccchwhjpwfekekt0a_f7b3dd38-9566-4661-abb3-10d57bab9674.jpg",
+      "https://media1.thrillophilia.com/filestore/88i9he7hgpt15nrkagadcltjdv0p_76bd5879-f593-430b-b87a-dd55b995f55e.jpg",
+      "https://media1.thrillophilia.com/filestore/zvq8dpsrt1hcs9brvux9j8hxt5zq_bf1457e6-bba6-4171-9c45-46843aa279aa.jpg",
+      "https://media1.thrillophilia.com/filestore/4nof3clvwg7c5hkikrzzi89d65l9_90d8c3a7-1795-4123-bf8f-eea3b2205309.jpg",
+      "https://media1.thrillophilia.com/filestore/197s72hc2zqxaz23kdua4c1m9z3s_9adff14c-ff3c-4f3a-94ab-59935a61ec55.jpg",
+      "https://media1.thrillophilia.com/filestore/47qwglf6gmxyaufde8vsv9qirtfx_8dabc4a4-28f4-4087-96c6-a4bbc2484948.jpg",
+      "https://media1.thrillophilia.com/filestore/h1ofzxrp63c49los9enncwqfa5nn_n.webp",
+      "https://media1.thrillophilia.com/filestore/imhr5mhzl32alv160f2rxxra3jz1_s.jpg",
+      "https://media1.thrillophilia.com/filestore/yn9dl3k1ljpywbpgtu5yp8lj8m0z_g.jpg",
+      "https://media1.thrillophilia.com/filestore/794kohmpz4os3i23y3a0x4uoiph2_n.jpg",
+      "https://media1.thrillophilia.com/filestore/ioobt5ei826ahp7asimlewy28wrc_h.jpg",
+      "https://media1.thrillophilia.com/filestore/yu5g2pr9edtowppfc3moo6l0nucn_m.jpg",
+      "https://media1.thrillophilia.com/filestore/ofmj7mx4v7fb650duxt0bnkqxa2q_wmremove-transformed.jpeg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Nezhigon Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/h1ofzxrp63c49los9enncwqfa5nn_n.webp"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Soya Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/imhr5mhzl32alv160f2rxxra3jz1_s.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Gushor Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yn9dl3k1ljpywbpgtu5yp8lj8m0z_g.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Nofin Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/794kohmpz4os3i23y3a0x4uoiph2_n.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Hurdak Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ioobt5ei826ahp7asimlewy28wrc_h.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Marguzor Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yu5g2pr9edtowppfc3moo6l0nucn_m.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Hazorchashma Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ofmj7mx4v7fb650duxt0bnkqxa2q_wmremove-transformed.jpeg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 5,
+   "title": "Transfer to Tashkent | Leisure Time",
+   "city": "Tashkent",
+   "desc": "Post check out, get driven to Tashkent. Upon arrival, check into your hotel and spend your time at leisure. You can explore the State Museum of the Temurids to dive into the rich history of the Timurid Empire with its rare artifacts and exhibits. You can also visit the Tashkent Television Tower, a towering symbol of modern Uzbekistan offering panoramic city views. You can discover Besh Qozon Pilaf Center, famous for its Uzbek pilaf, where tradition meets flavor in a unique dining experience.",
+   "leisure": true,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Hotel New York Tashkent"
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Attraction",
+     "title": "State Museum of the Temurids",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/bjo0qo2jqu8xhue59sxdjt8r0sjq_2-0-0-0-0-1583391101.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Tashkent Television Tower",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/h41vtvhne3ee3tp7n59r8c7scafy_tashkent-television-tower-uzbekistan-sundown-cloudy-sky-background_431724-14240.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Besh Qozon Pilaf Center",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/bcddn6tt6cms845gupni5jlh37hg_dl.beatsnoop.com-QmK5GAiPnX.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg"
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Fly to Astana | Astana Sightseeing Tour",
+   "city": "Astana",
+   "desc": "Post check out, get driven to the airport for your flight to Astana. Upon arrival at \nNursultan Nazarbayev International Airport, get transferred to your hotel. Check in and rest. Visit Baiterek Tower, a symbol of Kazakhstan’s independence with stunning views from its golden sphere. Next, step inside the Nur-Alem Sphere, the world’s largest spherical building and legacy of Expo 2017, showcasing future energy. Afterward, explore Khan Shatyr, a transparent tent with shops, dining and even a beach.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Premier Inn Astana"
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Astana Sightseeing Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/32js7opecfp8ukofrr31979oeirl_shutterstock_2447598499.jpg",
+      "https://media1.thrillophilia.com/filestore/vilf3njf5o76qgwnohalpoygpx4o_shutterstock_2348067883.jpg",
+      "https://media1.thrillophilia.com/filestore/jv8ltn38nzhe7kxkemyb4vz5c25w_shutterstock_1324006658.jpg",
+      "https://media1.thrillophilia.com/filestore/uz3qszkivmedpm31qt4vlt4qcx5c_shutterstock_2507742887.jpg",
+      "https://media1.thrillophilia.com/filestore/i5wwm6mdxx2od5fhxid5vhrg96s2_shutterstock_2507742965.jpg",
+      "https://media1.thrillophilia.com/filestore/ppuqqobwwhnhkl86lcw21iehe9hf_shutterstock_2510393661.jpg",
+      "https://media1.thrillophilia.com/filestore/xabkhih741488x7l623xjjuq74xx_shutterstock_2502166349.jpg",
+      "https://media1.thrillophilia.com/filestore/d7b31a4ayoj7eim05qsuidt0orvv_shutterstock_1709466457.jpg",
+      "https://media1.thrillophilia.com/filestore/b60z31n71w97eqol2yrnkr8yyd2j_Khan_Shatyr,_Astana.jpg",
+      "https://media1.thrillophilia.com/filestore/6lm2mnalyrofvcklk989v7ier5r1_48884588892_43ed0da01f_o.jpg",
+      "https://media1.thrillophilia.com/filestore/338a5nkmr8w7pggnw1wo0910mal3_hhhhhh.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Khan Shatyr Entertainment Center",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/b60z31n71w97eqol2yrnkr8yyd2j_Khan_Shatyr,_Astana.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Baiterek",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/6lm2mnalyrofvcklk989v7ier5r1_48884588892_43ed0da01f_o.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Nur Alem Expo 2017 Sphere",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/338a5nkmr8w7pggnw1wo0910mal3_hhhhhh.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/s5lchgzrud8155eyr2zxpl2y50j5_shutterstock_585990431.jpg"
+   ]
+  },
+  {
+   "day": 7,
+   "title": "Trip to Burabay National Park",
+   "city": "Astana",
+   "desc": "Take a day trip to Burabay National Park, known for its lakes, forests, and granite hills. Just a few hours from Astana, this park is a peaceful retreat from the city. Walk along Lake Borovoe, surrounded by pine-covered slopes, and spot rock formations shaped by wind and time. Visit Zhumbaktas Rock and climb to hilltop viewpoints for wide views of the steppe. Locals call it the \"Kazakh Switzerland\" for its mix of nature and legends. It's a quiet place where fresh air and scenery meet.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Trip to Burabay National Park",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/uyzozmif95wuqfvaawjhg0qutspj_dl.beatsnoop.com-final-gbB4R5DyGq.jpg",
+      "https://media1.thrillophilia.com/filestore/9qzjdsmwv0pragnwi3h7n6ryiwm6_dl.beatsnoop.com-final-YOZTF3oigh.jpg",
+      "https://media1.thrillophilia.com/filestore/o1nux36ez2657buynb1jby4l8idx_dl.beatsnoop.com-final-XL1fZwWNHs.jpg",
+      "https://media1.thrillophilia.com/filestore/51l0zfdxjtpk26dhtrlk40t747ww_dl.beatsnoop.com-final-lHzn7J4AfK.jpg",
+      "https://media1.thrillophilia.com/filestore/2r1hnfifci6qly5n0yyg6qsvwahf_dl.beatsnoop.com-final-8kLrj1ApS9.jpg",
+      "https://media1.thrillophilia.com/filestore/oo90kv8cb122saxgbemzs5xfmpup_dl.beatsnoop.com-final-TIrYERXVfO.jpg",
+      "https://media1.thrillophilia.com/filestore/t7gqx9mbmofgapdclyq125d8buiq_dl.beatsnoop.com-final-bdcQ61AmoP.jpg",
+      "https://media1.thrillophilia.com/filestore/basdyrllmzku2dj0tra8saygco2k_dl.beatsnoop.com-final-sndrLIko0U.jpg",
+      "https://media1.thrillophilia.com/filestore/m6fg35mh6l53qquhw5xvd1h111mm_1618297274_1200px-Burnaby_Lake_on_a_cloudy_day.jpeg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Burabay National Park",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/m6fg35mh6l53qquhw5xvd1h111mm_1618297274_1200px-Burnaby_Lake_on_a_cloudy_day.jpeg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 8,
+   "title": "Fly to Almaty | Almaty City Sightseeing Tour",
+   "city": "Almaty",
+   "desc": "Post check out, get transferred to the airport for your flight to Almaty. Upon arrival at Almaty International Airport, get driven to your hotel. Check in & rest. Later, explore the city. Begin at Almaty’s Monument of Independence, where the golden figure atop a tall pillar marks Kazakhstan’s journey to nationhood. Walk to the nearby Park of 28 Panfilov Guardsmen, a peaceful space honoring soldiers who defended Moscow in WWII. Discover Ascension Cathedral, a wooden structure built without nails.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Royal Park Hotel"
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Almaty City Sightseeing Tour",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/elvqtnsme6ctj6hi54h99ufvu092_dl.beatsnoop.com-1714737499.jpg",
+      "https://media1.thrillophilia.com/filestore/xkorlhek5npoal3cywpinvhtnm24_dl.beatsnoop.com-1714737045.jpg",
+      "https://media1.thrillophilia.com/filestore/zmqwr768ynctpasoxj9q2huub79q_dl.beatsnoop.com-1714736785.jpg",
+      "https://media1.thrillophilia.com/filestore/m02z0pb6erf7kn40blhrwskagzx4_dl.beatsnoop.com-1714736766.jpg",
+      "https://media1.thrillophilia.com/filestore/l9wm6jh31alcw2sutdt9d82qyijm_dl.beatsnoop.com-1714736997.jpg",
+      "https://media1.thrillophilia.com/filestore/qhaz49gkh0m78ropxyjw7fy1aiut_dl.beatsnoop.com-1714737149.jpg",
+      "https://media1.thrillophilia.com/filestore/jieb3uo8intz721sqzi72t6rffo0_dl.beatsnoop.com-1714737332.jpg",
+      "https://media1.thrillophilia.com/filestore/ypuyzxm1ls4m22tupet6m0tgha5t_dl.beatsnoop.com-1714737572.jpg",
+      "https://media1.thrillophilia.com/filestore/sen8qo3cxac4ddexlpcw7m93m9pq_monument-of-independence-almaty.jpg",
+      "https://media1.thrillophilia.com/filestore/x5107z3hn22853u89owu0rrfahox_28panfilov-guardsmen1.png",
+      "https://media1.thrillophilia.com/filestore/3zw7eayhe7zqmhe4u76jo3iio0ux_ascension-cathedral-almaty-kazakhstan-2.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Monument of Independence",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/sen8qo3cxac4ddexlpcw7m93m9pq_monument-of-independence-almaty.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Park of 28 Panfilov Guardsmen",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/x5107z3hn22853u89owu0rrfahox_28panfilov-guardsmen1.png"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Ascension Cathedral",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/3zw7eayhe7zqmhe4u76jo3iio0ux_ascension-cathedral-almaty-kazakhstan-2.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/cfogwtvugrv9k4vldbzq99sahtjn_shutterstock_2257003809.jpg"
+   ]
+  },
+  {
+   "day": 9,
+   "title": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+   "city": "Almaty",
+   "desc": "Take a day trip from Almaty to two major mountain attractions. Start at Medeu Ice Skating Rink, the highest Olympic-sized rink in the world, where you can skate in a scenic mountain setting. Then ride the cable car up to Shymbulak Ski Resort, known for its wide slopes and modern facilities. Enjoy skiing, snowboarding, or a peaceful ride up the lifts with views of snow-covered peaks all around. It’s a day filled with fresh air and outdoor activity. Afterward, get driven back to your hotel.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/unuv5nfboec54f5n9ampr6zjyu4b_dl.beatsnoop.com-1714742344.jpg",
+      "https://media1.thrillophilia.com/filestore/73yci94ij7va2ogf5dna058lj36u_dl.beatsnoop.com-1714742470.jpg",
+      "https://media1.thrillophilia.com/filestore/7kwpgnwl1fyig6uummi0rxjevx93_dl.beatsnoop.com-1714741869.jpg",
+      "https://media1.thrillophilia.com/filestore/1d21flad2xitqh7lmiurthwyuh5h_dl.beatsnoop.com-1714742033.jpg",
+      "https://media1.thrillophilia.com/filestore/acbdrylkd2igcnpp63c5hw4qvr0p_dl.beatsnoop.com-1714741738.jpg",
+      "https://media1.thrillophilia.com/filestore/wpmghloei8sroe6vtv1d47zm3976_dl.beatsnoop.com-1714742295.jpg",
+      "https://media1.thrillophilia.com/filestore/at5qfiv1dd6lu5nsgwpf0umq6m2e_dl.beatsnoop.com-1714742743%20(1).jpg",
+      "https://media1.thrillophilia.com/filestore/mptcs4wapz8vre0gkylykc7bv891_dl.beatsnoop.com-1714742925.jpg",
+      "https://media1.thrillophilia.com/filestore/koghfpteo1o0tvkakl3yhx0ekrl9_compressed-Cable-Car-from-Shymbulak-Ski-Resort-Almaty-Kazakhsthan-min-min.jpeg",
+      "https://media1.thrillophilia.com/filestore/n86fddk81j6s2noetm48tvz7n602_15120519535_97fd501505_o.jpg",
+      "https://media1.thrillophilia.com/filestore/ly03c42su2ud77szxq10ik9bjkfw_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B3%D0%BE%D0%BD%D0%B4%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F_%D0%9C%D0%B5%D0%B4%D0%B5%D0%BE-%D0%A8%D1%8B%D0%BC%D0%B1%D1%83%D0%BB%D0%B0%D0%BA._8-%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B0..jfif",
+      "https://media1.thrillophilia.com/filestore/vrjnt8wwvr78tk7y6bjhxab6pm7x_Medeu-_4.jpg",
+      "https://media1.thrillophilia.com/filestore/jxnmhh6hckt5134tfufe4svyclqb_19134248232_df028bebc8_o.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Shymbulak Ski Resort",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/koghfpteo1o0tvkakl3yhx0ekrl9_compressed-Cable-Car-from-Shymbulak-Ski-Resort-Almaty-Kazakhsthan-min-min.jpeg",
+      "https://media1.thrillophilia.com/filestore/n86fddk81j6s2noetm48tvz7n602_15120519535_97fd501505_o.jpg",
+      "https://media1.thrillophilia.com/filestore/ly03c42su2ud77szxq10ik9bjkfw_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B3%D0%BE%D0%BD%D0%B4%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F_%D0%9C%D0%B5%D0%B4%D0%B5%D0%BE-%D0%A8%D1%8B%D0%BC%D0%B1%D1%83%D0%BB%D0%B0%D0%BA._8-%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B0..jfif"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Medeu Dam",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/vrjnt8wwvr78tk7y6bjhxab6pm7x_Medeu-_4.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Medeu",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/jxnmhh6hckt5134tfufe4svyclqb_19134248232_df028bebc8_o.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 10,
+   "title": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty",
+   "city": "Almaty",
+   "desc": "Take a day trip from Almaty to two stunning natural landmarks. Begin at Charyn Canyon, often called \"Kazakhstan’s Grand Canyon,\" where deep red cliffs and rock formations line the river valley—perfect for hiking and photography. Continue to Kolsai Lake, the largest of three alpine lakes nestled in forested mountains, reached via a scenic trail. Walk along the shore or hike nearby to enjoy the pristine clear water and pine-scented air. It’s a refreshing journey into wild landscapes.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/46q2uqsxkc2ew0xijdcove67axyr_dl.beatsnoop.com-final-mKejacPGXh.jpg",
+      "https://media1.thrillophilia.com/filestore/we1ptskdx7cjidlexhg5og1acfw2_dl.beatsnoop.com-final-vd94u0Z7LH.jpg",
+      "https://media1.thrillophilia.com/filestore/3z9o9eop74z75jrv3507m5t3shi6_dl.beatsnoop.com-final-uyPWEwXj8F.jpg",
+      "https://media1.thrillophilia.com/filestore/pe7s83senfj58ltn8ahgecthfivj_dl.beatsnoop.com-final-1ao47JLV3B.jpg",
+      "https://media1.thrillophilia.com/filestore/64youi918l90mqexm190t9op2xw7_dl.beatsnoop.com-final-pUDcRlVGgj.jpg",
+      "https://media1.thrillophilia.com/filestore/yymuzktt2k503aid93fs127gkpgd_dl.beatsnoop.com-final-VWGw2gNutX.jpg",
+      "https://media1.thrillophilia.com/filestore/v4va5k9jlz8g0err9onf3bktalx2_dl.beatsnoop.com-final-oaisIYzRtc.jpg",
+      "https://media1.thrillophilia.com/filestore/n5qjr4dcdfjzfc8gxyclax6xokba_dl.beatsnoop.com-final-tYEuIsPAkL.jpg",
+      "https://media1.thrillophilia.com/filestore/l33rnccy9xk7iglvrgmh0tb6gew0_1618298288_1554123490_charynskij-kanon-1.jpg",
+      "https://media1.thrillophilia.com/filestore/r1d98eg10nugezjii0mcf4bgeibk_download.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Charyn Canyon",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/l33rnccy9xk7iglvrgmh0tb6gew0_1618298288_1554123490_charynskij-kanon-1.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Kolsai Lake",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/r1d98eg10nugezjii0mcf4bgeibk_download.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 11,
+   "title": "Departure Day",
+   "city": "Almaty",
+   "desc": "In the morning, check out and get driven to the airport for your flight back home. This marks end of your Kazakhstan and Uzbekistan tour.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Star Hotel Tashkent",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.3,
+   "city": "Tashkent",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/b2cf80ungcj0jzkcfwq5drmt08tu_Star%201.jpg",
+    "https://media1.thrillophilia.com/filestore/ge0dupo3idnif3dgmph1a6583sum_Star%202.jpg",
+    "https://media1.thrillophilia.com/filestore/dx1bif8hl17k5wi0dcqn9dfo420d_Star%204.jpg",
+    "https://media1.thrillophilia.com/filestore/82yhx7hjj2cw5r0iz77wgs6w8pl1_Star%206.jpg",
+    "https://media1.thrillophilia.com/filestore/6anh7r3q9zc53p62h778yp9oy3nf_Star%203.jpg",
+    "https://media1.thrillophilia.com/filestore/vj4ahjhav33ckgz2lj596sxpl6uq_Star%205.jpg"
+   ]
+  },
+  {
+   "name": "Hotel New York Tashkent",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.6,
+   "city": "Tashkent",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/9j6qe4jhj0ntgy02ouomfpo1ct9z_NEW%201.jpg",
+    "https://media1.thrillophilia.com/filestore/x90xkt16cem2taa9e4ec856ifsaw_NEW%203.jpg",
+    "https://media1.thrillophilia.com/filestore/qosmnom0tcsx3m6zglb3z7pni4mj_NEW%205.jpg",
+    "https://media1.thrillophilia.com/filestore/ru1b3vi4j3mg94vyyjd43o1ss6wd_NEW%206.jpg",
+    "https://media1.thrillophilia.com/filestore/0rx01udec19uyii4b0xg9bt3ioq7_NEW%207.jpg",
+    "https://media1.thrillophilia.com/filestore/7aiha36se0i0vp44qqg7ezodwplo_NEW%208.jpg",
+    "https://media1.thrillophilia.com/filestore/g5i7g7yr2f7o6cw8yd14b9rqcekf_NEW%204.jpg",
+    "https://media1.thrillophilia.com/filestore/crefx56p7s6uzvj3lujcpo1722xd_NEW%202.jpg"
+   ]
+  },
+  {
+   "name": "Gur Emir Palace",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3.3,
+   "city": "Samarkand",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 3,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/wuodxzel998s85h5c73srl0ma9qt_Emir%208.jpg",
+    "https://media1.thrillophilia.com/filestore/75112kgdims1hqyqn4uxpci033go_Emir%207.jpg",
+    "https://media1.thrillophilia.com/filestore/jgjeynseikf85xxf54gha3dmwjty_Emir%203.jpg",
+    "https://media1.thrillophilia.com/filestore/m884oir7pnfu3etwgkfdby1j6wo1_Emir%204.jpg",
+    "https://media1.thrillophilia.com/filestore/6essw9b1fbkic30uuoe4imaq85kb_Emir%206.jpg",
+    "https://media1.thrillophilia.com/filestore/mj8lm65bs1prcknhtaq8zchoudzn_Emir%203.png",
+    "https://media1.thrillophilia.com/filestore/mo2u7saz9ectrwiq6ak29a2wjp7y_Emir%202.jpg",
+    "https://media1.thrillophilia.com/filestore/znb7e301cvh8mfax0sgcvawblvb8_Emir%205.jpg",
+    "https://media1.thrillophilia.com/filestore/d7e6s7pzk677q0qfpj5upqx4mz6y_1.jpg"
+   ]
+  },
+  {
+   "name": "Orient Star Samarkand",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3.9,
+   "city": "Samarkand",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 3,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/30dy7b6obwseglw3cdd8v1fk9l3x_Orient%202.jpg",
+    "https://media1.thrillophilia.com/filestore/i0x6oznrwmvba6lwncfifxfj2c9t_Orient%203.jpg",
+    "https://media1.thrillophilia.com/filestore/90qqidcql2uihbosr29zsc8em637_Orient%204.jpg",
+    "https://media1.thrillophilia.com/filestore/yw1xpzo8cpose2zxtf23i9q8v3g4_Orient%207.jpg",
+    "https://media1.thrillophilia.com/filestore/6pq66up5dli46boksr7y9hmcc6tu_Orient%208.jpg",
+    "https://media1.thrillophilia.com/filestore/hhnc1e5ibswwmkbupnlwaet6nqvm_Orient%206.jpg",
+    "https://media1.thrillophilia.com/filestore/m3e757gm3gxy2o047bsvj4ipd871_Orient%201.jpg",
+    "https://media1.thrillophilia.com/filestore/f1bk20ugcm5ikcmygs51badfk41w_Orient%205.jpg"
+   ]
+  },
+  {
+   "name": "Royal Park Hotel & Spa",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3.3,
+   "city": "Astana",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 6,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/wkef0wi5n4fpylm4fhvlqagmjat3_Park5.jpg",
+    "https://media1.thrillophilia.com/filestore/ng7eg4vdk7xi5fes5nz03ud9ecev_Park1.jpg",
+    "https://media1.thrillophilia.com/filestore/p98lx3wa4kqrre1u3ouqzpwtsldd_Park2.jpg",
+    "https://media1.thrillophilia.com/filestore/s2z4e38bu779n0dq1z3k6k8fv1w0_Park7.jpg",
+    "https://media1.thrillophilia.com/filestore/j70994nr7bts7ilq7bfw1zfbwygs_Park6.jpg",
+    "https://media1.thrillophilia.com/filestore/odk4fy7jyn83yma7lpeohduva8du_Park8.jpg",
+    "https://media1.thrillophilia.com/filestore/b6cov7yawhhuzc3f8vzg8ceusrgs_Park3.jpg",
+    "https://media1.thrillophilia.com/filestore/gpfrz1bzyuu7dd4e6ggqoywhs95e_Park4.jpg"
+   ]
+  },
+  {
+   "name": "Premier Inn Astana",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.6,
+   "city": "Astana",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 6,
+   "nights": 2,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/cloax7kcz4fjyiemqxmz5grz0xis_Premier%205.jpg",
+    "https://media1.thrillophilia.com/filestore/5i4reakvfn44plej94oj6t00ie7y_Premier%203.jpg",
+    "https://media1.thrillophilia.com/filestore/myu8dtzto3z99b033p8roozze6pt_Premier%202.jpg",
+    "https://media1.thrillophilia.com/filestore/7ckem298g5obx9pkqsxvnbgnonfc_Premier%207.jpg",
+    "https://media1.thrillophilia.com/filestore/nlqk9bjpiufpjwfc9xq1arkkyybo_Premier%204.jpg",
+    "https://media1.thrillophilia.com/filestore/ml812qir0f7r42g0c5ug9sday22w_Premier%201.jpg",
+    "https://media1.thrillophilia.com/filestore/askmmz9xs933uuy4bxjuncf0ghz8_Premier%206.jpg"
+   ]
+  },
+  {
+   "name": "Astra Hotel",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3.3,
+   "city": "Almaty",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 8,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yxplb8kdertfr9lap7rx02pcxgay_Astra%201.jpg",
+    "https://media1.thrillophilia.com/filestore/szzijwfl7ilrmtme51hkv16yoxgl_Astra%206.jpg",
+    "https://media1.thrillophilia.com/filestore/f3fdkof0roedf7ojhsbhna2gp35a_Astra%207.jpg",
+    "https://media1.thrillophilia.com/filestore/5x1v94wm757orta6rt01dm65l7wa_Astra%203.jpg",
+    "https://media1.thrillophilia.com/filestore/otyy5dz63i3kpnxbvuqclahvdsba_Astra%202.jpg",
+    "https://media1.thrillophilia.com/filestore/cu180dv174zstiawzy5hr3cd8j64_Astra%204.jpg",
+    "https://media1.thrillophilia.com/filestore/nivxc7n4u3r0d2alr9lkt78ns4ai_Astra%205.jpg"
+   ]
+  },
+  {
+   "name": "Royal Park Hotel",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3.7,
+   "city": "Almaty",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 8,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/nrlygslbb26xfebgqzo7w7mh19qu_Royal%201.jpg",
+    "https://media1.thrillophilia.com/filestore/s3b29ug4p3t6p3xwka2c4ef08qoe_Royal%202.jpg",
+    "https://media1.thrillophilia.com/filestore/sws68b4acuvlemi3mbha6tdybqjq_Royal%206.jpg",
+    "https://media1.thrillophilia.com/filestore/bmd84ol2e84x4zeuu379he7k70a5_Royal%203.jpg",
+    "https://media1.thrillophilia.com/filestore/vqsd8exqoevmpiie6y53rm8pzo9s_Royal%204.jpg",
+    "https://media1.thrillophilia.com/filestore/9r4ip65mfhv6jazo0lbvd32uav8h_Royal%205.jpg"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "Tashkent Walking Tour",
+   "day": 1,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/w091v8rswgx141iwtnv913h4k2zp_caption%20(73).jpg",
+    "https://media1.thrillophilia.com/filestore/siymaxkhxzy8rj6m21vwl11j4muv_Downpic.cc-image571446552.jpg",
+    "https://media1.thrillophilia.com/filestore/nohi9dy8x1vlgrrh6fthfnch90fv_caption%20(71).jpg",
+    "https://media1.thrillophilia.com/filestore/dxh0bavprmopa7rdr53fy4iimwyv_caption%20(70).jpg",
+    "https://media1.thrillophilia.com/filestore/qz51wff75ngnnvanvtoq3ki3jl5e_caption%20(72).jpg",
+    "https://media1.thrillophilia.com/filestore/ztagj54b5imq4vj0mll0x8ieae3a_Downpic.cc-image571446553.jpg",
+    "https://media1.thrillophilia.com/filestore/v9trmjyc0ylgj8s5xqlgl21or9h2_caption%20(69).jpg",
+    "https://media1.thrillophilia.com/filestore/vxjqgvnu95b0zfougxph7c1k4chy_opera-ballet-2.jpg",
+    "https://media1.thrillophilia.com/filestore/etk664ktd4eab7v3zo8zp3bxfsiy_dc77d033f2187581aee9f331dba66bdd.jpg",
+    "https://media1.thrillophilia.com/filestore/wzo62gp7xhup4wfc0e1apjy8x2wc_amir_temur_square_5.jpg",
+    "https://media1.thrillophilia.com/filestore/ke07varu208obzdi0r9c77gosid4_kosmonavtlar-metro-station-interior-tashkent_78361-19496.jpg",
+    "https://media1.thrillophilia.com/filestore/8q6v9fuyut7uexvvsbj1apks4pwe_navoi-theatre.webp"
+   ]
+  },
+  {
+   "name": "Chorsu Bazaar",
+   "day": 1,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/etk664ktd4eab7v3zo8zp3bxfsiy_dc77d033f2187581aee9f331dba66bdd.jpg"
+   ]
+  },
+  {
+   "name": "Amir Temur Square",
+   "day": 1,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/wzo62gp7xhup4wfc0e1apjy8x2wc_amir_temur_square_5.jpg"
+   ]
+  },
+  {
+   "name": "Kosmonavtlar",
+   "day": 1,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ke07varu208obzdi0r9c77gosid4_kosmonavtlar-metro-station-interior-tashkent_78361-19496.jpg"
+   ]
+  },
+  {
+   "name": "Alisher Navoiy Theater",
+   "day": 1,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/8q6v9fuyut7uexvvsbj1apks4pwe_navoi-theatre.webp"
+   ]
+  },
+  {
+   "name": "Trip to Khujand, Tajikistan",
+   "day": 2,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    8,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/b3lv18zabxnurnm5fi0yv2nr89to_shutterstockeditorial1542863342.jpg",
+    "https://media1.thrillophilia.com/filestore/cedzho0ax6ztn6qsmloq4sixtqgb_q89b82zx1dtz164ba5kpggm817qkkr1f.jpg",
+    "https://media1.thrillophilia.com/filestore/llpk82qed0n2jq0j3d9d7s0t6uwk_Downpic.cc-image432831946.jpg",
+    "https://media1.thrillophilia.com/filestore/tzao3lpbmowed8bqe6led707qdlh_new-panjakent-bazar13.jpg",
+    "https://media1.thrillophilia.com/filestore/01exihl387j5dmtesi15oe7q6ee3_dda0786878-12-g.jpg",
+    "https://media1.thrillophilia.com/filestore/9rytbazlkfky1mrhf6mtkcw23y29_panchshanbe-bazaar3.jpg",
+    "https://media1.thrillophilia.com/filestore/mutfmfi5bbizvfwn72wjmj0ffw13_253558039_10159898841443701_3904579417577793363_n_10159898841448701.jpg",
+    "https://media1.thrillophilia.com/filestore/5myujvht2fj78bwka3lvyyh9zoy9_new-panjakent-bazar13%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/mrxqhp5k5ygof1ntxbx9kifj2d3k_q89b82zx1dtz164ba5kpggm817qkkr1f%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/heqav0g9oxn1ybyfyaz7e3jt6oae_panchshanbe-bazaar3%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/r0lrqj290equlegvzud5ih5ahqjl_dda0786878-12-g%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Uzbek Border Crossing Point-Oybek",
+   "day": 2,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/5myujvht2fj78bwka3lvyyh9zoy9_new-panjakent-bazar13%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Arbob Palace, Khujand",
+   "day": 2,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/mrxqhp5k5ygof1ntxbx9kifj2d3k_q89b82zx1dtz164ba5kpggm817qkkr1f%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Panjshanbe Market, Khujand",
+   "day": 2,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/heqav0g9oxn1ybyfyaz7e3jt6oae_panchshanbe-bazaar3%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Sughd Region Museum, Khujand",
+   "day": 2,
+   "city": "Tashkent",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/r0lrqj290equlegvzud5ih5ahqjl_dda0786878-12-g%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Samarkand Historic Walking Tour",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/hmg8h631xdd3ym3t7ml19sgvq4n3_74472ea26534254c192e98c9afe465d169a9617beafec38fa76263a9137a76ff.jpg",
+    "https://media1.thrillophilia.com/filestore/xwzjemd2kyn08ciq9gs24pmxrjg3_11d04f6ae1ba431180311c8a81d77075962f40e5f2021f63614ef6a0062ba0a1.jpg",
+    "https://media1.thrillophilia.com/filestore/cwrq311fie702g4f3ofkjyqsy851_caption%20(79).jpg",
+    "https://media1.thrillophilia.com/filestore/s83sqo7bvkha8moiivoiwwlasq0j_caption%20(82).jpg",
+    "https://media1.thrillophilia.com/filestore/fqyvxegruqagg2szlrxvycz508mq_caption%20(80).jpg",
+    "https://media1.thrillophilia.com/filestore/jchkyiley6gqxucsmhnnjth86iq3_caption%20(78).jpg",
+    "https://media1.thrillophilia.com/filestore/l7eo9hb6h6s4whp2rnc6s1wpg1y0_caption%20(81).jpg",
+    "https://media1.thrillophilia.com/filestore/jamz0nnprxzksngywcfgmhgavl8e_caption%20(77).jpg",
+    "https://media1.thrillophilia.com/filestore/26pl8rdmbxmjhecmqz7wxmod35u6_3e53a830c5e3d001f75c1d26692c4ea83e61ef78d874580c950915439654fe5d.jpg",
+    "https://media1.thrillophilia.com/filestore/d4vs1pqpovszbha561cyk3ck8v3g_3308px-Shah-i-Zinda_01.jpg",
+    "https://media1.thrillophilia.com/filestore/9ym0dkt828cuh7m1ua5m9ogaofkx_Samarkand_Gur_Emir_Mausoleum.jpeg",
+    "https://media1.thrillophilia.com/filestore/thghzrrw12295u1fu0b4drw2u1si_siab-bazaar1.jpg",
+    "https://media1.thrillophilia.com/filestore/eeiulsmzmbq78k2a88o7ysra80vt_Bibikhanum_mosque%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/bjyco1gmfmnr0rup2ui5y7guoitr_dl.beatsnoop.com-3000-456MPYlh9i.jpg"
+   ]
+  },
+  {
+   "name": "Shah-i-Zinda",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/d4vs1pqpovszbha561cyk3ck8v3g_3308px-Shah-i-Zinda_01.jpg"
+   ]
+  },
+  {
+   "name": "Amir Temur Mausoleum Gur-i Amir Сomplex",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/9ym0dkt828cuh7m1ua5m9ogaofkx_Samarkand_Gur_Emir_Mausoleum.jpeg"
+   ]
+  },
+  {
+   "name": "Siyob Bozor",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/thghzrrw12295u1fu0b4drw2u1si_siab-bazaar1.jpg"
+   ]
+  },
+  {
+   "name": "Bibi-Khanym Mosque",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/eeiulsmzmbq78k2a88o7ysra80vt_Bibikhanum_mosque%20(1).jpg"
+   ]
+  },
+  {
+   "name": "Registan Square",
+   "day": 3,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/bjyco1gmfmnr0rup2ui5y7guoitr_dl.beatsnoop.com-3000-456MPYlh9i.jpg"
+   ]
+  },
+  {
+   "name": "Tajikistan Seven Lakes Tour",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    8,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/7d2ljduqj57ccchwhjpwfekekt0a_f7b3dd38-9566-4661-abb3-10d57bab9674.jpg",
+    "https://media1.thrillophilia.com/filestore/88i9he7hgpt15nrkagadcltjdv0p_76bd5879-f593-430b-b87a-dd55b995f55e.jpg",
+    "https://media1.thrillophilia.com/filestore/zvq8dpsrt1hcs9brvux9j8hxt5zq_bf1457e6-bba6-4171-9c45-46843aa279aa.jpg",
+    "https://media1.thrillophilia.com/filestore/4nof3clvwg7c5hkikrzzi89d65l9_90d8c3a7-1795-4123-bf8f-eea3b2205309.jpg",
+    "https://media1.thrillophilia.com/filestore/197s72hc2zqxaz23kdua4c1m9z3s_9adff14c-ff3c-4f3a-94ab-59935a61ec55.jpg",
+    "https://media1.thrillophilia.com/filestore/47qwglf6gmxyaufde8vsv9qirtfx_8dabc4a4-28f4-4087-96c6-a4bbc2484948.jpg",
+    "https://media1.thrillophilia.com/filestore/h1ofzxrp63c49los9enncwqfa5nn_n.webp",
+    "https://media1.thrillophilia.com/filestore/imhr5mhzl32alv160f2rxxra3jz1_s.jpg",
+    "https://media1.thrillophilia.com/filestore/yn9dl3k1ljpywbpgtu5yp8lj8m0z_g.jpg",
+    "https://media1.thrillophilia.com/filestore/794kohmpz4os3i23y3a0x4uoiph2_n.jpg",
+    "https://media1.thrillophilia.com/filestore/ioobt5ei826ahp7asimlewy28wrc_h.jpg",
+    "https://media1.thrillophilia.com/filestore/yu5g2pr9edtowppfc3moo6l0nucn_m.jpg",
+    "https://media1.thrillophilia.com/filestore/ofmj7mx4v7fb650duxt0bnkqxa2q_wmremove-transformed.jpeg"
+   ]
+  },
+  {
+   "name": "Nezhigon Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/h1ofzxrp63c49los9enncwqfa5nn_n.webp"
+   ]
+  },
+  {
+   "name": "Soya Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/imhr5mhzl32alv160f2rxxra3jz1_s.jpg"
+   ]
+  },
+  {
+   "name": "Gushor Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yn9dl3k1ljpywbpgtu5yp8lj8m0z_g.jpg"
+   ]
+  },
+  {
+   "name": "Nofin Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/794kohmpz4os3i23y3a0x4uoiph2_n.jpg"
+   ]
+  },
+  {
+   "name": "Hurdak Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ioobt5ei826ahp7asimlewy28wrc_h.jpg"
+   ]
+  },
+  {
+   "name": "Marguzor Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yu5g2pr9edtowppfc3moo6l0nucn_m.jpg"
+   ]
+  },
+  {
+   "name": "Hazorchashma Lake",
+   "day": 4,
+   "city": "Samarkand",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ofmj7mx4v7fb650duxt0bnkqxa2q_wmremove-transformed.jpeg"
+   ]
+  },
+  {
+   "name": "State Museum of the Temurids",
+   "day": 5,
+   "city": "Tashkent",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/bjo0qo2jqu8xhue59sxdjt8r0sjq_2-0-0-0-0-1583391101.jpg"
+   ]
+  },
+  {
+   "name": "Tashkent Television Tower",
+   "day": 5,
+   "city": "Tashkent",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/h41vtvhne3ee3tp7n59r8c7scafy_tashkent-television-tower-uzbekistan-sundown-cloudy-sky-background_431724-14240.jpg"
+   ]
+  },
+  {
+   "name": "Besh Qozon Pilaf Center",
+   "day": 5,
+   "city": "Tashkent",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/bcddn6tt6cms845gupni5jlh37hg_dl.beatsnoop.com-QmK5GAiPnX.jpg"
+   ]
+  },
+  {
+   "name": "Astana Sightseeing Tour",
+   "day": 6,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    3,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/32js7opecfp8ukofrr31979oeirl_shutterstock_2447598499.jpg",
+    "https://media1.thrillophilia.com/filestore/vilf3njf5o76qgwnohalpoygpx4o_shutterstock_2348067883.jpg",
+    "https://media1.thrillophilia.com/filestore/jv8ltn38nzhe7kxkemyb4vz5c25w_shutterstock_1324006658.jpg",
+    "https://media1.thrillophilia.com/filestore/uz3qszkivmedpm31qt4vlt4qcx5c_shutterstock_2507742887.jpg",
+    "https://media1.thrillophilia.com/filestore/i5wwm6mdxx2od5fhxid5vhrg96s2_shutterstock_2507742965.jpg",
+    "https://media1.thrillophilia.com/filestore/ppuqqobwwhnhkl86lcw21iehe9hf_shutterstock_2510393661.jpg",
+    "https://media1.thrillophilia.com/filestore/xabkhih741488x7l623xjjuq74xx_shutterstock_2502166349.jpg",
+    "https://media1.thrillophilia.com/filestore/d7b31a4ayoj7eim05qsuidt0orvv_shutterstock_1709466457.jpg",
+    "https://media1.thrillophilia.com/filestore/b60z31n71w97eqol2yrnkr8yyd2j_Khan_Shatyr,_Astana.jpg",
+    "https://media1.thrillophilia.com/filestore/6lm2mnalyrofvcklk989v7ier5r1_48884588892_43ed0da01f_o.jpg",
+    "https://media1.thrillophilia.com/filestore/338a5nkmr8w7pggnw1wo0910mal3_hhhhhh.jpg"
+   ]
+  },
+  {
+   "name": "Khan Shatyr Entertainment Center",
+   "day": 6,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/b60z31n71w97eqol2yrnkr8yyd2j_Khan_Shatyr,_Astana.jpg"
+   ]
+  },
+  {
+   "name": "Baiterek",
+   "day": 6,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/6lm2mnalyrofvcklk989v7ier5r1_48884588892_43ed0da01f_o.jpg"
+   ]
+  },
+  {
+   "name": "Nur Alem Expo 2017 Sphere",
+   "day": 6,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/338a5nkmr8w7pggnw1wo0910mal3_hhhhhh.jpg"
+   ]
+  },
+  {
+   "name": "Trip to Burabay National Park",
+   "day": 7,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    10,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/uyzozmif95wuqfvaawjhg0qutspj_dl.beatsnoop.com-final-gbB4R5DyGq.jpg",
+    "https://media1.thrillophilia.com/filestore/9qzjdsmwv0pragnwi3h7n6ryiwm6_dl.beatsnoop.com-final-YOZTF3oigh.jpg",
+    "https://media1.thrillophilia.com/filestore/o1nux36ez2657buynb1jby4l8idx_dl.beatsnoop.com-final-XL1fZwWNHs.jpg",
+    "https://media1.thrillophilia.com/filestore/51l0zfdxjtpk26dhtrlk40t747ww_dl.beatsnoop.com-final-lHzn7J4AfK.jpg",
+    "https://media1.thrillophilia.com/filestore/2r1hnfifci6qly5n0yyg6qsvwahf_dl.beatsnoop.com-final-8kLrj1ApS9.jpg",
+    "https://media1.thrillophilia.com/filestore/oo90kv8cb122saxgbemzs5xfmpup_dl.beatsnoop.com-final-TIrYERXVfO.jpg",
+    "https://media1.thrillophilia.com/filestore/t7gqx9mbmofgapdclyq125d8buiq_dl.beatsnoop.com-final-bdcQ61AmoP.jpg",
+    "https://media1.thrillophilia.com/filestore/basdyrllmzku2dj0tra8saygco2k_dl.beatsnoop.com-final-sndrLIko0U.jpg",
+    "https://media1.thrillophilia.com/filestore/m6fg35mh6l53qquhw5xvd1h111mm_1618297274_1200px-Burnaby_Lake_on_a_cloudy_day.jpeg"
+   ]
+  },
+  {
+   "name": "Burabay National Park",
+   "day": 7,
+   "city": "Astana",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/m6fg35mh6l53qquhw5xvd1h111mm_1618297274_1200px-Burnaby_Lake_on_a_cloudy_day.jpeg"
+   ]
+  },
+  {
+   "name": "Almaty City Sightseeing Tour",
+   "day": 8,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/elvqtnsme6ctj6hi54h99ufvu092_dl.beatsnoop.com-1714737499.jpg",
+    "https://media1.thrillophilia.com/filestore/xkorlhek5npoal3cywpinvhtnm24_dl.beatsnoop.com-1714737045.jpg",
+    "https://media1.thrillophilia.com/filestore/zmqwr768ynctpasoxj9q2huub79q_dl.beatsnoop.com-1714736785.jpg",
+    "https://media1.thrillophilia.com/filestore/m02z0pb6erf7kn40blhrwskagzx4_dl.beatsnoop.com-1714736766.jpg",
+    "https://media1.thrillophilia.com/filestore/l9wm6jh31alcw2sutdt9d82qyijm_dl.beatsnoop.com-1714736997.jpg",
+    "https://media1.thrillophilia.com/filestore/qhaz49gkh0m78ropxyjw7fy1aiut_dl.beatsnoop.com-1714737149.jpg",
+    "https://media1.thrillophilia.com/filestore/jieb3uo8intz721sqzi72t6rffo0_dl.beatsnoop.com-1714737332.jpg",
+    "https://media1.thrillophilia.com/filestore/ypuyzxm1ls4m22tupet6m0tgha5t_dl.beatsnoop.com-1714737572.jpg",
+    "https://media1.thrillophilia.com/filestore/sen8qo3cxac4ddexlpcw7m93m9pq_monument-of-independence-almaty.jpg",
+    "https://media1.thrillophilia.com/filestore/x5107z3hn22853u89owu0rrfahox_28panfilov-guardsmen1.png",
+    "https://media1.thrillophilia.com/filestore/3zw7eayhe7zqmhe4u76jo3iio0ux_ascension-cathedral-almaty-kazakhstan-2.jpg"
+   ]
+  },
+  {
+   "name": "Monument of Independence",
+   "day": 8,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/sen8qo3cxac4ddexlpcw7m93m9pq_monument-of-independence-almaty.jpg"
+   ]
+  },
+  {
+   "name": "Park of 28 Panfilov Guardsmen",
+   "day": 8,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/x5107z3hn22853u89owu0rrfahox_28panfilov-guardsmen1.png"
+   ]
+  },
+  {
+   "name": "Ascension Cathedral",
+   "day": 8,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/3zw7eayhe7zqmhe4u76jo3iio0ux_ascension-cathedral-almaty-kazakhstan-2.jpg"
+   ]
+  },
+  {
+   "name": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+   "day": 9,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    7,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/unuv5nfboec54f5n9ampr6zjyu4b_dl.beatsnoop.com-1714742344.jpg",
+    "https://media1.thrillophilia.com/filestore/73yci94ij7va2ogf5dna058lj36u_dl.beatsnoop.com-1714742470.jpg",
+    "https://media1.thrillophilia.com/filestore/7kwpgnwl1fyig6uummi0rxjevx93_dl.beatsnoop.com-1714741869.jpg",
+    "https://media1.thrillophilia.com/filestore/1d21flad2xitqh7lmiurthwyuh5h_dl.beatsnoop.com-1714742033.jpg",
+    "https://media1.thrillophilia.com/filestore/acbdrylkd2igcnpp63c5hw4qvr0p_dl.beatsnoop.com-1714741738.jpg",
+    "https://media1.thrillophilia.com/filestore/wpmghloei8sroe6vtv1d47zm3976_dl.beatsnoop.com-1714742295.jpg",
+    "https://media1.thrillophilia.com/filestore/at5qfiv1dd6lu5nsgwpf0umq6m2e_dl.beatsnoop.com-1714742743%20(1).jpg",
+    "https://media1.thrillophilia.com/filestore/mptcs4wapz8vre0gkylykc7bv891_dl.beatsnoop.com-1714742925.jpg",
+    "https://media1.thrillophilia.com/filestore/koghfpteo1o0tvkakl3yhx0ekrl9_compressed-Cable-Car-from-Shymbulak-Ski-Resort-Almaty-Kazakhsthan-min-min.jpeg",
+    "https://media1.thrillophilia.com/filestore/n86fddk81j6s2noetm48tvz7n602_15120519535_97fd501505_o.jpg",
+    "https://media1.thrillophilia.com/filestore/ly03c42su2ud77szxq10ik9bjkfw_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B3%D0%BE%D0%BD%D0%B4%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F_%D0%9C%D0%B5%D0%B4%D0%B5%D0%BE-%D0%A8%D1%8B%D0%BC%D0%B1%D1%83%D0%BB%D0%B0%D0%BA._8-%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B0..jfif",
+    "https://media1.thrillophilia.com/filestore/vrjnt8wwvr78tk7y6bjhxab6pm7x_Medeu-_4.jpg",
+    "https://media1.thrillophilia.com/filestore/jxnmhh6hckt5134tfufe4svyclqb_19134248232_df028bebc8_o.jpg"
+   ]
+  },
+  {
+   "name": "Shymbulak Ski Resort",
+   "day": 9,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/koghfpteo1o0tvkakl3yhx0ekrl9_compressed-Cable-Car-from-Shymbulak-Ski-Resort-Almaty-Kazakhsthan-min-min.jpeg",
+    "https://media1.thrillophilia.com/filestore/n86fddk81j6s2noetm48tvz7n602_15120519535_97fd501505_o.jpg",
+    "https://media1.thrillophilia.com/filestore/ly03c42su2ud77szxq10ik9bjkfw_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B3%D0%BE%D0%BD%D0%B4%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F_%D0%9C%D0%B5%D0%B4%D0%B5%D0%BE-%D0%A8%D1%8B%D0%BC%D0%B1%D1%83%D0%BB%D0%B0%D0%BA._8-%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B0..jfif"
+   ]
+  },
+  {
+   "name": "Medeu Dam",
+   "day": 9,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/vrjnt8wwvr78tk7y6bjhxab6pm7x_Medeu-_4.jpg"
+   ]
+  },
+  {
+   "name": "Medeu",
+   "day": 9,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/jxnmhh6hckt5134tfufe4svyclqb_19134248232_df028bebc8_o.jpg"
+   ]
+  },
+  {
+   "name": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty",
+   "day": 10,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    12,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/46q2uqsxkc2ew0xijdcove67axyr_dl.beatsnoop.com-final-mKejacPGXh.jpg",
+    "https://media1.thrillophilia.com/filestore/we1ptskdx7cjidlexhg5og1acfw2_dl.beatsnoop.com-final-vd94u0Z7LH.jpg",
+    "https://media1.thrillophilia.com/filestore/3z9o9eop74z75jrv3507m5t3shi6_dl.beatsnoop.com-final-uyPWEwXj8F.jpg",
+    "https://media1.thrillophilia.com/filestore/pe7s83senfj58ltn8ahgecthfivj_dl.beatsnoop.com-final-1ao47JLV3B.jpg",
+    "https://media1.thrillophilia.com/filestore/64youi918l90mqexm190t9op2xw7_dl.beatsnoop.com-final-pUDcRlVGgj.jpg",
+    "https://media1.thrillophilia.com/filestore/yymuzktt2k503aid93fs127gkpgd_dl.beatsnoop.com-final-VWGw2gNutX.jpg",
+    "https://media1.thrillophilia.com/filestore/v4va5k9jlz8g0err9onf3bktalx2_dl.beatsnoop.com-final-oaisIYzRtc.jpg",
+    "https://media1.thrillophilia.com/filestore/n5qjr4dcdfjzfc8gxyclax6xokba_dl.beatsnoop.com-final-tYEuIsPAkL.jpg",
+    "https://media1.thrillophilia.com/filestore/l33rnccy9xk7iglvrgmh0tb6gew0_1618298288_1554123490_charynskij-kanon-1.jpg",
+    "https://media1.thrillophilia.com/filestore/r1d98eg10nugezjii0mcf4bgeibk_download.jpg"
+   ]
+  },
+  {
+   "name": "Charyn Canyon",
+   "day": 10,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/l33rnccy9xk7iglvrgmh0tb6gew0_1618298288_1554123490_charynskij-kanon-1.jpg"
+   ]
+  },
+  {
+   "name": "Kolsai Lake",
+   "day": 10,
+   "city": "Almaty",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/r1d98eg10nugezjii0mcf4bgeibk_download.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vdxbqgd1wf9hlolw0om990fi6ufr_dl.beatsnoop.com-final-IcPOX2vU3D.jpg",
+   "caption": "Cityscape of Downtown Nur-Sultan from Baiterek Tower",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/iiaz2akg1zafrv57ir0no9d73v2g_dl.beatsnoop.com-final-xu2KOJkqIs.jpg",
+   "caption": "Breathe in Marguzor’s calm—nature’s mirror in the Fann Mountains",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e4x3vw2tenisn1wqckbeyu47gu7k_dl.beatsnoop.com-final-UNMid9s0Xb.jpg",
+   "caption": "Marvel at Baiterek Tower, symbol of Kazakhstan’s bold new vision",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/u98173gesft6kef7ufc9ag2ur6sd_dl.beatsnoop.com-final-CBquwKjb4a.jpg",
+   "caption": "Walk Charyn Canyon’s path through Kazakhstan’s ancient earth layers",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i5spj0eabb3rable4fwdqlie5jwp_dl.beatsnoop.com-final-HMamgnJfQB.jpg",
+   "caption": "See Astana unfold—modern lines meeting steppe horizons",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7b3j5nk3nz5bskgari9qz5muq6ka_dl.beatsnoop.com-final-daitWgfN4k.jpg",
+   "caption": "Walk through Khujand Fortress, gateway to ancient Tajik history",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2btfs7h1yx5wh6aveieuw9080t0w_dl.beatsnoop.com-final-7RlOXcDFZj.jpg",
+   "caption": "Step inside Gur-e-Amir, resting place of Timur’s empire",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9xnijly3wpg1yuxs6r1tijj3r63i_dl.beatsnoop.com-final-L76wy1iT0Y.jpg",
+   "caption": "Admire Alisher Navoiy Theater, echoing Tashkent’s cultural spirit",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ey8beqps8y2euq278taxhdstkqzc_dl.beatsnoop.com-final-gbB4R5DyGq.jpg",
+   "caption": "Roam Burabay’s wild trails between lakes and rocky cliffs",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ka1ywqmb0mhqvhlm0hjcbpb0iw9u_dl.beatsnoop.com-final-Nxby67sR4I.jpg",
+   "caption": "Ride above Almaty at Shymbulak’s alpine escape",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/30dy7b6obwseglw3cdd8v1fk9l3x_Orient%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i0x6oznrwmvba6lwncfifxfj2c9t_Orient%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/90qqidcql2uihbosr29zsc8em637_Orient%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yw1xpzo8cpose2zxtf23i9q8v3g4_Orient%207.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6pq66up5dli46boksr7y9hmcc6tu_Orient%208.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hhnc1e5ibswwmkbupnlwaet6nqvm_Orient%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/m3e757gm3gxy2o047bsvj4ipd871_Orient%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f1bk20ugcm5ikcmygs51badfk41w_Orient%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wuodxzel998s85h5c73srl0ma9qt_Emir%208.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/75112kgdims1hqyqn4uxpci033go_Emir%207.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jgjeynseikf85xxf54gha3dmwjty_Emir%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/m884oir7pnfu3etwgkfdby1j6wo1_Emir%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6essw9b1fbkic30uuoe4imaq85kb_Emir%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mj8lm65bs1prcknhtaq8zchoudzn_Emir%203.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mo2u7saz9ectrwiq6ak29a2wjp7y_Emir%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/znb7e301cvh8mfax0sgcvawblvb8_Emir%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/d7e6s7pzk677q0qfpj5upqx4mz6y_1.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b2cf80ungcj0jzkcfwq5drmt08tu_Star%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ge0dupo3idnif3dgmph1a6583sum_Star%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dx1bif8hl17k5wi0dcqn9dfo420d_Star%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/82yhx7hjj2cw5r0iz77wgs6w8pl1_Star%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6anh7r3q9zc53p62h778yp9oy3nf_Star%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vj4ahjhav33ckgz2lj596sxpl6uq_Star%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9j6qe4jhj0ntgy02ouomfpo1ct9z_NEW%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x90xkt16cem2taa9e4ec856ifsaw_NEW%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qosmnom0tcsx3m6zglb3z7pni4mj_NEW%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ru1b3vi4j3mg94vyyjd43o1ss6wd_NEW%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0rx01udec19uyii4b0xg9bt3ioq7_NEW%207.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7aiha36se0i0vp44qqg7ezodwplo_NEW%208.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g5i7g7yr2f7o6cw8yd14b9rqcekf_NEW%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/crefx56p7s6uzvj3lujcpo1722xd_NEW%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wkef0wi5n4fpylm4fhvlqagmjat3_Park5.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ng7eg4vdk7xi5fes5nz03ud9ecev_Park1.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/p98lx3wa4kqrre1u3ouqzpwtsldd_Park2.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s2z4e38bu779n0dq1z3k6k8fv1w0_Park7.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/j70994nr7bts7ilq7bfw1zfbwygs_Park6.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/odk4fy7jyn83yma7lpeohduva8du_Park8.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b6cov7yawhhuzc3f8vzg8ceusrgs_Park3.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gpfrz1bzyuu7dd4e6ggqoywhs95e_Park4.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cloax7kcz4fjyiemqxmz5grz0xis_Premier%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5i4reakvfn44plej94oj6t00ie7y_Premier%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/myu8dtzto3z99b033p8roozze6pt_Premier%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7ckem298g5obx9pkqsxvnbgnonfc_Premier%207.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nlqk9bjpiufpjwfc9xq1arkkyybo_Premier%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ml812qir0f7r42g0c5ug9sday22w_Premier%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/askmmz9xs933uuy4bxjuncf0ghz8_Premier%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yxplb8kdertfr9lap7rx02pcxgay_Astra%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/szzijwfl7ilrmtme51hkv16yoxgl_Astra%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f3fdkof0roedf7ojhsbhna2gp35a_Astra%207.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5x1v94wm757orta6rt01dm65l7wa_Astra%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/otyy5dz63i3kpnxbvuqclahvdsba_Astra%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cu180dv174zstiawzy5hr3cd8j64_Astra%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nivxc7n4u3r0d2alr9lkt78ns4ai_Astra%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nrlygslbb26xfebgqzo7w7mh19qu_Royal%201.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s3b29ug4p3t6p3xwka2c4ef08qoe_Royal%202.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sws68b4acuvlemi3mbha6tdybqjq_Royal%206.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bmd84ol2e84x4zeuu379he7k70a5_Royal%203.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vqsd8exqoevmpiie6y53rm8pzo9s_Royal%204.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9r4ip65mfhv6jazo0lbvd32uav8h_Royal%205.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w091v8rswgx141iwtnv913h4k2zp_caption%20(73).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/siymaxkhxzy8rj6m21vwl11j4muv_Downpic.cc-image571446552.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/nohi9dy8x1vlgrrh6fthfnch90fv_caption%20(71).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/dxh0bavprmopa7rdr53fy4iimwyv_caption%20(70).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qz51wff75ngnnvanvtoq3ki3jl5e_caption%20(72).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ztagj54b5imq4vj0mll0x8ieae3a_Downpic.cc-image571446553.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v9trmjyc0ylgj8s5xqlgl21or9h2_caption%20(69).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vxjqgvnu95b0zfougxph7c1k4chy_opera-ballet-2.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b3lv18zabxnurnm5fi0yv2nr89to_shutterstockeditorial1542863342.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cedzho0ax6ztn6qsmloq4sixtqgb_q89b82zx1dtz164ba5kpggm817qkkr1f.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/llpk82qed0n2jq0j3d9d7s0t6uwk_Downpic.cc-image432831946.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tzao3lpbmowed8bqe6led707qdlh_new-panjakent-bazar13.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/01exihl387j5dmtesi15oe7q6ee3_dda0786878-12-g.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9rytbazlkfky1mrhf6mtkcw23y29_panchshanbe-bazaar3.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mutfmfi5bbizvfwn72wjmj0ffw13_253558039_10159898841443701_3904579417577793363_n_10159898841448701.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hmg8h631xdd3ym3t7ml19sgvq4n3_74472ea26534254c192e98c9afe465d169a9617beafec38fa76263a9137a76ff.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xwzjemd2kyn08ciq9gs24pmxrjg3_11d04f6ae1ba431180311c8a81d77075962f40e5f2021f63614ef6a0062ba0a1.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cwrq311fie702g4f3ofkjyqsy851_caption%20(79).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s83sqo7bvkha8moiivoiwwlasq0j_caption%20(82).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fqyvxegruqagg2szlrxvycz508mq_caption%20(80).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jchkyiley6gqxucsmhnnjth86iq3_caption%20(78).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l7eo9hb6h6s4whp2rnc6s1wpg1y0_caption%20(81).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jamz0nnprxzksngywcfgmhgavl8e_caption%20(77).jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/26pl8rdmbxmjhecmqz7wxmod35u6_3e53a830c5e3d001f75c1d26692c4ea83e61ef78d874580c950915439654fe5d.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7d2ljduqj57ccchwhjpwfekekt0a_f7b3dd38-9566-4661-abb3-10d57bab9674.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/88i9he7hgpt15nrkagadcltjdv0p_76bd5879-f593-430b-b87a-dd55b995f55e.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zvq8dpsrt1hcs9brvux9j8hxt5zq_bf1457e6-bba6-4171-9c45-46843aa279aa.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4nof3clvwg7c5hkikrzzi89d65l9_90d8c3a7-1795-4123-bf8f-eea3b2205309.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/197s72hc2zqxaz23kdua4c1m9z3s_9adff14c-ff3c-4f3a-94ab-59935a61ec55.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/47qwglf6gmxyaufde8vsv9qirtfx_8dabc4a4-28f4-4087-96c6-a4bbc2484948.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/32js7opecfp8ukofrr31979oeirl_shutterstock_2447598499.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vilf3njf5o76qgwnohalpoygpx4o_shutterstock_2348067883.jpg",
+   "caption": "Experience the vibrant Khan Shatyr Centre—shopping, dining, and entertainment under one roof",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jv8ltn38nzhe7kxkemyb4vz5c25w_shutterstock_1324006658.jpg",
+   "caption": "Explore innovation at Nur-Alem Sphere, where science meets futuristic design",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uz3qszkivmedpm31qt4vlt4qcx5c_shutterstock_2507742887.jpg",
+   "caption": "Experience the future at Nur-Alem, Astana’s architectural masterpiece of innovation",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i5wwm6mdxx2od5fhxid5vhrg96s2_shutterstock_2507742965.jpg",
+   "caption": "Step into the Nur-Alem Sphere—Kazakhstan’s beacon of sustainability and progress",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ppuqqobwwhnhkl86lcw21iehe9hf_shutterstock_2510393661.jpg",
+   "caption": "Pose with the President’s handprint atop Bayterek Tower for an iconic Astana moment",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xabkhih741488x7l623xjjuq74xx_shutterstock_2502166349.jpg",
+   "caption": "Catch the enchanting evening glow of the futuristic Nur-Alem Expo Sphere",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/d7b31a4ayoj7eim05qsuidt0orvv_shutterstock_1709466457.jpg",
+   "caption": "Step inside Khan Shatyr Centre for thrilling rides, unique shops, and endless fun",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uyzozmif95wuqfvaawjhg0qutspj_dl.beatsnoop.com-final-gbB4R5DyGq.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9qzjdsmwv0pragnwi3h7n6ryiwm6_dl.beatsnoop.com-final-YOZTF3oigh.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/o1nux36ez2657buynb1jby4l8idx_dl.beatsnoop.com-final-XL1fZwWNHs.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/51l0zfdxjtpk26dhtrlk40t747ww_dl.beatsnoop.com-final-lHzn7J4AfK.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/2r1hnfifci6qly5n0yyg6qsvwahf_dl.beatsnoop.com-final-8kLrj1ApS9.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oo90kv8cb122saxgbemzs5xfmpup_dl.beatsnoop.com-final-TIrYERXVfO.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/t7gqx9mbmofgapdclyq125d8buiq_dl.beatsnoop.com-final-bdcQ61AmoP.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/basdyrllmzku2dj0tra8saygco2k_dl.beatsnoop.com-final-sndrLIko0U.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/elvqtnsme6ctj6hi54h99ufvu092_dl.beatsnoop.com-1714737499.jpg",
+   "caption": "view of Republic Square",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xkorlhek5npoal3cywpinvhtnm24_dl.beatsnoop.com-1714737045.jpg",
+   "caption": "Zenkov Cathedral",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zmqwr768ynctpasoxj9q2huub79q_dl.beatsnoop.com-1714736785.jpg",
+   "caption": "Panfilov Park",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/m02z0pb6erf7kn40blhrwskagzx4_dl.beatsnoop.com-1714736766.jpg",
+   "caption": "War Memorial in Panfilov Park",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l9wm6jh31alcw2sutdt9d82qyijm_dl.beatsnoop.com-1714736997.jpg",
+   "caption": "Zenkov Cathedral Interior",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qhaz49gkh0m78ropxyjw7fy1aiut_dl.beatsnoop.com-1714737149.jpg",
+   "caption": "Dome of Zenkov Cathedral",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jieb3uo8intz721sqzi72t6rffo0_dl.beatsnoop.com-1714737332.jpg",
+   "caption": "Republic Square",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ypuyzxm1ls4m22tupet6m0tgha5t_dl.beatsnoop.com-1714737572.jpg",
+   "caption": "Independence Monument",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/unuv5nfboec54f5n9ampr6zjyu4b_dl.beatsnoop.com-1714742344.jpg",
+   "caption": "Shymbulak Ski Resort ",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/73yci94ij7va2ogf5dna058lj36u_dl.beatsnoop.com-1714742470.jpg",
+   "caption": "Cable Car to Shymbulak Ski Resort",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7kwpgnwl1fyig6uummi0rxjevx93_dl.beatsnoop.com-1714741869.jpg",
+   "caption": "Medeu Speed Skating Ring Stadium",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/1d21flad2xitqh7lmiurthwyuh5h_dl.beatsnoop.com-1714742033.jpg",
+   "caption": "Aerial View of Medeu Stadium",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/acbdrylkd2igcnpp63c5hw4qvr0p_dl.beatsnoop.com-1714741738.jpg",
+   "caption": "People Skating at Ice Skating Rink",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wpmghloei8sroe6vtv1d47zm3976_dl.beatsnoop.com-1714742295.jpg",
+   "caption": "Shymbulak Ski Resort Chair Lift",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/at5qfiv1dd6lu5nsgwpf0umq6m2e_dl.beatsnoop.com-1714742743%20(1).jpg",
+   "caption": "Medeu Stairs of Health",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mptcs4wapz8vre0gkylykc7bv891_dl.beatsnoop.com-1714742925.jpg",
+   "caption": "Medeu Ice Rink in Zailiysky Alatau Range",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/46q2uqsxkc2ew0xijdcove67axyr_dl.beatsnoop.com-final-mKejacPGXh.jpg",
+   "caption": "Kolsai Lake",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/we1ptskdx7cjidlexhg5og1acfw2_dl.beatsnoop.com-final-vd94u0Z7LH.jpg",
+   "caption": "Charyn Canyon",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3z9o9eop74z75jrv3507m5t3shi6_dl.beatsnoop.com-final-uyPWEwXj8F.jpg",
+   "caption": "Kolsai Lake",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/pe7s83senfj58ltn8ahgecthfivj_dl.beatsnoop.com-final-1ao47JLV3B.jpg",
+   "caption": "Charyn canyon",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/64youi918l90mqexm190t9op2xw7_dl.beatsnoop.com-final-pUDcRlVGgj.jpg",
+   "caption": "Kolsai Lake",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yymuzktt2k503aid93fs127gkpgd_dl.beatsnoop.com-final-VWGw2gNutX.jpg",
+   "caption": "Charyn canyon",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v4va5k9jlz8g0err9onf3bktalx2_dl.beatsnoop.com-final-oaisIYzRtc.jpg",
+   "caption": "Lake near Charyn canyon",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n5qjr4dcdfjzfc8gxyclax6xokba_dl.beatsnoop.com-final-tYEuIsPAkL.jpg",
+   "caption": "Kolsai Lake",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vxre8auhby7j47twl68hoo3a1bmg_1617611087_Samarkand.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s5lchgzrud8155eyr2zxpl2y50j5_shutterstock_585990431.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cfogwtvugrv9k4vldbzq99sahtjn_shutterstock_2257003809.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8jtx9ygij0btsiwv9p58b5oqnxvd_shutterstock_2074559314.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tjizdqv64vzels6a2fmlh3tczjfu_shutterstock_2386909437.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mz46chozqy26s19syusgbpyie0b7_shutterstock_2337469673.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8mbxn3w7z2ee7rs1956qwe9u6mid_shutterstock_2341832281.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Tashkent"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vxre8auhby7j47twl68hoo3a1bmg_1617611087_Samarkand.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Samarkand"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Tashkent"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s5lchgzrud8155eyr2zxpl2y50j5_shutterstock_585990431.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Astana"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cfogwtvugrv9k4vldbzq99sahtjn_shutterstock_2257003809.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Almaty"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8jtx9ygij0btsiwv9p58b5oqnxvd_shutterstock_2074559314.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Almaty"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tjizdqv64vzels6a2fmlh3tczjfu_shutterstock_2386909437.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Almaty"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mz46chozqy26s19syusgbpyie0b7_shutterstock_2337469673.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Almaty"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8mbxn3w7z2ee7rs1956qwe9u6mid_shutterstock_2341832281.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Almaty"
+  }
+ ],
+ "dest_gallery": {
+  "Tashkent": [
+   "https://media1.thrillophilia.com/filestore/yg0nza75vp02dd5v461fgijxvpno_1617611589_Tashkent.jpg.jpg"
+  ],
+  "Samarkand": [
+   "https://media1.thrillophilia.com/filestore/vxre8auhby7j47twl68hoo3a1bmg_1617611087_Samarkand.jpg.jpg"
+  ],
+  "Astana": [
+   "https://media1.thrillophilia.com/filestore/s5lchgzrud8155eyr2zxpl2y50j5_shutterstock_585990431.jpg"
+  ],
+  "Almaty": [
+   "https://media1.thrillophilia.com/filestore/cfogwtvugrv9k4vldbzq99sahtjn_shutterstock_2257003809.jpg",
+   "https://media1.thrillophilia.com/filestore/8jtx9ygij0btsiwv9p58b5oqnxvd_shutterstock_2074559314.jpg",
+   "https://media1.thrillophilia.com/filestore/tjizdqv64vzels6a2fmlh3tczjfu_shutterstock_2386909437.jpg",
+   "https://media1.thrillophilia.com/filestore/mz46chozqy26s19syusgbpyie0b7_shutterstock_2337469673.jpg",
+   "https://media1.thrillophilia.com/filestore/8mbxn3w7z2ee7rs1956qwe9u6mid_shutterstock_2341832281.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/vdxbqgd1wf9hlolw0om990fi6ufr_dl.beatsnoop.com-final-IcPOX2vU3D.jpg"
+ ]
+}

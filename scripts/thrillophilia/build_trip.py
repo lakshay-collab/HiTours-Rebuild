@@ -78,6 +78,7 @@ def day_item_images(day):
 
 
 hotel_images = {}
+_hotel_fallback = set()
 for h in raw['hotels']:
     hotel_images[h['name']] = [u for u in h['images'] if u not in tiles]
 
@@ -181,7 +182,11 @@ for stop in spec['stops']:
                     % (q(a['name']), a['day'], 'true' if a.get('optional') else 'false', js(image), q(a['description'])))
     prog_img = stop_images(stop)[0]
     hotel = stop['hotel']
-    himgs = hotel_images[hotel]
+    himgs = hotel_images.get(hotel)
+    if not himgs:
+        gal = [m['url'] for m in (raw.get('gallery') or []) if m['url'] not in tiles and m['url'] not in _hotel_fallback]
+        himgs = gal[:6] or city_img(stop['city'], 6)
+        _hotel_fallback.update(himgs)
     sub = "\n    subtitle: %s," % q(stop['subtitle']) if stop.get('subtitle') else ''
     blocks.append("""  {
     letter: '%s',

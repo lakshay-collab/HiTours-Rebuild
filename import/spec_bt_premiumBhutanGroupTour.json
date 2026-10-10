@@ -1,0 +1,268 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "premium-bhutan-group-tour",
+ "camel": "premiumBhutanGroupTour",
+ "slug": "premium-bhutan-group-tour",
+ "title": "Premium Bhutan Group Tour",
+ "alt": "Wangdue Phodrang Dzong on its rocky spur",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Nature"
+ ],
+ "price": 43690,
+ "route_cities": [
+  "Phuentsholing",
+  "Thimphu",
+  "Punakha",
+  "Paro",
+  "Phuentsholing"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 6,
+  "transfers": 14,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Park Hotel Bhutan",
+   "hotel_label": "Park Hotel Bhutan",
+   "accom": "1 night · All meals · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Seven Suites Thimphu",
+   "hotel_label": "Seven Suites Thimphu",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [],
+   "program": {
+    "name": "Thimphu",
+    "description": "Time in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Punakha Hotel River Valley",
+   "hotel_label": "Punakha Hotel River Valley",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour - Full-Day Sightseeing Tour",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    },
+    {
+     "name": "Wangdue Phodrang Dzong",
+     "day": 4,
+     "optional": false,
+     "match": "Visit to Wangdue Phodrang Dzong",
+     "description": "The fortress on a spur above the confluence of the Puna Tsang and Dang Chhu, rebuilt after the fire of 2012."
+    },
+    {
+     "name": "Phobjikha valley excursion",
+     "day": 4,
+     "optional": false,
+     "match": "Excursion to Phobjika Valley from Punakha - Phobjika Monastery + Nature Trail + Black-Necked Crane Center",
+     "description": "The wide glacial bowl where black necked cranes winter, with the crane centre, the nature trail and Gangtey Goemba."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Days in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Paro Grand Resort",
+   "hotel_label": "Paro Grand Resort",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 6,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Hotel Palm Phuentsholing",
+   "hotel_label": "Hotel Palm Phuentsholing",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [
+    {
+     "name": "Chele La pass",
+     "day": 7,
+     "optional": false,
+     "match": "Trip to Chele La Pass",
+     "description": "The highest motorable pass in Bhutan at 3,988 metres, with Jomolhari standing clear on a good morning."
+    }
+   ],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Phuentsholing",
+  "2": "Onward to Thimphu",
+  "3": "To Punakha: Thimphu sightseeing",
+  "4": "Wangdue phodrang and phobjikha valley",
+  "5": "To Paro: Punakha Dzong",
+  "6": "Tiger's nest hike",
+  "7": "To Phuentsholing: Chele La pass",
+  "8": "Departure from Bagdogra"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bagdogra and transfer to Phuentsholing",
+   "Border formalities at the Bhutan Gate",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "Optional: the Zorig Chusum school of arts",
+   "Arrival transfer and check in for the night"
+  ],
+  "3": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve"
+  ],
+  "4": [
+   "Breakfast in the warm Punakha valley",
+   "Wangdue Phodrang Dzong on its rocky spur",
+   "The rivers meeting below the fortress walls",
+   "The glacial bowl of the Phobjikha valley",
+   "The crane centre and the nature trail"
+  ],
+  "5": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water"
+  ],
+  "6": [
+   "Breakfast, then out into the Paro valley",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "7": [
+   "Breakfast, then the long run back south",
+   "Down through the Chukha gorge to the plains",
+   "Up to the Chele La pass at 3,988 metres",
+   "Jomolhari on the skyline on a clear morning"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Border formalities and transfer to Siliguri"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B, L",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Park Hotel Bhutan",
+  "2": "Seven Suites Thimphu",
+  "3": "Punakha Hotel River Valley",
+  "4": "Punakha Hotel River Valley",
+  "5": "Paro Grand Resort",
+  "6": "Paro Grand Resort",
+  "7": "Hotel Palm Phuentsholing",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "A premium group departure with Phobjikha and Chele La both included. Seven nights and almost nothing left out.",
+  "tip": "Day four covers Wangdue Phodrang and Phobjikha together. It is the longest day on the road, so take the front seat if you get carsick."
+ },
+ "summary": "8 days through Phuentsholing, Thimphu, Punakha, Paro, with 7 nights, Breakfast and dinner each day and a licensed Bhutanese guide: the thimphu sightseeing tour, the wangdue phodrang dzong, the phobjikha valley excursion, the punakha sightseeing tour.",
+ "included": "Included: 7 nights across Phuentsholing, Thimphu, Punakha, Paro with Breakfast and dinner each day; all land transfers by private vehicle; the Thimphu sightseeing tour; the Wangdue Phodrang Dzong; the Phobjikha valley excursion; the Punakha sightseeing tour; the Hike to the Tiger's Nest; the Chele La pass; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

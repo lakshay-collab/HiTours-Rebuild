@@ -1,0 +1,242 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "7-days-bhutan-tour-from-india-with-dochu-la-pass",
+ "camel": "bhutanDochulaAndPhobjikha",
+ "slug": "bhutan-over-the-dochula-pass-to-phobjikha",
+ "title": "Bhutan Over the Dochula Pass to Phobjikha",
+ "alt": "The hundred and eight chortens at the Dochula pass",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Culture"
+ ],
+ "price": 46882,
+ "route_cities": [
+  "Thimphu",
+  "Phobjikha",
+  "Punakha",
+  "Paro"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 6,
+  "transfers": 11,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Druk Noryang, Thimpu",
+   "hotel_label": "Hotel Druk Noryang, Thimpu",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing with Simtokha Dzong",
+     "day": 2,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour with Simtokha Dzong",
+     "description": "The capital on foot and by road, finishing at Simtokha Dzong, the oldest fortress still standing in the country."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Phobjikha",
+   "city": "Nubding",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "ABC Lodge, Gangtey",
+   "hotel_label": "ABC Lodge, Gangtey",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Simple lodge on the edge of the Phobjikha valley",
+   "activities": [
+    {
+     "name": "Gangtey and the Phobjikha valley",
+     "day": 3,
+     "optional": false,
+     "match": "Gangtey Sightseeing Tour",
+     "description": "Gangtey Goemba on its low ridge above the Phobjikha valley, the winter ground of the black necked cranes."
+    }
+   ],
+   "program": {
+    "name": "Phobjikha",
+    "description": "Time on the edge of the Phobjikha valley, the winter ground of the black necked cranes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Punakha Residency, Bhutan",
+   "hotel_label": "Punakha Residency, Bhutan",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Half-Day Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Time in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Khamsum Inn, Paro",
+   "hotel_label": "Khamsum Inn, Paro",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Paro sightseeing with Kyichu Lhakhang",
+     "day": 5,
+     "optional": false,
+     "match": "Paro Sightseeing Tour with Kyichu Lhakhang",
+     "description": "A guided day around Paro finishing at Kyichu Lhakhang, one of the oldest temples standing in Bhutan."
+    },
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 6,
+     "optional": false,
+     "match": "Visit to Ta Dzong and Rinpung Dzong",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 6,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Thimphu",
+  "2": "Thimphu and simtokha",
+  "3": "To Phobjikha: Gangtey",
+  "4": "To Punakha: Punakha Dzong",
+  "5": "To Paro: Paro and Kyichu Lhakhang",
+  "6": "Ta dzong and rinpung dzong and tiger's nest hike",
+  "7": "Departure from Paro"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Paro International and transfer to Thimphu",
+   "The road east along the Pa Chhu and the Wang Chhu",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then out into the capital",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and Simtokha Dzong"
+  ],
+  "3": [
+   "Breakfast, then east over the Dochula pass",
+   "On through Wangdue towards the Phobjikha valley",
+   "Gangtey Goemba on its low ridge",
+   "The crane valley spread out below"
+  ],
+  "4": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water"
+  ],
+  "5": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "A guided round of the Paro valley",
+   "Kyichu Lhakhang, among the oldest temples in Bhutan"
+  ],
+  "6": [
+   "Breakfast, then out into the Paro valley",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Paro International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "L",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Druk Noryang, Thimpu",
+  "2": "Hotel Druk Noryang, Thimpu",
+  "3": "ABC Lodge, Gangtey",
+  "4": "Punakha Residency, Bhutan",
+  "5": "Khamsum Inn, Paro",
+  "6": "Khamsum Inn, Paro",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Flying into Paro and heading straight for Thimphu saves you two long days on the road from Siliguri.",
+  "tip": "Stop at the Dochula cafeteria for a bowl of ema datshi. On a clear day the whole eastern Himalaya lines up behind the chortens."
+ },
+ "summary": "7 days through Thimphu, Phobjikha, Punakha, Paro, with 6 nights, daily breakfast and a licensed Bhutanese guide: the thimphu sightseeing with simtokha dzong, the gangtey and the phobjikha valley, the punakha sightseeing tour, the paro sightseeing with kyichu lhakhang.",
+ "included": "Included: 6 nights across Thimphu, Phobjikha, Punakha, Paro with daily breakfast; all land transfers by private vehicle; the Thimphu sightseeing with Simtokha Dzong; the Gangtey and the Phobjikha valley; the Punakha sightseeing tour; the Paro sightseeing with Kyichu Lhakhang; the Ta Dzong and Rinpung Dzong; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

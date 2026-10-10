@@ -1,0 +1,319 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Kazakhstan",
+   "/asien/kazakhstan"
+  ]
+ ],
+ "source_slug": "trails-of-central-asia",
+ "camel": "silkRoadTashkentSamarkandAlmaty",
+ "slug": "silk-road-crossing-tashkent-samarkand-and-almaty",
+ "title": "Silk Road Crossing: Tashkent, Samarkand and Almaty",
+ "alt": "Tiled madrasah facades on the Registan in Samarkand",
+ "transport": "Private transfers, guided walking tours and two internal flights",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Multi-country"
+ ],
+ "price": 118750,
+ "route_cities": [
+  "Tashkent",
+  "Samarkand",
+  "Astana",
+  "Almaty"
+ ],
+ "counts": {
+  "days": 11,
+  "nights": 10,
+  "cities": 5,
+  "hotels": 4,
+  "experiences": 9,
+  "transfers": 17,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tashkent",
+   "city": "Tashkent",
+   "subtitle": "Tashkent → Khujand",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Star Hotel Tashkent",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel within reach of the metro and Chorsu",
+   "activities": [
+    {
+     "name": "Tashkent walking tour",
+     "day": 1,
+     "optional": false,
+     "match": "Tashkent Walking Tour",
+     "description": "The domed Chorsu bazaar, Amir Temur Square, the Navoi theatre and the mosaic covered Kosmonavtlar metro station."
+    },
+    {
+     "name": "Day trip to Khujand in Tajikistan",
+     "day": 2,
+     "optional": false,
+     "match": "Trip to Khujand, Tajikistan",
+     "description": "Across the Oybek border into Tajikistan for the Arbob Palace, the Panjshanbe market and the Sughd regional museum."
+    }
+   ],
+   "program": {
+    "name": "Tashkent",
+    "description": "Two nights in the Uzbek capital, with a walking tour of the bazaar and a border crossing day into Tajikistan."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Samarkand",
+   "city": "Samarkand",
+   "subtitle": "Samarkand → the Seven Lakes",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Gur Emir Palace",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Small hotel beside the Gur e Amir mausoleum",
+   "activities": [
+    {
+     "name": "Samarkand historic walking tour",
+     "day": 3,
+     "optional": false,
+     "match": "Samarkand Historic Walking Tour",
+     "description": "The tiled madrasahs of the Registan, the Bibi Khanym mosque, the Shah i Zinda tombs and the Gur e Amir mausoleum."
+    },
+    {
+     "name": "Seven Lakes of Tajikistan",
+     "day": 4,
+     "optional": false,
+     "match": "Tajikistan Seven Lakes Tour",
+     "description": "A day into the Fann mountains along the chain of seven coloured lakes, from Nezhigon up to Hazorchashma."
+    }
+   ],
+   "program": {
+    "name": "Samarkand",
+    "description": "Two nights at the heart of the old Silk Road, with the Registan and a mountain day along the Seven Lakes."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Tashkent",
+   "city": "Tashkent",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Hotel New York Tashkent",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Quiet hotel handy for the airport run",
+   "activities": [],
+   "program": {
+    "name": "Tashkent",
+    "description": "A night back in the capital with the day free before the flight north onto the Kazakh steppe."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Astana",
+   "city": "Astana",
+   "subtitle": "Astana → Burabay",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Royal Park Hotel & Spa",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Comfortable hotel on the left bank near the Baiterek",
+   "activities": [
+    {
+     "name": "Astana sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Astana Sightseeing Tour",
+     "description": "The Baiterek tower, the Khan Shatyr tent and the Nur Alem sphere, a capital built from nothing on the open steppe."
+    },
+    {
+     "name": "Burabay National Park",
+     "day": 7,
+     "optional": false,
+     "match": "Trip to Burabay National Park",
+     "description": "Pine forest, granite outcrops and clear lakes a few hours north, the stretch of country Kazakhs call their Switzerland."
+    }
+   ],
+   "program": {
+    "name": "Astana",
+    "description": "Two nights in the new Kazakh capital with its landmark towers and a day out in the lakes and pines of Burabay."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Almaty",
+   "city": "Almaty",
+   "subtitle": "Almaty → Charyn Canyon",
+   "days": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "dayLabel": "Day 8 to 11",
+   "hotel": "Astra Hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Friendly hotel in the centre of the old capital",
+   "activities": [
+    {
+     "name": "Almaty city sightseeing tour",
+     "day": 8,
+     "optional": false,
+     "match": "Almaty City Sightseeing Tour",
+     "description": "A guided tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral."
+    },
+    {
+     "name": "Medeu rink and Shymbulak ski resort",
+     "day": 9,
+     "optional": false,
+     "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+     "description": "A day up the Malaya Almatinka valley to the Olympic skating rink at Medeu, then by gondola to the Shymbulak slopes."
+    },
+    {
+     "name": "Charyn Canyon and Kolsai Lake",
+     "day": 10,
+     "optional": false,
+     "match": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty",
+     "description": "A long day out to the red sandstone Valley of Castles in Charyn Canyon, then up to the forested shore of Kolsai lake."
+    }
+   ],
+   "program": {
+    "name": "Almaty",
+    "description": "Three nights to finish in the old capital, with the city tour, the Shymbulak gondola and a day at Charyn Canyon."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tashkent",
+  "2": "Across to Khujand in Tajikistan",
+  "3": "On to Samarkand",
+  "4": "The Seven Lakes of Tajikistan",
+  "5": "Back to Tashkent",
+  "6": "Tashkent to Astana",
+  "7": "Burabay National Park",
+  "8": "Astana to Almaty",
+  "9": "Medeu rink and Shymbulak",
+  "10": "Charyn Canyon and Kolsai Lake",
+  "11": "Departure from Almaty"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Tashkent International and transfer to your hotel",
+   "Check in, then out on foot with your guide",
+   "The domed halls of the Chorsu bazaar",
+   "Amir Temur Square and the Navoi theatre"
+  ],
+  "2": [
+   "Breakfast, then east to the Oybek border post",
+   "Into Tajikistan and on to Khujand",
+   "The Arbob Palace and the Panjshanbe market",
+   "The Sughd regional museum before the run back"
+  ],
+  "3": [
+   "Breakfast and check out of your Tashkent hotel",
+   "Station transfer and the fast train to Samarkand",
+   "The tiled madrasahs of the Registan on foot",
+   "Bibi Khanym, Shah i Zinda and the Gur e Amir"
+  ],
+  "4": [
+   "Early breakfast, then south into the Fann mountains",
+   "The chain of seven coloured lakes",
+   "From Nezhigon up to Hazorchashma",
+   "Evening transfer back to Samarkand"
+  ],
+  "5": [
+   "Breakfast and check out for the run north",
+   "Back to Tashkent and check in for the night",
+   "The day free in the capital",
+   "Optional: the Temurid museum and the pilaf centre"
+  ],
+  "6": [
+   "Breakfast, then transfer to Tashkent airport",
+   "Optional: flight Tashkent to Astana, booked with us",
+   "Arrival transfer and check in on the left bank",
+   "The Baiterek tower and the Khan Shatyr tent"
+  ],
+  "7": [
+   "Breakfast, then north to Burabay",
+   "Pine forest, granite outcrops and clear lakes",
+   "The country Kazakhs call their Switzerland",
+   "Evening transfer back to the capital"
+  ],
+  "8": [
+   "Breakfast and check out of your Astana hotel",
+   "Optional: flight Astana to Almaty, booked with us",
+   "Arrival transfer and check in for three nights",
+   "A guided tour of the old capital"
+  ],
+  "9": [
+   "Breakfast, then up the Malaya Almatinka valley",
+   "The Medeu dam and its Olympic skating rink",
+   "On by gondola to the Shymbulak ski resort",
+   "Snow peaks of the Zailiysky Alatau above you"
+  ],
+  "10": [
+   "Early breakfast and a long day out east",
+   "The red walls of the Valley of Castles",
+   "The canyon floor path beside the Charyn river",
+   "On to the forested shore of Kolsai lake"
+  ],
+  "11": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B"
+ },
+ "hotel_by_day": {
+  "1": "Star Hotel Tashkent",
+  "2": "Star Hotel Tashkent",
+  "3": "Gur Emir Palace",
+  "4": "Gur Emir Palace",
+  "5": "Hotel New York Tashkent",
+  "6": "Royal Park Hotel & Spa",
+  "7": "Royal Park Hotel & Spa",
+  "8": "Astra Hotel",
+  "9": "Astra Hotel",
+  "10": "Astra Hotel",
+  "11": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Three countries in ten nights and still only two internal flights. The Registan and the Charyn Canyon in the same trip is a rare combination.",
+  "tip": "Carry your passport everywhere on days two and four. Both of those run across the Tajik border and back in a single day."
+ },
+ "summary": "Eleven days along the old Silk Road and out onto the steppe: Tashkent and a border day in Khujand, the tiled Registan at Samarkand and the Seven Lakes, then Astana with Burabay and Almaty with Shymbulak and Charyn Canyon.",
+ "included": "Included: 10 nights with daily breakfast across Tashkent, Samarkand, Astana and Almaty; private airport transfers; Tashkent walking tour; day trip to Khujand in Tajikistan; a guided historic walking tour of Samarkand; the Seven Lakes tour in Tajikistan; Astana sightseeing tour; Burabay National Park trip; Almaty city sightseeing tour; Medeu and Shymbulak day trip; Charyn Canyon and Kolsai Lake day trip.",
+ "not_included": "Not included: international flights; the two internal flights; Uzbekistan, Tajikistan and Kazakhstan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -1,0 +1,155 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Kazakhstan",
+   "/asien/kazakhstan"
+  ]
+ ],
+ "source_slug": "highlights-of-kazakhstan-flight-inclusive-deal",
+ "camel": "almatyHighlightsWithDelhiFlights",
+ "slug": "almaty-highlights-with-flights-from-delhi",
+ "title": "Almaty Highlights with Flights from Delhi",
+ "alt": "Alley of Lovers on Kok Tobe hill above Almaty",
+ "transport": "Return flights from Delhi, private transfers and private day tours",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "City break"
+ ],
+ "price": 90725,
+ "route_cities": [
+  "Almaty",
+  "Kok Tobe"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 4,
+  "transfers": 9,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Astana International Hotel",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Long standing city hotel close to Republic Square",
+   "activities": [
+    {
+     "name": "Almaty city sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Almaty City Sightseeing Tour",
+     "description": "A private tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral."
+    },
+    {
+     "name": "Medeu rink and Shymbulak ski resort",
+     "day": 3,
+     "optional": false,
+     "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort",
+     "description": "A day up the Malaya Almatinka valley to the Olympic skating rink at Medeu, then by gondola to the Shymbulak slopes."
+    },
+    {
+     "name": "Green Bazaar and the Rakhat chocolate factory",
+     "day": 4,
+     "optional": false,
+     "match": "Trip to Green Bazaar & Rakhat Chocolate Factory, Almaty",
+     "description": "The spice and dried fruit halls of the Green Bazaar, then the Rakhat factory whose chocolate every Kazakh family grew up on."
+    },
+    {
+     "name": "Kok Tobe hill and the gondola",
+     "day": 4,
+     "optional": false,
+     "match": "Day Trip to Kok Tobe from Almaty",
+     "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top."
+    }
+   ],
+   "program": {
+    "name": "Almaty",
+    "description": "Four nights in the old capital with the city tour, the Shymbulak gondola, the Green Bazaar and the Kok Tobe cable car."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Delhi to Almaty",
+  "2": "Almaty city tour",
+  "3": "Medeu rink and Shymbulak",
+  "4": "Green Bazaar, chocolate and Kok Tobe",
+  "5": "Almaty to Delhi"
+ },
+ "bullets": {
+  "1": [
+   "Flight Delhi to Almaty included in the price",
+   "Arrival at Almaty International and transfer to your hotel",
+   "The day at leisure once you have checked in",
+   "Optional: Arbat street and the Kazakh State Circus"
+  ],
+  "2": [
+   "Breakfast, then a private tour of the city",
+   "The Monument of Independence on Republic Square",
+   "Panfilov Park and the wooden Ascension Cathedral",
+   "A look round the Zelyony bazaar before dinner"
+  ],
+  "3": [
+   "Breakfast, then up the Malaya Almatinka valley",
+   "The Medeu dam and its Olympic skating rink",
+   "On by gondola to the Shymbulak ski resort",
+   "Snow peaks of the Zailiysky Alatau above you"
+  ],
+  "4": [
+   "Breakfast, then into the Green Bazaar halls",
+   "Horse meat counters, dried fruit and spice stalls",
+   "The Rakhat chocolate factory and its shop",
+   "Up the Kok Tobe cable car for the city at dusk"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Airport transfer and your flight Almaty to Delhi"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Astana International Hotel",
+  "2": "Astana International Hotel",
+  "3": "Astana International Hotel",
+  "4": "Astana International Hotel",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "A long weekend with the flights already in it. Four nights is enough to feel you have been somewhere genuinely different.",
+  "tip": "A litre of water a day comes with the package. Take it, because the mountain air at Shymbulak is dry and catches most people out."
+ },
+ "summary": "Five days in Almaty with return flights from Delhi included: a private city tour, the Olympic rink at Medeu with the Shymbulak gondola, and the Green Bazaar, Rakhat chocolate factory and Kok Tobe cable car.",
+ "included": "Included: return flights Delhi to Almaty; 4 nights in Almaty with daily breakfast; private airport transfers; private Almaty city sightseeing tour; day trip to the Medeu rink and Shymbulak ski resort; Green Bazaar and Rakhat chocolate factory trip; Kok Tobe day trip; a litre of bottled water a day; local guide; visa assistance.",
+ "not_included": "Not included: Kazakhstan visa fees; lunches and dinners; travel insurance; extra use of the vehicle; personal expenses."
+}

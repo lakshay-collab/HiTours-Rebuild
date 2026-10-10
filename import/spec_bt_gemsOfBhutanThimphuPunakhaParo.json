@@ -1,0 +1,198 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "bhutan-sightseeing-tour",
+ "camel": "gemsOfBhutanThimphuPunakhaParo",
+ "slug": "gems-of-bhutan-thimphu-punakha-and-paro",
+ "title": "Gems of Bhutan: Thimphu, Punakha and Paro",
+ "alt": "Whitewashed dzong walls above a Bhutanese river",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "Culture"
+ ],
+ "price": 37326,
+ "route_cities": [
+  "Thimphu",
+  "Punakha",
+  "Paro"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 4,
+  "transfers": 6,
+  "meals": 0
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Thimphu deluxe hotel",
+   "hotel_label": "Thimphu deluxe hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Local sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Local Sightseeing",
+     "description": "A guided half day of the town with your driver and guide, covering the main dzong, temple and market."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Punakha deluxe hotel",
+   "hotel_label": "Punakha deluxe hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Local sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Local Sightseeing",
+     "description": "A guided half day of the town with your driver and guide, covering the main dzong, temple and market."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Time in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Paro deluxe hotel",
+   "hotel_label": "Paro deluxe hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Paro sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Paro Sightseeing",
+     "description": "A guided round of the valley with the National Museum, Rinpung Dzong and the ruins of Drukgyel Dzong."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 5,
+     "optional": false,
+     "match": "Hike to Taktsang",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Thimphu",
+  "2": "Local sightseeing",
+  "3": "To Punakha: local sightseeing",
+  "4": "To Paro: Paro sightseeing",
+  "5": "Tiger's nest hike",
+  "6": "Departure from Paro"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Paro International and transfer to Thimphu",
+   "The road east along the Pa Chhu and the Wang Chhu",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then out into the capital",
+   "A guided half day round the town",
+   "The dzong, the temple and the market"
+  ],
+  "3": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "A guided half day round the town",
+   "The dzong, the temple and the market"
+  ],
+  "4": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "The National Museum in the old watchtower",
+   "Rinpung Dzong and the Drukgyel ruins"
+  ],
+  "5": [
+   "Breakfast, then out into the Paro valley",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Paro International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "Travel day",
+  "3": "Travel day",
+  "4": "Travel day",
+  "5": "Travel day",
+  "6": "Travel day"
+ },
+ "hotel_by_day": {
+  "1": "Thimphu deluxe hotel",
+  "2": "Thimphu deluxe hotel",
+  "3": "Punakha deluxe hotel",
+  "4": "Paro deluxe hotel",
+  "5": "Paro deluxe hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Fly in, three valleys, fly out. Five nights with every meal covered and nothing left for you to arrange.",
+  "tip": "Permits are handled for you, but carry two passport photographs anyway. Checkpoints inside the country still ask for them."
+ },
+ "summary": "6 days through Thimphu, Punakha, Paro, with 5 nights, all meals and a licensed Bhutanese guide: the local sightseeing tour, the paro sightseeing tour, the hike to the tiger's nest.",
+ "included": "Included: 5 nights across Thimphu, Punakha, Paro with all meals; all land transfers by private vehicle; the Local sightseeing tour; the Paro sightseeing tour; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}

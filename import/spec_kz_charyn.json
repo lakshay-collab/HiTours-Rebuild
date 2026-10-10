@@ -1,0 +1,74 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "discovering-kazakhstan-with-free-trip-to-charyn-canyon",
+ "camel": "grandAlmatyCharynKolsai",
+ "slug": "grand-almaty-with-charyn-canyon-and-kolsai-lake",
+ "title": "Grand Almaty with Charyn Canyon and Kolsai Lake",
+ "alt": "Red sandstone walls of the Valley of Castles in Charyn Canyon",
+ "transport": "Private airport transfers and private day tours",
+ "tag": "Nature",
+ "tags": ["Nature", "Adventure"],
+ "price": 69160,
+ "route_cities": ["Almaty", "Charyn Canyon", "Kolsai Lake"],
+ "counts": { "days": 7, "nights": 6, "cities": 1, "hotels": 1, "experiences": 6, "transfers": 9, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [1, 2, 3, 4, 5, 6, 7],
+   "dayLabel": "Day 1 to 7",
+   "hotel": "Kazakhstan Hotel",
+   "accom": "6 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Landmark Soviet era tower on Dostyk Avenue",
+   "activities": [
+    { "name": "Almaty city sightseeing tour", "day": 2, "optional": false, "match": "Almaty City Sightseeing Tour", "description": "A private tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral." },
+    { "name": "Medeu rink and Shymbulak ski resort", "day": 3, "optional": false, "match": "Day Trip to Medeu Ice Skating Rink & Shymbulak Ski Resort", "description": "A day up the Malaya Almatinka valley to the Olympic skating rink at Medeu, then by gondola to the Shymbulak slopes." },
+    { "name": "Green Bazaar and the Rakhat chocolate factory", "day": 4, "optional": false, "match": "Trip to Green Bazaar & Rakhat Chocolate Factory, Almaty", "description": "The spice and dried fruit halls of the Green Bazaar, then the Rakhat factory whose chocolate every Kazakh family grew up on." },
+    { "name": "Kok Tobe hill and the gondola", "day": 4, "optional": false, "match": "Day Trip to Kok Tobe from Almaty", "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top." },
+    { "name": "Lake Issyk day tour", "day": 5, "optional": false, "match": "Issyk Lake Day Tour From Almaty", "description": "A private day east to the turquoise water of Lake Issyk, with the Saka burial mounds and the small site museum nearby." },
+    { "name": "Charyn Canyon and Kolsai Lake", "day": 6, "optional": false, "match": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty", "description": "A long day out to the red sandstone Valley of Castles in Charyn Canyon, then up to the forested shore of Kolsai lake." }
+   ],
+   "program": { "name": "Almaty", "description": "Six nights in one hotel with six private day tours, from the city and Shymbulak to Lake Issyk, Charyn Canyon and Kolsai." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Almaty",
+  "2": "Almaty city tour",
+  "3": "Medeu rink and Shymbulak",
+  "4": "Green Bazaar, chocolate and Kok Tobe",
+  "5": "Lake Issyk day trip",
+  "6": "Charyn Canyon and Kolsai Lake",
+  "7": "Departure from Almaty"
+ },
+ "bullets": {
+  "1": ["Arrival at Almaty International and transfer to your hotel", "Check in and the rest of the day free", "Optional: the stalls of the Zelyony bazaar", "Optional: an evening in Panfilov Park"],
+  "2": ["Breakfast, then a private tour of the city", "The Monument of Independence on Republic Square", "Panfilov Park and the wooden Ascension Cathedral", "Afternoon free along Zhibek Zholy"],
+  "3": ["Breakfast, then up the Malaya Almatinka valley", "The Medeu dam and its Olympic skating rink", "On by gondola to the Shymbulak ski resort", "Snow peaks of the Zailiysky Alatau above you"],
+  "4": ["Breakfast, then into the Green Bazaar halls", "Horse meat counters, dried fruit and spice stalls", "The Rakhat chocolate factory and its shop", "Up the Kok Tobe cable car for the city at dusk"],
+  "5": ["Breakfast, then east towards the Issyk gorge", "The turquoise water of Lake Issyk", "The Saka burial mounds and the site museum", "Evening transfer back into Almaty"],
+  "6": ["Early breakfast and a long day out east", "The red walls of the Valley of Castles", "The canyon floor path beside the Charyn river", "On to the forested shore of Kolsai lake"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "Kazakhstan Hotel",
+  "2": "Kazakhstan Hotel",
+  "3": "Kazakhstan Hotel",
+  "4": "Kazakhstan Hotel",
+  "5": "Kazakhstan Hotel",
+  "6": "Kazakhstan Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Everything here is a day trip from one hotel. You unpack once and still see canyons, alpine lakes and the steppe.",
+  "tip": "Charyn and Kolsai in one day is a long run, close to twelve hours. Take the window seat and a packed lunch and treat it as the highlight."
+ },
+ "summary": "Seven days based in Almaty with six private day tours: the city and the Shymbulak gondola, Kok Tobe, Lake Issyk, and a long day out to the red walls of Charyn Canyon and the alpine water of Kolsai.",
+ "included": "Included: 6 nights in Almaty with daily breakfast; private airport transfers; private Almaty city sightseeing tour; day trip to the Medeu rink and Shymbulak ski resort; Green Bazaar and Rakhat chocolate factory trip; Kok Tobe day trip; Lake Issyk day tour; Charyn Canyon and Kolsai Lake day trip; visa assistance.",
+ "not_included": "Not included: international flights; Kazakhstan visa fees; lunches and dinners; travel insurance; laundry and personal expenses."
+}

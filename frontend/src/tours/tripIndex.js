@@ -215,6 +215,54 @@ import { discoverChinaBeijingShanghaiBySlug } from './discoverChinaBeijingShangh
 import { highlightsOfChinaThreeCitiesBySlug } from './highlightsOfChinaThreeCitiesData';
 import { grandChinaYangtzeCruiseBySlug } from './grandChinaYangtzeCruiseData';
 import { bestOfChinaAndJapanGrandTourBySlug } from './bestOfChinaAndJapanGrandTourData';
+import { almatyShortBreakShymbulakBySlug } from './almatyShortBreakShymbulakData';
+import { grandAlmatyCharynKolsaiBySlug } from './grandAlmatyCharynKolsaiData';
+import { almatyExplorerKokTobeIssykBySlug } from './almatyExplorerKokTobeIssykData';
+import { almatyWeekWithDelhiFlightsBySlug } from './almatyWeekWithDelhiFlightsData';
+import { classicAlmatyWithDelhiFlightsBySlug } from './classicAlmatyWithDelhiFlightsData';
+import { almatyHighlightsWithDelhiFlightsBySlug } from './almatyHighlightsWithDelhiFlightsData';
+import { sevenDaysAlmatyAltynEmelBySlug } from './sevenDaysAlmatyAltynEmelData';
+import { almatyAndBakuMountainsCaspianBySlug } from './almatyAndBakuMountainsCaspianData';
+import { almatyAndBakuTufandagCableCarBySlug } from './almatyAndBakuTufandagCableCarData';
+import { almatyBakuShahdagMountainsBySlug } from './almatyBakuShahdagMountainsData';
+import { grandAlmatyBakuShekiBySlug } from './grandAlmatyBakuShekiData';
+import { almatyWinterGroupTourFlightsBySlug } from './almatyWinterGroupTourFlightsData';
+import { almatyNatureWondersYoungBySlug } from './almatyNatureWondersYoungData';
+import { silkRoadTashkentSamarkandAlmatyBySlug } from './silkRoadTashkentSamarkandAlmatyData';
+import { wondersOfBhutanParoExcursionBySlug } from './wondersOfBhutanParoExcursionData';
+import { glimpseOfBhutanSacredSitesBySlug } from './glimpseOfBhutanSacredSitesData';
+import { experienceBhutanFourValleysBySlug } from './experienceBhutanFourValleysData';
+import { nepalAndBhutanHimalayanJourneyBySlug } from './nepalAndBhutanHimalayanJourneyData';
+import { bhutanDochulaAndPhobjikhaBySlug } from './bhutanDochulaAndPhobjikhaData';
+import { bhutanTaktsangEightDaysBySlug } from './bhutanTaktsangEightDaysData';
+import { gemsOfBhutanThimphuPunakhaParoBySlug } from './gemsOfBhutanThimphuPunakhaParoData';
+import { escapeToBhutanThreeValleysBySlug } from './escapeToBhutanThreeValleysData';
+import { bhutanJourneyToThePeaksBySlug } from './bhutanJourneyToThePeaksData';
+import { bhutanSikkimAndDarjeelingBySlug } from './bhutanSikkimAndDarjeelingData';
+import { mesmerizingBhutanShortBreakBySlug } from './mesmerizingBhutanShortBreakData';
+import { discoveringBhutanPunakhaDayTripBySlug } from './discoveringBhutanPunakhaDayTripData';
+import { exclusiveTripToBhutanBySlug } from './exclusiveTripToBhutanData';
+import { bhutanTenDaysWithPhobjikhaBySlug } from './bhutanTenDaysWithPhobjikhaData';
+import { nepalBhutanAndSikkimGrandBySlug } from './nepalBhutanAndSikkimGrandData';
+import { bhutanAdventureGroupTourBySlug } from './bhutanAdventureGroupTourData';
+import { bhutanFromSiliguriBySlug } from './bhutanFromSiliguriData';
+import { bhutanNewYearSpecialBySlug } from './bhutanNewYearSpecialData';
+import { premiumBhutanGroupTourBySlug } from './premiumBhutanGroupTourData';
+import { bhutanFromJaigaonBySlug } from './bhutanFromJaigaonData';
+import { bhutanExclusiveFourNightsBySlug } from './bhutanExclusiveFourNightsData';
+import { bestOfBhutanTaktsangBySlug } from './bestOfBhutanTaktsangData';
+import { bestOfBhutanTshechuBySlug } from './bestOfBhutanTshechuData';
+import { paradisicBhutanSuperDeluxeBySlug } from './paradisicBhutanSuperDeluxeData';
+import { bhutanTaktsangLuxuryBySlug } from './bhutanTaktsangLuxuryData';
+import { bhutanGetawayGangteyCranesBySlug } from './bhutanGetawayGangteyCranesData';
+import { bhutanTaktsangSuperDeluxeBySlug } from './bhutanTaktsangSuperDeluxeData';
+import { bhutanThimphuTshechuFestivalBySlug } from './bhutanThimphuTshechuFestivalData';
+import { bhutanPhobjikhaLuxuryBySlug } from './bhutanPhobjikhaLuxuryData';
+import { bhutanFromSiliguriLuxuryBySlug } from './bhutanFromSiliguriLuxuryData';
+import { bestOfBhutanTaktsangSuperDeluxeBySlug } from './bestOfBhutanTaktsangSuperDeluxeData';
+import { bhutanPhobjikhaSuperDeluxeBySlug } from './bhutanPhobjikhaSuperDeluxeData';
+import { paradisicBhutanLuxuryBySlug } from './paradisicBhutanLuxuryData';
+import { paroShortBreakTaktsangBySlug } from './paroShortBreakTaktsangData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -432,5 +480,53 @@ export const BY_SLUG = {
   ...discoverChinaBeijingShanghaiBySlug,
   ...highlightsOfChinaThreeCitiesBySlug,
   ...grandChinaYangtzeCruiseBySlug,
-  ...bestOfChinaAndJapanGrandTourBySlug
+  ...bestOfChinaAndJapanGrandTourBySlug,
+  ...almatyShortBreakShymbulakBySlug,
+  ...grandAlmatyCharynKolsaiBySlug,
+  ...almatyExplorerKokTobeIssykBySlug,
+  ...almatyWeekWithDelhiFlightsBySlug,
+  ...classicAlmatyWithDelhiFlightsBySlug,
+  ...almatyHighlightsWithDelhiFlightsBySlug,
+  ...sevenDaysAlmatyAltynEmelBySlug,
+  ...almatyAndBakuMountainsCaspianBySlug,
+  ...almatyAndBakuTufandagCableCarBySlug,
+  ...almatyBakuShahdagMountainsBySlug,
+  ...grandAlmatyBakuShekiBySlug,
+  ...almatyWinterGroupTourFlightsBySlug,
+  ...almatyNatureWondersYoungBySlug,
+  ...silkRoadTashkentSamarkandAlmatyBySlug,
+  ...wondersOfBhutanParoExcursionBySlug,
+  ...glimpseOfBhutanSacredSitesBySlug,
+  ...experienceBhutanFourValleysBySlug,
+  ...nepalAndBhutanHimalayanJourneyBySlug,
+  ...bhutanDochulaAndPhobjikhaBySlug,
+  ...bhutanTaktsangEightDaysBySlug,
+  ...gemsOfBhutanThimphuPunakhaParoBySlug,
+  ...escapeToBhutanThreeValleysBySlug,
+  ...bhutanJourneyToThePeaksBySlug,
+  ...bhutanSikkimAndDarjeelingBySlug,
+  ...mesmerizingBhutanShortBreakBySlug,
+  ...discoveringBhutanPunakhaDayTripBySlug,
+  ...exclusiveTripToBhutanBySlug,
+  ...bhutanTenDaysWithPhobjikhaBySlug,
+  ...nepalBhutanAndSikkimGrandBySlug,
+  ...bhutanAdventureGroupTourBySlug,
+  ...bhutanFromSiliguriBySlug,
+  ...bhutanNewYearSpecialBySlug,
+  ...premiumBhutanGroupTourBySlug,
+  ...bhutanFromJaigaonBySlug,
+  ...bhutanExclusiveFourNightsBySlug,
+  ...bestOfBhutanTaktsangBySlug,
+  ...bestOfBhutanTshechuBySlug,
+  ...paradisicBhutanSuperDeluxeBySlug,
+  ...bhutanTaktsangLuxuryBySlug,
+  ...bhutanGetawayGangteyCranesBySlug,
+  ...bhutanTaktsangSuperDeluxeBySlug,
+  ...bhutanThimphuTshechuFestivalBySlug,
+  ...bhutanPhobjikhaLuxuryBySlug,
+  ...bhutanFromSiliguriLuxuryBySlug,
+  ...bestOfBhutanTaktsangSuperDeluxeBySlug,
+  ...bhutanPhobjikhaSuperDeluxeBySlug,
+  ...paradisicBhutanLuxuryBySlug,
+  ...paroShortBreakTaktsangBySlug
 };

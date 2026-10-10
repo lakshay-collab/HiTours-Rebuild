@@ -1,0 +1,574 @@
+{
+ "source": "https://www.thrillophilia.com/tours/bhutan-sightseeing-tour",
+ "captured_at": "2026-10-10",
+ "title": "Gems of Bhutan | Thimphu Punakha & Paro",
+ "slug": "bhutan-sightseeing-tour",
+ "duration": "6D/5N",
+ "city_split": [
+  [
+   "Thimphu",
+   2
+  ],
+  [
+   "Punakha",
+   1
+  ],
+  [
+   "Paro",
+   3
+  ]
+ ],
+ "country": "Bhutan",
+ "badges": [
+  "Sightseeing Included",
+  "Guide"
+ ],
+ "tag": "Featured",
+ "highlights": [
+  "Journey to the world’s greenest country graced by rich cultural heritage and breathtaking tropical beauty",
+  "Stand in awe before the sacred 177 ft Buddha statue that guards over the capital city of Thimphu",
+  "Discover the wilderness of Bhutan as you step into the home of its national animal, Takin, at the Motithang Takin Preserve",
+  "Capture the panoramic beauty of the snow-clad Himalayan peaks at the Dochula pass",
+  "Follow the trail of colorful prayer flags to the spiritual odyssey of Taktsang, the Tiger’s Nest"
+ ],
+ "overview": "About the tour:\nYour 6 Days Bhutan Sightseeing Tour journey begins with a seamless transfer to Thimphu, where the heartbeat of Bhutan echoes through vibrant markets and historic sites. The serene beauty of Punakha and the timeless valleys of Paro culminate in an awe-inspiring visit to Taktsang, the Tiger's Nest Monastery. It's an immersive journey, inviting you to connect with Bhutan's soul. Choose this experience for a curated blend of culture and nature.\nQuick Facts:\nDuration: 6 Days, 5 Nights\nStart Point: Paro International Airport\nEnd Point: Paro International Airport\nExperiences Covered:\nThimphu Sightseeing\nPunakha Sightseeing\nParo Sightseeing",
+ "price_per_adult": 39290,
+ "struck_price": 46690,
+ "currency": "INR",
+ "inr_price": 39290,
+ "inclusions": [
+  "Local Sightseeing",
+  "Paro Sightseeing",
+  "Hike to Taktsang",
+  "Stay",
+  "Meals",
+  "Transfers",
+  "Sightseeing",
+  "Guide",
+  "Permits"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions"
+ ],
+ "know_before_you_go": [
+  "Please carry valid Ids and the Thrillophilia voucher.",
+  "Please depart on suggested timings to avoid any inconvenience.",
+  "Visa assistance will be provided however charges are not included",
+  "International / Domestic flights are not included in the package",
+  "Travel Insurance is recommended and charges are not included",
+  "Personal Expenses and mandatory hotel taxes (if any) will be paid by the travelers at the destination.",
+  "Rescheduling Policy for Private (Standard & Deluxe Package) & Group Bookings: 1) If rescheduling is made 7 days after the Booking Date till 15 days prior to the Date of Travel then 30.0% of the total tour cost will be charged as rescheduling fees. | 2) If rescheduling is made 0 days to 15 days before the Date of Travel then 100.0% of the total tour cost will be charged as cancellation fees. | 3) If bookings are made 15 days before the Date of Travel no rescheduling & modifications will be made.",
+  "Rescheduling Policy for Private (Super Deluxe) & Hotel Specific Bookings: No modification or Rescheduling will be catered. A standard cancellation policy will be applicable for such cases.",
+  "Force Majeure: In cases of force majeure events (e.g., natural disasters, political unrest, or other unforeseeable circumstances), [Thrillophilia] reserves the right to reschedule Tours & treks or offer alternative itineraries to ensure the safety and well-being of clients and staff.",
+  "Cancellation After Rescheduling: Clients who reschedule their tours or treks but later decide to cancel will be subject to our standard cancellation policy. Any rescheduling fees paid will be non-refundable."
+ ],
+ "meal_plans": null,
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival at Paro & Transfer to Thimphu | Welcome to Land of the Thunder Dragon",
+   "city": "Thimphu",
+   "desc": "Upon arrival at the Paro International Airport, complete the immigration process at the airport, then meet our local representative who will help you with your transfer to Thimphu. Upon reaching, head directly to the hotel & complete the check-in formalities. The rest of the day at leisure you’ll be free to explore the nearby local market of Thimphu. Dinner and overnight stay at the hotel in Thimphu.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "Upon reaching Paro International Airport our representative will help you with the transfer to your pre-booked hotel in Thimphu.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/n8cex7vdfjlio70aulg7ki8fu2es_1573633831_thimphu.png.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Thimphu Local Sightseeing | Explore Cultural Diversity ",
+   "city": "Thimphu",
+   "desc": "Wake up this morning and enjoy a delicious breakfast. After breakfast driver will pick you up from the hotel for the local sightseeing which includes, National Memorial, Buddha Statue, and Motithang Takin Preserve. Next visit Tashichho Dzong, Simtokha Dzong the oldest Dzong of Bhutan, and Handicrafts Emporium followed by shopping for souvenirs at the local markets in Thimphu. Dinner and overnight at Hotel.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "After breakfast driver will pick you up for the city tour.\nPost city tour the driver will drop you back at the hotel for the overnight stay.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Local Sightseeing",
+     "label": "",
+     "desc": "You’ll proceed to visit the National Memorial Chorten that was built in the honour of late King Jigme Dorji Wangchuck.\nAlso visit the largest Buddha Statue that overlooks the beautiful Thimphu Valley and the Motithang Takin Preserve, the humble abode of Takin, the national animal of Bhutan.\nOther highlights include a visit to the Tashichho Dzong, the seat of the national government, and the Central Monastic Body, including the summer residence of the Je Khenpo (Chief Abbot of Bhutan).\nLater drive to Simtokha Dzong the oldest Dzong of Bhutan built by Zhabdrung in 1627 and finally visit the Handicrafts Emporium followed by shopping for souvenirs at the local markets in Thimphu.",
+     "images": []
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Transfer to Punakha |  The Juncture of the two Beautiful Rivers",
+   "city": "Punakha",
+   "desc": "Wake up this morning and enjoy a delicious breakfast. After check-out, the driver will pick you up from the hotel for the transfer to Punakha. En route, make a stopover at Dochula Pass and visit Chimi Lhakhang, and Punakha Dzong. Then the driver will drop you off at the pre-booked hotel in Punakha, and complete the check-in formalities. Dinner and an overnight stay at the hotel",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "After breakfast driver will pick you up from the hotel in Thimphu and en-route to Punakha you will take various stopovers for sightseeing.\nPost sightseeing the driver will drop you off at the hotel in Punakha for an overnight stay.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Local Sightseeing",
+     "label": "",
+     "desc": "If the weather is clear, we stop for a while at Dochula Pass to view the Higher Himalayas.\nVisit Chimi Lhakhang, also known as “the Temple of Fertility” built by Lama Drukpa Kuenley who subdued the demons with his “Magical Thunderbolt”.\nVisit Punakha Dzong, situated between Pho Chu (the male river) and Mo Chu (the female river), which for many years until the time of the second king, served as the seat of the Government.",
+     "images": []
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/xoo5l4crpvz1sakhh0f4bpwcj135_shutterstock_1144214114.jpg"
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Transfer to Paro | Paro Sightseeing",
+   "city": "Paro",
+   "desc": "The day begins with the morning breakfast. Post breakfast, the driver will pick you up for transfer to Paro. On reaching, check in to the hotel and take some rest. You'll then, visit Drukgyel Dzong a fortress and Buddhist monastery, next explore Kichu Lhakhang, built in 659 A.D by the Tibetan king Songtsen Gampo Namgyal. Return to hotel for dinner and overnight stay.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "The driver will pick you up from the hotel in Punakha and take you to Paro \nAfter completing the check-in formalities, the driver will pick you up from the hotel for sightseeing.\nAfter sightseeing, the driver will drop you off at the hotel for an overnight stay.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Paro Sightseeing",
+     "label": "",
+     "desc": "Firstly you will visit the ruins of the Drukgyel Dzong a fortress and Buddhist monastery, now in ruins, located in the upper part of the Paro. Built by, Shabdrung Ngawang Namgyal, father and unifier of medieval Bhutan, the dzong was destroyed by accidental fire and left in ruins as an evocative reminder of the great victories it was built to commemorate.\nSpend some time exploring the ramparts and on a clear day, experience an unforgettable view of Mt. Jhomolhari.\nOn the way back, visit Kichu Lhakhang, built in 659 A.D by the Tibetan king Songtsen Gampo.",
+     "images": []
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/cxca9v5t1msku6mvfdxgpojksya0_shutterstock_791057164.jpg"
+   ]
+  },
+  {
+   "day": 5,
+   "title": "Excursion to Taktsang | A Beautiful Hike to Taktsang Monastery (Tiger’s Nest)",
+   "city": "Paro",
+   "desc": "Start your day with a healthy breakfast and then proceed for an excursion to Taktsang Monastery. Reach the base of the trail to Tiger's Nest from where a 6.5 km hike will take you to the monastery. The trail climbs through a beautiful pine forest and an occasional grove of fluttering prayer flags to reach Taktsang. Take a break at Taktsang Cafeteria located mid-way and then climb 700 steps at the last leg of the hike. Later, return back to the hotel for dinner and overnight stay.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "The driver will pick you up from the hotel for the excursion to Taktsang Monastery (Tiger’s Nest).\nPost excursion the driver will take you back to the hotel for an overnight stay.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Hike to Taktsang",
+     "label": "",
+     "desc": "The trail climbs through a beautiful pine forest and an occasional grove of fluttering prayer flags to reach Taktsang Monastery.\nThe Monastery was built around Guru Rinpoche's meditation cave & clings to the edge of a rock cliff that plunges 900 meters into the valley below.\nYou can then visit Ta Dzong, an ancient watchtower, which now houses the National Museum below which is the Paro Rinpung Dzong (literally meaning “Heap of Jewels”).\nProceed for a short walk to the base of the dzong and across a traditional cantilevered, covered bridge.",
+     "images": []
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 6,
+   "title": "Departure from Paro | Wave Goodbye to the Land of Thunder Dragon",
+   "city": "Paro",
+   "desc": "Enjoy the morning with a delicious breakfast. Check out from the hotel and the driver will help you with the transfer back to the Paro International Airport with a huge smile.",
+   "leisure": false,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Creta, Toyota Hiace",
+     "label": "",
+     "desc": "Post breakfast, the driver will help you with the transfer to the Airport.",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [],
+ "activities": [
+  {
+   "name": "Local Sightseeing",
+   "day": 2,
+   "city": "Thimphu",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "You’ll proceed to visit the National Memorial Chorten that was built in the honour of late King Jigme Dorji Wangchuck.\nAlso visit the largest Buddha Statue that overlooks the beautiful Thimphu Valley and the Motithang Takin Preserve, the humble abode of Takin, the national animal of Bhutan.\nOther highlights include a visit to the Tashichho Dzong, the seat of the national government, and the Central Monastic Body, including the summer residence of the Je Khenpo (Chief Abbot of Bhutan).\nLater drive to Simtokha Dzong the oldest Dzong of Bhutan built by Zhabdrung in 1627 and finally visit the Handicrafts Emporium followed by shopping for souvenirs at the local markets in Thimphu.",
+   "inclusions": [],
+   "images": []
+  },
+  {
+   "name": "Local Sightseeing",
+   "day": 3,
+   "city": "Punakha",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "If the weather is clear, we stop for a while at Dochula Pass to view the Higher Himalayas.\nVisit Chimi Lhakhang, also known as “the Temple of Fertility” built by Lama Drukpa Kuenley who subdued the demons with his “Magical Thunderbolt”.\nVisit Punakha Dzong, situated between Pho Chu (the male river) and Mo Chu (the female river), which for many years until the time of the second king, served as the seat of the Government.",
+   "inclusions": [],
+   "images": []
+  },
+  {
+   "name": "Paro Sightseeing",
+   "day": 4,
+   "city": "Paro",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "Firstly you will visit the ruins of the Drukgyel Dzong a fortress and Buddhist monastery, now in ruins, located in the upper part of the Paro. Built by, Shabdrung Ngawang Namgyal, father and unifier of medieval Bhutan, the dzong was destroyed by accidental fire and left in ruins as an evocative reminder of the great victories it was built to commemorate.\nSpend some time exploring the ramparts and on a clear day, experience an unforgettable view of Mt. Jhomolhari.\nOn the way back, visit Kichu Lhakhang, built in 659 A.D by the Tibetan king Songtsen Gampo.",
+   "inclusions": [],
+   "images": []
+  },
+  {
+   "name": "Hike to Taktsang",
+   "day": 5,
+   "city": "Paro",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "The trail climbs through a beautiful pine forest and an occasional grove of fluttering prayer flags to reach Taktsang Monastery.\nThe Monastery was built around Guru Rinpoche's meditation cave & clings to the edge of a rock cliff that plunges 900 meters into the valley below.\nYou can then visit Ta Dzong, an ancient watchtower, which now houses the National Museum below which is the Paro Rinpung Dzong (literally meaning “Heap of Jewels”).\nProceed for a short walk to the base of the dzong and across a traditional cantilevered, covered bridge.",
+   "inclusions": [],
+   "images": []
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wepuvw5mcfi8s525zwl800ys6rrf_dl.beatsnoop.com-final-MO3QsKkwjg.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/v9uo5lid0n4qaesyy7gmcd0ia1ov_1567000196_Dochula_Pass.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oh1gexaupxa22jhlbewzh61ss4jr_1567058265_Rinpung_Monastery1.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8pkfc2n3cg0x502xryg6h6sy6lpt_1567161873_shutterstock_642962251.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5ocq5egc7nqrn1s8ruanbjkerxh2_1567161874_shutterstock_1384348070.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/unlpcns0dcitydgrdkb4oute3q3r_1566998066_Tourist_at_TNM.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i5q5af42wy59xur6qoniy8wowzxh_4b0mqyu219qne0kbau5rw3k3tvpv_1530784296_chimi.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qv5dr3smbx8pds6unr8y6ryqd6aq_84rpvos8v1j9njr3x6a5fo2zz9u5_1594459594_Phuentsholing.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fes4piv0dtybtdv6dhfxtxrpbazz_a90ux68q546hrifyt4qov5ras1d3_1594645941_Changangkha_Monastery.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gljpncywnw2ljojnzjkr74kh9tk6_47u744iu64q8nk5hndrdpaw4klbr_1594648353_Divine_Madman.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jhvq1wsn3wk6rduss3gtybpgms63_66y3q1wrfzyqye59bmq69ijpk59z_1530784295_Tashi_Dzong.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rf7wgk3yvynv4z9ufvbz6i6yefwg_d8yfybry21wd15qp23pj4g2ox5wg_1594648356_dochula_pass1.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oh92jrq6sh8ttgsvubkyvdt59xgl_fp29rlb9yvnuch60xbq22vkk0exp_1594645941_Takin_Zoo.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6bf17prwf3sc8619ydnhku7ql3im_2ss9r01c3uy63cm4cdsofjutm12c_1594647137_shutterstock_332339996.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g8jaarxigbsjtewijx2h4zrcdhu5_buildings-g30b54c53a_1920.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/5w80mmnw4s9y37c9l4em6hj7weny_bhutan-g2fe144609_1920.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gm0gzzjx5k3mrqrkidwpyf8udp5f_shutterstock_1133789885.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/d6pnacj0qx40us5i5qktnuzocce9_shutterstock_1255335592.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/491ywszgfwbfx2sjm1ed19r5uscw_shutterstock_1253338396.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sa3262j8v12avdtlkkwmp6g34vio_palace-g5c1c52677_1920.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3w3howk47sh52dogyusifr1x2g5u_tzaxa58nyfxre62xsh03we00f3yv_1594644944_Jichu_Drake.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n4iycv1r79aijgtelh811ct9surd_rz9yxj7f4oxdgo7veab4i4tc4x9j_1594648357_dochula_pass2.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0ikjg6fhcckrf85sw4mhsxtmoda7_pxfngh66alt8mb20j83zw3953y26_1594648283_Tashichho_Dzong.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a44hqsbtmwnihz0n3nwp7zpcnhod_shutterstock_1135145693.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b0nsjveebnn3d1ayafiq6njcgozk_dl.beatsnoop.com-final-VbgL5BUYNO.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n8cex7vdfjlio70aulg7ki8fu2es_1573633831_thimphu.png.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xoo5l4crpvz1sakhh0f4bpwcj135_shutterstock_1144214114.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0cus70wr77ddobt3sqy9ncmcr32f_shutterstock_1654243042.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s6pr84j5yrh3ovy196bm9knzd776_shutterstock_789560344.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jo5ycx643snee3eu96h7tr73inp1_shutterstock_1086851528.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qpn8bdffgz9s8irih7uzy0av78ar_shutterstock_713138947.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cxca9v5t1msku6mvfdxgpojksya0_shutterstock_791057164.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w5x24opcjm8mehhyz6uimxnov70i_shutterstock_641042962.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yru7i10oz6g7m6ctvhnuw0t4hwil_shutterstock_338939330.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vuhk4pi6h6o3pyjz2cbah6z860sc_shutterstock_345764054.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7msml9xgr38y8l6ykpf50i25qv66_shutterstock_562907131.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a1cv5ynkkb11dkjbgaqcjx0fr7r2_shutterstock_416582146.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n8cex7vdfjlio70aulg7ki8fu2es_1573633831_thimphu.png.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Thimphu"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xoo5l4crpvz1sakhh0f4bpwcj135_shutterstock_1144214114.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Punakha"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/0cus70wr77ddobt3sqy9ncmcr32f_shutterstock_1654243042.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Punakha"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s6pr84j5yrh3ovy196bm9knzd776_shutterstock_789560344.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Punakha"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jo5ycx643snee3eu96h7tr73inp1_shutterstock_1086851528.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Punakha"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qpn8bdffgz9s8irih7uzy0av78ar_shutterstock_713138947.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Punakha"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cxca9v5t1msku6mvfdxgpojksya0_shutterstock_791057164.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w5x24opcjm8mehhyz6uimxnov70i_shutterstock_641042962.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yru7i10oz6g7m6ctvhnuw0t4hwil_shutterstock_338939330.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vuhk4pi6h6o3pyjz2cbah6z860sc_shutterstock_345764054.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7msml9xgr38y8l6ykpf50i25qv66_shutterstock_562907131.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a1cv5ynkkb11dkjbgaqcjx0fr7r2_shutterstock_416582146.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Paro"
+  }
+ ],
+ "dest_gallery": {
+  "Thimphu": [
+   "https://media1.thrillophilia.com/filestore/n8cex7vdfjlio70aulg7ki8fu2es_1573633831_thimphu.png.jpg"
+  ],
+  "Punakha": [
+   "https://media1.thrillophilia.com/filestore/xoo5l4crpvz1sakhh0f4bpwcj135_shutterstock_1144214114.jpg",
+   "https://media1.thrillophilia.com/filestore/0cus70wr77ddobt3sqy9ncmcr32f_shutterstock_1654243042.jpg",
+   "https://media1.thrillophilia.com/filestore/s6pr84j5yrh3ovy196bm9knzd776_shutterstock_789560344.jpg",
+   "https://media1.thrillophilia.com/filestore/jo5ycx643snee3eu96h7tr73inp1_shutterstock_1086851528.jpg",
+   "https://media1.thrillophilia.com/filestore/qpn8bdffgz9s8irih7uzy0av78ar_shutterstock_713138947.jpg"
+  ],
+  "Paro": [
+   "https://media1.thrillophilia.com/filestore/cxca9v5t1msku6mvfdxgpojksya0_shutterstock_791057164.jpg",
+   "https://media1.thrillophilia.com/filestore/w5x24opcjm8mehhyz6uimxnov70i_shutterstock_641042962.jpg",
+   "https://media1.thrillophilia.com/filestore/yru7i10oz6g7m6ctvhnuw0t4hwil_shutterstock_338939330.jpg",
+   "https://media1.thrillophilia.com/filestore/vuhk4pi6h6o3pyjz2cbah6z860sc_shutterstock_345764054.jpg",
+   "https://media1.thrillophilia.com/filestore/7msml9xgr38y8l6ykpf50i25qv66_shutterstock_562907131.jpg",
+   "https://media1.thrillophilia.com/filestore/a1cv5ynkkb11dkjbgaqcjx0fr7r2_shutterstock_416582146.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/wepuvw5mcfi8s525zwl800ys6rrf_dl.beatsnoop.com-final-MO3QsKkwjg.jpg"
+ ]
+}

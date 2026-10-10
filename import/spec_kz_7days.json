@@ -1,0 +1,74 @@
+{
+ "cta_country": "kazakhstan",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["Kazakhstan", "/asien/kazakhstan"]],
+ "source_slug": "kazakhstan-7-days-tour-package",
+ "camel": "sevenDaysAlmatyAltynEmel",
+ "slug": "seven-days-in-almaty-with-altyn-emel",
+ "title": "Seven Days in Almaty with Altyn Emel National Park",
+ "alt": "Chalk cliffs of the Aktau mountains in Altyn Emel National Park",
+ "transport": "Private airport transfers and guided day tours",
+ "tag": "Nature",
+ "tags": ["Nature", "Adventure"],
+ "price": 79610,
+ "route_cities": ["Almaty", "Charyn Canyon", "Altyn Emel"],
+ "counts": { "days": 7, "nights": 6, "cities": 1, "hotels": 1, "experiences": 6, "transfers": 9, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Almaty",
+   "city": "Almaty",
+   "days": [1, 2, 3, 4, 5, 6, 7],
+   "dayLabel": "Day 1 to 7",
+   "hotel": "Astana International Hotel",
+   "accom": "6 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Long standing city hotel close to Republic Square",
+   "activities": [
+    { "name": "Almaty city sightseeing tour", "day": 2, "optional": false, "match": "Almaty City Sightseeing Tour", "description": "A guided tour of the old capital, taking in the Monument of Independence, Panfilov Park and the wooden Ascension Cathedral." },
+    { "name": "Green Bazaar and the Rakhat chocolate factory", "day": 3, "optional": false, "match": "Trip to Green Bazaar & Rakhat Chocolate Factory, Almaty", "description": "The spice and dried fruit halls of the Green Bazaar, then the Rakhat factory whose chocolate every Kazakh family grew up on." },
+    { "name": "Kok Tobe hill and the gondola", "day": 3, "optional": false, "match": "Day Trip to Kok Tobe from Almaty", "description": "The cable car up Kok Tobe for the whole city laid out below the mountains, with the Alley of Lovers at the top." },
+    { "name": "Charyn Canyon and Kolsai Lake", "day": 4, "optional": false, "match": "Day Trip to Charyn Canyon and Kolsai Lake From Almaty", "description": "A long day out to the red sandstone Valley of Castles in Charyn Canyon, then up to the forested shore of Kolsai lake." },
+    { "name": "Lake Issyk day tour", "day": 5, "optional": false, "match": "Issyk Lake Day Tour From Almaty", "description": "A day east to the turquoise water of Lake Issyk, with the Saka burial mounds and the small site museum nearby." },
+    { "name": "Altyn Emel National Park", "day": 6, "optional": false, "match": "Trip to Altyn Emel National Park", "description": "The Singing Dune that hums in the wind, the striped chalk ridges of the Aktau mountains and the Besshatyr burial mounds." }
+   ],
+   "program": { "name": "Almaty", "description": "Six nights in the old capital with five full days out: the city, Kok Tobe, Charyn Canyon, Lake Issyk and Altyn Emel." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Almaty",
+  "2": "Almaty city tour",
+  "3": "Green Bazaar, chocolate and Kok Tobe",
+  "4": "Charyn Canyon and Kolsai Lake",
+  "5": "Lake Issyk day trip",
+  "6": "Altyn Emel National Park",
+  "7": "Departure from Almaty"
+ },
+ "bullets": {
+  "1": ["Arrival at Almaty International and transfer to your hotel", "Check in and the rest of the day free", "Optional: the Palace of the Republic and Abai Square", "Optional: the stalls of the Zelyony bazaar"],
+  "2": ["Breakfast, then a guided tour of the city", "The Monument of Independence on Republic Square", "Panfilov Park and the wooden Ascension Cathedral", "Afternoon free along Zhibek Zholy"],
+  "3": ["Breakfast, then into the Green Bazaar halls", "Horse meat counters, dried fruit and spice stalls", "The Rakhat chocolate factory and its shop", "Up the Kok Tobe cable car for the city at dusk"],
+  "4": ["Early breakfast and a long day out east", "The red walls of the Valley of Castles", "The canyon floor path beside the Charyn river", "On to the forested shore of Kolsai lake"],
+  "5": ["Breakfast, then east towards the Issyk gorge", "The turquoise water of Lake Issyk", "The Saka burial mounds and the site museum", "Evening transfer back into Almaty"],
+  "6": ["Early breakfast and out onto the open steppe", "The Singing Dune that hums in the wind", "Striped chalk ridges of the Aktau mountains", "The Besshatyr burial mounds before the long run back"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "Astana International Hotel",
+  "2": "Astana International Hotel",
+  "3": "Astana International Hotel",
+  "4": "Astana International Hotel",
+  "5": "Astana International Hotel",
+  "6": "Astana International Hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aisha",
+  "image": "/experts/riya.webp",
+  "role": "Kazakhstan expert at Hi Tours",
+  "quote": "Altyn Emel is the one almost nobody books, and it is the day everyone talks about afterwards. Coloured hills and a dune that sings.",
+  "tip": "Altyn Emel is a long day on rough tracks. If anyone in the group gets carsick, swap it for a second day at Kolsai and Kaindy."
+ },
+ "summary": "Seven days based in Almaty with five full days out: the city tour and Kok Tobe, the red walls of Charyn Canyon with Kolsai Lake, Lake Issyk, and the Singing Dune and chalk mountains of Altyn Emel National Park.",
+ "included": "Included: 6 nights in Almaty with daily breakfast; private airport transfers; guided Almaty city sightseeing tour; Green Bazaar and Rakhat chocolate factory trip; Kok Tobe day trip; Charyn Canyon and Kolsai Lake day trip; Lake Issyk day tour; Altyn Emel National Park trip.",
+ "not_included": "Not included: international flights; Kazakhstan visa fees; lunches and dinners; travel insurance; personal expenses."
+}

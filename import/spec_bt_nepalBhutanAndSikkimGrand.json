@@ -1,0 +1,356 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "nepal-bhutan-and-sikkim-tour-package",
+ "camel": "nepalBhutanAndSikkimGrand",
+ "slug": "nepal-bhutan-and-sikkim-grand-tour",
+ "title": "Nepal, Bhutan and Sikkim Grand Tour",
+ "alt": "Himalayan ridges seen on the flight into Paro",
+ "transport": "Private vehicles, a licensed guide and the Kathmandu to Paro flight",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Multi-country"
+ ],
+ "price": 90656,
+ "route_cities": [
+  "Kathmandu",
+  "Paro",
+  "Thimphu",
+  "Phuentsholing",
+  "Kalimpong",
+  "Gangtok",
+  "Darjeeling"
+ ],
+ "counts": {
+  "days": 12,
+  "nights": 11,
+  "cities": 7,
+  "hotels": 7,
+  "experiences": 8,
+  "transfers": 18,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kathmandu",
+   "city": "Kathmandu",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Vaishali",
+   "hotel_label": "Hotel Vaishali",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel within reach of Thamel",
+   "activities": [
+    {
+     "name": "Kathmandu sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Full Day Kathmandu Sightseeing Tour",
+     "description": "A guided day with Durbar Square, the stupa at Boudhanath, Swayambhunath and Pashupatinath on the Bagmati."
+    }
+   ],
+   "program": {
+    "name": "Kathmandu",
+    "description": "Days in the Nepali capital, with Durbar Square, Boudhanath and Pashupatinath."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Khamsum Inn, Paro",
+   "hotel_label": "Khamsum Inn, Paro",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Paro half day sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Paro Half Day Sightseeing Tour",
+     "description": "A half day round the valley taking in Rinpung Dzong, the National Museum and the main street of Paro town."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 4,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Hotel Taktsang",
+   "hotel_label": "Hotel Taktsang",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    },
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Punakha Sightseeing Tour",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "Alem Hotel & Resort",
+   "hotel_label": "Alem Hotel & Resort",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Border town hotel on the Indian frontier",
+   "activities": [
+    {
+     "name": "Phuentsholing sightseeing tour",
+     "day": 7,
+     "optional": false,
+     "match": "Phuentsholing Sightseeing Tour",
+     "description": "The border town with Zangto Pelri Lhakhang, the crocodile breeding centre and the Bhutan Gate itself."
+    }
+   ],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Kalimpong",
+   "city": "Darjeeling",
+   "days": [
+    8
+   ],
+   "dayLabel": "Day 8",
+   "hotel": "Sood's Himalayan Vista",
+   "hotel_label": "Sood's Himalayan Vista",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Quiet hotel on the ridge above the Teesta",
+   "activities": [],
+   "program": {
+    "name": "Kalimpong",
+    "description": "Time on the Kalimpong ridge above the Teesta, with the Durpin monastery and the orchid nurseries."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Gangtok",
+   "city": "Gangtok",
+   "days": [
+    9
+   ],
+   "dayLabel": "Day 9",
+   "hotel": "The Regal",
+   "hotel_label": "The Regal",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hillside hotel above MG Marg",
+   "activities": [
+    {
+     "name": "Gangtok sightseeing tour",
+     "day": 9,
+     "optional": false,
+     "match": "Half-Day Gangtok Sightseeing Tour",
+     "description": "The Sikkimese capital with the Rumtek monastery, the Namgyal institute of Tibetology and the Ganesh Tok viewpoint."
+    }
+   ],
+   "program": {
+    "name": "Gangtok",
+    "description": "Time in the Sikkimese capital, with Rumtek monastery and the ridge viewpoints."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Darjeeling",
+   "city": "Darjeeling",
+   "days": [
+    10,
+    11,
+    12
+   ],
+   "dayLabel": "Day 10 to 12",
+   "hotel": "Yangs Inn",
+   "hotel_label": "Yangs Inn",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Colonial era hotel near the Mall",
+   "activities": [
+    {
+     "name": "Darjeeling sightseeing tour",
+     "day": 11,
+     "optional": false,
+     "match": "Darjeeling Sightseeing Tour",
+     "description": "Tiger Hill at sunrise for Kanchenjunga, the Himalayan Mountaineering Institute and the toy train at Ghum."
+    }
+   ],
+   "program": {
+    "name": "Darjeeling",
+    "description": "Days in the old hill station, with Tiger Hill at sunrise and the tea gardens below."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Kathmandu",
+  "2": "Kathmandu sightseeing",
+  "3": "To Paro: Paro sightseeing",
+  "4": "Tiger's nest hike",
+  "5": "To Thimphu: Thimphu sightseeing",
+  "6": "Punakha dzong",
+  "7": "To Phuentsholing: Phuentsholing",
+  "8": "Onward to Kalimpong",
+  "9": "To Gangtok: Gangtok sightseeing",
+  "10": "Onward to Darjeeling",
+  "11": "Darjeeling sightseeing",
+  "12": "Departure from Siliguri"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Kathmandu Tribhuvan and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then out into Kathmandu",
+   "Durbar Square and the old palace courtyards",
+   "Boudhanath stupa and Pashupatinath"
+  ],
+  "3": [
+   "Breakfast and check out of your Kathmandu hotel",
+   "Optional: flight Kathmandu to Paro, booked with us",
+   "Arrival transfer from Paro International to your hotel",
+   "Rinpung Dzong and the National Museum",
+   "The shopfronts of Paro town"
+  ],
+  "4": [
+   "Breakfast, then out into the Paro valley",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "5": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve"
+  ],
+  "6": [
+   "Breakfast, then out into the capital",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water"
+  ],
+  "7": [
+   "Breakfast, then the long run back south",
+   "Down through the Chukha gorge to the plains",
+   "Zangto Pelri Lhakhang in the town centre",
+   "The Bhutan Gate and the Torsa riverside"
+  ],
+  "8": [
+   "Breakfast, then up to the Kalimpong ridge",
+   "The Teesta running far below the road",
+   "Optional: the Durpin monastery on the ridge",
+   "Arrival transfer and check in for the night"
+  ],
+  "9": [
+   "Breakfast, then west into Sikkim",
+   "Permit formalities at Rangpo on the Teesta",
+   "Rumtek monastery above the valley",
+   "The Namgyal institute and Ganesh Tok"
+  ],
+  "10": [
+   "Breakfast, then south along the ridge to Darjeeling",
+   "Tea gardens dropping away on both sides",
+   "Optional: the Happy Valley tea estate",
+   "Arrival transfer and check in for the night"
+  ],
+  "11": [
+   "Breakfast with Kanchenjunga on the skyline",
+   "Tiger Hill at sunrise for Kanchenjunga",
+   "The toy train and the tea gardens at Ghum"
+  ],
+  "12": [
+   "Breakfast at the hotel and check out",
+   "Border formalities and transfer to Siliguri"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B",
+  "12": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Vaishali",
+  "2": "Hotel Vaishali",
+  "3": "Khamsum Inn, Paro",
+  "4": "Khamsum Inn, Paro",
+  "5": "Hotel Taktsang",
+  "6": "Hotel Taktsang",
+  "7": "Alem Hotel & Resort",
+  "8": "Sood's Himalayan Vista",
+  "9": "The Regal",
+  "10": "Yangs Inn",
+  "11": "Yangs Inn",
+  "12": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "Twelve days, three countries and one flight. Kathmandu, the Bhutanese dzongs, then overland through Sikkim to Darjeeling.",
+  "tip": "Pack for two climates. Kathmandu and Siliguri are warm at sea level while Paro and Gangtok are cold after dark all year."
+ },
+ "summary": "12 days through Kathmandu, Paro, Thimphu, Phuentsholing, Kalimpong, Gangtok, Darjeeling, with 11 nights, daily breakfast and a licensed Bhutanese guide: the kathmandu sightseeing tour, the paro half day sightseeing tour, the hike to the tiger's nest, the thimphu sightseeing tour.",
+ "included": "Included: 11 nights across Kathmandu, Paro, Thimphu, Phuentsholing, Kalimpong, Gangtok, Darjeeling with daily breakfast; all land transfers by private vehicle; the Kathmandu sightseeing tour; the Paro half day sightseeing tour; the Hike to the Tiger's Nest; the Thimphu sightseeing tour; the Punakha sightseeing tour; the Phuentsholing sightseeing tour; the Gangtok sightseeing tour; the Darjeeling sightseeing tour; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international flights; the Kathmandu to Paro flight; Nepal, Bhutan and Sikkim permits and visa fees; lunches and dinners; travel insurance; personal expenses."
+}

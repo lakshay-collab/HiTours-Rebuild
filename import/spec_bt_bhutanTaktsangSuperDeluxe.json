@@ -1,0 +1,261 @@
+{
+ "cta_country": "bhutan",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "Bhutan",
+   "/asien/bhutan"
+  ]
+ ],
+ "source_slug": "8-days-bhutan-tour-with-paro-taktsang-super-deluxe",
+ "camel": "bhutanTaktsangSuperDeluxe",
+ "slug": "bhutan-with-paro-taktsang-super-deluxe",
+ "title": "Bhutan with Paro Taktsang: Super Deluxe",
+ "alt": "Four star resort courtyard in the Paro valley",
+ "transport": "Private vehicle, driver and licensed guide throughout",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Culture"
+ ],
+ "price": 74100,
+ "route_cities": [
+  "Phuentsholing",
+  "Thimphu",
+  "Punakha",
+  "Paro",
+  "Phuentsholing"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 5,
+  "transfers": 12,
+  "meals": 13
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Ga Me Ga",
+   "hotel_label": "Hotel Ga Me Ga",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Thimphu",
+   "city": "Thimphu City",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Hotel Osel",
+   "hotel_label": "Hotel Osel",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Comfortable hotel in the capital, walkable to the clock tower",
+   "activities": [
+    {
+     "name": "Thimphu sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Thimphu Sightseeing Tour on a Private basis",
+     "description": "A guided day round the capital with the Memorial Chorten, the Buddha Dordenma, Tashichho Dzong and the takin preserve."
+    }
+   ],
+   "program": {
+    "name": "Thimphu",
+    "description": "Days in the capital, with the Memorial Chorten, the Buddha Dordenma and Tashichho Dzong."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Punakha",
+   "city": "Punakha",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel Rivervalley",
+   "hotel_label": "Hotel Rivervalley",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Riverside hotel in the warm old winter capital",
+   "activities": [
+    {
+     "name": "Punakha sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Punakha Sightseeing Tour on a Private basis",
+     "description": "The fortress where Bhutan’s kings are crowned, built on the spit of land where two rivers meet below the town."
+    }
+   ],
+   "program": {
+    "name": "Punakha",
+    "description": "Time in the warm old winter capital, with the Dzong between two rivers and the suspension bridge."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Paro",
+   "city": "Paro",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Himalayan Keys Forest Resort",
+   "hotel_label": "Himalayan Keys Forest Resort",
+   "accom": "2 nights · Breakfast · Standard room · 5★ · Quiet hotel in the valley below Taktsang",
+   "activities": [
+    {
+     "name": "Paro sightseeing tour",
+     "day": 5,
+     "optional": false,
+     "match": "Paro Sightseeing Tour on a Private basis",
+     "description": "A guided round of the valley with the National Museum, Rinpung Dzong and the ruins of Drukgyel Dzong."
+    },
+    {
+     "name": "Ta Dzong and Rinpung Dzong",
+     "day": 6,
+     "optional": false,
+     "match": "Ta Dzong and Rinpung Dzong Visit",
+     "description": "The round watchtower that now holds the National Museum, and the whitewashed Rinpung fortress above the river."
+    },
+    {
+     "name": "Hike to the Tiger's Nest",
+     "day": 6,
+     "optional": false,
+     "match": "Tiger Nest Hiking, Bhutan",
+     "description": "The climb to Taktsang, the monastery wedged into a cliff nine hundred metres above the Paro valley floor."
+    }
+   ],
+   "program": {
+    "name": "Paro",
+    "description": "Days in the valley below Taktsang, with Rinpung Dzong, the National Museum and the Tiger’s Nest hike."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Phuentsholing",
+   "city": "Phuntsholing",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Hotel Druk",
+   "hotel_label": "Hotel Druk",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Border town hotel on the Indian frontier",
+   "activities": [],
+   "program": {
+    "name": "Phuentsholing",
+    "description": "Time in the border town where Bhutan begins, with the Bhutan Gate and Kharbandi above the plains."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Phuentsholing",
+  "2": "Onward to Thimphu",
+  "3": "Thimphu sightseeing",
+  "4": "To Punakha: Punakha Dzong",
+  "5": "To Paro: Paro sightseeing",
+  "6": "Ta dzong and rinpung dzong and tiger's nest hike",
+  "7": "Onward to Phuentsholing",
+  "8": "Departure from Phuentsholing"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bagdogra or Siliguri and transfer to Phuentsholing",
+   "Border formalities at the Bhutan Gate",
+   "Check in and the rest of the day free"
+  ],
+  "2": [
+   "Breakfast, then north into the hills towards Thimphu",
+   "The Chukha dam and the Wang Chhu gorge on the way",
+   "Optional: the Zorig Chusum school of arts",
+   "Arrival transfer and check in for the night"
+  ],
+  "3": [
+   "Breakfast, then out into the capital",
+   "The Memorial Chorten and the Buddha Dordenma",
+   "Tashichho Dzong and the takin preserve"
+  ],
+  "4": [
+   "Breakfast, then east over the Dochula pass",
+   "The hundred and eight chortens at the top",
+   "Punakha Dzong between the Pho and Mo rivers",
+   "The long suspension bridge over the water"
+  ],
+  "5": [
+   "Breakfast, then west down the valley to Paro",
+   "Terraced fields and farmhouses the whole way",
+   "The National Museum in the old watchtower",
+   "Rinpung Dzong and the Drukgyel ruins"
+  ],
+  "6": [
+   "Breakfast, then out into the Paro valley",
+   "The round watchtower holding the National Museum",
+   "Rinpung Dzong on the slope above the river",
+   "The climb up the pine slope to Taktsang",
+   "The monastery wedged into the cliff face"
+  ],
+  "7": [
+   "Breakfast, then the long run back south",
+   "Down through the Chukha gorge to the plains",
+   "Optional: Zangto Pelri Lhakhang in the town",
+   "Arrival transfer and check in for the night"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Border formalities and transfer to Siliguri"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, L",
+  "3": "B, L",
+  "4": "B, L",
+  "5": "B, L",
+  "6": "B, L",
+  "7": "B, L",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Ga Me Ga",
+  "2": "Hotel Osel",
+  "3": "Hotel Osel",
+  "4": "Hotel Rivervalley",
+  "5": "Himalayan Keys Forest Resort",
+  "6": "Himalayan Keys Forest Resort",
+  "7": "Hotel Druk",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Tenzin",
+  "image": "/experts/riya.webp",
+  "role": "Bhutan expert at Hi Tours",
+  "quote": "The middle tier of our eight day circuit: four star hotels throughout, at a long way below the five star price.",
+  "tip": "Super deluxe is the sweet spot in Bhutan. The jump from three to four star is big and from four to five star is mostly the view."
+ },
+ "summary": "8 days through Phuentsholing, Thimphu, Punakha, Paro, with 7 nights, Breakfast and dinner each day and a licensed Bhutanese guide: the thimphu sightseeing tour, the punakha sightseeing tour, the paro sightseeing tour, the ta dzong and rinpung dzong.",
+ "included": "Included: 7 nights across Phuentsholing, Thimphu, Punakha, Paro with Breakfast and dinner each day; all land transfers by private vehicle; the Thimphu sightseeing tour; the Punakha sightseeing tour; the Paro sightseeing tour; the Ta Dzong and Rinpung Dzong; the Hike to the Tiger's Nest; a licensed Bhutanese guide; permits and the sustainable development fee as quoted.",
+ "not_included": "Not included: international and domestic flights; lunches and any meals not listed; monument entrance fees where not stated; travel insurance; personal expenses."
+}
