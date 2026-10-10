@@ -174,7 +174,7 @@ export const showcase = {
   trips: [
     trip({
       tab: 'Europe', title: 'Europe honeymoon', cta: 'Plan your Europe trip now',
-      duration: '11 days', stops: '5 stops', transport: 'High speed rail', activities: 12, hotels: 5, transfers: 9, meals: 10, flights: 0,
+      duration: '11 days', stops: '5 stops', transport: 'High speed rail', activities: 12, hotels: 5, transfers: 9, meals: 10, flights: 4,
       tags: [['bed', '4-star hotels'], ['boat', 'Lake Como cruise'], ['plane', 'Scenic trains'], ['food', 'Italian trattorias'], ['bike', 'Paris by bike']],
       customer: "Rohan & Meera's Europe honeymoon", quote: 'Paris, the Jungfrau, Zermatt, Lake Como and Venice in eleven days and we never once worried about a connection.', avatar: '/moments/europe_couple.webp',
       images: [
