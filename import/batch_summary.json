@@ -1,278 +1,825 @@
 [
  {
-  "slug": "european-getaway-to-swiss-and-italy",
-  "title": "Best of Switzerland & Italy | Roman Streets to Snowy Alps",
-  "dur": "9D/8N",
-  "price": 219000,
-  "struck": 265185,
-  "cur": "INR",
-  "cities": [
-   [
-    "Rome",
-    2
-   ],
-   [
-    "Florence",
-    1
-   ],
-   [
-    "Venice",
-    2
-   ],
-   [
-    "Zurich",
-    4
-   ]
-  ],
-  "days": 9,
-  "hotels": [
-   [
-    "Minerva Relais",
-    "Rome",
-    2,
-    13
-   ],
-   [
-    "Floris Hotel",
-    "Rome",
-    2,
-    12
-   ],
-   [
-    "Hotel Palazzo Benci",
-    "Florence",
-    1,
-    12
-   ],
-   [
-    "Hotel la Fortezza",
-    "Florence",
-    1,
-    13
-   ],
-   [
-    "Hotel Arlecchino",
-    "Venice",
-    2,
-    12
-   ],
-   [
-    "Ca 'San Polo",
-    "Venice",
-    2,
-    12
-   ],
-   [
-    "Swiss Chocolate by Fassbind",
-    "Zurich",
-    3,
-    10
-   ],
-   [
-    "ibis Zurich City West",
-    "Zurich",
-    3,
-    13
-   ]
-  ],
-  "acts": 39,
-  "gallery": 218
+  "slug": "enchanting-greece",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
  },
  {
-  "slug": "zestful-swiss-and-paris-tour",
-  "title": "Wonders of Switzerland and Paris | Glitz & Glaciers",
-  "dur": "7D/6N",
-  "price": 219500,
-  "struck": 255094,
+  "slug": "5-days-spectacular-athens-tour",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "romantic-greece-honeymoon-special",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "10-days-majestic-greece-tour",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "10-days-exotic-greece-tour",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "best-of-scandinavian-with-norway",
+  "title": "Norway in a Nutshell with FREE Fjord Cruise Ride",
+  "dur": "8D/7N",
+  "price": 178900,
+  "struck": 220047,
   "cur": "INR",
   "cities": [
    [
-    "Paris",
-    3
+    "Oslo",
+    2
    ],
    [
-    "Zurich",
-    3
-   ],
-   [
-    "Interlaken",
+    "Flam",
     1
+   ],
+   [
+    "Bergen",
+    3
+   ],
+   [
+    "Oslo",
+    2
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Scandic Helsfyr, Oslo",
+    "Oslo",
+    2,
+    14
+   ],
+   [
+    "Scandic Sjolyst, Oslo",
+    "Oslo",
+    2,
+    12
+   ],
+   [
+    "Hotel Flamsbrygga, Flam",
+    "Flam",
+    1,
+    11
+   ],
+   [
+    "Comfort Hotel Bergen Airport",
+    "Bergen",
+    2,
+    12
+   ],
+   [
+    "Moxy Bergen",
+    "Bergen",
+    2,
+    13
+   ],
+   [
+    "Radisson Blu Park, Oslo",
+    "Oslo",
+    1,
+    13
+   ],
+   [
+    "Thon Hotel Oslofjord",
+    "Oslo",
+    1,
+    12
+   ]
+  ],
+  "acts": 17,
+  "gallery": 208
+ },
+ {
+  "slug": "norwegian-escapade--northern-lights-with-norway-in-a-nutshell",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "classic-norway",
+  "title": "Norway Wonders | Journey to the Land of Fjords",
+  "dur": "7D/6N",
+  "price": 243500,
+  "struck": 323855,
+  "cur": "INR",
+  "cities": [
+   [
+    "Oslo",
+    1
+   ],
+   [
+    "Trondheim",
+    1
+   ],
+   [
+    "Alesund",
+    1
+   ],
+   [
+    "Bergen",
+    1
+   ],
+   [
+    "Flam",
+    1
+   ],
+   [
+    "Oslo",
+    2
    ]
   ],
   "days": 7,
   "hotels": [
    [
-    "Hotel Eiffel Seine",
-    "Paris",
-    3,
+    "Park Inn by Radisson Oslo",
+    "Oslo",
+    1,
+    9
+   ],
+   [
+    "Saga Hotel Oslo Central",
+    "Oslo",
+    1,
     14
    ],
    [
-    "Europe Hotel Paris Eiffel",
-    "Paris",
-    3,
-    12
+    "Clarion Hotel Trondheim",
+    "Trondheim",
+    1,
+    11
    ],
    [
-    "ibis Zurich City West",
-    "Zurich",
-    3,
+    "Radisson Blu Royal Garden Hotel, Trondheim",
+    "Trondheim",
+    1,
+    15
+   ],
+   [
+    "Hurtigruten Cruise",
+    "Alesund",
+    1,
+    7
+   ],
+   [
+    "Heimen Hotel",
+    "Bergen",
+    1,
     13
    ],
    [
-    "Swiss Chocolate by Fassbind",
-    "Zurich",
-    3,
-    10
+    "Comfort Hotel Bergen Airport",
+    "Bergen",
+    1,
+    12
+   ],
+   [
+    "Hotel Flamsbrygga, Flam",
+    "Flam",
+    1,
+    11
    ]
   ],
-  "acts": 35,
-  "gallery": 155
+  "acts": 18,
+  "gallery": 232
  },
  {
-  "slug": "wonders-of-western-europe",
-  "title": "Wonders of Western Europe | Group Tour Package",
+  "slug": "norwegian-highlights",
+  "title": "Norway Explorer Tour | Flam Railway, Fjords & Iconic Routes",
   "dur": "10D/9N",
-  "price": 159000,
-  "struck": 230000,
+  "price": 307978,
+  "struck": 409611,
   "cur": "INR",
   "cities": [
    [
-    "Zurich",
-    3
-   ],
-   [
-    "Frankfurt",
+    "Oslo",
     1
    ],
    [
-    "Amsterdam",
-    2
+    "Flam",
+    1
    ],
    [
-    "Paris",
-    4
+    "Bergen",
+    3
+   ],
+   [
+    "Molde",
+    1
+   ],
+   [
+    "Trondheim",
+    1
+   ],
+   [
+    "Oslo",
+    3
    ]
   ],
   "days": 10,
   "hotels": [
    [
-    "Radisson Hotel Zurich Airport",
-    "Zurich",
-    3,
-    10
-   ],
-   [
-    "Harry's Home Zürich Wallisellen",
-    "Zurich",
-    3,
-    12
-   ],
-   [
-    "Crowne Plaza Frankfurt Congress Hotel by IHG",
-    "Frankfurt",
-    1,
-    50
-   ],
-   [
-    "Mercure Mannheim am Friedensplatz",
-    "Frankfurt",
-    1,
-    10
-   ],
-   [
-    "Vienna House Easy by Wyndham Amsterdam Airport",
-    "Amsterdam",
+    "Saga Hotel Oslo Central",
+    "Oslo",
     2,
-    22
+    14
    ],
    [
-    "Best Western Plus Hotel Amstelveen",
-    "Amsterdam",
+    "Park Inn by Radisson Oslo",
+    "Oslo",
     2,
-    7
+    9
    ],
    [
-    "Hotel Inn Paris - Roissy Cdg Airport",
-    "Paris",
-    3,
-    12
-   ],
-   [
-    "Hampton by Hilton Paris Charles de Gaulle Airport",
-    "Paris",
-    3,
-    7
-   ]
-  ],
-  "acts": 39,
-  "gallery": 317
- },
- {
-  "slug": "italy-and-switzerland-honeymoon-package",
-  "title": "Switzerland & Italy - Honeymoon Escape",
-  "dur": "7D/6N",
-  "price": 98000,
-  "struck": 143334,
-  "cur": "INR",
-  "cities": [
-   [
-    "Zurich",
-    3
-   ],
-   [
-    "Milan",
-    1
-   ],
-   [
-    "Venice",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "ibis Zurich City West",
-    "Zurich",
-    3,
-    13
-   ],
-   [
-    "Swiss Chocolate by Fassbind",
-    "Zurich",
-    3,
-    10
-   ],
-   [
-    "B&B Hotel Milano Aosta",
-    "Milan",
-    1,
-    13
-   ],
-   [
-    "Just Hotel Milano",
-    "Milan",
+    "Hotel Flamsbrygga, Flam",
+    "Flam",
     1,
     11
    ],
    [
-    "Hotel Arlecchino",
-    "Venice",
+    "Heimen Hotel",
+    "Bergen",
+    2,
+    13
+   ],
+   [
+    "Thon Hotel Bristol",
+    "Bergen",
+    2,
+    11
+   ],
+   [
+    "Clarion Hotel Trondheim",
+    "Trondheim",
+    1,
+    11
+   ],
+   [
+    "Radisson Blu Royal Garden Hotel, Trondheim",
+    "Trondheim",
+    1,
+    15
+   ]
+  ],
+  "acts": 33,
+  "gallery": 229
+ },
+ {
+  "slug": "arctic-norway---winter-in-wonderland",
+  "title": "Arctic Norway | Winter in Wonderland",
+  "dur": "8D/7N",
+  "price": 218750,
+  "struck": 290937,
+  "cur": "INR",
+  "cities": [
+   [
+    "Tromso",
+    3
+   ],
+   [
+    "Hammerfest",
+    1
+   ],
+   [
+    "Kirkenes",
+    1
+   ],
+   [
+    "Oslo",
+    3
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Scandic Grand Tromsø",
+    "Tromso",
+    2,
+    14
+   ],
+   [
+    "Thon Hotel Tromso",
+    "Tromso",
+    2,
+    11
+   ],
+   [
+    "Havila Cruise",
+    "Tromso",
+    2,
+    0
+   ],
+   [
+    "Scandic Kirkenes",
+    "Kirkenes",
+    1,
+    11
+   ],
+   [
+    "Thon Hotel Kirkenes",
+    "Kirkenes",
+    1,
+    15
+   ],
+   [
+    "Park Inn by Radisson Oslo",
+    "Oslo",
+    2,
+    9
+   ],
+   [
+    "Saga Hotel Oslo Central",
+    "Oslo",
+    2,
+    14
+   ]
+  ],
+  "acts": 37,
+  "gallery": 173
+ },
+ {
+  "slug": "southern-norwegian-delights",
+  "title": "Southern Norway Highlights | Oslo, Stavanger & Fjord Experiences",
+  "dur": "8D/7N",
+  "price": 249568,
+  "struck": 331925,
+  "cur": "INR",
+  "cities": [
+   [
+    "Oslo",
+    2
+   ],
+   [
+    "Bergen",
+    1
+   ],
+   [
+    "Stavanger",
+    2
+   ],
+   [
+    "Kristiansand",
+    1
+   ],
+   [
+    "Tvedestrand",
+    1
+   ],
+   [
+    "Oslo",
+    1
+   ]
+  ],
+  "days": 8,
+  "hotels": [
+   [
+    "Scandic Helsfyr, Oslo",
+    "Oslo",
+    2,
+    14
+   ],
+   [
+    "Scandic Sjolyst, Oslo",
+    "Oslo",
     2,
     12
    ],
    [
-    "Ca 'San Polo",
-    "Venice",
+    "Moxy Bergen",
+    "Bergen",
+    1,
+    13
+   ],
+   [
+    "Scandic Neptun",
+    "Bergen",
+    1,
+    14
+   ],
+   [
+    "Thon Partner Hotel Sandnes",
+    "Stavanger",
     2,
+    10
+   ],
+   [
+    "Quality Hotel Residence",
+    "Stavanger",
+    2,
+    15
+   ],
+   [
+    "Scandic Kristiansand Bystranda",
+    "Kristiansand",
+    1,
+    10
+   ],
+   [
+    "Silja Symphony Cruise",
+    "Kristiansand",
+    1,
+    7
+   ],
+   [
+    "Thon Hotel Arendal",
+    "Tvedestrand",
+    1,
     12
+   ],
+   [
+    "Kirkenes Hotell",
+    "Tvedestrand",
+    1,
+    0
    ]
   ],
-  "acts": 34,
-  "gallery": 189
+  "acts": 32,
+  "gallery": 264
  },
  {
-  "slug": "italy-and-france-honeymoon-package",
+  "slug": "best-of-northern-lights-in-norway-14-days",
+  "title": "Jewels of Norway with FREE Pulpit Rock Cruise",
+  "dur": "14D/13N",
+  "price": 385858,
+  "struck": 513191,
+  "cur": "INR",
+  "cities": [
+   [
+    "Oslo",
+    2
+   ],
+   [
+    "Stavanger",
+    2
+   ],
+   [
+    "Bergen",
+    2
+   ],
+   [
+    "Alesund",
+    2
+   ],
+   [
+    "Trondheim",
+    2
+   ],
+   [
+    "Tromso",
+    4
+   ]
+  ],
+  "days": 14,
+  "hotels": [
+   [
+    "Park Inn by Radisson Oslo",
+    "Oslo",
+    2,
+    9
+   ],
+   [
+    "Saga Hotel Oslo Central",
+    "Oslo",
+    2,
+    14
+   ],
+   [
+    "Thon Partner Hotel Sandnes",
+    "Stavanger",
+    2,
+    10
+   ],
+   [
+    "Quality Hotel Residence",
+    "Stavanger",
+    2,
+    15
+   ],
+   [
+    "Thon Hotel Bristol",
+    "Bergen",
+    2,
+    11
+   ],
+   [
+    "Comfort Hotel Bergen Airport",
+    "Bergen",
+    2,
+    12
+   ],
+   [
+    "Quality Hotel Ålesund",
+    "Alesund",
+    2,
+    14
+   ],
+   [
+    "Scandic Parken",
+    "Alesund",
+    2,
+    14
+   ],
+   [
+    "Best Western Plus Hotel Bakeriet, Trondheim",
+    "Trondheim",
+    2,
+    12
+   ],
+   [
+    "Clarion Hotel Trondheim",
+    "Trondheim",
+    2,
+    11
+   ],
+   [
+    "Scandic Grand Tromsø",
+    "Tromso",
+    3,
+    14
+   ],
+   [
+    "Thon Hotel Tromso",
+    "Tromso",
+    3,
+    11
+   ]
+  ],
+  "acts": 45,
+  "gallery": 335
+ },
+ {
+  "slug": "7-days-ireland-tour-package",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "ireland-honeymoon-package-from-india",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "scandinavian-classic--finland-escapade-with-inari",
+  "title": "Finland Arctic Adventure | Inari, Northern Lights & Santa Village",
+  "dur": "9D/8N",
+  "price": 275000,
+  "struck": 365750,
+  "cur": "INR",
+  "cities": [
+   [
+    "Helsinki",
+    1
+   ],
+   [
+    "Rovaniemi",
+    3
+   ],
+   [
+    "Tromso",
+    1
+   ],
+   [
+    "Inari",
+    1
+   ],
+   [
+    "Helsinki",
+    3
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Hotel Arthur",
+    "Helsinki",
+    2,
+    11
+   ],
+   [
+    "Roost Liisankatu",
+    "Helsinki",
+    2,
+    6
+   ],
+   [
+    "Hostel Cafe Koti",
+    "Rovaniemi",
+    3,
+    12
+   ],
+   [
+    "Santasport",
+    "Rovaniemi",
+    3,
+    10
+   ],
+   [
+    "Hotel Korpikartano, Inari",
+    "Tromso",
+    2,
+    10
+   ],
+   [
+    "Wilderness Hotel Inari",
+    "Tromso",
+    2,
+    15
+   ]
+  ],
+  "acts": 25,
+  "gallery": 185
+ },
+ {
+  "slug": "scandinavia-with-finland-group-tour-free-skyview-gondola-ride-tickets",
+  "title": "Scandinavia with Finland Group Tour | FREE Skyview Gondola Ride Tickets",
+  "dur": "9D/8N",
+  "price": 396610,
+  "struck": 515486,
+  "cur": "INR",
+  "cities": [
+   [
+    "Helsinki",
+    2
+   ],
+   [
+    "Stockholm",
+    1
+   ],
+   [
+    "Bergen",
+    1
+   ],
+   [
+    "Geilo",
+    1
+   ],
+   [
+    "Oslo",
+    2
+   ],
+   [
+    "Copenhagen",
+    2
+   ]
+  ],
+  "days": 9,
+  "hotels": [
+   [
+    "Scandic Meilahti, Helsinki",
+    "Helsinki",
+    1,
+    10
+   ],
+   [
+    "Tallink Silja Line, Stockholm",
+    "Helsinki",
+    1,
+    13
+   ],
+   [
+    "Good Morning+ Hägersten, Stockholm",
+    "Stockholm",
+    1,
+    10
+   ],
+   [
+    "Comfort Hotel Bergen Airport",
+    "Bergen",
+    1,
+    12
+   ],
+   [
+    "Thon Hotel Hallingdal, Geilo",
+    "Geilo",
+    1,
+    11
+   ],
+   [
+    "Thon Hotel Oslofjord",
+    "Oslo",
+    1,
+    12
+   ],
+   [
+    "DFDS Cruise",
+    "Oslo",
+    1,
+    12
+   ],
+   [
+    "Scandic Hvidovre, Copenhagen",
+    "Copenhagen",
+    1,
+    14
+   ]
+  ],
+  "acts": 51,
+  "gallery": 279
+ },
+ {
+  "slug": "scandinavia-classic-with-free-flam-railway",
+  "title": "Best of Nordic | Exploring Sweden, Denmark, Finland and Norway",
+  "dur": "11D/10N",
+  "price": 317431,
+  "struck": 422041,
+  "cur": "INR",
+  "cities": [
+   [
+    "Helsinki",
+    3
+   ],
+   [
+    "Stockholm",
+    1
+   ],
+   [
+    "Oslo",
+    2
+   ],
+   [
+    "Bergen",
+    2
+   ],
+   [
+    "Copenhagen",
+    3
+   ]
+  ],
+  "days": 11,
+  "hotels": [
+   [
+    "Radisson Blu Royal Hotel, Helsinki",
+    "Helsinki",
+    2,
+    16
+   ],
+   [
+    "Scandic Hotel Simonkentta",
+    "Helsinki",
+    2,
+    13
+   ],
+   [
+    "Tallink Silja Line",
+    "Helsinki",
+    1,
+    13
+   ],
+   [
+    "Hotel Lady Hamilton Collector's",
+    "Stockholm",
+    1,
+    12
+   ],
+   [
+    "Downtown Camper by Scandic",
+    "Stockholm",
+    1,
+    13
+   ],
+   [
+    "Thon Hotel Europa",
+    "Oslo",
+    2,
+    13
+   ],
+   [
+    "Clarion Hotel Oslo",
+    "Oslo",
+    2,
+    13
+   ],
+   [
+    "Comfort Hotel Bergen",
+    "Bergen",
+    2,
+    12
+   ],
+   [
+    "Thon Hotel Bristol Bergen",
+    "Bergen",
+    2,
+    11
+   ],
+   [
+    "Best Western Hotel Hebron",
+    "Copenhagen",
+    2,
+    16
+   ],
+   [
+    "Hotel Ottilia - By Brochner Hotels",
+    "Copenhagen",
+    2,
+    11
+   ]
+  ],
+  "acts": 65,
+  "gallery": 333
+ },
+ {
+  "slug": "northern-lights-safari-tour-sweden",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'"
+ },
+ {
+  "slug": "northern-lights-in-sweden-with-dinner-on-the-ice",
   "error": "AttributeError: 'NoneType' object has no attribute 'group'"
  }
 ]

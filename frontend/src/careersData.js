@@ -9,9 +9,13 @@ export { CAREERS_URL };
 
 export const hero = {
   image: un('photo-1577962917302-cd874c4e31d2', 2000),
-  alt: 'The Hi Tours team planning holidays together in the Mumbai office',
+  alt: 'The Hi Tours team planning holidays together in the Delhi office',
   h1: 'Join Hi Tours',
-  video: { id: 'GKPwXS3CKBw', start: 660, end: 690 },
+  video: {
+    mp4: '/careers/join-hi-tours.mp4',
+    webm: '/careers/join-hi-tours.webm',
+    poster: '/careers/join-hi-tours-poster.jpg'
+  },
   cta: 'Learn more',
   positions: 'Open Positions'
 };
@@ -56,25 +60,25 @@ export const life = {
     { value: '30+', label: 'Years of travel' }
   ],
   quotes: [
-    { quote: 'I like working at Hi Tours because it gives me a lot of flexibility in terms of working hours. I can also work from anywhere in the world.', name: 'Riya Mehta', role: 'Booking Success Expert', avatar: '/experts/riya.webp', image: '/moments/safari.webp' },
-    { quote: 'I appreciate that Hi Tours puts an unusual amount of effort into understanding and developing every colleague\u2019s passion and unique skill profile.', name: 'Aditya Rao', role: 'Director of Technology', avatar: '/experts/aditya.webp', image: '/moments/alps.webp' },
-    { quote: 'Thanks to Hi Tours I am able to use my own passion for travel on a daily basis to plan amazing trips for our customers.', name: 'Sharon D\u2019Souza', role: 'Travel Expert and Junior Destination Specialist', avatar: '/experts/sharon.webp', image: '/moments/santorini.webp' }
+    { quote: 'The travel credits are the part I did not expect. Every year I use mine to see a destination I sell, and I come back planning it completely differently.', name: '', role: 'Holiday Specialist, Hi Tours Delhi', avatar: '/team/quote-t1.webp', image: '/team/employee-1.webp' },
+    { quote: 'There are no cabins and no layers here. If I have an idea, I walk over to whoever can decide on it and we settle it the same day.', name: '', role: 'Travel Product, Hi Tours Delhi', avatar: '/team/quote-t2.webp', image: '/team/employee-2.webp' },
+    { quote: 'Our training happens on the road. I learned the Dubai itinerary by walking it with the team, not from a slide deck, and that is why my travellers trust me.', name: '', role: 'Booking Success Expert, Hi Tours NCR', avatar: '/team/quote-t3.webp', image: '/team/employee-3.webp' }
   ]
 };
 
 export const perks = {
   eyebrow: 'What We Offer',
   h2: 'Perks and Benefits',
-  text: 'Hi Tours offers a wide range of benefits, whether you are part-time, full-time, working from the office or at home. We believe in giving our employees benefits that balances their career development and personal wellbeing.',
+  text: 'Hi Tours offers a wide range of benefits for everyone on the team, part-time or full-time. We believe in giving our employees benefits that balance their career development, their travels and their personal wellbeing.',
   items: [
-    { label: 'Inclusive environment: bring your whole self!', image: un('photo-1522202176988-66273c2fd55f', 600) },
-    { label: 'Individual Learning Budget for all Hi Tourians', image: un('photo-1434030216411-0b793f4b4173', 600) },
-    { label: 'Flexibility to work remotely from almost any country', image: un('photo-1522199755839-a2bacb67c546', 600) },
-    { label: 'Engaging in-person events in Mumbai', image: un('photo-1511795409834-ef04bbd61622', 600) },
-    { label: 'Hybrid working model and office in the heart of Mumbai', image: un('photo-1497366216548-37526070297c', 600) },
-    { label: 'Fresh fruits, chai & snacks in the office', image: un('photo-1610832958506-aa56368176cf', 600) },
-    { label: 'Familiarisation trips to our destinations every year', image: un('photo-1500530855697-b586d89ba3ee', 600) },
-    { label: 'We love having dogs in the office', image: un('photo-1548199973-03cce0bbc87b', 600) }
+    { label: 'Travel credits for every Hi Tourian, every year', image: un('photo-1500530855697-b586d89ba3ee', 600) },
+    { label: 'Training trips to the destinations we sell', image: un('photo-1507525428034-b723cf961d3e', 600) },
+    { label: 'An open, non-hierarchical culture', image: un('photo-1522202176988-66273c2fd55f', 600) },
+    { label: 'Open office model, no cabins and no closed doors', image: un('photo-1497366216548-37526070297c', 600) },
+    { label: 'Engaging in-person events in Delhi and the NCR', image: un('photo-1511795409834-ef04bbd61622', 600) },
+    { label: 'Individual learning budget for all Hi Tourians', image: un('photo-1434030216411-0b793f4b4173', 600) },
+    { label: 'Inclusive environment: bring your whole self!', image: un('photo-1521737604893-d14cc237f11d', 600) },
+    { label: 'Fresh fruits, chai & snacks in the office', image: un('photo-1610832958506-aa56368176cf', 600) }
   ]
 };
 

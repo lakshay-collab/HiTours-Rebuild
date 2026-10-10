@@ -40,6 +40,18 @@ with ThreadPoolExecutor(8) as pool:
                 good.append(u)
         cities[city] = good
 
+# destinations with no Thrillophilia gallery (Swedish Lapland, rural Ireland) fall back to the
+# product gallery of the tour itself, which is still a real photo of the place.
+# destinations with no Thrillophilia gallery (Swedish Lapland, rural Ireland) fall back to the
+# product gallery of the tour itself, which is still a real photo of the place.
+if not all(cities.values()):
+    prod = [m['url'] for m in (raw.get('gallery') or []) if m['url'] not in tiles]
+    with ThreadPoolExecutor(8) as pool:
+        prod = [u for u, (w, h) in pool.map(size, prod) if w > h and w >= 500]
+    for _c in list(cities):
+        if not cities[_c]:
+            cities[_c] = list(prod)
+
 # rotate each city pool per trip so trips sharing a city do not all open with the same photo
 _off = sum(ord(c) for c in spec['slug'])
 for _c, _l in cities.items():

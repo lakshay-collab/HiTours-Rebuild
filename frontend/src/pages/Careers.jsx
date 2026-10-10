@@ -36,7 +36,7 @@ export default function Careers() {
         <section className="eg-container pt-6 md:pt-8" data-testid="careers-hero">
           <div className="relative h-[320px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden">
             <img src={hero.image} alt={hero.alt} className="absolute inset-0 w-full h-full object-cover" />
-            <CareersHeroVideo videoId={hero.video.id} start={hero.video.start} end={hero.video.end} />
+            <CareersHeroVideo mp4={hero.video.mp4} webm={hero.video.webm} poster={hero.video.poster} />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.35)_0%,rgba(0,33,49,0.3)_55%,rgba(0,33,49,0.6)_100%)]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-4 text-center">
               <h1 className="eg-display-lg text-white drop-shadow-[0_2px_14px_rgba(0,33,49,0.45)]" data-testid="careers-h1">{hero.h1}</h1>
@@ -99,14 +99,14 @@ export default function Careers() {
               <div className="p-8 sm:p-10 flex flex-col justify-between gap-8 order-2 sm:order-1">
                 <div>
                   <span className="block eg-display-lg leading-none text-[#308BB6] -mb-3" aria-hidden="true">&ldquo;</span>
-                  <p key={q} className="eg-headline-md md:!text-[32px] md:!leading-[40px] text-[#002131] animate-[hi-fade-in_400ms_ease-out]" data-testid="careers-quote-text">{quote.quote}</p>
+                  <p key={q} className="eg-body-lg md:!text-[18px] md:!leading-[28px] text-[#002131] animate-[hi-fade-in_400ms_ease-out]" data-testid="careers-quote-text">{quote.quote}</p>
                 </div>
                 <div>
                   <span className="block w-10 h-[3px] bg-[#174358] mb-4" />
                   <div className="flex items-center gap-3">
-                    <img src={quote.avatar} alt={quote.name} className="w-14 h-14 rounded-full object-cover ring-2 ring-white" />
+                    <img src={quote.avatar} alt={quote.name || quote.role} className="w-14 h-14 rounded-full object-cover ring-2 ring-white" />
                     <span className="flex flex-col">
-                      <span className="eg-title-md text-[#002131]">{quote.name}</span>
+                      {quote.name && <span className="eg-title-md text-[#002131]">{quote.name}</span>}
                       <span className="eg-body-sm text-[#174358]">{quote.role}</span>
                     </span>
                   </div>
@@ -120,7 +120,7 @@ export default function Careers() {
             <button type="button" onClick={() => setQ((v) => (v + 1) % life.quotes.length)} aria-label="Next story" className="absolute -right-3 lg:-right-14 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-[#C4CBD0] text-[#174358] flex items-center justify-center hover:bg-[#F0EEE6] transition-colors shadow-sm" data-testid="careers-quote-next"><ChevronRight size={20} /></button>
             <div className="mt-5 flex justify-center gap-1.5">
               {life.quotes.map((x, k) => (
-                <button key={x.name} type="button" onClick={() => setQ(k)} aria-label={`Story ${k + 1}`} className={`h-1.5 rounded-full transition-all ${k === q ? 'w-6 bg-[#174358]' : 'w-1.5 bg-[#C4CBD0] hover:bg-[#8A9297]'}`} data-testid="careers-quote-dot" />
+                <button key={x.role} type="button" onClick={() => setQ(k)} aria-label={`Story ${k + 1}`} className={`h-1.5 rounded-full transition-all ${k === q ? 'w-6 bg-[#174358]' : 'w-1.5 bg-[#C4CBD0] hover:bg-[#8A9297]'}`} data-testid="careers-quote-dot" />
               ))}
             </div>
           </div>

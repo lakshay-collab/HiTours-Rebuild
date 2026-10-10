@@ -65,9 +65,9 @@ export const recognized = {
 export const why = {
   h2: 'Why choose Hi Tours?',
   items: [
-    { image: '/about/planning.webp', alt: 'Hi Tours team planning a trip together', title: 'Easy planning with transparent prices', text: 'Get a personalised itinerary for free in minutes, then refine it with your specialist until it is exactly right. There are no hidden costs. When you book, you get one simple, all-in price. What you see is what you pay.' },
-    { image: '/about/expertise.webp', alt: 'Travellers exploring with a local guide', title: 'Local expertise, private guides', text: 'Your specialist has been where you are going. Together with our hand-picked local partners and private guides, they bring in-depth knowledge of every destination so you see the real place, not just the postcard.' },
-    { image: '/about/support.webp', alt: 'Hi Tours support advisor on a call', title: 'Always-on support', text: 'Real people, before, during and after your trip. One dedicated specialist knows your booking inside out and is a phone call or WhatsApp message away, wherever you are in the world.' }
+    { image: '/about/expertise.webp', alt: 'Travellers exploring a temple with their local Hi Tours guide', title: 'Best prices and quality', text: 'Thirty years of buying directly from hotels, airlines and local operators means you get the sharper price without trading down on quality. Every hotel, guide and transfer on your itinerary is one we have used and would use again, at one clear all-in price with nothing hidden.' },
+    { image: '/about/support.webp', alt: 'Hi Tours support advisor wearing a headset at her desk', title: '24/7 on-holiday customer support', text: 'Support that travels with you, not just before you fly. Our team is on call around the clock across every time zone, so a delayed flight, a hotel change or a last-minute booking is handled by a real person on WhatsApp or the phone while you are still on holiday.' },
+    { image: '/about/planning.webp', alt: 'Hi Tours holiday specialists planning a trip together', title: 'AI-enabled holiday specialists', text: 'Our specialists plan with AI working alongside them. It reads thousands of itineraries, hotels and flight combinations in seconds, so your first plan arrives in minutes instead of days. The judgement stays human: a specialist who knows the destination checks and shapes every day before it reaches you.' }
   ]
 };
 
