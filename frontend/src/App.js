@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
 import { LeadModalProvider } from './components/egypt/LeadModalProvider';
 import Home from './pages/Home';
@@ -79,9 +79,21 @@ const COUNTRY_ROOTS = [
 const StyleRedirect = () => <Navigate to={`/afrika/aegypten/holidays/${useParams().style}`} replace />;
 
 // Reset scroll to the top on every route change (hash links keep their in-page target).
+// Runs before paint and re-asserts on the next two frames: lazily measured sections (galleries,
+// sticky sidebars) grow the page after the first commit and the browser otherwise keeps the
+// previous scroll offset, dropping you into the middle of a trip page.
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
-  useEffect(() => { if (!hash) window.scrollTo(0, 0); }, [pathname, hash]);
+  useLayoutEffect(() => {
+    if (hash) return undefined;
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    const a = requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+      requestAnimationFrame(() => window.scrollTo(0, 0));
+    });
+    return () => cancelAnimationFrame(a);
+  }, [pathname, hash]);
   return null;
 };
 

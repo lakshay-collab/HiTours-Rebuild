@@ -1,0 +1,69 @@
+{
+ "cta_country": "europe",
+ "base": "/europa",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Europe", "/europa"]],
+ "source_slug": "zestful-swiss-and-paris-tour",
+ "camel": "parisAndSwitzerlandEiffelRigi",
+ "slug": "paris-and-switzerland-eiffel-tower-to-mount-rigi",
+ "title": "Paris and Switzerland: Eiffel Tower to Mount Rigi",
+ "alt": "The Eiffel Tower seen across the Seine at dusk",
+ "transport": "Private airport transfers, rail to Zurich and a Swiss Travel Pass",
+ "tag": "Honeymoon",
+ "tags": ["Honeymoon", "Multi-country"],
+ "price": 208525,
+ "route_cities": ["Paris", "Zurich", "Lucerne"],
+ "counts": { "days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 5, "transfers": 6, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A", "name": "Paris", "city": "Paris", "days": [1, 2, 3], "dayLabel": "Day 1 to 3",
+   "hotel": "Hotel Eiffel Seine",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Art nouveau hotel on the Seine beside the Bir Hakeim bridge",
+   "activities": [
+    { "name": "Paris hop on hop off bus tour", "day": 2, "optional": false, "match": "Paris Hop-On Hop-Off", "description": "A 24 hour open top ticket past the Louvre, the Arc de Triomphe, Notre Dame and the Champs Elysees, hopping off where you like." },
+    { "name": "Eiffel Tower second floor tickets", "day": 2, "optional": false, "match": "Eiffel Tower Entry Tickets", "description": "Skip the line admission to the second floor by the stairs, the level where the ironwork and the city both read best." },
+    { "name": "Disneyland Paris", "day": 3, "optional": true, "match": "Disneyland", "description": "An optional full day at Disneyland Paris, forty minutes east of the city on the RER, bookable with us before you travel." }
+   ],
+   "program": { "name": "Paris", "description": "Three nights on the Seine by the Eiffel Tower, with an open top bus pass, the second floor by stairs and a free day for Disneyland." }
+  },
+  {
+   "letter": "B", "name": "Zurich", "city": "Zurich", "subtitle": "Zurich \u2192 Mount Rigi and the Rhine Falls",
+   "days": [4, 5, 6, 7], "dayLabel": "Day 4 to 7",
+   "hotel": "ibis Zurich City West",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Straightforward hotel in the Zurich West quarter by the rail viaduct",
+   "activities": [
+    { "name": "Swiss Travel Pass, four days", "day": 4, "optional": false, "match": "Swiss Continuous Pass", "description": "Four days of unlimited second class travel on Swiss trains, buses and lake boats, with free entry to most museums." },
+    { "name": "Mount Rigi and Lucerne with a lake cruise", "day": 5, "optional": false, "match": "Mt Rigi and Lucerne Day Trip", "description": "The cogwheel railway up the Queen of the Mountains, then a boat across Lake Lucerne and the Chapel Bridge in the old town." },
+    { "name": "Rhine Falls boat tour", "day": 6, "optional": false, "match": "Rhine Falls", "description": "A fifteen minute boat run to the rock in the middle of the largest waterfall in Europe, close enough to get wet." }
+   ],
+   "program": { "name": "Zurich", "description": "Three nights in Switzerland with a four day travel pass, Mount Rigi and Lake Lucerne, and the Rhine Falls by boat." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Paris", "2": "Paris by bus and the Eiffel Tower", "3": "A free day for Disneyland",
+  "4": "On to Zurich", "5": "Mount Rigi and Lake Lucerne", "6": "The Rhine Falls by boat",
+  "7": "Departure from Zurich"
+ },
+ "bullets": {
+  "1": ["Arrival at Beauvais or Charles de Gaulle and transfer to your hotel", "Check in on the Seine by the Bir Hakeim bridge", "The rest of the day free", "Optional: an evening in Montmartre"],
+  "2": ["Breakfast, then out onto the open top bus", "The Louvre, the Arc de Triomphe and Notre Dame", "Up the Eiffel Tower to the second floor by stairs", "Skip the line tickets, so no queue at the base"],
+  "3": ["Breakfast, then the day at leisure", "Optional: a full day at Disneyland Paris", "Optional: the Musee d'Orsay and the Latin Quarter", "Optional: a Seine cruise after dark"],
+  "4": ["Breakfast and check out of your Paris hotel", "Station transfer and the train east to Zurich", "Your four day Swiss Travel Pass starts today", "Check in at Zurich with the evening free"],
+  "5": ["Breakfast, then south towards Lake Lucerne", "The cogwheel railway up Mount Rigi", "A boat across the lake on the way back", "The Chapel Bridge and the old town at Lucerne"],
+  "6": ["Breakfast, then north to Schaffhausen", "The boat run out to the rock in the falls", "The largest waterfall in Europe at close range", "The afternoon free along the Bahnhofstrasse"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to Zurich airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "Hotel Eiffel Seine", "2": "Hotel Eiffel Seine", "3": "Hotel Eiffel Seine",
+  "4": "ibis Zurich City West", "5": "ibis Zurich City West", "6": "ibis Zurich City West",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Sharon", "image": "/experts/sharon.webp", "role": "Europe expert at Hi Tours",
+  "quote": "Three nights in Paris and three in Switzerland, with a hotel on the Seine looking at the Eiffel Tower. It is the honeymoon shape couples ask for most.",
+  "tip": "Take the second floor by the stairs rather than queueing for the summit lift. You get closer to the ironwork and you skip the longest queue in Paris."
+ },
+ "summary": "Seven days between Paris and the Swiss Alps: three nights on the Seine with an open top bus pass and the Eiffel Tower, then three nights in Zurich with a travel pass, Mount Rigi, Lake Lucerne and the Rhine Falls.",
+ "included": "Included: 3 nights in Paris and 3 nights in Zurich with breakfast; airport transfers; rail from Paris to Zurich; a 24 hour Paris hop on hop off bus ticket; skip the line Eiffel Tower second floor tickets; a four day Swiss Travel Pass; the Mount Rigi and Lucerne day trip with a lake cruise; a Rhine Falls boat tour.",
+ "not_included": "Not included: international flights; Schengen visa fees; the optional Disneyland Paris day; lunches and dinners; travel insurance; personal expenses."
+}

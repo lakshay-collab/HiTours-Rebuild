@@ -1,0 +1,312 @@
+{
+ "cta_country": "europe",
+ "base": "/europa",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Europe",
+   "/europa"
+  ]
+ ],
+ "source_slug": "wonders-of-western-europe",
+ "camel": "westernEuropeGroupTourAlpsAmsterdam",
+ "slug": "western-europe-group-tour-alps-to-amsterdam",
+ "title": "Western Europe Group Tour: Alps to Amsterdam",
+ "alt": "Windmills at Zaanse Schans reflected in the water",
+ "transport": "Group coach throughout with a tour manager and airport transfers",
+ "tag": "Multi-country",
+ "tags": [
+  "Multi-country",
+  "Family"
+ ],
+ "price": 151050,
+ "route_cities": [
+  "Zurich",
+  "Frankfurt",
+  "Amsterdam",
+  "Paris"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 11,
+  "transfers": 21,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Zurich",
+   "city": "Zurich",
+   "subtitle": "Zurich → Grindelwald and Titlis",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Radisson Hotel Zurich Airport",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Modern airport hotel with a shuttle into the city",
+   "activities": [
+    {
+     "name": "Grindelwald and Interlaken day trip",
+     "day": 2,
+     "optional": false,
+     "match": "Grindelwald",
+     "description": "A day into the Bernese Oberland, with the meadows below the Eiger north face and the two lakes either side of Interlaken."
+    },
+    {
+     "name": "Mount Titlis cable car",
+     "day": 3,
+     "optional": false,
+     "match": "Mount Titlis Cable Car",
+     "description": "The rotating cable car to three thousand metres above Engelberg, with the glacier cave and the cliff walk at the top."
+    },
+    {
+     "name": "Lucerne orientation tour",
+     "day": 3,
+     "optional": false,
+     "match": "Lucerne Orientation Tour",
+     "description": "A walk round the old town with the covered Chapel Bridge, the Lion Monument and the lakefront promenade."
+    }
+   ],
+   "program": {
+    "name": "Zurich",
+    "description": "Three nights in Switzerland with Grindelwald and Interlaken, the Mount Titlis cable car and the old town at Lucerne."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Frankfurt",
+   "city": "Frankfurt",
+   "subtitle": "Frankfurt → Rhine Falls and the Black Forest",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Crowne Plaza Frankfurt Congress Hotel by IHG",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Large business hotel close to the exhibition grounds",
+   "activities": [
+    {
+     "name": "Rhine Falls boat tour",
+     "day": 4,
+     "optional": false,
+     "match": "Rhine Falls",
+     "description": "A boat run out to the rock in the middle of the largest waterfall in Europe, taken on the way north out of Switzerland."
+    }
+   ],
+   "program": {
+    "name": "Frankfurt",
+    "description": "One night in Germany, reached through the Rhine Falls and the clock making villages of the Black Forest."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Amsterdam",
+   "city": "Amsterdam",
+   "subtitle": "Amsterdam → Cologne and Zaanse Schans",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Vienna House Easy by Wyndham Amsterdam Airport",
+   "accom": "2 nights · All meals · Standard room · 4★ · Bright airport hotel on the Schiphol rail line",
+   "activities": [
+    {
+     "name": "Cologne Cathedral",
+     "day": 5,
+     "optional": false,
+     "match": "Cologne Cathedral",
+     "description": "The twin spired Gothic cathedral beside the Rhine, six centuries in the building and the tallest church in Europe for a time."
+    },
+    {
+     "name": "Zaanse Schans day trip",
+     "day": 6,
+     "optional": false,
+     "match": "Zaanse Schans",
+     "description": "The working windmills on the Zaan, with the clog maker, the cheese farm and the green timber houses along the water."
+    },
+    {
+     "name": "Amsterdam sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Amsterdam Sightseeing Tour",
+     "description": "A guided round of the canal belt, Dam Square, the Rijksmuseum quarter and the narrow merchant houses of the Jordaan."
+    },
+    {
+     "name": "Amsterdam evening canal cruise",
+     "day": 6,
+     "optional": false,
+     "match": "Amsterdam Evening Canal Cruise",
+     "description": "A glass topped boat along the canal belt after dark, when the bridges and the gabled fronts are all lit."
+    }
+   ],
+   "program": {
+    "name": "Amsterdam",
+    "description": "Two nights in the Netherlands with the windmills at Zaanse Schans, a city tour and an evening canal cruise."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Paris",
+   "city": "Paris",
+   "subtitle": "Paris → Brussels on the way",
+   "days": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "Hotel Inn Paris - Roissy Cdg Airport",
+   "hotel_label": "Hotel Inn Paris Roissy CDG",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Convenient hotel by Charles de Gaulle with a free shuttle",
+   "activities": [
+    {
+     "name": "Brussels city tour",
+     "day": 7,
+     "optional": false,
+     "match": "Brussels City Tour",
+     "description": "A stop in the Belgian capital for the guild houses of the Grand Place, the Atomium and the Manneken Pis."
+    },
+    {
+     "name": "Paris highlights orientation tour",
+     "day": 8,
+     "optional": false,
+     "match": "Paris Orientation Tour",
+     "description": "A guided loop past the Louvre, the Arc de Triomphe, the Champs Elysees, Notre Dame and the Place de la Concorde."
+    },
+    {
+     "name": "Eiffel Tower second floor tickets",
+     "day": 8,
+     "optional": false,
+     "match": "Eiffel Tower Second Floor",
+     "description": "Admission to the second floor of the tower, the level where the ironwork and the view over the rooftops both read best."
+    },
+    {
+     "name": "Seine river cruise",
+     "day": 8,
+     "optional": false,
+     "match": "Seine River Cruise",
+     "description": "An hour on the Seine past the Louvre, the Musee d'Orsay, Notre Dame and the Ile de la Cite from the water."
+    }
+   ],
+   "program": {
+    "name": "Paris",
+    "description": "Three nights to finish, reached through Brussels, with a city tour, the Eiffel Tower and a Seine cruise."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Zurich",
+  "2": "Grindelwald and Interlaken",
+  "3": "Mount Titlis and Lucerne",
+  "4": "Rhine Falls, the Black Forest and on to Frankfurt",
+  "5": "Cologne Cathedral and on to Amsterdam",
+  "6": "Zaanse Schans, the city and a canal cruise",
+  "7": "Brussels and on to Paris",
+  "8": "Paris, the Eiffel Tower and the Seine",
+  "9": "A free day in Paris",
+  "10": "Departure from Paris"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Zurich Kloten and transfer to your hotel",
+   "Meet your tour manager and the rest of the group",
+   "The rest of the day free",
+   "Optional: the Bahnhofstrasse and the lakefront"
+  ],
+  "2": [
+   "Breakfast, then south into the Bernese Oberland",
+   "The meadows below the Eiger north face at Grindelwald",
+   "Interlaken between its two lakes",
+   "Back to Zurich in the evening"
+  ],
+  "3": [
+   "Early breakfast, then on towards Engelberg",
+   "The rotating cable car up Mount Titlis",
+   "The glacier cave and the cliff walk at the top",
+   "The Chapel Bridge and the Lion Monument at Lucerne"
+  ],
+  "4": [
+   "Breakfast and check out of your Zurich hotel",
+   "The boat run out to the rock in the Rhine Falls",
+   "North through the Black Forest clock villages",
+   "Arrival transfer and check in at Frankfurt"
+  ],
+  "5": [
+   "Breakfast and check out for the run north",
+   "A stop at Cologne and its twin spired cathedral",
+   "On along the Rhine into the Netherlands",
+   "Arrival transfer and check in near Amsterdam"
+  ],
+  "6": [
+   "Breakfast, then out to the Zaan river",
+   "The working windmills and the clog maker at Zaanse Schans",
+   "A guided round of the canal belt and Dam Square",
+   "A glass topped canal cruise after dark"
+  ],
+  "7": [
+   "Breakfast and check out of your Amsterdam hotel",
+   "A stop in Brussels for the Grand Place and the Atomium",
+   "On south into France",
+   "Arrival transfer and check in near Paris"
+  ],
+  "8": [
+   "Breakfast, then a guided loop of the city",
+   "The Louvre, the Arc de Triomphe and Notre Dame",
+   "Up the Eiffel Tower to the second floor",
+   "An hour on the Seine past the Ile de la Cite"
+  ],
+  "9": [
+   "Breakfast, then the whole day at leisure",
+   "Optional: a full day at Disneyland Paris",
+   "Optional: the Palace of Versailles",
+   "Optional: Montmartre and the Sacre Coeur"
+  ],
+  "10": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Charles de Gaulle for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B"
+ },
+ "hotel_by_day": {
+  "1": "Radisson Hotel Zurich Airport",
+  "2": "Radisson Hotel Zurich Airport",
+  "3": "Radisson Hotel Zurich Airport",
+  "4": "Crowne Plaza Frankfurt Congress Hotel by IHG",
+  "5": "Vienna House Easy by Wyndham Amsterdam Airport",
+  "6": "Vienna House Easy by Wyndham Amsterdam Airport",
+  "7": "Hotel Inn Paris Roissy CDG",
+  "8": "Hotel Inn Paris Roissy CDG",
+  "9": "Hotel Inn Paris Roissy CDG",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Sharon",
+  "image": "/experts/sharon.webp",
+  "role": "Europe expert at Hi Tours",
+  "quote": "Four countries in nine nights on a group coach with a tour manager. For a first trip to Europe it is far better value than doing it alone.",
+  "tip": "Carry one Schengen visa for the whole run. Apply through the Swiss consulate since Switzerland is where you spend the most nights."
+ },
+ "summary": "Ten days by coach across Switzerland, Germany, the Netherlands and France: Grindelwald and Mount Titlis, the Rhine Falls and the Black Forest, Cologne Cathedral, the windmills at Zaanse Schans, Brussels, and Paris with the Eiffel Tower and a Seine cruise.",
+ "included": "Included: 9 nights in four star hotels across Zurich, Frankfurt, Amsterdam and Paris with breakfast and dinner in Amsterdam; all coach travel and airport transfers; a tour manager; the Grindelwald and Interlaken day trip; Mount Titlis cable car tickets; a Lucerne orientation tour; a Rhine Falls boat tour; Cologne Cathedral; the Zaanse Schans day trip; an Amsterdam sightseeing tour; an Amsterdam evening canal cruise; a Brussels city tour; a guided orientation tour of the Paris highlights; entry to the second floor of the Eiffel Tower; an hour on the Seine by boat.",
+ "not_included": "Not included: international flights; Schengen visa fees and visa assistance; lunches and dinners other than those listed; travel insurance; personal expenses."
+}

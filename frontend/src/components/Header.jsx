@@ -85,6 +85,28 @@ export default function Header({ overlay = false, floating = false }) {
     return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); };
   }, [floating]);
 
+  // The page already has its own search bar in the hero. While that bar is on screen the
+  // duplicate magnifier in the floating pill is noise, so hide it until the bar scrolls away.
+  const [pageSearchVisible, setPageSearchVisible] = useState(false);
+  useEffect(() => {
+    let io;
+    let tries = 0;
+    let raf;
+    const attach = () => {
+      const el = document.querySelector('[data-testid="hero-search-form"]');
+      if (!el) {
+        // Header mounts before the hero, so poll a few frames before giving up.
+        if (tries++ < 30) { raf = requestAnimationFrame(attach); } else { setPageSearchVisible(false); }
+        return;
+      }
+      io = new IntersectionObserver(([e]) => setPageSearchVisible(e.isIntersecting), { threshold: 0.2 });
+      io.observe(el);
+    };
+    setPageSearchVisible(false);
+    attach();
+    return () => { if (io) io.disconnect(); if (raf) cancelAnimationFrame(raf); };
+  }, [pathname]);
+
   const dismissBanner = () => {
     try { sessionStorage.setItem(BANNER_KEY, '1'); } catch (e) { /* noop */ }
     setBannerOpen(false);
@@ -179,9 +201,11 @@ export default function Header({ overlay = false, floating = false }) {
       </nav>
 
       <div className="lg:hidden flex items-center -mr-2">
-        <button className={`${textCls} w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="mobile-search-toggle">
-          <Search size={22} strokeWidth={1.75} />
-        </button>
+        {!pageSearchVisible && (
+          <button className={`${textCls} w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="mobile-search-toggle">
+            <Search size={22} strokeWidth={1.75} />
+          </button>
+        )}
         <button className={`${textCls} w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors`} onClick={() => setOpen(true)} aria-label="Open menu" data-testid="mobile-menu-toggle">
           <Menu size={24} strokeWidth={1.75} />
         </button>
@@ -257,10 +281,12 @@ export default function Header({ overlay = false, floating = false }) {
       <div className={`lg:hidden fixed top-3 left-1/2 -translate-x-1/2 z-[60] transition-all duration-500 ease-out ${scrolled ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-5 pointer-events-none'}`} data-testid="floating-nav-mobile">
         <div className="flex items-center gap-3 rounded-full bg-white/75 backdrop-blur-xl ring-1 ring-black/5 shadow-[0_10px_30px_rgba(0,33,49,0.16)] pl-4 pr-2 py-1.5">
           <a href={home.href} onClick={home.onClick} aria-label="Hi Tours"><Logo className="h-6 w-auto" /></a>
-          <button onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="floating-mobile-search" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
-            <Search size={19} strokeWidth={1.75} />
-          </button>
-          <button onClick={() => setOpen(true)} aria-label="Open menu" data-testid="floating-mobile-menu" className="w-9 h-9 -ml-2 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
+          {!pageSearchVisible && (
+            <button onClick={() => setSearchOpen(true)} aria-label="Search destinations" data-testid="floating-mobile-search" className="w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors">
+              <Search size={19} strokeWidth={1.75} />
+            </button>
+          )}
+          <button onClick={() => setOpen(true)} aria-label="Open menu" data-testid="floating-mobile-menu" className={`w-9 h-9 rounded-full flex items-center justify-center text-onsurface hover:bg-onsurface/[0.06] transition-colors ${pageSearchVisible ? '' : '-ml-2'}`}>
             <Menu size={20} strokeWidth={1.75} />
           </button>
         </div>

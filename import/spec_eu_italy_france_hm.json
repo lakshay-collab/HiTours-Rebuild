@@ -1,0 +1,77 @@
+{
+ "cta_country": "europe",
+ "base": "/europa",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Europe", "/europa"]],
+ "source_slug": "italy-and-france-honeymoon-package",
+ "camel": "romeFlorenceParisHoneymoon",
+ "slug": "rome-florence-and-paris-honeymoon",
+ "title": "Rome, Florence and Paris Honeymoon",
+ "alt": "The dome of Florence Cathedral above the Tuscan rooftops",
+ "transport": "Rail between cities, private transfers and guided sightseeing",
+ "tag": "Honeymoon",
+ "tags": ["Honeymoon", "Multi-country"],
+ "price": 110409,
+ "route_cities": ["Rome", "Florence", "Pisa", "Paris"],
+ "counts": { "days": 7, "nights": 6, "cities": 3, "hotels": 3, "experiences": 6, "transfers": 6, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A", "name": "Rome", "city": "Rome", "days": [1, 2], "dayLabel": "Day 1 to 2",
+   "hotel": "Rome boutique hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Comfortable hotel within reach of the centro storico",
+   "activities": [
+    { "name": "Rome hop on hop off bus tour", "day": 1, "optional": false, "match": "Rome Hop On Hop Off", "description": "A 24 hour open top ticket looping the Colosseum, the Forum and Piazza Venezia, so you hop off wherever you please." },
+    { "name": "Vatican Museums", "day": 2, "optional": false, "match": "Vatican", "description": "The papal collections and the long gallery of maps, ending in the Sistine Chapel under Michelangelo's ceiling." }
+   ],
+   "program": { "name": "Rome", "description": "Two nights in the Eternal City, with an open top bus loop and a morning in the Vatican Museums." }
+  },
+  {
+   "letter": "B", "name": "Florence", "city": "Florence", "subtitle": "Florence \u2192 Pisa and Tuscany",
+   "days": [3, 4], "dayLabel": "Day 3 to 4",
+   "hotel": "Florence city hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Central hotel within walking distance of the Duomo",
+   "activities": [
+    { "name": "Florence hop on hop off bus tour", "day": 3, "optional": false, "match": "Florence Hop On Hop Off", "description": "An open top loop of the Renaissance city, past the Duomo, the Ponte Vecchio and up to the Piazzale Michelangelo." },
+    { "name": "Leaning Tower of Pisa guided tour", "day": 4, "optional": false, "match": "Leaning Tower of Pisa", "description": "A guided day across the Tuscan countryside to the Campo dei Miracoli, the leaning campanile and the Romanesque cathedral." }
+   ],
+   "program": { "name": "Florence", "description": "Two nights in Tuscany, with an open top loop of the Renaissance city and a day out at the Leaning Tower of Pisa." }
+  },
+  {
+   "letter": "C", "name": "Paris", "city": "Paris", "days": [5, 6, 7], "dayLabel": "Day 5 to 7",
+   "hotel": "Paris city hotel",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Well placed hotel on the Metro within reach of the Eiffel Tower",
+   "activities": [
+    { "name": "Eiffel Tower and a Seine river cruise", "day": 5, "optional": false, "match": "Eiffel Tower", "description": "Up the tower for the city from the air, then an hour on the Seine past the Louvre, the Musee d'Orsay and Notre Dame." },
+    { "name": "Disneyland Paris", "day": 6, "optional": false, "match": "Disneyland", "description": "A full day at Disneyland Paris, forty minutes east of the city, with both the castle park and the studios to choose from." }
+   ],
+   "program": { "name": "Paris", "description": "Two nights to finish, with the Eiffel Tower, a cruise on the Seine and a full day at Disneyland." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Rome", "2": "The Vatican Museums", "3": "On to Florence",
+  "4": "The Leaning Tower of Pisa", "5": "To Paris, the Eiffel Tower and the Seine",
+  "6": "A day at Disneyland Paris", "7": "Departure from Paris"
+ },
+ "bullets": {
+  "1": ["Arrival at Fiumicino and transfer to your hotel", "Check in and freshen up before heading out", "A 24 hour open top bus ticket for the city", "The Colosseum, the Forum and Piazza Venezia"],
+  "2": ["Breakfast, then across the river to the Vatican", "The papal collections and the long gallery of maps", "The Sistine Chapel under Michelangelo's ceiling", "The evening free for dinner in Trastevere"],
+  "3": ["Breakfast and check out of your Rome hotel", "Station transfer and the fast train north to Florence", "Check in within walking distance of the Duomo", "An open top loop up to the Piazzale Michelangelo"],
+  "4": ["Breakfast, then west across the Tuscan countryside", "Vineyards and cypress ridges on the way to Pisa", "The leaning campanile on the Campo dei Miracoli", "The Romanesque cathedral before the run back"],
+  "5": ["Breakfast and check out for the journey to France", "Station transfer and the train on to Paris", "Check in, then out to the Eiffel Tower", "An hour on the Seine past Notre Dame"],
+  "6": ["Breakfast, then east to Disneyland Paris", "A full day in the castle park and the studios", "Shops and restaurants along Disney Village", "Back at the hotel in the evening"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to Charles de Gaulle for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "Rome boutique hotel", "2": "Rome boutique hotel",
+  "3": "Florence city hotel", "4": "Florence city hotel",
+  "5": "Paris city hotel", "6": "Paris city hotel", "7": "Departure"
+ },
+ "expert": {
+  "name": "Sharon", "image": "/experts/sharon.webp", "role": "Europe expert at Hi Tours",
+  "quote": "Rome, Florence and Paris in six nights, with Pisa and Disneyland folded in. It is the classic first honeymoon in Europe.",
+  "tip": "Book the Vatican for a Tuesday or Thursday morning. Mondays and weekends are the worst and the Sistine Chapel becomes shoulder to shoulder."
+ },
+ "summary": "Seven days across Italy and France: two nights in Rome with an open top bus and the Vatican Museums, two in Florence with a day out at the Leaning Tower of Pisa, then Paris for the Eiffel Tower, a Seine cruise and Disneyland.",
+ "included": "Included: 2 nights in Rome, 2 nights in Florence and 2 nights in Paris with breakfast; private airport transfers; rail between the cities; a 24 hour Rome hop on hop off bus ticket; Vatican Museums entry; a Florence hop on hop off bus ticket; a guided Leaning Tower of Pisa day trip; the Eiffel Tower with a Seine river cruise; a full day at Disneyland Paris.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners; travel insurance; personal expenses. Hotels on this itinerary are named on confirmation: the operator quotes a three star standard rather than fixed properties."
+}

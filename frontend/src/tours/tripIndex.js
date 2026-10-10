@@ -263,6 +263,11 @@ import { bestOfBhutanTaktsangSuperDeluxeBySlug } from './bestOfBhutanTaktsangSup
 import { bhutanPhobjikhaSuperDeluxeBySlug } from './bhutanPhobjikhaSuperDeluxeData';
 import { paradisicBhutanLuxuryBySlug } from './paradisicBhutanLuxuryData';
 import { paroShortBreakTaktsangBySlug } from './paroShortBreakTaktsangData';
+import { italyAndSwitzerlandRomeVeniceTitlisBySlug } from './italyAndSwitzerlandRomeVeniceTitlisData';
+import { parisAndSwitzerlandEiffelRigiBySlug } from './parisAndSwitzerlandEiffelRigiData';
+import { westernEuropeGroupTourAlpsAmsterdamBySlug } from './westernEuropeGroupTourAlpsAmsterdamData';
+import { switzerlandItalyHoneymoonGondolaBySlug } from './switzerlandItalyHoneymoonGondolaData';
+import { romeFlorenceParisHoneymoonBySlug } from './romeFlorenceParisHoneymoonData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -528,5 +533,10 @@ export const BY_SLUG = {
   ...bestOfBhutanTaktsangSuperDeluxeBySlug,
   ...bhutanPhobjikhaSuperDeluxeBySlug,
   ...paradisicBhutanLuxuryBySlug,
-  ...paroShortBreakTaktsangBySlug
+  ...paroShortBreakTaktsangBySlug,
+  ...italyAndSwitzerlandRomeVeniceTitlisBySlug,
+  ...parisAndSwitzerlandEiffelRigiBySlug,
+  ...westernEuropeGroupTourAlpsAmsterdamBySlug,
+  ...switzerlandItalyHoneymoonGondolaBySlug,
+  ...romeFlorenceParisHoneymoonBySlug
 };

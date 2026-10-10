@@ -1,0 +1,87 @@
+{
+ "cta_country": "europe",
+ "base": "/europa",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Europe", "/europa"]],
+ "source_slug": "european-getaway-to-swiss-and-italy",
+ "camel": "italyAndSwitzerlandRomeVeniceTitlis",
+ "slug": "italy-and-switzerland-rome-venice-and-titlis",
+ "title": "Italy and Switzerland: Rome, Venice and Mount Titlis",
+ "alt": "The Colosseum in Rome in the late afternoon light",
+ "transport": "Private airport transfers, rail between cities and a Swiss Travel Pass",
+ "tag": "Culture",
+ "tags": ["Culture", "Multi-country"],
+ "price": 208050,
+ "route_cities": ["Rome", "Florence", "Venice", "Zurich"],
+ "counts": { "days": 9, "nights": 8, "cities": 4, "hotels": 4, "experiences": 5, "transfers": 12, "meals": 8 },
+ "stops": [
+  {
+   "letter": "A", "name": "Rome", "city": "Rome", "days": [1, 2], "dayLabel": "Day 1 to 2",
+   "hotel": "Minerva Relais",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Small hotel in the centro storico near the Pantheon",
+   "activities": [
+    { "name": "Rome hop on hop off bus tour", "day": 2, "optional": false, "match": "Rome Hop On Hop Off", "description": "A 24 hour open top ticket looping the Colosseum, the Forum, the Vatican and Piazza Venezia, so you set your own pace." }
+   ],
+   "program": { "name": "Rome", "description": "Two nights in the old centre, with an open top loop of the Colosseum, the Forum and the Vatican." }
+  },
+  {
+   "letter": "B", "name": "Florence", "city": "Florence", "days": [3], "dayLabel": "Day 3",
+   "hotel": "Hotel Palazzo Benci",
+   "accom": "1 night \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Renaissance palazzo beside Santa Maria Novella station",
+   "activities": [],
+   "program": { "name": "Florence", "description": "One night in the Tuscan capital, with the Duomo and the Ponte Vecchio a short walk from the hotel." }
+  },
+  {
+   "letter": "C", "name": "Venice", "city": "Venice", "days": [4, 5], "dayLabel": "Day 4 to 5",
+   "hotel": "Hotel Arlecchino",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Canalside hotel in Santa Croce, ten minutes from the station",
+   "activities": [
+    { "name": "Venice gondola ride", "day": 4, "optional": false, "match": "Venice Gondola Ride", "description": "A shared gondola with a guide, threading the back canals of the old city before turning onto the Grand Canal." }
+   ],
+   "program": { "name": "Venice", "description": "Two nights on the lagoon, with a gondola through the back canals and a free day for Murano and St Mark's." }
+  },
+  {
+   "letter": "D", "name": "Zurich", "city": "Zurich", "subtitle": "Zurich \u2192 Titlis and the Rhine Falls",
+   "days": [6, 7, 8, 9], "dayLabel": "Day 6 to 9",
+   "hotel": "Swiss Chocolate by Fassbind",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Themed city hotel a short tram ride from the lake",
+   "activities": [
+    { "name": "Swiss Travel Pass, four days", "day": 6, "optional": false, "match": "Swiss Continuous Pass", "description": "Four days of unlimited travel on Swiss trains, buses and lake boats, plus free entry to most of the country's museums." },
+    { "name": "Mount Titlis and the glacier cave", "day": 7, "optional": false, "match": "Mount Titlis Tour", "description": "The rotating cable car to three thousand metres, the glacier cave, the cliff walk and a chairlift ride over the crevasses." },
+    { "name": "Rhine Falls boat tour", "day": 8, "optional": false, "match": "Rhine Falls", "description": "A fifteen minute boat run to the rock in the middle of the largest waterfall in Europe, close enough to get wet." }
+   ],
+   "program": { "name": "Zurich", "description": "Three nights in Switzerland with a four day travel pass, the glacier on Mount Titlis and the Rhine Falls by boat." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Rome", "2": "Rome by open top bus", "3": "On to Florence",
+  "4": "To Venice and a gondola ride", "5": "A free day in Venice",
+  "6": "Over the Alps to Zurich", "7": "Mount Titlis and the glacier",
+  "8": "The Rhine Falls by boat", "9": "Departure from Zurich"
+ },
+ "bullets": {
+  "1": ["Arrival at Fiumicino and transfer to your hotel", "Check in and the rest of the day free", "Optional: an evening walk to the Trevi fountain", "Optional: dinner in the Trastevere lanes"],
+  "2": ["Breakfast, then out onto the open top bus", "The Colosseum, the Forum and Piazza Venezia", "Hop off at the Vatican for as long as you like", "A 24 hour ticket, so the pace is yours"],
+  "3": ["Breakfast and check out of your Rome hotel", "Station transfer and the fast train north to Florence", "Check in beside Santa Maria Novella", "The afternoon free for the Duomo and the Ponte Vecchio"],
+  "4": ["Breakfast and check out for the run east", "Station transfer and the train on to Venice", "Check in at your canalside hotel in Santa Croce", "A shared gondola through the back canals"],
+  "5": ["Breakfast, then the whole day at leisure", "Optional: the vaporetto out to Murano and Burano", "Optional: the Doge's Palace and St Mark's Basilica", "Optional: an evening spritz on a canal terrace"],
+  "6": ["Breakfast and check out of your Venice hotel", "Station transfer and the train north over the Alps", "Your four day Swiss Travel Pass starts today", "Check in at Zurich with the evening free"],
+  "7": ["Early breakfast, then south towards Engelberg", "The rotating cable car up to Mount Titlis", "The glacier cave and the cliff walk at the top", "A chairlift over the open crevasses"],
+  "8": ["Breakfast, then north to Schaffhausen", "The boat run out to the rock in the falls", "The largest waterfall in Europe at close range", "The afternoon free in Zurich"],
+  "9": ["Breakfast at the hotel and check out", "Private transfer to Zurich airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B", "9": "B" },
+ "hotel_by_day": {
+  "1": "Minerva Relais", "2": "Minerva Relais", "3": "Hotel Palazzo Benci",
+  "4": "Hotel Arlecchino", "5": "Hotel Arlecchino",
+  "6": "Swiss Chocolate by Fassbind", "7": "Swiss Chocolate by Fassbind", "8": "Swiss Chocolate by Fassbind",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Sharon", "image": "/experts/sharon.webp", "role": "Europe expert at Hi Tours",
+  "quote": "Italy first, then the train over the Alps into Switzerland. Doing it in that order means the mountains are the finish, not the warm up.",
+  "tip": "Reserve the Rome to Florence and Venice to Zurich trains the moment the trip is confirmed. Italian high speed fares climb steeply as the date gets closer."
+ },
+ "summary": "Nine days from the Roman Forum to a Swiss glacier: two nights in Rome with an open top bus pass, a night in Florence, a Venice gondola, then three nights in Zurich with a four day travel pass, Mount Titlis and the Rhine Falls.",
+ "included": "Included: 2 nights in Rome, 1 night in Florence, 2 nights in Venice and 3 nights in Zurich, all with breakfast; airport transfers; rail between the cities; a 24 hour Rome hop on hop off bus ticket; a shared Venice gondola ride with guide; a four day Swiss Travel Pass; the Mount Titlis tour with the glacier chairlift; a Rhine Falls boat tour.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners; travel insurance; personal expenses."
+}

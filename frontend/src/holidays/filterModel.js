@@ -115,6 +115,8 @@ const matchers = {
   price: (p, sel) => inRange(PRICES)(p.price, sel)
 };
 export const GROUPS = Object.keys(matchers);
+// Mobile leads with Experiences: on a phone people pick the landmark they came for before the theme.
+export const MOBILE_GROUPS = ['experience', ...Object.keys(matchers).filter((g) => g !== 'experience')];
 export const emptySelection = () => ({ theme: [], experience: [], place: [], days: [], price: [] });
 
 export const applyFilters = (products, sel, mode = 'holidays', except) =>

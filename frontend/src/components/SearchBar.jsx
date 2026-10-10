@@ -95,7 +95,7 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
   const LeadIcon = selected && selected.kind === 'style' ? selected.icon : active.icon;
 
   return (
-    <div ref={wrapRef} className="relative w-full">
+    <div ref={wrapRef} className={`relative w-full ${focused && !inline ? 'z-[120]' : ''}`}>
       <form
         onSubmit={submit}
         className={`hi-search group flex items-center w-full h-14 sm:h-16 rounded-full pl-5 sm:pl-6 pr-2 ${focused ? 'is-focused' : ''} ${className}`}
@@ -140,7 +140,7 @@ export default function SearchBar({ id = 'hero', className = '', autoFocus = fal
         <div
           className={inline
             ? 'mt-3 bg-white rounded-3xl border border-outline-variant/60 overflow-hidden animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]'
-            : 'absolute left-0 right-0 top-full mt-2 z-50 bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.12),0_12px_32px_rgba(0,0,0,0.18)] overflow-hidden origin-top animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]'}
+            : 'absolute left-0 right-0 top-full mt-2 z-[120] bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.12),0_12px_32px_rgba(0,0,0,0.18)] overflow-hidden origin-top animate-[hi-drop-in_260ms_cubic-bezier(.22,.61,.36,1)]'}
           data-testid={`${id}-search-suggestions`}
         >
           <div className={`${inline ? 'max-h-[min(52vh,420px)]' : 'max-h-[360px]'} overflow-y-auto py-2`}>

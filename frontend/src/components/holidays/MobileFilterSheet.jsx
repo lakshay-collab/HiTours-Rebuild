@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTitle, SheetDescription } from '../ui/sheet';
 import { GroupOptions } from './HolidayFilterPanel';
-import { GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection } from '../../holidays/filterModel';
+import { MOBILE_GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection } from '../../holidays/filterModel';
 
-export default function MobileFilterSheet({ open, onOpenChange, products, sel, mode, onApply, countLabel, initialGroup = 'theme' }) {
+export default function MobileFilterSheet({ open, onOpenChange, products, sel, mode, onApply, countLabel, initialGroup = 'experience' }) {
   const [draft, setDraft] = useState(sel);
   const [group, setGroup] = useState(initialGroup);
   useEffect(() => { if (open) { setDraft(sel); setGroup(initialGroup); } }, [open, sel, initialGroup]);
@@ -21,7 +21,7 @@ export default function MobileFilterSheet({ open, onOpenChange, products, sel, m
         </div>
         <div className="flex-1 min-h-0 flex">
           <nav className="w-[38%] max-w-[180px] shrink-0 bg-[#F0EEE6] overflow-y-auto no-scrollbar" aria-label="Filter groups" data-testid="mobile-filter-groups">
-            {GROUPS.map((g) => {
+            {MOBILE_GROUPS.map((g) => {
               const on = g === group;
               return (
                 <button key={g} type="button" onClick={() => setGroup(g)} aria-selected={on} role="tab"

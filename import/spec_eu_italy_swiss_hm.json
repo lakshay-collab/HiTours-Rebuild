@@ -1,0 +1,78 @@
+{
+ "cta_country": "europe",
+ "base": "/europa",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Europe", "/europa"]],
+ "source_slug": "italy-and-switzerland-honeymoon-package",
+ "camel": "switzerlandItalyHoneymoonGondola",
+ "slug": "switzerland-and-italy-honeymoon-with-a-venice-gondola",
+ "title": "Switzerland and Italy Honeymoon with a Venice Gondola",
+ "alt": "A gondola on a quiet back canal in Venice",
+ "transport": "Rail between cities with a Swiss Travel Pass and private transfers",
+ "tag": "Honeymoon",
+ "tags": ["Honeymoon", "Multi-country"],
+ "price": 93100,
+ "route_cities": ["Zurich", "Milan", "Venice"],
+ "counts": { "days": 7, "nights": 6, "cities": 3, "hotels": 3, "experiences": 7, "transfers": 9, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A", "name": "Zurich", "city": "Zurich", "subtitle": "Zurich \u2192 Titlis and Lucerne",
+   "days": [1, 2, 3], "dayLabel": "Day 1 to 3",
+   "hotel": "ibis Zurich City West",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Straightforward hotel in the Zurich West quarter by the rail viaduct",
+   "activities": [
+    { "name": "Swiss Travel Pass, three days", "day": 1, "optional": false, "match": "Swiss Continuous Pass", "description": "Three days of unlimited travel on Swiss trains, buses and lake boats, with free entry to most of the country's museums." },
+    { "name": "Mount Titlis and the glacier cave", "day": 2, "optional": false, "match": "Mount Titlis Tour", "description": "The rotating cable car to three thousand metres, the glacier cave, the cliff walk and a chairlift ride over the crevasses." },
+    { "name": "Lucerne walking tour with a lake cruise", "day": 2, "optional": false, "match": "Lucerne Walking Tour", "description": "The covered Chapel Bridge, the Lion Monument and the Glacier Garden on foot, then a boat out onto Lake Lucerne." },
+    { "name": "Lindt Home of Chocolate", "day": 3, "optional": false, "match": "Lindt Home of Chocolate", "description": "The chocolate museum at Kilchberg, with the nine metre fountain in the atrium and a tasting room at the end." }
+   ],
+   "program": { "name": "Zurich", "description": "Three nights in Switzerland with a travel pass, the glacier on Mount Titlis, Lake Lucerne and the Lindt chocolate museum." }
+  },
+  {
+   "letter": "B", "name": "Milan", "city": "Milan", "days": [4], "dayLabel": "Day 4",
+   "hotel": "B&B Hotel Milano Aosta",
+   "accom": "1 night \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Simple hotel a few minutes from Milano Centrale",
+   "activities": [
+    { "name": "Duomo di Milano skip the line", "day": 4, "optional": false, "match": "Duomo Di Milano Tickets", "description": "Skip the line entry to the marble cathedral and its museum, with the statues and spires of the roofline above you." }
+   ],
+   "program": { "name": "Milan", "description": "One night in Lombardy with skip the line entry to the Duomo and the Galleria next door." }
+  },
+  {
+   "letter": "C", "name": "Venice", "city": "Venice", "subtitle": "Venice \u2192 Murano and Burano",
+   "days": [5, 6, 7], "dayLabel": "Day 5 to 7",
+   "hotel": "Hotel Arlecchino",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Canalside hotel in Santa Croce, ten minutes from the station",
+   "activities": [
+    { "name": "Private gondola ride", "day": 5, "optional": false, "match": "Venice Gondola Ride", "description": "A private thirty minute gondola by day, just the two of you, threading the back canals before the Grand Canal." },
+    { "name": "Murano and Burano half day trip", "day": 6, "optional": false, "match": "Half-Day Murano Burano", "description": "By boat to the glass furnaces of Murano and the painted fishermen's houses and leaning bell tower of Burano." }
+   ],
+   "program": { "name": "Venice", "description": "Two nights on the lagoon with a private gondola and a boat trip out to the glass island and painted Burano." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Zurich", "2": "Mount Titlis and Lake Lucerne", "3": "The Lindt Home of Chocolate",
+  "4": "On to Milan and the Duomo", "5": "To Venice and a private gondola",
+  "6": "Murano and Burano by boat", "7": "Departure from Venice"
+ },
+ "bullets": {
+  "1": ["Arrival at Zurich Kloten and transfer to your hotel", "Your three day Swiss Travel Pass starts today", "Check in and the rest of the day free", "Optional: the old town and the Bahnhofstrasse"],
+  "2": ["Early breakfast, then south towards Engelberg", "The rotating cable car up Mount Titlis", "The glacier cave, the cliff walk and the chairlift", "On to Lucerne for the Chapel Bridge and a lake cruise"],
+  "3": ["Breakfast, then out to Kilchberg on the lake", "The Lindt chocolate museum and its fountain", "A tasting room at the end of the tour", "The afternoon free in Zurich"],
+  "4": ["Breakfast and check out of your Zurich hotel", "Station transfer and the train south to Milan", "Check in a few minutes from Milano Centrale", "Skip the line entry to the Duomo and its museum"],
+  "5": ["Breakfast and check out for the run east", "Station transfer and the train on to Venice", "Check in at your canalside hotel in Santa Croce", "A private thirty minute gondola through the back canals"],
+  "6": ["Breakfast, then down to the boat jetty", "The glass furnaces of Murano", "The painted houses and leaning bell tower of Burano", "The afternoon free for St Mark's Square"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to Venice Marco Polo for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "ibis Zurich City West", "2": "ibis Zurich City West", "3": "ibis Zurich City West",
+  "4": "B&B Hotel Milano Aosta", "5": "Hotel Arlecchino", "6": "Hotel Arlecchino", "7": "Departure"
+ },
+ "expert": {
+  "name": "Sharon", "image": "/experts/sharon.webp", "role": "Europe expert at Hi Tours",
+  "quote": "The cheapest Switzerland and Italy honeymoon we sell, and it still has a private gondola and the glacier on Titlis in it.",
+  "tip": "Take the private gondola in the late afternoon rather than at midday. The back canals are quieter and the light on the water is far better."
+ },
+ "summary": "Seven days from the Swiss Alps to the Venetian lagoon: three nights in Zurich with a travel pass, Mount Titlis and Lake Lucerne, a night in Milan for the Duomo, then Venice with a private gondola and a trip to Murano and Burano.",
+ "included": "Included: 3 nights in Zurich, 1 night in Milan and 2 nights in Venice with breakfast; private transfers; rail between the cities; a three day Swiss Travel Pass; the Mount Titlis tour with the glacier chairlift; a Lucerne walking tour with a lake cruise; Lindt Home of Chocolate tickets; skip the line Duomo di Milano tickets; a private thirty minute gondola ride; a half day Murano and Burano trip.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners; travel insurance; personal expenses."
+}
