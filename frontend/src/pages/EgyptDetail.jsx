@@ -18,8 +18,6 @@ import DesignEscapeModal from '../components/egypt/DesignEscapeModal';
 import { usePageLead } from '../components/egypt/LeadModalProvider';
 import { usePageMeta } from '../lib/seo';
 import { products as vietnamProducts, planner as vietnamPlanner, reviews as vietnamReviews } from '../vietnamListingData';
-import { planner as srilankaPlanner, reviews as srilankaReviews, products as srilankaProducts } from '../srilankaListingData';
-import { srilankaBySlug } from '../tours/srilankaToursData';
 import { planner as malaysiaPlanner, reviews as malaysiaReviews } from '../malaysiaListingData';
 import { planner as singaporePlanner, reviews as singaporeReviews } from '../singaporeListingData';
 import { planner as kazakhstanPlanner, reviews as kazakhstanReviews } from '../kazakhstanListingData';
@@ -29,29 +27,20 @@ import { planner as japanPlanner, reviews as japanReviews } from '../japanListin
 import { planner as indonesiaPlanner, reviews as indonesiaReviews } from '../indonesiaListingData';
 import { planner as chinaPlanner, reviews as chinaReviews } from '../chinaListingData';
 import { planner as cambodiaPlanner, reviews as cambodiaReviews } from '../cambodiaListingData';
-import { planner as philippinesPlanner, reviews as philippinesReviews } from '../philippinesListingData';
-import { planner as icelandPlanner, reviews as icelandReviews } from '../icelandListingData';
 import { europeBySlug } from '../tours/europeToursData';
 import { planner as europePlanner, reviews as europeReviews } from '../europeListingData';
 import { planner as italyPlanner, reviews as italyReviews } from '../italyListingData';
 import { planner as greecePlanner, reviews as greeceReviews } from '../greeceListingData';
 import { planner as norwayPlanner, reviews as norwayReviews } from '../norwayListingData';
 import { planner as irelandPlanner, reviews as irelandReviews } from '../irelandListingData';
-import { planner as spainPlanner, reviews as spainReviews } from '../spainListingData';
-import { planner as portugalPlanner, reviews as portugalReviews } from '../portugalListingData';
-import { planner as croatiaPlanner, reviews as croatiaReviews } from '../croatiaListingData';
-import { planner as englandPlanner, reviews as englandReviews } from '../englandListingData';
-import { planner as scotlandPlanner, reviews as scotlandReviews } from '../scotlandListingData';
 import { planner as finlandPlanner, reviews as finlandReviews } from '../finlandListingData';
 import { planner as swedenPlanner, reviews as swedenReviews } from '../swedenListingData';
-import { planner as maldivesPlanner, reviews as maldivesReviews } from '../maldivesListingData';
 import { countryOf, productsOf } from '../holidays/countryProducts';
 
 // Resolve the itinerary's destination (name, planner, reviews) so shared sections adapt automatically.
 const DESTINATIONS = [
   ['Europe', (d) => ({ planner: europePlanner, reviews: europeReviews })],
   ['Vietnam', (d) => ({ planner: vietnamPlanner, reviews: vietnamReviews })],
-  ['Sri Lanka', (d) => ({ planner: srilankaPlanner, reviews: srilankaReviews })],
   ['Malaysia', (d) => ({ planner: malaysiaPlanner, reviews: malaysiaReviews })],
   ['Singapore', (d) => ({ planner: singaporePlanner, reviews: singaporeReviews })],
   ['Kazakhstan', (d) => ({ planner: kazakhstanPlanner, reviews: kazakhstanReviews })],
@@ -61,22 +50,14 @@ const DESTINATIONS = [
   ["Indonesia", (d) => ({ planner: indonesiaPlanner, reviews: indonesiaReviews })],
   ["China", (d) => ({ planner: chinaPlanner, reviews: chinaReviews })],
   ["Cambodia", (d) => ({ planner: cambodiaPlanner, reviews: cambodiaReviews })],
-  ["Philippines", (d) => ({ planner: philippinesPlanner, reviews: philippinesReviews })],
-  ["Iceland", (d) => ({ planner: icelandPlanner, reviews: icelandReviews })],
   ["Italy", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
   ["Venice", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
   ["Vienna", (d) => ({ planner: italyPlanner, reviews: italyReviews })],
   ["Greece", (d) => ({ planner: greecePlanner, reviews: greeceReviews })],
   ["Norway", (d) => ({ planner: norwayPlanner, reviews: norwayReviews })],
   ["Ireland", (d) => ({ planner: irelandPlanner, reviews: irelandReviews })],
-  ["Spain", (d) => ({ planner: spainPlanner, reviews: spainReviews })],
-  ["Portugal", (d) => ({ planner: portugalPlanner, reviews: portugalReviews })],
-  ["Croatia", (d) => ({ planner: croatiaPlanner, reviews: croatiaReviews })],
-  ["England", (d) => ({ planner: englandPlanner, reviews: englandReviews })],
-  ["Scotland", (d) => ({ planner: scotlandPlanner, reviews: scotlandReviews })],
   ["Finland", (d) => ({ planner: finlandPlanner, reviews: finlandReviews })],
   ["Sweden", (d) => ({ planner: swedenPlanner, reviews: swedenReviews })],
-  ['Maldives', (d) => ({ planner: maldivesPlanner, reviews: maldivesReviews })],
   ['Thailand', (d) => ({ planner: { ...planner, h3: 'Customize your Thailand trip', bg: d.gallery?.[0] } })],
   ['Morocco', (d) => ({ planner: { ...planner, h3: 'Customize your Morocco trip', bg: d.gallery?.[0] } })]
 ];
@@ -192,7 +173,7 @@ const Crumbs = ({ crumbs }) => (
           {c.href
             ? (c.href.startsWith('/africa/egypt')
                 ? <Link to="/africa/egypt" className="eg-body-md text-[#174358] hover:underline">{c.label}</Link>
-                : (c.href === '/asia' || c.href === '/asia/vietnam' || c.href === '/asia/sri-lanka')
+                : (c.href === '/asia' || c.href === '/asia/vietnam')
                   ? <Link to={c.href} className="eg-body-md text-[#174358] hover:underline">{c.label}</Link>
                   : <a href={c.href} onClick={stop} className="eg-body-md text-[#174358] hover:underline">{c.label}</a>)
             : <span className="eg-label-lg text-[#002131] truncate max-w-[220px] sm:max-w-none">{c.label}</span>}
@@ -349,9 +330,8 @@ const Features = () => (
 const Recommended = ({ detail }) => {
   const country = countryOf(detail.slug);
   const isVn = detail.slug in vietnamBySlug;
-  const isSl = detail.slug in srilankaBySlug || detail.slug === 'emerald-isle-explorer-sri-lanka';
-  const fallbackPool = isVn ? vietnamProducts : isSl ? srilankaProducts : detail.region === 'asia' ? asiaProducts : products;
-  const fallbackTitle = isVn ? 'Other Vietnam holidays you may like' : isSl ? 'Other Sri Lanka holidays you may like' : detail.region === 'asia' ? 'Other Asia holidays you may like' : recommended.h2;
+  const fallbackPool = isVn ? vietnamProducts : detail.region === 'asia' ? asiaProducts : products;
+  const fallbackTitle = isVn ? 'Other Vietnam holidays you may like' : detail.region === 'asia' ? 'Other Asia holidays you may like' : recommended.h2;
   const pool = (country && productsOf(country)) || fallbackPool;
   const title = country ? `Other ${country} holidays you may like` : fallbackTitle;
   return (

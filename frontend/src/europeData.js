@@ -21,7 +21,6 @@ export const europeCombos = [
   { slug: 'france-switzerland-italy', name: 'France, Switzerland & Italy', countries: ['France', 'Switzerland', 'Italy'], region: '3 countries · 10 to 12 nights', badge: 'TOP PICK', src: E('alps'), alt: 'The Matterhorn reflected in an alpine lake in autumn, Zermatt', line: 'Paris, Interlaken and the Jungfrau, then Lake Como and Venice' },
   { slug: 'switzerland-austria-germany', name: 'Switzerland, Austria & Germany', countries: ['Switzerland', 'Austria', 'Germany'], region: '3 countries · 9 to 11 nights', badge: 'POPULAR', src: E('neuschwanstein'), alt: 'Neuschwanstein Castle above the Bavarian countryside', line: 'Lucerne, Innsbruck, Salzburg and Hallstatt, finishing at Neuschwanstein and Munich' },
   { slug: 'italy-france-switzerland', name: 'Italy, France & Switzerland', countries: ['Italy', 'France', 'Switzerland'], region: '3 countries · 11 to 13 nights', badge: 'TRENDING', src: E('rome'), alt: 'The Colosseum in Rome lit up at night', line: 'Rome, Florence and Venice first, then Paris and a Swiss finale in Zermatt' },
-  { slug: 'spain-portugal', name: 'Spain & Portugal', countries: ['Spain', 'Portugal'], region: '2 countries · 8 to 10 nights', badge: 'POPULAR', src: E('lisbon'), alt: 'Terracotta rooftops of Alfama above the Tagus river, Lisbon', line: 'Barcelona, Madrid and Seville, then Lisbon and the Douro in Porto' },
   { slug: 'greece-italy', name: 'Greece & Italy', countries: ['Greece', 'Italy'], region: '2 countries · 9 to 11 nights', badge: 'TOP PICK', src: E('santorini'), alt: 'Blue domes of Oia overlooking the caldera, Santorini', line: 'Athens, Mykonos and Santorini, then a ferry hop to the Amalfi Coast and Rome' },
   { slug: 'netherlands-belgium-france', name: 'Netherlands, Belgium & France', countries: ['Netherlands', 'Belgium', 'France'], region: '3 countries · 7 to 9 nights', badge: 'TRENDING', src: E('amsterdam'), alt: 'Canal houses glowing at dusk, Amsterdam', line: 'Amsterdam canals, Bruges and Brussels, then the high speed train to Paris' }
 ];
@@ -49,8 +48,7 @@ export const europeSingle = {
   h2: 'Prefer one country at a time?',
   text: 'Our single country Europe collections are here too.',
   items: [
-    ['Italy', '/europe/italy'], ['Greece', '/europe/greece'], ['Spain', '/europe/spain'], ['Portugal', '/europe/portugal'], ['Iceland', '/europe/iceland'],
-    ['Croatia', '/europe/croatia'], ['Norway', '/europe/norway'], ['Ireland', '/europe/ireland'], ['England', '/europe/england'], ['Scotland', '/europe/scotland']
+    ['Italy', '/europe/italy'], ['Greece', '/europe/greece'], ['Norway', '/europe/norway'], ['Ireland', '/europe/ireland']
   ]
 };
 

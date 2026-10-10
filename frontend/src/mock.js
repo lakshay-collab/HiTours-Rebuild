@@ -1,3 +1,5 @@
+import { SALE } from './sale';
+
 // Homepage content (frontend-only mock). Copy in English, assets from the original Hi Tours CDNs.
 const cf = (path, q = 'w=800&q=60&fm=webp') => `https://images.ctfassets.net/bth3mlrehms2/${path}?${q}`;
 
@@ -61,11 +63,12 @@ export const ratings = {
 };
 
 export const features = {
-  heading: 'Your trip, planned by pros',
+  heading: 'Your trip, planned by professionals',
+  // `short` is what phones show: the same promise in half the words.
   items: [
-    { icon: '/pros/experts.png', title: 'Real travel experts', text: 'Benefit from our local expert knowledge and award-winning service.' },
-    { icon: '/pros/organised.png', title: 'Fully organised', text: 'We take care of every detail – from inspiration to homecoming.' },
-    { icon: '/pros/easy.png', title: 'Travel made easy', text: 'Whether multi-stop or country combo, we make your travel wishes come true.' }
+    { icon: '/pros/experts.png', title: 'Real holiday experts', short: 'Specialists who have been where you are going.', text: 'Your itinerary is built by a specialist who has travelled the country, backed by thirty years of local contacts.' },
+    { icon: '/pros/organised.png', title: 'Every detail handled', short: 'Hotels, transfers and guides, all arranged.', text: 'Hotels, transfers, guides and tickets are booked and reconfirmed for you, from the first call to the flight home.' },
+    { icon: '/pros/easy.png', title: 'Best price, best value', short: 'Direct supply, so you get price and quality.', text: 'We buy direct from hotels and local operators in every destination, so you get not only the best price, but the best quality.' }
   ]
 };
 
@@ -90,27 +93,27 @@ export const ambassadors = {
 export const promoBanners = [
   {
     id: 'promotions',
-    tag: 'Christmas & New Year Sale',
+    tag: SALE.short,
     festive: true,
-    headline: '5% off every holiday',
-    text: 'Celebrate the season with handcrafted Europe & Asia itineraries – every trip on Hi Tours is discounted until 5 January.',
-    offer: 'Ends 5 January · All destinations',
+    headline: SALE.tagline,
+    text: `${SALE.name}. Every tailor-made Asia and Europe holiday on Hi Tours is discounted this festive season, planned 1-to-1 with a specialist.`,
+    offer: `${SALE.endsLabel} \u00b7 All destinations`,
     cta: 'Shop the sale',
-    href: '/asia',
-    image: '/home/promo-xmas.webp',
-    imageAlt: 'Couple enjoying a snowy European Christmas market'
+    href: '/tours',
+    image: '/home/promo-diwali.webp',
+    imageAlt: 'Diya lamps and marigolds glowing outside a lit heritage archway at Diwali',
+    showDestinations: true
   },
   {
-    id: 'hot-deals',
-    tag: 'Hot deals',
-    headline: 'Maldives from ₹89,999',
-    text: 'Limited-time overwater villas and private transfers – only while seats last.',
-    offer: 'Ends Sunday · 7 nights · Flights included',
-    cta: 'Grab the deal',
-    href: '/asia/maldives',
-    image: '/home/promo-hotdeal.webp',
-    imageAlt: 'Maldives overwater villas at sunset',
-    showDestinations: true
+    id: 'best-of-europe',
+    tag: 'Best of Europe',
+    headline: 'Rome, the Alps and the Greek islands',
+    text: 'Our full Europe collection in one place: multi-country classics through Italy and Switzerland, Paris honeymoons and the Athens to Santorini island run.',
+    offer: 'Every Europe holiday \u00b7 10% off',
+    cta: 'See all Europe deals',
+    href: '/europe/holidays',
+    image: 'https://media1.thrillophilia.com/filestore/krzy8lbrlz0fh9peaed4r8csar1f_shutterstock_1439825942.jpg?w=1400&dpr=1',
+    imageAlt: 'The Colosseum in Rome at golden hour'
   }
 ];
 
@@ -157,9 +160,9 @@ export const moments = {
 export const steps = {
   heading: 'Step by step to your trip',
   items: [
-    { n: 1, title: 'Choose destination', text: 'Want to make your dream trip come true? Tell us a few details – your desired destination, preferences, budget – and receive a free, personalised travel offer in under 1 minute.' },
-    { n: 2, title: 'Customise', text: 'In a 30-minute phone or video call we connect you with an expert who tailors your route even more to you – with insider knowledge of every destination.' },
-    { n: 3, title: 'Book', text: 'Confirm the offer and look forward to your trip! We take care of everything else with our all-round service – and we are there for you on the road with our 24-hour emergency assistance.' }
+    { n: 1, title: 'Choose your destination', short: 'Tell us where and when, then speak to your holiday expert on a call.', text: 'Tell us where you want to go and roughly when. We call you back and you speak to the holiday expert who knows that country, not a call centre.' },
+    { n: 2, title: 'We customise your quote', short: 'Your costed, tailor-made plan lands within a few hours.', text: 'Your expert shapes the route around your dates, pace and budget, then sends a costed plan back within a few hours. Change anything, as often as you like.' },
+    { n: 3, title: 'Book the best version of it', short: 'Local supply and knowledge, so you book the best value trip.', text: 'Thirty years of local knowledge and direct supply in every destination mean you book the sharpest price with the right hotels and licensed guides, and 24/7 support while you travel.' }
   ]
 };
 

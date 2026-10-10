@@ -283,3 +283,31 @@ Greece import: all 5 Thrillophilia Greece links are live (enchanting-greece, 5-d
  scripts/thrillophilia/nordics_table.py (editorial) + gen_nordics.py (derives stops/counts/price and runs build_trip),
  and build_trip.py now falls back to the tour's own product gallery for cities with no Thrillophilia destination
  gallery (Swedish Lapland, rural Ireland). Fixed the hole in europeProducts ([, item...]).
+
+## 2026-06-10 (evening) - Thrillophilia-only catalogue, All Tours page, favicon, copy
+Removed completely (pages, data modules, routes, menus, footer, search, sitemap, home tabs, related rails):
+ Iceland, Spain, Portugal, Croatia, England, Scotland, Sri Lanka, Maldives, Philippines. Script:
+ /app/scripts/remove_dead_destinations.py (53 files edited, 38 modules deleted). Old URLs redirect to the
+ continent listing. Verified: zero dead links on home, sitemap, Europe and Asia listings; no page errors.
+Generic packages stripped from Cambodia, Laos, Malaysia, Thailand and Singapore; Italy's generic set replaced by
+ the Europe multi-country trips that actually visit Italy. Egypt keeps its own catalogue.
+Combo-only countries now open the continent listing with the country ticked: /europe/italy -> /europe/holidays?
+ country=Italy, /asia/cambodia|laos|malaysia -> /asia/holidays?country=... (their own pages are deleted).
+New Country facet: filterModel.js gained a `country` group (countriesOf, facets, chip, GROUP_LABELS) and
+ EgyptHolidays reads ?country=. Asia countries come from the per-country product arrays (asiaHolidaysData), Europe
+ from holidays/countryOfPlace.js (city -> country for ~14 European countries).
+New /asia/holidays (asiaHolidaysData.js) and /tours (allToursData.js, 242 holidays = Asia + Europe + Egypt).
+ /asia and /europe redirect to their all-tours listing; old landings live on at /asia/overview, /europe/overview.
+ /europe/holidays now aggregates Europe multi-country + Greece (10) and is titled "Europe tours & holidays".
+Homepage: two promo banners again. Banner 1 is wired to the live SALE entry in sale.js (tag, tagline, end date) with
+ a generated Diwali image (/home/promo-diwali.webp) and goes to /tours; banner 2 "Best of Europe" uses a Rome photo
+ from the Italy/Switzerland product and goes to /europe/holidays.
+Copy: features heading is "Your trip, planned by professionals" with new items (Real holiday experts / Every detail
+ handled / Best price, best value - "you get not only the best price, but the best quality"); the three steps now
+ describe the real process (call the expert, quote in a few hours, book on local supply) with no "under 1 minute"
+ claim. Features and Steps show a shorter `short` string on mobile. About intro and the "What is Hi Tours?" FAQ now
+ say part of the Hi Tours Group, custom luxury holidays and honeymoons across Asia, Europe and the Middle East,
+ millions of travellers in thirty years. Site meta description matches.
+Our office: address only (phone, email and the "Get in touch" button removed), gallery hidden, Mon-Fri 9am to 8pm.
+Favicon rebuilt from the logo mark: favicon.ico (16-256), favicon-32.png, icon-192/512.png, apple-touch-icon.png
+ and a real manifest.json. The squashed /hitours-logo.webp favicon is gone.

@@ -105,9 +105,11 @@ export const themesOf = (p, mode = 'holidays') => {
 };
 
 export const placesOf = (p) => p.places || [];
+export const countriesOf = (p) => p.countries || [];
 
 const inRange = (defs) => (v, keys) => keys.some((k) => { const d = defs.find((x) => x.key === k); return d && v >= d.min && v <= d.max; });
 const matchers = {
+  country: (p, sel) => sel.some((c) => countriesOf(p).includes(c)),
   theme: (p, sel, mode) => sel.some((t) => themesOf(p, mode).includes(t)),
   experience: (p, sel) => sel.some((t) => experiencesOf(p).includes(t)),
   place: (p, sel) => sel.some((c) => placesOf(p).includes(c)),
@@ -117,7 +119,7 @@ const matchers = {
 export const GROUPS = Object.keys(matchers);
 // Mobile leads with Experiences: on a phone people pick the landmark they came for before the theme.
 export const MOBILE_GROUPS = ['experience', ...Object.keys(matchers).filter((g) => g !== 'experience')];
-export const emptySelection = () => ({ theme: [], experience: [], place: [], days: [], price: [] });
+export const emptySelection = () => ({ country: [], theme: [], experience: [], place: [], days: [], price: [] });
 
 export const applyFilters = (products, sel, mode = 'holidays', except) =>
   products.filter((p) => GROUPS.every((g) => g === except || !sel[g].length || matchers[g](p, sel[g], mode)));
@@ -127,6 +129,8 @@ const countBy = (list, fn) => list.reduce((m, p) => { fn(p).forEach((k) => { m[k
 export function buildFacets(products, sel, mode = 'holidays') {
   const pool = (g) => applyFilters(products, sel, mode, g);
   const themes = (p) => themesOf(p, mode);
+  const countryAll = countBy(products, countriesOf);
+  const countryNow = countBy(pool('country'), countriesOf);
   const placeAll = countBy(products, placesOf);
   const placeNow = countBy(pool('place'), placesOf);
   const themeAll = countBy(products, themes);
@@ -136,6 +140,7 @@ export function buildFacets(products, sel, mode = 'holidays') {
   const byCount = (all) => (a, b) => all[b] - all[a] || a.localeCompare(b);
   const rank = (v) => (FIRST.includes(v) ? FIRST.indexOf(v) : FIRST.length);
   return {
+    country: Object.keys(countryAll).sort(byCount(countryAll)).map((v) => ({ value: v, label: v, count: countryNow[v] || 0 })),
     theme: Object.keys(themeAll).sort((a, b) => rank(a) - rank(b) || byCount(themeAll)(a, b)).map((v) => ({ value: v, label: v, count: themeNow[v] || 0, icon: themeIcon(v) })),
     experience: Object.keys(expAll).sort(byCount(expAll)).map((v) => ({ value: v, label: v, count: expNow[v] || 0, icon: themeIcon(v) })),
     place: Object.keys(placeAll).sort(byCount(placeAll)).map((v) => ({ value: v, label: v, count: placeNow[v] || 0 })),
@@ -156,4 +161,4 @@ export const toggleIn = (sel, group, value) => ({
 
 export const activeCount = (sel) => GROUPS.reduce((n, g) => n + sel[g].length, 0);
 
-export const GROUP_LABELS = { theme: 'Theme', experience: 'Experiences', place: 'Destination', days: 'Duration', price: 'Price range' };
+export const GROUP_LABELS = { country: 'Country', theme: 'Theme', experience: 'Experiences', place: 'Destination', days: 'Duration', price: 'Price range' };

@@ -31,7 +31,6 @@ const { toProduct, build } = createAdapters({
 });
 
 export const singaporeProducts = [
-  ...packages.map(toProduct),
   bestOfSingaporeThailandProduct,
   romanticSingaporeNightSafariSentosaProduct,
   singaporeShortBreakNightSafariProduct,
@@ -54,5 +53,5 @@ export const singaporeProducts = [
   grandSingaporeMalaysiaBaliProduct,
   bestOfThailandSingaporeMalaysiaBaliProduct
 ];
-export const singaporeTours = packages.map(build);
-export const singaporeBySlug = Object.fromEntries(singaporeTours.map((t) => [t.detail.slug, t]));
+export const singaporeTours = [];
+export const singaporeBySlug = {};

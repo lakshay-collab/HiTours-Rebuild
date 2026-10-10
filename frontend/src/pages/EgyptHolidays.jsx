@@ -105,6 +105,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   const sel = useMemo(() => ({
     theme: [...new Set([...(style && !isExperience(style) ? [style] : []), ...split(params.get('theme'))])],
     experience: [...new Set([...(style && isExperience(style) ? [style] : []), ...split(params.get('experience'))])],
+    country: split(params.get('country')),
     place: split(params.get('place')),
     days: split(params.get('days')),
     price: split(params.get('price'))

@@ -768,3 +768,12 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
      in holidays/filterModel.js plus query-param preselection, and redirects from the country roots.
   d) /europe/holidays must cover every European trip (Europe multi-country + Greece + Norway + Ireland + Finland +
      Sweden) once those imports land, the same way asiaHolidaysData.js aggregates Asia.
+- DONE (10 June 2026, evening): Thrillophilia-only catalogue (9 countries removed, generics stripped), Country
+  filter facet, /tours All Tours page (242 holidays), /asia and /europe going straight to all-tours, combo-only
+  country redirects, two homepage promo banners wired to the live sale, homepage/about copy rewrite, office page
+  trimmed, proper favicon set and manifest.
+- P0 REMAINING: Norway 7, Ireland 2, Finland 2, Sweden 3 Thrillophilia imports (raw.json extracted for all 19;
+  Greece 5 shipped). Editorial lives in scripts/thrillophilia/nordics_table.py, built with gen_nordics.py, checked
+  with check_trip.py, registered with register_trip.py. Then add those products to europeListingData's aggregate
+  and list the Scandinavia combos on every Nordic country they visit.
+- P1: three careers testimonial names and job titles still needed from the user; confirm whether "CR" means NCR.

@@ -2,7 +2,8 @@
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
 import { italyProducts } from './tours/italyToursData';
 import { RELATED_EUROPE } from './relatedEurope';
-import { IMG } from './italyPackages';
+const ROME_HERO = 'https://media1.thrillophilia.com/filestore/krzy8lbrlz0fh9peaed4r8csar1f_shutterstock_1439825942.jpg';
+const IMG = { RAW: { hero: ROME_HERO } };
 
 const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Italy";

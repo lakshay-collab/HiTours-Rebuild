@@ -8,32 +8,19 @@ import EgyptHolidays from './pages/EgyptHolidays';
 import EgyptDetail from './pages/EgyptDetail';
 import AsiaListing from './pages/AsiaListing';
 import { VietnamHolidays } from './pages/VietnamListing';
-import { SriLankaHolidays } from './pages/SriLankaListing';
-import { MalaysiaHolidays } from './pages/MalaysiaListing';
 import { SingaporeHolidays } from './pages/SingaporeListing';
 import { KazakhstanHolidays } from './pages/KazakhstanListing';
 import { BhutanHolidays } from './pages/BhutanListing';
-import { LaosHolidays } from './pages/LaosListing';
 import { JapanHolidays } from './pages/JapanListing';
 import { IndonesiaHolidays } from './pages/IndonesiaListing';
 import { ChinaHolidays } from './pages/ChinaListing';
-import { CambodiaHolidays } from './pages/CambodiaListing';
-import { PhilippinesHolidays } from './pages/PhilippinesListing';
 import { SouthKoreaHolidays } from './pages/SouthKoreaListing';
-import { IcelandHolidays } from './pages/IcelandListing';
-import { ItalyHolidays } from './pages/ItalyListing';
 import { GreeceHolidays } from './pages/GreeceListing';
 import { NorwayHolidays } from './pages/NorwayListing';
 import { IrelandHolidays } from './pages/IrelandListing';
-import { SpainHolidays } from './pages/SpainListing';
-import { PortugalHolidays } from './pages/PortugalListing';
-import { CroatiaHolidays } from './pages/CroatiaListing';
-import { EnglandHolidays } from './pages/EnglandListing';
-import { ScotlandHolidays } from './pages/ScotlandListing';
 import { FinlandHolidays } from './pages/FinlandListing';
 import { SwedenHolidays } from './pages/SwedenListing';
 import { ThailandHolidays, ThailandHoneymoons } from './pages/ThailandListing';
-import { MaldivesHolidays } from './pages/MaldivesListing';
 import TripStyleListing from './pages/TripStyleListing';
 import ThemeListing from './pages/ThemeListing';
 import About from './pages/About';
@@ -46,38 +33,28 @@ import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
 import EgyptHolidays2 from './pages/EgyptHolidays';
 import { asiaHolidays } from './asiaHolidaysData';
+import { allTours } from './allToursData';
 
 const AsiaHolidays = () => <EgyptHolidays2 d={asiaHolidays} />;
+const AllTours = () => <EgyptHolidays2 d={allTours} />;
+
 
 const COUNTRY_ROOTS = [
   '/africa/egypt',
   '/asia/vietnam',
-  '/asia/sri-lanka',
-  '/asia/malaysia',
   '/asia/singapore',
   '/asia/kazakhstan',
   '/asia/bhutan',
-  '/asia/laos',
   '/asia/japan',
   '/asia/indonesia',
   '/asia/china',
-  '/asia/cambodia',
-  '/asia/philippines',
   '/asia/south-korea',
-  '/europe/iceland',
-  '/europe/italy',
   '/europe/greece',
   '/europe/norway',
   '/europe/ireland',
-  '/europe/spain',
-  '/europe/portugal',
-  '/europe/croatia',
-  '/europe/england',
-  '/europe/scotland',
   '/europe/finland',
   '/europe/sweden',
   '/asia/thailand',
-  '/asia/maldives',
 ];
 
 const StyleRedirect = () => <Navigate to={`/africa/egypt/holidays/${useParams().style}`} replace />;
@@ -131,54 +108,30 @@ function App() {
           <Route path="/asia/overview" element={<AsiaListing />} />
           <Route path="/asia/vietnam/holidays" element={<VietnamHolidays />} />
           <Route path="/asia/vietnam/holidays/:style" element={<VietnamHolidays />} />
-          <Route path="/asia/sri-lanka/holidays" element={<SriLankaHolidays />} />
-          <Route path="/asia/sri-lanka/holidays/:style" element={<SriLankaHolidays />} />
-          <Route path="/asia/malaysia/holidays" element={<MalaysiaHolidays />} />
-          <Route path="/asia/malaysia/holidays/:style" element={<MalaysiaHolidays />} />
           <Route path="/asia/singapore/holidays" element={<SingaporeHolidays />} />
           <Route path="/asia/singapore/holidays/:style" element={<SingaporeHolidays />} />
           <Route path="/asia/kazakhstan/holidays" element={<KazakhstanHolidays />} />
           <Route path="/asia/kazakhstan/holidays/:style" element={<KazakhstanHolidays />} />
           <Route path="/asia/bhutan/holidays" element={<BhutanHolidays />} />
           <Route path="/asia/bhutan/holidays/:style" element={<BhutanHolidays />} />
-          <Route path="/asia/laos/holidays" element={<LaosHolidays />} />
-          <Route path="/asia/laos/holidays/:style" element={<LaosHolidays />} />
           <Route path="/asia/japan/holidays" element={<JapanHolidays />} />
           <Route path="/asia/japan/holidays/:style" element={<JapanHolidays />} />
           <Route path="/asia/indonesia/holidays" element={<IndonesiaHolidays />} />
           <Route path="/asia/indonesia/holidays/:style" element={<IndonesiaHolidays />} />
           <Route path="/asia/china/holidays" element={<ChinaHolidays />} />
           <Route path="/asia/china/holidays/:style" element={<ChinaHolidays />} />
-          <Route path="/asia/cambodia/holidays" element={<CambodiaHolidays />} />
-          <Route path="/asia/cambodia/holidays/:style" element={<CambodiaHolidays />} />
-          <Route path="/asia/philippines/holidays" element={<PhilippinesHolidays />} />
-          <Route path="/asia/philippines/holidays/:style" element={<PhilippinesHolidays />} />
           <Route path="/asia/south-korea/holidays" element={<SouthKoreaHolidays />} />
           <Route path="/asia/south-korea/holidays/:style" element={<SouthKoreaHolidays />} />
           <Route path="/europe" element={<Navigate to="/europe/holidays" replace />} />
           <Route path="/europe/overview" element={<EuropeListing />} />
           <Route path="/europe/holidays" element={<EuropeHolidays />} />
           <Route path="/europe/holidays/:style" element={<EuropeHolidays />} />
-          <Route path="/europe/iceland/holidays" element={<IcelandHolidays />} />
-          <Route path="/europe/iceland/holidays/:style" element={<IcelandHolidays />} />
-          <Route path="/europe/italy/holidays" element={<ItalyHolidays />} />
-          <Route path="/europe/italy/holidays/:style" element={<ItalyHolidays />} />
           <Route path="/europe/greece/holidays" element={<GreeceHolidays />} />
           <Route path="/europe/greece/holidays/:style" element={<GreeceHolidays />} />
           <Route path="/europe/norway/holidays" element={<NorwayHolidays />} />
           <Route path="/europe/norway/holidays/:style" element={<NorwayHolidays />} />
           <Route path="/europe/ireland/holidays" element={<IrelandHolidays />} />
           <Route path="/europe/ireland/holidays/:style" element={<IrelandHolidays />} />
-          <Route path="/europe/spain/holidays" element={<SpainHolidays />} />
-          <Route path="/europe/spain/holidays/:style" element={<SpainHolidays />} />
-          <Route path="/europe/portugal/holidays" element={<PortugalHolidays />} />
-          <Route path="/europe/portugal/holidays/:style" element={<PortugalHolidays />} />
-          <Route path="/europe/croatia/holidays" element={<CroatiaHolidays />} />
-          <Route path="/europe/croatia/holidays/:style" element={<CroatiaHolidays />} />
-          <Route path="/europe/england/holidays" element={<EnglandHolidays />} />
-          <Route path="/europe/england/holidays/:style" element={<EnglandHolidays />} />
-          <Route path="/europe/scotland/holidays" element={<ScotlandHolidays />} />
-          <Route path="/europe/scotland/holidays/:style" element={<ScotlandHolidays />} />
           <Route path="/europe/finland/holidays" element={<FinlandHolidays />} />
           <Route path="/europe/finland/holidays/:style" element={<FinlandHolidays />} />
           <Route path="/europe/sweden/holidays" element={<SwedenHolidays />} />
@@ -187,8 +140,6 @@ function App() {
           <Route path="/asia/thailand/holidays" element={<ThailandHolidays />} />
           <Route path="/asia/thailand/holidays/:style" element={<ThailandHolidays />} />
           <Route path="/asia/thailand/honeymoons" element={<ThailandHoneymoons />} />
-          <Route path="/asia/maldives/holidays" element={<MaldivesHolidays />} />
-          <Route path="/asia/maldives/holidays/:style" element={<MaldivesHolidays />} />
           <Route path="/asia/:slug" element={<EgyptDetail />} />
           <Route path="/trip-styles/:slug" element={<TripStyleListing />} />
           <Route path="/themes/:slug" element={<ThemeListing />} />
@@ -200,6 +151,34 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/our-office" element={<OurOffice />} />
+          <Route path="/tours" element={<AllTours />} />
+          <Route path="/europe/italy/*" element={<Navigate to="/europe/holidays?country=Italy" replace />} />
+          <Route path="/europe/italy" element={<Navigate to="/europe/holidays?country=Italy" replace />} />
+          <Route path="/asia/cambodia/*" element={<Navigate to="/asia/holidays?country=Cambodia" replace />} />
+          <Route path="/asia/cambodia" element={<Navigate to="/asia/holidays?country=Cambodia" replace />} />
+          <Route path="/asia/laos/*" element={<Navigate to="/asia/holidays?country=Laos" replace />} />
+          <Route path="/asia/laos" element={<Navigate to="/asia/holidays?country=Laos" replace />} />
+          <Route path="/asia/malaysia/*" element={<Navigate to="/asia/holidays?country=Malaysia" replace />} />
+          <Route path="/asia/malaysia" element={<Navigate to="/asia/holidays?country=Malaysia" replace />} />
+          <Route path="/tours/:style" element={<AllTours />} />
+          <Route path="/asia/sri-lanka/*" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/philippines/*" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/maldives/*" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/sri-lanka" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/philippines" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/maldives" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/europe/iceland/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/spain/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/portugal/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/croatia/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/england/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/scotland/*" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/iceland" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/spain" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/portugal" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/croatia" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/england" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/scotland" element={<Navigate to="/europe/holidays" replace />} />
           <Route path="/europa/*" element={<LegacyRedirect />} />
           <Route path="/asien/*" element={<LegacyRedirect />} />
           <Route path="/afrika/aegypten/*" element={<LegacyRedirect />} />

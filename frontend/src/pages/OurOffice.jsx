@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { MapPin, Phone, Mail, Navigation, Clock } from 'lucide-react';
+import { MapPin, Navigation, Clock } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { office, mapsEmbed, mapsLink } from '../officeData';
@@ -58,14 +58,8 @@ export default function OurOffice() {
               <span>{office.address.map((l) => <span key={l} className="block">{l}</span>)}</span>
             </address>
 
-            <ul className="flex flex-col gap-1">
-              <li><a href={office.phoneHref} className="inline-flex items-center gap-3 eg-body-lg text-[#002131] hover:underline" data-testid="office-phone"><Phone size={16} className="text-[#308BB6]" />{office.phone}</a></li>
-              <li><a href={`mailto:${office.email}`} className="inline-flex items-center gap-3 eg-body-lg text-[#002131] hover:underline" data-testid="office-email"><Mail size={16} className="text-[#308BB6]" />{office.email}</a></li>
-            </ul>
-
             <div className="flex flex-wrap gap-3" data-testid="office-actions">
               <a href={mapsLink} target="_blank" rel="noreferrer" className={`${btn} eg-btn-filled`} data-testid="office-visit"><Navigation size={16} />{office.links.visit}</a>
-              <a href={`mailto:${office.email}?subject=${encodeURIComponent('Enquiry from the Hi Tours website')}`} className={`${btn} border border-[#174358] text-[#174358] hover:bg-[#174358] hover:text-white`} data-testid="office-touch"><Mail size={16} />{office.links.touch}</a>
             </div>
 
             <ul className="rounded-xl bg-[#F6F4EB] p-4 flex flex-col gap-1.5" data-testid="office-landmarks">

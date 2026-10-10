@@ -13,7 +13,6 @@ const FOOTER_HREFS = {
   'Booking Policy': '/care',
   'Our Office': '/our-office',
   'Vietnam': '/asia/vietnam',
-  'Sri Lanka': '/asia/sri-lanka',
   'Thailand': '/asia/thailand',
   'Singapore': '/asia/singapore',
   'Malaysia': '/asia/malaysia',
@@ -25,20 +24,12 @@ const FOOTER_HREFS = {
   "Indonesia": '/asia/indonesia',
   "China": '/asia/china',
   "Cambodia": '/asia/cambodia',
-  "Philippines": '/asia/philippines',
-  "Iceland": '/europe/iceland',
   "Italy": '/europe/italy',
   "Greece": '/europe/greece',
   "Norway": '/europe/norway',
   "Ireland": '/europe/ireland',
-  "Spain": '/europe/spain',
-  "Portugal": '/europe/portugal',
-  "Croatia": '/europe/croatia',
-  "England": '/europe/england',
-  "Scotland": '/europe/scotland',
   "Finland": '/europe/finland',
   "Sweden": '/europe/sweden',
-  'Maldives': '/asia/maldives',
   'Press': '/press'
 };
 

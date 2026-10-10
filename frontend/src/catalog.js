@@ -1,42 +1,28 @@
 // Global package catalogue + keyword-based theme taxonomy. Themes filter ALL destinations' packages.
 import { products as egyptProducts } from './egyptListingData';
 import { vietnamProducts } from './tours/vietnamToursData';
-import { srilankaProducts } from './tours/srilankaToursData';
 import { thailandProducts } from './tours/thailandToursData';
 import { singaporeProducts } from './tours/singaporeToursData';
 import { malaysiaProducts } from './tours/malaysiaToursData';
 import { kazakhstanProducts } from './tours/kazakhstanToursData';
 import { bhutanProducts } from './tours/bhutanToursData';
-import { maldivesProducts } from './tours/maldivesToursData';
 import { laosProducts } from './tours/laosToursData';
 import { japanProducts } from './tours/japanToursData';
 import { indonesiaProducts } from './tours/indonesiaToursData';
 import { chinaProducts } from './tours/chinaToursData';
 import { cambodiaProducts } from './tours/cambodiaToursData';
-import { philippinesProducts } from './tours/philippinesToursData';
-import { icelandProducts } from './tours/icelandToursData';
 import { italyProducts } from './tours/italyToursData';
 import { greeceProducts } from './tours/greeceToursData';
 import { norwayProducts } from './tours/norwayToursData';
 import { irelandProducts } from './tours/irelandToursData';
-import { spainProducts } from './tours/spainToursData';
-import { portugalProducts } from './tours/portugalToursData';
-import { croatiaProducts } from './tours/croatiaToursData';
-import { englandProducts } from './tours/englandToursData';
-import { scotlandProducts } from './tours/scotlandToursData';
 import { finlandProducts } from './tours/finlandToursData';
 import { swedenProducts } from './tours/swedenToursData';
 
 const SOURCES = [
-  ['Egypt', '/africa/egypt', egyptProducts], ['Vietnam', '/asia/vietnam', vietnamProducts], ['Sri Lanka', '/asia/sri-lanka', srilankaProducts],
-  ['Thailand', '/asia/thailand', thailandProducts], ['Singapore', '/asia/singapore', singaporeProducts], ['Malaysia', '/asia/malaysia', malaysiaProducts],
-  ['Kazakhstan', '/asia/kazakhstan', kazakhstanProducts], ['Bhutan', '/asia/bhutan', bhutanProducts], ['Maldives', '/asia/maldives', maldivesProducts],
-  ['Laos', '/asia/laos', laosProducts], ['Japan', '/asia/japan', japanProducts], ['Indonesia', '/asia/indonesia', indonesiaProducts],
-  ['China', '/asia/china', chinaProducts], ['Cambodia', '/asia/cambodia', cambodiaProducts], ['Philippines', '/asia/philippines', philippinesProducts],
-  ['Iceland', '/europe/iceland', icelandProducts], ['Italy', '/europe/italy', italyProducts], ['Greece', '/europe/greece', greeceProducts],
-  ['Norway', '/europe/norway', norwayProducts], ['Ireland', '/europe/ireland', irelandProducts], ['Spain', '/europe/spain', spainProducts],
-  ['Portugal', '/europe/portugal', portugalProducts], ['Croatia', '/europe/croatia', croatiaProducts], ['England', '/europe/england', englandProducts],
-  ['Scotland', '/europe/scotland', scotlandProducts], ['Finland', '/europe/finland', finlandProducts], ['Sweden', '/europe/sweden', swedenProducts],
+  ['Egypt', '/africa/egypt', egyptProducts], ['Vietnam', '/asia/vietnam', vietnamProducts], ['Thailand', '/asia/thailand', thailandProducts], ['Singapore', '/asia/singapore', singaporeProducts], ['Malaysia', '/asia/malaysia', malaysiaProducts],
+  ['Kazakhstan', '/asia/kazakhstan', kazakhstanProducts], ['Bhutan', '/asia/bhutan', bhutanProducts], ['Laos', '/asia/laos', laosProducts], ['Japan', '/asia/japan', japanProducts], ['Indonesia', '/asia/indonesia', indonesiaProducts],
+  ['China', '/asia/china', chinaProducts], ['Cambodia', '/asia/cambodia', cambodiaProducts], ['Italy', '/europe/italy', italyProducts], ['Greece', '/europe/greece', greeceProducts],
+  ['Norway', '/europe/norway', norwayProducts], ['Ireland', '/europe/ireland', irelandProducts], ['Finland', '/europe/finland', finlandProducts], ['Sweden', '/europe/sweden', swedenProducts],
 ];
 
 // Every package across the site, annotated with its destination (card hrefs already point at the right package page).

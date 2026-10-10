@@ -1,6 +1,8 @@
 // Europe destination landing – clone of the Vietnam listing data (master template); only destination content differs.
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
 import { europeProducts } from './tours/europeToursData';
+import { greeceProducts } from './tours/greeceToursData';
+import { countriesOfPlaces } from './holidays/countryOfPlace';
 const E = (n) => `/europe/${n}.webp`;
 
 const CT = 'https://images.ctfassets.net/bth3mlrehms2';
@@ -11,11 +13,11 @@ const ct2 = (p) => `${CT2}/${p}?w=1080&q=60&fm=webp`;
 export const destination = { name: 'Europe', continent: 'Europe', primary: ['Paris', 'Swiss Alps', 'Rome', 'Venice'] };
 
 export const holidaysPath = '/europe/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Europe', to: '/europe' }, { label: 'Europe multi-country holidays' }];
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Europe tours & holidays' }];
 
 export const hero = {
   h1: 'Europe. One Journey. Multiple Countries.',
-  holidaysH1: 'Europe multi-country holidays',
+  holidaysH1: 'Europe tours & holidays',
   styleH1: (style) => `Europe ${style.toLowerCase()} holidays`,
   tabAbout: 'About Europe',
   tabTours: 'Europe holidays',
@@ -44,7 +46,7 @@ export const intro = {
 
 export const tours = {
   h2: 'Top-selling Europe multi-country holiday ideas',
-  allH2: 'Europe multi-country holidays',
+  allH2: 'Europe tours & holidays',
   styleH2: (style) => `Europe ${style.toLowerCase()} holidays`,
   browse: (n) => `Browse ${n} package ${n === 1 ? 'idea' : 'ideas'}`,
   filterLabel: 'Travel style:',
@@ -61,7 +63,11 @@ export const tours = {
   readLess: 'Read less'
 };
 
-export const products = europeProducts;
+// Every European trip we run: the multi-country itineraries plus each country's own tours.
+export const products = Object.values(Object.fromEntries(
+  [...europeProducts, ...greeceProducts].filter(Boolean)
+    .map((p) => [p.slug, { ...p, countries: p.countries || countriesOfPlaces(p.places) }])
+));
 
 export const planner = { ...egyptPlanner, h3: 'Customize your Europe trip', bg: E('alps') };
 
@@ -151,10 +157,6 @@ export const faq = {
 const europeList = [
   ['Italy', ct('6MDAdkdCjF16LaohT1os4R/a05331428849331be0c2fd266c8570db/Italien_Amalfi.jpg')],
   ['Greece', ct('4tPmbNB9QIZbfIWAsHnz3w/fd3191963fb012a8f8e1aeb42a2a6401/Griechenland_Santorini.jpg')],
-  ['Spain', ct('5957FrRqxs8F2fO8xJJ5n9/fb2d6cd0a2537891652feb13e96430c0/Spanien_Mallorca__Cala_de_Sa_Calobra_TCG.jpg')],
-  ['Portugal', ct('uPI9aniC3uvsUAS1zRHwP/284df47eb1a7e89a770256a62b97b3fa/S_o_Vicente__Madeira__Portugal.jpg')],
-  ['Iceland', ct('19jS6gkSXrat4camgvmXdJ/6d0914a835cfb184af0111735d4332cc/Island__Reynisfjara.jpg')],
-  ['Croatia', ct('6Q2Kxa138pSiiIXTkuf3g5/7780a2df7b70cf6d10de66adc2795f87/Kroatien_InselVis.jpg')],
   ['Norway', ct('UHqJkdKkOhjiJeqqdlBtb/7f7ab850458b9aad4024ef52c5834ade/MAIN_Norwegen_Hardangerfjord_TCG.jpg')],
   ['Ireland', ct('W4uVx0uUt86jnByPHjutE/306e7fb7b3d77e101f5fbde7cb9cab1d/Irland_CliffsofMoher-2.jpg')],
   ['Scotland', ct('6Ypj2Qd3m3jQk6ygmpsNAM/076740049ff3bf1df0f025d0547d4d90/Schottland_Burg.png')]
@@ -162,7 +164,7 @@ const europeList = [
 export const related = { h2: 'Single-country Europe holidays', items: europeList.map(([title, image]) => ({ title, alt: title, tag: null, href: `/europe/${title.toLowerCase()}`, image })) };
 
 export const europe = {
-  pageTitle: 'Europe multi-country holidays | Hi Tours',
+  pageTitle: 'Europe tours & holidays | Hi Tours',
   hero, crumbs, intro, tours, products, features, places, activities, themes, related, holidaysPath, holidaysCrumbs, plan, faq, planner,
   reviews: { ...egyptReviews, ...reviews }, customerReviews,
   plannerSource: 'europe-planner'

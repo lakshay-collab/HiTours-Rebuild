@@ -1,5 +1,4 @@
 // Asia listing page content (English, INR) for Hi Tours – mirrors the Egypt listing structure.
-import { srilankaProducts } from './tours/srilankaToursData';
 import { cardImages as thailandCardImages } from './thailandData';
 const CT = 'https://images.ctfassets.net/bth3mlrehms2';
 
@@ -54,7 +53,6 @@ const P = (title, tag, days, cities, hotels, activities, transfers, price, alt, 
 
 export const products = [
   { title: 'Siam Splendour: 9-Day Thailand Odyssey', tag: 'Culture', days: 9, stops: 4, cities: 4, hotels: 3, activities: 14, transfers: 4, meals: 9, price: 63650, alt: 'Phi Phi Islands, Thailand', slug: 'siam-splendour-thailand', href: '/asia/thailand', images: thailandCardImages },
-  srilankaProducts[0],
   P('Khao Lak holiday for beach lovers and adventurers', 'Culture', 22, 7, 7, 14, 12, 155700, 'Khao Lak, Thailand', [
     `${CT}/5Hm10TrqCIgW8kcP3h2twj/c76291902631d2211aaafd7f4b68c726/Thailand__Khao_Lak__Sandbank.jpg?w=1080&q=60&fm=webp`,
     'https://kiwi-cdn.tlservers.com/items%2F456f162b-30ab-422f-ae7e-0c61356b3688%2Fimage%2Fjpeg%2FtXJwHQAMy1VjAu8AtLBqxA%2FiStock-4979663321.jpg?w=1080&q=60&auto=format&fit=max',
@@ -153,10 +151,7 @@ export const countries = {
     { title: 'China', href: '#', image: `${CT}/3FwBvWPMIiVGThJdqClYD1/bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png?w=1080&q=60&fm=webp` },
     { title: 'Cambodia', href: '#', image: `${CT}/3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg?w=1080&q=60&fm=webp` },
     { title: 'Malaysia', href: '#', image: `${CT}/X7b0PdKpWDMzl19jytcJ6/d0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg?w=1080&q=60&fm=webp` },
-    { title: 'Maldives', href: '#', image: `${CT}/3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg?w=1080&q=60&fm=webp` },
-    { title: 'Philippines', href: '#', image: `${CT}/1o2rtINxvG8y4nqhK5Bvgp/d09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png?w=1080&q=60&fm=webp` },
     { title: 'Singapore', href: '#', image: `${CT}/4B5tE96BHxRVFYUVJQibEE/efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg?w=1080&q=60&fm=webp` },
-    { title: 'Sri Lanka', href: '/asia/sri-lanka', image: `${CT}/6etzBcZlvbOLHqzCOq0NES/764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg?w=1080&q=60&fm=webp` },
     { title: 'South Korea', href: '#', image: `${CT}/2eRk3wUlchhuTsWYZUzJVg/8b62f957e2292414759f5afd848a72b1/South_Korea-Roadtrip-1.jpg?w=1080&q=60&fm=webp` }
   ]
 };
@@ -168,7 +163,6 @@ export const whereTo = {
   items: [
     { n: '1', title: 'Vietnam', text: 'Whether you are a culture lover, sun worshipper or adventurer – a trip to Vietnam promises every traveller an unforgettable experience. Vietnam\'s rich flora and fauna can also be admired on a journey through its jungle regions.' },
     { n: '2', title: 'Thailand', text: 'The country awaits you with paradise beaches, untouched nature and a fascinating culture waiting to be discovered. Thailand is full of unique views and a varied cuisine that is second to none.' },
-    { n: '3', title: 'Sri Lanka', text: 'Whether you like to surf, hike or relax, Sri Lanka is a diverse country that is guaranteed to cast its spell on you. From cultural highlights to breathtaking nature, the island offers everything your heart desires.' },
     { n: '4', title: 'Indonesia', text: 'This dream destination attracts many travellers: here you can not only experience untouched nature with adventurous jungles and paradise beaches, but also enjoy countless activities on land and in the water.' }
   ]
 };

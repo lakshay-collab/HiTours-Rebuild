@@ -16,6 +16,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: "Cambodia", href: '/asia/cambodia' }]
 });
 
-export const cambodiaProducts = [...packages.map(toProduct), grandVietnamCambodiaThailandProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];
-export const cambodiaTours = packages.map(build);
-export const cambodiaBySlug = Object.fromEntries(cambodiaTours.map((t) => [t.detail.slug, t]));
+export const cambodiaProducts = [grandVietnamCambodiaThailandProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];
+export const cambodiaTours = [];
+export const cambodiaBySlug = {};

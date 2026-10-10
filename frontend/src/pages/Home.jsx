@@ -22,7 +22,7 @@ export default function Home() {
   const { hash } = useLocation();
   usePageMeta(
     'Hi Tours | Tailor-made holidays & honeymoons',
-    'Hi Tours designs tailor-made holidays and honeymoons across Asia, Europe, Africa and the Indian Ocean, planned 1-to-1 with a destination expert.',
+    'Hi Tours designs tailor-made holidays and honeymoons across Asia, Europe and the Middle East, planned 1-to-1 with a destination expert.',
   );
 
   useEffect(() => {

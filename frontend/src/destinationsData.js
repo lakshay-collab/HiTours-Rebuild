@@ -14,12 +14,10 @@ export const destinations = {
   'Top 10': [
     { name: 'Europe', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
     { name: 'Vietnam', region: 'Asia', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
-    { name: 'Sri Lanka', region: 'Asia', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') },
     { name: 'Thailand', region: 'Asia', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
     { name: 'Singapore', region: 'Asia', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
     { name: 'Malaysia', region: 'Asia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') },
     { name: 'Egypt', region: 'Africa', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') },
-    { name: 'Maldives', region: 'Asia', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
     { name: 'Bhutan', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Japan', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') }
   ],
@@ -47,23 +45,15 @@ export const destinations = {
     { name: 'Singapore', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
     { name: 'Kazakhstan', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Bhutan', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
-    { name: 'Maldives', src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg') },
-    { name: 'Philippines', src: img('1o2rtINxvG8y4nqhK5Bvgp', 'd09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png') },
     { name: 'South Korea', src: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') }
   ],
   'Europe': [
     { name: 'Europe', highlight: true, badge: 'Bestseller', src: '/europe/hero-paris.webp' },
-    { name: 'Iceland', src: img('19jS6gkSXrat4camgvmXdJ', '6d0914a835cfb184af0111735d4332cc/Island__Reynisfjara.jpg') },
     { name: 'Italy', src: img('6MDAdkdCjF16LaohT1os4R', 'a05331428849331be0c2fd266c8570db/Italien_Amalfi.jpg') },
     { name: 'Greece', src: img('4tPmbNB9QIZbfIWAsHnz3w', 'fd3191963fb012a8f8e1aeb42a2a6401/Griechenland_Santorini.jpg') },
     { name: 'Norway', src: img('UHqJkdKkOhjiJeqqdlBtb', '7f7ab850458b9aad4024ef52c5834ade/MAIN_Norwegen_Hardangerfjord_TCG.jpg') },
     { name: 'Ireland', src: img('W4uVx0uUt86jnByPHjutE', '306e7fb7b3d77e101f5fbde7cb9cab1d/Irland_CliffsofMoher-2.jpg') },
-    { name: 'Spain', src: img('5957FrRqxs8F2fO8xJJ5n9', 'fb2d6cd0a2537891652feb13e96430c0/Spanien_Mallorca__Cala_de_Sa_Calobra_TCG.jpg') },
-    { name: 'Portugal', src: img('uPI9aniC3uvsUAS1zRHwP', '284df47eb1a7e89a770256a62b97b3fa/S_o_Vicente__Madeira__Portugal.jpg') },
-    { name: 'Croatia', src: img('6Q2Kxa138pSiiIXTkuf3g5', '7780a2df7b70cf6d10de66adc2795f87/Kroatien_InselVis.jpg') },
-    { name: 'England', src: img('4L4GHNc8RMTi7ric6I9giQ', 'a1a1d4ed6ce559ffa06712cf355ea24d/England-Roadtrip-1-2.jpg') },
-    { name: 'Scotland', src: img('6Ypj2Qd3m3jQk6ygmpsNAM', '076740049ff3bf1df0f025d0547d4d90/Schottland_Burg.png') },
     { name: 'Finland', src: img('5bPB8dEQGT5Hl1icMTfEiM', '2393b18a187a961b249dfd4ed7a22d7d/iStock-1256670045.jpg') },
     { name: 'Sweden', src: img('4pwuirTK8DaLqHIejBCzWU', '63b0406c67aa2f3b1a18260f86b7e6a1/iStock-1364945953.jpg') }
   ],
@@ -111,7 +101,6 @@ export const homeDestinationTabs = ['Asia'];
 export const homeDestinations = {
   'Asia': [
     { name: 'Vietnam', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
-    { name: 'Sri Lanka', src: img('6etzBcZlvbOLHqzCOq0NES', '764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg') },
     { name: 'Thailand', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
     { name: 'Singapore', src: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBNYXJpbmElMjBCYXl8ZW58MHx8fHwxNzkwODUyMzQzfDA&ixlib=rb-4.1.0&q=85&w=520' },
     { name: 'Malaysia', src: img('X7b0PdKpWDMzl19jytcJ6', 'd0aad3d91b3ffaaf161f205c7660fe5f/Malaysia_Ipoh_Tempel.jpg') }

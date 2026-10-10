@@ -14,6 +14,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: 'Malaysia', href: '/asia/malaysia' }]
 });
 
-export const malaysiaProducts = [...packages.map(toProduct), bestOfThailandMalaysiaProduct, singaporeMalaysiaHoneymoonProduct, singaporeMalaysiaSentosaGentingProduct, singaporeMalaysiaBaliHoneymoonProduct, grandSingaporeMalaysiaBaliProduct, bestOfThailandSingaporeMalaysiaBaliProduct];
-export const malaysiaTours = packages.map(build);
-export const malaysiaBySlug = Object.fromEntries(malaysiaTours.map((t) => [t.detail.slug, t]));
+export const malaysiaProducts = [bestOfThailandMalaysiaProduct, singaporeMalaysiaHoneymoonProduct, singaporeMalaysiaSentosaGentingProduct, singaporeMalaysiaBaliHoneymoonProduct, grandSingaporeMalaysiaBaliProduct, bestOfThailandSingaporeMalaysiaBaliProduct];
+export const malaysiaTours = [];
+export const malaysiaBySlug = {};

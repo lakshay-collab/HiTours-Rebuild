@@ -12,7 +12,10 @@ export default function Features() {
               <img src={it.icon} alt="" className="w-[88px] h-[88px] shrink-0 object-contain object-center" />
               <div className="md:text-center md:mt-6">
                 <h3 className="t-headline-sm text-onsurface">{it.title}</h3>
-                <p className="t-body-lg text-onsurface-variant mt-2 md:mt-1 md:max-w-[280px] md:mx-auto">{it.text}</p>
+                <p className="t-body-lg text-onsurface-variant mt-2 md:mt-1 md:max-w-[280px] md:mx-auto">
+                  <span className="md:hidden">{it.short || it.text}</span>
+                  <span className="hidden md:inline">{it.text}</span>
+                </p>
               </div>
             </div>
           ))}

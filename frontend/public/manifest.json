@@ -1,0 +1,13 @@
+{
+  "short_name": "Hi Tours",
+  "name": "Hi Tours | Tailor-made holidays & honeymoons",
+  "icons": [
+    { "src": "favicon.ico", "sizes": "16x16 32x32 48x48 64x64", "type": "image/x-icon" },
+    { "src": "icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#002131",
+  "background_color": "#ffffff"
+}

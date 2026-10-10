@@ -29,6 +29,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: 'Thailand', href: '/asia/thailand' }]
 });
 
-export const thailandProducts = [...packages.map(toProduct), bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct, luxuryBangkokPattayaEscapeProduct, phuketPhiPhiPartyEscapeProduct, phuketKohSamuiBeachEscapeProduct, islandTrailsPhuketSamuiKrabiProduct, grandBangkokPhuketKrabiProduct, romanticKrabiSamuiPhuketProduct, bestOfThailandMalaysiaProduct, coastalMagicPhuketKrabiProduct, honeymoonTrailPhuketKrabiSamuiProduct, baliPhuketIslandEscapeProduct, classicKrabiPhuketHolidayProduct, bestOfPattayaBangkokPhuketProduct, luxuryPhuketSamuiKrabiProduct, bestOfSingaporeThailandProduct, grandVietnamCambodiaThailandProduct, bestOfThailandSingaporeMalaysiaBaliProduct, baliAndPhuketHolidayProduct, thailandCambodiaVietnamTenProduct, indochinaAndThailandGrandProduct];
-export const thailandTours = packages.map(build);
-export const thailandBySlug = Object.fromEntries(thailandTours.map((t) => [t.detail.slug, t]));
+export const thailandProducts = [bestOfThailandSingaporeMalaysiaHongKongProduct, bestOfPhuketKrabiBangkokProduct, luxuryBangkokPattayaEscapeProduct, phuketPhiPhiPartyEscapeProduct, phuketKohSamuiBeachEscapeProduct, islandTrailsPhuketSamuiKrabiProduct, grandBangkokPhuketKrabiProduct, romanticKrabiSamuiPhuketProduct, bestOfThailandMalaysiaProduct, coastalMagicPhuketKrabiProduct, honeymoonTrailPhuketKrabiSamuiProduct, baliPhuketIslandEscapeProduct, classicKrabiPhuketHolidayProduct, bestOfPattayaBangkokPhuketProduct, luxuryPhuketSamuiKrabiProduct, bestOfSingaporeThailandProduct, grandVietnamCambodiaThailandProduct, bestOfThailandSingaporeMalaysiaBaliProduct, baliAndPhuketHolidayProduct, thailandCambodiaVietnamTenProduct, indochinaAndThailandGrandProduct];
+export const thailandTours = [];
+export const thailandBySlug = {};

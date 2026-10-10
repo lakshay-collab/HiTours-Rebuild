@@ -14,15 +14,35 @@ import { malaysiaProducts } from './tours/malaysiaToursData';
 import { cambodiaProducts } from './tours/cambodiaToursData';
 import { laosProducts } from './tours/laosToursData';
 
-const all = [
-  ...vietnamProducts, ...chinaProducts, ...japanProducts, ...southKoreaProducts, ...bhutanProducts,
-  ...kazakhstanProducts, ...indonesiaProducts, ...singaporeProducts, ...thailandProducts,
-  ...malaysiaProducts, ...cambodiaProducts, ...laosProducts
-].filter(Boolean);
+// Each trip's countries come from the country lists it appears in, so a Vietnam/Cambodia combo
+// is filterable under both.
+const BY_COUNTRY = [
+  ['Vietnam', vietnamProducts], ['China', chinaProducts], ['Japan', japanProducts],
+  ['South Korea', southKoreaProducts], ['Bhutan', bhutanProducts], ['Kazakhstan', kazakhstanProducts],
+  ['Indonesia', indonesiaProducts], ['Singapore', singaporeProducts], ['Thailand', thailandProducts],
+  ['Malaysia', malaysiaProducts], ['Cambodia', cambodiaProducts], ['Laos', laosProducts]
+];
 
-export const products = Object.values(Object.fromEntries(all.map((p) => [p.slug, p])));
+const bySlug = {};
+BY_COUNTRY.forEach(([country, list]) => (list || []).filter(Boolean).forEach((p) => {
+  const prev = bySlug[p.slug] || { ...p, countries: [] };
+  bySlug[p.slug] = { ...prev, countries: [...prev.countries, country] };
+}));
 
-export const hero = { ...asiaHero, h1: 'Asia tours & holidays' };
+export const products = Object.values(bySlug);
+
+export const hero = {
+  ...asiaHero,
+  h1: 'Asia tours & holidays',
+  holidaysH1: 'Asia tours & holidays',
+  styleH1: (style) => `Asia ${style.toLowerCase()} holidays`,
+  tabAbout: 'About Asia',
+  tabTours: 'Asia holidays',
+  stickyCta: 'Plan your Asia trip',
+  sub: 'Your travel plan, no obligation and tailor-made',
+  image: asiaHero.images[0].src,
+  imageAlt: asiaHero.images[0].alt
+};
 
 export const tours = {
   h2: 'Top-selling Asia holiday ideas',
@@ -44,7 +64,7 @@ export const tours = {
 export const holidaysPath = '/asia/holidays';
 export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Asia tours & holidays' }];
 
-export const planner = { ...egyptPlanner, h3: 'Customize your Asia trip', bg: asiaHero.images[2].src };
+export const planner = { ...egyptPlanner, h3: 'Customize your Asia trip', bg: asiaHero.images[1].src };
 export const faq = egyptFaq;
 
 export const asiaHolidays = {

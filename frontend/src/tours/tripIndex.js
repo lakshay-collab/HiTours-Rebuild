@@ -1,7 +1,6 @@
 // Every itinerary (detail/route/glance/crumbs) keyed by slug. Used by the detail page and the holidays filter model.
 import { detail as detail0, route as route0, glance as glance0, crumbs as crumbs0 } from '../egyptDetailData';
 import { detail as detail1, route as route1, glance as glance1, crumbs as crumbs1 } from '../moroccoEgyptData';
-import { detail as detail2, route as route2, glance as glance2, crumbs as crumbs2 } from '../srilankaData';
 import { detail as detail3, route as route3, glance as glance3, crumbs as crumbs3 } from '../thailandData';
 import { detail as detailGF, route as routeGF, glance as glanceGF, crumbs as crumbsGF } from './egyptGrandFestivalData';
 import { detail as detailMM, route as routeMM, glance as glanceMM, crumbs as crumbsMM } from './misrMayaData';
@@ -11,7 +10,6 @@ import { detail as detailPF, route as routePF, glance as glancePF, crumbs as cru
 import { detail as detailND, route as routeND, glance as glanceND, crumbs as crumbsND } from './nileDarshanData';
 import { detail as detailNN, route as routeNN, glance as glanceNN, crumbs as crumbsNN } from './nileNoorData';
 import { vietnamBySlug } from './vietnamToursData';
-import { srilankaBySlug } from './srilankaToursData';
 import { malaysiaBySlug } from './malaysiaToursData';
 import { singaporeBySlug } from './singaporeToursData';
 import { kazakhstanBySlug } from './kazakhstanToursData';
@@ -21,24 +19,15 @@ import { japanBySlug } from './japanToursData';
 import { indonesiaBySlug } from './indonesiaToursData';
 import { chinaBySlug } from './chinaToursData';
 import { cambodiaBySlug } from './cambodiaToursData';
-import { philippinesBySlug } from './philippinesToursData';
-import { icelandBySlug } from './icelandToursData';
 import { europeBySlug } from './europeToursData';
 import { italyBySlug } from './italyToursData';
 import { greeceBySlug } from './greeceToursData';
 import { norwayBySlug } from './norwayToursData';
 import { irelandBySlug } from './irelandToursData';
-import { spainBySlug } from './spainToursData';
-import { portugalBySlug } from './portugalToursData';
-import { croatiaBySlug } from './croatiaToursData';
-import { englandBySlug } from './englandToursData';
-import { scotlandBySlug } from './scotlandToursData';
 import { finlandBySlug } from './finlandToursData';
 import { swedenBySlug } from './swedenToursData';
 import { thailandBySlug } from './thailandToursData';
-import { maldivesBySlug } from './maldivesToursData';
 import { veniceViennaBySlug } from './veniceViennaData';
-import { icelandGlaciersBySlug } from './icelandGlaciersData';
 import { bestOfThailandSingaporeMalaysiaHongKongBySlug } from './bestOfThailandSingaporeMalaysiaHongKongData';
 import { bestOfPhuketKrabiBangkokBySlug } from './bestOfPhuketKrabiBangkokData';
 import { grandVietnamCambodiaThailandBySlug } from './grandVietnamCambodiaThailandData';
@@ -277,7 +266,6 @@ import { exoticGreeceIslandHoppingBySlug } from './exoticGreeceIslandHoppingData
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
   [detail1.slug]: { detail: detail1, route: route1, glance: glance1, crumbs: crumbs1 },
-  [detail2.slug]: { detail: detail2, route: route2, glance: glance2, crumbs: crumbs2 },
   [detail3.slug]: { detail: detail3, route: route3, glance: glance3, crumbs: crumbs3 },
   [detailGF.slug]: { detail: detailGF, route: routeGF, glance: glanceGF, crumbs: crumbsGF },
   [detailMM.slug]: { detail: detailMM, route: routeMM, glance: glanceMM, crumbs: crumbsMM },
@@ -287,7 +275,6 @@ export const BY_SLUG = {
   [detailND.slug]: { detail: detailND, route: routeND, glance: glanceND, crumbs: crumbsND },
   [detailNN.slug]: { detail: detailNN, route: routeNN, glance: glanceNN, crumbs: crumbsNN },
   ...vietnamBySlug,
-  ...srilankaBySlug,
   ...malaysiaBySlug,
   ...singaporeBySlug,
   ...kazakhstanBySlug,
@@ -297,24 +284,15 @@ export const BY_SLUG = {
   ...indonesiaBySlug,
   ...chinaBySlug,
   ...cambodiaBySlug,
-  ...philippinesBySlug,
-  ...icelandBySlug,
   ...europeBySlug,
   ...italyBySlug,
   ...greeceBySlug,
   ...norwayBySlug,
   ...irelandBySlug,
-  ...spainBySlug,
-  ...portugalBySlug,
-  ...croatiaBySlug,
-  ...englandBySlug,
-  ...scotlandBySlug,
   ...finlandBySlug,
   ...swedenBySlug,
   ...thailandBySlug,
-  ...maldivesBySlug,
   ...veniceViennaBySlug,
-  ...icelandGlaciersBySlug,
   ...bestOfThailandSingaporeMalaysiaHongKongBySlug,
   ...bestOfPhuketKrabiBangkokBySlug,
   ...grandVietnamCambodiaThailandBySlug,

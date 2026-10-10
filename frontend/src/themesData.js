@@ -9,10 +9,8 @@ export const themeGroups = [
     key: 'adventure',
     title: 'Adventure',
     items: [
-      { label: 'Northern Lights', href: themeHref('Northern Lights'), image: pic('Europe', 'Iceland') },
       { label: 'Wildlife & Safari', href: themeHref('Wildlife & Safari'), image: pic('Africa', 'Kenya') },
       { label: 'Trekking & Hiking', href: themeHref('Trekking & Hiking'), image: pic('South America', 'Peru') },
-      { label: 'Diving & Snorkelling', href: themeHref('Diving & Snorkelling'), image: pic('Asia', 'Maldives') },
       { label: 'Desert & Dunes', href: themeHref('Desert & Dunes'), image: pic('Africa', 'Namibia') }
     ]
   },
@@ -33,7 +31,6 @@ export const themeGroups = [
     title: 'Culture & cities',
     items: [
       { label: 'Culture & heritage', href: themeHref('Culture & heritage'), image: pic('Africa', 'Egypt') },
-      { label: 'City breaks', href: themeHref('City breaks'), image: pic('Europe', 'England') },
       { label: 'Food & culinary', href: themeHref('Food & culinary'), image: pic('Europe', 'Italy') },
       { label: 'Short trips', href: themeHref('Short trips'), image: pic('Asia', 'Sri Lanka') }
     ]
@@ -44,7 +41,6 @@ export const themeGroups = [
     items: [
       { label: 'Beach & relaxation', href: themeHref('Beach & relaxation'), image: pic('Africa', 'Mauritius') },
       { label: 'Nile & river cruises', href: themeHref('Nile & river cruises'), image: pic('Asia', 'Vietnam') },
-      { label: 'Islands & lagoons', href: themeHref('Islands & lagoons'), image: pic('Asia', 'Philippines') },
       { label: 'Lakes & mountains', href: themeHref('Lakes & mountains'), image: pic('North America', 'Canada') }
     ]
   }

@@ -8,6 +8,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: "Laos", href: '/asia/laos' }]
 });
 
-export const laosProducts = [...packages.map(toProduct), vietnamLaosCambodiaTrioProduct];
-export const laosTours = packages.map(build);
-export const laosBySlug = Object.fromEntries(laosTours.map((t) => [t.detail.slug, t]));
+export const laosProducts = [vietnamLaosCambodiaTrioProduct];
+export const laosTours = [];
+export const laosBySlug = {};

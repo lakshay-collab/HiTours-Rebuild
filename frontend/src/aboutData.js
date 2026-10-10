@@ -19,7 +19,7 @@ export const hero = {
   ],
   h1: 'When travel means the world to you',
   sub: 'Personalised holidays, honest prices and a specialist who stays with you from the first call to the flight home.',
-  intro: 'Hi Tours is an Indian travel company planning tailor-made holidays across Asia, Africa and Europe since 2016. Every trip is built around your dates, your pace and your budget by a holiday specialist who knows the destination first-hand, and backed by local partners we have worked with for years.',
+  intro: 'Hi Tours is part of the Hi Tours Group and specialises in custom luxury holidays and honeymoons across Asia, Europe and the Middle East. Every trip is built around your dates, your pace and your budget by a holiday specialist who knows the destination first-hand. In thirty years we have sent millions of happy travellers on their way.',
   stats: [
     { value: '1,00,000+', label: 'travellers planned for' },
     { value: '4.8 / 5', label: 'average review rating' },
@@ -84,8 +84,8 @@ export const cta = { h2: 'Start planning your own Hi Tours' };
 
 const find = (name) => Object.values(destinations).flat().find((d) => d.name === name);
 const TOP10 = [
-  ['Vietnam', '/asia/vietnam'], ['Thailand', '/asia/thailand'], ['Sri Lanka', '/asia/sri-lanka'], ['Egypt', '/africa/egypt'], ['Japan', '/asia/japan'],
-  ['Maldives', '/asia/maldives'], ['Bhutan', '/asia/bhutan'], ['Kazakhstan', '/asia/kazakhstan'], ['Italy', '/europe/italy'], ['Greece', '/europe/greece']
+  ['Vietnam', '/asia/vietnam'], ['Thailand', '/asia/thailand'], ['Egypt', '/africa/egypt'], ['Japan', '/asia/japan'],
+  ['Bhutan', '/asia/bhutan'], ['Kazakhstan', '/asia/kazakhstan'], ['Italy', '/europe/italy'], ['Greece', '/europe/greece']
 ];
 export const top10 = {
   h2: 'Our top 10 countries',
@@ -119,7 +119,7 @@ export const careers = {
 export const faq = {
   h2: 'Frequently asked questions',
   items: [
-    { q: 'What is Hi Tours?', a: ['Hi Tours is an Indian travel company specialising in personalised, tailor-made holidays across Asia, Africa and Europe. Since 2016 we have worked with local partners to design custom trips covering everything from flights and hotels to unique experiences.', 'With over 1,00,000 travellers planned for and a 4.8-star average rating, we have built a reputation for holidays that simply work.'] },
+    { q: 'What is Hi Tours?', a: ['Hi Tours is part of the Hi Tours Group and specialises in custom luxury holidays and honeymoons across Asia, Europe and the Middle East. We work with our own local partners in every destination to design trips covering flights, hotels, transfers, guides and the experiences in between.', 'Thirty years in, millions of travellers have gone with us, and the 4.8-star average rating is the part we are proudest of.'] },
     { q: 'How does Hi Tours work?', a: ['Share your destination, dates, travel style and budget and receive a free personalised itinerary in minutes. Then your dedicated holiday specialist refines it with you one-on-one.', 'Once the trip is exactly how you want it, we handle every booking and stay with you before, during and after your journey.'] },
     { q: 'Is Hi Tours only for luxury travel?', a: ['No. We plan for all travel styles and budgets. Whether that means 5-star resorts or boutique hideaways off the beaten path, your specialist designs around what matters to you.'] },
     { q: 'How much does a personalised itinerary cost?', a: ['Nothing. Consulting with a Hi Tours specialist is free and without obligation, including your first personalised itinerary.'] },
