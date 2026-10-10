@@ -193,3 +193,41 @@ Verified by testing agent iteration_56.json: 100% frontend pass, all 14 KZ + 13 
 sort, Venice regression and China/Vietnam/Japan regressions clean.
 Tester flagged that no page has a separate "not included" section - that is by design across all 200+ trips: the
 exclusions text lives in the itinerary `intro2`/`outro` fields. Not a bug.
+
+
+### Europe import (5) + mobile UI bug fixes - June 2026
+Europe: all 5 requested Thrillophilia links live on /europa/holidays. The 6 generic multi-country packages were
+removed on the user's instruction ("upload all Thrillophilia links, remove the other Europe packages that are not
+Thrillophilia-based"): europePackages.js `packages = []`, europeToursData.js `europeProducts` is now an explicit array.
+Trips: italyAndSwitzerlandRomeVeniceTitlis, parisAndSwitzerlandEiffelRigi, westernEuropeGroupTourAlpsAmsterdam,
+switzerlandItalyHoneymoonGondola, romeFlorenceParisHoneymoon. Specs: import/spec_eu_*.json. All pass check_trip.py.
+No Switzerland/France/Germany/Netherlands/Austria destination pages exist; the user said country pages can come later.
+
+NEW SCRIPT scripts/thrillophilia/extract_legacy.py
+italy-and-france-honeymoon-package is served from Thrillophilia's OLD (non Next.js) template, so extract.py fails with
+"AttributeError: 'NoneType' object has no attribute 'group'" (no __NEXT_DATA__ script). The legacy payload lives in a
+single data-react-props blob and its itinerary is prose only - no structured hotels, transfers or activities.
+extract_legacy.py emits a compatible raw.json; pass the city names explicitly:
+  python3 extract_legacy.py <url> Rome Florence Pisa Paris
+Hotels come out empty so build_trip.py falls back to the trip gallery and the stops are labelled "<City> city hotel".
+Note the destination gallery API returns media_urls.original, not url.
+
+Mobile UI bugs fixed (all four reported with screenshots):
+ 1. Header/floating-pill magnifier was duplicating the page's own search. Header.jsx now watches every
+    [data-testid$="-search-form"] (except the overlay one) with an IntersectionObserver and hides both
+    `floating-mobile-search` and `mobile-search-toggle` while any page search bar is on screen. It polls up to 30
+    frames on mount because the Header renders before the page body.
+ 2. The "Start your next adventure" search (AdventureCTA.jsx, id="adventure" - NOT the hero) had its suggestion list
+    painted over by the decorative landmark collage: the collage wrapper was z-[2] and the search content z-[1].
+    Swapped them, gave the section `relative z-[20]`, and the SearchBar dropdown went z-50 -> z-[120] with the
+    wrapper lifted to z-[120] while focused. Hero.jsx also got `z-[30]` for the same reason.
+ 3. Mobile filter sheet now leads with Experiences, then Theme: new MOBILE_GROUPS export in holidays/filterModel.js,
+    used by MobileFilterSheet.jsx and the mobile chip row in EgyptHolidays.jsx; default initialGroup is 'experience'.
+    Desktop GROUPS order is unchanged.
+ 4. Opening a trip from a scrolled listing landed mid-page. App.js ScrollToTop now uses useLayoutEffect, sets
+    history.scrollRestoration = 'manual' and re-asserts scrollTo(0,0) on the next two frames, because lazily measured
+    galleries and sticky sidebars grow the page after the first commit.
+Verified on the preview: header button count 0 while a page search is visible and 1 after scrolling past; the
+adventure dropdown now paints above the collage; scrollY is 0 with the H1 visible when a trip opens.
+NOT visually confirmed: the mobile filter sheet order (the screenshot tool renders at desktop width, so the bottom
+sheet layout does not appear) - the change is a deterministic array reorder.

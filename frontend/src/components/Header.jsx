@@ -85,22 +85,27 @@ export default function Header({ overlay = false, floating = false }) {
     return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); };
   }, [floating]);
 
-  // The page already has its own search bar in the hero. While that bar is on screen the
-  // duplicate magnifier in the floating pill is noise, so hide it until the bar scrolls away.
+  // The page has its own search bars (hero and the "Start your next adventure" block). While any of
+  // them is on screen the duplicate magnifier in the header is noise, so hide it until they scroll away.
   const [pageSearchVisible, setPageSearchVisible] = useState(false);
   useEffect(() => {
     let io;
     let tries = 0;
     let raf;
+    const seen = new Map();
     const attach = () => {
-      const el = document.querySelector('[data-testid="hero-search-form"]');
-      if (!el) {
-        // Header mounts before the hero, so poll a few frames before giving up.
+      const els = [...document.querySelectorAll('[data-testid$="-search-form"]')]
+        .filter((el) => el.dataset.testid !== 'overlay-search-form');
+      if (!els.length) {
+        // Header mounts before the page body, so poll a few frames before giving up.
         if (tries++ < 30) { raf = requestAnimationFrame(attach); } else { setPageSearchVisible(false); }
         return;
       }
-      io = new IntersectionObserver(([e]) => setPageSearchVisible(e.isIntersecting), { threshold: 0.2 });
-      io.observe(el);
+      io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => seen.set(e.target, e.isIntersecting));
+        setPageSearchVisible([...seen.values()].some(Boolean));
+      }, { threshold: 0.2 });
+      els.forEach((el) => io.observe(el));
     };
     setPageSearchVisible(false);
     attach();
