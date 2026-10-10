@@ -1,0 +1,67 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "discover-shanghai",
+ "camel": "classicShanghaiGreatWallBreak",
+ "slug": "classic-shanghai-with-the-great-wall",
+ "title": "Classic Shanghai with the Great Wall",
+ "alt": "Watchtower of the Southern Great Wall on a wooded ridge",
+ "transport": "Private airport transfers and guided city touring",
+ "tag": "Culture",
+ "tags": ["Culture", "City break"],
+ "price": 55575,
+ "route_cities": ["Shanghai", "Pudong"],
+ "counts": { "days": 5, "nights": 4, "cities": 1, "hotels": 1, "experiences": 5, "transfers": 8, "meals": 4 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [1, 2, 3, 4, 5],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Holiday Inn Express Shanghai Putuo",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Quiet hotel in Putuo with a metro stop nearby",
+   "activities": [
+    { "name": "Shanghai Zoo", "day": 2, "optional": false, "match": "Shanghai Zoo", "description": "A full day at the zoo on the old Hongqiao golf course, with giant pandas, big cat houses and wide lawns for children." },
+    { "name": "Southern Great Wall day trip", "day": 3, "optional": false, "match": "Southern Great Wall", "description": "A day out of the city to the Southern Great Wall, walking its watchtowers and ridge path away from the tour crowds." },
+    { "name": "Half day guided tour of Shanghai", "day": 4, "optional": false, "match": "Half-Day Shanghai Sightseeing Tour", "description": "A guided morning through the Bund waterfront, the old town lanes and the rockeries and ponds of the Yu garden." },
+    { "name": "Oriental Pearl Tower", "day": 4, "optional": false, "match": "Oriental Pearl Tower", "description": "Tickets up the city's best known tower, with the glass floor over Pudong and a long view back to the colonial Bund." },
+    { "name": "Huangpu river cruise", "day": 4, "optional": false, "match": "Huangpu River Cruise", "description": "An evening sailing between the lit towers of Pudong and the stone facades of the Bund, the classic Shanghai skyline shot." }
+   ],
+   "program": { "name": "Shanghai", "description": "Four nights in one city: the zoo and its pandas, a day on the Southern Great Wall, then the Bund, the Yu garden, the Pearl Tower and a river cruise." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Shanghai",
+  "2": "A day at Shanghai Zoo",
+  "3": "Southern Great Wall day trip",
+  "4": "City tour, tower and river cruise",
+  "5": "Departure from Shanghai"
+ },
+ "bullets": {
+  "1": ["Arrival at Pudong or Hongqiao and transfer to your hotel", "Check in and the rest of the day free", "Optional: an evening walk on the Bund", "Optional: the Shanghai Museum on People's Square"],
+  "2": ["Breakfast, then across to Shanghai Zoo", "Tickets included for the full day", "Giant pandas, big cat houses and old lawns", "Afternoon free for Nanjing Road"],
+  "3": ["Early breakfast and transfer out of the city", "A full day at the Southern Great Wall", "Watchtowers, ramparts and the long ridge path", "Evening transfer back to your Shanghai hotel"],
+  "4": ["Breakfast, then a guided half day of the city", "The Bund, the old town lanes and the Yu garden", "Up the Oriental Pearl Tower in the afternoon", "A cruise on the Huangpu as the towers light up"],
+  "5": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Shanghai Putuo",
+  "2": "Holiday Inn Express Shanghai Putuo",
+  "3": "Holiday Inn Express Shanghai Putuo",
+  "4": "Holiday Inn Express Shanghai Putuo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Most people never hear that Shanghai has its own stretch of wall. It makes this short break feel bigger than four nights.",
+  "tip": "Do the city tour last. After the wall and the zoo, the Bund and the tower read as the finish rather than the warm up."
+ },
+ "summary": "Five days in Shanghai with daily breakfast: a full day at the zoo with its giant pandas, a day trip to the Southern Great Wall, then a guided half day of the Bund, the Yu garden, the Pearl Tower and a Huangpu cruise.",
+ "included": "Included: 4 nights in Shanghai with daily breakfast; private airport transfers; Shanghai Zoo tickets; Southern Great Wall day trip; half day guided city tour; Oriental Pearl Tower tickets; Huangpu river cruise tickets.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

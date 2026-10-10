@@ -1,0 +1,109 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "best-of-china",
+ "camel": "bestOfChinaGoldenTriangle",
+ "slug": "best-of-china-beijing-xian-and-shanghai",
+ "title": "Best of China: Beijing, Xi'an and Shanghai",
+ "alt": "Golden roofs of the Forbidden City in Beijing",
+ "transport": "Private transfers, guided city tours, bullet train and an internal flight",
+ "tag": "Culture",
+ "tags": ["Culture", "Family"],
+ "price": 95000,
+ "route_cities": ["Beijing", "Xi'an", "Shanghai"],
+ "counts": { "days": 10, "nights": 9, "cities": 3, "hotels": 3, "experiences": 8, "transfers": 12, "meals": 9 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [1, 2, 3, 4],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Holiday Inn Express Beijing Huacai",
+   "accom": "4 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Simple hotel in Chaoyang, close to the metro",
+   "activities": [
+    { "name": "Beijing city sightseeing tour", "day": 2, "optional": false, "match": "Beijing Sightseeing Tour", "description": "A guided day through Tiananmen Square, the courtyards of the Forbidden City and the round halls of the Temple of Heaven." },
+    { "name": "Great Wall at Mutianyu and the Summer Palace", "day": 3, "optional": false, "match": "Full-Day Great Wall & Summer Palace Tour", "description": "The Mutianyu section of the wall, steep and far less crowded than Badaling, then the lake and long corridor of the Summer Palace." },
+    { "name": "Universal Studios Beijing", "day": 4, "optional": false, "match": "Universal Studios Beijing", "description": "A full day at Universal Studios Beijing with tickets included, home to the largest Harry Potter area built anywhere." }
+   ],
+   "program": { "name": "Beijing", "description": "Four nights in the capital with Tiananmen Square and the Forbidden City, the wall at Mutianyu, the Summer Palace and Universal Studios." }
+  },
+  {
+   "letter": "B",
+   "name": "Xi'an",
+   "city": "Xi An",
+   "days": [5, 6],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel beside the Giant Wild Goose Pagoda",
+   "activities": [
+    { "name": "Xi'an sightseeing tour", "day": 6, "optional": false, "match": "Xian Sightseeing Tour", "description": "A guided day with the terracotta warriors in their excavation pits, the Bell Tower and the Giant Wild Goose Pagoda." }
+   ],
+   "program": { "name": "Xi'an", "description": "Two nights at the eastern end of the Silk Road, with the terracotta army, the Bell Tower and the city walls." }
+  },
+  {
+   "letter": "C",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [7, 8, 9, 10],
+   "dayLabel": "Day 7 to 10",
+   "hotel": "Holiday Inn Express Shanghai Putuo",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Comfortable base in Putuo close to the metro",
+   "activities": [
+    { "name": "Half day guided tour of Shanghai", "day": 8, "optional": false, "match": "Half-Day Shanghai Sightseeing Tour", "description": "A guided morning through the Bund waterfront, the old town lanes and the rockeries and ponds of the Yu garden." },
+    { "name": "Oriental Pearl Tower", "day": 8, "optional": false, "match": "Oriental Pearl Tower", "description": "Tickets up the city's best known tower, with the glass floor over Pudong and a long view back to the colonial Bund." },
+    { "name": "Huangpu river cruise", "day": 8, "optional": false, "match": "Huangpu River Cruise", "description": "An evening sailing between the lit towers of Pudong and the stone facades of the Bund, the classic Shanghai skyline shot." },
+    { "name": "Shanghai Disneyland", "day": 9, "optional": false, "match": "Shanghai Disneyland", "description": "A full day at Shanghai Disneyland with tickets included, home to the Enchanted Storybook Castle and the Tron ride." }
+   ],
+   "program": { "name": "Shanghai", "description": "Three nights to finish: the Bund and the Yu garden, the Oriental Pearl Tower, a Huangpu cruise and a full day at Disneyland." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Forbidden City and Temple of Heaven",
+  "3": "Great Wall and the Summer Palace",
+  "4": "Universal Studios Beijing",
+  "5": "Beijing to Xi'an by bullet train",
+  "6": "Terracotta warriors and old Xi'an",
+  "7": "Xi'an to Shanghai",
+  "8": "City tour, tower and river cruise",
+  "9": "Shanghai Disneyland",
+  "10": "Departure from Shanghai"
+ },
+ "bullets": {
+  "1": ["Arrival at Beijing Capital and transfer to your hotel", "Check in and the rest of the day free", "Optional: the Lama Temple or the 798 art district", "Optional: Peking duck at a neighbourhood restaurant"],
+  "2": ["Breakfast, then a guided day in the old centre", "Tiananmen Square and the Forbidden City courtyards", "The Temple of Heaven and its round halls", "A stop at the jade workshop on the way back"],
+  "3": ["Early breakfast, then north to Mutianyu", "The cable car and the walk along the wall", "On to the Summer Palace in the afternoon", "Kunming lake, the long corridor and the marble boat"],
+  "4": ["Early breakfast, then out to Universal Studios", "Tickets included for the full day", "The Harry Potter area and the water park rides", "Back at the hotel in the evening"],
+  "5": ["Breakfast and check out of your Beijing hotel", "Station transfer and the bullet train south to Xi'an", "Arrival transfer and check in beside the pagoda", "Rest of the day free in the walled centre"],
+  "6": ["Breakfast, then a guided day around Xi'an", "The terracotta warriors in their excavation pits", "The Bell Tower in the walled old centre", "The Giant Wild Goose Pagoda in the afternoon"],
+  "7": ["Breakfast at the hotel and check out", "Optional: flight Xi'an to Shanghai, booked with us", "Arrival transfer and check in at Shanghai", "Rest of the day free for the Bund or Nanjing Road"],
+  "8": ["Breakfast, then a guided half day of the city", "The Bund, the old town lanes and the Yu garden", "Up the Oriental Pearl Tower in the afternoon", "A cruise on the Huangpu as the towers light up"],
+  "9": ["Breakfast, then a day at Shanghai Disneyland", "Tickets included for the full day", "The Enchanted Storybook Castle and the Tron ride", "Back at the hotel in the evening"],
+  "10": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B", "8": "B", "9": "B", "10": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Huacai",
+  "2": "Holiday Inn Express Beijing Huacai",
+  "3": "Holiday Inn Express Beijing Huacai",
+  "4": "Holiday Inn Express Beijing Huacai",
+  "5": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+  "6": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+  "7": "Holiday Inn Express Shanghai Putuo",
+  "8": "Holiday Inn Express Shanghai Putuo",
+  "9": "Holiday Inn Express Shanghai Putuo",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Beijing, Xi'an and Shanghai in nine nights is the route I give first timers. One imperial city, one ancient one, one modern one.",
+  "tip": "Book the bullet train seats on the left going south. You get the farmland and the Yellow River bridges rather than the service sheds."
+ },
+ "summary": "Ten days across the three cities most first time visitors want: imperial Beijing with the Great Wall and Universal Studios, the terracotta army at Xi'an, then the Bund, the Pearl Tower and Disneyland in Shanghai.",
+ "included": "Included: 9 nights with daily breakfast across Beijing, Xi'an and Shanghai; private transfers; guided Beijing city tour; full day Great Wall at Mutianyu with the Summer Palace; Universal Studios Beijing tickets; Beijing to Xi'an bullet train; guided Xi'an sightseeing tour; half day guided Shanghai city tour; Oriental Pearl Tower tickets; Huangpu river cruise tickets; Shanghai Disneyland tickets.",
+ "not_included": "Not included: international flights; the Xi'an to Shanghai internal flight; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

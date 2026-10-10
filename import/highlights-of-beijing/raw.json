@@ -1,0 +1,780 @@
+{
+ "source": "https://www.thrillophilia.com/tours/highlights-of-beijing",
+ "captured_at": "2026-10-09",
+ "title": "Highlights of Beijing",
+ "slug": "highlights-of-beijing",
+ "duration": "4D/3N",
+ "city_split": [
+  [
+   "Beijing",
+   4
+  ]
+ ],
+ "country": "Beijing",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Newly Added",
+ "highlights": [
+  "Walk through Beijing’s historic palaces and lively streets, soaking in the rich history and vibrant city life that shape China’s bustling capital.",
+  "Glide down the Mutianyu section of the Great Wall on an exciting toboggan ride, offering a unique way to descend one of the most scenic and less explored parts.",
+  "Explore the Imperial Summer Palace, a UNESCO site renowned for Kunming Lake, ornate pavilions, and the 728-metre Long Corridor, the world’s longest painted gallery.",
+  "Visit the Panda House at Beijing Zoo, one of the few places worldwide where you can see China’s beloved giant pandas in spacious, thoughtfully designed enclosures."
+ ],
+ "overview": "",
+ "price_per_adult": 29500,
+ "struck_price": 39235,
+ "currency": "INR",
+ "inr_price": 29500,
+ "inclusions": [
+  "Transfer from Beijing Capital International Airport to Deluxe Hotel",
+  "3 nights stay in Beijing with breakfast",
+  "Full-Day Great Wall & Summer Palace Tour, Beijing",
+  "Beijing Zoo with Panda House tickets and ticket",
+  "Transfer from Deluxe Hotel to Beijing Capital International Airport",
+  "Daily Breakfast"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions",
+  "International flight tickets",
+  "Travel Insurance",
+  "Visa Charges"
+ ],
+ "know_before_you_go": [
+  "Carry a valid ID proof at all times.",
+  "Wear comfortable shoes for walking and be prepared for steep climbs at Mutianyu Great Wall.",
+  "The official currency is the Renminbi (RMB). Carry both cash and a credit card, as not all places accept cards.",
+  "Mandarin is the official language. English is not widely spoken, so learning basic phrases or using translation apps can be helpful.",
+  "Respect local customs, including bowing slightly when greeting and removing shoes in some homes or temples.",
+  "Tipping is not customary in China but may be appreciated in some high-end establishments."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Beijing | Leisure Day",
+   "city": "Beijing",
+   "desc": "Welcome to Beijing! Once you arrive at the airport, you’ll be driven to the hotel. After check in, you can either unwind or start exploring the city. You can walk through Yuyuantan Park, famous for its cherry blossoms in spring, or visit a local jade factory to watch skilled artisans create detailed pieces from treasured gemstones. For a deeper dive into the country’s history, head to the National Museum of China, home to over 1.4 million artifacts from ancient dynasties to contemporary times.",
+   "leisure": true,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Holiday Inn Express Beijing Huacai"
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Attraction",
+     "title": "National Museum Of China",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/cgvn0zymkzff9bznlpd8xrqwqv7j_1619597637_shutterstock_269743367.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Yuyuantan Park",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/x6xdiza6qwod8l8ofd9ytan5y5ol_Yuyuantan_Park_2010.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Jade Factory Beijing",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/84gat8evimyzy1miparwyy6d1bch_tian-yi-jade-factory.png"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Visit to Mutianyu Great Wall & Summer Palace ",
+   "city": "Beijing",
+   "desc": "Today, board your transfer to the Mutianyu section of the Great Wall, known for its intact watchtowers and picturesque landscapes. Ride a cable car to the summit for panoramic views of the mountains and the wall snaking through the terrain. After exploring the ancient fortifications, visit the Summer Palace, a UNESCO World Heritage site with over 3,000 historic buildings. Walk past iconic spots like the Tower of Buddhist Incense, the Marble Boat on Kunming Lake, and the Seventeen-Arch Bridge.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Full-Day Great Wall & Summer Palace Tour, Beijing",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+      "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+      "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+      "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+      "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+      "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Visit to Beijing Zoo ",
+   "city": "Beijing",
+   "desc": "Today, make your way to Beijing Zoo, one of China’s oldest and largest, spanning 219 acres with over 14,500 animals from 950 species. The highlight is the Giant Panda House, offering an up-close look at China’s cherished national treasure. Explore exhibits featuring rare species like the South China tiger, golden snub-nosed monkey, and red-crowned crane. The zoo’s Qing Dynasty-style gardens, with traditional pavilions and serene pathways, add a historical charm to your visit.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Activity",
+     "title": "Beijing Zoo with Panda House tickets",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/s12nn7g02u6anopsc500e2ohdkgi_shutterstock_408855481.jpg",
+      "https://media1.thrillophilia.com/filestore/two5p215n1d7mje1km1t8gapopu6_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+      "https://media1.thrillophilia.com/filestore/o16d9ka0wxxamyzzfr4as1iz7anl_dl.beatsnoop.com-3000-EDcAQTCibB.jpg",
+      "https://media1.thrillophilia.com/filestore/49ndf08oq6dy0lneb21j3ppi58i8_shutterstock_408841948.jpg",
+      "https://media1.thrillophilia.com/filestore/ctm7putz8t317jfnvqrlmkbfjtf8_shutterstock_2373412537.jpg",
+      "https://media1.thrillophilia.com/filestore/741xkb8mz2vbzp4ki46wd9wl8hf3_shutterstock_82092487.jpg",
+      "https://media1.thrillophilia.com/filestore/epv2sjl3l7kpmrcptkpax85imqtv_shutterstock_408343930.jpg",
+      "https://media1.thrillophilia.com/filestore/cqumwp6878dhqrvrgiiu7cte3cug_dl.beatsnoop.com-3000-gEZaF87Nmb.jpg",
+      "https://media1.thrillophilia.com/filestore/x5ma6kudmhcbtv8d05yash9xvw8e_shutterstock_71208400.jpg",
+      "https://media1.thrillophilia.com/filestore/ui0rfb1kkyhudls0ncropdp1gukq_1619610265_shutterstock_71208424.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Beijing Zoo",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ui0rfb1kkyhudls0ncropdp1gukq_1619610265_shutterstock_71208424.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 4,
+   "title": "Departure Day",
+   "city": "Beijing",
+   "desc": "After checking out of the hotel, you’ll be driven to the airport for your flight home. As your time in Beijing wraps up, take a moment to reflect on the rich history and unique experiences you’ve enjoyed. With unforgettable memories and stories to share, head home ready to recount the highlights of your journey in this vibrant city.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Holiday Inn Express Beijing Airport Zone",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.5,
+   "city": "Beijing",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ae0hac2g5qd1n9axh1jqpt99ozd1_230938408.jpg",
+    "https://media1.thrillophilia.com/filestore/l99whlymbj2e9oq79r3k810j0tot_449523454.jpg",
+    "https://media1.thrillophilia.com/filestore/n5eklhgzp2u01vpbddaa1r5zxi2y_562215035.jpg",
+    "https://media1.thrillophilia.com/filestore/81eqlhk2zzjykqyh3pch031wknoy_449523548.jpg",
+    "https://media1.thrillophilia.com/filestore/7kk13ainhi0qx7fo0tthv63ps91d_12482579.jpg",
+    "https://media1.thrillophilia.com/filestore/jhawmh5e256sjdp1x2h23ps17h4g_449517694.jpg",
+    "https://media1.thrillophilia.com/filestore/g88p34unkr9pk4pcj2iyenv2r8vm_562215034.jpg",
+    "https://media1.thrillophilia.com/filestore/qwks499yg21lter3820b29gq6m5s_449517678.jpg",
+    "https://media1.thrillophilia.com/filestore/z9de7zmyvi82jz0hr02swt3tcceh_562215021.jpg",
+    "https://media1.thrillophilia.com/filestore/fcdpa7aud4793bc91732rlod14qv_449517685.jpg",
+    "https://media1.thrillophilia.com/filestore/lqsxw6znys0rnvb0pkhp7hyaqwas_562232017.jpg"
+   ]
+  },
+  {
+   "name": "Holiday Inn Express Beijing Huacai",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 5,
+   "city": "Beijing",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/3b4gz9aov40t96ogrda2jhvg1q1t_download%20(3).png",
+    "https://media1.thrillophilia.com/filestore/ji2e1fiswpb2bh6a0f9tw74wciq7_download.png",
+    "https://media1.thrillophilia.com/filestore/4klt1p2b0p6084tozhz8v1sqeoon_download%20(5).png",
+    "https://media1.thrillophilia.com/filestore/f6ur39l3yfs9cfsrx76cgjmynx36_download%20(10).png",
+    "https://media1.thrillophilia.com/filestore/stuz5zpxnigri6crm4sbcl0vipiz_download%20(7).png",
+    "https://media1.thrillophilia.com/filestore/4m23luywihiiew6he29e7ne5y9pd_download%20(2).png",
+    "https://media1.thrillophilia.com/filestore/4jm1r5udgur3oj27w7b11po95by8_download%20(8).png",
+    "https://media1.thrillophilia.com/filestore/z4wfj6rsuku27ileod8ejxv1g31t_download%20(4).png",
+    "https://media1.thrillophilia.com/filestore/fcd5rd430f52k5hihctlwqkn6fqa_download%20(6).png",
+    "https://media1.thrillophilia.com/filestore/wkxjbpeobmslop2ifzhcg6o3dn4w_download%20(1).png",
+    "https://media1.thrillophilia.com/filestore/mt62w350l0rnv10hpz2lm7bg2ucn_download%20(9).png"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "National Museum Of China",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/cgvn0zymkzff9bznlpd8xrqwqv7j_1619597637_shutterstock_269743367.jpg"
+   ]
+  },
+  {
+   "name": "Yuyuantan Park",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/x6xdiza6qwod8l8ofd9ytan5y5ol_Yuyuantan_Park_2010.jpg"
+   ]
+  },
+  {
+   "name": "Jade Factory Beijing",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/84gat8evimyzy1miparwyy6d1bch_tian-yi-jade-factory.png"
+   ]
+  },
+  {
+   "name": "Full-Day Great Wall & Summer Palace Tour, Beijing",
+   "day": 2,
+   "city": "Beijing",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    9,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+    "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+    "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+    "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+    "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+    "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg"
+   ]
+  },
+  {
+   "name": "Beijing Zoo with Panda House tickets",
+   "day": 3,
+   "city": "Beijing",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/s12nn7g02u6anopsc500e2ohdkgi_shutterstock_408855481.jpg",
+    "https://media1.thrillophilia.com/filestore/two5p215n1d7mje1km1t8gapopu6_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+    "https://media1.thrillophilia.com/filestore/o16d9ka0wxxamyzzfr4as1iz7anl_dl.beatsnoop.com-3000-EDcAQTCibB.jpg",
+    "https://media1.thrillophilia.com/filestore/49ndf08oq6dy0lneb21j3ppi58i8_shutterstock_408841948.jpg",
+    "https://media1.thrillophilia.com/filestore/ctm7putz8t317jfnvqrlmkbfjtf8_shutterstock_2373412537.jpg",
+    "https://media1.thrillophilia.com/filestore/741xkb8mz2vbzp4ki46wd9wl8hf3_shutterstock_82092487.jpg",
+    "https://media1.thrillophilia.com/filestore/epv2sjl3l7kpmrcptkpax85imqtv_shutterstock_408343930.jpg",
+    "https://media1.thrillophilia.com/filestore/cqumwp6878dhqrvrgiiu7cte3cug_dl.beatsnoop.com-3000-gEZaF87Nmb.jpg",
+    "https://media1.thrillophilia.com/filestore/x5ma6kudmhcbtv8d05yash9xvw8e_shutterstock_71208400.jpg",
+    "https://media1.thrillophilia.com/filestore/ui0rfb1kkyhudls0ncropdp1gukq_1619610265_shutterstock_71208424.jpg"
+   ]
+  },
+  {
+   "name": "Beijing Zoo",
+   "day": 3,
+   "city": "Beijing",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ui0rfb1kkyhudls0ncropdp1gukq_1619610265_shutterstock_71208424.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/9f84mqiu3clk26b5f0xgs4uezhoh_shutterstock_2239456851.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/plfeu3uj0wqavg16eg3i0i70ln4a_Downpic.cc-106951027.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/uwu78i48bd465eleb7lnyhufx5uk_pnd6g0pa1iglst74lum00gr9m2hg_shutterstock_107003903.webp",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f4zoe6qo6a43pz0rktyu1e52i3fk_br2bnwd3xa9klj7u3jl7ylw3kx2r_shutterstock_1296100681-min.webp",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e34juut59ul57fignqu2cjz4ztss_shutterstock_1185159043.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oa7wnalcylon38sgllsp6j1zlu7n_shutterstock_1252745494.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zn3xbbne69a0kbb8ji4o52cgcd0x_vnh8evdh13mzq66ikduyzt4g11dr_shutterstock_257936231.webp",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/phh17jj3rcvnsvx1dq94nk14ufr0_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6ewump5le3pbzddytvn3l9hkenx3_shutterstock_82092487.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ae0hac2g5qd1n9axh1jqpt99ozd1_230938408.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l99whlymbj2e9oq79r3k810j0tot_449523454.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n5eklhgzp2u01vpbddaa1r5zxi2y_562215035.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/81eqlhk2zzjykqyh3pch031wknoy_449523548.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7kk13ainhi0qx7fo0tthv63ps91d_12482579.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jhawmh5e256sjdp1x2h23ps17h4g_449517694.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g88p34unkr9pk4pcj2iyenv2r8vm_562215034.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qwks499yg21lter3820b29gq6m5s_449517678.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z9de7zmyvi82jz0hr02swt3tcceh_562215021.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fcdpa7aud4793bc91732rlod14qv_449517685.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/lqsxw6znys0rnvb0pkhp7hyaqwas_562232017.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3b4gz9aov40t96ogrda2jhvg1q1t_download%20(3).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ji2e1fiswpb2bh6a0f9tw74wciq7_download.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4klt1p2b0p6084tozhz8v1sqeoon_download%20(5).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f6ur39l3yfs9cfsrx76cgjmynx36_download%20(10).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/stuz5zpxnigri6crm4sbcl0vipiz_download%20(7).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4m23luywihiiew6he29e7ne5y9pd_download%20(2).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4jm1r5udgur3oj27w7b11po95by8_download%20(8).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z4wfj6rsuku27ileod8ejxv1g31t_download%20(4).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fcd5rd430f52k5hihctlwqkn6fqa_download%20(6).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wkxjbpeobmslop2ifzhcg6o3dn4w_download%20(1).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mt62w350l0rnv10hpz2lm7bg2ucn_download%20(9).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s12nn7g02u6anopsc500e2ohdkgi_shutterstock_408855481.jpg",
+   "caption": "Enjoy a visit to Beijing Zoo and Panda House",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/two5p215n1d7mje1km1t8gapopu6_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+   "caption": "Watch playful red pandas climb and explore their lush habitat",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/o16d9ka0wxxamyzzfr4as1iz7anl_dl.beatsnoop.com-3000-EDcAQTCibB.jpg",
+   "caption": "Admire elegant pink flamingos wading gracefully in serene waters",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/49ndf08oq6dy0lneb21j3ppi58i8_shutterstock_408841948.jpg",
+   "caption": "See giant pandas munching on bamboo in their natural habitat",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ctm7putz8t317jfnvqrlmkbfjtf8_shutterstock_2373412537.jpg",
+   "caption": "Spot powerful Siberian tigers roaming through their forested enclosure",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/741xkb8mz2vbzp4ki46wd9wl8hf3_shutterstock_82092487.jpg",
+   "caption": "Enjoy a close-up look at adorable pandas playing and tumbling around",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/epv2sjl3l7kpmrcptkpax85imqtv_shutterstock_408343930.jpg",
+   "caption": "Explore Beijing Zoo’s diverse wildlife and beautifully landscaped exhibits",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cqumwp6878dhqrvrgiiu7cte3cug_dl.beatsnoop.com-3000-gEZaF87Nmb.jpg",
+   "caption": "Observe European fallow deer grazing peacefully in a quiet corner of the zoo",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x5ma6kudmhcbtv8d05yash9xvw8e_shutterstock_71208400.jpg",
+   "caption": "Experience the magic of seeing pandas thrive in their natural-like surroundings",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Beijing"
+  }
+ ],
+ "dest_gallery": {
+  "Beijing": [
+   "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "https://media1.thrillophilia.com/filestore/plfeu3uj0wqavg16eg3i0i70ln4a_Downpic.cc-106951027.jpg",
+   "https://media1.thrillophilia.com/filestore/uwu78i48bd465eleb7lnyhufx5uk_pnd6g0pa1iglst74lum00gr9m2hg_shutterstock_107003903.webp",
+   "https://media1.thrillophilia.com/filestore/f4zoe6qo6a43pz0rktyu1e52i3fk_br2bnwd3xa9klj7u3jl7ylw3kx2r_shutterstock_1296100681-min.webp",
+   "https://media1.thrillophilia.com/filestore/e34juut59ul57fignqu2cjz4ztss_shutterstock_1185159043.jpg",
+   "https://media1.thrillophilia.com/filestore/oa7wnalcylon38sgllsp6j1zlu7n_shutterstock_1252745494.jpg",
+   "https://media1.thrillophilia.com/filestore/zn3xbbne69a0kbb8ji4o52cgcd0x_vnh8evdh13mzq66ikduyzt4g11dr_shutterstock_257936231.webp",
+   "https://media1.thrillophilia.com/filestore/phh17jj3rcvnsvx1dq94nk14ufr0_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+   "https://media1.thrillophilia.com/filestore/6ewump5le3pbzddytvn3l9hkenx3_shutterstock_82092487.jpg",
+   "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+   "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+   "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+   "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg",
+   "https://media1.thrillophilia.com/filestore/s12nn7g02u6anopsc500e2ohdkgi_shutterstock_408855481.jpg",
+   "https://media1.thrillophilia.com/filestore/two5p215n1d7mje1km1t8gapopu6_dl.beatsnoop.com-3000-MQKn5sU4Oa.jpg",
+   "https://media1.thrillophilia.com/filestore/o16d9ka0wxxamyzzfr4as1iz7anl_dl.beatsnoop.com-3000-EDcAQTCibB.jpg",
+   "https://media1.thrillophilia.com/filestore/49ndf08oq6dy0lneb21j3ppi58i8_shutterstock_408841948.jpg",
+   "https://media1.thrillophilia.com/filestore/ctm7putz8t317jfnvqrlmkbfjtf8_shutterstock_2373412537.jpg",
+   "https://media1.thrillophilia.com/filestore/741xkb8mz2vbzp4ki46wd9wl8hf3_shutterstock_82092487.jpg",
+   "https://media1.thrillophilia.com/filestore/epv2sjl3l7kpmrcptkpax85imqtv_shutterstock_408343930.jpg",
+   "https://media1.thrillophilia.com/filestore/cqumwp6878dhqrvrgiiu7cte3cug_dl.beatsnoop.com-3000-gEZaF87Nmb.jpg",
+   "https://media1.thrillophilia.com/filestore/x5ma6kudmhcbtv8d05yash9xvw8e_shutterstock_71208400.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/9f84mqiu3clk26b5f0xgs4uezhoh_shutterstock_2239456851.jpg"
+ ]
+}

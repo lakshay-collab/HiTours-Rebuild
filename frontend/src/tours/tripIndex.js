@@ -199,6 +199,22 @@ import { bestOfVietnamCambodiaFifteenBySlug } from './bestOfVietnamCambodiaFifte
 import { vietnamCambodiaHoneymoonTenBySlug } from './vietnamCambodiaHoneymoonTenData';
 import { cambodiaAndVietnamTenDaysBySlug } from './cambodiaAndVietnamTenDaysData';
 import { indochinaAndThailandGrandBySlug } from './indochinaAndThailandGrandData';
+import { glimpseOfShanghaiBreakBySlug } from './glimpseOfShanghaiBreakData';
+import { ancientWondersBeijingBySlug } from './ancientWondersBeijingData';
+import { highlightsOfBeijingShortBySlug } from './highlightsOfBeijingShortData';
+import { glimpseOfBeijingUniversalBySlug } from './glimpseOfBeijingUniversalData';
+import { grandShanghaiDisneylandHolidayBySlug } from './grandShanghaiDisneylandHolidayData';
+import { classicShanghaiGreatWallBreakBySlug } from './classicShanghaiGreatWallBreakData';
+import { highlightsOfShanghaiDisneylandBySlug } from './highlightsOfShanghaiDisneylandData';
+import { bestOfShanghaiDisneyAndWallBySlug } from './bestOfShanghaiDisneyAndWallData';
+import { bestOfBeijingWallAndUniversalBySlug } from './bestOfBeijingWallAndUniversalData';
+import { discoverBeijingShortBreakBySlug } from './discoverBeijingShortBreakData';
+import { gemsOfChinaShanghaiXianBySlug } from './gemsOfChinaShanghaiXianData';
+import { bestOfChinaGoldenTriangleBySlug } from './bestOfChinaGoldenTriangleData';
+import { discoverChinaBeijingShanghaiBySlug } from './discoverChinaBeijingShanghaiData';
+import { highlightsOfChinaThreeCitiesBySlug } from './highlightsOfChinaThreeCitiesData';
+import { grandChinaYangtzeCruiseBySlug } from './grandChinaYangtzeCruiseData';
+import { bestOfChinaAndJapanGrandTourBySlug } from './bestOfChinaAndJapanGrandTourData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -400,5 +416,21 @@ export const BY_SLUG = {
   ...bestOfVietnamCambodiaFifteenBySlug,
   ...vietnamCambodiaHoneymoonTenBySlug,
   ...cambodiaAndVietnamTenDaysBySlug,
-  ...indochinaAndThailandGrandBySlug
+  ...indochinaAndThailandGrandBySlug,
+  ...glimpseOfShanghaiBreakBySlug,
+  ...ancientWondersBeijingBySlug,
+  ...highlightsOfBeijingShortBySlug,
+  ...glimpseOfBeijingUniversalBySlug,
+  ...grandShanghaiDisneylandHolidayBySlug,
+  ...classicShanghaiGreatWallBreakBySlug,
+  ...highlightsOfShanghaiDisneylandBySlug,
+  ...bestOfShanghaiDisneyAndWallBySlug,
+  ...bestOfBeijingWallAndUniversalBySlug,
+  ...discoverBeijingShortBreakBySlug,
+  ...gemsOfChinaShanghaiXianBySlug,
+  ...bestOfChinaGoldenTriangleBySlug,
+  ...discoverChinaBeijingShanghaiBySlug,
+  ...highlightsOfChinaThreeCitiesBySlug,
+  ...grandChinaYangtzeCruiseBySlug,
+  ...bestOfChinaAndJapanGrandTourBySlug
 };

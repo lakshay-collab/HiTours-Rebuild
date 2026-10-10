@@ -126,3 +126,19 @@ imported trips; (2) register multi-country trips on Vietnam plus every country t
 Workflow per trip: python3 scripts/thrillophilia/digest2.py <source-slug> -> write import/spec_<name>.json ->
 build_trip.py -> check_trip.py -> register_trip.py <camel> vietnam [cambodia|laos|thailand].
 At the end: apply_card_images.py on all vietnam trip files, then testing agent.
+
+### China import in progress (June 2026)
+User gave 18 Thrillophilia China links (16 unique after duplicates); all 16 extracted to import/<slug>/raw.json
+(list in import/china_urls.txt). Legacy generic China packages removed from the listing, same as Japan/Vietnam/Indonesia.
+Note: 'hidden-trails-of-japan' is a 15 day China + Japan trip (Beijing, Nanjing, Shanghai, Tokyo, Kawaguchiko, Kyoto)
+so it must be registered in both china and japan.
+Workflow per trip: digest2.py <slug> -> write import/spec_cn_<name>.json -> build_trip.py -> check_trip.py ->
+register_trip.py <camel> china [japan]. At the end: apply_card_images.py on all china trip files, then testing agent.
+Vietnam import is COMPLETE: 44 live products on /asien/vietnam/holidays, multi-country ones also on cambodia (19),
+laos (11) and thailand (24) listings. Skipped as duplicate itineraries of already published trips:
+vietnam-cambodia-tour-packages-from-mumbai and vietnam-and-cambodia-tour-packages-from-chennai (both identical to
+vietnam-and-cambodia-packages-from-kolkata = saigon-phnom-penh-and-angkor, only the price differs).
+China raw.json fix: Thrillophilia China pages ship almost no dest_gallery photos (1 per city), which made
+build_trip.py fail with IndexError on stop_images. Fixed by seeding dest_gallery per city from the trip's own
+`gallery` list (entries are dicts with a 'url' key), excluding hero tiles and hotel photos. Already applied to all
+16 China raws. If a new China link is extracted later, re-run that seeding before build_trip.py.

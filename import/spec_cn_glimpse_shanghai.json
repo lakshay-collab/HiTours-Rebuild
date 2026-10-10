@@ -1,0 +1,127 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "China",
+   "/asien/china"
+  ]
+ ],
+ "source_slug": "glimpse-of-shanghai",
+ "camel": "glimpseOfShanghaiBreak",
+ "slug": "glimpse-of-shanghai",
+ "title": "Glimpse of Shanghai",
+ "alt": "Pudong skyline across the Huangpu river from the Bund",
+ "transport": "Private airport transfers and a guided half day",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Culture"
+ ],
+ "price": 23750,
+ "route_cities": [
+  "Shanghai"
+ ],
+ "counts": {
+  "days": 3,
+  "nights": 2,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 3,
+  "transfers": 4,
+  "meals": 2
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Holiday Inn Express Shanghai Gongkang",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel in Jing'an, two metro stops from the centre",
+   "activities": [
+    {
+     "name": "Shanghai half day sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Half-Day Shanghai Sightseeing Tour",
+     "description": "The Bund waterfront, the lanes of the old town and the Yu garden with its teahouse, with a guide for the morning."
+    },
+    {
+     "name": "Oriental Pearl Tower",
+     "day": 2,
+     "optional": false,
+     "match": "Oriental Pearl Tower Tickets",
+     "description": "The lifts up the Oriental Pearl Tower to the observation spheres, with the glass floor looking straight down on Pudong."
+    },
+    {
+     "name": "Huangpu river cruise",
+     "day": 2,
+     "optional": false,
+     "match": "Huangpu River Cruise",
+     "description": "A cruise along the Huangpu between the colonial facades of the Bund and the lit towers of Pudong."
+    }
+   ],
+   "program": {
+    "name": "Shanghai",
+    "description": "Two nights in the city with a guided half day, the Pearl Tower and a river cruise after dark."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Shanghai",
+  "2": "Shanghai city tour and river cruise",
+  "3": "Departure from Shanghai"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Pudong or Hongqiao and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Optional: an evening walk on the Bund",
+   "Optional: dinner in the Xintiandi lanes"
+  ],
+  "2": [
+   "Breakfast, then a guided half day of the city",
+   "The Bund, the old town lanes and the Yu garden",
+   "Up the Oriental Pearl Tower in the afternoon",
+   "A cruise on the Huangpu as the towers light up"
+  ],
+  "3": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B"
+ },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Shanghai Gongkang",
+  "2": "Holiday Inn Express Shanghai Gongkang",
+  "3": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Two nights is enough for Shanghai if you spend one evening on the water. The skyline is the whole point of the city.",
+  "tip": "Take the river cruise after dark rather than at dusk. The towers only switch everything on once the light has gone."
+ },
+ "summary": "A short city break: two nights in Shanghai with a guided half day through the Bund, the old town and the Yu garden, the Oriental Pearl Tower, and a Huangpu river cruise under the lit skyline.",
+ "included": "Included: 2 nights with daily breakfast; private airport transfers; a half day guided tour of Shanghai; Oriental Pearl Tower tickets; a Huangpu river cruise.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -1,0 +1,532 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "China",
+   "/asien/china"
+  ]
+ ],
+ "source_slug": "hidden-trails-of-japan",
+ "camel": "bestOfChinaAndJapanGrandTour",
+ "slug": "best-of-china-and-japan-wall-to-fuji",
+ "title": "Best of China and Japan: Great Wall to Mount Fuji",
+ "alt": "Chureito pagoda with Mount Fuji behind it",
+ "transport": "Group tour with private transfers, fast trains and guided touring",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Group tour"
+ ],
+ "price": 337882,
+ "route_cities": [
+  "Beijing",
+  "Nanjing",
+  "Shanghai",
+  "Tokyo",
+  "Kawaguchiko",
+  "Kyoto",
+  "Osaka",
+  "Okayama",
+  "Hiroshima"
+ ],
+ "counts": {
+  "days": 15,
+  "nights": 14,
+  "cities": 9,
+  "hotels": 9,
+  "experiences": 23,
+  "transfers": 22,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "subtitle": "Beijing → Mutianyu",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Mercure Beijing Downtown",
+   "accom": "3 nights · Breakfast · Standard room · 4★ · Central hotel a short walk from Wangfujing",
+   "activities": [
+    {
+     "name": "Great Wall at Mutianyu",
+     "day": 2,
+     "optional": false,
+     "match": "Mutianyu Great Wall of China Tickets",
+     "description": "Tickets for the Mutianyu section, the steepest and least crowded of the restored stretches, reached by cable car from the valley."
+    },
+    {
+     "name": "Temple of Heaven",
+     "day": 2,
+     "optional": false,
+     "match": "Visit to Temple of Heaven",
+     "description": "The round sacrificial halls and long raised walkway where Ming and Qing emperors prayed each year for a good harvest."
+    },
+    {
+     "name": "Tai chi lesson with a foot rub",
+     "day": 2,
+     "optional": false,
+     "match": "Tai Chi Class with Foot Massage",
+     "description": "A short guided tai chi session in the park, followed by a traditional Chinese foot massage to settle the legs after the wall."
+    },
+    {
+     "name": "Beijing city tour",
+     "day": 3,
+     "optional": false,
+     "match": "Beijing City Tour",
+     "description": "A guided day across Tiananmen Square and the Imperial Palace, with the Capital Museum and the performing arts centre."
+    },
+    {
+     "name": "Hutong tricycle tour",
+     "day": 3,
+     "optional": false,
+     "match": "Hutong Tricycle Tour",
+     "description": "A ride by cycle rickshaw through the grey brick hutong lanes, the old courtyard housing that survives behind the main roads."
+    }
+   ],
+   "program": {
+    "name": "Beijing",
+    "description": "Three nights in the capital with the wall at Mutianyu, the Temple of Heaven, the Imperial Palace and the hutong lanes."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nanjing",
+   "city": "Nanjing",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Novotel Nanjing Central",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Central hotel close to the Xinjiekou shops",
+   "activities": [
+    {
+     "name": "Nanjing sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nanjing Sightseeing Tour",
+     "description": "A guided afternoon on Purple Mountain with the Sun Yat sen mausoleum and the pine groves around Linggu temple."
+    }
+   ],
+   "program": {
+    "name": "Nanjing",
+    "description": "One night in the old southern capital, with Purple Mountain, the Sun Yat sen mausoleum and Linggu temple."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "subtitle": "Shanghai → Suzhou and Tongli",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Novotel Shanghai Atlantis",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Riverside hotel in Pudong with skyline views",
+   "activities": [
+    {
+     "name": "Suzhou sightseeing",
+     "day": 5,
+     "optional": false,
+     "match": "Suzhou Sightseeing",
+     "description": "The Humble Administrator's Garden, the largest of the classical Suzhou gardens, and the old shopfronts along Pingjiang road."
+    },
+    {
+     "name": "Boat ride on Tongli lake",
+     "day": 5,
+     "optional": false,
+     "match": "Boat Ride on Tongli Lake",
+     "description": "A slow boat across the water at Tongli, a canal town of stone bridges and whitewashed houses an hour from Shanghai."
+    },
+    {
+     "name": "Shanghai city tour",
+     "day": 6,
+     "optional": false,
+     "match": "Shanghai City Tour",
+     "description": "A guided day along the Bund waterfront and across to Pudong, with the restored lanes of Xintiandi and Tianzifang."
+    }
+   ],
+   "program": {
+    "name": "Shanghai",
+    "description": "Two nights on the river, reached through the gardens of Suzhou and the canals of Tongli."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Tokyo",
+   "city": "Tokyo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Shinagawa Prince Hotel, Tokyo",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Large hotel beside Shinagawa station on the main rail lines",
+   "activities": [
+    {
+     "name": "Tokyo sightseeing tour",
+     "day": 8,
+     "optional": false,
+     "match": "Tokyo Sightseeing Tour",
+     "description": "A guided day with Sensoji temple and the Nakamise stalls, Meiji Jingu, the Shibuya crossing and the sumo arena at Ryogoku."
+    }
+   ],
+   "program": {
+    "name": "Tokyo",
+    "description": "Two nights in the Japanese capital, with a full guided day and a free evening in the Shinjuku lanes."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Kawaguchiko",
+   "city": "Kawaguchiko",
+   "days": [
+    9
+   ],
+   "dayLabel": "Day 9",
+   "hotel": "Fuji Kawaguchiko Resort",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Lakeside resort with Mount Fuji across the water",
+   "activities": [
+    {
+     "name": "Arakurayama Sengen Park",
+     "day": 9,
+     "optional": false,
+     "match": "Trip to Arakurayama Sengen Park",
+     "description": "The hillside park above Fujiyoshida where the Chureito pagoda frames Mount Fuji, the view on most Japan postcards."
+    },
+    {
+     "name": "Boat ride on Lake Kawaguchi",
+     "day": 9,
+     "optional": false,
+     "match": "Boat Ride on Kawaguchi Lake",
+     "description": "A short sailing on the lake with the mountain reflected in the water on a clear day and the wooded shoreline behind."
+    },
+    {
+     "name": "Mount Fuji fifth station",
+     "day": 9,
+     "optional": false,
+     "match": "Visit to Mount Fuji- 5th Station",
+     "description": "The highest point reachable without climbing, at the tree line on the north face, with the crater rim above you."
+    }
+   ],
+   "program": {
+    "name": "Kawaguchiko",
+    "description": "One night under Mount Fuji, with the pagoda viewpoint, a lake sailing and the fifth station on the mountain."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Kyoto",
+   "city": "Kyoto",
+   "subtitle": "Kyoto → Shiraito Falls and Nagakute",
+   "days": [
+    10,
+    11
+   ],
+   "dayLabel": "Day 10 to 11",
+   "hotel": "Miyako Hotel Kyoto Hachijo",
+   "accom": "2 nights · Breakfast · Standard room · 4★ · Comfortable hotel facing Kyoto station",
+   "activities": [
+    {
+     "name": "Iyashi no Sato Nenba village",
+     "day": 10,
+     "optional": false,
+     "match": "Leisure Time in Iyashi-no-Sato Nenba",
+     "description": "A rebuilt village of thatched farmhouses under Mount Fuji, with craft workshops and an old water mill still turning."
+    },
+    {
+     "name": "Shiraito Falls",
+     "day": 10,
+     "optional": false,
+     "match": "Trip to Shiraito Falls",
+     "description": "A wide curtain of spring water falling from a rock face in threads, fed by snowmelt running off the slopes of Mount Fuji."
+    },
+    {
+     "name": "Toyota Automobile Museum",
+     "day": 10,
+     "optional": false,
+     "match": "Toyota Automobile Museum Tour",
+     "description": "Three floors of restored cars tracing the motor car from early European models through to the Japanese production years."
+    },
+    {
+     "name": "Kyoto sightseeing tour",
+     "day": 11,
+     "optional": false,
+     "match": "Kyoto Sightseeing Tour",
+     "description": "A guided day with the gold pavilion at Kinkakuji, the torii rows at Fushimi Inari, Tenryuji temple and the Gion lanes."
+    }
+   ],
+   "program": {
+    "name": "Kyoto",
+    "description": "Two nights in the old imperial city, reached through the thatched village at Nenba and the Shiraito falls."
+   }
+  },
+  {
+   "letter": "G",
+   "name": "Osaka",
+   "city": "Osaka",
+   "subtitle": "Osaka → Nara",
+   "days": [
+    12
+   ],
+   "dayLabel": "Day 12",
+   "hotel": "Holiday Inn Express Osaka City Centre - Midosuji, an IHG Hotel",
+   "hotel_label": "Holiday Inn Express Osaka Midosuji",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Modern hotel on Midosuji close to the Namba lanes",
+   "activities": [
+    {
+     "name": "Nara sightseeing tour",
+     "day": 12,
+     "optional": false,
+     "match": "Nara Sightseeing Tour",
+     "description": "Todaiji with its great bronze buddha and the old timber halls of Horyuji, among the oldest wooden buildings standing anywhere."
+    }
+   ],
+   "program": {
+    "name": "Osaka",
+    "description": "One night in Osaka after a guided stop at Nara, with the Hozenji lanes a short walk from the hotel."
+   }
+  },
+  {
+   "letter": "H",
+   "name": "Okayama",
+   "city": "Okayama",
+   "subtitle": "Okayama → Himeji",
+   "days": [
+    13
+   ],
+   "dayLabel": "Day 13",
+   "hotel": "Hotel Granvia Okayama",
+   "accom": "1 night · Breakfast · Standard room · 4★ · Station hotel a short walk from Korakuen",
+   "activities": [
+    {
+     "name": "Himeji Castle",
+     "day": 13,
+     "optional": false,
+     "match": "Visit to Himeji Castle",
+     "description": "The white keep above the town, the finest surviving Japanese castle and the only major one never destroyed by fire or war."
+    },
+    {
+     "name": "Korakuen gardens",
+     "day": 13,
+     "optional": false,
+     "match": "Korakuen Gardens Tour",
+     "description": "One of the three great gardens of Japan, laid out beside the river with wide lawns, tea houses and a borrowed castle view."
+    },
+    {
+     "name": "Kibitsu Jinja",
+     "day": 13,
+     "optional": false,
+     "match": "Visit to Kibitsu-Jinja",
+     "description": "A hillside shrine with a roofed corridor running almost four hundred metres down the slope between cedar trees."
+    }
+   ],
+   "program": {
+    "name": "Okayama",
+    "description": "One night in Okayama with the white keep at Himeji, the Korakuen gardens and the long corridor at Kibitsu Jinja."
+   }
+  },
+  {
+   "letter": "I",
+   "name": "Hiroshima",
+   "city": "Hiroshima",
+   "subtitle": "Hiroshima → Kurashiki and Miyajima",
+   "days": [
+    14,
+    15
+   ],
+   "dayLabel": "Day 14 to 15",
+   "hotel": "Hilton Hiroshima",
+   "accom": "1 night · Breakfast · Standard room · 4★ · City hotel a short walk from Peace Memorial Park",
+   "activities": [
+    {
+     "name": "Hiroshima sightseeing tour",
+     "day": 14,
+     "optional": false,
+     "match": "Hiroshima Sightseeing Tour",
+     "description": "A guided walk through Peace Memorial Park, the museum and the Atomic Bomb Dome left standing as it was in 1945."
+    },
+    {
+     "name": "Itsukushima shrine",
+     "day": 14,
+     "optional": false,
+     "match": "Visit to Itsukushima Temple",
+     "description": "The vermilion gate standing in the shallows off Miyajima island, one of the most photographed structures in Japan."
+    }
+   ],
+   "program": {
+    "name": "Hiroshima",
+    "description": "A final night in Hiroshima, reached through the canal quarter at Kurashiki, with Peace Memorial Park and the floating gate."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and Temple of Heaven",
+  "3": "Imperial Palace and the hutongs",
+  "4": "Beijing to Nanjing",
+  "5": "Suzhou, Tongli and on to Shanghai",
+  "6": "Shanghai city tour",
+  "7": "Shanghai to Tokyo",
+  "8": "A full day across Tokyo",
+  "9": "Mount Fuji and Lake Kawaguchi",
+  "10": "Shiraito Falls and the Toyota museum",
+  "11": "Kyoto sightseeing",
+  "12": "Nara and on to Osaka",
+  "13": "Himeji Castle and Korakuen",
+  "14": "Kurashiki, Hiroshima and Miyajima",
+  "15": "Departure from Hiroshima"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Beijing Daxing and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Leisure time along Wangfujing street",
+   "Optional: the National Art Museum of China"
+  ],
+  "2": [
+   "Early breakfast, then north to Mutianyu",
+   "The cable car and the walk along the wall",
+   "The 798 art district in the afternoon",
+   "The Temple of Heaven and its round halls",
+   "A tai chi lesson and a foot rub to finish"
+  ],
+  "3": [
+   "Breakfast, then a guided day in the old centre",
+   "Tiananmen Square and the Imperial Palace courtyards",
+   "The Capital Museum and the performing arts centre",
+   "A tricycle ride through the hutong lanes"
+  ],
+  "4": [
+   "Breakfast and check out of your Beijing hotel",
+   "Station transfer and the fast train south to Nanjing",
+   "Purple Mountain and the Sun Yat sen mausoleum",
+   "Linggu temple before checking in for the night"
+  ],
+  "5": [
+   "Breakfast, then check out and head east",
+   "Suzhou and the Humble Administrator's Garden",
+   "The old shopfronts along Pingjiang road",
+   "A boat ride on the water at Tongli",
+   "Evening transfer on to Shanghai"
+  ],
+  "6": [
+   "Breakfast, then a guided day in the city",
+   "The Bund waterfront and the Pudong towers",
+   "The restored lanes of Xintiandi and Tianzifang",
+   "Afternoon free for the Yu garden"
+  ],
+  "7": [
+   "Breakfast, then transfer to Pudong airport",
+   "Optional: flight Shanghai to Tokyo, booked with us",
+   "Arrival transfer from Haneda to your hotel",
+   "Leisure time in the Shinjuku district"
+  ],
+  "8": [
+   "Breakfast, then a guided day across Tokyo",
+   "Sensoji temple and the Nakamise stalls",
+   "Meiji Jingu and the Shibuya crossing",
+   "Akihabara and the sumo arena at Ryogoku"
+  ],
+  "9": [
+   "Breakfast and check out, then west to Kawaguchiko",
+   "Arakurayama Sengen park and the pagoda view",
+   "A boat ride on Lake Kawaguchi",
+   "Up to the fifth station on Mount Fuji"
+  ],
+  "10": [
+   "Breakfast, then on through Iyashi no Sato Nenba",
+   "Thatched farmhouses and the old water mill",
+   "The wide curtain of the Shiraito falls",
+   "The Toyota Automobile Museum before Kyoto"
+  ],
+  "11": [
+   "Breakfast, then a guided day around Kyoto",
+   "Kinkakuji and the torii rows at Fushimi Inari",
+   "Tenryuji temple and the Togetsukyo bridge",
+   "Gion in the evening light"
+  ],
+  "12": [
+   "Breakfast and check out, then south to Nara",
+   "Todaiji and its great bronze buddha",
+   "The old timber halls of Horyuji",
+   "On to Osaka and the Hozenji lanes"
+  ],
+  "13": [
+   "Breakfast, then west towards Okayama",
+   "The white keep of Himeji castle",
+   "Korakuen gardens beside the river",
+   "Kibitsu Jinja and its long roofed corridor"
+  ],
+  "14": [
+   "Breakfast, then on via Kurashiki",
+   "The canal quarter and the Ohara museum",
+   "Peace Memorial Park and the Atomic Bomb Dome",
+   "The floating gate of Itsukushima shrine"
+  ],
+  "15": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B",
+  "12": "B",
+  "13": "B",
+  "14": "B",
+  "15": "B"
+ },
+ "hotel_by_day": {
+  "1": "Mercure Beijing Downtown",
+  "2": "Mercure Beijing Downtown",
+  "3": "Mercure Beijing Downtown",
+  "4": "Novotel Nanjing Central",
+  "5": "Novotel Shanghai Atlantis",
+  "6": "Novotel Shanghai Atlantis",
+  "7": "Shinagawa Prince Hotel, Tokyo",
+  "8": "Shinagawa Prince Hotel, Tokyo",
+  "9": "Fuji Kawaguchiko Resort",
+  "10": "Miyako Hotel Kyoto Hachijo",
+  "11": "Miyako Hotel Kyoto Hachijo",
+  "12": "Holiday Inn Express Osaka Midosuji",
+  "13": "Hotel Granvia Okayama",
+  "14": "Hilton Hiroshima",
+  "15": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Two countries in one run, with the Great Wall at the start and Mount Fuji in the middle. Nobody comes back wanting more.",
+  "tip": "Pack light for the Japan half. From Tokyo onwards you change hotel most nights and the group moves by train."
+ },
+ "summary": "Fifteen days across China and Japan on a group tour: the Great Wall and the hutongs of Beijing, Nanjing and Suzhou, the Bund in Shanghai, then Tokyo, Mount Fuji, Kyoto, Nara, Himeji and Hiroshima.",
+ "included": "Included: 14 nights with daily breakfast across nine cities; travel insurance; private transfers and fast trains; Mutianyu Great Wall tickets; Temple of Heaven; a tai chi lesson with a foot rub; the Beijing city tour and a hutong tricycle ride; Nanjing sightseeing; Suzhou sightseeing and a Tongli lake boat ride; Shanghai city tour; Tokyo sightseeing; Arakurayama Sengen park; a Lake Kawaguchi boat ride; Mount Fuji fifth station; Iyashi no Sato Nenba; Shiraito falls; the Toyota Automobile Museum; Kyoto sightseeing; Nara sightseeing; Himeji castle; Korakuen gardens; Kibitsu Jinja; Hiroshima sightseeing; Itsukushima shrine.",
+ "not_included": "Not included: international flights; the Shanghai to Tokyo internal flight; China and Japan visa fees; lunches and dinners; personal expenses."
+}

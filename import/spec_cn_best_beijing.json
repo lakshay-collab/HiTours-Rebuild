@@ -1,0 +1,69 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "best-of-beijing",
+ "camel": "bestOfBeijingWallAndUniversal",
+ "slug": "best-of-beijing-with-universal-studios",
+ "title": "Best of Beijing with Universal Studios",
+ "alt": "The Mutianyu section of the Great Wall along a green ridge",
+ "transport": "Private airport transfers and guided day tours",
+ "tag": "Family",
+ "tags": ["Family", "Culture"],
+ "price": 44555,
+ "route_cities": ["Beijing", "Mutianyu"],
+ "counts": { "days": 6, "nights": 5, "cities": 1, "hotels": 1, "experiences": 4, "transfers": 4, "meals": 5 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [1, 2, 3, 4, 5, 6],
+   "dayLabel": "Day 1 to 6",
+   "hotel": "Holiday Inn Express Beijing Airport Zone",
+   "accom": "5 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical hotel near the airport expressway",
+   "activities": [
+    { "name": "Great Wall at Mutianyu and the Summer Palace", "day": 2, "optional": false, "match": "Full-Day Great Wall & Summer Palace Tour", "description": "The Mutianyu section of the wall, steep and far less crowded than Badaling, then the lake and long corridor of the Summer Palace." },
+    { "name": "Beijing city sightseeing tour", "day": 3, "optional": false, "match": "Beijing Sightseeing Tour", "description": "A guided day through Tiananmen Square, the courtyards of the Forbidden City and the round halls of the Temple of Heaven." },
+    { "name": "Beijing Zoo with the panda house", "day": 4, "optional": false, "match": "Beijing Zoo with Panda House", "description": "The old imperial menagerie grounds, with the panda house where the giant pandas are kept in their own enclosures." },
+    { "name": "Universal Studios Beijing", "day": 5, "optional": false, "match": "Universal Studios Beijing", "description": "A full day at Universal Studios Beijing with tickets included, home to the largest Harry Potter area built anywhere." }
+   ],
+   "program": { "name": "Beijing", "description": "Five nights in the capital: the wall at Mutianyu, the Summer Palace, Tiananmen Square and the Forbidden City, the panda house and Universal Studios." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and the Summer Palace",
+  "3": "Forbidden City and Temple of Heaven",
+  "4": "Beijing Zoo and the pandas",
+  "5": "Universal Studios Beijing",
+  "6": "Departure from Beijing"
+ },
+ "bullets": {
+  "1": ["Arrival at Beijing Capital and transfer to your hotel", "Check in and the rest of the day free", "Optional: an evening in the Sanlitun lanes", "Optional: Peking duck at a neighbourhood restaurant"],
+  "2": ["Early breakfast, then north to Mutianyu", "The cable car and the walk along the wall", "On to the Summer Palace in the afternoon", "Kunming lake, the long corridor and the marble boat"],
+  "3": ["Breakfast, then a guided day in the old centre", "Tiananmen Square and the Forbidden City courtyards", "The Temple of Heaven and its round halls", "A stop at the jade workshop on the way back"],
+  "4": ["Breakfast, then across to the zoo", "The panda house and the giant pandas", "The old imperial menagerie grounds", "Afternoon free in the city"],
+  "5": ["Early breakfast, then out to Universal Studios", "Tickets included for the full day", "The Harry Potter area and the water park rides", "Back at the hotel in the evening"],
+  "6": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Airport Zone",
+  "2": "Holiday Inn Express Beijing Airport Zone",
+  "3": "Holiday Inn Express Beijing Airport Zone",
+  "4": "Holiday Inn Express Beijing Airport Zone",
+  "5": "Holiday Inn Express Beijing Airport Zone",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Five nights is the right length for Beijing. You get the wall, the imperial city, the pandas and Universal without rushing any of them.",
+  "tip": "Start the Forbidden City from the south gate at Tiananmen. Walking north with the crowd keeps you ahead of the big tour groups."
+ },
+ "summary": "Six days in the Chinese capital with daily breakfast: the Great Wall at Mutianyu with the Summer Palace, a guided day through Tiananmen Square and the Forbidden City, the panda house at Beijing Zoo and a full day at Universal Studios.",
+ "included": "Included: 5 nights in Beijing with daily breakfast; private airport transfers; full day guided tour of the Great Wall at Mutianyu and the Summer Palace; guided Beijing city sightseeing tour; Beijing Zoo tickets with the panda house; Universal Studios Beijing tickets.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

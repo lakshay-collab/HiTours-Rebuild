@@ -1,0 +1,101 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "highlights-of-china",
+ "camel": "highlightsOfChinaThreeCities",
+ "slug": "highlights-of-china-shanghai-xian-beijing",
+ "title": "Highlights of China: Shanghai, Xi'an and Beijing",
+ "alt": "Giant Wild Goose Pagoda rising above the gardens in Xi'an",
+ "transport": "Private transfers, guided city tours, bullet train and an internal flight",
+ "tag": "Culture",
+ "tags": ["Culture", "Luxury"],
+ "price": 179740,
+ "route_cities": ["Shanghai", "Xi'an", "Beijing"],
+ "counts": { "days": 8, "nights": 7, "cities": 3, "hotels": 3, "experiences": 6, "transfers": 11, "meals": 9 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [1, 2],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Holiday Inn Express Shanghai Gongkang",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical base in Jing'an with metro access",
+   "activities": [
+    { "name": "Half day guided tour of Shanghai", "day": 2, "optional": false, "match": "Half-Day Shanghai Sightseeing Tour", "description": "A guided morning through the Bund waterfront, the old town lanes and the rockeries and ponds of the Yu garden." },
+    { "name": "Oriental Pearl Tower", "day": 2, "optional": false, "match": "Oriental Pearl Tower", "description": "Tickets up the city's best known tower, with the glass floor over Pudong and a long view back to the colonial Bund." },
+    { "name": "Huangpu river cruise", "day": 2, "optional": false, "match": "Huangpu River Cruise", "description": "An evening sailing between the lit towers of Pudong and the stone facades of the Bund, the classic Shanghai skyline shot." }
+   ],
+   "program": { "name": "Shanghai", "description": "Two nights to open the trip: the Bund and the Yu garden, the Oriental Pearl Tower and a cruise on the Huangpu after dark." }
+  },
+  {
+   "letter": "B",
+   "name": "Xi'an",
+   "city": "Xi An",
+   "days": [3, 4],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+   "accom": "2 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Friendly hotel beside the Giant Wild Goose Pagoda",
+   "activities": [
+    { "name": "Xi'an sightseeing tour", "day": 4, "optional": false, "match": "Xian Sightseeing Tour", "description": "A guided day with the terracotta warriors in their excavation pits, the Bell Tower and the Giant Wild Goose Pagoda." }
+   ],
+   "program": { "name": "Xi'an", "description": "Two nights at the eastern end of the Silk Road, with the terracotta army, the Bell Tower and the walled old centre." }
+  },
+  {
+   "letter": "C",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [5, 6, 7, 8],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "Holiday Inn Express Beijing Airport Zone",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical hotel near the airport expressway",
+   "activities": [
+    { "name": "Great Wall at Mutianyu and the Summer Palace", "day": 6, "optional": false, "match": "Full-Day Great Wall & Summer Palace Tour", "description": "The Mutianyu section of the wall, steep and far less crowded than Badaling, then the lake and long corridor of the Summer Palace." },
+    { "name": "Beijing city sightseeing tour", "day": 7, "optional": false, "match": "Beijing Sightseeing Tour", "description": "A guided day through Tiananmen Square, the courtyards of the Forbidden City and the round halls of the Temple of Heaven." }
+   ],
+   "program": { "name": "Beijing", "description": "Three nights in the capital with the wall at Mutianyu, the Summer Palace, Tiananmen Square and the Temple of Heaven." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Shanghai",
+  "2": "City tour, tower and river cruise",
+  "3": "Shanghai to Xi'an",
+  "4": "Terracotta warriors and old Xi'an",
+  "5": "Xi'an to Beijing by bullet train",
+  "6": "Great Wall and the Summer Palace",
+  "7": "Forbidden City and Temple of Heaven",
+  "8": "Departure from Beijing"
+ },
+ "bullets": {
+  "1": ["Arrival at Pudong or Hongqiao and transfer to your hotel", "Check in and the rest of the day free", "Optional: an evening walk on the Bund", "Optional: street food on Nanjing Road"],
+  "2": ["Breakfast, then a guided half day of the city", "The Bund, the old town lanes and the Yu garden", "Up the Oriental Pearl Tower in the afternoon", "A cruise on the Huangpu as the towers light up"],
+  "3": ["Breakfast, then check out of your Shanghai hotel", "Optional: the maglev run out to Pudong airport", "Optional: flight Shanghai to Xi'an, booked with us", "Arrival transfer and check in beside the pagoda", "Indian lunch at a restaurant in the old centre"],
+  "4": ["Breakfast, then a guided day around Xi'an", "The terracotta warriors in their excavation pits", "The Bell Tower in the walled old centre", "The Giant Wild Goose Pagoda in the afternoon"],
+  "5": ["Breakfast and check out of your Xi'an hotel", "Station transfer and the bullet train north to Beijing", "Arrival transfer and check in at your hotel", "Optional: the Lama Temple or the 798 art district"],
+  "6": ["Early breakfast, then north to Mutianyu", "The cable car and the walk along the wall", "On to the Summer Palace in the afternoon", "Kunming lake, the long corridor and the marble boat"],
+  "7": ["Breakfast, then a guided day in the old centre", "Tiananmen Square and the Forbidden City courtyards", "The Temple of Heaven and its round halls", "Indian dinner before heading back to the hotel"],
+  "8": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B, L", "4": "B", "5": "B", "6": "B", "7": "B, D", "8": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Shanghai Gongkang",
+  "2": "Holiday Inn Express Shanghai Gongkang",
+  "3": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+  "4": "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+  "5": "Holiday Inn Express Beijing Airport Zone",
+  "6": "Holiday Inn Express Beijing Airport Zone",
+  "7": "Holiday Inn Express Beijing Airport Zone",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Shanghai first, then Xi'an, then Beijing. Running the route this way means the Great Wall is the last thing you see, not the first.",
+  "tip": "The Indian lunch and dinner are worth keeping. After five days of regional Chinese food most families are glad of one familiar plate."
+ },
+ "summary": "Eight days from the modern waterfront of Shanghai to the terracotta army at Xi'an and imperial Beijing, with a bullet train leg, daily breakfast and an Indian lunch and dinner on the way.",
+ "included": "Included: 7 nights with daily breakfast across Shanghai, Xi'an and Beijing; one Indian lunch and one Indian dinner; private transfers; half day guided Shanghai city tour; Oriental Pearl Tower tickets; Huangpu river cruise tickets; guided Xi'an sightseeing tour; Xi'an to Beijing bullet train; full day Great Wall at Mutianyu with the Summer Palace; guided Beijing city sightseeing tour.",
+ "not_included": "Not included: international flights; the Shanghai to Xi'an internal flight; China visa fees; meals beyond those listed; travel insurance; personal expenses."
+}

@@ -1,0 +1,86 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "discover-china",
+ "camel": "discoverChinaBeijingShanghai",
+ "slug": "discover-china-beijing-and-shanghai",
+ "title": "Discover China: Beijing and Shanghai",
+ "alt": "Tiananmen gate at the south entrance of the Forbidden City",
+ "transport": "Private transfers and shared guided city tours",
+ "tag": "Culture",
+ "tags": ["Culture", "Family"],
+ "price": 53675,
+ "route_cities": ["Beijing", "Shanghai"],
+ "counts": { "days": 7, "nights": 6, "cities": 2, "hotels": 2, "experiences": 6, "transfers": 11, "meals": 6 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [1, 2, 3],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Holiday Inn Express Beijing Airport Zone",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical hotel near the airport expressway",
+   "activities": [
+    { "name": "Great Wall at Mutianyu and the Summer Palace", "day": 2, "optional": false, "match": "Full-Day Great Wall & Summer Palace Tour", "description": "The Mutianyu section of the wall, steep and far less crowded than Badaling, then the lake and long corridor of the Summer Palace." },
+    { "name": "Tiananmen Square and the Forbidden City", "day": 3, "optional": false, "match": "Tiananmen Square and Forbidden City", "description": "A shared half day across the vast square and north through the courtyards and throne halls of the old imperial palace." }
+   ],
+   "program": { "name": "Beijing", "description": "Three nights in the capital with the wall at Mutianyu, the Summer Palace, Tiananmen Square and the Forbidden City." }
+  },
+  {
+   "letter": "B",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [4, 5, 6, 7],
+   "dayLabel": "Day 4 to 7",
+   "hotel": "Holiday Inn Express Shanghai Gongkang",
+   "accom": "3 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical base in Jing'an with metro access",
+   "activities": [
+    { "name": "Huangpu river cruise", "day": 4, "optional": false, "match": "Huangpu River Cruise", "description": "An evening sailing between the lit towers of Pudong and the stone facades of the Bund, the classic Shanghai skyline shot." },
+    { "name": "Shanghai Disneyland", "day": 5, "optional": false, "match": "Disneyland Shanghai", "description": "A full day at Shanghai Disneyland with tickets included, home to the Enchanted Storybook Castle and the Tron ride." },
+    { "name": "Half day guided tour of Shanghai", "day": 6, "optional": false, "match": "Half-Day Shanghai Sightseeing Tour", "description": "A shared guided morning through the Bund waterfront, the old town lanes and the rockeries and ponds of the Yu garden." },
+    { "name": "Shanghai Zoo with the panda hall", "day": 6, "optional": false, "match": "Shanghai Zoo", "description": "The afternoon at the zoo on the old Hongqiao golf course, where the panda hall sits among big lawns and old trees." }
+   ],
+   "program": { "name": "Shanghai", "description": "Three nights to finish: a Huangpu cruise, a full day at Disneyland, the Bund and the Yu garden, then the panda hall at the zoo." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and the Summer Palace",
+  "3": "Tiananmen Square and Forbidden City",
+  "4": "Beijing to Shanghai and a river cruise",
+  "5": "Shanghai Disneyland",
+  "6": "City tour and the panda hall",
+  "7": "Departure from Shanghai"
+ },
+ "bullets": {
+  "1": ["Arrival at Beijing Capital and transfer to your hotel", "Check in and the rest of the day free", "Optional: shopping along Wangfujing street", "Optional: the old observatory on the city wall"],
+  "2": ["Early breakfast, then north to Mutianyu", "The cable car and the walk along the wall", "On to the Summer Palace in the afternoon", "Kunming lake, the long corridor and the marble boat"],
+  "3": ["Breakfast, then a shared half day in the centre", "Tiananmen Square and the gate towers", "North through the Forbidden City courtyards", "Afternoon free in the old lanes"],
+  "4": ["Breakfast and check out of your Beijing hotel", "Optional: flight Beijing to Shanghai, booked with us", "Arrival transfer and check in at Shanghai", "An evening cruise on the Huangpu river"],
+  "5": ["Breakfast, then a day at Shanghai Disneyland", "Tickets included for the full day", "The Enchanted Storybook Castle and the Tron ride", "Back at the hotel in the evening"],
+  "6": ["Breakfast, then a shared half day of the city", "The Bund, the old town lanes and the Yu garden", "Across to the zoo in the afternoon", "The panda hall and the big lawns"],
+  "7": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B", "7": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Airport Zone",
+  "2": "Holiday Inn Express Beijing Airport Zone",
+  "3": "Holiday Inn Express Beijing Airport Zone",
+  "4": "Holiday Inn Express Shanghai Gongkang",
+  "5": "Holiday Inn Express Shanghai Gongkang",
+  "6": "Holiday Inn Express Shanghai Gongkang",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Two cities, three nights each. The shared tours keep the price down and still cover the wall, the palace and the Bund.",
+  "tip": "Keep the Forbidden City for a weekday morning. Tickets are capped daily and the Saturday slots go first in Indian booking windows."
+ },
+ "summary": "Seven days across the two cities everyone asks for, with daily breakfast: the Great Wall at Mutianyu, the Summer Palace and the Forbidden City in Beijing, then a Huangpu cruise, Disneyland and the panda hall in Shanghai.",
+ "included": "Included: 3 nights in Beijing and 3 nights in Shanghai with daily breakfast; private transfers; full day Great Wall at Mutianyu with the Summer Palace; Tiananmen Square and Forbidden City half day; Huangpu river cruise tickets; Shanghai Disneyland tickets; half day guided Shanghai city tour; Shanghai Zoo tickets.",
+ "not_included": "Not included: international flights; the Beijing to Shanghai internal flight; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

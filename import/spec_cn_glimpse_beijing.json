@@ -1,0 +1,148 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "China",
+   "/asien/china"
+  ]
+ ],
+ "source_slug": "glimpse-of-beijing",
+ "camel": "glimpseOfBeijingUniversal",
+ "slug": "glimpse-of-beijing-with-universal-studios",
+ "title": "Glimpse of Beijing with Universal Studios",
+ "alt": "Entrance globe at Universal Studios Beijing",
+ "transport": "Private airport transfers and guided day tours",
+ "tag": "Family",
+ "tags": [
+  "Family",
+  "Theme parks"
+ ],
+ "price": 37715,
+ "route_cities": [
+  "Beijing",
+  "Mutianyu"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 3,
+  "transfers": 6,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 1 to 5",
+   "hotel": "Holiday Inn Express Beijing Huacai",
+   "accom": "4 nights · Breakfast · Standard room · 3★ · Simple hotel in Chaoyang, close to the metro",
+   "activities": [
+    {
+     "name": "Great Wall at Mutianyu and the Summer Palace",
+     "day": 2,
+     "optional": false,
+     "match": "Full-Day Great Wall & Summer Palace Tour",
+     "description": "The Mutianyu section of the wall, the steepest and least crowded of the restored stretches, then the lake and long corridor of the Summer Palace."
+    },
+    {
+     "name": "Beijing Zoo with the panda house",
+     "day": 3,
+     "optional": false,
+     "match": "Beijing Zoo with Panda House tickets",
+     "description": "The old imperial menagerie grounds, with the panda house where the giant pandas are kept in their own enclosures."
+    },
+    {
+     "name": "Universal Studios Beijing",
+     "day": 4,
+     "optional": false,
+     "match": "Universal Studios Beijing Tickets",
+     "description": "A full day at Universal Studios Beijing with tickets included, home to the largest Harry Potter area built anywhere."
+    }
+   ],
+   "program": {
+    "name": "Beijing",
+    "description": "Four nights with the wall at Mutianyu, the Summer Palace, the panda house and a full day at Universal Studios."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and the Summer Palace",
+  "3": "Beijing Zoo and the pandas",
+  "4": "Universal Studios Beijing",
+  "5": "Departure from Beijing"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Beijing Capital and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Optional: an evening in the Sanlitun lanes",
+   "Optional: Peking duck at a neighbourhood restaurant"
+  ],
+  "2": [
+   "Early breakfast, then north to Mutianyu",
+   "The cable car and the walk along the wall",
+   "On to the Summer Palace in the afternoon",
+   "Kunming lake, the long corridor and the marble boat"
+  ],
+  "3": [
+   "Breakfast, then across to the zoo",
+   "The panda house and the giant pandas",
+   "The old imperial menagerie grounds",
+   "Afternoon free in the city"
+  ],
+  "4": [
+   "Early breakfast, then out to Universal Studios",
+   "Tickets included for the full day",
+   "The Harry Potter area and the water park rides",
+   "Back at the hotel in the evening"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Huacai",
+  "2": "Holiday Inn Express Beijing Huacai",
+  "3": "Holiday Inn Express Beijing Huacai",
+  "4": "Holiday Inn Express Beijing Huacai",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "The wall, the pandas and Universal in four nights. It is the version families ask for once they hear the park is here.",
+  "tip": "Universal Beijing is quietest midweek. Head left to the Harry Potter area first, the queues there build fastest."
+ },
+ "summary": "Five days in the capital: the Great Wall at Mutianyu with the Summer Palace, the panda house at Beijing Zoo, and a full day at Universal Studios Beijing with tickets included.",
+ "included": "Included: 4 nights with daily breakfast; private airport transfers; a full day guided tour of the Great Wall at Mutianyu and the Summer Palace; Beijing Zoo tickets with the panda house; Universal Studios Beijing tickets.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

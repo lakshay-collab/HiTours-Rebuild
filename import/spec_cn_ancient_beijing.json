@@ -1,0 +1,114 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "China",
+   "/asien/china"
+  ]
+ ],
+ "source_slug": "discover-the-ancient-wonders-of-beijing",
+ "camel": "ancientWondersBeijing",
+ "slug": "ancient-wonders-of-beijing",
+ "title": "Ancient Wonders of Beijing",
+ "alt": "Mutianyu section of the Great Wall winding over the hills",
+ "transport": "Private airport transfers and a guided full day",
+ "tag": "Short break",
+ "tags": [
+  "Short break",
+  "Culture"
+ ],
+ "price": 23750,
+ "route_cities": [
+  "Beijing",
+  "Mutianyu"
+ ],
+ "counts": {
+  "days": 3,
+  "nights": 2,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 1,
+  "transfers": 4,
+  "meals": 2
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Holiday Inn Express Beijing Airport Zone",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Simple hotel in the airport zone, handy for early flights",
+   "activities": [
+    {
+     "name": "Great Wall at Mutianyu and the Summer Palace",
+     "day": 2,
+     "optional": false,
+     "match": "Full-Day Great Wall & Summer Palace Tour",
+     "description": "The Mutianyu section of the wall, the steepest and least crowded of the restored stretches, then the lake and long corridor of the Summer Palace."
+    }
+   ],
+   "program": {
+    "name": "Beijing",
+    "description": "Two nights with one long guided day: the wall at Mutianyu in the morning and the Summer Palace after it."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and the Summer Palace",
+  "3": "Departure from Beijing"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Beijing Capital and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Optional: an evening in the Sanlitun lanes",
+   "Optional: Peking duck at a neighbourhood restaurant"
+  ],
+  "2": [
+   "Early breakfast, then north to Mutianyu",
+   "The cable car and the walk along the wall",
+   "On to the Summer Palace in the afternoon",
+   "Kunming lake, the long corridor and the marble boat"
+  ],
+  "3": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B"
+ },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Airport Zone",
+  "2": "Holiday Inn Express Beijing Airport Zone",
+  "3": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Mutianyu rather than Badaling is the right call. Same wall, a fraction of the crowd and a far better walk.",
+  "tip": "Take the cable car up and walk down. The steps on the lower towers are punishing in the other direction."
+ },
+ "summary": "A two night stop with the one day that matters: the Great Wall at Mutianyu, the quietest of the restored sections, followed by the lake and long corridor of the Summer Palace.",
+ "included": "Included: 2 nights with daily breakfast; private airport transfers; a full day guided tour of the Great Wall at Mutianyu and the Summer Palace.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

@@ -1,2689 +1,732 @@
 [
  {
-  "slug": "taste-the-north-and-south-of-vietnam",
-  "title": "Vietnam Couple EXCLUSIVE | FREE Candle Light Dinner",
-  "dur": "7D/6N",
-  "price": 59950,
-  "struck": 89999,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    4
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ]
-  ],
-  "acts": 21,
-  "gallery": 148
- },
- {
-  "slug": "exotic-vietnam-tour-package",
-  "title": "Escape to Vietnam | FREE Halong Bay Cruise Excursion",
-  "dur": "7D/6N",
-  "price": 58770,
-  "struck": 74991,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Hoi An",
-    2
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Hoi An Rose Garden Hotel",
-    "Hoi An",
-    1,
-    12
-   ]
-  ],
-  "acts": 23,
-  "gallery": 166
- },
- {
-  "slug": "rediscover-vietnam---a-complete-tour-package",
-  "title": "Rediscover Vietnam - A Complete Honeymoon Tour",
-  "dur": "9D/8N",
-  "price": 78990,
-  "struck": 97999,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    4
-   ]
-  ],
-  "days": 9,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    3,
-    12
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ]
-  ],
-  "acts": 26,
-  "gallery": 179
- },
- {
-  "slug": "vietnam-explorer-north-south-central",
-  "title": "Romantic Vietnam | FREE Ba Na Hills Cable Car Tickets",
-  "dur": "8D/7N",
-  "price": 73880,
-  "struck": 104599,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    1,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ]
-  ],
-  "acts": 38,
-  "gallery": 200
- },
- {
-  "slug": "cambodia-vietnam-tour-package-from-india",
-  "title": "Cambodia & Vietnam Experience with Visit to Angkor Wat",
-  "dur": "8D/7N",
-  "price": 92000,
-  "struck": 110000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Da Nang",
-    1
-   ],
-   [
-    "Siem Reap",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    1,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    1,
-    11
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ]
-  ],
-  "acts": 36,
-  "gallery": 182
- },
- {
-  "slug": "best-of-northern-vietnam-with-sapa",
-  "title": "EXCLUSIVE Vietnam with Fansipan Mountain Trek & Cave Excursion",
-  "dur": "7D/6N",
-  "price": 52850,
-  "struck": 74500,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Sa Pa",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    1,
-    11
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ]
-  ],
-  "acts": 20,
-  "gallery": 166
- },
- {
-  "slug": "best-of-hanoi-with-halong-bay-tour-package",
-  "title": "Escape to Vietnam with Boat Ride to Tam Coc Caves",
+  "slug": "best-of-shanghai",
+  "title": "Best of Shanghai",
   "dur": "5D/4N",
-  "price": 38990,
-  "struck": 65999,
+  "price": 62300,
+  "struck": 82859,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
+    "Shanghai",
+    5
    ]
   ],
   "days": 5,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    4,
+    8
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    4,
+    10
    ]
   ],
-  "acts": 15,
-  "gallery": 118
+  "acts": 14,
+  "gallery": 68
  },
  {
-  "slug": "rediscover-vietnam---a-complete-honeymoon-tour",
-  "title": "Romantic Escape to Vietnam with FREE Halong Bay Cruise Experience",
-  "dur": "9D/8N",
-  "price": 73450,
-  "struck": 97999,
+  "slug": "highlights-of-beijing",
+  "title": "Highlights of Beijing",
+  "dur": "4D/3N",
+  "price": 29500,
+  "struck": 39235,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
+    "Beijing",
     4
    ]
   ],
-  "days": 9,
+  "days": 4,
   "hotels": [
    [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    2,
-    11
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ]
-  ],
-  "acts": 33,
-  "gallery": 215
- },
- {
-  "slug": "best-selling-vietnam-tour-package",
-  "title": "Escape to Vietnam with Scenic Boat Ride to the Mekong Delta",
-  "dur": "6D/5N",
-  "price": 62455,
-  "struck": 110000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ]
-  ],
-  "acts": 21,
-  "gallery": 140
- },
- {
-  "slug": "glimpse-of-vietnam-and-laos-7-nights-8-days",
-  "title": "Best of Vietnam with FREE Cu Chi Tunnels Visit",
-  "dur": "8D/7N",
-  "price": 69000,
-  "struck": 86250,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    2
-   ],
-   [
-    "Danang",
-    3
-   ],
-   [
-    "Hanoi",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ],
-   [
-    "Luxtery Da Nang",
-    "Danang",
-    3,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Danang",
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
     3,
     11
    ],
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    3,
+    11
    ]
   ],
-  "acts": 26,
-  "gallery": 170
+  "acts": 6,
+  "gallery": 48
  },
  {
-  "slug": "16-days-trip-to-vietnam",
-  "title": "All in One Vietnam with FREE Nha Trang Island tour",
-  "dur": "16D/15N",
-  "price": 121980,
-  "struck": 155600,
+  "slug": "highlights-of-shanghai",
+  "title": "Highlights of Shanghai | A Journey Through Culture & Cityscapes",
+  "dur": "5D/4N",
+  "price": 33500,
+  "struck": 44555,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Sapa",
-    2
-   ],
-   [
-    "Hoi An",
-    2
-   ],
-   [
-    "Nha Trang",
-    3
-   ],
-   [
-    "Ho Chi Minh",
+    "Shanghai",
     5
    ]
   ],
-  "days": 16,
+  "days": 5,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    4,
+    8
    ],
    [
-    "The Light Hotel Hanoi",
-    "Hanoi",
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    4,
+    10
+   ]
+  ],
+  "acts": 16,
+  "gallery": 68
+ },
+ {
+  "slug": "discover-beijing",
+  "title": "Discover Beijing | A Journey of Wonders",
+  "dur": "4D/3N",
+  "price": 35000,
+  "struck": 50000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Beijing",
+    4
+   ]
+  ],
+  "days": 4,
+  "hotels": [
+   [
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    4,
+    11
+   ],
+   [
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    4,
+    11
+   ]
+  ],
+  "acts": 6,
+  "gallery": 46
+ },
+ {
+  "slug": "glimpse-of-shanghai",
+  "title": "Glimpse of Shanghai | From Ancient Temples to Modern Skylines",
+  "dur": "3D/2N",
+  "price": 25000,
+  "struck": 33250,
+  "cur": "INR",
+  "cities": [
+   [
+    "Shanghai",
+    3
+   ]
+  ],
+  "days": 3,
+  "hotels": [
+   [
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    2,
+    10
+   ],
+   [
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    2,
+    8
+   ]
+  ],
+  "acts": 12,
+  "gallery": 52
+ },
+ {
+  "slug": "best-of-china",
+  "title": "Best of China | A Journey Through the Golden Triangle",
+  "dur": "10D/9N",
+  "price": 100000,
+  "struck": 124000,
+  "cur": "INR",
+  "cities": [
+   [
+    "Beijing",
+    4
+   ],
+   [
+    "Xi An",
+    2
+   ],
+   [
+    "Shanghai",
+    4
+   ]
+  ],
+  "days": 10,
+  "hotels": [
+   [
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    4,
+    11
+   ],
+   [
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    4,
+    11
+   ],
+   [
+    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+    "Xi An",
     2,
     9
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sapa",
-    1,
-    11
-   ],
-   [
-    "Golden Villa Hotel Sapa",
-    "Sapa",
-    1,
-    11
-   ],
-   [
-    "Hoi An Rose Garden Hotel",
-    "Hoi An",
+    "Holiday Inn Express Xi'An Ancient Town West",
+    "Xi An",
     2,
-    12
-   ],
-   [
-    "Triple Riverside Hotel, Hoi An",
-    "Hoi An",
-    2,
-    14
-   ],
-   [
-    "Emerald Bay Hotel & Spa Nha Trang",
-    "Nha Trang",
-    3,
     13
    ],
    [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    10
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    10
-   ]
-  ],
-  "acts": 44,
-  "gallery": 273
- },
- {
-  "slug": "lovely-vietnam-and-cambodia-in-8-days",
-  "title": "Vietnam & Cambodia Delights with FREE Visit to Cu Chi Tunnels",
-  "dur": "8D/7N",
-  "price": 84499,
-  "struck": 104667,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    4
-   ],
-   [
-    "Siem Reap",
-    4
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    10
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    10
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
     3,
-    15
+    8
+   ],
+   [
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    3,
+    10
    ]
   ],
-  "acts": 32,
-  "gallery": 108
+  "acts": 30,
+  "gallery": 144
  },
  {
-  "slug": "best-of-vietnam-and-cambodia-in-15-days",
-  "title": "Best of Vietnam and Cambodia in 15 Days",
+  "slug": "hidden-trails-of-japan",
+  "title": "Hidden Trails of China and Japan | Group Tour Package",
   "dur": "15D/14N",
-  "price": 160000,
-  "struck": 184900,
+  "price": 355665,
+  "struck": 473036,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
+    "Beijing",
+    3
    ],
    [
-    "Halong Bay",
+    "Nanjing",
     1
    ],
    [
-    "Da Nang",
-    3
-   ],
-   [
-    "Phu Quoc",
+    "Shanghai",
     2
    ],
    [
-    "Ho Chi Minh",
-    3
+    "Tokyo",
+    2
    ],
    [
-    "Siem Reap",
-    4
+    "Kawaguchiko",
+    1
+   ],
+   [
+    "Kyoto",
+    2
+   ],
+   [
+    "Osaka",
+    1
+   ],
+   [
+    "Okayama",
+    1
+   ],
+   [
+    "Hiroshima",
+    2
    ]
   ],
   "days": 15,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
+    "Mercure Beijing Downtown",
+    "Beijing",
+    3,
+    13
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
+    "Novotel Nanjing Central",
+    "Nanjing",
     1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
     12
    ],
    [
-    "Amarin Resort & Spa, Phu Quoc",
-    "Phu Quoc",
+    "Hilton Nanjing Riverside",
+    "Nanjing",
+    1,
+    14
+   ],
+   [
+    "Novotel Shanghai Atlantis",
+    "Shanghai",
     2,
     14
    ],
    [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
+    "Shinagawa Prince Hotel, Tokyo",
+    "Tokyo",
+    2,
+    19
+   ],
+   [
+    "Fuji Kawaguchiko Resort",
+    "Kawaguchiko",
+    1,
+    10
+   ],
+   [
+    "Fuji View Hotel, Kawaguchiko",
+    "Kawaguchiko",
+    1,
+    13
+   ],
+   [
+    "Miyako Hotel Kyoto Hachijo",
+    "Kyoto",
+    2,
+    12
+   ],
+   [
+    "The Prince Kyoto Takaragaike, Autograph Collection",
+    "Kyoto",
+    2,
+    15
+   ],
+   [
+    "Holiday Inn Express Osaka City Centre - Midosuji, an IHG Hotel",
+    "Osaka",
+    1,
+    14
+   ],
+   [
+    "Candeo Hotels Osaka Namba",
+    "Osaka",
+    1,
+    15
+   ],
+   [
+    "ANA Crowne Plaza Narita, Hiroshima",
+    "Okayama",
+    1,
+    13
+   ],
+   [
+    "Hotel Granvia Okayama",
+    "Okayama",
+    1,
+    13
+   ],
+   [
+    "Hilton Hiroshima",
+    "Hiroshima",
+    1,
+    16
+   ]
+  ],
+  "acts": 89,
+  "gallery": 586
+ },
+ {
+  "slug": "gems-of-china",
+  "title": "Gems of China | Discover Shanghai and Xian",
+  "dur": "7D/6N",
+  "price": 70000,
+  "struck": 93100,
+  "cur": "INR",
+  "cities": [
+   [
+    "Shanghai",
+    4
+   ],
+   [
+    "Xi An",
+    3
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    4,
+    8
+   ],
+   [
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    4,
+    10
+   ],
+   [
+    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+    "Xi An",
+    2,
+    9
+   ],
+   [
+    "Holiday Inn Express Xi'An Ancient Town West",
+    "Xi An",
+    2,
+    13
+   ]
+  ],
+  "acts": 20,
+  "gallery": 106
+ },
+ {
+  "slug": "glimpse-of-beijing",
+  "title": "Glimpse of Beijing",
+  "dur": "5D/4N",
+  "price": 39700,
+  "struck": 52801,
+  "cur": "INR",
+  "cities": [
+   [
+    "Beijing",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    4,
+    11
+   ],
+   [
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    4,
+    11
+   ]
+  ],
+  "acts": 8,
+  "gallery": 55
+ },
+ {
+  "slug": "discover-china",
+  "title": "Discover China | Beijing-Shanghai Symphony",
+  "dur": "7D/6N",
+  "price": 56500,
+  "struck": 80700,
+  "cur": "INR",
+  "cities": [
+   [
+    "Beijing",
+    3
+   ],
+   [
+    "Shanghai",
+    4
+   ]
+  ],
+  "days": 7,
+  "hotels": [
+   [
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    3,
+    11
+   ],
+   [
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    3,
+    11
+   ],
+   [
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
     3,
     10
    ],
    [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
     3,
-    15
+    8
    ]
   ],
-  "acts": 52,
-  "gallery": 267
+  "acts": 15,
+  "gallery": 95
  },
  {
-  "slug": "wonders-of-vietnam",
-  "title": "Wonders of Vietnam with FREE Visit to Fansipan Mountain",
-  "dur": "6D/5N",
-  "price": 45950,
-  "struck": 58500,
+  "slug": "highlights-of-china",
+  "title": "Highlights of China | A Journey Through The Land of Dragon",
+  "dur": "8D/7N",
+  "price": 189200,
+  "struck": 234608,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    1
-   ],
-   [
-    "Sa Pa",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
+    "Shanghai",
     2
+   ],
+   [
+    "Xi An",
+    2
+   ],
+   [
+    "Beijing",
+    4
    ]
   ],
-  "days": 6,
+  "days": 8,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    1,
-    6
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    2,
+    10
    ],
    [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    1,
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    2,
+    8
+   ],
+   [
+    "Jinjiang Inn Xi'an Giant Wild Goose Pagoda",
+    "Xi An",
+    2,
     9
    ],
    [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    1,
+    "Holiday Inn Express Xi'An Ancient Town West",
+    "Xi An",
+    2,
+    13
+   ],
+   [
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    3,
     11
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    3,
+    11
    ]
   ],
-  "acts": 14,
-  "gallery": 158
+  "acts": 26,
+  "gallery": 128
  },
  {
-  "slug": "vietnam-sightseeing-tour",
-  "title": "Offbeat Vietnam Sightseeing Tour",
+  "slug": "timeless-wonders-of-china--shanghai-yangtze--beijing",
+  "title": "Timeless Wonders of China | Shanghai, Yangtze & Beijing",
   "dur": "9D/8N",
-  "price": 79450,
-  "struck": 105400,
+  "price": 265000,
+  "struck": 352450,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    2
-   ],
-   [
-    "Dong Hoi",
+    "Shanghai",
     1
    ],
    [
-    "Da Nang",
+    "Chongqing",
+    1
+   ],
+   [
+    "Highseas",
     2
    ],
    [
-    "Ho Chi Minh",
+    "Shanghai",
     2
+   ],
+   [
+    "Beijing",
+    3
    ]
   ],
   "days": 9,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
     2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Phong Nha Lake House Resort, Vietnam",
-    "Halong Bay",
-    2,
-    14
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    1,
     10
-   ]
-  ],
-  "acts": 24,
-  "gallery": 204
- },
- {
-  "slug": "getaway-to-vietnam-tour-package",
-  "title": "Vietnam Odyssey | A Tale of Majestic Bays and Tropical Shores",
-  "dur": "10D/9N",
-  "price": 94780,
-  "struck": 135600,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
    ],
    [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Phu Quoc",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 10,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
     2,
-    6
+    8
    ],
    [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
+    "Victoria Jenna, Yangtze River Cruise",
+    "Chongqing",
+    3,
+    5
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
     2,
     11
    ],
    [
-    "Praha Phu Quoc Hotel",
-    "Phu Quoc",
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
     2,
-    13
-   ],
-   [
-    "Amarin Resort & Spa, Phu Quoc",
-    "Phu Quoc",
-    2,
-    14
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
+    11
    ]
   ],
   "acts": 33,
-  "gallery": 243
+  "gallery": 136
  },
  {
-  "slug": "delights-of-vietnam",
-  "title": "Delights of Vietnam with Overnight Cruise at Ha Long Bay",
-  "dur": "5D/4N",
-  "price": 38990,
-  "struck": 55900,
+  "slug": "discover-the-ancient-wonders-of-beijing",
+  "title": "Discover the Ancient Wonders of Beijing",
+  "dur": "3D/2N",
+  "price": 25000,
+  "struck": 33250,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
+    "Beijing",
     3
    ]
   ],
-  "days": 5,
+  "days": 3,
   "hotels": [
    [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ]
-  ],
-  "acts": 9,
-  "gallery": 119
- },
- {
-  "slug": "a-combined-vietnam-cambodia-honeymoon-tour",
-  "title": "Romantic Getaway to Vietnam & Cambodia",
-  "dur": "10D/9N",
-  "price": 118000,
-  "struck": 130000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Siem Reap",
-    3
-   ]
-  ],
-  "days": 10,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
     3,
-    10
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    6
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 45,
-  "gallery": 232
- },
- {
-  "slug": "highlights-of-vietnam-group-tour",
-  "title": "Highlights of Vietnam | Group Tour Package",
-  "dur": "7D/6N",
-  "price": 58990,
-  "struck": 101707,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    2
-   ],
-   [
-    "Da Nang",
-    1
-   ],
-   [
-    "Hanoi",
-    4
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Ramana Saigon, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    14
-   ],
-   [
-    "Lotus Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    10
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    1,
     11
    ],
    [
-    "Canvas Hotel, Da Nang",
-    "Da Nang",
-    1,
-    14
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
     3,
-    9
-   ],
-   [
-    "La Casa Hanoi Hotel",
-    "Hanoi",
-    3,
-    12
+    11
    ]
   ],
-  "acts": 26,
-  "gallery": 171
+  "acts": 4,
+  "gallery": 38
  },
  {
-  "slug": "luxurious-getaway-to-vietnam",
-  "title": "Best Of Vietnam | FREE Nha Trang Island Excursion",
-  "dur": "7D/6N",
-  "price": 64450,
-  "struck": 94000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Nha Trang",
-    2
-   ],
-   [
-    "Hanoi",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Emerald Bay Hotel & Spa Nha Trang",
-    "Nha Trang",
-    2,
-    13
-   ]
-  ],
-  "acts": 19,
-  "gallery": 79
- },
- {
-  "slug": "cambodia-and-vietnam-tour-package",
-  "title": "Cambodia and Vietnam Tour Package",
-  "dur": "10D/9N",
-  "price": 115999,
-  "struck": 141250,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Siem Reap",
-    3
-   ]
-  ],
-  "days": 10,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 50,
-  "gallery": 224
- },
- {
-  "slug": "south-and-central-vietnam-tour-package",
-  "title": "South and Central Vietnam Tour Package",
+  "slug": "getaway-to-shanghai",
+  "title": "Getaway to Shanghai | Timeless Treasures & Towering Heights",
   "dur": "6D/5N",
-  "price": 49950,
-  "struck": 65990,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Da Nang",
-    3
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Prague Hotel Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    12
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Angel Beach Hotel, Da Nang",
-    "Da Nang",
-    2,
-    14
-   ]
-  ],
-  "acts": 23,
-  "gallery": 120
- },
- {
-  "slug": "vietnam-group-tour",
-  "title": "The Vietnam Adventure",
-  "dur": "7D/6N",
-  "price": 59186,
-  "struck": 71023.2,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    2
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Hanoi",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Winsuites Saigon Hotel",
-    "Ho Chi Minh",
-    2,
-    6
-   ],
-   [
-    "Me Gustas Park View Hotel",
-    "Ho Chi Minh",
-    2,
-    4
-   ],
-   [
-    "Sunny Ocean Hotel & Spa",
-    "Da Nang",
-    2,
-    8
-   ],
-   [
-    "Golden Line Danang Hotel",
-    "Da Nang",
-    2,
-    13
-   ],
-   [
-    "My Lan Hotel",
-    "Hanoi",
-    1,
-    4
-   ],
-   [
-    "Hanoi Elite hotel",
-    "Hanoi",
-    1,
-    8
-   ]
-  ],
-  "acts": 23,
-  "gallery": 124
- },
- {
-  "slug": "4-days-hanoi-and-halong-on-traditional-junk",
-  "title": "Short Vacation to Hanoi with FREE Halong Bay Cruise",
-  "dur": "4D/3N",
-  "price": 38000,
-  "struck": 48000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    1,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    1,
-    9
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ]
-  ],
-  "acts": 11,
-  "gallery": 115
- },
- {
-  "slug": "hoi-an-prao-tribe-village-to-a-luoi-town-via-hamburger-hill-to-khe-sanh-to-vinh-moc-tunnels-to-hue-city-to-hoi-an",
-  "title": "Glimpse of Da Nang and Hoi An with FREE Golden Hand Bridge Visit",
-  "dur": "5D/4N",
-  "price": 42000,
-  "struck": 52000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Hoi An",
-    3
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    2,
-    11
-   ],
-   [
-    "Hoi An Rose Garden Hotel",
-    "Hoi An",
-    2,
-    12
-   ],
-   [
-    "Triple Riverside Hotel, Hoi An",
-    "Hoi An",
-    2,
-    14
-   ]
-  ],
-  "acts": 16,
-  "gallery": 109
- },
- {
-  "slug": "thailand-cambodia-vietnam-itinerary-10-days",
-  "title": "Thailand Cambodia Vietnam Itinerary 10 Days",
-  "dur": "10D/9N",
-  "price": 103450,
-  "struck": 137588,
-  "cur": "INR",
-  "cities": [
-   [
-    "Phuket",
-    2
-   ],
-   [
-    "Bangkok",
-    1
-   ],
-   [
-    "Phnom Penh",
-    1
-   ],
-   [
-    "Siem Reap",
-    2
-   ],
-   [
-    "Hanoi",
-    4
-   ]
-  ],
-  "days": 10,
-  "hotels": [
-   [
-    "Club Bamboo Boutique Resort",
-    "Phuket",
-    2,
-    11
-   ],
-   [
-    "Jiraporn Hill Resort",
-    "Phuket",
-    2,
-    12
-   ],
-   [
-    "Convenient Park Hotel",
-    "Bangkok",
-    1,
-    14
-   ],
-   [
-    "ibis Bangkok Sukhumvit 4",
-    "Bangkok",
-    1,
-    11
-   ],
-   [
-    "The Balé Phnom Penh by LifestyleRetreats",
-    "Phnom Penh",
-    1,
-    12
-   ],
-   [
-    "NagaWorld Hotel & Entertainment Complex",
-    "Phnom Penh",
-    1,
-    15
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ],
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ]
-  ],
-  "acts": 47,
-  "gallery": 281
- },
- {
-  "slug": "vietnam-and-cambodia-packages-from-kolkata",
-  "title": "Vietnam and Cambodia Package from Kolkata",
-  "dur": "8D/7N",
-  "price": 130000,
-  "struck": 169000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Phnom Penh",
-    2
-   ],
-   [
-    "Siem Reap",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    9
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    6
-   ],
-   [
-    "The Balé Phnom Penh by LifestyleRetreats",
-    "Phnom Penh",
-    2,
-    12
-   ],
-   [
-    "NagaWorld Hotel & Entertainment Complex",
-    "Phnom Penh",
-    2,
-    15
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 33,
-  "gallery": 150
- },
- {
-  "slug": "cycling-from-saigon-to-hanoi-14-day-13-nights",
-  "title": "Exploring Vietnam with FREE Snorkelling Experience at Phu Quoc",
-  "dur": "14D/13N",
-  "price": 108865,
-  "struck": 144790.5,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Sa Pa",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Phu Quoc",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    5
-   ]
-  ],
-  "days": 14,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    1,
-    11
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Luxtery Da Nang",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    2,
-    11
-   ],
-   [
-    "Amarin Resort & Spa, Phu Quoc",
-    "Phu Quoc",
-    2,
-    14
-   ],
-   [
-    "Praha Phu Quoc Hotel",
-    "Phu Quoc",
-    2,
-    13
-   ],
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    9
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    6
-   ]
-  ],
-  "acts": 49,
-  "gallery": 291
- },
- {
-  "slug": "cyling-in-the-mekong-delta-7-day-6-nights",
-  "title": "Vietnam Getaway with FREE Cu Chi Tunnels Visit",
-  "dur": "5D/4N",
-  "price": 45000,
-  "struck": 55000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    5
-   ]
-  ],
-  "days": 5,
-  "hotels": [
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    6
-   ],
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    4,
-    9
-   ]
-  ],
-  "acts": 10,
-  "gallery": 60
- },
- {
-  "slug": "vietnam-getaway-with-free-ban-gioc-waterfalls",
-  "title": "Vietnam Highlights with FREE Ban Gioc Waterfall Tour",
-  "dur": "8D/7N",
-  "price": 48670,
-  "struck": 52990,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Cao Bang",
-    2
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Khach san So Oanh",
-    "Cao Bang",
-    2,
-    10
-   ]
-  ],
-  "acts": 21,
-  "gallery": 137
- },
- {
-  "slug": "vietnamese-delights--group-tour-package",
-  "title": "Vietnamese Delights | Group Tour Package",
-  "dur": "7D/6N",
-  "price": 66090,
-  "struck": 82613,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Beryl Charm Hotel and Spa",
-    "Hanoi",
-    2,
-    12
-   ],
-   [
-    "Hanoi Calista Hotel",
-    "Hanoi",
-    2,
-    11
-   ],
-   [
-    "Eden Hotel Vietnam",
-    "Da Nang",
-    2,
-    14
-   ],
-   [
-    "Haian Beach Hotel & Spa",
-    "Da Nang",
-    2,
-    10
-   ],
-   [
-    "Liberty Hotel Saigon Parkview",
-    "Ho Chi Minh",
-    2,
-    11
-   ],
-   [
-    "Vien Dong Hotel",
-    "Ho Chi Minh",
-    2,
-    10
-   ]
-  ],
-  "acts": 32,
-  "gallery": 143
- },
- {
-  "slug": "vietnam-laos-cambodia-tour-packages-from-india",
-  "title": "Vietnam Laos Cambodia Tour Package from India",
-  "dur": "10D/9N",
-  "price": 112500,
-  "struck": 149625,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    3
-   ],
-   [
-    "Luang Prabang",
-    3
-   ],
-   [
-    "Siem Reap",
-    4
-   ]
-  ],
-  "days": 10,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Villa Namkhan River",
-    "Luang Prabang",
-    3,
-    11
-   ],
-   [
-    "Pumalin Villa",
-    "Luang Prabang",
-    3,
-    11
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 39,
-  "gallery": 155
- },
- {
-  "slug": "cycling-from-hue-to-nha-trang-6-day-5-nights",
-  "title": "Glimpse of Vietnam with FREE Nha Trang Island Tour",
-  "dur": "7D/6N",
   "price": 65000,
-  "struck": 75000,
+  "struck": 86450,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    2
-   ],
-   [
-    "Nha Trang",
-    2
-   ],
-   [
-    "Hanoi",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
+    "Shanghai",
     6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Emerald Bay Hotel & Spa Nha Trang",
-    "Nha Trang",
-    2,
-    13
-   ]
-  ],
-  "acts": 19,
-  "gallery": 82
- },
- {
-  "slug": "north-vietnam-package-tours",
-  "title": "North Vietnam Tour Package",
-  "dur": "7D/6N",
-  "price": 52000,
-  "struck": 67800,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Sa Pa",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    2,
-    11
-   ],
-   [
-    "Golden Villa Hotel Sapa",
-    "Sa Pa",
-    2,
-    11
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ]
-  ],
-  "acts": 22,
-  "gallery": 158
- },
- {
-  "slug": "getaway-to-vietnam",
-  "title": "Getaway to Vietnam | Group Tour Package",
-  "dur": "7D/6N",
-  "price": 68990,
-  "struck": 80600,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "La Passion Classic Hotel",
-    "Hanoi",
-    2,
-    11
-   ],
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Sail Hotel",
-    "Da Nang",
-    2,
-    12
-   ],
-   [
-    "Grand Gold Hotel",
-    "Da Nang",
-    2,
-    15
-   ],
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    9
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    2,
-    6
-   ]
-  ],
-  "acts": 40,
-  "gallery": 167
- },
- {
-  "slug": "vietnam-cambodia-tour-packages-from-mumbai",
-  "title": "Vietnam Cambodia Tour Package from Mumbai",
-  "dur": "8D/7N",
-  "price": 153999,
-  "struck": 204899,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Phnom Penh",
-    2
-   ],
-   [
-    "Siem Reap",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    6
-   ],
-   [
-    "The Balé Phnom Penh by LifestyleRetreats",
-    "Phnom Penh",
-    2,
-    12
-   ],
-   [
-    "NagaWorld Hotel & Entertainment Complex",
-    "Phnom Penh",
-    2,
-    15
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 35,
-  "gallery": 149
- },
- {
-  "slug": "vietnamese-odyssey--group-tour-package",
-  "title": "Vietnamese Odyssey | Group Tour Package",
-  "dur": "8D/7N",
-  "price": 67116,
-  "struck": 83895,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    2
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Beryl Charm Hotel and Spa",
-    "Hanoi",
-    2,
-    12
-   ],
-   [
-    "Hanoi Calista Hotel",
-    "Hanoi",
-    2,
-    11
-   ],
-   [
-    "Majestic Halong Cruise",
-    "Halong Bay",
-    1,
-    11
-   ],
-   [
-    "Era Cruises Halong",
-    "Halong Bay",
-    1,
-    12
-   ],
-   [
-    "Eden Hotel Vietnam",
-    "Da Nang",
-    2,
-    14
-   ],
-   [
-    "Haian Beach Hotel & Spa",
-    "Da Nang",
-    2,
-    10
-   ],
-   [
-    "Liberty Hotel Saigon Parkview",
-    "Ho Chi Minh",
-    2,
-    11
-   ],
-   [
-    "Vien Dong Hotel",
-    "Ho Chi Minh",
-    2,
-    10
-   ]
-  ],
-  "acts": 37,
-  "gallery": 196
- },
- {
-  "slug": "vietnam-romantic-escape--honeymoon-special",
-  "title": "Vietnam Romantic Escape | Honeymoon Special",
-  "dur": "6D/5N",
-  "price": 59680,
-  "struck": 65900,
-  "cur": "INR",
-  "cities": [
-   [
-    "Da Nang",
-    3
-   ],
-   [
-    "Phu Quoc",
-    3
    ]
   ],
   "days": 6,
   "hotels": [
    [
-    "Luxtery Da Nang",
-    "Da Nang",
-    3,
-    12
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    5,
+    10
    ],
    [
-    "Diamond Sea Hotel, Da Nang",
-    "Da Nang",
-    3,
-    11
-   ],
-   [
-    "Praha Phu Quoc Hotel",
-    "Phu Quoc",
-    2,
-    13
-   ],
-   [
-    "Amarin Resort & Spa, Phu Quoc",
-    "Phu Quoc",
-    2,
-    14
-   ]
-  ],
-  "acts": 14,
-  "gallery": 117
- },
- {
-  "slug": "vietnam-and-cambodia-tour-packages-from-chennai",
-  "title": "Vietnam and Cambodia Tour Package from Chennai",
-  "dur": "8D/7N",
-  "price": 135320,
-  "struck": 179975,
-  "cur": "INR",
-  "cities": [
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Phnom Penh",
-    2
-   ],
-   [
-    "Siem Reap",
-    3
-   ]
-  ],
-  "days": 8,
-  "hotels": [
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    9
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    6
-   ],
-   [
-    "The Balé Phnom Penh by LifestyleRetreats",
-    "Phnom Penh",
-    2,
-    12
-   ],
-   [
-    "NagaWorld Hotel & Entertainment Complex",
-    "Phnom Penh",
-    2,
-    15
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ]
-  ],
-  "acts": 33,
-  "gallery": 148
- },
- {
-  "slug": "glimpse-of-vietnam",
-  "title": "Glimpse of Vietnam | Discovering the Wonders of Hanoi",
-  "dur": "4D/3N",
-  "price": 32300,
-  "struck": 54064,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    4
-   ]
-  ],
-  "days": 4,
-  "hotels": [
-   [
-    "Mayflower Hotel Hanoi",
-    "Hanoi",
-    3,
-    7
-   ],
-   [
-    "La Passion Classic Hotel",
-    "Hanoi",
-    3,
-    11
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    5,
+    8
    ]
   ],
   "acts": 17,
-  "gallery": 50
+  "gallery": 76
  },
  {
-  "slug": "thailand-cambodia-vietnam-tour-package",
-  "title": "Thailand Cambodia Vietnam All Together | FREE Excursion to Coral Island",
-  "dur": "16D/15N",
-  "price": 149670,
-  "struck": 189000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ],
-   [
-    "Siem Reap",
-    2
-   ],
-   [
-    "Bangkok",
-    2
-   ],
-   [
-    "Pattaya",
-    2
-   ],
-   [
-    "Phuket",
-    3
-   ]
-  ],
-  "days": 16,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Avanti Saigon Hotel, Ho Chi Minh",
-    "Ho Chi Minh",
-    3,
-    10
-   ],
-   [
-    "HARI Residence & Spa - Siem Reap",
-    "Siem Reap",
-    2,
-    15
-   ],
-   [
-    "Ambassador Hotel Bangkok",
-    "Bangkok",
-    2,
-    14
-   ],
-   [
-    "Golden Tulip Hotel Essential, Pattaya",
-    "Pattaya",
-    2,
-    10
-   ],
-   [
-    "Journeyhub Phuket Patong",
-    "Phuket",
-    1,
-    14
-   ]
-  ],
-  "acts": 59,
-  "gallery": 343
- },
- {
-  "slug": "cycling-in-the-mekong-delta-4-day-3-nights",
-  "title": "Vietnam Delights with FREE Visit to Cu Chi Tunnels",
-  "dur": "7D/6N",
-  "price": 55700,
-  "struck": 63900,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    2
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Da Nang",
-    2,
-    6
-   ],
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Da Nang",
-    2,
-    9
-   ]
-  ],
-  "acts": 22,
-  "gallery": 175
- },
- {
-  "slug": "trip-to-hanoi-and-sapa-in-vietnam",
-  "title": "Trip to Hanoi and Sapa in Vietnam",
-  "dur": "7D/6N",
-  "price": 55000,
-  "struck": 65700,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Sa Pa",
-    2
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 7,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    1,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    1,
-    9
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    1,
-    11
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ]
-  ],
-  "acts": 14,
-  "gallery": 165
- },
- {
-  "slug": "trip-ha-noi-kontum-10-day-9-night",
-  "title": "Splendors of Vietnam with FREE Mekong Delta Tour",
+  "slug": "best-of-beijing",
+  "title": "Best of Beijing | A Journey Through Culture & Capital Wonders",
   "dur": "6D/5N",
-  "price": 46510,
-  "struck": 52300,
+  "price": 46900,
+  "struck": 58156,
   "cur": "INR",
   "cities": [
    [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Da Nang",
-    1
-   ],
-   [
-    "Ho Chi Minh",
-    3
+    "Beijing",
+    6
    ]
   ],
   "days": 6,
   "hotels": [
    [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    2,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    2,
-    9
-   ],
-   [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
-   ],
-   [
-    "Cap Town Hotel, Ho Chi Minh",
-    "Da Nang",
-    2,
-    6
-   ],
-   [
-    "Acnos Grand Hotel, Ho Chi Minh",
-    "Da Nang",
-    2,
-    9
-   ]
-  ],
-  "acts": 19,
-  "gallery": 165
- },
- {
-  "slug": "trip-from-hanoi-dien-bien-phu-7-day-6-night",
-  "title": "Discovering Vietnam with FREE Visit to Cat Cat Village",
-  "dur": "6D/5N",
-  "price": 45000,
-  "struck": 55000,
-  "cur": "INR",
-  "cities": [
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Sa Pa",
-    1
-   ],
-   [
-    "Hanoi",
-    1
-   ],
-   [
-    "Halong Bay",
-    1
-   ],
-   [
-    "Hanoi",
-    2
-   ]
-  ],
-  "days": 6,
-  "hotels": [
-   [
-    "Hm Boutique Hotel Hanoi",
-    "Hanoi",
-    1,
-    6
-   ],
-   [
-    "The Light Hotel Hanoi",
-    "Hanoi",
-    1,
-    9
-   ],
-   [
-    "Delta Sapa Hotel",
-    "Sa Pa",
-    1,
+    "Holiday Inn Express Beijing Airport Zone",
+    "Beijing",
+    5,
     11
    ],
    [
-    "Halong Royal Palace Cruise",
-    "Halong Bay",
-    1,
-    32
+    "Holiday Inn Express Beijing Huacai",
+    "Beijing",
+    5,
+    11
    ]
   ],
   "acts": 14,
-  "gallery": 158
+  "gallery": 63
+ },
+ {
+  "slug": "discover-shanghai",
+  "title": "Discover Shanghai | From Dynasty Tales to Modern Trails",
+  "dur": "5D/4N",
+  "price": 58500,
+  "struck": 72540,
+  "cur": "INR",
+  "cities": [
+   [
+    "Shanghai",
+    5
+   ]
+  ],
+  "days": 5,
+  "hotels": [
+   [
+    "Holiday Inn Express Shanghai Putuo",
+    "Shanghai",
+    4,
+    8
+   ],
+   [
+    "Holiday Inn Express Shanghai Gongkang",
+    "Shanghai",
+    4,
+    10
+   ]
+  ],
+  "acts": 15,
+  "gallery": 68
  }
 ]

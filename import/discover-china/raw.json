@@ -1,0 +1,1541 @@
+{
+ "source": "https://www.thrillophilia.com/tours/discover-china",
+ "captured_at": "2026-10-09",
+ "title": "Discover China | Beijing-Shanghai Symphony",
+ "slug": "discover-china",
+ "duration": "7D/6N",
+ "city_split": [
+  [
+   "Beijing",
+   3
+  ],
+  [
+   "Shanghai",
+   4
+  ]
+ ],
+ "country": "China",
+ "badges": [
+  "Transfer Included",
+  "Stay Included",
+  "Breakfast Included",
+  "Sightseeing Included"
+ ],
+ "tag": "Newly Added",
+ "highlights": [
+  "Experience the Best of Beijing & Shanghai, featuring iconic attractions, cultural experiences, and thrilling entertainment.",
+  "Walk along Juyongguan, one of the most well-preserved sections of the Great Wall, and admire its strategic significance, scenic landscapes, and centuries-old watchtowers.",
+  "Explore the Forbidden City, the world’s largest palace complex, where imperial history comes alive through intricate architecture, fascinating relics, and tales of China’s dynastic rulers.",
+  "Experience the magic of Shanghai Disneyland with its thrilling rides, mesmerizing shows, and unique attractions that blend Disney's enchantment with Chinese cultural influences.",
+  "Sail along the Huangpu River on a scenic cruise, marvelling at Shanghai’s illuminated skyline as attractions like The Bund and Oriental Pearl Tower create a stunning nighttime panorama."
+ ],
+ "overview": "",
+ "price_per_adult": 56500,
+ "struck_price": 80700,
+ "currency": "INR",
+ "inr_price": 56500,
+ "inclusions": [
+  "Transfer from Beijing Capital International Airport to Deluxe Hotel",
+  "3 nights stay in Beijing with breakfast",
+  "Full-Day Great Wall & Summer Palace Tour, Beijing on a Shared basis and ticket",
+  "Tiananmen Square and Forbidden City Half Day Trip on a Shared basis and ticket",
+  "Transfer from Deluxe Hotel to Beijing Capital International Airport",
+  "Transfer from Shanghai Pudong International Airport to Deluxe Hotel",
+  "3 nights stay in Shanghai with breakfast",
+  "Huangpu River Cruise Tickets, Shanghai",
+  "Disneyland Shanghai Tickets and ticket",
+  "Half-Day Shanghai Sightseeing Tour on a Shared basis",
+  "Shanghai Zoo Tickets on a Shared basis and ticket",
+  "Transfer from Deluxe Hotel to Shanghai Pudong International Airport",
+  "Daily Breakfast",
+  "Visa assistance"
+ ],
+ "exclusions": [
+  "Expenses of a personal nature.",
+  "Meals not mentioned in the itinerary or inclusions",
+  "International flight tickets",
+  "Travel Insurance",
+  "Visa Charges"
+ ],
+ "know_before_you_go": [
+  "Images are for representation purposes only. The actual experience may differ.",
+  "Kindly carry a valid photo ID proof. All foreign nationals must carry their passport as a proof of identity.",
+  "In cases of force majeure events (e.g., natural disasters, political unrest, or other unforeseeable circumstances), [Thrillophilia] reserves the right to reschedule tours & treks or offer alternative itineraries to ensure the safety and well-being of clients and staff.",
+  "Please note that prices are dynamic and may change in the peak season and on blackout dates.",
+  "Any breakage or damage of any items in the stay property will be charged at actuals.",
+  "Keep the surroundings clean by using designated bins and avoiding littering, especially in natural areas and protected zones.",
+  "Please note that the timings and duration of pick-up and drop-off transfers may vary based on certain factors like traffic, weather conditions, natural calamities, etc.",
+  "Prices may fluctuate with any change in services/hotels. The difference in the cost shall be borne by the client in case of any amendment in the package due to an increase in the number of guests.",
+  "It is advisable that you dress modestly (keeping your shoulders and knees covered) when visiting any religious sites. You may also need to take off your shoes before entering any religious sites.",
+  "If in case any traveller wants to or decides to leave the trip in the middle, all the expenses from the point onwards will be borne by the traveller. Neither the operator nor Thrillophilia will be held responsible for such decisions or for any refund.",
+  "It is recommended that you purchase travel insurance. Please note that the travel insurance is not included in the package price."
+ ],
+ "meal_plans": [
+  {
+   "name": "Bermuda Plan",
+   "description": "The Bermuda meal plan offers three meals at select restaurants, including breakfast, lunch, and dinner along with drinks included. Ideal for a hassle-free, all-inclusive dining experience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Beverages",
+     "description": null,
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Dinner Plan",
+   "description": "The Dinner Plan provides guests with two meals included in their stay: breakfast and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "American Plan",
+   "description": "It includes all three major meals, breakfast, lunch, and dinner for the length of your stay. Generally, the rates on this plan are higher but offer a good value for your money, and of course, added convenience.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Modified American Plan",
+   "description": "Also known as Half Board or Half Pension meal plan. It is a modified version of the American Plan and includes a room stay with breakfast and a choice between lunch and dinner.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    },
+    {
+     "name": "Lunch or Dinner",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "Continental Plan",
+   "description": "It is where your room stay involves a daily breakfast at the hotel. The hotel can either affix its option of breakfast menu or provide in the dining area for a buffet breakfast. Also, whether the room service provides the breakfast or in a general dining area, depends from hotel to hotel.",
+   "hotel_addons": [
+    {
+     "name": "Breakfast",
+     "description": "",
+     "addon_type": "meal",
+     "gallery_media": []
+    }
+   ]
+  },
+  {
+   "name": "European Plan",
+   "description": "Only the stay is included in the rates and that you will have to pay extra for using the hotel’s dining facilities. This can be called the “Room Only” Plan.",
+   "hotel_addons": []
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "title": "Arrival in Beijing | Leisure Day",
+   "city": "Beijing",
+   "desc": "Welcome to China! Upon arrival at Beijing Capital International Airport, you’ll get transferred to your hotel. Check-in and spend the day at leisure, exploring the city, trying local delicacies, or visiting Wangfujing Street, famous for its shopping and street food. Beijing, China's capital for over 800 years, boasts a mix of imperial history and modern marvels. You can also visit the Beijing Ancient Observatory, explore Madame Tussauds, or enjoy the New World Plaza’s 10th-floor attractions.",
+   "leisure": true,
+   "meals": [],
+   "meals_hotel": [],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Holiday Inn Express Beijing Huacai"
+    },
+    {
+     "type": "Leisure Day",
+     "title": "Enjoy your time at Leisure",
+     "label": "",
+     "desc": "",
+     "images": []
+    },
+    {
+     "type": "Activity",
+     "title": "Shopping at Wangfujing Street",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/rtajr6503v7aov7sfiq8bpcmksvu_Beijing_Wangfujing_20170806.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Beijing Ancient Observatory",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/x6azrt1grut20lv32otkmg96z6n1_1619597559_shutterstock_1064726486.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Madame Tussauds",
+     "label": "Suggestion",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/j75dc2xdstuq63l53hbky1wstht6_1619600285_shutterstock_406959889.jpg"
+     ]
+    }
+   ],
+   "arrival": true,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg"
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Full-Day Mutianyu Great Wall & Summer Palace Tour",
+   "city": "Beijing",
+   "desc": "Today, get ready to explore Juyongguan, one of the most strategic and well-preserved sections of the Great Wall, built to defend Beijing. Walk along its winding paths and admire stunning mountain views. Later, you will be taken to the Summer Palace, a UNESCO World Heritage site, known for its vast gardens, Longevity Hill, and Kunming Lake, once an imperial retreat for the Qing dynasty. Afterwards, you will transferred back to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Full-Day Great Wall & Summer Palace Tour, Beijing on a Shared basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+      "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+      "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+      "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+      "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+      "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 3,
+   "title": "Tiananmen Square and Forbidden City Half Day Trip",
+   "city": "Beijing",
+   "desc": "On this day, begin your day with a visit to Tiananmen Square, one of the world’s largest public squares, home to the Monument to the People’s Heroes and Mao Zedong’s Mausoleum. Further, explore the Forbidden City, the world’s largest palace complex with 980 buildings, once home to 24 emperors. Admire its intricate halls, vast courtyards, and ancient relics. Conclude your day by getting transferred to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Tiananmen Square and Forbidden City Half Day Trip on a Shared basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/51nf2oc1fqzzythao939wo9ln6ty_GettyImages-504781659.webp",
+      "https://media1.thrillophilia.com/filestore/oct4ek632w8tblx9gfiuntz7kek6_tt.jpg",
+      "https://media1.thrillophilia.com/filestore/a56dfid72q7r1k4hily49ztxuq6c_dl.beatsnoop.com-final-IdYho5Przj.jpg",
+      "https://media1.thrillophilia.com/filestore/cyph45lbepzf3u9wnlkigwbdqc4w_dl.beatsnoop.com-final-38XRia1E2H.jpg",
+      "https://media1.thrillophilia.com/filestore/m7jxbpkg381uag2u3czcvjw11j9f_190204123500-juanqinzhai-theater-room-after-conservation-3.jpg",
+      "https://media1.thrillophilia.com/filestore/vyld6r56ox2ofnu5zi1h7drfw4co_The_Forbidden_City_-_View_from_Coal_Hill.jpg"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 4,
+   "title": "Transfer to Shanghai | Huangpu River Cruise",
+   "city": "Shanghai",
+   "desc": "On this day, check-out of the hotel and get transferred to Beijing Airport for your flight to Shanghai. Upon reaching, you’ll be taken to the hotel for check-in. In the evening, enjoy a Huangpu River Cruise, offering stunning views of Shanghai’s skyline, including The Bund and the futuristic Oriental Pearl Tower. The illuminated cityscape reflects on the water, showcasing Shanghai’s transformation from a historic trading port to a global metropolis.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Hotel",
+     "title": "Check-in at Deluxe Hotel",
+     "label": "",
+     "desc": "",
+     "images": [],
+     "hotel": "Holiday Inn Express Shanghai Putuo"
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Huangpu River Cruise Tickets, Shanghai",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/kyqi22drkx8f1w8fyrfliyqlswnk_Downpic.cc-92560468.jpg",
+      "https://media1.thrillophilia.com/filestore/gbpiso0axqgkohebhs9y4n433u50_dl.beatsnoop.com-3000-HNaMrjnykF.jpg",
+      "https://media1.thrillophilia.com/filestore/g0q8ge1932ua6x659yrqdw8ehh4t_dl.beatsnoop.com-3000-0iBWPZUtkM.jpg",
+      "https://media1.thrillophilia.com/filestore/rt3qolit04b8whdo6ochykico59k_china-shanghai-river-cruise-city-lights.jpg",
+      "https://media1.thrillophilia.com/filestore/64xrlm3ona44f2jmcn07eyyhwqbe_dl.beatsnoop.com-3000-DOuW5FdA78.jpg",
+      "https://media1.thrillophilia.com/filestore/sjkzo9jpw27scc3kxj4k0czpzwhk_Downpic.cc-162138441.jpg",
+      "https://media1.thrillophilia.com/filestore/cbleatj3z1okk9pao255p0l0v4dx_dl.beatsnoop.com-3000-NhkFAobrc4.jpg",
+      "https://media1.thrillophilia.com/filestore/oyw3zp0aim6r7vr5i96w3r6l5mjm_huangpu-river-cruise-jpeg.webp",
+      "https://media1.thrillophilia.com/filestore/we3r4auc13tyjh6d6wpx9f992ahw_download%20-%202025-01-22T125013.932.png"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Huangpu River",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/we3r4auc13tyjh6d6wpx9f992ahw_download%20-%202025-01-22T125013.932.png"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": [
+    "https://media1.thrillophilia.com/filestore/bpw4f5x8yiuj4w7ss6pwzxbfc0c4_1573798748_shutterstock_1081693688.jpg.jpg"
+   ]
+  },
+  {
+   "day": 5,
+   "title": "Day Trip to Disneyland",
+   "city": "Shanghai",
+   "desc": "Spend the day at Shanghai Disneyland, China’s first Disney park, featuring unique attractions like TRON Lightcycle Power Run and Pirates of the Caribbean: Battle for the Sunken Treasure. Experience magical parades, and themed lands, and meet beloved Disney characters, making for an unforgettable day of adventure and fun. Later, get transferred back to your hotel for an overnight stay.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Activity",
+     "title": "Disneyland Shanghai Tickets",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ir2awdfkpdra33avdlhe0sv1hbze_E16D5CCC-029E-446E-B0C8-DA2916D5D7AA.jpeg",
+      "https://media1.thrillophilia.com/filestore/x6ynp7wxtz5rgf6kbjhmsxizd8pr_entrance-IMG_4674.JPG",
+      "https://media1.thrillophilia.com/filestore/69gtvbakaav0ef30pber4ujzlcsy_jpg.jpg",
+      "https://media1.thrillophilia.com/filestore/zgjjxkr1lblgxtxows9gf9lwqb8d_11virus-shanghaidisney-1-videoSixteenByNine3000.jpg",
+      "https://media1.thrillophilia.com/filestore/d3su5dnky1a3j3gx1jjoj7e2tlxl_6d3c4899a33844268457a0cb5a5578a9.jpg",
+      "https://media1.thrillophilia.com/filestore/h8suf1khbllef2y8kuwydqaxy5dj_18-03-12_ShanghaiDisney_013.jpg",
+      "https://media1.thrillophilia.com/filestore/tz58cfxg3blejfcm7b5fpm1e4uzc_shanghai-disney-20230123.jpg",
+      "https://media1.thrillophilia.com/filestore/s0qdzshy1wtgmy4uidpfb1n4gqw5_shanghai-disneyland-roaring-rapids.webp"
+     ]
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 6,
+   "title": "Shanghai City Tour | Shanghai Zoo with Panda Hall",
+   "city": "Shanghai",
+   "desc": "Today, explore Shanghai’s cultural gems on a city tour, starting at Jade Buddha Temple, famous for its rare white jade Buddha statues. Further, stroll through Yu Garden, a Ming Dynasty masterpiece with beautiful pavilions, and ponds. Visit Longhua Temple and Pagoda, Shanghai’s oldest Buddhist site, known for its sacred rituals. Stop at People’s Square, a cultural hub with historic landmarks. Later, visit Shanghai Zoo’s Panda Hall, home to giant pandas in a naturalistic habitat.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Half-Day Shanghai Sightseeing Tour on a Shared basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/yuqu648rid8hf8g09ip9lswxh2av_Downpic.cc-image263983358.jpg",
+      "https://media1.thrillophilia.com/filestore/umyo226m9ttwcb214y2midgqmntg_Downpic.cc-55990140.jpg",
+      "https://media1.thrillophilia.com/filestore/7bcibxc00vx6uv7vw5cozmbu00qa_Downpic.cc-image340093738.jpg",
+      "https://media1.thrillophilia.com/filestore/jm3vvjfv4vhm2g3tnazc5i7mn74w_Downpic.cc-image239536884.jpg",
+      "https://media1.thrillophilia.com/filestore/7wo3949n5a1ce18z3vvclknx481b_Downpic.cc-132973436.jpg",
+      "https://media1.thrillophilia.com/filestore/h4ztzh96ymup5j5gp8ii4lckwcjg_Downpic.cc-image214394374.jpg",
+      "https://media1.thrillophilia.com/filestore/oideptqaj1zms1ji7qpuq2pig3bu_Downpic.cc-87026528.jpg",
+      "https://media1.thrillophilia.com/filestore/hbiznl9dn0ljreo4r93opznkyfum_Downpic.cc-48151571.jpg",
+      "https://media1.thrillophilia.com/filestore/3v46yytijdj44xwmcu10tpsd0agd_1619599983_shutterstock_199457384.jpg",
+      "https://media1.thrillophilia.com/filestore/ac1pvfyncr6b3o6g64b7etpkzlyi_1619608001_shutterstock_1252745494.jpg",
+      "https://media1.thrillophilia.com/filestore/imtxhf697qz3p06aemge77j1haun_1619600357_shutterstock_1148631992.jpg",
+      "https://media1.thrillophilia.com/filestore/o8krrgqagv8f9h1d7k7211frg2ux_1619609891_shutterstock_732891655.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Yu Garden",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/3v46yytijdj44xwmcu10tpsd0agd_1619599983_shutterstock_199457384.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Jade Buddha Temple",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/ac1pvfyncr6b3o6g64b7etpkzlyi_1619608001_shutterstock_1252745494.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Longhua Temple And Pagoda",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/imtxhf697qz3p06aemge77j1haun_1619600357_shutterstock_1148631992.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "People's Square",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/o8krrgqagv8f9h1d7k7211frg2ux_1619609891_shutterstock_732891655.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    },
+    {
+     "type": "Activity",
+     "title": "Shanghai Zoo Tickets on a Shared basis",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/6uomrqckb5lnf5edd2hwphbaaeb9_shutterstock_38473243.jpg",
+      "https://media1.thrillophilia.com/filestore/i9l3hovyvqwy44s8mpeqmtmgts42_shutterstock_383766769.jpg",
+      "https://media1.thrillophilia.com/filestore/egnfqv83jw89o3wy72iqo9z5ws1w_shutterstock_1219931926.jpg",
+      "https://media1.thrillophilia.com/filestore/ac6um702yhaou2yy9i9fugmu1vm9_shutterstock_2396449665.jpg",
+      "https://media1.thrillophilia.com/filestore/6cfxhhzrfbdykn7r7n8an0n7uw2v_shutterstock_1294919260.jpg",
+      "https://media1.thrillophilia.com/filestore/056joc3xcli56lah53ob5xtcewfe_shutterstock_71208400.jpg",
+      "https://media1.thrillophilia.com/filestore/00ngi32r9iovk0p57essxez53xiu_shutterstock_2381627201.jpg",
+      "https://media1.thrillophilia.com/filestore/b5ynnfkw9xstwmj4vr3ybnhglozx_shutterstock_1358808083-min.jpg",
+      "https://media1.thrillophilia.com/filestore/zk1jx6gfbtw9mue4g1kylrf7ib2i_1619609580_shutterstock_82092487.jpg"
+     ]
+    },
+    {
+     "type": "Attraction",
+     "title": "Shanghai Zoo",
+     "label": "",
+     "desc": "",
+     "images": [
+      "https://media1.thrillophilia.com/filestore/zk1jx6gfbtw9mue4g1kylrf7ib2i_1619609580_shutterstock_82092487.jpg"
+     ]
+    },
+    {
+     "type": "Transfer",
+     "title": "Transfer in Coach",
+     "label": "",
+     "desc": "1 X Coach will be Provided",
+     "images": [],
+     "private": false,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  },
+  {
+   "day": 7,
+   "title": "Departure Day",
+   "city": "Shanghai",
+   "desc": "In the morning, check-out of the hotel and get transferred to the airport for your onward flight. Take with you unforgettable memories of China’s rich history, iconic landmarks, and vibrant culture.",
+   "leisure": false,
+   "meals": [
+    "Breakfast"
+   ],
+   "meals_hotel": [
+    {
+     "location": "Deluxe Hotel",
+     "meal": "Breakfast"
+    }
+   ],
+   "items": [
+    {
+     "type": "Transfer",
+     "title": "Transfer in Sedan",
+     "label": "",
+     "desc": "1 X Sedan will be Provided",
+     "images": [],
+     "private": true,
+     "pickup": null,
+     "drop_off": null
+    }
+   ],
+   "arrival": false,
+   "city_media": []
+  }
+ ],
+ "hotels": [
+  {
+   "name": "Holiday Inn Express Beijing Airport Zone",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.5,
+   "city": "Beijing",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ae0hac2g5qd1n9axh1jqpt99ozd1_230938408.jpg",
+    "https://media1.thrillophilia.com/filestore/l99whlymbj2e9oq79r3k810j0tot_449523454.jpg",
+    "https://media1.thrillophilia.com/filestore/n5eklhgzp2u01vpbddaa1r5zxi2y_562215035.jpg",
+    "https://media1.thrillophilia.com/filestore/81eqlhk2zzjykqyh3pch031wknoy_449523548.jpg",
+    "https://media1.thrillophilia.com/filestore/7kk13ainhi0qx7fo0tthv63ps91d_12482579.jpg",
+    "https://media1.thrillophilia.com/filestore/jhawmh5e256sjdp1x2h23ps17h4g_449517694.jpg",
+    "https://media1.thrillophilia.com/filestore/g88p34unkr9pk4pcj2iyenv2r8vm_562215034.jpg",
+    "https://media1.thrillophilia.com/filestore/qwks499yg21lter3820b29gq6m5s_449517678.jpg",
+    "https://media1.thrillophilia.com/filestore/z9de7zmyvi82jz0hr02swt3tcceh_562215021.jpg",
+    "https://media1.thrillophilia.com/filestore/fcdpa7aud4793bc91732rlod14qv_449517685.jpg",
+    "https://media1.thrillophilia.com/filestore/lqsxw6znys0rnvb0pkhp7hyaqwas_562232017.jpg"
+   ]
+  },
+  {
+   "name": "Holiday Inn Express Beijing Huacai",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 5,
+   "city": "Beijing",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 1,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/3b4gz9aov40t96ogrda2jhvg1q1t_download%20(3).png",
+    "https://media1.thrillophilia.com/filestore/ji2e1fiswpb2bh6a0f9tw74wciq7_download.png",
+    "https://media1.thrillophilia.com/filestore/4klt1p2b0p6084tozhz8v1sqeoon_download%20(5).png",
+    "https://media1.thrillophilia.com/filestore/f6ur39l3yfs9cfsrx76cgjmynx36_download%20(10).png",
+    "https://media1.thrillophilia.com/filestore/stuz5zpxnigri6crm4sbcl0vipiz_download%20(7).png",
+    "https://media1.thrillophilia.com/filestore/4m23luywihiiew6he29e7ne5y9pd_download%20(2).png",
+    "https://media1.thrillophilia.com/filestore/4jm1r5udgur3oj27w7b11po95by8_download%20(8).png",
+    "https://media1.thrillophilia.com/filestore/z4wfj6rsuku27ileod8ejxv1g31t_download%20(4).png",
+    "https://media1.thrillophilia.com/filestore/fcd5rd430f52k5hihctlwqkn6fqa_download%20(6).png",
+    "https://media1.thrillophilia.com/filestore/wkxjbpeobmslop2ifzhcg6o3dn4w_download%20(1).png",
+    "https://media1.thrillophilia.com/filestore/mt62w350l0rnv10hpz2lm7bg2ucn_download%20(9).png"
+   ]
+  },
+  {
+   "name": "Holiday Inn Express Shanghai Gongkang",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 4.5,
+   "city": "Shanghai",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 4,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/t2237dgb54uv7s4rx4d6ia1773m3_254540841.png",
+    "https://media1.thrillophilia.com/filestore/w9ivrioc0218ptdjg2ux6k3l7k6w_252126148.png",
+    "https://media1.thrillophilia.com/filestore/7j685fea2v362rrz8zpp6b7dqhyo_252477212.png",
+    "https://media1.thrillophilia.com/filestore/ui2qybbjs89a4z5krgj3vsb0nf0f_192744987.png",
+    "https://media1.thrillophilia.com/filestore/ilgwg755ts2z2yj8x9ugsqlq786y_295410234.png",
+    "https://media1.thrillophilia.com/filestore/s0o6ump4njlgmgmvpcf6pht58wwi_252477204.png",
+    "https://media1.thrillophilia.com/filestore/941vca46ob7vgexpzb8c3wy0qman_252127522.png",
+    "https://media1.thrillophilia.com/filestore/8dj51afdp4eqkjs14tvc7enjb6hx_295410221.png",
+    "https://media1.thrillophilia.com/filestore/jjg4sx0q5lmchhjoebkp8qfwu49z_289966229.png",
+    "https://media1.thrillophilia.com/filestore/e2yjnulvma27jqq7wura2k5f99xw_289966159.png"
+   ]
+  },
+  {
+   "name": "Holiday Inn Express Shanghai Putuo",
+   "stars": 3,
+   "category": "Deluxe",
+   "tripadvisor": 3,
+   "city": "Shanghai",
+   "room_type": "Standard",
+   "meal_plan": "Continental Plan",
+   "check_in_day": 4,
+   "nights": 3,
+   "images": [
+    "https://media1.thrillophilia.com/filestore/188urx9bxrn69hyen8dqimsfx72z_488327823.jpg",
+    "https://media1.thrillophilia.com/filestore/zd8xrskcgxv1m891xi4hubp2zh2k_230102610.jpg",
+    "https://media1.thrillophilia.com/filestore/b33lqmz9fptgbbbv9x6whorw1hnt_442573332.jpg",
+    "https://media1.thrillophilia.com/filestore/8x53ctpvg2e8ip14l9l2o3rtph3c_230101393.jpg",
+    "https://media1.thrillophilia.com/filestore/eodhcam38r7paz9kzxawyn987n0v_477503847.jpg",
+    "https://media1.thrillophilia.com/filestore/iaxtmbul7js7efqmjhwxvyoddim4_442572974.jpg",
+    "https://media1.thrillophilia.com/filestore/7eqwvpucafh1p7ykqyo3zzhzlydy_517810410.jpg",
+    "https://media1.thrillophilia.com/filestore/gs8w4peye1g9l2dvvj0jjugiwr4b_517810411.jpg"
+   ]
+  }
+ ],
+ "activities": [
+  {
+   "name": "Shopping at Wangfujing Street",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": "16:00",
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/rtajr6503v7aov7sfiq8bpcmksvu_Beijing_Wangfujing_20170806.jpg"
+   ]
+  },
+  {
+   "name": "Beijing Ancient Observatory",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/x6azrt1grut20lv32otkmg96z6n1_1619597559_shutterstock_1064726486.jpg"
+   ]
+  },
+  {
+   "name": "Madame Tussauds",
+   "day": 1,
+   "city": "Beijing",
+   "label": "Suggestion",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/j75dc2xdstuq63l53hbky1wstht6_1619600285_shutterstock_406959889.jpg"
+   ]
+  },
+  {
+   "name": "Full-Day Great Wall & Summer Palace Tour, Beijing on a Shared basis",
+   "day": 2,
+   "city": "Beijing",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    9,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+    "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+    "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+    "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+    "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+    "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg"
+   ]
+  },
+  {
+   "name": "Tiananmen Square and Forbidden City Half Day Trip on a Shared basis",
+   "day": 3,
+   "city": "Beijing",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/51nf2oc1fqzzythao939wo9ln6ty_GettyImages-504781659.webp",
+    "https://media1.thrillophilia.com/filestore/oct4ek632w8tblx9gfiuntz7kek6_tt.jpg",
+    "https://media1.thrillophilia.com/filestore/a56dfid72q7r1k4hily49ztxuq6c_dl.beatsnoop.com-final-IdYho5Przj.jpg",
+    "https://media1.thrillophilia.com/filestore/cyph45lbepzf3u9wnlkigwbdqc4w_dl.beatsnoop.com-final-38XRia1E2H.jpg",
+    "https://media1.thrillophilia.com/filestore/m7jxbpkg381uag2u3czcvjw11j9f_190204123500-juanqinzhai-theater-room-after-conservation-3.jpg",
+    "https://media1.thrillophilia.com/filestore/vyld6r56ox2ofnu5zi1h7drfw4co_The_Forbidden_City_-_View_from_Coal_Hill.jpg"
+   ]
+  },
+  {
+   "name": "Huangpu River Cruise Tickets, Shanghai",
+   "day": 4,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    0,
+    50,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/kyqi22drkx8f1w8fyrfliyqlswnk_Downpic.cc-92560468.jpg",
+    "https://media1.thrillophilia.com/filestore/gbpiso0axqgkohebhs9y4n433u50_dl.beatsnoop.com-3000-HNaMrjnykF.jpg",
+    "https://media1.thrillophilia.com/filestore/g0q8ge1932ua6x659yrqdw8ehh4t_dl.beatsnoop.com-3000-0iBWPZUtkM.jpg",
+    "https://media1.thrillophilia.com/filestore/rt3qolit04b8whdo6ochykico59k_china-shanghai-river-cruise-city-lights.jpg",
+    "https://media1.thrillophilia.com/filestore/64xrlm3ona44f2jmcn07eyyhwqbe_dl.beatsnoop.com-3000-DOuW5FdA78.jpg",
+    "https://media1.thrillophilia.com/filestore/sjkzo9jpw27scc3kxj4k0czpzwhk_Downpic.cc-162138441.jpg",
+    "https://media1.thrillophilia.com/filestore/cbleatj3z1okk9pao255p0l0v4dx_dl.beatsnoop.com-3000-NhkFAobrc4.jpg",
+    "https://media1.thrillophilia.com/filestore/oyw3zp0aim6r7vr5i96w3r6l5mjm_huangpu-river-cruise-jpeg.webp",
+    "https://media1.thrillophilia.com/filestore/we3r4auc13tyjh6d6wpx9f992ahw_download%20-%202025-01-22T125013.932.png"
+   ]
+  },
+  {
+   "name": "Huangpu River",
+   "day": 4,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/we3r4auc13tyjh6d6wpx9f992ahw_download%20-%202025-01-22T125013.932.png"
+   ]
+  },
+  {
+   "name": "Disneyland Shanghai Tickets",
+   "day": 5,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ir2awdfkpdra33avdlhe0sv1hbze_E16D5CCC-029E-446E-B0C8-DA2916D5D7AA.jpeg",
+    "https://media1.thrillophilia.com/filestore/x6ynp7wxtz5rgf6kbjhmsxizd8pr_entrance-IMG_4674.JPG",
+    "https://media1.thrillophilia.com/filestore/69gtvbakaav0ef30pber4ujzlcsy_jpg.jpg",
+    "https://media1.thrillophilia.com/filestore/zgjjxkr1lblgxtxows9gf9lwqb8d_11virus-shanghaidisney-1-videoSixteenByNine3000.jpg",
+    "https://media1.thrillophilia.com/filestore/d3su5dnky1a3j3gx1jjoj7e2tlxl_6d3c4899a33844268457a0cb5a5578a9.jpg",
+    "https://media1.thrillophilia.com/filestore/h8suf1khbllef2y8kuwydqaxy5dj_18-03-12_ShanghaiDisney_013.jpg",
+    "https://media1.thrillophilia.com/filestore/tz58cfxg3blejfcm7b5fpm1e4uzc_shanghai-disney-20230123.jpg",
+    "https://media1.thrillophilia.com/filestore/s0qdzshy1wtgmy4uidpfb1n4gqw5_shanghai-disneyland-roaring-rapids.webp"
+   ]
+  },
+  {
+   "name": "Half-Day Shanghai Sightseeing Tour on a Shared basis",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    4,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/yuqu648rid8hf8g09ip9lswxh2av_Downpic.cc-image263983358.jpg",
+    "https://media1.thrillophilia.com/filestore/umyo226m9ttwcb214y2midgqmntg_Downpic.cc-55990140.jpg",
+    "https://media1.thrillophilia.com/filestore/7bcibxc00vx6uv7vw5cozmbu00qa_Downpic.cc-image340093738.jpg",
+    "https://media1.thrillophilia.com/filestore/jm3vvjfv4vhm2g3tnazc5i7mn74w_Downpic.cc-image239536884.jpg",
+    "https://media1.thrillophilia.com/filestore/7wo3949n5a1ce18z3vvclknx481b_Downpic.cc-132973436.jpg",
+    "https://media1.thrillophilia.com/filestore/h4ztzh96ymup5j5gp8ii4lckwcjg_Downpic.cc-image214394374.jpg",
+    "https://media1.thrillophilia.com/filestore/oideptqaj1zms1ji7qpuq2pig3bu_Downpic.cc-87026528.jpg",
+    "https://media1.thrillophilia.com/filestore/hbiznl9dn0ljreo4r93opznkyfum_Downpic.cc-48151571.jpg",
+    "https://media1.thrillophilia.com/filestore/3v46yytijdj44xwmcu10tpsd0agd_1619599983_shutterstock_199457384.jpg",
+    "https://media1.thrillophilia.com/filestore/ac1pvfyncr6b3o6g64b7etpkzlyi_1619608001_shutterstock_1252745494.jpg",
+    "https://media1.thrillophilia.com/filestore/imtxhf697qz3p06aemge77j1haun_1619600357_shutterstock_1148631992.jpg",
+    "https://media1.thrillophilia.com/filestore/o8krrgqagv8f9h1d7k7211frg2ux_1619609891_shutterstock_732891655.jpg"
+   ]
+  },
+  {
+   "name": "Yu Garden",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/3v46yytijdj44xwmcu10tpsd0agd_1619599983_shutterstock_199457384.jpg"
+   ]
+  },
+  {
+   "name": "Jade Buddha Temple",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/ac1pvfyncr6b3o6g64b7etpkzlyi_1619608001_shutterstock_1252745494.jpg"
+   ]
+  },
+  {
+   "name": "Longhua Temple And Pagoda",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/imtxhf697qz3p06aemge77j1haun_1619600357_shutterstock_1148631992.jpg"
+   ]
+  },
+  {
+   "name": "People's Square",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/o8krrgqagv8f9h1d7k7211frg2ux_1619609891_shutterstock_732891655.jpg"
+   ]
+  },
+  {
+   "name": "Shanghai Zoo Tickets on a Shared basis",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": [
+    5,
+    0,
+    0
+   ],
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/6uomrqckb5lnf5edd2hwphbaaeb9_shutterstock_38473243.jpg",
+    "https://media1.thrillophilia.com/filestore/i9l3hovyvqwy44s8mpeqmtmgts42_shutterstock_383766769.jpg",
+    "https://media1.thrillophilia.com/filestore/egnfqv83jw89o3wy72iqo9z5ws1w_shutterstock_1219931926.jpg",
+    "https://media1.thrillophilia.com/filestore/ac6um702yhaou2yy9i9fugmu1vm9_shutterstock_2396449665.jpg",
+    "https://media1.thrillophilia.com/filestore/6cfxhhzrfbdykn7r7n8an0n7uw2v_shutterstock_1294919260.jpg",
+    "https://media1.thrillophilia.com/filestore/056joc3xcli56lah53ob5xtcewfe_shutterstock_71208400.jpg",
+    "https://media1.thrillophilia.com/filestore/00ngi32r9iovk0p57essxez53xiu_shutterstock_2381627201.jpg",
+    "https://media1.thrillophilia.com/filestore/b5ynnfkw9xstwmj4vr3ybnhglozx_shutterstock_1358808083-min.jpg",
+    "https://media1.thrillophilia.com/filestore/zk1jx6gfbtw9mue4g1kylrf7ib2i_1619609580_shutterstock_82092487.jpg"
+   ]
+  },
+  {
+   "name": "Shanghai Zoo",
+   "day": 6,
+   "city": "Shanghai",
+   "label": "",
+   "start_time": null,
+   "duration": null,
+   "shared": null,
+   "desc": "",
+   "inclusions": [],
+   "images": [
+    "https://media1.thrillophilia.com/filestore/zk1jx6gfbtw9mue4g1kylrf7ib2i_1619609580_shutterstock_82092487.jpg"
+   ]
+  }
+ ],
+ "gallery": [
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4fw526vpp5zh6o7vptojw3oah4km_5cfd0e1bdc184fa79ee82d6db413c45d.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b2orzaz6tfex1gpxh2alxrpd0l50_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f6tz72n8aswccp25o240nau6h0t5_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yrqscjsgcerow3zx32h18lpw8i7e_GettyImages-504781659.webp",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3hlhpap78i0v48xrsard6y1ryotr_shutterstock_2289753533.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/xtd83drrj4toe3mktuaej1abg89h_shutterstock_1294919260.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6iullsi0n51vnq9pb1hbfxyx42g8_shutterstock_1941303007.jpg",
+   "caption": "",
+   "tab": "product_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ae0hac2g5qd1n9axh1jqpt99ozd1_230938408.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/l99whlymbj2e9oq79r3k810j0tot_449523454.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/n5eklhgzp2u01vpbddaa1r5zxi2y_562215035.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/81eqlhk2zzjykqyh3pch031wknoy_449523548.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7kk13ainhi0qx7fo0tthv63ps91d_12482579.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jhawmh5e256sjdp1x2h23ps17h4g_449517694.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g88p34unkr9pk4pcj2iyenv2r8vm_562215034.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/qwks499yg21lter3820b29gq6m5s_449517678.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z9de7zmyvi82jz0hr02swt3tcceh_562215021.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fcdpa7aud4793bc91732rlod14qv_449517685.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/lqsxw6znys0rnvb0pkhp7hyaqwas_562232017.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/3b4gz9aov40t96ogrda2jhvg1q1t_download%20(3).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ji2e1fiswpb2bh6a0f9tw74wciq7_download.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4klt1p2b0p6084tozhz8v1sqeoon_download%20(5).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/f6ur39l3yfs9cfsrx76cgjmynx36_download%20(10).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/stuz5zpxnigri6crm4sbcl0vipiz_download%20(7).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4m23luywihiiew6he29e7ne5y9pd_download%20(2).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/4jm1r5udgur3oj27w7b11po95by8_download%20(8).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/z4wfj6rsuku27ileod8ejxv1g31t_download%20(4).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/fcd5rd430f52k5hihctlwqkn6fqa_download%20(6).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/wkxjbpeobmslop2ifzhcg6o3dn4w_download%20(1).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/mt62w350l0rnv10hpz2lm7bg2ucn_download%20(9).png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/t2237dgb54uv7s4rx4d6ia1773m3_254540841.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w9ivrioc0218ptdjg2ux6k3l7k6w_252126148.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7j685fea2v362rrz8zpp6b7dqhyo_252477212.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ui2qybbjs89a4z5krgj3vsb0nf0f_192744987.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ilgwg755ts2z2yj8x9ugsqlq786y_295410234.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s0o6ump4njlgmgmvpcf6pht58wwi_252477204.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/941vca46ob7vgexpzb8c3wy0qman_252127522.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8dj51afdp4eqkjs14tvc7enjb6hx_295410221.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jjg4sx0q5lmchhjoebkp8qfwu49z_289966229.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/e2yjnulvma27jqq7wura2k5f99xw_289966159.png",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/188urx9bxrn69hyen8dqimsfx72z_488327823.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zd8xrskcgxv1m891xi4hubp2zh2k_230102610.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b33lqmz9fptgbbbv9x6whorw1hnt_442573332.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/8x53ctpvg2e8ip14l9l2o3rtph3c_230101393.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/eodhcam38r7paz9kzxawyn987n0v_477503847.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/iaxtmbul7js7efqmjhwxvyoddim4_442572974.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7eqwvpucafh1p7ykqyo3zzhzlydy_517810410.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gs8w4peye1g9l2dvvj0jjugiwr4b_517810411.jpg",
+   "caption": "",
+   "tab": "property_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/51nf2oc1fqzzythao939wo9ln6ty_GettyImages-504781659.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oct4ek632w8tblx9gfiuntz7kek6_tt.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/a56dfid72q7r1k4hily49ztxuq6c_dl.beatsnoop.com-final-IdYho5Przj.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cyph45lbepzf3u9wnlkigwbdqc4w_dl.beatsnoop.com-final-38XRia1E2H.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/m7jxbpkg381uag2u3czcvjw11j9f_190204123500-juanqinzhai-theater-room-after-conservation-3.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/vyld6r56ox2ofnu5zi1h7drfw4co_The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/kyqi22drkx8f1w8fyrfliyqlswnk_Downpic.cc-92560468.jpg",
+   "caption": "Sail past iconic landmarks during your Huangpu River Cruise",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/gbpiso0axqgkohebhs9y4n433u50_dl.beatsnoop.com-3000-HNaMrjnykF.jpg",
+   "caption": "Aerial view of the Huangpu River Cruise",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/g0q8ge1932ua6x659yrqdw8ehh4t_dl.beatsnoop.com-3000-0iBWPZUtkM.jpg",
+   "caption": "Soak-in the amazing sunset views during the Huangpu River Cruise",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/rt3qolit04b8whdo6ochykico59k_china-shanghai-river-cruise-city-lights.jpg",
+   "caption": "Embark on the cruise from Shiliupu Wharf",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/64xrlm3ona44f2jmcn07eyyhwqbe_dl.beatsnoop.com-3000-DOuW5FdA78.jpg",
+   "caption": "Marvel at the tall glittering landmarks of Shanghai",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/sjkzo9jpw27scc3kxj4k0czpzwhk_Downpic.cc-162138441.jpg",
+   "caption": "Glide past the historic landmarks including the famous Bund area",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/cbleatj3z1okk9pao255p0l0v4dx_dl.beatsnoop.com-3000-NhkFAobrc4.jpg",
+   "caption": "Soak-in the stunning views",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oyw3zp0aim6r7vr5i96w3r6l5mjm_huangpu-river-cruise-jpeg.webp",
+   "caption": "Get a chance to seat in the open area or inside at your own comfortable",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ir2awdfkpdra33avdlhe0sv1hbze_E16D5CCC-029E-446E-B0C8-DA2916D5D7AA.jpeg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/x6ynp7wxtz5rgf6kbjhmsxizd8pr_entrance-IMG_4674.JPG",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/69gtvbakaav0ef30pber4ujzlcsy_jpg.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/zgjjxkr1lblgxtxows9gf9lwqb8d_11virus-shanghaidisney-1-videoSixteenByNine3000.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/d3su5dnky1a3j3gx1jjoj7e2tlxl_6d3c4899a33844268457a0cb5a5578a9.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h8suf1khbllef2y8kuwydqaxy5dj_18-03-12_ShanghaiDisney_013.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/tz58cfxg3blejfcm7b5fpm1e4uzc_shanghai-disney-20230123.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/s0qdzshy1wtgmy4uidpfb1n4gqw5_shanghai-disneyland-roaring-rapids.webp",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/yuqu648rid8hf8g09ip9lswxh2av_Downpic.cc-image263983358.jpg",
+   "caption": "Stroll through the stunning Yu Garden",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/umyo226m9ttwcb214y2midgqmntg_Downpic.cc-55990140.jpg",
+   "caption": "Witness the Buddha statue at Jade Buddha Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7bcibxc00vx6uv7vw5cozmbu00qa_Downpic.cc-image340093738.jpg",
+   "caption": "Marvel at the stunning architecture of the Jade Buddha tEmple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/jm3vvjfv4vhm2g3tnazc5i7mn74w_Downpic.cc-image239536884.jpg",
+   "caption": "Marvel at the meticulously crafted Yu Garden",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/7wo3949n5a1ce18z3vvclknx481b_Downpic.cc-132973436.jpg",
+   "caption": "Enjoy the stunning view of Longhua Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/h4ztzh96ymup5j5gp8ii4lckwcjg_Downpic.cc-image214394374.jpg",
+   "caption": "Way to Longhua Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/oideptqaj1zms1ji7qpuq2pig3bu_Downpic.cc-87026528.jpg",
+   "caption": "Soak-in the vibrant atmosphere of People's Square",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/hbiznl9dn0ljreo4r93opznkyfum_Downpic.cc-48151571.jpg",
+   "caption": "Visit the iconic Jade Buddha Temple",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6uomrqckb5lnf5edd2hwphbaaeb9_shutterstock_38473243.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/i9l3hovyvqwy44s8mpeqmtmgts42_shutterstock_383766769.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/egnfqv83jw89o3wy72iqo9z5ws1w_shutterstock_1219931926.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/ac6um702yhaou2yy9i9fugmu1vm9_shutterstock_2396449665.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/6cfxhhzrfbdykn7r7n8an0n7uw2v_shutterstock_1294919260.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/056joc3xcli56lah53ob5xtcewfe_shutterstock_71208400.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/00ngi32r9iovk0p57essxez53xiu_shutterstock_2381627201.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/b5ynnfkw9xstwmj4vr3ybnhglozx_shutterstock_1358808083-min.jpg",
+   "caption": "",
+   "tab": "activity_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bpw4f5x8yiuj4w7ss6pwzxbfc0c4_1573798748_shutterstock_1081693688.jpg.jpg",
+   "caption": "",
+   "tab": "destination_images"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Beijing"
+  },
+  {
+   "url": "https://media1.thrillophilia.com/filestore/bpw4f5x8yiuj4w7ss6pwzxbfc0c4_1573798748_shutterstock_1081693688.jpg.jpg",
+   "caption": "",
+   "tab": "Destinations",
+   "city": "Shanghai"
+  }
+ ],
+ "dest_gallery": {
+  "Beijing": [
+   "https://media1.thrillophilia.com/filestore/c418eno34ey9mbsnjyg089yhzsv2_1621575149_shutterstock_310861286.jpg.jpg",
+   "https://media1.thrillophilia.com/filestore/b2orzaz6tfex1gpxh2alxrpd0l50_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "https://media1.thrillophilia.com/filestore/yrqscjsgcerow3zx32h18lpw8i7e_GettyImages-504781659.webp",
+   "https://media1.thrillophilia.com/filestore/xtd83drrj4toe3mktuaej1abg89h_shutterstock_1294919260.jpg",
+   "https://media1.thrillophilia.com/filestore/rshb8xxav76cc26e3dblrgc5h6f3_dl.beatsnoop.com-final-j1bIWzdvPJ.jpg",
+   "https://media1.thrillophilia.com/filestore/65lttyqfgunfqo2co9g349dekzsb_dl.beatsnoop.com-final-rnfwMY0T7P.jpg",
+   "https://media1.thrillophilia.com/filestore/ttve56fzzz4sxqskdmvkehcia0w3_dl.beatsnoop.com-final-s8tCIEWjyY.jpg",
+   "https://media1.thrillophilia.com/filestore/51nf2oc1fqzzythao939wo9ln6ty_GettyImages-504781659.webp",
+   "https://media1.thrillophilia.com/filestore/a56dfid72q7r1k4hily49ztxuq6c_dl.beatsnoop.com-final-IdYho5Przj.jpg",
+   "https://media1.thrillophilia.com/filestore/m7jxbpkg381uag2u3czcvjw11j9f_190204123500-juanqinzhai-theater-room-after-conservation-3.jpg",
+   "https://media1.thrillophilia.com/filestore/kyqi22drkx8f1w8fyrfliyqlswnk_Downpic.cc-92560468.jpg",
+   "https://media1.thrillophilia.com/filestore/g0q8ge1932ua6x659yrqdw8ehh4t_dl.beatsnoop.com-3000-0iBWPZUtkM.jpg",
+   "https://media1.thrillophilia.com/filestore/64xrlm3ona44f2jmcn07eyyhwqbe_dl.beatsnoop.com-3000-DOuW5FdA78.jpg",
+   "https://media1.thrillophilia.com/filestore/cbleatj3z1okk9pao255p0l0v4dx_dl.beatsnoop.com-3000-NhkFAobrc4.jpg",
+   "https://media1.thrillophilia.com/filestore/ir2awdfkpdra33avdlhe0sv1hbze_E16D5CCC-029E-446E-B0C8-DA2916D5D7AA.jpeg",
+   "https://media1.thrillophilia.com/filestore/69gtvbakaav0ef30pber4ujzlcsy_jpg.jpg",
+   "https://media1.thrillophilia.com/filestore/d3su5dnky1a3j3gx1jjoj7e2tlxl_6d3c4899a33844268457a0cb5a5578a9.jpg",
+   "https://media1.thrillophilia.com/filestore/tz58cfxg3blejfcm7b5fpm1e4uzc_shanghai-disney-20230123.jpg",
+   "https://media1.thrillophilia.com/filestore/yuqu648rid8hf8g09ip9lswxh2av_Downpic.cc-image263983358.jpg",
+   "https://media1.thrillophilia.com/filestore/7bcibxc00vx6uv7vw5cozmbu00qa_Downpic.cc-image340093738.jpg",
+   "https://media1.thrillophilia.com/filestore/7wo3949n5a1ce18z3vvclknx481b_Downpic.cc-132973436.jpg",
+   "https://media1.thrillophilia.com/filestore/oideptqaj1zms1ji7qpuq2pig3bu_Downpic.cc-87026528.jpg",
+   "https://media1.thrillophilia.com/filestore/6uomrqckb5lnf5edd2hwphbaaeb9_shutterstock_38473243.jpg",
+   "https://media1.thrillophilia.com/filestore/egnfqv83jw89o3wy72iqo9z5ws1w_shutterstock_1219931926.jpg",
+   "https://media1.thrillophilia.com/filestore/6cfxhhzrfbdykn7r7n8an0n7uw2v_shutterstock_1294919260.jpg",
+   "https://media1.thrillophilia.com/filestore/00ngi32r9iovk0p57essxez53xiu_shutterstock_2381627201.jpg"
+  ],
+  "Shanghai": [
+   "https://media1.thrillophilia.com/filestore/bpw4f5x8yiuj4w7ss6pwzxbfc0c4_1573798748_shutterstock_1081693688.jpg.jpg",
+   "https://media1.thrillophilia.com/filestore/f6tz72n8aswccp25o240nau6h0t5_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "https://media1.thrillophilia.com/filestore/3hlhpap78i0v48xrsard6y1ryotr_shutterstock_2289753533.jpg",
+   "https://media1.thrillophilia.com/filestore/6iullsi0n51vnq9pb1hbfxyx42g8_shutterstock_1941303007.jpg",
+   "https://media1.thrillophilia.com/filestore/ok9opdlfrpj5koec0e42iu16b21d_dl.beatsnoop.com-final-zlrJO750No.jpg",
+   "https://media1.thrillophilia.com/filestore/w2tj5xo3o5ryfxa7pvxijsivop0d_dl.beatsnoop.com-final-8XgmUp4Mzb.jpg",
+   "https://media1.thrillophilia.com/filestore/eym5xev151ynqgk8hlkhaufeqvoa_dl.beatsnoop.com-final-FO30dKJxlR.jpg",
+   "https://media1.thrillophilia.com/filestore/oct4ek632w8tblx9gfiuntz7kek6_tt.jpg",
+   "https://media1.thrillophilia.com/filestore/cyph45lbepzf3u9wnlkigwbdqc4w_dl.beatsnoop.com-final-38XRia1E2H.jpg",
+   "https://media1.thrillophilia.com/filestore/vyld6r56ox2ofnu5zi1h7drfw4co_The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+   "https://media1.thrillophilia.com/filestore/gbpiso0axqgkohebhs9y4n433u50_dl.beatsnoop.com-3000-HNaMrjnykF.jpg",
+   "https://media1.thrillophilia.com/filestore/rt3qolit04b8whdo6ochykico59k_china-shanghai-river-cruise-city-lights.jpg",
+   "https://media1.thrillophilia.com/filestore/sjkzo9jpw27scc3kxj4k0czpzwhk_Downpic.cc-162138441.jpg",
+   "https://media1.thrillophilia.com/filestore/oyw3zp0aim6r7vr5i96w3r6l5mjm_huangpu-river-cruise-jpeg.webp",
+   "https://media1.thrillophilia.com/filestore/x6ynp7wxtz5rgf6kbjhmsxizd8pr_entrance-IMG_4674.JPG",
+   "https://media1.thrillophilia.com/filestore/zgjjxkr1lblgxtxows9gf9lwqb8d_11virus-shanghaidisney-1-videoSixteenByNine3000.jpg",
+   "https://media1.thrillophilia.com/filestore/h8suf1khbllef2y8kuwydqaxy5dj_18-03-12_ShanghaiDisney_013.jpg",
+   "https://media1.thrillophilia.com/filestore/s0qdzshy1wtgmy4uidpfb1n4gqw5_shanghai-disneyland-roaring-rapids.webp",
+   "https://media1.thrillophilia.com/filestore/umyo226m9ttwcb214y2midgqmntg_Downpic.cc-55990140.jpg",
+   "https://media1.thrillophilia.com/filestore/jm3vvjfv4vhm2g3tnazc5i7mn74w_Downpic.cc-image239536884.jpg",
+   "https://media1.thrillophilia.com/filestore/h4ztzh96ymup5j5gp8ii4lckwcjg_Downpic.cc-image214394374.jpg",
+   "https://media1.thrillophilia.com/filestore/hbiznl9dn0ljreo4r93opznkyfum_Downpic.cc-48151571.jpg",
+   "https://media1.thrillophilia.com/filestore/i9l3hovyvqwy44s8mpeqmtmgts42_shutterstock_383766769.jpg",
+   "https://media1.thrillophilia.com/filestore/ac6um702yhaou2yy9i9fugmu1vm9_shutterstock_2396449665.jpg",
+   "https://media1.thrillophilia.com/filestore/056joc3xcli56lah53ob5xtcewfe_shutterstock_71208400.jpg",
+   "https://media1.thrillophilia.com/filestore/b5ynnfkw9xstwmj4vr3ybnhglozx_shutterstock_1358808083-min.jpg"
+  ]
+ },
+ "hero_tiles": [
+  "https://media1.thrillophilia.com/filestore/4fw526vpp5zh6o7vptojw3oah4km_5cfd0e1bdc184fa79ee82d6db413c45d.jpg"
+ ]
+}

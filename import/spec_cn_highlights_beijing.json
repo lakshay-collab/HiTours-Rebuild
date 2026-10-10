@@ -1,0 +1,131 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [
+  [
+   "Destinations",
+   "/reiseziele/"
+  ],
+  [
+   "Asia",
+   "/asien"
+  ],
+  [
+   "China",
+   "/asien/china"
+  ]
+ ],
+ "source_slug": "highlights-of-beijing",
+ "camel": "highlightsOfBeijingShort",
+ "slug": "highlights-of-beijing",
+ "title": "Highlights of Beijing",
+ "alt": "Giant panda feeding at the panda house in Beijing",
+ "transport": "Private airport transfers and guided day tours",
+ "tag": "Family",
+ "tags": [
+  "Family",
+  "Culture"
+ ],
+ "price": 28025,
+ "route_cities": [
+  "Beijing",
+  "Mutianyu"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 1,
+  "hotels": 1,
+  "experiences": 2,
+  "transfers": 5,
+  "meals": 3
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Beijing",
+   "city": "Beijing",
+   "days": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 1 to 4",
+   "hotel": "Holiday Inn Express Beijing Airport Zone",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Simple hotel in the airport zone, handy for early flights",
+   "activities": [
+    {
+     "name": "Great Wall at Mutianyu and the Summer Palace",
+     "day": 2,
+     "optional": false,
+     "match": "Full-Day Great Wall & Summer Palace Tour",
+     "description": "The Mutianyu section of the wall, the steepest and least crowded of the restored stretches, then the lake and long corridor of the Summer Palace."
+    },
+    {
+     "name": "Beijing Zoo with the panda house",
+     "day": 3,
+     "optional": false,
+     "match": "Beijing Zoo with Panda House tickets",
+     "description": "The old imperial menagerie grounds, with the panda house where the giant pandas are kept in their own enclosures."
+    }
+   ],
+   "program": {
+    "name": "Beijing",
+    "description": "Three nights with the wall at Mutianyu, the Summer Palace and the panda house at the zoo."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Beijing",
+  "2": "Great Wall and the Summer Palace",
+  "3": "Beijing Zoo and the pandas",
+  "4": "Departure from Beijing"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Beijing Capital and transfer to your hotel",
+   "Check in and the rest of the day free",
+   "Optional: an evening in the Sanlitun lanes",
+   "Optional: Peking duck at a neighbourhood restaurant"
+  ],
+  "2": [
+   "Early breakfast, then north to Mutianyu",
+   "The cable car and the walk along the wall",
+   "On to the Summer Palace in the afternoon",
+   "Kunming lake, the long corridor and the marble boat"
+  ],
+  "3": [
+   "Breakfast, then across to the zoo",
+   "The panda house and the giant pandas",
+   "The old imperial menagerie grounds",
+   "Afternoon free in the city"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Beijing Airport Zone",
+  "2": "Holiday Inn Express Beijing Airport Zone",
+  "3": "Holiday Inn Express Beijing Airport Zone",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Three nights, the wall and the pandas. For families with small children this is the right length for Beijing.",
+  "tip": "Get to the panda house when the zoo opens. The pandas are active for the first hour and asleep by eleven."
+ },
+ "summary": "Four days in the capital: the Great Wall at Mutianyu with the Summer Palace, then the panda house at Beijing Zoo, with free time in the city around them.",
+ "included": "Included: 3 nights with daily breakfast; private airport transfers; a full day guided tour of the Great Wall at Mutianyu and the Summer Palace; Beijing Zoo tickets with the panda house.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}

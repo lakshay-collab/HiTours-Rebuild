@@ -1,0 +1,71 @@
+{
+ "cta_country": "china",
+ "base": "/asien",
+ "crumbs": [["Destinations", "/reiseziele/"], ["Asia", "/asien"], ["China", "/asien/china"]],
+ "source_slug": "getaway-to-shanghai",
+ "camel": "grandShanghaiDisneylandHoliday",
+ "slug": "grand-shanghai-holiday-with-disneyland",
+ "title": "Grand Shanghai Holiday with Disneyland",
+ "alt": "Towers of Pudong seen across the Huangpu river at dusk",
+ "transport": "Private airport transfers and guided city touring",
+ "tag": "Family",
+ "tags": ["Family", "Theme parks"],
+ "price": 61750,
+ "route_cities": ["Shanghai", "Pudong"],
+ "counts": { "days": 6, "nights": 5, "cities": 1, "hotels": 1, "experiences": 6, "transfers": 8, "meals": 5 },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Shanghai",
+   "city": "Shanghai",
+   "days": [1, 2, 3, 4, 5, 6],
+   "dayLabel": "Day 1 to 6",
+   "hotel": "Holiday Inn Express Shanghai Gongkang",
+   "accom": "5 nights \u00b7 Breakfast \u00b7 Standard room \u00b7 3\u2605 \u00b7 Practical base in Jing'an with metro access",
+   "activities": [
+    { "name": "Half day guided tour of Shanghai", "day": 2, "optional": false, "match": "Half-Day Shanghai Sightseeing Tour", "description": "A guided morning through the Bund waterfront, the old town lanes and the rockeries and ponds of the Yu garden." },
+    { "name": "Oriental Pearl Tower", "day": 2, "optional": false, "match": "Oriental Pearl Tower", "description": "Tickets up the city's best known tower, with the glass floor over Pudong and a long view back to the colonial Bund." },
+    { "name": "Huangpu river cruise", "day": 2, "optional": false, "match": "Huangpu River Cruise", "description": "An evening sailing between the lit towers of Pudong and the stone facades of the Bund, the classic Shanghai skyline shot." },
+    { "name": "Shanghai Disneyland", "day": 3, "optional": false, "match": "Shanghai Disneyland", "description": "A full day at Shanghai Disneyland with tickets included, home to the Enchanted Storybook Castle and the Tron ride." },
+    { "name": "Shanghai Zoo", "day": 4, "optional": false, "match": "Shanghai Zoo", "description": "A full day at the zoo on the old Hongqiao golf course, with giant pandas, big cat houses and wide lawns for children." },
+    { "name": "Southern Great Wall day trip", "day": 5, "optional": false, "match": "Southern Great Wall", "description": "A day out of the city to the Southern Great Wall, walking its watchtowers and ridge path away from the tour crowds." }
+   ],
+   "program": { "name": "Shanghai", "description": "Five nights in one city: the Bund and the Yu garden, the Pearl Tower, a river cruise, Disneyland, the zoo and the Southern Great Wall." }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Shanghai",
+  "2": "City tour, tower and river cruise",
+  "3": "Shanghai Disneyland",
+  "4": "A day at Shanghai Zoo",
+  "5": "Southern Great Wall day trip",
+  "6": "Departure from Shanghai"
+ },
+ "bullets": {
+  "1": ["Arrival at Pudong or Hongqiao and transfer to your hotel", "Check in and the rest of the day free", "Optional: an evening walk on the Bund", "Optional: dinner in the Xintiandi lanes"],
+  "2": ["Breakfast, then a guided half day of the city", "The Bund, the old town lanes and the Yu garden", "Up the Oriental Pearl Tower in the afternoon", "A cruise on the Huangpu as the towers light up"],
+  "3": ["Early breakfast, then transfer out to Disneyland", "Tickets included for the full day", "The Enchanted Storybook Castle and the Tron ride", "Back at the hotel in the evening"],
+  "4": ["Breakfast, then across to Shanghai Zoo", "Tickets included for the full day", "Giant pandas, big cat houses and old lawns", "Afternoon free for Nanjing Road or the museum"],
+  "5": ["Early breakfast and transfer out of the city", "A full day at the Southern Great Wall", "Watchtowers, ramparts and the long ridge path", "Evening transfer back to your Shanghai hotel"],
+  "6": ["Breakfast at the hotel and check out", "Private transfer to the airport for your flight home"]
+ },
+ "meals": { "1": "Arrival", "2": "B", "3": "B", "4": "B", "5": "B", "6": "B" },
+ "hotel_by_day": {
+  "1": "Holiday Inn Express Shanghai Gongkang",
+  "2": "Holiday Inn Express Shanghai Gongkang",
+  "3": "Holiday Inn Express Shanghai Gongkang",
+  "4": "Holiday Inn Express Shanghai Gongkang",
+  "5": "Holiday Inn Express Shanghai Gongkang",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Mei",
+  "image": "/experts/riya.webp",
+  "role": "China expert at Hi Tours",
+  "quote": "Six days in one city, so nobody packs and repacks. Families get the park, the zoo and the skyline without a single internal flight.",
+  "tip": "Keep the river cruise for after dark. The Pudong towers only switch on their full light show once the sun has gone."
+ },
+ "summary": "Six days in Shanghai with daily breakfast: a guided half day of the Bund and the Yu garden, the Oriental Pearl Tower, a Huangpu cruise, Disneyland, the zoo and a Southern Great Wall day trip.",
+ "included": "Included: 5 nights in Shanghai with daily breakfast; private airport transfers; half day guided city tour; Oriental Pearl Tower tickets; Huangpu river cruise tickets; Shanghai Disneyland tickets; Shanghai Zoo tickets; Southern Great Wall day trip.",
+ "not_included": "Not included: international flights; China visa fees; lunches and dinners; travel insurance; personal expenses."
+}
