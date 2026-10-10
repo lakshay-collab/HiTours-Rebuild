@@ -127,7 +127,7 @@ Workflow per trip: python3 scripts/thrillophilia/digest2.py <source-slug> -> wri
 build_trip.py -> check_trip.py -> register_trip.py <camel> vietnam [cambodia|laos|thailand].
 At the end: apply_card_images.py on all vietnam trip files, then testing agent.
 
-### China import in progress (June 2026)
+### China import COMPLETE (June 2026)
 User gave 18 Thrillophilia China links (16 unique after duplicates); all 16 extracted to import/<slug>/raw.json
 (list in import/china_urls.txt). Legacy generic China packages removed from the listing, same as Japan/Vietnam/Indonesia.
 Note: 'hidden-trails-of-japan' is a 15 day China + Japan trip (Beijing, Nanjing, Shanghai, Tokyo, Kawaguchiko, Kyoto)
@@ -142,3 +142,22 @@ China raw.json fix: Thrillophilia China pages ship almost no dest_gallery photos
 build_trip.py fail with IndexError on stop_images. Fixed by seeding dest_gallery per city from the trip's own
 `gallery` list (entries are dicts with a 'url' key), excluding hero tiles and hotel photos. Already applied to all
 16 China raws. If a new China link is extracted later, re-run that seeding before build_trip.py.
+
+
+### China import complete - June 2026
+All 16 unique China Thrillophilia links are live on /asien/china/holidays (16 products, zero legacy generic packages).
+12 trips were built in this session on top of the 4 already registered:
+  grandShanghaiDisneylandHoliday, classicShanghaiGreatWallBreak, highlightsOfShanghaiDisneyland,
+  bestOfShanghaiDisneyAndWall, bestOfBeijingWallAndUniversal, discoverBeijingShortBreak,
+  gemsOfChinaShanghaiXian, bestOfChinaGoldenTriangle, discoverChinaBeijingShanghai,
+  highlightsOfChinaThreeCities, grandChinaYangtzeCruise, bestOfChinaAndJapanGrandTour.
+Specs live at import/spec_cn_*.json. Every trip passes check_trip.py.
+Multi-country: bestOfChinaAndJapanGrandTour (15 days, 9 stops, Beijing -> Nanjing -> Shanghai -> Tokyo ->
+Kawaguchiko -> Kyoto -> Osaka -> Okayama -> Hiroshima) is registered in BOTH china and japan; Japan listing
+went 48 -> 49.
+Bug fixed: chinaProducts had a stray leading comma (`[, a, b]`) left behind when the legacy packages were removed.
+Card photos made globally unique with apply_card_images.py across the 16 China files, freezing all 198 other trips.
+Verified by testing agent iteration_55.json: 100% frontend pass, 0 broken images, 0 console errors, all 12 new
+/asien/<slug> detail routes render, all theme/experience filters and both price sorts correct, Vietnam (44) and
+Japan (49) listings regression clean.
+Gotcha for the next agent: trip detail routes are /asien/<slug>, NOT /asien/<country>/<slug>.

@@ -708,6 +708,11 @@ Dropped as duplicate wrappers per user decision: singapore-cruise-package-from-d
 Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore); search cleaned up so only live destinations show, with Bali findable; one green (#00B67A) for every star rating; a date-driven promotion calendar with per-festival artwork and 10%-look pricing on a 5% real saving; Careers hero renamed "Join Hi Tours" with a looping YouTube background; Indonesia and Japan listings now show only imported trips.
 
 ### Backlog
+- DONE (June 2026): all 16 China Thrillophilia links processed. 16 live China trips on /asien/china/holidays with the
+  legacy generic packages removed. The China + Japan 15 day grand tour (best-of-china-and-japan-wall-to-fuji) is listed
+  under both China and Japan (Japan now 49). Card photos unique across all 16. Verified iteration_55.json (100% pass).
+- DONE (June 2026): all 45 Vietnam Thrillophilia links processed. 44 live Vietnam trips; multi-country ones also listed
+  under Cambodia (19), Laos (11) and Thailand (24).
 - DONE (June 2026): all 49 Japan Thrillophilia links processed. 48 live Japan trips; 1 skipped as a duplicate itinerary
   (japan-autumn-highlights... = best-of-japan-tokyo-and-hokkaido). New South Korea destination at /asien/south-korea/holidays
   holds the 3 Japan + South Korea combos, which are also listed under Japan. Card photos unique across all 48 Japan trips.

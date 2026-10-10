@@ -1,0 +1,23 @@
+{
+  "summary": "Frontend-only verification of the 16 newly imported Thrillophilia China holiday packages on /asien/china/holidays. All 16 cards render after lazy-scroll with 0 broken images and 0 console errors. All 12 new detail routes (/asien/<slug>) resolve, display correct H1, day-tab count (5-15 days), day headings, carousels, and the 'What's included' side panel (hotels/experiences/transfers/meals). Multi-country trip best-of-china-and-japan-wall-to-fuji appears on BOTH /asien/china/holidays and /asien/japan/holidays; Japan listing count rose from 48 to 49, confirming registration. Theme filters (Family 9, Short trips 6, Luxury 2, Culture & temples 10, Theme parks 8, Nature & wildlife 7, Food & markets 3, Multi-city tours 4, City break 1, Cruise holidays 1, Shopping 1, Wellness & spa 1) and Experience chips (Great Wall of China 14, The Bund 11, Cable car rides 10, Forbidden City 7, Universal Studios 4) all filter the grid correctly. Sort by price low->high and high->low both order the full 16-card set correctly (verified: 25000..355665 ascending; 355665..25000 descending). Vietnam regression page loads with 44 holidays and no console errors.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "chinaToursData.js line 26 - 16-item chinaProducts array is a single long line; one-entry-per-line would make diffs/review easier (same cosmetic issue was flagged for japanToursData in iteration 54 and still applies).",
+    "The infinite-scroll sentinel in EgyptHolidays.jsx fires only when the sentinel is visible in viewport; jumping scrollTo(bottom) can skip past it and strand ~26 cards unrendered. Not user-facing (humans scroll gradually) but a slow+gentle scroll is required for e2e tests - consider exposing a 'load all' escape hatch in dev mode."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "test_credentials": "N/A - all pages are public",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "China listing /asien/china/holidays shows exactly 16 holidays; infinite scroll loads 9 per sentinel hit (use small (<=400px) scroll increments to trigger it). Japan listing is now 49 (was 48) because best-of-china-and-japan-wall-to-fuji is registered in both chinaProducts (chinaToursData.js) and japanProducts (japanToursData.js). Detail route is /asien/<slug> (NOT /asien/china/<slug>). All 16 China slugs rendered: glimpse-of-shanghai, ancient-wonders-of-beijing, highlights-of-beijing, glimpse-of-beijing-with-universal-studios, grand-shanghai-holiday-with-disneyland, classic-shanghai-with-the-great-wall, highlights-of-shanghai-with-disneyland, best-of-shanghai-disneyland-and-great-wall, best-of-beijing-with-universal-studios, discover-beijing-wall-and-universal, gems-of-china-shanghai-and-xian, best-of-china-beijing-xian-and-shanghai, discover-china-beijing-and-shanghai, highlights-of-china-shanghai-xian-beijing, grand-china-with-yangtze-river-cruise, best-of-china-and-japan-wall-to-fuji.",
+  "rca of the issue": "No issues found. All functional and regression tests passed."
+}
