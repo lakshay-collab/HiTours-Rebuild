@@ -18,7 +18,7 @@ export const terms = {
       'Prices are quoted in Indian Rupees (INR) unless stated otherwise. International flights are excluded unless explicitly listed under "Included".'
     ] },
     { h2: '4. Changes & cancellations', body: [
-      'If you wish to change or cancel a confirmed booking, cancellation charges may apply depending on the destination, suppliers and how close to departure the request is made. Our Hi Tours Care options may give you additional flexibility to rebook or cancel.',
+      'If you wish to change or cancel a confirmed booking, cancellation charges may apply depending on the destination, suppliers and how close to departure the request is made. Our Hi Tours Cares options may give you additional flexibility to rebook or cancel.',
       'We reserve the right to make changes to your itinerary where necessary for reasons beyond our control (for example weather, supplier availability or safety) and will always offer a comparable alternative where possible.'
     ] },
     { h2: '5. Passports, visas & health', body: [

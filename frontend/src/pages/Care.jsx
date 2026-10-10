@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Check, ShieldCheck } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageTabs from '../components/PageTabs';
 import { hero, intro, graphic, assure, flex, iso, cta } from '../careData';
+import { useLeadModal } from '../components/egypt/LeadModalProvider';
 
 const Bullet = ({ children }) => <li className="flex items-start gap-3 eg-body-lg text-[#002131]"><span className="mt-1 w-5 h-5 rounded-full bg-[#308BB6] text-white flex items-center justify-center shrink-0"><Check size={12} strokeWidth={3} /></span>{children}</li>;
 
@@ -54,7 +54,9 @@ const Tier = ({ data, testId }) => (
 );
 
 export default function Care() {
-  useEffect(() => { document.title = 'Hi Tours Care – flexible rebooking & cancellation | Hi Tours'; window.scrollTo(0, 0); }, []);
+  const { openLead } = useLeadModal();
+  const plan = () => openLead({ destination: 'Worry-free', tripTitle: 'Hi Tours Cares enquiry', image: hero.images[1].src, imageAlt: hero.images[1].alt });
+  useEffect(() => { document.title = 'Hi Tours Cares – flexible rebooking & cancellation | Hi Tours'; window.scrollTo(0, 0); }, []);
   return (
     <div className="eg" data-testid="care-page">
       <Header />
@@ -66,7 +68,7 @@ export default function Care() {
           <PageTabs />
           <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-16">
           <div className="flex-1 flex flex-col gap-3"><h1 className="eg-display-lg text-[#002131]" data-testid="care-title">{hero.h1}</h1><p className="eg-body-lg text-[#002131]">{hero.sub}</p></div>
-          <div className="flex flex-col items-center gap-2 md:shrink-0"><Link to={hero.ctaHref} className="eg-btn-filled h-12 px-6 eg-title-md w-full md:w-auto" data-testid="care-hero-cta">{hero.cta}</Link><p className="eg-body-sm text-[#174358] text-center">{hero.note}</p></div>
+          <div className="flex flex-col items-center gap-2 md:shrink-0"><button type="button" onClick={plan} className="eg-btn-filled h-12 px-6 eg-title-md w-full md:w-auto" data-testid="care-hero-cta">{hero.cta}</button><p className="eg-body-sm text-[#174358] text-center">{hero.note}</p></div>
           </div>
         </div>
       </section>
@@ -79,8 +81,8 @@ export default function Care() {
           <p className="eg-body-lg text-[#002131]">{intro.p3}</p>
           <Graphic />
         </section>
-        <Tier data={assure} testId="care-assure" />
-        <Tier data={flex} testId="care-flex" />
+        <Tier data={assure} testId="care-standard-policy" />
+        <Tier data={flex} testId="care-cares" />
         <section className="eg-container" data-testid="care-iso">
           <div className="rounded-2xl bg-[#002131] text-white p-6 md:p-10 grid md:grid-cols-[1fr_auto] gap-8 items-center">
             <div className="flex flex-col gap-4">
@@ -95,7 +97,7 @@ export default function Care() {
         <section className="eg-container" data-testid="care-cta">
           <div className="rounded-2xl bg-[#F0EEE6] px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div><p className="eg-title-lg text-[#002131]">{cta.title}</p><p className="mt-1 eg-body-md text-[#174358]">{cta.text}</p></div>
-            <Link to={cta.href} className="eg-btn-filled h-12 px-7 eg-title-md" data-testid="care-cta-button">{cta.button}</Link>
+            <button type="button" onClick={plan} className="eg-btn-filled h-12 px-7 eg-title-md" data-testid="care-cta-button">{cta.button}</button>
           </div>
         </section>
       </main>

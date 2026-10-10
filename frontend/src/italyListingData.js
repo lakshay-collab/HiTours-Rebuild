@@ -123,7 +123,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Italy?", a: ["April–June and September–October for warm weather without peak crowds; the Amalfi Coast is best May–September."] },
     { q: "What is typical food in Italy?", a: ["Italy is a food lover's dream – fresh pasta, Neapolitan pizza, risotto, gelato and regional wines; vegetarian dishes are everywhere."] },
     { q: "Do Indian citizens need a visa for Italy?", a: ["Indian citizens require a Schengen visa; Hi Tours prepares complete itinerary and hotel documents for a smooth application."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_EUROPE.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

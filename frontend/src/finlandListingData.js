@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Finland?", a: ["December to March for snow, Northern Lights and glass igloos; June to August for the midnight sun and lakes."] },
     { q: "What is typical food in Finland?", a: ["Finnish food is seasonal and pure – salmon soup, reindeer with lingonberries, Karelian pies, rye bread and cloudberries; vegetarian options are excellent."] },
     { q: "Do Indian citizens need a visa for Finland?", a: ["Indian citizens require a Schengen visa; Hi Tours prepares complete itinerary and accommodation documents."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_EUROPE.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

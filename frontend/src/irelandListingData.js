@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Ireland?", a: ["May to September brings the longest, driest days; spring and autumn are quieter and lush green."] },
     { q: "What is typical food in Ireland?", a: ["Irish food is hearty – Irish stew, seafood chowder, soda bread, boxty potato pancakes and farmhouse cheeses, best enjoyed in a cosy pub."] },
     { q: "Do Indian citizens need a visa for Ireland?", a: ["Indian citizens require an Irish visa (separate from Schengen); UK visa holders may use the British-Irish Visa Scheme. Hi Tours assists with documents."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_EUROPE.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

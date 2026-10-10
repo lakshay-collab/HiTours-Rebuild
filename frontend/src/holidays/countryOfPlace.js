@@ -10,17 +10,19 @@ const CITIES = {
   Belgium: ['Brussels', 'Bruges', 'Ghent'],
   Greece: ['Athens', 'Mykonos', 'Santorini', 'Olympia', 'Delphi', 'Corfu', 'Crete'],
   Norway: ['Oslo', 'Bergen', 'Flam', 'Tromso', 'Trondheim', 'Alesund', 'Molde', 'Kristiansund',
-           'Stavanger', 'Kirkenes', 'Geiranger', 'Gudvangen', 'Voss', 'Myrdal'],
+           'Stavanger', 'Kirkenes', 'Geiranger', 'Gudvangen', 'Voss', 'Myrdal', 'Tromsø', 'Geilo', 'Hammerfest',
+           'Kristiansand', 'Tvedestrand', 'Lofoten', 'Narvik'],
   Sweden: ['Stockholm', 'Kiruna', 'Abisko', 'Lulea', 'Gothenburg', 'Jukkasjarvi'],
   Finland: ['Helsinki', 'Rovaniemi', 'Inari', 'Saariselka', 'Levi', 'Turku'],
   Denmark: ['Copenhagen', 'Odense', 'Aarhus'],
-  Ireland: ['Dublin', 'Cork', 'Limerick', 'Galway', 'Killarney', 'Connemara', 'Cliffs of Moher', 'Blarney'],
+  Ireland: ['Dublin', 'Cork', 'Limerick', 'Galway', 'Killarney', 'Connemara', 'Cliffs of Moher', 'Blarney', 'Clare', 'Kerry', 'Dromoland'],
 };
 
+const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const BY_CITY = {};
-Object.entries(CITIES).forEach(([country, cities]) => cities.forEach((c) => { BY_CITY[c] = country; }));
+Object.entries(CITIES).forEach(([country, cities]) => cities.forEach((c) => { BY_CITY[norm(c)] = country; }));
 
-export const countryOfPlace = (place) => BY_CITY[place];
+export const countryOfPlace = (place) => BY_CITY[norm(place || '')];
 
 export const countriesOfPlaces = (places = []) =>
   [...new Set(places.map(countryOfPlace).filter(Boolean))];

@@ -147,8 +147,8 @@ export const faq = {
       'Our travel experts will guide you through the paperwork as part of your travel plan, so there are no surprises at the airport.'
     ] },
     { q: 'How is my trip protected if travel conditions change?', a: [
-      'With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Depending on the destination, further protection and flexibility options may apply.',
-      ['Find out more at: ', ['Hi Tours Care Flex', '#']]
+      'With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Depending on the destination, further protection and flexibility options may apply.',
+      ['Find out more at: ', ['Hi Tours Cares', '#']]
     ] }
   ]
 };

@@ -124,7 +124,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Bali?", a: ["April to October (dry season) is ideal; July–August is peak, while May–June and September offer great weather with fewer crowds."] },
     { q: "What is typical food in Bali?", a: ["Balinese food is rich and aromatic: nasi goreng, satay, rendang, gado-gado and the island's own babi guling; plenty of vegetarian and vegan options in Ubud."] },
     { q: "Do Indian citizens need a visa for Bali?", a: ["Indian citizens get a visa on arrival (30 days, extendable) at Bali's Ngurah Rai airport; Hi Tours assists with the e-VoA in advance."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_ASIA.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

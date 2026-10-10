@@ -96,10 +96,10 @@ export const top10 = {
 export const guarantee = {
   eyebrow: 'Our booking guarantee',
   h2: 'Book worry-free, travel with certified peace of mind',
-  text: 'Hi Tours is one of the few travel brands in India with ISO 45001 certification, an internationally audited standard for health and safety. Every ground partner, transport provider and hotel we work with is held to it. Pair that with flexible rebooking and cancellation under Hi Tours Care, and you can book with confidence.',
+  text: 'Hi Tours is one of the few travel brands in India with ISO 45001 certification, an internationally audited standard for health and safety. Every ground partner, transport provider and hotel we work with is held to it. Pair that with flexible rebooking and cancellation under Hi Tours Cares, and you can book with confidence.',
   points: [
     'ISO 45001 certified safety and health standards',
-    'Flexible rebooking and cancellation with Hi Tours Care',
+    'Flexible rebooking and cancellation with Hi Tours Cares',
     '24/7 crisis management and emergency assistance while you travel'
   ],
   badge: '/badges/iso45001.png',
@@ -124,7 +124,7 @@ export const faq = {
     { q: 'Is Hi Tours only for luxury travel?', a: ['No. We plan for all travel styles and budgets. Whether that means 5-star resorts or boutique hideaways off the beaten path, your specialist designs around what matters to you.'] },
     { q: 'How much does a personalised itinerary cost?', a: ['Nothing. Consulting with a Hi Tours specialist is free and without obligation, including your first personalised itinerary.'] },
     { q: 'Do I need to book my flights separately?', a: ['Not unless you want to. We can book flights as part of your itinerary so flights, hotels, transfers and experiences are all coordinated by one team.'] },
-    { q: 'Can I modify or cancel my trip after booking?', a: ['Yes. Our Booking Policy explains flexible rebooking and cancellation under Hi Tours Care. Some changes may incur supplier fees depending on timing, and your specialist will always tell you upfront.'] },
+    { q: 'Can I modify or cancel my trip after booking?', a: ['Yes. Our Booking Policy explains flexible rebooking and cancellation under Hi Tours Cares. Some changes may incur supplier fees depending on timing, and your specialist will always tell you upfront.'] },
     { q: 'Are the trips private or group-based?', a: ['We specialise in private trips for you and your family or friends, so you travel on your own terms. Small-group departures can be arranged on request.'] },
     { q: 'How do I reach Hi Tours during my trip?', a: ['Your dedicated specialist is available by phone, WhatsApp or email throughout your journey, backed by 24/7 emergency assistance.'] },
     { q: 'What does ISO 45001 certification mean for me?', a: ['It means our safety and health processes, from vetted ground handlers to transport partners and crisis management, are audited against an international standard, not just promised.'] }

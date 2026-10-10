@@ -1,0 +1,52 @@
+{
+  "summary": "Round 2 frontend verification for Hi Tours. Verified Nordic country pages (redirect + counts), Scandinavia trip detail, homepage Top 10 and Europe tab order, Middle East coming-soon tags, desktop mega-menu, mobile drawer order & disabled coming-soon buttons, comparison section 8 rows, horizontal carousel wheel propagation, destination-only search, sitemap/robots/favicons. 10 of 11 checks pass. One failure: /europe/holidays aggregate count below requested threshold (24 displayed, requirement >= 29).",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {
+        "flow": "Europe aggregate listing (/europe/holidays)",
+        "issue": "Shows '24 holidays' / 'Browse 24 package ideas' but requirement expects >= 29 after adding 14 Nordic trips (Norway 10 + Sweden 4 + Finland 3 + Ireland 2). Country facet counts: Norway 9, Sweden 4, Finland 3, Ireland 2, Greece 5, Switzerland 4, France 3, Denmark 2, Italy 2, Germany 1, Netherlands 1. Country facets include all expected 7 countries, but the aggregate holidays list is under-reporting (likely dedup/filter in europeListingData.js not including all 10 Norway trips - showing 9 - plus some Scandinavia combos not aggregated).",
+        "affected_selectors": ["browse-count", "country filter facets"]
+      }
+    ],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "passed_checks": [
+    "Nordic country roots redirect to /holidays",
+    "/europe/norway shows 'Browse 10 package ideas'; images load",
+    "/europe/ireland shows 'Browse 2 package ideas'",
+    "/europe/finland shows 'Browse 3 package ideas'",
+    "/europe/sweden shows 'Browse 4 package ideas'",
+    "/europe/scandinavia-group-tour-helsinki-to-copenhagen renders h1, 7 day tabs, price, 'holidays you may like' section, no console errors",
+    "Norway first card detail (/europe/best-of-norway-oslo-flam-and-bergen) renders correctly",
+    "Homepage Top 10 order: Europe, Japan, Vietnam, Bali, Bhutan, Thailand, Singapore, China, Kazakhstan, Egypt (exact match)",
+    "Europe tab shows 11 clickable cards in exact expected order; Switzerland -> /europe/holidays?country=Switzerland",
+    "Middle East tab: Jordan & UAE have data-testid=destination-card-coming-soon, DIV (not anchor), coming-soon-tag positioned inside image bounding box (top-left overlay)",
+    "Desktop Destinations mega-menu Middle East: menu-country-coming-soon for Jordan/UAE as DIV with tag inside image box",
+    "Mobile 390 drawer root order exact: Destinations | About us, Why Us?, Hi Tours cares | Speak to a holiday expert | Careers",
+    "Careers -> /careers",
+    "Mobile drawer Middle East: Egypt link + Jordan/UAE as disabled BUTTON drawer-country-coming-soon",
+    "Comparison section data-testid=comparison-section has 8 feature rows including 'Save up to 60% ...' and '30 years of trust and over 1 million happy travellers'",
+    "Social carousel wheel test: scrollY delta = 3000 after 5x wheel 600 (page scrolls, not trapped)",
+    "Moments marquee wheel test: scrollY delta = 3000 (page scrolls, not trapped)",
+    "Hero search is destination-only (country/region suggestions only); no 'Northern Lights', no 'Honeymoons'; Jordan/UAE/Sri Lanka absent; Bali present",
+    "sitemap.xml contains /europe/sweden/holidays and /europe/scandinavia-classic-helsinki-stockholm-oslo-bergen-copenhagen; zero /asia/indonesia entries",
+    "robots.txt has Sitemap line",
+    "/icon-192.png -> 200; /favicon.ico -> 200",
+    "Header has 'Speak to a holiday expert' as desktop link/button"
+  ],
+  "action_items": [
+    "Investigate /europe/holidays aggregator in /app/frontend/src/europeListingData.js: expected count >= 29 after Nordic additions, but UI shows 24. Specifically Norway facet shows 9 while /europe/norway shows 10 trips, so one Norway/Scandinavia trip is missing from the aggregate. Confirm all 14 Nordic trips (and the 3 Scandinavia multi-country combos) are included and consider whether aggregate total should sum to 15 (prior non-Nordic) + 14 Nordic = 29+."
+  ],
+  "critical_code_review_comments": [
+    "React warning in console: 'Invalid DOM property fetchpriority. Did you mean fetchPriority?' — occurs on some <img> or <link rel=preload>. Rename attribute to React-camelCase fetchPriority to silence the warning. Minor."
+  ],
+  "updated_files": [],
+  "success_rate": { "backend": "n/a (not tested)", "frontend": "95%" },
+  "seed_data_creation": "",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Only remaining issue is Europe aggregate count (24 vs >=29). All Round 2 UI changes (coming-soon placement, mobile drawer, search, carousels, mega menu, comparison, assets, Nordic pages) verified working on preview URL. Hero video is H.264 which doesn't play in headless Chromium — not a bug."
+}

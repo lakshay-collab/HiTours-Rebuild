@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Norway?", a: ["May–September for fjords and the midnight sun; November–March for the Northern Lights in Tromsø."] },
     { q: "What is typical food in Norway?", a: ["Norwegian food celebrates the sea – salmon, cod, king crab and shrimp – alongside reindeer, brown cheese and cinnamon buns."] },
     { q: "Do Indian citizens need a visa for Norway?", a: ["Indian citizens require a Schengen visa; Hi Tours prepares all supporting documents."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_EUROPE.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

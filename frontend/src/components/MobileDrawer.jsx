@@ -5,7 +5,7 @@ import { ComingSoonTag } from './Destinations';
 import { themeGroups } from '../themesData';
 import ExpertAdvicePanel from './ExpertAdvicePanel';
 
-const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Careers': Briefcase, 'Hi Tours cares': Umbrella, 'Speak to a holiday expert': Phone };
+const ICONS = { 'Destinations': MapPin, 'Themes': Sparkles, 'About us': Info, 'Why Us?': BadgeCheck, 'Careers': Briefcase, 'Hi Tours Cares': Umbrella, 'Speak to a holiday expert': Phone };
 
 const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
 const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
@@ -17,7 +17,7 @@ const regions = destinationTabs.filter((t) => t !== 'Top 10').map((name) => ({
 
 const SECTIONS = [
   [{ label: 'Destinations', sub: true }],
-  [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Hi Tours cares', href: '/care' }],
+  [{ label: 'About us', href: '/about' }, { label: 'Why Us?', href: '/#why-hi-tours' }, { label: 'Hi Tours Cares', href: '/care' }],
   [{ label: 'Speak to a holiday expert', sub: true }],
   [{ label: 'Careers', href: '/careers' }]
 ];

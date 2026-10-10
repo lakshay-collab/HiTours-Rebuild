@@ -119,12 +119,12 @@ export const promoBanners = [
 
 export const comparison = {
   heading: 'Why Hi Tours is worth it',
-  colAlone: 'On your own',
+  colAlone: 'Others',
   colHiTours: 'With Hi Tours',
   rows: [
-    { text: 'Specialists in more than 50 destinations across Asia, Europe and the Middle East', alone: true },
+    { text: 'Specialists in more than 50 destinations across Asia, Europe and the Middle East', alone: false },
     { text: 'Save up to 60% by bundling hotels, flights, transfers and activities', alone: false },
-    { text: 'Experts in multi-day, multi-city planning: every day of the route thought through', alone: false },
+    { text: 'Experts in multi-day, multi-city and multi-country planning', alone: false },
     { text: 'Customised to your taste, pace and budget, not a fixed group itinerary', alone: false },
     { text: 'One personal holiday expert from first call to final booking', alone: false },
     { text: '24/7 on-ground support and customer care while you travel', alone: false },
@@ -320,7 +320,7 @@ export const footer = {
     { title: 'Hi Tours', links: ['About Us', 'Booking Policy', 'Careers', 'Our Office'] },
     { title: 'Destinations', links: ['Vietnam', 'Thailand', 'Bali', 'Singapore', 'Malaysia', 'Egypt', 'Japan', 'Bhutan', 'Kazakhstan', 'More destinations'] }
   ],
-  care: { title: 'Hi Tours cares', lines: ['Book worry-free', 'Flexible rebooking and cancellation'], cta: 'Learn more' },
+  care: { title: 'Hi Tours Cares', lines: ['Book worry-free', 'Flexible rebooking and cancellation'], cta: 'Learn more' },
   country: 'India',
   legal: ['Privacy', 'Terms & Conditions', 'Speak to a holiday expert']
 };

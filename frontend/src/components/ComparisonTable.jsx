@@ -23,8 +23,8 @@ export default function ComparisonTable() {
           {comparison.rows.map((row, i) => (
             <div key={i} className={`${cols} items-center min-h-9 ${i % 2 ? 'bg-surface-variant' : 'bg-surface-low'}`} data-testid="comparison-row">
               <div className="px-4 py-2 t-body-md text-onsurface">{row.text}</div>
-              <div className="flex justify-center">{row.alone ? <Check /> : <X size={18} strokeWidth={2} className="text-onsurface-variant" />}</div>
-              <div className="flex justify-center"><Check /></div>
+              <div className="flex justify-center" data-testid="comparison-others-cell"><X size={18} strokeWidth={2} className="text-onsurface-variant" /></div>
+              <div className="flex justify-center" data-testid="comparison-hitours-cell"><Check /></div>
             </div>
           ))}
         </div>

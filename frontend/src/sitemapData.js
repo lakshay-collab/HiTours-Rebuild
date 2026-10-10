@@ -13,7 +13,7 @@ export const GROUPS = [
       ['Careers', '/careers'],
       ['Our Office', '/our-office'],
       ['Press & media', '/press'],
-      ['Hi Tours Care (booking policy)', '/care'],
+      ['Hi Tours Cares (booking policy)', '/care'],
       ['Terms & conditions', '/terms'],
       ['Privacy policy', '/privacy']
     ]

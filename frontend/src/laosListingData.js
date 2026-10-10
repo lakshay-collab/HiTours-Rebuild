@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Laos?", a: ["October to April (dry, cool season); the Mekong is highest and the countryside greenest right after the rains in October–November."] },
     { q: "What is typical food in Laos?", a: ["Lao cuisine centres on sticky rice, larb (minced-meat salad), tam mak hoong (papaya salad) and or lam stew; try Luang Prabang sausage and Beerlao."] },
     { q: "Do Indian citizens need a visa for Laos?", a: ["Indian citizens receive a visa on arrival at Laos' international airports and major land borders (30 days); Hi Tours prepares all paperwork."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_ASIA.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

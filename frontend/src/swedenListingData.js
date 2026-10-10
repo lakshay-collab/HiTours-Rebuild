@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Sweden?", a: ["June to August for the midnight sun and archipelagos; December to March for Northern Lights and the Icehotel in Lapland."] },
     { q: "What is typical food in Sweden?", a: ["Swedish cuisine is about fika and fresh produce – meatballs with lingonberries, gravlax, toast skagen, cinnamon buns and crayfish parties in August."] },
     { q: "Do Indian citizens need a visa for Sweden?", a: ["Indian citizens require a Schengen visa; Hi Tours prepares all supporting documents."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_EUROPE.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

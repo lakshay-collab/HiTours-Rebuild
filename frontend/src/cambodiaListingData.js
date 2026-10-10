@@ -122,7 +122,7 @@ export const faq = { h2: 'Practical information for your trip', items: [
     { q: "When is the best time to visit Cambodia?", a: ["November to March is dry and pleasant; April is hottest, while the green season (June–October) brings lush landscapes and fewer visitors."] },
     { q: "What is typical food in Cambodia?", a: ["Khmer cuisine is fragrant rather than fiery: fish amok, lok lak beef, nom banh chok noodles and fresh spring rolls, with tropical fruit at every market."] },
     { q: "Do Indian citizens need a visa for Cambodia?", a: ["Indian citizens can obtain an e-visa online or a visa on arrival (30 days); Hi Tours handles the e-visa application for you."] },
-    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
+    { q: "How is my trip protected if travel conditions change?", a: ["With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason. Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly."] }
 ] };
 
 export const related = { h2: `More destinations in ${destination.continent}`, items: RELATED_ASIA.filter(([t]) => t !== N).map(([title, image, href]) => ({ title, alt: title, tag: null, href, image })) };

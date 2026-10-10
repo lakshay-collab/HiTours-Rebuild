@@ -151,9 +151,9 @@ export const faq = {
       'Our travel experts will guide you through the visa requirements as part of your travel plan, so there are no surprises at the airport.'
     ] },
     { q: 'How is my trip protected if travel conditions change?', a: [
-      'Many travellers want extra flexibility and security before booking a multi-country trip. With Hi Tours Care Flex you can cancel or rebook your land programme up to 30 days before departure without giving a reason.',
-      'Hi Tours Care was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly.',
-      ['Find out more at: ', ['Hi Tours Care Flex', '/care']]
+      'Many travellers want extra flexibility and security before booking a multi-country trip. With Hi Tours Cares you can cancel or rebook your land programme up to 30 days before departure without giving a reason.',
+      'Hi Tours Cares was developed to give travellers more flexibility and cover when travel conditions or personal circumstances change unexpectedly.',
+      ['Find out more at: ', ['Hi Tours Cares', '/care']]
     ] }
   ]
 };

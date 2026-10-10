@@ -35,7 +35,7 @@ export default function Hero() {
       <picture>
         <source media="(max-width: 767px)" srcSet="/hero-poster-sm.webp" type="image/webp" />
         <source srcSet="/hero-poster.webp" type="image/webp" />
-        <img src="/hero-poster.jpg" alt="" fetchpriority="high" decoding="async" className="absolute inset-0 w-full h-full object-cover" data-testid="hero-poster" />
+        <img src="/hero-poster.jpg" alt="" fetchPriority="high" decoding="async" className="absolute inset-0 w-full h-full object-cover" data-testid="hero-poster" />
       </picture>
       <video
         ref={videoRef}
