@@ -9,8 +9,8 @@ const ct2 = (p) => `${CT2}/${p}?w=1080&q=60&fm=webp`;
 
 export const destination = { name: 'Sri Lanka', continent: 'Asia', primary: ['Colombo', 'Kandy', 'Ella', 'Galle'] };
 
-export const holidaysPath = '/asien/sri-lanka/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Sri Lanka', to: '/asien/sri-lanka' }, { label: 'Sri Lanka tours & holidays' }];
+export const holidaysPath = '/asia/sri-lanka/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Sri Lanka', to: '/asia/sri-lanka' }, { label: 'Sri Lanka tours & holidays' }];
 
 export const hero = {
   h1: 'Sri Lanka Honeymoons and holidays',
@@ -27,7 +27,7 @@ export const hero = {
   imageAlt: 'Sigiriya Lion Rock at sunset, Sri Lanka'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Sri Lanka' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Sri Lanka' }];
 
 export const intro = {
   h2: 'About Sri Lanka',
@@ -148,8 +148,8 @@ export const faq = {
 };
 
 const asiaList = [
-  ['Vietnam', ct('6KpaBlYiRchxRrYsS84QgO/dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg'), '/asien/vietnam'],
-  ['Thailand', ct('27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg'), '/asien/thailand'],
+  ['Vietnam', ct('6KpaBlYiRchxRrYsS84QgO/dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg'), '/asia/vietnam'],
+  ['Thailand', ct('27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg'), '/asia/thailand'],
   ['Indonesia', ct('61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png'), '#'],
   ['Japan', ct('5E91LAbIo29xmfzemwDnnu/082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg'), '#'],
   ['Maldives', ct('3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg'), '#'],

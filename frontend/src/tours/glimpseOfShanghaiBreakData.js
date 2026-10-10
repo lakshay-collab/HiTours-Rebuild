@@ -177,8 +177,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'China', href: '/asien/china' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'China', href: '/asia/china' },
   { label: detail.title }
 ];
 
@@ -187,7 +187,7 @@ export const glimpseOfShanghaiBreakBySlug = { [detail.slug]: { detail, route, gl
 export const glimpseOfShanghaiBreakProduct = {
   slug: detail.slug,
   places: ['Shanghai'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -3,7 +3,7 @@
 
 export const detail = {
   slug: 'luxor-strand-urlaub',
-  ctaHref: '/l/aegypten/enquiry/passengers/',
+  ctaHref: '/l/egypt/enquiry/passengers/',
   cta: 'Design Your Escape',
   sub: 'Your travel plan – non-binding & tailor-made',
   banner: 'Worry-free planning: stable flight prices for over a year, plus flexible rebooking and cancellation options.',
@@ -316,7 +316,7 @@ export const planner = {
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Africa', href: '/afrika/' },
-  { label: 'Egypt', href: '/afrika/aegypten/' },
+  { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Egypt Explorer: Pyramids, Nile & Red Sea Beach Retreat — Grand Luxury Edition' }
 ];
 

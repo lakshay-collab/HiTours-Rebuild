@@ -3,9 +3,9 @@ import { packages, cityImages } from '../laosPackages';
 import { vietnamLaosCambodiaTrioProduct } from './vietnamLaosCambodiaTrioData';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/laos/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/laos/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Noy", image: '/experts/riya.webp', role: 'Laos expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: "Laos", href: '/asien/laos' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: "Laos", href: '/asia/laos' }]
 });
 
 export const laosProducts = [...packages.map(toProduct), vietnamLaosCambodiaTrioProduct];

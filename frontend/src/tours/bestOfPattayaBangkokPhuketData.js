@@ -372,7 +372,7 @@ const glance = {
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Asia', href: '#' },
-  { label: 'Thailand', href: '/asien/thailand' },
+  { label: 'Thailand', href: '/asia/thailand' },
   { label: detail.title }
 ];
 
@@ -381,7 +381,7 @@ export const bestOfPattayaBangkokPhuketBySlug = { [detail.slug]: { detail, route
 export const bestOfPattayaBangkokPhuketProduct = {
   slug: detail.slug,
   places: stops.map((s) => s.name),
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

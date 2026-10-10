@@ -17,9 +17,9 @@ import { almatyNatureWondersYoungProduct } from './almatyNatureWondersYoungData'
 import { silkRoadTashkentSamarkandAlmatyProduct } from './silkRoadTashkentSamarkandAlmatyData';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/kazakhstan/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/kazakhstan/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Aisha Khan', image: '/experts/riya.webp', role: 'Kazakhstan expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Kazakhstan', href: '/asien/kazakhstan' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Kazakhstan', href: '/asia/kazakhstan' }]
 });
 
 export const kazakhstanProducts = [, almatyShortBreakShymbulakProduct, grandAlmatyCharynKolsaiProduct, almatyExplorerKokTobeIssykProduct, almatyWeekWithDelhiFlightsProduct, classicAlmatyWithDelhiFlightsProduct, almatyHighlightsWithDelhiFlightsProduct, sevenDaysAlmatyAltynEmelProduct, almatyAndBakuMountainsCaspianProduct, almatyAndBakuTufandagCableCarProduct, almatyBakuShahdagMountainsProduct, grandAlmatyBakuShekiProduct, almatyWinterGroupTourFlightsProduct, almatyNatureWondersYoungProduct, silkRoadTashkentSamarkandAlmatyProduct];

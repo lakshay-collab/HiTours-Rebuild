@@ -5,7 +5,7 @@ export const ADVENTURE_ID = 'start-your-next-adventure';
 export const WHY_ID = 'why-hi-tours';
 export const HOME_ADVENTURE_HREF = `/#${ADVENTURE_ID}`;
 const KEY = 'hi-from-home';
-const DEST_PREFIXES = ['/asien', '/europa', '/afrika', '/trip-styles', '/themes'];
+const DEST_PREFIXES = ['/asia', '/europe', '/afrika', '/trip-styles', '/themes'];
 
 const read = () => { try { return sessionStorage.getItem(KEY) === '1'; } catch { return false; } };
 export const markFromHome = () => { try { sessionStorage.setItem(KEY, '1'); } catch { /* noop */ } };

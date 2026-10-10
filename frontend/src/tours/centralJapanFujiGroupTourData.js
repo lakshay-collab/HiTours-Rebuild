@@ -335,8 +335,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -345,7 +345,7 @@ export const centralJapanFujiGroupTourBySlug = { [detail.slug]: { detail, route,
 export const centralJapanFujiGroupTourProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Kawaguchiko', 'Mount Fuji', 'Nagoya', 'Kyoto', 'Osaka'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

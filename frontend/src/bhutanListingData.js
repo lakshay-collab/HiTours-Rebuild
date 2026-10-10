@@ -9,8 +9,8 @@ const wide = (base, w) => `${base}&w=${w}`;
 
 export const destination = { name: 'Bhutan', continent: 'Asia', primary: ['Paro', 'Thimphu', 'Punakha', 'Bumthang'] };
 
-export const holidaysPath = '/asien/bhutan/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Bhutan', to: '/asien/bhutan' }, { label: 'Bhutan tours & holidays' }];
+export const holidaysPath = '/asia/bhutan/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Bhutan', to: '/asia/bhutan' }, { label: 'Bhutan tours & holidays' }];
 
 export const hero = {
   h1: 'Bhutan Honeymoons and holidays',
@@ -27,7 +27,7 @@ export const hero = {
   imageAlt: 'The Tiger’s Nest monastery clinging to a cliff above the Paro valley, Bhutan'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Bhutan' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Bhutan' }];
 
 export const intro = {
   h2: 'About Bhutan',
@@ -158,7 +158,7 @@ const asiaList = [
   ['Cambodia', ct('3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg')],
   ['Maldives', ct('3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg')]
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand', Malaysia: '/asien/malaysia', Singapore: '/asien/singapore', Kazakhstan: '/asien/kazakhstan' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand', Malaysia: '/asia/malaysia', Singapore: '/asia/singapore', Kazakhstan: '/asia/kazakhstan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const bhutan = {

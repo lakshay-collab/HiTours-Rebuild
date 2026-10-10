@@ -9,7 +9,7 @@ import { cardImages as pfImages } from './tours/pharaohsFeluccasData';
 import { cardImages as ndImages } from './tours/nileDarshanData';
 import { cardImages as nnImages } from './tours/nileNoorData';
 
-export const holidaysPath = '/afrika/aegypten/holidays';
+export const holidaysPath = '/africa/egypt/holidays';
 
 export const hero = {
   h1: 'Egypt Honeymoons and holidays',
@@ -26,7 +26,7 @@ export const hero = {
 export const trust = { label: 'Excellent', score: '4.8', outOf: 'out of 5', count: '5,000+', reviews: 'reviews', rating: 4.8 };
 
 export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Africa', href: '/africa/' }, { label: 'Egypt' }];
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Egypt', to: '/afrika/aegypten' }, { label: 'Egypt tours & holidays' }];
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Egypt', to: '/africa/egypt' }, { label: 'Egypt tours & holidays' }];
 
 export const styles = [
   { key: 'Family', slug: 'family', icon: 'family' },
@@ -93,7 +93,7 @@ export const products = [
   { slug: 'pharaohs-feluccas', places: ['Cairo', 'Giza', 'Luxor', 'Aswan', 'Abu Simbel'], tag: 'Luxury', styles: ['Luxury', 'Nile cruise', 'Culture'], title: 'Pharaohs & Feluccas: A Royal Egyptian Sojourn', days: 8, stops: 5, hotels: 2, cities: 5, activities: 17, transfers: 3, meals: 15, price: 382878, images: pfImages },
   { slug: 'nile-darshan', places: ['Cairo', 'Giza', 'Saqqara', 'Aswan', 'Luxor', 'Hurghada'], tag: 'Culture', styles: ['Culture', 'Beach', 'Family'], title: "Nile Darshan: Egypt's Royal Odyssey", days: 9, stops: 5, hotels: 4, cities: 6, activities: 25, transfers: 4, meals: 5, price: 99091, images: ndImages },
   { slug: 'nile-noor-cruise', places: ['Aswan', 'Kom Ombo', 'Edfu', 'Luxor'], tag: 'Nile cruise', styles: ['Nile cruise', 'Short trips'], title: 'Nile Noor: A Royal 4-Day Nile Cruise & Temple Trail', days: 4, stops: 4, hotels: 1, cities: 4, activities: 9, transfers: 2, meals: 9, price: 65486, images: nnImages }
-].map((p) => ({ ...p, alt: p.title, href: `/afrika/aegypten/${p.slug}/` }));
+].map((p) => ({ ...p, alt: p.title, href: `/africa/egypt/${p.slug}/` }));
 
 export const formatInr = (n) => `₹${n.toLocaleString('en-IN')}`;
 

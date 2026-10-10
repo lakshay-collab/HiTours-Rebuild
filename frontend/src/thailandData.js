@@ -19,7 +19,7 @@ export const detail = {
   slug: 'siam-splendour-thailand',
   region: 'asia',
   media: 'portrait',
-  listHref: '/asien',
+  listHref: '/asia',
   ctaHref: '/l/thailand/enquiry/passengers/',
   cta: 'Design Your Escape',
   sub: 'Your travel plan – no obligation & tailor-made',
@@ -164,7 +164,7 @@ export const glance = {
 
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Thailand', href: '/asien' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Thailand', href: '/asia' },
   { label: 'Siam Splendour' }
 ];

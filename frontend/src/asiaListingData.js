@@ -53,7 +53,7 @@ export const tours = {
 const P = (title, tag, days, cities, hotels, activities, transfers, price, alt, images) => ({ title, tag, days, stops: cities, cities, hotels, activities, transfers, price, alt, images });
 
 export const products = [
-  { title: 'Siam Splendour: 9-Day Thailand Odyssey', tag: 'Culture', days: 9, stops: 4, cities: 4, hotels: 3, activities: 14, transfers: 4, meals: 9, price: 63650, alt: 'Phi Phi Islands, Thailand', slug: 'siam-splendour-thailand', href: '/asien/thailand', images: thailandCardImages },
+  { title: 'Siam Splendour: 9-Day Thailand Odyssey', tag: 'Culture', days: 9, stops: 4, cities: 4, hotels: 3, activities: 14, transfers: 4, meals: 9, price: 63650, alt: 'Phi Phi Islands, Thailand', slug: 'siam-splendour-thailand', href: '/asia/thailand', images: thailandCardImages },
   srilankaProducts[0],
   P('Khao Lak holiday for beach lovers and adventurers', 'Culture', 22, 7, 7, 14, 12, 155700, 'Khao Lak, Thailand', [
     `${CT}/5Hm10TrqCIgW8kcP3h2twj/c76291902631d2211aaafd7f4b68c726/Thailand__Khao_Lak__Sandbank.jpg?w=1080&q=60&fm=webp`,
@@ -147,7 +147,7 @@ export const countries = {
   items: [
     { title: 'Laos', href: '#', image: `${CT}/730GUSsXgobNqsyerVaagA/c31524b81de30c8805073d4e2cabda93/Laos_Mekong_Boot.jpg?w=1080&q=60&fm=webp` },
     { title: 'Thailand', href: '#', image: `${CT}/27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg?w=1080&q=60&fm=webp` },
-    { title: 'Vietnam', href: '/asien/vietnam', image: `${CT}/6KpaBlYiRchxRrYsS84QgO/dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg?w=1080&q=60&fm=webp` },
+    { title: 'Vietnam', href: '/asia/vietnam', image: `${CT}/6KpaBlYiRchxRrYsS84QgO/dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg?w=1080&q=60&fm=webp` },
     { title: 'Japan', href: '#', image: `${CT}/5E91LAbIo29xmfzemwDnnu/082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg?w=1080&q=60&fm=webp` },
     { title: 'Indonesia', href: '#', image: `${CT}/61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png?w=1080&q=60&fm=webp` },
     { title: 'China', href: '#', image: `${CT}/3FwBvWPMIiVGThJdqClYD1/bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png?w=1080&q=60&fm=webp` },
@@ -156,7 +156,7 @@ export const countries = {
     { title: 'Maldives', href: '#', image: `${CT}/3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg?w=1080&q=60&fm=webp` },
     { title: 'Philippines', href: '#', image: `${CT}/1o2rtINxvG8y4nqhK5Bvgp/d09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png?w=1080&q=60&fm=webp` },
     { title: 'Singapore', href: '#', image: `${CT}/4B5tE96BHxRVFYUVJQibEE/efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg?w=1080&q=60&fm=webp` },
-    { title: 'Sri Lanka', href: '/asien/sri-lanka', image: `${CT}/6etzBcZlvbOLHqzCOq0NES/764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg?w=1080&q=60&fm=webp` },
+    { title: 'Sri Lanka', href: '/asia/sri-lanka', image: `${CT}/6etzBcZlvbOLHqzCOq0NES/764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg?w=1080&q=60&fm=webp` },
     { title: 'South Korea', href: '#', image: `${CT}/2eRk3wUlchhuTsWYZUzJVg/8b62f957e2292414759f5afd848a72b1/South_Korea-Roadtrip-1.jpg?w=1080&q=60&fm=webp` }
   ]
 };

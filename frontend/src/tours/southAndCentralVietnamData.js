@@ -271,8 +271,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -281,7 +281,7 @@ export const southAndCentralVietnamBySlug = { [detail.slug]: { detail, route, gl
 export const southAndCentralVietnamProduct = {
   slug: detail.slug,
   places: ['Ho Chi Minh City', 'Cu Chi', 'Mekong Delta', 'Da Nang', 'Hoi An', 'Ba Na Hills'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

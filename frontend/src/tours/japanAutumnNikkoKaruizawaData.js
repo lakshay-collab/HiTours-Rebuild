@@ -311,8 +311,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -321,7 +321,7 @@ export const japanAutumnNikkoKaruizawaBySlug = { [detail.slug]: { detail, route,
 export const japanAutumnNikkoKaruizawaProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Nikko', 'Takasaki', 'Karuizawa', 'Yudanaka', 'Matsumoto'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

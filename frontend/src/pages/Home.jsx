@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ADVENTURE_ID, trackDestinationClick, scrollToAdventure, scrollToSection, clearFromHome } from '../lib/homeReturn';
+import { usePageMeta } from '../lib/seo';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
@@ -19,6 +20,10 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   const { hash } = useLocation();
+  usePageMeta(
+    'Hi Tours | Tailor-made holidays & honeymoons',
+    'Hi Tours designs tailor-made holidays and honeymoons across Asia, Europe, Africa and the Indian Ocean, planned 1-to-1 with a destination expert.',
+  );
 
   useEffect(() => {
     clearFromHome();

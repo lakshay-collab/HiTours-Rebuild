@@ -453,8 +453,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Kazakhstan', href: '/asien/kazakhstan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }
 ];
 
@@ -463,7 +463,7 @@ export const silkRoadTashkentSamarkandAlmatyBySlug = { [detail.slug]: { detail, 
 export const silkRoadTashkentSamarkandAlmatyProduct = {
   slug: detail.slug,
   places: ['Tashkent', 'Samarkand', 'Astana', 'Almaty'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

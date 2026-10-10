@@ -331,8 +331,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -341,7 +341,7 @@ export const hongKongBaliHolidayBySlug = { [detail.slug]: { detail, route, glanc
 export const hongKongBaliHolidayProduct = {
   slug: detail.slug,
   places: ['Hong Kong', 'Ocean Park', 'Ubud', 'Kuta', 'Nusa Penida'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

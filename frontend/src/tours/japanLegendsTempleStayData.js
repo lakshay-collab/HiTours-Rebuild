@@ -691,8 +691,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -701,7 +701,7 @@ export const japanLegendsTempleStayBySlug = { [detail.slug]: { detail, route, gl
 export const japanLegendsTempleStayProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Kyoto', 'Nara', 'Osaka', 'Okayama', 'Hiroshima', 'Matsuyama', 'Kobe', 'Mount Koya'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -4,7 +4,7 @@ import EgyptHolidays from './EgyptHolidays';
 import { thailand } from '../thailandListingData';
 import { honeymoonVariant } from '../holidays/honeymoonVariant';
 
-export const thailandHoneymoonsPath = '/asien/thailand/honeymoons';
+export const thailandHoneymoonsPath = '/asia/thailand/honeymoons';
 
 export default function ThailandListing() {
   return <DestinationListing d={thailand} testId="thailand-listing-page" />;

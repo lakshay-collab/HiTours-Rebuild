@@ -247,7 +247,7 @@ const glance = {
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Asia', href: '#' },
-  { label: 'Singapore', href: '/asien/singapore' },
+  { label: 'Singapore', href: '/asia/singapore' },
   { label: detail.title }
 ];
 
@@ -256,7 +256,7 @@ export const romanticSingaporeNightSafariSentosaBySlug = { [detail.slug]: { deta
 export const romanticSingaporeNightSafariSentosaProduct = {
   slug: detail.slug,
   places: ['Singapore', 'Marina Bay', 'Sentosa'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

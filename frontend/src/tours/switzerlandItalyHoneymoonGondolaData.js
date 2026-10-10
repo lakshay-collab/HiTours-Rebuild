@@ -339,7 +339,7 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Europe', href: '/europa' },
+  { label: 'Europe', href: '/europe' },
   { label: detail.title }
 ];
 
@@ -348,7 +348,7 @@ export const switzerlandItalyHoneymoonGondolaBySlug = { [detail.slug]: { detail,
 export const switzerlandItalyHoneymoonGondolaProduct = {
   slug: detail.slug,
   places: ['Zurich', 'Milan', 'Venice'],
-  href: `/europa/${detail.slug}`,
+  href: `/europe/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

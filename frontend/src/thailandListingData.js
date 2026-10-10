@@ -9,8 +9,8 @@ const ct = (p) => `${CT}/${p}?w=1080&q=60&fm=webp`;
 
 export const destination = { name: 'Thailand', continent: 'Asia', primary: ['Bangkok', 'Chiang Mai', 'Phuket', 'Krabi'] };
 
-export const holidaysPath = '/asien/thailand/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Thailand', to: '/asien/thailand' }, { label: 'Thailand tours & holidays' }];
+export const holidaysPath = '/asia/thailand/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Thailand', to: '/asia/thailand' }, { label: 'Thailand tours & holidays' }];
 
 export const hero = {
   h1: 'Thailand Honeymoons and holidays',
@@ -27,7 +27,7 @@ export const hero = {
   imageAlt: 'Longtail boats on a turquoise Thai bay beneath limestone cliffs'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Thailand' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Thailand' }];
 
 export const intro = {
   h2: 'About Thailand',
@@ -61,7 +61,7 @@ export const tours = {
   readLess: 'Read less'
 };
 
-// Existing "Siam Splendour" Thailand package → product card that opens its EXISTING detail page (/asien/siam-splendour-thailand).
+// Existing "Siam Splendour" Thailand package → product card that opens its EXISTING detail page (/asia/siam-splendour-thailand).
 const siamProduct = {
   slug: siamDetail.slug,
   title: siamDetail.title,
@@ -78,7 +78,7 @@ const siamProduct = {
   price: siamDetail.price,
   alt: siamDetail.alt,
   images: siamCardImages,
-  href: `/asien/${siamDetail.slug}`
+  href: `/asia/${siamDetail.slug}`
 };
 
 export const products = [siamProduct, ...thailandProducts];
@@ -178,7 +178,7 @@ const asiaList = [
   ['Cambodia', ct('3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg')],
   ['Maldives', ct('3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg')]
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Malaysia: '/asien/malaysia', Singapore: '/asien/singapore', Kazakhstan: '/asien/kazakhstan', Bhutan: '/asien/bhutan' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Malaysia: '/asia/malaysia', Singapore: '/asia/singapore', Kazakhstan: '/asia/kazakhstan', Bhutan: '/asia/bhutan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const thailand = {

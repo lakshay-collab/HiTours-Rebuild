@@ -21,9 +21,9 @@ export const GROUPS = [
   {
     title: 'Regions',
     links: [
-      ['Asia', '/asien'],
-      ['Europe', '/europa'],
-      ['Europe multi-country holidays', '/europa/holidays']
+      ['Asia', '/asia'],
+      ['Europe', '/europe'],
+      ['Europe multi-country holidays', '/europe/holidays']
     ]
   },
   {
@@ -32,7 +32,7 @@ export const GROUPS = [
   },
   {
     title: 'SEO landing pages (not linked in navigation)',
-    links: [['Thailand honeymoon holidays', '/asien/thailand/honeymoons']]
+    links: [['Thailand honeymoon holidays', '/asia/thailand/honeymoons']]
   },
   {
     title: 'Trip styles',

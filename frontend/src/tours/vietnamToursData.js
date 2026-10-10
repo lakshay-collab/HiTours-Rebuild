@@ -135,9 +135,9 @@ return { toProduct, build };
 };
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/vietnam/enquiry/passengers/',
+  cityImages, base: '/asia', ctaHref: '/l/vietnam/enquiry/passengers/',
   expert: { name: 'Riya', image: '/experts/riya.webp', role: 'Vietnam expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Vietnam', href: '/asien/vietnam' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Vietnam', href: '/asia/vietnam' }]
 });
 export const vietnamProducts = [grandVietnamCambodiaThailandProduct, glimpseOfVietnamHanoiProduct, delightsOfVietnamCruiseProduct, bestOfHanoiNinhBinhBayProduct, hanoiAndHalongOnAJunkProduct, wondersOfVietnamSapaBayProduct, northernVietnamSapaNinhBinhProduct, hanoiSapaAndTheBayProduct, northVietnamHamRongTrekProduct, northVietnamSixDayCircuitProduct, vietnamBanGiocWaterfallsProduct, tasteNorthAndSouthVietnamProduct, bestSellingVietnamSixDaysProduct, exoticVietnamBaNaHoiAnProduct, vietnamExplorerThreeRegionsProduct, rediscoverVietnamCompleteProduct, rediscoverVietnamHoneymoonProduct, vietnamSightseeingPhongNhaProduct, getawayVietnamPhuQuocProduct, sixteenDaysAcrossVietnamProduct, luxuriousVietnamNhaTrangProduct, highlightsVietnamGroupTourProduct, vietnamGroupTourSouthNorthProduct, vietnameseDelightsGroupTourProduct, vietnameseOdysseyGroupTourProduct, southAndCentralVietnamProduct, vietnamRomanticEscapeIslandsProduct, getawayVietnamGrandWorldProduct, daNangHoiAnCoastalBreakProduct, vietnamFullCountryFortnightProduct, saigonAndTheDeltaBreakProduct, hanoiAndNhaTrangEscapeProduct, vietnamNorthSouthSevenDaysProduct, vietnamShortNorthSouthProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, glimpseVietnamSouthToNorthProduct, vietnamLaosCambodiaTrioProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];
 export const vietnamTours = packages.map(build);

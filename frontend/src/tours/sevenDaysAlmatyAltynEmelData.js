@@ -244,8 +244,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Kazakhstan', href: '/asien/kazakhstan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }
 ];
 
@@ -254,7 +254,7 @@ export const sevenDaysAlmatyAltynEmelBySlug = { [detail.slug]: { detail, route, 
 export const sevenDaysAlmatyAltynEmelProduct = {
   slug: detail.slug,
   places: ['Almaty', 'Charyn Canyon', 'Altyn Emel'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

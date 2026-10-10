@@ -602,8 +602,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -612,7 +612,7 @@ export const vietnamFullCountryFortnightBySlug = { [detail.slug]: { detail, rout
 export const vietnamFullCountryFortnightProduct = {
   slug: detail.slug,
   places: ['Hanoi', 'Sa Pa', 'Ninh Binh', 'Halong Bay', 'Da Nang', 'Phu Quoc', 'Ho Chi Minh City', 'Mui Ne'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -11,7 +11,7 @@ import Breadcrumb from '../components/Breadcrumb';
 import TrustLine from '../components/TrustLine';
 import { featured as t, egyptImages } from '../egyptData';
 
-const crumbs = [{ label: 'Destinations', to: '/' }, { label: 'Africa', to: '/' }, { label: 'Egypt', to: '/afrika/aegypten' }, { label: t.title }];
+const crumbs = [{ label: 'Destinations', to: '/' }, { label: 'Africa', to: '/' }, { label: 'Egypt', to: '/africa/egypt' }, { label: t.title }];
 const serviceIcons = { Accommodation: BedSingle, Transport: Bus, '24/7 support': Headphones, Activities: Ticket, 'Hi Tours App': Smartphone, Itinerary: Map, eSim: Signal, Flights: Plane };
 
 function PriceCard({ testId }) {
@@ -34,7 +34,7 @@ function PriceCard({ testId }) {
 export default function TourDetail() {
   const { slug } = useParams();
   const [active, setActive] = useState(0);
-  if (slug !== t.slug) return <Navigate to="/afrika/aegypten" replace />;
+  if (slug !== t.slug) return <Navigate to="/africa/egypt" replace />;
   const stop = t.stops[active];
 
   return (

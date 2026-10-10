@@ -318,8 +318,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Kazakhstan', href: '/asien/kazakhstan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }
 ];
 
@@ -328,7 +328,7 @@ export const almatyAndBakuTufandagCableCarBySlug = { [detail.slug]: { detail, ro
 export const almatyAndBakuTufandagCableCarProduct = {
   slug: detail.slug,
   places: ['Almaty', 'Baku', 'Gabala'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -237,7 +237,7 @@ export const glance = {
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Europe', href: '#' },
-  { label: 'Italy', href: '/europa/italy' },
+  { label: 'Italy', href: '/europe/italy' },
   { label: detail.title }
 ];
 

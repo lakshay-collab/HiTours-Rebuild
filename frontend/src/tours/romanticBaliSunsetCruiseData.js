@@ -273,8 +273,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -283,7 +283,7 @@ export const romanticBaliSunsetCruiseBySlug = { [detail.slug]: { detail, route, 
 export const romanticBaliSunsetCruiseProduct = {
   slug: detail.slug,
   places: ['Kuta', 'Uluwatu', 'Tanjung Benoa', 'Seminyak'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

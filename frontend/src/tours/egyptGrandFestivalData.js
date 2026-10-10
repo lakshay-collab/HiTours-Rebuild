@@ -140,6 +140,6 @@ export const glance = {
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Africa', href: '/afrika/' },
-  { label: 'Egypt', href: '/afrika/aegypten/' },
+  { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Egypt Grand Festival: Pyramids, Sphinx & the Mediterranean Coast' }
 ];

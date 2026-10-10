@@ -16,6 +16,7 @@ import ReelGallery from '../components/egypt/ReelGallery';
 import { vietnamBySlug } from '../tours/vietnamToursData';
 import DesignEscapeModal from '../components/egypt/DesignEscapeModal';
 import { usePageLead } from '../components/egypt/LeadModalProvider';
+import { usePageMeta } from '../lib/seo';
 import { products as vietnamProducts, planner as vietnamPlanner, reviews as vietnamReviews } from '../vietnamListingData';
 import { planner as srilankaPlanner, reviews as srilankaReviews, products as srilankaProducts } from '../srilankaListingData';
 import { srilankaBySlug } from '../tours/srilankaToursData';
@@ -189,9 +190,9 @@ const Crumbs = ({ crumbs }) => (
         <li key={c.label} className="flex items-center gap-1 min-w-0">
           {i > 0 && <ChevronRight size={18} className="text-[#6F777C] shrink-0" />}
           {c.href
-            ? (c.href.startsWith('/afrika/aegypten')
-                ? <Link to="/afrika/aegypten" className="eg-body-md text-[#174358] hover:underline">{c.label}</Link>
-                : (c.href === '/asien' || c.href === '/asien/vietnam' || c.href === '/asien/sri-lanka')
+            ? (c.href.startsWith('/africa/egypt')
+                ? <Link to="/africa/egypt" className="eg-body-md text-[#174358] hover:underline">{c.label}</Link>
+                : (c.href === '/asia' || c.href === '/asia/vietnam' || c.href === '/asia/sri-lanka')
                   ? <Link to={c.href} className="eg-body-md text-[#174358] hover:underline">{c.label}</Link>
                   : <a href={c.href} onClick={stop} className="eg-body-md text-[#174358] hover:underline">{c.label}</a>)
             : <span className="eg-label-lg text-[#002131] truncate max-w-[220px] sm:max-w-none">{c.label}</span>}
@@ -418,7 +419,13 @@ export default function EgyptDetail() {
   const data = BY_SLUG[slug];
   const dest = data ? destinationFor(data.detail) : null;
   usePageLead(dest?.name || '', data?.detail.gallery?.[0], data?.detail.alt);
-  if (!data) return <Navigate to="/afrika/aegypten" replace />;
+  usePageMeta(
+    data ? `${data.detail.title} | Hi Tours` : undefined,
+    data
+      ? `${data.detail.title} – a tailor-made ${data.detail.days} itinerary${dest?.name ? ` in ${dest.name}` : ''} with hand-picked hotels, private transfers and 24/7 support. Plan it 1-to-1 with a Hi Tours expert.`
+      : undefined,
+  );
+  if (!data) return <Navigate to="/africa/egypt" replace />;
   const { detail, route, glance, crumbs } = data;
   const inr = formatInr(detail.price);
   return (

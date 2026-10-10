@@ -468,8 +468,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -478,7 +478,7 @@ export const journeyNorthTohokuHokkaidoBySlug = { [detail.slug]: { detail, route
 export const journeyNorthTohokuHokkaidoProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Nikko', 'Sendai', 'Matsushima', 'Morioka', 'Hirosaki', 'Hakodate', 'Sapporo'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

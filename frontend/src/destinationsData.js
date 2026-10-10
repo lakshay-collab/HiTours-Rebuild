@@ -5,8 +5,8 @@ export const destinationTabs = ['Top 10', 'Asia', 'Europe', 'Middle East'];
 // Previously also: 'Africa', 'Central America', 'North America', 'Oceania', 'South America', 'South Seas' – hidden, data kept below.
 export const continentMeta = {
   'Top 10': { src: img('3hsuR5UvfamJlqKCTM81Ii', 'b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg'), tagline: 'Our most loved destinations right now', href: null },
-  Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Beaches, temples and city breaks', href: '/asien' },
-  Europe: { src: '/europe/hero-paris.webp', tagline: 'Two or three countries in one holiday', href: '/europa' },
+  Asia: { src: '/srilanka-packages/glimpses-of-sri-lanka-8-days-tour/g1.webp', tagline: 'Beaches, temples and city breaks', href: '/asia' },
+  Europe: { src: '/europe/hero-paris.webp', tagline: 'Two or three countries in one holiday', href: '/europe' },
   'Middle East': { src: '/destinations/jordan.webp', tagline: 'Pyramids, Petra and the Dubai skyline', href: null }
 };
 

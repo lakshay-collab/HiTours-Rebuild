@@ -333,8 +333,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -343,7 +343,7 @@ export const grandBaliCouplesNusaPenidaBySlug = { [detail.slug]: { detail, route
 export const grandBaliCouplesNusaPenidaProduct = {
   slug: detail.slug,
   places: ['Kuta', 'Uluwatu', 'Nusa Penida', 'Ubud', 'Kintamani'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

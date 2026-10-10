@@ -17,8 +17,8 @@ const IMG = {
 
 export const destination = { name: 'South Korea', continent: 'Asia', primary: ['Seoul', 'Busan', 'Jeju', 'Gyeongju'] };
 
-export const holidaysPath = '/asien/south-korea/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'South Korea', to: '/asien/south-korea' }, { label: 'South Korea tours & holidays' }];
+export const holidaysPath = '/asia/south-korea/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'South Korea', to: '/asia/south-korea' }, { label: 'South Korea tours & holidays' }];
 
 export const hero = {
   h1: 'South Korea Honeymoons and holidays',
@@ -34,7 +34,7 @@ export const hero = {
   imageAlt: 'Gyeongbokgung palace below the mountains in Seoul, South Korea'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'South Korea' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'South Korea' }];
 
 export const intro = {
   h2: 'About South Korea',
@@ -166,7 +166,7 @@ const asiaList = [
   ['Sri Lanka', ct('6etzBcZlvbOLHqzCOq0NES/764d862634b04fbcd521a3ad01740f1d/iStock-1779897953.jpg')],
   ['Bhutan', un('photo-1638246439638-b37095b34879')]
 ];
-const ASIA_HREF = { Japan: '/asien/japan', Thailand: '/asien/thailand', Vietnam: '/asien/vietnam', Singapore: '/asien/singapore', Indonesia: '/asien/indonesia', Malaysia: '/asien/malaysia', Maldives: '/asien/maldives', 'Sri Lanka': '/asien/sri-lanka', Bhutan: '/asien/bhutan' };
+const ASIA_HREF = { Japan: '/asia/japan', Thailand: '/asia/thailand', Vietnam: '/asia/vietnam', Singapore: '/asia/singapore', Indonesia: '/asia/indonesia', Malaysia: '/asia/malaysia', Maldives: '/asia/maldives', 'Sri Lanka': '/asia/sri-lanka', Bhutan: '/asia/bhutan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const southKorea = {

@@ -6,7 +6,7 @@ import { families } from '../egyptData';
 function ProductCard({ p }) {
   const [i, setI] = useState(0);
   const n = p.images.length;
-  const to = p.detail ? `/afrika/aegypten/${p.slug}` : '/afrika/aegypten';
+  const to = p.detail ? `/africa/egypt/${p.slug}` : '/africa/egypt';
   const go = (e, d) => { e.preventDefault(); setI((v) => (v + d + n) % n); };
   return (
     <li>

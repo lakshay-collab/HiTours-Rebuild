@@ -335,8 +335,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'China', href: '/asien/china' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'China', href: '/asia/china' },
   { label: detail.title }
 ];
 
@@ -345,7 +345,7 @@ export const highlightsOfChinaThreeCitiesBySlug = { [detail.slug]: { detail, rou
 export const highlightsOfChinaThreeCitiesProduct = {
   slug: detail.slug,
   places: ['Shanghai', 'Xi\'an', 'Beijing'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

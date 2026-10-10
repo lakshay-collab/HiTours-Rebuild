@@ -136,6 +136,6 @@ export const glance = {
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Africa', href: '/afrika/' },
-  { label: 'Egypt', href: '/afrika/aegypten/' },
+  { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Misr Maya: Cairo, Aswan & Luxor with a 5-Star Nile Cruise' }
 ];

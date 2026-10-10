@@ -334,8 +334,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Bhutan', href: '/asien/bhutan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Bhutan', href: '/asia/bhutan' },
   { label: detail.title }
 ];
 
@@ -344,7 +344,7 @@ export const exclusiveTripToBhutanBySlug = { [detail.slug]: { detail, route, gla
 export const exclusiveTripToBhutanProduct = {
   slug: detail.slug,
   places: ['Phuentsholing', 'Thimphu', 'Paro'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

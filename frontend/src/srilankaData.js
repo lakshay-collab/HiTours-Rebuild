@@ -41,7 +41,7 @@ export const cardImages = [S1, T3, Y2, B2];
 export const detail = {
   slug: 'emerald-isle-explorer-sri-lanka',
   region: 'asia',
-  listHref: '/asien',
+  listHref: '/asia',
   ctaHref: '/l/sri-lanka/enquiry/passengers/',
   cta: 'Design Your Escape',
   sub: 'Your travel plan – no obligation & tailor-made',
@@ -229,7 +229,7 @@ export const glance = {
 
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Sri Lanka', href: '/asien' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Sri Lanka', href: '/asia' },
   { label: 'Emerald Isle Explorer' }
 ];

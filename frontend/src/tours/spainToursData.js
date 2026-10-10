@@ -2,9 +2,9 @@ import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../spainPackages';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/europa', ctaHref: '/l/spain/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/europe', ctaHref: '/l/spain/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Carmen", image: '/experts/riya.webp', role: 'Spain expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Spain", href: '/europa/spain' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Spain", href: '/europe/spain' }]
 });
 
 export const spainProducts = packages.map(toProduct);

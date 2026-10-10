@@ -275,8 +275,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -285,7 +285,7 @@ export const romanticBaliNusaPenidaBySlug = { [detail.slug]: { detail, route, gl
 export const romanticBaliNusaPenidaProduct = {
   slug: detail.slug,
   places: ['Ubud', 'Kintamani', 'Kuta', 'Uluwatu', 'Nusa Penida'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

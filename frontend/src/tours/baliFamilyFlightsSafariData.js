@@ -255,8 +255,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -265,7 +265,7 @@ export const baliFamilyFlightsSafariBySlug = { [detail.slug]: { detail, route, g
 export const baliFamilyFlightsSafariProduct = {
   slug: detail.slug,
   places: ['Kuta', 'Bedugul', 'Bali Safari', 'Ubud', 'Kintamani'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

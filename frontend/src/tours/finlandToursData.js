@@ -2,9 +2,9 @@ import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../finlandPackages';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/europa', ctaHref: '/l/finland/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/europe', ctaHref: '/l/finland/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Aino", image: '/experts/riya.webp', role: 'Finland expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Finland", href: '/europa/finland' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Finland", href: '/europe/finland' }]
 });
 
 export const finlandProducts = packages.map(toProduct);

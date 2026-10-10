@@ -278,8 +278,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -288,7 +288,7 @@ export const baliHoneymoonSwingAndSafariBySlug = { [detail.slug]: { detail, rout
 export const baliHoneymoonSwingAndSafariProduct = {
   slug: detail.slug,
   places: ['Ubud', 'Bedugul', 'Kuta', 'Uluwatu', 'Nusa Penida'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

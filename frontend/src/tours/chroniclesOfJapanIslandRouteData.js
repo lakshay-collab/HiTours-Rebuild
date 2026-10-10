@@ -665,8 +665,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -675,7 +675,7 @@ export const chroniclesOfJapanIslandRouteBySlug = { [detail.slug]: { detail, rou
 export const chroniclesOfJapanIslandRouteProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Kawaguchiko', 'Kyoto', 'Nara', 'Osaka', 'Okayama', 'Hiroshima', 'Matsuyama', 'Kobe'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

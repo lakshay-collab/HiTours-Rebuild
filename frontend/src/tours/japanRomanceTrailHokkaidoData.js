@@ -337,8 +337,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -347,7 +347,7 @@ export const japanRomanceTrailHokkaidoBySlug = { [detail.slug]: { detail, route,
 export const japanRomanceTrailHokkaidoProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Mount Fuji', 'Sapporo', 'Furano', 'Biei', 'Lake Toya', 'Osaka'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

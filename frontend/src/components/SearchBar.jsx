@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { hero } from '../mock';
 import { destinations } from '../destinationsData';
 
-const ROUTES = { 'Egypt': '/afrika/aegypten', 'Asia': '/asien', 'Europe': '/europa', 'Vietnam': '/asien/vietnam', 'Thailand': '/asien/thailand', 'Sri Lanka': '/asien/sri-lanka', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "South Korea": '/asien/south-korea', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
+const ROUTES = { 'Egypt': '/africa/egypt', 'Asia': '/asia', 'Europe': '/europe', 'Vietnam': '/asia/vietnam', 'Thailand': '/asia/thailand', 'Sri Lanka': '/asia/sri-lanka', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', 'Maldives': '/asia/maldives', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "Philippines": '/asia/philippines', "South Korea": '/asia/south-korea', "Iceland": '/europe/iceland', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Spain": '/europe/spain', "Portugal": '/europe/portugal', "Croatia": '/europe/croatia', "England": '/europe/england', "Scotland": '/europe/scotland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
 const ASIA_IMG = 'https://images.ctfassets.net/bth3mlrehms2/27MnAH4RS1zTSFygAmnq5i/97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg?w=160&q=60&fm=webp';
 const EUROPE_IMG = '/europe/hero-paris.webp';
 const BALI_IMG = 'https://images.ctfassets.net/bth3mlrehms2/61b5ymnc76Gat5QEm4R7Uv/236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png?w=160&q=60&fm=webp';
 // Island and region names people search for that sit inside a country page.
-const REGIONS = [{ name: 'Bali', src: BALI_IMG, to: '/asien/indonesia', kind: 'destination' }];
+const REGIONS = [{ name: 'Bali', src: BALI_IMG, to: '/asia/indonesia', kind: 'destination' }];
 // Extra words a country should also match on, so 'Bali' finds Indonesia too.
 // Europe carries the countries that have no page of their own yet, so 'Switzerland' or 'Paris'
 // still lands the searcher on the continent page where those trips are listed.
@@ -20,17 +20,17 @@ const ALIASES = new Map([
 
 const STYLES = [
   { name: 'Northern Lights', icon: Sparkles, to: '/trip-styles/northern-lights' },
-  { name: 'Honeymoons', icon: Heart, to: '/afrika/aegypten/holidays/honeymoon' },
-  { name: 'Family holidays', icon: Users, to: '/afrika/aegypten/holidays/family' },
+  { name: 'Honeymoons', icon: Heart, to: '/africa/egypt/holidays/honeymoon' },
+  { name: 'Family holidays', icon: Users, to: '/africa/egypt/holidays/family' },
   { name: 'Road trips', icon: Car },
   { name: 'Safari', icon: Binoculars },
-  { name: 'Beach & relaxation', icon: Umbrella, to: '/afrika/aegypten/holidays/beach' },
+  { name: 'Beach & relaxation', icon: Umbrella, to: '/africa/egypt/holidays/beach' },
   { name: 'Adventure', icon: Mountain },
   { name: 'Island hopping', icon: TreePalm },
-  { name: 'Culture', icon: Landmark, to: '/afrika/aegypten/holidays/culture' },
-  { name: 'Luxury', icon: Gem, to: '/afrika/aegypten/holidays/luxury' },
-  { name: 'Nile cruise', icon: Sailboat, to: '/afrika/aegypten/holidays/nile-cruise' },
-  { name: 'Short trips', icon: Timer, to: '/afrika/aegypten/holidays/short-trips' }
+  { name: 'Culture', icon: Landmark, to: '/africa/egypt/holidays/culture' },
+  { name: 'Luxury', icon: Gem, to: '/africa/egypt/holidays/luxury' },
+  { name: 'Nile cruise', icon: Sailboat, to: '/africa/egypt/holidays/nile-cruise' },
+  { name: 'Short trips', icon: Timer, to: '/africa/egypt/holidays/short-trips' }
 ].map((s) => ({ ...s, kind: 'style' }));
 
 const PROMPTS = [
@@ -46,8 +46,8 @@ function buildDestinations() {
       map.set(d.name, { name: d.name, src: d.src, to: ROUTES[d.name], kind: 'destination' });
     });
   });
-  map.set('Asia', { name: 'Asia', src: ASIA_IMG, to: '/asien', kind: 'destination' });
-  map.set('Europe', { name: 'Europe', src: EUROPE_IMG, to: '/europa', kind: 'destination' });
+  map.set('Asia', { name: 'Asia', src: ASIA_IMG, to: '/asia', kind: 'destination' });
+  map.set('Europe', { name: 'Europe', src: EUROPE_IMG, to: '/europe', kind: 'destination' });
   REGIONS.forEach((r) => map.set(r.name, r));
   ALIASES.forEach((alias, name) => { const d = map.get(name); if (d) map.set(name, { ...d, alias }); });
   return [...map.values()].sort((a, b) => a.name.localeCompare(b.name));

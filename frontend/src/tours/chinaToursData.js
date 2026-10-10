@@ -18,9 +18,9 @@ import { grandChinaYangtzeCruiseProduct } from './grandChinaYangtzeCruiseData';
 import { bestOfChinaAndJapanGrandTourProduct } from './bestOfChinaAndJapanGrandTourData';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/china/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/china/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Mei", image: '/experts/riya.webp', role: 'China expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: "China", href: '/asien/china' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: "China", href: '/asia/china' }]
 });
 
 export const chinaProducts = [glimpseOfShanghaiBreakProduct, ancientWondersBeijingProduct, highlightsOfBeijingShortProduct, glimpseOfBeijingUniversalProduct, grandShanghaiDisneylandHolidayProduct, classicShanghaiGreatWallBreakProduct, highlightsOfShanghaiDisneylandProduct, bestOfShanghaiDisneyAndWallProduct, bestOfBeijingWallAndUniversalProduct, discoverBeijingShortBreakProduct, gemsOfChinaShanghaiXianProduct, bestOfChinaGoldenTriangleProduct, discoverChinaBeijingShanghaiProduct, highlightsOfChinaThreeCitiesProduct, grandChinaYangtzeCruiseProduct, bestOfChinaAndJapanGrandTourProduct];

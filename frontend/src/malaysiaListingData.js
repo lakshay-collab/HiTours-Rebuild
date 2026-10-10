@@ -7,8 +7,8 @@ const ct = (p) => `${CT}/${p}?w=1080&q=60&fm=webp`;
 
 export const destination = { name: 'Malaysia', continent: 'Asia', primary: ['Kuala Lumpur', 'Penang', 'Langkawi', 'Borneo'] };
 
-export const holidaysPath = '/asien/malaysia/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Malaysia', to: '/asien/malaysia' }, { label: 'Malaysia tours & holidays' }];
+export const holidaysPath = '/asia/malaysia/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Malaysia', to: '/asia/malaysia' }, { label: 'Malaysia tours & holidays' }];
 
 export const hero = {
   h1: 'Malaysia Honeymoons and holidays',
@@ -25,7 +25,7 @@ export const hero = {
   imageAlt: 'The Petronas Twin Towers lit up above the Kuala Lumpur skyline, Malaysia'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Malaysia' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Malaysia' }];
 
 export const intro = {
   h2: 'About Malaysia',
@@ -156,7 +156,7 @@ const asiaList = [
   ['Cambodia', ct('3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg')],
   ['Philippines', ct('1o2rtINxvG8y4nqhK5Bvgp/d09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png')]
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand', Singapore: '/asien/singapore' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand', Singapore: '/asia/singapore' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const malaysia = {

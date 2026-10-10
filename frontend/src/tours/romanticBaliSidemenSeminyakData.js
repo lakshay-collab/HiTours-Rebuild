@@ -280,8 +280,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -290,7 +290,7 @@ export const romanticBaliSidemenSeminyakBySlug = { [detail.slug]: { detail, rout
 export const romanticBaliSidemenSeminyakProduct = {
   slug: detail.slug,
   places: ['Sidemen', 'Tirta Gangga', 'Seminyak', 'Nusa Penida', 'Uluwatu'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

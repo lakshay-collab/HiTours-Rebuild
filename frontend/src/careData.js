@@ -9,7 +9,7 @@ export const hero = {
   h1: 'Hi Tours Care',
   sub: 'Flexible rebooking and cancellation options',
   cta: 'Plan for free',
-  ctaHref: '/asien',
+  ctaHref: '/asia',
   note: 'Your tailor-made itinerary – no cost, no commitment'
 };
 
@@ -82,5 +82,5 @@ export const cta = {
   title: 'Start your flexible booking',
   text: 'Plan your next Hi Tours holiday without any worries',
   button: 'Plan for free',
-  href: '/asien'
+  href: '/asia'
 };

@@ -476,8 +476,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Bhutan', href: '/asien/bhutan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Bhutan', href: '/asia/bhutan' },
   { label: detail.title }
 ];
 
@@ -486,7 +486,7 @@ export const bhutanSikkimAndDarjeelingBySlug = { [detail.slug]: { detail, route,
 export const bhutanSikkimAndDarjeelingProduct = {
   slug: detail.slug,
   places: ['Phuentsholing', 'Thimphu', 'Paro', 'Gangtok', 'Darjeeling'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

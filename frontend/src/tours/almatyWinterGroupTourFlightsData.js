@@ -213,8 +213,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Kazakhstan', href: '/asien/kazakhstan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }
 ];
 
@@ -223,7 +223,7 @@ export const almatyWinterGroupTourFlightsBySlug = { [detail.slug]: { detail, rou
 export const almatyWinterGroupTourFlightsProduct = {
   slug: detail.slug,
   places: ['Almaty', 'Medeu', 'Almarasan'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

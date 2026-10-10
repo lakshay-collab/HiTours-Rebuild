@@ -466,8 +466,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -476,7 +476,7 @@ export const thailandCambodiaVietnamTenBySlug = { [detail.slug]: { detail, route
 export const thailandCambodiaVietnamTenProduct = {
   slug: detail.slug,
   places: ['Phuket', 'Phi Phi', 'Bangkok', 'Phnom Penh', 'Siem Reap', 'Tonle Sap', 'Angkor Wat', 'Hanoi', 'Ninh Binh'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

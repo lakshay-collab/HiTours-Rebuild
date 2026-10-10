@@ -138,6 +138,6 @@ export const glance = {
 export const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Africa', href: '/afrika/' },
-  { label: 'Egypt', href: '/afrika/aegypten/' },
+  { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Misr Ka Jaadu: Pyramids, Nile Cruise & the World of the Pharaohs' }
 ];

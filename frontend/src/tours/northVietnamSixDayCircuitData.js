@@ -380,8 +380,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -390,7 +390,7 @@ export const northVietnamSixDayCircuitBySlug = { [detail.slug]: { detail, route,
 export const northVietnamSixDayCircuitProduct = {
   slug: detail.slug,
   places: ['Hanoi', 'Sa Pa', 'Halong Bay'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

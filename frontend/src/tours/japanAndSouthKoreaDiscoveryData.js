@@ -448,8 +448,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -458,7 +458,7 @@ export const japanAndSouthKoreaDiscoveryBySlug = { [detail.slug]: { detail, rout
 export const japanAndSouthKoreaDiscoveryProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Mount Fuji', 'Disneyland', 'Osaka', 'Kyoto', 'Nara', 'Busan', 'Seoul'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

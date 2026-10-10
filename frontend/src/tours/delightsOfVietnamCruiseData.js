@@ -299,8 +299,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -309,7 +309,7 @@ export const delightsOfVietnamCruiseBySlug = { [detail.slug]: { detail, route, g
 export const delightsOfVietnamCruiseProduct = {
   slug: detail.slug,
   places: ['Hanoi', 'Halong Bay', 'Ninh Binh'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -366,8 +366,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -376,7 +376,7 @@ export const cherryBlossomTrailsJapanBySlug = { [detail.slug]: { detail, route, 
 export const cherryBlossomTrailsJapanProduct = {
   slug: detail.slug,
   places: ['Osaka', 'Hiroshima', 'Miyajima', 'Kyoto', 'Nagoya', 'Hakone', 'Tokyo'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

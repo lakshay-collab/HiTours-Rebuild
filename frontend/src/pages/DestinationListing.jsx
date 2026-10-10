@@ -5,6 +5,7 @@ import EgyptHero, { ScrollTop } from '../components/egypt/EgyptHero';
 import EgyptProductCard from '../components/egypt/EgyptProductCard';
 import { MobileToursBars, SortPill, priceSortFns } from '../components/egypt/EgyptFilterBar';
 import { usePageLead } from '../components/egypt/LeadModalProvider';
+import { usePageMeta } from '../lib/seo';
 import EgyptPlanner from '../components/egypt/EgyptPlanner';
 import EgyptTileRow, { EgyptTile } from '../components/egypt/EgyptTileRow';
 import { EgyptReviews, EgyptPlan, EgyptFaq } from '../components/egypt/EgyptSections';
@@ -49,6 +50,7 @@ export default function DestinationListing({ d, testId = 'egypt-listing-page' })
   const [leaving, setLeaving] = useState(false);
   const navigate = useNavigate();
   useEffect(() => { document.title = d.pageTitle; }, [d.pageTitle]);
+  usePageMeta(d.pageTitle, intro?.text?.slice(0, 300));
   usePageLead(crumbs[crumbs.length - 1].label, hero.image, hero.imageAlt);
   const [sort, setSort] = useState(null);
   const top = useMemo(() => (sort ? [...products].sort(priceSortFns[sort]) : products).slice(0, 6), [products, sort]);

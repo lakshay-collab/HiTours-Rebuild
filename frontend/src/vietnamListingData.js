@@ -9,8 +9,8 @@ const ct2 = (p) => `${CT2}/${p}?w=1080&q=60&fm=webp`;
 
 export const destination = { name: 'Vietnam', continent: 'Asia', primary: ['Hanoi', 'Ho Chi Minh City', 'Ha Long Bay', 'Da Nang'] };
 
-export const holidaysPath = '/asien/vietnam/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Vietnam', to: '/asien/vietnam' }, { label: 'Vietnam tours & holidays' }];
+export const holidaysPath = '/asia/vietnam/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Vietnam', to: '/asia/vietnam' }, { label: 'Vietnam tours & holidays' }];
 
 export const hero = {
   h1: 'Vietnam Honeymoons and holidays',
@@ -27,7 +27,7 @@ export const hero = {
   imageAlt: 'Traditional boats between limestone karsts, Ha Long Bay, Vietnam'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Vietnam' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Vietnam' }];
 
 export const intro = {
   h2: 'About Vietnam',
@@ -159,7 +159,7 @@ const asiaList = [
   ['Singapore', ct('4B5tE96BHxRVFYUVJQibEE/efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg')],
   ['Philippines', ct('1o2rtINxvG8y4nqhK5Bvgp/d09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png')]
 ];
-const ASIA_HREF = { 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand' };
+const ASIA_HREF = { 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const vietnam = {

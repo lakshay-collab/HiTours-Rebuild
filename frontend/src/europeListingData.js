@@ -10,8 +10,8 @@ const ct2 = (p) => `${CT2}/${p}?w=1080&q=60&fm=webp`;
 
 export const destination = { name: 'Europe', continent: 'Europe', primary: ['Paris', 'Swiss Alps', 'Rome', 'Venice'] };
 
-export const holidaysPath = '/europa/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Europe', to: '/europa' }, { label: 'Europe multi-country holidays' }];
+export const holidaysPath = '/europe/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Europe', to: '/europe' }, { label: 'Europe multi-country holidays' }];
 
 export const hero = {
   h1: 'Europe. One Journey. Multiple Countries.',
@@ -131,7 +131,7 @@ export const faq = {
   items: [
     { q: 'How many countries can I combine in one Europe trip?', a: [
       'Two to four works best. Two countries fit comfortably in 8 to 10 nights, three in 10 to 13 and four if you have two weeks or more. Your specialist will tell you honestly when a route is too rushed and suggest what to drop.',
-      ['See our ', ['Europe multi-country holidays', '/europa/holidays'], ' for routes that already work.']
+      ['See our ', ['Europe multi-country holidays', '/europe/holidays'], ' for routes that already work.']
     ] },
     { q: 'How do we travel between countries?', a: [
       'Mostly by high speed and scenic rail, which beats flying on most European routes once you count airport time. Private transfers meet you at each station. Where a flight or ferry saves hours, for example Venice to Paris or Santorini to Naples, we book that instead.'
@@ -159,7 +159,7 @@ const europeList = [
   ['Ireland', ct('W4uVx0uUt86jnByPHjutE/306e7fb7b3d77e101f5fbde7cb9cab1d/Irland_CliffsofMoher-2.jpg')],
   ['Scotland', ct('6Ypj2Qd3m3jQk6ygmpsNAM/076740049ff3bf1df0f025d0547d4d90/Schottland_Burg.png')]
 ];
-export const related = { h2: 'Single-country Europe holidays', items: europeList.map(([title, image]) => ({ title, alt: title, tag: null, href: `/europa/${title.toLowerCase()}`, image })) };
+export const related = { h2: 'Single-country Europe holidays', items: europeList.map(([title, image]) => ({ title, alt: title, tag: null, href: `/europe/${title.toLowerCase()}`, image })) };
 
 export const europe = {
   pageTitle: 'Europe multi-country holidays | Hi Tours',

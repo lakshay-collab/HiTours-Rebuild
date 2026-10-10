@@ -413,8 +413,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'South Korea', href: '/asien/south-korea' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'South Korea', href: '/asia/south-korea' },
   { label: detail.title }
 ];
 
@@ -423,7 +423,7 @@ export const koreaJapanHiroshimaGetawayBySlug = { [detail.slug]: { detail, route
 export const koreaJapanHiroshimaGetawayProduct = {
   slug: detail.slug,
   places: ['Seoul', 'Osaka', 'Kyoto', 'Nara', 'Hiroshima', 'Miyajima', 'Tokyo', 'Mount Fuji'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

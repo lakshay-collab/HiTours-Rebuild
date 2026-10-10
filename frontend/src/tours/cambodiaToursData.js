@@ -11,9 +11,9 @@ import { cambodiaAndVietnamTenDaysProduct } from './cambodiaAndVietnamTenDaysDat
 import { indochinaAndThailandGrandProduct } from './indochinaAndThailandGrandData';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/cambodia/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/cambodia/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Sopheak", image: '/experts/riya.webp', role: 'Cambodia expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: "Cambodia", href: '/asien/cambodia' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: "Cambodia", href: '/asia/cambodia' }]
 });
 
 export const cambodiaProducts = [...packages.map(toProduct), grandVietnamCambodiaThailandProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];

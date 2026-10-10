@@ -49,8 +49,8 @@ export const europeSingle = {
   h2: 'Prefer one country at a time?',
   text: 'Our single country Europe collections are here too.',
   items: [
-    ['Italy', '/europa/italy'], ['Greece', '/europa/greece'], ['Spain', '/europa/spain'], ['Portugal', '/europa/portugal'], ['Iceland', '/europa/iceland'],
-    ['Croatia', '/europa/croatia'], ['Norway', '/europa/norway'], ['Ireland', '/europa/ireland'], ['England', '/europa/england'], ['Scotland', '/europa/scotland']
+    ['Italy', '/europe/italy'], ['Greece', '/europe/greece'], ['Spain', '/europe/spain'], ['Portugal', '/europe/portugal'], ['Iceland', '/europe/iceland'],
+    ['Croatia', '/europe/croatia'], ['Norway', '/europe/norway'], ['Ireland', '/europe/ireland'], ['England', '/europe/england'], ['Scotland', '/europe/scotland']
   ]
 };
 

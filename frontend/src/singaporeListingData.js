@@ -16,8 +16,8 @@ const TWILIGHT = un('photo-1496939376851-89342e90adcd');
 
 export const destination = { name: 'Singapore', continent: 'Asia', primary: ['Marina Bay', 'Gardens by the Bay', 'Sentosa', 'Chinatown'] };
 
-export const holidaysPath = '/asien/singapore/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Singapore', to: '/asien/singapore' }, { label: 'Singapore tours & holidays' }];
+export const holidaysPath = '/asia/singapore/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Singapore', to: '/asia/singapore' }, { label: 'Singapore tours & holidays' }];
 
 export const hero = {
   h1: 'Singapore Honeymoons and holidays',
@@ -34,7 +34,7 @@ export const hero = {
   imageAlt: 'Marina Bay Sands and the Singapore skyline reflected in the bay at dusk'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Singapore' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Singapore' }];
 
 export const intro = {
   h2: 'About Singapore',
@@ -165,7 +165,7 @@ const asiaList = [
   ['Cambodia', ct('3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg')],
   ['Philippines', ct('1o2rtINxvG8y4nqhK5Bvgp/d09a493b9ea9c4db223ad37ba237b646/Philippinen_Palawan_Coron_Lagoone_TCG.png')]
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand', Malaysia: '/asien/malaysia' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand', Malaysia: '/asia/malaysia' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const singapore = {

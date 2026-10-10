@@ -37,9 +37,9 @@ import { paradisicBhutanLuxuryProduct } from './paradisicBhutanLuxuryData';
 import { paroShortBreakTaktsangProduct } from './paroShortBreakTaktsangData';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/bhutan/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/bhutan/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Tenzin Dorji', image: '/experts/riya.webp', role: 'Bhutan expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Bhutan', href: '/asien/bhutan' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Bhutan', href: '/asia/bhutan' }]
 });
 
 export const bhutanProducts = [, wondersOfBhutanParoExcursionProduct, glimpseOfBhutanSacredSitesProduct, experienceBhutanFourValleysProduct, nepalAndBhutanHimalayanJourneyProduct, bhutanDochulaAndPhobjikhaProduct, bhutanTaktsangEightDaysProduct, gemsOfBhutanThimphuPunakhaParoProduct, escapeToBhutanThreeValleysProduct, bhutanJourneyToThePeaksProduct, bhutanSikkimAndDarjeelingProduct, mesmerizingBhutanShortBreakProduct, discoveringBhutanPunakhaDayTripProduct, exclusiveTripToBhutanProduct, bhutanTenDaysWithPhobjikhaProduct, nepalBhutanAndSikkimGrandProduct, bhutanAdventureGroupTourProduct, bhutanFromSiliguriProduct, bhutanNewYearSpecialProduct, premiumBhutanGroupTourProduct, bhutanFromJaigaonProduct, bhutanExclusiveFourNightsProduct, bestOfBhutanTaktsangProduct, bestOfBhutanTshechuProduct, paradisicBhutanSuperDeluxeProduct, bhutanTaktsangLuxuryProduct, bhutanGetawayGangteyCranesProduct, bhutanTaktsangSuperDeluxeProduct, bhutanThimphuTshechuFestivalProduct, bhutanPhobjikhaLuxuryProduct, bhutanFromSiliguriLuxuryProduct, bestOfBhutanTaktsangSuperDeluxeProduct, bhutanPhobjikhaSuperDeluxeProduct, paradisicBhutanLuxuryProduct, paroShortBreakTaktsangProduct];

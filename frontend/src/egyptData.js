@@ -102,7 +102,7 @@ export const listingCopy = {
   ]
 };
 
-// Product detail = source page /afrika/aegypten/luxor-strand-urlaub/ (content translated to English).
+// Product detail = source page /africa/egypt/luxor-strand-urlaub/ (content translated to English).
 export const featured = {
   slug: 'luxor-strand-urlaub',
   title: 'Egypt holiday from Cairo with Nile cruise and stop in ancient Thebes',

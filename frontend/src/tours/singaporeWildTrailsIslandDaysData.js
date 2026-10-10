@@ -256,7 +256,7 @@ const glance = {
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Asia', href: '#' },
-  { label: 'Singapore', href: '/asien/singapore' },
+  { label: 'Singapore', href: '/asia/singapore' },
   { label: detail.title }
 ];
 
@@ -265,7 +265,7 @@ export const singaporeWildTrailsIslandDaysBySlug = { [detail.slug]: { detail, ro
 export const singaporeWildTrailsIslandDaysProduct = {
   slug: detail.slug,
   places: ['Singapore', 'Mandai', 'Marina Bay', 'Sentosa'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -9,8 +9,8 @@ const wide = (base, w) => `${base}&w=${w}`;
 
 export const destination = { name: 'Kazakhstan', continent: 'Asia', primary: ['Almaty', 'Astana', 'Charyn Canyon', 'Kolsai Lakes'] };
 
-export const holidaysPath = '/asien/kazakhstan/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Kazakhstan', to: '/asien/kazakhstan' }, { label: 'Kazakhstan tours & holidays' }];
+export const holidaysPath = '/asia/kazakhstan/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Kazakhstan', to: '/asia/kazakhstan' }, { label: 'Kazakhstan tours & holidays' }];
 
 export const hero = {
   h1: 'Kazakhstan Honeymoons and holidays',
@@ -26,7 +26,7 @@ export const hero = {
   imageAlt: 'Snow-capped Tian Shan mountains rising above Almaty, Kazakhstan'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Kazakhstan' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Kazakhstan' }];
 
 export const intro = {
   h2: 'About Kazakhstan',
@@ -157,7 +157,7 @@ const asiaList = [
   ['Cambodia', ct('3zbplvZU8SZYLZqdmaPsZv/c16250ef83321324f10fbf00c9b058a1/Kambodscha_AngkorWat.jpg')],
   ['Maldives', ct('3hsuR5UvfamJlqKCTM81Ii/b43e484beb8b92c43047174a4a3e7be8/Maldiven__Holzsteg.jpg')]
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand', Malaysia: '/asien/malaysia', Singapore: '/asien/singapore', Bhutan: '/asien/bhutan' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand', Malaysia: '/asia/malaysia', Singapore: '/asia/singapore', Bhutan: '/asia/bhutan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const kazakhstan = {

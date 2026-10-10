@@ -96,7 +96,7 @@ export const promoBanners = [
     text: 'Celebrate the season with handcrafted Europe & Asia itineraries – every trip on Hi Tours is discounted until 5 January.',
     offer: 'Ends 5 January · All destinations',
     cta: 'Shop the sale',
-    href: '/asien',
+    href: '/asia',
     image: '/home/promo-xmas.webp',
     imageAlt: 'Couple enjoying a snowy European Christmas market'
   },
@@ -107,7 +107,7 @@ export const promoBanners = [
     text: 'Limited-time overwater villas and private transfers – only while seats last.',
     offer: 'Ends Sunday · 7 nights · Flights included',
     cta: 'Grab the deal',
-    href: '/asien/maldives',
+    href: '/asia/maldives',
     image: '/home/promo-hotdeal.webp',
     imageAlt: 'Maldives overwater villas at sunset',
     showDestinations: true

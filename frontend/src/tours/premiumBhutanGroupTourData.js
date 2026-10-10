@@ -527,8 +527,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Bhutan', href: '/asien/bhutan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Bhutan', href: '/asia/bhutan' },
   { label: detail.title }
 ];
 
@@ -537,7 +537,7 @@ export const premiumBhutanGroupTourBySlug = { [detail.slug]: { detail, route, gl
 export const premiumBhutanGroupTourProduct = {
   slug: detail.slug,
   places: ['Phuentsholing', 'Thimphu', 'Punakha', 'Paro'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

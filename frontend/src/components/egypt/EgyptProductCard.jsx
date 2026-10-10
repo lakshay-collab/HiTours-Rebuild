@@ -31,7 +31,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
   const [i, setI] = useState(0);
   const [revealRef, inView] = useReveal();
   const n = p.images.length;
-  const to = p.href || (p.slug ? `/afrika/aegypten/${p.slug}` : null);
+  const to = p.href || (p.slug ? `/africa/egypt/${p.slug}` : null);
   const go = (d) => setI((v) => (v + d + n) % n);
   const Wrap = ({ children, ...rest }) => (to
     ? <Link to={to} {...rest}>{children}</Link>

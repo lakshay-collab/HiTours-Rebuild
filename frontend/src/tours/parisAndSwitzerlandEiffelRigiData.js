@@ -292,7 +292,7 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Europe', href: '/europa' },
+  { label: 'Europe', href: '/europe' },
   { label: detail.title }
 ];
 
@@ -301,7 +301,7 @@ export const parisAndSwitzerlandEiffelRigiBySlug = { [detail.slug]: { detail, ro
 export const parisAndSwitzerlandEiffelRigiProduct = {
   slug: detail.slug,
   places: ['Paris', 'Zurich', 'Lucerne'],
-  href: `/europa/${detail.slug}`,
+  href: `/europe/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

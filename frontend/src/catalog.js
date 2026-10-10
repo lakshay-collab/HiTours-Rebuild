@@ -28,20 +28,20 @@ import { finlandProducts } from './tours/finlandToursData';
 import { swedenProducts } from './tours/swedenToursData';
 
 const SOURCES = [
-  ['Egypt', '/afrika/aegypten', egyptProducts], ['Vietnam', '/asien/vietnam', vietnamProducts], ['Sri Lanka', '/asien/sri-lanka', srilankaProducts],
-  ['Thailand', '/asien/thailand', thailandProducts], ['Singapore', '/asien/singapore', singaporeProducts], ['Malaysia', '/asien/malaysia', malaysiaProducts],
-  ['Kazakhstan', '/asien/kazakhstan', kazakhstanProducts], ['Bhutan', '/asien/bhutan', bhutanProducts], ['Maldives', '/asien/maldives', maldivesProducts],
-  ['Laos', '/asien/laos', laosProducts], ['Japan', '/asien/japan', japanProducts], ['Indonesia', '/asien/indonesia', indonesiaProducts],
-  ['China', '/asien/china', chinaProducts], ['Cambodia', '/asien/cambodia', cambodiaProducts], ['Philippines', '/asien/philippines', philippinesProducts],
-  ['Iceland', '/europa/iceland', icelandProducts], ['Italy', '/europa/italy', italyProducts], ['Greece', '/europa/greece', greeceProducts],
-  ['Norway', '/europa/norway', norwayProducts], ['Ireland', '/europa/ireland', irelandProducts], ['Spain', '/europa/spain', spainProducts],
-  ['Portugal', '/europa/portugal', portugalProducts], ['Croatia', '/europa/croatia', croatiaProducts], ['England', '/europa/england', englandProducts],
-  ['Scotland', '/europa/scotland', scotlandProducts], ['Finland', '/europa/finland', finlandProducts], ['Sweden', '/europa/sweden', swedenProducts],
+  ['Egypt', '/africa/egypt', egyptProducts], ['Vietnam', '/asia/vietnam', vietnamProducts], ['Sri Lanka', '/asia/sri-lanka', srilankaProducts],
+  ['Thailand', '/asia/thailand', thailandProducts], ['Singapore', '/asia/singapore', singaporeProducts], ['Malaysia', '/asia/malaysia', malaysiaProducts],
+  ['Kazakhstan', '/asia/kazakhstan', kazakhstanProducts], ['Bhutan', '/asia/bhutan', bhutanProducts], ['Maldives', '/asia/maldives', maldivesProducts],
+  ['Laos', '/asia/laos', laosProducts], ['Japan', '/asia/japan', japanProducts], ['Indonesia', '/asia/indonesia', indonesiaProducts],
+  ['China', '/asia/china', chinaProducts], ['Cambodia', '/asia/cambodia', cambodiaProducts], ['Philippines', '/asia/philippines', philippinesProducts],
+  ['Iceland', '/europe/iceland', icelandProducts], ['Italy', '/europe/italy', italyProducts], ['Greece', '/europe/greece', greeceProducts],
+  ['Norway', '/europe/norway', norwayProducts], ['Ireland', '/europe/ireland', irelandProducts], ['Spain', '/europe/spain', spainProducts],
+  ['Portugal', '/europe/portugal', portugalProducts], ['Croatia', '/europe/croatia', croatiaProducts], ['England', '/europe/england', englandProducts],
+  ['Scotland', '/europe/scotland', scotlandProducts], ['Finland', '/europe/finland', finlandProducts], ['Sweden', '/europe/sweden', swedenProducts],
 ];
 
 // Every package across the site, annotated with its destination (card hrefs already point at the right package page).
 export const catalog = SOURCES.flatMap(([destination, destinationHref, list]) =>
-  list.map((p) => ({ ...p, destination, destinationHref, href: p.href || `/afrika/aegypten/${p.slug}` }))
+  list.map((p) => ({ ...p, destination, destinationHref, href: p.href || `/africa/egypt/${p.slug}` }))
 );
 
 // Theme → keyword matcher (tested against package styles, tag, title, alt and destination).

@@ -294,8 +294,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Vietnam', href: '/asien/vietnam' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }
 ];
 
@@ -304,7 +304,7 @@ export const hanoiAndNhaTrangEscapeBySlug = { [detail.slug]: { detail, route, gl
 export const hanoiAndNhaTrangEscapeProduct = {
   slug: detail.slug,
   places: ['Hanoi', 'Halong Bay', 'Nha Trang', 'Ninh Binh'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

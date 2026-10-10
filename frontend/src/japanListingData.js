@@ -8,8 +8,8 @@ const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Japan";
 
 export const destination = { name: N, continent: 'Asia', primary: ["Tokyo", "Hakone", "Kyoto", "Osaka"] };
-export const holidaysPath = '/asien/japan/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asien/japan' }, { label: `${N} tours & holidays` }];
+export const holidaysPath = '/asia/japan/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/japan' }, { label: `${N} tours & holidays` }];
 
 export const hero = {
   h1: `${N} Honeymoons and holidays`, holidaysH1: `${N} tours & holidays`, styleH1: (style) => `${N} ${style.toLowerCase()} holidays`,
@@ -17,7 +17,7 @@ export const hero = {
   sub: 'Your travel plan – no obligation & tailor-made', image: wide(IMG.RAW.hero, 2400), video: '/hero/japan.mp4', webm: '/hero/japan.webm', poster: '/hero/japan.webp', imageAlt: "Tokyo, Japan"
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: N }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: N }];
 
 export const intro = {
   h2: `About ${N}`,

@@ -496,7 +496,7 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Europe', href: '/europa' },
+  { label: 'Europe', href: '/europe' },
   { label: detail.title }
 ];
 
@@ -505,7 +505,7 @@ export const westernEuropeGroupTourAlpsAmsterdamBySlug = { [detail.slug]: { deta
 export const westernEuropeGroupTourAlpsAmsterdamProduct = {
   slug: detail.slug,
   places: ['Zurich', 'Frankfurt', 'Amsterdam', 'Paris'],
-  href: `/europa/${detail.slug}`,
+  href: `/europe/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

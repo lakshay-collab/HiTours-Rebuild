@@ -441,8 +441,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -451,7 +451,7 @@ export const southernJapanInlandSeaBySlug = { [detail.slug]: { detail, route, gl
 export const southernJapanInlandSeaProduct = {
   slug: detail.slug,
   places: ['Osaka', 'Himeji', 'Okayama', 'Kurashiki', 'Hiroshima', 'Matsuyama', 'Kobe'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

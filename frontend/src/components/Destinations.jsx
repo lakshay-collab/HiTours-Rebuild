@@ -5,8 +5,8 @@ import FlightPath from './FlightPath';
 import { destinationTabs, destinations } from '../destinationsData';
 import { destinationsHeading, destinationsSubcopy } from '../mock';
 
-export const COUNTRY_HREF = { 'Europe': '/europa', 'Europe multi-country': '/europa', 'Egypt': '/afrika/aegypten', 'Sri Lanka': '/asien/sri-lanka', 'Thailand': '/asien/thailand', 'Vietnam': '/asien/vietnam', 'Malaysia': '/asien/malaysia', 'Singapore': '/asien/singapore', 'Kazakhstan': '/asien/kazakhstan', 'Bhutan': '/asien/bhutan', 'Maldives': '/asien/maldives', "Laos": '/asien/laos', "Japan": '/asien/japan', "Indonesia": '/asien/indonesia', "China": '/asien/china', "Cambodia": '/asien/cambodia', "Philippines": '/asien/philippines', "Iceland": '/europa/iceland', "Italy": '/europa/italy', "Greece": '/europa/greece', "Norway": '/europa/norway', "Ireland": '/europa/ireland', "Spain": '/europa/spain', "Portugal": '/europa/portugal', "Croatia": '/europa/croatia', "England": '/europa/england', "Scotland": '/europa/scotland', "Finland": '/europa/finland', "Sweden": '/europa/sweden' };
-const REGION_HREF = { 'Asia': '/asien', 'Europe': '/europa' };
+export const COUNTRY_HREF = { 'Europe': '/europe', 'Europe multi-country': '/europe', 'Egypt': '/africa/egypt', 'Sri Lanka': '/asia/sri-lanka', 'Thailand': '/asia/thailand', 'Vietnam': '/asia/vietnam', 'Malaysia': '/asia/malaysia', 'Singapore': '/asia/singapore', 'Kazakhstan': '/asia/kazakhstan', 'Bhutan': '/asia/bhutan', 'Maldives': '/asia/maldives', "Laos": '/asia/laos', "Japan": '/asia/japan', "Indonesia": '/asia/indonesia', "China": '/asia/china', "Cambodia": '/asia/cambodia', "Philippines": '/asia/philippines', "Iceland": '/europe/iceland', "Italy": '/europe/italy', "Greece": '/europe/greece', "Norway": '/europe/norway', "Ireland": '/europe/ireland', "Spain": '/europe/spain', "Portugal": '/europe/portugal', "Croatia": '/europe/croatia', "England": '/europe/england', "Scotland": '/europe/scotland', "Finland": '/europe/finland', "Sweden": '/europe/sweden' };
+const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
 
 export default function Destinations() {
   const [active, setActive] = useState(destinationTabs[0]);

@@ -198,8 +198,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Kazakhstan', href: '/asien/kazakhstan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }
 ];
 
@@ -208,7 +208,7 @@ export const almatyShortBreakShymbulakBySlug = { [detail.slug]: { detail, route,
 export const almatyShortBreakShymbulakProduct = {
   slug: detail.slug,
   places: ['Almaty', 'Medeu'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

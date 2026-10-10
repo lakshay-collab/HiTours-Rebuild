@@ -256,8 +256,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Indonesia', href: '/asien/indonesia' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Indonesia', href: '/asia/indonesia' },
   { label: detail.title }
 ];
 
@@ -266,7 +266,7 @@ export const classicBaliGroupHolidayBySlug = { [detail.slug]: { detail, route, g
 export const classicBaliGroupHolidayProduct = {
   slug: detail.slug,
   places: ['Legian', 'Kintamani', 'Tanah Lot', 'Uluwatu', 'North Bali'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

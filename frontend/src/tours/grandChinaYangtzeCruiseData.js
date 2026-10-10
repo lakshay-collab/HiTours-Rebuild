@@ -402,8 +402,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'China', href: '/asien/china' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'China', href: '/asia/china' },
   { label: detail.title }
 ];
 
@@ -412,7 +412,7 @@ export const grandChinaYangtzeCruiseBySlug = { [detail.slug]: { detail, route, g
 export const grandChinaYangtzeCruiseProduct = {
   slug: detail.slug,
   places: ['Shanghai', 'Chongqing', 'Yangtze River', 'Beijing'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

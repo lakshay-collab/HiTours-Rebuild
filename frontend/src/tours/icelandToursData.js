@@ -2,9 +2,9 @@ import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../icelandPackages';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/europa', ctaHref: '/l/iceland/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/europe', ctaHref: '/l/iceland/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Sigrún", image: '/experts/riya.webp', role: 'Iceland expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Iceland", href: '/europa/iceland' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Iceland", href: '/europe/iceland' }]
 });
 
 export const icelandProducts = packages.map(toProduct);

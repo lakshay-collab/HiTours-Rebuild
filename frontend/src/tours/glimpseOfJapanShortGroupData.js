@@ -302,8 +302,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -312,7 +312,7 @@ export const glimpseOfJapanShortGroupBySlug = { [detail.slug]: { detail, route, 
 export const glimpseOfJapanShortGroupProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Kyoto', 'Nara', 'Osaka'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

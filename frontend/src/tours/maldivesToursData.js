@@ -3,9 +3,9 @@ import { createAdapters } from './vietnamToursData';
 import { packages, cityImages } from '../maldivesPackages';
 
 const { toProduct, build } = createAdapters({
-  cityImages, base: '/asien', ctaHref: '/l/maldives/enquiry/passengers/', cruiseCity: '—',
+  cityImages, base: '/asia', ctaHref: '/l/maldives/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Aisha Naseem', image: '/experts/riya.webp', role: 'Maldives expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asien' }, { label: 'Maldives', href: '/asien/maldives' }]
+  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Maldives', href: '/asia/maldives' }]
 });
 
 export const maldivesProducts = packages.map(toProduct);

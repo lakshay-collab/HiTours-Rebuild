@@ -9,8 +9,8 @@ const wide = (base, w) => `${base}&w=${w}`;
 
 export const destination = { name: 'Maldives', continent: 'Asia', primary: ['Malé', 'North Malé Atoll', 'Baa Atoll', 'Ari Atoll'] };
 
-export const holidaysPath = '/asien/maldives/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Maldives', to: '/asien/maldives' }, { label: 'Maldives tours & holidays' }];
+export const holidaysPath = '/asia/maldives/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: 'Maldives', to: '/asia/maldives' }, { label: 'Maldives tours & holidays' }];
 
 export const hero = {
   h1: 'Maldives Honeymoons and holidays',
@@ -27,7 +27,7 @@ export const hero = {
   imageAlt: 'Overwater villas over a turquoise lagoon in the Maldives'
 };
 
-export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asien' }, { label: 'Maldives' }];
+export const crumbs = [{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', to: '/asia' }, { label: 'Maldives' }];
 
 export const intro = {
   h2: 'About the Maldives',
@@ -157,7 +157,7 @@ const asiaList = [
   ['Kazakhstan', 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=85&w=1080'],
   ['Bhutan', 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=85&w=1080']
 ];
-const ASIA_HREF = { Vietnam: '/asien/vietnam', 'Sri Lanka': '/asien/sri-lanka', Thailand: '/asien/thailand', Malaysia: '/asien/malaysia', Singapore: '/asien/singapore', Kazakhstan: '/asien/kazakhstan', Bhutan: '/asien/bhutan' };
+const ASIA_HREF = { Vietnam: '/asia/vietnam', 'Sri Lanka': '/asia/sri-lanka', Thailand: '/asia/thailand', Malaysia: '/asia/malaysia', Singapore: '/asia/singapore', Kazakhstan: '/asia/kazakhstan', Bhutan: '/asia/bhutan' };
 export const related = { h2: `More destinations in ${destination.continent}`, items: asiaList.map(([title, image]) => ({ title, alt: title, tag: null, href: ASIA_HREF[title] || '#', image })) };
 
 export const maldives = {

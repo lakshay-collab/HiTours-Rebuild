@@ -8,8 +8,8 @@ const wide = (base, w) => `${base}?w=${w}&q=60&fm=webp`;
 const N = "Italy";
 
 export const destination = { name: N, continent: 'Europe', primary: ["Rome", "Florence", "Venice", "Amalfi Coast"] };
-export const holidaysPath = '/europa/italy/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europa/italy' }, { label: `${N} tours & holidays` }];
+export const holidaysPath = '/europe/italy/holidays';
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/europe/italy' }, { label: `${N} tours & holidays` }];
 
 export const hero = {
   h1: `${N} Honeymoons and holidays`, holidaysH1: `${N} tours & holidays`, styleH1: (style) => `${N} ${style.toLowerCase()} holidays`,

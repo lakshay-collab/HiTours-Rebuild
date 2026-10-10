@@ -84,8 +84,8 @@ export const cta = { h2: 'Start planning your own Hi Tours' };
 
 const find = (name) => Object.values(destinations).flat().find((d) => d.name === name);
 const TOP10 = [
-  ['Vietnam', '/asien/vietnam'], ['Thailand', '/asien/thailand'], ['Sri Lanka', '/asien/sri-lanka'], ['Egypt', '/afrika/aegypten'], ['Japan', '/asien/japan'],
-  ['Maldives', '/asien/maldives'], ['Bhutan', '/asien/bhutan'], ['Kazakhstan', '/asien/kazakhstan'], ['Italy', '/europa/italy'], ['Greece', '/europa/greece']
+  ['Vietnam', '/asia/vietnam'], ['Thailand', '/asia/thailand'], ['Sri Lanka', '/asia/sri-lanka'], ['Egypt', '/africa/egypt'], ['Japan', '/asia/japan'],
+  ['Maldives', '/asia/maldives'], ['Bhutan', '/asia/bhutan'], ['Kazakhstan', '/asia/kazakhstan'], ['Italy', '/europe/italy'], ['Greece', '/europe/greece']
 ];
 export const top10 = {
   h2: 'Our top 10 countries',

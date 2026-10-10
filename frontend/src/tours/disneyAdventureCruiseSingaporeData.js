@@ -199,7 +199,7 @@ const glance = {
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
   { label: 'Asia', href: '#' },
-  { label: 'Singapore', href: '/asien/singapore' },
+  { label: 'Singapore', href: '/asia/singapore' },
   { label: detail.title }
 ];
 
@@ -208,7 +208,7 @@ export const disneyAdventureCruiseSingaporeBySlug = { [detail.slug]: { detail, r
 export const disneyAdventureCruiseSingaporeProduct = {
   slug: detail.slug,
   places: ['Singapore'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,

@@ -652,8 +652,8 @@ const glance = {
 
 const crumbs = [
   { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Asia', href: '/asien' },
-  { label: 'Japan', href: '/asien/japan' },
+  { label: 'Asia', href: '/asia' },
+  { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }
 ];
 
@@ -662,7 +662,7 @@ export const classicWondersJapanGroupTourBySlug = { [detail.slug]: { detail, rou
 export const classicWondersJapanGroupTourProduct = {
   slug: detail.slug,
   places: ['Tokyo', 'Hiroshima', 'Miyajima', 'Matsuyama', 'Kobe', 'Mount Koya', 'Kyoto', 'Nagano', 'Nikko'],
-  href: `/asien/${detail.slug}`,
+  href: `/asia/${detail.slug}`,
   tag: detail.tag,
   styles: detail.tags,
   title: detail.title,
