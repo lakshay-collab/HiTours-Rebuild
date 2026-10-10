@@ -34,9 +34,8 @@ export default function Careers() {
       <Header />
       <main className="pb-28 md:pb-28">
         <section className="eg-container pt-6 md:pt-8" data-testid="careers-hero">
-          <div className="relative h-[320px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden">
-            <img src={hero.image} alt={hero.alt} className="absolute inset-0 w-full h-full object-cover" />
-            <CareersHeroVideo mp4={hero.video.mp4} webm={hero.video.webm} poster={hero.video.poster} />
+          <div className="relative h-[320px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden bg-[#002131]">
+            <CareersHeroVideo mp4={hero.video.mp4} webm={hero.video.webm} poster={hero.video.poster} label={hero.alt} />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.35)_0%,rgba(0,33,49,0.3)_55%,rgba(0,33,49,0.6)_100%)]" />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-4 text-center">
               <h1 className="eg-display-lg text-white drop-shadow-[0_2px_14px_rgba(0,33,49,0.45)]" data-testid="careers-h1">{hero.h1}</h1>

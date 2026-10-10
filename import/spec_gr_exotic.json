@@ -1,0 +1,245 @@
+{
+ "cta_country": "greece",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Greece",
+   "/europe/greece"
+  ]
+ ],
+ "source_slug": "10-days-exotic-greece-tour",
+ "camel": "exoticGreeceIslandHopping",
+ "slug": "exotic-greece-island-hopping-with-santorini",
+ "title": "Exotic Greece: Island Hopping with Santorini",
+ "alt": "A blue domed church above the rooftops of Oia on Santorini",
+ "transport": "Private airport and port transfers, with ferries between the islands",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Beach",
+  "Culture"
+ ],
+ "price": 169028,
+ "route_cities": [
+  "Athens",
+  "Mykonos",
+  "Santorini",
+  "Athens"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 3,
+  "hotels": 4,
+  "experiences": 4,
+  "transfers": 10,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Athens city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [
+    {
+     "name": "Athens city tour with the Acropolis Museum",
+     "day": 2,
+     "optional": false,
+     "match": "Acropolis",
+     "description": "A guided half day over the rock and through the museum below it, finishing at Syntagma for the changing of the guard."
+    }
+   ],
+   "program": {
+    "name": "Athens",
+    "description": "Two nights to begin, with a guided morning on the Acropolis and an afternoon in the old quarter."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Mykonos",
+   "city": "Mykonos",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Mykonos island hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Island hotel within reach of Mykonos town and the beaches",
+   "activities": [
+    {
+     "name": "Mykonos sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "",
+     "description": "The windmills, the chapels of the old quarter and a coach circuit out to the southern bays and the inland villages."
+    }
+   ],
+   "program": {
+    "name": "Mykonos",
+    "description": "Two nights on Mykonos, with the old town on foot and an island circuit by coach."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Santorini",
+   "city": "Santorini",
+   "days": [
+    5,
+    6,
+    7
+   ],
+   "dayLabel": "Day 5 to 7",
+   "hotel": "Santorini caldera hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Hotel on the caldera side with the volcano across the water",
+   "activities": [
+    {
+     "name": "Santorini volcano and hot springs cruise",
+     "day": 6,
+     "optional": false,
+     "match": "",
+     "description": "A boat across to Nea Kameni, the climb to the crater rim, then a swim in the warm sulphur water off Palea Kameni."
+    },
+    {
+     "name": "Fira, Imerovigli and Oia",
+     "day": 7,
+     "optional": false,
+     "match": "",
+     "description": "The three cliff towns on the rim, linked by a path along the edge, with the caldera dropping away on one side the whole way."
+    }
+   ],
+   "program": {
+    "name": "Santorini",
+    "description": "Three nights on the caldera, with the volcano cruise and a day among the cliff villages."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Athens city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [],
+   "program": {
+    "name": "Athens",
+    "description": "The crossing back to the mainland for a last night in the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Athens",
+  "2": "The Acropolis and its museum",
+  "3": "Ferry to Mykonos",
+  "4": "Mykonos town and the island",
+  "5": "On to Santorini",
+  "6": "The volcano and the hot springs",
+  "7": "The cliff villages of the rim",
+  "8": "Back to Athens",
+  "9": "Departure from Athens"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Athens International and transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: a first wander through Monastiraki",
+   "Optional: dinner with the rock lit above you"
+  ],
+  "2": [
+   "Breakfast, then up the rock with your guide",
+   "The Parthenon and the porch of the Caryatids",
+   "The Acropolis Museum below the hill",
+   "Syntagma Square and the changing of the guard"
+  ],
+  "3": [
+   "Breakfast and check out of your Athens hotel",
+   "Port transfer at Piraeus for the Aegean crossing",
+   "Met at Mykonos harbour and taken to your hotel",
+   "The evening free for sunset at Little Venice"
+  ],
+  "4": [
+   "Breakfast, then into the old town on foot",
+   "The windmills on the ridge and the chapels below",
+   "A coach circuit of the southern bays in the afternoon",
+   "Inland villages and the long sandy beaches"
+  ],
+  "5": [
+   "Breakfast and check out for the island crossing",
+   "Port transfer and the ferry south through the Cyclades",
+   "Met at Athinios and taken up to the caldera rim",
+   "The evening free with the volcano across the water"
+  ],
+  "6": [
+   "Breakfast with the caldera below you",
+   "A boat across to the lava island of Nea Kameni",
+   "The climb to the crater rim and the steam vents",
+   "A swim in the warm sulphur water off Palea Kameni"
+  ],
+  "7": [
+   "Breakfast, then out along the caldera path",
+   "Fira, Imerovigli and the walk on to Oia",
+   "Blue domes, white walls and the drop to the sea",
+   "The sunset from the old castle ruins"
+  ],
+  "8": [
+   "Breakfast and check out for the return crossing",
+   "The ferry to Piraeus and a transfer to your hotel",
+   "The afternoon free in the Plaka quarter",
+   "Optional: a last dinner in the old town"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Athens International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Athens city hotel",
+  "2": "Athens city hotel",
+  "3": "Mykonos island hotel",
+  "4": "Mykonos island hotel",
+  "5": "Santorini caldera hotel",
+  "6": "Santorini caldera hotel",
+  "7": "Santorini caldera hotel",
+  "8": "Athens city hotel",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Eleni",
+  "image": "/experts/riya.webp",
+  "role": "Greece expert at Hi Tours",
+  "quote": "Mykonos for the nights and Santorini for the light. Give each island three nights and you will never feel rushed.",
+  "tip": "Book your Santorini hotel on the caldera rim in Imerovigli rather than Oia. Same sunset, half the crowd, and you can walk to Oia along the cliff path."
+ },
+ "summary": "Nine days island hopping from Athens: the Acropolis and its museum, two nights on Mykonos for the old town and the bays, three on the Santorini caldera with the volcano and the cliff villages, then a last night on the mainland.",
+ "included": "Included: 3 nights in Athens, 2 nights on Mykonos and 3 nights on Santorini with breakfast; private airport and port transfers; ferry tickets between the islands; all sightseeing as listed with entrance fees where stated; daily breakfast; a guided Athens city tour with the Acropolis Museum; a Mykonos sightseeing tour; the Santorini volcano and hot springs cruise.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are named on confirmation: the operator quotes a standard class rather than fixed properties."
+}

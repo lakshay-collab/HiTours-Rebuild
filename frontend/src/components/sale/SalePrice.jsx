@@ -7,6 +7,10 @@ const OFF = saleBadgePercent();
 
 const easeOut = (t) => 1 - Math.pow(1 - t, 3);
 
+// The count-down is a one-off flourish: the first price that scrolls into view on a page load
+// animates, every other price on the site renders its final value straight away.
+let countOwner = null;
+
 // Counts the displayed price down from the list price to the sale price when it scrolls into view.
 const useCountDown = (from, to, duration = 1400) => {
   const [value, setValue] = useState(from);
@@ -15,6 +19,8 @@ const useCountDown = (from, to, duration = 1400) => {
     const el = ref.current;
     if (!el || from === to) { setValue(to); return undefined; }
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setValue(to); return undefined; }
+    if (countOwner && countOwner !== el) { setValue(to); return undefined; }
+    countOwner = el;
     let raf = 0;
     const run = () => {
       const start = performance.now();

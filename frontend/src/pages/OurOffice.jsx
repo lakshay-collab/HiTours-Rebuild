@@ -88,6 +88,7 @@ export default function OurOffice() {
           </div>
         </section>
 
+        {office.gallery && (
         <section className="eg-container mt-16 md:mt-24" data-testid="office-gallery">
           <div className="flex flex-col gap-2">
             <h2 className="eg-display-sm text-[#002131]">{office.gallery.h2}</h2>
@@ -99,6 +100,7 @@ export default function OurOffice() {
             ))}
           </div>
         </section>
+        )}
       </main>
       <Footer />
     </div>

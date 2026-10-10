@@ -1,0 +1,208 @@
+{
+ "cta_country": "greece",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Greece",
+   "/europe/greece"
+  ]
+ ],
+ "source_slug": "enchanting-greece",
+ "camel": "enchantingGreeceAthensMykonos",
+ "slug": "enchanting-greece-athens-and-mykonos",
+ "title": "Enchanting Greece: Athens and Mykonos",
+ "alt": "The Parthenon on the Acropolis above Athens in the late afternoon",
+ "transport": "Private airport and port transfers, with ferries to and from Mykonos",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Honeymoon",
+  "Beach"
+ ],
+ "price": 137750,
+ "route_cities": [
+  "Athens",
+  "Mykonos",
+  "Athens"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 2,
+  "hotels": 3,
+  "experiences": 4,
+  "transfers": 8,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Athens city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [
+    {
+     "name": "Acropolis and Athens city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Acropolis",
+     "description": "A guided half day taking in the Acropolis, the Propylaea and the Parthenon, then Syntagma Square and the changing of the guard."
+    }
+   ],
+   "program": {
+    "name": "Athens",
+    "description": "Two nights to start, with a half day round the Acropolis, Syntagma and the old quarter below the rock."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Mykonos",
+   "city": "Mykonos",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Mykonos island hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Island hotel within reach of Mykonos town and the beaches",
+   "activities": [
+    {
+     "name": "Mykonos town walk",
+     "day": 4,
+     "optional": false,
+     "match": "",
+     "description": "A morning on foot through the whitewashed lanes, the windmills on the ridge and the waterfront at Little Venice."
+    },
+    {
+     "name": "Island bus tour of Mykonos",
+     "day": 4,
+     "optional": false,
+     "match": "",
+     "description": "A circuit of the island by coach, out to the southern bays, the inland villages and the long sandy beaches."
+    },
+    {
+     "name": "Optional: boat trip to Delos",
+     "day": 5,
+     "optional": true,
+     "match": "",
+     "description": "The short crossing to the sacred island of Delos, birthplace of Apollo and one of the largest archaeological sites in the Aegean."
+    }
+   ],
+   "program": {
+    "name": "Mykonos",
+    "description": "Three nights on Mykonos, with a walk through the old town, an island bus tour and a free day for the beaches."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Athens city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [],
+   "program": {
+    "name": "Athens",
+    "description": "Back to the mainland for a last evening in Plaka under the floodlit rock."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Athens",
+  "2": "The Acropolis and the city",
+  "3": "Ferry to Mykonos",
+  "4": "Mykonos town and the island",
+  "5": "A free day on Mykonos",
+  "6": "Back to Athens",
+  "7": "Departure from Athens"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Athens International and transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: an evening walk up Lykavittos hill",
+   "Optional: dinner in the lanes of Monastiraki"
+  ],
+  "2": [
+   "Breakfast, then up to the rock with your guide",
+   "The Propylaea, the Parthenon and the Erechtheion",
+   "Syntagma Square and the changing of the guard",
+   "The afternoon free for the Acropolis Museum"
+  ],
+  "3": [
+   "Breakfast and check out of your Athens hotel",
+   "Port transfer at Piraeus for the Aegean crossing",
+   "Met at Mykonos harbour and taken to your hotel",
+   "The evening free for sunset at Little Venice"
+  ],
+  "4": [
+   "Breakfast, then into the old town on foot",
+   "Whitewashed lanes, bougainvillea and the windmills",
+   "An island circuit by coach in the afternoon",
+   "Southern bays, inland villages and long beaches"
+  ],
+  "5": [
+   "Breakfast, then the whole day yours",
+   "Optional: the boat across to ancient Delos",
+   "Optional: a swim at Platis Gialos or Paradise beach",
+   "Optional: a late lunch at a harbour taverna"
+  ],
+  "6": [
+   "Breakfast and check out for the return crossing",
+   "The ferry back to Piraeus and a transfer to your hotel",
+   "The afternoon free in the Plaka quarter",
+   "Pastel houses, bougainvillea and the rock above you"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Athens International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Athens city hotel",
+  "2": "Athens city hotel",
+  "3": "Mykonos island hotel",
+  "4": "Mykonos island hotel",
+  "5": "Mykonos island hotel",
+  "6": "Athens city hotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Eleni",
+  "image": "/experts/riya.webp",
+  "role": "Greece expert at Hi Tours",
+  "quote": "Athens first, islands second. Two days of ruins and then the ferry out feels like the holiday actually begins twice.",
+  "tip": "Take the morning ferry, not the afternoon one. The meltemi wind picks up after lunch and the crossing is a great deal less pleasant."
+ },
+ "summary": "Seven days between the mainland and the Cyclades: two nights in Athens with a guided morning on the Acropolis, three on Mykonos for the old town, an island circuit and the beaches, then a last night back in Plaka.",
+ "included": "Included: 3 nights in Athens and 3 nights on Mykonos with breakfast; private airport and port transfers; ferry tickets between the islands; all sightseeing as listed with entrance fees where stated; daily breakfast; a guided Acropolis and Athens city tour; a Mykonos town walk and island bus tour.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are named on confirmation: the operator quotes a standard class rather than fixed properties."
+}

@@ -86,6 +86,9 @@ const VideoHero = ({ video, webm, image, poster, title, count }) => (
 );
 
 const split = (v) => (v ? v.split(',').filter(Boolean) : []);
+// Card entrance stagger plays on the first listing opened in a page load, then stops: a first
+// impression rather than a delay on every page.
+const risenPaths = new Set();
 const WIDE = 'w-full px-4 sm:px-8 lg:px-10 2xl:px-14';
 
 export default function EgyptHolidays({ d = egyptHolidays }) {
@@ -127,6 +130,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
   }, [styleSlug, navigate, holidaysPath]);
   useEffect(() => { document.title = `${title} | Hi Tours`; }, [title]);
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [rise] = useState(() => { if (risenPaths.size && !risenPaths.has(holidaysPath)) return false; risenPaths.add(holidaysPath); return true; });
 
   const facets = useMemo(() => buildFacets(products, sel, mode), [products, sel, mode]);
   const list = useMemo(() => {
@@ -211,7 +215,7 @@ export default function EgyptHolidays({ d = egyptHolidays }) {
               )}
               {list.length ? (
                 <div className="mt-6 md:mt-5 grid gap-6 sm:grid-cols-2 min-[1500px]:grid-cols-3" data-testid="eg-product-grid">
-                  {shown.map((p, i) => <div key={p.slug} className={i < page ? 'eg-rise' : ''} style={i < page ? { animationDelay: `${200 + i * 60}ms` } : undefined}><EgyptProductCard p={p} index={i} /></div>)}
+                  {shown.map((p, i) => <div key={p.slug} className={rise && i < page ? 'eg-rise' : ''} style={rise && i < page ? { animationDelay: `${120 + i * 45}ms` } : undefined}><EgyptProductCard p={p} index={i} /></div>)}
                 </div>
               ) : (
                 <div className="mt-8 flex flex-col items-start gap-4" data-testid="eg-empty">

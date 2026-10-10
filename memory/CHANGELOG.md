@@ -253,3 +253,33 @@ Metadata:
  - public/robots.txt added (Allow: /). No sitemap.xml / absolute canonical yet - needs the production domain.
 Verified: iteration_57.json (all routes, redirects, mega menu/drawer/footer/sitemap href sweeps, search, titles and
 descriptions pass) plus a follow-up pass on the renamed Egypt trip, /afrika, /reiseziele and the fixed breadcrumbs.
+
+## 2026-06-10 (later) - About, Careers, Greece import, speed, Europe/Asia routing
+About page "Why choose Hi Tours?" rewritten to the three points the user dictated, in their order:
+ 1 Best prices and quality, 2 24/7 on-holiday customer support, 3 AI-enabled holiday specialists. Photos are the
+ three images from the user's Drive folder, converted to webp in /public/about (planning, support, expertise).
+Careers:
+ - Hero video is now self-hosted: /careers/join-hi-tours.mp4 (1080p30, 8.6 MB) + .webm (5.1 MB) + poster jpg,
+   encoded with ffmpeg from the user's Drive clip "Working with Hi Tours.mp4". CareersHeroVideo.jsx is a plain
+   <video autoplay muted loop playsinline poster>; the YouTube iframe API and the Unsplash fallback photo are gone,
+   so the first paint is the clip's own frame (no image flash, no branding, no network round trip to YouTube).
+ - "You belong at Hi Tours" quotes: the three Drive employee photos (public/team/employee-1..3.webp for the card's
+   right side, quote-t1..t3.webp for the avatar). Quote text dropped from 32px to 18px. Attribution is role-only -
+   NAMES AND JOB TITLES STILL NEEDED from the user, the Drive files were only numbered.
+ - Perks rewritten per the user: travel credits for everyone, training trips to the destinations we sell, open and
+   non-hierarchical culture, open office with no cabins, in-person events in Delhi and the NCR, learning budget,
+   inclusive environment, chai and snacks. Remote/hybrid work and all Mumbai references removed.
+Our office: "Inside our office" gallery hidden (officeData.gallery = null, guarded in OurOffice.jsx). Hours are now
+ Monday to Friday 9am to 8pm for both sales and operations, Saturday and Sunday Closed, on-trip emergencies 24 hours.
+Speed: the entrance flourishes no longer repeat on every page. The price count-down animates for the first price
+ element that scrolls into view per page load (module-level owner in SalePrice.jsx); the listing card stagger runs
+ only on the first listing opened per page load (risenPaths in EgyptHolidays.jsx). Card images got decoding="async".
+Routing: /asia and /europe now redirect straight to the all-tours listing (/asia/holidays, /europe/holidays). The old
+ continent landing pages are still reachable at /asia/overview and /europe/overview. New asiaHolidaysData.js builds
+ the Asia all-tours set from every imported Asia product (deduped by slug) and renders through EgyptHolidays.
+Greece import: all 5 Thrillophilia Greece links are live (enchanting-greece, 5-days-spectacular-athens-tour,
+ romantic-greece-honeymoon-special, 10-days-majestic-greece-tour, 10-days-exotic-greece-tour). All 5 pass
+ check_trip.py; greeceToursData.js now exports the 5 imported products only, generics gone. Pipeline additions:
+ scripts/thrillophilia/nordics_table.py (editorial) + gen_nordics.py (derives stops/counts/price and runs build_trip),
+ and build_trip.py now falls back to the tour's own product gallery for cities with no Thrillophilia destination
+ gallery (Swedish Lapland, rural Ireland). Fixed the hole in europeProducts ([, item...]).

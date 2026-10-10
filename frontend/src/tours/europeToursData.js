@@ -13,6 +13,6 @@ const { toProduct, build } = createAdapters({
   crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '/europe' }]
 });
 
-export const europeProducts = [, italyAndSwitzerlandRomeVeniceTitlisProduct, parisAndSwitzerlandEiffelRigiProduct, westernEuropeGroupTourAlpsAmsterdamProduct, switzerlandItalyHoneymoonGondolaProduct, romeFlorenceParisHoneymoonProduct];
+export const europeProducts = [italyAndSwitzerlandRomeVeniceTitlisProduct, parisAndSwitzerlandEiffelRigiProduct, westernEuropeGroupTourAlpsAmsterdamProduct, switzerlandItalyHoneymoonGondolaProduct, romeFlorenceParisHoneymoonProduct];
 export const europeTours = packages.map(build);
 export const europeBySlug = Object.fromEntries(europeTours.map((t) => [t.detail.slug, t]));

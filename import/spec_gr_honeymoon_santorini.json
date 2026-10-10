@@ -1,0 +1,184 @@
+{
+ "cta_country": "greece",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Greece",
+   "/europe/greece"
+  ]
+ ],
+ "source_slug": "romantic-greece-honeymoon-special",
+ "camel": "romanticGreeceAthensSantorini",
+ "slug": "romantic-greece-athens-and-santorini",
+ "title": "Romantic Greece: Athens and Santorini",
+ "alt": "Whitewashed houses and blue domes above the Santorini caldera",
+ "transport": "Private airport and port transfers, with the ferry to and from Santorini",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Culture",
+  "Beach"
+ ],
+ "price": 114000,
+ "route_cities": [
+  "Athens",
+  "Santorini",
+  "Athens"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 2,
+  "hotels": 3,
+  "experiences": 2,
+  "transfers": 8,
+  "meals": 5
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Athens city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [
+    {
+     "name": "Athens city tour with the Acropolis Museum",
+     "day": 2,
+     "optional": false,
+     "match": "Acropolis",
+     "description": "A guided half day over the rock and through the museum below it, with the Parthenon marbles laid out as they once stood."
+    }
+   ],
+   "program": {
+    "name": "Athens",
+    "description": "Two nights in the capital with a guided morning on the Acropolis and its museum."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Santorini",
+   "city": "Santorini",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Santorini caldera hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel on the caldera side with the volcano across the water",
+   "activities": [
+    {
+     "name": "Santorini volcano and hot springs cruise",
+     "day": 4,
+     "optional": false,
+     "match": "",
+     "description": "A boat across the caldera to the black lava island of Nea Kameni, the walk up to the crater, then a swim in the warm sulphur water off Palea Kameni."
+    }
+   ],
+   "program": {
+    "name": "Santorini",
+    "description": "Two nights on the rim of a drowned volcano, with a boat out to the crater and the hot springs."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Athens city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [],
+   "program": {
+    "name": "Athens",
+    "description": "The crossing back for a last evening on the mainland."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Athens",
+  "2": "The Acropolis and its museum",
+  "3": "The crossing to Santorini",
+  "4": "The volcano and the hot springs",
+  "5": "Back to Athens",
+  "6": "Departure from Athens"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Athens International and transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: an evening in the lanes below the rock",
+   "Optional: a rooftop dinner facing the Acropolis"
+  ],
+  "2": [
+   "Breakfast, then up the rock with your guide",
+   "The Parthenon and the porch of the Caryatids",
+   "The Acropolis Museum and its marbles",
+   "The afternoon free in Plaka"
+  ],
+  "3": [
+   "Breakfast and check out of your Athens hotel",
+   "Port transfer at Piraeus for the Aegean crossing",
+   "Met at Athinios and taken up to the caldera rim",
+   "The evening free for the sunset over the water"
+  ],
+  "4": [
+   "Breakfast with the caldera below you",
+   "A boat across to the lava island of Nea Kameni",
+   "The climb to the crater rim and the steam vents",
+   "A swim in the warm sulphur water off Palea Kameni"
+  ],
+  "5": [
+   "Breakfast and check out for the return crossing",
+   "The ferry to Piraeus and a transfer to your hotel",
+   "The afternoon free for the Plaka quarter",
+   "Optional: a last dinner in the old town"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Athens International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Athens city hotel",
+  "2": "Athens city hotel",
+  "3": "Santorini caldera hotel",
+  "4": "Santorini caldera hotel",
+  "5": "Athens city hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Eleni",
+  "image": "/experts/riya.webp",
+  "role": "Greece expert at Hi Tours",
+  "quote": "Athens first, islands second. Two days of ruins and then the ferry out feels like the holiday actually begins twice.",
+  "tip": "Take the morning ferry, not the afternoon one. The meltemi wind picks up after lunch and the crossing is a great deal less pleasant."
+ },
+ "summary": "Six days for two: the Acropolis and its museum in Athens, then two nights on the Santorini caldera with a boat out to the volcano and a swim in the hot springs, before a last evening back in Plaka.",
+ "included": "Included: 3 nights in Athens and 2 nights on Santorini with breakfast; private airport and port transfers; ferry tickets between the islands; all sightseeing as listed with entrance fees where stated; daily breakfast; a guided Athens city tour with the Acropolis Museum; the Santorini volcano and hot springs cruise.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are named on confirmation: the operator quotes a standard class rather than fixed properties."
+}

@@ -750,3 +750,21 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
   the app, but og:image is a relative path and crawlers prefer absolute.
 - P1: the app is a client-rendered CRA, so Google sees an empty HTML shell until it executes JS. Pre-rendering
   (react-snap) or SSR would materially improve indexing of the ~300 trip pages.
+- DONE (10 June 2026): About "Why choose Hi Tours" (3 dictated points + Drive photos), Careers self-hosted video,
+  Drive employee testimonials with 18px quote text, corrected perks (travel credits, training trips, open office,
+  Delhi/NCR events, no remote work), office hours Mon-Fri 9-8 with weekends closed and the office gallery hidden,
+  one-off price/card animations for speed, /asia and /europe going straight to the all-tours listing, and the
+  5 Greece Thrillophilia imports.
+- P0 IN PROGRESS: remaining Nordic imports: Norway 7, Ireland 2, Finland 2, Sweden 3 links. Raw data for all 19 is
+  extracted under /app/import/<slug>/raw.json (9 structured, 10 via extract_legacy.py). Greece 5 are done; the rest
+  need their editorial block in scripts/thrillophilia/nordics_table.py, then gen_nordics.py, check_trip.py,
+  register_trip.py. Multi-country Scandinavia trips must be listed on every Scandinavian page they visit.
+- P0 PENDING (user approved 10 June): only Thrillophilia products site-wide, except Egypt.
+  a) Remove completely (pages, routes, menu, search, sitemap, home tabs): Iceland, Spain, Portugal, Croatia,
+     England, Scotland, Sri Lanka, Maldives, Philippines.
+  b) Strip the generic packages from Cambodia, Laos, Malaysia, Thailand, Singapore (keep imported only).
+  c) Countries left with only multi-country trips open the continent all-tours listing with that country
+     preselected: /europe/holidays?country=italy, /asia/holidays?country=cambodia and so on. Needs a Country facet
+     in holidays/filterModel.js plus query-param preselection, and redirects from the country roots.
+  d) /europe/holidays must cover every European trip (Europe multi-country + Greece + Norway + Ireland + Finland +
+     Sweden) once those imports land, the same way asiaHolidaysData.js aggregates Asia.

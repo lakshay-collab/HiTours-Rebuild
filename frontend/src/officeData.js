@@ -17,26 +17,17 @@ export const office = {
     {
       key: 'sales',
       title: 'Sales',
-      note: 'Planning appointments are usually available on weekdays between 10am and 6pm.',
-      rows: [['Monday', '9:30am to 7pm'], ['Tuesday', '9:30am to 7pm'], ['Wednesday', '9:30am to 7pm'], ['Thursday', '9:30am to 7pm'], ['Friday', '9:30am to 7pm'], ['Saturday', '10am to 6pm'], ['Sunday', '11am to 5pm']]
+      note: 'Planning appointments are available Monday to Friday. We are closed on Saturdays and Sundays.',
+      rows: [['Monday', '9am to 8pm'], ['Tuesday', '9am to 8pm'], ['Wednesday', '9am to 8pm'], ['Thursday', '9am to 8pm'], ['Friday', '9am to 8pm'], ['Saturday', 'Closed'], ['Sunday', 'Closed']]
     },
     {
       key: 'operations',
       title: 'Operations',
       note: 'Travellers already on holiday can reach our operations desk 24 hours a day on the emergency number in their travel documents.',
-      rows: [['Monday', '9am to 8pm'], ['Tuesday', '9am to 8pm'], ['Wednesday', '9am to 8pm'], ['Thursday', '9am to 8pm'], ['Friday', '9am to 8pm'], ['Saturday', '9am to 8pm'], ['Sunday', '10am to 6pm'], ['On-trip emergencies', '24 hours']]
+      rows: [['Monday', '9am to 8pm'], ['Tuesday', '9am to 8pm'], ['Wednesday', '9am to 8pm'], ['Thursday', '9am to 8pm'], ['Friday', '9am to 8pm'], ['Saturday', 'Closed'], ['Sunday', 'Closed'], ['On-trip emergencies', '24 hours']]
     }
   ],
-  gallery: {
-    h2: 'Inside our office',
-    text: 'A look around the Hi Tours office in Vatika City Point.',
-    photos: [
-      { src: un('photo-1497366811353-6870744d04b2', 1200), alt: 'Hi Tours office reception' },
-      { src: un('photo-1522071820081-009f0129c71c', 1200), alt: 'Holiday experts planning a trip' },
-      { src: un('photo-1556761175-b413da4baf72', 1200), alt: 'Team meeting at Hi Tours' },
-      { src: un('photo-1517502884422-41eaead166d4', 1200), alt: 'Operations desk at Hi Tours' }
-    ]
-  },
+  gallery: null,
   page: { title: 'Our retail office in Gurgaon | Hi Tours' }
 };
 

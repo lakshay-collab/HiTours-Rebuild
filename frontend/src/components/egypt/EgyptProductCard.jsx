@@ -45,7 +45,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
       <div className="relative group">
         <div className="relative w-full aspect-[1.59] overflow-hidden bg-[#EAE8E0]">
           <Wrap data-testid="eg-product-image-link">
-            <img src={p.images[i]} alt={p.alt} title={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            <img src={p.images[i]} alt={p.alt} title={p.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
           </Wrap>
           <div className="absolute inset-0 hidden md:flex items-center justify-between p-4 pointer-events-none md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
             <button type="button" onClick={() => go(-1)} className="eg-arrow pointer-events-auto" aria-label="Previous image" data-testid="eg-product-prev"><ChevronLeft size={24} /></button>

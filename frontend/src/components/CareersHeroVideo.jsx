@@ -1,27 +1,19 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 
-// Self-hosted, muted background loop behind the careers hero copy. No third-party player,
-// so there is no branding, no controls and nothing to load from YouTube.
-export default function CareersHeroVideo({ mp4, webm, poster, className = '' }) {
-  const ref = useRef(null);
-  const [ready, setReady] = useState(false);
-
+// Self-hosted, muted background loop behind the careers hero copy. The poster is the clip's own
+// first frame, so there is no separate photo to flash before playback starts.
+export default function CareersHeroVideo({ mp4, webm, poster, label, className = '' }) {
   return (
-    <div
-      className={`absolute inset-0 overflow-hidden transition-opacity duration-700 ${ready ? 'opacity-100' : 'opacity-0'} ${className}`}
-      aria-hidden="true"
-      data-testid="careers-hero-video"
-    >
+    <div className={`absolute inset-0 overflow-hidden ${className}`} data-testid="careers-hero-video">
       <video
-        ref={ref}
-        className="absolute top-1/2 left-1/2 w-full h-full min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 object-cover pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         autoPlay
         muted
         loop
         playsInline
         preload="auto"
         poster={poster}
-        onPlaying={() => setReady(true)}
+        aria-label={label}
         data-testid="careers-hero-video-el"
       >
         {webm && <source src={webm} type="video/webm" />}

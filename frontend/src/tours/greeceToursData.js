@@ -1,12 +1,15 @@
-import { createAdapters } from './vietnamToursData';
-import { packages, cityImages } from '../greecePackages';
+import { enchantingGreeceAthensMykonosProduct } from './enchantingGreeceAthensMykonosData';
+import { spectacularAthensOlympiaDelphiProduct } from './spectacularAthensOlympiaDelphiData';
+import { romanticGreeceAthensSantoriniProduct } from './romanticGreeceAthensSantoriniData';
+import { majesticGreeceAthensMykonosSantoriniProduct } from './majesticGreeceAthensMykonosSantoriniData';
+import { exoticGreeceIslandHoppingProduct } from './exoticGreeceIslandHoppingData';
 
-const { toProduct, build } = createAdapters({
-  cityImages, base: '/europe', ctaHref: '/l/greece/enquiry/passengers/', cruiseCity: '—',
-  expert: { name: "Eleni", image: '/experts/riya.webp', role: 'Greece expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '#' }, { label: "Greece", href: '/europe/greece' }]
-});
-
-export const greeceProducts = packages.map(toProduct);
-export const greeceTours = packages.map(build);
-export const greeceBySlug = Object.fromEntries(greeceTours.map((t) => [t.detail.slug, t]));
+export const greeceProducts = [
+  enchantingGreeceAthensMykonosProduct,
+  spectacularAthensOlympiaDelphiProduct,
+  romanticGreeceAthensSantoriniProduct,
+  majesticGreeceAthensMykonosSantoriniProduct,
+  exoticGreeceIslandHoppingProduct
+];
+export const greeceTours = [];
+export const greeceBySlug = {};

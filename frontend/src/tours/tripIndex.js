@@ -268,6 +268,11 @@ import { parisAndSwitzerlandEiffelRigiBySlug } from './parisAndSwitzerlandEiffel
 import { westernEuropeGroupTourAlpsAmsterdamBySlug } from './westernEuropeGroupTourAlpsAmsterdamData';
 import { switzerlandItalyHoneymoonGondolaBySlug } from './switzerlandItalyHoneymoonGondolaData';
 import { romeFlorenceParisHoneymoonBySlug } from './romeFlorenceParisHoneymoonData';
+import { enchantingGreeceAthensMykonosBySlug } from './enchantingGreeceAthensMykonosData';
+import { spectacularAthensOlympiaDelphiBySlug } from './spectacularAthensOlympiaDelphiData';
+import { romanticGreeceAthensSantoriniBySlug } from './romanticGreeceAthensSantoriniData';
+import { majesticGreeceAthensMykonosSantoriniBySlug } from './majesticGreeceAthensMykonosSantoriniData';
+import { exoticGreeceIslandHoppingBySlug } from './exoticGreeceIslandHoppingData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -538,5 +543,10 @@ export const BY_SLUG = {
   ...parisAndSwitzerlandEiffelRigiBySlug,
   ...westernEuropeGroupTourAlpsAmsterdamBySlug,
   ...switzerlandItalyHoneymoonGondolaBySlug,
-  ...romeFlorenceParisHoneymoonBySlug
+  ...romeFlorenceParisHoneymoonBySlug,
+  ...enchantingGreeceAthensMykonosBySlug,
+  ...spectacularAthensOlympiaDelphiBySlug,
+  ...romanticGreeceAthensSantoriniBySlug,
+  ...majesticGreeceAthensMykonosSantoriniBySlug,
+  ...exoticGreeceIslandHoppingBySlug
 };

@@ -1,0 +1,216 @@
+{
+ "cta_country": "greece",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Greece",
+   "/europe/greece"
+  ]
+ ],
+ "source_slug": "5-days-spectacular-athens-tour",
+ "camel": "spectacularAthensOlympiaDelphi",
+ "slug": "spectacular-greece-athens-olympia-and-delphi",
+ "title": "Spectacular Greece: Athens, Olympia and Delphi",
+ "alt": "The Temple of Apollo at Delphi on the slopes of Mount Parnassus",
+ "transport": "Private airport transfers and a shared coach tour of the mainland",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Short trips"
+ ],
+ "price": 92140,
+ "route_cities": [
+  "Athens",
+  "Olympia",
+  "Delphi",
+  "Athens"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 3,
+  "hotels": 4,
+  "experiences": 4,
+  "transfers": 6,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Athens city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [
+    {
+     "name": "Athens city tour with the Acropolis Museum",
+     "day": 2,
+     "optional": false,
+     "match": "Acropolis",
+     "description": "A guided half day over the rock itself, then down into the glass and concrete museum that holds the sculptures taken off it."
+    }
+   ],
+   "program": {
+    "name": "Athens",
+    "description": "Two nights in the capital, with a guided morning on the Acropolis and the museum below it."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Olympia",
+   "city": "Olympia",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Olympia country hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Quiet hotel among the olive groves near the ancient site",
+   "activities": [
+    {
+     "name": "Corinth Canal, Epidaurus and Mycenae",
+     "day": 3,
+     "optional": false,
+     "match": "",
+     "description": "The narrow cut of the Corinth Canal, the theatre at Epidaurus where a coin dropped on stage is heard in the back row, and the Lion Gate at Mycenae."
+    }
+   ],
+   "program": {
+    "name": "Olympia",
+    "description": "West across the Peloponnese with stops at the Corinth Canal, the theatre at Epidaurus and the citadel of Mycenae."
+   },
+   "subtitle": "Corinth → Epidaurus and Mycenae"
+  },
+  {
+   "letter": "C",
+   "name": "Delphi",
+   "city": "Delphi",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Delphi mountain hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Hillside hotel with the olive valley falling away below",
+   "activities": [
+    {
+     "name": "Ancient Olympia with a guide",
+     "day": 4,
+     "optional": false,
+     "match": "",
+     "description": "The sanctuary of Zeus, the workshop of Pheidias and the stadium where the games were run for a thousand years."
+    }
+   ],
+   "program": {
+    "name": "Delphi",
+    "description": "The sanctuary of Zeus and the original stadium at Olympia, then north over the gulf to Delphi."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Athens",
+   "city": "Athens",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Athens city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel within reach of the Acropolis and Plaka",
+   "activities": [
+    {
+     "name": "The sanctuary of Delphi",
+     "day": 5,
+     "optional": false,
+     "match": "",
+     "description": "The Sacred Way up past the treasuries to the Temple of Apollo, the stadium above it and the bronze charioteer in the museum."
+    }
+   ],
+   "program": {
+    "name": "Athens",
+    "description": "The oracle at Delphi in the morning, then the mountain road back to Athens through Arachova."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Athens",
+  "2": "The Acropolis and its museum",
+  "3": "Across the Peloponnese to Olympia",
+  "4": "Ancient Olympia, then north to Delphi",
+  "5": "The oracle at Delphi and back to Athens",
+  "6": "Departure from Athens"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Athens International and transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: a first walk through Monastiraki",
+   "Optional: dinner with the rock floodlit above you"
+  ],
+  "2": [
+   "Breakfast, then up to the rock with your guide",
+   "The Parthenon, the Erechtheion and the Propylaea",
+   "Down to the Acropolis Museum and its marbles",
+   "The afternoon free for Plaka and the flea market"
+  ],
+  "3": [
+   "Breakfast and check out for the road west",
+   "The narrow cut of the Corinth Canal",
+   "The theatre at Epidaurus and its famous acoustics",
+   "The Lion Gate at Mycenae before Olympia for the night"
+  ],
+  "4": [
+   "Breakfast, then into the sanctuary of Zeus",
+   "The workshop of Pheidias and the old stadium",
+   "North over the gulf through Nafpaktos",
+   "Into the mountains at Delphi for the night"
+  ],
+  "5": [
+   "Breakfast below the slopes of Parnassus",
+   "The Sacred Way, the treasuries and the Temple of Apollo",
+   "The bronze charioteer in the site museum",
+   "The mountain road back through Arachova to Athens"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Athens International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Athens city hotel",
+  "2": "Athens city hotel",
+  "3": "Olympia country hotel",
+  "4": "Delphi mountain hotel",
+  "5": "Athens city hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Eleni",
+  "image": "/experts/riya.webp",
+  "role": "Greece expert at Hi Tours",
+  "quote": "The mainland is the half of Greece most people skip. Olympia and Delphi are quieter than the Acropolis and twice as atmospheric.",
+  "tip": "Carry a hat and water for Olympia and Delphi. Both sites are open ground with almost no shade, and the middle of the day is punishing in summer."
+ },
+ "summary": "Six days across classical Greece: the Acropolis and its museum in Athens, the Corinth Canal, Epidaurus and Mycenae on the road west, the sanctuary at Olympia, and the oracle at Delphi before the mountain road back.",
+ "included": "Included: 3 nights in Athens, 1 night at Olympia and 1 night at Delphi with breakfast; two dinners on the mainland tour; private airport and port transfers; ferry tickets between the islands; all sightseeing as listed with entrance fees where stated; daily breakfast; a guided Athens city tour with the Acropolis Museum; the three day coach tour of the Peloponnese and Delphi.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are named on confirmation: the operator quotes a standard class rather than fixed properties."
+}

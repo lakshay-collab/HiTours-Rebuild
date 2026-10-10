@@ -44,6 +44,10 @@ import Careers from './pages/Careers';
 import Sitemap from './pages/Sitemap';
 import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
+import EgyptHolidays2 from './pages/EgyptHolidays';
+import { asiaHolidays } from './asiaHolidaysData';
+
+const AsiaHolidays = () => <EgyptHolidays2 d={asiaHolidays} />;
 
 const COUNTRY_ROOTS = [
   '/africa/egypt',
@@ -121,7 +125,10 @@ function App() {
           <Route path="/africa/egypt/holidays/:style" element={<EgyptHolidays />} />
           <Route path="/africa/egypt/travel-style/:style" element={<StyleRedirect />} />
           <Route path="/africa/egypt/:slug" element={<EgyptDetail />} />
-          <Route path="/asia" element={<AsiaListing />} />
+          <Route path="/asia" element={<Navigate to="/asia/holidays" replace />} />
+          <Route path="/asia/holidays" element={<AsiaHolidays />} />
+          <Route path="/asia/holidays/:style" element={<AsiaHolidays />} />
+          <Route path="/asia/overview" element={<AsiaListing />} />
           <Route path="/asia/vietnam/holidays" element={<VietnamHolidays />} />
           <Route path="/asia/vietnam/holidays/:style" element={<VietnamHolidays />} />
           <Route path="/asia/sri-lanka/holidays" element={<SriLankaHolidays />} />
@@ -148,7 +155,8 @@ function App() {
           <Route path="/asia/philippines/holidays/:style" element={<PhilippinesHolidays />} />
           <Route path="/asia/south-korea/holidays" element={<SouthKoreaHolidays />} />
           <Route path="/asia/south-korea/holidays/:style" element={<SouthKoreaHolidays />} />
-          <Route path="/europe" element={<EuropeListing />} />
+          <Route path="/europe" element={<Navigate to="/europe/holidays" replace />} />
+          <Route path="/europe/overview" element={<EuropeListing />} />
           <Route path="/europe/holidays" element={<EuropeHolidays />} />
           <Route path="/europe/holidays/:style" element={<EuropeHolidays />} />
           <Route path="/europe/iceland/holidays" element={<IcelandHolidays />} />
