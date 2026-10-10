@@ -777,3 +777,14 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
   with check_trip.py, registered with register_trip.py. Then add those products to europeListingData's aggregate
   and list the Scandinavia combos on every Nordic country they visit.
 - P1: three careers testimonial names and job titles still needed from the user; confirm whether "CR" means NCR.
+
+## Status update - 10 October 2026 (afternoon)
+- DONE: Nordic imports (Norway 7, Ireland 2, Finland 2, Sweden 3) built, check_trip-validated, registered, aggregated
+  into /europe/holidays (24 unique trips; Scandinavia combos cross-listed so country counts sum higher). Norway facet
+  fixed 9->10 (countryOfPlace now strips diacritics; Tromsø/Geilo/Hammerfest/Kristiansand/Tvedestrand/Clare/Kerry added).
+- DONE: "Why Hi Tours is worth it" table -> columns "Others" (all crosses) / "With Hi Tours" (all ticks); row 3 =
+  "Experts in multi-day, multi-city and multi-country planning".
+- DONE: Care rebrand - "Hi Tours Cares" everywhere (menu, footer, page, FAQs); "Hi Tours Assure" -> "Standard Booking
+  Policy", "Hi Tours Flex" -> "Hi Tours Cares". Both "Plan for free" buttons on /care open the lead modal (no /asia link).
+- Bali breadcrumbs/links already on /asia/bali; only LegacyRedirect keeps /asia/indonesia. Verified iteration_60.json (all pass).
+- P1 (user to confirm in a real browser): homepage hero video load speed, favicon look, social carousel scrolling.
