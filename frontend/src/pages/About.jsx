@@ -91,7 +91,7 @@ function Top10() {
     <section className="eg-container flex flex-col gap-6" data-testid="about-top10">
       <div className="flex flex-col gap-3"><h2 className="eg-display-sm text-[#002131]">{top10.h2}</h2><p className="eg-body-lg text-[#174358] max-w-[640px]">{top10.text}</p></div>
       <div className="relative">
-        <div ref={ref} className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-testid="about-top10-track">
+        <div ref={ref} className="flex gap-5 overflow-x-auto snap-x snap-proximity [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-testid="about-top10-track">
           {top10.items.map((d) => (
             <Link key={d.name} to={d.href} className="group relative shrink-0 snap-start w-[216px] sm:w-[248px] h-[300px] sm:h-[330px] rounded-xl overflow-hidden bg-[#EAE8E0]" data-testid="about-top10-card">
               <img src={d.src} alt={d.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />

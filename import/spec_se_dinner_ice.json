@@ -1,0 +1,224 @@
+{
+ "cta_country": "sweden",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Sweden",
+   "/europe/sweden"
+  ]
+ ],
+ "source_slug": "northern-lights-in-sweden-with-dinner-on-the-ice",
+ "camel": "swedenNorthernLightsDinnerOnIce",
+ "slug": "sweden-northern-lights-with-dinner-on-the-ice",
+ "title": "Northern Lights in Sweden with Dinner on the Ice",
+ "alt": "A dinner table set on the sea ice outside Brändön Lodge at dusk",
+ "transport": "Airport transfers and trains Luleå to Kiruna and Abisko",
+ "tag": "Northern Lights",
+ "tags": [
+  "Northern Lights",
+  "Honeymoon",
+  "Winter"
+ ],
+ "price": 102922,
+ "route_cities": [
+  "Luleå",
+  "Kiruna",
+  "Abisko",
+  "Jukkasjärvi"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 5,
+  "transfers": 5,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Brändön Lodge",
+   "city": "Luleå",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Brändön Lodge",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Cabins on the shore of the frozen Bothnian Sea",
+   "activities": [
+    {
+     "name": "Husky safari and dinner on the ice",
+     "day": 2,
+     "optional": false,
+     "match": "husky",
+     "description": "Drive a husky team across the frozen sea, then dinner cooked over a fire on the ice."
+    },
+    {
+     "name": "Northern lights safari",
+     "day": 3,
+     "optional": false,
+     "match": "aurora",
+     "description": "An evening on snowmobile sledges out onto the sea ice away from every light."
+    }
+   ],
+   "program": {
+    "name": "Brändön Lodge",
+    "description": "Three nights at Brändön Lodge for a husky safari, dinner on the ice and a northern lights safari."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kiruna",
+   "city": "Kiruna",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Camp Ripan",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Resort with Aurora Spa in Kiruna",
+   "activities": [
+    {
+     "name": "Optional: Aurora Spa",
+     "day": 4,
+     "optional": true,
+     "match": "",
+     "description": "Outdoor hot pools under the Arctic sky."
+    }
+   ],
+   "program": {
+    "name": "Kiruna",
+    "description": "North by train to Kiruna and a night at Camp Ripan with its outdoor Aurora Spa."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Abisko",
+   "city": "Abisko",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Abisko mountain lodge",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Lodge in the national park",
+   "activities": [
+    {
+     "name": "Optional: Aurora Sky Station",
+     "day": 5,
+     "optional": true,
+     "match": "aurora",
+     "description": "The chairlift up Mount Nuolja to the Aurora Sky Station."
+    }
+   ],
+   "program": {
+    "name": "Abisko",
+    "description": "A night in Abisko, the clearest-sky aurora spot in the Nordics."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Icehotel",
+   "city": "Jukkasjärvi",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Icehotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · A night in the original Icehotel",
+   "activities": [
+    {
+     "name": "Icehotel night",
+     "day": 6,
+     "optional": false,
+     "match": "ice",
+     "description": "Sleep in an art suite of ice and snow at minus five, with a sauna and hot lingonberry juice in the morning."
+    }
+   ],
+   "program": {
+    "name": "Icehotel",
+    "description": "A night in a room carved from ice before your flight from Kiruna."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Luleå",
+  "2": "Husky safari and dinner on the ice",
+  "3": "Northern lights safari",
+  "4": "Train to Kiruna",
+  "5": "Abisko",
+  "6": "The Icehotel",
+  "7": "Departure from Kiruna"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Luleå airport and private transfer to Brändön Lodge",
+   "Check in to your cabin on the frozen shore"
+  ],
+  "2": [
+   "Breakfast, then a husky safari across the sea ice",
+   "Dinner cooked over a fire on the ice"
+  ],
+  "3": [
+   "Breakfast and a free day at the lodge",
+   "Evening safari onto the ice in search of the aurora"
+  ],
+  "4": [
+   "Breakfast and check out",
+   "Train north to Kiruna and Camp Ripan",
+   "Optional: the Aurora Spa"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Train to Abisko in the national park",
+   "Optional: the Aurora Sky Station"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Transfer to Jukkasjärvi and the Icehotel",
+   "A night in a room of ice"
+  ],
+  "7": [
+   "Hot drinks and breakfast after your ice night",
+   "Transfer to Kiruna airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B, D",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Brändön Lodge",
+  "2": "Brändön Lodge",
+  "3": "Brändön Lodge",
+  "4": "Camp Ripan",
+  "5": "Abisko mountain lodge",
+  "6": "Icehotel",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Elsa",
+  "image": "/experts/riya.webp",
+  "role": "Sweden expert at Hi Tours",
+  "quote": "Swedish Lapland is the aurora trip for people who want the wild version: huskies, ice and very few other travellers.",
+  "tip": "Abisko sits in a rain shadow and has the clearest skies in the Nordics. If you only have one night to chase the lights, make it that one."
+ },
+ "summary": "Seven winter days from the Bothnian coast to the Icehotel: a husky safari and dinner on the ice at Brändön Lodge, an aurora safari, Kiruna, Abisko and a night carved from ice.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

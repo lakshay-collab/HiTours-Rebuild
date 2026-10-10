@@ -7,6 +7,8 @@ import { destinationsHeading, destinationsSubcopy } from '../mock';
 
 export { COUNTRY_HREF };
 const REGION_HREF = { 'Asia': '/asia', 'Europe': '/europe' };
+// Cards are ~370px wide, so ask the CDN for a 600px thumbnail instead of the 900px hero size.
+const thumb = (src) => src.replace(/[?&]w=\d+/, (m) => m[0] + 'w=600').replace('q=70', 'q=60');
 
 export const ComingSoonTag = ({ className = '' }) => (
   <span className={`inline-flex items-center rounded-full bg-surface-variant text-onsurface-variant px-2 py-0.5 text-[11px] font-semibold tracking-[0.04em] whitespace-nowrap shrink-0 ${className}`} data-testid="coming-soon-tag">{COMING_SOON}</span>
@@ -55,14 +57,14 @@ export default function Destinations() {
               return (
                 <div key={d.name} className={`${cls} cursor-default`} aria-disabled="true" data-testid="destination-card-coming-soon">
                   <div className="relative h-[150px] overflow-hidden">
-                    <img src={d.src} alt={d.name} className="w-full h-full object-cover opacity-80" loading="lazy" />
+                    <img src={thumb(d.src)} alt={d.name} className="w-full h-full object-cover opacity-80" loading="lazy" decoding="async" />
                     <ComingSoonTag className="absolute top-2 left-2 bg-white/95 shadow-sm" />
                   </div>
                   <div className="px-2 py-2 t-body-lg text-onsurface">{d.name}</div>
                 </div>
               );
             }
-            const inner = <><div className="h-[150px] overflow-hidden"><img src={d.src} alt={d.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" /></div><div className="px-2 py-2 t-body-lg text-onsurface">{d.name}</div></>;
+            const inner = <><div className="h-[150px] overflow-hidden"><img src={thumb(d.src)} alt={d.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" /></div><div className="px-2 py-2 t-body-lg text-onsurface">{d.name}</div></>;
             return <Link key={d.name} to={href} className={`${cls} hover:shadow-[0_2px_8px_rgba(0,0,0,0.12)]`} data-testid="destination-card">{inner}</Link>;
           })}
         </div>

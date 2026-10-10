@@ -262,6 +262,20 @@ import { spectacularAthensOlympiaDelphiBySlug } from './spectacularAthensOlympia
 import { romanticGreeceAthensSantoriniBySlug } from './romanticGreeceAthensSantoriniData';
 import { majesticGreeceAthensMykonosSantoriniBySlug } from './majesticGreeceAthensMykonosSantoriniData';
 import { exoticGreeceIslandHoppingBySlug } from './exoticGreeceIslandHoppingData';
+import { bestOfScandinavianNorwayFjordsBySlug } from './bestOfScandinavianNorwayFjordsData';
+import { norwegianEscapadeNorthernLightsBySlug } from './norwegianEscapadeNorthernLightsData';
+import { classicNorwayHurtigrutenFlamBySlug } from './classicNorwayHurtigrutenFlamData';
+import { norwegianHighlightsFjordsCoastBySlug } from './norwegianHighlightsFjordsCoastData';
+import { arcticNorwayWinterWonderlandBySlug } from './arcticNorwayWinterWonderlandData';
+import { southernNorwegianDelightsBySlug } from './southernNorwegianDelightsData';
+import { bestOfNorthernLightsNorway14DaysBySlug } from './bestOfNorthernLightsNorway14DaysData';
+import { irelandClassicCircuitDublinGalwayBySlug } from './irelandClassicCircuitDublinGalwayData';
+import { irelandHoneymoonWildAtlanticBySlug } from './irelandHoneymoonWildAtlanticData';
+import { finlandEscapadeLaplandInariBySlug } from './finlandEscapadeLaplandInariData';
+import { scandinaviaGroupTourHelsinkiCopenhagenBySlug } from './scandinaviaGroupTourHelsinkiCopenhagenData';
+import { scandinaviaClassicFlamRailwayBySlug } from './scandinaviaClassicFlamRailwayData';
+import { swedenNorthernLightsSafariBySlug } from './swedenNorthernLightsSafariData';
+import { swedenNorthernLightsDinnerOnIceBySlug } from './swedenNorthernLightsDinnerOnIceData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -526,5 +540,19 @@ export const BY_SLUG = {
   ...spectacularAthensOlympiaDelphiBySlug,
   ...romanticGreeceAthensSantoriniBySlug,
   ...majesticGreeceAthensMykonosSantoriniBySlug,
-  ...exoticGreeceIslandHoppingBySlug
+  ...exoticGreeceIslandHoppingBySlug,
+  ...bestOfScandinavianNorwayFjordsBySlug,
+  ...norwegianEscapadeNorthernLightsBySlug,
+  ...classicNorwayHurtigrutenFlamBySlug,
+  ...norwegianHighlightsFjordsCoastBySlug,
+  ...arcticNorwayWinterWonderlandBySlug,
+  ...southernNorwegianDelightsBySlug,
+  ...bestOfNorthernLightsNorway14DaysBySlug,
+  ...irelandClassicCircuitDublinGalwayBySlug,
+  ...irelandHoneymoonWildAtlanticBySlug,
+  ...finlandEscapadeLaplandInariBySlug,
+  ...scandinaviaGroupTourHelsinkiCopenhagenBySlug,
+  ...scandinaviaClassicFlamRailwayBySlug,
+  ...swedenNorthernLightsSafariBySlug,
+  ...swedenNorthernLightsDinnerOnIceBySlug
 };

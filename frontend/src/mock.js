@@ -122,14 +122,14 @@ export const comparison = {
   colAlone: 'On your own',
   colHiTours: 'With Hi Tours',
   rows: [
-    { text: 'More than 50 destinations worldwide to discover', alone: true },
-    { text: 'All-round travel service (hotel / flight / transfer / activities)', alone: false },
-    { text: 'A personal travel expert for the planning', alone: false },
-    { text: 'Insider tips and tailored recommendations', alone: false },
-    { text: 'Minimal time spent planning the trip', alone: false },
-    { text: 'Entire booking through a single provider', alone: false },
-    { text: 'Flexible cancellation and rebooking options for the whole trip', alone: false },
-    { text: 'Customer service and 24-hour emergency assistance while travelling', alone: false }
+    { text: 'Specialists in more than 50 destinations across Asia, Europe and the Middle East', alone: true },
+    { text: 'Save up to 60% by bundling hotels, flights, transfers and activities', alone: false },
+    { text: 'Experts in multi-day, multi-city planning: every day of the route thought through', alone: false },
+    { text: 'Customised to your taste, pace and budget, not a fixed group itinerary', alone: false },
+    { text: 'One personal holiday expert from first call to final booking', alone: false },
+    { text: '24/7 on-ground support and customer care while you travel', alone: false },
+    { text: 'Flexible cancellation and changes for the whole trip', alone: false },
+    { text: '30 years of trust and over 1 million happy travellers', alone: false }
   ]
 };
 

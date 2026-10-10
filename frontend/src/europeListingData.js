@@ -2,6 +2,10 @@
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
 import { europeProducts } from './tours/europeToursData';
 import { greeceProducts } from './tours/greeceToursData';
+import { norwayProducts } from './tours/norwayToursData';
+import { irelandProducts } from './tours/irelandToursData';
+import { finlandProducts } from './tours/finlandToursData';
+import { swedenProducts } from './tours/swedenToursData';
 import { countriesOfPlaces } from './holidays/countryOfPlace';
 const E = (n) => `/europe/${n}.webp`;
 
@@ -65,7 +69,7 @@ export const tours = {
 
 // Every European trip we run: the multi-country itineraries plus each country's own tours.
 export const products = Object.values(Object.fromEntries(
-  [...europeProducts, ...greeceProducts].filter(Boolean)
+  [...new Set([...europeProducts, ...greeceProducts, ...norwayProducts, ...irelandProducts, ...finlandProducts, ...swedenProducts])].filter(Boolean)
     .map((p) => [p.slug, { ...p, countries: p.countries || countriesOfPlaces(p.places) }])
 ));
 

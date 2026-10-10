@@ -1,0 +1,236 @@
+{
+ "cta_country": "ireland",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Ireland",
+   "/europe/ireland"
+  ]
+ ],
+ "source_slug": "7-days-ireland-tour-package",
+ "camel": "irelandClassicCircuitDublinGalway",
+ "slug": "classic-ireland-dublin-cork-and-galway",
+ "title": "Classic Ireland: Dublin, Cork and Galway",
+ "alt": "The Cliffs of Moher dropping into the Atlantic on the west coast of Ireland",
+ "transport": "Airport transfers and a private vehicle with driver for the full circuit",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Nature",
+  "Road trip"
+ ],
+ "price": 75999,
+ "route_cities": [
+  "Dublin",
+  "Cork",
+  "Limerick",
+  "Galway",
+  "Dublin"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 5,
+  "experiences": 4,
+  "transfers": 7,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Dublin",
+   "city": "Dublin",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel named on confirmation",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · City-centre hotel near Temple Bar",
+   "activities": [
+    {
+     "name": "Dublin city tour",
+     "day": 2,
+     "optional": false,
+     "match": "Dublin",
+     "description": "Trinity College and the Book of Kells, St Patrick's Cathedral, the Guinness Storehouse and the Georgian squares."
+    }
+   ],
+   "program": {
+    "name": "Dublin",
+    "description": "Two nights in the capital with a day of guided sightseeing."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Cork",
+   "city": "Cork",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the city centre",
+   "activities": [
+    {
+     "name": "Powerscourt, Kilkenny and Cashel",
+     "day": 3,
+     "optional": false,
+     "match": "Cashel",
+     "description": "The gardens at Powerscourt, Kilkenny Castle and the medieval Rock of Cashel on the road south."
+    }
+   ],
+   "program": {
+    "name": "Cork",
+    "description": "South through Powerscourt, Kilkenny and the Rock of Cashel to Cork."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Limerick",
+   "city": "Limerick",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel near the Shannon",
+   "activities": [
+    {
+     "name": "Kinsale, Killarney and Adare",
+     "day": 4,
+     "optional": false,
+     "match": "Killarney",
+     "description": "The harbour town of Kinsale, the lakes of Killarney and the thatched village of Adare."
+    }
+   ],
+   "program": {
+    "name": "Limerick",
+    "description": "Kinsale, Killarney and Adare on the way to Limerick."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Galway",
+   "city": "Galway",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the city centre",
+   "activities": [
+    {
+     "name": "Cliffs of Moher",
+     "day": 5,
+     "optional": false,
+     "match": "Moher",
+     "description": "Eight kilometres of cliffs 200 metres above the Atlantic, then the limestone Burren to Galway."
+    }
+   ],
+   "program": {
+    "name": "Galway",
+    "description": "The Cliffs of Moher and the Burren on the road to Galway."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Dublin",
+   "city": "Dublin",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · City-centre hotel near Temple Bar",
+   "activities": [],
+   "program": {
+    "name": "Dublin",
+    "description": "Across the midlands via Clonmacnoise for a last night in Dublin."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Dublin",
+  "2": "Dublin sightseeing",
+  "3": "Dublin to Cork",
+  "4": "Cork to Limerick",
+  "5": "Limerick to Galway",
+  "6": "Galway to Dublin",
+  "7": "Departure from Dublin"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: an evening in Temple Bar"
+  ],
+  "2": [
+   "Breakfast, then a guided day in the capital",
+   "Trinity College, St Patrick's and the Guinness Storehouse",
+   "The evening free"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "Powerscourt Gardens and Kilkenny Castle",
+   "The Rock of Cashel, then on to Cork"
+  ],
+  "4": [
+   "Breakfast and check out",
+   "Kinsale harbour and the Killarney lakes",
+   "Adare village and on to Limerick"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "The Cliffs of Moher and the Burren",
+   "Arrival in Galway and a free evening"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Clonmacnoise monastery on the Shannon",
+   "Back in Dublin for a last evening"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel named on confirmation",
+  "2": "Hotel named on confirmation",
+  "3": "Hotel named on confirmation",
+  "4": "Hotel named on confirmation",
+  "5": "Hotel named on confirmation",
+  "6": "Hotel named on confirmation",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aoife",
+  "image": "/experts/riya.webp",
+  "role": "Ireland expert at Hi Tours",
+  "quote": "Ireland is small enough to circle in a week and warm enough that you will want to stay longer in every pub you pass.",
+  "tip": "Pack layers, not an umbrella. The weather changes every hour on the west coast and the wind makes umbrellas useless on the cliffs."
+ },
+ "summary": "A week round Ireland by road: two nights in Dublin, the Rock of Cashel and Kilkenny on the way to Cork, Killarney and Adare to Limerick, the Cliffs of Moher to Galway and back across the midlands.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Irish visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

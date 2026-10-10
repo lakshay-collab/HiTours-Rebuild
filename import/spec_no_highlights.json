@@ -1,0 +1,283 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "norwegian-highlights",
+ "camel": "norwegianHighlightsFjordsCoast",
+ "slug": "norwegian-highlights-fjords-and-coast",
+ "title": "Norwegian Highlights: Fjords and the Coast",
+ "alt": "The Atlantic Road bridges near Molde curving over the sea",
+ "transport": "Airport transfers, the Bergen line and Flåm Railway, a two-night Hurtigruten voyage and the Dovre line back to Oslo",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Nature"
+ ],
+ "price": 292579,
+ "route_cities": [
+  "Oslo",
+  "Flåm",
+  "Bergen",
+  "Molde",
+  "Trondheim",
+  "Oslo"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 5,
+  "hotels": 6,
+  "experiences": 5,
+  "transfers": 8,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Saga Hotel Oslo Central",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Boutique hotel in the centre",
+   "activities": [],
+   "program": {
+    "name": "Oslo",
+    "description": "A first night in the capital."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Flåm",
+   "city": "Flåm",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Hotel Flåmsbrygga",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Waterside hotel at the head of the Aurlandsfjord",
+   "activities": [
+    {
+     "name": "Flåm Railway",
+     "day": 2,
+     "optional": false,
+     "match": "Flåm",
+     "description": "From Myrdal down to the fjord through 20 tunnels, with the stop at the Kjosfossen waterfall."
+    }
+   ],
+   "program": {
+    "name": "Flåm",
+    "description": "The Bergen line and Flåm Railway to the fjord."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Thon Hotel Bristol",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Hotel on the main square, Bryggen a short walk away",
+   "activities": [
+    {
+     "name": "Nærøyfjord cruise",
+     "day": 3,
+     "optional": false,
+     "match": "fjord",
+     "description": "Ferry from Flåm through the narrow UNESCO fjord to Gudvangen, then coach and train on to Bergen."
+    },
+    {
+     "name": "Optional: Fløibanen funicular",
+     "day": 4,
+     "optional": true,
+     "match": "",
+     "description": "Up Mount Fløyen for the classic view over the harbour and the seven mountains."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "The Nærøyfjord crossing to Bergen, a free day in the city and boarding the coastal ship."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Hurtigruten",
+   "city": "Molde",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Hurtigruten coastal ship",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Outside cabin on board",
+   "activities": [
+    {
+     "name": "Hurtigruten coastal voyage",
+     "day": 5,
+     "optional": false,
+     "match": "Hurtigruten",
+     "description": "Two nights on the coastal route north from Bergen, calling at Florø, Ålesund, Molde and Kristiansund."
+    }
+   ],
+   "program": {
+    "name": "Hurtigruten",
+    "description": "Two nights at sea on the coastal express past Ålesund and Molde to Trondheim."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Trondheim",
+   "city": "Trondheim",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "Clarion Hotel Trondheim",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Harbourside hotel near the old town",
+   "activities": [],
+   "program": {
+    "name": "Trondheim",
+    "description": "Disembark in Trondheim for the cathedral and the old wharves."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 8 to 10",
+   "hotel": "Park Inn by Radisson Oslo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel by the station",
+   "activities": [
+    {
+     "name": "Oslo discovery tour",
+     "day": 9,
+     "optional": false,
+     "match": "Oslo",
+     "description": "A guided day round Vigeland Park, the Holmenkollen ski jump, the Opera House and the Bygdøy museums."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "The Dovre line south and a guided day in the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Oslo",
+  "2": "Oslo to Flåm",
+  "3": "Nærøyfjord to Bergen",
+  "4": "A free day in Bergen",
+  "5": "Board the Hurtigruten",
+  "6": "Ålesund and Molde by sea",
+  "7": "Trondheim",
+  "8": "Train to Oslo",
+  "9": "Oslo discovery tour",
+  "10": "Departure from Oslo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast and check out",
+   "The Bergen line to Myrdal",
+   "The Flåm Railway down to the fjord"
+  ],
+  "3": [
+   "Breakfast, then the fjord ferry to Gudvangen",
+   "Coach to Voss and the train to Bergen",
+   "Check in and a free evening"
+  ],
+  "4": [
+   "Breakfast, then the day yours",
+   "Optional: Fløibanen, Bryggen and the fish market"
+  ],
+  "5": [
+   "Breakfast and a free morning",
+   "Boarding the coastal ship in the afternoon",
+   "Dinner on board as Bergen slips behind"
+  ],
+  "6": [
+   "Breakfast on board",
+   "Calls at Ålesund and Molde through the day",
+   "A second night at sea"
+  ],
+  "7": [
+   "Breakfast on board and arrival in Trondheim",
+   "Transfer to your hotel",
+   "The old town and Nidaros Cathedral at leisure"
+  ],
+  "8": [
+   "Breakfast and check out",
+   "The Dovre line south over the mountains",
+   "Arrival in Oslo and a free evening"
+  ],
+  "9": [
+   "Breakfast, then a guided day in the capital",
+   "Vigeland Park, Holmenkollen and the Opera House",
+   "The Bygdøy museums in the afternoon"
+  ],
+  "10": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B, D",
+  "6": "B, L, D",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B"
+ },
+ "hotel_by_day": {
+  "1": "Saga Hotel Oslo Central",
+  "2": "Hotel Flåmsbrygga",
+  "3": "Thon Hotel Bristol",
+  "4": "Thon Hotel Bristol",
+  "5": "Thon Hotel Bristol",
+  "6": "Hurtigruten coastal ship",
+  "7": "Clarion Hotel Trondheim",
+  "8": "Park Inn by Radisson Oslo",
+  "9": "Park Inn by Radisson Oslo",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "Norway is a country you travel through, not to. Let the trains and ferries do the work and the fjords arrive on their own.",
+  "tip": "Sit on the left side of the Flåm Railway going down. The Kjosfossen waterfall stop is on that side and the drop into the valley is far better."
+ },
+ "summary": "Ten days across Norway's highlights: the Flåm Railway and Nærøyfjord, three nights in Bergen, two nights on the Hurtigruten coastal ship via Ålesund and Molde, Trondheim, and a guided day in Oslo.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

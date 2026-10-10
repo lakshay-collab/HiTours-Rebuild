@@ -1,0 +1,281 @@
+{
+ "cta_country": "finland",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Finland",
+   "/europe/finland"
+  ]
+ ],
+ "source_slug": "scandinavia-classic-with-free-flam-railway",
+ "camel": "scandinaviaClassicFlamRailway",
+ "slug": "scandinavia-classic-helsinki-stockholm-oslo-bergen-copenhagen",
+ "title": "Scandinavia Classic: Helsinki, Stockholm, Oslo, Bergen and Copenhagen",
+ "alt": "The Flåm Railway winding down the valley above the Aurlandsfjord",
+ "transport": "Overnight cruise Helsinki to Stockholm, trains Stockholm to Oslo and Oslo to Bergen via Flåm, and a flight to Copenhagen",
+ "tag": "Multi-country",
+ "tags": [
+  "Multi-country",
+  "Culture",
+  "Nature"
+ ],
+ "price": 301559,
+ "route_cities": [
+  "Helsinki",
+  "Stockholm",
+  "Oslo",
+  "Bergen",
+  "Copenhagen"
+ ],
+ "counts": {
+  "days": 11,
+  "nights": 10,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 6,
+  "transfers": 9,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Helsinki",
+   "city": "Helsinki",
+   "days": [
+    1,
+    2,
+    3
+   ],
+   "dayLabel": "Day 1 to 3",
+   "hotel": "Radisson Blu Royal Hotel, Helsinki",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Hotel by the station, then a cabin on the Stockholm ferry",
+   "activities": [
+    {
+     "name": "Helsinki and Suomenlinna tour",
+     "day": 2,
+     "optional": false,
+     "match": "Suomenlinna",
+     "description": "The city highlights and the ferry to the sea fortress of Suomenlinna."
+    }
+   ],
+   "program": {
+    "name": "Helsinki",
+    "description": "Two nights in Helsinki with a city and Suomenlinna tour, then the overnight cruise."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Stockholm",
+   "city": "Stockholm",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Hotel Lady Hamilton Collector's",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Historic hotel in Gamla Stan",
+   "activities": [
+    {
+     "name": "Stockholm hop-on hop-off",
+     "day": 4,
+     "optional": false,
+     "match": "Stockholm",
+     "description": "Gamla Stan, the Royal Palace, Djurgården and the Vasa Museum at your own pace."
+    }
+   ],
+   "program": {
+    "name": "Stockholm",
+    "description": "A day in Stockholm on the hop-on hop-off bus."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Thon Hotel Europa",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel by the Royal Palace park",
+   "activities": [
+    {
+     "name": "Oslo sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Oslo",
+     "description": "Vigeland Park, Holmenkollen, the Opera House and the Bygdøy museums."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Train across to Oslo and a guided day in the capital."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Bergen city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel near Bryggen",
+   "activities": [
+    {
+     "name": "Norway in a Nutshell with the Flåm Railway",
+     "day": 7,
+     "optional": false,
+     "match": "Flåm",
+     "description": "Bergen line, Flåm Railway, Nærøyfjord ferry and the Stalheim coach to Bergen."
+    },
+    {
+     "name": "Bergen walking tour and Fløibanen",
+     "day": 8,
+     "optional": false,
+     "match": "Bryggen",
+     "description": "Bryggen, the fish market and the funicular up Mount Fløyen."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "The Norway in a Nutshell route with the Flåm Railway, then a walking tour and the Fløibanen."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Copenhagen",
+   "city": "Copenhagen",
+   "days": [
+    9,
+    10,
+    11
+   ],
+   "dayLabel": "Day 9 to 11",
+   "hotel": "Copenhagen city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in the centre",
+   "activities": [
+    {
+     "name": "Copenhagen hop-on hop-off and canal cruise",
+     "day": 10,
+     "optional": false,
+     "match": "Copenhagen",
+     "description": "Nyhavn, Amalienborg, the Little Mermaid and an hour on the canals."
+    }
+   ],
+   "program": {
+    "name": "Copenhagen",
+    "description": "Fly to Copenhagen for the hop-on hop-off bus and a canal cruise."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Helsinki",
+  "2": "Helsinki and Suomenlinna",
+  "3": "Overnight cruise to Stockholm",
+  "4": "Stockholm",
+  "5": "Train to Oslo",
+  "6": "Oslo sightseeing",
+  "7": "Norway in a Nutshell",
+  "8": "Bergen on foot",
+  "9": "Fly to Copenhagen",
+  "10": "Copenhagen",
+  "11": "Departure from Copenhagen"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast, then a city sightseeing tour",
+   "Ferry to the Suomenlinna fortress islands"
+  ],
+  "3": [
+   "Breakfast and a free morning",
+   "Boarding the Silja Line in the afternoon",
+   "A night at sea through the archipelago"
+  ],
+  "4": [
+   "Breakfast on board and arrival",
+   "Hop-on hop-off day round the city",
+   "Check in and a free evening in Gamla Stan"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Train across Sweden to Oslo",
+   "Check in and the evening free"
+  ],
+  "6": [
+   "Breakfast, then a guided tour of the capital",
+   "Vigeland Park, Holmenkollen and the Opera House"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "Bergen line, Flåm Railway and the Nærøyfjord ferry",
+   "Arrival in Bergen"
+  ],
+  "8": [
+   "Breakfast, then a walking tour of Bryggen",
+   "The Fløibanen funicular for the view"
+  ],
+  "9": [
+   "Breakfast and transfer to the airport",
+   "Flight to Copenhagen and check in"
+  ],
+  "10": [
+   "Breakfast, then the hop-on hop-off bus",
+   "An hour on the canals from Nyhavn"
+  ],
+  "11": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B"
+ },
+ "hotel_by_day": {
+  "1": "Radisson Blu Royal Hotel, Helsinki",
+  "2": "Radisson Blu Royal Hotel, Helsinki",
+  "3": "Radisson Blu Royal Hotel, Helsinki",
+  "4": "Hotel Lady Hamilton Collector's",
+  "5": "Thon Hotel Europa",
+  "6": "Thon Hotel Europa",
+  "7": "Bergen city hotel",
+  "8": "Bergen city hotel",
+  "9": "Copenhagen city hotel",
+  "10": "Copenhagen city hotel",
+  "11": "Departure"
+ },
+ "expert": {
+  "name": "Aino",
+  "image": "/experts/riya.webp",
+  "role": "Finland expert at Hi Tours",
+  "quote": "Lapland in winter is quieter than anywhere I know. The snow swallows every sound and the sky does the rest.",
+  "tip": "Rent the thermal overalls your lodge offers for the aurora nights. Your own jacket will not be enough at minus twenty, however good it looks."
+ },
+ "summary": "Eleven days across Scandinavia: Helsinki and Suomenlinna, an overnight cruise to Stockholm, Oslo, the Norway in a Nutshell route with the Flåm Railway to Bergen, and two nights in Copenhagen.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

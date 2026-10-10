@@ -13,6 +13,7 @@ import sys
 
 sys.path.insert(0, '/app/scripts/thrillophilia')
 from nordics_table import TRIPS, EXPERTS
+import nordics_table_nordic  # noqa: F401  (adds the Norway/Ireland/Finland/Sweden blocks)
 
 ROOT = '/app/import'
 STARS = {3: '3\u2605', 4: '4\u2605', 5: '5\u2605'}

@@ -1,0 +1,264 @@
+{
+ "cta_country": "finland",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Finland",
+   "/europe/finland"
+  ]
+ ],
+ "source_slug": "scandinavian-classic--finland-escapade-with-inari",
+ "camel": "finlandEscapadeLaplandInari",
+ "slug": "finland-escapade-helsinki-rovaniemi-and-inari",
+ "title": "Finland Escapade: Helsinki, Rovaniemi and Inari",
+ "alt": "Northern lights over a frozen lake at Inari in Finnish Lapland",
+ "transport": "Airport transfers, flights Helsinki to Rovaniemi and Ivalo to Helsinki, and coach between Rovaniemi, Tromsø and Inari",
+ "tag": "Northern Lights",
+ "tags": [
+  "Northern Lights",
+  "Nature",
+  "Multi-country"
+ ],
+ "price": 261250,
+ "route_cities": [
+  "Helsinki",
+  "Rovaniemi",
+  "Tromsø",
+  "Inari",
+  "Helsinki"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 4,
+  "hotels": 5,
+  "experiences": 6,
+  "transfers": 8,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Helsinki",
+   "city": "Helsinki",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Arthur",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the city centre",
+   "activities": [],
+   "program": {
+    "name": "Helsinki",
+    "description": "A first night in the Finnish capital."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Rovaniemi",
+   "city": "Rovaniemi",
+   "days": [
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 2 to 4",
+   "hotel": "Santasport",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Lodge on the Arctic Circle",
+   "activities": [
+    {
+     "name": "Santa Claus Village",
+     "day": 3,
+     "optional": false,
+     "match": "Santa",
+     "description": "Across the Arctic Circle line at the village, with Santa's post office and the reindeer."
+    },
+    {
+     "name": "Northern lights tour",
+     "day": 3,
+     "optional": false,
+     "match": "aurora",
+     "description": "An evening in the forest away from the town lights with a guide, hot drinks and a fire."
+    },
+    {
+     "name": "Optional: husky safari",
+     "day": 4,
+     "optional": true,
+     "match": "",
+     "description": "Drive your own team of huskies through the snow forest."
+    }
+   ],
+   "program": {
+    "name": "Rovaniemi",
+    "description": "Three nights in Lapland for Santa Claus Village, the northern lights and a free day for huskies or snowmobiles."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Tromsø",
+   "city": "Tromsø",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Tromsø city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Central hotel in the Arctic capital",
+   "activities": [
+    {
+     "name": "Whale watching",
+     "day": 5,
+     "optional": false,
+     "match": "whale",
+     "description": "A boat day among the humpbacks and orcas that gather in the fjords outside Tromsø in winter."
+    }
+   ],
+   "program": {
+    "name": "Tromsø",
+    "description": "Across the border for a night in Tromsø and a day on the water with the whales."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Inari",
+   "city": "Inari",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Wilderness Hotel Inari",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Lakeside wilderness hotel with aurora cabins",
+   "activities": [
+    {
+     "name": "Optional: Siida Sami museum",
+     "day": 6,
+     "optional": true,
+     "match": "",
+     "description": "The Sami museum and nature centre on the shore of Lake Inari."
+    }
+   ],
+   "program": {
+    "name": "Inari",
+    "description": "A night by Lake Inari in the heart of Sami Lapland."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Helsinki",
+   "city": "Helsinki",
+   "days": [
+    7,
+    8,
+    9
+   ],
+   "dayLabel": "Day 7 to 9",
+   "hotel": "Roost Liisankatu",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Apartment hotel in the centre",
+   "activities": [
+    {
+     "name": "Helsinki hop-on hop-off and Helsinki Card",
+     "day": 8,
+     "optional": false,
+     "match": "Helsinki",
+     "description": "The cathedral, Market Square, Temppeliaukio rock church and the ferry to Suomenlinna with the card."
+    }
+   ],
+   "program": {
+    "name": "Helsinki",
+    "description": "Fly south for two nights with a Helsinki Card and hop-on hop-off day."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Helsinki",
+  "2": "Fly to Rovaniemi",
+  "3": "Santa Claus Village and the lights",
+  "4": "A free day in Rovaniemi",
+  "5": "Tromsø and the whales",
+  "6": "Inari",
+  "7": "Fly to Helsinki",
+  "8": "Helsinki by bus and card",
+  "9": "Departure from Helsinki"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast and transfer to the airport",
+   "Flight north to Rovaniemi and check in",
+   "The evening free on the Arctic Circle"
+  ],
+  "3": [
+   "Breakfast, then Santa Claus Village",
+   "Crossing the Arctic Circle line",
+   "Evening northern lights tour"
+  ],
+  "4": [
+   "Breakfast, then the day yours",
+   "Optional: husky or snowmobile safari"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Coach across the border to Tromsø",
+   "Whale watching boat trip"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Coach to Lake Inari and check in",
+   "Optional: the Siida museum and an aurora night"
+  ],
+  "7": [
+   "Breakfast and transfer to Ivalo airport",
+   "Flight to Helsinki and check in"
+  ],
+  "8": [
+   "Breakfast, then the hop-on hop-off circuit",
+   "Suomenlinna by ferry with the Helsinki Card"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Arthur",
+  "2": "Santasport",
+  "3": "Santasport",
+  "4": "Santasport",
+  "5": "Tromsø city hotel",
+  "6": "Wilderness Hotel Inari",
+  "7": "Roost Liisankatu",
+  "8": "Roost Liisankatu",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aino",
+  "image": "/experts/riya.webp",
+  "role": "Finland expert at Hi Tours",
+  "quote": "Lapland in winter is quieter than anywhere I know. The snow swallows every sound and the sky does the rest.",
+  "tip": "Rent the thermal overalls your lodge offers for the aurora nights. Your own jacket will not be enough at minus twenty, however good it looks."
+ },
+ "summary": "Nine days from Helsinki to the top of Lapland: three nights in Rovaniemi for Santa Claus Village and the northern lights, whale watching from Tromsø, a night at Lake Inari and two nights back in Helsinki.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

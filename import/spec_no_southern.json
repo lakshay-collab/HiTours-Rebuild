@@ -1,0 +1,251 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "southern-norwegian-delights",
+ "camel": "southernNorwegianDelights",
+ "slug": "southern-norwegian-delights-bergen-stavanger",
+ "title": "Southern Norwegian Delights: Bergen and Stavanger",
+ "alt": "Pulpit Rock towering over the Lysefjord near Stavanger",
+ "transport": "Airport transfers, the Norway in a Nutshell route, the Bergen to Stavanger coach and ferry, and the Sørlandet line back to Oslo",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Nature"
+ ],
+ "price": 237090,
+ "route_cities": [
+  "Oslo",
+  "Bergen",
+  "Stavanger",
+  "Kristiansand",
+  "Tvedestrand",
+  "Oslo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 6,
+  "experiences": 3,
+  "transfers": 8,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Scandic Helsfyr, Oslo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · City hotel on the metro",
+   "activities": [
+    {
+     "name": "Oslo hop-on hop-off bus",
+     "day": 2,
+     "optional": false,
+     "match": "Oslo",
+     "description": "A day ticket to the Opera House, Vigeland Park, the Bygdøy museums and Holmenkollen at your own pace."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Two nights with a hop-on hop-off day round the capital."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Moxy Bergen",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Modern hotel close to the harbour",
+   "activities": [
+    {
+     "name": "Norway in a Nutshell",
+     "day": 3,
+     "optional": false,
+     "match": "Flåm",
+     "description": "Bergen line, Flåm Railway, Nærøyfjord ferry and the Stalheim coach to Bergen in one day."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "The Norway in a Nutshell route west for a night in Bergen."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Stavanger",
+   "city": "Stavanger",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Thon Partner Hotel Sandnes",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in the Stavanger region",
+   "activities": [
+    {
+     "name": "Lysefjord cruise to Pulpit Rock",
+     "day": 5,
+     "optional": false,
+     "match": "Pulpit",
+     "description": "Three hours on the Lysefjord beneath the 604-metre Preikestolen cliff, with waterfalls and goats on the ledges."
+    }
+   ],
+   "program": {
+    "name": "Stavanger",
+    "description": "Along the coast to Stavanger and a cruise on the Lysefjord beneath Pulpit Rock."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Kristiansand",
+   "city": "Kristiansand",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Kristiansand city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the white-timber southern capital",
+   "activities": [],
+   "program": {
+    "name": "Kristiansand",
+    "description": "The Sørlandet line along the south coast to Kristiansand."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Tvedestrand",
+   "city": "Tvedestrand",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "Tvedestrand harbour hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Small hotel in the book town on the skerries",
+   "activities": [],
+   "program": {
+    "name": "Tvedestrand",
+    "description": "A night in one of the prettiest white towns of the southern coast."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    8
+   ],
+   "dayLabel": "Day 8",
+   "hotel": "Oslo",
+   "accom": "0 nights · Breakfast · Standard room · 3★ · Transfer through Oslo to the airport",
+   "activities": [],
+   "program": {
+    "name": "Oslo",
+    "description": "The coast road back to Oslo for your flight."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Oslo",
+  "2": "Oslo hop-on hop-off",
+  "3": "Norway in a Nutshell to Bergen",
+  "4": "Bergen to Stavanger",
+  "5": "Pulpit Rock cruise",
+  "6": "Train to Kristiansand",
+  "7": "Bus to Tvedestrand",
+  "8": "Transfer to Oslo and depart"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast, then a day on the sightseeing bus",
+   "Opera House, Vigeland Park and Holmenkollen",
+   "The evening free at Aker Brygge"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "Bergen line, Flåm Railway and the Nærøyfjord ferry",
+   "Train into Bergen for the night"
+  ],
+  "4": [
+   "Breakfast and a free morning at Bryggen",
+   "Coach and ferry down the coast to Stavanger",
+   "Check in and a free evening in the old town"
+  ],
+  "5": [
+   "Breakfast, then boarding at Stavanger harbour",
+   "Three hours on the Lysefjord beneath Preikestolen",
+   "The afternoon free in Gamle Stavanger"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "The Sørlandet line along the south coast",
+   "Kristiansand's white timber quarter in the evening"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "Coach along the coast to Tvedestrand",
+   "The harbour and bookshops at leisure"
+  ],
+  "8": [
+   "Breakfast and check out",
+   "Transfer to Oslo airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Scandic Helsfyr, Oslo",
+  "2": "Scandic Helsfyr, Oslo",
+  "3": "Moxy Bergen",
+  "4": "Thon Partner Hotel Sandnes",
+  "5": "Thon Partner Hotel Sandnes",
+  "6": "Kristiansand city hotel",
+  "7": "Tvedestrand harbour hotel",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "Norway is a country you travel through, not to. Let the trains and ferries do the work and the fjords arrive on their own.",
+  "tip": "Sit on the left side of the Flåm Railway going down. The Kjosfossen waterfall stop is on that side and the drop into the valley is far better."
+ },
+ "summary": "Eight days along Norway's south: Oslo, the Norway in a Nutshell route to Bergen, a Lysefjord cruise under Pulpit Rock from Stavanger, then the coast through Kristiansand and Tvedestrand.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

@@ -1,0 +1,235 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "arctic-norway---winter-in-wonderland",
+ "camel": "arcticNorwayWinterWonderland",
+ "slug": "arctic-norway-winter-wonderland",
+ "title": "Arctic Norway: Winter Wonderland",
+ "alt": "A Havila coastal ship in a snowy harbour under the Arctic winter light",
+ "transport": "Airport transfers, a two-night Havila coastal voyage from Tromsø to Kirkenes and a flight to Oslo",
+ "tag": "Northern Lights",
+ "tags": [
+  "Northern Lights",
+  "Nature",
+  "Winter"
+ ],
+ "price": 207812,
+ "route_cities": [
+  "Tromsø",
+  "Hammerfest",
+  "Kirkenes",
+  "Oslo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 5,
+  "transfers": 6,
+  "meals": 11
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Tromsø",
+   "city": "Tromsø",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Scandic Grand Tromsø",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel on the main street",
+   "activities": [
+    {
+     "name": "Tromsø guided walking tour",
+     "day": 2,
+     "optional": false,
+     "match": "Tromsø",
+     "description": "The polar explorers, the wooden houses and the Arctic Cathedral across the bridge with a local guide."
+    },
+    {
+     "name": "Optional: northern lights chase",
+     "day": 2,
+     "optional": true,
+     "match": "aurora",
+     "description": "An evening by minibus in search of clear skies and the aurora."
+    }
+   ],
+   "program": {
+    "name": "Tromsø",
+    "description": "Two nights in the northern lights capital with a guided walk through its Arctic history."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Havila voyage",
+   "city": "Hammerfest",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Havila coastal ship",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Outside cabin on board",
+   "activities": [
+    {
+     "name": "Havila coastal voyage",
+     "day": 3,
+     "optional": false,
+     "match": "Havila",
+     "description": "The modern coastal express from Tromsø round the top of Norway, calling at Hammerfest, Honningsvåg and Vardø."
+    }
+   ],
+   "program": {
+    "name": "Havila voyage",
+    "description": "Two nights at sea along the northernmost coast of Europe, past Hammerfest and the North Cape."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Kirkenes",
+   "city": "Kirkenes",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Scandic Kirkenes",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel by the Russian border town",
+   "activities": [
+    {
+     "name": "Optional: Kirkenes Snowhotel visit",
+     "day": 5,
+     "optional": true,
+     "match": "",
+     "description": "Ice sculptures, husky yard and reindeer at the famous snow hotel outside town."
+    }
+   ],
+   "program": {
+    "name": "Kirkenes",
+    "description": "Disembark at the end of the line, close to the Russian border and the snow hotel."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 6 to 8",
+   "hotel": "Park Inn by Radisson Oslo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel by the station",
+   "activities": [
+    {
+     "name": "Oslo sightseeing tour",
+     "day": 7,
+     "optional": false,
+     "match": "Oslo",
+     "description": "Vigeland Park, the Holmenkollen ski jump, the Opera House and the harbour with a guide."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Fly south for two nights and a guided sightseeing day in the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Tromsø",
+  "2": "Tromsø on foot",
+  "3": "Board the Havila ship",
+  "4": "Hammerfest and the North Cape",
+  "5": "Kirkenes",
+  "6": "Fly to Oslo",
+  "7": "Oslo sightseeing",
+  "8": "Departure from Oslo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: a first look for the northern lights"
+  ],
+  "2": [
+   "Breakfast, then a guided walk through the Arctic city",
+   "The afternoon free for the Polar Museum",
+   "Optional: an evening aurora chase"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "Boarding the coastal ship in the afternoon",
+   "Dinner on board as the ship heads north"
+  ],
+  "4": [
+   "Breakfast on board",
+   "Calls at Hammerfest and Honningsvåg",
+   "A second night at sea under the Arctic sky"
+  ],
+  "5": [
+   "Breakfast on board and arrival in Kirkenes",
+   "Transfer to your hotel",
+   "Optional: the Snowhotel and its huskies"
+  ],
+  "6": [
+   "Breakfast and transfer to the airport",
+   "Flight south to Oslo and check in",
+   "The evening free"
+  ],
+  "7": [
+   "Breakfast, then a guided tour of the capital",
+   "Vigeland Park, Holmenkollen and the Opera House"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B, D",
+  "4": "B, L, D",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Scandic Grand Tromsø",
+  "2": "Scandic Grand Tromsø",
+  "3": "Havila coastal ship",
+  "4": "Havila coastal ship",
+  "5": "Scandic Kirkenes",
+  "6": "Park Inn by Radisson Oslo",
+  "7": "Park Inn by Radisson Oslo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "For the northern lights you need three things: darkness, a clear sky and patience. Tromsø gives you the first two; we build in the third.",
+  "tip": "Book the aurora chase for your first night in the north, not the last. If the sky stays cloudy, most operators let you join again free of charge."
+ },
+ "summary": "Eight winter days in the far north: two nights in Tromsø, two nights on the Havila coastal ship round the top of Norway to Kirkenes, then two nights and a sightseeing day in Oslo.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

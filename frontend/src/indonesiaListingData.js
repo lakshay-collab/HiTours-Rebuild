@@ -45,7 +45,7 @@ const P = {
 
 export const destination = { name: N, continent: 'Asia', primary: ["Ubud", "Seminyak", "Nusa Penida", "Uluwatu"] };
 export const holidaysPath = '/asia/bali/holidays';
-export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/indonesia' }, { label: `${N} tours & holidays` }];
+export const holidaysCrumbs = [{ label: 'Home', to: '/' }, { label: N, to: '/asia/bali' }, { label: `${N} tours & holidays` }];
 
 export const hero = {
   h1: `${N} Honeymoons and holidays`, holidaysH1: `${N} tours & holidays`, styleH1: (style) => `${N} ${style.toLowerCase()} holidays`,

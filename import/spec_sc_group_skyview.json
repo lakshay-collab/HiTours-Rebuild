@@ -1,0 +1,285 @@
+{
+ "cta_country": "finland",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Finland",
+   "/europe/finland"
+  ]
+ ],
+ "source_slug": "scandinavia-with-finland-group-tour-free-skyview-gondola-ride-tickets",
+ "camel": "scandinaviaGroupTourHelsinkiCopenhagen",
+ "slug": "scandinavia-group-tour-helsinki-to-copenhagen",
+ "title": "Scandinavia Group Tour: Helsinki to Copenhagen",
+ "alt": "The Stockholm waterfront and Gamla Stan seen from the Skyview gondola",
+ "transport": "Overnight cruises Helsinki to Stockholm and Oslo to Copenhagen, a flight to Bergen, the Norway in a Nutshell route and coach to Geilo and Oslo",
+ "tag": "Multi-country",
+ "tags": [
+  "Multi-country",
+  "Culture",
+  "Group"
+ ],
+ "price": 376780,
+ "route_cities": [
+  "Helsinki",
+  "Stockholm",
+  "Bergen",
+  "Geilo",
+  "Oslo",
+  "Copenhagen"
+ ],
+ "counts": {
+  "days": 9,
+  "nights": 8,
+  "cities": 6,
+  "hotels": 6,
+  "experiences": 6,
+  "transfers": 10,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Helsinki",
+   "city": "Helsinki",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Scandic Meilahti, Helsinki",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel on the tram line to the centre, then a cabin on the Stockholm ferry",
+   "activities": [
+    {
+     "name": "Helsinki sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Helsinki",
+     "description": "The cathedral, Senate Square, the rock church and Sibelius monument before boarding the ship."
+    }
+   ],
+   "program": {
+    "name": "Helsinki",
+    "description": "A night in Helsinki, a city tour and the overnight cruise to Stockholm."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Stockholm",
+   "city": "Stockholm",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Good Morning+ Hägersten",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel on the metro south of the centre",
+   "activities": [
+    {
+     "name": "Stockholm tour, Skyview and Vasa",
+     "day": 3,
+     "optional": false,
+     "match": "Vasa",
+     "description": "Gamla Stan and the Royal Palace, the glass Skyview gondola over the Avicii Arena and the 17th-century warship Vasa."
+    }
+   ],
+   "program": {
+    "name": "Stockholm",
+    "description": "A day in Stockholm with the Skyview gondola and the Vasa Museum."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Comfort Hotel Bergen Airport",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel near the airport",
+   "activities": [
+    {
+     "name": "Bryggen and Mount Fløyen",
+     "day": 4,
+     "optional": false,
+     "match": "Bryggen",
+     "description": "The Hanseatic wharf and the funicular up Fløyen for the harbour view."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "Fly to Bergen for Bryggen and Mount Fløyen."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Geilo",
+   "city": "Geilo",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Thon Hotel Hallingdal, Geilo",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Mountain hotel in Geilo",
+   "activities": [
+    {
+     "name": "Norway in a Nutshell",
+     "day": 5,
+     "optional": false,
+     "match": "Flåm",
+     "description": "Nærøyfjord ferry, Stalheim coach and the Flåm Railway before the coach to Geilo."
+    }
+   ],
+   "program": {
+    "name": "Geilo",
+    "description": "The Norway in a Nutshell route and a night in the mountains."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Thon Hotel Oslofjord",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel on the fjord outside the centre, then a cabin on the Copenhagen ferry",
+   "activities": [
+    {
+     "name": "Oslo sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Oslo",
+     "description": "Vigeland Park, Holmenkollen and the Opera House."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Oslo sightseeing and the overnight cruise to Denmark."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Copenhagen",
+   "city": "Copenhagen",
+   "days": [
+    8,
+    9
+   ],
+   "dayLabel": "Day 8 to 9",
+   "hotel": "Copenhagen city hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the centre",
+   "activities": [
+    {
+     "name": "Copenhagen sightseeing tour",
+     "day": 8,
+     "optional": false,
+     "match": "Copenhagen",
+     "description": "Nyhavn, the Little Mermaid, Amalienborg and Tivoli."
+    }
+   ],
+   "program": {
+    "name": "Copenhagen",
+    "description": "A guided day in Copenhagen before flying home."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Helsinki",
+  "2": "Helsinki and the overnight cruise",
+  "3": "Stockholm",
+  "4": "Fly to Bergen",
+  "5": "Norway in a Nutshell to Geilo",
+  "6": "Oslo",
+  "7": "Oslo to Copenhagen by sea",
+  "8": "Copenhagen",
+  "9": "Departure from Copenhagen"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast, then a guided city tour",
+   "Boarding the Silja Line ferry in the afternoon",
+   "Dinner and a night at sea"
+  ],
+  "3": [
+   "Breakfast on board and arrival in Stockholm",
+   "City tour, Skyview gondola and the Vasa Museum",
+   "Check in and a free evening"
+  ],
+  "4": [
+   "Breakfast and transfer to the airport",
+   "Flight to Bergen",
+   "Bryggen wharf tour and Mount Fløyen"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Fjord ferry, Stalheim coach and the Flåm Railway",
+   "Coach to Geilo for the night"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Coach to Oslo and a sightseeing tour",
+   "Check in and a free evening"
+  ],
+  "7": [
+   "Breakfast, then a free morning in Oslo",
+   "Boarding the DFDS ferry in the afternoon",
+   "A night at sea down the Oslofjord"
+  ],
+  "8": [
+   "Breakfast on board and arrival in Copenhagen",
+   "Guided tour of the city",
+   "The evening free at Nyhavn"
+  ],
+  "9": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B"
+ },
+ "hotel_by_day": {
+  "1": "Scandic Meilahti, Helsinki",
+  "2": "Scandic Meilahti, Helsinki",
+  "3": "Good Morning+ Hägersten",
+  "4": "Comfort Hotel Bergen Airport",
+  "5": "Thon Hotel Hallingdal, Geilo",
+  "6": "Thon Hotel Oslofjord",
+  "7": "Thon Hotel Oslofjord",
+  "8": "Copenhagen city hotel",
+  "9": "Departure"
+ },
+ "expert": {
+  "name": "Aino",
+  "image": "/experts/riya.webp",
+  "role": "Finland expert at Hi Tours",
+  "quote": "Lapland in winter is quieter than anywhere I know. The snow swallows every sound and the sky does the rest.",
+  "tip": "Rent the thermal overalls your lodge offers for the aurora nights. Your own jacket will not be enough at minus twenty, however good it looks."
+ },
+ "summary": "Nine days through four Nordic capitals as a small group: Helsinki, an overnight cruise to Stockholm with the Skyview gondola, Bergen and the Norway in a Nutshell route to Geilo, Oslo, and a cruise to Copenhagen.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

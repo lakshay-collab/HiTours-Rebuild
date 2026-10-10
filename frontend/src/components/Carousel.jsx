@@ -28,7 +28,7 @@ export default function Carousel({ children, step = 380, arrowTop = '50%', class
 
   return (
     <div className={`relative ${className}`} data-testid={testId}>
-      <div ref={ref} className={`no-scrollbar flex overflow-x-auto snap-x snap-mandatory scroll-smooth scroll-pl-4 sm:scroll-pl-8 md:scroll-pl-0 ${trackClassName}`}>
+      <div ref={ref} className={`no-scrollbar flex overflow-x-auto overflow-y-hidden snap-x snap-proximity overscroll-x-contain touch-pan-x scroll-pl-4 sm:scroll-pl-8 md:scroll-pl-0 ${trackClassName}`}>
         {children}
       </div>
       <button onClick={() => go(-1)} disabled={!canPrev} className="arrow-btn absolute left-2 md:-left-5 -translate-y-1/2 hidden sm:flex" style={{ top: arrowTop }} aria-label="Previous" data-testid={`${testId}-prev`}>

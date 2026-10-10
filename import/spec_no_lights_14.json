@@ -1,0 +1,331 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "best-of-northern-lights-in-norway-14-days",
+ "camel": "bestOfNorthernLightsNorway14Days",
+ "slug": "best-of-norway-fjords-to-northern-lights-14-days",
+ "title": "Best of Norway: Fjords to Northern Lights in 14 Days",
+ "alt": "The Geirangerfjord with the Seven Sisters waterfall in evening light",
+ "transport": "Airport transfers, coach and ferry along the west coast, fjord cruises in Stavanger, Bergen and Geiranger, and a flight to Tromsø",
+ "tag": "Northern Lights",
+ "tags": [
+  "Northern Lights",
+  "Nature",
+  "Multi-city"
+ ],
+ "price": 366565,
+ "route_cities": [
+  "Oslo",
+  "Stavanger",
+  "Bergen",
+  "Ålesund",
+  "Trondheim",
+  "Tromsø"
+ ],
+ "counts": {
+  "days": 14,
+  "nights": 13,
+  "cities": 6,
+  "hotels": 6,
+  "experiences": 7,
+  "transfers": 12,
+  "meals": 13
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Park Inn by Radisson Oslo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel by the station",
+   "activities": [
+    {
+     "name": "Oslofjord day trip",
+     "day": 2,
+     "optional": false,
+     "match": "fjord",
+     "description": "A day on the inner fjord past the islands, lighthouses and summer houses."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Two nights and a day trip on the Oslofjord."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Stavanger",
+   "city": "Stavanger",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Thon Partner Hotel Sandnes",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in the Stavanger region",
+   "activities": [
+    {
+     "name": "Lysefjord cruise to Pulpit Rock",
+     "day": 4,
+     "optional": false,
+     "match": "Pulpit",
+     "description": "Three hours beneath the 604-metre Preikestolen cliff with waterfalls and the Vagabond's Cave."
+    }
+   ],
+   "program": {
+    "name": "Stavanger",
+    "description": "Two nights in the oil capital with a Lysefjord cruise beneath Pulpit Rock."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Thon Hotel Bristol",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel on the main square",
+   "activities": [
+    {
+     "name": "Mostraumen fjord cruise",
+     "day": 6,
+     "optional": false,
+     "match": "cruise",
+     "description": "Three hours up the Osterfjord to the tidal rapids, close enough to fill a glass at the waterfall."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "Two nights in the fjord capital and a cruise to the Mostraumen rapids."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Ålesund",
+   "city": "Ålesund",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Ålesund city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in the Art Nouveau town",
+   "activities": [
+    {
+     "name": "Geirangerfjord cruise",
+     "day": 8,
+     "optional": false,
+     "match": "Geiranger",
+     "description": "The UNESCO fjord with the Seven Sisters and Bridal Veil waterfalls and abandoned farms on the ledges."
+    }
+   ],
+   "program": {
+    "name": "Ålesund",
+    "description": "Two nights in Ålesund with a day cruise on the Geirangerfjord."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Trondheim",
+   "city": "Trondheim",
+   "days": [
+    9,
+    10
+   ],
+   "dayLabel": "Day 9 to 10",
+   "hotel": "Clarion Hotel Trondheim",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Harbourside hotel near the old town",
+   "activities": [
+    {
+     "name": "Trondheim walking tour",
+     "day": 10,
+     "optional": false,
+     "match": "Trondheim",
+     "description": "Nidaros Cathedral, the old town bridge and the colourful wharves on the Nidelva with a guide."
+    }
+   ],
+   "program": {
+    "name": "Trondheim",
+    "description": "Two nights in the medieval capital with a guided walk."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Tromsø",
+   "city": "Tromsø",
+   "days": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "dayLabel": "Day 11 to 14",
+   "hotel": "Tromsø city hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Central hotel in the Arctic capital",
+   "activities": [
+    {
+     "name": "Northern lights tour",
+     "day": 12,
+     "optional": false,
+     "match": "aurora",
+     "description": "An evening chase for clear skies with warm suits, a campfire and a photographer guide."
+    },
+    {
+     "name": "Arctic day trip",
+     "day": 13,
+     "optional": false,
+     "match": "Arctic",
+     "description": "A day across the Lyngen Alps and fjords of the Arctic coast, with Sami culture and reindeer along the way."
+    }
+   ],
+   "program": {
+    "name": "Tromsø",
+    "description": "Three nights in the north for a northern lights tour and a day trip into the Arctic landscape."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Oslo",
+  "2": "Oslofjord day trip",
+  "3": "To Stavanger",
+  "4": "Pulpit Rock cruise",
+  "5": "To Bergen",
+  "6": "Mostraumen cruise",
+  "7": "To Ålesund",
+  "8": "Geirangerfjord cruise",
+  "9": "To Trondheim",
+  "10": "Trondheim walking tour",
+  "11": "Fly to Tromsø",
+  "12": "Northern lights tour",
+  "13": "Arctic day trip",
+  "14": "Departure from Tromsø"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast, then a day on the inner fjord",
+   "The evening free in the capital"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "Travel along the south coast to Stavanger",
+   "The old timber quarter at leisure"
+  ],
+  "4": [
+   "Breakfast, then three hours on the Lysefjord",
+   "The afternoon free in Stavanger"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Coach and ferry up the coast to Bergen",
+   "Bryggen and the fish market in the evening"
+  ],
+  "6": [
+   "Breakfast, then the Osterfjord cruise",
+   "Optional: Fløibanen for the city view"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "The coast road north to Ålesund",
+   "The Art Nouveau streets at leisure"
+  ],
+  "8": [
+   "Breakfast, then a day to the Geirangerfjord",
+   "The Seven Sisters and Bridal Veil waterfalls",
+   "Back to Ålesund for the night"
+  ],
+  "9": [
+   "Breakfast and check out",
+   "Travel north to Trondheim",
+   "A free evening by the river"
+  ],
+  "10": [
+   "Breakfast, then a guided walk of the old town",
+   "Nidaros Cathedral and the wharves"
+  ],
+  "11": [
+   "Breakfast and transfer to the airport",
+   "Flight to Tromsø and check in",
+   "A first look for the lights"
+  ],
+  "12": [
+   "Breakfast and a free day in the city",
+   "Evening aurora chase by minibus"
+  ],
+  "13": [
+   "Breakfast, then a full day in the Arctic landscape",
+   "Fjords, mountains and Sami culture"
+  ],
+  "14": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B",
+  "11": "B",
+  "12": "B",
+  "13": "B",
+  "14": "B"
+ },
+ "hotel_by_day": {
+  "1": "Park Inn by Radisson Oslo",
+  "2": "Park Inn by Radisson Oslo",
+  "3": "Thon Partner Hotel Sandnes",
+  "4": "Thon Partner Hotel Sandnes",
+  "5": "Thon Hotel Bristol",
+  "6": "Thon Hotel Bristol",
+  "7": "Ålesund city hotel",
+  "8": "Ålesund city hotel",
+  "9": "Clarion Hotel Trondheim",
+  "10": "Clarion Hotel Trondheim",
+  "11": "Tromsø city hotel",
+  "12": "Tromsø city hotel",
+  "13": "Tromsø city hotel",
+  "14": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "For the northern lights you need three things: darkness, a clear sky and patience. Tromsø gives you the first two; we build in the third.",
+  "tip": "Book the aurora chase for your first night in the north, not the last. If the sky stays cloudy, most operators let you join again free of charge."
+ },
+ "summary": "Two weeks the length of Norway: Oslo, Stavanger and Pulpit Rock, Bergen, Ålesund and the Geirangerfjord, Trondheim, and three nights in Tromsø for the northern lights.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

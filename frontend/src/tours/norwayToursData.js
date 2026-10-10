@@ -1,12 +1,26 @@
-import { createAdapters } from './vietnamToursData';
-import { packages, cityImages } from '../norwayPackages';
+// Norway products are Thrillophilia imports only; Scandinavia combos are listed on every Nordic country they visit.
+import { bestOfScandinavianNorwayFjordsProduct } from './bestOfScandinavianNorwayFjordsData';
+import { norwegianEscapadeNorthernLightsProduct } from './norwegianEscapadeNorthernLightsData';
+import { classicNorwayHurtigrutenFlamProduct } from './classicNorwayHurtigrutenFlamData';
+import { norwegianHighlightsFjordsCoastProduct } from './norwegianHighlightsFjordsCoastData';
+import { arcticNorwayWinterWonderlandProduct } from './arcticNorwayWinterWonderlandData';
+import { southernNorwegianDelightsProduct } from './southernNorwegianDelightsData';
+import { bestOfNorthernLightsNorway14DaysProduct } from './bestOfNorthernLightsNorway14DaysData';
+import { finlandEscapadeLaplandInariProduct } from './finlandEscapadeLaplandInariData';
+import { scandinaviaGroupTourHelsinkiCopenhagenProduct } from './scandinaviaGroupTourHelsinkiCopenhagenData';
+import { scandinaviaClassicFlamRailwayProduct } from './scandinaviaClassicFlamRailwayData';
 
-const { toProduct, build } = createAdapters({
-  cityImages, base: '/europe', ctaHref: '/l/norway/enquiry/passengers/', cruiseCity: '—',
-  expert: { name: "Ingrid", image: '/experts/riya.webp', role: 'Norway expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '#' }, { label: "Norway", href: '/europe/norway' }]
-});
-
-export const norwayProducts = packages.map(toProduct);
-export const norwayTours = packages.map(build);
-export const norwayBySlug = Object.fromEntries(norwayTours.map((t) => [t.detail.slug, t]));
+export const norwayProducts = [
+  bestOfScandinavianNorwayFjordsProduct,
+  norwegianEscapadeNorthernLightsProduct,
+  classicNorwayHurtigrutenFlamProduct,
+  norwegianHighlightsFjordsCoastProduct,
+  arcticNorwayWinterWonderlandProduct,
+  southernNorwegianDelightsProduct,
+  bestOfNorthernLightsNorway14DaysProduct,
+  finlandEscapadeLaplandInariProduct,
+  scandinaviaGroupTourHelsinkiCopenhagenProduct,
+  scandinaviaClassicFlamRailwayProduct
+];
+export const norwayTours = [];
+export const norwayBySlug = {};

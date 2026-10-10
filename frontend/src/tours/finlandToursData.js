@@ -1,12 +1,12 @@
-import { createAdapters } from './vietnamToursData';
-import { packages, cityImages } from '../finlandPackages';
+// Finland products are Thrillophilia imports only; Scandinavia combos are listed on every Nordic country they visit.
+import { finlandEscapadeLaplandInariProduct } from './finlandEscapadeLaplandInariData';
+import { scandinaviaGroupTourHelsinkiCopenhagenProduct } from './scandinaviaGroupTourHelsinkiCopenhagenData';
+import { scandinaviaClassicFlamRailwayProduct } from './scandinaviaClassicFlamRailwayData';
 
-const { toProduct, build } = createAdapters({
-  cityImages, base: '/europe', ctaHref: '/l/finland/enquiry/passengers/', cruiseCity: '—',
-  expert: { name: "Aino", image: '/experts/riya.webp', role: 'Finland expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '#' }, { label: "Finland", href: '/europe/finland' }]
-});
-
-export const finlandProducts = packages.map(toProduct);
-export const finlandTours = packages.map(build);
-export const finlandBySlug = Object.fromEntries(finlandTours.map((t) => [t.detail.slug, t]));
+export const finlandProducts = [
+  finlandEscapadeLaplandInariProduct,
+  scandinaviaGroupTourHelsinkiCopenhagenProduct,
+  scandinaviaClassicFlamRailwayProduct
+];
+export const finlandTours = [];
+export const finlandBySlug = {};

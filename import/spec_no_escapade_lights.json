@@ -1,0 +1,225 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "norwegian-escapade--northern-lights-with-norway-in-a-nutshell",
+ "camel": "norwegianEscapadeNorthernLights",
+ "slug": "norwegian-escapade-fjords-and-northern-lights",
+ "title": "Norwegian Escapade: Fjords and Northern Lights",
+ "alt": "Green northern lights over a snow-covered fjord outside Tromsø",
+ "transport": "Airport transfers, the Norway in a Nutshell rail and fjord route, and flights Bergen to Tromsø and Tromsø to Oslo",
+ "tag": "Northern Lights",
+ "tags": [
+  "Northern Lights",
+  "Nature",
+  "Honeymoon"
+ ],
+ "price": 213750,
+ "route_cities": [
+  "Oslo",
+  "Bergen",
+  "Tromsø"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 6,
+  "transfers": 7,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Oslo city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Central hotel with the Oslo Pass included for your free day",
+   "activities": [
+    {
+     "name": "Oslo Pass day",
+     "day": 2,
+     "optional": false,
+     "match": "Oslo",
+     "description": "Free entry to the Fram, Kon-Tiki and Viking Ship museums on Bygdøy, Vigeland Park and the city ferries, all on one pass."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Two nights in the capital with an Oslo Pass for the museums, ferries and the Opera House."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Bergen city hotel",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel within walking distance of Bryggen",
+   "activities": [
+    {
+     "name": "Norway in a Nutshell to Bergen",
+     "day": 3,
+     "optional": false,
+     "match": "Flåm",
+     "description": "Bergen line, Flåm Railway, Nærøyfjord ferry and the Stalheim coach in one unforgettable day of travelling."
+    },
+    {
+     "name": "Mostraumen fjord cruise",
+     "day": 4,
+     "optional": false,
+     "match": "cruise",
+     "description": "Three hours up the Osterfjord from Bergen harbour to the tidal rapids and waterfalls at Mostraumen."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "The Norway in a Nutshell route west by train, railway and fjord ferry, then a cruise to the Mostraumen rapids."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Tromsø",
+   "city": "Tromsø",
+   "days": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "dayLabel": "Day 5 to 8",
+   "hotel": "Tromsø city hotel",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Central hotel in the northern lights capital",
+   "activities": [
+    {
+     "name": "Reindeer sledding and Sami culture",
+     "day": 6,
+     "optional": false,
+     "match": "reindeer",
+     "description": "An afternoon at a Sami camp with reindeer feeding, a sled ride and stories around the fire in the lavvu tent."
+    },
+    {
+     "name": "Northern lights chase",
+     "day": 6,
+     "optional": false,
+     "match": "aurora",
+     "description": "A small-group evening hunt for clear skies by minibus, with warm suits, a campfire and a guide who photographs the lights for you."
+    },
+    {
+     "name": "Optional: Fjellheisen cable car",
+     "day": 7,
+     "optional": true,
+     "match": "",
+     "description": "The cable car up Storsteinen for the view over Tromsø island, the bridge and the mountains."
+    }
+   ],
+   "program": {
+    "name": "Tromsø",
+    "description": "Three nights above the Arctic Circle: reindeer sledding with the Sami, an aurora chase and a free day for the Arctic Cathedral and cable car."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Oslo",
+  "2": "Oslo with the Oslo Pass",
+  "3": "Norway in a Nutshell to Bergen",
+  "4": "Bergen and the Mostraumen cruise",
+  "5": "Fly north to Tromsø",
+  "6": "Reindeer and the northern lights",
+  "7": "A free day in Tromsø",
+  "8": "Fly to Oslo and depart"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure"
+  ],
+  "2": [
+   "Breakfast, then the ferry to the Bygdøy museums",
+   "Vigeland Park and the Opera House roof",
+   "The evening free in Aker Brygge"
+  ],
+  "3": [
+   "Breakfast and an early check out",
+   "Bergen line to Myrdal and the Flåm Railway down",
+   "Nærøyfjord ferry and the Stalheim coach",
+   "Train into Bergen for the night"
+  ],
+  "4": [
+   "Breakfast, then three hours on the Osterfjord",
+   "The afternoon free for Bryggen and the fish market"
+  ],
+  "5": [
+   "Breakfast and transfer to Bergen airport",
+   "Flight to Tromsø and transfer to your hotel",
+   "The evening free under the Arctic sky"
+  ],
+  "6": [
+   "Breakfast, then an afternoon at a Sami reindeer camp",
+   "Sled ride and stories in the lavvu",
+   "Evening aurora chase by minibus"
+  ],
+  "7": [
+   "Breakfast, then the day yours",
+   "Optional: the Arctic Cathedral and the Fjellheisen cable car",
+   "Optional: a second aurora chase"
+  ],
+  "8": [
+   "Breakfast and check out",
+   "Flight to Oslo to connect with your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Oslo city hotel",
+  "2": "Oslo city hotel",
+  "3": "Bergen city hotel",
+  "4": "Bergen city hotel",
+  "5": "Tromsø city hotel",
+  "6": "Tromsø city hotel",
+  "7": "Tromsø city hotel",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "For the northern lights you need three things: darkness, a clear sky and patience. Tromsø gives you the first two; we build in the third.",
+  "tip": "Book the aurora chase for your first night in the north, not the last. If the sky stays cloudy, most operators let you join again free of charge."
+ },
+ "summary": "Eight days from the capital to the Arctic: Oslo with a city pass, the Norway in a Nutshell route to Bergen and a fjord cruise, then three nights in Tromsø for reindeer sledding and a guided northern lights chase.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

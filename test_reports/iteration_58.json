@@ -1,0 +1,47 @@
+{
+  "summary": "Frontend-only testing of Coming soon treatment, Indonesia->Bali rename/redirects, destination-only search, homepage Top 10/Europe tabs, Europe country filters, photo-uniqueness on 8 listing pages, mobile hamburger order, header 'Speak to a holiday expert' link, hero poster+collage, static assets (favicon/manifest/sitemap/robots/hero media), sitemap content and regression on key routes. Nearly all requirements pass; two minor UI/UX leftovers found (count-text format inconsistency on country-filtered Europe pages, and legacy /asia/indonesia href still present in one Bali trip-card anchor).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Europe filtered listing (/europe/holidays?country=Germany and ?country=Netherlands)", "issue": "Hero/counter text shows 'Browse 1 package idea' instead of the expected 'N holidays' format used by Switzerland (4 holidays) and France (3 holidays). 4 trip cards are rendered on the page so the >0 result requirement is met, but counter wording is inconsistent across countries.", "selector": "section:has-text('Browse 1 package idea')", "priority": "LOW"},
+      {"component": "/asia/bali/holidays trip-card link", "issue": "First anchor in listing points to legacy /asia/indonesia (which 301-redirects to /asia/bali/holidays). Should link directly to the Bali trip detail page instead of relying on the legacy redirect.", "selector": "a[href='/asia/indonesia']", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_coverage_passed": [
+    "Static assets 200: /favicon.ico, /favicon-32.png, /icon-192.png, /icon-512.png, /apple-touch-icon.png, /manifest.json, /sitemap.xml (valid XML, contains /asia/bali/holidays, zero /asia/indonesia), /robots.txt (has Sitemap: line), /hero-poster.webp, /hero-video-360.mp4",
+    "Hero: data-testid='hero-poster' present (1), data-testid='hero-collage' present (1)",
+    "Where to next? Top 10 tab shows exactly: Europe, Japan, Vietnam, Bali, Bhutan, Thailand, Singapore, China, Kazakhstan, Egypt (in order)",
+    "Middle East tab: Egypt renders as link (4 Egypt anchors), Jordan and UAE are rendered as data-testid='destination-card-coming-soon' with visible data-testid='coming-soon-tag' (2) and no <a>",
+    "Asia tab: Sri Lanka is coming-soon, Bali tile present, 0 Indonesia links",
+    "Europe tab: exactly 11 tiles with correct hrefs - Europe /europe, Italy /europe/italy, Switzerland /europe/holidays?country=Switzerland, France /europe/holidays?country=France, Greece /europe/greece, Norway /europe/norway, Germany /europe/holidays?country=Germany, Netherlands /europe/holidays?country=Netherlands, Ireland /europe/ireland, Finland /europe/finland, Sweden /europe/sweden",
+    "Hero search: all suggestion rows have data-kind='destination'; zero Northern Lights / Jordan / UAE / Sri Lanka rows; typing 'indonesia' returns only 'Bali'; clicking Bali navigates to /asia/bali/holidays",
+    "Desktop mega-menu (hover 'Destinations'): Middle East region shows menu-country-coming-soon for Jordan+UAE (2 tiles, 'Coming soon' tag). Asia region shows Sri Lanka as menu-country-coming-soon and Bali as /asia/bali anchor",
+    "Redirects: /asia/indonesia -> /asia/bali/holidays, /asia/indonesia/holidays/honeymoon -> /asia/bali/holidays/honeymoon, /asia/bali -> /asia/bali/holidays",
+    "/asia/bali/holidays: title='Bali tours & holidays | Hi Tours', H1='Bali tours & holidays', breadcrumb shows Bali",
+    "Bali trip detail (/asia/best-of-bali-with-ubud-and-kuta): loads with 0 pageerrors; breadcrumb 'Destinations > Asia > Bali > ...' with Bali linking to /asia/bali (2 anchors); 'Other Bali holidays you may like' section renders",
+    "eg-cr-mosaic photo uniqueness verified on all 8 listing pages (/asia/bali/holidays, /asia/japan/holidays, /asia/china/holidays, /europe/greece/holidays, /europe/norway/holidays, /europe/finland/holidays, /europe/sweden/holidays, /europe/ireland/holidays): 8 imgs each, 8 unique srcs each, all naturalWidth>0 after scroll-into-view",
+    "/europe/holidays?country=Switzerland shows '4 holidays' (7 cards); ?country=France shows '3 holidays' (6 cards); ?country=Germany shows 4 cards; ?country=Netherlands shows 4 cards (all >0)",
+    "Mobile 390x844 hamburger (data-testid='mobile-menu-toggle'): drawer items in correct order - Destinations, About us, Why Us?, Hi Tours cares, Speak to a holiday expert, Careers. Careers href='/careers'. No 'Press', no 'Work with us'",
+    "Desktop header right link reads 'Speak to a holiday expert' (3 instances)",
+    "Regression: /tours, /asia/holidays, /europe/holidays, /africa/egypt/holidays, /careers, /about all load with 0 pageerrors",
+    "Footer: contains Bali and Japan; no Sri Lanka, Maldives or Indonesia"
+  ],
+  "test_report_links": [],
+  "action_items": [
+    "LOW: Normalise the hero counter text on /europe/holidays?country=Germany and ?country=Netherlands to match the 'N holidays' pattern used by Switzerland/France (currently shows 'Browse 1 package idea').",
+    "LOW: Replace stale a[href='/asia/indonesia'] in the Bali listing with a direct /asia/bali anchor to avoid relying on the legacy redirect."
+  ],
+  "critical_code_review_comments": [
+    "Mega-menu, drawer, search and homepage tiles share a single source of truth (destinationsData.js) which keeps Coming-soon handling consistent - good.",
+    "Legacy-redirect coverage for /asia/indonesia and its deep sub-routes works correctly."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "~98% (every critical acceptance criterion passes; only 2 LOW cosmetic issues)"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All Coming-soon/Bali/search/redirect/mosaic/mobile-drawer/static-asset requirements verified passing on preview URL. Two low-priority cosmetic leftovers remain: counter wording on Germany & Netherlands filtered pages, and one legacy /asia/indonesia anchor on the Bali listing (both harmless to UX because 4 cards still render and redirect still works)."
+}

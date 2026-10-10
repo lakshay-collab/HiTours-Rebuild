@@ -1,0 +1,228 @@
+{
+ "cta_country": "norway",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Norway",
+   "/europe/norway"
+  ]
+ ],
+ "source_slug": "best-of-scandinavian-with-norway",
+ "camel": "bestOfScandinavianNorwayFjords",
+ "slug": "best-of-norway-oslo-flam-and-bergen",
+ "title": "Best of Norway: Oslo, Flåm and Bergen",
+ "alt": "The Aurlandsfjord seen from the Flåm valley on a clear summer morning",
+ "transport": "Airport transfers, the Norway in a Nutshell rail and fjord route, and the Bergen line back to Oslo",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Nature"
+ ],
+ "price": 169955,
+ "route_cities": [
+  "Oslo",
+  "Flåm",
+  "Bergen",
+  "Oslo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 3,
+  "hotels": 4,
+  "experiences": 4,
+  "transfers": 6,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Scandic Helsfyr, Oslo",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · City hotel on the metro, minutes from the centre",
+   "activities": [
+    {
+     "name": "Oslofjord sightseeing cruise",
+     "day": 2,
+     "optional": false,
+     "match": "fjord",
+     "description": "Two hours on the water past the islands, bathing spots and wooden summer houses of the inner fjord."
+    }
+   ],
+   "program": {
+    "name": "Oslo",
+    "description": "Two nights to settle in, with a fjord cruise past the islands of the inner Oslofjord."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Flåm",
+   "city": "Flåm",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hotel Flåmsbrygga",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Waterside hotel at the head of the Aurlandsfjord",
+   "activities": [
+    {
+     "name": "Norway in a Nutshell: Flåm Railway",
+     "day": 3,
+     "optional": false,
+     "match": "Flåm",
+     "description": "One of the steepest standard-gauge railways in the world, 20 kilometres of tunnels, waterfalls and hairpin views down to the fjord."
+    }
+   ],
+   "program": {
+    "name": "Flåm",
+    "description": "The classic Norway in a Nutshell day: the Bergen line to Myrdal, the Flåm Railway down the valley and a night at the fjord."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bergen",
+   "city": "Bergen",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Moxy Bergen",
+   "accom": "3 nights · Breakfast · Standard room · 3★ · Modern hotel close to the harbour and Bryggen",
+   "activities": [
+    {
+     "name": "Nærøyfjord cruise and Stalheim road",
+     "day": 4,
+     "optional": false,
+     "match": "fjord",
+     "description": "Ferry through the narrowest UNESCO fjord in Norway, then the coach over the Stalheimskleiva hairpins to the Bergen train."
+    },
+    {
+     "name": "Mostraumen fjord cruise",
+     "day": 6,
+     "optional": false,
+     "match": "cruise",
+     "description": "Three hours from Bergen harbour up the Osterfjord to the tidal rapids at Mostraumen, close enough to the cliffs to fill a bottle from a waterfall."
+    }
+   ],
+   "program": {
+    "name": "Bergen",
+    "description": "Three nights in the fjord capital: the Nærøyfjord crossing to get there, the Hanseatic wharf, and a cruise up the Osterfjord to the Mostraumen rapids."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Oslo",
+   "city": "Oslo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Radisson Blu Park, Oslo",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Comfortable hotel on the airport side of the city",
+   "activities": [],
+   "program": {
+    "name": "Oslo",
+    "description": "The Bergen line back across the Hardangervidda plateau and a last evening in the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Oslo",
+  "2": "Oslofjord cruise",
+  "3": "Oslo to Flåm by rail",
+  "4": "Fjord crossing to Bergen",
+  "5": "A day in Bergen",
+  "6": "Mostraumen fjord cruise",
+  "7": "Back to Oslo",
+  "8": "Departure from Oslo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: an evening stroll along the Aker Brygge waterfront"
+  ],
+  "2": [
+   "Breakfast, then down to the pier at City Hall",
+   "Two hours on the inner Oslofjord by boat",
+   "The afternoon free for the Opera House roof or Vigeland Park"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "The Bergen line up to Myrdal across high country",
+   "The Flåm Railway down to the fjord",
+   "Overnight at the water's edge in Flåm"
+  ],
+  "4": [
+   "Breakfast, then the ferry down the Aurlandsfjord and Nærøyfjord",
+   "Coach over the Stalheim hairpins to Voss",
+   "Train on to Bergen and check in"
+  ],
+  "5": [
+   "Breakfast, then Bryggen and the fish market on foot",
+   "Optional: the Fløibanen funicular for the city view",
+   "The evening free in the old wharf quarter"
+  ],
+  "6": [
+   "Breakfast, then boarding at the harbour",
+   "Three hours up the Osterfjord to the rapids",
+   "Afternoon and evening free in Bergen"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "The Bergen line across the Hardangervidda plateau",
+   "Arrival in Oslo and a free evening"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to the airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Scandic Helsfyr, Oslo",
+  "2": "Scandic Helsfyr, Oslo",
+  "3": "Hotel Flåmsbrygga",
+  "4": "Moxy Bergen",
+  "5": "Moxy Bergen",
+  "6": "Moxy Bergen",
+  "7": "Radisson Blu Park, Oslo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Ingrid",
+  "image": "/experts/riya.webp",
+  "role": "Norway expert at Hi Tours",
+  "quote": "Norway is a country you travel through, not to. Let the trains and ferries do the work and the fjords arrive on their own.",
+  "tip": "Sit on the left side of the Flåm Railway going down. The Kjosfossen waterfall stop is on that side and the drop into the valley is far better."
+ },
+ "summary": "Eight days through the best of southern Norway: Oslo and its fjord, the Flåm Railway and Nærøyfjord on the Norway in a Nutshell route, three nights in Bergen with a cruise to the Mostraumen rapids, and the Bergen line back.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Schengen visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}

@@ -1,12 +1,14 @@
-import { createAdapters } from './vietnamToursData';
-import { packages, cityImages } from '../swedenPackages';
+// Sweden products are Thrillophilia imports only; Scandinavia combos are listed on every Nordic country they visit.
+import { swedenNorthernLightsSafariProduct } from './swedenNorthernLightsSafariData';
+import { swedenNorthernLightsDinnerOnIceProduct } from './swedenNorthernLightsDinnerOnIceData';
+import { scandinaviaGroupTourHelsinkiCopenhagenProduct } from './scandinaviaGroupTourHelsinkiCopenhagenData';
+import { scandinaviaClassicFlamRailwayProduct } from './scandinaviaClassicFlamRailwayData';
 
-const { toProduct, build } = createAdapters({
-  cityImages, base: '/europe', ctaHref: '/l/sweden/enquiry/passengers/', cruiseCity: '—',
-  expert: { name: "Elsa", image: '/experts/riya.webp', role: 'Sweden expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '#' }, { label: "Sweden", href: '/europe/sweden' }]
-});
-
-export const swedenProducts = packages.map(toProduct);
-export const swedenTours = packages.map(build);
-export const swedenBySlug = Object.fromEntries(swedenTours.map((t) => [t.detail.slug, t]));
+export const swedenProducts = [
+  swedenNorthernLightsSafariProduct,
+  swedenNorthernLightsDinnerOnIceProduct,
+  scandinaviaGroupTourHelsinkiCopenhagenProduct,
+  scandinaviaClassicFlamRailwayProduct
+];
+export const swedenTours = [];
+export const swedenBySlug = {};

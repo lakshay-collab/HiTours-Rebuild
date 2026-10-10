@@ -1,0 +1,237 @@
+{
+ "cta_country": "ireland",
+ "base": "/europe",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Europe",
+   "/europe"
+  ],
+  [
+   "Ireland",
+   "/europe/ireland"
+  ]
+ ],
+ "source_slug": "ireland-honeymoon-package-from-india",
+ "camel": "irelandHoneymoonWildAtlantic",
+ "slug": "ireland-honeymoon-wild-atlantic-way",
+ "title": "Ireland Honeymoon: The Wild Atlantic Way",
+ "alt": "A couple on the shore of a Connemara lake with the Twelve Bens behind",
+ "transport": "Airport transfers and a private vehicle with driver along the west coast",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Nature",
+  "Road trip"
+ ],
+ "price": 82649,
+ "route_cities": [
+  "Galway",
+  "Connemara",
+  "Clare",
+  "Kerry",
+  "Cork",
+  "Dromoland"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 4,
+  "transfers": 7,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Galway",
+   "city": "Galway",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel named on confirmation",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in the harbour city",
+   "activities": [
+    {
+     "name": "Connemara and Kylemore Abbey",
+     "day": 2,
+     "optional": false,
+     "match": "Connemara",
+     "description": "The Twelve Bens, Kylemore Abbey and the Sky Road above Clifden."
+    }
+   ],
+   "program": {
+    "name": "Galway",
+    "description": "Two nights in Galway with a day through Connemara."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Clare",
+   "city": "Clare",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Country hotel in County Clare",
+   "activities": [
+    {
+     "name": "Cliffs of Moher",
+     "day": 3,
+     "optional": false,
+     "match": "Moher",
+     "description": "The great cliffs above the Atlantic and the karst landscape of the Burren."
+    }
+   ],
+   "program": {
+    "name": "Clare",
+    "description": "The Burren and the Cliffs of Moher."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Killarney",
+   "city": "Kerry",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Hotel named on confirmation",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hotel in Killarney",
+   "activities": [
+    {
+     "name": "Ring of Kerry",
+     "day": 5,
+     "optional": false,
+     "match": "Kerry",
+     "description": "The 179-kilometre coastal circuit past Killarney National Park, Sneem and the Skellig views."
+    }
+   ],
+   "program": {
+    "name": "Killarney",
+    "description": "Two nights in Kerry for the lakes and the Ring of Kerry."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Cork",
+   "city": "Cork",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Hotel named on confirmation",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hotel in the city centre",
+   "activities": [
+    {
+     "name": "Kinsale and Blarney",
+     "day": 6,
+     "optional": false,
+     "match": "Blarney",
+     "description": "The harbour town of Kinsale and the stone at Blarney Castle."
+    }
+   ],
+   "program": {
+    "name": "Cork",
+    "description": "Kinsale and Cork for a romantic evening."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Dromoland",
+   "city": "Dromoland",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "Dromoland Castle",
+   "accom": "0 nights · Breakfast · Standard room · 3★ · Castle hotel near Shannon airport",
+   "activities": [],
+   "program": {
+    "name": "Dromoland",
+    "description": "A final morning at Dromoland Castle before your flight from Shannon."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Galway",
+  "2": "Connemara",
+  "3": "To County Clare",
+  "4": "Clare to Kerry",
+  "5": "Ring of Kerry",
+  "6": "Romantic Cork",
+  "7": "Dromoland Castle and departure"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at the airport and private transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: music in the pubs of the Latin Quarter"
+  ],
+  "2": [
+   "Breakfast, then a day through Connemara",
+   "Kylemore Abbey and the Sky Road",
+   "Back to Galway for the night"
+  ],
+  "3": [
+   "Breakfast and check out",
+   "The Burren and the Cliffs of Moher",
+   "A country hotel for the night"
+  ],
+  "4": [
+   "Breakfast and check out",
+   "The Shannon ferry and the Dingle coast",
+   "Arrival in Killarney"
+  ],
+  "5": [
+   "Breakfast, then the full Ring of Kerry",
+   "Killarney National Park and the Skellig views"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Kinsale harbour and Blarney Castle",
+   "Dinner in Cork"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "A visit to Dromoland Castle",
+   "Transfer to Shannon airport for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "Arrival",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel named on confirmation",
+  "2": "Hotel named on confirmation",
+  "3": "Hotel named on confirmation",
+  "4": "Hotel named on confirmation",
+  "5": "Hotel named on confirmation",
+  "6": "Hotel named on confirmation",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aoife",
+  "image": "/experts/riya.webp",
+  "role": "Ireland expert at Hi Tours",
+  "quote": "Ireland is small enough to circle in a week and warm enough that you will want to stay longer in every pub you pass.",
+  "tip": "Pack layers, not an umbrella. The weather changes every hour on the west coast and the wind makes umbrellas useless on the cliffs."
+ },
+ "summary": "A week for two along Ireland's west coast: Galway and Connemara, the Cliffs of Moher, two nights in Killarney for the Ring of Kerry, Kinsale and Cork, and a castle finale at Dromoland.",
+ "included": "Included: all transfers and rail or ferry journeys as listed; sightseeing and cruises as listed with tickets where stated; daily breakfast.",
+ "not_included": "Not included: international flights; Irish visa fees; lunches and dinners unless stated; travel insurance; optional excursions; personal expenses. Hotels are quoted as a class and named on confirmation."
+}
