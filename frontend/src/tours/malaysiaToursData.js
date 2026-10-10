@@ -11,7 +11,7 @@ import { bestOfThailandSingaporeMalaysiaBaliProduct } from './bestOfThailandSing
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asia', ctaHref: '/l/malaysia/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Arjun Mehta', image: '/experts/riya.webp', role: 'Malaysia expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Malaysia', href: '/asia/malaysia' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: 'Malaysia', href: '/asia/malaysia' }]
 });
 
 export const malaysiaProducts = [...packages.map(toProduct), bestOfThailandMalaysiaProduct, singaporeMalaysiaHoneymoonProduct, singaporeMalaysiaSentosaGentingProduct, singaporeMalaysiaBaliHoneymoonProduct, grandSingaporeMalaysiaBaliProduct, bestOfThailandSingaporeMalaysiaBaliProduct];

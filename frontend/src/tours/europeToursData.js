@@ -10,7 +10,7 @@ import { romeFlorenceParisHoneymoonProduct } from './romeFlorenceParisHoneymoonD
 const { toProduct, build } = createAdapters({
   cityImages, base: '/europe', ctaHref: '/l/europe/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Sharon', image: '/experts/sharon.webp', role: 'Europe expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '/europe' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '/europe' }]
 });
 
 export const europeProducts = [, italyAndSwitzerlandRomeVeniceTitlisProduct, parisAndSwitzerlandEiffelRigiProduct, westernEuropeGroupTourAlpsAmsterdamProduct, switzerlandItalyHoneymoonGondolaProduct, romeFlorenceParisHoneymoonProduct];

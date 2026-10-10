@@ -4,7 +4,7 @@ import { packages, cityImages } from '../croatiaPackages';
 const { toProduct, build } = createAdapters({
   cityImages, base: '/europe', ctaHref: '/l/croatia/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Ana", image: '/experts/riya.webp', role: 'Croatia expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Europe', href: '#' }, { label: "Croatia", href: '/europe/croatia' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Europe', href: '#' }, { label: "Croatia", href: '/europe/croatia' }]
 });
 
 export const croatiaProducts = packages.map(toProduct);

@@ -27,7 +27,7 @@ import { bestOfThailandSingaporeMalaysiaBaliProduct } from './bestOfThailandSing
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asia', ctaHref: '/l/singapore/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Nisha Rao', image: '/experts/riya.webp', role: 'Singapore expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Singapore', href: '/asia/singapore' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: 'Singapore', href: '/asia/singapore' }]
 });
 
 export const singaporeProducts = [

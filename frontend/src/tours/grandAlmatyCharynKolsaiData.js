@@ -242,7 +242,7 @@ const glance = {
 };
 
 const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
+  { label: 'Destinations', href: '/#destinations' },
   { label: 'Asia', href: '/asia' },
   { label: 'Kazakhstan', href: '/asia/kazakhstan' },
   { label: detail.title }

@@ -231,3 +231,25 @@ Verified on the preview: header button count 0 while a page search is visible an
 adventure dropdown now paints above the collage; scrollY is 0 with the H1 visible when a trip opens.
 NOT visually confirmed: the mobile filter sheet order (the screenshot tool renders at desktop width, so the bottom
 sheet layout does not appear) - the change is a deterministic array reorder.
+
+## 2026-06-10 - English SEO URLs + page metadata (pre-publish)
+Rename of every German Tourlane slug across frontend/src (global sed, 149 + 831 + ~40 occurrences):
+ - `/europa` -> `/europe`, `/asien` -> `/asia`, `/afrika/aegypten` -> `/africa/egypt`
+ - Egypt trip slugs: luxor-strand-urlaub -> egypt-pyramids-nile-cruise-and-red-sea, rundreise-7-tage ->
+   egypt-7-day-highlights, urlaub-am-meer -> egypt-culture-round-trip, pyramiden-urlaub -> egypt-pyramids-tour,
+   familienurlaub -> egypt-family-holiday, rundreise-bade -> egypt-round-trip-and-beach,
+   rundreise-10-tage -> egypt-11-day-round-trip
+ - Trip-detail breadcrumbs in ~270 files under src/tours/* (plus egyptDetailData.js, srilankaData.js) pointed at
+   `/reiseziele/` and `/afrika/`, which had no route at all and rendered a blank page (pre-existing bug, caught by
+   testing agent iteration_57). Now `/#destinations` and `/africa/egypt/holidays`.
+ - App.js `LegacyRedirect` keeps the old prefixes alive (/europa, /asien, /afrika/aegypten, /afrika, /reiseziele)
+   and redirects with `replace` to the English equivalent, preserving the rest of the path and the query string.
+Metadata:
+ - public/index.html: title `Hi Tours | Tailor-made holidays & honeymoons` (was `Emergent | Fullstack App`),
+   real description, og/twitter tags, favicon + apple-touch-icon -> /hitours-logo.webp, theme-color #0b1f2a.
+ - New src/lib/seo.js `usePageMeta(title, description)` -> sets document.title, meta description, og:title,
+   og:description and a self-referencing canonical. Wired into Home.jsx, DestinationListing.jsx (all destination
+   landings) and EgyptDetail.jsx (every trip page -> `<Trip name> | Hi Tours` + generated description).
+ - public/robots.txt added (Allow: /). No sitemap.xml / absolute canonical yet - needs the production domain.
+Verified: iteration_57.json (all routes, redirects, mega menu/drawer/footer/sitemap href sweeps, search, titles and
+descriptions pass) plus a follow-up pass on the renamed Egypt trip, /afrika, /reiseziele and the fixed breadcrumbs.

@@ -186,7 +186,7 @@ export const glance = {
 };
 
 export const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
+  { label: 'Destinations', href: '/#destinations' },
   { label: 'Europe', href: '#' },
   { label: 'Iceland', href: '/europe/iceland' },
   { label: detail.title }

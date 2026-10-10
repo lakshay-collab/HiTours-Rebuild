@@ -740,3 +740,13 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - P1: decide what to do with the five skipped Bali sources (one 404, four with itinerary/duration mismatches).
 - P1: machine-readable /sitemap.xml (still deferred).
 - P2: promotion calendar admin - today the dates live in sale.js; could read from a sheet or an /api endpoint later.
+- DONE (10 June 2026): English SEO URLs for publish. /europa -> /europe, /asien -> /asia, /afrika/aegypten ->
+  /africa/egypt, plus the 7 German Egypt trip slugs. Old prefixes redirect via LegacyRedirect in App.js. Broken
+  /reiseziele/ and /afrika/ breadcrumbs (~270 tour files) fixed. Tab title is now Hi Tours everywhere, every
+  destination landing and trip page sets title + meta description + og tags + canonical (src/lib/seo.js),
+  favicon and robots.txt added. Verified iteration_57.json + follow-up pass.
+- P1: /sitemap.xml and absolute canonical/og:url still need the production domain (e.g. https://www.hitours.in)
+  before launch; the canonical currently uses window.location.origin, so it will be right on whatever domain serves
+  the app, but og:image is a relative path and crawlers prefer absolute.
+- P1: the app is a client-rendered CRA, so Google sees an empty HTML shell until it executes JS. Pre-rendering
+  (react-snap) or SSR would materially improve indexing of the ~300 trip pages.

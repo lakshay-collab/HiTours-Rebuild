@@ -31,13 +31,13 @@ const g = egyptImages;
 
 // The exact seven Egypt round-trip products from the source page (titles translated to English).
 export const families = [
-  { slug: 'luxor-strand-urlaub', detail: true, category: 'Culture', title: 'Egypt holiday from Cairo with Nile cruise and stop in ancient Thebes', days: 12, stops: 6, price: 2945, images: [g.p1, g.p2, g.p3, g.p4, g.p5, g.p6] },
-  { slug: 'rundreise-7-tage', category: 'Short trips', title: 'Unforgettable holiday in Egypt', days: 7, stops: 1, price: 1350, images: [g.hurghada, g.p2, g.aswan, g.p6, g.p3] },
-  { slug: 'urlaub-am-meer', category: 'Culture', title: 'Egypt round trip: experience fascinating culture', days: 8, stops: 3, price: 1500, images: [g.luxor, g.p2, g.p6, g.komOmbo, g.p5, g.p3] },
-  { slug: 'pyramiden-urlaub', category: 'Culture', title: 'Egypt: experience the fascinating pyramids', days: 9, stops: 3, price: 1750, images: [g.giza, g.p2, g.p6, g.p3, g.p5, g.komOmbo] },
-  { slug: 'familienurlaub', category: 'Family holiday', title: 'Egypt family holiday: adventure for children', days: 11, stops: 4, price: 2190, images: [g.komOmbo, g.p2, g.hurghada, g.p6, g.luxor] },
-  { slug: 'rundreise-bade', category: 'Culture', title: 'Round trip and beach holiday Egypt', days: 11, stops: 6, price: 2730, images: [g.aswan, g.p2, g.p3, g.alexandria, g.p5, g.komOmbo] },
-  { slug: 'rundreise-10-tage', category: 'Culture', title: 'Egypt round trip: 11 days of adventure', days: 11, stops: 6, price: 2770, images: [g.luxor, g.p2, g.p6, g.p4, g.p3, g.aswan] }
+  { slug: 'egypt-pyramids-nile-cruise-and-red-sea', detail: true, category: 'Culture', title: 'Egypt holiday from Cairo with Nile cruise and stop in ancient Thebes', days: 12, stops: 6, price: 2945, images: [g.p1, g.p2, g.p3, g.p4, g.p5, g.p6] },
+  { slug: 'egypt-7-day-highlights', category: 'Short trips', title: 'Unforgettable holiday in Egypt', days: 7, stops: 1, price: 1350, images: [g.hurghada, g.p2, g.aswan, g.p6, g.p3] },
+  { slug: 'egypt-culture-round-trip', category: 'Culture', title: 'Egypt round trip: experience fascinating culture', days: 8, stops: 3, price: 1500, images: [g.luxor, g.p2, g.p6, g.komOmbo, g.p5, g.p3] },
+  { slug: 'egypt-pyramids-tour', category: 'Culture', title: 'Egypt: experience the fascinating pyramids', days: 9, stops: 3, price: 1750, images: [g.giza, g.p2, g.p6, g.p3, g.p5, g.komOmbo] },
+  { slug: 'egypt-family-holiday', category: 'Family holiday', title: 'Egypt family holiday: adventure for children', days: 11, stops: 4, price: 2190, images: [g.komOmbo, g.p2, g.hurghada, g.p6, g.luxor] },
+  { slug: 'egypt-round-trip-and-beach', category: 'Culture', title: 'Round trip and beach holiday Egypt', days: 11, stops: 6, price: 2730, images: [g.aswan, g.p2, g.p3, g.alexandria, g.p5, g.komOmbo] },
+  { slug: 'egypt-11-day-round-trip', category: 'Culture', title: 'Egypt round trip: 11 days of adventure', days: 11, stops: 6, price: 2770, images: [g.luxor, g.p2, g.p6, g.p4, g.p3, g.aswan] }
 ];
 
 export const reviewCards = [
@@ -102,9 +102,9 @@ export const listingCopy = {
   ]
 };
 
-// Product detail = source page /africa/egypt/luxor-strand-urlaub/ (content translated to English).
+// Product detail = source page /africa/egypt/egypt-pyramids-nile-cruise-and-red-sea/ (content translated to English).
 export const featured = {
-  slug: 'luxor-strand-urlaub',
+  slug: 'egypt-pyramids-nile-cruise-and-red-sea',
   title: 'Egypt holiday from Cairo with Nile cruise and stop in ancient Thebes',
   days: '12 days', stops: 6, transport: 'Individual transfer', tag: 'Culture', price: 2945,
   gallery: [g.p1, g.p2, g.p3, g.p4, g.p5],

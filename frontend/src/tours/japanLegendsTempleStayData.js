@@ -690,7 +690,7 @@ const glance = {
 };
 
 const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
+  { label: 'Destinations', href: '/#destinations' },
   { label: 'Asia', href: '/asia' },
   { label: 'Japan', href: '/asia/japan' },
   { label: detail.title }

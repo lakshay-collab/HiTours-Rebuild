@@ -298,7 +298,7 @@ const glance = {
 };
 
 const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
+  { label: 'Destinations', href: '/#destinations' },
   { label: 'Asia', href: '/asia' },
   { label: 'Vietnam', href: '/asia/vietnam' },
   { label: detail.title }

@@ -1,0 +1,41 @@
+{
+  "summary": "Frontend-only testing of the German-to-English SEO URL rename. Verified direct routes, legacy redirects, meta/title/description, trip detail navigation, search behaviour, mega menu, mobile drawer, sitemap, and footer. All primary navigation surfaces are clean (0 /europa, /asien, /afrika hrefs). Found one leftover: trip-detail breadcrumbs still link to the old German slugs /reiseziele/ and /afrika/ which open a BLANK page.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Trip detail breadcrumbs (egyptDetailData.js, srilankaData.js, and ~270 files under src/tours/*)", "issue": "Breadcrumb hrefs still point to German slugs: 'Destinations' -> '/reiseziele/' and 'Africa' -> '/afrika/'. Both routes are NOT in LEGACY_PREFIXES (only '/afrika/aegypten' is mapped), so clicking either breadcrumb from any trip detail page (Asia, Europe, Egypt) loads a blank/empty page. Example reproduced on /africa/egypt/luxor-strand-urlaub/ -> clicking 'Africa' -> /afrika/ -> blank screen.", "selector": "nav a[href='/reiseziele/'], nav a[href='/afrika/']", "priority": "HIGH"}
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_coverage_passed": [
+    "Direct English routes /asia, /asia/vietnam/holidays, /asia/bhutan/holidays, /asia/china/holidays, /asia/kazakhstan/holidays, /europe, /europe/holidays, /europe/italy/holidays, /africa/egypt/holidays all 200 with correct '| Hi Tours' titles and 144+ char meta descriptions",
+    "Legacy redirects: /europa -> /europe, /europa/italy/holidays -> /europe/italy/holidays, /asien -> /asia, /asien/vietnam/holidays -> /asia/vietnam/holidays, /afrika/aegypten/holidays -> /africa/egypt/holidays (URL changes in address bar)",
+    "Trip detail pages: /asia/<slug> and /europe/<slug> both open at scrollY=0 with 'Trip name | Hi Tours' title",
+    "Homepage title = 'Hi Tours | Tailor-made holidays & honeymoons' with description meta present",
+    "Desktop mega-menu Destinations: 63 hrefs, 0 legacy prefixes",
+    "Mobile drawer: 48 visible links, 0 legacy prefixes",
+    "Sitemap page: 0 legacy prefixes",
+    "Footer: 0 legacy prefixes",
+    "Search bar (hero/overlay/adventure): 'switzerland' and 'paris' both resolve to Europe suggestion -> /europe",
+    "No console pageerrors on any visited route (only unrelated 401 for Turnstile widget which pre-existed)"
+  ],
+  "test_report_links": [],
+  "action_items": [
+    "Replace '/reiseziele/' breadcrumb hrefs across frontend/src/**/*.js (~270 files, mostly src/tours/*) with the correct English destination landing (e.g. '/' or a sitemap/destinations page). Easiest: global sed s|/reiseziele/|/|g (or point to the sitemap/section anchor).",
+    "Replace '/afrika/' breadcrumb hrefs (9 files: egyptDetailData.js, tours/nileDarshanData.js, nileNoorData.js, misrMayaData.js, pharaohsFeluccasData.js, egyptGrandFestivalData.js, misrKaJaaduData.js, nilePharaohsData.js, moroccoEgyptData.js) with '/africa/egypt' (there is no standalone Africa landing route).",
+    "Optional: add a LegacyRedirect route for '/afrika' and '/reiseziele' so any stray link still resolves instead of showing a blank page."
+  ],
+  "critical_code_review_comments": [
+    "LEGACY_PREFIXES in App.js only covers /afrika/aegypten, not bare /afrika — any stray link to /afrika yields a blank page. Consider adding ['/afrika', '/africa/egypt'] and ['/reiseziele', '/'] as safety nets.",
+    "Trip URLs themselves still contain German words (e.g. /africa/egypt/luxor-strand-urlaub). If pure-English slugs were the SEO goal, these trip slugs should also be renamed and 301-aliased."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a", "frontend": "~92% (routes/redirects/SEO all pass; breadcrumb nav broken)"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Core SEO rename landed cleanly. The remaining bug is pure data: breadcrumb hrefs in frontend/src/egyptDetailData.js, frontend/src/srilankaData.js, and ~270 files under frontend/src/tours/*.js. After fix, re-verify by loading any trip detail page (e.g. /africa/egypt/luxor-strand-urlaub/ or /asia/grand-vietnam-cambodia-and-thailand) and clicking the Destinations and Africa breadcrumbs.",
+  "rca of the issue": "The global sed rename of German URL prefixes only ran on nav/menu/footer/sitemap data files. Trip-detail breadcrumb arrays live inside hundreds of per-tour data files under src/tours/* and still have the pre-rename hardcoded German slugs ('/reiseziele/' and '/afrika/'). Because App.js's LegacyRedirect only maps /europa, /asien, and /afrika/aegypten (not bare /afrika or /reiseziele), those breadcrumb clicks hit no route and render a blank page."
+}

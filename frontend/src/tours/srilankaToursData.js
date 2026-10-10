@@ -5,7 +5,7 @@ import { packages, cityImages } from '../srilankaPackages';
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asia', ctaHref: '/l/sri-lanka/enquiry/passengers/', cruiseCity: '—',
   expert: { name: 'Kabir Shah', image: '/team/asia-5.webp', role: 'Sri Lanka & Maldives expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: 'Sri Lanka', href: '/asia/sri-lanka' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: 'Sri Lanka', href: '/asia/sri-lanka' }]
 });
 
 export const srilankaProducts = packages.map(toProduct);

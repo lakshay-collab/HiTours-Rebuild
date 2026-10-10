@@ -163,7 +163,7 @@ export const glance = {
 };
 
 export const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
+  { label: 'Destinations', href: '/#destinations' },
   { label: 'Asia', href: '/asia' },
   { label: 'Thailand', href: '/asia' },
   { label: 'Siam Splendour' }

@@ -2,7 +2,7 @@
 // Entire detail page content in English.
 
 export const detail = {
-  slug: 'luxor-strand-urlaub',
+  slug: 'egypt-pyramids-nile-cruise-and-red-sea',
   ctaHref: '/l/egypt/enquiry/passengers/',
   cta: 'Design Your Escape',
   sub: 'Your travel plan – non-binding & tailor-made',
@@ -314,8 +314,8 @@ export const planner = {
 };
 
 export const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Africa', href: '/afrika/' },
+  { label: 'Destinations', href: '/#destinations' },
+  { label: 'Africa', href: '/africa/egypt/holidays' },
   { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Egypt Explorer: Pyramids, Nile & Red Sea Beach Retreat — Grand Luxury Edition' }
 ];

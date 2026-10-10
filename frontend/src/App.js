@@ -79,12 +79,13 @@ const COUNTRY_ROOTS = [
 const StyleRedirect = () => <Navigate to={`/africa/egypt/holidays/${useParams().style}`} replace />;
 
 // Legacy German slugs (/europa, /asien, /afrika/aegypten) now redirect to their English equivalents.
-const LEGACY_PREFIXES = [['/europa', '/europe'], ['/asien', '/asia'], ['/afrika/aegypten', '/africa/egypt']];
+const LEGACY_PREFIXES = [['/europa', '/europe'], ['/asien', '/asia'], ['/afrika/aegypten', '/africa/egypt'], ['/afrika', '/africa/egypt'], ['/reiseziele', '/']];
 const LegacyRedirect = () => {
   const { pathname, search } = useLocation();
   const match = LEGACY_PREFIXES.find(([from]) => pathname === from || pathname.startsWith(`${from}/`));
   if (!match) return <Navigate to="/" replace />;
-  return <Navigate to={`${match[1]}${pathname.slice(match[0].length)}${search}`} replace />;
+  const rest = pathname.slice(match[0].length);
+  return <Navigate to={match[1] === '/' ? '/' : `${match[1]}${rest}${search}`} replace />;
 };
 
 // Reset scroll to the top on every route change (hash links keep their in-page target).
@@ -194,6 +195,10 @@ function App() {
           <Route path="/europa/*" element={<LegacyRedirect />} />
           <Route path="/asien/*" element={<LegacyRedirect />} />
           <Route path="/afrika/aegypten/*" element={<LegacyRedirect />} />
+          <Route path="/afrika/*" element={<LegacyRedirect />} />
+          <Route path="/reiseziele/*" element={<LegacyRedirect />} />
+          <Route path="/reiseziele" element={<LegacyRedirect />} />
+          <Route path="/afrika" element={<LegacyRedirect />} />
           <Route path="/europa" element={<LegacyRedirect />} />
           <Route path="/asien" element={<LegacyRedirect />} />
           <Route path="/afrika/aegypten" element={<LegacyRedirect />} />

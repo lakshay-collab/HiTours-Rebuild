@@ -13,7 +13,7 @@ import { indochinaAndThailandGrandProduct } from './indochinaAndThailandGrandDat
 const { toProduct, build } = createAdapters({
   cityImages, base: '/asia', ctaHref: '/l/cambodia/enquiry/passengers/', cruiseCity: '—',
   expert: { name: "Sopheak", image: '/experts/riya.webp', role: 'Cambodia expert at Hi Tours', createdBy: 'Trip created by', more: 'Read more', less: 'Read less' },
-  crumbs: [{ label: 'Destinations', href: '/reiseziele/' }, { label: 'Asia', href: '/asia' }, { label: "Cambodia", href: '/asia/cambodia' }]
+  crumbs: [{ label: 'Destinations', href: '/#destinations' }, { label: 'Asia', href: '/asia' }, { label: "Cambodia", href: '/asia/cambodia' }]
 });
 
 export const cambodiaProducts = [...packages.map(toProduct), grandVietnamCambodiaThailandProduct, saigonAndAngkorEightProduct, vietnamCambodiaFourCitiesProduct, saigonPhnomPenhAngkorProduct, thailandCambodiaVietnamTenProduct, bestOfVietnamCambodiaFifteenProduct, vietnamCambodiaHoneymoonTenProduct, cambodiaAndVietnamTenDaysProduct, indochinaAndThailandGrandProduct];

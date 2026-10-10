@@ -130,8 +130,8 @@ export const glance = {
 };
 
 export const crumbs = [
-  { label: 'Destinations', href: '/reiseziele/' },
-  { label: 'Africa', href: '/afrika/' },
+  { label: 'Destinations', href: '/#destinations' },
+  { label: 'Africa', href: '/africa/egypt/holidays' },
   { label: 'Egypt', href: '/africa/egypt/' },
   { label: 'Pharaohs & Feluccas: A Royal Egyptian Sojourn' }
 ];
