@@ -276,6 +276,15 @@ import { scandinaviaGroupTourHelsinkiCopenhagenBySlug } from './scandinaviaGroup
 import { scandinaviaClassicFlamRailwayBySlug } from './scandinaviaClassicFlamRailwayData';
 import { swedenNorthernLightsSafariBySlug } from './swedenNorthernLightsSafariData';
 import { swedenNorthernLightsDinnerOnIceBySlug } from './swedenNorthernLightsDinnerOnIceData';
+import { tropicalSriLankaKandySigiriyaBentotaBySlug } from './tropicalSriLankaKandySigiriyaBentotaData';
+import { exoticSriLankaCouplesKandyBentotaBySlug } from './exoticSriLankaCouplesKandyBentotaData';
+import { sweetEscapeSriLankaKandyBentotaBySlug } from './sweetEscapeSriLankaKandyBentotaData';
+import { fullyLoadedSriLankaYalaSafariBySlug } from './fullyLoadedSriLankaYalaSafariData';
+import { offbeatSriLankaDambullaNuwaraEliyaBySlug } from './offbeatSriLankaDambullaNuwaraEliyaData';
+import { luxurySriLankaKandyBentotaColomboBySlug } from './luxurySriLankaKandyBentotaColomboData';
+import { teaCountrySriLankaHattonKandyBySlug } from './teaCountrySriLankaHattonKandyData';
+import { sriLankaGroupTourSigiriyaEllaMirissaBySlug } from './sriLankaGroupTourSigiriyaEllaMirissaData';
+import { sriLankaFamilyGetawayKandyBentotaBySlug } from './sriLankaFamilyGetawayKandyBentotaData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -554,5 +563,14 @@ export const BY_SLUG = {
   ...scandinaviaGroupTourHelsinkiCopenhagenBySlug,
   ...scandinaviaClassicFlamRailwayBySlug,
   ...swedenNorthernLightsSafariBySlug,
-  ...swedenNorthernLightsDinnerOnIceBySlug
+  ...swedenNorthernLightsDinnerOnIceBySlug,
+  ...tropicalSriLankaKandySigiriyaBentotaBySlug,
+  ...exoticSriLankaCouplesKandyBentotaBySlug,
+  ...sweetEscapeSriLankaKandyBentotaBySlug,
+  ...fullyLoadedSriLankaYalaSafariBySlug,
+  ...offbeatSriLankaDambullaNuwaraEliyaBySlug,
+  ...luxurySriLankaKandyBentotaColomboBySlug,
+  ...teaCountrySriLankaHattonKandyBySlug,
+  ...sriLankaGroupTourSigiriyaEllaMirissaBySlug,
+  ...sriLankaFamilyGetawayKandyBentotaBySlug
 };

@@ -1,0 +1,300 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lanka-community-trip-7n-8d",
+ "camel": "sriLankaGroupTourSigiriyaEllaMirissa",
+ "slug": "sri-lanka-group-tour-sigiriya-ella-and-mirissa",
+ "title": "Sri Lanka Group Tour: Sigiriya, Ella and Mirissa",
+ "alt": "The Nine Arches Bridge curving through the tea hills at Ella",
+ "transport": "Air conditioned group coach with an English speaking chauffeur and a Hi Tours trip captain",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Adventure",
+  "Beach"
+ ],
+ "price": 54149,
+ "route_cities": [
+  "Sigiriya",
+  "Nuwara Eliya",
+  "Ella",
+  "Mirissa",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 10,
+  "transfers": 7,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Sigiriya",
+   "city": "Sigiriya",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Sigiriya group hotel",
+   "hotel_label": "Group hotel",
+   "accom": "1 night · Breakfast · Twin sharing room · 3★ · Comfortable hotel in the Cultural Triangle near the rock",
+   "activities": [
+    {
+     "name": "Sigiriya rock fortress guided trek",
+     "day": 2,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "An early guided climb past the water gardens, the mirror wall and the lion paws to the palace ruins on the summit."
+    },
+    {
+     "name": "Dambulla cave temple",
+     "day": 2,
+     "optional": false,
+     "match": "Dambulla",
+     "description": "Five cave shrines carved into the rock, lined with murals and more than a hundred Buddha statues."
+    }
+   ],
+   "program": {
+    "name": "Sigiriya",
+    "description": "One night in the Cultural Triangle with a dawn climb of the rock fortress the next morning."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Nuwara Eliya group hotel",
+   "hotel_label": "Group hotel",
+   "accom": "1 night · Breakfast · Twin sharing room · 3★ · Hill town hotel a short walk from Gregory Lake",
+   "activities": [
+    {
+     "name": "Tea plantation and factory visit",
+     "day": 2,
+     "optional": false,
+     "match": "Tea",
+     "description": "A stop at a working estate to see the leaves rolled and fired, with a cup of fresh Ceylon tea at the end."
+    },
+    {
+     "name": "Gregory Lake and Nuwara Eliya town",
+     "day": 3,
+     "optional": false,
+     "match": "Gregory Lake",
+     "description": "A half day around the lake, the racecourse and the colonial post office and market of the town."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up through the estates with a tea factory stop for a night in the cool of Little England."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ella",
+   "city": "Ella",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Ella group hotel",
+   "hotel_label": "Group hotel",
+   "accom": "2 nights · Breakfast · Twin sharing room · 3★ · Guesthouse style hotel with views down the Ella gap",
+   "activities": [
+    {
+     "name": "Little Adams Peak hike",
+     "day": 4,
+     "optional": false,
+     "match": "Adam",
+     "description": "An easy early morning walk through the tea to a ridge with views down the Ella gap to the plains."
+    },
+    {
+     "name": "Nine Arches Bridge",
+     "day": 4,
+     "optional": false,
+     "match": "Nine Arch",
+     "description": "The colonial railway viaduct in the jungle, timed for a train crossing if the schedule allows."
+    },
+    {
+     "name": "Ravana Falls and Ravana Cave",
+     "day": 4,
+     "optional": false,
+     "match": "Ravana",
+     "description": "The wide roadside waterfall of the Ramayana legend and the cave above it."
+    }
+   ],
+   "program": {
+    "name": "Ella",
+    "description": "Two nights in the hill town everyone falls for, with a full day of its viewpoints, bridge, falls and cave."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Mirissa",
+   "city": "Mirissa",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Mirissa group hotel",
+   "hotel_label": "Group hotel",
+   "accom": "2 nights · Breakfast · Twin sharing room · 3★ · Beachside hotel a few steps from the sand",
+   "activities": [
+    {
+     "name": "Coconut Tree Hill at sunset",
+     "day": 5,
+     "optional": false,
+     "match": "Coconut Tree Hill",
+     "description": "The palm topped headland at the end of Mirissa beach, best at the golden hour."
+    },
+    {
+     "name": "Galle fort walk",
+     "day": 6,
+     "optional": false,
+     "match": "Galle",
+     "description": "An afternoon inside the Dutch fort: the ramparts, the lighthouse, the old church and sunset from the walls."
+    }
+   ],
+   "program": {
+    "name": "Mirissa",
+    "description": "Two nights on the south coast with Coconut Tree Hill at sunset and an afternoon at the Galle fort."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Colombo group hotel",
+   "hotel_label": "Group hotel",
+   "accom": "1 night · Breakfast · Twin sharing room · 3★ · City hotel close to Galle Face Green",
+   "activities": [
+    {
+     "name": "Bentota boat safari",
+     "day": 7,
+     "optional": false,
+     "match": "Bentota",
+     "description": "A boat through the mangroves and islands of the Bentota river, with monitor lizards and water birds along the banks."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A boat safari on the Bentota backwaters on the way up to the capital for the last night."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Sigiriya",
+  "2": "Sigiriya at dawn and up to the hills",
+  "3": "Nuwara Eliya and on to Ella",
+  "4": "Ella sightseeing",
+  "5": "To the south coast",
+  "6": "Mirissa and Galle",
+  "7": "Bentota backwaters and Colombo",
+  "8": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and a group transfer inland",
+   "Meet your trip captain and fellow travellers",
+   "Check in near the rock by late afternoon",
+   "A welcome dinner with the group"
+  ],
+  "2": [
+   "An early guided climb of the Sigiriya rock fortress",
+   "Breakfast and check out, then the Dambulla cave temple",
+   "A tea factory stop on the climb into the hills",
+   "Check in at Nuwara Eliya and dinner with the group"
+  ],
+  "3": [
+   "Breakfast, then Gregory Lake and the colonial town",
+   "A scenic transfer through the estates to Ella",
+   "Check in with views down the Ella gap",
+   "The evening free in the cafes of the main street"
+  ],
+  "4": [
+   "An early walk up Little Adams Peak",
+   "Breakfast, then the Nine Arches Bridge",
+   "Ravana Falls and the cave of the legend",
+   "The evening at leisure in Ella"
+  ],
+  "5": [
+   "Breakfast and check out of Ella",
+   "A transfer down from the hills to Mirissa",
+   "Check in and the afternoon on the beach",
+   "Sunset from Coconut Tree Hill"
+  ],
+  "6": [
+   "Breakfast and a free morning on Mirissa beach",
+   "Optional: a whale watching boat (seasonal)",
+   "The afternoon inside the Galle Dutch fort",
+   "Sunset from the ramparts and back to Mirissa"
+  ],
+  "7": [
+   "Breakfast and check out",
+   "A boat safari on the Bentota river mangroves",
+   "A transfer on up the coast to Colombo",
+   "Check in and a farewell evening with the group"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Sigiriya group hotel",
+  "2": "Nuwara Eliya group hotel",
+  "3": "Ella group hotel",
+  "4": "Ella group hotel",
+  "5": "Mirissa group hotel",
+  "6": "Mirissa group hotel",
+  "7": "Colombo group hotel",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Sigiriya, Ella and Mirissa in one week is the route I recommend to every first timer under forty. Heritage, hills and the sea in that order.",
+  "tip": "Climb Sigiriya before breakfast. The gates open at seven, the steps are in shade and you are back down before the heat and the crowds arrive."
+ },
+ "summary": "Eight days with a small group and a trip captain: a dawn climb of Sigiriya, the Dambulla caves and a tea factory, a night in Nuwara Eliya, two in Ella for Little Adams Peak and the Nine Arches Bridge, two on the beach at Mirissa with Galle fort, and a Bentota boat safari on the way to Colombo.",
+ "included": "Included: 7 nights in comfortable hotels on twin sharing; breakfast from day 2 and dinner on days 1 and 2; an air conditioned coach with English speaking chauffeur; a Hi Tours trip captain throughout; the guided Sigiriya rock climb; Dambulla cave temple and tea factory entrances; the Bentota boat safari; airport pick up on arrival; bottled water on tour days.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; GST and TCS; lunches and dinners unless stated; whale watching and water sports; the departure airport transfer; travel insurance; tips and personal expenses. Group departures are for travellers aged 16 to 42; ask us about a private version for other ages."
+}

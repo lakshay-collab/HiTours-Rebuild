@@ -19,6 +19,7 @@ const FOOTER_HREFS = {
   'Egypt': '/africa/egypt',
   'Kazakhstan': '/asia/kazakhstan',
   'Bhutan': '/asia/bhutan',
+  'Sri Lanka': '/asia/sri-lanka',
   "Laos": '/asia/laos',
   "Japan": '/asia/japan',
   "Bali": '/asia/bali',

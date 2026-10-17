@@ -318,7 +318,7 @@ export const footer = {
   description: 'Hi Tours creates unforgettable travel experiences and supports you with real expertise and individual service – from inspiration to return.',
   columns: [
     { title: 'Hi Tours', links: ['About Us', 'Booking Policy', 'Careers', 'Our Office'] },
-    { title: 'Destinations', links: ['Vietnam', 'Thailand', 'Bali', 'Singapore', 'Malaysia', 'Egypt', 'Japan', 'Bhutan', 'Kazakhstan', 'More destinations'] }
+    { title: 'Destinations', links: ['Vietnam', 'Thailand', 'Bali', 'Sri Lanka', 'Singapore', 'Malaysia', 'Egypt', 'Japan', 'Bhutan', 'Kazakhstan', 'More destinations'] }
   ],
   care: { title: 'Hi Tours Cares', lines: ['Book worry-free', 'Flexible rebooking and cancellation'], cta: 'Learn more' },
   country: 'India',

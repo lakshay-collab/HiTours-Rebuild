@@ -13,6 +13,7 @@ import { thailandProducts } from './tours/thailandToursData';
 import { malaysiaProducts } from './tours/malaysiaToursData';
 import { cambodiaProducts } from './tours/cambodiaToursData';
 import { laosProducts } from './tours/laosToursData';
+import { sriLankaProducts } from './tours/sriLankaToursData';
 
 // Each trip's countries come from the country lists it appears in, so a Vietnam/Cambodia combo
 // is filterable under both.
@@ -20,7 +21,8 @@ const BY_COUNTRY = [
   ['Vietnam', vietnamProducts], ['China', chinaProducts], ['Japan', japanProducts],
   ['South Korea', southKoreaProducts], ['Bhutan', bhutanProducts], ['Kazakhstan', kazakhstanProducts],
   ['Bali', indonesiaProducts], ['Singapore', singaporeProducts], ['Thailand', thailandProducts],
-  ['Malaysia', malaysiaProducts], ['Cambodia', cambodiaProducts], ['Laos', laosProducts]
+  ['Malaysia', malaysiaProducts], ['Cambodia', cambodiaProducts], ['Laos', laosProducts],
+  ['Sri Lanka', sriLankaProducts]
 ];
 
 const bySlug = {};

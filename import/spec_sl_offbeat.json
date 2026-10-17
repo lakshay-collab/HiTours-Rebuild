@@ -1,0 +1,210 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "thrilling-offbeat-tour-to-sri-lanka",
+ "camel": "offbeatSriLankaDambullaNuwaraEliya",
+ "slug": "offbeat-sri-lanka-dambulla-sigiriya-and-nuwara-eliya",
+ "title": "Offbeat Sri Lanka: Dambulla, Sigiriya and Nuwara Eliya",
+ "alt": "The golden Buddha and cave temples of Dambulla",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Culture",
+ "tags": [
+  "Culture",
+  "Nature",
+  "Short trips"
+ ],
+ "price": 33250,
+ "route_cities": [
+  "Dambulla",
+  "Nuwara Eliya",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 7,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Dambulla",
+   "city": "Dambulla",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Raintree Dambulla",
+   "hotel_label": "Raintree",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Deluxe class hotel among the paddy fields outside Dambulla",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Excursion to Sigiriya rock fortress",
+     "day": 2,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "A full day out to the fifth century rock citadel: the water gardens, the mirror wall, the frescoes and the summit palace ruins."
+    }
+   ],
+   "program": {
+    "name": "Dambulla",
+    "description": "Two nights in the Cultural Triangle with the elephants on the way in and a full day at the rock fortress of Sigiriya."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Tea Mount Forest Hotel, Nuwara Eliya",
+   "hotel_label": "Tea Mount Forest Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Standard class hotel set among the tea gardens",
+   "activities": [
+    {
+     "name": "Half day Kandy sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, the giant Bahiravokanda Buddha above the town and the Royal Botanical Gardens at Peradeniya."
+    },
+    {
+     "name": "Full day Nuwara Eliya sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Nuwara Eliya Sightseeing",
+     "description": "Ramboda Falls, a working tea estate and factory, Gregory Lake, Victoria Park, Hakgala gardens and the Seetha Amman temple."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Two nights in the tea country with Kandy on the way up and a full day of waterfalls, gardens and the lake."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Grand Oriental Hotel Colombo",
+   "hotel_label": "Grand Oriental Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Historic harbourside hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 5,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and Pettah market, with entrance tickets payable locally."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A final night in the Fort district with a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Dambulla",
+  "2": "A day at Sigiriya",
+  "3": "Kandy on the way to the hills",
+  "4": "Nuwara Eliya sightseeing",
+  "5": "Colombo city tour",
+  "6": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in at your hotel outside Dambulla",
+   "Optional: the Dambulla cave temples at golden hour"
+  ],
+  "2": [
+   "Breakfast, then the short road to the rock fortress",
+   "The water gardens and the climb past the mirror wall",
+   "Frescoes of the cloud maidens and the lion paw terrace",
+   "Summit ruins and views across the dry zone jungle",
+   "Optional: Pidurangala rock for sunset"
+  ],
+  "3": [
+   "Breakfast and a transfer south to Kandy",
+   "The Temple of the Sacred Tooth Relic and Peradeniya gardens",
+   "The hilltop Buddha at Bahiravokanda",
+   "On up through the tea estates to Nuwara Eliya"
+  ],
+  "4": [
+   "Breakfast, then Ramboda Falls and a tea factory visit",
+   "Gregory Lake, Victoria Park and the Hakgala gardens",
+   "The Seetha Amman temple of the Ramayana trail",
+   "Dinner at the hotel among the tea gardens"
+  ],
+  "5": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Raintree Dambulla",
+  "2": "Raintree Dambulla",
+  "3": "Tea Mount Forest Hotel, Nuwara Eliya",
+  "4": "Tea Mount Forest Hotel, Nuwara Eliya",
+  "5": "Grand Oriental Hotel Colombo",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Six days off the usual loop: two nights at Dambulla with a full day at Sigiriya, two in the tea country at Nuwara Eliya with Kandy on the way, and a last night in Colombo.",
+ "included": "Included: 5 nights in deluxe and standard class hotels with breakfast and dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary visit; a full day excursion to Sigiriya; half day Kandy sightseeing; full day Nuwara Eliya sightseeing; a private full day Colombo sightseeing tour (entrance tickets payable locally).",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

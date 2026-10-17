@@ -11,6 +11,7 @@ import { VietnamHolidays } from './pages/VietnamListing';
 import { SingaporeHolidays } from './pages/SingaporeListing';
 import { KazakhstanHolidays } from './pages/KazakhstanListing';
 import { BhutanHolidays } from './pages/BhutanListing';
+import { SriLankaHolidays } from './pages/SriLankaListing';
 import { JapanHolidays } from './pages/JapanListing';
 import { IndonesiaHolidays } from './pages/IndonesiaListing';
 import { ChinaHolidays } from './pages/ChinaListing';
@@ -49,6 +50,7 @@ const COUNTRY_ROOTS = [
   '/asia/bali',
   '/asia/china',
   '/asia/south-korea',
+  '/asia/sri-lanka',
   '/europe/greece',
   '/europe/norway',
   '/europe/ireland',
@@ -122,6 +124,8 @@ function App() {
           <Route path="/asia/china/holidays/:style" element={<ChinaHolidays />} />
           <Route path="/asia/south-korea/holidays" element={<SouthKoreaHolidays />} />
           <Route path="/asia/south-korea/holidays/:style" element={<SouthKoreaHolidays />} />
+          <Route path="/asia/sri-lanka/holidays" element={<SriLankaHolidays />} />
+          <Route path="/asia/sri-lanka/holidays/:style" element={<SriLankaHolidays />} />
           <Route path="/europe" element={<Navigate to="/europe/holidays" replace />} />
           <Route path="/europe/overview" element={<EuropeListing />} />
           <Route path="/europe/holidays" element={<EuropeHolidays />} />
@@ -161,10 +165,8 @@ function App() {
           <Route path="/asia/malaysia/*" element={<Navigate to="/asia/holidays?country=Malaysia" replace />} />
           <Route path="/asia/malaysia" element={<Navigate to="/asia/holidays?country=Malaysia" replace />} />
           <Route path="/tours/:style" element={<AllTours />} />
-          <Route path="/asia/sri-lanka/*" element={<Navigate to="/asia/holidays" replace />} />
           <Route path="/asia/philippines/*" element={<Navigate to="/asia/holidays" replace />} />
           <Route path="/asia/maldives/*" element={<Navigate to="/asia/holidays" replace />} />
-          <Route path="/asia/sri-lanka" element={<Navigate to="/asia/holidays" replace />} />
           <Route path="/asia/philippines" element={<Navigate to="/asia/holidays" replace />} />
           <Route path="/asia/maldives" element={<Navigate to="/asia/holidays" replace />} />
           <Route path="/europe/iceland/*" element={<Navigate to="/europe/holidays" replace />} />

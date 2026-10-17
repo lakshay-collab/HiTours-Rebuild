@@ -1,0 +1,175 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "the-tour-to-kandy-and-hatton",
+ "camel": "teaCountrySriLankaHattonKandy",
+ "slug": "tea-country-sri-lanka-hatton-and-kandy-bungalow-stay",
+ "title": "Tea Country Sri Lanka: Hatton and Kandy Bungalow Stay",
+ "alt": "Tea pickers on the terraced hills above Hatton",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Short trips",
+  "Culture"
+ ],
+ "price": 29088,
+ "route_cities": [
+  "Hatton",
+  "Kandy"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 4,
+  "transfers": 5,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Hatton",
+   "city": "Hatton",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Tea Hills Bungalow, Hatton",
+   "hotel_label": "Tea Hills Bungalow",
+   "accom": "2 nights · Breakfast · Bungalow room · 3★ · Planters bungalow among the tea estates above Hatton",
+   "activities": [
+    {
+     "name": "Devon and St Clair waterfalls",
+     "day": 1,
+     "optional": false,
+     "match": "Devon",
+     "description": "The twin falls of the Hatton valley seen from the road, with a short trek down to the pools at the base."
+    },
+    {
+     "name": "Tea factory visit and tasting",
+     "day": 1,
+     "optional": false,
+     "match": "Tea",
+     "description": "A tour of a working factory from withering to rolling and firing, finishing with a tasting of the grades."
+    },
+    {
+     "name": "Spice garden visit",
+     "day": 2,
+     "optional": false,
+     "match": "Spice",
+     "description": "A walk through a hillside spice garden to see cinnamon, pepper, cardamom and vanilla growing."
+    }
+   ],
+   "program": {
+    "name": "Hatton",
+    "description": "Two nights in a planters bungalow with waterfalls, a trek and a working tea factory on the first day and the spice garden on the second."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Kandy Hills Bungalow",
+   "hotel_label": "Kandy Hills Bungalow",
+   "accom": "2 nights · Breakfast · Bungalow room · 3★ · Hillside bungalow with views over the Kandy valley",
+   "activities": [
+    {
+     "name": "Kandy city walk and markets",
+     "day": 4,
+     "optional": false,
+     "match": "Kandy",
+     "description": "A day on foot around the lake, the bazaars and the craft shops of the old royal capital."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above the hill capital with a scenic transfer through the plantations, a free day in the city and the markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival and the waterfalls of Hatton",
+  "2": "Tea hills and the spice garden",
+  "3": "Through the plantations to Kandy",
+  "4": "A free day in Kandy",
+  "5": "Departure via the hills"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer into the hills",
+   "Devon Falls and St Clair Falls from the estate road",
+   "A trek down to the pools at the base of the falls",
+   "A tea factory tour and tasting before check in"
+  ],
+  "2": [
+   "Breakfast on the bungalow verandah",
+   "A morning among the tea terraces around Hatton",
+   "The spice garden and its cinnamon and pepper vines",
+   "An evening at the bungalow with the mist coming in"
+  ],
+  "3": [
+   "Breakfast and check out of the bungalow",
+   "A scenic transfer through the estates to Kandy",
+   "Check in at your hillside bungalow above the town",
+   "Optional: the Temple of the Sacred Tooth Relic at evening puja"
+  ],
+  "4": [
+   "Breakfast, then the whole day yours in the city",
+   "The lake, the bazaars and the craft shops",
+   "Optional: the Peradeniya Royal Botanical Gardens",
+   "Optional: a Kandyan dance show in the evening"
+  ],
+  "5": [
+   "Breakfast and check out",
+   "Optional: an early start for the Adams Peak pilgrim path",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Tea Hills Bungalow, Hatton",
+  "2": "Tea Hills Bungalow, Hatton",
+  "3": "Kandy Hills Bungalow",
+  "4": "Kandy Hills Bungalow",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Five slow days in the hills: two nights in a planters bungalow at Hatton with waterfalls, a tea factory and a spice garden, then two in a bungalow above Kandy with a free day in the old royal capital.",
+ "included": "Included: 4 nights in hill country bungalows with breakfast; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Devon and St Clair waterfalls with a short trek; a tea factory tour and tasting; a spice garden visit; a scenic transfer through the plantations to Kandy.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches and dinners; entrance tickets; travel insurance; optional excursions; tips and personal expenses."
+}

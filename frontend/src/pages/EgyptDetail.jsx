@@ -22,6 +22,7 @@ import { planner as malaysiaPlanner, reviews as malaysiaReviews } from '../malay
 import { planner as singaporePlanner, reviews as singaporeReviews } from '../singaporeListingData';
 import { planner as kazakhstanPlanner, reviews as kazakhstanReviews } from '../kazakhstanListingData';
 import { planner as bhutanPlanner, reviews as bhutanReviews } from '../bhutanListingData';
+import { planner as sriLankaPlanner, reviews as sriLankaReviews } from '../sriLankaListingData';
 import { planner as laosPlanner, reviews as laosReviews } from '../laosListingData';
 import { planner as japanPlanner, reviews as japanReviews } from '../japanListingData';
 import { planner as indonesiaPlanner, reviews as indonesiaReviews } from '../indonesiaListingData';
@@ -45,6 +46,7 @@ const DESTINATIONS = [
   ['Singapore', (d) => ({ planner: singaporePlanner, reviews: singaporeReviews })],
   ['Kazakhstan', (d) => ({ planner: kazakhstanPlanner, reviews: kazakhstanReviews })],
   ['Bhutan', (d) => ({ planner: bhutanPlanner, reviews: bhutanReviews })],
+  ['Sri Lanka', (d) => ({ planner: sriLankaPlanner, reviews: sriLankaReviews })],
   ["Laos", (d) => ({ planner: laosPlanner, reviews: laosReviews })],
   ["Japan", (d) => ({ planner: japanPlanner, reviews: japanReviews })],
   ["Bali", (d) => ({ planner: indonesiaPlanner, reviews: indonesiaReviews })],

@@ -17,12 +17,14 @@ import { norwayProducts } from './tours/norwayToursData';
 import { irelandProducts } from './tours/irelandToursData';
 import { finlandProducts } from './tours/finlandToursData';
 import { swedenProducts } from './tours/swedenToursData';
+import { sriLankaProducts } from './tours/sriLankaToursData';
 
 const SOURCES = [
   ['Egypt', '/africa/egypt', egyptProducts], ['Vietnam', '/asia/vietnam', vietnamProducts], ['Thailand', '/asia/thailand', thailandProducts], ['Singapore', '/asia/singapore', singaporeProducts], ['Malaysia', '/asia/malaysia', malaysiaProducts],
   ['Kazakhstan', '/asia/kazakhstan', kazakhstanProducts], ['Bhutan', '/asia/bhutan', bhutanProducts], ['Laos', '/asia/laos', laosProducts], ['Japan', '/asia/japan', japanProducts], ['Bali', '/asia/bali', indonesiaProducts],
   ['China', '/asia/china', chinaProducts], ['Cambodia', '/asia/cambodia', cambodiaProducts], ['Italy', '/europe/italy', italyProducts], ['Greece', '/europe/greece', greeceProducts],
   ['Norway', '/europe/norway', norwayProducts], ['Ireland', '/europe/ireland', irelandProducts], ['Finland', '/europe/finland', finlandProducts], ['Sweden', '/europe/sweden', swedenProducts],
+  ['Sri Lanka', '/asia/sri-lanka', sriLankaProducts],
 ];
 
 // Every package across the site, annotated with its destination (card hrefs already point at the right package page).

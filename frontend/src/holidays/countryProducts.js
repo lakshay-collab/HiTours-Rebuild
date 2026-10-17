@@ -17,12 +17,13 @@ import { products as ireland } from '../irelandListingData';
 import { products as finland } from '../finlandListingData';
 import { products as sweden } from '../swedenListingData';
 import { products as europe } from '../europeListingData';
+import { products as sriLanka } from '../sriLankaListingData';
 
 // Country name → that country's holidays listing products (order matters: specific countries before Europe).
 export const COUNTRY_PRODUCTS = [
   ['Thailand', thailand], ['Vietnam', vietnam], ['Malaysia', malaysia], ['Singapore', singapore],
   ['Kazakhstan', kazakhstan], ['Bhutan', bhutan], ['Laos', laos], ['Japan', japan], ['Bali', indonesia], ['China', china],
-  ['Cambodia', cambodia], ['Italy', italy],
+  ['Cambodia', cambodia], ['Sri Lanka', sriLanka], ['Italy', italy],
   ['Greece', greece], ['Norway', norway], ['Ireland', ireland], ['Finland', finland], ['Sweden', sweden], ['Europe', europe], ['Egypt', egypt]
 ];
 

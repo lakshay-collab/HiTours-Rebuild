@@ -59,6 +59,9 @@ CONFIG = {
     'Sweden': dict(file='swedenListingData.js', captions=r'sweden|stockholm|gothenburg|swedish|kiruna|abisko|gamla stan|vasa|skansen|icehotel|ice hotel|malm',
                    places={'Stockholm': r'stockholm city|skyview|stockholm', 'Gamla Stan': r'gamla stan|old town', 'Vasa Museum': r'vasa', 'Royal Palace': r'royal palace|town hall'},
                    activities=[r'gamla stan|royal palace|stockholm', r'icebar|ice hotel|icehotel|vasa|skyview']),
+    'Sri Lanka': dict(file='sriLankaListingData.js', slugs=r'sri-lanka|lanka|kandy', countries={'Sri Lanka'},
+                      places={'Kandy': r'tooth|kandy lake|kandy|peradeniya|bahiravokanda', 'Sigiriya': r'sigiriya|lion rock|pidurangala', 'Nuwara Eliya': r'nuwara|tea|gregory|ramboda|hakgala|ella', 'Bentota': r'bentota|madu|kosgoda|turtle|beach'},
+                      activities=[r'sigiriya|lion rock', r'galle|lighthouse|fort']),
 }
 
 
