@@ -11,6 +11,7 @@ export const GROUPS = [
       ['Home', '/'],
       ['About us', '/about'],
       ['Careers', '/careers'],
+      ['Open positions', '/careers/open-positions'],
       ['Our Office', '/our-office'],
       ['Press & media', '/press'],
       ['Hi Tours Cares (booking policy)', '/care'],

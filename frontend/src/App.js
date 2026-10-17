@@ -29,6 +29,7 @@ import Care from './pages/Care';
 import { Terms, Privacy } from './pages/Legal';
 import Press from './pages/Press';
 import Careers from './pages/Careers';
+import OpenPositions from './pages/OpenPositions';
 import Sitemap from './pages/Sitemap';
 import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
@@ -153,6 +154,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/press" element={<Press />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/careers/open-positions" element={<OpenPositions />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/our-office" element={<OurOffice />} />
           <Route path="/tours" element={<AllTours />} />

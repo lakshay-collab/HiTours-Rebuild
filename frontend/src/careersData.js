@@ -5,6 +5,8 @@ const un = (id, w = 1200) => `https://images.unsplash.com/${id}?crop=entropy&cs=
 
 export const CAREERS_EMAIL = 'careers@hitours.in';
 export const ROLES_URL = 'https://www.linkedin.com/company/hi-tours-group/jobs/';
+export const OPEN_POSITIONS_PATH = '/careers/open-positions';
+export const JOBS_EMBED_URL = 'https://recruitcrm.io/jobs/Hi_Tours_Group_jobs?1791547232904';
 export { CAREERS_URL };
 
 export const hero = {
