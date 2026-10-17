@@ -172,6 +172,6 @@ if __name__ == '__main__':
         raw = extract(url)
         out = os.path.join(ROOT, raw['slug'])
         os.makedirs(out, exist_ok=True)
-        raw['image_index'] = download(raw, os.path.join(out, 'images'))
+        raw['image_index'] = download(raw, os.path.join(out, 'images')) if os.environ.get('DOWNLOAD_IMAGES') else {}
         json.dump(raw, open(os.path.join(out, 'raw.json'), 'w'), indent=1, ensure_ascii=False)
         print(raw['title'], '|', raw['duration'], '| hotels', [(h['name'], len(h['images'])) for h in raw['hotels']], '| activities', len(raw['activities']), '| gallery', len(raw['gallery']), '| images', len(raw['image_index']))

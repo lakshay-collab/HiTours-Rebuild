@@ -1,0 +1,259 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "highlights-of-sri-lanka",
+ "camel": "highlightsOfSriLankaKandyYalaBentota",
+ "slug": "highlights-of-sri-lanka-kandy-nuwara-eliya-yala-and-bentota",
+ "title": "Highlights of Sri Lanka: Kandy, Nuwara Eliya, Yala and Bentota",
+ "alt": "Peacock displaying on the track in Yala National Park",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide; 4x4 jeep for the Yala safari",
+ "tag": "Wildlife",
+ "tags": [
+  "Wildlife",
+  "Nature",
+  "Beach"
+ ],
+ "price": 35941,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Yala",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 7,
+  "transfers": 8,
+  "meals": 5
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Upper lake drive and Kandyan dance performance",
+     "day": 1,
+     "optional": false,
+     "match": "Upper Lake",
+     "description": "An evening circuit of the upper lake road, then the drummers, masked dancers and fire walkers."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night above Kandy with the elephants on the way and the upper lake drive and dance show."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "The Tea Garden",
+   "hotel_label": "The Tea Garden",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hill country hotel among the tea bushes above Nuwara Eliya",
+   "activities": [
+    {
+     "name": "Nuwara Eliya sightseeing tour",
+     "day": 2,
+     "optional": false,
+     "match": "Nuwara Eliya",
+     "description": "Gregory Lake, Victoria Park, a tea estate and the colonial town."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up into the tea country for a night among the bushes with a tour of the town, its lake and gardens."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Yala",
+   "city": "Yala",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Arana Yala",
+   "hotel_label": "Arana Yala",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Deluxe class lodge on the edge of Yala National Park",
+   "activities": [
+    {
+     "name": "Jeep safari in Yala National Park",
+     "day": 3,
+     "optional": false,
+     "match": "Safari",
+     "description": "A 4x4 safari through the scrub jungle and lagoons of block one, home to leopards, sloth bears, elephants and crocodiles."
+    }
+   ],
+   "program": {
+    "name": "Yala",
+    "description": "Across the hills to the dry south east for a jeep safari in Yala and a night on the edge of the park."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Laya beach",
+   "hotel_label": "Laya Beach",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Beachfront hotel at Wadduwa on the way to Bentota",
+   "activities": [
+    {
+     "name": "Kosgoda turtle hatchery",
+     "day": 4,
+     "optional": false,
+     "match": "Kosgoda",
+     "description": "The hatchery where eggs are protected and hatchlings released into the sea at dusk."
+    },
+    {
+     "name": "Evening on the Madu River",
+     "day": 4,
+     "optional": false,
+     "match": "Madu River",
+     "description": "A late afternoon boat through the mangroves as the birds come home to roost."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "West along the coast for the turtle hatchery, an evening on the Madu River and a night by the sea."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Marine Bay Colombo",
+   "hotel_label": "Marine Bay",
+   "accom": "1 night · Breakfast · Standard room · 3★ · City hotel a short walk from Galle Face Green",
+   "activities": [
+    {
+     "name": "Colombo sightseeing and Pettah",
+     "day": 5,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the Fort district and the market lanes of Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the capital with the sights of the city and the Pettah bazaars."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Into the tea country",
+  "3": "Across to Yala and a jeep safari",
+  "4": "To the beach",
+  "5": "Colombo and Pettah",
+  "6": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in above Kandy",
+   "The upper lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast and a transfer up to Nuwara Eliya",
+   "Gregory Lake, Victoria Park and the colonial town",
+   "A tea estate and factory visit",
+   "Check in among the tea bushes"
+  ],
+  "3": [
+   "Breakfast and a transfer down to the dry south east",
+   "An afternoon 4x4 safari in Yala block one",
+   "Leopards, elephants, crocodiles and peacocks at the waterholes",
+   "Dinner and a night at the lodge on the park boundary"
+  ],
+  "4": [
+   "Breakfast and a transfer west along the southern coast",
+   "The Kosgoda turtle hatchery",
+   "Check in by the sea",
+   "A late afternoon boat on the Madu River"
+  ],
+  "5": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple",
+   "The Fort district and the market lanes of Pettah",
+   "Your last night in the capital"
+  ],
+  "6": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B, D",
+  "4": "B",
+  "5": "B",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Topaz, Kandy",
+  "2": "The Tea Garden",
+  "3": "Arana Yala",
+  "4": "Laya beach",
+  "5": "Marine Bay Colombo",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Yala at dawn is the single best morning you can have in Sri Lanka. Leopards are shy, but the elephants and peacocks never disappoint.",
+  "tip": "Wear neutral colours for the safari and keep the camera ready at the waterholes. The first hour after the gates open is when the cats move."
+ },
+ "summary": "Six days that touch every side of the island: a night in Kandy with the elephants and the dance show, a night in the tea country, a jeep safari and a night at Yala, the turtles and the Madu River at Bentota, and a last night in Colombo.",
+ "included": "Included: 5 nights in deluxe class hotels with breakfast daily (dinner also at Yala); private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary; the upper lake drive and Kandyan dance performance; the Nuwara Eliya sightseeing tour; a jeep safari in Yala National Park; the Kosgoda turtle hatchery; an evening on the Madu River; Colombo sightseeing and Pettah.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; Yala park entrance ticket; lunches and dinners unless stated; entrance tickets elsewhere; travel insurance; optional excursions; tips and personal expenses."
+}

@@ -16,10 +16,10 @@ const heroGallery = [
 ];
 // Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
-  img('msicedx1st3ovmdgpdaia9lum3nb_shutterstock_666004771%20(1).jpg'),
-  img('mu8ff5vhgtwgeq37hyjyxygaxvin_shutterstock_1481861966.jpg'),
-  img('m2j7ycxc778t0fn1qzm2a5xoh5jg_shutterstock_387184576.jpg'),
-  img('8pngc3kvspg8528bwbrbu6t8b5gz_shutterstock_1423148210.jpg')
+  img('8pngc3kvspg8528bwbrbu6t8b5gz_shutterstock_1423148210.jpg'),
+  img('zddej06lbz5sx2o1d0hx0bg0bfhd_1582551005_Colombo_1.png'),
+  img('b14m75op1m07swbrru2fqbc31lfh_7006860454_cec45734cb_o.jpg'),
+  img('aobaf1yw2mrowt8a50rvhq5jhavm_1582217692_galle_lighthouse.jpg')
 ];
 
 const stops = [

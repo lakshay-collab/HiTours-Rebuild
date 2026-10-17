@@ -21,12 +21,12 @@ export const destinations = {
     { name: 'Europe', region: 'Multi-country journeys', src: '/europe/hero-paris.webp' },
     { name: 'Japan', region: 'Asia', src: img('5E91LAbIo29xmfzemwDnnu', '082cd826dbf9b2744cbcf00015005330/Japan_MtFuji.jpg') },
     { name: 'Vietnam', region: 'Asia', src: img('6KpaBlYiRchxRrYsS84QgO', 'dfb8fec25316c0c719d2aa7a5794dc31/NinhBinhProvinz_Tempel.jpg') },
+    { name: 'Sri Lanka', region: 'Asia', src: 'https://media1.thrillophilia.com/filestore/5v0w8tm9gzlhyp19oxxv3fo4aswc_shutterstock_769023574.jpg?w=1080&dpr=1' },
     { name: 'Bali', region: 'Asia', src: img('61b5ymnc76Gat5QEm4R7Uv', '236a66af31569408e5fba01e2dcb53b1/Kelingking_Beach__Nusa_Penida__Indonesien_NTCG__1_.png') },
     { name: 'Bhutan', region: 'Asia', src: 'https://images.unsplash.com/photo-1638246439638-b37095b34879?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Thailand', region: 'Asia', src: img('27MnAH4RS1zTSFygAmnq5i', '97ec55278a94f2ab56c26847396201ba/Thailand_Natur.jpg') },
     { name: 'Singapore', region: 'Asia', src: img('4B5tE96BHxRVFYUVJQibEE', 'efeae2ee825eda4d08a95e0717d916fd/Skyline__Singapur.jpg') },
     { name: 'China', region: 'Asia', src: img('3FwBvWPMIiVGThJdqClYD1', 'bb67524f6b951541a23d6950859c4e6f/China_Jinshanling_ChinesischeMauer_TCG.png') },
-    { name: 'Kazakhstan', region: 'Asia', src: 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?crop=entropy&cs=srgb&fm=jpg&q=70&w=900' },
     { name: 'Egypt', region: 'Middle East', src: img('qsp90U72Z4CxCVhVhtdGE', '3b9cf2cac3e162fb25231d046cafd25e/Giza_Pyramid_Complex_-_Cairo__EgyptTCG.jpg') }
   ],
   'Africa': [

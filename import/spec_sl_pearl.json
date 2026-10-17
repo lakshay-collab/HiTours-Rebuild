@@ -1,0 +1,199 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "a-luxury-paradise-getaway-to-sri-lanka",
+ "camel": "sriLankaHighlightsKandyBentotaCentara",
+ "slug": "sri-lanka-highlights-kandy-bentota-and-colombo-with-a-four-star-beach-resort",
+ "title": "Sri Lanka Highlights: Kandy, Bentota and Colombo with a Four Star Beach Resort",
+ "alt": "A jet ski cutting across the Bentota river mouth",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Beach",
+ "tags": [
+  "Beach",
+  "Honeymoon",
+  "Short trips"
+ ],
+ "price": 38000,
+ "route_cities": [
+  "Kandy",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 6,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private lake drive and Kandyan dance show",
+     "day": 1,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night above Kandy with a private elephant visit on the way and a private lake drive and dance show."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Centara Ceysands Resorts & Spa, Bentota",
+   "hotel_label": "Centara Ceysands Resort and Spa",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 4★ · Four star resort on the sand spit between the Bentota river and the sea",
+   "activities": [
+    {
+     "name": "Private visit to the Kosgoda turtle hatchery",
+     "day": 2,
+     "optional": false,
+     "match": "Kosgoda",
+     "description": "The hatchery south of Bentota where eggs are protected and hatchlings released into the sea at dusk."
+    },
+    {
+     "name": "Private boat ride on the Madu River",
+     "day": 3,
+     "optional": false,
+     "match": "Madu River",
+     "description": "A boat through the mangrove islands of the Madu Ganga, with water sports at the river mouth before or after."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights in a four star resort on the sand spit with the turtle hatchery on arrival, water sports and a private boat on the Madu River."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Mirage Hotel Colombo",
+   "hotel_label": "Mirage Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Beachside hotel at Wellawatte in south Colombo",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night by the sea in south Colombo with a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Down to Bentota and the turtles",
+  "3": "Water sports and the Madu River",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in at your Kandy hotel in the afternoon",
+   "An evening lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast and a transfer from the hills to the coast",
+   "The Kosgoda turtle hatchery on the way",
+   "Check in at the resort on the sand spit",
+   "The evening at leisure by the pool"
+  ],
+  "3": [
+   "Breakfast, then water sports at the river mouth",
+   "Optional: jet ski, banana boat or windsurfing",
+   "A private boat ride through the Madu Ganga mangroves",
+   "Dinner at the resort"
+  ],
+  "4": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Topaz, Kandy",
+  "2": "Centara Ceysands Resorts & Spa, Bentota",
+  "3": "Centara Ceysands Resorts & Spa, Bentota",
+  "4": "Mirage Hotel Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "Five days with a proper beach resort in the middle: a night in Kandy with the elephants and the dance show, two nights at the Centara Ceysands at Bentota with the turtles, water sports and the Madu River, and a last night in Colombo.",
+ "included": "Included: 4 nights in deluxe and four star hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; private Pinnawala visit; private Kandy lake drive and dance show; private Kosgoda turtle hatchery visit; a private boat ride on the Madu River; private full day Colombo sightseeing. Water sports are payable locally.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

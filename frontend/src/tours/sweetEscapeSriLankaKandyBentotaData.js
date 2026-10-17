@@ -16,10 +16,10 @@ const heroGallery = [
 ];
 // Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
-  img('06q1s65ey9zygohiz6j8cmghh0dd_shutterstock_1587139651.jpg'),
   img('4s06umhcj9makfew99mqm4trg4jw_shutterstock_1084600982%20(1).jpg'),
-  img('nsdc5kjyx42ucjd7ojwqqleo1gpv_shutterstock_2364582193.jpg'),
-  img('m48kogtsywab2e7qszmsvhxwmz7o_shutterstock_332215046.jpg')
+  img('lwpeikpgx4vdu6dk38px2r3ugcv3_16592880909_c7e7d0a676_o.jpg'),
+  img('e62oezf8kqr0u5yo78hge033bocn_Galapata%20Vihara.jpg'),
+  img('a805bf6730v8xngjnhbu7kdm4jk3_Mirissa%202.jpg')
 ];
 
 const stops = [

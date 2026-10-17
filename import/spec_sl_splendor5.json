@@ -1,0 +1,217 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lankan-splendor",
+ "camel": "sriLankanSplendourKandyNuwaraEliyaBentotaFiveDays",
+ "slug": "sri-lankan-splendour-kandy-nuwara-eliya-and-bentota-in-five-days",
+ "title": "Sri Lankan Splendour: Kandy, Nuwara Eliya and Bentota in Five Days",
+ "alt": "Tea bushes in neat rows on the hills of Nuwara Eliya",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Budget",
+ "tags": [
+  "Budget",
+  "Nature",
+  "Short trips"
+ ],
+ "price": 31582,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 5,
+  "transfers": 7,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Sightseeing tour of Colombo",
+     "day": 1,
+     "optional": false,
+     "match": "Colombo",
+     "description": "Galle Face Green, the Gangaramaya temple and the Fort district on the way out of the capital."
+    },
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night above Kandy with a tour of Colombo on the way from the airport and the elephants of Pinnawala."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "The Tea Garden",
+   "hotel_label": "The Tea Garden",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hill country hotel among the tea bushes above Nuwara Eliya",
+   "activities": [
+    {
+     "name": "Nuwara Eliya sightseeing and tea plantation",
+     "day": 2,
+     "optional": false,
+     "match": "Nuwara Eliya",
+     "description": "Gregory Lake, Victoria Park, the colonial town and a tea plantation and factory."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up into the tea country for a night among the bushes with a tour of the town and a plantation."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Laya beach",
+   "hotel_label": "Laya Beach",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Beachfront hotel at Wadduwa on the way to Bentota",
+   "activities": [
+    {
+     "name": "Bentota sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Bentota",
+     "description": "The Kosgoda turtle hatchery, the river mouth and the beach."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Down to the coast with a stop at Mirissa beach and a night by the sea."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Marine Bay Colombo",
+   "hotel_label": "Marine Bay",
+   "accom": "1 night · Breakfast · Standard room · 3★ · City hotel a short walk from Galle Face Green",
+   "activities": [
+    {
+     "name": "Colombo sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the capital with a tour of its temples, colonial quarter and markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Into the tea country",
+  "3": "Down to the coast via Mirissa",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer into the city",
+   "Galle Face Green, the Gangaramaya temple and the Fort",
+   "The Pinnawala elephant sanctuary on the way inland",
+   "Check in above Kandy for the night"
+  ],
+  "2": [
+   "Breakfast and a transfer up to Nuwara Eliya",
+   "A tea plantation and factory visit on the climb",
+   "Gregory Lake, Victoria Park and the colonial town",
+   "Check in among the tea bushes"
+  ],
+  "3": [
+   "Breakfast and a long transfer down from the hills",
+   "A stop at Mirissa beach and Coconut Tree Hill",
+   "The Kosgoda turtle hatchery on the way to Bentota",
+   "Check in by the sea"
+  ],
+  "4": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Your last night in the capital"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Topaz, Kandy",
+  "2": "The Tea Garden",
+  "3": "Laya beach",
+  "4": "Marine Bay Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Five quick days across the island on a budget: Colombo and the elephants on the way to Kandy, a night in the tea country, a night by the sea after Mirissa beach, and a last night in Colombo.",
+ "included": "Included: 4 nights in deluxe class hotels with breakfast daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; a sightseeing tour of Colombo; the Pinnawala elephant sanctuary; Nuwara Eliya sightseeing and a tea plantation; the Bentota sightseeing tour; the Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches and dinners; entrance tickets; travel insurance; optional excursions; tips and personal expenses."
+}

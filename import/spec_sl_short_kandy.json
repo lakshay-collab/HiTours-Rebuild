@@ -1,0 +1,157 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "colombo-tour-package-from-hyderabad",
+ "camel": "sriLankaShortBreakKandyColombo",
+ "slug": "sri-lanka-short-break-kandy-and-colombo-in-four-days",
+ "title": "Sri Lanka Short Break: Kandy and Colombo in Four Days",
+ "alt": "The Gangaramaya temple on Beira Lake in Colombo",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "Culture",
+  "Budget"
+ ],
+ "price": 26600,
+ "route_cities": [
+  "Kandy",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 4,
+  "meals": 3
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Ganga Addara Hotel, Kandy",
+   "hotel_label": "Ganga Addara Hotel",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Standard class hotel on the Mahaweli river outside Kandy",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private half day Kandy sightseeing",
+     "day": 1,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, the giant Bahiravokanda Buddha above the town and the Royal Botanical Gardens at Peradeniya."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night by the river at Kandy with a private elephant visit on the way and a private half day of the city."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    2,
+    3,
+    4
+   ],
+   "dayLabel": "Day 2 to 4",
+   "hotel": "Berjaya Hotel Colombo",
+   "hotel_label": "Berjaya Hotel",
+   "accom": "2 nights · Breakfast · Deluxe room · 4★ · Four star hotel on the Mount Lavinia beachfront south of the city",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "Two nights on the Mount Lavinia beachfront with a free afternoon on arrival and a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Down to Colombo",
+  "3": "Colombo city tour",
+  "4": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A private stop at the Pinnawala elephant sanctuary",
+   "The Temple of the Sacred Tooth Relic and the Peradeniya gardens",
+   "Check in by the river for the night"
+  ],
+  "2": [
+   "Breakfast and a transfer back down to the capital",
+   "Check in on the Mount Lavinia beachfront",
+   "The afternoon at leisure by the pool or the sea",
+   "Optional: sunset drinks on Galle Face Green"
+  ],
+  "3": [
+   "Breakfast, then Galle Face Green and the Gangaramaya temple",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "The National Museum and Independence Square",
+   "Your last night in the capital"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Ganga Addara Hotel, Kandy",
+  "2": "Berjaya Hotel Colombo",
+  "3": "Berjaya Hotel Colombo",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Four days for a first taste of the island: a night in Kandy with the elephants and the Tooth Relic temple, then two nights by the sea in Colombo with a free afternoon and a full day of the capital. Easy to pair with direct flights from Hyderabad, Chennai or Bengaluru.",
+ "included": "Included: 3 nights in standard and deluxe class hotels with breakfast daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; a private Pinnawala elephant sanctuary visit; a private half day Kandy sightseeing tour; a private full day Colombo sightseeing tour. Entrance tickets are payable locally.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches and dinners; entrance tickets; travel insurance; optional excursions; tips and personal expenses."
+}

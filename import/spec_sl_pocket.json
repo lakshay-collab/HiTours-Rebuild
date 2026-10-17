@@ -1,0 +1,185 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "pocket-friendly-sri-lanka-tour-package",
+ "camel": "sriLankaHillsNuwaraEliyaKandy",
+ "slug": "sri-lanka-hill-country-break-nuwara-eliya-and-kandy",
+ "title": "Sri Lanka Hill Country Break: Nuwara Eliya and Kandy",
+ "alt": "Gregory Lake and the hills of Nuwara Eliya",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Budget",
+ "tags": [
+  "Budget",
+  "Nature",
+  "Short trips"
+ ],
+ "price": 33250,
+ "route_cities": [
+  "Nuwara Eliya",
+  "Kandy",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 3,
+  "transfers": 5,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Tea Mount Forest Hotel, Nuwara Eliya",
+   "hotel_label": "Tea Mount Forest Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Standard class hotel set among the tea gardens",
+   "activities": [
+    {
+     "name": "Private full day Nuwara Eliya sightseeing",
+     "day": 2,
+     "optional": false,
+     "match": "Nuwara Eliya Sightseeing",
+     "description": "Ramboda Falls, a working tea estate and factory, Gregory Lake, Victoria Park, Hakgala gardens and the Seetha Amman temple."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Straight up into the tea country for two nights, with a free first evening and a private full day of the waterfalls, gardens and lake."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Hotel Devon Kandy",
+   "hotel_label": "Hotel Devon",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Deluxe class hotel in the hills above Kandy town",
+   "activities": [
+    {
+     "name": "Private half day Kandy sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, the giant Bahiravokanda Buddha above the town and the Royal Botanical Gardens at Peradeniya."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Down through the estates to Kandy for a private half day of the Tooth Relic temple and the gardens."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Grand Oriental Hotel Colombo",
+   "hotel_label": "Grand Oriental Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Historic harbourside hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the Fort district with a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and up to Nuwara Eliya",
+  "2": "Nuwara Eliya sightseeing",
+  "3": "Down to Kandy",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer into the hills",
+   "Tea estates and waterfalls from the car window on the climb",
+   "Check in among the tea gardens",
+   "An evening walk by Gregory Lake"
+  ],
+  "2": [
+   "Breakfast, then Ramboda Falls and a tea factory visit",
+   "Gregory Lake, Victoria Park and the Hakgala gardens",
+   "The Seetha Amman temple of the Ramayana trail",
+   "Dinner at the hotel"
+  ],
+  "3": [
+   "Breakfast and a transfer through the estates to Kandy",
+   "The Temple of the Sacred Tooth Relic",
+   "The Peradeniya gardens and the hilltop Buddha",
+   "Optional: the Kandyan dance show in the evening"
+  ],
+  "4": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Tea Mount Forest Hotel, Nuwara Eliya",
+  "2": "Tea Mount Forest Hotel, Nuwara Eliya",
+  "3": "Hotel Devon Kandy",
+  "4": "Grand Oriental Hotel Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Five value packed days built around the hills: two nights in the tea country at Nuwara Eliya, a night in Kandy with the Tooth Relic temple, and a last night in Colombo.",
+ "included": "Included: 4 nights in standard and deluxe class hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; a private full day Nuwara Eliya sightseeing tour; a private half day Kandy sightseeing tour; a private full day Colombo sightseeing tour. Entrance tickets are payable locally.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

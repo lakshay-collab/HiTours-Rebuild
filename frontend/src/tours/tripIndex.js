@@ -285,6 +285,31 @@ import { luxurySriLankaKandyBentotaColomboBySlug } from './luxurySriLankaKandyBe
 import { teaCountrySriLankaHattonKandyBySlug } from './teaCountrySriLankaHattonKandyData';
 import { sriLankaGroupTourSigiriyaEllaMirissaBySlug } from './sriLankaGroupTourSigiriyaEllaMirissaData';
 import { sriLankaFamilyGetawayKandyBentotaBySlug } from './sriLankaFamilyGetawayKandyBentotaData';
+import { grandSriLankaTenDaysDambullaYalaBentotaBySlug } from './grandSriLankaTenDaysDambullaYalaBentotaData';
+import { scenicSriLankaKandyEllaGalleBySlug } from './scenicSriLankaKandyEllaGalleData';
+import { sriLankanDelightSigiriyaKandyBentotaBySlug } from './sriLankanDelightSigiriyaKandyBentotaData';
+import { sriLankaOdysseyKandyNuwaraEliyaBentotaBySlug } from './sriLankaOdysseyKandyNuwaraEliyaBentotaData';
+import { highlightsOfSriLankaKandyYalaBentotaBySlug } from './highlightsOfSriLankaKandyYalaBentotaData';
+import { sriLankaHoneymoonKandyNuwaraEliyaBentotaBySlug } from './sriLankaHoneymoonKandyNuwaraEliyaBentotaData';
+import { splendoursOfSriLankaKandyNuwaraEliyaMirissaBySlug } from './splendoursOfSriLankaKandyNuwaraEliyaMirissaData';
+import { sriLankaSigiriyaEllaBentotaSevenDaysBySlug } from './sriLankaSigiriyaEllaBentotaSevenDaysData';
+import { splendoursOfSriLankaSigiriyaMirissaSevenDaysBySlug } from './splendoursOfSriLankaSigiriyaMirissaSevenDaysData';
+import { sriLankaTajBentotaColomboBySlug } from './sriLankaTajBentotaColomboData';
+import { tropicalSriLankaSuperDeluxeKandySigiriyaBentotaBySlug } from './tropicalSriLankaSuperDeluxeKandySigiriyaBentotaData';
+import { fullyLoadedSriLankaSuperDeluxeYalaJetwingBySlug } from './fullyLoadedSriLankaSuperDeluxeYalaJetwingData';
+import { exoticSriLankaSuperDeluxeCouplesBentotaBySlug } from './exoticSriLankaSuperDeluxeCouplesBentotaData';
+import { sriLankaRetreatSuperDeluxeKandyBentotaBySlug } from './sriLankaRetreatSuperDeluxeKandyBentotaData';
+import { sriLankaHighlightsKandyBentotaCentaraBySlug } from './sriLankaHighlightsKandyBentotaCentaraData';
+import { sriLankaGroupTourKandyEllaBentotaBySlug } from './sriLankaGroupTourKandyEllaBentotaData';
+import { sriLankaInSerenityKandyNuwaraEliyaBentotaBySlug } from './sriLankaInSerenityKandyNuwaraEliyaBentotaData';
+import { sriLankaRetreatKandyBentotaFiveDaysBySlug } from './sriLankaRetreatKandyBentotaFiveDaysData';
+import { sriLankaLeisureKandyBentotaTurtlesBySlug } from './sriLankaLeisureKandyBentotaTurtlesData';
+import { sriLankaRetreatKandyBentotaGalleBySlug } from './sriLankaRetreatKandyBentotaGalleData';
+import { sriLankaHillsNuwaraEliyaKandyBySlug } from './sriLankaHillsNuwaraEliyaKandyData';
+import { sriLankanSplendourKandyNuwaraEliyaBentotaFiveDaysBySlug } from './sriLankanSplendourKandyNuwaraEliyaBentotaFiveDaysData';
+import { sriLankaWeekendBentotaColomboBySlug } from './sriLankaWeekendBentotaColomboData';
+import { jewelsOfSriLankaKandyBentotaColomboBySlug } from './jewelsOfSriLankaKandyBentotaColomboData';
+import { sriLankaShortBreakKandyColomboBySlug } from './sriLankaShortBreakKandyColomboData';
 
 export const BY_SLUG = {
   [detail0.slug]: { detail: detail0, route: route0, glance: glance0, crumbs: crumbs0 },
@@ -572,5 +597,30 @@ export const BY_SLUG = {
   ...luxurySriLankaKandyBentotaColomboBySlug,
   ...teaCountrySriLankaHattonKandyBySlug,
   ...sriLankaGroupTourSigiriyaEllaMirissaBySlug,
-  ...sriLankaFamilyGetawayKandyBentotaBySlug
+  ...sriLankaFamilyGetawayKandyBentotaBySlug,
+  ...grandSriLankaTenDaysDambullaYalaBentotaBySlug,
+  ...scenicSriLankaKandyEllaGalleBySlug,
+  ...sriLankanDelightSigiriyaKandyBentotaBySlug,
+  ...sriLankaOdysseyKandyNuwaraEliyaBentotaBySlug,
+  ...highlightsOfSriLankaKandyYalaBentotaBySlug,
+  ...sriLankaHoneymoonKandyNuwaraEliyaBentotaBySlug,
+  ...splendoursOfSriLankaKandyNuwaraEliyaMirissaBySlug,
+  ...sriLankaSigiriyaEllaBentotaSevenDaysBySlug,
+  ...splendoursOfSriLankaSigiriyaMirissaSevenDaysBySlug,
+  ...sriLankaTajBentotaColomboBySlug,
+  ...tropicalSriLankaSuperDeluxeKandySigiriyaBentotaBySlug,
+  ...fullyLoadedSriLankaSuperDeluxeYalaJetwingBySlug,
+  ...exoticSriLankaSuperDeluxeCouplesBentotaBySlug,
+  ...sriLankaRetreatSuperDeluxeKandyBentotaBySlug,
+  ...sriLankaHighlightsKandyBentotaCentaraBySlug,
+  ...sriLankaGroupTourKandyEllaBentotaBySlug,
+  ...sriLankaInSerenityKandyNuwaraEliyaBentotaBySlug,
+  ...sriLankaRetreatKandyBentotaFiveDaysBySlug,
+  ...sriLankaLeisureKandyBentotaTurtlesBySlug,
+  ...sriLankaRetreatKandyBentotaGalleBySlug,
+  ...sriLankaHillsNuwaraEliyaKandyBySlug,
+  ...sriLankanSplendourKandyNuwaraEliyaBentotaFiveDaysBySlug,
+  ...sriLankaWeekendBentotaColomboBySlug,
+  ...jewelsOfSriLankaKandyBentotaColomboBySlug,
+  ...sriLankaShortBreakKandyColomboBySlug
 };

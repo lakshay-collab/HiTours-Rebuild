@@ -1,0 +1,199 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "5-days-delightful-tour-to-sri-lanka-super-deluxe",
+ "camel": "sriLankaRetreatSuperDeluxeKandyBentota",
+ "slug": "sri-lanka-retreat-super-deluxe-kandy-and-bentota-in-five-days",
+ "title": "Sri Lanka Retreat Super Deluxe: Kandy and Bentota in Five Days",
+ "alt": "A beach cabana at a four star resort in Bentota",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Short trips",
+  "Beach"
+ ],
+ "price": 25555,
+ "route_cities": [
+  "Kandy",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 6,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Deluxe hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Deluxe class hotel in the hills above Kandy",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private lake drive and Kandyan dance show",
+     "day": 1,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    },
+    {
+     "name": "Private full day Kandy sightseeing",
+     "day": 2,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, Peradeniya gardens, the Bahiravokanda Buddha and the gem museum."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights in the hill capital with a private elephant visit on the way, a private dance show and a private full day of the city."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Earl's Reef, Bentota",
+   "hotel_label": "Earl's Reef",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 4★ · Four star beachfront resort on the Bentota strand",
+   "activities": [
+    {
+     "name": "Private full day Bentota sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Madu Ganga boat ride, the Kosgoda turtle hatchery, the Galapatha temple and an afternoon on Bentota beach."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Down to a four star beachfront resort with a private full day of the Madu Ganga, the turtles and the beach."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Berjaya Hotel Colombo",
+   "hotel_label": "Berjaya Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 4★ · Four star hotel on the Mount Lavinia beachfront south of the city",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the capital with a private full day of its temples, colonial quarter and markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "A full day in Kandy",
+  "3": "Down to Bentota",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in at your Kandy hotel in the afternoon",
+   "An evening lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "The Peradeniya Royal Botanical Gardens",
+   "The hilltop Buddha at Bahiravokanda and the gem museum",
+   "Dinner at the hotel"
+  ],
+  "3": [
+   "Breakfast and a transfer from the hills to the coast",
+   "A boat safari on the Madu Ganga and the Kosgoda turtle hatchery",
+   "Check in at your four star beach resort",
+   "Sunset on the sand"
+  ],
+  "4": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Fairway Colombo",
+  "2": "Fairway Colombo",
+  "3": "Earl's Reef, Bentota",
+  "4": "Berjaya Hotel Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "Five days in upgraded hotels: two nights in Kandy with the elephants, the dance show and a full day of the city, a night at a four star beach resort in Bentota with the Madu Ganga and the turtles, and a last night in Colombo.",
+ "included": "Included: 4 nights in deluxe and four star hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; private Pinnawala visit; private Kandy lake drive and dance show; private full day Kandy sightseeing; private full day Bentota sightseeing; private full day Colombo sightseeing.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

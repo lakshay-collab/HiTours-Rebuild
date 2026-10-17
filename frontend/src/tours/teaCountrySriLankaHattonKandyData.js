@@ -16,10 +16,10 @@ const heroGallery = [
 ];
 // Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
-  img('zvhyrkuu7ah29qbn1ceki7htses8_shutterstock_768117313.jpg'),
   img('5y6t22y99pq5wpo6hqd5ufoo9dm1_shutterstock_327594539.jpg'),
-  img('xxsv4osseuf7cuz4pdsz0a53o0xb_shutterstock_59949592.jpg'),
-  img('pky5fozezz5t0kbid7tdsdx1xj1z_1596709535_shutterstock_795763423.jpg')
+  img('pky5fozezz5t0kbid7tdsdx1xj1z_1596709535_shutterstock_795763423.jpg'),
+  img('qfdjgoio4cy0oywk5arz2i8at2u4_1596709538_shutterstock_604862372.jpg'),
+  img('k00k6wj6t1ucjll2vn1ej1ezfkw6_1596709540_shutterstock_1018977325.jpg')
 ];
 
 const stops = [

@@ -1,0 +1,279 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lanka-the-land-of-serendipity-super-deluxe",
+ "camel": "fullyLoadedSriLankaSuperDeluxeYalaJetwing",
+ "slug": "fully-loaded-sri-lanka-super-deluxe-kandy-jetwing-yala-and-bentota",
+ "title": "Fully Loaded Sri Lanka Super Deluxe: Kandy, Jetwing Yala and Bentota",
+ "alt": "The beach and pool of Jetwing Yala at the edge of the national park",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide; 4x4 jeep for the Yala safari",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Wildlife",
+  "Beach"
+ ],
+ "price": 52146,
+ "route_cities": [
+  "Colombo",
+  "Kandy",
+  "Yala",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 5,
+  "experiences": 7,
+  "transfers": 11,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Mirage Hotel Colombo",
+   "hotel_label": "Mirage Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Beachside hotel at Wellawatte in south Colombo",
+   "activities": [],
+   "program": {
+    "name": "Colombo",
+    "description": "A gentle first night by the sea in south Colombo to shake off the flight."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Hotel Thilanka, Kandy",
+   "hotel_label": "Hotel Thilanka",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Hillside hotel with a pool above Kandy lake",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 2,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private lake drive and Kandyan dance show",
+     "day": 2,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    },
+    {
+     "name": "Private excursion to Sigiriya",
+     "day": 3,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "A full day out to the fifth century rock citadel: the water gardens, the mirror wall, the frescoes and the summit palace ruins."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above Kandy lake: elephants on the way, a private dance show, a private day at Sigiriya and a full day of the city."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Yala",
+   "city": "Yala",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Jetwing Yala",
+   "hotel_label": "Jetwing Yala",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 5★ · Five star resort on the beach at the edge of Yala National Park",
+   "activities": [
+    {
+     "name": "Private full day Kandy sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, Peradeniya gardens, the Bahiravokanda Buddha and the gem museum before the road south."
+    },
+    {
+     "name": "Private jungle safari in Yala National Park",
+     "day": 5,
+     "optional": false,
+     "match": "Yala",
+     "description": "A private 4x4 safari through the scrub jungle and lagoons of block one, home to leopards, sloth bears, elephants and crocodiles."
+    }
+   ],
+   "program": {
+    "name": "Yala",
+    "description": "Across the hills to a five star resort on the beach at the edge of the park, with a private jungle safari at dawn."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Earl's Reef, Bentota",
+   "hotel_label": "Earl's Reef",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 4★ · Four star beachfront resort on the Bentota strand",
+   "activities": [
+    {
+     "name": "Private excursion to Mirissa",
+     "day": 6,
+     "optional": false,
+     "match": "Mirissa",
+     "description": "Along the southern coast to Mirissa beach and Coconut Tree Hill, with the Galle fort on the way back."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights at a four star beachfront resort with a private excursion to Mirissa."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Mirage Hotel Colombo",
+   "hotel_label": "Mirage Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Beachside hotel at Wellawatte in south Colombo",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 7,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "Back to the capital for a private full day of its temples, colonial quarter and markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo",
+  "2": "Elephants and the road to Kandy",
+  "3": "A day at Sigiriya",
+  "4": "Kandy sights and the long road to Yala",
+  "5": "Dawn safari and on to Bentota",
+  "6": "Mirissa and Galle",
+  "7": "Colombo city tour",
+  "8": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer to your hotel",
+   "Check in on the Mount Lavinia beachfront",
+   "The rest of the day at leisure",
+   "Optional: sunset drinks on Galle Face Green"
+  ],
+  "2": [
+   "Breakfast, then a transfer inland via Pinnawala",
+   "Bath time for the herd in the Maha Oya river",
+   "Check in at your Kandy hotel",
+   "An evening lake drive and the Kandyan dance show"
+  ],
+  "3": [
+   "Breakfast, then the road north through the Cultural Triangle",
+   "The water gardens and the climb past the mirror wall",
+   "Frescoes of the cloud maidens and the lion paw terrace",
+   "Summit ruins and views across the dry zone jungle",
+   "Back to Kandy for dinner at the hotel"
+  ],
+  "4": [
+   "Breakfast, then a private half day of the Tooth Relic temple and Peradeniya",
+   "A transfer across the hills and down to the dry zone",
+   "Check in at your lodge on the park boundary",
+   "An early night before the dawn safari"
+  ],
+  "5": [
+   "A pre breakfast jeep safari through Yala block one",
+   "Leopards, elephants, crocodiles and peacocks at the waterholes",
+   "Breakfast, then a transfer west along the coast to Bentota",
+   "Check in and the evening at leisure on the beach"
+  ],
+  "6": [
+   "Breakfast and a private excursion along the southern coast",
+   "Mirissa beach and the palms of Coconut Tree Hill",
+   "The Galle Dutch fort: ramparts, lighthouse and old church",
+   "Back to Bentota for dinner"
+  ],
+  "7": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Mirage Hotel Colombo",
+  "2": "Hotel Thilanka, Kandy",
+  "3": "Hotel Thilanka, Kandy",
+  "4": "Jetwing Yala",
+  "5": "Earl's Reef, Bentota",
+  "6": "Earl's Reef, Bentota",
+  "7": "Mirage Hotel Colombo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Yala at dawn is the single best morning you can have in Sri Lanka. Leopards are shy, but the elephants and peacocks never disappoint.",
+  "tip": "Wear neutral colours for the safari and keep the camera ready at the waterholes. The first hour after the gates open is when the cats move."
+ },
+ "summary": "The Fully Loaded route in upgraded hotels: a soft landing in Colombo, two nights in Kandy with Sigiriya and the dance show, a night at the five star Jetwing Yala with a private dawn safari, two nights at a four star beach resort in Bentota with Mirissa, and a final night in the capital.",
+ "included": "Included: 7 nights in deluxe, four and five star hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; private Pinnawala visit; private Kandy lake drive and dance show; a private excursion to Sigiriya; private full day Kandy sightseeing; a private jungle safari in Yala National Park; a private excursion to Mirissa; private full day Colombo sightseeing.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

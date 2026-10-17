@@ -165,6 +165,7 @@ def assign(country, cfg):
         block += [f"    '{th(p['url'], w)}', // {p['label']}" for p in P[key]]
         block.append('  ],')
     block.append('};')
+    s = re.sub(r"\n// Photo slots: one distinct.*?\nconst P = \{.*?\n\};\n", '\n', s, count=1, flags=re.S)
     s = re.sub(r'(^const N = .*;\n)', lambda m: m.group(1) + '\n' + '\n'.join(block) + '\n', s, count=1, flags=re.M)
     open(path, 'w').write(s)
     distinct = len({p['url'] for v in P.values() for p in (v if isinstance(v, list) else [v])})

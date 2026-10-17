@@ -1,0 +1,262 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "scenic-sri-lanka-tour-with-sigiriya-and-ella",
+ "camel": "sriLankaSigiriyaEllaBentotaSevenDays",
+ "slug": "sri-lanka-with-sigiriya-and-ella-kandy-to-bentota-in-seven-days",
+ "title": "Sri Lanka with Sigiriya and Ella: Kandy to Bentota in Seven Days",
+ "alt": "Ravana Falls tumbling beside the road near Ella",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Culture",
+  "Budget"
+ ],
+ "price": 31350,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Ella",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 5,
+  "hotels": 5,
+  "experiences": 6,
+  "transfers": 9,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Pinnawala and Kandy sightseeing",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnwala",
+     "description": "The elephant sanctuary on the way up, then a circuit of the lake and the Kandyan dance performance."
+    },
+    {
+     "name": "Tooth Relic temple and excursion to Sigiriya",
+     "day": 2,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "The Temple of the Sacred Tooth Relic in the morning, then the climb to the summit of the rock fortress."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above Kandy with the elephants and a city tour on the first day, then the Tooth Relic temple and a day at Sigiriya."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Ashford Nuwara Eliya",
+   "hotel_label": "Ashford",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Standard class hill country hotel close to Gregory Lake",
+   "activities": [
+    {
+     "name": "Sightseeing tour of Nuwara Eliya",
+     "day": 3,
+     "optional": false,
+     "match": "Nuwara Eliya",
+     "description": "Gregory Lake, Victoria Park, a tea estate and the colonial post office of Little England."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up into the tea country for a night by Gregory Lake with a tour of the town, the gardens and the estates."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ella",
+   "city": "Ella",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Onestar Ella",
+   "hotel_label": "Onestar Ella",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Small hotel on the slopes above Ella town",
+   "activities": [
+    {
+     "name": "Sightseeing tour of Ella",
+     "day": 4,
+     "optional": false,
+     "match": "Ella",
+     "description": "The Ravana caves and falls, Little Adams Peak and the Nine Arches Bridge."
+    }
+   ],
+   "program": {
+    "name": "Ella",
+    "description": "A night in Ella with the Ravana caves, the falls and the Nine Arches Bridge."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Marina Bentota",
+   "hotel_label": "Marina Bentota",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Beachfront hotel on the Bentota strip",
+   "activities": [
+    {
+     "name": "Bentota sightseeing, turtle hatchery and fish spa",
+     "day": 5,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Kosgoda turtle hatchery, the fish pedicure centre and the Bentota river mouth."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Down to the coast for a night on the beach with the turtle hatchery and fish spa."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Marine Bay Colombo",
+   "hotel_label": "Marine Bay",
+   "accom": "1 night · Breakfast · Standard room · 3★ · City hotel a short walk from Galle Face Green",
+   "activities": [
+    {
+     "name": "Colombo sightseeing tour",
+     "day": 6,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the capital with a tour of its temples, colonial quarter and markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "The Tooth Relic and Sigiriya",
+  "3": "Into the tea country",
+  "4": "On to Ella",
+  "5": "Down to the coast",
+  "6": "Colombo city tour",
+  "7": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in above Kandy and a circuit of the lake",
+   "The Kandyan dance performance in the evening"
+  ],
+  "2": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "A transfer north to the rock fortress",
+   "The water gardens, the mirror wall and the summit ruins",
+   "Back to Kandy for the night"
+  ],
+  "3": [
+   "Breakfast and a transfer up to Nuwara Eliya",
+   "Gregory Lake, Victoria Park and the colonial town",
+   "A tea estate and factory visit",
+   "Check in and an evening by the lake"
+  ],
+  "4": [
+   "Breakfast and a scenic transfer through the estates",
+   "The Ravana caves and Ravana Falls",
+   "The Nine Arches Bridge and Little Adams Peak",
+   "The evening free in the cafes of Ella"
+  ],
+  "5": [
+   "Breakfast and a long transfer down to Bentota",
+   "The Kosgoda turtle hatchery and the fish pedicure centre",
+   "Check in on the beachfront",
+   "Sunset on the sand"
+  ],
+  "6": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Your last night in the capital"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Topaz, Kandy",
+  "2": "Hotel Topaz, Kandy",
+  "3": "Ashford Nuwara Eliya",
+  "4": "Onestar Ella",
+  "5": "Marina Bentota",
+  "6": "Marine Bay Colombo",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Seven days from the hills to the sea on a sensible budget: two nights in Kandy with Sigiriya and the dance show, a night each in the tea country and in Ella, a night on the beach at Bentota with the turtles, and a last night in Colombo.",
+ "included": "Included: 6 nights in deluxe class hotels with breakfast daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary and Kandy sightseeing; the upper lake drive and Kandyan dance performance; the Tooth Relic temple and an excursion to Sigiriya; sightseeing tours of Nuwara Eliya and Ella; Bentota sightseeing with the turtle hatchery and fish spa; the Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches and dinners; entrance tickets; travel insurance; optional excursions; tips and personal expenses."
+}

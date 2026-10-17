@@ -17,9 +17,9 @@ const heroGallery = [
 // Listing-card photos: kept unique across every trip of this country so no two cards repeat a shot.
 const cardImages = [
   img('astz9jiv9qvj1d23uzrvw7rq6f77_shutterstock_728611555%20(1).jpg'),
-  img('zw5r6r0mw71w1qm1zcqagauaykil_shutterstock_1296340636.jpg'),
-  img('crlrukladzxpiw20e0wgy9q1zntl_shutterstock_1141635956.jpg'),
-  img('0qy2jc25tugqpk0ksmha8ub3h3z0_shutterstock_1487345435.jpg')
+  img('1xmli9j38vniz1tghlcgs4bxa0gc_shutterstock_1840791727.jpg'),
+  img('0scen0iugpry0mg4wqnxsr558nvw_Labookellie_tea_plantation__Sri_Lanka_2.jpg'),
+  img('5ryv9me1696b1ry058e5jsm7lzya_Botanical_Garden_of_Peradeniya_03.jpg')
 ];
 
 const stops = [

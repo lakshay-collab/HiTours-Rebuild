@@ -1,0 +1,157 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "weekend-island-break-to-colombo-and-bentota",
+ "camel": "sriLankaWeekendBentotaColombo",
+ "slug": "sri-lanka-weekend-island-break-bentota-and-colombo",
+ "title": "Sri Lanka Weekend Island Break: Bentota and Colombo",
+ "alt": "Fishermen on stilts off the south coast of Sri Lanka",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "Beach",
+  "Budget"
+ ],
+ "price": 26600,
+ "route_cities": [
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 4,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Rockside Beach Resort, Bentota",
+   "hotel_label": "Rockside Beach Resort",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Standard class beach resort on the Bentota shore",
+   "activities": [
+    {
+     "name": "Private full day Bentota sightseeing",
+     "day": 1,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Madu Ganga boat ride, the Kosgoda turtle hatchery, the Galapatha temple and an afternoon on Bentota beach."
+    },
+    {
+     "name": "Private excursion to Mirissa",
+     "day": 2,
+     "optional": false,
+     "match": "Mirissa",
+     "description": "Along the southern coast to Mirissa beach and Coconut Tree Hill, with a stop at the Galle fort on the way back."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Straight from the airport to the beach with a private full day of Bentota on arrival and a private excursion to Mirissa the next day."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Grand Oriental Hotel Colombo",
+   "hotel_label": "Grand Oriental Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Historic harbourside hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the Fort district with a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Bentota",
+  "2": "Mirissa and Galle",
+  "3": "Colombo city tour",
+  "4": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer down the coast",
+   "The Kosgoda turtle hatchery and a boat on the Madu Ganga",
+   "Check in at your beach resort",
+   "Sunset on the sand and dinner"
+  ],
+  "2": [
+   "Breakfast and a private excursion along the southern coast",
+   "Mirissa beach and the palms of Coconut Tree Hill",
+   "The Galle Dutch fort on the way back",
+   "Dinner at the resort"
+  ],
+  "3": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Rockside Beach Resort, Bentota",
+  "2": "Rockside Beach Resort, Bentota",
+  "3": "Grand Oriental Hotel Colombo",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "A long weekend on the island: two nights on the beach at Bentota with the turtles, the Madu Ganga and a day at Mirissa and Galle, then a last night in Colombo with a full day of the capital.",
+ "included": "Included: 3 nights in deluxe class hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; a private full day Bentota sightseeing tour; a private excursion to Mirissa; a private full day Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

@@ -6,6 +6,7 @@ import { RELATED_ASIA } from './relatedAsia';
 const wide = (base, w) => `${base}?w=${w}&dpr=1`;
 const N = "Sri Lanka";
 
+
 // Photo slots: one distinct, place-matched photo per tile (from the imported trips' galleries).
 const P = {
   planner: 'https://media1.thrillophilia.com/filestore/etj1ojtd1z3dc9jelxvo632b6zq2_shutterstock_769023574.jpg?w=2000&dpr=1', // Aerial views of Mirissa

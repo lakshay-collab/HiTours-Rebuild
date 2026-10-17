@@ -1,0 +1,199 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lanka-retreat-with-excursion-to-galle",
+ "camel": "sriLankaRetreatKandyBentotaGalle",
+ "slug": "sri-lanka-retreat-kandy-bentota-and-galle-fort",
+ "title": "Sri Lanka Retreat: Kandy, Bentota and Galle Fort",
+ "alt": "The lighthouse on the ramparts of the Galle Dutch fort",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Best seller",
+ "tags": [
+  "Best seller",
+  "Beach",
+  "Culture"
+ ],
+ "price": 32869,
+ "route_cities": [
+  "Kandy",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 6,
+  "meals": 4
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Tooth Relic temple, lake and Kandyan dance",
+     "day": 1,
+     "optional": false,
+     "match": "Tooth Relic",
+     "description": "The Temple of the Sacred Tooth Relic at evening puja, a circuit of the lake and the drummers and dancers of the show."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night above Kandy with the elephants on the way, the Tooth Relic temple and the dance show."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Marina Bentota",
+   "hotel_label": "Marina Bentota",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Beachfront hotel on the Bentota strip",
+   "activities": [
+    {
+     "name": "Bentota sightseeing, turtle hatchery and fish spa",
+     "day": 2,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Kosgoda turtle hatchery, the fish pedicure centre and the Bentota river mouth."
+    },
+    {
+     "name": "Excursion to Galle",
+     "day": 3,
+     "optional": false,
+     "match": "Galle",
+     "description": "A day inside the Dutch fort: the ramparts, the lighthouse, the old church and the lanes of cafes and galleries."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights on the beach with the turtle hatchery and fish spa on arrival and a day inside the Galle fort."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Fairway Colombo",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Modern city hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Colombo sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the Fort district with the sights of the commercial capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Down to Bentota",
+  "3": "A day at Galle fort",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "The Temple of the Sacred Tooth Relic and a circuit of the lake",
+   "The Kandyan dance performance in the evening"
+  ],
+  "2": [
+   "Breakfast and a transfer from the hills to the coast",
+   "The Kosgoda turtle hatchery and the fish pedicure centre",
+   "Check in on the Bentota beachfront",
+   "The evening at leisure on the sand"
+  ],
+  "3": [
+   "Breakfast and an excursion down the southern coast",
+   "The ramparts, the lighthouse and the Dutch Reformed church",
+   "Lunch in the lanes of the fort (own expense)",
+   "Sunset from the walls and back to Bentota"
+  ],
+  "4": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Your last night in the capital"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Topaz, Kandy",
+  "2": "Marina Bentota",
+  "3": "Marina Bentota",
+  "4": "Fairway Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "Five days with the fort as the centrepiece: a night in Kandy with the elephants and the Tooth Relic temple, two nights at Bentota with the turtles and a day inside Galle fort, and a last night in Colombo.",
+ "included": "Included: 4 nights in deluxe class hotels with breakfast daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary; the Tooth Relic temple, lake drive and Kandyan dance performance; Bentota sightseeing with the turtle hatchery and fish spa; a day excursion to Galle; the Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches and dinners; entrance tickets; travel insurance; optional excursions; tips and personal expenses."
+}

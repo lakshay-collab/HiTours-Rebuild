@@ -1,0 +1,258 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lankan-delight",
+ "camel": "sriLankanDelightSigiriyaKandyBentota",
+ "slug": "sri-lankan-delight-sigiriya-kandy-and-bentota",
+ "title": "Sri Lankan Delight: Sigiriya, Kandy and Bentota",
+ "alt": "Sigiriya rock reflected in the lake at dawn",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Best seller",
+ "tags": [
+  "Best seller",
+  "Culture",
+  "Beach"
+ ],
+ "price": 42750,
+ "route_cities": [
+  "Sigiriya",
+  "Kandy",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 8,
+  "transfers": 9,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Sigiriya",
+   "city": "Sigiriya",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Lavendish Country Resort, Sigiriya",
+   "hotel_label": "Lavendish Country Resort",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Country resort among the paddy fields with the rock on the horizon",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    }
+   ],
+   "program": {
+    "name": "Sigiriya",
+    "description": "Straight from the airport into the Cultural Triangle with the elephants on the way, for a night by the lake under the rock."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Hotel Devon Kandy",
+   "hotel_label": "Hotel Devon",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Deluxe class hotel in the hills above Kandy town",
+   "activities": [
+    {
+     "name": "Sigiriya rock fortress",
+     "day": 2,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "A full day out to the fifth century rock citadel: the water gardens, the mirror wall, the frescoes and the summit palace ruins."
+    },
+    {
+     "name": "Dambulla cave temple",
+     "day": 2,
+     "optional": false,
+     "match": "Dambulla",
+     "description": "Five rock cut shrines lined with murals and more than a hundred Buddha statues, on the way south to Kandy."
+    },
+    {
+     "name": "Spice garden and Kandyan dance show",
+     "day": 2,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "A stop at a Matale spice garden, then the lake drive and the drummers and fire walkers of the evening show."
+    },
+    {
+     "name": "Full day Kandy city tour",
+     "day": 3,
+     "optional": false,
+     "match": "Kandy City Tour",
+     "description": "The Temple of the Sacred Tooth Relic, the Peradeniya gardens, the Bahiravokanda Buddha and the gem museum."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "The rock and the Dambulla caves in the morning, then two nights in Kandy with a spice garden, the dance show and a full day of the city."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Haus Berlin, Bentota",
+   "hotel_label": "Haus Berlin",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Deluxe class boutique stay a short walk from Bentota beach",
+   "activities": [
+    {
+     "name": "Madu Ganga boat safari and Kosgoda turtle hatchery",
+     "day": 4,
+     "optional": false,
+     "match": "Madu Ganga",
+     "description": "A boat through the mangrove islands of the Madu Ganga, then the turtle hatchery at Kosgoda."
+    },
+    {
+     "name": "Excursion to Galle and Mirissa",
+     "day": 5,
+     "optional": false,
+     "match": "Mirissa and Galle",
+     "description": "South along the coast to the Dutch fort at Galle with its ramparts and lighthouse, then on to Mirissa beach and Coconut Tree Hill."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights on the beach with the Madu Ganga boat and the turtle hatchery on arrival, and a day trip to Mirissa and Galle."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Grand Oriental Hotel Colombo",
+   "hotel_label": "Grand Oriental Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Historic harbourside hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Full day Colombo sightseeing",
+     "day": 6,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A final night in the Fort district with a full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Sigiriya",
+  "2": "Sigiriya, Dambulla and on to Kandy",
+  "3": "A full day in Kandy",
+  "4": "To Bentota: Madu Ganga and the turtles",
+  "5": "Mirissa and Galle",
+  "6": "Colombo city tour",
+  "7": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in by the lake with the rock on the horizon",
+   "Dinner at the hotel"
+  ],
+  "2": [
+   "An early climb of the Sigiriya rock fortress",
+   "Breakfast, then the Dambulla cave temple",
+   "A spice garden at Matale on the way south",
+   "Check in at Kandy, a lake drive and the dance show"
+  ],
+  "3": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "The Peradeniya Royal Botanical Gardens",
+   "The hilltop Buddha at Bahiravokanda and the gem museum",
+   "Dinner at the hotel"
+  ],
+  "4": [
+   "Breakfast and a transfer down to the south west coast",
+   "A boat safari through the Madu Ganga mangroves",
+   "The Kosgoda turtle hatchery",
+   "Check in at Bentota and the evening on the beach"
+  ],
+  "5": [
+   "Breakfast and an excursion along the southern coast",
+   "Mirissa beach and Coconut Tree Hill",
+   "The Galle Dutch fort: ramparts, lighthouse and old church",
+   "Back to Bentota for dinner"
+  ],
+  "6": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Lavendish Country Resort, Sigiriya",
+  "2": "Hotel Devon Kandy",
+  "3": "Hotel Devon Kandy",
+  "4": "Haus Berlin, Bentota",
+  "5": "Haus Berlin, Bentota",
+  "6": "Grand Oriental Hotel Colombo",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Seven days in the classic order: a night under Sigiriya rock, the Dambulla caves, two nights in Kandy with the dance show, two on the beach at Bentota with the Madu Ganga and Galle, and a final night in Colombo.",
+ "included": "Included: 6 nights in standard and deluxe class hotels with breakfast and lunch or dinner daily (breakfast only in Sigiriya); private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary visit; the Sigiriya excursion and the Dambulla cave temple; a spice garden visit; Kandy lake drive and Kandyan dance show; a full day Kandy city tour; the Madu Ganga boat safari and Kosgoda turtle hatchery; a day excursion to Mirissa and Galle; full day Colombo sightseeing.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

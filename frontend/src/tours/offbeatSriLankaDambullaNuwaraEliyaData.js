@@ -18,8 +18,8 @@ const heroGallery = [
 const cardImages = [
   img('n5rngnkvq515s623xth9tr9t0g6e_shutterstock_796990585.jpg'),
   img('ehxgq7xsvpq2xfzcpi1774ppfjgw_shutterstock_1019478988.jpg'),
-  img('f1qkldipk78pi26yi4ym1lqnvkiy_shutterstock_2145363995.jpg'),
-  img('d4xpyxqebu0jmna6b117qwimh034_Pettah%20Floating%20Market%20Colombo%201.jpg')
+  img('d4xpyxqebu0jmna6b117qwimh034_Pettah%20Floating%20Market%20Colombo%201.jpg'),
+  img('r0mo5wi8zr1oc40lyse1a4zzr8hz_Galle%20Face%20Green%20Colombo%201.jpg')
 ];
 
 const stops = [

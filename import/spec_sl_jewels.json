@@ -1,0 +1,189 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "jewels-of-sri-lanka",
+ "camel": "jewelsOfSriLankaKandyBentotaColombo",
+ "slug": "jewels-of-sri-lanka-kandy-bentota-and-colombo-in-four-days",
+ "title": "Jewels of Sri Lanka: Kandy, Bentota and Colombo in Four Days",
+ "alt": "Elephants bathing in the Maha Oya river at Pinnawala",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Short trips",
+ "tags": [
+  "Short trips",
+  "Culture",
+  "Beach"
+ ],
+ "price": 26600,
+ "route_cities": [
+  "Kandy",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 4,
+  "nights": 3,
+  "cities": 3,
+  "hotels": 3,
+  "experiences": 5,
+  "transfers": 5,
+  "meals": 6
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Ganga Addara Hotel, Kandy",
+   "hotel_label": "Ganga Addara Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Standard class hotel on the Mahaweli river outside Kandy",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Kandy lake drive and Kandyan dance show",
+     "day": 1,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "One night by the river at Kandy with the elephants on the way and the lake drive and dance show."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Hibiscus Beach Hotel, Bentota",
+   "hotel_label": "Hibiscus Beach Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Deluxe class beach hotel with a pool facing the sea",
+   "activities": [
+    {
+     "name": "Peradeniya botanical gardens",
+     "day": 2,
+     "optional": false,
+     "match": "Peradeniya",
+     "description": "The royal botanical gardens with their orchid house and avenue of palms, on the way out of Kandy."
+    },
+    {
+     "name": "Madu Ganga boat safari",
+     "day": 2,
+     "optional": false,
+     "match": "Madu Ganga",
+     "description": "A boat through the mangrove islands of the Madu Ganga before check in at Bentota."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Peradeniya gardens on the way down, then a boat on the Madu River and a night on the beach."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Grand Oriental Hotel Colombo",
+   "hotel_label": "Grand Oriental Hotel",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 3★ · Historic harbourside hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Full day Colombo sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the Fort district with a full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Gardens, the Madu Ganga and the beach",
+  "3": "Colombo city tour",
+  "4": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in at your Kandy hotel in the afternoon",
+   "An evening lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast, then the Peradeniya Royal Botanical Gardens",
+   "A transfer down to the south west coast",
+   "A boat safari through the Madu Ganga mangroves",
+   "Check in at Bentota for sunset"
+  ],
+  "3": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "4": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B"
+ },
+ "hotel_by_day": {
+  "1": "Ganga Addara Hotel, Kandy",
+  "2": "Hibiscus Beach Hotel, Bentota",
+  "3": "Grand Oriental Hotel Colombo",
+  "4": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Four days that still feel like a holiday: a night in Kandy with the elephants and the dance show, Peradeniya and the Madu Ganga on the way to a night on the beach at Bentota, and a last night in Colombo.",
+ "included": "Included: 3 nights in deluxe class hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary; Kandy lake drive and Kandyan dance show; the Peradeniya botanical gardens; the Madu Ganga boat safari; a full day Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

@@ -1,0 +1,261 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "exotic-sri-lankan-paradise-super-deluxe",
+ "camel": "exoticSriLankaSuperDeluxeCouplesBentota",
+ "slug": "exotic-sri-lanka-super-deluxe-for-couples-kandy-nuwara-eliya-and-bentota",
+ "title": "Exotic Sri Lanka Super Deluxe for Couples: Kandy, Nuwara Eliya and Bentota",
+ "alt": "A couple watching the sunset from a beach resort at Bentota",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Honeymoon",
+ "tags": [
+  "Honeymoon",
+  "Luxury",
+  "Beach"
+ ],
+ "price": 62558,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 7,
+  "transfers": 10,
+  "meals": 14
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Hotel Thilanka, Kandy",
+   "hotel_label": "Hotel Thilanka",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Hillside hotel with a pool above Kandy lake",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private lake drive and Kandyan dance show",
+     "day": 1,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    },
+    {
+     "name": "Private full day Kandy sightseeing",
+     "day": 2,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, the Peradeniya botanical gardens, the Bahiravokanda Buddha and the gem museum."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above Kandy lake with a private elephant visit on the way in, a private dance show and a private full day of the city and its gardens."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "Mirage Kings Cottage, Nuwara Eliya",
+   "hotel_label": "Mirage Kings Cottage",
+   "accom": "1 night · Breakfast and dinner · Deluxe room · 4★ · Four star colonial cottage hotel above Nuwara Eliya",
+   "activities": [
+    {
+     "name": "Private full day Nuwara Eliya sightseeing",
+     "day": 3,
+     "optional": false,
+     "match": "Nuwara Eliya Sightseeing",
+     "description": "Ramboda Falls, a working tea estate and factory, Gregory Lake, Victoria Park, Hakgala gardens and the Seetha Amman temple."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up into the tea country for a night in a four star colonial cottage with a private full day of waterfalls, gardens and lake."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Earl's Reef, Bentota",
+   "hotel_label": "Earl's Reef",
+   "accom": "3 nights · Breakfast and dinner · Deluxe room · 4★ · Four star beachfront resort on the Bentota strand",
+   "activities": [
+    {
+     "name": "Private full day Bentota sightseeing",
+     "day": 5,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Madu Ganga boat ride, the Kosgoda turtle hatchery, the Galapatha temple and an afternoon on Bentota beach."
+    },
+    {
+     "name": "Private excursion to Mirissa",
+     "day": 6,
+     "optional": false,
+     "match": "Mirissa",
+     "description": "Along the southern coast to Mirissa beach and Coconut Tree Hill, with the Galle fort on the way back."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Three nights at a four star beachfront resort: a free day on arrival, a private day of the Madu River and the turtles, and a private excursion to Mirissa."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Fairway Colombo",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Modern city hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Private full day Colombo sightseeing",
+     "day": 7,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A last night in the Fort district with a private full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "A full day in Kandy",
+  "3": "Into the tea country",
+  "4": "Down to the coast",
+  "5": "Madu River and the turtles",
+  "6": "Mirissa and Galle",
+  "7": "Colombo city tour",
+  "8": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in at your Kandy hotel in the afternoon",
+   "An evening lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "The Peradeniya Royal Botanical Gardens and the orchid house",
+   "The hilltop Buddha at Bahiravokanda and the gem museum",
+   "Dinner at the hotel overlooking the lake"
+  ],
+  "3": [
+   "Breakfast and a private transfer up to Nuwara Eliya",
+   "Ramboda Falls and a tea factory tasting on the way",
+   "Gregory Lake, Victoria Park and the Hakgala gardens",
+   "Check in at your colonial cottage and dinner"
+  ],
+  "4": [
+   "Breakfast and a long transfer down to Bentota",
+   "Check in at your four star beachfront resort",
+   "The rest of the day at leisure on the sand",
+   "Optional: a sunset catamaran ride on the Bentota river"
+  ],
+  "5": [
+   "Breakfast, then a boat safari through the Madu Ganga mangroves",
+   "The cinnamon island and the fish spa at the river mouth",
+   "The Kosgoda turtle hatchery in the afternoon",
+   "Optional: a candlelit dinner on the beach"
+  ],
+  "6": [
+   "Breakfast and a private excursion along the southern coast",
+   "Mirissa beach and the palms of Coconut Tree Hill",
+   "The Galle Dutch fort on the way back",
+   "Dinner at the resort"
+  ],
+  "7": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B, D",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Hotel Thilanka, Kandy",
+  "2": "Hotel Thilanka, Kandy",
+  "3": "Mirage Kings Cottage, Nuwara Eliya",
+  "4": "Earl's Reef, Bentota",
+  "5": "Earl's Reef, Bentota",
+  "6": "Earl's Reef, Bentota",
+  "7": "Fairway Colombo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "The Exotic Sri Lanka couples route in upgraded hotels: two nights above Kandy lake, a four star colonial cottage in the tea country, three nights at a four star beach resort in Bentota with the Madu River, the turtles and Mirissa, and a final night in Colombo.",
+ "included": "Included: 7 nights in deluxe and four star hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; private Pinnawala visit; private Kandy lake drive and dance show; private full day Kandy sightseeing; private full day Nuwara Eliya sightseeing; private full day Bentota sightseeing; a private excursion to Mirissa; private full day Colombo sightseeing.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

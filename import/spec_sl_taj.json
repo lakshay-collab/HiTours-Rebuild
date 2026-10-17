@@ -1,0 +1,167 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lanka-lap-of-luxury-taj-special",
+ "camel": "sriLankaTajBentotaColombo",
+ "slug": "sri-lanka-in-the-lap-of-luxury-taj-bentota-and-taj-samudra",
+ "title": "Sri Lanka in the Lap of Luxury: Taj Bentota and Taj Samudra",
+ "alt": "The pool terrace of the Taj Bentota Resort above the Indian Ocean",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Luxury",
+ "tags": [
+  "Luxury",
+  "Honeymoon",
+  "Beach"
+ ],
+ "price": 32300,
+ "route_cities": [
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 5,
+  "nights": 4,
+  "cities": 2,
+  "hotels": 2,
+  "experiences": 3,
+  "transfers": 5,
+  "meals": 8
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Taj Bentota Resort & Spa, Sri Lanka",
+   "hotel_label": "Taj Bentota Resort and Spa",
+   "accom": "2 nights · Breakfast and dinner · Superior room · 5★ · Five star Taj resort on a headland above Bentota beach",
+   "activities": [
+    {
+     "name": "Kosgoda turtle hatchery",
+     "day": 1,
+     "optional": false,
+     "match": "Kosgoda",
+     "description": "The hatchery south of Bentota where eggs are protected and hatchlings released into the sea at dusk."
+    },
+    {
+     "name": "Full day Bentota sightseeing",
+     "day": 2,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Madu Ganga boat ride, the Kosgoda turtle hatchery, the Galapatha temple and an afternoon on Bentota beach."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights at the Taj on the headland with the turtle hatchery on arrival and a full day of the Madu Ganga, the temple and the beach."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    3,
+    4,
+    5
+   ],
+   "dayLabel": "Day 3 to 5",
+   "hotel": "Taj Samudra, Colombo",
+   "hotel_label": "Taj Samudra",
+   "accom": "2 nights · Breakfast and dinner · Superior room · 5★ · Five star Taj hotel facing Galle Face Green and the ocean",
+   "activities": [
+    {
+     "name": "Full day Colombo sightseeing",
+     "day": 4,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "Two nights facing Galle Face Green with a free day for the pool and the spa and a full day of the capital."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Bentota",
+  "2": "Bentota sightseeing",
+  "3": "To Colombo and a day at leisure",
+  "4": "Colombo city tour",
+  "5": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer down the coast",
+   "The Kosgoda turtle hatchery on the way",
+   "Check in at the Taj Bentota Resort and Spa",
+   "Dinner with the sound of the sea"
+  ],
+  "2": [
+   "Breakfast, then a boat safari on the Madu Ganga",
+   "The Galapatha temple and the cinnamon island",
+   "The afternoon on Bentota beach or at the Jiva spa",
+   "Optional: a private candlelit dinner on the lawn"
+  ],
+  "3": [
+   "Breakfast and a private transfer up the coast",
+   "Check in at the Taj Samudra on Galle Face Green",
+   "The afternoon free for the pool, the spa or the shops of Colombo 7",
+   "Dinner at the hotel"
+  ],
+  "4": [
+   "Breakfast, then Galle Face Green and the Gangaramaya temple",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "The National Museum and Independence Square",
+   "Dinner and your last night at the hotel"
+  ],
+  "5": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B"
+ },
+ "hotel_by_day": {
+  "1": "Taj Bentota Resort & Spa, Sri Lanka",
+  "2": "Taj Bentota Resort & Spa, Sri Lanka",
+  "3": "Taj Samudra, Colombo",
+  "4": "Taj Samudra, Colombo",
+  "5": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Bentota is where the trip exhales. After the temples and tea estates, three nights by the water is exactly the right medicine.",
+  "tip": "Ask for an early start on the Galle day. The fort ramparts are empty before ten and the light on the lighthouse is at its best."
+ },
+ "summary": "Five days in two Taj hotels: two nights above the beach at Bentota with the turtle hatchery and the Madu Ganga, then two nights facing Galle Face Green in Colombo with a free day and a full day of the city.",
+ "included": "Included: 4 nights in five star Taj hotels with breakfast and lunch or dinner daily; private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Kosgoda turtle hatchery; a full day Bentota sightseeing tour with the Madu Ganga boat; a full day Colombo sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches where dinner is taken; entrance tickets where payable locally; travel insurance; spa treatments and optional excursions; tips and personal expenses."
+}

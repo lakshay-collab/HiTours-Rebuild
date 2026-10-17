@@ -1,0 +1,241 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "sri-lanka-group-trip-package",
+ "camel": "sriLankaGroupTourKandyEllaBentota",
+ "slug": "sri-lanka-group-tour-kandy-ella-train-and-bentota",
+ "title": "Sri Lanka Group Tour: Kandy, the Ella Train and Bentota",
+ "alt": "Travellers leaning out of the blue train in the Sri Lankan hill country",
+ "transport": "Shared air conditioned coach with an English speaking guide; the hill train from Nuwara Eliya to Ella",
+ "tag": "Group tour",
+ "tags": [
+  "Group tour",
+  "Adventure",
+  "Beach"
+ ],
+ "price": 38475,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Ella",
+  "Bentota"
+ ],
+ "counts": {
+  "days": 6,
+  "nights": 5,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 7,
+  "transfers": 6,
+  "meals": 10
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Swiss Residence, Kandy",
+   "hotel_label": "Swiss Residence",
+   "accom": "1 night · Breakfast and dinner · Standard room · 4★ · Four star hotel on the hill above Kandy lake",
+   "activities": [
+    {
+     "name": "Pinnawala and Kandy sightseeing with the group",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "The elephant sanctuary on the way up, then the Temple of the Sacred Tooth Relic and a circuit of the lake."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Meet the group at the airport and head for the hills with the elephants on the way and Kandy in the afternoon."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    2
+   ],
+   "dayLabel": "Day 2",
+   "hotel": "Ashford Nuwara Eliya",
+   "hotel_label": "Ashford",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Standard class hill country hotel close to Gregory Lake",
+   "activities": [
+    {
+     "name": "Hill country highlights on the way to Nuwara Eliya",
+     "day": 2,
+     "optional": false,
+     "match": "Nuwara Eliya",
+     "description": "Ramboda Falls, a tea estate and factory, Gregory Lake and the colonial town."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "A shared transfer into the tea country with the waterfalls and estates of the hill road."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ella",
+   "city": "Ella",
+   "days": [
+    3
+   ],
+   "dayLabel": "Day 3",
+   "hotel": "88th Ella Hotel",
+   "hotel_label": "88th Ella Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Hotel with views down the Ella gap",
+   "activities": [
+    {
+     "name": "Train journey from Nuwara Eliya to Ella",
+     "day": 3,
+     "optional": false,
+     "match": "Train",
+     "description": "Second class reserved seats on the slow train through the tea terraces to Ella."
+    },
+    {
+     "name": "Ella sightseeing: Ravana cave and falls",
+     "day": 3,
+     "optional": false,
+     "match": "Ella City",
+     "description": "The Ravana cave above the town and the wide roadside waterfall of the legend."
+    }
+   ],
+   "program": {
+    "name": "Ella",
+    "description": "The famous hill train to Ella, then the Ravana caves and falls."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    4,
+    5,
+    6
+   ],
+   "dayLabel": "Day 4 to 6",
+   "hotel": "Tangerine Beach Hotel",
+   "hotel_label": "Tangerine Beach Hotel",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 4★ · Four star beachfront hotel at Kalutara on the way to Bentota",
+   "activities": [
+    {
+     "name": "Madu River boat ride",
+     "day": 5,
+     "optional": false,
+     "match": "Madu River",
+     "description": "A boat through the mangrove islands of the Madu Ganga."
+    },
+    {
+     "name": "Water sports combo at Bentota",
+     "day": 5,
+     "optional": false,
+     "match": "Sports Combo",
+     "description": "Jet ski, banana boat and a tube ride at the river mouth with the group."
+    },
+    {
+     "name": "Kosgoda sea turtle conservation centre",
+     "day": 5,
+     "optional": false,
+     "match": "Kosgoda",
+     "description": "The hatchery where eggs are protected and hatchlings released into the sea."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights on the beach with a free afternoon on arrival and a full day of the Madu River, water sports and the turtles."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Into the hill country",
+  "3": "The train to Ella",
+  "4": "Down to the beach",
+  "5": "Madu River, water sports and turtles",
+  "6": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and a shared transfer inland",
+   "Meet your group and the Pinnawala elephants on the way",
+   "The Temple of the Sacred Tooth Relic and a circuit of the lake",
+   "Check in above the lake and dinner with the group"
+  ],
+  "2": [
+   "Breakfast and a shared transfer up to Nuwara Eliya",
+   "Ramboda Falls and a tea estate and factory",
+   "Gregory Lake and the colonial town",
+   "Dinner in Little England"
+  ],
+  "3": [
+   "Breakfast and a transfer to Nanu Oya station",
+   "The hill train through the tea terraces to Ella",
+   "The Ravana cave and Ravana Falls",
+   "Dinner with views down the Ella gap"
+  ],
+  "4": [
+   "Breakfast and a long transfer from the hills to the coast",
+   "Check in at your beachfront hotel",
+   "The afternoon free on the sand",
+   "Dinner with the group"
+  ],
+  "5": [
+   "Breakfast, then a boat ride on the Madu River",
+   "Jet ski, banana boat and tube ride at the river mouth",
+   "The Kosgoda sea turtle conservation centre",
+   "A farewell dinner on the beach"
+  ],
+  "6": [
+   "Breakfast and check out",
+   "Shared transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B"
+ },
+ "hotel_by_day": {
+  "1": "Swiss Residence, Kandy",
+  "2": "Ashford Nuwara Eliya",
+  "3": "88th Ella Hotel",
+  "4": "Tangerine Beach Hotel",
+  "5": "Tangerine Beach Hotel",
+  "6": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Sigiriya, Ella and Mirissa in one week is the route I recommend to every first timer under forty. Heritage, hills and the sea in that order.",
+  "tip": "Climb Sigiriya before breakfast. The gates open at seven, the steps are in shade and you are back down before the heat and the crowds arrive."
+ },
+ "summary": "Six days with a small group: Kandy and the elephants, the tea country, the hill train to Ella, and two nights on the beach with the Madu River, water sports and the turtle centre. All transfers, breakfasts and dinners included.",
+ "included": "Included: 5 nights in deluxe and super deluxe hotels with breakfast and dinner daily; shared arrival and departure airport transfers and all road travel by air conditioned coach; Pinnawala and Kandy sightseeing; the hill country transfer with highlights; the Nuwara Eliya to Ella train journey; Ella sightseeing; the Madu River boat ride; the water sports combo at Bentota; the Kosgoda turtle conservation centre.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches; entrance tickets where payable locally; travel insurance; optional excursions; tips and personal expenses. Single travellers are matched in twin rooms or can pay a single supplement."
+}

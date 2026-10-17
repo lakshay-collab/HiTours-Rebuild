@@ -1,0 +1,261 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "scenic-sri-lanka",
+ "camel": "scenicSriLankaKandyEllaGalle",
+ "slug": "scenic-sri-lanka-kandy-ella-train-and-galle",
+ "title": "Scenic Sri Lanka: Kandy, the Ella Train and Galle",
+ "alt": "The blue train crossing the Nine Arches Bridge near Ella",
+ "transport": "Private air conditioned car with chauffeur guide; the scenic hill train from Kandy to Ella",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Culture",
+  "Beach"
+ ],
+ "price": 42275,
+ "route_cities": [
+  "Colombo",
+  "Kandy",
+  "Ella",
+  "Galle",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 7,
+  "nights": 6,
+  "cities": 4,
+  "hotels": 5,
+  "experiences": 6,
+  "transfers": 10,
+  "meals": 12
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Fairway Colombo",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Modern city hotel in the Colombo Fort district",
+   "activities": [],
+   "program": {
+    "name": "Colombo",
+    "description": "A first night in the Fort district to shake off the flight."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Hotel Topaz, Kandy",
+   "hotel_label": "Hotel Topaz",
+   "accom": "2 nights · Breakfast and dinner · Standard room · 3★ · Hilltop hotel with a pool looking down on Kandy",
+   "activities": [
+    {
+     "name": "Private visit to Pinnawala",
+     "day": 2,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Private lake drive and Kandyan dance show",
+     "day": 2,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    },
+    {
+     "name": "Private excursion to Sigiriya",
+     "day": 3,
+     "optional": false,
+     "match": "Sigiriya",
+     "description": "A full day out to the fifth century rock citadel: the water gardens, the mirror wall, the frescoes and the summit palace ruins."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above Kandy with the elephants on the way, a private dance show and a private day out to Sigiriya."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Ella",
+   "city": "Ella",
+   "days": [
+    4
+   ],
+   "dayLabel": "Day 4",
+   "hotel": "Oak Ray Ella Gap Hotel",
+   "hotel_label": "Oak Ray Ella Gap Hotel",
+   "accom": "1 night · Breakfast and dinner · Standard room · 4★ · Four star hotel on the edge of the Ella gap",
+   "activities": [
+    {
+     "name": "Ella sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Ella Sightseeing",
+     "description": "The Nine Arches Bridge, Ravana Falls and the Ravana caves, with a stop at the Bluefield tea factory on the way in."
+    }
+   ],
+   "program": {
+    "name": "Ella",
+    "description": "The famous hill train through the tea country to Ella, then the bridge, the falls and the caves."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Galle",
+   "city": "Galle",
+   "days": [
+    5
+   ],
+   "dayLabel": "Day 5",
+   "hotel": "Villa Peacock",
+   "hotel_label": "Villa Peacock",
+   "accom": "1 night · Breakfast · Villa room · 3★ · Small villa stay close to the Galle fort",
+   "activities": [
+    {
+     "name": "Galle and Mirissa sightseeing",
+     "day": 5,
+     "optional": false,
+     "match": "Mirissa and Galle",
+     "description": "South along the coast to the Dutch fort at Galle with its ramparts and lighthouse, then on to Mirissa beach and Coconut Tree Hill."
+    }
+   ],
+   "program": {
+    "name": "Galle",
+    "description": "Down from the hills to the south coast for Mirissa beach and a night inside the Galle fort."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    6,
+    7
+   ],
+   "dayLabel": "Day 6 to 7",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Fairway Colombo",
+   "accom": "1 night · Breakfast and dinner · Standard room · 3★ · Modern city hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Full day Colombo sightseeing",
+     "day": 6,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the colonial Fort district, the Lotus Tower and the floating market at Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "Back to the capital for a full day of its temples, colonial quarter and markets."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo",
+  "2": "Elephants and the road to Kandy",
+  "3": "A day at Sigiriya",
+  "4": "The hill train to Ella",
+  "5": "Down to the coast: Mirissa and Galle",
+  "6": "Colombo city tour",
+  "7": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer to your hotel",
+   "Check in and the rest of the day at leisure",
+   "Optional: sunset on Galle Face Green"
+  ],
+  "2": [
+   "Breakfast, then a transfer inland via Pinnawala",
+   "Bath time for the herd in the Maha Oya river",
+   "Check in at your hilltop hotel in Kandy",
+   "A private lake drive and the Kandyan dance show"
+  ],
+  "3": [
+   "Breakfast, then the road north through the Cultural Triangle",
+   "The water gardens and the climb past the mirror wall",
+   "Frescoes of the cloud maidens and the lion paw terrace",
+   "Summit ruins and views across the dry zone jungle",
+   "Back to Kandy for dinner at the hotel"
+  ],
+  "4": [
+   "Breakfast and a transfer to Kandy railway station",
+   "The slow train through the tea country to Ella",
+   "The Nine Arches Bridge and the Bluefield tea factory",
+   "Ravana Falls and the caves before check in"
+  ],
+  "5": [
+   "Breakfast and a transfer south from the hills",
+   "Mirissa beach and the palms of Coconut Tree Hill",
+   "The Galle Dutch fort: ramparts, lighthouse and old church",
+   "Check in at your villa near the fort"
+  ],
+  "6": [
+   "Breakfast and a transfer down the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple complex",
+   "The Fort district, the Lotus Tower and Pettah market",
+   "Dinner and your last night at the hotel"
+  ],
+  "7": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "D",
+  "2": "B, D",
+  "3": "B, D",
+  "4": "B, D",
+  "5": "B, D",
+  "6": "B, D",
+  "7": "B"
+ },
+ "hotel_by_day": {
+  "1": "Fairway Colombo",
+  "2": "Hotel Topaz, Kandy",
+  "3": "Hotel Topaz, Kandy",
+  "4": "Oak Ray Ella Gap Hotel",
+  "5": "Villa Peacock",
+  "6": "Fairway Colombo",
+  "7": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Seven days with the best train ride in Asia in the middle: a first night in Colombo, two in Kandy with Sigiriya and the dance show, the hill train to Ella and its bridge, a night at Galle after Mirissa beach, and a final night in the capital.",
+ "included": "Included: 6 nights in standard and deluxe class hotels with breakfast and lunch or dinner daily (breakfast only in Galle); private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Kandy to Ella train tickets; a private Pinnawala visit; a private lake drive and Kandyan dance show; a private excursion to Sigiriya; the Ella sightseeing tour; the Mirissa and Galle excursion; full day Colombo sightseeing.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

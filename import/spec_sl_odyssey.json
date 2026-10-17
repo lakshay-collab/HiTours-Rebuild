@@ -1,0 +1,268 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "an-odyssey-to-sri-lanka",
+ "camel": "sriLankaOdysseyKandyNuwaraEliyaBentota",
+ "slug": "sri-lanka-odyssey-kandy-nuwara-eliya-and-bentota-in-eight-days",
+ "title": "Sri Lanka Odyssey: Kandy, Nuwara Eliya and Bentota in Eight Days",
+ "alt": "Tea pickers at work on the slopes above Nuwara Eliya",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide throughout",
+ "tag": "Nature",
+ "tags": [
+  "Nature",
+  "Culture",
+  "Beach"
+ ],
+ "price": 42275,
+ "route_cities": [
+  "Kandy",
+  "Nuwara Eliya",
+  "Bentota",
+  "Colombo"
+ ],
+ "counts": {
+  "days": 8,
+  "nights": 7,
+  "cities": 4,
+  "hotels": 4,
+  "experiences": 8,
+  "transfers": 9,
+  "meals": 7
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    1,
+    2
+   ],
+   "dayLabel": "Day 1 to 2",
+   "hotel": "Skyloft Kandy",
+   "hotel_label": "Skyloft",
+   "accom": "2 nights · Breakfast · Deluxe room · 3★ · Deluxe class hotel with views over the Kandy valley",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 1,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Upper lake drive and Kandyan dance performance",
+     "day": 1,
+     "optional": false,
+     "match": "Upper Lake",
+     "description": "An evening circuit of the upper lake road, then the drummers, masked dancers and fire walkers."
+    },
+    {
+     "name": "Kandy sightseeing and a tea plantation",
+     "day": 2,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, the Peradeniya gardens and a tea plantation and factory above the town."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights above the Kandy valley with the elephants on the way in, the upper lake drive and dance show, and a day of the city and a tea estate."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    3,
+    4
+   ],
+   "dayLabel": "Day 3 to 4",
+   "hotel": "Ashford Nuwara Eliya",
+   "hotel_label": "Ashford",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Standard class hill country hotel close to Gregory Lake",
+   "activities": [
+    {
+     "name": "Tea plantation on the way to Nuwara Eliya",
+     "day": 3,
+     "optional": false,
+     "match": "Tea Plantation",
+     "description": "A stop among the terraces for a factory tour and a tasting on the climb into the hills."
+    },
+    {
+     "name": "Nuwara Eliya sightseeing tour",
+     "day": 4,
+     "optional": false,
+     "match": "Nuwara Eliya Sightseeing",
+     "description": "Ramboda Falls, a working tea estate and factory, Gregory Lake, Victoria Park, Hakgala gardens and the Seetha Amman temple."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Two unhurried nights in the tea country with the estates on the way up and a full day of the town, its lake, gardens and waterfalls."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    5,
+    6
+   ],
+   "dayLabel": "Day 5 to 6",
+   "hotel": "Marina Bentota",
+   "hotel_label": "Marina Bentota",
+   "accom": "2 nights · Breakfast · Standard room · 3★ · Beachfront hotel on the Bentota strip",
+   "activities": [
+    {
+     "name": "Evening on the Madu River",
+     "day": 5,
+     "optional": false,
+     "match": "Madu River",
+     "description": "A late afternoon boat through the mangroves as the birds come home to roost."
+    },
+    {
+     "name": "Bentota sightseeing, cinnamon plantation and fish spa",
+     "day": 6,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The turtle hatchery, a cinnamon plantation, the fish pedicure centre and the beach."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights on the beach with an evening on the Madu river and a day of Bentota, the cinnamon plantation and the fish spa."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    7,
+    8
+   ],
+   "dayLabel": "Day 7 to 8",
+   "hotel": "Fairway Colombo",
+   "hotel_label": "Fairway Colombo",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Modern city hotel in the Colombo Fort district",
+   "activities": [
+    {
+     "name": "Colombo sightseeing and Pettah",
+     "day": 7,
+     "optional": false,
+     "match": "Colombo Sightseeing",
+     "description": "Galle Face Green, the Gangaramaya temple, the Fort district and the market lanes of Pettah."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A final night in the Fort district with the sights of the capital and the Pettah bazaars."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo and on to Kandy",
+  "2": "Kandy and a tea estate",
+  "3": "Up to Nuwara Eliya",
+  "4": "Nuwara Eliya sightseeing",
+  "5": "Down to the coast",
+  "6": "Bentota sightseeing",
+  "7": "Colombo and Pettah",
+  "8": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer inland",
+   "A stop at the Pinnawala elephant sanctuary on the way",
+   "Check in above the Kandy valley",
+   "The upper lake drive and the Kandyan dance performance"
+  ],
+  "2": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "The Peradeniya Royal Botanical Gardens",
+   "A tea plantation and factory above the town",
+   "The evening free in the lakeside bazaars"
+  ],
+  "3": [
+   "Breakfast and a transfer into the tea country",
+   "A plantation stop and tasting among the terraces",
+   "Check in close to Gregory Lake",
+   "An evening walk through Little England"
+  ],
+  "4": [
+   "Breakfast, then Ramboda Falls and a tea factory",
+   "Gregory Lake, Victoria Park and the Hakgala gardens",
+   "The Seetha Amman temple of the Ramayana trail",
+   "Optional: a round of golf on the colonial course"
+  ],
+  "5": [
+   "Breakfast and a long transfer down to Bentota",
+   "Check in on the beachfront",
+   "A late afternoon boat on the Madu River",
+   "Dinner by the sea"
+  ],
+  "6": [
+   "Breakfast, then the Kosgoda turtle hatchery",
+   "A cinnamon plantation and the fish pedicure centre",
+   "The afternoon on Bentota beach",
+   "Optional: water sports at the river mouth"
+  ],
+  "7": [
+   "Breakfast and a transfer up the coast to Colombo",
+   "Galle Face Green and the Gangaramaya temple",
+   "The Fort district and the market lanes of Pettah",
+   "Your last night in the capital"
+  ],
+  "8": [
+   "Breakfast at the hotel and check out",
+   "Private transfer to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B"
+ },
+ "hotel_by_day": {
+  "1": "Skyloft Kandy",
+  "2": "Skyloft Kandy",
+  "3": "Ashford Nuwara Eliya",
+  "4": "Ashford Nuwara Eliya",
+  "5": "Marina Bentota",
+  "6": "Marina Bentota",
+  "7": "Fairway Colombo",
+  "8": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Kandy, the hills and then the coast. Sri Lanka works best when you let the island cool you down before it warms you up again.",
+  "tip": "Carry a light sweater for Nuwara Eliya. It sits at nearly 1,900 metres and evenings are surprisingly chilly even in April."
+ },
+ "summary": "Eight days at an easy pace: two nights each in Kandy, the tea country and on the beach at Bentota, with the elephants, the dance show, a tea estate, the Madu River and the cinnamon plantation along the way, then a last night in Colombo.",
+ "included": "Included: 7 nights in deluxe class hotels with breakfast daily (lunch or dinner also included in Nuwara Eliya); private airport transfers and all road travel in an air conditioned car with chauffeur guide; the Pinnawala elephant sanctuary; the upper lake drive and Kandyan dance performance; Kandy sightseeing and a tea plantation; Nuwara Eliya sightseeing; an evening on the Madu River; Bentota sightseeing with the cinnamon plantation and fish spa; Colombo sightseeing and Pettah.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; lunches unless stated; entrance tickets where marked as payable locally; travel insurance; optional excursions; tips and personal expenses."
+}

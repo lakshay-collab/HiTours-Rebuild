@@ -1,0 +1,331 @@
+{
+ "cta_country": "sri-lanka",
+ "base": "/asia",
+ "crumbs": [
+  [
+   "Destinations",
+   "/#destinations"
+  ],
+  [
+   "Asia",
+   "/asia"
+  ],
+  [
+   "Sri Lanka",
+   "/asia/sri-lanka"
+  ]
+ ],
+ "source_slug": "10-days-sri-lanka-tour-package",
+ "camel": "grandSriLankaTenDaysDambullaYalaBentota",
+ "slug": "grand-sri-lanka-in-ten-days-dambulla-kandy-yala-and-bentota",
+ "title": "Grand Sri Lanka in Ten Days: Dambulla, Kandy, Yala and Bentota",
+ "alt": "A leopard resting on a rock in Yala National Park",
+ "transport": "Private air conditioned car with an English speaking chauffeur guide; 4x4 jeep for the Yala safari",
+ "tag": "Grand tour",
+ "tags": [
+  "Grand tour",
+  "Wildlife",
+  "Culture"
+ ],
+ "price": 109901,
+ "route_cities": [
+  "Colombo",
+  "Dambulla",
+  "Kandy",
+  "Nuwara Eliya",
+  "Yala",
+  "Bentota"
+ ],
+ "counts": {
+  "days": 10,
+  "nights": 9,
+  "cities": 6,
+  "hotels": 6,
+  "experiences": 9,
+  "transfers": 12,
+  "meals": 9
+ },
+ "stops": [
+  {
+   "letter": "A",
+   "name": "Colombo",
+   "city": "Colombo",
+   "days": [
+    1
+   ],
+   "dayLabel": "Day 1",
+   "hotel": "Berjaya Hotel Colombo",
+   "hotel_label": "Berjaya Hotel",
+   "accom": "1 night · Breakfast · Deluxe room · 4★ · Four star hotel on the Mount Lavinia beachfront south of the city",
+   "activities": [
+    {
+     "name": "Half day Colombo sightseeing",
+     "day": 1,
+     "optional": false,
+     "match": "Colombo",
+     "description": "Galle Face Green, the Gangaramaya temple, the Fort district and Independence Square in an afternoon."
+    }
+   ],
+   "program": {
+    "name": "Colombo",
+    "description": "A first night on the Mount Lavinia beachfront with a half day of the capital to start."
+   }
+  },
+  {
+   "letter": "B",
+   "name": "Dambulla",
+   "city": "Dambulla",
+   "days": [
+    2,
+    3
+   ],
+   "dayLabel": "Day 2 to 3",
+   "hotel": "Raintree Dambulla",
+   "hotel_label": "Raintree",
+   "accom": "2 nights · Breakfast and dinner · Deluxe room · 3★ · Deluxe class hotel among the paddy fields outside Dambulla",
+   "activities": [
+    {
+     "name": "Dambulla sightseeing tour",
+     "day": 3,
+     "optional": false,
+     "match": "Dambulla Sightseeing",
+     "description": "The five cave shrines of the golden temple, the Buddhist museum and the old village tank."
+    }
+   ],
+   "program": {
+    "name": "Dambulla",
+    "description": "Two nights in the Cultural Triangle with a free afternoon on arrival and a day of the cave temple, the museum and the village."
+   }
+  },
+  {
+   "letter": "C",
+   "name": "Kandy",
+   "city": "Kandy",
+   "days": [
+    4,
+    5
+   ],
+   "dayLabel": "Day 4 to 5",
+   "hotel": "Hotel Devon Kandy",
+   "hotel_label": "Hotel Devon",
+   "accom": "2 nights · Breakfast · Deluxe room · 3★ · Deluxe class hotel in the hills above Kandy town",
+   "activities": [
+    {
+     "name": "Pinnawala Elephant Orphanage",
+     "day": 4,
+     "optional": false,
+     "match": "Pinnawala",
+     "description": "A stop on the way up from the airport to watch the resident herd bathe in the Maha Oya river and feed at the sanctuary."
+    },
+    {
+     "name": "Kandy lake drive and Kandyan dance show",
+     "day": 4,
+     "optional": false,
+     "match": "Kandyan Dance",
+     "description": "An evening circuit of the lake followed by a traditional performance of drummers, masked dancers and the closing fire walk."
+    },
+    {
+     "name": "Full day Kandy sightseeing",
+     "day": 5,
+     "optional": false,
+     "match": "Kandy Sightseeing",
+     "description": "The Temple of the Sacred Tooth Relic, Peradeniya gardens, the Bahiravokanda Buddha and the gem museum."
+    }
+   ],
+   "program": {
+    "name": "Kandy",
+    "description": "Two nights in the hill capital with the elephants on the way, the dance show and a full day of the city."
+   }
+  },
+  {
+   "letter": "D",
+   "name": "Nuwara Eliya",
+   "city": "Nuwara Eliya",
+   "days": [
+    6
+   ],
+   "dayLabel": "Day 6",
+   "hotel": "Oak-Ray Summer Hill Breeze Hotel, Nuwara Eliya",
+   "hotel_label": "Oak Ray Summer Hill Breeze",
+   "accom": "1 night · Breakfast · Standard room · 3★ · Hill hotel with views over the Nuwara Eliya valley",
+   "activities": [
+    {
+     "name": "Lover's Leap waterfall",
+     "day": 6,
+     "optional": false,
+     "match": "Lover",
+     "description": "A short walk through the Pedro tea estate to the thirty metre fall above Nuwara Eliya."
+    }
+   ],
+   "program": {
+    "name": "Nuwara Eliya",
+    "description": "Up into the tea country with a stop at the Lovers Leap waterfall above the town."
+   }
+  },
+  {
+   "letter": "E",
+   "name": "Yala",
+   "city": "Yala",
+   "days": [
+    7
+   ],
+   "dayLabel": "Day 7",
+   "hotel": "Arana Yala",
+   "hotel_label": "Arana Yala",
+   "accom": "1 night · Breakfast · Deluxe room · 3★ · Deluxe class lodge on the edge of Yala National Park",
+   "activities": [
+    {
+     "name": "Optional: Yala jeep safari",
+     "day": 7,
+     "optional": true,
+     "match": "Yala",
+     "description": "A dawn or dusk 4x4 safari through block one, home to leopards, elephants, sloth bears and crocodiles."
+    }
+   ],
+   "program": {
+    "name": "Yala",
+    "description": "Across the hills to the dry south east for a night on the edge of the park."
+   }
+  },
+  {
+   "letter": "F",
+   "name": "Bentota",
+   "city": "Bentota",
+   "days": [
+    8,
+    9,
+    10
+   ],
+   "dayLabel": "Day 8 to 10",
+   "hotel": "Hibiscus Beach Hotel, Bentota",
+   "hotel_label": "Hibiscus Beach Hotel",
+   "accom": "2 nights · Breakfast · Deluxe room · 3★ · Deluxe class beach hotel with a pool facing the sea",
+   "activities": [
+    {
+     "name": "Kosgoda turtle hatchery",
+     "day": 8,
+     "optional": false,
+     "match": "Kosgoda",
+     "description": "The hatchery south of Bentota where eggs are protected and hatchlings released into the sea at dusk."
+    },
+    {
+     "name": "Full day Bentota sightseeing",
+     "day": 9,
+     "optional": false,
+     "match": "Bentota Sightseeing",
+     "description": "The Madu Ganga boat ride, the Kosgoda turtle hatchery, the Galapatha temple and an afternoon on Bentota beach."
+    }
+   ],
+   "program": {
+    "name": "Bentota",
+    "description": "Two nights on the beach with the turtle hatchery on arrival and a full day of the Madu River, the cinnamon island and the sand."
+   }
+  }
+ ],
+ "day_titles": {
+  "1": "Arrival in Colombo",
+  "2": "To the Cultural Triangle",
+  "3": "Dambulla sightseeing",
+  "4": "Elephants and the road to Kandy",
+  "5": "A full day in Kandy",
+  "6": "Into the tea country",
+  "7": "Across to Yala",
+  "8": "To the beach at Bentota",
+  "9": "Bentota sightseeing",
+  "10": "Departure from Colombo"
+ },
+ "bullets": {
+  "1": [
+   "Arrival at Bandaranaike International and private transfer to your hotel",
+   "A half day of Galle Face Green, the Gangaramaya temple and the Fort",
+   "Check in on the Mount Lavinia beachfront",
+   "The evening at leisure"
+  ],
+  "2": [
+   "Breakfast and a transfer north to Dambulla",
+   "Check in among the paddy fields",
+   "The afternoon at leisure by the pool",
+   "Optional: Pidurangala rock for sunset"
+  ],
+  "3": [
+   "Breakfast, then the five cave shrines of the golden temple",
+   "The Buddhist museum below the rock",
+   "The old village and its tank by bullock cart",
+   "Optional: a climb of Sigiriya rock fortress"
+  ],
+  "4": [
+   "Breakfast, then a transfer south via Pinnawala",
+   "Bath time for the herd in the Maha Oya river",
+   "Check in at your Kandy hotel",
+   "The lake drive and the Kandyan dance show"
+  ],
+  "5": [
+   "Breakfast, then the Temple of the Sacred Tooth Relic",
+   "The Peradeniya Royal Botanical Gardens",
+   "The hilltop Buddha at Bahiravokanda and the gem museum",
+   "The evening free in the lakeside bazaars"
+  ],
+  "6": [
+   "Breakfast and a transfer up to Nuwara Eliya",
+   "A walk through the Pedro estate to Lovers Leap waterfall",
+   "Check in with views over the valley",
+   "An evening by Gregory Lake"
+  ],
+  "7": [
+   "Breakfast and a long transfer down to the dry south east",
+   "Check in at your lodge on the park boundary",
+   "Optional: an afternoon jeep safari in Yala block one",
+   "An early night under the stars"
+  ],
+  "8": [
+   "Breakfast and a transfer west along the southern coast",
+   "The Kosgoda turtle hatchery on the way",
+   "Check in at your beach hotel",
+   "The evening at leisure on the sand"
+  ],
+  "9": [
+   "Breakfast, then a boat on the Madu River",
+   "The cinnamon island and the Galapatha temple",
+   "The afternoon on Bentota beach",
+   "Optional: water sports at the river mouth"
+  ],
+  "10": [
+   "Breakfast and check out",
+   "Private transfer up the coast to Bandaranaike International for your flight home"
+  ]
+ },
+ "meals": {
+  "1": "None",
+  "2": "B",
+  "3": "B",
+  "4": "B",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "B",
+  "10": "B"
+ },
+ "hotel_by_day": {
+  "1": "Berjaya Hotel Colombo",
+  "2": "Raintree Dambulla",
+  "3": "Raintree Dambulla",
+  "4": "Hotel Devon Kandy",
+  "5": "Hotel Devon Kandy",
+  "6": "Oak-Ray Summer Hill Breeze Hotel, Nuwara Eliya",
+  "7": "Arana Yala",
+  "8": "Hibiscus Beach Hotel, Bentota",
+  "9": "Hibiscus Beach Hotel, Bentota",
+  "10": "Departure"
+ },
+ "expert": {
+  "name": "Aditya",
+  "image": "/experts/aditya.webp",
+  "role": "Sri Lanka expert at Hi Tours",
+  "quote": "Yala at dawn is the single best morning you can have in Sri Lanka. Leopards are shy, but the elephants and peacocks never disappoint.",
+  "tip": "Wear neutral colours for the safari and keep the camera ready at the waterholes. The first hour after the gates open is when the cats move."
+ },
+ "summary": "The full island in ten days: Colombo, two nights in the Cultural Triangle at Dambulla, two in Kandy with the elephants and the dance show, the tea country and Lovers Leap, a night on the edge of Yala, and two nights on the beach at Bentota with the turtles and the Madu River.",
+ "included": "Included: 9 nights in deluxe class hotels with breakfast daily (lunch or dinner also in Dambulla and Nuwara Eliya); private airport transfers and all road travel in an air conditioned car with chauffeur guide; a half day Colombo sightseeing tour; the Dambulla sightseeing tour; the Pinnawala elephant sanctuary; Kandy lake drive and Kandyan dance show; a full day Kandy sightseeing tour; Lovers Leap waterfall; the Kosgoda turtle hatchery; a full day Bentota sightseeing tour.",
+ "not_included": "Not included: international flights; Sri Lanka ETA visa fees; the Yala jeep safari and park ticket; lunches and dinners unless stated; entrance tickets where payable locally; travel insurance; optional excursions; tips and personal expenses."
+}
