@@ -788,3 +788,18 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
   Policy", "Hi Tours Flex" -> "Hi Tours Cares". Both "Plan for free" buttons on /care open the lead modal (no /asia link).
 - Bali breadcrumbs/links already on /asia/bali; only LegacyRedirect keeps /asia/indonesia. Verified iteration_60.json (all pass).
 - P1 (user to confirm in a real browser): homepage hero video load speed, favicon look, social carousel scrolling.
+
+## Status update - 17 October 2026
+- DONE: Sri Lanka restored at /asia/sri-lanka (imported trips only): 34 itineraries (33 Thrillophilia sources incl. 4 "super deluxe"
+  hotel variants + 1 WanderOn group tour rewritten as Hi Tours). All pass check_trip.py; card photos unique across the 34; wired into
+  catalog, Asia aggregate, country facets, search, menus (Asia tab + Top 10, replacing Kazakhstan), footer, sitemap (340 URLs).
+  Tooling: scripts/thrillophilia/srilanka_table.py (editorial), gen_srilanka.py, check_srilanka.py. extract.py no longer downloads
+  images locally (6 GB filled the disk) unless DOWNLOAD_IMAGES=1; /app/import/*/images deleted.
+- DONE: Careers page restored to original; "Open Positions" (hero + mobile sticky) -> internal /careers/open-positions which embeds the
+  Recruit CRM job board (responsive iframe, header/footer kept). "All Open Positions" button appears after the visitor opens a job
+  inside the frame and reloads the list. Page handles ?from=recruitcrm / recruitcrm.io referrer: broadcasts to the original tab to
+  show the list and closes itself.
+- USER ACTION NEEDED: in Recruit CRM Admin Settings -> Public Job Page Settings -> Appearance, set "Link to More Jobs" to
+  https://<domain>/careers/open-positions?from=recruitcrm (currently www.hi.tours; opens in a new tab by Recruit CRM design).
+- Fixed 4px horizontal overflow at 768px from the sale badge tooltip (now display-toggled instead of opacity).
+- Razorpay request: user paused it; not started.

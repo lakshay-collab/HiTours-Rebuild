@@ -15,7 +15,7 @@ export const SaleTooltip = ({ children, className = '', testId, align = 'center'
     {children}
     <span
       role="tooltip"
-      className={`sale-tip pointer-events-none absolute top-full z-30 mt-2 w-max max-w-[260px] rounded-xl bg-[#002131] px-3.5 py-2.5 text-left text-white shadow-[0_10px_30px_rgba(0,33,49,0.35)] opacity-0 translate-y-1 transition-[opacity,transform] duration-200 group-hover/sale:opacity-100 group-hover/sale:translate-y-0 group-focus-visible/sale:opacity-100 group-focus-visible/sale:translate-y-0 ${align === 'right' ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}
+      className={`sale-tip pointer-events-none absolute top-full z-30 mt-2 w-max max-w-[260px] rounded-xl bg-[#002131] px-3.5 py-2.5 text-left text-white shadow-[0_10px_30px_rgba(0,33,49,0.35)] hidden group-hover/sale:block group-focus-visible/sale:block ${align === 'right' ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}
       data-testid={testId ? `${testId}-tooltip` : undefined}
     >
       <span className="flex items-center gap-2 t-label-lg"><T.Lead size={20} />{SALE.name}<T.Trail size={20} /></span>

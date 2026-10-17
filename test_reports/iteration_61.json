@@ -1,0 +1,42 @@
+{
+  "summary": "Frontend-only regression test of Sri Lanka restoration + Careers/Open Positions iframe flow. All requested features pass. One minor site-wide 4px horizontal overflow at 768px coming from the Diwali Sale announcement bar (not open-positions specific).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "/careers/open-positions (and site-wide) at 768px", "issues": ["Document scrollWidth=772 vs clientWidth=768 — 4px horizontal overflow caused by the sitewide Diwali Sale banner <span class='group/sale relative inline-flex'>. Minor, cosmetic."]}
+    ]
+  },
+  "test_results": {
+    "sri_lanka_listing": "PASS - /asia/sri-lanka → /asia/sri-lanka/holidays, H1 'Sri Lanka tours & holidays', 'Browse 34 package ideas', 0 broken images, 36 unique image srcs (not identical)",
+    "sri_lanka_detail_pages": "PASS - all 4 detail pages render H1, price, breadcrumb link to /asia/sri-lanka, day tabs, no console errors",
+    "sri_lanka_detail_lead_modal": "PASS - clicking data-testid=eg-detail-price-cta on /asia/sri-lanka-weekend-island-break-bentota-and-colombo opens dye-modal with 'Sri Lanka holiday' and dye-image-destination visible",
+    "homepage_top10": "PASS - Top 10 labels: Europe, Japan, Vietnam, Sri Lanka, Bali, Bhutan, Thailand, Singapore, China, Egypt (contains Sri Lanka, no Kazakhstan)",
+    "homepage_asia_tab": "PASS - Sri Lanka card linking to /asia/sri-lanka (not 'Coming soon'). Kazakhstan still present in Asia tab (expected)",
+    "homepage_search_srilanka": "PASS - typing 'Sri' in destination search returns Sri Lanka",
+    "asia_holidays_aggregate": "PASS - Country facet shows 'Sri Lanka (34)' on /asia/holidays",
+    "footer_srilanka": "PASS - footer anchor a[href=/asia/sri-lanka] present on homepage",
+    "careers_page": "PASS - data-testid=careers-hero present; data-testid=careers-hero-positions present and navigates to /careers/open-positions; Learn more button present; values/perks/awards sections present. Note: one empty <iframe> (no src) exists on /careers — likely a hidden placeholder (not Recruit CRM, which uses recruitcrm.io src)",
+    "careers_mobile_sticky": "PASS - data-testid=careers-sticky-positions visible at 390px and navigates to /careers/open-positions",
+    "open_positions_page": "PASS - site header + footer present; data-testid=open-positions-title='Open Positions'; data-testid=open-positions-back href=/careers; data-testid=open-positions-iframe src starts with https://recruitcrm.io/jobs/Hi_Tours_Group_jobs; 7 'View Job Description' buttons inside the frame; data-testid=open-positions-all NOT present initially",
+    "open_positions_horizontal_scroll": "PASS at 1920/390; MINOR 4px overflow at 768 caused by the sitewide Diwali Sale banner, not the Open Positions content itself",
+    "open_positions_all_button_flow": "PASS - clicking 'View Job Description' inside iframe makes data-testid=open-positions-all appear to the LEFT of 'Back to Careers' (all_left=1233.69 < back_left=1399.5); clicking it keeps URL at /careers/open-positions, the button disappears, iframe reloads with 7 'View Job Description' buttons visible again",
+    "care_cta_lead_modal_regression": "PASS - data-testid=care-hero-cta opens dye-image-destination lead modal with 'Worry-free holiday'",
+    "europe_holidays_regression": "PASS - /europe/holidays shows 'Browse 24 package ideas'",
+    "sitemap": "PASS - sitemap.xml contains /careers/open-positions (1) and 35 unique /asia/*sri-lanka* URLs (/asia/sri-lanka + 34 detail pages)",
+    "console_errors": "No console errors from Hi Tours app. Expected noise from inside Recruit CRM iframe (RSC payload warning + 404s originating at recruitcrm.io) — third-party, out of scope"
+  },
+  "test_report_links": [],
+  "action_items": [
+    "(Optional/minor) Investigate 4px horizontal overflow at 768px caused by the Diwali Sale announcement bar span — site-wide, not open-positions specific.",
+    "(Optional) /careers has one empty <iframe> element with no src — if unused, consider removing to keep the markup clean."
+  ],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100% (all requested checks pass)"},
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "To open the lead modal from a Sri Lanka detail page use data-testid=eg-detail-price-cta (shared Egypt-style template); the raw <a href='/l/.../enquiry/passengers/'> is a fallback-only route and renders blank if hit directly — the click handler intercepts and opens the dye-modal in-place, confirmed working. For the Recruit CRM iframe flow, click 'View Job Description' via page.frame_locator('[data-testid=open-positions-iframe]') (NOT via JS dispatch) — the 'All Open Positions' button appears via window blur when focus moves into the cross-origin iframe."
+}
