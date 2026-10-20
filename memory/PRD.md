@@ -803,3 +803,12 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
   https://<domain>/careers/open-positions?from=recruitcrm (currently www.hi.tours; opens in a new tab by Recruit CRM design).
 - Fixed 4px horizontal overflow at 768px from the sale badge tooltip (now display-toggled instead of opacity).
 - Razorpay request: user paused it; not started.
+
+## Status update - 20 October 2026: bookable prototype (Razorpay)
+- /asia/book/fully-loaded-sri-lanka = copy of the Fully Loaded Sri Lanka itinerary with every activity included (no Optional tags), CTA "Book now".
+- /asia/book/fully-loaded-sri-lanka/dates: rooms picker (max 2 adults + 1 child per room, add rooms), departure calendar with season tiers
+  (Dec-Mar +15%, Jul-Sep -10%, else regular; legend prices; selected stay highlighted), sticky summary, hotels with dates, included list.
+- /checkout: lead traveller form -> POST /api/bookings/order -> Razorpay Checkout.js -> POST /api/bookings/verify -> /confirmed/:id.
+- Pricing mirrored in backend/bookings.py and frontend/src/booking/bookable.js (rounding to ₹10, child 70%, active site sale applied).
+- Razorpay is MOCKED until RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET are added to backend/.env (then restart backend). Mock mode is flagged in UI.
+- Tested: iteration_62/63 (all pass).

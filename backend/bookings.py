@@ -113,7 +113,7 @@ def register(db):
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
                                               'status': 'created', 'amount_paise': amount_paise, 'mock': MOCK}, {'_id': 0})
         if pending:
-            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump()}})
+            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump(), 'quote': q}})
             return {'booking_id': pending['booking_id'], 'order_id': pending['razorpay_order_id'], 'amount': amount_paise, 'currency': 'INR',
                     'key_id': KEY_ID, 'mock': MOCK, 'quote': q}
         booking_id = 'HT' + uuid.uuid4().hex[:8].upper()

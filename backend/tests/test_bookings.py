@@ -88,7 +88,9 @@ class TestVerifyAndGet:
         gd = g.json()
         assert gd["status"] == "paid" and "razorpay_order_id" not in gd and "_id" not in gd
         assert gd["quote"]["total"] == d["quote"]["total"]
-        assert gd["contact"]["name"] == CONTACT["name"]
+        # PII masked
+        assert gd["contact"] == {"name": "TEST_Asha", "email": "te***@example.com", "phone": "***3210"}
+        assert "razorpay_payment_id" not in gd
 
     def test_bad_payment_400(self):
         d = order("2026-11-20", [{"adults": 2, "children": 0}]).json()
@@ -108,6 +110,45 @@ class TestVerifyAndGet:
         requests.post(f"{API}/verify", json={**body, "razorpay_payment_id": "pay_MOCK1"}, timeout=20)
         requests.post(f"{API}/verify", json={**body, "razorpay_payment_id": "pay_bad"}, timeout=20)
         assert requests.get(f"{API}/{d['booking_id']}", timeout=20).json()["status"] == "paid"
+
+    def test_paid_bad_verify_returns_200_paid(self):
+        d = order("2026-11-21", [{"adults": 2, "children": 0}], contact={**CONTACT, "email": "TEST_idem@example.com"}).json()
+        body = {"booking_id": d["booking_id"], "razorpay_order_id": d["order_id"], "razorpay_signature": "x"}
+        assert requests.post(f"{API}/verify", json={**body, "razorpay_payment_id": "pay_MOCK1"}, timeout=20).status_code == 200
+        v = requests.post(f"{API}/verify", json={**body, "razorpay_payment_id": "pay_bad"}, timeout=20)
+        assert v.status_code == 200 and v.json()["status"] == "paid"
+        assert requests.get(f"{API}/{d['booking_id']}", timeout=20).json()["status"] == "paid"
+
+    def test_pii_mask_ri(self):
+        c = {"name": "Riya Kapoor Shah", "email": "riya.k@example.com", "phone": "+919876543210"}
+        d = order("2026-11-22", [{"adults": 2, "children": 0}], contact=c).json()
+        g = requests.get(f"{API}/{d['booking_id']}", timeout=20).json()
+        assert g["contact"] == {"name": "Riya", "email": "ri***@example.com", "phone": "***3210"}
+        assert "razorpay_order_id" not in g and "razorpay_payment_id" not in g
+
+    def test_pending_order_reused(self):
+        c = {**CONTACT, "email": "TEST_reuse@example.com"}
+        a = order("2026-11-23", [{"adults": 2, "children": 1}], contact=c).json()
+        b = order("2026-11-23", [{"adults": 2, "children": 1}], contact=c).json()
+        assert a["booking_id"] == b["booking_id"] and a["order_id"] == b["order_id"]
+        # different rooms -> new booking
+        x = order("2026-11-23", [{"adults": 1, "children": 0}], contact=c).json()
+        assert x["booking_id"] != a["booking_id"]
+
+    def test_paid_order_not_reused(self):
+        c = {**CONTACT, "email": "TEST_reusepaid@example.com"}
+        a = order("2026-11-24", [{"adults": 2, "children": 0}], contact=c).json()
+        requests.post(f"{API}/verify", json={"booking_id": a["booking_id"], "razorpay_order_id": a["order_id"], "razorpay_payment_id": "pay_MOCK9", "razorpay_signature": "x"}, timeout=20)
+        b = order("2026-11-24", [{"adults": 2, "children": 0}], contact=c).json()
+        assert b["booking_id"] != a["booking_id"]
+
+    def test_reuse_same_amount_diff_rooms_quote(self):
+        """Same amount but different room split reuses pending order; stored quote rooms should match new rooms."""
+        c = {**CONTACT, "email": "TEST_reusequote@example.com"}
+        a = order("2026-11-25", [{"adults": 2, "children": 0}], contact=c).json()
+        b = order("2026-11-25", [{"adults": 1, "children": 0}, {"adults": 1, "children": 0}], contact=c).json()
+        g = requests.get(f"{API}/{b['booking_id']}", timeout=20).json()
+        assert g["quote"]["rooms"] == len(g["rooms"]), (a["booking_id"], b["booking_id"], g["quote"], g["rooms"])
 
     def test_unknown_get_404(self):
         assert requests.get(f"{API}/HTNOTREAL0", timeout=20).status_code == 404

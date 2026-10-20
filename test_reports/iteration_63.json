@@ -1,0 +1,31 @@
+{
+  "summary": "Retest of the iteration_62 fixes for the bookable Fully Loaded Sri Lanka flow. Every requested item passes. Backend: 23/24 pytest pass. Verify is idempotent (a paid booking given pay_bad returns 200 paid and stays paid). GET masks PII (Riya / ri***@example.com / ***3210) and has no razorpay ids. A pending order is reused (same booking_id and order_id). A past date returns 400 and 3 adults returns 422. Frontend: no 'Optional:' text on the book page with the tour summary open. Day 1 reads 'Sunset drinks on Galle Face Green'. The sidebar shows From Rs 41,829. eg-reviews-cta reads 'Book now' and links to /asia/book/fully-loaded-sri-lanka/dates. Hovering the selected day keeps bg rgb(23,67,88) with white text. The return day (27 Nov) shows the 'return' label and no tier dot. On mobile 390px the rooms rows stack and the children + button stays inside the card (button 321-357, card 16-374, no horizontal scroll). The confirmed-page icons stay 16px on mobile. 'Fetching your booking…' shows while the API is slow. Full desktop E2E: Nov 20 2026, 2A+1C = Rs 1,25,508 on dates, checkout, mock sheet and confirmed (HTE9431D06). The original page still has 'Design Your Escape' and the Optional tag. One new minor backend bug: when a pending order is reused, the stored quote is not refreshed.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/bookings/order", "issue": "Pending-order reuse matches on amount_paise. When the room split changes but the total stays the same (e.g. [2A] then [1A],[1A]), it reuses the booking and updates rooms/contact but NOT quote. The stored quote then says rooms:1 while rooms has 2 entries, so the confirmed page shows 'in 1 room'. Fix: also $set 'quote': q in the reuse update_one (bookings.py line 116), and return the new q (already done)."},
+      {"endpoint": "POST /api/bookings/order", "issue": "Reuse matches by email alone. Anyone who submits the same email/date/amount gets the existing pending booking_id back and overwrites its contact (name/phone). Low risk while the booking is unpaid."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Bookable detail sidebar", "issues": ["Strikethrough 'was' price Rs 46,347 with 'SAVE 10%' next to From Rs 41,829. 46,347 is not a bookable price anywhere (the regular bookable price is Rs 46,484, and the real sale is 5%), so the struck-through figure and the % are a bit misleading. Low priority."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_bookings.py", "/app/test_reports/pytest/pytest_bookings_63.xml"],
+  "action_items": [
+    "bookings.py reuse branch: also $set quote (and amount stays the same) so stored quote.rooms/adults/children match the new rooms"
+  ],
+  "critical_code_review_comments": [
+    "bookings.py L113-118: reuse lookup keys on amount_paise rather than the room composition; the stored quote is stale after reuse",
+    "BookConfirmed fetches GET twice in dev (React StrictMode). Harmless."
+  ],
+  "updated_files": ["/app/backend/tests/test_bookings.py (updated name assertion for PII masking; added idempotency, PII mask, reuse, paid-not-reused, stale-quote tests)"],
+  "success_rate": {"backend": "96% (23/24)", "frontend": "100%"},
+  "seed_data_creation": "TEST_-prefixed bookings created in db.bookings (emails test_asha@, TEST_idem@, TEST_reuse@, TEST_reusepaid@, TEST_reusequote@, test_riya_ui@, riya.k@example.com). UI booking HTE9431D06 (paid).",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Razorpay is MOCK. Mock sheet buttons: data-testid mock-pay-success / mock-pay-cancel (the container is mock-razorpay). Browser clock is around Oct 2026 and the sale is 5%. Regular Nov price is 46,484 adult / 32,540 child. test_reuse_same_amount_diff_rooms_quote fails until the quote is refreshed on reuse."
+}
