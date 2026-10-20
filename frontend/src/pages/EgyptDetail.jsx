@@ -436,7 +436,7 @@ export default function EgyptDetail() {
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />
           <EgyptPlanner className="eg-wide" titleClass="eg-headline-lg" data={dest.planner} tripTitle={detail.title} source="egypt-detail" quotes={buildDestinationReviews(dest.name).items} />
           <Features />
-          <EgyptReviews centered className="eg-container" h2={dest.reviewsH2} count={dest.reviewsCount} items={dest.reviewItems} cta={detail.cta} />
+          <EgyptReviews centered className="eg-container" h2={dest.reviewsH2} count={dest.reviewsCount} items={dest.reviewItems} cta={detail.cta} bookHref={detail.bookable?.datesPath} />
           <Recommended detail={detail} />
           <Steps />
         </div>

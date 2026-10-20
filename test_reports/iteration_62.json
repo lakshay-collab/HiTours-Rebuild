@@ -1,0 +1,49 @@
+{
+  "summary": "Tested the bookable Fully Loaded Sri Lanka flow end to end (detail -> dates -> checkout -> mock Razorpay -> confirmed) on desktop 1920 and mobile 390, plus 19 pytest API tests. Core flow works and UI totals match backend quote.total exactly (Nov 2026 2A+1C = Rs 1,25,508 on dates, checkout, mock sheet, order API and confirmed page). Bugs: (1) a paid booking is flipped to 'failed' by a later bad /verify call; (2) the 'Optional: sunset drinks on Galle Face Green' text still shows in the Tour summary of the book page; (3) on mobile the room-card children '+' button sticks out of the card; (4) hovering the selected calendar day shows white text on a light peach background. The review request's low-tier figure is wrong: the correct adult price is Rs 41,829 (base 44,030), not Rs 41,838 (44,040). The code is correct.",
+  "backend_issues": {
+    "critical": [
+      {"endpoint": "POST /api/bookings/verify", "issue": "Not idempotent. After a booking is 'paid', a second verify call with a bad payment id ('pay_bad') sets status to 'failed' (bookings.py line 142). Anyone who knows booking_id + order_id can downgrade a paid booking. Fix: if doc.status == 'paid', return {status:'paid'} early and never overwrite paid with failed.", "priority": "HIGH"}
+    ],
+    "minor": [
+      {"endpoint": "GET /api/bookings/{id}", "issue": "Public and unauthenticated, and returns contact PII (name, email, phone) to anyone with the 10-char booking id. Consider masking email/phone or adding a token."},
+      {"endpoint": "POST /api/bookings/order", "issue": "Every Pay click creates a new booking even after a cancel, so orphan 'created' bookings pile up (2 docs from one checkout in testing). Consider reusing the pending order for the same session/contact+date."},
+      {"endpoint": "POST /api/bookings/order", "issue": "date.today() uses server UTC while the frontend calendar and sale use IST/browser-local time. Small edge-of-day mismatch."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Bookable detail page > Tour summary (View tour summary / Tour summary panel)", "issue": "Text 'Optional: sunset drinks on Galle Face Green' is still visible. stripOptional in bookable.js only strips '^Optional: ' at the start of a string, but tourSummary.days[0].text has it after a '\\n'. Use replace(/(^|\\n)Optional: /g, '$1'). Also, stripped bullets now start lowercase ('sunset drinks on Galle Face Green'). Consider capitalising.", "selector": "tour summary days text", "priority": "MEDIUM"},
+      {"component": "DepartureCalendar selected day", "issue": "Hovering the selected day gives bg rgb(251,234,219) with white text (unreadable). The class string has both hover:bg-[#FBEADB] and hover:bg-[#174358], and the peach one wins. On mobile the sticky hover after a tap shows the same thing. Only add hover:bg-[#FBEADB] when !sel.", "selector": "[data-testid^=cal-day-][data-selected=true]", "priority": "MEDIUM"},
+      {"component": "RoomsPicker (mobile 390px)", "issue": "The grid-cols-2 Adults/Children rows don't fit. room-1-children-plus right edge is at 388px while the card's right edge is at 374px, so the button overflows the card. 'Adults / 12 years and over' wraps to 4 lines. Stack to 1 column below md (grid-cols-1 md:grid-cols-2).", "selector": "[data-testid=room-1-children-plus]", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Bookable detail page", "issues": ["Sidebar/sticky show 'From Rs 46,479 per person' (sale on base, no tier rounding), but the dates page regular price is Rs 46,484 and the cheapest is Rs 41,829. The 'From' price doesn't match any bookable price.", "eg-reviews-cta 'Design Your Escape' still links to the enquiry flow (/l/egypt/enquiry/passengers/) on the book-online page. Consider pointing it to the Book now dates page."]},
+      {"screen": "Confirmed page mobile", "issues": ["Mail/Phone icons shrink to about 8px next to wrapped text (add shrink-0)", "No loading state while GET /api/bookings/{id} is in flight (blank card area)"]},
+      {"screen": "Calendar", "issues": ["The 'return' label on the 7th day overlaps the tier dot at the bottom of the cell"]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_bookings.py", "/app/test_reports/pytest/pytest_bookings.xml"],
+  "action_items": [
+    "Make /api/bookings/verify idempotent: never downgrade a 'paid' booking to 'failed'",
+    "Strip 'Optional: ' after newlines too (tour summary days[].text) in bookable.js deepIncluded",
+    "Fix the selected-day hover style in DepartureCalendar (white on peach)",
+    "Fix the RoomsPicker mobile layout (children + button overflows the room card at 390px)",
+    "Optional: align the detail page 'From' price with the bookable tier prices; mask PII on public GET booking; reuse the pending order on retry"
+  ],
+  "critical_code_review_comments": [
+    "bookings.py verify(): no status guard, so a paid booking can be downgraded (see backend critical)",
+    "bookable.js stripOptional regex is anchored to the start of the string, so multi-line text keeps 'Optional:'",
+    "HotelsCard parses nights from description with a regex (h.description.match(/(\\d+) night/)[1]). This crashes if the data format changes. Prefer a structured nights field.",
+    "sale.js istDay adds getTimezoneOffset, so a browser actually in IST computes the UTC date, not the IST date. Near sale boundaries (e.g. 23 Dec 00:00-05:30 IST) the frontend applies 5% while the backend applies 0%, so totals differ. Pre-existing, but it now affects payment amounts.",
+    "BookConfirmed uses the URL :key, not booking.product. A wrong key renders nothing and shows no error.",
+    "Frontend and backend pricing are duplicated (PRODUCTS base 48925 hard-coded in bookings.py vs detail.price). Keep them in sync or expose a /quote endpoint."
+  ],
+  "updated_files": ["/app/backend/tests/test_bookings.py"],
+  "success_rate": {"backend": "95% (18/19)", "frontend": "90%"},
+  "seed_data_creation": "Created test bookings in db.bookings with contact names TEST_Asha Rao / Priya Sharma (email test_*@example.com). Example paid booking: HT6B1B718C.",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Env date is 20 Oct 2026 (Diwali 5% sale). Verified prices: regular adult 46,484 / child 32,540; peak (Jan 2027) 53,447 / 37,410; low (Aug 2027) 41,829 / 29,280 (the review request's 41,838 is an arithmetic slip, since 48925*0.9=44032.5 rounds to 44030). The calendar spans today+1 to today+365 (ends Oct 2027). Run: REACT_APP_BACKEND_URL=... pytest /app/backend/tests/test_bookings.py. test_paid_booking_not_downgraded_by_bad_verify should pass once the verify idempotency fix is in. The original page /asia/fully-loaded-sri-lanka-kandy-yala-safari-and-bentota has 0 eg-activity-optional tags (all activities optional:false in the source data); its 'Optional' is only bullet text. CTA there is 'Design Your Escape'.",
+  "rca of the issue": "Optional text leak: deepIncluded -> stripOptional uses /^Optional: / without the m/g flags, and tourSummary.days[0].text = '...\\nOptional: sunset drinks...'. Paid->failed: verify() runs update_one status='failed' whenever ok is false, with no check of the existing status."
+}

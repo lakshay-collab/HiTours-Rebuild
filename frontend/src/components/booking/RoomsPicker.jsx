@@ -31,7 +31,7 @@ export const RoomsPicker = ({ rooms, onChange }) => {
               </button>
             )}
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-center justify-between gap-3">
               <div><p className="eg-label-lg text-[#002131]">Adults</p><p className="eg-label-md text-[#5B6B74]">12 years and over</p></div>
               <Stepper value={r.adults} min={1} max={ROOM_MAX.adults} label="adults" testId={`room-${i + 1}-adults`} onChange={(v) => update(i, { adults: v })} />

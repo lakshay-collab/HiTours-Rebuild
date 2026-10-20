@@ -25,6 +25,8 @@ export default function BookConfirmed() {
       <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-6">
         <StepBar step={3} />
         {error && <p className="eg-body-lg text-[#B3261E]" data-testid="confirmed-error">{error}</p>}
+        {!booking && !error && <p className="eg-body-lg text-[#5B6B74]" data-testid="confirmed-loading">Fetching your booking…</p>}
+        {booking && !product && <p className="eg-body-lg text-[#B3261E]" data-testid="confirmed-error">This booking belongs to a different holiday.</p>}
         {booking && product && (
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-6">
@@ -35,8 +37,8 @@ export default function BookConfirmed() {
                 <p className="eg-body-md text-[#5B6B74]">{product.title} · departing {date && fmtDate(date)} · {q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? `, ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} in {q.rooms} room{q.rooms === 1 ? '' : 's'} · paid {fmtInr(q.total)}</p>
                 <hr className="border-[#E4E3DB]" />
                 <div className="flex flex-col gap-2 eg-body-md text-[#002131]">
-                  <p className="flex items-center gap-2"><Mail size={16} className="text-[#174358]" />A confirmation with your full itinerary is on its way to {booking.contact.email}.</p>
-                  <p className="flex items-center gap-2"><Phone size={16} className="text-[#174358]" />Your Sri Lanka expert Aditya will call {booking.contact.phone} within one working day to collect traveller names and talk through flights.</p>
+                  <p className="flex items-start gap-2"><Mail size={16} className="text-[#174358] shrink-0" />A confirmation with your full itinerary is on its way to your email ({booking.contact.email}).</p>
+                  <p className="flex items-start gap-2"><Phone size={16} className="text-[#174358] shrink-0" />Your Sri Lanka expert Aditya will call you on your number ending {booking.contact.phone.slice(-4)} within one working day to collect traveller names and talk through flights.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Link to={product.detailPath} className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="confirmed-view-trip">View the itinerary</Link>

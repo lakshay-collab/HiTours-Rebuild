@@ -45,12 +45,12 @@ export const DepartureCalendar = ({ product, selected, onSelect }) => {
             <button key={toISO(d)} type="button" disabled={disabled} onClick={() => onSelect(d)} onMouseEnter={() => !disabled && setHover(d)}
               aria-label={`${d.getDate()} ${MONTHS[d.getMonth()]}, ${TIERS[tier].label}, ${fmtInr(adultPrice(product.base, d))} per person`}
               className={`relative h-12 md:h-14 flex flex-col items-center justify-center gap-1 transition-colors
-                ${disabled ? 'text-[#C4CBD0] cursor-not-allowed bg-[repeating-linear-gradient(135deg,transparent_0_6px,#F1EFE6_6px_8px)]' : 'text-[#002131] hover:bg-[#FBEADB]'}
+                ${disabled ? 'text-[#C4CBD0] cursor-not-allowed bg-[repeating-linear-gradient(135deg,transparent_0_6px,#F1EFE6_6px_8px)]' : sel ? '' : 'text-[#002131] hover:bg-[#FBEADB]'}
                 ${stay || isRet ? 'bg-[#D7ECE4]' : ''} ${sel ? 'bg-[#174358] text-white rounded-xl hover:bg-[#174358]' : ''} ${isRet ? 'rounded-r-xl' : ''}`}
               data-testid={`cal-day-${toISO(d)}`} data-tier={tier} data-selected={sel || undefined}>
               <span className={`eg-label-lg ${sel ? 'text-white' : ''}`}>{d.getDate()}</span>
-              {!disabled && <span className={`w-1.5 h-1.5 rounded-full ${sel ? 'bg-white' : TIERS[tier].dot}`} />}
-              {isRet && !sel && <span className="absolute bottom-0.5 eg-label-md text-[#174358] text-[10px] leading-none">return</span>}
+              {!disabled && !isRet && <span className={`w-1.5 h-1.5 rounded-full ${sel ? 'bg-white' : TIERS[tier].dot}`} />}
+              {isRet && !sel && <span className="eg-label-md text-[#174358] text-[10px] leading-none">return</span>}
             </button>
           );
         })}

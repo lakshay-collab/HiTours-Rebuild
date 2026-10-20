@@ -106,11 +106,17 @@ def register(db):
         product = PRODUCTS.get(body.product)
         if not product:
             raise HTTPException(404, 'Unknown product')
-        if body.departure <= date.today():
+        if body.departure <= (datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)).date():
             raise HTTPException(400, 'Departure must be a future date')
         q = quote(product, body.departure, body.rooms)
-        booking_id = 'HT' + uuid.uuid4().hex[:8].upper()
         amount_paise = q['total'] * 100
+        pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
+                                              'status': 'created', 'amount_paise': amount_paise, 'mock': MOCK}, {'_id': 0})
+        if pending:
+            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump()}})
+            return {'booking_id': pending['booking_id'], 'order_id': pending['razorpay_order_id'], 'amount': amount_paise, 'currency': 'INR',
+                    'key_id': KEY_ID, 'mock': MOCK, 'quote': q}
+        booking_id = 'HT' + uuid.uuid4().hex[:8].upper()
         if MOCK:
             order = {'id': 'order_MOCK' + uuid.uuid4().hex[:10], 'amount': amount_paise, 'currency': 'INR'}
         else:
@@ -133,6 +139,8 @@ def register(db):
         doc = await db.bookings.find_one({'booking_id': body.booking_id}, {'_id': 0})
         if not doc or doc['razorpay_order_id'] != body.razorpay_order_id:
             raise HTTPException(404, 'Booking not found')
+        if doc['status'] == 'paid':
+            return {'status': 'paid', 'booking_id': body.booking_id}
         if doc['mock']:
             ok = body.razorpay_payment_id.startswith('pay_MOCK')
         else:
@@ -148,9 +156,12 @@ def register(db):
 
     @router.get('/{booking_id}')
     async def get_booking(booking_id: str):
-        doc = await db.bookings.find_one({'booking_id': booking_id}, {'_id': 0, 'razorpay_order_id': 0})
+        doc = await db.bookings.find_one({'booking_id': booking_id}, {'_id': 0, 'razorpay_order_id': 0, 'razorpay_payment_id': 0})
         if not doc:
             raise HTTPException(404, 'Booking not found')
+        c = doc['contact']
+        user, _, dom = c['email'].partition('@')
+        doc['contact'] = {'name': c['name'].split(' ')[0], 'email': f"{user[:2]}***@{dom}", 'phone': f"***{c['phone'][-4:]}"}
         return doc
 
     return router

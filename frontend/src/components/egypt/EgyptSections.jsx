@@ -45,7 +45,7 @@ const useMobile = () => {
   return m;
 };
 
-export function EgyptReviews({ centered = false, className = 'eg-container mt-12 md:mt-16', h2 = reviews.h2, count, cta = reviews.cta, items = reviews.items, row = false, h2Class }) {
+export function EgyptReviews({ centered = false, className = 'eg-container mt-12 md:mt-16', h2 = reviews.h2, count, cta = reviews.cta, items = reviews.items, row = false, h2Class, bookHref }) {
   const mobile = useMobile();
   const { openLead } = useLeadModal();
   return (
@@ -60,7 +60,9 @@ export function EgyptReviews({ centered = false, className = 'eg-container mt-12
         </div>
       )}
       <div className="mt-8 flex flex-col items-center gap-2">
-        <a href={reviews.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled h-10 px-14 eg-label-lg" data-testid="eg-reviews-cta">{cta}</a>
+        {bookHref
+          ? <a href={bookHref} className="eg-btn-filled h-10 px-14 eg-label-lg" data-testid="eg-reviews-cta">Book now</a>
+          : <a href={reviews.ctaHref} onClick={(e) => { e.preventDefault(); openLead(); }} className="eg-btn-filled h-10 px-14 eg-label-lg" data-testid="eg-reviews-cta">{cta}</a>}
         {!centered && <p className="eg-body-sm text-[#002131] text-center">{reviews.sub}</p>}
       </div>
     </section>

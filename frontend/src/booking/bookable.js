@@ -36,7 +36,7 @@ export const decodeRooms = (s) => {
   return rooms.length ? rooms : [{ adults: 2, children: 0 }];
 };
 
-const stripOptional = (s) => (typeof s === 'string' ? s.replace(/^Optional: /, '') : s);
+const stripOptional = (s) => (typeof s === 'string' ? s.replace(/(^|\n)Optional: (\w)/g, (_, pre, c) => pre + c.toUpperCase()) : s);
 const deepIncluded = (v) => {
   if (Array.isArray(v)) return v.map(deepIncluded);
   if (v && typeof v === 'object') {
@@ -52,6 +52,8 @@ const makeBookable = (bySlug, product, key) => {
   const data = deepIncluded(src);
   data.detail.slug = `book/${key}`;
   data.detail.bookable = { key, datesPath: `/asia/book/${key}/dates`, label: 'Book now' };
+  data.detail.ctaHref = `/asia/book/${key}/dates`;
+  data.detail.price = round10(src.detail.price * TIERS.low.mult);
   data.detail.glance = undefined;
   data.crumbs = [...data.crumbs.slice(0, -1), { label: `${src.detail.title} (book online)` }];
   const hotels = data.route.stops.map((s) => ({ name: s.accommodation.name, description: s.accommodation.description, image: s.accommodation.images?.[0], dayLabel: s.dayLabel, city: s.name }));
