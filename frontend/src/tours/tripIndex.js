@@ -26,6 +26,7 @@ import { norwayBySlug } from './norwayToursData';
 import { irelandBySlug } from './irelandToursData';
 import { finlandBySlug } from './finlandToursData';
 import { swedenBySlug } from './swedenToursData';
+import { bookableBySlug } from '../booking/bookable';
 import { thailandBySlug } from './thailandToursData';
 import { veniceViennaBySlug } from './veniceViennaData';
 import { bestOfThailandSingaporeMalaysiaHongKongBySlug } from './bestOfThailandSingaporeMalaysiaHongKongData';
@@ -598,6 +599,7 @@ export const BY_SLUG = {
   ...teaCountrySriLankaHattonKandyBySlug,
   ...sriLankaGroupTourSigiriyaEllaMirissaBySlug,
   ...sriLankaFamilyGetawayKandyBentotaBySlug,
+  ...bookableBySlug,
   ...grandSriLankaTenDaysDambullaYalaBentotaBySlug,
   ...scenicSriLankaKandyEllaGalleBySlug,
   ...sriLankanDelightSigiriyaKandyBentotaBySlug,

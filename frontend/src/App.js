@@ -30,6 +30,9 @@ import { Terms, Privacy } from './pages/Legal';
 import Press from './pages/Press';
 import Careers from './pages/Careers';
 import OpenPositions from './pages/OpenPositions';
+import BookDates from './pages/BookDates';
+import BookCheckout from './pages/BookCheckout';
+import BookConfirmed from './pages/BookConfirmed';
 import Sitemap from './pages/Sitemap';
 import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
@@ -145,6 +148,10 @@ function App() {
           <Route path="/asia/thailand/holidays" element={<ThailandHolidays />} />
           <Route path="/asia/thailand/holidays/:style" element={<ThailandHolidays />} />
           <Route path="/asia/thailand/honeymoons" element={<ThailandHoneymoons />} />
+          <Route path="/asia/book/:key/dates" element={<BookDates />} />
+          <Route path="/asia/book/:key/checkout" element={<BookCheckout />} />
+          <Route path="/asia/book/:key/confirmed/:bookingId" element={<BookConfirmed />} />
+          <Route path="/asia/book/:slug" element={<EgyptDetail />} />
           <Route path="/asia/:slug" element={<EgyptDetail />} />
           <Route path="/trip-styles/:slug" element={<TripStyleListing />} />
           <Route path="/themes/:slug" element={<ThemeListing />} />

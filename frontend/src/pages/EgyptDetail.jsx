@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useParams, Navigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import EgyptRoute, { RouteLine, Lightbox, toDays } from '../components/egypt/EgyptRoute';
@@ -92,7 +92,10 @@ import { buildDestinationReviews } from '../reviews/dynamicReviews';
 const stop = (e) => e.preventDefault();
 
 const CTA_LABEL = 'Design Your Escape';
-const Cta = ({ detail, className = '', testId, onClick }) => <a href={detail.ctaHref} onClick={(e) => { stop(e); onClick?.(); }} title={CTA_LABEL} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{CTA_LABEL}</a>;
+const Cta = ({ detail, className = '', testId, onClick }) => {
+  if (detail.bookable) return <Link to={detail.bookable.datesPath} title={detail.bookable.label} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{detail.bookable.label}</Link>;
+  return <a href={detail.ctaHref} onClick={(e) => { stop(e); onClick?.(); }} title={CTA_LABEL} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{CTA_LABEL}</a>;
+};
 
 const Ratings = ({ className = '' }) => (
   <div className={`flex flex-wrap items-center justify-center gap-x-6 gap-y-2 ${className}`} data-testid="eg-ratings-row">
@@ -390,6 +393,7 @@ function StickyBar({ detail, inr, onCta }) {
 
 export default function EgyptDetail() {
   const { slug } = useParams();
+  const { pathname } = useLocation();
   const [summaryOpen, setSummaryOpen] = useState(false);
   const [leadOpen, setLeadOpen] = useState(false);
   const openLead = useCallback(() => setLeadOpen(true), []);
@@ -398,7 +402,7 @@ export default function EgyptDetail() {
     setSummaryOpen(true);
     requestAnimationFrame(() => { const el = document.getElementById('summary'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 16, behavior: 'smooth' }); });
   };
-  const data = BY_SLUG[slug];
+  const data = BY_SLUG[pathname.includes('/book/') ? `book/${slug}` : slug];
   const dest = data ? destinationFor(data.detail) : null;
   usePageLead(dest?.name || '', data?.detail.gallery?.[0], data?.detail.alt);
   usePageMeta(

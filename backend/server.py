@@ -180,6 +180,8 @@ async def get_leads():
 
 # Include the router in the main app
 app.include_router(api_router)
+from bookings import register as register_bookings
+app.include_router(register_bookings(db))
 
 app.add_middleware(
     CORSMiddleware,
