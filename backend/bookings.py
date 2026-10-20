@@ -29,9 +29,10 @@ PRODUCTS = {
         'base': 48925, 'nights': 7, 'destination': 'Sri Lanka',
     },
 }
-PEAK = {12, 1, 2, 3}
-LOW = {7, 8, 9}
 CHILD_FACTOR = 0.7
+MIN_LEAD_DAYS = 10
+MAX_MONTHS_AHEAD = 4
+BLACKOUT = {'2026-12-24', '2026-12-25', '2026-12-31', '2027-01-01', '2027-01-26', '2027-03-04', '2027-03-05'}
 MAX_ADULTS, MAX_CHILDREN = 2, 1
 # Mirrors frontend/src/sale.js (traveller's real saving by booking-date window, IST)
 SALES = [('2026-10-09', '2026-11-05', 5), ('2026-11-06', '2026-12-22', 5), ('2027-01-05', '2027-01-26', 5),
@@ -51,13 +52,20 @@ def round10(n: float) -> int:
     return jsround(n / 10.0) * 10
 
 
-def tier_for(d: date) -> str:
-    return 'peak' if d.month in PEAK else 'low' if d.month in LOW else 'regular'
-
-
 def adult_price(base: int, d: date) -> int:
-    mult = {'peak': 1.15, 'low': 0.9, 'regular': 1.0}[tier_for(d)]
-    return jsround(round10(base * mult) * (1 - sale_percent() / 100))
+    return jsround(round10(base) * (1 - sale_percent() / 100))
+
+
+def ist_today() -> date:
+    return (datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)).date()
+
+
+def last_bookable() -> date:
+    t = ist_today()
+    m = t.month + MAX_MONTHS_AHEAD + 1
+    y = t.year + (m - 1) // 12
+    m = (m - 1) % 12 + 1
+    return date(y, m, 1) - timedelta(days=1)
 
 
 class Room(BaseModel):
@@ -92,7 +100,7 @@ def quote(product: dict, departure: date, rooms: List[Room]) -> dict:
     children = sum(r.children for r in rooms)
     total = adults * pp + children * child
     return {'adult_price': pp, 'child_price': child, 'adults': adults, 'children': children,
-            'rooms': len(rooms), 'total': total, 'tier': tier_for(departure), 'sale_percent': sale_percent(),
+            'rooms': len(rooms), 'total': total, 'sale_percent': sale_percent(),
             'return_date': (departure + timedelta(days=product['nights'])).isoformat()}
 
 
@@ -106,8 +114,12 @@ def register(db):
         product = PRODUCTS.get(body.product)
         if not product:
             raise HTTPException(404, 'Unknown product')
-        if body.departure <= (datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)).date():
-            raise HTTPException(400, 'Departure must be a future date')
+        if body.departure < ist_today() + timedelta(days=MIN_LEAD_DAYS):
+            raise HTTPException(400, f'Check-in must be at least {MIN_LEAD_DAYS} days from today so we can arrange your travel')
+        if body.departure > last_bookable():
+            raise HTTPException(400, f'Online booking is open up to {MAX_MONTHS_AHEAD} months ahead')
+        if body.departure.isoformat() in BLACKOUT:
+            raise HTTPException(400, 'This check-in date is not available')
         q = quote(product, body.departure, body.rooms)
         amount_paise = q['total'] * 100
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
