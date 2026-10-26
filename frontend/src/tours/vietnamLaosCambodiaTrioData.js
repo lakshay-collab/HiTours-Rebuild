@@ -72,23 +72,20 @@ const stops = [
       'Back in Hanoi in the evening'
     ],
     accommodation: {
-      name: 'Hm Boutique Hotel Hanoi, Hanoi',
+      name: 'Hanoi Media Hotel & Spa, Hanoi',
+      stars: 4,
+      city: 'Hanoi',
+      source: 'https://www.booking.com/hotel/vn/meracus.en-gb.html',
+      description: '3 nights · Breakfast and dinner · 4★ · Old Quarter hotel on Hang Dau with a spa, restaurant and sky bar',
+      images: [
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588951.jpg?k=abf730ac1f2ad8782ace70e0d29cac7555968196cf52bfb6a7c78d8228daa810&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/238700041.jpg?k=f7bc56e01a4b7decb68d48cd468bf8e5aac602df2d52976e701b21e8b983ebd4&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588886.jpg?k=bc42bbe4d4533bcbe67299853be67c4d7a7d4d945a5f70e3444cd2d9cbdef055&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588947.jpg?k=c7d80992d6f80cfc85b53266588ac413645147ab5369cd116ec0ec83d7dc9a03&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/732022328.jpg?k=bccd249ef94820aabf63e34e468ebbdf06465c91372071c7aa12c68cfdc4a325&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295587753.jpg?k=7868a9df7e9d160c66c1bcc6c02f6e6e04adf8d69c167de665da78f1b94836e2&o='
+      ],
       options: [
-        {
-          name: 'Hanoi Media Hotel & Spa, Hanoi',
-          stars: 4,
-          city: 'Hanoi',
-          source: 'https://www.booking.com/hotel/vn/meracus.en-gb.html',
-          description: '3 nights · Breakfast and dinner · 4★ · Old Quarter hotel on Hang Dau with a spa, restaurant and sky bar',
-          images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588951.jpg?k=abf730ac1f2ad8782ace70e0d29cac7555968196cf52bfb6a7c78d8228daa810&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/238700041.jpg?k=f7bc56e01a4b7decb68d48cd468bf8e5aac602df2d52976e701b21e8b983ebd4&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588886.jpg?k=bc42bbe4d4533bcbe67299853be67c4d7a7d4d945a5f70e3444cd2d9cbdef055&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588947.jpg?k=c7d80992d6f80cfc85b53266588ac413645147ab5369cd116ec0ec83d7dc9a03&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/732022328.jpg?k=bccd249ef94820aabf63e34e468ebbdf06465c91372071c7aa12c68cfdc4a325&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295587753.jpg?k=7868a9df7e9d160c66c1bcc6c02f6e6e04adf8d69c167de665da78f1b94836e2&o='
-          ]
-        },
         {
           name: 'Hanoi Pearl Hotel, Hanoi',
           stars: 4,
@@ -119,15 +116,6 @@ const stops = [
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/514735687.jpg?k=24396f43132c1934a37b884134ccc3d8e8e66f76fd7b82d4a70d4af6d747d367&o='
           ]
         }
-      ],
-      description: '3 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter',
-      images: [
-        img('7sy9oqqi7pnpuwxq2fv81z2bt2hf_DSC01260-1280.jpg'),
-        img('7twnl25zq5eu5l1fatdv4aobarjv_img45.jpg'),
-        img('mn4kwii0rj637p1fy1n5gk9ic3xw_img23.jpg'),
-        img('k73z8uhny5i8235x93i1rn0ndji0_244884180.jpg'),
-        img('kdrzv1d2gpyuv349jwo9j1p8e55i_244885999.jpg'),
-        img('mzluxd5hc3n50hwl1r6m1cvga072_img41.jpg')
       ]
     },
     activities: [
@@ -207,23 +195,20 @@ const stops = [
       'Back in town in the late afternoon'
     ],
     accommodation: {
-      name: 'Villa Namkhan River, Luang Prabang',
+      name: 'Burasari Heritage Luang Prabang, Luang Prabang',
+      stars: 5,
+      city: 'Luang Prabang',
+      source: 'https://www.booking.com/hotel/la/burasari-heritage.en-gb.html',
+      description: '3 nights · Breakfast · 5★ · Old Town hotel overlooking the Nam Khan river, with a spa and restaurant',
+      images: [
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476880.jpg?k=ec6e4bb431a89383d772196803e4f82f1d2d8492bed83594c4835f899b21806b&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476532.jpg?k=25bf4bbc69bca3c1188b851380fd2e474a972aac048edc0ab8c70af13466a353&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229317509.jpg?k=4305e1c1ed1a8c232fcc70911860a5b890536bb0cc5ee6bbcafe934335047a3f&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476451.jpg?k=6f6fe11948e7840341f8797b7f37a09cd6a81a19df9369a94aab69d694b9420c&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229321303.jpg?k=7992200c9a1147c37a1d766ef47d02d5e9bf8dba8b8db5d925d108f8cf4c3ba6&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476974.jpg?k=b1f8ce2d7f456c5331fb3b2e2a96e225def1c1fa48af530709c90dd2ddb22d48&o='
+      ],
       options: [
-        {
-          name: 'Burasari Heritage Luang Prabang, Luang Prabang',
-          stars: 5,
-          city: 'Luang Prabang',
-          source: 'https://www.booking.com/hotel/la/burasari-heritage.en-gb.html',
-          description: '3 nights · Breakfast · 5★ · Old Town hotel overlooking the Nam Khan river, with a spa and restaurant',
-          images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476880.jpg?k=ec6e4bb431a89383d772196803e4f82f1d2d8492bed83594c4835f899b21806b&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476532.jpg?k=25bf4bbc69bca3c1188b851380fd2e474a972aac048edc0ab8c70af13466a353&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229317509.jpg?k=4305e1c1ed1a8c232fcc70911860a5b890536bb0cc5ee6bbcafe934335047a3f&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476451.jpg?k=6f6fe11948e7840341f8797b7f37a09cd6a81a19df9369a94aab69d694b9420c&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229321303.jpg?k=7992200c9a1147c37a1d766ef47d02d5e9bf8dba8b8db5d925d108f8cf4c3ba6&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476974.jpg?k=b1f8ce2d7f456c5331fb3b2e2a96e225def1c1fa48af530709c90dd2ddb22d48&o='
-          ]
-        },
         {
           name: 'Maison Dalabua, Luang Prabang',
           stars: 4,
@@ -269,20 +254,6 @@ const stops = [
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/611336754.jpg?k=f6111aa1e3037918a14c246befc20b9339bd0b82043f67efcae97908d94c4806&o='
           ]
         }
-      ],
-      description: '3 nights · Breakfast · Standard room · 3★ · Small riverside villa hotel on the Nam Khan at Luang Prabang',
-      images: [
-        img('ydwnn0azeqi6zhzfz5xoll2kxjjm_photo0jpg%20(1).jpg'),
-        img('ak2c19um1r1dz1x9by9accp5ntft_duluxe-family-room.jpg'),
-        img('pd1fn73y7tn19koy6o24pfxatw3h_superior-triple-with.jpg'),
-        img('sxwkgxqrfigb68nf6csnkqwqo3xb_photo8jpg.jpg'),
-        img('ld449z8wj10uqz8j6vninvjbykza_villa-namkhan-river%20(2).jpg'),
-        img('d3nsuyw3k6mo5s3to371sk2cuhd2_0e74601fe5d0a97732d67e6e7409b870.webp'),
-        img('1sbho3e79cwlyw8u52dc294qnvfl_villa-namkhan-river%20(1).jpg'),
-        img('vs0lidu8a7j0pf8z8ygpxwzs10hs_c92e2fc80cc4990c97454ffaeeab5c88.webp'),
-        img('1enyybjezq4og7mtyogjdageo5h1_photo1jpg.jpg'),
-        img('78xl25r0mciva1kz5tbmal1ukrb4_f4e8c48ee285f74a1a07384ebaf267c0.jpg'),
-        img('8vgub60wdiascoj0iaucx87u502c_120284845.jpg')
       ]
     },
     activities: [
@@ -365,23 +336,20 @@ const stops = [
       'Private transfer to the airport for your flight home'
     ],
     accommodation: {
-      name: 'HARI Residence and Spa Siem Reap, Siem Reap',
+      name: 'Central Suite Residence, Siem Reap',
+      stars: 4,
+      city: 'Siem Reap',
+      source: 'https://www.booking.com/hotel/kh/central-suite-residence.en-gb.html',
+      description: '3 nights · Breakfast and dinner · 4★ · City centre hotel on Sok San Road near Pub Street, with an outdoor pool and restaurant',
+      images: [
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/776104497.jpg?k=55b354516fd24632e1362a4c4fc75f4cb6c8d390bc0097088b11f5796fa27797&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768987404.jpg?k=674505add5e91dbf3de607cc46e2b4b4cf8d70a1cc777e45f9f0d45728a33ab2&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768990427.jpg?k=efd733eed62470f7302b4814ec9d2ae06b8dbf36b166436c6a470f6008c49e4f&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/227690805.jpg?k=2cabe71824992fe283e627e4c36ffb4c60ce5c452f86b33c8ba9a4ab92afea9d&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/769002537.jpg?k=c0cd805f00cd85354144da06f0d9c3fd583ce9e5b9874a140518591d3041a90f&o=',
+        'https://cf.bstatic.com/xdata/images/hotel/max1024x768/219881594.jpg?k=4487382bc01cac3588c75d95b9b6035d271b086a5ab7426ba135c3e43d2181e0&o='
+      ],
       options: [
-        {
-          name: 'Central Suite Residence, Siem Reap',
-          stars: 4,
-          city: 'Siem Reap',
-          source: 'https://www.booking.com/hotel/kh/central-suite-residence.en-gb.html',
-          description: '3 nights · Breakfast and dinner · 4★ · City centre hotel on Sok San Road near Pub Street, with an outdoor pool and restaurant',
-          images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/776104497.jpg?k=55b354516fd24632e1362a4c4fc75f4cb6c8d390bc0097088b11f5796fa27797&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768987404.jpg?k=674505add5e91dbf3de607cc46e2b4b4cf8d70a1cc777e45f9f0d45728a33ab2&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768990427.jpg?k=efd733eed62470f7302b4814ec9d2ae06b8dbf36b166436c6a470f6008c49e4f&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/227690805.jpg?k=2cabe71824992fe283e627e4c36ffb4c60ce5c452f86b33c8ba9a4ab92afea9d&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/769002537.jpg?k=c0cd805f00cd85354144da06f0d9c3fd583ce9e5b9874a140518591d3041a90f&o=',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/219881594.jpg?k=4487382bc01cac3588c75d95b9b6035d271b086a5ab7426ba135c3e43d2181e0&o='
-          ]
-        },
         {
           name: 'Siem Reap Palace Hotel & Spa, Siem Reap',
           stars: 4,
@@ -412,24 +380,6 @@ const stops = [
             'https://cf.bstatic.com/xdata/images/hotel/max1024x768/269680259.jpg?k=2ec004c0a7d1b4f0044cd2c3e12427807a8ddd398c95a3dea02e4a1b1edcc4ad&o='
           ]
         }
-      ],
-      description: '3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market',
-      images: [
-        img('31ed6uyw36ewbejmdmw3oevnjtb3_3C2A7845%20copy%20(1).jpg'),
-        img('1nw9tc4uftb6qs4m79o37cybooce__V0A0690%20copy%20(1).jpg'),
-        img('946uwaxujy0tef05mzn15owfna6l__V0A0228%20copy.jpg'),
-        img('1n0u2yh1rkix6ek7f26glxqa898s_009%20copy%20(1).jpg'),
-        img('wxjg4uilol303hl7tw0nx9uzcfp4_DJI_0290%20(1).jpg'),
-        img('447nu4vz3wurg17hdy17sx05a60n__V0A0498.jpg'),
-        img('ej2ge86ngndj1omkwpoi31ktapoz__V0A0602%20(1).jpg'),
-        img('2yakiv90q6oty76jziy1nicd2mre__V0A9740.jpg'),
-        img('bffkbqz6a04c3pfp0qt4szn9wmwg__V0A0594%20(1).jpg'),
-        img('qa7v4bwwq5rmppftw5ofvr8x1naj__V0A0619.jpg'),
-        img('cki4fowhz1ocp1txlylcfiwjp5ny__V0A9722.jpg'),
-        img('rrqj4bdzevrwqee1elwfb4anyfxy__V0A0672%20copy.jpg'),
-        img('fx6l3oilx64bvdekjolhgsu9uesi__V0A0166%20copy.jpg'),
-        img('2cn6xaa6mu8j32zg1r6als81wx5k__V0A0618.jpg'),
-        img('czs09egy7scy9msy2zy9uin8krxa__V0A0679.jpg')
       ]
     },
     activities: [
@@ -516,15 +466,15 @@ const glance = {
   dayHeading: 'Day',
   routeHeading: 'Route',
   days: [
-    { title: 'Day 1: Arrival in Hanoi (Arrival)', text: 'Arrival at Noi Bai airport and transfer to your hotel\nCheck in at your hotel in the old quarter\nRest of the day free at your own pace\nOptional: an evening walk around Hoan Kiem lake', hotel: 'Hm Boutique Hotel Hanoi', highlights: ['Arrival at Noi Bai airport and transfer to your hotel', 'Check in at your hotel in the old quarter', 'Rest of the day free at your own pace'] },
-    { title: 'Day 2: Ninh Binh and Bich Dong (B, D)', text: 'Breakfast, then south towards Ninh Binh\nA rowing boat through the flooded caves at Tam Coc\nA cycle ride through the rice fields\nBich Dong, a pagoda built into the rock', hotel: 'Hm Boutique Hotel Hanoi', highlights: ['Breakfast, then south towards Ninh Binh', 'A rowing boat through the flooded caves at Tam Coc', 'A cycle ride through the rice fields'] },
-    { title: 'Day 3: Halong Bay day cruise (B, D)', text: 'Early breakfast, then east towards the coast\nA full day on the bay aboard a dragon boat\nThe limestone islands and the floating villages\nBack in Hanoi in the evening', hotel: 'Hm Boutique Hotel Hanoi', highlights: ['Early breakfast, then east towards the coast', 'A full day on the bay aboard a dragon boat', 'The limestone islands and the floating villages'] },
-    { title: 'Day 4: On to Luang Prabang (Travel)', text: 'Check out, then the flight to Laos\nCheck in on the river at Luang Prabang\nRest of the day free at your own pace\nOptional: the night market along Sisavangvong road', hotel: 'Villa Namkhan River', highlights: ['Check out, then the flight to Laos', 'Check in on the river at Luang Prabang', 'Rest of the day free at your own pace'] },
-    { title: 'Day 5: Luang Prabang sightseeing (B)', text: 'Breakfast, then a guided day of the old town\nThe royal palace museum and Wat Xieng Thong\nThe climb up Mount Phousi\nSunset over the two rivers', hotel: 'Villa Namkhan River', highlights: ['Breakfast, then a guided day of the old town', 'The royal palace museum and Wat Xieng Thong', 'The climb up Mount Phousi'] },
-    { title: 'Day 6: Elephant village day (B)', text: 'Breakfast, then out to the elephant camp\nA morning with the mahouts and their elephants\nWalking them down to the river\nBack in town in the late afternoon', hotel: 'Villa Namkhan River', highlights: ['Breakfast, then out to the elephant camp', 'A morning with the mahouts and their elephants', 'Walking them down to the river'] },
-    { title: 'Day 7: Siem Reap and Tonle Sap (B, D)', text: 'Breakfast and check out, then the flight to Cambodia\nCheck in at Siem Reap\nA boat out onto the great lake\nA floating village built on stilts and pontoons', hotel: 'HARI Residence and Spa Siem Reap', highlights: ['Breakfast and check out, then the flight to Cambodia', 'Check in at Siem Reap', 'A boat out onto the great lake'] },
-    { title: 'Day 8: Angkor Wat (B, D)', text: 'Early breakfast, then into the Angkor park\nAngkor Wat and the Bayon faces at Angkor Thom\nThe root covered ruins of Ta Prohm\nBack at the hotel by evening', hotel: 'HARI Residence and Spa Siem Reap', highlights: ['Early breakfast, then into the Angkor park', 'Angkor Wat and the Bayon faces at Angkor Thom', 'The root covered ruins of Ta Prohm'] },
-    { title: 'Day 9: Phnom Kulen (B, D)', text: 'Breakfast, then north to the sacred mountain\nThe waterfall and the pools at Phnom Kulen\nThe reclining Buddha cut into the rock\nThe river of a thousand lingas', hotel: 'HARI Residence and Spa Siem Reap', highlights: ['Breakfast, then north to the sacred mountain', 'The waterfall and the pools at Phnom Kulen', 'The reclining Buddha cut into the rock'] },
+    { title: 'Day 1: Arrival in Hanoi (Arrival)', text: 'Arrival at Noi Bai airport and transfer to your hotel\nCheck in at your hotel in the old quarter\nRest of the day free at your own pace\nOptional: an evening walk around Hoan Kiem lake', hotel: 'Hanoi Media Hotel & Spa', highlights: ['Arrival at Noi Bai airport and transfer to your hotel', 'Check in at your hotel in the old quarter', 'Rest of the day free at your own pace'] },
+    { title: 'Day 2: Ninh Binh and Bich Dong (B, D)', text: 'Breakfast, then south towards Ninh Binh\nA rowing boat through the flooded caves at Tam Coc\nA cycle ride through the rice fields\nBich Dong, a pagoda built into the rock', hotel: 'Hanoi Media Hotel & Spa', highlights: ['Breakfast, then south towards Ninh Binh', 'A rowing boat through the flooded caves at Tam Coc', 'A cycle ride through the rice fields'] },
+    { title: 'Day 3: Halong Bay day cruise (B, D)', text: 'Early breakfast, then east towards the coast\nA full day on the bay aboard a dragon boat\nThe limestone islands and the floating villages\nBack in Hanoi in the evening', hotel: 'Hanoi Media Hotel & Spa', highlights: ['Early breakfast, then east towards the coast', 'A full day on the bay aboard a dragon boat', 'The limestone islands and the floating villages'] },
+    { title: 'Day 4: On to Luang Prabang (Travel)', text: 'Check out, then the flight to Laos\nCheck in on the river at Luang Prabang\nRest of the day free at your own pace\nOptional: the night market along Sisavangvong road', hotel: 'Burasari Heritage Luang Prabang', highlights: ['Check out, then the flight to Laos', 'Check in on the river at Luang Prabang', 'Rest of the day free at your own pace'] },
+    { title: 'Day 5: Luang Prabang sightseeing (B)', text: 'Breakfast, then a guided day of the old town\nThe royal palace museum and Wat Xieng Thong\nThe climb up Mount Phousi\nSunset over the two rivers', hotel: 'Burasari Heritage Luang Prabang', highlights: ['Breakfast, then a guided day of the old town', 'The royal palace museum and Wat Xieng Thong', 'The climb up Mount Phousi'] },
+    { title: 'Day 6: Elephant village day (B)', text: 'Breakfast, then out to the elephant camp\nA morning with the mahouts and their elephants\nWalking them down to the river\nBack in town in the late afternoon', hotel: 'Burasari Heritage Luang Prabang', highlights: ['Breakfast, then out to the elephant camp', 'A morning with the mahouts and their elephants', 'Walking them down to the river'] },
+    { title: 'Day 7: Siem Reap and Tonle Sap (B, D)', text: 'Breakfast and check out, then the flight to Cambodia\nCheck in at Siem Reap\nA boat out onto the great lake\nA floating village built on stilts and pontoons', hotel: 'Central Suite Residence', highlights: ['Breakfast and check out, then the flight to Cambodia', 'Check in at Siem Reap', 'A boat out onto the great lake'] },
+    { title: 'Day 8: Angkor Wat (B, D)', text: 'Early breakfast, then into the Angkor park\nAngkor Wat and the Bayon faces at Angkor Thom\nThe root covered ruins of Ta Prohm\nBack at the hotel by evening', hotel: 'Central Suite Residence', highlights: ['Early breakfast, then into the Angkor park', 'Angkor Wat and the Bayon faces at Angkor Thom', 'The root covered ruins of Ta Prohm'] },
+    { title: 'Day 9: Phnom Kulen (B, D)', text: 'Breakfast, then north to the sacred mountain\nThe waterfall and the pools at Phnom Kulen\nThe reclining Buddha cut into the rock\nThe river of a thousand lingas', hotel: 'Central Suite Residence', highlights: ['Breakfast, then north to the sacred mountain', 'The waterfall and the pools at Phnom Kulen', 'The reclining Buddha cut into the rock'] },
     { title: 'Day 10: Departure from Siem Reap (-)', text: 'Check out after an early breakfast\nPrivate transfer to the airport for your flight home', hotel: 'Departure', highlights: ['Check out after an early breakfast', 'Private transfer to the airport for your flight home'] }
   ],
   outro: 'Not included: international flights; Vietnam, Laos and Cambodia visa fees; lunches; travel insurance; personal expenses.'
