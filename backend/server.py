@@ -182,6 +182,8 @@ async def get_leads():
 app.include_router(api_router)
 from bookings import register as register_bookings
 app.include_router(register_bookings(db))
+from group_bookings import register as register_group_bookings
+app.include_router(register_group_bookings(db))
 
 app.add_middleware(
     CORSMiddleware,

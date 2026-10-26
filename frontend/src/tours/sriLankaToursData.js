@@ -33,8 +33,10 @@ import { sriLankanSplendourKandyNuwaraEliyaBentotaFiveDaysProduct } from './sriL
 import { sriLankaWeekendBentotaColomboProduct } from './sriLankaWeekendBentotaColomboData';
 import { jewelsOfSriLankaKandyBentotaColomboProduct } from './jewelsOfSriLankaKandyBentotaColomboData';
 import { sriLankaShortBreakKandyColomboProduct } from './sriLankaShortBreakKandyColomboData';
+import { insideSriLankaProduct } from '../grouptours/insideSriLankaData';
 
 export const sriLankaProducts = [
+  insideSriLankaProduct,
   tropicalSriLankaKandySigiriyaBentotaProduct,
   fullyLoadedSriLankaYalaSafariProduct,
   exoticSriLankaCouplesKandyBentotaProduct,

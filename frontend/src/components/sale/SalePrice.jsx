@@ -40,14 +40,14 @@ const useCountDown = (from, to, duration = 1400) => {
 };
 
 // Props: price (number) · from/per labels · size: 'card' | 'detail' | 'bar'
-export default function SalePrice({ price, fromLabel = 'From', perLabel = 'per person', size = 'card', testId = 'sale-price', className = '' }) {
-  const discounted = salePrice(price);
-  const struck = listPrice(price);
+export default function SalePrice({ price, fromLabel = 'From', perLabel = 'per person', size = 'card', testId = 'sale-price', className = '', noSale = false }) {
+  const discounted = noSale ? price : salePrice(price);
+  const struck = noSale ? price : listPrice(price);
   const [ref, shown] = useCountDown(struck, discounted);
   const priceCls = { card: 'eg-price', detail: 'eg-price', bar: 'eg-price !text-[20px] !leading-6 md:!text-[22px]' }[size];
   const labelCls = size === 'bar' ? 'eg-body-sm' : 'eg-body-md';
 
-  if (!SALE || typeof price !== 'number') {
+  if (!SALE || noSale || typeof price !== 'number') {
     return (
       <p className={`flex items-baseline gap-1.5 text-[#6F777C] ${className}`} data-testid={testId}>
         <span className={labelCls}>{fromLabel}</span>

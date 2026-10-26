@@ -52,7 +52,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
             <button type="button" onClick={() => go(1)} className="eg-arrow pointer-events-auto" aria-label="Next image" data-testid="eg-product-next"><ChevronRight size={24} /></button>
           </div>
           <ImageMeta days={days} cities={cities} />
-          <SaleBadge variant="chip" className="absolute right-3 top-3" testId="eg-product-sale-chip" />
+          {!p.noSale && <SaleBadge variant="chip" className="absolute right-3 top-3" testId="eg-product-sale-chip" />}
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
               {meals != null && <Stat icon={MealIcon} value={`${meals} meals`} testId="eg-product-meals" />}
             </div>
           )}
-          <SalePrice price={p.price} className="mt-auto pt-4" testId="eg-product-price" />
+          <SalePrice price={p.price} noSale={p.noSale} className="mt-auto pt-4" testId="eg-product-price" />
         </div>
       </Wrap>
     </article>
