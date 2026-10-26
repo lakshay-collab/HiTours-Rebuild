@@ -812,3 +812,8 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Pricing mirrored in backend/bookings.py and frontend/src/booking/bookable.js (rounding to ₹10, child 70%, active site sale applied).
 - Razorpay is MOCKED until RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET are added to backend/.env (then restart backend). Mock mode is flagged in UI.
 - Tested: iteration_62/63 (all pass).
+
+## 2026-06 Laos hotel options (QC sheet)
+- Vietnam, Laos and Cambodia trip (/asia/vietnam-laos-and-cambodia): added `accommodation.options` per stop from the Booking.com links in the QC sheet (Hanoi: Hanoi Media, Hanoi Pearl, Capella; Luang Prabang: Burasari Heritage, Maison Dalabua, Avani+, Sofitel; Siem Reap: Central Suite Residence, Siem Reap Palace, Angkor Aurora). Name, stars, city, source URL, 6 Booking.com gallery photos each. Existing hotels kept.
+- EgyptRoute Accommodation now renders extra HotelCard per option (testids eg-accommodation-*-option-N).
+- Pending from sheet remarks (not done, needs user OK): remove Day 1 Ninh Binh and Day 7 Tonle Sap/Angkor/Phnom Kulen.

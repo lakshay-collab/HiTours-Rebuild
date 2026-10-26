@@ -124,20 +124,29 @@ export function Lightbox({ images, name, onClose, start = 0, portrait = false })
   );
 }
 
-function Accommodation({ a }) {
+function HotelCard({ a, id = '' }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
-      <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
-      <div className="flex bg-[#FBF9F1] border border-[#C4CBD0] rounded-xl overflow-hidden" data-testid="eg-accommodation-card">
-        <button type="button" onClick={() => setOpen(true)} className="relative w-[120px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" /></button>
+    <>
+      <div className="flex bg-[#FBF9F1] border border-[#C4CBD0] rounded-xl overflow-hidden" data-testid={`eg-accommodation-card${id}`}>
+        <button type="button" onClick={() => setOpen(true)} className="relative w-[120px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
         <div className="p-4 flex flex-col justify-center gap-1 min-w-0">
-          <h5 className="eg-title-md text-[#002131]" data-testid="eg-accommodation-name">{a.name}</h5>
+          <h5 className="eg-title-md text-[#002131]" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
           <p className="eg-body-md text-[#174358] capitalize">{a.description}</p>
-          <button type="button" onClick={() => setOpen(true)} className="self-start inline-flex items-center gap-1 pt-1 eg-label-lg text-[#174358] underline" data-testid="eg-accommodation-photos"><GalleryIcon size={16} />{route.viewPhotos} ({a.images.length})</button>
+          <button type="button" onClick={() => setOpen(true)} className="self-start inline-flex items-center gap-1 pt-1 eg-label-lg text-[#174358] underline" data-testid={`eg-accommodation-photos${id}`}><GalleryIcon size={16} />{route.viewPhotos} ({a.images.length})</button>
         </div>
       </div>
       {open && <Lightbox images={a.images} name={a.name} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
+function Accommodation({ a }) {
+  return (
+    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
+      <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
+      <HotelCard a={a} />
+      {(a.options || []).map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
     </div>
   );
 }

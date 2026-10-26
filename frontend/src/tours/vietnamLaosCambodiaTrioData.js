@@ -73,6 +73,53 @@ const stops = [
     ],
     accommodation: {
       name: 'Hm Boutique Hotel Hanoi, Hanoi',
+      options: [
+        {
+          name: 'Hanoi Media Hotel & Spa, Hanoi',
+          stars: 4,
+          city: 'Hanoi',
+          source: 'https://www.booking.com/hotel/vn/meracus.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 4★ · Old Quarter hotel on Hang Dau with a spa, restaurant and sky bar',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588951.jpg?k=abf730ac1f2ad8782ace70e0d29cac7555968196cf52bfb6a7c78d8228daa810&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/238700041.jpg?k=f7bc56e01a4b7decb68d48cd468bf8e5aac602df2d52976e701b21e8b983ebd4&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588886.jpg?k=bc42bbe4d4533bcbe67299853be67c4d7a7d4d945a5f70e3444cd2d9cbdef055&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295588947.jpg?k=c7d80992d6f80cfc85b53266588ac413645147ab5369cd116ec0ec83d7dc9a03&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/732022328.jpg?k=bccd249ef94820aabf63e34e468ebbdf06465c91372071c7aa12c68cfdc4a325&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/295587753.jpg?k=7868a9df7e9d160c66c1bcc6c02f6e6e04adf8d69c167de665da78f1b94836e2&o='
+          ]
+        },
+        {
+          name: 'Hanoi Pearl Hotel, Hanoi',
+          stars: 4,
+          city: 'Hanoi',
+          source: 'https://www.booking.com/hotel/vn/hanoi-pearl.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 4★ · Old Quarter hotel a minute on foot from Hoan Kiem lake, with a fitness centre and spa',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/223094802.jpg?k=d75f3d22c43b6d320e33cade349596846a01885473a35c67784c9ced86f565e2&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/285503600.jpg?k=3a24b437454cd1762e47e174bb31e5e4d6b8f0598cf347b38fdcdc1f055cb658&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/799686271.jpg?k=256d22d7ef2ce1eb1ba00325219b93ea1aeb034ac165a2428e8d1939866bc8e2&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/799738751.jpg?k=d4998c53181f8b8faeefde069304559f350a1b6d751915aa62f524d3cabe9cdb&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/799708719.jpg?k=1be40c49d11bb37e55c3df371702f90ebe9f5c250610ad1f218ea0422204dae9&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/799738740.jpg?k=428fcfeb45e7bffcbf7dcf34cfee5334594c515863d5a7eeef6c554d46d59aca&o='
+          ]
+        },
+        {
+          name: 'Capella Hanoi, Hanoi',
+          stars: 5,
+          city: 'Hanoi',
+          source: 'https://www.booking.com/hotel/vn/capella-hoan-kiem.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 5★ · Luxury hotel in Hoan Kiem with a spa, indoor pool and fitness centre',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/848812097.jpg?k=2a31ebc64fa8d979cbc0cfd7f168cb4bb77732c51b571de80fd7cf0690735805&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/514728740.jpg?k=af906a02abf2951dc39bf2d65f504c5224d4bf3d21f9b411cdaf3afd2aa4e03f&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/514731631.jpg?k=5399dfe118aa81b4c15a4560ceba01f178b50dfe7a91b6ff38b377cb544c9797&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/285818899.jpg?k=19cca51bb241a4cd987e25b818e39b58e0c51ace9acc4c0bf784bb174ef5d0e2&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/842299901.jpg?k=be5bd6e384b26e39385b65f0526c98b0de254067685e7cb9ff5f8677963942e6&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/514735687.jpg?k=24396f43132c1934a37b884134ccc3d8e8e66f76fd7b82d4a70d4af6d747d367&o='
+          ]
+        }
+      ],
       description: '3 nights · Breakfast and dinner · Standard room · 3★ · Small boutique hotel in the old quarter',
       images: [
         img('7sy9oqqi7pnpuwxq2fv81z2bt2hf_DSC01260-1280.jpg'),
@@ -161,6 +208,68 @@ const stops = [
     ],
     accommodation: {
       name: 'Villa Namkhan River, Luang Prabang',
+      options: [
+        {
+          name: 'Burasari Heritage Luang Prabang, Luang Prabang',
+          stars: 5,
+          city: 'Luang Prabang',
+          source: 'https://www.booking.com/hotel/la/burasari-heritage.en-gb.html',
+          description: '3 nights · Breakfast · 5★ · Old Town hotel overlooking the Nam Khan river, with a spa and restaurant',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476880.jpg?k=ec6e4bb431a89383d772196803e4f82f1d2d8492bed83594c4835f899b21806b&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476532.jpg?k=25bf4bbc69bca3c1188b851380fd2e474a972aac048edc0ab8c70af13466a353&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229317509.jpg?k=4305e1c1ed1a8c232fcc70911860a5b890536bb0cc5ee6bbcafe934335047a3f&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476451.jpg?k=6f6fe11948e7840341f8797b7f37a09cd6a81a19df9369a94aab69d694b9420c&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/229321303.jpg?k=7992200c9a1147c37a1d766ef47d02d5e9bf8dba8b8db5d925d108f8cf4c3ba6&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/51476974.jpg?k=b1f8ce2d7f456c5331fb3b2e2a96e225def1c1fa48af530709c90dd2ddb22d48&o='
+          ]
+        },
+        {
+          name: 'Maison Dalabua, Luang Prabang',
+          stars: 4,
+          city: 'Luang Prabang',
+          source: 'https://www.booking.com/hotel/la/maison-dalabua.en-gb.html',
+          description: '3 nights · Breakfast · 4★ · Boutique hotel set among gardens and lotus ponds, with a pool, spa and two restaurants',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/898894924.jpg?k=839f747c68ac33b462aa174e42b0fb9b208573f95709bce2dfde14033c019318&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/896334632.jpg?k=c6f53e07a82209901c6e31e8a499005363f3101e855662578e2984d2c145fcee&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/898897840.jpg?k=ca8d9dca1206f475b4c209a50f11bbdea4a7f5daff15f31746b5fa2ab2f3b3e4&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/896338739.jpg?k=969f3dac1ad405bfc7798f356efa0af371926c5f799d48e9f7c1073bc6fdceb9&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/896340687.jpg?k=a21b26fffbfdc67e362265486dbf97b4588c3dfc870fbb97cbee53f166f680e6&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/584037008.jpg?k=e0a817a48750e0ffeffe171dfbf1df7571693a90310f1231d3391e7d7b971d79&o='
+          ]
+        },
+        {
+          name: 'Avani+ Luang Prabang Hotel, Luang Prabang',
+          stars: 5,
+          city: 'Luang Prabang',
+          source: 'https://www.booking.com/hotel/la/avani-luang-prabang.en-gb.html',
+          description: '3 nights · Breakfast · 5★ · Hotel in the heart of the UNESCO old town, steps from the night market, with an outdoor pool',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/831673885.jpg?k=3b6fff4d21aa41eee5e7e32d213bf761ac8a36f93ba7b0d22c3ac18c13ac6b66&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/870271966.jpg?k=03a37e4ecca9ea26e52018fd0747315bb9b9a7769d1c72b60adc10864d455cd5&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/94795274.jpg?k=69a26984f3aab33a78607143913d9a937efc356167e3c20a98df86c06be5de62&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/831673828.jpg?k=10ba5a61c2c72628117e3576124b5d49c6331e3196599b55d744bedb17056b40&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/141797780.jpg?k=a0f7d266d902bf19031e62ef86651f10019b07d157e95cb18ecc524d71470c58&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/238713700.jpg?k=dd08761a3e27203a9232b857ad7d5de4876a90fc2f8a6d3b682b2fcffec450a7&o='
+          ]
+        },
+        {
+          name: 'Sofitel Luang Prabang, Luang Prabang',
+          stars: 5,
+          city: 'Luang Prabang',
+          source: 'https://www.booking.com/hotel/la/sofitel-luang-prabang.en-gb.html',
+          description: '3 nights · Breakfast · 5★ · French colonial heritage hotel set in gardens, with an outdoor pool and spa',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/763980094.jpg?k=8884fcb3d5ea34a7f8191c5c8e4881e7da0b8c3ff56274d4de79cab029d53be1&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/611336751.jpg?k=1847eee9f238de2573125a932d837836aa1da190f7ee657333f96fc626c467a3&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/925840604.jpg?k=7ef908bc7ee4757352df2baef818a4413a1959a87de4e47bc79ed126ed40d631&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/931818977.jpg?k=3e3ac369d995b860f6cea70ef5c589f5e124a14533bc10da4739b582637e0be8&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/611336778.jpg?k=8e38663dc45bc5f25e843970faa7c95ce343842ada8c6e101f03877097c155a2&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/611336754.jpg?k=f6111aa1e3037918a14c246befc20b9339bd0b82043f67efcae97908d94c4806&o='
+          ]
+        }
+      ],
       description: '3 nights · Breakfast · Standard room · 3★ · Small riverside villa hotel on the Nam Khan at Luang Prabang',
       images: [
         img('ydwnn0azeqi6zhzfz5xoll2kxjjm_photo0jpg%20(1).jpg'),
@@ -257,6 +366,53 @@ const stops = [
     ],
     accommodation: {
       name: 'HARI Residence and Spa Siem Reap, Siem Reap',
+      options: [
+        {
+          name: 'Central Suite Residence, Siem Reap',
+          stars: 4,
+          city: 'Siem Reap',
+          source: 'https://www.booking.com/hotel/kh/central-suite-residence.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 4★ · City centre hotel on Sok San Road near Pub Street, with an outdoor pool and restaurant',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/776104497.jpg?k=55b354516fd24632e1362a4c4fc75f4cb6c8d390bc0097088b11f5796fa27797&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768987404.jpg?k=674505add5e91dbf3de607cc46e2b4b4cf8d70a1cc777e45f9f0d45728a33ab2&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/768990427.jpg?k=efd733eed62470f7302b4814ec9d2ae06b8dbf36b166436c6a470f6008c49e4f&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/227690805.jpg?k=2cabe71824992fe283e627e4c36ffb4c60ce5c452f86b33c8ba9a4ab92afea9d&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/769002537.jpg?k=c0cd805f00cd85354144da06f0d9c3fd583ce9e5b9874a140518591d3041a90f&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/219881594.jpg?k=4487382bc01cac3588c75d95b9b6035d271b086a5ab7426ba135c3e43d2181e0&o='
+          ]
+        },
+        {
+          name: 'Siem Reap Palace Hotel & Spa, Siem Reap',
+          stars: 4,
+          city: 'Siem Reap',
+          source: 'https://www.booking.com/hotel/kh/siem-reap-palace-residence.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 4★ · Hotel in Wat Damnak village with an outdoor pool, spa and restaurant',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/226301582.jpg?k=6e09588a3386fd92b84956dd8c0474fa590f262c87ee30b6909f9b4a571ae004&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/225830827.jpg?k=7a477a573a46746ca045bc778ac1c450d9c92953b317f03700fa88f32fdca423&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/225229640.jpg?k=26c4f6d0847ed7eb4333d5bc38ec8d463cc0e21b542759dec7410e93e8a55f54&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/420872146.jpg?k=2b2dd5f13d2bf05a7cc266e55d0ebad1dadbbcf0c3dc587e0f53a9aa5132c416&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/217568243.jpg?k=6fa054a48dfe26dc322a58e2b8b38794fbeea59c47ce3fbd2698f267fcc51ce3&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/416937669.jpg?k=78685532702436aa835514b824ddd8d42ee5b17a95adff6e04ca174c94c6350f&o='
+          ]
+        },
+        {
+          name: 'Angkor Aurora, Siem Reap',
+          stars: 4,
+          city: 'Siem Reap',
+          source: 'https://www.booking.com/hotel/kh/angkor-aurora.en-gb.html',
+          description: '3 nights · Breakfast and dinner · 4★ · Hotel in Wat Bo with an outdoor pool, spa, restaurant and bar',
+          images: [
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/269679630.jpg?k=0bd57c327ec2d23fe11e3193e85d3edf70a386bb8906e05622365e988313050c&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/544619105.jpg?k=a699108449309b57676bfe5f3f5e518bb20758c6522d57ba08e7c9b0f2a3cbae&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/544618665.jpg?k=92b033ee3a072b873bd1922e3200bcd3b6f8b569ecca177dda715b4b439cb803&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/544618453.jpg?k=cf2e37d5049bfba03ba1217bcca3ce91a922dee370fbbb34ec4768e9dd8fd9d6&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/499349389.jpg?k=cc6e81a38c6c962369b29863486b7ff89f547f60062345c6692b6cfead7da936&o=',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/269680259.jpg?k=2ec004c0a7d1b4f0044cd2c3e12427807a8ddd398c95a3dea02e4a1b1edcc4ad&o='
+          ]
+        }
+      ],
       description: '3 nights · Breakfast and dinner · Standard room · 3★ · Small hotel with a pool, a short ride from the old market',
       images: [
         img('31ed6uyw36ewbejmdmw3oevnjtb3_3C2A7845%20copy%20(1).jpg'),
