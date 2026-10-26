@@ -135,11 +135,11 @@ def register(db):
             order = {'id': 'order_MOCK' + uuid.uuid4().hex[:10], 'amount': amount_paise, 'currency': 'INR'}
         else:
             order = _rzp.order.create({'amount': amount_paise, 'currency': 'INR', 'receipt': booking_id,
-                                       'payment_capture': 1, 'notes': {'booking_id': booking_id, 'product': body.product, 'payment': 'deposit'}})
+                                       'payment_capture': 1, 'notes': {'booking_id': booking_id, 'product': body.product, 'payment': 'full' if dep['full_payment'] else 'deposit'}})
         doc = {
             'booking_id': booking_id, 'kind': 'group', 'product': body.product, 'title': p['title'],
             'departure': dep['id'], 'travellers': body.travellers, 'room': body.room,
-            'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise, 'payment': 'deposit',
+            'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise, 'payment': 'full' if dep['full_payment'] else 'deposit',
             'razorpay_order_id': order['id'], 'status': 'created', 'mock': MOCK,
             'created_at': datetime.now(UTC).isoformat(),
         }

@@ -1,0 +1,37 @@
+{
+  "summary": "Retest of Inside Sri Lanka group-tour fixes (clock 2026-10-26). Backend: new test_group_seats_fullpay.py (5 tests) plus regression test_group_bookings.py (15 tests): 20/20 pass. Departures under 60 days (11-14, 11-28, 12-12) return full_payment true, deposit_pct 100 and balance_due null. Later departures have 10% (5% early-bird from 13 Feb) with balance_due = start - 60 days. A paid order on 2027-01-09 for 2 people cut seats_left from 6 to 4 and changed the status to limited; an unpaid order did not change seats. Ordering 5 then returned 400 ('Only 4 seats left'). Frontend desktop 1440: centring days 3/8/11/1/5 sets the matching active day. Yala pin is active and the caption reads 'Day 8 · Yala'. Nuwara Eliya and Ella labels do not overlap. No fetchpriority or other console errors. Mobile 390: centring days 2/6/10 sets the matching active day, and the compact map shows 8 pins with only the active label. Dates rows, modal (Nov 14 full-payment box, no balance line, 'Reserve · pay ₹4,00,000'; Jan 9 '10% deposit today ₹43,000', balance ₹3,87,000, 'Reserve with ₹43,000 deposit') and checkout (pax clamped to 4 with notice and ₹8,00,000 total; Jan 9 ₹43,000 deposit with balance; Nov 14 'pay in full', 'Pay ₹2,00,000 full payment') all checked. The desktop E2E for 2027-01-23 (pax 2, twin) went modal -> checkout -> mock ₹43,000 -> confirmed page with Deposit paid ₹43,000, Balance due by 24 Nov 2026, Trip total ₹4,30,000. The API then returned seats_left 0 / sold_out and the detail row showed Sold out with a disabled button. The TEST_ booking was deleted and seats went back to 2.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/bookings/verify (group)", "issue": "Seats are only checked when the order is created, not when payment is verified. Two pending orders for the last seats can both be paid, which oversells the departure. seats_left is then clamped to 0, which hides the oversell."},
+      {"endpoint": "POST /api/bookings/group/order", "issue": "The booking doc always stores payment:'deposit' and Razorpay notes payment:'deposit', even for full-payment departures. It should be 'full' when dep.full_payment is true."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Detail page sidebar card + mobile sticky bar", "issues": ["Both still say 'Pay only ₹20,000 deposit today (10%)' (mobile: 'Pay only ₹20,000 deposit'), but the next 3 departures need full payment. The headline should use the next open departure, or say 'from ₹20,000 deposit on departures 60+ days out'."]},
+      {"screen": "Group checkout (full payment)", "issues": ["Step 2 of the stepper still says 'Pay deposit' on full-payment departures", "In the summary box, 'Full payment due now' and '₹8,00,000' have almost no gap between them"]},
+      {"screen": "Dates section intro", "issues": ["Copy 'secure your seat with a small deposit' does not mention that departures under 60 days are paid in full (minor)"]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_group_seats_fullpay.py", "/app/backend/tests/test_group_bookings.py", "/app/test_reports/pytest/pytest_results_iter65.xml"],
+  "action_items": [
+    "Optional: re-check seats_left in verify for group bookings (or reserve seats atomically) to stop overselling",
+    "Store payment:'full' on group bookings when dep.full_payment is true",
+    "Make the sidebar and mobile-bar 'Pay only ₹20,000 deposit' copy match the full payment needed on the nearest departures",
+    "Change checkout step 2 to 'Pay in full' for full-payment departures and add a gap between the label and amount in the summary box"
+  ],
+  "critical_code_review_comments": [
+    "group_bookings.py: verify does not re-check seats, so concurrent paid orders can oversell; live_departures' max(0, ...) hides it",
+    "test_group_bookings.py::test_verify_and_get created PAID TEST_ bookings with no cleanup. Since seats are now cut by paid bookings, each run took 2 seats off 2027-02-13 (it had dropped from 10 to 4). I added a module teardown fixture that deletes TEST_group* bookings",
+    "Under xdist, the module teardown can run in one worker while the other is still running tests. Low flakiness risk; passed 2 times"
+  ],
+  "updated_files": ["/app/backend/tests/test_group_bookings.py (added cleanup fixture)", "/app/backend/tests/test_group_seats_fullpay.py (new)"],
+  "success_rate": {"backend": "100% (20/20)", "frontend": "100% of requested checks"},
+  "seed_data_creation": "None left behind. All TEST_ group bookings were deleted from db.bookings, and 2027-02-13 is back to 10 seats.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Clock 2026-10-26. Seats pattern: 11-14:9, 11-28:4, 12-12:12, 12-26:0, 01-09:6, 01-23:2, 02-13:10, ... minus PAID bookings. Nov 14 / Nov 28 / Dec 12 are full payment. Run REACT_APP_BACKEND_URL=... pytest backend/tests/test_group_bookings.py backend/tests/test_group_seats_fullpay.py; both clean up TEST_ bookings. Modal months go Nov=0, Dec=1, Jan=2 (gcal-next twice to reach Jan)."
+}

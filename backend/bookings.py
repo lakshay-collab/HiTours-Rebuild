@@ -161,6 +161,13 @@ def register(db):
         if not ok:
             await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {'status': 'failed'}})
             raise HTTPException(400, 'Payment signature could not be verified')
+        if doc.get('kind') == 'group':
+            from group_bookings import live_departures
+            dep = next((d for d in await live_departures(db, doc['product']) if d['id'] == doc['departure']), None)
+            if not dep or dep['seats_left'] < int(doc.get('travellers', 0)):
+                await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {'status': 'oversold', 'razorpay_payment_id': body.razorpay_payment_id}})
+                logger.warning(f"Group booking {body.booking_id} paid but departure is full; refund needed")
+                raise HTTPException(409, 'Sorry, the last seats on this departure were just taken. Your payment will be refunded in full within 5 working days.')
         await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {
             'status': 'paid', 'razorpay_payment_id': body.razorpay_payment_id,
             'paid_at': datetime.now(timezone.utc).isoformat()}})

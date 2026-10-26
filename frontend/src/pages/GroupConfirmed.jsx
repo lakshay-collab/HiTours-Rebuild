@@ -22,7 +22,7 @@ export default function GroupConfirmed() {
     <div className="eg" data-testid="gconfirmed-page">
       <Header />
       <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-6">
-        <Steps step={3} />
+        <Steps step={3} full={q?.full_payment} />
         {error && <p className="eg-body-lg text-[#B3261E]" data-testid="gconfirmed-error">{error}</p>}
         {!booking && !error && <p className="eg-body-lg text-[#5B6B74]" data-testid="gconfirmed-loading">Fetching your booking…</p>}
         {booking && booking.kind !== 'group' && <p className="eg-body-lg text-[#B3261E]" data-testid="gconfirmed-error">This booking belongs to a different holiday.</p>}

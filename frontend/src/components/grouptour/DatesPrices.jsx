@@ -157,7 +157,7 @@ export const DeparturesSection = ({ departures, loading, error, onPick }) => {
   return (
     <section id="dates" className="scroll-mt-24" data-testid="departures-section">
       <div className="flex items-end justify-between gap-4 flex-wrap">
-        <div><h2 className="eg-headline-md text-[#002131]">Dates & prices</h2><p className="eg-body-lg text-[#5B6B74] mt-1">Fixed departures, max 16 travellers. Prices per person on twin share; secure your seat with a small deposit.</p></div>
+        <div><h2 className="eg-headline-md text-[#002131]">Dates & prices</h2><p className="eg-body-lg text-[#5B6B74] mt-1">Fixed departures, max 16 travellers. Prices per person on twin share; secure your seat with a small deposit (departures within 60 days are paid in full).</p></div>
         <button type="button" onClick={() => onPick(null)} className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="departures-open-calendar">Open calendar view</button>
       </div>
       {error && <p className="mt-6 eg-body-lg text-[#B3261E]" data-testid="departures-error">{error}</p>}

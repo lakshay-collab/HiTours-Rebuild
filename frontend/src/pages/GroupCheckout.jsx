@@ -19,9 +19,9 @@ const validate = (f) => ({
   phone: /^\+?\d{8,15}$/.test(f.phone.replace(/[\s-]/g, '')) ? '' : 'Please enter a valid WhatsApp number',
 });
 
-export const Steps = ({ step }) => (
+export const Steps = ({ step, full = false }) => (
   <ol className="flex items-center gap-2 md:gap-4 flex-wrap" data-testid="gbooking-steps">
-    {['Pick a departure', 'Pay deposit', 'Seat reserved'].map((s, i) => (
+    {['Pick a departure', full ? 'Pay in full' : 'Pay deposit', 'Seat reserved'].map((s, i) => (
       <li key={s} className={`flex items-center gap-2 eg-label-lg ${i + 1 === step ? 'text-[#002131]' : 'text-[#5B6B74]'}`} aria-current={i + 1 === step ? 'step' : undefined}>
         <span className={`w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-semibold ${i + 1 <= step ? 'bg-[#174358] text-white' : 'bg-[#E4E3DB] text-[#5B6B74]'}`}>{i + 1}</span>{s}{i < 2 && <span className="text-[#C4CBD0] mx-1">›</span>}
       </li>
@@ -46,7 +46,7 @@ export const DepositSummary = ({ dep, pax, room, paid = false }) => {
         <div className="flex justify-between"><span>{fmtInr(q.pp)} × {pax}</span><span data-testid="gcheckout-total">{fmtInr(q.total)}</span></div>
         {!dep.full_payment && <div className="flex justify-between text-[#5B6B74]"><span>Balance due {fmtDate(dep.balance_due)}</span><span data-testid="gcheckout-balance">{fmtInr(q.balance)}</span></div>}
       </div>
-      <div className="flex items-baseline justify-between rounded-xl bg-[#FBEADB] px-4 py-3">
+      <div className="flex items-baseline justify-between gap-3 rounded-xl bg-[#FBEADB] px-4 py-3">
         <span className="eg-title-md text-[#002131]">{dep.full_payment ? (paid ? 'Paid in full' : 'Full payment due now') : `${paid ? 'Deposit paid' : 'Deposit due now'} (${dep.deposit_pct}%)`}</span>
         <span className="eg-headline-md text-[#002131]" data-testid="gcheckout-deposit">{fmtInr(q.deposit)}</span>
       </div>
@@ -87,7 +87,7 @@ export default function GroupCheckout() {
       const order = await res.json();
       const result = await payWithRazorpay(order, { ...form, title: `${detail.title} · ${payWord(dep)}`, image: detail.hero.mainSm });
       const ver = await fetch(`${API}/api/bookings/verify`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ booking_id: order.booking_id, ...result }) });
-      if (!ver.ok) throw new Error('We could not verify the payment. If money was deducted, we will contact you shortly.');
+      if (!ver.ok) throw new Error((await ver.json().catch(() => ({}))).detail || 'We could not verify the payment. If money was deducted, we will contact you shortly.');
       navigate(PATHS.confirmed(order.booking_id));
     } catch (e) {
       if (e.message !== 'cancelled') setPayError(e.message || 'Payment failed. Please try again.');
@@ -100,7 +100,7 @@ export default function GroupCheckout() {
       <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-6">
         <div className="flex flex-col gap-4">
           <Link to={`${PATHS.detail}#dates`} className="inline-flex items-center gap-1 eg-label-lg text-[#174358] hover:text-[#002131] self-start" data-testid="gcheckout-back"><ChevronLeft size={16} /> Change departure or travellers</Link>
-          <Steps step={2} />
+          <Steps step={2} full={dep.full_payment} />
         </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1 min-w-0 flex flex-col gap-8">

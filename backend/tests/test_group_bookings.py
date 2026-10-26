@@ -10,6 +10,16 @@ G = f"{BASE_URL}/api/bookings/group"
 CONTACT = {'name': 'TEST Group', 'email': 'TEST_group_pytest@example.com', 'phone': '+919876543210'}
 
 
+@pytest.fixture(scope='module', autouse=True)
+def _cleanup():
+    # Teardown: paid TEST_ bookings reduce seats_left, so remove them after the module
+    yield
+    from pymongo import MongoClient
+    env = dict(line.strip().split('=', 1) for line in open('/app/backend/.env') if '=' in line)
+    MongoClient(env['MONGO_URL'].strip('"'))[env['DB_NAME'].strip('"')].bookings.delete_many(
+        {'kind': 'group', 'contact.email': {'$regex': '^TEST_group'}})
+
+
 @pytest.fixture(scope='module')
 def deps():
     r = requests.get(f"{G}/inside-sri-lanka/departures", timeout=20)

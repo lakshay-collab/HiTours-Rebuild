@@ -86,8 +86,8 @@ export const BookBox = ({ detail, departures, loading, onOpen, className = '' })
       </div>
       <div className="rounded-xl bg-[#FBEADB] px-4 py-3" data-testid="group-deposit-box">
         <p className="eg-label-md text-[#C84D1B]">Pay only</p>
-        <p className="eg-title-lg text-[#002131]"><span data-testid="group-deposit-amount">{fmtInr(dep10)}</span> <span className="eg-label-lg text-[#5B6B74] font-normal">deposit today ({detail.depositPct}%)</span></p>
-        <p className="eg-label-md text-[#5B6B74] mt-1">Early-bird departures: just {detail.earlyBirdPct}% ({fmtInr(dep5)}). Balance due 60 days before you fly.</p>
+        <p className="eg-title-lg text-[#002131]"><span data-testid="group-deposit-amount">{fmtInr(dep10)}</span> <span className="eg-label-lg text-[#5B6B74] font-normal">deposit ({detail.depositPct}%)</span></p>
+        <p className="eg-label-md text-[#5B6B74] mt-1">On departures 60+ days away; early-bird dates need just {detail.earlyBirdPct}% ({fmtInr(dep5)}). Balance due 60 days before you fly; departures within 60 days are paid in full.</p>
       </div>
       <button type="button" onClick={() => onOpen(null)} className="eg-btn-filled w-full !h-14 eg-title-md" data-testid="group-view-dates">View dates & prices</button>
       <button type="button" onClick={() => openLead()} className="eg-btn-outlined w-full !h-11 !rounded-full eg-label-lg" data-testid="group-speak-expert">Speak to a Sri Lanka expert</button>
@@ -111,7 +111,7 @@ export const MobileBookBar = ({ detail, departures, onOpen }) => {
   const low = lowestPrice(departures) ?? detail.basePrice;
   return (
     <div className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-[#FBF9F1]/95 backdrop-blur border-t border-[#E4E3DB] px-4 py-3 flex items-center justify-between gap-3" data-testid="group-mobile-bar">
-      <div><p className="eg-title-md text-[#002131]">From {fmtInr(low)} <span className="eg-label-md text-[#5B6B74] font-normal">pp</span></p><p className="eg-label-md text-[#C84D1B]">Pay only {fmtInr(Math.round((low * detail.depositPct) / 100))} deposit</p></div>
+      <div><p className="eg-title-md text-[#002131]">From {fmtInr(low)} <span className="eg-label-md text-[#5B6B74] font-normal">pp</span></p><p className="eg-label-md text-[#C84D1B]">From {fmtInr(Math.round((low * detail.depositPct) / 100))} deposit</p></div>
       <button type="button" onClick={() => onOpen(null)} className="eg-btn-filled !h-12 px-5 eg-label-lg" data-testid="group-mobile-dates">Dates & prices</button>
     </div>
   );
