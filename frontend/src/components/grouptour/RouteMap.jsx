@@ -10,6 +10,7 @@ const COAST = [
 const K = 150;
 export const project = (lat, lon) => [(lon - 79.5) * K, (10.0 - lat) * K];
 const VB = [-70, -20, 2.5 * K + 140, 4.2 * K + 40];
+const VB_COMPACT = [-10, -10, 2.5 * K + 20, 4.2 * K + 20];
 
 // Catmull-Rom → cubic bezier path
 const smooth = (pts, closed) => {
@@ -27,9 +28,9 @@ const smooth = (pts, closed) => {
 };
 const ISLAND = smooth(COAST.map(([la, lo]) => project(la, lo)), true);
 
-const LABEL_SIDE = { galle: 'left', kosgoda: 'left', negombo: 'left' };
+const LABEL_SIDE = { galle: 'left', kosgoda: 'left', negombo: 'left', nuwara: 'left' };
 
-export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map' }) => {
+export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', compact = false }) => {
   const pathRef = useRef(null);
   const [len, setLen] = useState(0);
   const pts = stops.map((s) => project(s.lat, s.lon));
@@ -40,7 +41,7 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
 
   return (
     <div className={`relative ${className}`} data-testid={testId} data-active-stop={active?.key}>
-      <svg viewBox={VB.join(' ')} className="w-full h-full" role="img" aria-label={`Route map of Sri Lanka, currently at ${active?.name}`}>
+      <svg viewBox={(compact ? VB_COMPACT : VB).join(' ')} className="w-full h-full" role="img" aria-label={`Route map of Sri Lanka, currently at ${active?.name}`}>
         <defs>
           <pattern id="rm-grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#174358" opacity="0.08" /></pattern>
         </defs>
@@ -57,8 +58,8 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
           return (
             <g key={s.key} data-testid={`route-pin-${s.key}`} data-state={isActive ? 'active' : visited ? 'visited' : 'upcoming'}>
               {isActive && <circle cx={x} cy={y} r="10" fill="#E75E26" opacity="0.35"><animate attributeName="r" values="8;22;8" dur="1.8s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.4;0;0.4" dur="1.8s" repeatCount="indefinite" /></circle>}
-              <circle cx={x} cy={y} r={isActive ? 11 : 7} fill={isActive ? '#E75E26' : visited ? '#174358' : '#fff'} stroke={isActive ? '#fff' : '#174358'} strokeWidth={isActive ? 3 : 2} style={{ transition: 'r .3s, fill .3s' }} />
-              <text x={left ? x - 16 : x + 16} y={y + 6} textAnchor={left ? 'end' : 'start'} fontSize="17" fontFamily="Instrument Sans, Inter, sans-serif" fontWeight={isActive ? 700 : 500} fill={isActive ? '#E75E26' : '#002131'}>{s.name}</text>
+              <circle cx={x} cy={y} r={isActive ? (compact ? 14 : 11) : compact ? 9 : 7} fill={isActive ? '#E75E26' : visited ? '#174358' : '#fff'} stroke={isActive ? '#fff' : '#174358'} strokeWidth={isActive ? 3 : 2} style={{ transition: 'r .3s, fill .3s' }} />
+              {(!compact || isActive) && <text x={left ? x - 16 : x + 16} y={y + 6} textAnchor={left ? 'end' : 'start'} fontSize={compact ? 26 : 17} fontFamily="Instrument Sans, Inter, sans-serif" fontWeight={isActive ? 700 : 500} fill={isActive ? '#E75E26' : '#002131'}>{s.name}</text>}
             </g>
           );
         })}

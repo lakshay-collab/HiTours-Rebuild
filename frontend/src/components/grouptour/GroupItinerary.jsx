@@ -43,19 +43,29 @@ export const GroupItinerary = ({ days, hotels, stops }) => {
   const [open, setOpen] = useState(() => new Set([1]));
   const [activeDay, setActiveDay] = useState(1);
   const refs = useRef({});
+  const mapRef = useRef(null);
 
   useEffect(() => {
-    const els = Object.values(refs.current).filter(Boolean);
-    if (!els.length) return undefined;
-    const ratios = new Map();
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => ratios.set(Number(e.target.dataset.day), e.isIntersecting ? e.intersectionRatio : 0));
-      let best = null, bestR = 0;
-      ratios.forEach((r, d) => { if (r > bestR) { bestR = r; best = d; } });
+    let raf = 0;
+    const measure = () => {
+      raf = 0;
+      const els = Object.entries(refs.current).filter(([, el]) => el);
+      if (!els.length) return;
+      const mapBottom = mapRef.current && getComputedStyle(mapRef.current).display !== 'none' ? mapRef.current.getBoundingClientRect().bottom : 0;
+      const line = mapBottom + (window.innerHeight - mapBottom) * (mapBottom ? 0.2 : 0.5);
+      let best = null, bestDist = Infinity;
+      els.forEach(([n, el]) => {
+        const r = el.getBoundingClientRect();
+        const dist = r.top <= line && r.bottom >= line ? 0 : Math.min(Math.abs(r.top - line), Math.abs(r.bottom - line));
+        if (dist < bestDist) { bestDist = dist; best = Number(n); }
+      });
       if (best) setActiveDay(best);
-    }, { rootMargin: '-35% 0px -45% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] });
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(measure); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    measure();
+    return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
   }, [days]);
 
   const toggle = (n) => {
@@ -77,8 +87,8 @@ export const GroupItinerary = ({ days, hotels, stops }) => {
         </div>
         <button type="button" onClick={allOpen ? () => setOpen(new Set([activeDay])) : expandAll} className="eg-label-lg text-[#174358] underline" data-testid="itin-expand-all">{allOpen ? 'Collapse days' : 'Expand all days'}</button>
       </div>
-      <div className="mt-6 lg:hidden rounded-2xl border border-[#E4E3DB] bg-white p-3 sticky top-[48px] z-10" data-testid="route-map-mobile-wrap">
-        <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[260px]" testId="route-map-mobile" />
+      <div ref={mapRef} className="mt-6 lg:hidden rounded-2xl border border-[#E4E3DB] bg-white p-2 sticky top-[48px] z-10" data-testid="route-map-mobile-wrap">
+        <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[260px]" testId="route-map-mobile" compact />
       </div>
       <div className="mt-2 lg:mt-8 grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 lg:gap-12 items-start">
         <div data-testid="itin-days">

@@ -4,7 +4,7 @@ import { ChevronLeft, Lock, Users, BedDouble, CalendarDays } from 'lucide-react'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { detail, PATHS } from '../grouptours/insideSriLankaData';
-import { depositOf, fmtDate, fmtInr, fmtRange, useDepartures } from '../grouptours/groupBooking';
+import { depositOf, fmtDate, fmtInr, fmtRange, useDepartures, payWord } from '../grouptours/groupBooking';
 import { StatusBadge, EarlyBird } from '../components/grouptour/DatesPrices';
 import { payWithRazorpay } from '../booking/razorpay';
 
@@ -44,10 +44,10 @@ export const DepositSummary = ({ dep, pax, room, paid = false }) => {
       <hr className="border-[#E4E3DB]" />
       <div className="flex flex-col gap-1.5 eg-body-md text-[#002131]">
         <div className="flex justify-between"><span>{fmtInr(q.pp)} × {pax}</span><span data-testid="gcheckout-total">{fmtInr(q.total)}</span></div>
-        <div className="flex justify-between text-[#5B6B74]"><span>Balance due {fmtDate(dep.balance_due)}</span><span data-testid="gcheckout-balance">{fmtInr(q.balance)}</span></div>
+        {!dep.full_payment && <div className="flex justify-between text-[#5B6B74]"><span>Balance due {fmtDate(dep.balance_due)}</span><span data-testid="gcheckout-balance">{fmtInr(q.balance)}</span></div>}
       </div>
       <div className="flex items-baseline justify-between rounded-xl bg-[#FBEADB] px-4 py-3">
-        <span className="eg-title-md text-[#002131]">{paid ? 'Deposit paid' : 'Deposit due now'} ({dep.deposit_pct}%)</span>
+        <span className="eg-title-md text-[#002131]">{dep.full_payment ? (paid ? 'Paid in full' : 'Full payment due now') : `${paid ? 'Deposit paid' : 'Deposit due now'} (${dep.deposit_pct}%)`}</span>
         <span className="eg-headline-md text-[#002131]" data-testid="gcheckout-deposit">{fmtInr(q.deposit)}</span>
       </div>
     </div>
@@ -59,7 +59,7 @@ export default function GroupCheckout() {
   const navigate = useNavigate();
   const { data, departures, error } = useDepartures(detail.key);
   const depId = params.get('dep');
-  const pax = Math.min(8, Math.max(1, Number(params.get('pax')) || 2));
+  const paxWanted = Math.min(8, Math.max(1, Number(params.get('pax')) || 2));
   const room = params.get('room') === 'single' ? 'single' : 'twin';
   const [form, setForm] = useState({ name: '', email: '', phone: '' });
   const [errors, setErrors] = useState({});
@@ -72,6 +72,7 @@ export default function GroupCheckout() {
   if (!data && !error) return <div className="eg"><Header /><main className="eg-wide py-16 eg-body-lg text-[#5B6B74]" data-testid="gcheckout-loading">Loading your departure…</main><Footer /></div>;
   const dep = departures.find((d) => d.id === depId);
   if (!dep || dep.status === 'sold_out') return <Navigate to={`${PATHS.detail}#dates`} replace />;
+  const pax = Math.min(paxWanted, dep.seats_left);
   const q = depositOf(dep, pax, room);
 
   const pay = async () => {
@@ -84,7 +85,7 @@ export default function GroupCheckout() {
         body: JSON.stringify({ product: detail.key, departure: dep.id, travellers: pax, room, contact: { ...form, phone: form.phone.replace(/[\s-]/g, '') } }) });
       if (!res.ok) throw new Error((await res.json()).detail || 'Could not start the payment');
       const order = await res.json();
-      const result = await payWithRazorpay(order, { ...form, title: `${detail.title} · deposit`, image: detail.hero.mainSm });
+      const result = await payWithRazorpay(order, { ...form, title: `${detail.title} · ${payWord(dep)}`, image: detail.hero.mainSm });
       const ver = await fetch(`${API}/api/bookings/verify`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ booking_id: order.booking_id, ...result }) });
       if (!ver.ok) throw new Error('We could not verify the payment. If money was deducted, we will contact you shortly.');
       navigate(PATHS.confirmed(order.booking_id));
@@ -103,7 +104,8 @@ export default function GroupCheckout() {
         </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1 min-w-0 flex flex-col gap-8">
-            <h1 className="eg-headline-lg text-[#002131]" data-testid="gcheckout-title">Reserve your seat{pax > 1 ? 's' : ''} with a {dep.deposit_pct}% deposit</h1>
+            <h1 className="eg-headline-lg text-[#002131]" data-testid="gcheckout-title">{dep.full_payment ? `Reserve your seat${pax > 1 ? 's' : ''} · pay in full` : `Reserve your seat${pax > 1 ? 's' : ''} with a ${dep.deposit_pct}% deposit`}</h1>
+            {pax < paxWanted && <p className="eg-label-lg text-[#C84D1B] -mt-4" data-testid="gcheckout-pax-clamped">Only {dep.seats_left} seat{dep.seats_left > 1 ? 's' : ''} left on this departure, so we have set travellers to {pax}.</p>}
             <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-5" data-testid="gcheckout-contact">
               <h2 className="eg-title-lg text-[#002131]">Lead traveller</h2>
               <p className="eg-body-md text-[#5B6B74] -mt-2">No account needed. We confirm your seat on WhatsApp and by email.</p>
@@ -114,11 +116,13 @@ export default function GroupCheckout() {
               </div>
             </section>
             <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="gcheckout-pay">
-              <h2 className="eg-title-lg text-[#002131]">Deposit payment</h2>
-              <p className="eg-body-md text-[#002131]">Pay only <strong data-testid="gcheckout-amount">{fmtInr(q.deposit)}</strong> now ({dep.deposit_pct}% of {fmtInr(q.total)}) with UPI, cards, net banking or wallets through Razorpay. The balance of {fmtInr(q.balance)} is due by {fmtDate(dep.balance_due)}; we remind you on WhatsApp and you can pay in parts before then.</p>
+              <h2 className="eg-title-lg text-[#002131]">{dep.full_payment ? 'Payment' : 'Deposit payment'}</h2>
+              {dep.full_payment
+                ? <p className="eg-body-md text-[#002131]">This departure is less than 60 days away, so the full amount of <strong data-testid="gcheckout-amount">{fmtInr(q.deposit)}</strong> is paid now with UPI, cards, net banking or wallets through Razorpay.</p>
+                : <p className="eg-body-md text-[#002131]">Pay only <strong data-testid="gcheckout-amount">{fmtInr(q.deposit)}</strong> now ({dep.deposit_pct}% of {fmtInr(q.total)}) with UPI, cards, net banking or wallets through Razorpay. The balance of {fmtInr(q.balance)} is due by {fmtDate(dep.balance_due)}; we remind you on WhatsApp and you can pay in parts before then.</p>}
               {gateway?.mock && <p className="eg-label-md rounded-lg bg-[#FBEADB] px-3 py-2 text-[#174358]" data-testid="gcheckout-mock-note">Test mode: Razorpay keys are not connected yet, so a simulated payment window is shown and no money moves.</p>}
               {payError && <p className="eg-label-lg text-[#B3261E]" data-testid="gcheckout-pay-error">{payError}</p>}
-              <button type="button" onClick={pay} disabled={busy || !gateway} className="eg-btn-filled !h-14 px-8 eg-title-md self-start disabled:opacity-50" data-testid="gcheckout-pay-button"><Lock size={16} /> {busy ? 'Opening secure payment…' : `Pay ${fmtInr(q.deposit)} deposit`}</button>
+              <button type="button" onClick={pay} disabled={busy || !gateway} className="eg-btn-filled !h-14 px-8 eg-title-md self-start disabled:opacity-50" data-testid="gcheckout-pay-button"><Lock size={16} /> {busy ? 'Opening secure payment…' : `Pay ${fmtInr(q.deposit)} ${payWord(dep)}`}</button>
               <p className="eg-label-md text-[#5B6B74]">By paying you agree to the Hi Tours booking terms. Deposits are transferable to another departure up to 60 days before travel.</p>
             </section>
           </div>

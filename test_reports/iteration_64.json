@@ -1,0 +1,45 @@
+{
+  "summary": "Tested the new Inside Sri Lanka group-tour feature end to end. Backend: wrote 15 pytest tests (departures, deposit order with validation, reuse of pending orders, verify, GET booking) and all 15 pass. Frontend (1440 desktop and 390 mobile): hero, lightbox, title, inclusions (8/5), book box, itinerary accordion with overnight/meals lines, expand/collapse, SVG route map pins, departures list (12 rows, month filter, sold-out disabled), calendar modal (month nav limits, selection, 12-day span shading, pax max=min(seats,8), twin/single +38k, total/deposit/balance maths, Esc/close), checkout validation, mock Razorpay success and cancel, confirmed page, invalid/sold-out dep redirects, mobile sticky map/bottom bar/modal mobile bar, listing card regression, old booking flow load check, reviews and FAQ (8 questions, accordion works). Every requested flow works. Found 1 business-logic issue (balance due dates already in the past for near departures) and a few UX issues.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "GET /api/bookings/group/inside-sri-lanka/departures", "issue": "balance_due = start - 60 days is already in the PAST for departures less than 60 days away. Today is 2026-10-26: 14 Nov has balance_due 2026-09-15, 28 Nov has 2026-09-29 and 12 Dec has 2026-10-13. A 10% deposit is still accepted for these, and the UI says 'Balance due 15 Sept 2026'. Fix: for departures less than 60 days out, take full payment, or set balance_due to max(today, start-60) and/or ask for a bigger deposit."},
+      {"endpoint": "POST /api/bookings/group/order", "issue": "seats_left comes from the static SEATS_PATTERN and paid bookings never reduce it, so the same departure can be overbooked without limit. Acceptable for an MVP, but seats_left should subtract paid group bookings for each departure."},
+      {"endpoint": "departures()", "issue": "Edge case: if today is late in the month (e.g. Jan 31), the second Saturday of next month can be under 10 days away. It is skipped (continue), so the API returns 11 departures, not 12."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "GroupItinerary IntersectionObserver (desktop)", "issue": "With collapsed day cards (~87px), several cards fit fully inside the rootMargin band (35%-55%) and the tie goes to the earliest day. With Day 8 exactly centred, data-active-day=7 / caption 'Day 7 · Ella' and the Yala pin is 'upcoming'. It only becomes 8 when Day 8's top is at ~40% of the viewport. Fix: pick the card whose centre is closest to the viewport centre, or use a thin band (e.g. rootMargin '-50% 0px -50% 0px').", "selector": "[data-testid=group-itinerary][data-active-day]", "priority": "MEDIUM"},
+      {"component": "GroupItinerary (mobile 390)", "issue": "The sticky mobile map takes y=48-334px, but the IO band (35%-55% of 844px = 295-464px) is not offset for it. The 'active' day is often the card hidden behind the map (caption showed Day 4 while Days 5-8 were the visible cards). Offset the rootMargin top by the sticky map height on mobile.", "selector": "[data-testid=route-map-mobile-wrap]", "priority": "MEDIUM"},
+      {"component": "GroupCheckout", "issue": "pax from the URL is clamped to 8 but not to dep.seats_left. ?dep=2026-11-28&pax=8 shows '8 travellers, ₹16,00,000' and only fails on Pay with 'Only 4 seats left on this departure'. Clamp pax to min(seats_left, 8) or show a warning up front.", "selector": "[data-testid=gcheckout-summary]", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "RouteMap", "issues": ["The 'Nuwara Eliya' and 'Ella' pin labels overlap (Ella's active pin sits on top of the Nuwara Eliya text) on desktop and mobile", "On mobile, labels render at ~7px (fontSize 17 in a scaled-down viewBox) and are hard to read"]},
+      {"screen": "Mobile itinerary", "issues": ["Sticky tabs (47px) + sticky map (286px) + bottom bar (73px) cover ~48% of the 844px viewport while reading the itinerary. Consider a smaller or collapsible map."]},
+      {"screen": "Desktop book box", "issues": ["The WhatsApp FAB overlaps the right edge of the early-bird text in the book box at 1440x900 on first load"]},
+      {"screen": "Lead modal from 'Speak to a Sri Lanka expert'", "issues": ["The copy reads 'Customise your Sri Lanka holiday', which is generic and not specific to the group tour (minor)"]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_group_bookings.py", "/app/test_reports/pytest/pytest_group.xml"],
+  "action_items": [
+    "Handle departures less than 60 days away: balance_due is currently in the past (15 Sept / 29 Sept / 13 Oct 2026); take full payment or adjust balance_due",
+    "Fix active-day detection in the itinerary IO: tie-break by closeness to the viewport centre (desktop Day 8 centred -> 7) and offset for the sticky mobile map",
+    "Clamp checkout pax to min(seats_left, 8)",
+    "Fix overlapping 'Nuwara Eliya'/'Ella' map labels and the tiny labels on mobile",
+    "Optional: subtract paid bookings from seats_left; fix the React warning 'fetchpriority' -> 'fetchPriority' (console error on every page load)"
+  ],
+  "critical_code_review_comments": [
+    "Console error on every load: 'Invalid DOM property fetchpriority. Did you mean fetchPriority?' (hero img). Use the fetchPriority prop.",
+    "DatesCalendarModal: useState(() => months.indexOf(monthKey((selected || departures[0]).start))) would crash if departures is empty. The parent guards against this (departures.length > 0), but it is fragile.",
+    "group_bookings.departures(): idx = len(out) means skipped dates shift SEATS_PATTERN. Fine, but sample seat data is not persistent and is not decremented by bookings.",
+    "verify endpoint is shared and works for kind 'group'; GET masks contact and strips the razorpay ids properly."
+  ],
+  "updated_files": ["/app/backend/tests/test_group_bookings.py"],
+  "success_rate": {"backend": "100% (15/15)", "frontend": "~92% (all requested flows work; active-day detection on desktop with Day 8 centred returned 7 instead of 8)"},
+  "seed_data_creation": "Created TEST_ group bookings during the run and deleted them afterwards (8 docs removed from db.bookings).",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Clock is 2026-10-26. Departures run 2026-11-14 to 2027-04-24; 12-26 is sold out; 11-28 (4), 01-23 (2) and 03-13 (3) are limited; Feb onwards is early bird (5%). Run: REACT_APP_BACKEND_URL=... pytest backend/tests/test_group_bookings.py. On retest, check active-day sync (Day 8 centred -> 8), the mobile IO offset, the checkout pax clamp, and the balance_due handling for near departures."
+}

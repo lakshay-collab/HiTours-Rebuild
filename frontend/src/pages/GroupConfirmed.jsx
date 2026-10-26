@@ -33,7 +33,7 @@ export default function GroupConfirmed() {
             <p className="eg-body-lg text-[#002131]">Booking reference <strong data-testid="gconfirmed-ref">{booking.booking_id}</strong>{booking.mock && <span className="ml-2 rounded-md bg-[#FBEADB] px-2 py-0.5 eg-label-md text-[#174358]">test booking, no payment taken</span>}</p>
             <p className="eg-body-md text-[#5B6B74]" data-testid="gconfirmed-details">{booking.title} · {fmtDate(q.start)} to {fmtDate(q.end)} · {q.travellers} traveller{q.travellers > 1 ? 's' : ''} · {q.room === 'single' ? 'private room' : 'twin share'}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {[['Deposit paid', fmtInr(q.deposit), `${q.deposit_pct}% of ${fmtInr(q.total)}`], ['Balance due', fmtInr(q.balance), `by ${fmtDate(q.balance_due)}`], ['Trip total', fmtInr(q.total), `${fmtInr(q.per_person)} per person`]].map(([l, v, s]) => (
+              {[q.full_payment ? ['Paid in full', fmtInr(q.deposit), 'nothing more to pay'] : ['Deposit paid', fmtInr(q.deposit), `${q.deposit_pct}% of ${fmtInr(q.total)}`], ['Balance due', fmtInr(q.balance), q.balance_due ? `by ${fmtDate(q.balance_due)}` : 'settled'], ['Trip total', fmtInr(q.total), `${fmtInr(q.per_person)} per person`]].map(([l, v, s]) => (
                 <div key={l} className="rounded-xl bg-[#FBEADB] px-4 py-3"><p className="eg-label-md text-[#5B6B74]">{l}</p><p className="eg-title-lg text-[#002131]">{v}</p><p className="eg-label-md text-[#5B6B74]">{s}</p></div>
               ))}
             </div>

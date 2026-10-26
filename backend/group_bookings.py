@@ -53,15 +53,33 @@ def departures(key: str, today: date | None = None) -> list[dict]:
                 continue
             seats = SEATS_PATTERN[idx % len(SEATS_PATTERN)]
             early = ahead >= EARLY_BIRD_DAYS
+            full = ahead < BALANCE_DUE_DAYS
             price = p['base'] + (p['peak_extra'] if m in p['peak_months'] else 0)
             out.append({
                 'id': d.isoformat(), 'start': d.isoformat(), 'end': (d + timedelta(days=p['nights'])).isoformat(),
                 'price': price, 'single_supplement': p['single_supplement'], 'seats_left': seats, 'max_group': p['max_group'],
                 'status': 'sold_out' if seats == 0 else 'limited' if seats <= 4 else 'available',
-                'early_bird': early, 'deposit_pct': EARLY_BIRD_PCT if early else DEPOSIT_PCT,
-                'balance_due': (d - timedelta(days=BALANCE_DUE_DAYS)).isoformat(),
+                'early_bird': early, 'full_payment': full,
+                'deposit_pct': 100 if full else EARLY_BIRD_PCT if early else DEPOSIT_PCT,
+                'balance_due': None if full else (d - timedelta(days=BALANCE_DUE_DAYS)).isoformat(),
             })
     return out
+
+
+def _status(seats: int) -> str:
+    return 'sold_out' if seats <= 0 else 'limited' if seats <= 4 else 'available'
+
+
+async def live_departures(db, key: str) -> list[dict]:
+    """Departures with seats reduced by paid group bookings."""
+    deps = departures(key)
+    booked: dict[str, int] = {}
+    async for b in db.bookings.find({'kind': 'group', 'product': key, 'status': 'paid'}, {'_id': 0, 'departure': 1, 'travellers': 1}):
+        booked[b['departure']] = booked.get(b['departure'], 0) + int(b.get('travellers', 0))
+    for d in deps:
+        d['seats_left'] = max(0, d['seats_left'] - booked.get(d['id'], 0))
+        d['status'] = _status(d['seats_left'])
+    return deps
 
 
 class GroupOrderIn(BaseModel):
@@ -78,7 +96,7 @@ def group_quote(dep: dict, travellers: int, room: str) -> dict:
     deposit = jsround(total * dep['deposit_pct'] / 100.0)
     return {'price': dep['price'], 'single_supplement': dep['single_supplement'] if room == 'single' else 0, 'per_person': pp,
             'travellers': travellers, 'room': room, 'total': total, 'deposit': deposit, 'deposit_pct': dep['deposit_pct'],
-            'early_bird': dep['early_bird'], 'balance': total - deposit, 'balance_due': dep['balance_due'],
+            'early_bird': dep['early_bird'], 'full_payment': dep['full_payment'], 'balance': total - deposit, 'balance_due': dep['balance_due'],
             'start': dep['start'], 'end': dep['end']}
 
 
@@ -90,14 +108,14 @@ def register(db):
             raise HTTPException(404, 'Unknown group tour')
         return {'product': key, 'title': p['title'], 'base': p['base'], 'deposit_pct': DEPOSIT_PCT, 'early_bird_pct': EARLY_BIRD_PCT,
                 'early_bird_days': EARLY_BIRD_DAYS, 'balance_due_days': BALANCE_DUE_DAYS, 'max_travellers': MAX_TRAVELLERS,
-                'single_supplement': p['single_supplement'], 'departures': departures(key)}
+                'single_supplement': p['single_supplement'], 'departures': await live_departures(db, key)}
 
     @router.post('/order')
     async def create_order(body: GroupOrderIn):
         p = GROUP_PRODUCTS.get(body.product)
         if not p:
             raise HTTPException(404, 'Unknown group tour')
-        dep = next((d for d in departures(body.product) if d['id'] == body.departure.isoformat()), None)
+        dep = next((d for d in await live_departures(db, body.product) if d['id'] == body.departure.isoformat()), None)
         if not dep:
             raise HTTPException(400, 'This departure is not open for booking')
         if dep['status'] == 'sold_out':

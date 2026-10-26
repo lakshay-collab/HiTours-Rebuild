@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Minus, Plus, X, Users, BedDouble, Sparkles } from 'lucide-react';
-import { depositOf, fmtDate, fmtInr, fmtRange, fromISO, monthKey, monthLabel } from '../../grouptours/groupBooking';
+import { depositOf, fmtDate, fmtInr, fmtRange, fromISO, monthKey, monthLabel, payLabel, payWord } from '../../grouptours/groupBooking';
 
 const DOW = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
 const toISO = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -11,7 +11,8 @@ export const StatusBadge = ({ dep, className = '' }) => {
   if (dep.status === 'limited') return <span className={`rounded-full bg-[#FBEADB] px-2.5 py-1 eg-label-md text-[#C84D1B] ${className}`}>Only {dep.seats_left} seats left</span>;
   return <span className={`rounded-full bg-[#D7ECE4] px-2.5 py-1 eg-label-md text-[#174358] ${className}`}>{dep.seats_left} seats left</span>;
 };
-export const EarlyBird = ({ dep, className = '' }) => (dep.early_bird ? <span className={`inline-flex items-center gap-1 rounded-full bg-[#002131] text-white px-2.5 py-1 eg-label-md ${className}`}><Sparkles size={12} /> Early bird · {dep.deposit_pct}% deposit</span> : null);
+export const EarlyBird = ({ dep, className = '' }) => (dep.early_bird ? <span className={`inline-flex items-center gap-1 rounded-full bg-[#002131] text-white px-2.5 py-1 eg-label-md ${className}`}><Sparkles size={12} /> Early bird · {dep.deposit_pct}% deposit</span>
+  : dep.full_payment ? <span className={`inline-flex items-center rounded-full border border-[#C4CBD0] px-2.5 py-1 eg-label-md text-[#5B6B74] ${className}`}>Departs soon · full payment</span> : null);
 
 const Stepper = ({ value, min, max, onChange, testId }) => (
   <div className="flex items-center gap-3" data-testid={testId}>
@@ -97,7 +98,7 @@ export const DatesCalendarModal = ({ departures, initial, onClose, product, chec
               {departures.filter((d) => monthKey(d.start) === months[mi]).map((d) => (
                 <li key={d.id}>
                   <button type="button" disabled={d.status === 'sold_out'} onClick={() => setSelected(d)} className={`w-full flex items-center justify-between gap-3 py-3 text-left disabled:opacity-60 ${selected?.id === d.id ? 'text-[#174358]' : 'text-[#002131]'}`} data-testid={`gcal-row-${d.id}`}>
-                    <div><p className="eg-label-lg">{fmtRange(d)}</p><p className="eg-label-md text-[#5B6B74]">{fmtInr(d.price)} per person · deposit {fmtInr(depositOf(d).deposit)}</p></div>
+                    <div><p className="eg-label-lg">{fmtRange(d)}</p><p className="eg-label-md text-[#5B6B74]">{fmtInr(d.price)} per person{d.full_payment ? '' : ` · deposit ${fmtInr(depositOf(d).deposit)}`}</p></div>
                     <div className="flex items-center gap-2 shrink-0"><EarlyBird dep={d} className="hidden sm:inline-flex" /><StatusBadge dep={d} /></div>
                   </button>
                 </li>
@@ -125,14 +126,14 @@ export const DatesCalendarModal = ({ departures, initial, onClose, product, chec
                 </div>
                 <div className="flex flex-col gap-1.5 eg-body-md text-[#002131]">
                   <div className="flex justify-between"><span>{fmtInr(q.pp)} × {pax} traveller{pax > 1 ? 's' : ''}</span><span data-testid="dates-modal-total">{fmtInr(q.total)}</span></div>
-                  <div className="flex justify-between text-[#5B6B74]"><span>Balance due {fmtDate(selected.balance_due)}</span><span data-testid="dates-modal-balance">{fmtInr(q.balance)}</span></div>
+                  {!selected.full_payment && <div className="flex justify-between text-[#5B6B74]"><span>Balance due {fmtDate(selected.balance_due)}</span><span data-testid="dates-modal-balance">{fmtInr(q.balance)}</span></div>}
                 </div>
                 <div className="rounded-2xl bg-[#002131] text-white p-4" data-testid="dates-modal-deposit">
-                  <p className="eg-label-md text-white/70">Pay only · {selected.deposit_pct}% deposit today</p>
+                  <p className="eg-label-md text-white/70">{selected.full_payment ? 'Full payment today · departs within 60 days' : `Pay only · ${selected.deposit_pct}% deposit today`}</p>
                   <p className="eg-headline-md" data-testid="dates-modal-deposit-amount">{fmtInr(q.deposit)}</p>
                   <p className="eg-label-md text-white/70 mt-1">Secures {pax} seat{pax > 1 ? 's' : ''} on the {fmtDate(selected.start, { day: 'numeric', month: 'long' })} departure</p>
                 </div>
-                <button type="button" onClick={go} className="eg-btn-filled w-full !h-14 eg-title-md" data-testid="dates-modal-reserve">Reserve with {fmtInr(q.deposit)} deposit</button>
+                <button type="button" onClick={go} className="eg-btn-filled w-full !h-14 eg-title-md" data-testid="dates-modal-reserve">{selected.full_payment ? `Reserve · pay ${fmtInr(q.deposit)}` : `Reserve with ${fmtInr(q.deposit)} deposit`}</button>
                 <p className="eg-label-md text-[#5B6B74]">Free date changes up to 60 days before departure with Hi Tours Cares. International flights not included.</p>
               </>
             ) : <p className="eg-body-lg text-[#5B6B74]">Pick a departure date on the calendar.</p>}
@@ -140,7 +141,7 @@ export const DatesCalendarModal = ({ departures, initial, onClose, product, chec
         </div>
         {selected && q && (
           <div className="md:hidden border-t border-[#E4E3DB] bg-white px-4 py-3 flex items-center justify-between gap-3" data-testid="dates-modal-mobile-bar">
-            <div><p className="eg-label-md text-[#C84D1B]">Pay only · {selected.deposit_pct}% deposit</p><p className="eg-title-lg text-[#002131]">{fmtInr(q.deposit)}</p></div>
+            <div><p className="eg-label-md text-[#C84D1B]">{payLabel(selected)}</p><p className="eg-title-lg text-[#002131]">{fmtInr(q.deposit)}</p></div>
             <button type="button" onClick={go} className="eg-btn-filled !h-12 px-5 eg-label-lg" data-testid="dates-modal-mobile-reserve">Reserve seats</button>
           </div>
         )}
@@ -179,7 +180,7 @@ export const DeparturesSection = ({ departures, loading, error, onPick }) => {
                     <div className="mt-1.5 flex flex-wrap gap-2"><StatusBadge dep={d} /><EarlyBird dep={d} /></div>
                   </div>
                   <div><p className="eg-label-md text-[#5B6B74]">Price per person</p><p className="eg-title-lg text-[#002131]">{fmtInr(d.price)}</p></div>
-                  <div><p className="eg-label-md text-[#5B6B74]">Pay only · {d.deposit_pct}% deposit</p><p className="eg-title-lg text-[#E75E26]">{fmtInr(q.deposit)}</p></div>
+                  <div><p className="eg-label-md text-[#5B6B74]">{payLabel(d)}</p><p className="eg-title-lg text-[#E75E26]">{fmtInr(q.deposit)}</p></div>
                   <button type="button" disabled={sold} onClick={() => onPick(d)} className="eg-btn-filled !h-12 px-6 eg-label-lg disabled:opacity-40 disabled:cursor-not-allowed" data-testid={`departure-${d.id}-book`}>{sold ? 'Sold out' : 'Select date'}</button>
                 </li>
               );

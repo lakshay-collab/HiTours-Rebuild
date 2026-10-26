@@ -29,5 +29,8 @@ export const useDepartures = (key) => {
   return { data, departures: data?.departures || [], error };
 };
 
+export const payLabel = (dep) => (dep.full_payment ? 'Full payment · departs within 60 days' : `Pay only · ${dep.deposit_pct}% deposit`);
+export const payWord = (dep) => (dep.full_payment ? 'full payment' : 'deposit');
+
 export const nextOpen = (deps) => deps.find((d) => d.status !== 'sold_out');
 export const lowestPrice = (deps) => (deps.length ? Math.min(...deps.map((d) => d.price)) : null);

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bed, Bus, Check, Images, Plane, ShieldCheck, Ticket, Users, Utensils, UserCheck, X, CalendarDays, Clock, Activity, Coffee } from 'lucide-react';
 import { Lightbox } from '../egypt/EgyptRoute';
-import { depositOf, fmtDate, fmtInr, lowestPrice, nextOpen } from '../../grouptours/groupBooking';
+import { depositOf, fmtDate, fmtInr, lowestPrice, nextOpen, payWord } from '../../grouptours/groupBooking';
 import { useLeadModal } from '../egypt/LeadModalProvider';
 
 const ICONS = { ticket: Ticket, bed: Bed, users: Users, meal: Utensils, bus: Bus, plane: Plane, guide: UserCheck, shield: ShieldCheck };
@@ -14,7 +14,7 @@ export const GroupHero = ({ detail }) => {
     <section className="relative" data-testid="group-hero">
       <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-2 md:h-[440px] lg:h-[500px]">
         <button type="button" onClick={() => setLb(0)} className="relative block w-full aspect-[16/10] md:aspect-auto md:h-full overflow-hidden rounded-2xl md:rounded-r-none" data-testid="group-hero-main">
-          <img src={detail.hero.main} alt={detail.hero.alt} className="absolute inset-0 w-full h-full object-cover" fetchpriority="high" />
+          <img src={detail.hero.main} alt={detail.hero.alt} className="absolute inset-0 w-full h-full object-cover" fetchPriority="high" />
         </button>
         <div className="hidden md:grid grid-rows-2 gap-2 h-full">
           <button type="button" onClick={() => setLb(1)} className="relative overflow-hidden rounded-tr-2xl"><img src={g[1]} alt={`${detail.title} 2`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" /></button>
@@ -98,7 +98,7 @@ export const BookBox = ({ detail, departures, loading, onOpen, className = '' })
         {departures.filter((d) => d.status !== 'sold_out').slice(0, 3).map((d) => (
           <button key={d.id} type="button" onClick={() => onOpen(d)} className="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 -mx-2 hover:bg-[#FBF9F1] text-left" data-testid={`group-next-${d.id}`}>
             <span className="eg-body-md text-[#002131]">{fmtDate(d.start, { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-            <span className="eg-label-md text-[#5B6B74]">{d.status === 'limited' ? <span className="text-[#C84D1B]">{d.seats_left} left</span> : fmtInr(depositOf(d).deposit) + ' deposit'}</span>
+            <span className="eg-label-md text-[#5B6B74]">{d.status === 'limited' ? <span className="text-[#C84D1B]">{d.seats_left} left</span> : `${fmtInr(depositOf(d).deposit)} ${payWord(d)}`}</span>
           </button>
         ))}
         {next && <button type="button" onClick={() => onOpen(null)} className="eg-label-lg text-[#174358] underline self-start" data-testid="group-all-dates">See all dates</button>}
