@@ -34,9 +34,22 @@ import { sriLankaWeekendBentotaColomboProduct } from './sriLankaWeekendBentotaCo
 import { jewelsOfSriLankaKandyBentotaColomboProduct } from './jewelsOfSriLankaKandyBentotaColomboData';
 import { sriLankaShortBreakKandyColomboProduct } from './sriLankaShortBreakKandyColomboData';
 import { insideSriLankaProduct } from '../grouptours/insideSriLankaData';
+import { insideSriLankaProduct as insideSriLankaV1Product } from '../grouptours/v1/insideSriLankaData';
+
+// FIT e-commerce pilot: same itinerary as Fully Loaded Sri Lanka, bookable online with dates + Razorpay
+const fullyLoadedSriLankaBookOnlineProduct = {
+  ...fullyLoadedSriLankaYalaSafariProduct,
+  slug: 'book-fully-loaded-sri-lanka',
+  href: '/asia/book/fully-loaded-sri-lanka',
+  tag: 'Book online',
+  title: `${fullyLoadedSriLankaYalaSafariProduct.title} (book online)`,
+  price: Math.round(fullyLoadedSriLankaYalaSafariProduct.price / 10) * 10,
+};
 
 export const sriLankaProducts = [
   insideSriLankaProduct,
+  insideSriLankaV1Product,
+  fullyLoadedSriLankaBookOnlineProduct,
   tropicalSriLankaKandySigiriyaBentotaProduct,
   fullyLoadedSriLankaYalaSafariProduct,
   exoticSriLankaCouplesKandyBentotaProduct,

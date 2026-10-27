@@ -11,9 +11,9 @@ export const PATHS = {
 
 // Listing card (Sri Lanka listing / catalog), links to the group-tour page
 export const insideSriLankaProduct = {
-  slug: KEY, href: PATHS.detail, tag: 'Group tour', styles: ['Group tour', 'Culture', 'Wildlife'],
+  slug: `${KEY}-v1`, href: PATHS.detail, tag: 'Group tour · design v1', styles: ['Group tour', 'Culture', 'Wildlife'],
   places: ['Negombo', 'Kandalama', 'Kandy', 'Nuwara Eliya', 'Ella', 'Yala', 'Galle', 'Kosgoda'],
-  title: 'Inside Sri Lanka: 12-day small-group tour with fixed departures',
+  title: 'Inside Sri Lanka (design v1): 12-day small-group tour with fixed departures',
   days: 12, stops: 8, hotels: 8, cities: 8, activities: 18, transfers: 12, meals: 21, price: 200000, noSale: true,
   images: [hero(1200), fp('2024/07/LK1_ItineraryDay21.jpg'), fp('2024/07/LK1_ItineraryDay80.jpg'), fp('2024/06/LK1_GALLERY3.jpg')],
   alt: 'Inside Sri Lanka small-group tour',
