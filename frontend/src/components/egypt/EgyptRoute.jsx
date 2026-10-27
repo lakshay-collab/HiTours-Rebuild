@@ -124,15 +124,17 @@ export function Lightbox({ images, name, onClose, start = 0, portrait = false })
   );
 }
 
-function HotelCard({ a, id = '' }) {
+function HotelCard({ a, id = '', tier = null }) {
   const [open, setOpen] = useState(false);
   return (
     <>
       <div className="flex bg-[#FBF9F1] border border-[#C4CBD0] rounded-xl overflow-hidden" data-testid={`eg-accommodation-card${id}`}>
         <button type="button" onClick={() => setOpen(true)} className="relative w-[120px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
         <div className="p-4 flex flex-col justify-center gap-1 min-w-0">
+          {tier && <span className="self-start inline-flex items-center h-6 px-2.5 rounded-full bg-[#E0F7FF] eg-label-md text-[#174358]" data-testid={`eg-accommodation-tier${id}`}>{tier}</span>}
           <h5 className="eg-title-md text-[#002131]" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
           <p className="eg-body-md text-[#174358] capitalize">{a.description}</p>
+          {a.rating && <p className="eg-label-md text-[#002131]" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#174358] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span>{a.rating.label} · {a.rating.reviews.toLocaleString('en-IN')} Booking.com reviews</p>}
           <button type="button" onClick={() => setOpen(true)} className="self-start inline-flex items-center gap-1 pt-1 eg-label-lg text-[#174358] underline" data-testid={`eg-accommodation-photos${id}`}><GalleryIcon size={16} />{route.viewPhotos} ({a.images.length})</button>
         </div>
       </div>
@@ -141,32 +143,26 @@ function HotelCard({ a, id = '' }) {
   );
 }
 
-function Accommodation({ a, category }) {
-  const [more, setMore] = useState(false);
-  if (!category) {
+const TIER = { 4: '4★ Comfort option', 5: '5★ Premium option' };
+
+function Accommodation({ a }) {
+  const all = [a, ...(a.options || [])];
+  const four = all.find((h) => h.stars === 4);
+  const five = all.find((h) => h.stars === 5);
+  if (!(four && five)) {
     return (
       <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
         <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
         <HotelCard a={a} />
-        {(a.options || []).map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
       </div>
     );
   }
-  const all = [a, ...(a.options || [])];
-  const match = all.filter((h) => h.stars === category);
-  const pick = match[0] || a;
-  const rest = match.slice(1);
   return (
-    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-category={category}>
-      <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
-      <HotelCard a={pick} />
-      {!match.length && <p className="eg-body-sm text-[#6F777C]" data-testid="eg-accommodation-fallback">No {category}★ hotel here; the best {pick.stars}★ option is used.</p>}
-      {rest.length > 0 && (
-        <>
-          {more && rest.map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
-          <button type="button" onClick={() => setMore((v) => !v)} className="self-start eg-label-lg text-[#174358] underline" data-testid="eg-accommodation-more">{more ? 'Show fewer hotels' : `Or similar: ${rest.length} other ${category}★ hotel${rest.length > 1 ? 's' : ''} we use`}</button>
-        </>
-      )}
+    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
+      <SectionHead icon={HotelIcon} title="Your accommodation options" />
+      <p className="eg-body-md text-[#174358] -mt-1">Choose your comfort level when you plan with us: a 4★ or a 5★ stay (or similar in the same category).</p>
+      <HotelCard a={four} id="-4" tier={TIER[4]} />
+      <HotelCard a={five} id="-5" tier={TIER[5]} />
     </div>
   );
 }
@@ -223,7 +219,7 @@ function Activities({ items }) {
   );
 }
 
-export default function EgyptRoute({ onSummary, stops = route.stops, category = null }) {
+export default function EgyptRoute({ onSummary, stops = route.stops }) {
   const days = useMemo(() => toDays(stops), [stops]);
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
@@ -278,7 +274,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops, category = 
               <StopText s={s} />
               <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
-            {s.accommodation && <Accommodation a={s.accommodation} category={category} />}
+            {s.accommodation && <Accommodation a={s.accommodation} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}
           </section>
         ))}
