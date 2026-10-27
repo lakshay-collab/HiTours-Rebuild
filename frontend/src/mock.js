@@ -135,7 +135,7 @@ export const comparison = {
 
 export const moments = {
   heading: 'Unforgettable Hi Tours moments',
-  subheading: 'More than 10,00,000 couples have travelled with us',
+  subheading: 'More than 10,00,000 happy travellers and counting',
   cta: 'Plan your trip',
   avatars: [
     '/moments/europe_couple.webp',
@@ -147,12 +147,12 @@ export const moments = {
     { title: 'Sri Lanka gave our family the perfect escape into nature', name: 'The Sharma Family', image: '/moments/forest_family.webp' },
     { title: 'Spotting a wild koala made my solo Australia trip even more special', name: 'Kavya', image: '/moments/kangaroo.webp' },
     { title: 'That Santorini sunset was the perfect ending to our Greece getaway', name: 'Simran & Aditya', image: '/moments/santorini.webp' },
-    { title: 'Getting close to the giant tortoises made Seychelles truly special.', name: 'Ishita', image: '/moments/tortoise.webp' },
+    { title: 'Getting close to the giant tortoises made Seychelles truly special.', name: "Ishita's solo trip", image: '/moments/tortoise.webp' },
     { title: 'Seeing the Northern Lights in Tromsø felt like a dream come true', name: 'Meera & Kunal', image: '/moments/northern_lights.webp' },
     { title: "Exploring New Zealand's mountains together was a family memory to cherish", name: 'The Shah Family', image: '/moments/family_trip.webp' },
     { title: 'The Swiss Alps in summer were the perfect mix of adventure and calm', name: 'Ananya & Rohan', image: '/moments/alps.webp' },
     { title: "Paris with our family gave us memories we'll always cherish", name: 'The Mehra Family', image: '/moments/eiffel_family.webp' },
-    { title: 'Meeting pandas up close was our favourite memory from Chengdu', name: 'Ishita', image: '/moments/panda.webp' },
+    { title: 'Meeting pandas up close was our favourite memory from Chengdu', name: "Ishita's solo trip", image: '/moments/panda.webp' },
     { title: 'Our Maasai Mara safari brought us closer to the wild than ever', name: 'Rahul & Priya', image: '/moments/safari.webp' }
   ]
 };
