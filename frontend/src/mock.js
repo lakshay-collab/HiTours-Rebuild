@@ -35,7 +35,7 @@ export const expertAdvice = {
 };
 
 export const hero = {
-  title: ['Honeymoons and holidays,', 'designed around the two of you'],
+  title: ['Honeymoons and holidays,', 'designed for the two of you'],
   searchPlaceholder: 'Where would you like to go?',
   searchPlaceholderMobile: 'Where to?',
   searchPlaceholderStyle: "What's your travel style?",
@@ -63,12 +63,12 @@ export const ratings = {
 };
 
 export const features = {
-  heading: 'Your trip, planned by professionals',
+  heading: 'No two couples are alike. So no two holidays are.',
   // `short` is what phones show: the same promise in half the words.
   items: [
-    { icon: '/pros/experts.png', title: 'Real holiday experts', short: 'Specialists who have been where you are going.', text: 'Your itinerary is built by a specialist who has travelled the country, backed by thirty years of local contacts.' },
-    { icon: '/pros/organised.png', title: 'Every detail handled', short: 'Hotels, transfers and guides, all arranged.', text: 'Hotels, transfers, guides and tickets are booked and reconfirmed for you, from the first call to the flight home.' },
-    { icon: '/pros/easy.png', title: 'Best price, best value', short: 'Direct supply, so you get price and quality.', text: 'We buy direct from hotels and local operators in every destination, so you get not only the best price, but the best quality.' }
+    { icon: '/pros/experts.png', title: 'One Holiday Expert', short: 'One person, one number, replies within the hour.', text: 'One Holiday Expert plans your trip and stays with you until you book. One person, one number, replies within the hour.' },
+    { icon: '/pros/organised.png', title: 'Booked before you fly', short: 'Every hotel, transfer and activity booked in advance.', text: 'Every hotel, transfer and activity is booked before you leave. Nothing to sort out on the spot, so your days are yours.' },
+    { icon: '/pros/easy.png', title: 'The full cost upfront', short: 'What is included and what is not, in writing.', text: 'The cost for the two of you, in writing, before you pay. What is included, what is not, and what is refundable.' }
   ]
 };
 
