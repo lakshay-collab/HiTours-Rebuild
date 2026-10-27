@@ -133,7 +133,7 @@ function HotelCard({ a, id = '' }) {
         <div className="p-4 flex flex-col justify-center gap-1 min-w-0">
           <h5 className="eg-title-md text-[#002131]" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
           <p className="eg-body-md text-[#174358] capitalize">{a.description}</p>
-          {a.rating && <p className="eg-label-md text-[#002131]" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#174358] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span>{a.rating.label} · {a.rating.reviews.toLocaleString('en-IN')} reviews</p>}
+          {a.rating && <p className="eg-label-md text-[#002131] inline-flex items-center" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#1E7B4F] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span><span className="text-[#1E7B4F] font-semibold">{a.rating.label}</span></p>}
           <button type="button" onClick={() => setOpen(true)} className="self-start inline-flex items-center gap-1 pt-1 eg-label-lg text-[#174358] underline" data-testid={`eg-accommodation-photos${id}`}><GalleryIcon size={16} />{route.viewPhotos} ({a.images.length})</button>
         </div>
       </div>
