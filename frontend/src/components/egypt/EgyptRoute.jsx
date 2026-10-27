@@ -124,8 +124,14 @@ export function Lightbox({ images, name, onClose, start = 0, portrait = false })
   );
 }
 
-function HotelCard({ a, id = '' }) {
+const hotelName = (a, city) => {
+  const m = a.name.match(/^(.*),\s*([^,]+)$/);
+  return m && [a.city, city].includes(m[2].trim()) ? m[1] : a.name;
+};
+
+function HotelCard({ a, id = '', city }) {
   const [open, setOpen] = useState(false);
+  const name = hotelName(a, city);
   const parts = a.description.split(' · ');
   const prose = parts.pop();
   const meta = [...parts.filter((p) => p.includes('★')), ...parts.filter((p) => !p.includes('★'))].join(' · ');
@@ -135,7 +141,7 @@ function HotelCard({ a, id = '' }) {
         <button type="button" onClick={() => setOpen(true)} className="relative w-[120px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
         <div className="p-3.5 sm:p-4 flex flex-col justify-center gap-1 min-w-0 flex-1">
           {meta && <p className="eg-label-md text-[#174358]" data-testid={`eg-accommodation-meta${id}`}>{meta}</p>}
-          <h5 className="eg-title-md text-[#002131] leading-snug" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
+          <h5 className="eg-title-md text-[#002131] leading-snug" data-testid={`eg-accommodation-name${id}`}>{name}</h5>
           <p className="eg-body-md text-[#174358] line-clamp-2 sm:line-clamp-none">{prose}</p>
           <div className="flex items-center justify-between gap-2 pt-1">
             {a.rating ? (
@@ -150,8 +156,9 @@ function HotelCard({ a, id = '' }) {
   );
 }
 
-function OptionCard({ a, id }) {
+function OptionCard({ a, id, city }) {
   const [open, setOpen] = useState(false);
+  const name = hotelName(a, city);
   const parts = a.description.split(' · ');
   const prose = parts.length > 1 ? parts.pop() : '';
   const meta = [...parts.filter((p) => p.includes('★')), ...parts.filter((p) => !p.includes('★'))].join(' · ');
@@ -161,7 +168,7 @@ function OptionCard({ a, id }) {
         <button type="button" onClick={() => setOpen(true)} className="relative w-[104px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
         <div className="p-3 sm:p-4 flex flex-col justify-center gap-1 min-w-0 flex-1">
           <p className="eg-label-md text-[#174358]" data-testid={`eg-accommodation-meta${id}`}>{meta}</p>
-          <h5 className="eg-title-md text-[#002131] leading-snug" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
+          <h5 className="eg-title-md text-[#002131] leading-snug" data-testid={`eg-accommodation-name${id}`}>{name}</h5>
           {prose && <p className="hidden sm:block eg-body-md text-[#174358] line-clamp-2">{prose}</p>}
           <div className="flex items-center justify-between gap-2 pt-1">
             {a.rating ? (
@@ -176,7 +183,7 @@ function OptionCard({ a, id }) {
   );
 }
 
-function Accommodation({ a }) {
+function Accommodation({ a, city }) {
   const all = [a, ...(a.options || [])];
   const four = all.find((h) => h.stars === 4);
   const five = all.find((h) => h.stars === 5);
@@ -184,7 +191,7 @@ function Accommodation({ a }) {
     return (
       <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
         <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
-        <HotelCard a={a} />
+        <HotelCard a={a} city={city} />
       </div>
     );
   }
@@ -194,8 +201,8 @@ function Accommodation({ a }) {
         <SectionHead icon={HotelIcon} title="Your accommodation options" />
         <p className="eg-label-md text-[#174358] pl-8 sm:pl-0" data-testid="eg-accommodation-options-copy">Choose between 4★ &amp; 5★ hotels</p>
       </div>
-      <OptionCard a={four} id="-4" />
-      <OptionCard a={five} id="-5" />
+      <OptionCard a={four} id="-4" city={city} />
+      <OptionCard a={five} id="-5" city={city} />
     </div>
   );
 }
@@ -307,7 +314,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
               <StopText s={s} />
               <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
-            {s.accommodation && <Accommodation a={s.accommodation} />}
+            {s.accommodation && <Accommodation a={s.accommodation} city={s.name} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}
           </section>
         ))}
