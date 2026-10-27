@@ -155,6 +155,15 @@ export const faq = { h2: 'Inside Sri Lanka FAQs', items: [
   { q: 'Will this itinerary change?', a: ['The itinerary, activities and hotels are subject to change at short notice due to availability, weather or seasonal conditions. We always do our best to keep the impact on your experience minimal.'] },
 ] };
 
+export const steps = {
+  h2: 'How booking works',
+  items: [
+    { h: 'Pick a date, hold your seat', t: 'Choose a departure and pay a \u20b95,000 non-refundable deposit per traveller. No account needed.' },
+    { h: 'Your trip leader calls you', t: 'Within one working day we confirm passport names, help with flights and visas, and answer every question.' },
+    { h: 'Pay the balance, pack your bags', t: 'The trip price is due 60 days before departure. Pay in parts if you like; we send reminders on WhatsApp.' },
+  ],
+};
+
 export const nextSteps = [
   { h: 'WhatsApp and email confirmation', t: 'Your seat-hold receipt and the full day-by-day itinerary are on their way.' },
   { h: 'Your trip leader calls within one working day', t: 'To collect passport names, help with flights and answer any questions.' },

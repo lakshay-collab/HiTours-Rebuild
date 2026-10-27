@@ -11,7 +11,7 @@ export const StatusBadge = ({ dep, className = '' }) => {
 const DateBlock = ({ iso }) => {
   const d = fromISO(iso);
   return (
-    <div className="flex flex-col items-center justify-center w-14 h-14 rounded-xl bg-[#002131] text-white shrink-0">
+    <div className="flex flex-col items-center justify-center w-14 h-14 rounded-xl bg-[#174358] text-white shrink-0">
       <span className="eg-headline-md leading-none">{d.getDate()}</span>
       <span className="text-[11px] uppercase tracking-wide leading-none mt-1">{d.toLocaleDateString('en-GB', { month: 'short' })}</span>
     </div>
@@ -48,7 +48,7 @@ export const DepartureRow = ({ dep, onPick, compact = false, selected = false })
 export const MonthTabs = ({ months, value, onChange, testPrefix = 'departures-month' }) => (
   <div className="flex shrink-0 gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0" data-testid={`${testPrefix}-filter`}>
     {months.map((m) => (
-      <button key={m} type="button" onClick={() => onChange(m)} className={`shrink-0 rounded-full px-4 h-10 eg-label-lg transition-colors ${value === m ? 'bg-[#002131] text-white' : 'bg-white border border-[#C4CBD0] text-[#002131] hover:bg-[#FBEADB]'}`} data-testid={`${testPrefix}-${m}`} aria-pressed={value === m}>
+      <button key={m} type="button" onClick={() => onChange(m)} className={`shrink-0 rounded-full px-4 h-10 eg-label-lg transition-colors ${value === m ? "bg-[#174358] text-white" : "bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]"}`} data-testid={`${testPrefix}-${m}`} aria-pressed={value === m}>
         {m === 'all' ? 'All dates' : monthLabel(m, { month: 'short', year: '2-digit' }).replace(' ', " '")}
       </button>
     ))}
@@ -60,10 +60,10 @@ export const DeparturesSection = ({ departures, loading, error, onPick, depositP
   const [month, setMonth] = useState('all');
   const list = month === 'all' ? departures : departures.filter((d) => monthKey(d.start) === month);
   return (
-    <section id="dates" className="scroll-mt-24 flex flex-col gap-5" data-testid="departures-section">
+    <section id="dates" className="eg-container scroll-mt-4 flex flex-col gap-6" data-testid="departures-section">
       <div>
         <h2 className="eg-display-sm text-[#002131]">Dates & prices</h2>
-        <p className="eg-body-lg text-[#174358] mt-2">Pick a departure and hold your seat for {fmtInr(depositPp)} per traveller. The trip price is due 60 days before you fly.</p>
+        <p className="eg-body-lg text-[#002131] mt-2">Pick a departure and hold your seat for {fmtInr(depositPp)} per traveller. The trip price is due 60 days before you fly.</p>
       </div>
       {error && <p className="eg-body-lg text-[#B3261E]" data-testid="departures-error">{error}</p>}
       {loading && !error && <p className="eg-body-lg text-[#6F777C]" data-testid="departures-loading">Loading departures…</p>}

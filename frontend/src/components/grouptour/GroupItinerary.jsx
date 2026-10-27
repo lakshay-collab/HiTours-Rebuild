@@ -3,64 +3,76 @@ import { Moon, Utensils } from 'lucide-react';
 import { BulletMark } from '../egypt/EgyptRoute';
 
 const MEAL = { B: 'Breakfast', L: 'Lunch', D: 'Dinner' };
+const HEADER = 120;
 
-const DayBlock = ({ day, hotel, innerRef, isActive }) => (
-  <article ref={innerRef} id={`day-${day.n}`} data-day={day.n} className="py-6 border-b border-[#E4E3DB] flex flex-col gap-4" data-testid={`itin-day-${day.n}`}>
-    <div className="flex items-center gap-3">
-      <span className={`inline-flex items-center justify-center min-w-[64px] h-8 px-3 rounded-full eg-label-lg text-white transition-colors ${isActive ? 'bg-[#FB7F26]' : 'bg-[#308BB6]'}`} data-testid={`itin-day-${day.n}-badge`}>Day {day.n}</span>
-      <p className="flex items-center gap-1.5 eg-label-md text-[#6F777C]" data-testid={`itin-day-${day.n}-meals`}><Utensils size={14} className="text-[#308BB6]" />{day.meals.map((m) => MEAL[m]).join(' · ')}</p>
-    </div>
-    <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
-      <div className="flex-1 min-w-0 flex flex-col gap-3">
-        <h3 className="eg-headline-md text-[#002131]">{day.title}</h3>
-        <ul className="flex flex-col gap-2.5" data-testid={`itin-day-${day.n}-bullets`}>
-          {day.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]"><BulletMark text={b} />{b}</li>)}
-        </ul>
-        <p className="mt-1 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid={`itin-day-${day.n}-overnight`}>
-          <Moon size={16} className="text-[#308BB6] shrink-0" />
-          {hotel ? <span>Overnight in {hotel.name}, {hotel.city} <span className="text-[#FB7F26]">{'★'.repeat(hotel.stars)}</span> <span className="text-[#6F777C] font-normal">or similar</span></span> : 'Departure day, no overnight'}
-        </p>
-      </div>
-      <img src={day.image} alt={day.title} loading="lazy" className="w-full h-48 md:h-auto md:w-[280px] md:aspect-[4/3] object-cover rounded-2xl shrink-0 order-first md:order-none" />
-    </div>
-  </article>
+const DayText = ({ day, hotel }) => (
+  <div className="md:w-[346px] shrink-0" data-testid={`itin-day-${day.n}-text`}>
+    <h3 className="eg-title-lg text-[#002131]">{day.title}</h3>
+    <p className="mt-2 inline-flex items-center gap-1.5 eg-label-md text-[#6F777C]" data-testid={`itin-day-${day.n}-meals`}><Utensils size={14} className="text-[#308BB6]" />{day.meals.map((m) => MEAL[m]).join(' · ')}</p>
+    <ul className="mt-4 flex flex-col gap-2.5" data-testid={`itin-day-${day.n}-bullets`}>
+      {day.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]"><BulletMark text={b} />{b}</li>)}
+    </ul>
+    <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid={`itin-day-${day.n}-overnight`}>
+      <Moon size={16} className="text-[#308BB6] shrink-0" />
+      {hotel ? <span>Overnight in {hotel.name}, {hotel.city} <span className="text-[#FB7F26]">{'★'.repeat(hotel.stars)}</span> <span className="text-[#6F777C] font-normal">or similar</span></span> : 'Departure day, no overnight'}
+    </p>
+  </div>
 );
 
 export const GroupItinerary = ({ days, hotels, onActiveChange }) => {
-  const [activeDay, setActiveDay] = useState(1);
-  const refs = useRef({});
+  const [active, setActive] = useState(0);
+  const [stuck, setStuck] = useState(false);
+  const head = useRef(null);
+  const refs = useRef([]);
+  const tabs = useRef([]);
 
   useEffect(() => {
-    let raf = 0;
-    const measure = () => {
-      raf = 0;
-      const els = Object.entries(refs.current).filter(([, el]) => el);
-      if (!els.length) return;
-      const line = window.innerHeight * 0.5;
-      let best = null, bestDist = Infinity;
-      els.forEach(([n, el]) => {
-        const r = el.getBoundingClientRect();
-        const dist = r.top <= line && r.bottom >= line ? 0 : Math.min(Math.abs(r.top - line), Math.abs(r.bottom - line));
-        if (dist < bestDist) { bestDist = dist; best = Number(n); }
-      });
-      if (best) setActiveDay(best);
+    const onScroll = () => {
+      if (!head.current) return;
+      const top = head.current.getBoundingClientRect().top;
+      setStuck(top <= 0 && window.scrollY > 0);
+      const line = (head.current.offsetHeight || HEADER) + 60;
+      let idx = 0;
+      refs.current.forEach((el, i) => { if (el && el.getBoundingClientRect().top <= line) idx = i; });
+      setActive(idx);
     };
-    const onScroll = () => { if (!raf) raf = requestAnimationFrame(measure); };
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    measure();
-    return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
-  }, [days]);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  useEffect(() => { onActiveChange?.(days[active].n); }, [active, days, onActiveChange]);
+  useEffect(() => { const t = tabs.current[active]; if (t && t.scrollIntoView) t.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' }); }, [active]);
 
-  useEffect(() => { onActiveChange?.(activeDay); }, [activeDay, onActiveChange]);
+  const goTo = (i) => {
+    const el = refs.current[i];
+    const offset = (head.current ? head.current.offsetHeight : HEADER) + 12;
+    if (el) { setActive(i); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' }); }
+  };
 
   return (
-    <section id="itinerary" className="scroll-mt-24" data-testid="group-itinerary" data-active-day={activeDay}>
-      <h2 className="eg-display-sm text-[#002131]">Your day-by-day itinerary</h2>
-      <p className="eg-body-lg text-[#174358] mt-2">{days.length} days, 8 places. Every night’s hotel is listed under its day.</p>
-      <div data-testid="itin-days" className="mt-6 border-t border-[#E4E3DB]">
-        {days.map((d) => <DayBlock key={d.n} day={d} hotel={d.stop ? hotels[d.stop] : null} isActive={activeDay === d.n} innerRef={(el) => { refs.current[d.n] = el; }} />)}
+    <div className="bg-[#F6F4EB] rounded-xl" id="itinerary" data-testid="group-itinerary" data-active-day={days[active].n}>
+      <div ref={head} className="sticky top-0 z-20 bg-[#F0EEE6] rounded-t-xl px-4 md:px-10 shadow-[0_6px_12px_-8px_rgba(0,33,49,0.2)]" data-testid="itin-header">
+        <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
+          <h2 className="eg-title-md md:eg-headline-md !leading-7 text-[#002131] truncate">Your day-by-day itinerary</h2>
+        </div>
+        {!stuck && <p className="eg-body-md text-[#174358] pb-3">{days.length} days with your group · every night’s hotel listed under its day</p>}
+        <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar py-3" data-testid="itin-tabs">
+          {days.map((d, i) => (
+            <button key={d.n} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`shrink-0 h-9 px-4 rounded-full eg-label-lg whitespace-nowrap transition-colors ${active === i ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`itin-tab-${d.n}`}>Day {d.n}</button>
+          ))}
+        </div>
       </div>
-    </section>
+      <div className="px-4 md:px-10 pt-8 pb-7 flex flex-col divide-y divide-[#DDD9CE]" data-testid="itin-days">
+        {days.map((d, i) => (
+          <section key={d.n} ref={(el) => { refs.current[i] = el; }} id={`day-${d.n}`} className="py-8 first:pt-0 last:pb-0 flex flex-col md:flex-row md:items-start gap-6 md:gap-8" data-testid={`itin-day-${d.n}`}>
+            <DayText day={d} hotel={d.stop ? hotels[d.stop] : null} />
+            <div className="relative shrink-0 md:flex-1 min-w-0 aspect-[3/2] md:aspect-auto md:h-[300px] md:self-start rounded-xl overflow-hidden bg-[#EAE8E0] order-first md:order-none">
+              <img src={d.image} alt={d.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+              <span className="absolute left-3 top-3 inline-flex items-center h-7 px-3 rounded-full bg-[#308BB6] eg-label-md text-white" data-testid={`itin-day-${d.n}-badge`}>Day {d.n}</span>
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
   );
 };
