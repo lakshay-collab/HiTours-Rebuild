@@ -24,9 +24,9 @@ export default function GroupTourDetail() {
   return (
     <div className="eg" data-testid="group-tour-page">
       <Header />
-      <main className="eg-wide pt-3 md:pt-5 pb-28 lg:pb-16 flex flex-col gap-10 md:gap-14">
+      <main className="w-full px-4 sm:px-6 lg:px-10 pt-3 md:pt-5 pb-28 lg:pb-16 flex flex-col gap-10 md:gap-14">
         <GroupHero detail={detail} />
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_384px] gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 lg:gap-12 items-start">
           <div className="flex flex-col gap-10 md:gap-14 min-w-0">
             <GroupTitle detail={detail} />
             <nav className="sticky top-0 z-20 -mx-4 px-4 bg-[#FBF9F1]/95 backdrop-blur border-b border-[#E4E3DB] flex gap-5 overflow-x-auto no-scrollbar" data-testid="group-tabs">

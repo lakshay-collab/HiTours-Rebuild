@@ -90,12 +90,12 @@ export const GroupItinerary = ({ days, hotels, stops }) => {
       <div ref={mapRef} className="mt-6 lg:hidden rounded-2xl border border-[#E4E3DB] bg-white p-2 sticky top-[48px] z-10" data-testid="route-map-mobile-wrap">
         <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[260px]" testId="route-map-mobile" compact />
       </div>
-      <div className="mt-2 lg:mt-8 grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 lg:gap-12 items-start">
+      <div className="mt-2 lg:mt-8 grid grid-cols-1 lg:grid-cols-[1fr_440px] gap-8 lg:gap-12 items-start">
         <div data-testid="itin-days">
           {days.map((d) => <DayCard key={d.n} day={d} hotel={d.stop ? hotels[d.stop] : null} open={open.has(d.n)} isActive={activeDay === d.n} onToggle={() => toggle(d.n)} innerRef={(el) => { refs.current[d.n] = el; }} />)}
         </div>
-        <div className="hidden lg:block sticky top-24 rounded-2xl border border-[#E4E3DB] bg-white p-4" data-testid="route-map-desktop-wrap">
-          <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[600px]" />
+        <div className="hidden lg:block sticky top-20 rounded-2xl border border-[#E4E3DB] bg-white p-4" data-testid="route-map-desktop-wrap">
+          <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[660px]" />
         </div>
       </div>
     </section>

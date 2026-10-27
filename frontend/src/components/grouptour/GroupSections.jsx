@@ -87,7 +87,7 @@ export const ServicePills = ({ services, testId = 'group-services' }) => (
   </ul>
 );
 
-export const PriceCard = ({ detail, departures, onOpen }) => {
+export const PriceCard = ({ detail, departures, onOpen, compact = false }) => {
   const { openLead } = useLeadModal();
   const low = lowestPrice(departures) ?? detail.basePrice;
   return (
@@ -102,15 +102,19 @@ export const PriceCard = ({ detail, departures, onOpen }) => {
         <HoldButton deposit={detail.depositPp} onClick={() => onOpen(null)} className="w-full !h-16 !text-[18px]" testId="group-view-dates" />
         <button type="button" onClick={() => openLead()} className="eg-btn-outlined w-full !h-12 eg-label-lg" data-testid="group-speak-expert">Speak to a Sri Lanka expert</button>
       </div>
-      <hr className="border-[#E4E3DB]" />
-      <div className="flex flex-col gap-3">
-        <p className="eg-title-md text-[#002131]">What’s included</p>
-        <ServicePills services={detail.services} testId="group-box-services" />
-      </div>
-      <hr className="border-[#E4E3DB]" />
-      <ul className="flex flex-col gap-2" data-testid="group-trust">
-        {['Free date changes until the balance is due', 'Hi Tours Cares: 24/7 on-ground support', 'Secure payments by Razorpay'].map((t) => <li key={t} className="flex items-center gap-2 eg-body-md text-[#174358]"><CheckCircleIcon size={18} className="text-[#308BB6] shrink-0" />{t}</li>)}
-      </ul>
+      {!compact && (
+        <>
+          <hr className="border-[#E4E3DB]" />
+          <div className="flex flex-col gap-3">
+            <p className="eg-title-md text-[#002131]">What’s included</p>
+            <ServicePills services={detail.services} testId="group-box-services" />
+          </div>
+          <hr className="border-[#E4E3DB]" />
+          <ul className="flex flex-col gap-2" data-testid="group-trust">
+            {['Free date changes until the balance is due', 'Hi Tours Cares: 24/7 on-ground support', 'Secure payments by Razorpay'].map((t) => <li key={t} className="flex items-center gap-2 eg-body-md text-[#174358]"><CheckCircleIcon size={18} className="text-[#308BB6] shrink-0" />{t}</li>)}
+          </ul>
+        </>
+      )}
       <hr className="border-[#E4E3DB]" />
       <Ratings />
     </div>

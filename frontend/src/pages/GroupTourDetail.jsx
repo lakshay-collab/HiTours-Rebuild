@@ -42,9 +42,9 @@ export default function GroupTourDetail() {
               <div className="md:hidden"><WhyGroup data={whyGroup} testId="group-why-mobile" /></div>
             </div>
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="group-sidebar">
-              <PriceCard detail={detail} departures={departures} onOpen={open} />
+              <PriceCard detail={detail} departures={departures} onOpen={open} compact />
               <div className="rounded-2xl border border-[#C4CBD0] bg-white p-3" data-testid="route-map-desktop-wrap">
-                <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[420px]" />
+                <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[440px]" />
               </div>
               <WhyGroup data={whyGroup} />
             </aside>
