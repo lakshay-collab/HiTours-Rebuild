@@ -59,11 +59,19 @@ const makeBookable = (bySlug, product, key) => {
   data.crumbs = [...data.crumbs.slice(0, -1), { label: `${src.detail.title} (book online)` }];
   const hotels = data.route.stops.map((s) => ({ name: s.accommodation.name, description: s.accommodation.description, image: s.accommodation.images?.[0], dayLabel: s.dayLabel, city: s.name }));
   const included = data.route.stops.flatMap((s) => s.activities.map((a) => ({ day: a.day, name: a.name })));
+  const transfers = [];
+  data.route.stops.forEach((s) => {
+    let day = s.dayLabel;
+    s.bullets.forEach((b) => {
+      if (b.startsWith('__day__')) { day = b.slice(7).split(' · ')[0]; return; }
+      if (/transfer|drive|safari jeep|4x4|by car|by train|by boat/i.test(b)) transfers.push({ day, text: b.replace(/^Breakfast,? (and|then) (a )?/i, '').replace(/^([a-z])/, (c) => c.toUpperCase()) });
+    });
+  });
   return {
     key, title: src.detail.title, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
     days: Number(src.detail.days.match(/^(\d+) days/)[1]), image: src.detail.gallery[0], alt: src.detail.alt, destination: 'Sri Lanka',
     detailPath: `/asia/book/${key}`, datesPath: `/asia/book/${key}/dates`, checkoutPath: `/asia/book/${key}/checkout`,
-    hotels, included, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,
+    hotels, included, transfers, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,
     counts: { hotels: src.detail.stats.hotels, meals: Number((src.detail.services.find(([l]) => /meals/.test(l))?.[0] || '0').split(' ')[0]), activities: src.detail.stats.activities, transfers: src.detail.stats.transfers },
     tags: src.detail.tags, routeCities: src.detail.routeCities, data, product,
   };

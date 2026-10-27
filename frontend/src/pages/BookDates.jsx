@@ -6,7 +6,8 @@ import Footer from '../components/Footer';
 import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, isBookable, quote, fmtInr, fmtDate } from '../booking/bookable';
 import { RoomsPicker } from '../components/booking/RoomsPicker';
 import { DepartureCalendar } from '../components/booking/DepartureCalendar';
-import { StepBar, PaymentSummary, HotelsCard, IncludedCard, CountsRow } from '../components/booking/BookingSummary';
+import { StepBar, PaymentSummary } from '../components/booking/BookingSummary';
+import { InclusionTabs } from '../components/booking/InclusionTabs';
 
 export default function BookDates() {
   const { key } = useParams();
@@ -38,21 +39,7 @@ export default function BookDates() {
         </div>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1 min-w-0 flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <h1 className="eg-headline-lg text-[#002131]" data-testid="book-dates-title">{product.title}</h1>
-              <p className="eg-body-lg text-[#5B6B74]">{product.days} days, {product.nights} nights · {product.routeCities.join(' → ')} · everything below is included in one price</p>
-            </div>
-            <section className="rounded-2xl border border-[#E4E3DB] bg-white p-4 md:p-5 flex flex-col gap-4" data-testid="book-glance">
-              <CountsRow product={product} />
-              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2" data-testid="book-glance-hotels">
-                {product.hotels.map((h, i) => (
-                  <li key={i} className="flex items-center gap-3 rounded-xl bg-[#FBF9F1] p-2" data-testid={`glance-hotel-${i + 1}`}>
-                    {h.image && <img src={h.image} alt={h.name} className="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" />}
-                    <div className="min-w-0"><p className="eg-label-lg text-[#002131] truncate">{h.name}</p><p className="eg-label-md text-[#5B6B74]">{h.description.split(' · ').slice(0, 1)} · {h.description.split(' · ')[3]} · {h.description.split(' · ')[1]}</p></div>
-                  </li>
-                ))}
-              </ul>
-            </section>
+            <InclusionTabs product={product} date={date} />
             <section className="flex flex-col gap-3" data-testid="book-travellers-section">
               <h2 className="eg-title-lg text-[#002131]">1. Travellers & rooms</h2>
               <RoomsPicker rooms={rooms} onChange={setRooms} />
@@ -66,10 +53,6 @@ export default function BookDates() {
                 <li>International flights are not included: our experts can add them after you book.</li>
               </ul>
             </section>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" data-testid="book-details">
-              <HotelsCard product={product} date={date} />
-              <IncludedCard product={product} />
-            </div>
           </div>
           <aside className="w-full md:w-[384px] shrink-0 flex flex-col gap-6 md:self-start md:sticky md:top-6" data-testid="book-sidebar">
             <PaymentSummary product={product} date={date} rooms={rooms} cta="Continue to review & pay" ctaDisabled={!date} onCta={go} />
