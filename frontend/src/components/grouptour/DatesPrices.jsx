@@ -46,7 +46,7 @@ export const DepartureRow = ({ dep, onPick, compact = false, selected = false })
 };
 
 export const MonthTabs = ({ months, value, onChange, testPrefix = 'departures-month' }) => (
-  <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0" data-testid={`${testPrefix}-filter`}>
+  <div className="flex shrink-0 gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0" data-testid={`${testPrefix}-filter`}>
     {months.map((m) => (
       <button key={m} type="button" onClick={() => onChange(m)} className={`shrink-0 rounded-full px-4 h-10 eg-label-lg transition-colors ${value === m ? 'bg-[#002131] text-white' : 'bg-white border border-[#C4CBD0] text-[#002131] hover:bg-[#FBEADB]'}`} data-testid={`${testPrefix}-${m}`} aria-pressed={value === m}>
         {m === 'all' ? 'All dates' : monthLabel(m, { month: 'short', year: '2-digit' }).replace(' ', " '")}
