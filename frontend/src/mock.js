@@ -35,7 +35,7 @@ export const expertAdvice = {
 };
 
 export const hero = {
-  title: ['Honeymoons and holidays,', 'designed for the two of you'],
+  title: ['Holidays and honeymoons,', 'designed for just the two of you'],
   searchPlaceholder: 'Where would you like to go?',
   searchPlaceholderMobile: 'Where to?',
   searchPlaceholderStyle: "What's your travel style?",
