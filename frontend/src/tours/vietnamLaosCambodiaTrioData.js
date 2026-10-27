@@ -427,6 +427,8 @@ const detail = {
   tag: 'Grand tour',
   tags: ['Grand tour', 'Culture'],
   price: 106875,
+  // Hotel category switch (4★ default). 5★ price is a PLACEHOLDER (+22%) until the real supplement is confirmed.
+  categories: { default: 4, options: [{ stars: 4, label: '4★ Comfort', price: 106875 }, { stars: 5, label: '5★ Premium', price: 130400 }] },
   routeLabel: 'This holiday takes you to',
   routeCities: ['Hanoi', 'Ninh Binh', 'Halong Bay', 'Luang Prabang', 'Siem Reap', 'Tonle Sap', 'Angkor Wat', 'Phnom Kulen'],
   stats: { days: 10, cities: 3, hotels: 3, activities: 8, transfers: 12 },

@@ -188,10 +188,25 @@ const Crumbs = ({ crumbs }) => (
   </nav>
 );
 
-const PriceCard = ({ detail, inr, onCta }) => (
+const CategorySwitch = ({ detail, category, onChange }) => {
+  if (!detail.categories) return null;
+  return (
+    <div className="flex flex-col gap-1.5" data-testid="eg-category-switch">
+      <span className="eg-body-sm text-[#6F777C]">Hotel category</span>
+      <div className="grid grid-cols-2 gap-1 p-1 rounded-full bg-[#F0EEE6]" role="radiogroup" aria-label="Hotel category">
+        {detail.categories.options.map((c) => (
+          <button key={c.stars} type="button" role="radio" aria-checked={category === c.stars} onClick={() => onChange(c.stars)} className={`h-9 rounded-full eg-label-lg transition-colors ${category === c.stars ? 'bg-white text-[#002131] shadow-sm' : 'text-[#174358] hover:text-[#002131]'}`} data-testid={`eg-category-${c.stars}`}>{c.label}</button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const PriceCard = ({ detail, inr, onCta, category, onCategory }) => (
   <div className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="eg-detail-price">
     <div className="flex flex-col gap-4">
       <SaleBadge variant="tag" className="self-start" testId="eg-detail-sale-tag" />
+      <CategorySwitch detail={detail} category={category} onChange={onCategory} />
       <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="detail" testId="eg-detail-price-value" />
       <Cta detail={detail} className="w-full !h-16 !text-[18px]" testId="eg-detail-price-cta" onClick={onCta} />
     </div>
@@ -403,6 +418,7 @@ export default function EgyptDetail() {
     requestAnimationFrame(() => { const el = document.getElementById('summary'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 16, behavior: 'smooth' }); });
   };
   const data = BY_SLUG[pathname.includes('/book/') ? `book/${slug}` : slug];
+  const [category, setCategory] = useState(() => data?.detail.categories?.default ?? null);
   const dest = data ? destinationFor(data.detail) : null;
   usePageLead(dest?.name || '', data?.detail.gallery?.[0], data?.detail.alt);
   usePageMeta(
@@ -412,7 +428,9 @@ export default function EgyptDetail() {
       : undefined,
   );
   if (!data) return <Navigate to="/africa/egypt" replace />;
-  const { detail, route, glance, crumbs } = data;
+  const { route, glance, crumbs } = data;
+  const catPrice = category && data.detail.categories?.options.find((c) => c.stars === category)?.price;
+  const detail = catPrice ? { ...data.detail, price: catPrice } : data.detail;
   const inr = formatInr(detail.price);
   return (
     <div className="eg" data-testid="egypt-detail-page">
@@ -420,16 +438,16 @@ export default function EgyptDetail() {
       <main className="flex flex-col gap-8 pb-28 md:pb-[100px]">
         <Head detail={detail} />
         <Crumbs crumbs={crumbs} />
-        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price"><PriceCard detail={detail} inr={inr} onCta={openLead} /></div>
+        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price"><PriceCard detail={detail} inr={inr} onCta={openLead} category={category} onCategory={setCategory} /></div>
         <div className="flex flex-col gap-14 md:gap-[72px]">
           <div className="eg-wide flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-8">
               <ExpertCard detail={detail} />
-              <EgyptRoute onSummary={showSummary} stops={route.stops} />
+              <EgyptRoute onSummary={showSummary} stops={route.stops} category={category} />
               <div className="md:hidden"><ExpertsCard testId="eg-detail-experts-mobile" /></div>
             </div>
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="eg-detail-sidebar">
-              <PriceCard detail={detail} inr={inr} onCta={openLead} />
+              <PriceCard detail={detail} inr={inr} onCta={openLead} category={category} onCategory={setCategory} />
               <ExpertsCard />
             </aside>
           </div>

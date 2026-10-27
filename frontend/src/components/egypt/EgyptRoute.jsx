@@ -141,12 +141,32 @@ function HotelCard({ a, id = '' }) {
   );
 }
 
-function Accommodation({ a }) {
+function Accommodation({ a, category }) {
+  const [more, setMore] = useState(false);
+  if (!category) {
+    return (
+      <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
+        <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
+        <HotelCard a={a} />
+        {(a.options || []).map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
+      </div>
+    );
+  }
+  const all = [a, ...(a.options || [])];
+  const match = all.filter((h) => h.stars === category);
+  const pick = match[0] || a;
+  const rest = match.slice(1);
   return (
-    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
+    <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-category={category}>
       <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
-      <HotelCard a={a} />
-      {(a.options || []).map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
+      <HotelCard a={pick} />
+      {!match.length && <p className="eg-body-sm text-[#6F777C]" data-testid="eg-accommodation-fallback">No {category}★ hotel here; the best {pick.stars}★ option is used.</p>}
+      {rest.length > 0 && (
+        <>
+          {more && rest.map((o, i) => <HotelCard key={o.name} a={o} id={`-option-${i}`} />)}
+          <button type="button" onClick={() => setMore((v) => !v)} className="self-start eg-label-lg text-[#174358] underline" data-testid="eg-accommodation-more">{more ? 'Show fewer hotels' : `Or similar: ${rest.length} other ${category}★ hotel${rest.length > 1 ? 's' : ''} we use`}</button>
+        </>
+      )}
     </div>
   );
 }
@@ -203,7 +223,7 @@ function Activities({ items }) {
   );
 }
 
-export default function EgyptRoute({ onSummary, stops = route.stops }) {
+export default function EgyptRoute({ onSummary, stops = route.stops, category = null }) {
   const days = useMemo(() => toDays(stops), [stops]);
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
@@ -258,7 +278,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
               <StopText s={s} />
               <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
-            {s.accommodation && <Accommodation a={s.accommodation} />}
+            {s.accommodation && <Accommodation a={s.accommodation} category={category} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}
           </section>
         ))}
