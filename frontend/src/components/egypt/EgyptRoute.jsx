@@ -133,7 +133,7 @@ function HotelCard({ a, id = '' }) {
         <div className="p-4 flex flex-col justify-center gap-1 min-w-0">
           <h5 className="eg-title-md text-[#002131]" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
           <p className="eg-body-md text-[#174358] capitalize">{a.description}</p>
-          {a.rating && <p className="eg-label-md text-[#002131]" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#174358] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span>{a.rating.label} · {a.rating.reviews.toLocaleString('en-IN')} Booking.com reviews</p>}
+          {a.rating && <p className="eg-label-md text-[#002131]" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#174358] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span>{a.rating.label} · {a.rating.reviews.toLocaleString('en-IN')} reviews</p>}
           <button type="button" onClick={() => setOpen(true)} className="self-start inline-flex items-center gap-1 pt-1 eg-label-lg text-[#174358] underline" data-testid={`eg-accommodation-photos${id}`}><GalleryIcon size={16} />{route.viewPhotos} ({a.images.length})</button>
         </div>
       </div>
@@ -156,8 +156,7 @@ function Accommodation({ a }) {
   }
   return (
     <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
-      <SectionHead icon={HotelIcon} title="Your accommodation options" />
-      <p className="eg-body-md text-[#174358] -mt-1" data-testid="eg-accommodation-options-copy">Hand-picked 4★ and 5★ stays, curated and customised for you.</p>
+      <SectionHead icon={HotelIcon} title="Your accommodation options · customise between 4★ and 5★" />
       <HotelCard a={four} id="-4" />
       <HotelCard a={five} id="-5" />
     </div>
