@@ -142,6 +142,32 @@ function HotelCard({ a, id = '' }) {
   );
 }
 
+function OptionCard({ a, id }) {
+  const [open, setOpen] = useState(false);
+  const parts = a.description.split(' · ');
+  const prose = parts.length > 1 ? parts.pop() : '';
+  const meta = [...parts.filter((p) => p.includes('★')), ...parts.filter((p) => !p.includes('★'))].join(' · ');
+  return (
+    <>
+      <div className="flex bg-[#FBF9F1] border border-[#C4CBD0] rounded-xl overflow-hidden" data-testid={`eg-accommodation-card${id}`}>
+        <button type="button" onClick={() => setOpen(true)} className="relative w-[104px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
+        <div className="p-3 sm:p-4 flex flex-col justify-center gap-1 min-w-0 flex-1">
+          <p className="eg-label-md text-[#174358]" data-testid={`eg-accommodation-meta${id}`}>{meta}</p>
+          <h5 className="eg-title-md text-[#002131] leading-snug" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
+          {prose && <p className="hidden sm:block eg-body-md text-[#174358] line-clamp-2">{prose}</p>}
+          <div className="flex items-center justify-between gap-2 pt-1">
+            {a.rating ? (
+              <p className="inline-flex items-center gap-1.5" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#1E7B4F] text-white eg-label-md">{a.rating.score.toFixed(1)}</span><span className="eg-label-md font-semibold text-[#1E7B4F]">{a.rating.label}</span></p>
+            ) : <span />}
+            <button type="button" onClick={() => setOpen(true)} className="inline-flex items-center gap-1 eg-label-md text-[#174358] underline shrink-0" data-testid={`eg-accommodation-photos${id}`}><GalleryIcon size={14} />{a.images.length} photos</button>
+          </div>
+        </div>
+      </div>
+      {open && <Lightbox images={a.images} name={a.name} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
 function Accommodation({ a }) {
   const all = [a, ...(a.options || [])];
   const four = all.find((h) => h.stars === 4);
@@ -156,9 +182,12 @@ function Accommodation({ a }) {
   }
   return (
     <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
-      <SectionHead icon={HotelIcon} title="Your accommodation options · customise between 4★ and 5★" />
-      <HotelCard a={four} id="-4" />
-      <HotelCard a={five} id="-5" />
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
+        <SectionHead icon={HotelIcon} title="Your accommodation options" />
+        <p className="eg-label-md text-[#174358] pl-8 sm:pl-0" data-testid="eg-accommodation-options-copy">Choose between 4★ &amp; 5★ hotels</p>
+      </div>
+      <OptionCard a={four} id="-4" />
+      <OptionCard a={five} id="-5" />
     </div>
   );
 }
