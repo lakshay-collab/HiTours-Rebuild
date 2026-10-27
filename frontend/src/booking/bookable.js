@@ -67,11 +67,30 @@ const makeBookable = (bySlug, product, key) => {
       if (/transfer|drive|safari jeep|4x4|by car|by train|by boat/i.test(b)) transfers.push({ day, text: b.replace(/^Breakfast,? (and|then) (a )?/i, '').replace(/^([a-z])/, (c) => c.toUpperCase()) });
     });
   });
+  const dayNum = (label) => Number((label.match(/\d+/) || [0])[0]);
+  const stopDays = data.route.stops.map((s) => { const m = s.dayLabel.match(/(\d+)(?: to (\d+))?/); return [Number(m[1]), Number(m[2] || m[1])]; });
+  const totalDays = Number(src.detail.days.match(/(\d+) days?/)[1]);
+  const dayPlan = Array.from({ length: totalDays }, (_, i) => {
+    const d = i + 1;
+    const si = stopDays.findIndex(([a, b]) => d >= a && d <= b);
+    const stop = si >= 0 ? data.route.stops[si] : null;
+    const bullets = stop ? stop.bullets : [];
+    let cur = stop ? stopDays[si][0] : d;
+    const own = bullets.filter((b) => { if (b.startsWith('__day__')) { cur = dayNum(b.slice(7)); return false; } return cur === d; });
+    const title = (bullets.find((b) => b.startsWith('__day__') && dayNum(b.slice(7)) === d) || '').slice(7).split(' · ')[1] || (stop ? stop.name : '');
+    const last = d === totalDays;
+    return {
+      day: d, title, city: stop?.name,
+      hotel: last ? null : hotels[si] || null,
+      experiences: included.filter((a) => a.day === d).map((a) => a.name),
+      transfers: own.filter((b) => /transfer|drive|safari jeep|4x4|by car|by train|by boat/i.test(b)).map((b) => b.replace(/^Breakfast,? (and|then) (a )?/i, '').replace(/^([a-z])/, (c) => c.toUpperCase())),
+    };
+  });
   return {
     key, title: src.detail.title, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
     days: Number(src.detail.days.match(/^(\d+) days/)[1]), image: src.detail.gallery[0], alt: src.detail.alt, destination: 'Sri Lanka',
     detailPath: `/asia/book/${key}`, datesPath: `/asia/book/${key}/dates`, checkoutPath: `/asia/book/${key}/checkout`,
-    hotels, included, transfers, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,
+    hotels, included, transfers, dayPlan, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,
     counts: { hotels: src.detail.stats.hotels, meals: Number((src.detail.services.find(([l]) => /meals/.test(l))?.[0] || '0').split(' ')[0]), activities: src.detail.stats.activities, transfers: src.detail.stats.transfers },
     tags: src.detail.tags, routeCities: src.detail.routeCities, data, product,
   };
