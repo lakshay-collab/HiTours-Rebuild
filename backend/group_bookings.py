@@ -1,4 +1,4 @@
-"""Fixed-departure group tours: departures schedule + deposit booking (10%, 5% early-bird). Shares Razorpay/MOCK + verify with bookings.py."""
+"""Fixed-departure group tours: departures schedule + seat-hold deposit (flat ₹5,000 per traveller). Shares Razorpay/MOCK + verify with bookings.py."""
 import logging
 import uuid
 from datetime import UTC, date, datetime, timedelta
@@ -6,7 +6,7 @@ from datetime import UTC, date, datetime, timedelta
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
-from bookings import KEY_ID, MOCK, Contact, _rzp, ist_today, jsround
+from bookings import KEY_ID, MOCK, Contact, _rzp, ist_today
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/bookings/group")
@@ -17,10 +17,10 @@ GROUP_PRODUCTS = {
         'single_supplement': 38000, 'max_group': 16, 'peak_months': (12, 1, 2), 'peak_extra': 15000,
     },
 }
-DEPOSIT_PCT = 10
-EARLY_BIRD_PCT = 5
-EARLY_BIRD_DAYS = 90
+DEPOSIT_PP = 5000
 BALANCE_DUE_DAYS = 60
+BALANCE_MIN_DAYS = 7
+GUARANTEED_FROM = 6
 MIN_LEAD_DAYS = 10
 MONTHS_AHEAD = 6
 MAX_TRAVELLERS = 8
@@ -52,16 +52,13 @@ def departures(key: str, today: date | None = None) -> list[dict]:
             if ahead < MIN_LEAD_DAYS:
                 continue
             seats = SEATS_PATTERN[idx % len(SEATS_PATTERN)]
-            early = ahead >= EARLY_BIRD_DAYS
-            full = ahead < BALANCE_DUE_DAYS
             price = p['base'] + (p['peak_extra'] if m in p['peak_months'] else 0)
             out.append({
                 'id': d.isoformat(), 'start': d.isoformat(), 'end': (d + timedelta(days=p['nights'])).isoformat(),
                 'price': price, 'single_supplement': p['single_supplement'], 'seats_left': seats, 'max_group': p['max_group'],
-                'status': 'sold_out' if seats == 0 else 'limited' if seats <= 4 else 'available',
-                'early_bird': early, 'full_payment': full,
-                'deposit_pct': 100 if full else EARLY_BIRD_PCT if early else DEPOSIT_PCT,
-                'balance_due': None if full else (d - timedelta(days=BALANCE_DUE_DAYS)).isoformat(),
+                'status': _status(seats), 'guaranteed': p['max_group'] - seats >= GUARANTEED_FROM,
+                'deposit_pp': DEPOSIT_PP,
+                'balance_due': max(d - timedelta(days=BALANCE_DUE_DAYS), today + timedelta(days=BALANCE_MIN_DAYS)).isoformat(),
             })
     return out
 
@@ -79,6 +76,7 @@ async def live_departures(db, key: str) -> list[dict]:
     for d in deps:
         d['seats_left'] = max(0, d['seats_left'] - booked.get(d['id'], 0))
         d['status'] = _status(d['seats_left'])
+        d['guaranteed'] = d['max_group'] - d['seats_left'] >= GUARANTEED_FROM
     return deps
 
 
@@ -93,11 +91,10 @@ class GroupOrderIn(BaseModel):
 def group_quote(dep: dict, travellers: int, room: str) -> dict:
     pp = dep['price'] + (dep['single_supplement'] if room == 'single' else 0)
     total = pp * travellers
-    deposit = jsround(total * dep['deposit_pct'] / 100.0)
+    deposit = DEPOSIT_PP * travellers
     return {'price': dep['price'], 'single_supplement': dep['single_supplement'] if room == 'single' else 0, 'per_person': pp,
-            'travellers': travellers, 'room': room, 'total': total, 'deposit': deposit, 'deposit_pct': dep['deposit_pct'],
-            'early_bird': dep['early_bird'], 'full_payment': dep['full_payment'], 'balance': total - deposit, 'balance_due': dep['balance_due'],
-            'start': dep['start'], 'end': dep['end']}
+            'travellers': travellers, 'room': room, 'total': total, 'deposit': deposit, 'deposit_pp': DEPOSIT_PP,
+            'balance': total - deposit, 'balance_due': dep['balance_due'], 'start': dep['start'], 'end': dep['end']}
 
 
 def register(db):
@@ -106,8 +103,8 @@ def register(db):
         p = GROUP_PRODUCTS.get(key)
         if not p:
             raise HTTPException(404, 'Unknown group tour')
-        return {'product': key, 'title': p['title'], 'base': p['base'], 'deposit_pct': DEPOSIT_PCT, 'early_bird_pct': EARLY_BIRD_PCT,
-                'early_bird_days': EARLY_BIRD_DAYS, 'balance_due_days': BALANCE_DUE_DAYS, 'max_travellers': MAX_TRAVELLERS,
+        return {'product': key, 'title': p['title'], 'base': p['base'], 'deposit_pp': DEPOSIT_PP,
+                'balance_due_days': BALANCE_DUE_DAYS, 'max_travellers': MAX_TRAVELLERS,
                 'single_supplement': p['single_supplement'], 'departures': await live_departures(db, key)}
 
     @router.post('/order')
@@ -135,11 +132,11 @@ def register(db):
             order = {'id': 'order_MOCK' + uuid.uuid4().hex[:10], 'amount': amount_paise, 'currency': 'INR'}
         else:
             order = _rzp.order.create({'amount': amount_paise, 'currency': 'INR', 'receipt': booking_id,
-                                       'payment_capture': 1, 'notes': {'booking_id': booking_id, 'product': body.product, 'payment': 'full' if dep['full_payment'] else 'deposit'}})
+                                       'payment_capture': 1, 'notes': {'booking_id': booking_id, 'product': body.product, 'payment': 'deposit'}})
         doc = {
             'booking_id': booking_id, 'kind': 'group', 'product': body.product, 'title': p['title'],
             'departure': dep['id'], 'travellers': body.travellers, 'room': body.room,
-            'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise, 'payment': 'full' if dep['full_payment'] else 'deposit',
+            'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise, 'payment': 'deposit',
             'razorpay_order_id': order['id'], 'status': 'created', 'mock': MOCK,
             'created_at': datetime.now(UTC).isoformat(),
         }

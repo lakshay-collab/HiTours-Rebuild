@@ -1,52 +1,79 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { CheckCircle2, Mail, MessageCircle } from 'lucide-react';
+import { MessageCircle, Mail } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { detail, PATHS } from '../grouptours/insideSriLankaData';
+import { ServiceIcon, CheckCircleIcon } from '../components/egypt/EgyptIcons';
+import { detail, included, nextSteps, PATHS } from '../grouptours/insideSriLankaData';
 import { fmtDate, fmtInr } from '../grouptours/groupBooking';
-import { Steps } from './GroupCheckout';
+import { ServicePills, Ratings } from '../components/grouptour/GroupSections';
 
 const API = process.env.REACT_APP_BACKEND_URL;
 
-export default function GroupConfirmed() {
+export default function GroupThankYou() {
   const { bookingId } = useParams();
   const [booking, setBooking] = useState(null);
   const [error, setError] = useState('');
   useEffect(() => {
-    document.title = 'Seat reserved | Hi Tours'; window.scrollTo(0, 0);
+    document.title = 'Thank you | Hi Tours'; window.scrollTo(0, 0);
     fetch(`${API}/api/bookings/${bookingId}`).then(async (r) => { if (!r.ok) throw new Error('Booking not found'); setBooking(await r.json()); }).catch((e) => setError(e.message));
   }, [bookingId]);
   const q = booking?.quote;
+  const ok = booking && booking.kind === 'group' && booking.status === 'paid';
   return (
-    <div className="eg" data-testid="gconfirmed-page">
+    <div className="eg" data-testid="gthanks-page">
       <Header />
-      <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-6">
-        <Steps step={3} full={q?.full_payment} />
-        {error && <p className="eg-body-lg text-[#B3261E]" data-testid="gconfirmed-error">{error}</p>}
-        {!booking && !error && <p className="eg-body-lg text-[#5B6B74]" data-testid="gconfirmed-loading">Fetching your booking…</p>}
-        {booking && booking.kind !== 'group' && <p className="eg-body-lg text-[#B3261E]" data-testid="gconfirmed-error">This booking belongs to a different holiday.</p>}
-        {booking && booking.kind === 'group' && (
-          <div className="bg-white rounded-2xl border border-[#E4E3DB] p-6 md:p-8 flex flex-col gap-4 max-w-[820px]" data-testid="gconfirmed-card">
-            <CheckCircle2 size={44} className="text-[#8DBE9C]" />
-            <h1 className="eg-headline-lg text-[#002131]" data-testid="gconfirmed-title">{booking.status === 'paid' ? `Your seat${q.travellers > 1 ? 's are' : ' is'} reserved, ${booking.contact.name}!` : 'Payment pending'}</h1>
-            <p className="eg-body-lg text-[#002131]">Booking reference <strong data-testid="gconfirmed-ref">{booking.booking_id}</strong>{booking.mock && <span className="ml-2 rounded-md bg-[#FBEADB] px-2 py-0.5 eg-label-md text-[#174358]">test booking, no payment taken</span>}</p>
-            <p className="eg-body-md text-[#5B6B74]" data-testid="gconfirmed-details">{booking.title} · {fmtDate(q.start)} to {fmtDate(q.end)} · {q.travellers} traveller{q.travellers > 1 ? 's' : ''} · {q.room === 'single' ? 'private room' : 'twin share'}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {[q.full_payment ? ['Paid in full', fmtInr(q.deposit), 'nothing more to pay'] : ['Deposit paid', fmtInr(q.deposit), `${q.deposit_pct}% of ${fmtInr(q.total)}`], ['Balance due', fmtInr(q.balance), q.balance_due ? `by ${fmtDate(q.balance_due)}` : 'settled'], ['Trip total', fmtInr(q.total), `${fmtInr(q.per_person)} per person`]].map(([l, v, s]) => (
-                <div key={l} className="rounded-xl bg-[#FBEADB] px-4 py-3"><p className="eg-label-md text-[#5B6B74]">{l}</p><p className="eg-title-lg text-[#002131]">{v}</p><p className="eg-label-md text-[#5B6B74]">{s}</p></div>
-              ))}
+      <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-8">
+        {error && <p className="eg-body-lg text-[#B3261E]" data-testid="gthanks-error">{error}</p>}
+        {!booking && !error && <p className="eg-body-lg text-[#6F777C]" data-testid="gthanks-loading">Fetching your booking…</p>}
+        {booking && !ok && <p className="eg-body-lg text-[#B3261E]" data-testid="gthanks-error">{booking.kind !== 'group' ? 'This booking belongs to a different holiday.' : 'Payment is still pending for this booking.'}</p>}
+        {ok && (
+          <>
+            <section className="bg-[#F0EEE6] rounded-2xl p-5 md:p-8 flex flex-col md:flex-row gap-6 md:items-center" data-testid="gthanks-hero">
+              <img src={detail.hero.mainSm} alt={detail.hero.alt} className="w-full md:w-[320px] aspect-[4/3] object-cover rounded-2xl" />
+              <div className="flex flex-col gap-3 min-w-0">
+                <p className="inline-flex items-center gap-2 eg-label-lg text-[#174358]"><CheckCircleIcon size={20} className="text-[#308BB6]" />Seat{q.travellers > 1 ? 's' : ''} held{booking.mock ? ' · test booking, no payment taken' : ''}</p>
+                <h1 className="eg-card-title !text-[26px] !leading-8 md:!text-[34px] md:!leading-10 text-[#002131]" data-testid="gthanks-title">Thank you, {booking.contact.name.split(' ')[0]}! You’re going to Sri Lanka.</h1>
+                <p className="eg-body-lg text-[#002131]" data-testid="gthanks-details">{booking.title} · {fmtDate(q.start)} to {fmtDate(q.end)} · {q.travellers} traveller{q.travellers > 1 ? 's' : ''} · {q.room === 'single' ? 'private room' : 'twin share'}</p>
+                <p className="eg-body-md text-[#174358]">Booking reference <strong className="text-[#002131]" data-testid="gthanks-ref">{booking.booking_id}</strong></p>
+              </div>
+            </section>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_384px] gap-8 items-start">
+              <div className="flex flex-col gap-8 min-w-0">
+                <section className="grid grid-cols-1 sm:grid-cols-3 gap-3" data-testid="gthanks-money">
+                  {[['Paid today', fmtInr(q.deposit), `${fmtInr(q.deposit_pp)} × ${q.travellers} seat hold`], ['Balance due', fmtInr(q.balance), `by ${fmtDate(q.balance_due)}`], ['Trip total', fmtInr(q.total), `${fmtInr(q.per_person)} per person`]].map(([l, v, s]) => (
+                    <div key={l} className="rounded-2xl border border-[#C4CBD0] bg-white px-4 py-4"><p className="eg-label-md text-[#6F777C]">{l}</p><p className="eg-headline-md text-[#002131]">{v}</p><p className="eg-label-md text-[#6F777C]">{s}</p></div>
+                  ))}
+                </section>
+                <section className="flex flex-col gap-4" data-testid="gthanks-next">
+                  <h2 className="eg-headline-md text-[#002131]">What happens next</h2>
+                  <ol className="flex flex-col gap-4">
+                    {nextSteps.map((s, i) => <li key={s.h} className="flex items-start gap-4"><span className="w-9 h-9 rounded-full bg-[#308BB6] text-white flex items-center justify-center eg-label-lg shrink-0">{i + 1}</span><div><p className="eg-title-md text-[#002131]">{s.h}</p><p className="eg-body-md text-[#174358]">{s.t}</p></div></li>)}
+                  </ol>
+                  <div className="flex flex-col gap-2 eg-body-md text-[#174358] pt-2">
+                    <p className="flex items-center gap-2"><MessageCircle size={16} className="text-[#308BB6]" />WhatsApp confirmation to your number ending {booking.contact.phone.slice(-4)}</p>
+                    <p className="flex items-center gap-2"><Mail size={16} className="text-[#308BB6]" />Full itinerary emailed to {booking.contact.email}</p>
+                  </div>
+                </section>
+                <section className="flex flex-col gap-4" data-testid="gthanks-included">
+                  <h2 className="eg-headline-md text-[#002131]">What’s included in your trip</h2>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {included.map(([text, icon]) => <li key={text} className="flex items-center gap-3 rounded-lg bg-[#FBEADB] px-3 min-h-[52px] py-2 eg-label-lg text-[#002131]"><ServiceIcon name={icon} size={22} className="text-[#174358] shrink-0" /><span className="leading-snug">{text}</span></li>)}
+                  </ul>
+                </section>
+                <div className="flex flex-wrap gap-3">
+                  <Link to={PATHS.detail} className="eg-btn-filled !h-12 px-7 eg-title-md" data-testid="gthanks-view-trip">View the day-by-day itinerary</Link>
+                  <Link to="/asia/sri-lanka" className="eg-btn-outlined !h-12 px-6 eg-label-lg" data-testid="gthanks-more">More Sri Lanka holidays</Link>
+                </div>
+              </div>
+              <aside className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="gthanks-summary">
+                <p className="eg-title-md text-[#002131]">Your trip at a glance</p>
+                <ServicePills services={detail.services} testId="gthanks-services" />
+                <hr className="border-[#E4E3DB]" />
+                <Ratings />
+              </aside>
             </div>
-            <hr className="border-[#E4E3DB]" />
-            <div className="flex flex-col gap-2 eg-body-md text-[#002131]">
-              <p className="flex items-start gap-2"><MessageCircle size={16} className="text-[#174358] shrink-0 mt-1" />A WhatsApp confirmation is on its way to your number ending {booking.contact.phone.slice(-4)}, with the full itinerary by email ({booking.contact.email}).</p>
-              <p className="flex items-start gap-2"><Mail size={16} className="text-[#174358] shrink-0 mt-1" />Your trip leader {detail.expert.name} will message you within one working day to collect passport names, help with flights and set up balance reminders.</p>
-            </div>
-            <div className="flex flex-wrap gap-3 pt-2">
-              <Link to={PATHS.detail} className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="gconfirmed-view-trip">View the itinerary</Link>
-              <Link to="/asia/sri-lanka" className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="gconfirmed-more">More Sri Lanka holidays</Link>
-            </div>
-          </div>
+          </>
         )}
       </main>
       <Footer />

@@ -16,7 +16,7 @@ export const RouteLine = ({ cities, className = '', testId = 'eg-route-line' }) 
 );
 const HEADER = 120;
 
-const BulletMark = ({ text }) => {
+export const BulletMark = ({ text }) => {
   const t = text.toLowerCase();
   const cls = 'mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0';
   if (/transfer|drive to|driven|pick-?up|drop-?off/.test(t)) return <span className={`${cls} bg-[#FB7F26] text-white`}><Car size={14} /></span>;

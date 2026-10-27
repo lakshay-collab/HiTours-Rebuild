@@ -28,6 +28,15 @@ const smooth = (pts, closed) => {
 };
 const ISLAND = smooth(COAST.map(([la, lo]) => project(la, lo)), true);
 
+// Texture: central highlands contours, hill marks and coastal palms
+const HIGHLANDS = project(7.0, 80.75);
+const CONTOURS = [[150, 110], [112, 80], [74, 52], [38, 26]];
+const HILLS = [
+  [HIGHLANDS[0] - 10, HIGHLANDS[1] - 36, 1.1], [HIGHLANDS[0] + 44, HIGHLANDS[1] - 4, 0.9], [HIGHLANDS[0] - 50, HIGHLANDS[1] + 10, 0.9], [HIGHLANDS[0] + 10, HIGHLANDS[1] + 42, 1],
+  ...[[8.35, 80.5], [8.6, 80.9], [7.9, 81.1]].map(([la, lo]) => [...project(la, lo), 0.7]),
+];
+const PALMS = [[7.0, 79.9], [6.5, 80.0], [6.2, 80.8], [6.6, 81.75], [7.9, 81.6], [8.3, 79.95], [9.1, 80.3], [6.05, 80.45]].map(([la, lo]) => project(la, lo));
+
 const LABEL_SIDE = { galle: 'left', kosgoda: 'left', negombo: 'left', nuwara: 'left' };
 
 export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', compact = false }) => {
@@ -38,17 +47,28 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
   useEffect(() => { if (pathRef.current) setLen(pathRef.current.getTotalLength()); }, [route]);
   const progress = stops.length > 1 ? activeIndex / (stops.length - 1) : 1;
   const active = stops[activeIndex];
+  const vb = compact ? VB_COMPACT : VB;
 
   return (
     <div className={`relative ${className}`} data-testid={testId} data-active-stop={active?.key}>
-      <svg viewBox={(compact ? VB_COMPACT : VB).join(' ')} className="w-full h-full" role="img" aria-label={`Route map of Sri Lanka, currently at ${active?.name}`}>
+      <svg viewBox={vb.join(' ')} className="w-full h-full" role="img" aria-label={`Route map of Sri Lanka, currently at ${active?.name}`}>
         <defs>
+          <radialGradient id="rm-land" cx="0.52" cy="0.55" r="0.5"><stop offset="0" stopColor="#D5E3C4" /><stop offset="0.55" stopColor="#E9E6CF" /><stop offset="1" stopColor="#F6E4CC" /></radialGradient>
           <pattern id="rm-grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#174358" opacity="0.08" /></pattern>
+          <pattern id="rm-waves" width="46" height="26" patternUnits="userSpaceOnUse"><path d="M0 13 q5.75 -6 11.5 0 t11.5 0 t11.5 0 t11.5 0" fill="none" stroke="#9ACDE5" strokeWidth="1.2" opacity="0.7" /></pattern>
+          <clipPath id="rm-clip"><path d={ISLAND} /></clipPath>
         </defs>
-        <path d={ISLAND} fill="#002131" opacity="0.08" transform="translate(0 8)" />
-        <path d={ISLAND} fill="#FBEADB" stroke="#F4B49A" strokeWidth="2" />
+        <rect x={vb[0]} y={vb[1]} width={vb[2]} height={vb[3]} fill="#E0F7FF" rx="18" />
+        <rect x={vb[0]} y={vb[1]} width={vb[2]} height={vb[3]} fill="url(#rm-waves)" rx="18" />
+        <path d={ISLAND} fill="#002131" opacity="0.1" transform="translate(4 10)" />
+        <path d={ISLAND} fill="url(#rm-land)" stroke="#D9B98F" strokeWidth="2.5" />
         <path d={ISLAND} fill="url(#rm-grain)" />
-        <path d={route} fill="none" stroke="#C4CBD0" strokeWidth="2" strokeDasharray="4 6" strokeLinecap="round" />
+        <g clipPath="url(#rm-clip)" opacity="0.9">
+          {CONTOURS.map((c, i) => <ellipse key={i} cx={HIGHLANDS[0]} cy={HIGHLANDS[1]} rx={c[0]} ry={c[1]} transform={`rotate(-20 ${HIGHLANDS[0]} ${HIGHLANDS[1]})`} fill={i === CONTOURS.length - 1 ? '#C6D9B1' : i === 0 ? '#DCE6CC' : 'none'} fillOpacity="0.7" stroke="#B7CBA3" strokeWidth="1.2" />)}
+          {HILLS.map(([hx, hy, sc], i) => <path key={i} d={`M${hx - 16 * sc} ${hy} q${8 * sc} ${-14 * sc} ${16 * sc} 0 q${8 * sc} ${-18 * sc} ${16 * sc} 0`} fill="none" stroke="#7E9D6B" strokeWidth={2.2 * sc} strokeLinecap="round" />)}
+          {PALMS.map(([px, py], i) => <g key={i} transform={`translate(${px} ${py})`} stroke="#5E8A5B" strokeWidth="1.6" strokeLinecap="round" fill="none"><path d="M0 0v-10" /><path d="M0 -10 q-6 -4 -9 0 M0 -10 q6 -4 9 0 M0 -10 q-4 -7 -1 -9 M0 -10 q4 -7 1 -9" /></g>)}
+        </g>
+        <path d={route} fill="none" stroke="#174358" opacity="0.35" strokeWidth="2" strokeDasharray="4 6" strokeLinecap="round" />
         <path ref={pathRef} d={route} fill="none" stroke="#E75E26" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
           strokeDasharray={len || 1} strokeDashoffset={len ? len * (1 - progress) : 0} style={{ transition: 'stroke-dashoffset .9s cubic-bezier(.2,.7,.2,1)' }} data-testid="route-map-path" />
         {stops.map((s, i) => {
@@ -59,7 +79,7 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
             <g key={s.key} data-testid={`route-pin-${s.key}`} data-state={isActive ? 'active' : visited ? 'visited' : 'upcoming'}>
               {isActive && <circle cx={x} cy={y} r="10" fill="#E75E26" opacity="0.35"><animate attributeName="r" values="8;22;8" dur="1.8s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.4;0;0.4" dur="1.8s" repeatCount="indefinite" /></circle>}
               <circle cx={x} cy={y} r={isActive ? (compact ? 14 : 11) : compact ? 9 : 7} fill={isActive ? '#E75E26' : visited ? '#174358' : '#fff'} stroke={isActive ? '#fff' : '#174358'} strokeWidth={isActive ? 3 : 2} style={{ transition: 'r .3s, fill .3s' }} />
-              {(!compact || isActive) && <text x={left ? x - 16 : x + 16} y={y + 6} textAnchor={left ? 'end' : 'start'} fontSize={compact ? 26 : 17} fontFamily="Instrument Sans, Inter, sans-serif" fontWeight={isActive ? 700 : 500} fill={isActive ? '#E75E26' : '#002131'}>{s.name}</text>}
+              {(!compact || isActive) && <text x={left ? x - 16 : x + 16} y={y + 6} textAnchor={left ? 'end' : 'start'} fontSize={compact ? 26 : 17} fontFamily="Instrument Sans, Inter, sans-serif" fontWeight={isActive ? 700 : 500} fill={isActive ? '#E75E26' : '#002131'} stroke="#FBF9F1" strokeWidth="4" paintOrder="stroke">{s.name}</text>}
             </g>
           );
         })}
