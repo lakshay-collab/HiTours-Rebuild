@@ -197,10 +197,7 @@ function Accommodation({ a, city }) {
   }
   return (
     <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3">
-        <SectionHead icon={HotelIcon} title="Your accommodation options" />
-        <p className="eg-label-md text-[#174358] pl-8 sm:pl-0" data-testid="eg-accommodation-options-copy">Choose between 4★ &amp; 5★ hotels</p>
-      </div>
+      <SectionHead icon={HotelIcon} title="Your hotels · choose 4★ or 5★" />
       <OptionCard a={four} id="-4" city={city} />
       <OptionCard a={five} id="-5" city={city} />
     </div>
