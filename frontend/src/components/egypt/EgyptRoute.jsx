@@ -124,14 +124,13 @@ export function Lightbox({ images, name, onClose, start = 0, portrait = false })
   );
 }
 
-function HotelCard({ a, id = '', tier = null }) {
+function HotelCard({ a, id = '' }) {
   const [open, setOpen] = useState(false);
   return (
     <>
       <div className="flex bg-[#FBF9F1] border border-[#C4CBD0] rounded-xl overflow-hidden" data-testid={`eg-accommodation-card${id}`}>
         <button type="button" onClick={() => setOpen(true)} className="relative w-[120px] sm:w-[160px] shrink-0 text-left" aria-label={`${route.viewPhotos}: ${a.name}`}><img src={a.images[0]} alt={a.name} className="absolute inset-0 w-full h-full object-cover" loading="lazy" referrerPolicy="no-referrer" /></button>
         <div className="p-4 flex flex-col justify-center gap-1 min-w-0">
-          {tier && <span className="self-start inline-flex items-center h-6 px-2.5 rounded-full bg-[#E0F7FF] eg-label-md text-[#174358]" data-testid={`eg-accommodation-tier${id}`}>{tier}</span>}
           <h5 className="eg-title-md text-[#002131]" data-testid={`eg-accommodation-name${id}`}>{a.name}</h5>
           <p className="eg-body-md text-[#174358] capitalize">{a.description}</p>
           {a.rating && <p className="eg-label-md text-[#002131]" data-testid={`eg-accommodation-rating${id}`}><span className="inline-flex items-center justify-center h-6 min-w-[32px] px-1.5 rounded-md bg-[#174358] text-white eg-label-md mr-1.5">{a.rating.score.toFixed(1)}</span>{a.rating.label} · {a.rating.reviews.toLocaleString('en-IN')} Booking.com reviews</p>}
@@ -142,8 +141,6 @@ function HotelCard({ a, id = '', tier = null }) {
     </>
   );
 }
-
-const TIER = { 4: '4★ Comfort option', 5: '5★ Premium option' };
 
 function Accommodation({ a }) {
   const all = [a, ...(a.options || [])];
@@ -160,9 +157,9 @@ function Accommodation({ a }) {
   return (
     <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
       <SectionHead icon={HotelIcon} title="Your accommodation options" />
-      <p className="eg-body-md text-[#174358] -mt-1">Choose your comfort level when you plan with us: a 4★ or a 5★ stay (or similar in the same category).</p>
-      <HotelCard a={four} id="-4" tier={TIER[4]} />
-      <HotelCard a={five} id="-5" tier={TIER[5]} />
+      <p className="eg-body-md text-[#174358] -mt-1" data-testid="eg-accommodation-options-copy">Hand-picked 4★ and 5★ stays, curated and customised for you.</p>
+      <HotelCard a={four} id="-4" />
+      <HotelCard a={five} id="-5" />
     </div>
   );
 }
