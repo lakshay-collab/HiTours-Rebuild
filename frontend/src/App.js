@@ -35,6 +35,9 @@ import BookCheckout from './pages/BookCheckout';
 import BookConfirmed from './pages/BookConfirmed';
 import GroupTourDetail from './pages/GroupTourDetail';
 import GroupThankYou from './pages/GroupConfirmed';
+import GroupTourDetailV1 from './pages/v1/GroupTourDetailV1';
+import GroupCheckoutV1 from './pages/v1/GroupCheckoutV1';
+import GroupConfirmedV1 from './pages/v1/GroupConfirmedV1';
 import Sitemap from './pages/Sitemap';
 import OurOffice from './pages/OurOffice';
 import EuropeListing, { EuropeHolidays } from './pages/EuropeListing';
@@ -156,6 +159,9 @@ function App() {
           <Route path="/asia/book/:slug" element={<EgyptDetail />} />
           <Route path="/asia/group-tours/inside-sri-lanka" element={<GroupTourDetail />} />
           <Route path="/asia/group-tours/inside-sri-lanka/thank-you/:bookingId" element={<GroupThankYou />} />
+          <Route path="/asia/group-tours/inside-sri-lanka/v1" element={<GroupTourDetailV1 />} />
+          <Route path="/asia/group-tours/inside-sri-lanka/v1/checkout" element={<GroupCheckoutV1 />} />
+          <Route path="/asia/group-tours/inside-sri-lanka/v1/confirmed/:bookingId" element={<GroupConfirmedV1 />} />
           <Route path="/asia/:slug" element={<EgyptDetail />} />
           <Route path="/trip-styles/:slug" element={<TripStyleListing />} />
           <Route path="/themes/:slug" element={<ThemeListing />} />
