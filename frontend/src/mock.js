@@ -135,7 +135,7 @@ export const comparison = {
 
 export const moments = {
   heading: 'Unforgettable Hi Tours moments',
-  subheading: 'More than 150,000 delighted travellers',
+  subheading: 'More than 10,00,000 couples have travelled with us',
   cta: 'Plan your trip',
   avatars: [
     '/moments/europe_couple.webp',
