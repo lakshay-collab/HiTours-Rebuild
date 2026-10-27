@@ -197,7 +197,7 @@ function Accommodation({ a, city }) {
   }
   return (
     <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation" data-options="4-5">
-      <SectionHead icon={HotelIcon} title="Your hotels · choose 4★ or 5★" />
+      <SectionHead icon={HotelIcon} title="Your hotels, choose 4★ or 5★" />
       <OptionCard a={four} id="-4" city={city} />
       <OptionCard a={five} id="-5" city={city} />
     </div>
