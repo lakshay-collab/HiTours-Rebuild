@@ -6,6 +6,7 @@ import { FlightThrough } from '../FlightPath';
 import { GoogleLogo, TripAdvisorLogo } from '../Rating';
 import { Heart, Star } from 'lucide-react';
 import { ratings } from '../../mock';
+import { metaTracking } from '../../lib/metaTracking';
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL;
 const GREEN = '#00B67A';
@@ -138,7 +139,7 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
       const res = await fetch(`${BACKEND}/api/leads`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: form.name.trim(), ...phonePayload(form.phone), email: form.email.trim(), destination, trip_title: tripTitle, source })
+        body: JSON.stringify({ name: form.name.trim(), ...phonePayload(form.phone), email: form.email.trim(), destination, trip_title: tripTitle, source, ...metaTracking() })
       });
       if (!res.ok) throw new Error('bad');
       setStatus('done');

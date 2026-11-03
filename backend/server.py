@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi import FastAPI, APIRouter, HTTPException, Request
 from dotenv import load_dotenv
 import httpx
 import re
@@ -52,6 +52,12 @@ class LeadCreate(BaseModel):
     travel_dates: str = ""
     traveller_count: str = ""
     flight_assistance: str = ""
+    fbp: str = ""
+    fbc: str = ""
+    user_agent: str = ""
+    city: str = ""
+    state: str = ""
+    country: str = ""
 
 class Lead(BaseModel):
     model_config = ConfigDict(extra="ignore")
@@ -97,12 +103,42 @@ def traveller_count(lead: "Lead") -> str:
         return ""
     return ", ".join(f"{n} {label}" for label, n in lead.passengers.items() if n)
 
-async def push_lead_to_kraya(lead: Lead) -> str:
+def slug(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (value or "").lower())
+
+def client_ip(request: Request) -> str:
+    return request.headers.get("x-forwarded-for", "").split(",")[0].strip()
+
+async def geo_lookup(ip: str) -> dict:
+    if not ip:
+        return {}
+    try:
+        async with httpx.AsyncClient(timeout=4.0) as http:
+            data = (await http.get(f"https://ipwho.is/{ip}")).json()
+    except (httpx.HTTPError, ValueError) as exc:
+        logger.warning(f"IP geo lookup failed for {ip}: {exc}")
+        return {}
+    if not data.get("success"):
+        return {}
+    return {"city": data.get("city"), "state": data.get("region"), "country": data.get("country_code")}
+
+async def lead_attributes(lead: LeadCreate, request: Request) -> dict:
+    ip = client_ip(request)
+    form_geo = {"city": lead.city, "state": lead.state, "country": lead.country}
+    geo = form_geo if any(form_geo.values()) else await geo_lookup(ip)
+    attrs = {
+        "fbp": lead.fbp, "fbc": lead.fbc, "ip_address": ip,
+        "user_agent": request.headers.get("user-agent") or lead.user_agent,
+        "city": slug(geo.get("city")), "state": slug(geo.get("state")), "country": slug(geo.get("country"))[:2],
+    }
+    return {k: v for k, v in attrs.items() if v}
+
+async def push_lead_to_kraya(lead: Lead, attributes: dict) -> str:
     api_key, url = os.environ['KRAYA_API_KEY'], os.environ['KRAYA_LEADS_URL']
     payload = {
         "name": lead.name, "phone": kraya_phone(lead), "email": lead.email, "Destination": lead.destination,
         "Lead Source": "Website", "Travel Dates": lead.travel_dates, "Traveller Count": traveller_count(lead),
-        "stage": "New Lead", "pipeline": "Leads",
+        "stage": "New Lead", "pipeline": "Leads", "attributes": attributes,
     }
     async with httpx.AsyncClient(timeout=httpx.Timeout(15.0, connect=5.0)) as http:
         res = await http.post(url, json=payload, headers={"X-KRAYA-API-KEY": api_key, "Content-Type": "application/json"})
@@ -145,7 +181,7 @@ async def get_status_checks():
     return status_checks
 
 @api_router.post("/leads", response_model=Lead)
-async def create_lead(input: LeadCreate):
+async def create_lead(input: LeadCreate, request: Request):
     if not input.destination:
         input.destination = input.trip_title or input.source
     validate_lead(input)
@@ -157,7 +193,9 @@ async def create_lead(input: LeadCreate):
         return dup
     lead = Lead(**input.model_dump())
     try:
-        lead.kraya_lead_id = await push_lead_to_kraya(lead)
+        attributes = await lead_attributes(input, request)
+        logger.info(f"Kraya attributes for {lead.email}: {attributes}")
+        lead.kraya_lead_id = await push_lead_to_kraya(lead, attributes)
         lead.kraya_status = "synced"
     except (httpx.HTTPError, RuntimeError) as exc:
         lead.kraya_status = "failed"

@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom';
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useEffect } from 'react';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
 import { LeadModalProvider } from './components/egypt/LeadModalProvider';
 import Home from './pages/Home';
@@ -99,11 +99,19 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Fires a Meta Pixel PageView on every route, including the first load.
+const PixelPageView = () => {
+  const { pathname } = useLocation();
+  useEffect(() => { if (window.fbq) window.fbq('track', 'PageView'); }, [pathname]);
+  return null;
+};
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <ScrollToTop />
+        <PixelPageView />
         <WhatsAppWidget />
         <LeadModalProvider>
         <Routes>

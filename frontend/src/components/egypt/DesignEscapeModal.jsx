@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { metaTracking } from '../../lib/metaTracking';
 import { X, ChevronDown } from 'lucide-react';
 import PhoneInput, { EMPTY_PHONE, phoneError, phonePayload } from './PhoneInput';
 
@@ -64,7 +65,7 @@ export default function DesignEscapeModal({ open, onClose, destination, tripTitl
     setStatus('sending');
     setSubmitError('');
     try {
-      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { name: lead.name, ...phonePayload(lead.phone), email: lead.email, destination: activeDestination, trip_title: tripTitle || '', source: selectable ? 'design-your-escape-home' : 'design-your-escape' });
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { name: lead.name, ...phonePayload(lead.phone), email: lead.email, destination: activeDestination, trip_title: tripTitle || '', source: selectable ? 'design-your-escape-home' : 'design-your-escape', ...metaTracking() });
       setStatus('done');
     } catch (err) {
       const detail = err?.response?.data?.detail;
