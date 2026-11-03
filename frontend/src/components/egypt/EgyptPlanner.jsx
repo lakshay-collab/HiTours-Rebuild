@@ -6,7 +6,7 @@ import { FlightThrough } from '../FlightPath';
 import { GoogleLogo, TripAdvisorLogo } from '../Rating';
 import { Heart, Star } from 'lucide-react';
 import { ratings } from '../../mock';
-import { metaTracking } from '../../lib/metaTracking';
+import { metaTracking, markThankYou } from '../../lib/metaTracking';
 
 const BACKEND = process.env.REACT_APP_BACKEND_URL;
 const GREEN = '#00B67A';
@@ -143,6 +143,7 @@ export default function EgyptPlanner({ className = 'mt-12 md:mt-16 px-4 sm:px-8 
       });
       if (!res.ok) throw new Error('bad');
       setStatus('done');
+      markThankYou();
     } catch (err) {
       setStatus('error');
     }

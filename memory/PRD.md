@@ -832,5 +832,7 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Meta Pixel 1555314272712486 installed in public/index.html; PageView fired on every SPA route (App.js PixelPageView).
 - Lead forms (EgyptPlanner, DesignEscapeModal) send fbp/fbc/user_agent via lib/metaTracking.js (fbc falls back to fb.1.<ms>.<fbclid>).
 - Sitewide tags in public/index.html <head>: Meta Pixel (user's exact snippet incl. PageView) + Google Ads gtag AW-18514359223; pixel <noscript> directly after <body>. App.js PixelPageView sends one PageView per later in-app page change, skipping redirects (REPLACE) and the first load.
+- Enquiry success (EgyptPlanner + DesignEscapeModal) calls markThankYou() in lib/metaTracking.js: pushState to /thank-you (popup unchanged), one Meta PageView + one gtag page_view. fbq.disablePushState=true stops Meta's own auto-PageView on address changes (prevents doubles). Direct /thank-you visits redirect to /.
+
 
 - server.py builds Kraya "attributes": fbp, fbc, ip_address (first X-Forwarded-For), user_agent, city/state/country (form values else ipwho.is lookup), slugged lowercase; empty keys omitted.

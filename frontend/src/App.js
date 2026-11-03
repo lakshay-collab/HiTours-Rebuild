@@ -172,6 +172,7 @@ function App() {
           <Route path="/asia/book/:key/confirmed/:bookingId" element={<BookConfirmed />} />
           <Route path="/asia/book/:slug" element={<EgyptDetail />} />
           <Route path="/asia/group-tours/inside-sri-lanka" element={<GroupTourDetail />} />
+          <Route path="/thank-you" element={<Navigate to="/" replace />} />
           <Route path="/asia/group-tours/inside-sri-lanka/thank-you/:bookingId" element={<GroupThankYou />} />
           <Route path="/asia/group-tours/inside-sri-lanka/v1" element={<GroupTourDetailV1 />} />
           <Route path="/asia/group-tours/inside-sri-lanka/v1/checkout" element={<GroupCheckoutV1 />} />
