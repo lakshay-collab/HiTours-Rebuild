@@ -55,7 +55,7 @@ export const MonthTabs = ({ months, value, onChange, testPrefix = 'departures-mo
   </div>
 );
 
-export const DeparturesSection = ({ departures, loading, error, onPick, depositPp }) => {
+export const DeparturesSection = ({ departures, loading, error, onPick, depositPp, note }) => {
   const months = useMemo(() => [...new Set(departures.map((d) => monthKey(d.start)))], [departures]);
   const [month, setMonth] = useState('all');
   const list = month === 'all' ? departures : departures.filter((d) => monthKey(d.start) === month);
@@ -63,7 +63,7 @@ export const DeparturesSection = ({ departures, loading, error, onPick, depositP
     <section id="dates" className="eg-container scroll-mt-4 flex flex-col gap-6" data-testid="departures-section">
       <div>
         <h2 className="eg-display-sm text-[#002131]">Dates & prices</h2>
-        <p className="eg-body-lg text-[#002131] mt-2">Pick a departure and hold your seat for {fmtInr(depositPp)} per traveller. The trip price is due 60 days before you fly.</p>
+        <p className="eg-body-lg text-[#002131] mt-2">{note || `Pick a departure and hold your seat for ${fmtInr(depositPp)} per traveller. The trip price is due 60 days before you fly.`}</p>
       </div>
       {error && <p className="eg-body-lg text-[#B3261E]" data-testid="departures-error">{error}</p>}
       {loading && !error && <p className="eg-body-lg text-[#6F777C]" data-testid="departures-loading">Loading departures…</p>}

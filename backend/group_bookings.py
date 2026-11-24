@@ -16,6 +16,11 @@ GROUP_PRODUCTS = {
         'title': 'Inside Sri Lanka', 'base': 200000, 'nights': 11, 'destination': 'Sri Lanka',
         'single_supplement': 38000, 'max_group': 16, 'peak_months': (12, 1, 2), 'peak_extra': 15000,
     },
+    'bangkok-pattaya-ex-delhi': {
+        'title': 'Bangkok & Pattaya with flights from Delhi', 'base': 63000, 'nights': 4, 'destination': 'Thailand',
+        'single_supplement': None, 'max_group': 20, 'peak_months': (), 'peak_extra': 0,
+        'dates': ['2026-12-07'], 'seats': 20,
+    },
 }
 DEPOSIT_PP = 5000
 BALANCE_DUE_DAYS = 60
@@ -38,20 +43,29 @@ def _saturdays(y: int, m: int) -> list[date]:
     return out
 
 
-def departures(key: str, today: date | None = None) -> list[dict]:
-    p = GROUP_PRODUCTS[key]
-    today = today or ist_today()
+def _schedule(p: dict, today: date) -> list[date]:
+    if p.get('dates'):
+        return [date.fromisoformat(s) for s in p['dates']]
     out = []
     for k in range(1, MONTHS_AHEAD + 1):
         m = (today.month - 1 + k) % 12 + 1
         y = today.year + (today.month - 1 + k) // 12
         sats = _saturdays(y, m)
-        for d in (sats[1], sats[3]):
+        out += [sats[1], sats[3]]
+    return out
+
+
+def departures(key: str, today: date | None = None) -> list[dict]:
+    p = GROUP_PRODUCTS[key]
+    today = today or ist_today()
+    out = []
+    for d in _schedule(p, today):
             idx = len(out)
+            m = d.month
             ahead = (d - today).days
             if ahead < MIN_LEAD_DAYS:
                 continue
-            seats = SEATS_PATTERN[idx % len(SEATS_PATTERN)]
+            seats = p.get('seats') or SEATS_PATTERN[idx % len(SEATS_PATTERN)]
             price = p['base'] + (p['peak_extra'] if m in p['peak_months'] else 0)
             out.append({
                 'id': d.isoformat(), 'start': d.isoformat(), 'end': (d + timedelta(days=p['nights'])).isoformat(),
@@ -89,10 +103,11 @@ class GroupOrderIn(BaseModel):
 
 
 def group_quote(dep: dict, travellers: int, room: str) -> dict:
-    pp = dep['price'] + (dep['single_supplement'] if room == 'single' else 0)
+    supplement = dep['single_supplement'] or 0
+    pp = dep['price'] + (supplement if room == 'single' else 0)
     total = pp * travellers
     deposit = DEPOSIT_PP * travellers
-    return {'price': dep['price'], 'single_supplement': dep['single_supplement'] if room == 'single' else 0, 'per_person': pp,
+    return {'price': dep['price'], 'single_supplement': supplement if room == 'single' else 0, 'per_person': pp,
             'travellers': travellers, 'room': room, 'total': total, 'deposit': deposit, 'deposit_pp': DEPOSIT_PP,
             'balance': total - deposit, 'balance_due': dep['balance_due'], 'start': dep['start'], 'end': dep['end']}
 
@@ -119,6 +134,8 @@ def register(db):
             raise HTTPException(400, 'This departure is sold out')
         if body.travellers > dep['seats_left']:
             raise HTTPException(400, f"Only {dep['seats_left']} seat{'s' if dep['seats_left'] != 1 else ''} left on this departure")
+        if body.room == 'single' and not p['single_supplement']:
+            raise HTTPException(400, 'Private rooms are not available on this trip')
         q = group_quote(dep, body.travellers, body.room)
         amount_paise = q['deposit'] * 100
         pending = await db.bookings.find_one({'kind': 'group', 'product': body.product, 'departure': dep['id'], 'contact.email': body.contact.email,

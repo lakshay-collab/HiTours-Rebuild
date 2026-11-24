@@ -10,7 +10,6 @@ const COAST = [
 const K = 150;
 export const project = (lat, lon) => [(lon - 79.5) * K, (10.0 - lat) * K];
 const VB = [-80, -20, 2.5 * K + 160, 4.2 * K + 40];
-
 // Catmull-Rom → cubic bezier path
 const smooth = (pts, closed) => {
   const n = pts.length;
@@ -27,11 +26,18 @@ const smooth = (pts, closed) => {
 };
 const ISLAND = smooth(COAST.map(([la, lo]) => project(la, lo)), true);
 const LABEL_SIDE = { galle: 'left', kosgoda: 'left', negombo: 'left', nuwara: 'left' };
+const SRI_LANKA = { name: 'Sri Lanka', land: ISLAND, project, viewBox: VB, labelLeft: Object.keys(LABEL_SIDE) };
 
-export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map' }) => {
+// Build a map config from a land outline: origin [lat, lon] is the top-left corner
+export const makeMap = ({ name, coast, origin, scale, viewBox, labelLeft = [], sea }) => {
+  const proj = (lat, lon) => [(lon - origin[1]) * scale, (origin[0] - lat) * scale];
+  return { name, land: smooth(coast.map(([la, lo]) => proj(la, lo)), true), project: proj, viewBox, labelLeft, sea };
+};
+
+export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', map = SRI_LANKA }) => {
   const pathRef = useRef(null);
   const [len, setLen] = useState(0);
-  const pts = stops.map((s) => project(s.lat, s.lon));
+  const pts = stops.map((s) => map.project(s.lat, s.lon));
   const route = smooth(pts, false);
   useEffect(() => { if (pathRef.current) setLen(pathRef.current.getTotalLength()); }, [route]);
   const progress = stops.length > 1 ? activeIndex / (stops.length - 1) : 1;
@@ -39,20 +45,24 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
 
   return (
     <div className={`relative ${className}`} data-testid={testId} data-active-stop={active?.key}>
-      <svg viewBox={VB.join(' ')} className="w-full h-full" role="img" aria-label={`Route map of Sri Lanka, currently at ${active?.name}`}>
+      <svg viewBox={map.viewBox.join(' ')} className="w-full h-full" role="img" aria-label={`Route map of ${map.name}, currently at ${active?.name}`}>
         <defs>
           <pattern id="rm-grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#174358" opacity="0.08" /></pattern>
+          <clipPath id={`rm-clip-${testId}`}><rect x={map.viewBox[0]} y={map.viewBox[1]} width={map.viewBox[2]} height={map.viewBox[3]} rx="12" /></clipPath>
         </defs>
-        <path d={ISLAND} fill="#002131" opacity="0.08" transform="translate(0 8)" />
-        <path d={ISLAND} fill="#FBEADB" stroke="#F4B49A" strokeWidth="2" />
-        <path d={ISLAND} fill="url(#rm-grain)" />
+        <g clipPath={`url(#rm-clip-${testId})`}>
+          <path d={map.land} fill="#002131" opacity="0.08" transform="translate(0 8)" />
+          <path d={map.land} fill="#FBEADB" stroke="#F4B49A" strokeWidth="2" />
+          <path d={map.land} fill="url(#rm-grain)" />
+        </g>
         <path d={route} fill="none" stroke="#C4CBD0" strokeWidth="2" strokeDasharray="4 6" strokeLinecap="round" />
+        {map.sea && (() => { const [sx, sy] = map.project(map.sea.lat, map.sea.lon); return <text x={sx} y={sy} textAnchor="middle" fontSize="16" fontStyle="italic" fontFamily="Instrument Sans, Inter, sans-serif" fill="#308BB6" data-testid="route-map-sea">{map.sea.text}</text>; })()}
         <path ref={pathRef} d={route} fill="none" stroke="#E75E26" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
           strokeDasharray={len || 1} strokeDashoffset={len ? len * (1 - progress) : 0} style={{ transition: 'stroke-dashoffset .9s cubic-bezier(.2,.7,.2,1)' }} data-testid="route-map-path" />
         {stops.map((s, i) => {
           const [x, y] = pts[i];
           const visited = i < activeIndex, isActive = i === activeIndex;
-          const left = LABEL_SIDE[s.key] === 'left';
+          const left = map.labelLeft.includes(s.key);
           return (
             <g key={s.key} data-testid={`route-pin-${s.key}`} data-state={isActive ? 'active' : visited ? 'visited' : 'upcoming'}>
               {isActive && <circle cx={x} cy={y} r="10" fill="#E75E26" opacity="0.35"><animate attributeName="r" values="8;22;8" dur="1.8s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.4;0;0.4" dur="1.8s" repeatCount="indefinite" /></circle>}

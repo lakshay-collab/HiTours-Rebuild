@@ -26,7 +26,7 @@ const BY_COUNTRY = [
 ];
 
 const bySlug = {};
-BY_COUNTRY.forEach(([country, list]) => (list || []).filter(Boolean).forEach((p) => {
+BY_COUNTRY.forEach(([country, list]) => (list || []).filter((p) => p && p.slug !== 'bangkok-pattaya-ex-delhi').forEach((p) => {
   const prev = bySlug[p.slug] || { ...p, countries: [] };
   bySlug[p.slug] = { ...prev, countries: [...prev.countries, country] };
 }));

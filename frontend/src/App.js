@@ -34,6 +34,7 @@ import BookDates from './pages/BookDates';
 import BookCheckout from './pages/BookCheckout';
 import BookConfirmed from './pages/BookConfirmed';
 import GroupTourDetail from './pages/GroupTourDetail';
+import BangkokPattayaTour, { BangkokPattayaThankYou } from './pages/BangkokPattayaTour';
 import GroupThankYou from './pages/GroupConfirmed';
 import GroupTourDetailV1 from './pages/v1/GroupTourDetailV1';
 import GroupCheckoutV1 from './pages/v1/GroupCheckoutV1';
@@ -172,6 +173,8 @@ function App() {
           <Route path="/asia/book/:key/confirmed/:bookingId" element={<BookConfirmed />} />
           <Route path="/asia/book/:slug" element={<EgyptDetail />} />
           <Route path="/asia/group-tours/inside-sri-lanka" element={<GroupTourDetail />} />
+          <Route path="/asia/group-tours/bangkok-pattaya-ex-delhi" element={<BangkokPattayaTour />} />
+          <Route path="/asia/group-tours/bangkok-pattaya-ex-delhi/thank-you/:bookingId" element={<BangkokPattayaThankYou />} />
           <Route path="/thank-you" element={<Navigate to="/" replace />} />
           <Route path="/asia/group-tours/inside-sri-lanka/thank-you/:bookingId" element={<GroupThankYou />} />
           <Route path="/asia/group-tours/inside-sri-lanka/v1" element={<GroupTourDetailV1 />} />

@@ -105,6 +105,7 @@ export const BookingModal = ({ product, departures, initial, onClose, thankYouPa
                 <div><p className="eg-title-md text-[#002131]">Travellers</p><p className="eg-label-md text-[#6F777C]">Adults 18+ · up to {maxPax} on this date</p></div>
                 <Stepper value={pax} min={1} max={maxPax} onChange={setPax} />
               </div>
+              {dep.single_supplement ? (
               <div className="grid grid-cols-2 gap-2" data-testid="bk-room">
                 {[['twin', 'Twin share', 'included'], ['single', 'Private room', `+${fmtInr(dep.single_supplement)} pp`]].map(([k, l, s]) => (
                   <button key={k} type="button" onClick={() => setRoom(k)} className={`rounded-2xl border px-3 py-3 text-left transition-colors ${room === k ? 'border-[#174358] bg-[#FBEADB]' : 'border-[#C4CBD0] bg-white hover:border-[#174358]'}`} data-testid={`bk-room-${k}`} aria-pressed={room === k}>
@@ -112,6 +113,7 @@ export const BookingModal = ({ product, departures, initial, onClose, thankYouPa
                   </button>
                 ))}
               </div>
+              ) : <p className="eg-label-lg text-[#002131] flex items-center gap-1.5" data-testid="bk-room-twin-only"><BedDouble size={16} className="text-[#174358]" />Twin or double sharing room</p>}
             </>
           )}
 

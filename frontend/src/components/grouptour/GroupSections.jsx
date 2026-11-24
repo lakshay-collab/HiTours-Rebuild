@@ -56,8 +56,9 @@ export const GroupHead = ({ detail, stops }) => (
         <div className="flex flex-wrap items-center gap-2" data-testid="group-chips">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><CalendarIcon size={18} className="text-[#308BB6]" />{detail.days} days</span>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><PinIcon size={18} className="text-[#308BB6]" />{stops.length} places</span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><Users size={18} className="text-[#308BB6]" />Small group · max {detail.groupSize}</span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><CalendarIcon size={18} className="text-[#308BB6]" />Fixed departures</span>
+          {(detail.chips || [`Small group · max ${detail.groupSize}`, 'Fixed departures']).map((c, i) => (
+            <span key={c} className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]">{i ? <CalendarIcon size={18} className="text-[#308BB6]" /> : <Users size={18} className="text-[#308BB6]" />}{c}</span>
+          ))}
         </div>
         <div className="pt-2 border-t border-[#E4E3DB] flex flex-col gap-2" data-testid="group-route-block">
           <span className="eg-label-lg text-[#002131]">Your route</span>
@@ -96,11 +97,11 @@ export const PriceCard = ({ detail, departures, onOpen, compact = false }) => {
         <div className="flex flex-col gap-0.5">
           <span className="eg-body-md text-[#6F777C]">Hold your seat today for</span>
           <span className="flex items-baseline gap-1.5"><span className="eg-price text-[#174358] tabular-nums" data-testid="group-deposit-amount">{fmtInr(detail.depositPp)}</span><span className="eg-body-md text-[#6F777C]">per traveller</span></span>
-          <span className="eg-body-sm text-[#6F777C]">Non-refundable deposit · balance due 60 days before departure</span>
+          <span className="eg-body-sm text-[#6F777C]">{detail.depositNote || 'Non-refundable deposit · balance due 60 days before departure'}</span>
         </div>
         <SalePrice price={low} noSale size="bar" fromLabel="Trip price from" perLabel="per person" testId="group-price" />
         <HoldButton deposit={detail.depositPp} onClick={() => onOpen(null)} className="w-full !h-16 !text-[18px]" testId="group-view-dates" />
-        <button type="button" onClick={() => openLead()} className="eg-btn-outlined w-full !h-12 eg-label-lg" data-testid="group-speak-expert">Speak to a Sri Lanka expert</button>
+        <button type="button" onClick={() => openLead()} className="eg-btn-outlined w-full !h-12 eg-label-lg" data-testid="group-speak-expert">Speak to a {detail.destination || 'Sri Lanka'} expert</button>
       </div>
       {!compact && (
         <>
@@ -111,7 +112,7 @@ export const PriceCard = ({ detail, departures, onOpen, compact = false }) => {
           </div>
           <hr className="border-[#E4E3DB]" />
           <ul className="flex flex-col gap-2" data-testid="group-trust">
-            {['Free date changes until the balance is due', 'Hi Tours Cares: 24/7 on-ground support', 'Secure payments by Razorpay'].map((t) => <li key={t} className="flex items-center gap-2 eg-body-md text-[#174358]"><CheckCircleIcon size={18} className="text-[#308BB6] shrink-0" />{t}</li>)}
+            {(detail.trust || ['Free date changes until the balance is due', 'Hi Tours Cares: 24/7 on-ground support', 'Secure payments by Razorpay']).map((t) => <li key={t} className="flex items-center gap-2 eg-body-md text-[#174358]"><CheckCircleIcon size={18} className="text-[#308BB6] shrink-0" />{t}</li>)}
           </ul>
         </>
       )}
@@ -125,7 +126,7 @@ export const ExpertCard = ({ detail }) => (
   <div className="flex items-start gap-3" data-testid="group-expert">
     <img src={detail.expert.image} alt={detail.expert.name} className="w-12 h-12 rounded-full object-cover shrink-0" />
     <div className="flex flex-col gap-2 min-w-0">
-      <p className="eg-title-md text-[#002131]">Led by {detail.expert.name}, {detail.expert.role} <CheckBadge size={18} className="inline text-[#174358] -mt-0.5" /></p>
+      <p className="eg-title-md text-[#002131]">{detail.expert.prefix || 'Led by'} {detail.expert.name}, {detail.expert.role} <CheckBadge size={18} className="inline text-[#174358] -mt-0.5" /></p>
       <p className="eg-quote !text-[18px] !leading-[29px] md:!text-[20px] md:!leading-[32px] text-[#002131]">“{detail.expert.quote}”</p>
     </div>
   </div>

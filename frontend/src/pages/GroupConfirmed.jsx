@@ -4,13 +4,15 @@ import { MessageCircle, Mail } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { ServiceIcon, CheckCircleIcon } from '../components/egypt/EgyptIcons';
-import { detail, included, nextSteps, PATHS } from '../grouptours/insideSriLankaData';
+import * as insideSriLanka from '../grouptours/insideSriLankaData';
 import { fmtDate, fmtInr } from '../grouptours/groupBooking';
 import { ServicePills, Ratings } from '../components/grouptour/GroupSections';
 
 const API = process.env.REACT_APP_BACKEND_URL;
 
-export default function GroupThankYou() {
+export default function GroupThankYou({ tour = insideSriLanka }) {
+  const { detail, included, nextSteps, PATHS } = tour;
+  const destination = detail.destination || 'Sri Lanka';
   const { bookingId } = useParams();
   const [booking, setBooking] = useState(null);
   const [error, setError] = useState('');
@@ -19,22 +21,22 @@ export default function GroupThankYou() {
     fetch(`${API}/api/bookings/${bookingId}`).then(async (r) => { if (!r.ok) throw new Error('Booking not found'); setBooking(await r.json()); }).catch((e) => setError(e.message));
   }, [bookingId]);
   const q = booking?.quote;
-  const ok = booking && booking.kind === 'group' && booking.status === 'paid';
+  const ok = booking && booking.kind === 'group' && booking.product === detail.key && booking.status === 'paid';
   return (
     <div className="eg" data-testid="gthanks-page">
       <Header />
       <main className="eg-wide pt-4 md:pt-6 pb-16 flex flex-col gap-8">
         {error && <p className="eg-body-lg text-[#B3261E]" data-testid="gthanks-error">{error}</p>}
         {!booking && !error && <p className="eg-body-lg text-[#6F777C]" data-testid="gthanks-loading">Fetching your booking…</p>}
-        {booking && !ok && <p className="eg-body-lg text-[#B3261E]" data-testid="gthanks-error">{booking.kind !== 'group' ? 'This booking belongs to a different holiday.' : 'Payment is still pending for this booking.'}</p>}
+        {booking && !ok && <p className="eg-body-lg text-[#B3261E]" data-testid="gthanks-error">{booking.kind !== 'group' || booking.product !== detail.key ? 'This booking belongs to a different holiday.' : 'Payment is still pending for this booking.'}</p>}
         {ok && (
           <>
             <section className="bg-[#F0EEE6] rounded-2xl p-5 md:p-8 flex flex-col md:flex-row gap-6 md:items-center" data-testid="gthanks-hero">
               <img src={detail.hero.mainSm} alt={detail.hero.alt} className="w-full md:w-[320px] aspect-[4/3] object-cover rounded-2xl" />
               <div className="flex flex-col gap-3 min-w-0">
                 <p className="inline-flex items-center gap-2 eg-label-lg text-[#174358]"><CheckCircleIcon size={20} className="text-[#308BB6]" />Seat{q.travellers > 1 ? 's' : ''} held{booking.mock ? ' · test booking, no payment taken' : ''}</p>
-                <h1 className="eg-card-title !text-[26px] !leading-8 md:!text-[34px] md:!leading-10 text-[#002131]" data-testid="gthanks-title">Thank you, {booking.contact.name.split(' ')[0]}! You’re going to Sri Lanka.</h1>
-                <p className="eg-body-lg text-[#002131]" data-testid="gthanks-details">{booking.title} · {fmtDate(q.start)} to {fmtDate(q.end)} · {q.travellers} traveller{q.travellers > 1 ? 's' : ''} · {q.room === 'single' ? 'private room' : 'twin share'}</p>
+                <h1 className="eg-card-title !text-[26px] !leading-8 md:!text-[34px] md:!leading-10 text-[#002131]" data-testid="gthanks-title">Thank you, {booking.contact.name.split(' ')[0]}! You’re going to {destination}.</h1>
+                <p className="eg-body-lg text-[#002131]" data-testid="gthanks-details">{booking.title} · {fmtDate(q.start)} to {fmtDate(q.end)} · {q.travellers} traveller{q.travellers > 1 ? 's' : ''} · {q.room === 'single' ? 'private room' : detail.single === false ? 'twin or double sharing' : 'twin share'}</p>
                 <p className="eg-body-md text-[#174358]">Booking reference <strong className="text-[#002131]" data-testid="gthanks-ref">{booking.booking_id}</strong></p>
               </div>
             </section>
@@ -63,7 +65,7 @@ export default function GroupThankYou() {
                 </section>
                 <div className="flex flex-wrap gap-3">
                   <Link to={PATHS.detail} className="eg-btn-filled !h-12 px-7 eg-title-md" data-testid="gthanks-view-trip">View the day-by-day itinerary</Link>
-                  <Link to="/asia/sri-lanka" className="eg-btn-outlined !h-12 px-6 eg-label-lg" data-testid="gthanks-more">More Sri Lanka holidays</Link>
+                  <Link to={detail.destinationHref || '/asia/sri-lanka'} className="eg-btn-outlined !h-12 px-6 eg-label-lg" data-testid="gthanks-more">More {destination} holidays</Link>
                 </div>
               </div>
               <aside className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="gthanks-summary">

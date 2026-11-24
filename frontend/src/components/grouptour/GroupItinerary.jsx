@@ -8,18 +8,18 @@ const HEADER = 120;
 const DayText = ({ day, hotel }) => (
   <div className="md:w-[346px] shrink-0" data-testid={`itin-day-${day.n}-text`}>
     <h3 className="eg-title-lg text-[#002131]">{day.title}</h3>
-    <p className="mt-2 inline-flex items-center gap-1.5 eg-label-md text-[#6F777C]" data-testid={`itin-day-${day.n}-meals`}><Utensils size={14} className="text-[#308BB6]" />{day.meals.map((m) => MEAL[m]).join(' · ')}</p>
+    <p className="mt-2 inline-flex items-center gap-1.5 eg-label-md text-[#6F777C]" data-testid={`itin-day-${day.n}-meals`}><Utensils size={14} className="text-[#308BB6]" />{day.meals.length ? day.meals.map((m) => MEAL[m]).join(' · ') : 'Meals on your own'}</p>
     <ul className="mt-4 flex flex-col gap-2.5" data-testid={`itin-day-${day.n}-bullets`}>
       {day.bullets.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]"><BulletMark text={b} />{b}</li>)}
     </ul>
     <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid={`itin-day-${day.n}-overnight`}>
       <Moon size={16} className="text-[#308BB6] shrink-0" />
-      {hotel ? <span>Overnight in {hotel.name}, {hotel.city} <span className="text-[#FB7F26]">{'★'.repeat(hotel.stars)}</span> <span className="text-[#6F777C] font-normal">or similar</span></span> : 'Departure day, no overnight'}
+      {hotel ? <span>Overnight in {hotel.name}, {hotel.city} <span className="text-[#FB7F26]">{'★'.repeat(hotel.stars || 0)}</span> <span className="text-[#6F777C] font-normal">or similar</span></span> : 'Departure day, no overnight'}
     </p>
   </div>
 );
 
-export const GroupItinerary = ({ days, hotels, onActiveChange }) => {
+export const GroupItinerary = ({ days, hotels, onActiveChange, sub }) => {
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
   const head = useRef(null);
@@ -55,7 +55,7 @@ export const GroupItinerary = ({ days, hotels, onActiveChange }) => {
         <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
           <h2 className="eg-title-md md:eg-headline-md !leading-7 text-[#002131] truncate">Your day-by-day itinerary</h2>
         </div>
-        {!stuck && <p className="eg-body-md text-[#174358] pb-3">{days.length} days with your group · every night’s hotel listed under its day</p>}
+        {!stuck && <p className="eg-body-md text-[#174358] pb-3">{sub || `${days.length} days with your group · every night’s hotel listed under its day`}</p>}
         <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar py-3" data-testid="itin-tabs">
           {days.map((d, i) => (
             <button key={d.n} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`shrink-0 h-9 px-4 rounded-full eg-label-lg whitespace-nowrap transition-colors ${active === i ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`itin-tab-${d.n}`}>Day {d.n}</button>
