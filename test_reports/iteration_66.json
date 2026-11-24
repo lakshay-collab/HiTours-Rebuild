@@ -1,0 +1,36 @@
+{
+  "summary": "Tested the new Bangkok & Pattaya ex Delhi package (backend and frontend) and checked Sri Lanka for regressions. Server clock: 2026-11-24. Backend: new test_bangkok_pattaya_group.py, 7 of 7 pass. The departures endpoint returns exactly one departure (2026-12-07 to 12-11, price 63000, single_supplement null, 20 seats, balance due 2026-12-01). A room 'single' order returns 400 'Private rooms are not available on this trip'. A wrong date returns 400. 9 travellers returns 422. A twin order for 2 people gives deposit 10000, total 126000 and balance 116000, mock verify gives paid, and seats drop by 2. Sri Lanka still offers the +38000 single room. Frontend desktop (1920): title, chips (5 days, 2 places, Flights from Delhi included, Departs 07 Dec 2026), route Pattaya > Bangkok, breadcrumb Home > Asia > Thailand > Bangkok & Pattaya and the 5 gallery images are all correct. The price card shows ₹5,000 per traveller, Trip price from ₹63,000 and 'Hold my seat · ₹5,000'. 'Speak to a Thailand expert' opens the 'Customise your Thailand holiday' popup (not submitted). All 5 itinerary days are correct: meals (day 2 Lunch, the rest 'Meals on your own'), overnights (Grand Bella on days 1-2, Ramada D'MA on days 3-4, day 5 'Departure day, no overnight'). The route map shows the Pattaya and Bangkok pins and the Gulf of Thailand label, and the active pin and caption follow the scroll (Day 3 · Bangkok). Included (11) and Not included (6) lists are shown. Dates & prices has 1 row: 7 Dec – 11 Dec 2026, 20 seats left, ₹63,000 pp. Reviews are titled 'What travellers say about Thailand with Hi Tours', and FAQ and How booking works are present. Booking: the travellers step shows bk-room-twin-only and no private-room option. The footer for 1 traveller reads '₹5,000 × 1 · rest ₹58,000 due 1 Dec' (2 travellers: ₹10,000 / ₹1,16,000). Details-step validation shows all 3 errors. The mock Razorpay sheet led to /asia/group-tours/bangkok-pattaya-ex-delhi/thank-you/HGE82286BF showing 'You're going to Thailand.', twin or double sharing, Paid today ₹10,000 (₹5,000 × 2), Trip total ₹1,26,000, and 'More Thailand holidays' linking to /asia/thailand. The Thailand holidays page lists the card (2nd position, ₹63,000) and clicking it opens the new page. /asia/holidays has 0 links to the package. Sri Lanka regression passes: chips 'Small group · max 16' and 'Fixed departures', 'Speak to a Sri Lanka expert', 'Led by Aditya', 8-stop island map, 12 departures, Twin share and Private room +₹38,000 pp, mock payment reached the Sri Lanka thank-you page with 'You're going to Sri Lanka.' and private room. Opening the Sri Lanka booking on the Bangkok thank-you URL correctly shows 'This booking belongs to a different holiday.' Mobile 390: no horizontal overflow, price card visible, the sticky bottom bar (group-mobile-bar) appears after scrolling and opens the modal as a bottom sheet, and inputs accept typing. No page errors.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "group_bookings.departures()", "issue": "`p.get('seats') or SEATS_PATTERN[...]` treats seats=0 as unset, so a product with seats 0 (sold out) would silently fall back to the sample pattern. Use `p['seats'] if 'seats' in p else ...`."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Bangkok & Pattaya hero chips", "issues": ["The 'Flights from Delhi included' chip uses the group/users icon carried over from Sri Lanka's 'Small group' chip. A plane icon would fit better."]},
+      {"screen": "Thailand holidays card", "issues": ["Says '1 meals' (should be '1 meal'). The card has no '10% OFF' badge while the site banner says '10% off every holiday' (the card is noSale; confirm this is intended)."]},
+      {"screen": "Mobile price card", "issues": ["The floating WhatsApp button covers the end of the 'Hi Tours Cares: 24/7 on-ground support' trust line. This affects the whole site and is minor."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_bangkok_pattaya_group.py", "/app/test_reports/pytest/bangkok_pattaya.xml"],
+  "action_items": [
+    "Optional: use a plane icon for the 'Flights from Delhi included' chip",
+    "Optional: singularise '1 meals' on listing cards",
+    "Optional: handle seats=0 explicitly in group_bookings.departures()",
+    "Update the stale test /app/backend/tests/test_group_deposit_v2.py::test_validation. It expects 2026-12-26 (Sri Lanka) to return 400, but with today's date that departure is open (4 seats, limited). The test depends on the date; the app is not broken."
+  ],
+  "critical_code_review_comments": [
+    "PriceCard is rendered twice (mobile and desktop), so testids like group-speak-expert, group-view-dates and group-book-box are duplicated. Tests must scope to [data-testid=group-sidebar]. Consider a testid suffix for the mobile copy.",
+    "test_group_bookings.py cleanup deletes by an email regex rather than by booking ids. It is safe in practice but goes against the cleanup-by-id rule.",
+    "GroupThankYou checks booking.product === detail.key, which correctly blocks thank-you URLs that belong to another product."
+  ],
+  "updated_files": ["/app/backend/tests/test_bangkok_pattaya_group.py"],
+  "success_rate": {"backend": "100% (7/7 new; 20/21 existing group tests, 1 stale date-based failure)", "frontend": "100%"},
+  "seed_data_creation": "None kept. The UI bookings HGE82286BF (Bangkok, 2 pax) and HG27E23F5D (Sri Lanka, 1 pax) and the pytest bookings were deleted by booking_id. Bangkok seats_left is back to 20.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Mock payment opens a simulated sheet [data-testid=mock-razorpay]. Click [data-testid=mock-pay-success] to finish. Desktop sidebar selectors: [data-testid=group-sidebar] [data-testid=group-view-dates] is 'Hold my seat'. Mobile sticky bar: group-mobile-bar / group-mobile-dates. Paid bookings reduce live seats, so delete test bookings by booking_id afterwards. Do not submit the lead popup (real CRM)."
+}

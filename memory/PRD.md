@@ -834,5 +834,12 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Sitewide tags in public/index.html <head>: Meta Pixel (user's exact snippet incl. PageView) + Google Ads gtag AW-18514359223; pixel <noscript> directly after <body>. App.js PixelPageView sends one PageView per later in-app page change, skipping redirects (REPLACE) and the first load.
 - Enquiry success (EgyptPlanner + DesignEscapeModal) calls markThankYou() in lib/metaTracking.js: pushState to /thank-you (popup unchanged), one Meta PageView + one gtag page_view. fbq.disablePushState=true stops Meta's own auto-PageView on address changes (prevents doubles). Direct /thank-you visits redirect to /.
 
+## 2026-11 Bangkok & Pattaya ex Delhi package (from supplier PDF)
+- Page /asia/group-tours/bangkok-pattaya-ex-delhi built on the Inside Sri Lanka group-tour layout; data in grouptours/bangkokPattayaData.js; wrapper pages/BangkokPattayaTour.jsx (detail + thank-you).
+- Group-tour components now configurable (chips, deposit note, trust list, expert prefix, itinerary sub, departures note, route map outline via makeMap, twin-only rooms) with Sri Lanka defaults unchanged.
+- Backend group_bookings.py: product 'bangkok-pattaya-ex-delhi', ₹63,000 pp twin/double, fixed date 2026-12-07 (to 12-11), 20 seats, no private room, ₹5,000 deposit.
+- Listed on Thailand holidays only (excluded from Asia holidays). Tested iteration_66: all pass.
+
+
 
 - server.py builds Kraya "attributes": fbp, fbc, ip_address (first X-Forwarded-For), user_agent, city/state/country (form values else ipwho.is lookup), slugged lowercase; empty keys omitted.

@@ -65,7 +65,7 @@ def departures(key: str, today: date | None = None) -> list[dict]:
             ahead = (d - today).days
             if ahead < MIN_LEAD_DAYS:
                 continue
-            seats = p.get('seats') or SEATS_PATTERN[idx % len(SEATS_PATTERN)]
+            seats = p['seats'] if 'seats' in p else SEATS_PATTERN[idx % len(SEATS_PATTERN)]
             price = p['base'] + (p['peak_extra'] if m in p['peak_months'] else 0)
             out.append({
                 'id': d.isoformat(), 'start': d.isoformat(), 'end': (d + timedelta(days=p['nights'])).isoformat(),

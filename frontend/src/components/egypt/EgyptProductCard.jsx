@@ -64,7 +64,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
               <Stat icon={BedIcon} value={`${p.hotels} ${p.hotels === 1 ? 'hotel' : 'hotels'}`} testId="eg-product-hotels" />
               <Stat icon={TicketIcon} value={`${p.activities} activities`} testId="eg-product-activities" />
               <Stat icon={CarIcon} value={`${p.transfers} transfers`} testId="eg-product-transfers" />
-              {meals != null && <Stat icon={MealIcon} value={`${meals} meals`} testId="eg-product-meals" />}
+              {meals != null && <Stat icon={MealIcon} value={`${meals} meal${meals === 1 ? '' : 's'}`} testId="eg-product-meals" />}
             </div>
           )}
           <SalePrice price={p.price} noSale={p.noSale} className="mt-auto pt-4" testId="eg-product-price" />
