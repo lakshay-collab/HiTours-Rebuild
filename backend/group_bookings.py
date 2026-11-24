@@ -15,13 +15,21 @@ GROUP_PRODUCTS = {
     'inside-sri-lanka': {
         'title': 'Inside Sri Lanka', 'base': 200000, 'nights': 11, 'destination': 'Sri Lanka',
         'single_supplement': 38000, 'max_group': 16, 'peak_months': (12, 1, 2), 'peak_extra': 15000,
+        'terms': [(60, 1.0)],
     },
     'bangkok-pattaya-ex-delhi': {
         'title': 'Bangkok & Pattaya with flights from Delhi', 'base': 63000, 'nights': 4, 'destination': 'Thailand',
         'single_supplement': None, 'max_group': 20, 'peak_months': (), 'peak_extra': 0,
         'dates': ['2026-12-07'], 'seats': 20,
     },
+    'grand-wonders-of-europe': {
+        'title': 'Grand Wonders of Europe', 'base': 175676, 'nights': 15, 'destination': 'Europe',
+        'single_supplement': None, 'max_group': 40, 'peak_months': (), 'peak_extra': 0,
+        'dates': [f'{y}-{m:02d}-{d}' for y, m in [(2026, 12), (2027, 1), (2027, 2), (2027, 3), (2027, 4), (2027, 5)] for d in (15, 22)],
+        'terms': [(45, 0.5), (30, 1.0)],
+    },
 }
+DEFAULT_TERMS = [(30, 1.0)]
 DEPOSIT_PP = 5000
 BALANCE_DUE_DAYS = 60
 BALANCE_MIN_DAYS = 7
@@ -41,6 +49,12 @@ def _saturdays(y: int, m: int) -> list[date]:
         out.append(d)
         d += timedelta(days=7)
     return out
+
+
+def milestones(p: dict, start: date, today: date) -> list[dict]:
+    """Payment milestones: cumulative share of the trip total due by each date."""
+    return [{'due': max(start - timedelta(days=days), today + timedelta(days=BALANCE_MIN_DAYS)).isoformat(), 'pct': pct}
+            for days, pct in p.get('terms', DEFAULT_TERMS)]
 
 
 def _schedule(p: dict, today: date) -> list[date]:
@@ -72,7 +86,8 @@ def departures(key: str, today: date | None = None) -> list[dict]:
                 'price': price, 'single_supplement': p['single_supplement'], 'seats_left': seats, 'max_group': p['max_group'],
                 'status': _status(seats), 'guaranteed': p['max_group'] - seats >= GUARANTEED_FROM,
                 'deposit_pp': DEPOSIT_PP,
-                'balance_due': max(d - timedelta(days=BALANCE_DUE_DAYS), today + timedelta(days=BALANCE_MIN_DAYS)).isoformat(),
+                'balance_due': milestones(p, d, today)[-1]['due'],
+                'milestones': milestones(p, d, today),
             })
     return out
 
@@ -109,7 +124,7 @@ def group_quote(dep: dict, travellers: int, room: str) -> dict:
     deposit = DEPOSIT_PP * travellers
     return {'price': dep['price'], 'single_supplement': supplement if room == 'single' else 0, 'per_person': pp,
             'travellers': travellers, 'room': room, 'total': total, 'deposit': deposit, 'deposit_pp': DEPOSIT_PP,
-            'balance': total - deposit, 'balance_due': dep['balance_due'], 'start': dep['start'], 'end': dep['end']}
+            'balance': total - deposit, 'balance_due': dep['balance_due'], 'milestones': dep['milestones'], 'start': dep['start'], 'end': dep['end']}
 
 
 def register(db):

@@ -29,9 +29,9 @@ const LABEL_SIDE = { galle: 'left', kosgoda: 'left', negombo: 'left', nuwara: 'l
 const SRI_LANKA = { name: 'Sri Lanka', land: ISLAND, project, viewBox: VB, labelLeft: Object.keys(LABEL_SIDE) };
 
 // Build a map config from a land outline: origin [lat, lon] is the top-left corner
-export const makeMap = ({ name, coast, origin, scale, viewBox, labelLeft = [], sea }) => {
+export const makeMap = ({ name, coast, coasts, origin, scale, viewBox, labelLeft = [], sea }) => {
   const proj = (lat, lon) => [(lon - origin[1]) * scale, (origin[0] - lat) * scale];
-  return { name, land: smooth(coast.map(([la, lo]) => proj(la, lo)), true), project: proj, viewBox, labelLeft, sea };
+  return { name, land: (coasts || [coast]).map((c) => smooth(c.map(([la, lo]) => proj(la, lo)), true)).join(' '), project: proj, viewBox, labelLeft, sea };
 };
 
 export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', map = SRI_LANKA }) => {

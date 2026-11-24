@@ -57,7 +57,7 @@ export const GroupHead = ({ detail, stops }) => (
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><CalendarIcon size={18} className="text-[#308BB6]" />{detail.days} days</span>
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><PinIcon size={18} className="text-[#308BB6]" />{stops.length} places</span>
           {(detail.chips || [`Small group · max ${detail.groupSize}`, 'Fixed departures']).map((c, i) => (
-            <span key={c} className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]">{i ? <CalendarIcon size={18} className="text-[#308BB6]" /> : detail.chips ? <Plane size={18} className="text-[#308BB6]" /> : <Users size={18} className="text-[#308BB6]" />}{c}</span>
+            <span key={c} className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]">{i ? <CalendarIcon size={18} className="text-[#308BB6]" /> : detail.chipIcon === 'plane' ? <Plane size={18} className="text-[#308BB6]" /> : <Users size={18} className="text-[#308BB6]" />}{c}</span>
           ))}
         </div>
         <div className="pt-2 border-t border-[#E4E3DB] flex flex-col gap-2" data-testid="group-route-block">

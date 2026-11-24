@@ -57,6 +57,12 @@ export default function GroupThankYou({ tour = insideSriLanka }) {
                     <p className="flex items-center gap-2"><Mail size={16} className="text-[#308BB6]" />Full itinerary emailed to {booking.contact.email}</p>
                   </div>
                 </section>
+                {booking.balance_links?.length > 0 && (() => { const link = booking.balance_links[booking.balance_links.length - 1]; return (
+                  <section className="rounded-2xl border border-[#C4CBD0] bg-white p-4 md:p-5 flex flex-col sm:flex-row sm:items-center gap-3 justify-between" data-testid="gthanks-balance-link">
+                    <div><p className="eg-label-md text-[#6F777C]">Next payment · {link.label}</p><p className="eg-headline-md text-[#002131]">{fmtInr(link.amount)}</p><p className="eg-label-md text-[#6F777C]">Due by {fmtDate(link.due)} · link sent by SMS and email</p></div>
+                    {link.short_url && link.status !== 'paid' && <a href={link.short_url} target="_blank" rel="noreferrer" className="eg-btn-filled !h-12 px-6 eg-label-lg shrink-0" data-testid="gthanks-pay-balance">Pay now</a>}
+                  </section>
+                ); })()}
                 <section className="flex flex-col gap-4" data-testid="gthanks-included">
                   <h2 className="eg-headline-md text-[#002131]">What’s included in your trip</h2>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">

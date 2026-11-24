@@ -171,6 +171,12 @@ def register(db):
         await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {
             'status': 'paid', 'razorpay_payment_id': body.razorpay_payment_id,
             'paid_at': datetime.now(timezone.utc).isoformat()}})
+        if doc.get('kind') == 'group':
+            from balance_links import send_next_link
+            try:
+                await send_next_link(db, doc)
+            except Exception as exc:  # the deposit is already paid; the hourly job retries the link
+                logger.error(f"Balance link not sent for {body.booking_id}: {exc}")
         return {'status': 'paid', 'booking_id': body.booking_id}
 
     @router.get('/{booking_id}')

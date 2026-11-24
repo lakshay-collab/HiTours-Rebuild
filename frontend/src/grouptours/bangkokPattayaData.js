@@ -38,7 +38,7 @@ export const detail = {
   days: 5, nights: 4, basePrice: 63000, depositPp: DEPOSIT_PP,
   groupSize: 20, single: false,
   destination: 'Thailand', destinationHref: '/asia/thailand',
-  chips: ['Flights from Delhi included', 'Departs 07 Dec 2026'],
+  chips: ['Flights from Delhi included', 'Departs 07 Dec 2026'], chipIcon: 'plane',
   depositNote: 'Non-refundable deposit · balance due before you fly',
   departuresNote: 'Hold your seat for ₹5,000 per traveller. The rest of the trip price is due before you fly. Price is per person on twin or double sharing.',
   trust: ['Return flights Delhi to Bangkok included', 'Hi Tours Cares: 24/7 on-ground support', 'Secure payments by Razorpay'],
