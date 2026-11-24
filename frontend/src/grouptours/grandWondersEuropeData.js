@@ -28,9 +28,9 @@ export const PATHS = {
 export const DEPOSIT_PP = 5000;
 
 export const wondersOfEuropeProduct = {
-  slug: 'wonders-of-europe', href: PATHS.detail, tag: 'Community trip', styles: ['Couples', 'Culture', 'Group'],
+  slug: 'wonders-of-europe', href: PATHS.detail, tag: 'Couples Special', styles: ['Couples', 'Culture', 'Group'],
   places: ['London', 'Paris', 'Swiss Alps', 'Venice', 'Rome'],
-  title: 'Wonders of Europe: 10 countries in 16 days, a London to Rome community trip for couples',
+  title: 'Wonders of Europe: 10 countries in 16 days, Couples Special Community Trip',
   days: 16, stops: 10, hotels: 9, cities: 10, activities: 20, transfers: 16, meals: 44, price: 175676, noSale: true,
   images: [IMG.hero(1200), IMG.alps, IMG.venice, IMG.rome],
   alt: 'The Eiffel Tower over the Seine at dusk',
@@ -39,7 +39,7 @@ export const wondersOfEuropeProduct = {
 export const detail = {
   key: KEY,
   title: 'Wonders of Europe',
-  tagline: '10 countries in 16 days, a London to Rome community trip for couples',
+  tagline: '10 countries in 16 days, Couples Special Community Trip',
   days: 16, nights: 15, basePrice: 175676, depositPp: DEPOSIT_PP,
   groupSize: 40, single: false,
   destination: 'Europe', destinationHref: '/europe',
@@ -115,7 +115,7 @@ export const stops = [
 
 // Simplified Great Britain and western-continent outlines for the route map
 export const map = {
-  name: 'Europe', origin: [53.4, -1.6], scale: 30, viewBox: [0, 0, 540, 400], labelLeft: ['paris', 'swiss', 'florence', 'rome'],
+  name: 'Europe', origin: [54.6, -1.6], scale: 30, viewBox: [0, 0, 540, 436], labelLeft: ['paris', 'swiss', 'florence', 'rome'],
   coasts: [
     [[50.1, -5.6], [50.4, -3.5], [50.7, -1.5], [50.8, 0.3], [51.1, 1.4], [51.9, 1.6], [52.6, 1.7], [53.0, 0.6], [53.6, 0.1], [54.6, -0.8], [55.6, -1.6], [56.6, -2.5], [56.6, -5.5], [55.3, -5.3], [54.8, -4.5], [54.4, -3.3], [53.3, -3.1], [52.7, -4.4], [51.8, -5.1], [51.5, -3.5], [51.2, -4.3], [50.5, -5.0]],
     [[56.5, 8.2], [55.4, 8.1], [53.9, 8.6], [53.5, 7.0], [53.3, 5.2], [52.3, 4.5], [51.4, 3.4], [51.0, 2.3], [50.9, 1.6], [50.1, 1.5], [49.7, 0.2], [49.3, -0.5], [49.7, -1.4], [48.6, -1.5], [48.7, -3.2], [48.4, -4.8], [47.6, -3.3], [46.9, -2.2], [45.9, -1.3], [44.6, -1.25], [43.4, -1.7], [43.4, -4.5], [42, -8.9], [40.5, -8.9], [40.5, 0.6], [41.4, 2.2], [42.6, 3.1], [43.3, 3.6], [43.4, 5.0], [43.1, 6.1], [43.6, 7.4], [44.4, 8.8], [43.9, 10.2], [43.0, 10.5], [42.3, 11.4], [41.4, 12.7], [40.9, 13.9], [40.4, 15.0], [40.5, 17.5], [41.9, 16.0], [42.9, 14.0], [43.8, 13.2], [44.6, 12.3], [45.4, 12.4], [45.7, 13.4], [45.3, 14.3], [44.4, 15.2], [42.6, 17.5], [40.5, 18.6], [40.5, 20], [56.5, 20]],

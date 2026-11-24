@@ -49,7 +49,7 @@ export default function GroupTourDetail({ tour = insideSriLanka, reviews = sriLa
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="group-sidebar">
               <PriceCard detail={detail} departures={departures} onOpen={open} compact />
               <div className="rounded-2xl border border-[#C4CBD0] bg-white p-3" data-testid="route-map-desktop-wrap">
-                <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className="h-[440px]" map={map} />
+                <RouteMap stops={stops} activeIndex={activeIndex} activeDay={activeDay} className={map ? 'w-full max-h-[440px]' : 'h-[440px]'} style={map ? { aspectRatio: `${map.viewBox[2]} / ${map.viewBox[3]}` } : undefined} map={map} />
               </div>
               <WhyGroup data={whyGroup} />
             </aside>

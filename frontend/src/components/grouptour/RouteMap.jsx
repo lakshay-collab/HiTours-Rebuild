@@ -34,7 +34,7 @@ export const makeMap = ({ name, coast, coasts, origin, scale, viewBox, labelLeft
   return { name, land: (coasts || [coast]).map((c) => smooth(c.map(([la, lo]) => proj(la, lo)), true)).join(' '), project: proj, viewBox, labelLeft, sea };
 };
 
-export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', map = SRI_LANKA }) => {
+export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', testId = 'route-map', map = SRI_LANKA, style }) => {
   const pathRef = useRef(null);
   const [len, setLen] = useState(0);
   const pts = stops.map((s) => map.project(s.lat, s.lon));
@@ -44,7 +44,7 @@ export const RouteMap = ({ stops, activeIndex = 0, activeDay, className = '', te
   const active = stops[activeIndex];
 
   return (
-    <div className={`relative ${className}`} data-testid={testId} data-active-stop={active?.key}>
+    <div className={`relative ${className}`} style={style} data-testid={testId} data-active-stop={active?.key}>
       <svg viewBox={map.viewBox.join(' ')} className="w-full h-full" role="img" aria-label={`Route map of ${map.name}, currently at ${active?.name}`}>
         <defs>
           <pattern id="rm-grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.6" fill="#174358" opacity="0.08" /></pattern>
