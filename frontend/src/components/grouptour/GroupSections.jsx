@@ -54,16 +54,16 @@ export const GroupHead = ({ detail, stops }) => (
       <div className="flex flex-col gap-4">
         <h1 className="eg-card-title !text-[22px] !leading-[28px] sm:!text-[26px] sm:!leading-8 md:!text-[30px] md:!leading-9 text-[#002131]" data-testid="group-title">{detail.title}: {detail.tagline}</h1>
         <div className="flex flex-wrap items-center gap-2" data-testid="group-chips">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><CalendarIcon size={18} className="text-[#308BB6]" />{detail.days} days</span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><PinIcon size={18} className="text-[#308BB6]" />{stops.length} places</span>
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><CalendarIcon size={18} className="text-[#308BB6]" />{detail.daysLabel || `${detail.days} days`}</span>
+          {stops.length > 0 && <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]"><PinIcon size={18} className="text-[#308BB6]" />{stops.length} places</span>}
           {(detail.chips || [`Small group · max ${detail.groupSize}`, 'Fixed departures']).map((c, i) => (
             <span key={c} className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]">{i ? <CalendarIcon size={18} className="text-[#308BB6]" /> : detail.chipIcon === 'plane' ? <Plane size={18} className="text-[#308BB6]" /> : <Users size={18} className="text-[#308BB6]" />}{c}</span>
           ))}
         </div>
-        <div className="pt-2 border-t border-[#E4E3DB] flex flex-col gap-2" data-testid="group-route-block">
+        {stops.length > 0 && <div className="pt-2 border-t border-[#E4E3DB] flex flex-col gap-2" data-testid="group-route-block">
           <span className="eg-label-lg text-[#002131]">Your route</span>
           <RouteLine cities={stops.map((s) => s.name)} testId="group-route-line" />
-        </div>
+        </div>}
       </div>
     </div>
   </div>

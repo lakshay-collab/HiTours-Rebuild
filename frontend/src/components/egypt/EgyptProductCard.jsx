@@ -36,7 +36,7 @@ export default function EgyptProductCard({ p, index = 0 }) {
   const Wrap = ({ children, ...rest }) => (to
     ? <Link to={to} {...rest}>{children}</Link>
     : <a href="#" onClick={(e) => e.preventDefault()} {...rest}>{children}</a>);
-  const days = typeof p.days === 'number' ? `${p.days} days` : p.days;
+  const days = p.daysLabel || (typeof p.days === 'number' ? `${p.days} days` : p.days);
   const cities = p.cities != null ? `${p.cities} ${p.cities === 1 ? 'city' : 'cities'}` : p.stations;
   const meals = p.meals != null ? p.meals : (typeof p.days === 'number' ? p.days : null);
 

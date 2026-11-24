@@ -171,7 +171,7 @@ def register(db):
         await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {
             'status': 'paid', 'razorpay_payment_id': body.razorpay_payment_id,
             'paid_at': datetime.now(timezone.utc).isoformat()}})
-        if doc.get('kind') == 'group':
+        if doc.get('kind') in ('group', 'hotel'):
             from balance_links import send_next_link
             try:
                 await send_next_link(db, doc)
