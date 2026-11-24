@@ -24,7 +24,7 @@ MAX_ADULTS_PER_ROOM = 3  # the third adult sleeps on an extra bed
 # Supplier sheet (Kuta tab, breakfast plan, read 24 Nov 2026). Each rate: first night, last night, room USD, extra adult bed USD.
 PACKAGES = {
     'kuta-hotel-only': {
-        'title': 'Kuta hotel only package', 'destination': 'Bali', 'nights': [3, 4, 5, 6], 'terms': [(30, 1.0)],
+        'title': 'Kuta hotel only package', 'destination': 'Bali', 'nights': [2, 3, 4, 5, 6, 7], 'terms': [(30, 1.0)],
         'hotels': [
             {'id': 'kuta-central-park', 'name': 'Kuta Central Park Hotel', 'room': 'Superior Room', 'rates': [
                 ('2026-10-01', '2026-12-21', 28, 14), ('2027-01-05', '2027-03-31', 28, 14)]},
@@ -82,7 +82,7 @@ def build_quote(p: dict, checkin: date, nights: int, rooms: List[int], today: da
         total = hotel_total(h, checkin, nights, rooms)
         can_deposit = bool(total) and deposit_ok and total > DEPOSIT
         hotels.append({'id': h['id'], 'name': h['name'], 'room': h['room'], 'available': total is not None, 'total': total,
-                       'per_night': round(total / nights) if total else None, 'deposit': DEPOSIT if can_deposit else None})
+                       'deposit': DEPOSIT if can_deposit else None})
     return {'checkin': checkin.isoformat(), 'checkout': checkout.isoformat(), 'nights': nights, 'rooms': rooms, 'adults': sum(rooms),
             'deposit_days': DEPOSIT_MIN_DAYS, 'balance_due': balance_due, 'hotels': hotels}
 
@@ -114,11 +114,13 @@ def register(db):
         if not p:
             raise HTTPException(404, 'Unknown hotel package')
         first, last_night = _window(p, ist_today())
+        lowest = min(r[2] for h in p['hotels'] for r in h['rates'])
         return {'product': key, 'title': p['title'], 'nights': p['nights'], 'min_checkin': first.isoformat(),
                 'last_checkout': (last_night + timedelta(days=1)).isoformat(), 'deposit': DEPOSIT, 'deposit_days': DEPOSIT_MIN_DAYS,
                 'max_rooms': MAX_ROOMS, 'max_adults_per_room': MAX_ADULTS_PER_ROOM,
+                'from_by_nights': {str(n): _inr(lowest * n) for n in p['nights']},
                 'hotels': [{'id': h['id'], 'name': h['name'], 'room': h['room'],
-                            'from_per_night': _inr(min(r[2] for r in h['rates'])),
+                            'from_price': _inr(min(r[2] for r in h['rates']) * p['nights'][0]),
                             'seasons': [{'from': a, 'to': b} for a, b, _, _ in h['rates']]} for h in p['hotels']]}
 
     @router.get('/{key}/quote')
@@ -142,7 +144,7 @@ def register(db):
         if body.pay == 'deposit' and not h['deposit']:
             raise HTTPException(400, f'The deposit option needs check-in at least {DEPOSIT_MIN_DAYS} days away. Please pay in full.')
         pay_now = h['deposit'] if body.pay == 'deposit' else h['total']
-        quote_doc = {'total': h['total'], 'deposit': pay_now, 'balance': h['total'] - pay_now, 'per_night': h['per_night'],
+        quote_doc = {'total': h['total'], 'deposit': pay_now, 'balance': h['total'] - pay_now,
                      'balance_due': q['balance_due'] if body.pay == 'deposit' else None,
                      'milestones': milestones(p, body.checkin, today) if body.pay == 'deposit' else [],
                      'start': q['checkin'], 'end': q['checkout'], 'nights': body.nights, 'rooms': rooms, 'adults': q['adults'],

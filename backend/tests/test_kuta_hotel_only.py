@@ -17,14 +17,15 @@ class TestPackage:
         r = requests.get(PKG_URL, timeout=20)
         assert r.status_code == 200, r.text
         d = r.json()
-        assert d['nights'] == [3, 4, 5, 6]
+        assert d['nights'] == [2, 3, 4, 5, 6, 7]
+        assert d['from_by_nights']['2'] == 5730
         assert d['deposit'] == 10000
         assert d['last_checkout'] == '2027-04-01'
         hotels = {h['id']: h for h in d['hotels']}
-        assert hotels['kuta-central-park']['from_per_night'] == 2860
-        assert hotels['bliss-surfer']['from_per_night'] == 2970
-        assert hotels['golden-tulip-jineng']['from_per_night'] == 4090
-        assert hotels['risata-resort']['from_per_night'] == 4600
+        assert hotels['kuta-central-park']['from_price'] == 5730
+        assert hotels['bliss-surfer']['from_price'] == 5930
+        assert hotels['golden-tulip-jineng']['from_price'] == 8180
+        assert hotels['risata-resort']['from_price'] == 9210
         assert len(hotels) == 4
 
     def test_unknown_key_404(self):
@@ -45,8 +46,7 @@ class TestQuote:
         assert totals['golden-tulip-jineng'] == 12280
         assert totals['risata-resort'] == 13810
         # per-night = round(total/nights)
-        pn = {h['id']: h['per_night'] for h in d['hotels']}
-        assert pn['kuta-central-park'] == round(8590 / 3)
+        assert all('per_night' not in h for h in d['hotels'])
         # deposit field: total <= 10000 OR not eligible -> None; but check-in is far >30d so eligible
         # Jan 10 2027 vs ~Nov 24 2026 => > 30 days
         deposits = {h['id']: h['deposit'] for h in d['hotels']}
@@ -88,11 +88,11 @@ class TestQuote:
 # ---------- validation ----------
 class TestValidation:
     def test_nights_out_of_range(self):
-        r = requests.get(QUOTE_URL, params={'checkin': '2027-01-10', 'nights': 2, 'rooms': '2'}, timeout=15)
+        r = requests.get(QUOTE_URL, params={'checkin': '2027-01-10', 'nights': 1, 'rooms': '2'}, timeout=15)
         assert r.status_code == 400
 
     def test_nights_too_many(self):
-        r = requests.get(QUOTE_URL, params={'checkin': '2027-01-10', 'nights': 7, 'rooms': '2'}, timeout=15)
+        r = requests.get(QUOTE_URL, params={'checkin': '2027-01-10', 'nights': 8, 'rooms': '2'}, timeout=15)
         assert r.status_code == 400
 
     def test_checkin_too_soon(self):

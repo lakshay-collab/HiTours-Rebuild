@@ -36,7 +36,7 @@ import BookConfirmed from './pages/BookConfirmed';
 import GroupTourDetail from './pages/GroupTourDetail';
 import BangkokPattayaTour, { BangkokPattayaThankYou, EuropeGroupTour, EuropeGroupThankYou } from './pages/BangkokPattayaTour';
 import GroupThankYou from './pages/GroupConfirmed';
-import KutaHotelPackage, { KutaHotelThankYou } from './pages/KutaHotelPackage';
+import KutaHotelPackage, { KutaHotelThankYou, KutaHotelCheckout } from './pages/KutaHotelPackage';
 import GroupTourDetailV1 from './pages/v1/GroupTourDetailV1';
 import GroupCheckoutV1 from './pages/v1/GroupCheckoutV1';
 import GroupConfirmedV1 from './pages/v1/GroupConfirmedV1';
@@ -181,6 +181,7 @@ function App() {
           <Route path="/europe/group-tours/grand-wonders-of-europe" element={<Navigate to="/europe/group-tours/wonders-of-europe" replace />} />
           <Route path="/europe/group-tours/grand-wonders-of-europe/thank-you/:bookingId" element={<EuropeGroupThankYou />} />
           <Route path="/asia/hotel-packages/kuta-hotel-only" element={<KutaHotelPackage />} />
+          <Route path="/asia/hotel-packages/kuta-hotel-only/checkout" element={<KutaHotelCheckout />} />
           <Route path="/asia/hotel-packages/kuta-hotel-only/thank-you/:bookingId" element={<KutaHotelThankYou />} />
           <Route path="/thank-you" element={<Navigate to="/" replace />} />
           <Route path="/asia/group-tours/inside-sri-lanka/thank-you/:bookingId" element={<GroupThankYou />} />

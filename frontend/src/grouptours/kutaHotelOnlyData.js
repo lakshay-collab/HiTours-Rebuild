@@ -1,4 +1,4 @@
-// Kuta hotel only package: stay 3 to 6 nights in a 4 star Kuta hotel, everything else at leisure. Prices come from the API.
+// Kuta hotel only package: stay 2 to 7 nights in a 4 star Kuta hotel, everything else at leisure. Prices come from the API.
 const PHOTOS = {
   "kcp": [
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/23023644.jpg?k=b3fb1f37a88c553edac4388d905f238f8c731b9e2f9083f998ba4459b452af29&o=",
@@ -37,13 +37,14 @@ const PHOTOS = {
 export const KEY = 'kuta-hotel-only';
 export const PATHS = {
   detail: `/asia/hotel-packages/${KEY}`,
+  checkout: `/asia/hotel-packages/${KEY}/checkout`,
   thankYou: (id) => `/asia/hotel-packages/${KEY}/thank-you/${id}`,
 };
 
 export const kutaHotelOnlyProduct = {
   slug: KEY, href: PATHS.detail, tag: 'Hotel only', styles: ['Beach'], places: ['Kuta'],
-  title: 'Kuta hotel only package: 3 to 6 nights in a 4 star hotel with breakfast',
-  days: 4, daysLabel: '3 to 6 nights', cities: 1, price: 4300, noSale: true,
+  title: 'Kuta hotel only package: 2 to 7 nights in a 4 star hotel with breakfast',
+  days: 3, daysLabel: '2 to 7 nights', cities: 1, price: 2870, noSale: true,
   images: [PHOTOS.kcp[0], PHOTOS.risata[0], PHOTOS.tulip[0], PHOTOS.bliss[0]],
   alt: 'Pool at Kuta Central Park Hotel, Bali',
 };
@@ -51,17 +52,17 @@ export const kutaHotelOnlyProduct = {
 export const detail = {
   key: KEY,
   title: 'Kuta hotel only package',
-  tagline: '3 to 6 nights in a 4 star Kuta hotel with breakfast, the rest of Bali at your own pace',
-  daysLabel: '3 to 6 nights',
+  tagline: '2 to 7 nights in a 4 star Kuta hotel with breakfast, the rest of Bali at your own pace',
+  daysLabel: '2 to 7 nights',
   destination: 'Bali', destinationHref: '/asia/bali',
   chips: ['4 star hotels', 'Breakfast included'], chipIcon: 'users',
   hero: { main: PHOTOS.kcp[0], mainSm: PHOTOS.kcp[0], alt: 'Pool at Kuta Central Park Hotel, Bali' },
   gallery: [PHOTOS.kcp[0], PHOTOS.kcp[1], PHOTOS.risata[0], PHOTOS.tulip[0], PHOTOS.bliss[0], PHOTOS.kcp[2], PHOTOS.risata[1], PHOTOS.tulip[1], PHOTOS.bliss[1]],
-  intro: 'This package is only your hotel in Kuta. Choose 3, 4, 5 or 6 nights, pick your dates and tell us which 4 star hotel you prefer. Breakfast is included every morning and every day is free for you to plan as you like.',
+  intro: 'This package is only your hotel in Kuta. Choose a package of 2 to 7 nights, pick your dates and choose from the 4 star hotels available for those dates. Breakfast is included every morning and every day is free for you to plan as you like.',
   crumbs: [['Home', '/'], ['Asia', '/asia'], ['Bali', '/asia/bali'], ['Kuta hotel only package']],
   expert: { prefix: 'Picked by', name: 'Ananya', role: 'Bali expert at Hi Tours', image: '/team/asia-2.webp', quote: 'If you like to plan your own days, book only the hotel. These four are the Kuta hotels our travellers rate best for the price.' },
   services: [
-    ['3 to 6 nights', 'Travel plan', '3, 4, 5 or 6 nights'],
+    ['2 to 7 nights', 'Travel plan', '2 to 7 nights'],
     ['4 star hotel', 'Accommodation', '4 star hotel in Kuta'],
     ['Breakfast', 'Activities', 'Breakfast every morning'],
     ['24/7 support', '24/7 Support', '24/7 on-ground support'],
@@ -83,7 +84,7 @@ export const hotels = [
 ];
 
 export const included = [
-  ['3, 4, 5 or 6 nights in a 4 star hotel in Kuta', 'Accommodation'],
+  ['2 to 7 nights in a 4 star hotel in Kuta', 'Accommodation'],
   ['Your preferred hotel or a similar 4 star hotel', 'Accommodation'],
   ['Breakfast every morning', 'Activities'],
   ['Room for 1 or 2 adults, extra bed for a third adult', 'Accommodation'],
@@ -112,19 +113,19 @@ export const whyGroup = {
 
 export const faq = { h2: 'Kuta hotel only package FAQs', items: [
   { q: 'What does “or similar” mean?', a: [similarNote] },
-  { q: 'How is the price worked out?', a: ['The price is per room for your exact dates and number of nights. It includes breakfast and hotel taxes. You see the final price before you pay.'] },
+  { q: 'How is the price worked out?', a: ['The price is for the whole stay, per room, for your exact dates and number of nights. It includes breakfast and hotel taxes. You see the final price before you pay.'] },
   { q: 'Can I pay a deposit?', a: ['Yes. If your check-in is 30 days or more away, you can pay ₹10,000 now and the rest 30 days before check-in. Razorpay sends you the payment link by SMS and email. For closer dates the full amount is paid at booking.'] },
   { q: 'How many people can stay in one room?', a: ['Each room sleeps 1 or 2 adults. A third adult can be added on an extra bed. Travelling with children? Speak to our Bali expert and we will price it for you.'] },
   { q: 'Are flights and transfers included?', a: ['No. This package is only the hotel with breakfast. We can add airport transfers, a private driver or day tours if you ask.'] },
-  { q: 'Which dates can I book?', a: ['Stays of 3 to 6 nights with check-out up to 1 April 2027. A few hotels have no rate over Christmas and New Year, so those dates show fewer hotels.'] },
+  { q: 'Which dates can I book?', a: ['Stays of 2 to 7 nights with check-out up to 1 April 2027. You only see the hotels that are available for your dates, so Christmas and New Year show fewer hotels.'] },
 ] };
 
 export const steps = {
   h2: 'How booking works',
   items: [
-    { h: 'Choose nights and dates', t: 'Pick 3, 4, 5 or 6 nights, then your check-in date. The price updates for your dates.' },
-    { h: 'Pick your preferred hotel', t: 'Choose one of the four hotels. We book it, or a similar 4 star hotel if it is full.' },
-    { h: 'Pay and get your voucher', t: 'Pay ₹10,000 or the full amount by Razorpay. Your hotel voucher follows by email.' },
+    { h: 'Choose your package and dates', t: 'Pick a package of 2 to 7 nights, then your check-in date.' },
+    { h: 'Pick your preferred hotel', t: 'See the hotels available for your dates with the price of the stay. We book your choice, or a similar 4 star hotel if it is full.' },
+    { h: 'Check out and get your voucher', t: 'Add your details on the booking page and pay ₹10,000 or the full amount by Razorpay. Your hotel voucher follows by email.' },
   ],
 };
 
