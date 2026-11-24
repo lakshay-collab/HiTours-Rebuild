@@ -1,0 +1,49 @@
+{
+  "summary": "Tested the Grand Wonders of Europe group tour from end to end against REAL Razorpay test mode. Backend: 11/11 new pytest cases pass. They cover 12 departures with milestones (50% due 45 days before, 100% due 30 days before, never earlier than today+7), single room -> 400, the 2 pax 2027-03-15 quote (total 351352, deposit 10000, due dates 2027-01-29 and 2027-02-13), real order_ id, bad signature -> 400, HMAC verify -> paid plus the first '50% payment' Payment Link (165676, rzp.io), a repeat verify creating no duplicate link, cron 401 with no or wrong bearer, accepted then duplicate, the 'final payment' link (175676, due 2027-02-13) after the first link was marked paid, and mock bookings never getting links. Frontend: title, chips (users icon), breadcrumb, route (10 places), Planned by Sharon, expert popup (opened, not submitted), 16 itinerary days with correct meals and overnights, 10 route pins with the active pin following the scroll, 12 departure rows at ₹1,75,676, month tabs, booking modal (twin-only text, ₹5,000 x pax, 'rest due 1 Dec' for 15 Dec and 'due 13 Feb' for 15 Mar), the real Razorpay checkout iframe in Test Mode showing ₹10,000 for 2 pax, and the thank-you page with the gthanks-balance-link card (₹1,65,676, due 29 Jan 2027, Pay now opens rzp.io in a new tab). Regression: Sri Lanka chips and its 12 departures, and the Bangkok plane chip and its 7 Dec ₹63,000 departure, are unchanged. Found 2 visual bugs: the Day 1 image is a 404 and the London map label is cut off. Two older regression tests are now out of date.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "balance_links.send_next_link / sync_booking", "issue": "Only links with status created or partially_paid block a new link. If a link expires, the hourly job makes a new one for the same milestone. After the due date expire_by is now+1 day, so the customer gets a new SMS and email every day. If ops cancel a link in the Razorpay dashboard, it is recreated within an hour. Decide the policy, for example cap re-sends per milestone or skip milestones with a cancelled link."},
+      {"endpoint": "group_bookings.milestones (near departures)", "issue": "For 15 Dec 2026 both milestones clamp to 2026-12-01. The customer gets a '50% payment' link and, after paying it, a second 'final payment' link due the same day. Merge milestones that share a due date into one 100% link."},
+      {"endpoint": "bookings.verify + /api/cron/balance-links", "issue": "Nothing stops two links being created for the same milestone at the same time: there is no lock or unique index on booking+milestone. If verify and the hourly cron run together, both can push a link."},
+      {"endpoint": "balance_links / bookings (Razorpay SDK)", "issue": "The razorpay client calls (order.create, payment_link.create, payment_link.fetch) block, but they run directly inside async handlers and background tasks, so they hold up the event loop. Wrap them in run_in_threadpool / asyncio.to_thread."},
+      {"endpoint": "GET /api/bookings/group/grand-wonders-of-europe/departures", "issue": "The top-level 'balance_due_days' is still 60 (the global BALANCE_DUE_DAYS), which contradicts the Europe 45/30-day terms. The frontend may not use it, but the API is inconsistent."},
+      {"endpoint": "config", "issue": "RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET are NOT in /app/backend/.env as the brief says. They come only from the backend process environment. Make sure deployment provides them, otherwise the app silently falls back to MOCK."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Itinerary Day 1 image", "issue": "IMG.londonNight = pexels photo 42061 returns 404, so Day 1 shows a broken image with its alt text.", "selector": "[data-testid='itin-day-1'] img", "priority": "MEDIUM"},
+      {"component": "Desktop RouteMap (Europe)", "issue": "The 'London' label sits about 11px outside the left edge of the map box and shows as 'don'. Cause: 'london' is in labelLeft in grandWondersEuropeData.map while its pin is at the far left. Remove london from labelLeft or move origin/viewBox.", "selector": "[data-testid='route-map-desktop-wrap'] text", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Europe itinerary", "issues": ["Day 8 overnight reads 'Germany' and days 9-11 read 'Switzerland' instead of a city (Heidelberg / Interlaken or Lucerne), unlike the other days", "Days 2 and 3 use the same Tower Bridge image", "The desktop route map card leaves a large empty band under the map"]},
+      {"screen": "Site banner on the Europe group page and thank-you page", "issues": ["'Year-End Travel Sale · 10% off every holiday' shows while the group price ₹1,75,676 has no discount. This could read as a misleading offer."]},
+      {"screen": "Dates & prices", "issues": ["22 Jan 2027 shows Sold out (sample SEATS_PATTERN). Confirm this is intended for a page meant to test Razorpay."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_europe_balance_links.py", "/app/test_reports/pytest/europe_results.xml"],
+  "action_items": [
+    "Replace the broken Day 1 image (pexels 42061 returns 404)",
+    "Fix the London label being cut off on the Europe desktop route map (labelLeft / viewBox)",
+    "Update stale regression tests: test_bangkok_pattaya_group.py::test_twin_order_quote_and_verify asserts mock True (now real test mode), and test_group_deposit_v2.py::test_validation expects 2026-12-26 to be sold out, which depends on the date. test_group_deposit_v2 also leaves bookings behind with no cleanup.",
+    "Decide how expired or cancelled balance links are re-sent (currently a new link daily or hourly)",
+    "Merge milestones with the same due date (near departures) into a single link",
+    "Run the Razorpay SDK calls in a thread pool, and add a guard so the same milestone cannot get two links at once",
+    "Make sure RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET are present in the deployment environment"
+  ],
+  "critical_code_review_comments": [
+    "balance_links.py: OPEN=('created','partially_paid') means expired and cancelled links trigger a re-send. Under the current policy this causes repeated SMS and email.",
+    "balance_links.sync_booking: if marking a booking fully_paid works but a link fetch failed earlier, the error is logged and the booking retried next hour, which is OK. But one link paid partially (accept_partial False, so unlikely) is not handled.",
+    "bookings.verify: send_next_link gets the pre-update doc. This is fine today but fragile if send_next_link starts checking status.",
+    "group_bookings.departures: 'idx = len(out)' is computed before the lead-day filter, so seat patterns shift as dates roll off. That is acceptable for sample data."
+  ],
+  "updated_files": ["/app/backend/tests/test_europe_balance_links.py"],
+  "success_rate": {"backend": "100% (11/11 new tests); 2 legacy tests stale", "frontend": "~90% (2 visual bugs)"},
+  "seed_data_creation": "None kept. Test bookings (qa+eu*@example.com, TEST_EU names) were deleted by booking_id, all Razorpay payment links created were cancelled (verified status=cancelled), and the TEST_ cron_runs were removed. 3 bookings left by the legacy test_group_deposit_v2 run (TEST_v2*) were deleted by id. Enquiry forms were not submitted.",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Razorpay keys are in the uvicorn process env (/proc/<pid>/environ), not backend/.env. test_europe_balance_links.py reads them from there. Run with: REACT_APP_BACKEND_URL=... pytest tests/test_europe_balance_links.py -n0. It cleans up bookings, links and cron_runs itself. Server date is 2026-11-24. The Razorpay checkout opens in Test Mode. Dummy phone prefill is not accepted (expected).",
+  "rca of the issue": "Day 1 image: the hard-coded pexels id 42061 no longer exists (HTTP 404). London label: the label is placed to the left of the pin, but London is projected near x≈0 in the 540x400 viewBox, so the text falls outside the clipPath."
+}

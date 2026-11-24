@@ -23,8 +23,8 @@ GROUP_PRODUCTS = {
         'dates': ['2026-12-07'], 'seats': 20,
     },
     'grand-wonders-of-europe': {
-        'title': 'Grand Wonders of Europe', 'base': 175676, 'nights': 15, 'destination': 'Europe',
-        'single_supplement': None, 'max_group': 40, 'peak_months': (), 'peak_extra': 0,
+        'title': 'Wonders of Europe', 'base': 175676, 'nights': 15, 'destination': 'Europe',
+        'single_supplement': None, 'max_group': 40, 'peak_months': (), 'peak_extra': 0, 'seats': 20,
         'dates': [f'{y}-{m:02d}-{d}' for y, m in [(2026, 12), (2027, 1), (2027, 2), (2027, 3), (2027, 4), (2027, 5)] for d in (15, 22)],
         'terms': [(45, 0.5), (30, 1.0)],
     },
@@ -52,9 +52,14 @@ def _saturdays(y: int, m: int) -> list[date]:
 
 
 def milestones(p: dict, start: date, today: date) -> list[dict]:
-    """Payment milestones: cumulative share of the trip total due by each date."""
-    return [{'due': max(start - timedelta(days=days), today + timedelta(days=BALANCE_MIN_DAYS)).isoformat(), 'pct': pct}
-            for days, pct in p.get('terms', DEFAULT_TERMS)]
+    """Payment milestones: cumulative share of the trip total due by each date (same-day milestones merged)."""
+    out: list[dict] = []
+    for days, pct in p.get('terms', DEFAULT_TERMS):
+        due = max(start - timedelta(days=days), today + timedelta(days=BALANCE_MIN_DAYS)).isoformat()
+        if out and out[-1]['due'] == due:
+            out.pop()
+        out.append({'due': due, 'pct': pct})
+    return out
 
 
 def _schedule(p: dict, today: date) -> list[date]:
@@ -134,7 +139,7 @@ def register(db):
         if not p:
             raise HTTPException(404, 'Unknown group tour')
         return {'product': key, 'title': p['title'], 'base': p['base'], 'deposit_pp': DEPOSIT_PP,
-                'balance_due_days': BALANCE_DUE_DAYS, 'max_travellers': MAX_TRAVELLERS,
+                'balance_due_days': p.get('terms', DEFAULT_TERMS)[-1][0], 'max_travellers': MAX_TRAVELLERS,
                 'single_supplement': p['single_supplement'], 'departures': await live_departures(db, key)}
 
     @router.post('/order')

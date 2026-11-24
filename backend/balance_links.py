@@ -21,10 +21,12 @@ def _paid_total(b: dict) -> int:
 
 
 def _next_milestone(b: dict) -> tuple[int, dict, int] | None:
+    """First unpaid milestone that has not already had a link expire or be cancelled (those go to the team, not re-sent)."""
     total, paid = b['quote']['total'], _paid_total(b)
+    closed = {link['milestone'] for link in b.get('balance_links', []) if link['status'] in ('expired', 'cancelled')}
     for i, m in enumerate(b['quote'].get('milestones') or [{'due': b['quote']['balance_due'], 'pct': 1.0}]):
         target = round(total * m['pct'])
-        if target > paid:
+        if target > paid and i not in closed:
             return i, m, target - paid
     return None
 
@@ -40,7 +42,7 @@ async def send_next_link(db, b: dict) -> dict | None:
     if not nxt or b.get('mock'):
         return None
     idx, m, amount = nxt
-    if any(link['milestone'] == idx and link['status'] in OPEN for link in b.get('balance_links', [])):
+    if any(link['milestone'] == idx for link in b.get('balance_links', [])):
         return None
     label = 'final payment' if m['pct'] >= 1 else f"{round(m['pct'] * 100)}% payment"
     c = b['contact']
@@ -55,10 +57,14 @@ async def send_next_link(db, b: dict) -> dict | None:
     if MOCK:
         res = {'id': 'plink_MOCK' + uuid.uuid4().hex[:10], 'short_url': '', 'status': 'created'}
     else:
-        res = _rzp.payment_link.create(body)
+        res = await asyncio.to_thread(_rzp.payment_link.create, body)
     link = {'milestone': idx, 'label': label, 'due': m['due'], 'amount': amount, 'amount_paid': 0, 'id': res['id'],
             'short_url': res.get('short_url', ''), 'status': res.get('status', 'created'), 'created_at': datetime.now(UTC).isoformat()}
-    await db.bookings.update_one({'booking_id': b['booking_id']}, {'$push': {'balance_links': link}})
+    saved = await db.bookings.update_one({'booking_id': b['booking_id'], 'balance_links.milestone': {'$ne': idx}}, {'$push': {'balance_links': link}})
+    if not saved.modified_count:  # another run already sent this milestone
+        if not MOCK:
+            await asyncio.to_thread(_rzp.payment_link.cancel, res['id'])
+        return None
     logger.info(f"Balance link {link['id']} ({label}, {amount} INR, due {m['due']}) sent for {b['booking_id']}")
     return link
 
@@ -68,7 +74,7 @@ async def sync_booking(db, b: dict) -> None:
     for i, link in enumerate(b.get('balance_links', [])):
         if link['status'] not in OPEN or MOCK:
             continue
-        res = _rzp.payment_link.fetch(link['id'])
+        res = await asyncio.to_thread(_rzp.payment_link.fetch, link['id'])
         if res['status'] != link['status'] or res.get('amount_paid', 0) // 100 != link['amount_paid']:
             link['status'], link['amount_paid'] = res['status'], res.get('amount_paid', 0) // 100
             await db.bookings.update_one({'booking_id': b['booking_id']}, {'$set': {f'balance_links.{i}.status': link['status'], f'balance_links.{i}.amount_paid': link['amount_paid']}})

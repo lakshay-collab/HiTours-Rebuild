@@ -841,6 +841,13 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Listed on Thailand holidays only (excluded from Asia holidays). Tested iteration_66: all pass.
 - 2026-11-24 Razorpay keys added (RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET; test slot = rzp_test in preview, live slot for production). MOCK gateway now off; real Razorpay checkout verified opening for group seat hold.
 
+## 2026-11-24 Wonders of Europe group tour + automatic balance payment links
+- Page /europe/group-tours/grand-wonders-of-europe (data grouptours/grandWondersEuropeData.js, wrapper in pages/BangkokPattayaTour.jsx). Title "Wonders of Europe: 10 countries in 16 days, a London to Rome community trip for couples". ₹1,75,676 pp twin (supplier ₹3,51,351 ÷ 2), departures 15th & 22nd Dec 2026–May 2027, 20 seats each, not listed on any listing page.
+- Payment terms per product in group_bookings.py 'terms' (cumulative pct by days before departure; same-day milestones merged; min today+7): Europe 50% @45d + 100% @30d; default 100% @30d; Inside Sri Lanka 100% @60d.
+- backend/balance_links.py: after deposit verify, creates Razorpay Payment Link for next milestone (Razorpay notifies SMS+email, reminders on). Hourly cron (.emergent/crons.yml → POST /api/cron/balance-links, Bearer WEBHOOK_CRON_SECRET) syncs link status and sends next link; expired/cancelled links are not re-sent; mock bookings skipped; duplicate-safe. Thank-you page shows "Next payment" card with Pay now.
+- Tested iteration_67 + self re-test after fixes.
+
+
 
 
 
