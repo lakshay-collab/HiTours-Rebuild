@@ -28,6 +28,10 @@ PRODUCTS = {
         'title': 'Fully Loaded Sri Lanka: Kandy, Yala Safari and Bentota',
         'base': 48925, 'nights': 7, 'destination': 'Sri Lanka',
     },
+    'bali-kuta-ubud': {
+        'title': 'Bali Beaches and Ubud: Kuta, Tanah Lot, Uluwatu and the Bali Swing',
+        'nights': 6, 'destination': 'Bali', 'live': True,
+    },
 }
 CHILD_FACTOR = 0.7
 MIN_LEAD_DAYS = 10
@@ -118,9 +122,15 @@ def register(db):
             raise HTTPException(400, f'Check-in must be at least {MIN_LEAD_DAYS} days from today so we can arrange your travel')
         if body.departure > last_bookable():
             raise HTTPException(400, f'Online booking is open up to {MAX_MONTHS_AHEAD} months ahead')
-        if body.departure.isoformat() in BLACKOUT:
-            raise HTTPException(400, 'This check-in date is not available')
-        q = quote(product, body.departure, body.rooms)
+        if product.get('live'):
+            from live_packages import live_quote
+            q = await live_quote(db, body.product, body.departure, body.rooms)
+            if not q:
+                raise HTTPException(400, 'This check-in date is not available')
+        else:
+            if body.departure.isoformat() in BLACKOUT:
+                raise HTTPException(400, 'This check-in date is not available')
+            q = quote(product, body.departure, body.rooms)
         amount_paise = q['total'] * 100
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
                                               'status': 'created', 'amount_paise': amount_paise, 'mock': MOCK}, {'_id': 0})

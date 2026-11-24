@@ -3,7 +3,7 @@ import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-r
 import { ChevronLeft } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, isBookable, quote, fmtInr, fmtDate } from '../booking/bookable';
+import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, isBookable, quote, fmtInr, fmtDate, useLive } from '../booking/bookable';
 import { RoomsPicker } from '../components/booking/RoomsPicker';
 import { DepartureCalendar } from '../components/booking/DepartureCalendar';
 import { StepBar, PaymentSummary } from '../components/booking/BookingSummary';
@@ -15,7 +15,9 @@ export default function BookDates() {
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
   const [rooms, setRooms] = useState(() => decodeRooms(params.get('rooms')));
-  const [date, setDate] = useState(() => { const d = fromISO(params.get('date')); return d && isBookable(d) ? d : null; });
+  const [date, setDate] = useState(() => { const d = fromISO(params.get('date')); return d && (product?.live || isBookable(d)) ? d : null; });
+  const live = useLive(product, rooms);
+  useEffect(() => { if (live && date && !live.dates[toISO(date)]) setDate(null); }, [live, date]);
 
   useEffect(() => { document.title = product ? `Book ${product.title} | Hi Tours` : 'Book | Hi Tours'; window.scrollTo(0, 0); }, [product]);
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function BookDates() {
     setParams(next, { replace: true });
   }, [rooms, date, setParams]);
 
-  if (!product) return <Navigate to="/asia/sri-lanka" replace />;
+  if (!product) return <Navigate to="/asia" replace />;
   const q = quote(product, date, rooms);
   const go = () => navigate(`${product.checkoutPath}?date=${toISO(date)}&rooms=${encodeRooms(rooms)}`);
 
@@ -42,20 +44,22 @@ export default function BookDates() {
             <InclusionTabs product={product} date={date} />
             <section className="flex flex-col gap-3" data-testid="book-travellers-section">
               <h2 className="eg-title-lg text-[#002131]">1. Travellers & rooms</h2>
-              <RoomsPicker rooms={rooms} onChange={setRooms} />
+              <RoomsPicker rooms={rooms} onChange={setRooms} max={product.live ? 4 : 6} />
             </section>
             <section className="flex flex-col gap-3" data-testid="book-calendar-section">
               <h2 className="eg-title-lg text-[#002131]">2. Check-in date</h2>
-              <DepartureCalendar product={product} selected={date} onSelect={setDate} />
+              <DepartureCalendar product={product} selected={date} onSelect={setDate} live={live} />
               <ul className="eg-label-md text-[#5B6B74] list-disc pl-5 flex flex-col gap-0.5" data-testid="book-price-notes">
-                <li>Prices are per person on twin sharing; children aged 2 to 11 sharing a room pay 70%.</li>
-                <li>Check-in is the day you land in Colombo; check-out is {product.nights} nights later. We need at least 10 days to arrange your trip.</li>
+                {product.live
+                  ? <li>Prices are live from our {product.destination} hotel, transfer and activity rates, so they change with your dates and group size. Children aged 2 to 11 share the parents’ room without an extra bed.</li>
+                  : <li>Prices are per person on twin sharing; children aged 2 to 11 sharing a room pay 70%.</li>}
+                <li>Check-in is the day you land in {product.arrival}; check-out is {product.nights} nights later. We need at least 10 days to arrange your trip.</li>
                 <li>International flights are not included: our experts can add them after you book.</li>
               </ul>
             </section>
           </div>
           <aside className="w-full md:w-[384px] shrink-0 flex flex-col gap-6 md:self-start md:sticky md:top-6" data-testid="book-sidebar">
-            <PaymentSummary product={product} date={date} rooms={rooms} cta="Continue to review & pay" ctaDisabled={!date} onCta={go} />
+            <PaymentSummary product={product} date={date} rooms={rooms} cta="Continue to review & pay" ctaDisabled={!date || !q.total} onCta={go} />
           </aside>
         </div>
       </main>
@@ -64,7 +68,7 @@ export default function BookDates() {
           <p className="eg-title-lg text-[#002131]" data-testid="book-mobile-total">{fmtInr(q.total)}</p>
           <p className="eg-label-md text-[#5B6B74]">{date ? `Check-in ${fmtDate(date, { day: 'numeric', month: 'short' })} · ${q.adults + q.children} travellers` : 'Pick a check-in date'}</p>
         </div>
-        <button type="button" disabled={!date} onClick={go} className="eg-btn-filled !h-12 px-6 eg-title-md disabled:opacity-40" data-testid="book-mobile-continue">Continue</button>
+        <button type="button" disabled={!date || !q.total} onClick={go} className="eg-btn-filled !h-12 px-6 eg-title-md disabled:opacity-40" data-testid="book-mobile-continue">Continue</button>
       </div>
       <Footer />
     </div>

@@ -38,11 +38,11 @@ export default function BookConfirmed() {
                 <hr className="border-[#E4E3DB]" />
                 <div className="flex flex-col gap-2 eg-body-md text-[#002131]">
                   <p className="flex items-start gap-2"><MessageCircle size={16} className="text-[#174358] shrink-0" />Your booking is created. A WhatsApp confirmation is on its way to your number ending {booking.contact.phone.slice(-4)}, with your itinerary by email ({booking.contact.email}).</p>
-                  <p className="flex items-start gap-2"><Mail size={16} className="text-[#174358] shrink-0" />No account needed: keep your reference {booking.booking_id}. Your Sri Lanka expert Aditya will message you within one working day to collect passport names and help with flights.</p>
+                  <p className="flex items-start gap-2"><Mail size={16} className="text-[#174358] shrink-0" />No account needed: keep your reference {booking.booking_id}. Your {product.destination} expert will message you within one working day to collect passport names and help with flights.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Link to={product.detailPath} className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="confirmed-view-trip">View the itinerary</Link>
-                  <Link to="/asia/sri-lanka" className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="confirmed-more">More Sri Lanka holidays</Link>
+                  <Link to={product.listingPath} className="eg-btn-outlined !h-11 !rounded-full eg-label-lg" data-testid="confirmed-more">More {product.destination} holidays</Link>
                 </div>
               </div>
             </div>

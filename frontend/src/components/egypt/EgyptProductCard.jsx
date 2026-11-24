@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BedIcon, TicketIcon, CarIcon, MealIcon, ChevronLeft, ChevronRight } from './EgyptIcons';
 import SaleBadge from '../sale/SaleBadge';
 import SalePrice from '../sale/SalePrice';
 import useReveal from '../../hooks/useReveal';
+
+const LiveDetailsModal = lazy(() => import('../booking/LiveDetailsModal'));
 
 const Stat = ({ icon: Icon, value, testId }) => (
   <span className="flex items-center gap-2.5 rounded-lg bg-[#FBEADB] px-3 h-11 text-[#002131] whitespace-nowrap" data-testid={testId}>
@@ -30,10 +32,13 @@ const ImageMeta = ({ days, cities }) => (
 export default function EgyptProductCard({ p, index = 0 }) {
   const [i, setI] = useState(0);
   const [revealRef, inView] = useReveal();
+  const [details, setDetails] = useState(false);
   const n = p.images.length;
   const to = p.href || (p.slug ? `/africa/egypt/${p.slug}` : null);
   const go = (d) => setI((v) => (v + d + n) % n);
-  const Wrap = ({ children, ...rest }) => (to
+  const Wrap = ({ children, ...rest }) => (p.liveKey
+    ? <a href={to} onClick={(e) => { e.preventDefault(); setDetails(true); }} {...rest}>{children}</a>
+    : to
     ? <Link to={to} {...rest}>{children}</Link>
     : <a href="#" onClick={(e) => e.preventDefault()} {...rest}>{children}</a>);
   const days = p.daysLabel || (typeof p.days === 'number' ? `${p.days} days` : p.days);
@@ -68,8 +73,10 @@ export default function EgyptProductCard({ p, index = 0 }) {
             </div>
           )}
           <SalePrice price={p.price} noSale={p.noSale} className="mt-auto pt-4" testId="eg-product-price" />
+          {p.liveKey && <span className="eg-btn-filled mt-4 w-full !h-12 eg-title-md" data-testid="eg-product-view-details">View details</span>}
         </div>
       </Wrap>
+      {details && <Suspense fallback={null}><LiveDetailsModal liveKey={p.liveKey} onClose={() => setDetails(false)} /></Suspense>}
     </article>
   );
 }

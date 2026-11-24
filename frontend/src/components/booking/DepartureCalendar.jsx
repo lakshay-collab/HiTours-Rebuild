@@ -7,7 +7,9 @@ const DOW = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const sameDay = (a, b) => a && b && toISO(a) === toISO(b);
 
 // Check-in calendar: one flat package price (shown in the header), blackout dates greyed, stay highlighted to check-out.
-export const DepartureCalendar = ({ product, selected, onSelect }) => {
+const short = (n) => `₹${(n / 1000).toFixed(1)}k`;
+
+export const DepartureCalendar = ({ product, selected, onSelect, live = null }) => {
   const first = firstBookable();
   const last = lastBookable();
   const [view, setView] = useState(() => { const d = selected || first; return new Date(d.getFullYear(), d.getMonth(), 1); });
@@ -28,8 +30,17 @@ export const DepartureCalendar = ({ product, selected, onSelect }) => {
           <p className="eg-label-md text-[#5B6B74]">{product.nights} nights · check-out is {product.nights} nights after check-in · bookable up to {MAX_MONTHS_AHEAD} months ahead</p>
         </div>
         <div className="rounded-xl bg-[#FBEADB] px-4 py-2.5 sm:text-right" data-testid="calendar-price">
-          <p className="eg-title-lg text-[#002131]">{fmtInr(adultPrice(product.base))} <span className="eg-label-md text-[#5B6B74]">per adult</span></p>
-          <p className="eg-label-md text-[#5B6B74]">{fmtInr(childPrice(product.base))} per child (2 to 11) · same price on every date</p>
+          {product.live ? (
+            <>
+              <p className="eg-title-lg text-[#002131]" data-testid="calendar-live-from">{live ? `From ${fmtInr(live.from_adult)}` : 'Getting prices…'} <span className="eg-label-md text-[#5B6B74]">per adult</span></p>
+              <p className="eg-label-md text-[#5B6B74]">Live price for your group, shown on each date</p>
+            </>
+          ) : (
+            <>
+              <p className="eg-title-lg text-[#002131]">{fmtInr(adultPrice(product.base))} <span className="eg-label-md text-[#5B6B74]">per adult</span></p>
+              <p className="eg-label-md text-[#5B6B74]">{fmtInr(childPrice(product.base))} per child (2 to 11) · same price on every date</p>
+            </>
+          )}
         </div>
       </div>
       <div className="flex items-center justify-between px-4 md:px-6 pt-4">
@@ -43,8 +54,9 @@ export const DepartureCalendar = ({ product, selected, onSelect }) => {
       <div className="grid grid-cols-7 gap-y-1 px-3 md:px-5 pb-4">
         {cells.map((d, i) => {
           if (!d) return <span key={`e${i}`} />;
-          const blackout = isBlackout(d) && d >= first && d <= last;
-          const disabled = !isBookable(d);
+          const blackout = !product.live && isBlackout(d) && d >= first && d <= last;
+          const disabled = !isBookable(d, product);
+          const row = live?.dates[toISO(d)];
           const sel = sameDay(d, selected);
           const stay = inStay(d);
           const isOut = sameDay(d, out);
@@ -57,7 +69,8 @@ export const DepartureCalendar = ({ product, selected, onSelect }) => {
                 ${stay || isOut ? 'bg-[#D7ECE4]' : ''} ${sel ? 'bg-[#174358] text-white rounded-l-xl hover:bg-[#174358]' : ''} ${isOut ? 'rounded-r-xl' : ''}`}
               data-testid={`cal-day-${toISO(d)}`} data-selected={sel || undefined} data-blackout={blackout || undefined}>
               <span className="eg-label-lg">{d.getDate()}</span>
-              {sel && <span className="text-[10px] leading-none mt-0.5 opacity-90">check-in</span>}
+              {row && !isOut && <span className={`text-[10px] leading-none mt-0.5 ${sel ? 'opacity-90' : 'text-[#1E7B4B]'}`} data-testid={`cal-price-${toISO(d)}`}>{short(row.adult)}</span>}
+              {sel && !row && <span className="text-[10px] leading-none mt-0.5 opacity-90">check-in</span>}
               {isOut && !sel && <span className="text-[10px] leading-none mt-0.5 text-[#174358]">check-out</span>}
             </button>
           );

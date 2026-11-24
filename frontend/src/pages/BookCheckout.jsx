@@ -3,7 +3,7 @@ import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-r
 import { ChevronLeft, Lock } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, quote, fmtInr, isBookable } from '../booking/bookable';
+import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, quote, fmtInr, isBookable, useLive } from '../booking/bookable';
 import { StepBar, PaymentSummary, HotelsCard, IncludedCard } from '../components/booking/BookingSummary';
 import { payWithRazorpay } from '../booking/razorpay';
 
@@ -30,7 +30,8 @@ export default function BookCheckout() {
   const navigate = useNavigate();
   const date = fromISO(params.get('date'));
   const rooms = decodeRooms(params.get('rooms'));
-  const [form, setForm] = useState({ name: '', email: '', phone: '' });
+  const [form, setForm] = useState(() => { try { return { name: '', email: '', phone: '', ...JSON.parse(sessionStorage.getItem('ht_contact') || '{}') }; } catch { return { name: '', email: '', phone: '' }; } });
+  const live = useLive(product, rooms);
   const [errors, setErrors] = useState({});
   const [busy, setBusy] = useState(false);
   const [gateway, setGateway] = useState(null);
@@ -39,8 +40,9 @@ export default function BookCheckout() {
   useEffect(() => { document.title = 'Review & pay | Hi Tours'; window.scrollTo(0, 0); }, []);
   useEffect(() => { fetch(`${API}/api/bookings/config`).then((r) => r.json()).then(setGateway).catch(() => setGateway({ mock: true })); }, []);
 
-  if (!product) return <Navigate to="/asia/sri-lanka" replace />;
-  if (!date || !isBookable(date)) return <Navigate to={`${product.datesPath}?rooms=${encodeRooms(rooms)}`} replace />;
+  if (!product) return <Navigate to="/asia" replace />;
+  if (product.live && !live) return <div className="eg"><Header /><main className="eg-wide py-16"><p className="eg-body-lg text-[#5B6B74]" data-testid="checkout-loading">Getting the live price for your dates…</p></main><Footer /></div>;
+  if (!date || !isBookable(date, product)) return <Navigate to={`${product.datesPath}?rooms=${encodeRooms(rooms)}`} replace />;
   const q = quote(product, date, rooms);
   const back = `${product.datesPath}?date=${toISO(date)}&rooms=${encodeRooms(rooms)}`;
 
@@ -82,7 +84,7 @@ export default function BookCheckout() {
                 <Field label="WhatsApp number" error={errors.phone}><input type="tel" className={inputCls} value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="+91 98765 43210" data-testid="checkout-phone" autoComplete="tel" /></Field>
                 <Field label="Email" error={errors.email}><input type="email" className={inputCls} value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="you@example.com" data-testid="checkout-email" autoComplete="email" /></Field>
               </div>
-              <p className="eg-label-md text-[#5B6B74]">Your Sri Lanka expert will message you on WhatsApp after payment to collect passport names and arrange the rest.</p>
+              <p className="eg-label-md text-[#5B6B74]">Your {product.destination} expert will message you on WhatsApp after payment to collect passport names and arrange the rest.</p>
             </section>
             <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="checkout-pay">
               <h2 className="eg-title-lg text-[#002131]">Payment</h2>

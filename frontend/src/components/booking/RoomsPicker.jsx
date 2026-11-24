@@ -16,7 +16,7 @@ const Stepper = ({ value, min, max, onChange, label, testId }) => (
   </div>
 );
 
-export const RoomsPicker = ({ rooms, onChange }) => {
+export const RoomsPicker = ({ rooms, onChange, max = 6 }) => {
   const update = (i, patch) => onChange(rooms.map((r, j) => (j === i ? { ...r, ...patch } : r)));
   const full = (r) => r.adults >= ROOM_MAX.adults && r.children >= ROOM_MAX.children;
   return (
@@ -46,7 +46,7 @@ export const RoomsPicker = ({ rooms, onChange }) => {
       ))}
       <div className="flex items-center justify-between gap-3 flex-wrap">
         <p className="eg-label-md text-[#5B6B74]">Each room sleeps a maximum of 2 adults and 1 child.</p>
-        {rooms.length < 6 && (
+        {rooms.length < max && (
           <button type="button" onClick={() => onChange([...rooms, { adults: 2, children: 0 }])} className="eg-btn-outlined !h-10 !rounded-full eg-label-lg" data-testid="rooms-add">
             <Plus size={16} /> Add another room
           </button>

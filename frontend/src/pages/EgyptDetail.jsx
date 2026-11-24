@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useParams, Navigate, Link, useLocation } from 'react-router-dom';
+import { useParams, Navigate, Link, useLocation, useSearchParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import EgyptRoute, { RouteLine, Lightbox, toDays } from '../components/egypt/EgyptRoute';
@@ -87,13 +87,14 @@ const tagIcon = Object.fromEntries(styles.map((s) => [s.key, s.icon]));
 import { ratings as trustBar } from '../mock';
 
 import { BY_SLUG } from '../tours/tripIndex';
+import { BOOKABLE, decodeRooms, fromISO, quote, useLive, fmtInr, fmtDate as fmtBookDate } from '../booking/bookable';
 import { buildDestinationReviews } from '../reviews/dynamicReviews';
 
 const stop = (e) => e.preventDefault();
 
 const CTA_LABEL = 'Design Your Escape';
 const Cta = ({ detail, className = '', testId, onClick }) => {
-  if (detail.bookable) return <Link to={detail.bookable.datesPath} title={detail.bookable.label} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{detail.bookable.label}</Link>;
+  if (detail.bookable) return <Link to={`${detail.bookable.datesPath}${detail.live ? window.location.search : ''}`} title={detail.bookable.label} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{detail.bookable.label}</Link>;
   return <a href={detail.ctaHref} onClick={(e) => { stop(e); onClick?.(); }} title={CTA_LABEL} className={`eg-btn-filled h-12 px-7 eg-title-md ${className}`} data-testid={testId}>{CTA_LABEL}</a>;
 };
 
@@ -188,11 +189,29 @@ const Crumbs = ({ crumbs }) => (
   </nav>
 );
 
+const LivePrice = ({ detail, size }) => {
+  const [params] = useSearchParams();
+  const product = BOOKABLE[detail.live];
+  const rooms = decodeRooms(params.get('rooms'));
+  const date = fromISO(params.get('date'));
+  const live = useLive(product, rooms);
+  const q = quote(product, date, rooms);
+  if (!live) return <p className="eg-body-md text-[#6F777C]" data-testid="live-price-loading">Getting live prices…</p>;
+  if (!q.total) return <SalePrice price={live.from_adult} fromLabel={price.from} perLabel={price.perPerson} size={size} noSale testId="live-price-from" />;
+  return (
+    <div className="flex flex-col gap-0.5" data-testid="live-price">
+      <span className="eg-label-md text-[#1E7B4B]">Live price · check-in {fmtBookDate(date, { day: 'numeric', month: 'short' })} · {q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? ` · ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''}</span>
+      <span className="flex items-baseline gap-1.5 flex-wrap"><span className={`${size === 'bar' ? 'eg-headline-md' : 'eg-price'} text-[#174358] tabular-nums`} data-testid="live-price-total">{fmtInr(q.total)}</span><span className="eg-body-md text-[#6F777C]">total</span></span>
+      {size !== 'bar' && <span className="eg-body-sm text-[#6F777C]" data-testid="live-price-per-adult">{fmtInr(q.adultPrice)} per adult{q.children ? ` · ${fmtInr(q.childPrice)} per child` : ''}{q.hotels ? ` · ${q.hotels.join(' and ')} or similar` : ''}</span>}
+    </div>
+  );
+};
+
 const PriceCard = ({ detail, inr, onCta }) => (
   <div className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="eg-detail-price">
     <div className="flex flex-col gap-4">
-      <SaleBadge variant="tag" className="self-start" testId="eg-detail-sale-tag" />
-      <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="detail" testId="eg-detail-price-value" />
+      {!detail.live && <SaleBadge variant="tag" className="self-start" testId="eg-detail-sale-tag" />}
+      {detail.live ? <LivePrice detail={detail} size="detail" /> : <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="detail" testId="eg-detail-price-value" />}
       <Cta detail={detail} className="w-full !h-16 !text-[18px]" testId="eg-detail-price-cta" onClick={onCta} />
     </div>
     <hr className="border-[#E4E3DB]" />
@@ -383,7 +402,7 @@ function StickyBar({ detail, inr, onCta }) {
     <div className={`md:hidden fixed bottom-0 inset-x-0 z-30 bg-[#FBF9F1]/95 backdrop-blur border-t border-[#E4E3DB] transition-transform duration-300 ${show ? 'translate-y-0' : 'translate-y-full'}`} data-testid="eg-detail-sticky-bar">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:justify-end md:items-center md:py-3 md:px-10">
         <div className="px-4 py-3 md:py-0 md:px-0 md:pl-6 flex items-center justify-between md:justify-end gap-3">
-          <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="bar" testId="eg-sticky-price" />
+          {detail.live ? <LivePrice detail={detail} size="bar" /> : <SalePrice price={detail.price} fromLabel={price.from} perLabel={price.perPerson} size="bar" testId="eg-sticky-price" />}
           <Cta detail={detail} className="w-auto !h-14 !px-8 eg-title-lg" testId="eg-sticky-cta" onClick={onCta} />
         </div>
       </div>
