@@ -839,6 +839,8 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Group-tour components now configurable (chips, deposit note, trust list, expert prefix, itinerary sub, departures note, route map outline via makeMap, twin-only rooms) with Sri Lanka defaults unchanged.
 - Backend group_bookings.py: product 'bangkok-pattaya-ex-delhi', ₹63,000 pp twin/double, fixed date 2026-12-07 (to 12-11), 20 seats, no private room, ₹5,000 deposit.
 - Listed on Thailand holidays only (excluded from Asia holidays). Tested iteration_66: all pass.
+- 2026-11-24 Razorpay keys added (RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET; test slot = rzp_test in preview, live slot for production). MOCK gateway now off; real Razorpay checkout verified opening for group seat hold.
+
 
 
 
