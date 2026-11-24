@@ -1,6 +1,7 @@
 // Europe destination landing – clone of the Vietnam listing data (master template); only destination content differs.
 import { features, planner as egyptPlanner, reviews as egyptReviews, customerReviews as egyptCustomerReviews } from './egyptListingData';
 import { europeProducts } from './tours/europeToursData';
+import { wondersOfEuropeProduct } from './grouptours/grandWondersEuropeData';
 import { greeceProducts } from './tours/greeceToursData';
 import { norwayProducts } from './tours/norwayToursData';
 import { irelandProducts } from './tours/irelandToursData';
@@ -69,7 +70,7 @@ export const tours = {
 
 // Every European trip we run: the multi-country itineraries plus each country's own tours.
 export const products = Object.values(Object.fromEntries(
-  [...new Set([...europeProducts, ...greeceProducts, ...norwayProducts, ...irelandProducts, ...finlandProducts, ...swedenProducts])].filter(Boolean)
+  [...new Set([wondersOfEuropeProduct, ...europeProducts, ...greeceProducts, ...norwayProducts, ...irelandProducts, ...finlandProducts, ...swedenProducts])].filter(Boolean)
     .map((p) => [p.slug, { ...p, countries: p.countries || countriesOfPlaces(p.places) }])
 ));
 

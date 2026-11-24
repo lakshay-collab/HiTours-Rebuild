@@ -175,7 +175,9 @@ function App() {
           <Route path="/asia/group-tours/inside-sri-lanka" element={<GroupTourDetail />} />
           <Route path="/asia/group-tours/bangkok-pattaya-ex-delhi" element={<BangkokPattayaTour />} />
           <Route path="/asia/group-tours/bangkok-pattaya-ex-delhi/thank-you/:bookingId" element={<BangkokPattayaThankYou />} />
-          <Route path="/europe/group-tours/grand-wonders-of-europe" element={<EuropeGroupTour />} />
+          <Route path="/europe/group-tours/wonders-of-europe" element={<EuropeGroupTour />} />
+          <Route path="/europe/group-tours/wonders-of-europe/thank-you/:bookingId" element={<EuropeGroupThankYou />} />
+          <Route path="/europe/group-tours/grand-wonders-of-europe" element={<Navigate to="/europe/group-tours/wonders-of-europe" replace />} />
           <Route path="/europe/group-tours/grand-wonders-of-europe/thank-you/:bookingId" element={<EuropeGroupThankYou />} />
           <Route path="/thank-you" element={<Navigate to="/" replace />} />
           <Route path="/asia/group-tours/inside-sri-lanka/thank-you/:bookingId" element={<GroupThankYou />} />

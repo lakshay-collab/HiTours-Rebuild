@@ -847,6 +847,8 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - backend/balance_links.py: after deposit verify, creates Razorpay Payment Link for next milestone (Razorpay notifies SMS+email, reminders on). Hourly cron (.emergent/crons.yml → POST /api/cron/balance-links, Bearer WEBHOOK_CRON_SECRET) syncs link status and sends next link; expired/cancelled links are not re-sent; mock bookings skipped; duplicate-safe. Thank-you page shows "Next payment" card with Pay now.
 - Tested iteration_67 + self re-test after fixes.
 
+- Europe trip URL now /europe/group-tours/wonders-of-europe (old grand-wonders-of-europe redirects); listed as the FIRST card on /europe and /europe/holidays (wondersOfEuropeProduct in europeListingData). Backend product key unchanged: grand-wonders-of-europe.
+
 
 
 

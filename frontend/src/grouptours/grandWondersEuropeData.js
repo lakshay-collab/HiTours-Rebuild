@@ -22,10 +22,19 @@ const IMG = {
 
 export const KEY = 'grand-wonders-of-europe';
 export const PATHS = {
-  detail: `/europe/group-tours/${KEY}`,
-  thankYou: (id) => `/europe/group-tours/${KEY}/thank-you/${id}`,
+  detail: '/europe/group-tours/wonders-of-europe',
+  thankYou: (id) => `/europe/group-tours/wonders-of-europe/thank-you/${id}`,
 };
 export const DEPOSIT_PP = 5000;
+
+export const wondersOfEuropeProduct = {
+  slug: 'wonders-of-europe', href: PATHS.detail, tag: 'Community trip', styles: ['Couples', 'Culture', 'Group'],
+  places: ['London', 'Paris', 'Swiss Alps', 'Venice', 'Rome'],
+  title: 'Wonders of Europe: 10 countries in 16 days, a London to Rome community trip for couples',
+  days: 16, stops: 10, hotels: 9, cities: 10, activities: 20, transfers: 16, meals: 44, price: 175676, noSale: true,
+  images: [IMG.hero(1200), IMG.alps, IMG.venice, IMG.rome],
+  alt: 'The Eiffel Tower over the Seine at dusk',
+};
 
 export const detail = {
   key: KEY,
