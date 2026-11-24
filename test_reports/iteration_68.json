@@ -1,0 +1,27 @@
+{
+  "summary": "Full-stack testing of the new 'Kuta hotel only package' feature. Backend: 24/24 pytest cases pass (package metadata, quote math incl. seasonal boundaries and mixed-season Dec 26 gap, Golden Tulip NYE 22,810 for 3 nights 2 adults, extra-adult pricing, 8 validation cases, HH order creation for full/deposit, deposit-not-eligible 400, unavailable-hotel 400, verify with bad signature 400/404, and regression for 3 group departures + /api/cron/balance-links 401). Prices match spec exactly: Kuta Central Park 8590, Bliss 8900, Golden Tulip 12280, Risata 13810 for checkin 2027-01-10 nights=3 rooms=2. Frontend: /asia/hotel-packages/kuta-hotel-only renders title, chips (3 to 6 nights / 4 star hotels / Breakfast included), 'from ₹2,860 per room, per night', 4 hotel cards, no 'places' chip or 'Your route' block, no broken images. Booking flow across steps 0-3 works: nights selector, calendar advances via name='next-month', picking 10 Jan 2027 shows correct summary and live price ₹8,590 updating with rooms/adults (add-room doubles to 17,190, remove works). Step 2 lists 4 hotels with correct totals matching API. Selecting risata → step 3 shows '<hotel> or similar', total ₹13,810, both deposit and full toggles present (eligible). stay-pay-now ₹10,000 for deposit, ₹13,810 for full. Validation errors render via data-testid stay-field-error for empty/invalid name/phone/email. Back and close work. Opening modal via hotel card 'Choose dates' pre-selects that hotel on step 2 (aria-pressed=true, Continue enabled). Mobile 390x844: sticky stay-mobile-bar and stay-mobile-open open modal as bottom sheet. Listing /asia/bali/holidays shows the Kuta card first linking to the correct route. Thank-you page: unknown id shows 'Booking not found', real unpaid booking shows 'Payment is still pending for this booking.'. Regression: /asia/group-tours/inside-sri-lanka, /asia/group-tours/bangkok-pattaya-ex-delhi, /europe/group-tours/wonders-of-europe all still render days chip, places chip and 'Your route'. All test bookings created during testing were deleted from MongoDB.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/test_kuta_hotel_only.py",
+    "/app/test_reports/pytest/kuta_hotel_only.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "hotel_packages.py build_quote: 'deposit' field on a hotel is None when total<=10000 which is correct per spec; UI shows the full-only note only when none of hotels are depositable (Risata shows deposit toggle for 2027-01-10 because 13,810>10,000 and >=30 days), matches spec.",
+    "verify() now also triggers send_next_link for kind=='hotel' — good. Error is logged and not raised, so payment stays verified even if link send fails; the hourly cron will retry (balance_links.sync_all covers both group & hotel).",
+    "In StayModal the Calendar uses react-day-picker's default name='next-month'/'previous-month' which matches the spec; tested OK.",
+    "Minor: in bookings.py quote() 'adult_price' uses adult_price(base, d) but ignores departure date argument — not related to this task, flagged earlier.",
+    "Nice-to-have: expose 'razorpay_order_id' or a dedicated endpoint so thank-you can re-verify a pending order if user returns; currently sanitized GET strips it (fine for privacy, but means verify from TY page requires original handoff)."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_kuta_hotel_only.py"
+  ],
+  "success_rate": {"backend": "100% (24/24)", "frontend": "100% of listed flows"},
+  "test_credentials": "N/A (no auth)",
+  "seed_data_creation": "Created and deleted ~4 real Razorpay test orders (HH* bookings) for full/deposit scenarios and 1 TY-test booking; all deleted at end of run.",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Backend test file lives at /app/backend/tests/test_kuta_hotel_only.py (pytest; uses dotenv to load REACT_APP_BACKEND_URL). It creates 2 real Razorpay test orders per run — keep run count low to avoid Razorpay rate limiting. Validation of empty/invalid booking form uses data-testid='stay-field-error' (text class text-[#B3261E], not an 'error' class substring).",
+  "rca of the issue": "No defects found."
+}

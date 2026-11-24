@@ -854,3 +854,9 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 
 
 - server.py builds Kraya "attributes": fbp, fbc, ip_address (first X-Forwarded-For), user_agent, city/state/country (form values else ipwho.is lookup), slugged lowercase; empty keys omitted.
+
+## 2026-11-24 Kuta hotel only package (hotel-only, live price by dates)
+- Page /asia/hotel-packages/kuta-hotel-only (pages/KutaHotelPackage.jsx incl. thank-you; content grouptours/kutaHotelOnlyData.js; flow components/hotelpackage/StayModal.jsx: nights 3-6 -> calendar + rooms -> preferred 4 star hotel "or similar" -> details -> Razorpay). First card on /asia/bali/holidays.
+- Backend backend/hotel_packages.py: rates copied from the owner's Zoho sheet (Kuta tab, breakfast, USD per room per night, 3rd adult = extra bed), +10% markup, fixed USD_INR = 93, rounded to ₹10. Hotels: Kuta Central Park, Bliss Surfer, Golden Tulip Jineng, Risata. Deposit ₹10,000 if check-in >= 30 days away and total > ₹10,000 (balance link via balance_links.py, due 30 days before), else full payment. Booking kind 'hotel', id 'HH…'.
+- Sheet is NOT auto-read: Zoho's published sheet has no plain download and its Season 11/12 columns are row-shifted (Golden Tulip 6 Jan-31 Mar @ USD 40 was inferred from that column). Rates are a fixed copy until the user asks for an update. Children pricing not offered online (adults only).
+- Tested iteration_68: backend 24/24, frontend all flows pass. Not tested end to end: a real paid deposit creating the hotel balance link.
