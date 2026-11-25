@@ -104,7 +104,7 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
   data.detail.glance = undefined;
   data.crumbs = [...data.crumbs.slice(0, -1), { label: src.detail.shortTitle || src.detail.title }];
   const hotels = data.route.stops.map((s) => ({ similar: s.accommodation.similar || [], name: s.accommodation.name, description: s.accommodation.description, image: s.accommodation.images?.[0], dayLabel: s.dayLabel, city: s.name }));
-  const included = data.route.stops.flatMap((s) => s.activities.map((a) => ({ day: a.day, name: a.name, description: a.description })));
+  const included = data.route.stops.flatMap((s) => s.activities.map((a) => ({ day: a.day, name: a.name, description: a.description, image: a.image, includes: a.includes })));
   const transfers = [];
   data.route.stops.forEach((s) => {
     let day = s.dayLabel;
@@ -133,11 +133,11 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
     };
   });
   return {
-    key, title: src.detail.title, shortTitle: src.detail.shortTitle || src.detail.title, mealsList: src.detail.meals || [], transferDetails: src.detail.transferDetails, mealsByDay: src.detail.mealsByDay, mealsNote: src.detail.mealsNote, glance: src.glance, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
+    key, title: src.detail.title, shortTitle: src.detail.shortTitle || src.detail.title, mealsList: src.detail.meals || [], transferDetails: src.detail.transferDetails, vehicles: src.detail.vehicles, mealsByDay: src.detail.mealsByDay, mealsNote: src.detail.mealsNote, glance: src.glance, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
     days: Number(src.detail.days.match(/^(\d+) days/)[1]), image: src.detail.gallery[0], alt: src.detail.alt, destination, live: opts.live, listingPath: opts.listingPath || '/asia/sri-lanka', arrival: opts.arrival || 'Colombo',
     detailPath: `/asia/book/${key}`, datesPath: `/asia/book/${key}/dates`, checkoutPath: `/asia/book/${key}/checkout`,
     hotels, included, transfers, dayPlan, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,
-    counts: { hotels: src.detail.stats.hotels, meals: Number((src.detail.services.find(([l]) => /meals/.test(l))?.[0] || '0').split(' ')[0]), activities: src.detail.stats.activities, transfers: src.detail.stats.transfers },
+    counts: { hotels: src.detail.stats.hotels, meals: Number((src.detail.services.find(([l]) => /meals/.test(l))?.[0] || '0').split(' ')[0]), activities: src.detail.stats.activities, transfers: src.detail.stats.transfers, ...(src.detail.stats.tickets ? { tickets: src.detail.stats.tickets } : {}) },
     tags: src.detail.tags, routeCities: src.detail.routeCities, data, product,
   };
 };

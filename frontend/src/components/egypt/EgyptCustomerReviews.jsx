@@ -22,7 +22,7 @@ const Category = ({ c }) => {
   );
 };
 
-const ReviewCard = ({ r, readMore, readLess }) => {
+export const ReviewCard = ({ r, readMore = 'Read more', readLess = 'Read less' }) => {
   const [open, setOpen] = useState(false);
   const long = r.text.length > 170;
   return (

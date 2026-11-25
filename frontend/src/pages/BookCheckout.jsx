@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronLeft, Lock, CalendarDays, Users, Tag, Check, BadgeCheck, Headset } from 'lucide-react';
-import { InclusionTabs } from '../components/booking/InclusionTabs';
+import { CountsRow } from '../components/booking/BookingSummary';
 import { ReviewRow } from '../components/booking/TrustReview';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -61,6 +61,7 @@ function HolidayCard({ product, date, q, promos, applied, onApply, totals, child
           <p className="flex items-center gap-2"><CalendarDays size={18} className="text-[#174358]" />{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → {fmtDate(out, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · {product.nights} nights</p>
           <p className="flex items-center gap-2" data-testid="checkout-travellers"><Users size={18} className="text-[#174358]" />{q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? ` · ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} · {q.rooms} room{q.rooms === 1 ? '' : 's'}</p>
         </div>
+        <div className="flex flex-col gap-2 pt-4 border-t border-[#E4E3DB]" data-testid="checkout-included"><p className="eg-label-lg text-[#002131]">Your holiday includes</p><CountsRow product={product} compact /></div>
         <Promos promos={promos} applied={applied} onApply={onApply} />
         <div className="flex flex-col gap-2 pt-1 border-t border-[#E4E3DB]" data-testid="checkout-price">
           <div className="pt-3" />
@@ -94,7 +95,7 @@ export default function BookCheckout() {
   const [mode, setMode] = useState('deposit');
   const iso = date ? toISO(date) : '';
 
-  useEffect(() => { document.title = 'Review & pay | Hi Tours'; window.scrollTo(0, 0); }, []);
+  useEffect(() => { document.title = 'Checkout | Hi Tours'; window.scrollTo(0, 0); }, []);
   useEffect(() => { fetch(`${API}/api/bookings/config`).then((r) => r.json()).then(setGateway).catch(() => setGateway({ mock: true })); }, []);
   const loadOffers = (email = form.email, phone = form.phone) => {
     if (!iso) return;
@@ -156,8 +157,7 @@ export default function BookCheckout() {
             </HolidayCard>
           </aside>
           <div className="flex-1 min-w-0 flex flex-col gap-6">
-            <h1 className="eg-headline-lg text-[#002131]" data-testid="checkout-title">Review & pay</h1>
-            <InclusionTabs product={product} date={date} rooms={rooms} title="Everything included in your holiday" />
+            <h1 className="eg-headline-lg text-[#002131]" data-testid="checkout-title">Checkout</h1>
             <section id="checkout-contact" className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="checkout-contact">
               <h2 className="eg-title-lg text-[#002131]">Lead traveller</h2>
               <div className="grid md:grid-cols-2 gap-4">

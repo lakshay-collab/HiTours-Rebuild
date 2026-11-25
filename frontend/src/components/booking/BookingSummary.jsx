@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, BedDouble, Check, Users, ShieldCheck, Utensils, Camera, Car } from 'lucide-react';
+import { ArrowRight, BedDouble, Check, Users, ShieldCheck, Utensils, Camera, Car, Ticket } from 'lucide-react';
 import { quote, addDays, fmtDate, fmtInr } from '../../booking/bookable';
 
 const Card = ({ children, testId, className = '' }) => <div className={`bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4 ${className}`} data-testid={testId}>{children}</div>;
@@ -18,16 +18,16 @@ export const StepBar = ({ step }) => {
   );
 };
 
-const COUNT_ICONS = { hotels: BedDouble, meals: Utensils, activities: Camera, transfers: Car };
-const COUNT_LABELS = { hotels: 'hotels', meals: 'meals', activities: 'activities', transfers: 'transfers' };
+const COUNT_ICONS = { hotels: BedDouble, meals: Utensils, activities: Camera, transfers: Car, tickets: Ticket };
+const COUNT_LABELS = { hotels: 'hotels', meals: 'meals', activities: 'activities', transfers: 'transfers', tickets: 'tickets' };
 
 export const CountsRow = ({ product, compact = false }) => (
-  <ul className={`grid grid-cols-4 gap-2 ${compact ? '' : 'md:gap-3'}`} data-testid="booking-counts">
+  <ul className={`grid ${Object.keys(product.counts).length > 4 ? 'grid-cols-5 gap-1.5' : 'grid-cols-4 gap-2'} ${compact ? '' : 'md:gap-3'}`} data-testid="booking-counts">
     {Object.entries(product.counts).map(([k, n]) => { const Icon = COUNT_ICONS[k]; return (
       <li key={k} className="rounded-xl bg-[#FBEADB] px-2 py-2 flex flex-col items-center text-center" data-testid={`booking-count-${k}`}>
         <Icon size={18} className="text-[#174358]" />
         <span className="eg-title-md text-[#002131] leading-tight mt-1">{n}</span>
-        <span className="eg-label-md text-[#5B6B74] leading-tight">{COUNT_LABELS[k]}</span>
+        <span className="eg-label-md text-[#174358] leading-tight">{COUNT_LABELS[k]}</span>
       </li>
     ); })}
   </ul>

@@ -91,7 +91,7 @@ import { BOOKABLE, decodeRooms, fromISO, quote, useLive, fmtInr, fmtDate as fmtB
 import { buildDestinationReviews } from '../reviews/dynamicReviews';
 import LiveBookingCard, { LiveStickyBar } from '../components/booking/LiveBookingCard';
 import { InclusionTabs } from '../components/booking/InclusionTabs';
-import { ReviewQuote, useFiveStarReviews } from '../components/booking/TrustReview';
+import { TopReview } from '../components/booking/TrustReview';
 import { readVerified } from '../booking/bookable';
 import { Zap } from 'lucide-react';
 
@@ -439,7 +439,6 @@ export default function EgyptDetail() {
       ? `${data.detail.title} – a tailor-made ${data.detail.days} itinerary${dest?.name ? ` in ${dest.name}` : ''} with hand-picked hotels, private transfers and 24/7 support. Plan it 1-to-1 with a Hi Tours expert.`
       : undefined,
   );
-  const topReview = useFiveStarReviews(dest?.name || '')[1];
   if (!data) return <Navigate to="/africa/egypt" replace />;
   const { detail, route, glance, crumbs } = data;
   const inr = formatInr(detail.price);
@@ -460,7 +459,7 @@ export default function EgyptDetail() {
                   ))}
                 </nav>
               )}
-              {detail.live && <ReviewQuote review={topReview} className="hidden md:flex" testId="eg-detail-top-review" />}
+              {detail.live && <TopReview destination={dest.name} className="hidden md:block" />}
               <ExpertCard detail={detail} />
               {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} rooms={decodeRooms(new URLSearchParams(window.location.search).get('rooms'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />

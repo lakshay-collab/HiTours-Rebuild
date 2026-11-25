@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { CalendarDays, Users, Pencil, X, Zap, ShieldCheck, Wallet, Headset, ArrowRight, Check, PhoneCall, MessageCircle, CalendarCheck } from 'lucide-react';
-import { ReviewQuote, useFiveStarReviews } from './TrustReview';
+import { CardReview } from './TrustReview';
 import { metaTracking } from '../../lib/metaTracking';
 import { BOOKABLE, decodeRooms, encodeRooms, fromISO, toISO, addDays, fmtDate, fmtInr, quote, useLive, readVerified, daysUntil, DEPOSIT_MIN_DAYS } from '../../booking/bookable';
 import { DepartureCalendar } from './DepartureCalendar';
@@ -101,7 +101,6 @@ export default function LiveBookingCard({ detail, onExpert }) {
   const book = () => navigate(`${product.checkoutPath}?date=${toISO(date)}&rooms=${encodeRooms(trip.rooms)}`);
   const dest = product.destination;
   const [thanks, setThanks] = useState(false);
-  const review = useFiveStarReviews(dest)[0];
   const expert = () => {
     if (!verified) { onExpert(); return; }
     fetch(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -142,7 +141,7 @@ export default function LiveBookingCard({ detail, onExpert }) {
       {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} /></Suspense>}
       {thanks && <ExpertThanks name={verified.name.trim().split(' ')[0]} dest={dest} onClose={() => setThanks(false)} />}
     </div>
-    <ReviewQuote review={review} testId="live-card-review" />
+    <CardReview destination={dest} />
     </div>
   );
 }

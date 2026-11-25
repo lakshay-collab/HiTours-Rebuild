@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BedDouble, CalendarDays, Camera, Car, Check, Coffee, LayoutList, Moon, Plane, Star, Utensils } from 'lucide-react';
+import { BedDouble, CalendarDays, Camera, Car, Check, Coffee, Info, LayoutList, MapPin, Moon, Plane, Star, Utensils } from 'lucide-react';
 import { addDays, fmtDate, toISO, useLive, decodeRooms } from '../../booking/bookable';
 
 const short = { day: 'numeric', month: 'short' };
@@ -52,13 +52,20 @@ const Item = ({ icon, tone, title, sub }) => (
     <div className="min-w-0 pt-0.5"><p className="eg-label-lg text-[#002131]">{title}</p>{sub && <p className="eg-body-md text-[#174358] mt-0.5">{sub}</p>}</div>
   </li>
 );
-const Stars = ({ n }) => <span className="inline-flex items-center gap-0.5" aria-label={`${n} star`}>{Array.from({ length: n }, (_, i) => <Star key={i} size={14} className="fill-[#F5A623] text-[#F5A623]" />)}</span>;
+const Stars = ({ n }) => <span className="inline-flex items-center gap-0.5" aria-label={`${n} star`}>{Array.from({ length: n }, (_, i) => <Star key={i} size={14} className="fill-[#174358] text-[#174358]" />)}</span>;
 
-const AllDays = ({ product, date, hotels }) => (
+const carFor = (product, rooms) => {
+  if (!product.vehicles) return null;
+  const pax = (rooms || DEFAULT_ROOMS).reduce((n, r) => n + r.adults + r.children, 0);
+  const [, name] = product.vehicles.find(([seats]) => seats >= pax) || product.vehicles[product.vehicles.length - 1];
+  return `${name} or similar`;
+};
+
+const AllDays = ({ product, date, hotels, car }) => (
   <ol className="flex flex-col gap-4" data-testid="inc-all">
     {product.dayPlan.map((p) => {
-      const transfers = product.transferDetails ? product.transferDetails.filter((t) => t.day === p.day) : p.transfers.map((t) => ({ title: t }));
-      const meal = (product.mealsByDay || []).find((m) => m.day === p.day && m.included);
+      const transfers = product.transferDetails ? product.transferDetails.filter((t) => t.day === p.day).map((t) => ({ title: t.title, route: `${t.from} to ${t.to}${car ? ` · ${car}` : ''}` })) : p.transfers.map((t) => ({ title: t }));
+      const meal = (product.mealsByDay || []).find((m) => m.day === p.day);
       const hotel = p.hotel && hotels.find((h) => h.city === p.city);
       return (
         <li key={p.day} className="rounded-2xl border border-[#DAD7CB] bg-white p-5 flex flex-col gap-4" data-testid={`inc-all-day-${p.day}`}>
@@ -113,27 +120,39 @@ const Hotels = ({ hotels }) => (
 const Activities = ({ product }) => (
   <ul className="flex flex-col gap-4" data-testid="inc-activities">
     {product.included.map((a) => (
-      <li key={a.name} className="rounded-2xl border border-[#DAD7CB] bg-white p-5 flex items-start gap-4">
-        <Tile icon={Camera} tone="activity" />
-        <div className="min-w-0 flex flex-col gap-2">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1"><h3 className="eg-title-md text-[#002131]">{a.name}</h3><span className="eg-label-lg text-[#1F6F94]">Day {a.day}</span></div>
+      <li key={a.name} className="rounded-2xl border border-[#DAD7CB] bg-white overflow-hidden flex flex-col sm:flex-row">
+        {a.image && <img src={a.image} alt={a.name} className="w-full sm:w-48 h-44 sm:h-auto object-cover shrink-0" loading="lazy" />}
+        <div className="flex-1 min-w-0 p-5 flex flex-col gap-3">
+          <div className="flex flex-col gap-1.5">
+            <p className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Day {a.day}</p>
+            <h3 className="eg-title-lg text-[#002131]">{a.name}</h3>
+          </div>
           {a.description && <p className="eg-body-md text-[#174358]">{a.description}</p>}
+          {a.includes && (
+            <div className="pt-3 border-t border-[#E4E3DB] flex flex-col gap-2">
+              <p className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">What is included</p>
+              <ul className="flex flex-col gap-1.5">{a.includes.map((x) => <li key={x} className="flex items-start gap-2 eg-label-lg text-[#002131]"><Check size={16} strokeWidth={2.5} className="text-[#1E7B4B] mt-0.5 shrink-0" />{x}</li>)}</ul>
+            </div>
+          )}
         </div>
       </li>
     ))}
   </ul>
 );
 
-const Transfers = ({ product }) => (product.transferDetails ? (
+const Transfers = ({ product, car }) => (product.transferDetails ? (
   <ul className="flex flex-col gap-4" data-testid="inc-transfers">
     {product.transferDetails.map((t) => (
-      <li key={`${t.day}-${t.title}`} className="rounded-2xl border border-[#DAD7CB] bg-white p-5 flex items-start gap-4">
-        <Tile icon={/airport/i.test(t.title) ? Plane : Car} tone="transfer" />
-        <div className="min-w-0 flex flex-col gap-2">
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1"><h3 className="eg-title-md text-[#002131]">{t.title}</h3><span className="eg-label-lg text-[#1F6F94]">Day {t.day}</span></div>
-          <p className="eg-label-lg text-[#002131]">{t.route}</p>
-          <p className="eg-body-md text-[#174358]">{t.text}</p>
+      <li key={`${t.day}-${t.title}`} className="rounded-2xl border border-[#DAD7CB] bg-white p-5 flex flex-col gap-4" data-testid={`inc-transfer-day-${t.day}`}>
+        <div className="flex items-center gap-3">
+          <Tile icon={/airport/i.test(t.title) ? Plane : Car} tone="transfer" />
+          <div className="min-w-0"><p className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Day {t.day}</p><h3 className="eg-title-md text-[#002131]">{t.title}</h3></div>
         </div>
+        <dl className="grid sm:grid-cols-3 gap-x-6 gap-y-4 pt-4 border-t border-[#E4E3DB]">
+          <Spec icon={MapPin} label="Route" value={<>{t.from}<span className="text-[#1F6F94]"> → </span>{t.to}</>} />
+          <Spec icon={Car} label="Your car" value={car ? `${car}, private and air conditioned` : 'Private air conditioned car'} />
+          <Spec icon={Info} label="Good to know" value={t.note} />
+        </dl>
       </li>
     ))}
   </ul>
@@ -150,8 +169,8 @@ const Meals = ({ product }) => (product.mealsByDay ? (
       {product.mealsByDay.map((m) => (
         <li key={m.day} className="flex items-center gap-4 px-5 py-4" data-testid={`inc-meal-day-${m.day}`}>
           <Chip>Day {m.day}</Chip>
-          <p className={`flex-1 eg-label-lg ${m.included ? 'text-[#002131]' : 'text-[#174358]'}`}>{m.text}</p>
-          {m.included && <span className="inline-flex items-center gap-1.5 eg-label-lg text-[#1E7B4B]"><Check size={16} strokeWidth={2.5} />Included</span>}
+          <p className="flex-1 eg-label-lg text-[#002131]">{m.text}</p>
+          <span className="inline-flex items-center gap-1.5 eg-label-lg text-[#1E7B4B]"><Check size={16} strokeWidth={2.5} />Included</span>
         </li>
       ))}
     </ul>
@@ -167,6 +186,7 @@ export const InclusionTabs = ({ product, date, id, rooms, title = 'Inclusions' }
   const [tab, setTab] = useState('all');
   const stays = useStays(product, date, rooms);
   const hotels = hotelRows(product, date, stays);
+  const car = carFor(product, rooms);
   return (
     <section id={id} className="flex flex-col gap-5 scroll-mt-4" data-testid="book-inclusion-tabs">
       <div className="flex flex-col gap-1.5">
@@ -180,10 +200,10 @@ export const InclusionTabs = ({ product, date, id, rooms, title = 'Inclusions' }
           </button>
         ))}
       </div>
-      {tab === 'all' && <AllDays product={product} date={date} hotels={hotels} />}
+      {tab === 'all' && <AllDays product={product} date={date} hotels={hotels} car={car} />}
       {tab === 'hotels' && <Hotels hotels={hotels} />}
       {tab === 'activities' && <Activities product={product} />}
-      {tab === 'transfers' && <Transfers product={product} />}
+      {tab === 'transfers' && <Transfers product={product} car={car} />}
       {tab === 'meals' && <Meals product={product} />}
     </section>
   );
