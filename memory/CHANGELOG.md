@@ -311,3 +311,10 @@ Copy: features heading is "Your trip, planned by professionals" with new items (
 Our office: address only (phone, email and the "Get in touch" button removed), gallery hidden, Mon-Fri 9am to 8pm.
 Favicon rebuilt from the logo mark: favicon.ico (16-256), favicon-32.png, icon-192/512.png, apple-touch-icon.png
  and a real manifest.json. The squashed /hitours-logo.webp favicon is gone.
+
+## 2026-11-25
+- Listing filters: one-line quick filter bar (Filters, Sort, Price, Duration, Hotel stars, Places) identical on desktop and mobile; Hotel stars filter added (derived from itinerary hotels, live Bali product = 4★); filter groups ordered by importance (Price, Duration, Hotel stars, Places, Theme, Experiences); Country filter hidden on single-country listings (kept on Europe via `showCountry`); desktop "Plan your trip" CTA removed from the sticky bar.
+- Bali live product card: "Check availability" link removed, whole card opens the pop-up.
+- Live details pop-up redesigned: full screen on mobile, larger on desktop, bright Bali photo + "Customise your Bali holiday in minutes" + Hotels/Experiences/Activities/Transfers icons; calendar compact (no per-date prices), check-in/out in blue, unavailable dates in red; step 3 "Add your details before you book": name + mobile + OTP (email removed); orange "View live price" CTA; verified contact remembered (localStorage `ht_verified`) so it is not asked again.
+- Backend `otp.py`: POST /api/otp/send, /api/otp/verify (hashed codes, 10 min expiry, 5 sends/hour, 5 attempts). DELIVERY IS MOCKED (code shown on screen in test mode) until a Gupshup/Interakt/other provider is connected in `_deliver`.
+- Calendar per-date rates restored in pop-up; small 'HI TOURS' watermark top-left on pop-up photo. Self-tested (no testing agent, per user rule).

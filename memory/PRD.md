@@ -1,3 +1,7 @@
+## USER RULES (MUST FOLLOW)
+- NEVER call the testing agent (it uses the user's credits). Self-test only (curl + one screenshot), and test everything at once at the end of a batch.
+- Do not run tests until the user says so, beyond a single quick self-check.
+
 # Tourlane.de Homepage Clone – PRD
 
 ## Original problem statement

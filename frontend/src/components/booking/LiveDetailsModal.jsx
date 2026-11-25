@@ -29,7 +29,8 @@ const Includes = ({ light }) => (
 const Brand = () => (
   <aside className="hidden md:flex w-[380px] shrink-0 relative flex-col justify-end p-8 text-white" data-testid="live-details-brand">
     <img src={HERO} alt="Turquoise bay and white sand beach in Bali" className="absolute inset-0 w-full h-full object-cover" />
-    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0)_35%,rgba(0,33,49,0.75)_100%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.25)_0%,rgba(0,33,49,0)_25%,rgba(0,33,49,0)_45%,rgba(0,33,49,0.75)_100%)]" />
+    <p className="absolute left-4 top-4 md:left-8 md:top-7 text-white/90 text-[13px] font-bold tracking-[0.25em] drop-shadow" data-testid="live-details-watermark">HI TOURS</p>
     <div className="relative flex flex-col gap-4">
       <p className="eg-display-sm leading-tight">Customise your Bali holiday in minutes</p>
       <Includes />
@@ -40,7 +41,8 @@ const Brand = () => (
 const MobileBanner = () => (
   <div className="md:hidden relative h-40 shrink-0" data-testid="live-details-banner">
     <img src={HERO} alt="Turquoise bay in Bali" className="absolute inset-0 w-full h-full object-cover" />
-    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.1)_0%,rgba(0,33,49,0.7)_100%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,33,49,0.3)_0%,rgba(0,33,49,0.1)_35%,rgba(0,33,49,0.7)_100%)]" />
+    <p className="absolute left-4 top-4 md:left-8 md:top-7 text-white/90 text-[13px] font-bold tracking-[0.25em] drop-shadow" data-testid="live-details-watermark">HI TOURS</p>
     <div className="absolute inset-x-4 bottom-3 flex flex-col gap-2.5 text-white">
       <p className="text-[20px] leading-6 font-semibold">Customise your Bali holiday in minutes</p>
       <Includes />

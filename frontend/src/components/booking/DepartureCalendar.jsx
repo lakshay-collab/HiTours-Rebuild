@@ -69,9 +69,9 @@ export const DepartureCalendar = ({ product, selected, onSelect, live = null, co
                 ${stay ? 'bg-[#DCE9F2]' : ''} ${isOut ? 'bg-[#174358] text-white rounded-r-xl' : ''} ${sel ? 'bg-[#174358] text-white rounded-l-xl hover:bg-[#174358]' : ''}`}
               data-testid={`cal-day-${toISO(d)}`} data-selected={sel || undefined} data-blackout={blackout || undefined}>
               <span className="eg-label-lg">{d.getDate()}</span>
-              {row && !isOut && !compact && <span className={`text-[10px] leading-none mt-0.5 ${sel ? 'opacity-90' : 'text-[#1E7B4B]'}`} data-testid={`cal-price-${toISO(d)}`}>{short(row.adult)}</span>}
-              {sel && (!row || compact) && <span className="text-[10px] leading-none mt-0.5 opacity-90">Check-in</span>}
-              {isOut && !sel && <span className="text-[10px] leading-none mt-0.5 opacity-90">Check-out</span>}
+              {row && !isOut && <span className={`text-[10px] leading-none mt-0.5 ${sel ? 'opacity-90' : 'text-[#1E7B4B]'}`} data-testid={`cal-price-${toISO(d)}`}>{short(row.adult)}</span>}
+              {sel && !row && <span className="text-[10px] leading-none mt-0.5 opacity-90">Check-in</span>}
+              {isOut && !sel && <span className="text-[10px] leading-none mt-0.5 opacity-90">Out</span>}
             </button>
           );
         })}
