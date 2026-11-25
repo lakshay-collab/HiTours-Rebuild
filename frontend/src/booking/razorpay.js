@@ -96,7 +96,7 @@ export async function payWithRazorpay(order, { name, email, phone, title, image 
   return new Promise((resolve, reject) => {
     const rzp = new window.Razorpay({
       key: order.key_id, amount: order.amount, currency: order.currency, order_id: order.order_id,
-      name: 'Hi Tours', description: title, image,
+      name: 'Hi Tours', description: title, image: `${window.location.origin}/icon-192.png`,
       prefill: { name, email, contact: phone }, notes: { booking_id: order.booking_id }, theme: { color: '#174358' },
       handler: (res) => resolve(res),
       modal: { ondismiss: () => reject(new Error('cancelled')) },

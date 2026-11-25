@@ -930,3 +930,4 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - "Overnight in <city> at <hotel> or similar" (itinerary + day-by-day inclusions) is a link that opens that city's accommodation + similar hotels.
 - Checkout "+ Add another traveller" is an underlined text link below the lead traveller card; opens a separate Second traveller card.
 - tests/test_bookings.py needs REACT_APP_BACKEND_URL exported and still expects the old 10% deposit — not updated.
+- 2026-11-25: Razorpay checkout window shows the Hi Tours symbol (/icon-192.png) for all checkouts (booking/razorpay.js).
