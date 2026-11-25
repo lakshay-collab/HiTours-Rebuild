@@ -92,7 +92,8 @@ import { buildDestinationReviews } from '../reviews/dynamicReviews';
 import LiveBookingCard, { LiveStickyBar } from '../components/booking/LiveBookingCard';
 import { InclusionTabs } from '../components/booking/InclusionTabs';
 import { readVerified } from '../booking/bookable';
-import { Zap } from 'lucide-react';
+import { Zap, Star, Sparkles, Headset, MapPin } from 'lucide-react';
+import { HiToursLogo } from '../components/egypt/EgyptIcons';
 
 const stop = (e) => e.preventDefault();
 
@@ -273,6 +274,33 @@ const ExpertsCard = ({ testId = 'eg-detail-experts' }) => (
           </div>
         ); })}
       </div>
+    </div>
+  </div>
+);
+
+const whyBook = (place) => [
+  [Star, 'Highly reviewed', `Rated ${trustBar.google.score} on Google and ${trustBar.tripadvisor.score} on TripAdvisor.`],
+  [Sparkles, 'AI enabled, expert led', 'Live prices and instant booking, checked by our team.'],
+  [Headset, 'On-ground support', `A local team in ${place}, on call 24/7 during your trip.`],
+  [MapPin, `${place} experts`, `Holidays built by people who know ${place}.`],
+];
+const WhyBookCard = ({ place, testId = 'eg-detail-why-book' }) => (
+  <div className="rounded-2xl border border-[#C4CBD0] bg-[#FBF9F1] py-6 flex flex-col gap-6" data-testid={testId}>
+    <div className="flex flex-col gap-4">
+      <h2 className="eg-headline-md text-[#002131] text-center px-6">Why book with Hi Tours?</h2>
+      <div className="px-5 flex items-center gap-4">
+        <hr className="flex-1 border-[#C4CBD0]" />
+        <HiToursLogo className="h-8 w-auto" />
+        <hr className="flex-1 border-[#C4CBD0]" />
+      </div>
+    </div>
+    <div className="px-6 flex flex-col gap-5">
+      {whyBook(place).map(([Icon, h, t]) => (
+        <div key={h} className="flex items-center gap-4">
+          <span className="w-11 h-11 rounded-full bg-[#E0F7FF] shrink-0 flex items-center justify-center text-[#174358]"><Icon size={20} /></span>
+          <div className="flex flex-col gap-1"><p className="eg-title-md text-[#002131]">{h}</p><p className="eg-body-md text-[#174358]">{t}</p></div>
+        </div>
+      ))}
     </div>
   </div>
 );
@@ -461,10 +489,10 @@ export default function EgyptDetail() {
               <ExpertCard detail={detail} />
               {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} rooms={decodeRooms(new URLSearchParams(window.location.search).get('rooms'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />
-              <div className="md:hidden"><ExpertsCard testId="eg-detail-experts-mobile" /></div>
+              <div className="md:hidden">{detail.live ? <WhyBookCard place={dest.name} testId="eg-detail-why-book-mobile" /> : <ExpertsCard testId="eg-detail-experts-mobile" />}</div>
             </div>
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="eg-detail-sidebar">
-              {detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} ratings={<Ratings className="!flex-col !items-start" />} below={<ExpertsCard />} /> : <><PriceCard detail={detail} inr={inr} onCta={openLead} /><ExpertsCard /></>}
+              {detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} ratings={<Ratings className="!flex-col !items-start" />} below={<WhyBookCard place={dest.name} />} /> : <><PriceCard detail={detail} inr={inr} onCta={openLead} /><ExpertsCard /></>}
             </aside>
           </div>
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />

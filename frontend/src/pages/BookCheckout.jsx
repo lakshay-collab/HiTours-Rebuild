@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronLeft, Lock, Tag, Check, Landmark, Wallet, BedDouble } from 'lucide-react';
+import { ChevronLeft, Lock, Tag, Check, Landmark, Wallet, BedDouble, UserPlus } from 'lucide-react';
 import { CountsRow } from '../components/booking/BookingSummary';
 import { ReviewRow } from '../components/booking/TrustReview';
 import Header from '../components/Header';
@@ -56,7 +56,7 @@ function HolidayCard({ product, date, rooms, owner, q, promos, applied, onApply,
     <div className="bg-white rounded-2xl border border-[#C4CBD0] overflow-hidden" data-testid="checkout-holiday">
       <img src={product.image} alt={product.alt} className="w-full h-24 object-cover" />
       <div className="p-5 flex flex-col gap-4">
-        <div><p className="eg-title-lg text-[#002131]" data-testid="checkout-holiday-title">Your {product.destination} holiday{owner ? `, ${owner}` : ''}</p><p className="eg-label-lg text-[#174358] mt-0.5">{product.shortTitle}</p></div>
+        <div><p className="eg-title-lg text-[#002131]" data-testid="checkout-holiday-title">Your {product.destination} holiday{owner ? `, ${owner}` : ''}</p></div>
         <dl className="rounded-xl border border-[#E4E3DB] divide-y divide-[#E4E3DB]" data-testid="checkout-trip">
           <div className="grid grid-cols-2 divide-x divide-[#E4E3DB]">
             <div className="p-3"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Check-in</dt><dd className="eg-title-md text-[#002131] mt-0.5" data-testid="checkout-checkin">{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</dd></div>
@@ -91,6 +91,7 @@ export default function BookCheckout() {
   const date = fromISO(params.get('date'));
   const rooms = decodeRooms(params.get('rooms'));
   const [form, setForm] = useState(initialForm);
+  const [second, setSecond] = useState(null);
   const live = useLive(product, rooms);
   const [errors, setErrors] = useState({});
   const [busy, setBusy] = useState(false);
@@ -127,12 +128,17 @@ export default function BookCheckout() {
 
   const pay = async () => {
     const errs = validate(form);
+    if (second) {
+      errs.name2 = second.name.trim().length < 2 ? 'Enter their full name' : '';
+      errs.phone2 = /^\+?\d{8,15}$/.test(second.phone.replace(/[\s-]/g, '')) ? '' : 'Enter a valid WhatsApp number';
+      errs.email2 = !second.email.trim() || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(second.email.trim()) ? '' : 'Enter a valid email';
+    }
     setErrors(errs);
     if (Object.values(errs).some(Boolean)) { document.getElementById('checkout-contact')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
     setBusy(true); setPayError('');
     try {
       const res = await fetch(`${API}/api/bookings/order`, { method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ product: key, departure: iso, rooms, promo: applied, pay_mode: totals.deposit ? 'deposit' : 'full', contact: { name: form.name.trim(), email: form.email.trim(), phone: form.phone.replace(/[\s-]/g, '') } }) });
+        body: JSON.stringify({ product: key, departure: iso, rooms, promo: applied, pay_mode: totals.deposit ? 'deposit' : 'full', contact: { name: form.name.trim(), email: form.email.trim(), phone: form.phone.replace(/[\s-]/g, '') }, second: second ? { name: second.name.trim(), email: second.email.trim(), phone: second.phone.replace(/[\s-]/g, '') } : null }) });
       if (!res.ok) throw new Error((await res.json()).detail || 'Could not start the payment');
       const order = await res.json();
       const result = await payWithRazorpay(order, { ...form, title: product.shortTitle, image: product.image });
@@ -171,6 +177,18 @@ export default function BookCheckout() {
                 <Field label="WhatsApp number" error={errors.phone}><input type="tel" className={inputCls} value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} onBlur={() => loadOffers()} placeholder="+91 98765 43210" data-testid="checkout-phone" autoComplete="tel" /></Field>
                 <Field label="Email for your booking confirmation" error={errors.email}><input type="email" className={inputCls} value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} onBlur={() => loadOffers()} placeholder="you@example.com" data-testid="checkout-email" autoComplete="email" /></Field>
               </div>
+              {second ? (
+                <div className="pt-4 border-t border-[#E4E3DB] flex flex-col gap-4" data-testid="checkout-second">
+                  <div className="flex items-center justify-between gap-3"><h3 className="eg-title-md text-[#002131]">Second traveller</h3><button type="button" onClick={() => setSecond(null)} className="eg-label-lg text-[#174358] underline underline-offset-4" data-testid="checkout-second-remove">Remove</button></div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <Field label="Full name" error={errors.name2}><input className={inputCls} value={second.name} onChange={(e) => setSecond({ ...second, name: e.target.value })} placeholder="As on passport" data-testid="checkout-second-name" /></Field>
+                    <Field label="WhatsApp number" error={errors.phone2}><input type="tel" className={inputCls} value={second.phone} onChange={(e) => setSecond({ ...second, phone: e.target.value })} placeholder="+91 98765 43210" data-testid="checkout-second-phone" /></Field>
+                    <Field label="Email (optional)" error={errors.email2}><input type="email" className={inputCls} value={second.email} onChange={(e) => setSecond({ ...second, email: e.target.value })} placeholder="you@example.com" data-testid="checkout-second-email" /></Field>
+                  </div>
+                </div>
+              ) : q.adults + q.children > 1 && (
+                <button type="button" onClick={() => setSecond({ name: '', phone: '', email: '' })} className="self-start inline-flex items-center gap-2 h-11 px-5 rounded-full border border-[#1F6F94] eg-label-lg text-[#1F6F94] hover:bg-[#E3F1F8] transition-colors" data-testid="checkout-second-add"><UserPlus size={17} />Add another traveller</button>
+              )}
             </section>
             <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="checkout-pay">
               <div className="flex flex-wrap items-center justify-between gap-3">

@@ -916,3 +916,9 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Checkout right card heading: "Your <destination> holiday, <first name>" (from the lead traveller name field) with the package title below; card is no longer sticky/scroll-clipped so the Pay button is never cut.
 - LiveBookingCard: review card removed; Google/TripAdvisor ratings row (existing Ratings) sits under "Free changes..." and the site's "Why plan with our experts?" ExpertsCard sits below the card (props `ratings`, `below`).
 - Footer.jsx (site-wide, desktop): left column has heading "About Hi Tours", description, then rating + certification badges; badges removed from the Hi Tours Cares column on desktop.
+
+## 2026-11-25 Crisp itinerary, Why book card, second traveller
+- Bali bullets rewritten short; optional prefix `flight::|transfer::|activity::|hotel::` picks the bullet icon (EgyptRoute BulletMark, `strict` in live mode = no keyword guessing; `bulletText` strips prefix). Overnight line uses hotel icon in live mode.
+- Tour summary (Bali): columns Day / Route (A → B) / Hotel / Key highlights (2-3 words each).
+- EgyptDetail `WhyBookCard` (live products) replaces ExpertsCard: Hi Tours logo, Highly reviewed / AI enabled, expert led / On-ground support / <place> experts.
+- Checkout: heading "Your Bali holiday, <first name>" only; "Add another traveller" (name, WhatsApp, optional email) -> POST /api/bookings/order `second` -> stored as booking.second_traveller (hidden from public GET). No message is sent to the second traveller yet.

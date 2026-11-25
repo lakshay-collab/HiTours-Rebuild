@@ -16,9 +16,15 @@ export const RouteLine = ({ cities, className = '', testId = 'eg-route-line' }) 
 );
 const HEADER = 120;
 
-export const BulletMark = ({ text }) => {
+const KIND = /^(flight|transfer|activity|hotel)::/;
+export const bulletText = (b) => b.replace(KIND, '');
+const KIND_MARK = { flight: [Plane, 'bg-[#308BB6] text-white'], transfer: [Car, 'bg-[#FB7F26] text-white'], activity: [ExploreIcon, 'bg-[#E3F1F8] text-[#1F6F94]'], hotel: [HotelIcon, 'bg-[#EFEDE4] text-[#174358]'] };
+export const BulletMark = ({ text, strict = false }) => {
   const t = text.toLowerCase();
   const cls = 'mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0';
+  const kind = (KIND.exec(text) || [])[1];
+  if (kind) { const [Icon, tone] = KIND_MARK[kind]; return <span className={`${cls} ${tone}`} data-testid={`eg-bullet-${kind}`}><Icon size={14} /></span>; }
+  if (strict) return <span className={`${cls} bg-[#9ACDE5] text-[#002131]`}><span className="w-1.5 h-1.5 rounded-full bg-[#002131]" /></span>;
   if (/airport|arrivals|fly home/.test(t)) return <span className={`${cls} bg-[#308BB6] text-white`} data-testid="eg-bullet-plane"><Plane size={14} /></span>;
   if (/transfer|drive to|driven|pick-?up|drop-?off/.test(t)) return <span className={`${cls} bg-[#FB7F26] text-white`}><Car size={14} /></span>;
   if (/\bflights?\b|\bfly\b|\bflying\b/.test(t)) return <span className={`${cls} bg-[#308BB6] text-white`}><Plane size={14} /></span>;
@@ -67,7 +73,7 @@ function StopText({ s, live }) {
       {s.subtitle && <RouteLine cities={s.subtitle.split(' → ')} className="mt-2" testId="eg-route-subtitle" />}
       <StopCarousel images={s.images} name={s.title} className="md:hidden mt-4" />
       <ul className="mt-4 flex flex-col gap-2.5" data-testid="eg-route-bullets">
-        {shown.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} />{b}</li>)}
+        {shown.map((b) => <li key={b} className="flex items-start gap-2.5 eg-body-lg text-[#002131]" data-testid="eg-route-bullet"><BulletMark text={b} strict={live} />{bulletText(b)}</li>)}
       </ul>
       {canToggle && (
         <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="mt-3 inline-flex items-center gap-1 eg-label-lg font-semibold text-[#174358] underline underline-offset-4 hover:text-[#002131] transition-colors" data-testid="eg-route-toggle">
@@ -75,7 +81,7 @@ function StopText({ s, live }) {
           <ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
         </button>
       )}
-      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight"><Moon size={16} className="text-[#308BB6]" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</p>}
+      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight">{live ? <HotelIcon size={16} className="text-[#308BB6]" /> : <Moon size={16} className="text-[#308BB6]" />}{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</p>}
     </div>
   );
 }

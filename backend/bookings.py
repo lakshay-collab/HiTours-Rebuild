@@ -83,11 +83,18 @@ class Contact(BaseModel):
     phone: str = Field(min_length=8, max_length=16)
 
 
+class SecondTraveller(BaseModel):
+    name: str = Field(min_length=2, max_length=80)
+    phone: str = Field(min_length=8, max_length=16)
+    email: str = Field(default='', max_length=120)
+
+
 class OrderIn(BaseModel):
     product: str
     departure: date
     rooms: List[Room] = Field(min_length=1, max_length=6)
     contact: Contact
+    second: Optional[SecondTraveller] = None
     promo: Optional[str] = None
     pay_mode: str = 'full'
 
@@ -204,7 +211,7 @@ def register(db):
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
                                               'status': 'created', 'amount_paise': amount_paise, 'mock': MOCK}, {'_id': 0})
         if pending:
-            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump(), 'quote': q, **({'kind': kind} if kind else {})}})
+            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump(), 'second_traveller': body.second.model_dump() if body.second else None, 'quote': q, **({'kind': kind} if kind else {})}})
             return {'booking_id': pending['booking_id'], 'order_id': pending['razorpay_order_id'], 'amount': amount_paise, 'currency': 'INR',
                     'key_id': KEY_ID, 'mock': MOCK, 'quote': q}
         booking_id = 'HT' + uuid.uuid4().hex[:8].upper()
@@ -216,7 +223,7 @@ def register(db):
         doc = {
             'booking_id': booking_id, 'product': body.product, 'title': product['title'],
             'departure': body.departure.isoformat(), 'rooms': [r.model_dump() for r in body.rooms],
-            'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise,
+            'contact': body.contact.model_dump(), 'second_traveller': body.second.model_dump() if body.second else None, 'quote': q, 'amount_paise': amount_paise,
             'razorpay_order_id': order['id'], 'status': 'created', 'mock': MOCK,
             **({'kind': kind} if kind else {}),
             'created_at': datetime.now(timezone.utc).isoformat(),
@@ -261,7 +268,7 @@ def register(db):
 
     @router.get('/{booking_id}')
     async def get_booking(booking_id: str):
-        doc = await db.bookings.find_one({'booking_id': booking_id}, {'_id': 0, 'razorpay_order_id': 0, 'razorpay_payment_id': 0})
+        doc = await db.bookings.find_one({'booking_id': booking_id}, {'_id': 0, 'razorpay_order_id': 0, 'razorpay_payment_id': 0, 'second_traveller': 0})
         if not doc:
             raise HTTPException(404, 'Booking not found')
         c = doc['contact']

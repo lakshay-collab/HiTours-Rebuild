@@ -108,7 +108,8 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
   const transfers = [];
   data.route.stops.forEach((s) => {
     let day = s.dayLabel;
-    s.bullets.forEach((b) => {
+    s.bullets.forEach((raw) => {
+      const b = raw.replace(/^[a-z]+::/, '');
       if (b.startsWith('__day__')) { day = b.slice(7).split(' · ')[0]; return; }
       if (/transfer|drive|safari jeep|4x4|by car|by train|by boat/i.test(b)) transfers.push({ day, text: b.replace(/^Breakfast,? (and|then) (a )?/i, '').replace(/^([a-z])/, (c) => c.toUpperCase()) });
     });
