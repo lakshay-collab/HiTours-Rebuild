@@ -68,7 +68,7 @@ function DetailsStep({ form, setForm, errors, otp, setOtp }) {
   );
 }
 
-export default function LiveDetailsModal({ liveKey, onClose }) {
+export default function LiveDetailsModal({ liveKey, onClose, heading }) {
   const product = BOOKABLE[liveKey];
   const navigate = useNavigate();
   const [verified] = useState(readVerified);
@@ -139,6 +139,7 @@ export default function LiveDetailsModal({ liveKey, onClose }) {
         <div className="flex-1 min-w-0 flex flex-col">
           {step === 0 && <MobileBanner />}
           <div className="px-5 md:px-8 pt-4 md:pt-6 pb-3 flex flex-col gap-3">
+            {heading && <p className="eg-label-md uppercase tracking-[0.08em] text-[#1E7B4B]" data-testid="live-details-heading">{heading}</p>}
             <div className="flex items-center gap-2">
               {step > 0 && <button type="button" onClick={() => setStep(step - 1)} className="w-10 h-10 -ml-2 rounded-full hover:bg-[#F0EEE6] flex items-center justify-center text-[#002131]" aria-label="Back" data-testid="live-details-back"><ArrowLeft size={20} /></button>}
               <h2 className="flex-1 eg-headline-md max-md:!text-[22px] max-md:!leading-7 text-[#002131]" data-testid="live-details-title">{steps[step]}</h2>

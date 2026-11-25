@@ -424,7 +424,7 @@ export default function EgyptDetail() {
   const [leadOpen, setLeadOpen] = useState(false);
   const openLead = useCallback(() => setLeadOpen(true), []);
   const closeLead = useCallback(() => setLeadOpen(false), []);
-  const jumpTo = (id) => { const el = document.getElementById(id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 16, behavior: 'smooth' }); };
+  const jumpTo = (id) => { const el = document.getElementById(id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: 'smooth' }); };
   const showSummary = () => {
     setSummaryOpen(true);
     requestAnimationFrame(() => jumpTo('summary'));
@@ -452,9 +452,9 @@ export default function EgyptDetail() {
           <div className="eg-wide flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-8">
               {detail.live && (
-                <nav className="-mx-4 px-4 md:mx-0 md:px-0 pb-3 flex gap-2 overflow-x-auto no-scrollbar border-b border-[#E4E3DB]" aria-label="On this page" data-testid="eg-detail-quicklinks">
+                <nav className="sticky top-0 z-30 -mx-4 px-4 md:mx-0 md:px-0 py-2.5 bg-[#FBF9F1] flex gap-2 overflow-x-auto no-scrollbar border-b border-[#E4E3DB]" aria-label="On this page" data-testid="eg-detail-quicklinks">
                   {[['Inclusions', 'included'], ['Itinerary in detail', 'itinerary'], ['Tour summary', 'summary']].map(([label, target]) => (
-                    <button key={target} type="button" onClick={() => (target === 'summary' ? showSummary() : jumpTo(target))} className="shrink-0 h-9 px-4 rounded-full bg-white border border-[#C4CBD0] eg-label-lg text-[#174358] hover:border-[#174358] hover:bg-[#174358] hover:text-white transition-colors" data-testid={`eg-quicklink-${target}`}>{label}</button>
+                    <button key={target} type="button" onClick={() => (target === 'summary' ? showSummary() : jumpTo(target))} className="shrink-0 h-9 px-4 rounded-full bg-[#E6F4EA] eg-label-lg text-[#1E7B4B] hover:bg-[#1E7B4B] hover:text-white transition-colors" data-testid={`eg-quicklink-${target}`}>{label}</button>
                   ))}
                 </nav>
               )}

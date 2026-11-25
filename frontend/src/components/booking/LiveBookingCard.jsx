@@ -101,6 +101,7 @@ export default function LiveBookingCard({ detail, onExpert }) {
   const book = () => navigate(`${product.checkoutPath}?date=${toISO(date)}&rooms=${encodeRooms(trip.rooms)}`);
   const dest = product.destination;
   const [thanks, setThanks] = useState(false);
+  const signOut = () => { try { localStorage.removeItem('ht_verified'); sessionStorage.removeItem('ht_contact'); } catch (e) { /* private mode */ } navigate(product.detailPath, { replace: true }); window.location.reload(); };
   const expert = () => {
     if (!verified) { onExpert(); return; }
     fetch(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -122,23 +123,22 @@ export default function LiveBookingCard({ detail, onExpert }) {
           <p className="flex items-baseline gap-1.5"><span className="eg-price text-[#002131] tabular-nums">{fmtInr(live.from_adult)}</span><span className="eg-body-md text-[#5B6B74]">per person</span></p>
         </div>
       )}
-      {priced && (
-        <div className="rounded-xl border border-[#E4E3DB] divide-y divide-[#E4E3DB] overflow-hidden" data-testid="live-trip-editor">
-          <Row icon={CalendarDays} label={`Check-in → check-out · ${product.nights} nights`} value={`${fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → ${fmtDate(addDays(date, product.nights), { weekday: 'short', day: 'numeric', month: 'short' })}`} onClick={() => setEdit('dates')} testId="live-edit-dates" />
-          <Row icon={Users} label="Travellers" value={`${people(q)} · ${q.rooms} room${q.rooms === 1 ? '' : 's'}`} onClick={() => setEdit('travellers')} testId="live-edit-travellers" />
-        </div>
-      )}
+      <div className="rounded-xl border border-[#E4E3DB] divide-y divide-[#E4E3DB] overflow-hidden" data-testid="live-trip-editor">
+        <Row icon={CalendarDays} label={priced ? `Check-in → check-out · ${product.nights} nights` : 'Check-in → check-out'} value={priced ? `${fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → ${fmtDate(addDays(date, product.nights), { weekday: 'short', day: 'numeric', month: 'short' })}` : 'Add your dates'} onClick={() => (priced ? setEdit('dates') : setGate(true))} testId="live-edit-dates" />
+        <Row icon={Users} label="Travellers" value={priced ? `${people(q)} · ${q.rooms} room${q.rooms === 1 ? '' : 's'}` : 'Add travellers'} onClick={() => (priced ? setEdit('travellers') : setGate(true))} testId="live-edit-travellers" />
+      </div>
       {priced
         ? <button type="button" onClick={book} className={bookCta} data-testid="eg-detail-price-cta"><Zap size={18} />Book now</button>
-        : <button type="button" onClick={() => setGate(true)} className={bookCta} data-testid="live-view-prices">View prices & availability<ArrowRight size={18} /></button>}
+        : <button type="button" onClick={() => setGate(true)} className={bookCta} data-testid="live-view-prices"><Zap size={18} />Book now</button>}
       <button type="button" onClick={expert} className={expertCta} data-testid="live-speak-expert"><Headset size={18} />Speak to a {dest} expert</button>
       <ul className="flex flex-col gap-2 eg-label-md text-[#174358]" data-testid="live-perks">
         <li className="flex items-center gap-2"><Zap size={15} className="text-[#E75E26]" />Instant booking, confirmed on WhatsApp</li>
         <li className="flex items-center gap-2"><Wallet size={15} className="text-[#1E7B4B]" />{date && daysUntil(date) < DEPOSIT_MIN_DAYS ? 'Pay securely by UPI, card or net banking' : `Pay just 10% today for check-ins ${DEPOSIT_MIN_DAYS}+ days away`}</li>
         <li className="flex items-center gap-2"><ShieldCheck size={15} className="text-[#174358]" />Free changes up to 30 days before check-in</li>
       </ul>
+      {verified && <p className="eg-label-md text-[#174358]" data-testid="live-signed-in">Signed in as {verified.name.trim().split(' ')[0]} · <button type="button" onClick={signOut} className="underline underline-offset-2 hover:text-[#002131]" data-testid="live-sign-out">Sign out</button></p>}
       {edit && <EditTrip trip={trip} tab={edit} onClose={() => setEdit(null)} />}
-      {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} /></Suspense>}
+      {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} heading={verified ? undefined : 'Sign up to view prices'} /></Suspense>}
       {thanks && <ExpertThanks name={verified.name.trim().split(' ')[0]} dest={dest} onClose={() => setThanks(false)} />}
     </div>
     <CardReview destination={dest} />
@@ -161,8 +161,8 @@ export function LiveStickyBar({ detail }) {
       </div>
       {priced
         ? <button type="button" onClick={() => navigate(`${product.checkoutPath}?date=${toISO(date)}&rooms=${encodeRooms(trip.rooms)}`)} className={`${bookCta} !w-auto !h-12 px-6 !text-[16px]`} data-testid="eg-sticky-cta"><Zap size={16} />Book now</button>
-        : <button type="button" onClick={() => setGate(true)} className={`${bookCta} !w-auto !h-12 px-6 !text-[16px]`} data-testid="eg-sticky-cta">View prices</button>}
-      {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} /></Suspense>}
+        : <button type="button" onClick={() => setGate(true)} className={`${bookCta} !w-auto !h-12 px-6 !text-[16px]`} data-testid="eg-sticky-cta"><Zap size={16} />Book now</button>}
+      {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} heading={verified ? undefined : 'Sign up to view prices'} /></Suspense>}
     </div>
   );
 }

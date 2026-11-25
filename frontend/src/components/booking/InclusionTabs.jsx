@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BedDouble, CalendarDays, Camera, Car, Check, Coffee, Info, LayoutList, MapPin, Moon, Plane, Star, Utensils } from 'lucide-react';
+import { BedDouble, CalendarDays, Camera, Car, Check, ChevronDown, Coffee, Info, LayoutList, MapPin, Moon, Plane, Star, Utensils } from 'lucide-react';
 import { addDays, fmtDate, toISO, useLive, decodeRooms } from '../../booking/bookable';
 
 const short = { day: 'numeric', month: 'short' };
@@ -12,10 +12,10 @@ const TABS = [
   { id: 'meals', label: 'Meals', icon: Utensils },
 ];
 const TONE = {
-  transfer: 'bg-[#FFF1E8] text-[#C8501C]',
+  transfer: 'bg-[#F5EFD9] text-[#8A6A1F]',
   activity: 'bg-[#E3F1F8] text-[#1F6F94]',
   meal: 'bg-[#E6F4EA] text-[#1E7B4B]',
-  hotel: 'bg-[#EFEDE4] text-[#174358]',
+  hotel: 'bg-[#EFEDE4] text-[#5B4A2E]',
 };
 
 const useStays = (product, date, rooms) => {
@@ -39,12 +39,12 @@ const hotelRows = (product, date, stays) => {
       image: swapped ? null : h.image,
       meal: parts[1], room: swapped ? stay.room : parts[2],
       stars: swapped ? stay.star : Number((parts[3] || '').replace('★', '')) || null,
-      blurb: swapped ? '' : parts[4] || '',
+      blurb: swapped ? '' : parts[4] || '', similar: (h.similar || []).length,
     };
   });
 };
 
-const Chip = ({ children }) => <span className="inline-flex items-center h-7 px-3 rounded-full bg-[#174358] text-white eg-label-lg shrink-0">{children}</span>;
+const Chip = ({ children }) => <span className="inline-flex items-center h-7 px-3 rounded-full bg-[#1F6F94] text-white eg-label-lg shrink-0">{children}</span>;
 const Tile = ({ icon: Icon, tone }) => <span className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${TONE[tone]}`}><Icon size={18} /></span>;
 const Item = ({ icon, tone, title, sub }) => (
   <li className="flex items-start gap-3">
@@ -52,7 +52,7 @@ const Item = ({ icon, tone, title, sub }) => (
     <div className="min-w-0 pt-0.5"><p className="eg-label-lg text-[#002131]">{title}</p>{sub && <p className="eg-body-md text-[#174358] mt-0.5">{sub}</p>}</div>
   </li>
 );
-const Stars = ({ n }) => <span className="inline-flex items-center gap-0.5" aria-label={`${n} star`}>{Array.from({ length: n }, (_, i) => <Star key={i} size={14} className="fill-[#174358] text-[#174358]" />)}</span>;
+const Stars = ({ n }) => <span className="inline-flex items-center gap-0.5" aria-label={`${n} star`}>{Array.from({ length: n }, (_, i) => <Star key={i} size={14} className="fill-[#1F6F94] text-[#1F6F94]" />)}</span>;
 
 const carFor = (product, rooms) => {
   if (!product.vehicles) return null;
@@ -61,9 +61,13 @@ const carFor = (product, rooms) => {
   return `${name} or similar`;
 };
 
-const AllDays = ({ product, date, hotels, car }) => (
+const AllDays = ({ product, date, hotels, car }) => {
+  const [all, setAll] = useState(false);
+  const days = all ? product.dayPlan : product.dayPlan.slice(0, 2);
+  return (
+  <div className="flex flex-col gap-4">
   <ol className="flex flex-col gap-4" data-testid="inc-all">
-    {product.dayPlan.map((p) => {
+    {days.map((p) => {
       const transfers = product.transferDetails ? product.transferDetails.filter((t) => t.day === p.day).map((t) => ({ title: t.title, route: `${t.from} to ${t.to.replace(/^Your/, 'your')}${car ? ` · ${car}` : ''}` })) : p.transfers.map((t) => ({ title: t }));
       const meal = (product.mealsByDay || []).find((m) => m.day === p.day);
       const hotel = p.hotel && hotels.find((h) => h.city === p.city);
@@ -84,7 +88,10 @@ const AllDays = ({ product, date, hotels, car }) => (
       );
     })}
   </ol>
-);
+  {product.dayPlan.length > 2 && <button type="button" onClick={() => setAll((v) => !v)} aria-expanded={all} className="self-start inline-flex items-center gap-1.5 h-11 px-5 rounded-full border border-[#1F6F94] eg-label-lg text-[#1F6F94] hover:bg-[#E3F1F8] transition-colors" data-testid="inc-all-toggle">{all ? 'Show less' : `Show all ${product.dayPlan.length} days`}<ChevronDown size={16} className={`transition-transform ${all ? 'rotate-180' : ''}`} /></button>}
+  </div>
+  );
+};
 
 const Spec = ({ icon: Icon, label, value }) => (
   <div className="flex items-start gap-2.5">
@@ -111,6 +118,7 @@ const Hotels = ({ hotels }) => (
             <Spec icon={CalendarDays} label={h.from ? 'Check-in to check-out' : 'Days'} value={h.from ? `${fmtDate(h.from, short)} to ${fmtDate(h.to, short)}` : h.dayLabel} />
           </dl>
           {h.blurb && <p className="eg-body-md text-[#174358]">{h.blurb}</p>}
+          {h.similar > 0 && <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('ht-similar-hotels', { detail: h.city }))} className="self-start inline-flex items-center gap-1.5 eg-label-lg text-[#1F6F94] underline underline-offset-4 hover:text-[#002131]" data-testid={`inc-hotel-similar-${i + 1}`}>View all similar hotels in {h.city}<ChevronDown size={16} /></button>}
         </div>
       </article>
     ))}
@@ -182,29 +190,38 @@ const Meals = ({ product }) => (product.mealsByDay ? (
   </ul>
 ));
 
+const Block = ({ id, title, children }) => (
+  <div id={`inc-sec-${id}`} className="flex flex-col gap-4 scroll-mt-20" data-testid={`inc-sec-${id}`}>
+    <h3 className="eg-title-lg text-[#002131]">{title}</h3>
+    {children}
+  </div>
+);
+
 export const InclusionTabs = ({ product, date, id, rooms, title = 'Inclusions' }) => {
-  const [tab, setTab] = useState('all');
   const stays = useStays(product, date, rooms);
   const hotels = hotelRows(product, date, stays);
   const car = carFor(product, rooms);
+  const go = (t) => { const el = document.getElementById(`inc-sec-${t}`); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' }); };
   return (
-    <section id={id} className="flex flex-col gap-5 scroll-mt-4" data-testid="book-inclusion-tabs">
-      <div className="flex flex-col gap-1.5">
-        <h2 className="eg-headline-md text-[#002131]">{title}</h2>
-        <p className="eg-body-lg text-[#174358]">Everything below is part of your price. See it day by day, or by type.</p>
+    <section id={id} className="flex flex-col gap-8 scroll-mt-20" data-testid="book-inclusion-tabs">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-1.5">
+          <h2 className="eg-headline-md text-[#002131]">{title}</h2>
+          <p className="eg-body-lg text-[#174358]">Everything below is part of your price. Scroll through, or jump to a part.</p>
+        </div>
+        <div className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
+          {TABS.map(({ id: t, label, icon: Icon }) => (
+            <button key={t} type="button" onClick={() => go(t)} className="shrink-0 inline-flex items-center gap-2 h-10 px-4 rounded-full bg-[#E3F1F8] eg-label-lg text-[#1F6F94] hover:bg-[#1F6F94] hover:text-white transition-colors" data-testid={`inc-tab-${t}`}>
+              <Icon size={16} />{label}
+            </button>
+          ))}
+        </div>
       </div>
-      <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
-        {TABS.map(({ id: t, label, icon: Icon }) => (
-          <button key={t} type="button" role="tab" aria-selected={tab === t} onClick={() => setTab(t)} className={`shrink-0 inline-flex items-center gap-2 h-11 px-5 rounded-full eg-label-lg transition-colors ${tab === t ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`inc-tab-${t}`}>
-            <Icon size={17} />{label}
-          </button>
-        ))}
-      </div>
-      {tab === 'all' && <AllDays product={product} date={date} hotels={hotels} car={car} />}
-      {tab === 'hotels' && <Hotels hotels={hotels} />}
-      {tab === 'activities' && <Activities product={product} />}
-      {tab === 'transfers' && <Transfers product={product} car={car} />}
-      {tab === 'meals' && <Meals product={product} />}
+      <Block id="all" title="All inclusions, day by day"><AllDays product={product} date={date} hotels={hotels} car={car} /></Block>
+      <Block id="hotels" title="Hotels"><Hotels hotels={hotels} /></Block>
+      <Block id="activities" title="Included activities"><Activities product={product} /></Block>
+      <Block id="transfers" title="Transfers"><Transfers product={product} car={car} /></Block>
+      <Block id="meals" title="Meals"><Meals product={product} /></Block>
     </section>
   );
 };

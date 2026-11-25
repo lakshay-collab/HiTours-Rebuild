@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronLeft, Lock, CalendarDays, Users, Tag, Check, BadgeCheck, Headset } from 'lucide-react';
+import { ChevronLeft, Lock, Tag, Check, Landmark, Wallet, BedDouble } from 'lucide-react';
 import { CountsRow } from '../components/booking/BookingSummary';
 import { ReviewRow } from '../components/booking/TrustReview';
 import Header from '../components/Header';
@@ -10,7 +10,7 @@ import { payWithRazorpay } from '../booking/razorpay';
 
 const API = process.env.REACT_APP_BACKEND_URL;
 const inputCls = 'h-12 rounded-xl border border-[#C4CBD0] bg-white px-4 eg-body-lg text-[#002131] outline-none focus:border-[#174358] focus:ring-2 focus:ring-[#174358]/20';
-const payCls = 'inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#E75E26] hover:bg-[#CF4F1B] text-white eg-title-md shadow-[0_8px_20px_-8px_rgba(231,94,38,0.8)] transition-colors disabled:opacity-50';
+const payCls = 'inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#1E7B4B] hover:bg-[#17633C] text-white eg-title-md shadow-[0_8px_20px_-8px_rgba(30,123,75,0.8)] transition-colors disabled:opacity-50';
 const validate = (f) => ({
   name: f.name.trim().length < 2 ? 'Please tell us your name' : '',
   email: /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.email.trim()) ? '' : 'Please enter a valid email',
@@ -50,17 +50,23 @@ function Promos({ promos, applied, onApply }) {
   );
 }
 
-function HolidayCard({ product, date, q, promos, applied, onApply, totals, children }) {
+function HolidayCard({ product, date, rooms, q, promos, applied, onApply, totals, children }) {
   const out = addDays(date, product.nights);
   return (
     <div className="bg-white rounded-2xl border border-[#C4CBD0] overflow-hidden" data-testid="checkout-holiday">
       <img src={product.image} alt={product.alt} className="w-full h-24 object-cover" />
       <div className="p-5 flex flex-col gap-4">
         <div><p className="eg-label-md text-[#174358]">Your holiday</p><p className="eg-title-lg text-[#002131]" data-testid="checkout-holiday-title">{product.shortTitle}</p></div>
-        <div className="flex flex-col gap-2 eg-label-lg text-[#002131]">
-          <p className="flex items-center gap-2"><CalendarDays size={18} className="text-[#174358]" />{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → {fmtDate(out, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · {product.nights} nights</p>
-          <p className="flex items-center gap-2" data-testid="checkout-travellers"><Users size={18} className="text-[#174358]" />{q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? ` · ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} · {q.rooms} room{q.rooms === 1 ? '' : 's'}</p>
-        </div>
+        <dl className="rounded-xl border border-[#E4E3DB] divide-y divide-[#E4E3DB]" data-testid="checkout-trip">
+          <div className="grid grid-cols-2 divide-x divide-[#E4E3DB]">
+            <div className="p-3"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Check-in</dt><dd className="eg-title-md text-[#002131] mt-0.5" data-testid="checkout-checkin">{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</dd></div>
+            <div className="p-3"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Check-out</dt><dd className="eg-title-md text-[#002131] mt-0.5" data-testid="checkout-checkout">{fmtDate(out, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</dd></div>
+          </div>
+          <div className="p-3"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Duration</dt><dd className="eg-title-md text-[#002131] mt-0.5">{product.nights} nights · {product.days} days</dd></div>
+          <div className="p-3" data-testid="checkout-travellers"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Travellers · {q.adults + q.children} in {q.rooms} room{q.rooms === 1 ? '' : 's'}</dt>
+            <dd className="mt-1.5 flex flex-col gap-1.5">{rooms.map((r, i) => <span key={i} className="flex items-center gap-2 eg-label-lg text-[#002131]"><BedDouble size={16} className="text-[#1F6F94]" />Room {i + 1}: {r.adults} adult{r.adults === 1 ? '' : 's'}{r.children ? `, ${r.children} child` : ''}</span>)}</dd>
+          </div>
+        </dl>
         <div className="flex flex-col gap-2 pt-4 border-t border-[#E4E3DB]" data-testid="checkout-included"><p className="eg-label-lg text-[#002131]">Your holiday includes</p><CountsRow product={product} compact /></div>
         <Promos promos={promos} applied={applied} onApply={onApply} />
         <div className="flex flex-col gap-2 pt-1 border-t border-[#E4E3DB]" data-testid="checkout-price">
@@ -152,7 +158,7 @@ export default function BookCheckout() {
         <Link to={back} className="inline-flex items-center gap-1 eg-label-lg text-[#174358] hover:text-[#002131] self-start" data-testid="checkout-back"><ChevronLeft size={16} /> Back to your holiday</Link>
         <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8">
           <aside className="w-full md:w-[420px] shrink-0 md:self-start md:sticky md:top-6 md:max-h-[calc(100vh-24px)] md:overflow-y-auto no-scrollbar">
-            <HolidayCard product={product} date={date} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals}>
+            <HolidayCard product={product} date={date} rooms={rooms} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals}>
               <button type="button" onClick={pay} disabled={busy || !gateway} className={`${payCls} hidden md:inline-flex w-full`} data-testid="checkout-side-pay"><Lock size={16} /> Pay {fmtInr(dueNow)} securely</button>
             </HolidayCard>
           </aside>
@@ -180,13 +186,10 @@ export default function BookCheckout() {
               {gateway?.mock && <p className="eg-label-md rounded-lg bg-[#FBEADB] px-3 py-2 text-[#174358]" data-testid="checkout-mock-note">Test mode: Razorpay keys are not connected yet, so a simulated payment window is shown and no money moves.</p>}
               {payError && <p className="eg-label-lg text-[#B3261E]" data-testid="checkout-pay-error">{payError}</p>}
               <button type="button" onClick={pay} disabled={busy || !gateway} className={`${payCls} self-stretch md:self-start`} data-testid="checkout-pay-button"><Lock size={16} /> {busy ? 'Opening secure payment…' : `Pay ${fmtInr(dueNow)} securely`}</button>
-              <ul className="grid sm:grid-cols-3 gap-3" data-testid="checkout-trust">
-                {[[Lock, 'Encrypted payment', 'Your card and UPI details go straight to Razorpay'], [BadgeCheck, 'Instant confirmation', 'Booking confirmed on WhatsApp and email'], [Headset, '24/7 support', `A Hi Tours team on the ground in ${product.destination}`]].map(([Icon, t, d]) => (
-                  <li key={t} className="rounded-xl bg-[#F3F8F4] border border-[#CFE5D6] p-3 flex items-start gap-2.5"><Icon size={18} className="text-[#1E7B4B] mt-0.5 shrink-0" /><span><span className="block eg-label-lg text-[#002131]">{t}</span><span className="block eg-label-md text-[#174358]">{d}</span></span></li>
-                ))}
-              </ul>
               <div className="flex flex-wrap items-center gap-2" data-testid="checkout-methods">
-                {['UPI', 'Visa', 'Mastercard', 'RuPay', 'Net banking', 'Wallets'].map((m) => <span key={m} className="h-8 px-3 rounded-lg border border-[#C4CBD0] bg-white eg-label-lg text-[#002131] inline-flex items-center">{m}</span>)}
+                {[['UPI', '/badges/pay-upi.svg'], ['Visa', '/badges/pay-visa.svg'], ['Mastercard', '/badges/pay-mastercard.svg'], ['RuPay', '/badges/pay-rupay.svg']].map(([m, src]) => <span key={m} className="h-10 px-3 rounded-lg border border-[#C4CBD0] bg-white inline-flex items-center"><img src={src} alt={m} className="h-5 w-auto max-w-[64px] object-contain" /></span>)}
+                <span className="h-10 px-3 rounded-lg border border-[#C4CBD0] bg-white eg-label-lg text-[#002131] inline-flex items-center gap-2"><Landmark size={18} className="text-[#1F6F94]" />Net banking</span>
+                <span className="h-10 px-3 rounded-lg border border-[#C4CBD0] bg-white eg-label-lg text-[#002131] inline-flex items-center gap-2"><Wallet size={18} className="text-[#1F6F94]" />Wallets</span>
               </div>
               <p className="eg-label-md text-[#174358]">By paying you agree to the Hi Tours booking terms and the Hi Tours Cares cancellation policy.</p>
             </section>

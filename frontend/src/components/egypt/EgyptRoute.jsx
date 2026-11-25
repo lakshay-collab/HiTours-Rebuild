@@ -184,10 +184,20 @@ function OptionCard({ a, id, city }) {
   );
 }
 
-function SimilarHotels({ items }) {
+function SimilarHotels({ items, city }) {
   const [open, setOpen] = useState(false);
+  const box = useRef(null);
+  useEffect(() => {
+    const show = (e) => {
+      if (e.detail !== city || !box.current) return;
+      setOpen(true);
+      window.scrollTo({ top: box.current.getBoundingClientRect().top + window.scrollY - 150, behavior: 'smooth' });
+    };
+    window.addEventListener('ht-similar-hotels', show);
+    return () => window.removeEventListener('ht-similar-hotels', show);
+  }, [city]);
   return (
-    <div className="flex flex-col gap-3" data-testid="eg-similar-hotels">
+    <div ref={box} className="flex flex-col gap-3" data-testid="eg-similar-hotels">
       <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="self-start inline-flex items-center gap-1.5 h-9 px-4 rounded-full border border-[#C4CBD0] bg-white eg-label-lg text-[#174358] hover:border-[#174358] transition-colors" data-testid="eg-similar-toggle">
         All similar hotels ({items.length})<ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
       </button>
@@ -197,7 +207,7 @@ function SimilarHotels({ items }) {
           <ul className="flex flex-col gap-3">
             {items.map((h) => (
               <li key={h.name} className="flex items-center gap-4" data-testid="eg-similar-hotel">
-                <img src={h.image} alt={h.name} className="w-16 h-16 rounded-xl object-cover shrink-0" loading="lazy" />
+                {h.image ? <img src={h.image} alt={h.name} className="w-16 h-16 rounded-xl object-cover shrink-0" loading="lazy" /> : <span className="w-16 h-16 rounded-xl bg-[#F0EEE6] text-[#174358] flex items-center justify-center shrink-0"><HotelIcon size={24} /></span>}
                 <div className="min-w-0"><p className="eg-title-md text-[#002131]">{h.name}</p><p className="eg-label-md text-[#174358]"><span className="text-[#FB7F26]">{'★'.repeat(h.stars)}</span> {h.stars} star · {h.room}</p></div>
               </li>
             ))}
@@ -208,7 +218,7 @@ function SimilarHotels({ items }) {
   );
 }
 
-function Accommodation({ a, city }) {
+function Accommodation({ a, city, stop }) {
   const all = [a, ...(a.options || [])];
   const four = all.find((h) => h.stars === 4);
   const five = all.find((h) => h.stars === 5);
@@ -217,7 +227,7 @@ function Accommodation({ a, city }) {
       <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
         <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
         <HotelCard a={a} city={city} />
-        {a.similar?.length > 0 && <SimilarHotels items={a.similar} />}
+        {a.similar?.length > 0 && <SimilarHotels items={a.similar} city={stop} />}
       </div>
     );
   }
@@ -284,6 +294,7 @@ function Activities({ items, live }) {
 
 export default function EgyptRoute({ onSummary, stops = route.stops, live = false }) {
   const days = useMemo(() => toDays(stops), [stops]);
+  const navH = live ? 57 : 0;
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
   const head = useRef(null);
@@ -294,8 +305,8 @@ export default function EgyptRoute({ onSummary, stops = route.stops, live = fals
     const onScroll = () => {
       if (!head.current) return;
       const top = head.current.getBoundingClientRect().top;
-      setStuck(top <= 0 && window.scrollY > 0);
-      const line = (head.current.offsetHeight || HEADER) + 60;
+      setStuck(top <= navH && window.scrollY > 0);
+      const line = (head.current.offsetHeight || HEADER) + 60 + navH;
       let idx = 0;
       refs.current.forEach((el, i) => { if (el && el.getBoundingClientRect().top <= line) idx = i; });
       setActive(idx);
@@ -303,7 +314,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops, live = fals
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [navH]);
 
   useEffect(() => {
     const t = tabs.current[active];
@@ -312,13 +323,13 @@ export default function EgyptRoute({ onSummary, stops = route.stops, live = fals
 
   const goTo = (i) => {
     const el = refs.current[i];
-    const offset = (head.current ? head.current.offsetHeight : HEADER) + 12;
+    const offset = (head.current ? head.current.offsetHeight : HEADER) + 12 + navH;
     if (el) { setActive(i); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' }); }
   };
 
   return (
     <div className="bg-[#F6F4EB] rounded-xl" id="itinerary" data-testid="eg-detail-route">
-      <div ref={head} className="sticky top-0 z-20 bg-[#F0EEE6] rounded-t-xl px-4 md:px-10 shadow-[0_6px_12px_-8px_rgba(0,33,49,0.2)]" data-testid="eg-route-header">
+      <div ref={head} className={`sticky ${live ? 'top-[57px]' : 'top-0'} z-20 bg-[#F0EEE6] rounded-t-xl px-4 md:px-10 shadow-[0_6px_12px_-8px_rgba(0,33,49,0.2)]`} data-testid="eg-route-header">
         {!live && <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
           <h2 className="eg-title-md md:eg-headline-md !leading-7 text-[#002131] truncate">{route.h2}</h2>
           <button type="button" onClick={onSummary} className="shrink-0 inline-flex items-center gap-1 h-9 px-4 rounded-full eg-grad-harbor hover:opacity-90 eg-label-lg text-white transition-opacity" data-testid="eg-route-summary-cta"><span className="md:hidden">{route.summaryShort}</span><span className="hidden md:inline">{route.summaryCta}</span></button>
@@ -339,7 +350,7 @@ export default function EgyptRoute({ onSummary, stops = route.stops, live = fals
               <StopText s={s} live={live} />
               <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
-            {s.accommodation && <Accommodation a={s.accommodation} city={s.name} />}
+            {s.accommodation && <Accommodation a={s.accommodation} city={s.name} stop={s.city} />}
             {s.activities && s.activities.length > 0 && <Activities items={s.activities} live={live} />}
           </section>
         ))}

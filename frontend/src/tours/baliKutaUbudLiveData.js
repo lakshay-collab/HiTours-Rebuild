@@ -75,7 +75,7 @@ const stops = [
     ],
     accommodation: {
       name: 'Kuta Central Park Hotel or similar',
-      description: '3 nights · Breakfast · Superior room · 4★ · Four star hotel with three pools, 2 km from Kuta Beach. On some dates we book a similar 4 star hotel in Kuta.',
+      description: '3 nights · Breakfast · Superior room · 4★ · These are our featured hotels for this tour. Hotel allocation depends on availability and seasonality, so you may be assigned any hotel from our selection.',
       images: kutaHotel,
       similar: [
         { name: 'Bliss Surfer Hotel', stars: 4, room: 'Deluxe room', image: 'https://images.pexels.com/photos/2259226/pexels-photo-2259226.jpeg?auto=compress&cs=tinysrgb&w=400' },
@@ -124,8 +124,11 @@ const stops = [
     ],
     accommodation: {
       name: 'Alam Puisi Villa Ubud or similar',
-      description: '3 nights · Breakfast · One bedroom pool villa · 4★ · Pool villa among the rice fields, a short drive from the centre of Ubud',
+      description: '3 nights · Breakfast · One bedroom pool villa · 4★ · These are our featured hotels for this tour. Hotel allocation depends on availability and seasonality, so you may be assigned any hotel from our selection.',
       images: ubudVilla,
+      similar: [
+        { name: 'The Royal Pita Maha', stars: 5, room: 'Deluxe pool villa' },
+      ],
     },
     activities: [
       { name: 'Kintamani volcano view and coffee plantation', day: 5, includes: ['Batik factory visit', 'Celuk and Mas craft villages', 'Coffee plantation visit', 'Mount Batur views from the Kintamani viewpoint'], optional: false, image: P.kintamani, description: 'Begin at a batik factory to learn how the textiles are made. Continue to Celuk and Mas, villages known for silver jewellery and woodcarving, and visit a coffee plantation to learn about Balinese coffee. At the Kintamani viewpoint, look out over active Mount Batur and its volcanic landscape.' },
