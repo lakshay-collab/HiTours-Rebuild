@@ -889,3 +889,11 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - live_packages._stay now falls back to the next star class up when no hotel of the package class has a rate for every night. Calendar rows carry `stays` (area, name, nights, star, room); InclusionTabs/InclusionAccordion show the actual hotel for the chosen date ("5★ for your dates" tag).
 - Effect today: check-in 16-20 Dec 2026 now bookable with The Royal Pita Maha in Ubud at ~₹68,580 pp (vs ₹27,600). Check-in 21 Dec-2 Jan still closed: the sheet has NO Ubud hotel rate for nights 26 Dec-5 Jan.
 - tests/test_otp.py::test_lead_with_empty_email_is_rejected fails (expected since email was removed from the popup; not yet updated).
+
+## 2026-11-25 Inclusions v3, reviews, trust, expert thank-you (Bali live product)
+- InclusionTabs.jsx: tabs All inclusions (day-wise cards, restored) / Hotels (layered card: photo, stars, Stay-Room-Meals-Dates spec grid) / Activities / Transfers / Meals (day-wise). Same component on product page ("Inclusions") and in the checkout main column ("Everything included in your holiday"); InclusionAccordion removed. No grey small text; secondary text is #174358.
+- Bali data: activity, transfer and itinerary copy now taken from the supplier sheets' Description columns (a COPY in tours/baliKutaUbudLiveData.js: transferDetails, mealsByDay, mealsNote; not read live). Kecak dance / optional add-ons from the sheet deliberately not shown (not priced).
+- components/booking/TrustReview.jsx: ReviewQuote + ReviewRow use the site's existing generated review set (reviews/dynamicReviews.js, 5-star only). Shown at top of product page (desktop), below the booking card, and 3 below payment on checkout. Texts are generic Bali (may mention Nusa Penida/Gili, not in this package).
+- Checkout: Razorpay logo (public/badges/razorpay.svg), trust tiles, payment-method chips, Pay button also in the right summary card.
+- "Speak to a Bali expert": if phone already verified (localStorage ht_verified) posts lead source `live-speak-expert` and shows "Thank you, <first name>" modal with next steps; otherwise opens the old lead form.
+- Self-tested by screenshots with /api/leads intercepted (no test lead sent). Testing agent not used per user instruction.

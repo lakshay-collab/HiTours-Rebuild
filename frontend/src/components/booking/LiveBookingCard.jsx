@@ -1,7 +1,9 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { CalendarDays, Users, Pencil, X, Zap, ShieldCheck, Wallet, Headset, ArrowRight } from 'lucide-react';
+import { CalendarDays, Users, Pencil, X, Zap, ShieldCheck, Wallet, Headset, ArrowRight, Check, PhoneCall, MessageCircle, CalendarCheck } from 'lucide-react';
+import { ReviewQuote, useFiveStarReviews } from './TrustReview';
+import { metaTracking } from '../../lib/metaTracking';
 import { BOOKABLE, decodeRooms, encodeRooms, fromISO, toISO, addDays, fmtDate, fmtInr, quote, useLive, readVerified, daysUntil, DEPOSIT_MIN_DAYS } from '../../booking/bookable';
 import { DepartureCalendar } from './DepartureCalendar';
 import { RoomsPicker } from './RoomsPicker';
@@ -61,6 +63,34 @@ const Row = ({ icon: Icon, label, value, onClick, testId }) => (
   </button>
 );
 
+function ExpertThanks({ name, dest, onClose }) {
+  useEffect(() => { document.body.style.overflow = 'hidden'; return () => { document.body.style.overflow = ''; }; }, []);
+  const steps = [
+    [PhoneCall, `Your ${dest} specialist calls you on the number you verified`],
+    [MessageCircle, 'We WhatsApp you this holiday with your dates and price'],
+    [CalendarCheck, 'You fine-tune it together, then book when you are ready'],
+  ];
+  return createPortal(
+    <div className="eg fixed inset-0 z-[70] bg-[#002131]/60 flex items-end md:items-center justify-center md:p-6" onClick={onClose} role="dialog" aria-modal="true" data-testid="expert-thanks-modal">
+      <div className="bg-white w-full md:max-w-[480px] rounded-t-3xl md:rounded-3xl p-6 md:p-8 flex flex-col gap-5" onClick={(e) => e.stopPropagation()}>
+        <span className="w-14 h-14 rounded-full bg-[#E6F4EA] text-[#1E7B4B] flex items-center justify-center"><Check size={28} strokeWidth={2.5} /></span>
+        <div className="flex flex-col gap-2">
+          <h2 className="eg-headline-md text-[#002131]" data-testid="expert-thanks-title">Thank you, {name}.</h2>
+          <p className="eg-body-lg text-[#174358]">A {dest} specialist will call you soon. You do not need to share your details again.</p>
+        </div>
+        <div className="flex flex-col gap-3">
+          <p className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">What happens next</p>
+          <ol className="flex flex-col gap-3">
+            {steps.map(([Icon, text], i) => <li key={i} className="flex items-start gap-3"><span className="w-9 h-9 rounded-xl bg-[#E3F1F8] text-[#1F6F94] flex items-center justify-center shrink-0"><Icon size={18} /></span><span className="eg-label-lg text-[#002131] pt-1.5">{text}</span></li>)}
+          </ol>
+        </div>
+        <button type="button" onClick={onClose} className="h-12 rounded-full bg-[#174358] text-white eg-title-md" data-testid="expert-thanks-close">Back to my holiday</button>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
 export default function LiveBookingCard({ detail, onExpert }) {
   const trip = useLiveTrip(detail);
   const { product, date, q, ok, live, verified } = trip;
@@ -70,7 +100,17 @@ export default function LiveBookingCard({ detail, onExpert }) {
   const priced = ok && verified;
   const book = () => navigate(`${product.checkoutPath}?date=${toISO(date)}&rooms=${encodeRooms(trip.rooms)}`);
   const dest = product.destination;
+  const [thanks, setThanks] = useState(false);
+  const review = useFiveStarReviews(dest)[0];
+  const expert = () => {
+    if (!verified) { onExpert(); return; }
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/leads`, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: verified.name, country_code: verified.country_code, phone: verified.phone, email: '', destination: dest, trip_title: product.title, source: 'live-speak-expert',
+        travel_dates: date ? `Check-in ${toISO(date)}, ${product.nights} nights` : '', traveller_count: String(q.adults + q.children), ...metaTracking() }) }).catch(() => {});
+    setThanks(true);
+  };
   return (
+    <div className="flex flex-col gap-4">
     <div className="bg-white rounded-2xl border border-[#C4CBD0] p-5 md:p-6 flex flex-col gap-4" data-testid="live-booking-card">
       {!live ? <p className="eg-body-md text-[#6F777C]" data-testid="live-price-loading">Getting live prices…</p> : priced ? (
         <div data-testid="live-price">
@@ -92,7 +132,7 @@ export default function LiveBookingCard({ detail, onExpert }) {
       {priced
         ? <button type="button" onClick={book} className={bookCta} data-testid="eg-detail-price-cta"><Zap size={18} />Book now</button>
         : <button type="button" onClick={() => setGate(true)} className={bookCta} data-testid="live-view-prices">View prices & availability<ArrowRight size={18} /></button>}
-      <button type="button" onClick={onExpert} className={expertCta} data-testid="live-speak-expert"><Headset size={18} />Speak to a {dest} expert</button>
+      <button type="button" onClick={expert} className={expertCta} data-testid="live-speak-expert"><Headset size={18} />Speak to a {dest} expert</button>
       <ul className="flex flex-col gap-2 eg-label-md text-[#174358]" data-testid="live-perks">
         <li className="flex items-center gap-2"><Zap size={15} className="text-[#E75E26]" />Instant booking, confirmed on WhatsApp</li>
         <li className="flex items-center gap-2"><Wallet size={15} className="text-[#1E7B4B]" />{date && daysUntil(date) < DEPOSIT_MIN_DAYS ? 'Pay securely by UPI, card or net banking' : `Pay just 10% today for check-ins ${DEPOSIT_MIN_DAYS}+ days away`}</li>
@@ -100,6 +140,9 @@ export default function LiveBookingCard({ detail, onExpert }) {
       </ul>
       {edit && <EditTrip trip={trip} tab={edit} onClose={() => setEdit(null)} />}
       {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} /></Suspense>}
+      {thanks && <ExpertThanks name={verified.name.trim().split(' ')[0]} dest={dest} onClose={() => setThanks(false)} />}
+    </div>
+    <ReviewQuote review={review} testId="live-card-review" />
     </div>
   );
 }
