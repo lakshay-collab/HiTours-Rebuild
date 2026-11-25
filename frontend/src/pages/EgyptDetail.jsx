@@ -91,7 +91,6 @@ import { BOOKABLE, decodeRooms, fromISO, quote, useLive, fmtInr, fmtDate as fmtB
 import { buildDestinationReviews } from '../reviews/dynamicReviews';
 import LiveBookingCard, { LiveStickyBar } from '../components/booking/LiveBookingCard';
 import { InclusionTabs } from '../components/booking/InclusionTabs';
-import { TopReview } from '../components/booking/TrustReview';
 import { readVerified } from '../booking/bookable';
 import { Zap } from 'lucide-react';
 
@@ -459,7 +458,6 @@ export default function EgyptDetail() {
                   ))}
                 </nav>
               )}
-              {detail.live && <TopReview destination={dest.name} className="hidden md:block" />}
               <ExpertCard detail={detail} />
               {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} rooms={decodeRooms(new URLSearchParams(window.location.search).get('rooms'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />

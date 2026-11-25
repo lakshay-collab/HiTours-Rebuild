@@ -78,12 +78,15 @@ export const tours = {
 export const products = indonesiaProducts;
 export const planner = { ...egyptPlanner, h3: `Customize your ${N} trip`, bg: P.planner };
 
+// Review dates roll forward every 2 months so they stay recent.
+const rolling = (day, back) => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth() - (n.getMonth() % 2) - back, day).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }); };
+
 export const reviews = {
   h2: `What customers say about booking ${N} with Hi Tours`, count: `based on 120 ${N} reviews`,
   items: [
-    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: '12 May 2026', stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Bali was spot on. Ubud was the highlight – Hi Tours thought of everything so we could just enjoy it." },
-    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: '28 April 2026', stars: 5, image: P.reviews[1], text: "From Seminyak to Nusa Penida, the pace was perfect for the kids and the guides were wonderful. We would book Bali with Hi Tours again in a heartbeat." },
-    { name: 'Nikhil', title: 'Expert advice that made the difference', date: '9 April 2026', stars: 5, image: P.reviews[2], text: "Our expert knew Bali inside out and tailored the route to what we love. Seamless, personal and great value." }
+    { name: 'Rohan and Meera', title: 'Perfectly organised from start to finish', date: rolling(12, 1), stars: 5, image: P.reviews[0], text: "Every hotel, transfer and guide in Bali was spot on. Ubud was the highlight – Hi Tours thought of everything so we could just enjoy it." },
+    { name: 'The Kapoor family', title: 'A trip the whole family loved', date: rolling(28, 2), stars: 5, image: P.reviews[1], text: "From Seminyak to Nusa Penida, the pace was perfect for the kids and the guides were wonderful. We would book Bali with Hi Tours again in a heartbeat." },
+    { name: 'Nikhil', title: 'Expert advice that made the difference', date: rolling(9, 2), stars: 5, image: P.reviews[2], text: "Our expert knew Bali inside out and tailored the route to what we love. Seamless, personal and great value." }
   ]
 };
 export const customerReviews = { ...egyptCustomerReviews, h2: `Our customers about their ${N} trip`, summary: "Amazing Bali trip – perfectly organised, wonderful guides and unforgettable places.", photos: P.customers, planExpert: '/experts/riya.webp', items: reviews.items.map((r) => ({ initial: r.name[0], name: r.name, date: r.date, title: r.title, source: 'Trustpilot', text: r.text })) };

@@ -64,7 +64,7 @@ const carFor = (product, rooms) => {
 const AllDays = ({ product, date, hotels, car }) => (
   <ol className="flex flex-col gap-4" data-testid="inc-all">
     {product.dayPlan.map((p) => {
-      const transfers = product.transferDetails ? product.transferDetails.filter((t) => t.day === p.day).map((t) => ({ title: t.title, route: `${t.from} to ${t.to}${car ? ` · ${car}` : ''}` })) : p.transfers.map((t) => ({ title: t }));
+      const transfers = product.transferDetails ? product.transferDetails.filter((t) => t.day === p.day).map((t) => ({ title: t.title, route: `${t.from} to ${t.to.replace(/^Your/, 'your')}${car ? ` · ${car}` : ''}` })) : p.transfers.map((t) => ({ title: t }));
       const meal = (product.mealsByDay || []).find((m) => m.day === p.day);
       const hotel = p.hotel && hotels.find((h) => h.city === p.city);
       return (
