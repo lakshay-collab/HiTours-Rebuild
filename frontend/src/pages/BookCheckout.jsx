@@ -50,13 +50,13 @@ function Promos({ promos, applied, onApply }) {
   );
 }
 
-function HolidayCard({ product, date, rooms, q, promos, applied, onApply, totals, children }) {
+function HolidayCard({ product, date, rooms, owner, q, promos, applied, onApply, totals, children }) {
   const out = addDays(date, product.nights);
   return (
     <div className="bg-white rounded-2xl border border-[#C4CBD0] overflow-hidden" data-testid="checkout-holiday">
       <img src={product.image} alt={product.alt} className="w-full h-24 object-cover" />
       <div className="p-5 flex flex-col gap-4">
-        <div><p className="eg-label-md text-[#174358]">Your holiday</p><p className="eg-title-lg text-[#002131]" data-testid="checkout-holiday-title">{product.shortTitle}</p></div>
+        <div><p className="eg-title-lg text-[#002131]" data-testid="checkout-holiday-title">Your {product.destination} holiday{owner ? `, ${owner}` : ''}</p><p className="eg-label-lg text-[#174358] mt-0.5">{product.shortTitle}</p></div>
         <dl className="rounded-xl border border-[#E4E3DB] divide-y divide-[#E4E3DB]" data-testid="checkout-trip">
           <div className="grid grid-cols-2 divide-x divide-[#E4E3DB]">
             <div className="p-3"><dt className="eg-label-md uppercase tracking-[0.08em] text-[#1F6F94]">Check-in</dt><dd className="eg-title-md text-[#002131] mt-0.5" data-testid="checkout-checkin">{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })}</dd></div>
@@ -157,8 +157,8 @@ export default function BookCheckout() {
       <main className="eg-wide pt-4 md:pt-6 pb-32 md:pb-16 flex flex-col gap-6">
         <Link to={back} className="inline-flex items-center gap-1 eg-label-lg text-[#174358] hover:text-[#002131] self-start" data-testid="checkout-back"><ChevronLeft size={16} /> Back to your holiday</Link>
         <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8">
-          <aside className="w-full md:w-[420px] shrink-0 md:self-start md:sticky md:top-6 md:max-h-[calc(100vh-24px)] md:overflow-y-auto no-scrollbar">
-            <HolidayCard product={product} date={date} rooms={rooms} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals}>
+          <aside className="w-full md:w-[420px] shrink-0 md:self-start">
+            <HolidayCard product={product} date={date} rooms={rooms} owner={form.name.trim().split(' ')[0]} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals}>
               <button type="button" onClick={pay} disabled={busy || !gateway} className={`${payCls} hidden md:inline-flex w-full`} data-testid="checkout-side-pay"><Lock size={16} /> Pay {fmtInr(dueNow)} securely</button>
             </HolidayCard>
           </aside>

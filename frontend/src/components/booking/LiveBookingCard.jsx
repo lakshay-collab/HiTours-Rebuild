@@ -2,7 +2,6 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { CalendarDays, Users, Pencil, X, Zap, ShieldCheck, Wallet, Headset, ArrowRight, Check, PhoneCall, MessageCircle, CalendarCheck } from 'lucide-react';
-import { CardReview } from './TrustReview';
 import { metaTracking } from '../../lib/metaTracking';
 import { BOOKABLE, decodeRooms, encodeRooms, fromISO, toISO, addDays, fmtDate, fmtInr, quote, useLive, readVerified, daysUntil, DEPOSIT_MIN_DAYS } from '../../booking/bookable';
 import { DepartureCalendar } from './DepartureCalendar';
@@ -91,7 +90,7 @@ function ExpertThanks({ name, dest, onClose }) {
   );
 }
 
-export default function LiveBookingCard({ detail, onExpert }) {
+export default function LiveBookingCard({ detail, onExpert, ratings, below }) {
   const trip = useLiveTrip(detail);
   const { product, date, q, ok, live, verified } = trip;
   const navigate = useNavigate();
@@ -136,12 +135,13 @@ export default function LiveBookingCard({ detail, onExpert }) {
         <li className="flex items-center gap-2"><Wallet size={15} className="text-[#1E7B4B]" />{date && daysUntil(date) < DEPOSIT_MIN_DAYS ? 'Pay securely by UPI, card or net banking' : `Pay just 10% today for check-ins ${DEPOSIT_MIN_DAYS}+ days away`}</li>
         <li className="flex items-center gap-2"><ShieldCheck size={15} className="text-[#174358]" />Free changes up to 30 days before check-in</li>
       </ul>
+      {ratings && <div className="pt-4 border-t border-[#E4E3DB]">{ratings}</div>}
       {verified && <p className="eg-label-md text-[#174358]" data-testid="live-signed-in">Signed in as {verified.name.trim().split(' ')[0]} · <button type="button" onClick={signOut} className="underline underline-offset-2 hover:text-[#002131]" data-testid="live-sign-out">Sign out</button></p>}
       {edit && <EditTrip trip={trip} tab={edit} onClose={() => setEdit(null)} />}
       {gate && <Suspense fallback={null}><LiveDetailsModal liveKey={detail.live} onClose={() => setGate(false)} heading={verified ? undefined : 'Sign up to view prices'} /></Suspense>}
       {thanks && <ExpertThanks name={verified.name.trim().split(' ')[0]} dest={dest} onClose={() => setThanks(false)} />}
     </div>
-    <CardReview destination={dest} />
+    {below}
     </div>
   );
 }

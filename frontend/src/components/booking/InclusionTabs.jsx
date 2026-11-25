@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BedDouble, CalendarDays, Camera, Car, Check, ChevronDown, Coffee, Info, LayoutList, MapPin, Moon, Plane, Star, Utensils } from 'lucide-react';
+import { ExploreIcon, HotelIcon } from '../egypt/EgyptIcons';
 import { addDays, fmtDate, toISO, useLive, decodeRooms } from '../../booking/bookable';
 
 const short = { day: 'numeric', month: 'short' };
@@ -7,7 +8,7 @@ const DEFAULT_ROOMS = decodeRooms('');
 const TABS = [
   { id: 'all', label: 'All inclusions', icon: LayoutList },
   { id: 'hotels', label: 'Hotels', icon: BedDouble },
-  { id: 'activities', label: 'Activities', icon: Camera },
+  { id: 'activities', label: 'Activities', icon: ExploreIcon },
   { id: 'transfers', label: 'Transfers', icon: Car },
   { id: 'meals', label: 'Meals', icon: Utensils },
 ];
@@ -81,8 +82,8 @@ const AllDays = ({ product, date, hotels, car }) => {
           <ul className="flex flex-col gap-3">
             {meal && <Item icon={Coffee} tone="meal" title={meal.text} />}
             {transfers.map((t) => <Item key={t.title} icon={/airport/i.test(t.title) ? Plane : Car} tone="transfer" title={t.title} sub={t.route} />)}
-            {p.experiences.map((e) => <Item key={e} icon={Camera} tone="activity" title={e} />)}
-            {hotel ? <Item icon={Moon} tone="hotel" title={`Overnight in ${p.city} at ${hotel.name} or similar`} sub={`${hotel.room}${hotel.stars ? ` · ${hotel.stars} star` : ''}`} /> : <Item icon={Check} tone="hotel" title="Departure day, no overnight stay" />}
+            {p.experiences.map((e) => <Item key={e} icon={ExploreIcon} tone="activity" title={e} />)}
+            {hotel ? <Item icon={HotelIcon} tone="hotel" title={`Overnight in ${p.city} at ${hotel.name} or similar`} sub={`${hotel.room}${hotel.stars ? ` · ${hotel.stars} star` : ''}`} /> : <Item icon={Check} tone="hotel" title="Departure day, no overnight stay" />}
           </ul>
         </li>
       );

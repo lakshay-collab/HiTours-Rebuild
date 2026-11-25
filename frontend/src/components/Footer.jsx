@@ -114,7 +114,11 @@ export default function Footer() {
       </div>
 
       <div className="tl-wide pt-8 pb-10 flex flex-col lg:flex-row gap-4 sm:gap-10 lg:gap-16">
-        <p className="hidden lg:block lg:w-[340px] shrink-0 t-body-md text-onsurface">{footer.description}</p>
+        <div className="hidden lg:flex lg:w-[340px] shrink-0 flex-col gap-5" data-testid="footer-about">
+          <h4 className="t-title-md text-onsurface">About Hi Tours</h4>
+          <p className="t-body-md text-onsurface">{footer.description}</p>
+          <Badges className="mt-3" />
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-0 sm:gap-6 flex-1">
           {footer.columns.map((col) => (
@@ -139,7 +143,7 @@ export default function Footer() {
               {footer.care.lines.map((l) => <li key={l} className="t-body-md text-onsurface">{l}</li>)}
               <li><Link to="/about" className="t-label-lg text-primary hover:underline" data-testid="footer-care-cta">{footer.care.cta}</Link></li>
             </ul>
-            <div className="hidden sm:block mt-8"><Badges /></div>
+            <div className="hidden sm:block lg:hidden mt-8"><Badges /></div>
           </FooterColumn>
         </div>
       </div>

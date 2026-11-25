@@ -447,7 +447,7 @@ export default function EgyptDetail() {
       <main className="flex flex-col gap-8 pb-28 md:pb-[100px]">
         <Head detail={detail} />
         <Crumbs crumbs={crumbs} />
-        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price">{detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} /> : <PriceCard detail={detail} inr={inr} onCta={openLead} />}</div>
+        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price">{detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} ratings={<Ratings className="!flex-col !items-start" />} /> : <PriceCard detail={detail} inr={inr} onCta={openLead} />}</div>
         <div className="flex flex-col gap-14 md:gap-[72px]">
           <div className="eg-wide flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-8">
@@ -461,10 +461,10 @@ export default function EgyptDetail() {
               <ExpertCard detail={detail} />
               {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} rooms={decodeRooms(new URLSearchParams(window.location.search).get('rooms'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />
-              <div className={detail.live ? '' : 'md:hidden'}><ExpertsCard testId="eg-detail-experts-mobile" /></div>
+              <div className="md:hidden"><ExpertsCard testId="eg-detail-experts-mobile" /></div>
             </div>
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="eg-detail-sidebar">
-              {detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} /> : <><PriceCard detail={detail} inr={inr} onCta={openLead} /><ExpertsCard /></>}
+              {detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} ratings={<Ratings className="!flex-col !items-start" />} below={<ExpertsCard />} /> : <><PriceCard detail={detail} inr={inr} onCta={openLead} /><ExpertsCard /></>}
             </aside>
           </div>
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />

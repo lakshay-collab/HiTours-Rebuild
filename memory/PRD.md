@@ -910,3 +910,9 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Hotel cards use the "featured hotels" line; "View all similar hotels in <city>" fires window event `ht-similar-hotels` (detail = city) which opens + scrolls to SimilarHotels in the itinerary. Ubud similar = The Royal Pita Maha (5 star, the fallback hotel; no photo).
 - LiveBookingCard: signed-out visitors see "From ₹x per person", empty "Add your dates" / "Add travellers" rows and Book now -> LiveDetailsModal with heading "Sign up to view prices" (dates -> travellers -> name/phone/OTP). Signed-in users get a "Sign out" link (clears localStorage ht_verified + sessionStorage ht_contact).
 - Checkout: green pay buttons (#1E7B4B), payment logos in public/badges/pay-*.svg (UPI, Visa, Mastercard, RuPay) + Net banking/Wallets chips, trust tiles removed; right card shows Check-in, Check-out, Duration, room-by-room travellers.
+
+## 2026-11-25 Icons, checkout heading, footer, trust block
+- InclusionTabs day view: activities use ExploreIcon, overnight uses HotelIcon (site icon set, components/egypt/EgyptIcons.jsx).
+- Checkout right card heading: "Your <destination> holiday, <first name>" (from the lead traveller name field) with the package title below; card is no longer sticky/scroll-clipped so the Pay button is never cut.
+- LiveBookingCard: review card removed; Google/TripAdvisor ratings row (existing Ratings) sits under "Free changes..." and the site's "Why plan with our experts?" ExpertsCard sits below the card (props `ratings`, `below`).
+- Footer.jsx (site-wide, desktop): left column has heading "About Hi Tours", description, then rating + certification badges; badges removed from the Hi Tours Cares column on desktop.
