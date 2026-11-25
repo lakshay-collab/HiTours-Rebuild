@@ -222,6 +222,8 @@ from bookings import register as register_bookings
 app.include_router(register_bookings(db))
 from group_bookings import register as register_group_bookings
 app.include_router(register_group_bookings(db))
+from media import register as register_media
+app.include_router(register_media(db))
 from live_packages import register as register_live_packages
 app.include_router(register_live_packages(db))
 from hotel_packages import register as register_hotel_packages

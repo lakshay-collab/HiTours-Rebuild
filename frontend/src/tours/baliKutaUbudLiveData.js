@@ -1,6 +1,8 @@
 // Bali Beaches and Ubud: 6 nights, priced live from the supplier rate sheets (see backend/live_packages.py).
-const img = p => `https://media1.thrillophilia.com/filestore/${p}?w=1400&dpr=1`;
-const bk = (id, k) => `https://cf.bstatic.com/xdata/images/hotel/max1024x768/${id}.jpg?k=${k}&o=`;
+// Photos are served from the app's own storage (backend/media.py copies each one in on first use).
+const stored = (url) => `${process.env.REACT_APP_BACKEND_URL}/api/media?u=${encodeURIComponent(url)}`;
+const img = p => stored(`https://media1.thrillophilia.com/filestore/${p}?w=1400&dpr=1`);
+const bk = (id, k) => stored(`https://cf.bstatic.com/xdata/images/hotel/max1024x768/${id}.jpg?k=${k}&o=`);
 const DAY_MARK = '__day__';
 
 const P = {
@@ -29,7 +31,7 @@ const kutaHotel = [
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/259696061.jpg?k=1350130bb21d710bf3a66542e6da391a98cbb1cf94df96e784a13a2f54c72159&o=",
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/23023678.jpg?k=5bca7ad788a81324ad6de5ef78d094e8ddd543e2536c8d343c7da7a5abe08d77&o=",
     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/101143051.jpg?k=c18270c00bcc6774735ccdbadd32c95d22b266770198fc122f324a00671b30cf&o="
-];
+].map(stored);
 const ubudVilla = [
   bk('886792728', '5723feeb17f2633c1891ae25e5b2cb1a682a38b40616c454ea8540d0dbc7915b'),
   bk('871944054', '7453bf3e00373d5743151793448030cbedbd8ff338fb3fd723e1dbaa355b8a8d'),

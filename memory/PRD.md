@@ -868,3 +868,8 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Frontend live store in booking/bookable.js (useLive, quote live branch, isBookable(d, product)).
 - Tested iteration_69: backend 18/18, frontend all flows. Not done: real payment; popup lead submit was only run once by main agent (a test lead "Test Guest / bali.test@example.com" went to the CRM).
 - Assumptions to confirm with user: Kuta-first order and 3+3 split; Ubud "4 star" = Alam Puisi villa ($84) so no dates 16 Dec-2 Jan check-in; children share room without bed (CNB); full payment at booking; USD 93, +10%.
+
+## 2026-11-24 File & media storage (Emergent object storage)
+- backend/media.py: GET /api/media?u=<source url> serves a photo from object storage (path hitours/media/<sha1 of url>), copying it in from the source on first request (only cf.bstatic.com and media1.thrillophilia.com allowed, images <= 8MB). Records in Mongo `files`. EMERGENT_LLM_KEY added to backend/.env.
+- Used only by the Bali live package (tours/baliKutaUbudLiveData.js `stored()` helper); all 29 photos copied and verified in preview. Listing card text link is "Check availability" beside the price.
+- No team login/browser for storage exists; a protected team upload page is a possible next task. Production copies photos on first view after publish.
