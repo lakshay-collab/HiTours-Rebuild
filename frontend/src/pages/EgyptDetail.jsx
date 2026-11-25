@@ -424,9 +424,10 @@ export default function EgyptDetail() {
   const [leadOpen, setLeadOpen] = useState(false);
   const openLead = useCallback(() => setLeadOpen(true), []);
   const closeLead = useCallback(() => setLeadOpen(false), []);
+  const jumpTo = (id) => { const el = document.getElementById(id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 16, behavior: 'smooth' }); };
   const showSummary = () => {
     setSummaryOpen(true);
-    requestAnimationFrame(() => { const el = document.getElementById('summary'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 16, behavior: 'smooth' }); });
+    requestAnimationFrame(() => jumpTo('summary'));
   };
   const data = BY_SLUG[pathname.includes('/book/') ? `book/${slug}` : slug];
   const dest = data ? destinationFor(data.detail) : null;
@@ -450,6 +451,13 @@ export default function EgyptDetail() {
         <div className="flex flex-col gap-14 md:gap-[72px]">
           <div className="eg-wide flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-8">
+              {detail.live && (
+                <nav className="-mx-4 px-4 md:mx-0 md:px-0 pb-3 flex gap-2 overflow-x-auto no-scrollbar border-b border-[#E4E3DB]" aria-label="On this page" data-testid="eg-detail-quicklinks">
+                  {[['Inclusions', 'included'], ['Itinerary in detail', 'itinerary'], ['Tour summary', 'summary']].map(([label, target]) => (
+                    <button key={target} type="button" onClick={() => (target === 'summary' ? showSummary() : jumpTo(target))} className="shrink-0 h-9 px-4 rounded-full bg-white border border-[#C4CBD0] eg-label-lg text-[#174358] hover:border-[#174358] hover:bg-[#174358] hover:text-white transition-colors" data-testid={`eg-quicklink-${target}`}>{label}</button>
+                  ))}
+                </nav>
+              )}
               <ExpertCard detail={detail} />
               {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />

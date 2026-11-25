@@ -133,7 +133,7 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
     };
   });
   return {
-    key, title: src.detail.title, shortTitle: src.detail.shortTitle || src.detail.title, mealsList: src.detail.meals || [], glance: src.glance, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
+    key, title: src.detail.title, shortTitle: src.detail.shortTitle || src.detail.title, mealsList: src.detail.meals || [], transferList: src.detail.transferList, glance: src.glance, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
     days: Number(src.detail.days.match(/^(\d+) days/)[1]), image: src.detail.gallery[0], alt: src.detail.alt, destination, live: opts.live, listingPath: opts.listingPath || '/asia/sri-lanka', arrival: opts.arrival || 'Colombo',
     detailPath: `/asia/book/${key}`, datesPath: `/asia/book/${key}/dates`, checkoutPath: `/asia/book/${key}/checkout`,
     hotels, included, transfers, dayPlan, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,

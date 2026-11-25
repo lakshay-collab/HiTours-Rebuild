@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronLeft, Lock, CalendarDays, Users, BedDouble, Camera, Car, Utensils, Tag, Check, ShieldCheck } from 'lucide-react';
+import { ChevronLeft, Lock, CalendarDays, Users, Tag, Check, ShieldCheck } from 'lucide-react';
+import { InclusionAccordion } from '../components/booking/InclusionTabs';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { BOOKABLE, fromISO, toISO, encodeRooms, decodeRooms, quote, fmtInr, fmtDate, addDays, isBookable, useLive, readVerified } from '../booking/bookable';
@@ -59,14 +60,8 @@ function HolidayCard({ product, date, q, promos, applied, onApply, totals }) {
           <p className="flex items-center gap-2"><CalendarDays size={18} className="text-[#174358]" />{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → {fmtDate(out, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · {product.nights} nights</p>
           <p className="flex items-center gap-2" data-testid="checkout-travellers"><Users size={18} className="text-[#174358]" />{q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? ` · ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} · {q.rooms} room{q.rooms === 1 ? '' : 's'}</p>
         </div>
-        <div className="rounded-xl bg-[#F7F5EE] p-4 flex flex-col gap-2" data-testid="checkout-included">
-          <p className="eg-label-lg text-[#002131]">What you are buying</p>
-          {product.hotels.map((h) => <p key={h.name} className="flex items-start gap-2 eg-body-md text-[#002131]"><BedDouble size={16} className="text-[#174358] mt-1 shrink-0" />{h.description.split(' · ')[0]} at {h.name}</p>)}
-          <p className="flex items-start gap-2 eg-body-md text-[#002131]"><Camera size={16} className="text-[#308BB6] mt-1 shrink-0" />{product.included.map((a) => a.name).join(', ')}</p>
-          <p className="flex items-start gap-2 eg-body-md text-[#002131]"><Car size={16} className="text-[#FB7F26] mt-1 shrink-0" />{product.counts.transfers} private transfers incl. airport pick-up and drop</p>
-          <p className="flex items-start gap-2 eg-body-md text-[#002131]"><Utensils size={16} className="text-[#174358] mt-1 shrink-0" />{product.mealsList.length ? `Daily breakfast (${product.counts.meals})` : product.meals}</p>
-          <p className="flex items-start gap-2 eg-body-md text-[#002131]"><ShieldCheck size={16} className="text-[#1E7B4B] mt-1 shrink-0" />24/7 support on the ground</p>
-        </div>
+        <div className="border-t border-[#E4E3DB] pt-4"><InclusionAccordion product={product} date={date} /></div>
+        <p className="flex items-center gap-2 eg-label-md text-[#1E7B4B] -mt-2"><ShieldCheck size={16} />24/7 support on the ground in {product.destination}</p>
         <Promos promos={promos} applied={applied} onApply={onApply} />
         <div className="flex flex-col gap-2 pt-1 border-t border-[#E4E3DB]" data-testid="checkout-price">
           <div className="pt-3" />
@@ -155,7 +150,7 @@ export default function BookCheckout() {
       <main className="eg-wide pt-4 md:pt-6 pb-32 md:pb-16 flex flex-col gap-6">
         <Link to={back} className="inline-flex items-center gap-1 eg-label-lg text-[#174358] hover:text-[#002131] self-start" data-testid="checkout-back"><ChevronLeft size={16} /> Back to your holiday</Link>
         <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8">
-          <aside className="w-full md:w-[420px] shrink-0 md:self-start md:sticky md:top-6">
+          <aside className="w-full md:w-[420px] shrink-0 md:self-start md:sticky md:top-6 md:max-h-[calc(100vh-24px)] md:overflow-y-auto no-scrollbar">
             <HolidayCard product={product} date={date} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals} />
           </aside>
           <div className="flex-1 min-w-0 flex flex-col gap-6">

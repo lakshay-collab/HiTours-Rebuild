@@ -155,6 +155,7 @@ const detail = {
   routeCities: ['Kuta', 'Ubud'],
   stats: { days: 7, cities: 2, hotels: 2, activities: 6, transfers: 9 },
   meals: ['Daily breakfast at your Kuta hotel (days 2 to 4)', 'Daily breakfast at your Ubud villa (days 5 to 7)', 'Lunches and dinners are not included, so you can try Bali\'s cafés and warungs'],
+  transferList: ['Airport pick-up on arrival in Bali', 'Kuta to Ubud hotel transfer', 'Airport drop on your departure day', 'Private car and driver for every sightseeing day'],
   gallery: heroGallery,
   services: [
     ['2 hotels', 'Accommodation'],

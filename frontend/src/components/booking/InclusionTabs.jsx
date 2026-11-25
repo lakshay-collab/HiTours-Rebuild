@@ -1,70 +1,27 @@
 import React, { useState } from 'react';
-import { BedDouble, Camera, Car, Check, ChevronDown, LayoutList, ListChecks, Plane, Utensils } from 'lucide-react';
+import { BedDouble, Camera, Car, Check, ChevronDown, Utensils } from 'lucide-react';
 import { addDays, fmtDate } from '../../booking/bookable';
 
-const TABS = [
-  { id: 'all', label: 'Day by day', icon: LayoutList },
-  { id: 'summary', label: 'Quick summary', icon: ListChecks },
-  { id: 'hotels', label: 'Hotels', icon: BedDouble },
-  { id: 'experiences', label: 'Experiences', icon: Camera },
-  { id: 'transfers', label: 'Transfers', icon: Car },
-  { id: 'meals', label: 'Meals', icon: Utensils },
-];
-const PREVIEW_DAYS = 7;
+const short = { day: 'numeric', month: 'short' };
+const nightsOf = (h) => Number(h.description.match(/(\d+) night/)[1]);
 
-const hotelMeta = (h) => {
-  const parts = h.description.split(' · ');
-  const stars = parts.find((p) => /★/.test(p)) || '';
-  const [name, city] = h.name.replace(/ or similar$/, '').split(', ');
-  return { parts, stars, name, city: city || h.city };
-};
-const HotelName = ({ h }) => { const { stars, name, city } = hotelMeta(h); return <>{name}{city ? `, ${city}` : ''} <span className="text-[#6F777C] font-normal">(or similar{stars ? ` ${stars}` : ''})</span></>; };
+const Tick = ({ children }) => <li className="flex items-start gap-2 eg-body-md text-[#002131]"><Check size={15} strokeWidth={2.5} className="text-[#1E7B4B] mt-1 shrink-0" /><span>{children}</span></li>;
 
-const isFlight = (t) => /airport|arrivals/i.test(t);
-const Row = ({ icon: Icon, color, children, testId }) => <li className="flex items-start gap-2.5 eg-body-md text-[#002131]" data-testid={testId}><Icon size={16} className={`${color} mt-1 shrink-0`} /><span>{children}</span></li>;
-
-const AllDays = ({ product, date, expanded, onToggle }) => {
-  const days = expanded ? product.dayPlan : product.dayPlan.slice(0, PREVIEW_DAYS);
-  return (
-    <div className="flex flex-col gap-3" data-testid="inc-all">
-      <ul className="flex flex-col divide-y divide-[#E4E3DB]">
-        {days.map((p) => (
-          <li key={p.day} className="py-3 first:pt-0 flex flex-col gap-2" data-testid={`inc-all-day-${p.day}`}>
-            <p className="eg-label-lg text-[#002131]"><span className="inline-flex items-center justify-center h-6 px-2.5 rounded-full bg-[#308BB6] text-white eg-label-md mr-2">Day {p.day}</span>{p.title}{date && <span className="eg-label-md text-[#6F777C] font-normal"> · {fmtDate(addDays(date, p.day - 1), { weekday: 'short', day: 'numeric', month: 'short' })}</span>}</p>
-            <ul className="flex flex-col gap-1.5 pl-1">
-              {p.transfers.map((t) => <Row key={t} icon={isFlight(t) ? Plane : Car} color={isFlight(t) ? 'text-[#308BB6]' : 'text-[#FB7F26]'}>{t}</Row>)}
-              {p.experiences.map((e) => <Row key={e} icon={Camera} color="text-[#308BB6]">{e}</Row>)}
-              {p.hotel ? <Row icon={BedDouble} color="text-[#174358]">Overnight at <HotelName h={p.hotel} /></Row> : <Row icon={Check} color="text-[#6F777C]">Departure day, no overnight</Row>}
-            </ul>
-          </li>
-        ))}
-      </ul>
-      {product.dayPlan.length > PREVIEW_DAYS && (
-        <button type="button" onClick={onToggle} className="self-start inline-flex items-center gap-1.5 eg-label-lg text-[#174358] hover:text-[#002131]" data-testid="inc-all-toggle" aria-expanded={expanded}>
-          {expanded ? 'Show less' : `Show all ${product.dayPlan.length} days`}<ChevronDown size={16} className={`transition-transform ${expanded ? 'rotate-180' : ''}`} />
-        </button>
-      )}
-    </div>
-  );
-};
-
-const Hotels = ({ product, date }) => {
+const HotelList = ({ product, date }) => {
   let cursor = date ? new Date(date) : null;
   return (
-    <ul className="flex flex-col divide-y divide-[#E4E3DB]" data-testid="inc-hotels">
+    <ul className="flex flex-col gap-3">
       {product.hotels.map((h, i) => {
-        const { parts } = hotelMeta(h);
-        const nights = Number(h.description.match(/(\d+) night/)[1]);
+        const parts = h.description.split(' · ');
+        const n = nightsOf(h);
         const from = cursor ? new Date(cursor) : null;
-        const to = cursor ? addDays(cursor, nights) : null;
-        if (cursor) cursor = to;
+        if (cursor) cursor = addDays(cursor, n);
         return (
-          <li key={i} className="flex gap-3 py-3 first:pt-0 last:pb-0" data-testid={`inc-hotel-${i + 1}`}>
-            {h.image && <img src={h.image} alt={h.name} className="w-16 h-16 rounded-xl object-cover shrink-0" loading="lazy" />}
-            <div className="min-w-0 flex flex-col gap-0.5">
-              <p className="eg-label-lg text-[#002131]"><HotelName h={h} /></p>
-              <p className="eg-label-md text-[#6F777C]">{h.dayLabel} · {parts.slice(0, 3).join(' · ')}</p>
-              {from && <p className="eg-label-md text-[#174358]">Check-in {fmtDate(from, { day: 'numeric', month: 'short' })} → check-out {fmtDate(to, { day: 'numeric', month: 'short' })}</p>}
+          <li key={h.name} className="flex items-center gap-3" data-testid={`inc-hotel-${i + 1}`}>
+            {h.image && <img src={h.image} alt={h.name} className="w-12 h-12 rounded-lg object-cover shrink-0" loading="lazy" />}
+            <div className="min-w-0">
+              <p className="eg-label-lg text-[#002131]">{h.name}</p>
+              <p className="eg-label-md text-[#5B6B74]">{n} nights in {h.city} · {parts.slice(1, 4).join(' · ')}{from ? ` · ${fmtDate(from, short)} to ${fmtDate(cursor, short)}` : ''}</p>
             </div>
           </li>
         );
@@ -73,65 +30,59 @@ const Hotels = ({ product, date }) => {
   );
 };
 
-const Experiences = ({ product }) => (
-  <ul className="flex flex-col gap-2" data-testid="inc-experiences">
-    {product.included.map((a, i) => <Row key={i} icon={Check} color="text-[#308BB6]"><span className="text-[#6F777C]">Day {a.day}:</span> {a.name}</Row>)}
-    <Row icon={Check} color="text-[#308BB6]">{product.meals} and 24/7 on-ground support</Row>
-  </ul>
+const sections = (product, date) => [
+  { id: 'hotels', icon: BedDouble, title: 'Hotels', count: `${product.nights} nights`, body: <HotelList product={product} date={date} /> },
+  { id: 'activities', icon: Camera, title: 'Included activities', count: `${product.included.length} activities`, body: <ul className="flex flex-col gap-1.5">{product.included.map((a) => <Tick key={a.name}>{a.name} <span className="text-[#5B6B74]">· Day {a.day}</span></Tick>)}</ul> },
+  { id: 'transfers', icon: Car, title: 'Transfers', count: `${product.counts.transfers} private`, body: <ul className="flex flex-col gap-1.5">{(product.transferList || [product.transport]).map((t) => <Tick key={t}>{t}</Tick>)}</ul> },
+  { id: 'meals', icon: Utensils, title: 'Meals', count: `${product.counts.meals} meals`, body: <ul className="flex flex-col gap-1.5">{(product.mealsList.length ? product.mealsList.filter((m) => !/not included/i.test(m)) : [product.meals]).map((m) => <Tick key={m}>{m}</Tick>)}</ul> },
+];
+
+const IconTile = ({ icon: Icon }) => <span className="w-9 h-9 rounded-full bg-[#174358] text-white flex items-center justify-center shrink-0"><Icon size={17} /></span>;
+
+// Product page: four calm cards, everything visible at a glance.
+export const InclusionTabs = ({ product, date, id }) => (
+  <section id={id} className="flex flex-col gap-4 scroll-mt-4" data-testid="book-inclusion-tabs">
+    <div className="flex flex-col gap-1">
+      <h2 className="eg-headline-md text-[#002131]">Inclusions</h2>
+      <p className="eg-body-md text-[#5B6B74]">Everything below is part of your price. No hidden extras.</p>
+    </div>
+    <div className="grid md:grid-cols-2 gap-4">
+      {sections(product, date).map((s) => (
+        <div key={s.id} className="bg-white rounded-2xl border border-[#E4E3DB] p-5 flex flex-col gap-4" data-testid={`inc-card-${s.id}`}>
+          <div className="flex items-center gap-3">
+            <IconTile icon={s.icon} />
+            <h3 className="eg-title-md text-[#002131] flex-1">{s.title}</h3>
+            <span className="eg-label-md text-[#174358] bg-[#F0EEE6] rounded-full px-2.5 py-1">{s.count}</span>
+          </div>
+          {s.body}
+        </div>
+      ))}
+    </div>
+  </section>
 );
 
-const Transfers = ({ product }) => (
-  <div className="flex flex-col gap-3" data-testid="inc-transfers">
-    <p className="eg-body-md text-[#174358] rounded-xl bg-[#FBEADB] px-3 py-2">{product.transport}</p>
-    <ul className="flex flex-col gap-2">
-      {product.transfers.map((t, i) => <Row key={i} icon={isFlight(t.text) ? Plane : Car} color={isFlight(t.text) ? 'text-[#308BB6]' : 'text-[#FB7F26]'}><span className="text-[#6F777C]">{t.day}:</span> {t.text}</Row>)}
-    </ul>
-  </div>
-);
-
-const Summary = ({ product }) => (
-  <ul className="flex flex-col divide-y divide-[#E4E3DB]" data-testid="inc-summary">
-    {product.glance.days.map((d) => {
-      const [day, rest] = d.title.split(': ');
-      return (
-        <li key={d.title} className="py-3 first:pt-0 flex flex-col gap-1">
-          <p className="eg-label-lg text-[#002131]"><span className="inline-flex items-center justify-center h-6 px-2.5 rounded-full bg-[#308BB6] text-white eg-label-md mr-2">{day}</span>{(rest || '').replace(/ \(B\)$/, '')}</p>
-          <p className="eg-body-md text-[#174358]">{d.highlights.join(' · ')}</p>
-        </li>
-      );
-    })}
-  </ul>
-);
-
-const Meals = ({ product }) => (
-  <ul className="flex flex-col gap-2" data-testid="inc-meals">
-    {(product.mealsList.length ? product.mealsList : [product.meals]).map((m) => <Row key={m} icon={Utensils} color="text-[#308BB6]">{m}</Row>)}
-  </ul>
-);
-
-export const InclusionTabs = ({ product, date, id }) => {
-  const [tab, setTab] = useState('all');
-  const [expanded, setExpanded] = useState(false);
-  const counts = { all: product.dayPlan.length, summary: product.glance.days.length, hotels: product.hotels.length, experiences: product.included.length, transfers: product.counts.transfers || product.transfers.length, meals: product.counts.meals };
+// Checkout: the same inclusions as tidy rows that open on tap.
+export const InclusionAccordion = ({ product, date }) => {
+  const [open, setOpen] = useState('hotels');
   return (
-    <section id={id} className="bg-white rounded-2xl border border-[#C4CBD0] p-4 md:p-5 flex flex-col gap-4 scroll-mt-4" data-testid="book-inclusion-tabs">
-      <div className="flex flex-col gap-1">
-        <h2 className="eg-title-lg text-[#002131]">Everything included in your holiday</h2>
-        <p className="eg-label-md text-[#6F777C]">{product.hotels.length} hotels · {product.included.length} experiences · {product.counts.transfers || product.transfers.length} private transfers · {product.meals}</p>
-      </div>
-      <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
-        {TABS.map(({ id, label, icon: Icon }) => (
-          <button key={id} type="button" role="tab" aria-selected={tab === id} onClick={() => setTab(id)} className={`shrink-0 inline-flex items-center gap-2 h-10 px-4 rounded-full eg-label-lg transition-colors ${tab === id ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`inc-tab-${id}`}>
-            <Icon size={16} />{label}<span className={`eg-label-md ${tab === id ? 'text-white/70' : 'text-[#6F777C]'}`}>{counts[id]}</span>
-          </button>
-        ))}
-      </div>
-      {tab === 'all' && <AllDays product={product} date={date} expanded={expanded} onToggle={() => setExpanded((v) => !v)} />}
-      {tab === 'hotels' && <Hotels product={product} date={date} />}
-      {tab === 'experiences' && <Experiences product={product} />}
-      {tab === 'transfers' && <Transfers product={product} />}
-      {tab === 'summary' && <Summary product={product} />}
-      {tab === 'meals' && <Meals product={product} />}
-    </section>
+    <div className="flex flex-col" data-testid="checkout-included">
+      <p className="eg-label-lg text-[#002131] pb-1">Everything included in your holiday</p>
+      <ul className="flex flex-col divide-y divide-[#E4E3DB]">
+        {sections(product, date).map((s) => {
+          const on = open === s.id;
+          return (
+            <li key={s.id} data-testid={`checkout-inc-${s.id}`}>
+              <button type="button" onClick={() => setOpen(on ? null : s.id)} aria-expanded={on} className="w-full flex items-center gap-3 py-3 text-left" data-testid={`checkout-inc-toggle-${s.id}`}>
+                <s.icon size={18} className="text-[#174358] shrink-0" />
+                <span className="flex-1 eg-label-lg text-[#002131]">{s.title}</span>
+                <span className="eg-label-md text-[#5B6B74]">{s.count}</span>
+                <ChevronDown size={16} className={`text-[#5B6B74] transition-transform ${on ? 'rotate-180' : ''}`} />
+              </button>
+              {on && <div className="pb-4 pl-[30px]">{s.body}</div>}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 };

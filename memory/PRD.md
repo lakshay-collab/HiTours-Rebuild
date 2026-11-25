@@ -877,3 +877,10 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - backend/media.py: GET /api/media?u=<source url> serves a photo from object storage (path hitours/media/<sha1 of url>), copying it in from the source on first request (only cf.bstatic.com and media1.thrillophilia.com allowed, images <= 8MB). Records in Mongo `files`. EMERGENT_LLM_KEY added to backend/.env.
 - Used only by the Bali live package (tours/baliKutaUbudLiveData.js `stored()` helper); all 29 photos copied and verified in preview. Listing card text link is "Check availability" beside the price.
 - No team login/browser for storage exists; a protected team upload page is a possible next task. Production copies photos on first view after publish.
+
+## 2026-11-25 Bali product page + checkout: inclusions redesign
+- components/booking/InclusionTabs.jsx rewritten: `InclusionTabs` = "Inclusions" section as 4 cards (Hotels, Included activities, Transfers, Meals; no tabs, no day-by-day duplicate); `InclusionAccordion` = same content as tap-to-open rows in the checkout right card ("Everything included in your holiday"), replacing the old "What you are buying" block.
+- Product page (EgyptDetail, live products): quick links row at the top of the content (Inclusions · Itinerary in detail · Tour summary); the Tour summary button next to the itinerary day tabs is removed.
+- EgyptRoute: "Other selected hotels" renamed "All similar hotels". Bali data has `transferList` (short transfer lines).
+- Self-tested by screenshots (desktop + mobile) only; testing agent NOT used per user instruction.
+- Still pending: real OTP provider (currently MOCKED), white Hi Tours logo watermark check, full paid checkout run.

@@ -189,7 +189,7 @@ function SimilarHotels({ items }) {
   return (
     <div className="flex flex-col gap-3" data-testid="eg-similar-hotels">
       <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="self-start inline-flex items-center gap-1.5 h-9 px-4 rounded-full border border-[#C4CBD0] bg-white eg-label-lg text-[#174358] hover:border-[#174358] transition-colors" data-testid="eg-similar-toggle">
-        Other selected hotels ({items.length})<ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
+        All similar hotels ({items.length})<ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
       </button>
       {open && (
         <div className="rounded-xl border border-[#E4E3DB] bg-white p-4 flex flex-col gap-4" data-testid="eg-similar-list">
@@ -330,7 +330,6 @@ export default function EgyptRoute({ onSummary, stops = route.stops, live = fals
             <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`shrink-0 h-9 px-4 rounded-full eg-label-lg whitespace-nowrap transition-colors ${active === i ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>{d.name}</button>
           ))}
         </div>
-        {live && <button type="button" onClick={onSummary} className="shrink-0 inline-flex items-center h-9 px-4 rounded-full eg-grad-harbor hover:opacity-90 eg-label-lg text-white transition-opacity" data-testid="eg-route-summary-cta">{route.summaryShort}</button>}
         </div>
       </div>
       <div className="px-4 md:px-10 pt-8 pb-7 flex flex-col divide-y divide-[#DDD9CE]">
