@@ -33,22 +33,25 @@ def _in(ranges: list, d: date) -> bool:
 
 
 def _stay(hotels: list, star: int, first: date, nights: int, rooms: int, children: int):
-    """Cheapest hotel of the star class with a rate for every night: (usd, child_usd, name)."""
-    best = None
-    for h in hotels:
-        if h['star'] != star:
-            continue
-        usd = child = 0.0
-        for i in range(nights):
-            s = next((x for x in h['seasons'] if _in(x['ranges'], first + timedelta(days=i))), None)
-            if not s:
-                break
-            usd += s['room'] * rooms
-            child += s.get('cnb', 0)
-        else:
-            if best is None or usd + child * children < best[0] + best[1] * children:
-                best = (usd, child, h['name'])
-    return best
+    """Cheapest hotel with a rate for every night, in the package star class or the next class up when that is sold out."""
+    for cls in sorted({h['star'] for h in hotels if h['star'] and h['star'] >= star}):
+        best = None
+        for h in hotels:
+            if h['star'] != cls:
+                continue
+            usd = child = 0.0
+            for i in range(nights):
+                s = next((x for x in h['seasons'] if _in(x['ranges'], first + timedelta(days=i))), None)
+                if not s:
+                    break
+                usd += s['room'] * rooms
+                child += s.get('cnb', 0)
+            else:
+                if best is None or usd + child * children < best[0] + best[1] * children:
+                    best = (usd, child, h['name'], int(cls), h['room'])
+        if best:
+            return best
+    return None
 
 
 def price(rates: dict, pkg: dict, checkin: date, rooms: List[Room]):
@@ -62,7 +65,7 @@ def price(rates: dict, pkg: dict, checkin: date, rooms: List[Room]):
             return None
         usd += s[0]
         child_usd += s[1]
-        hotels.append({'area': area, 'name': s[2], 'nights': nights})
+        hotels.append({'area': area, 'name': s[2], 'nights': nights, 'star': s[3], 'room': s[4]})
         day += nights
     for offset, a, b in pkg['transfers']:
         cars = sorted((t for t in rates['transfers'] if t['from'] == a and t['to'] == b), key=lambda t: t['pax'])
@@ -115,7 +118,7 @@ def register(db):
         while d <= last:
             q = price(rates, pkg, d, party)
             if q:
-                dates[d.isoformat()] = {'total': q['total'], 'adult': q['adult_price'], 'child': q['child_price'], 'hotels': [h['name'] for h in q['hotels']]}
+                dates[d.isoformat()] = {'total': q['total'], 'adult': q['adult_price'], 'child': q['child_price'], 'hotels': [h['name'] for h in q['hotels']], 'stays': q['hotels']}
             d += timedelta(days=1)
         return {'product': key, 'nights': pkg['nights'], 'rooms': rooms, 'dates': dates,
                 'from_adult': min((x['adult'] for x in dates.values()), default=None), 'rates_read_at': rates['fetched_at']}

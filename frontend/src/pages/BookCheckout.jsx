@@ -49,7 +49,7 @@ function Promos({ promos, applied, onApply }) {
   );
 }
 
-function HolidayCard({ product, date, q, promos, applied, onApply, totals }) {
+function HolidayCard({ product, date, rooms, q, promos, applied, onApply, totals }) {
   const out = addDays(date, product.nights);
   return (
     <div className="bg-white rounded-2xl border border-[#C4CBD0] overflow-hidden" data-testid="checkout-holiday">
@@ -60,7 +60,7 @@ function HolidayCard({ product, date, q, promos, applied, onApply, totals }) {
           <p className="flex items-center gap-2"><CalendarDays size={18} className="text-[#174358]" />{fmtDate(date, { weekday: 'short', day: 'numeric', month: 'short' })} → {fmtDate(out, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' })} · {product.nights} nights</p>
           <p className="flex items-center gap-2" data-testid="checkout-travellers"><Users size={18} className="text-[#174358]" />{q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? ` · ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} · {q.rooms} room{q.rooms === 1 ? '' : 's'}</p>
         </div>
-        <div className="border-t border-[#E4E3DB] pt-4"><InclusionAccordion product={product} date={date} /></div>
+        <div className="border-t border-[#E4E3DB] pt-4"><InclusionAccordion product={product} date={date} rooms={rooms} /></div>
         <p className="flex items-center gap-2 eg-label-md text-[#1E7B4B] -mt-2"><ShieldCheck size={16} />24/7 support on the ground in {product.destination}</p>
         <Promos promos={promos} applied={applied} onApply={onApply} />
         <div className="flex flex-col gap-2 pt-1 border-t border-[#E4E3DB]" data-testid="checkout-price">
@@ -151,7 +151,7 @@ export default function BookCheckout() {
         <Link to={back} className="inline-flex items-center gap-1 eg-label-lg text-[#174358] hover:text-[#002131] self-start" data-testid="checkout-back"><ChevronLeft size={16} /> Back to your holiday</Link>
         <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-8">
           <aside className="w-full md:w-[420px] shrink-0 md:self-start md:sticky md:top-6 md:max-h-[calc(100vh-24px)] md:overflow-y-auto no-scrollbar">
-            <HolidayCard product={product} date={date} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals} />
+            <HolidayCard product={product} date={date} rooms={rooms} q={q} promos={offer?.promos} applied={applied} onApply={setApplied} totals={totals} />
           </aside>
           <div className="flex-1 min-w-0 flex flex-col gap-6">
             <h1 className="eg-headline-lg text-[#002131]" data-testid="checkout-title">Review & pay</h1>

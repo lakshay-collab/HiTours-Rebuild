@@ -884,3 +884,8 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - EgyptRoute: "Other selected hotels" renamed "All similar hotels". Bali data has `transferList` (short transfer lines).
 - Self-tested by screenshots (desktop + mobile) only; testing agent NOT used per user instruction.
 - Still pending: real OTP provider (currently MOCKED), white Hi Tours logo watermark check, full paid checkout run.
+
+## 2026-11-25 Live Bali price: next hotel when the 4 star is sold out
+- live_packages._stay now falls back to the next star class up when no hotel of the package class has a rate for every night. Calendar rows carry `stays` (area, name, nights, star, room); InclusionTabs/InclusionAccordion show the actual hotel for the chosen date ("5★ for your dates" tag).
+- Effect today: check-in 16-20 Dec 2026 now bookable with The Royal Pita Maha in Ubud at ~₹68,580 pp (vs ₹27,600). Check-in 21 Dec-2 Jan still closed: the sheet has NO Ubud hotel rate for nights 26 Dec-5 Jan.
+- tests/test_otp.py::test_lead_with_empty_email_is_rejected fails (expected since email was removed from the popup; not yet updated).

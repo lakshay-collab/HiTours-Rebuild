@@ -72,7 +72,8 @@ def test_calendar_jan_4(cal_2_0):
 
 def test_calendar_no_dates_in_ubud_gap(cal_2_0):
     from datetime import date, timedelta
-    a = date(2026, 12, 16)
+    assert 'Royal Pita Maha' in cal_2_0['dates']['2026-12-18']['hotels'][1]
+    a = date(2026, 12, 21)
     b = date(2027, 1, 2)
     d = a
     while d <= b:

@@ -459,7 +459,7 @@ export default function EgyptDetail() {
                 </nav>
               )}
               <ExpertCard detail={detail} />
-              {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} id="included" />}
+              {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} rooms={decodeRooms(new URLSearchParams(window.location.search).get('rooms'))} id="included" />}
               <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />
               <div className={detail.live ? '' : 'md:hidden'}><ExpertsCard testId="eg-detail-experts-mobile" /></div>
             </div>
