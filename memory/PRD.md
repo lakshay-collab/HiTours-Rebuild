@@ -922,3 +922,11 @@ Shipped today: country hero videos (Bhutan, Japan, Malaysia, Maldives, Singapore
 - Tour summary (Bali): columns Day / Route (A → B) / Hotel / Key highlights (2-3 words each).
 - EgyptDetail `WhyBookCard` (live products) replaces ExpertsCard: Hi Tours logo, Highly reviewed / AI enabled, expert led / On-ground support / <place> experts.
 - Checkout: heading "Your Bali holiday, <first name>" only; "Add another traveller" (name, WhatsApp, optional email) -> POST /api/bookings/order `second` -> stored as booking.second_traveller (hidden from public GET). No message is sent to the second traveller yet.
+
+## 2026-11-25 Payment terms (owner confirmed) + small UI
+- bookings.py: `deposit_pct(departure)` = 5% at 60+ days, 50% at 30-59 days, else pay in full. Balance due 30 days before check-in. Paying in full at 60+ days gets a further 2% off (`full_pay_discount`, applied after the promo). /api/bookings/promos returns deposit_pct + full_discount_pct. Server recomputes everything in /order.
+- Checkout options: "Pay only ₹X now (5%/50%)" / "Pay in full and save 2%". Product card perk: "Pay only ₹X per person now".
+- WhyBookCard: Over 1 million travellers / 30 years of trust / AI enabled / Bali experts (owner's claims), smaller titles.
+- "Overnight in <city> at <hotel> or similar" (itinerary + day-by-day inclusions) is a link that opens that city's accommodation + similar hotels.
+- Checkout "+ Add another traveller" is an underlined text link below the lead traveller card; opens a separate Second traveller card.
+- tests/test_bookings.py needs REACT_APP_BACKEND_URL exported and still expects the old 10% deposit — not updated.

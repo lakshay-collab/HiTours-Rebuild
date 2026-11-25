@@ -83,7 +83,7 @@ const AllDays = ({ product, date, hotels, car }) => {
             {meal && <Item icon={Coffee} tone="meal" title={meal.text} />}
             {transfers.map((t) => <Item key={t.title} icon={/airport/i.test(t.title) ? Plane : Car} tone="transfer" title={t.title} sub={t.route} />)}
             {p.experiences.map((e) => <Item key={e} icon={ExploreIcon} tone="activity" title={e} />)}
-            {hotel ? <Item icon={HotelIcon} tone="hotel" title={`Overnight in ${p.city} at ${hotel.name} or similar`} sub={`${hotel.room}${hotel.stars ? ` · ${hotel.stars} star` : ''}`} /> : <Item icon={Check} tone="hotel" title="Departure day, no overnight stay" />}
+            {hotel ? <Item icon={HotelIcon} tone="hotel" title={<button type="button" onClick={() => window.dispatchEvent(new CustomEvent('ht-similar-hotels', { detail: p.city }))} className="text-left underline underline-offset-4 decoration-[#9ACDE5] hover:text-[#1F6F94]" data-testid={`inc-overnight-${p.day}`}>{`Overnight in ${p.city} at ${hotel.name} or similar`}</button>} sub={`${hotel.room}${hotel.stars ? ` · ${hotel.stars} star` : ''}`} /> : <Item icon={Check} tone="hotel" title="Departure day, no overnight stay" />}
           </ul>
         </li>
       );

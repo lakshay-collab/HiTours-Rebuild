@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { ChevronLeft, Lock, Tag, Check, Landmark, Wallet, BedDouble, UserPlus } from 'lucide-react';
+import { ChevronLeft, Lock, Tag, Check, Landmark, Wallet, BedDouble } from 'lucide-react';
 import { CountsRow } from '../components/booking/BookingSummary';
 import { ReviewRow } from '../components/booking/TrustReview';
 import Header from '../components/Header';
@@ -74,8 +74,9 @@ function HolidayCard({ product, date, rooms, owner, q, promos, applied, onApply,
           <Line label={`${fmtInr(q.adultPrice)} × ${q.adults} adult${q.adults === 1 ? '' : 's'}`} value={fmtInr(q.adultPrice * q.adults)} />
           {q.children > 0 && <Line label={`${fmtInr(q.childPrice)} × ${q.children} child${q.children === 1 ? '' : 'ren'}`} value={fmtInr(q.childPrice * q.children)} />}
           {totals.saving > 0 && <Line label={`Promo ${applied}`} value={`−${fmtInr(totals.saving)}`} green testId="checkout-discount" />}
+          {totals.fullOff > 0 && <Line label="Pay in full, 2% off" value={`−${fmtInr(totals.fullOff)}`} green testId="checkout-full-discount" />}
           <Line label="Total" value={fmtInr(totals.total)} strong testId="checkout-total" />
-          {totals.deposit && <Line label="Due today (10%)" value={fmtInr(totals.deposit)} strong green testId="checkout-due-today" />}
+          {totals.deposit && <Line label={`Due today (${totals.pct}%)`} value={fmtInr(totals.deposit)} strong green testId="checkout-due-today" />}
         </div>
         {children}
       </div>
@@ -117,7 +118,10 @@ export default function BookCheckout() {
     if (!q) return {};
     const saving = (offer?.promos.find((p) => p.code === applied) || {}).saving || 0;
     const total = q.total - saving;
-    return { saving, total, deposit: offer?.deposit_allowed && mode === 'deposit' ? jsround(total * offer.deposit_pct) : null };
+    const deposit = offer?.deposit_allowed ? jsround(total * offer.deposit_pct) : null;
+    const fullSaving = offer?.full_discount_pct ? jsround(total * offer.full_discount_pct) : 0;
+    const full = mode === 'full' || !deposit;
+    return { saving, beforeFull: total, deposit: full ? null : deposit, depositOption: deposit, pct: offer?.deposit_pct ? Math.round(offer.deposit_pct * 100) : 0, fullSaving, fullOff: full ? fullSaving : 0, total: full ? total - fullSaving : total };
   }, [q, offer, applied, mode]);
 
   if (!product) return <Navigate to="/asia" replace />;
@@ -177,19 +181,19 @@ export default function BookCheckout() {
                 <Field label="WhatsApp number" error={errors.phone}><input type="tel" className={inputCls} value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} onBlur={() => loadOffers()} placeholder="+91 98765 43210" data-testid="checkout-phone" autoComplete="tel" /></Field>
                 <Field label="Email for your booking confirmation" error={errors.email}><input type="email" className={inputCls} value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} onBlur={() => loadOffers()} placeholder="you@example.com" data-testid="checkout-email" autoComplete="email" /></Field>
               </div>
-              {second ? (
-                <div className="pt-4 border-t border-[#E4E3DB] flex flex-col gap-4" data-testid="checkout-second">
-                  <div className="flex items-center justify-between gap-3"><h3 className="eg-title-md text-[#002131]">Second traveller</h3><button type="button" onClick={() => setSecond(null)} className="eg-label-lg text-[#174358] underline underline-offset-4" data-testid="checkout-second-remove">Remove</button></div>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <Field label="Full name" error={errors.name2}><input className={inputCls} value={second.name} onChange={(e) => setSecond({ ...second, name: e.target.value })} placeholder="As on passport" data-testid="checkout-second-name" /></Field>
-                    <Field label="WhatsApp number" error={errors.phone2}><input type="tel" className={inputCls} value={second.phone} onChange={(e) => setSecond({ ...second, phone: e.target.value })} placeholder="+91 98765 43210" data-testid="checkout-second-phone" /></Field>
-                    <Field label="Email (optional)" error={errors.email2}><input type="email" className={inputCls} value={second.email} onChange={(e) => setSecond({ ...second, email: e.target.value })} placeholder="you@example.com" data-testid="checkout-second-email" /></Field>
-                  </div>
-                </div>
-              ) : q.adults + q.children > 1 && (
-                <button type="button" onClick={() => setSecond({ name: '', phone: '', email: '' })} className="self-start inline-flex items-center gap-2 h-11 px-5 rounded-full border border-[#1F6F94] eg-label-lg text-[#1F6F94] hover:bg-[#E3F1F8] transition-colors" data-testid="checkout-second-add"><UserPlus size={17} />Add another traveller</button>
-              )}
             </section>
+            {second ? (
+              <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="checkout-second">
+                <div className="flex items-center justify-between gap-3"><h2 className="eg-title-lg text-[#002131]">Second traveller</h2><button type="button" onClick={() => setSecond(null)} className="eg-label-lg text-[#174358] underline underline-offset-4" data-testid="checkout-second-remove">Remove</button></div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <Field label="Full name" error={errors.name2}><input className={inputCls} value={second.name} onChange={(e) => setSecond({ ...second, name: e.target.value })} placeholder="As on passport" data-testid="checkout-second-name" /></Field>
+                  <Field label="WhatsApp number" error={errors.phone2}><input type="tel" className={inputCls} value={second.phone} onChange={(e) => setSecond({ ...second, phone: e.target.value })} placeholder="+91 98765 43210" data-testid="checkout-second-phone" /></Field>
+                  <Field label="Email (optional)" error={errors.email2}><input type="email" className={inputCls} value={second.email} onChange={(e) => setSecond({ ...second, email: e.target.value })} placeholder="you@example.com" data-testid="checkout-second-email" /></Field>
+                </div>
+              </section>
+            ) : q.adults + q.children > 1 && (
+              <button type="button" onClick={() => setSecond({ name: '', phone: '', email: '' })} className="self-start -mt-3 eg-label-lg text-[#1F6F94] underline underline-offset-4 hover:text-[#002131]" data-testid="checkout-second-add">+ Add another traveller</button>
+            )}
             <section className="bg-white rounded-2xl border border-[#E4E3DB] p-5 md:p-6 flex flex-col gap-4" data-testid="checkout-pay">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <h2 className="eg-title-lg text-[#002131]">How would you like to pay?</h2>
@@ -197,10 +201,10 @@ export default function BookCheckout() {
               </div>
               {offer?.deposit_allowed ? (
                 <div className="flex flex-col gap-3">
-                  <Option value="deposit" title={`Pay 10% now: ${fmtInr(jsround(totals.total * offer.deposit_pct))}`} sub={`The balance of ${fmtInr(totals.total - jsround(totals.total * offer.deposit_pct))} is due by ${fmtDate(fromISO(offer.balance_due))}. We send you a secure payment link.`} testId="pay-mode-deposit" />
-                  <Option value="full" title={`Pay in full: ${fmtInr(totals.total)}`} sub="Nothing more to pay later." testId="pay-mode-full" />
+                  <Option value="deposit" title={`Pay only ${fmtInr(totals.depositOption)} now (${totals.pct}%)`} sub={`The balance of ${fmtInr(totals.beforeFull - totals.depositOption)} is due by ${fmtDate(fromISO(offer.balance_due))}. We send you a secure payment link.`} testId="pay-mode-deposit" />
+                  <Option value="full" title={totals.fullSaving ? `Pay in full and save 2%: ${fmtInr(totals.beforeFull - totals.fullSaving)}` : `Pay in full: ${fmtInr(totals.beforeFull)}`} sub={totals.fullSaving ? `You save a further ${fmtInr(totals.fullSaving)}. Nothing more to pay later.` : 'Nothing more to pay later.'} testId="pay-mode-full" />
                 </div>
-              ) : <p className="eg-body-md text-[#002131]">Your check-in is less than 60 days away, so the full amount of <strong>{fmtInr(totals.total)}</strong> is paid now.</p>}
+              ) : <p className="eg-body-md text-[#002131]">Your check-in is less than 30 days away, so the full amount of <strong>{fmtInr(totals.total)}</strong> is paid now.</p>}
               {gateway?.mock && <p className="eg-label-md rounded-lg bg-[#FBEADB] px-3 py-2 text-[#174358]" data-testid="checkout-mock-note">Test mode: Razorpay keys are not connected yet, so a simulated payment window is shown and no money moves.</p>}
               {payError && <p className="eg-label-lg text-[#B3261E]" data-testid="checkout-pay-error">{payError}</p>}
               <button type="button" onClick={pay} disabled={busy || !gateway} className={`${payCls} self-stretch md:self-start`} data-testid="checkout-pay-button"><Lock size={16} /> {busy ? 'Opening secure payment…' : `Pay ${fmtInr(dueNow)} securely`}</button>
@@ -216,7 +220,7 @@ export default function BookCheckout() {
         </div>
       </main>
       <div className="md:hidden fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur border-t border-[#E4E3DB] px-4 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))] flex items-center justify-between gap-3" data-testid="checkout-mobile-bar">
-        <div><p className="eg-title-lg text-[#002131] tabular-nums">{fmtInr(dueNow)}</p><p className="eg-label-md text-[#174358]">{totals.deposit ? 'Due today · 10%' : 'Total'}</p></div>
+        <div><p className="eg-title-lg text-[#002131] tabular-nums">{fmtInr(dueNow)}</p><p className="eg-label-md text-[#174358]">{totals.deposit ? `Due today · ${totals.pct}%` : 'Total'}</p></div>
         <button type="button" onClick={pay} disabled={busy || !gateway} className={`${payCls} !h-12 !px-6`} data-testid="checkout-mobile-pay"><Lock size={16} />Pay now</button>
       </div>
       <Footer />

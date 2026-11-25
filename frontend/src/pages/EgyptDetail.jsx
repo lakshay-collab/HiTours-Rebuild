@@ -92,7 +92,7 @@ import { buildDestinationReviews } from '../reviews/dynamicReviews';
 import LiveBookingCard, { LiveStickyBar } from '../components/booking/LiveBookingCard';
 import { InclusionTabs } from '../components/booking/InclusionTabs';
 import { readVerified } from '../booking/bookable';
-import { Zap, Star, Sparkles, Headset, MapPin } from 'lucide-react';
+import { Zap, Users, ShieldCheck, Sparkles, MapPin } from 'lucide-react';
 import { HiToursLogo } from '../components/egypt/EgyptIcons';
 
 const stop = (e) => e.preventDefault();
@@ -279,10 +279,10 @@ const ExpertsCard = ({ testId = 'eg-detail-experts' }) => (
 );
 
 const whyBook = (place) => [
-  [Star, 'Highly reviewed', `Rated ${trustBar.google.score} on Google and ${trustBar.tripadvisor.score} on TripAdvisor.`],
-  [Sparkles, 'AI enabled, expert led', 'Live prices and instant booking, checked by our team.'],
-  [Headset, 'On-ground support', `A local team in ${place}, on call 24/7 during your trip.`],
-  [MapPin, `${place} experts`, `Holidays built by people who know ${place}.`],
+  [Users, 'Over 1 million travellers', 'Have travelled with Hi Tours.'],
+  [ShieldCheck, '30 years of trust', 'Planning holidays for three decades.'],
+  [Sparkles, 'AI enabled', 'Live prices and instant booking.'],
+  [MapPin, `${place} experts`, `A team that knows ${place}, a call away.`],
 ];
 const WhyBookCard = ({ place, testId = 'eg-detail-why-book' }) => (
   <div className="rounded-2xl border border-[#C4CBD0] bg-[#FBF9F1] py-6 flex flex-col gap-6" data-testid={testId}>
@@ -298,7 +298,7 @@ const WhyBookCard = ({ place, testId = 'eg-detail-why-book' }) => (
       {whyBook(place).map(([Icon, h, t]) => (
         <div key={h} className="flex items-center gap-4">
           <span className="w-11 h-11 rounded-full bg-[#E0F7FF] shrink-0 flex items-center justify-center text-[#174358]"><Icon size={20} /></span>
-          <div className="flex flex-col gap-1"><p className="eg-title-md text-[#002131]">{h}</p><p className="eg-body-md text-[#174358]">{t}</p></div>
+          <div className="flex flex-col gap-0.5"><p className="eg-label-lg text-[#002131]">{h}</p><p className="eg-body-md text-[#174358]">{t}</p></div>
         </div>
       ))}
     </div>

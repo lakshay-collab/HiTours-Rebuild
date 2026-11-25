@@ -81,7 +81,9 @@ function StopText({ s, live }) {
           <ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
         </button>
       )}
-      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight">{live ? <HotelIcon size={16} className="text-[#308BB6]" /> : <Moon size={16} className="text-[#308BB6]" />}{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</p>}
+      {s.overnight && (live
+        ? <button type="button" onClick={() => window.dispatchEvent(new CustomEvent('ht-similar-hotels', { detail: s.city }))} className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358] underline underline-offset-4 decoration-[#9ACDE5] hover:text-[#002131] text-left" data-testid="eg-route-overnight"><HotelIcon size={16} className="text-[#308BB6] shrink-0" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</button>
+        : <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight"><Moon size={16} className="text-[#308BB6]" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</p>)}
     </div>
   );
 }
@@ -197,7 +199,8 @@ function SimilarHotels({ items, city }) {
     const show = (e) => {
       if (e.detail !== city || !box.current) return;
       setOpen(true);
-      window.scrollTo({ top: box.current.getBoundingClientRect().top + window.scrollY - 150, behavior: 'smooth' });
+      const top = box.current.closest('[data-testid="eg-stop-accommodation"]') || box.current;
+      window.scrollTo({ top: top.getBoundingClientRect().top + window.scrollY - 130, behavior: 'smooth' });
     };
     window.addEventListener('ht-similar-hotels', show);
     return () => window.removeEventListener('ht-similar-hotels', show);

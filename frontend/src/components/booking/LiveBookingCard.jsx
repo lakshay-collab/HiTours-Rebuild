@@ -132,7 +132,7 @@ export default function LiveBookingCard({ detail, onExpert, ratings, below }) {
       <button type="button" onClick={expert} className={expertCta} data-testid="live-speak-expert"><Headset size={18} />Speak to a {dest} expert</button>
       <ul className="flex flex-col gap-2 eg-label-md text-[#174358]" data-testid="live-perks">
         <li className="flex items-center gap-2"><Zap size={15} className="text-[#E75E26]" />Instant booking, confirmed on WhatsApp</li>
-        <li className="flex items-center gap-2"><Wallet size={15} className="text-[#1E7B4B]" />{date && daysUntil(date) < DEPOSIT_MIN_DAYS ? 'Pay securely by UPI, card or net banking' : `Pay just 10% today for check-ins ${DEPOSIT_MIN_DAYS}+ days away`}</li>
+        <li className="flex items-center gap-2"><Wallet size={15} className="text-[#1E7B4B]" />{!priced ? `Pay just 5% today for check-ins ${DEPOSIT_MIN_DAYS}+ days away` : daysUntil(date) < 30 ? 'Pay securely by UPI, card or net banking' : <span data-testid="live-pay-now">Pay only <strong className="text-[#1E7B4B]">{fmtInr(Math.round(q.adultPrice * (daysUntil(date) >= DEPOSIT_MIN_DAYS ? 0.05 : 0.5)))} per person</strong> now, the rest 30 days before check-in</span>}</li>
         <li className="flex items-center gap-2"><ShieldCheck size={15} className="text-[#174358]" />Free changes up to 30 days before check-in</li>
       </ul>
       {ratings && <div className="pt-4 border-t border-[#E4E3DB]">{ratings}</div>}

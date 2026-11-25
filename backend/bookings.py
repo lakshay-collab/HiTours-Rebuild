@@ -107,7 +107,17 @@ class PromoIn(BaseModel):
     phone: str = ''
 
 
-DEPOSIT_PCT, DEPOSIT_MIN_DAYS, BALANCE_DAYS_BEFORE = 0.10, 60, 30
+DEPOSIT_MIN_DAYS, BALANCE_DAYS_BEFORE, FULL_PAY_DISCOUNT = 60, 30, 0.02
+
+
+def deposit_pct(departure: date):
+    """Share due at booking: 5% at 60+ days out, 50% at 30 to 59 days, otherwise full payment (None)."""
+    d = days_ahead(departure)
+    return 0.05 if d >= DEPOSIT_MIN_DAYS else 0.5 if d >= BALANCE_DAYS_BEFORE else None
+
+
+def full_pay_pct(departure: date) -> float:
+    return FULL_PAY_DISCOUNT if days_ahead(departure) >= DEPOSIT_MIN_DAYS else 0
 # Promo codes: one per booking; the checkout auto-applies the biggest saving.
 PROMOS = [
     {'code': 'FIRSTTRIP', 'label': 'First trip with Hi Tours', 'pct': 5, 'rule': 'first'},
@@ -184,8 +194,8 @@ def register(db):
         q = await price_quote(db, body.product, body.departure, body.rooms)
         opts = await promo_options(db, q, body.departure, body.email.strip().lower(), body.phone)
         best = max((o for o in opts if o['eligible']), key=lambda o: o['saving'], default=None)
-        return {'total': q['total'], 'promos': opts, 'best': best and best['code'], 'deposit_allowed': days_ahead(body.departure) >= DEPOSIT_MIN_DAYS,
-                'deposit_pct': DEPOSIT_PCT, 'balance_due': (body.departure - timedelta(days=BALANCE_DAYS_BEFORE)).isoformat()}
+        return {'total': q['total'], 'promos': opts, 'best': best and best['code'], 'deposit_allowed': deposit_pct(body.departure) is not None,
+                'deposit_pct': deposit_pct(body.departure), 'full_discount_pct': full_pay_pct(body.departure), 'balance_due': (body.departure - timedelta(days=BALANCE_DAYS_BEFORE)).isoformat()}
 
     @router.post('/order')
     async def create_order(body: OrderIn):
@@ -201,11 +211,16 @@ def register(db):
             q['total'] = q['subtotal'] - hit['saving']
         kind = None
         if body.pay_mode == 'deposit':
-            if days_ahead(body.departure) < DEPOSIT_MIN_DAYS:
-                raise HTTPException(400, f'Paying a 10% deposit is open for check-ins {DEPOSIT_MIN_DAYS}+ days away')
+            pct = deposit_pct(body.departure)
+            if pct is None:
+                raise HTTPException(400, f'Check-ins less than {BALANCE_DAYS_BEFORE} days away are paid in full')
             kind = 'package'
-            q['deposit'] = jsround(q['total'] * DEPOSIT_PCT)
+            q['deposit'] = jsround(q['total'] * pct)
+            q['deposit_pct'] = pct
             q['balance_due'] = (body.departure - timedelta(days=BALANCE_DAYS_BEFORE)).isoformat()
+        elif full_pay_pct(body.departure):
+            q['full_pay_discount'] = jsround(q['total'] * full_pay_pct(body.departure))
+            q['total'] -= q['full_pay_discount']
         due_now = q.get('deposit', q['total'])
         amount_paise = due_now * 100
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
