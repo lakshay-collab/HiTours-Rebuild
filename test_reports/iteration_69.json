@@ -1,0 +1,25 @@
+{
+  "summary": "Full-stack testing of new Bali live-pricing package 'bali-kuta-ubud' plus Sri Lanka regression. Backend: 18/18 pytest cases pass (see /app/backend/tests/test_bali_live.py) — calendar shape/first-date/last-date/from_adult=27600, common date 2027-02-15 adult=27600 total=55200 hotels=['Kuta Central Park','Alam Puisi villa'], 2027-01-03 adult=32820 (Golden Tulip Jineng Resort), 2027-01-04 adult=30210 (Risata Resort and Spa), no dates in 2026-12-16..2027-01-02 gap, rooms=1-0 on 2027-01-10 total=54270, rooms=2-1 total=67090 child=8750, rooms=2-0,2-0 total=105200, unknown key 404, >4 rooms 400, bad rooms string 400 (not 500). Order 2027-01-04 2a0c -> amount 6042000 paise quote.total 60420 quote.hotels present; 2026-12-25 -> 400 'not available'; too-soon -> 400; Sri Lanka regression order works. /api/live-packages/refresh returns rates_read_at. Frontend: /asia/bali/holidays first card = 'Bali Beaches and Ubud...' with 'From ₹27,600 per person' and 'View details' button opens live-details-modal centered. Step 0 calendar navigates with calendar-next to Jan 2027, prices under each date (Jan 3 ₹32.8k, Jan 4 ₹30.2k, Jan 5 ₹27.6k), Continue disabled until a date picked. Step 1 rooms picker, step 2 name/email/phone with live-details-error messages for empty/invalid values (3 errors on empty submit, 2 on invalid email + missing phone). Back, close, Escape all close the modal. Mobile 390x800 shows popup as bottom sheet with no horizontal overflow. Detail /asia/book/bali-kuta-ubud?date=2027-01-04&rooms=2-0 shows live-price 'Live price · check-in 4 Jan · 2 adults · ₹60,420 total · ₹30,210 per adult · Risata Resort and Spa and Alam Puisi villa or similar', 7 days chip, Kuta>Ubud route, 2 cities, no broken images. No-params detail shows live-price-from 'From ₹27,600 per person'. Dates page: changing date Jan 3 -> ₹65,640, Jan 4 -> ₹60,420, Jan 5 -> ₹55,200 (matches spec exactly); Continue navigates to checkout with same total; checkout 'Pay ₹55,200 securely' CTA shown (not clicked to avoid real Razorpay call). /asia/hotel-packages/kuta-hotel-only correctly redirects to /asia/book/bali-kuta-ubud. Sri Lanka /asia/book/fully-loaded-sri-lanka still renders Year-End sale badge, ₹51,505 strike and ₹46,484 from price. All 2 real Razorpay test bookings created during backend testing were deleted by the cleanup fixture. No lead was submitted via the popup (avoided to protect CRM — form validation verified instead).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [
+    "/app/backend/tests/test_bali_live.py",
+    "/app/test_reports/pytest/bali_live.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "sheet_rates.read_sheets() hard-depends on Zoho reachability during /refresh; timeout is 30s per request — if Zoho slows down the /refresh call can take longer than the stated ~10s and client may need higher timeout.",
+    "live_packages.price(): for activities when pax==1 falls back to paying=2 (child-free pricing), but only for activities; tickets always charge per adult. Documented but subtle — fine per spec.",
+    "live_packages._stay() picks the cheapest hotel using (usd + child_usd * children); breaks ties implicitly by first-seen. Deterministic as long as sheet order is stable.",
+    "bookings.quote() still ignores departure date inside adult_price(base, d) — flagged earlier iterations, not blocking the live branch (live uses its own quote).",
+    "Modal lead submission sends to real CRM; test deliberately did not submit. Consider a test-mode flag to short-circuit CRM pushes for QA runs."
+  ],
+  "updated_files": ["/app/backend/tests/test_bali_live.py"],
+  "success_rate": {"backend": "100% (18/18)", "frontend": "100% of listed flows"},
+  "test_credentials": "N/A (no auth)",
+  "seed_data_creation": "Created and deleted 2 real Razorpay TEST orders (1 bali + 1 sri-lanka) via test fixture; no leads created.",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Backend regression suite at /app/backend/tests/test_bali_live.py (pytest, loads REACT_APP_BACKEND_URL via dotenv). Keep Razorpay order count <=6 per run. CRM lead submission from LiveDetailsModal is real — do not submit; verify validation only. The live calendar endpoint takes ~10s on a cold cache (fetches 4 Zoho sheets); use the generous timeout in tests.",
+  "rca of the issue": "No defects found."
+}

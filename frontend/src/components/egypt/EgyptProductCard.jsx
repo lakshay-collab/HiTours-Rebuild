@@ -72,8 +72,10 @@ export default function EgyptProductCard({ p, index = 0 }) {
               {meals != null && <Stat icon={MealIcon} value={`${meals} meal${meals === 1 ? '' : 's'}`} testId="eg-product-meals" />}
             </div>
           )}
-          <SalePrice price={p.price} noSale={p.noSale} className="mt-auto pt-4" testId="eg-product-price" />
-          {p.liveKey && <span className="eg-btn-filled mt-4 w-full !h-12 eg-title-md" data-testid="eg-product-view-details">View details</span>}
+          <div className="mt-auto pt-4 flex items-end justify-between gap-3">
+            <SalePrice price={p.price} noSale={p.noSale} testId="eg-product-price" />
+            {p.liveKey && <span className="shrink-0 inline-flex items-center gap-1 eg-label-lg text-[#174358] underline underline-offset-4 pb-0.5" data-testid="eg-product-view-details">Check availability<ChevronRight size={16} /></span>}
+          </div>
         </div>
       </Wrap>
       {details && <Suspense fallback={null}><LiveDetailsModal liveKey={p.liveKey} onClose={() => setDetails(false)} /></Suspense>}
