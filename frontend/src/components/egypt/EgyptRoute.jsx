@@ -19,6 +19,7 @@ const HEADER = 120;
 export const BulletMark = ({ text }) => {
   const t = text.toLowerCase();
   const cls = 'mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0';
+  if (/airport|arrivals|fly home/.test(t)) return <span className={`${cls} bg-[#308BB6] text-white`} data-testid="eg-bullet-plane"><Plane size={14} /></span>;
   if (/transfer|drive to|driven|pick-?up|drop-?off/.test(t)) return <span className={`${cls} bg-[#FB7F26] text-white`}><Car size={14} /></span>;
   if (/\bflights?\b|\bfly\b|\bflying\b/.test(t)) return <span className={`${cls} bg-[#308BB6] text-white`}><Plane size={14} /></span>;
   return <span className={`${cls} bg-[#9ACDE5] text-[#002131]`}><span className="w-1.5 h-1.5 rounded-full bg-[#002131]" /></span>;
@@ -47,7 +48,7 @@ export function toDays(stops) {
       days.push({
         key: `${s.letter}-${j}`, letter: String(n ?? si + 1), name: dayPart.trim(), city: s.name, title: rest.join(' · ').trim() || s.name,
         subtitle: j === 0 ? s.subtitle : null, bullets: g.bullets, images: imgs,
-        accommodation: j === 0 ? s.accommodation : null, activities: acts, overnight: s.name
+        accommodation: j === 0 ? s.accommodation : null, activities: acts, overnight: s.name, hotel: s.accommodation?.name
       });
     });
   });
@@ -55,9 +56,9 @@ export function toDays(stops) {
   return days;
 }
 
-function StopText({ s }) {
+function StopText({ s, live }) {
   const [open, setOpen] = useState(false);
-  const canToggle = s.bullets.length > PREVIEW_BULLETS;
+  const canToggle = !live && s.bullets.length > PREVIEW_BULLETS;
   const shown = open || !canToggle ? s.bullets : s.bullets.slice(0, PREVIEW_BULLETS);
   const hidden = s.bullets.length - PREVIEW_BULLETS;
   return (
@@ -74,7 +75,7 @@ function StopText({ s }) {
           <ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
         </button>
       )}
-      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight"><Moon size={16} className="text-[#308BB6]" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : `Overnight in ${s.overnight}`}</p>}
+      {s.overnight && <p className="mt-4 inline-flex items-center gap-2 eg-label-lg text-[#174358]" data-testid="eg-route-overnight"><Moon size={16} className="text-[#308BB6]" />{/cruise|on board/i.test(s.overnight) ? 'Overnight on board' : live && s.hotel ? `Overnight in ${s.overnight} at ${s.hotel.replace(/ Hotel or similar$/, ' or similar')}` : `Overnight in ${s.overnight}`}</p>}
     </div>
   );
 }
@@ -183,6 +184,30 @@ function OptionCard({ a, id, city }) {
   );
 }
 
+function SimilarHotels({ items }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="flex flex-col gap-3" data-testid="eg-similar-hotels">
+      <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} className="self-start inline-flex items-center gap-1.5 h-9 px-4 rounded-full border border-[#C4CBD0] bg-white eg-label-lg text-[#174358] hover:border-[#174358] transition-colors" data-testid="eg-similar-toggle">
+        Other selected hotels ({items.length})<ChevronRight size={16} className={`transition-transform ${open ? '-rotate-90' : 'rotate-90'}`} />
+      </button>
+      {open && (
+        <div className="rounded-xl border border-[#E4E3DB] bg-white p-4 flex flex-col gap-4" data-testid="eg-similar-list">
+          <p className="eg-body-md text-[#174358] rounded-lg bg-[#FBEADB] px-3 py-2">These are our featured hotels for this tour. Hotel allocation depends on availability and seasonality, so you may be assigned any hotel from our selection.</p>
+          <ul className="flex flex-col gap-3">
+            {items.map((h) => (
+              <li key={h.name} className="flex items-center gap-4" data-testid="eg-similar-hotel">
+                <img src={h.image} alt={h.name} className="w-16 h-16 rounded-xl object-cover shrink-0" loading="lazy" />
+                <div className="min-w-0"><p className="eg-title-md text-[#002131]">{h.name}</p><p className="eg-label-md text-[#174358]"><span className="text-[#FB7F26]">{'★'.repeat(h.stars)}</span> {h.stars} star · {h.room}</p></div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Accommodation({ a, city }) {
   const all = [a, ...(a.options || [])];
   const four = all.find((h) => h.stars === 4);
@@ -192,6 +217,7 @@ function Accommodation({ a, city }) {
       <div className="flex flex-col gap-3" data-testid="eg-stop-accommodation">
         <SectionHead icon={HotelIcon} title={route.accommodationHeading} />
         <HotelCard a={a} city={city} />
+        {a.similar?.length > 0 && <SimilarHotels items={a.similar} />}
       </div>
     );
   }
@@ -225,12 +251,12 @@ function ActivityDesc({ text }) {
   );
 }
 
-function Activities({ items }) {
+function Activities({ items, live }) {
   const track = useRef(null);
   const scroll = (d) => track.current && track.current.scrollBy({ left: d * 292, behavior: 'smooth' });
   return (
     <div className="flex flex-col gap-3 min-w-0" data-testid="eg-stop-activities">
-      <SectionHead icon={ExploreIcon} title={route.programHeading} extra={<span className="eg-body-md text-[#174358]">({items.length})</span>} />
+      <SectionHead icon={ExploreIcon} title={live ? 'Your included activities' : route.programHeading} extra={<span className="eg-body-md text-[#174358]">({items.length})</span>} />
       <div className="relative">
         <div ref={track} className="flex gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0" data-testid="eg-activities-track">
           {items.map((a) => (
@@ -256,7 +282,7 @@ function Activities({ items }) {
   );
 }
 
-export default function EgyptRoute({ onSummary, stops = route.stops }) {
+export default function EgyptRoute({ onSummary, stops = route.stops, live = false }) {
   const days = useMemo(() => toDays(stops), [stops]);
   const [active, setActive] = useState(0);
   const [stuck, setStuck] = useState(false);
@@ -293,26 +319,29 @@ export default function EgyptRoute({ onSummary, stops = route.stops }) {
   return (
     <div className="bg-[#F6F4EB] rounded-xl" id="itinerary" data-testid="eg-detail-route">
       <div ref={head} className="sticky top-0 z-20 bg-[#F0EEE6] rounded-t-xl px-4 md:px-10 shadow-[0_6px_12px_-8px_rgba(0,33,49,0.2)]" data-testid="eg-route-header">
-        <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
+        {!live && <div className="flex items-center justify-between gap-3 pt-3.5 pb-1.5">
           <h2 className="eg-title-md md:eg-headline-md !leading-7 text-[#002131] truncate">{route.h2}</h2>
           <button type="button" onClick={onSummary} className="shrink-0 inline-flex items-center gap-1 h-9 px-4 rounded-full eg-grad-harbor hover:opacity-90 eg-label-lg text-white transition-opacity" data-testid="eg-route-summary-cta"><span className="md:hidden">{route.summaryShort}</span><span className="hidden md:inline">{route.summaryCta}</span></button>
-        </div>
-        {!stuck && <p className="eg-body-md text-[#174358] pb-3" data-testid="eg-route-sub">{route.sub}</p>}
-        <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar py-3" data-testid="eg-route-tabs">
+        </div>}
+        {!stuck && !live && <p className="eg-body-md text-[#174358] pb-3" data-testid="eg-route-sub">{route.sub}</p>}
+        <div className="flex items-center gap-3">
+        <div role="tablist" className="flex-1 min-w-0 flex gap-2 overflow-x-auto no-scrollbar py-3" data-testid="eg-route-tabs">
           {days.map((d, i) => (
             <button key={d.key} ref={(el) => { tabs.current[i] = el; }} role="tab" aria-selected={active === i} onClick={() => goTo(i)} className={`shrink-0 h-9 px-4 rounded-full eg-label-lg whitespace-nowrap transition-colors ${active === i ? 'bg-[#174358] text-white' : 'bg-white border border-[#C4CBD0] text-[#174358] hover:border-[#174358]'}`} data-testid={`eg-route-tab-${i}`}>{d.name}</button>
           ))}
+        </div>
+        {live && <button type="button" onClick={onSummary} className="shrink-0 inline-flex items-center h-9 px-4 rounded-full eg-grad-harbor hover:opacity-90 eg-label-lg text-white transition-opacity" data-testid="eg-route-summary-cta">{route.summaryShort}</button>}
         </div>
       </div>
       <div className="px-4 md:px-10 pt-8 pb-7 flex flex-col divide-y divide-[#DDD9CE]">
         {days.map((s, i) => (
           <section key={s.key} ref={(el) => { refs.current[i] = el; }} id={`stop-${i}`} className="py-8 first:pt-0 last:pb-0 flex flex-col gap-8" data-testid={`eg-route-section-${i}`}>
             <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-8">
-              <StopText s={s} />
+              <StopText s={s} live={live} />
               <StopCarousel images={s.images} name={s.title} className="hidden md:block" />
             </div>
             {s.accommodation && <Accommodation a={s.accommodation} city={s.name} />}
-            {s.activities && s.activities.length > 0 && <Activities items={s.activities} />}
+            {s.activities && s.activities.length > 0 && <Activities items={s.activities} live={live} />}
           </section>
         ))}
       </div>

@@ -34,7 +34,7 @@ export default function BookConfirmed() {
                 <CheckCircle2 size={44} className="text-[#8DBE9C]" />
                 <h1 className="eg-headline-lg text-[#002131]" data-testid="confirmed-title">{booking.status === 'paid' ? `You're going to ${product.destination}, ${booking.contact.name.split(' ')[0]}!` : 'Payment pending'}</h1>
                 <p className="eg-body-lg text-[#002131]">Booking reference <strong data-testid="confirmed-ref">{booking.booking_id}</strong>{booking.mock && <span className="ml-2 rounded-md bg-[#FBEADB] px-2 py-0.5 eg-label-md text-[#174358]">test booking, no payment taken</span>}</p>
-                <p className="eg-body-md text-[#5B6B74]">{product.title} · check-in {date && fmtDate(date)} · {q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? `, ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} in {q.rooms} room{q.rooms === 1 ? '' : 's'} · paid {fmtInr(q.total)}</p>
+                <p className="eg-body-md text-[#5B6B74]">{product.title} · check-in {date && fmtDate(date)} · {q.adults} adult{q.adults === 1 ? '' : 's'}{q.children ? `, ${q.children} child${q.children === 1 ? '' : 'ren'}` : ''} in {q.rooms} room{q.rooms === 1 ? '' : 's'} · paid {fmtInr((booking?.amount_paise || q.total * 100) / 100)}</p>
                 <hr className="border-[#E4E3DB]" />
                 <div className="flex flex-col gap-2 eg-body-md text-[#002131]">
                   <p className="flex items-start gap-2"><MessageCircle size={16} className="text-[#174358] shrink-0" />Your booking is created. A WhatsApp confirmation is on its way to your number ending {booking.contact.phone.slice(-4)}, with your itinerary by email ({booking.contact.email}).</p>

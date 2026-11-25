@@ -71,6 +71,9 @@ export const isBookable = (d, product) => (product?.live
   ? d >= firstBookable() && !!LIVE_DATES[product.live]?.[toISO(d)]
   : d >= firstBookable() && d <= lastBookable() && !isBlackout(d));
 export const fmtDate = (d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) => d.toLocaleDateString('en-GB', opts);
+export const DEPOSIT_MIN_DAYS = 60;
+export const daysUntil = (d) => Math.round((d - startOfToday()) / 86400000);
+export const readVerified = () => { try { return JSON.parse(localStorage.getItem('ht_verified')); } catch (e) { return null; } };
 export const fmtInr = (n) => `₹${Math.round(n).toLocaleString('en-IN')}`;
 export const encodeRooms = (rooms) => rooms.map((r) => `${r.adults}-${r.children}`).join(',');
 export const decodeRooms = (s) => {
@@ -99,8 +102,8 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
   data.detail.price = round10(src.detail.price);
   data.detail.live = opts.live;
   data.detail.glance = undefined;
-  data.crumbs = [...data.crumbs.slice(0, -1), { label: `${src.detail.title} (book online)` }];
-  const hotels = data.route.stops.map((s) => ({ name: s.accommodation.name, description: s.accommodation.description, image: s.accommodation.images?.[0], dayLabel: s.dayLabel, city: s.name }));
+  data.crumbs = [...data.crumbs.slice(0, -1), { label: src.detail.shortTitle || src.detail.title }];
+  const hotels = data.route.stops.map((s) => ({ similar: s.accommodation.similar || [], name: s.accommodation.name, description: s.accommodation.description, image: s.accommodation.images?.[0], dayLabel: s.dayLabel, city: s.name }));
   const included = data.route.stops.flatMap((s) => s.activities.map((a) => ({ day: a.day, name: a.name })));
   const transfers = [];
   data.route.stops.forEach((s) => {
@@ -130,7 +133,7 @@ const makeBookable = (bySlug, product, key, opts = {}) => {
     };
   });
   return {
-    key, title: src.detail.title, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
+    key, title: src.detail.title, shortTitle: src.detail.shortTitle || src.detail.title, mealsList: src.detail.meals || [], glance: src.glance, base: src.detail.price, nights: Number(src.detail.days.match(/(\d+) nights/)[1]),
     days: Number(src.detail.days.match(/^(\d+) days/)[1]), image: src.detail.gallery[0], alt: src.detail.alt, destination, live: opts.live, listingPath: opts.listingPath || '/asia/sri-lanka', arrival: opts.arrival || 'Colombo',
     detailPath: `/asia/book/${key}`, datesPath: `/asia/book/${key}/dates`, checkoutPath: `/asia/book/${key}/checkout`,
     hotels, included, transfers, dayPlan, meals: src.detail.services.find(([l]) => /meals/.test(l))?.[0], transport: src.detail.transport,

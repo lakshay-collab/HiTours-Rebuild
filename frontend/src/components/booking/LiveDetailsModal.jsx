@@ -103,6 +103,7 @@ export default function LiveDetailsModal({ liveKey, onClose }) {
     try { sessionStorage.setItem('ht_contact', JSON.stringify({ name: contact.name, phone: `${contact.country_code}${contact.phone}`.replace(/[^\d+]/g, '') })); } catch (e) { /* private mode */ }
     document.body.style.overflow = '';
     navigate(`${product.detailPath}?date=${toISO(date)}&rooms=${encodeRooms(rooms)}`);
+    onClose();
   };
 
   const submit = async () => {

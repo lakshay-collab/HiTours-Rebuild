@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
-import { BedDouble, Camera, Car, Check, ChevronDown, LayoutList } from 'lucide-react';
+import { BedDouble, Camera, Car, Check, ChevronDown, LayoutList, ListChecks, Plane, Utensils } from 'lucide-react';
 import { addDays, fmtDate } from '../../booking/bookable';
 
 const TABS = [
-  { id: 'all', label: 'All, day by day', icon: LayoutList },
-  { id: 'hotels', label: 'Your Hotels', icon: BedDouble },
-  { id: 'experiences', label: 'Your Experiences', icon: Camera },
-  { id: 'transfers', label: 'Your Transfers', icon: Car },
+  { id: 'all', label: 'Day by day', icon: LayoutList },
+  { id: 'summary', label: 'Quick summary', icon: ListChecks },
+  { id: 'hotels', label: 'Hotels', icon: BedDouble },
+  { id: 'experiences', label: 'Experiences', icon: Camera },
+  { id: 'transfers', label: 'Transfers', icon: Car },
+  { id: 'meals', label: 'Meals', icon: Utensils },
 ];
-const PREVIEW_DAYS = 3;
+const PREVIEW_DAYS = 7;
 
 const hotelMeta = (h) => {
   const parts = h.description.split(' · ');
   const stars = parts.find((p) => /★/.test(p)) || '';
-  const [name, city] = h.name.split(', ');
+  const [name, city] = h.name.replace(/ or similar$/, '').split(', ');
   return { parts, stars, name, city: city || h.city };
 };
 const HotelName = ({ h }) => { const { stars, name, city } = hotelMeta(h); return <>{name}{city ? `, ${city}` : ''} <span className="text-[#6F777C] font-normal">(or similar{stars ? ` ${stars}` : ''})</span></>; };
 
+const isFlight = (t) => /airport|arrivals/i.test(t);
 const Row = ({ icon: Icon, color, children, testId }) => <li className="flex items-start gap-2.5 eg-body-md text-[#002131]" data-testid={testId}><Icon size={16} className={`${color} mt-1 shrink-0`} /><span>{children}</span></li>;
 
 const AllDays = ({ product, date, expanded, onToggle }) => {
@@ -29,7 +32,7 @@ const AllDays = ({ product, date, expanded, onToggle }) => {
           <li key={p.day} className="py-3 first:pt-0 flex flex-col gap-2" data-testid={`inc-all-day-${p.day}`}>
             <p className="eg-label-lg text-[#002131]"><span className="inline-flex items-center justify-center h-6 px-2.5 rounded-full bg-[#308BB6] text-white eg-label-md mr-2">Day {p.day}</span>{p.title}{date && <span className="eg-label-md text-[#6F777C] font-normal"> · {fmtDate(addDays(date, p.day - 1), { weekday: 'short', day: 'numeric', month: 'short' })}</span>}</p>
             <ul className="flex flex-col gap-1.5 pl-1">
-              {p.transfers.map((t) => <Row key={t} icon={Car} color="text-[#FB7F26]">{t}</Row>)}
+              {p.transfers.map((t) => <Row key={t} icon={isFlight(t) ? Plane : Car} color={isFlight(t) ? 'text-[#308BB6]' : 'text-[#FB7F26]'}>{t}</Row>)}
               {p.experiences.map((e) => <Row key={e} icon={Camera} color="text-[#308BB6]">{e}</Row>)}
               {p.hotel ? <Row icon={BedDouble} color="text-[#174358]">Overnight at <HotelName h={p.hotel} /></Row> : <Row icon={Check} color="text-[#6F777C]">Departure day, no overnight</Row>}
             </ul>
@@ -81,20 +84,40 @@ const Transfers = ({ product }) => (
   <div className="flex flex-col gap-3" data-testid="inc-transfers">
     <p className="eg-body-md text-[#174358] rounded-xl bg-[#FBEADB] px-3 py-2">{product.transport}</p>
     <ul className="flex flex-col gap-2">
-      {product.transfers.map((t, i) => <Row key={i} icon={Car} color="text-[#FB7F26]"><span className="text-[#6F777C]">{t.day}:</span> {t.text}</Row>)}
+      {product.transfers.map((t, i) => <Row key={i} icon={isFlight(t.text) ? Plane : Car} color={isFlight(t.text) ? 'text-[#308BB6]' : 'text-[#FB7F26]'}><span className="text-[#6F777C]">{t.day}:</span> {t.text}</Row>)}
     </ul>
   </div>
 );
 
-export const InclusionTabs = ({ product, date }) => {
+const Summary = ({ product }) => (
+  <ul className="flex flex-col divide-y divide-[#E4E3DB]" data-testid="inc-summary">
+    {product.glance.days.map((d) => {
+      const [day, rest] = d.title.split(': ');
+      return (
+        <li key={d.title} className="py-3 first:pt-0 flex flex-col gap-1">
+          <p className="eg-label-lg text-[#002131]"><span className="inline-flex items-center justify-center h-6 px-2.5 rounded-full bg-[#308BB6] text-white eg-label-md mr-2">{day}</span>{(rest || '').replace(/ \(B\)$/, '')}</p>
+          <p className="eg-body-md text-[#174358]">{d.highlights.join(' · ')}</p>
+        </li>
+      );
+    })}
+  </ul>
+);
+
+const Meals = ({ product }) => (
+  <ul className="flex flex-col gap-2" data-testid="inc-meals">
+    {(product.mealsList.length ? product.mealsList : [product.meals]).map((m) => <Row key={m} icon={Utensils} color="text-[#308BB6]">{m}</Row>)}
+  </ul>
+);
+
+export const InclusionTabs = ({ product, date, id }) => {
   const [tab, setTab] = useState('all');
   const [expanded, setExpanded] = useState(false);
-  const counts = { all: product.dayPlan.length, hotels: product.hotels.length, experiences: product.included.length, transfers: product.transfers.length };
+  const counts = { all: product.dayPlan.length, summary: product.glance.days.length, hotels: product.hotels.length, experiences: product.included.length, transfers: product.counts.transfers || product.transfers.length, meals: product.counts.meals };
   return (
-    <section className="bg-white rounded-2xl border border-[#C4CBD0] p-4 md:p-5 flex flex-col gap-4" data-testid="book-inclusion-tabs">
+    <section id={id} className="bg-white rounded-2xl border border-[#C4CBD0] p-4 md:p-5 flex flex-col gap-4 scroll-mt-4" data-testid="book-inclusion-tabs">
       <div className="flex flex-col gap-1">
         <h2 className="eg-title-lg text-[#002131]">Everything included in your holiday</h2>
-        <p className="eg-label-md text-[#6F777C]">{product.hotels.length} hotels · {product.included.length} experiences · {product.transfers.length} private transfers · {product.meals}</p>
+        <p className="eg-label-md text-[#6F777C]">{product.hotels.length} hotels · {product.included.length} experiences · {product.counts.transfers || product.transfers.length} private transfers · {product.meals}</p>
       </div>
       <div role="tablist" className="flex gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
         {TABS.map(({ id, label, icon: Icon }) => (
@@ -107,6 +130,8 @@ export const InclusionTabs = ({ product, date }) => {
       {tab === 'hotels' && <Hotels product={product} date={date} />}
       {tab === 'experiences' && <Experiences product={product} />}
       {tab === 'transfers' && <Transfers product={product} />}
+      {tab === 'summary' && <Summary product={product} />}
+      {tab === 'meals' && <Meals product={product} />}
     </section>
   );
 };

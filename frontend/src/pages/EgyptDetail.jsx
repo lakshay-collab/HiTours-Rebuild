@@ -89,6 +89,10 @@ import { ratings as trustBar } from '../mock';
 import { BY_SLUG } from '../tours/tripIndex';
 import { BOOKABLE, decodeRooms, fromISO, quote, useLive, fmtInr, fmtDate as fmtBookDate } from '../booking/bookable';
 import { buildDestinationReviews } from '../reviews/dynamicReviews';
+import LiveBookingCard, { LiveStickyBar } from '../components/booking/LiveBookingCard';
+import { InclusionTabs } from '../components/booking/InclusionTabs';
+import { readVerified } from '../booking/bookable';
+import { Zap } from 'lucide-react';
 
 const stop = (e) => e.preventDefault();
 
@@ -150,15 +154,18 @@ function Gallery({ detail }) {
 }
 
 function Head({ detail }) {
+  const who = detail.live ? (readVerified()?.name || '').trim().split(' ')[0] : '';
+  const title = detail.live ? `${detail.shortTitle || detail.title}${who ? ` for ${who}` : ''}` : detail.title;
   return (
     <div className="eg-wide" data-testid="eg-detail-head">
       {detail.media === 'portrait' ? <ReelGallery detail={detail} /> : <Gallery detail={detail} />}
       <div className="bg-[#F0EEE6] rounded-b-2xl p-4 md:p-6">
         <div className="flex flex-col gap-4">
-            <h1 className="eg-card-title !text-[22px] !leading-[28px] sm:!text-[26px] sm:!leading-8 md:!text-[30px] md:!leading-9 text-[#002131]" data-testid="eg-detail-title">{detail.title}</h1>
+            <h1 className="eg-card-title !text-[22px] !leading-[28px] sm:!text-[26px] sm:!leading-8 md:!text-[30px] md:!leading-9 text-[#002131]" data-testid="eg-detail-title">{title}</h1>
             <div className="flex flex-wrap items-center gap-2" data-testid="eg-detail-facts">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]" data-testid="eg-detail-days"><CalendarIcon size={18} className="text-[#308BB6]" />{detail.stats.days} days</span>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#C4CBD0] px-3 py-1.5 eg-label-lg text-[#002131]" data-testid="eg-detail-cities"><PinIcon size={18} className="text-[#308BB6]" />{detail.stats.cities} cities</span>
+              {detail.bookable && <span className="inline-flex items-center gap-1.5 rounded-full bg-[#FFF1E8] border border-[#F6C3A6] px-3 py-1.5 eg-label-lg text-[#B4421A]" data-testid="eg-detail-instant"><Zap size={16} className="fill-[#E75E26] text-[#E75E26]" />Instant booking</span>}
             </div>
             <div className="pt-2 border-t border-[#E4E3DB] flex flex-col gap-2" data-testid="eg-detail-route-block">
               <span className="eg-label-lg text-[#002131]">{detail.routeLabel}</span>
@@ -439,17 +446,17 @@ export default function EgyptDetail() {
       <main className="flex flex-col gap-8 pb-28 md:pb-[100px]">
         <Head detail={detail} />
         <Crumbs crumbs={crumbs} />
-        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price"><PriceCard detail={detail} inr={inr} onCta={openLead} /></div>
+        <div className="eg-wide md:hidden" data-testid="eg-detail-mobile-price">{detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} /> : <PriceCard detail={detail} inr={inr} onCta={openLead} />}</div>
         <div className="flex flex-col gap-14 md:gap-[72px]">
           <div className="eg-wide flex flex-col md:flex-row gap-8">
             <div className="flex-1 min-w-0 flex flex-col gap-8">
               <ExpertCard detail={detail} />
-              <EgyptRoute onSummary={showSummary} stops={route.stops} />
-              <div className="md:hidden"><ExpertsCard testId="eg-detail-experts-mobile" /></div>
+              {detail.live && <InclusionTabs product={BOOKABLE[detail.live]} date={fromISO(new URLSearchParams(window.location.search).get('date'))} id="included" />}
+              <EgyptRoute onSummary={showSummary} stops={route.stops} live={!!detail.live} />
+              <div className={detail.live ? '' : 'md:hidden'}><ExpertsCard testId="eg-detail-experts-mobile" /></div>
             </div>
             <aside className="hidden md:flex w-[384px] shrink-0 flex-col gap-6 self-start sticky top-6 max-h-[calc(100vh-24px)] overflow-y-auto no-scrollbar" data-testid="eg-detail-sidebar">
-              <PriceCard detail={detail} inr={inr} onCta={openLead} />
-              <ExpertsCard />
+              {detail.live ? <LiveBookingCard detail={detail} onExpert={openLead} /> : <><PriceCard detail={detail} inr={inr} onCta={openLead} /><ExpertsCard /></>}
             </aside>
           </div>
           <Glance open={summaryOpen} setOpen={setSummaryOpen} glance={glance} stops={route.stops} />
@@ -460,7 +467,7 @@ export default function EgyptDetail() {
           <Steps />
         </div>
       </main>
-      <StickyBar detail={detail} inr={inr} onCta={openLead} />
+      {detail.live ? <LiveStickyBar detail={detail} /> : <StickyBar detail={detail} inr={inr} onCta={openLead} />}
       <DesignEscapeModal open={leadOpen} onClose={closeLead} destination={dest.name} tripTitle={detail.title} image={detail.gallery?.[0]} imageAlt={detail.alt} />
       <ScrollTop className="bottom-24 left-4 md:bottom-[104px] md:left-10" />
       <Footer />

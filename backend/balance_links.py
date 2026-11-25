@@ -86,7 +86,7 @@ async def sync_booking(db, b: dict) -> None:
 
 
 async def sync_all(db) -> None:
-    async for b in db.bookings.find({'kind': {'$in': ['group', 'hotel']}, 'status': 'paid', 'mock': False, 'fully_paid': {'$ne': True}}, {'_id': 0}):
+    async for b in db.bookings.find({'kind': {'$in': ['group', 'hotel', 'package']}, 'status': 'paid', 'mock': False, 'fully_paid': {'$ne': True}}, {'_id': 0}):
         try:
             await sync_booking(db, b)
         except Exception as exc:  # one bad booking must not stop the run

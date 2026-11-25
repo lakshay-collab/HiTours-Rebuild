@@ -88,6 +88,65 @@ class OrderIn(BaseModel):
     departure: date
     rooms: List[Room] = Field(min_length=1, max_length=6)
     contact: Contact
+    promo: Optional[str] = None
+    pay_mode: str = 'full'
+
+
+class PromoIn(BaseModel):
+    product: str
+    departure: date
+    rooms: List[Room] = Field(min_length=1, max_length=6)
+    email: str = ''
+    phone: str = ''
+
+
+DEPOSIT_PCT, DEPOSIT_MIN_DAYS, BALANCE_DAYS_BEFORE = 0.10, 60, 30
+# Promo codes: one per booking; the checkout auto-applies the biggest saving.
+PROMOS = [
+    {'code': 'FIRSTTRIP', 'label': 'First trip with Hi Tours', 'pct': 5, 'rule': 'first'},
+    {'code': 'COUPLES', 'label': 'Couples escape', 'flat': 2000, 'rule': 'couple'},
+    {'code': 'EARLYBIRD', 'label': 'Early bird, 60+ days ahead', 'pct': 7, 'rule': 'early'},
+    {'code': 'FAMILY', 'label': 'Family holiday', 'flat': 3000, 'rule': 'family'},
+]
+
+
+def days_ahead(departure: date) -> int:
+    return (departure - ist_today()).days
+
+
+async def promo_options(db, q: dict, departure: date, email: str, phone: str) -> list:
+    first = True
+    if email or phone:
+        ors = [{'contact.email': email}] if email else []
+        ors += [{'contact.phone': phone}] if phone else []
+        first = not await db.bookings.find_one({'status': 'paid', '$or': ors}, {'_id': 1})
+    ok = {'first': first, 'couple': q['adults'] == 2 and q['children'] == 0,
+          'early': days_ahead(departure) >= DEPOSIT_MIN_DAYS, 'family': q['children'] > 0}
+    out = []
+    for p in PROMOS:
+        saving = jsround(q['total'] * p['pct'] / 100) if p.get('pct') else p['flat']
+        out.append({'code': p['code'], 'label': p['label'], 'saving': min(saving, q['total']), 'eligible': ok[p['rule']],
+                    'terms': f"{p['pct']}% off" if p.get('pct') else f"\u20b9{p['flat']:,} off"})
+    return out
+
+
+async def price_quote(db, product_key: str, departure: date, rooms: List[Room]) -> dict:
+    product = PRODUCTS.get(product_key)
+    if not product:
+        raise HTTPException(404, 'Unknown product')
+    if departure < ist_today() + timedelta(days=MIN_LEAD_DAYS):
+        raise HTTPException(400, f'Check-in must be at least {MIN_LEAD_DAYS} days from today so we can arrange your travel')
+    if departure > last_bookable():
+        raise HTTPException(400, f'Online booking is open up to {MAX_MONTHS_AHEAD} months ahead')
+    if product.get('live'):
+        from live_packages import live_quote
+        q = await live_quote(db, product_key, departure, rooms)
+        if not q:
+            raise HTTPException(400, 'This check-in date is not available')
+        return q
+    if departure.isoformat() in BLACKOUT:
+        raise HTTPException(400, 'This check-in date is not available')
+    return quote(product, departure, rooms)
 
 
 class VerifyIn(BaseModel):
@@ -113,29 +172,39 @@ def register(db):
     async def config():
         return {'key_id': KEY_ID, 'mock': MOCK, 'currency': 'INR'}
 
+    @router.post('/promos')
+    async def promos(body: PromoIn):
+        q = await price_quote(db, body.product, body.departure, body.rooms)
+        opts = await promo_options(db, q, body.departure, body.email.strip().lower(), body.phone)
+        best = max((o for o in opts if o['eligible']), key=lambda o: o['saving'], default=None)
+        return {'total': q['total'], 'promos': opts, 'best': best and best['code'], 'deposit_allowed': days_ahead(body.departure) >= DEPOSIT_MIN_DAYS,
+                'deposit_pct': DEPOSIT_PCT, 'balance_due': (body.departure - timedelta(days=BALANCE_DAYS_BEFORE)).isoformat()}
+
     @router.post('/order')
     async def create_order(body: OrderIn):
         product = PRODUCTS.get(body.product)
-        if not product:
-            raise HTTPException(404, 'Unknown product')
-        if body.departure < ist_today() + timedelta(days=MIN_LEAD_DAYS):
-            raise HTTPException(400, f'Check-in must be at least {MIN_LEAD_DAYS} days from today so we can arrange your travel')
-        if body.departure > last_bookable():
-            raise HTTPException(400, f'Online booking is open up to {MAX_MONTHS_AHEAD} months ahead')
-        if product.get('live'):
-            from live_packages import live_quote
-            q = await live_quote(db, body.product, body.departure, body.rooms)
-            if not q:
-                raise HTTPException(400, 'This check-in date is not available')
-        else:
-            if body.departure.isoformat() in BLACKOUT:
-                raise HTTPException(400, 'This check-in date is not available')
-            q = quote(product, body.departure, body.rooms)
-        amount_paise = q['total'] * 100
+        q = await price_quote(db, body.product, body.departure, body.rooms)
+        q['subtotal'] = q['total']
+        if body.promo:
+            opts = await promo_options(db, q, body.departure, body.contact.email.strip().lower(), body.contact.phone)
+            hit = next((o for o in opts if o['code'] == body.promo.upper() and o['eligible']), None)
+            if not hit:
+                raise HTTPException(400, 'This promo code does not apply to your booking')
+            q['promo'], q['discount'] = hit['code'], hit['saving']
+            q['total'] = q['subtotal'] - hit['saving']
+        kind = None
+        if body.pay_mode == 'deposit':
+            if days_ahead(body.departure) < DEPOSIT_MIN_DAYS:
+                raise HTTPException(400, f'Paying a 10% deposit is open for check-ins {DEPOSIT_MIN_DAYS}+ days away')
+            kind = 'package'
+            q['deposit'] = jsround(q['total'] * DEPOSIT_PCT)
+            q['balance_due'] = (body.departure - timedelta(days=BALANCE_DAYS_BEFORE)).isoformat()
+        due_now = q.get('deposit', q['total'])
+        amount_paise = due_now * 100
         pending = await db.bookings.find_one({'product': body.product, 'departure': body.departure.isoformat(), 'contact.email': body.contact.email,
                                               'status': 'created', 'amount_paise': amount_paise, 'mock': MOCK}, {'_id': 0})
         if pending:
-            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump(), 'quote': q}})
+            await db.bookings.update_one({'booking_id': pending['booking_id']}, {'$set': {'rooms': [r.model_dump() for r in body.rooms], 'contact': body.contact.model_dump(), 'quote': q, **({'kind': kind} if kind else {})}})
             return {'booking_id': pending['booking_id'], 'order_id': pending['razorpay_order_id'], 'amount': amount_paise, 'currency': 'INR',
                     'key_id': KEY_ID, 'mock': MOCK, 'quote': q}
         booking_id = 'HT' + uuid.uuid4().hex[:8].upper()
@@ -149,6 +218,7 @@ def register(db):
             'departure': body.departure.isoformat(), 'rooms': [r.model_dump() for r in body.rooms],
             'contact': body.contact.model_dump(), 'quote': q, 'amount_paise': amount_paise,
             'razorpay_order_id': order['id'], 'status': 'created', 'mock': MOCK,
+            **({'kind': kind} if kind else {}),
             'created_at': datetime.now(timezone.utc).isoformat(),
         }
         await db.bookings.insert_one(doc)
@@ -181,7 +251,7 @@ def register(db):
         await db.bookings.update_one({'booking_id': body.booking_id}, {'$set': {
             'status': 'paid', 'razorpay_payment_id': body.razorpay_payment_id,
             'paid_at': datetime.now(timezone.utc).isoformat()}})
-        if doc.get('kind') in ('group', 'hotel'):
+        if doc.get('kind') in ('group', 'hotel', 'package'):
             from balance_links import send_next_link
             try:
                 await send_next_link(db, doc)
