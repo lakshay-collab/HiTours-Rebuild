@@ -20,6 +20,12 @@ export const PRICES = [
 //  - Theme: travel styles. Rule = [label, regex, icon, { tags, maxDays, minCities, text }]. The regex runs on the title
 //    (and on the whole itinerary corpus when text: true). A theme shows only where at least one trip matches.
 //  - Experiences: landmarks / activities (holidays/experiences.js) matched on the full itinerary corpus.
+export const STARS = [
+  { key: '5', label: '5★ hotels' },
+  { key: '4', label: '4★ hotels' },
+  { key: '3', label: '3★ hotels' }
+];
+
 const THEME_RULES = [
   ['Honeymoon', /romantic|romance|honeymoon|couples?/i, 'heart', { tags: ['Honeymoon'] }],
   ['Family', /family|kids|children/i, 'family', { tags: ['Family'] }],
@@ -104,22 +110,37 @@ export const themesOf = (p, mode = 'holidays') => {
   return hits;
 };
 
+const STAR_RE = /([345])\s?(?:★|-?\s?star)|\b(three|four|five)-star/gi;
+const WORD = { three: '3', four: '4', five: '5' };
+const starCache = new Map();
+export const starsOf = (p) => {
+  if (p.stars) return p.stars.map(String);
+  if (starCache.has(p.slug)) return starCache.get(p.slug);
+  const t = BY_SLUG[p.slug];
+  const text = (t?.route?.stops || []).map((s) => `${s.accommodation?.name || ''} ${s.accommodation?.description || ''}`).join('\n');
+  const hits = uniq([...text.matchAll(STAR_RE)].map((m) => m[1] || WORD[m[2].toLowerCase()]));
+  starCache.set(p.slug, hits);
+  return hits;
+};
+
 export const placesOf = (p) => p.places || [];
 export const countriesOf = (p) => p.countries || [];
 
 const inRange = (defs) => (v, keys) => keys.some((k) => { const d = defs.find((x) => x.key === k); return d && v >= d.min && v <= d.max; });
 const matchers = {
-  country: (p, sel) => sel.some((c) => countriesOf(p).includes(c)),
+  price: (p, sel) => inRange(PRICES)(p.price, sel),
+  days: (p, sel) => inRange(DURATIONS)(p.days, sel),
+  stars: (p, sel) => sel.some((k) => starsOf(p).includes(k)),
+  place: (p, sel) => sel.some((c) => placesOf(p).includes(c)),
   theme: (p, sel, mode) => sel.some((t) => themesOf(p, mode).includes(t)),
   experience: (p, sel) => sel.some((t) => experiencesOf(p).includes(t)),
-  place: (p, sel) => sel.some((c) => placesOf(p).includes(c)),
-  days: (p, sel) => inRange(DURATIONS)(p.days, sel),
-  price: (p, sel) => inRange(PRICES)(p.price, sel)
+  country: (p, sel) => sel.some((c) => countriesOf(p).includes(c))
 };
+// Ordered by importance; desktop and mobile share the same order.
 export const GROUPS = Object.keys(matchers);
-// Mobile leads with Experiences: on a phone people pick the landmark they came for before the theme.
-export const MOBILE_GROUPS = ['experience', ...Object.keys(matchers).filter((g) => g !== 'experience')];
-export const emptySelection = () => ({ country: [], theme: [], experience: [], place: [], days: [], price: [] });
+export const MOBILE_GROUPS = GROUPS;
+export const QUICK_GROUPS = ['price', 'days', 'stars', 'place'];
+export const emptySelection = () => ({ country: [], theme: [], experience: [], place: [], days: [], price: [], stars: [] });
 
 export const applyFilters = (products, sel, mode = 'holidays', except) =>
   products.filter((p) => GROUPS.every((g) => g === except || !sel[g].length || matchers[g](p, sel[g], mode)));
@@ -145,12 +166,13 @@ export function buildFacets(products, sel, mode = 'holidays') {
     experience: Object.keys(expAll).sort(byCount(expAll)).map((v) => ({ value: v, label: v, count: expNow[v] || 0, icon: themeIcon(v) })),
     place: Object.keys(placeAll).sort(byCount(placeAll)).map((v) => ({ value: v, label: v, count: placeNow[v] || 0 })),
     days: DURATIONS.map((d) => ({ value: d.key, label: d.label, count: pool('days').filter((p) => p.days >= d.min && p.days <= d.max).length })),
-    price: PRICES.map((d) => ({ value: d.key, label: d.label, count: pool('price').filter((p) => p.price >= d.min && p.price <= d.max).length }))
+    price: PRICES.map((d) => ({ value: d.key, label: d.label, count: pool('price').filter((p) => p.price >= d.min && p.price <= d.max).length })),
+    stars: STARS.map((d) => ({ value: d.key, label: d.label, count: pool('stars').filter((p) => starsOf(p).includes(d.key)).length })).filter((d) => products.some((p) => starsOf(p).includes(d.value)))
   };
 }
 
 export const facetLabel = (group, value) => {
-  const def = group === 'days' ? DURATIONS.find((d) => d.key === value) : group === 'price' ? PRICES.find((d) => d.key === value) : null;
+  const def = group === 'days' ? DURATIONS.find((d) => d.key === value) : group === 'price' ? PRICES.find((d) => d.key === value) : group === 'stars' ? STARS.find((d) => d.key === value) : null;
   return def ? def.label : value;
 };
 
@@ -161,4 +183,4 @@ export const toggleIn = (sel, group, value) => ({
 
 export const activeCount = (sel) => GROUPS.reduce((n, g) => n + sel[g].length, 0);
 
-export const GROUP_LABELS = { country: 'Country', theme: 'Theme', experience: 'Experiences', place: 'Destination', days: 'Duration', price: 'Price range' };
+export const GROUP_LABELS = { country: 'Country', theme: 'Theme', experience: 'Experiences', place: 'Places', days: 'Duration', price: 'Price', stars: 'Hotel stars' };

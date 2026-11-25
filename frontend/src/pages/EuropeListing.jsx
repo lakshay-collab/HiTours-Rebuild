@@ -8,5 +8,5 @@ export default function EuropeListing() {
 }
 
 export function EuropeHolidays() {
-  return <EgyptHolidays d={{ ...europe, plannerSource: 'europe-holidays', testId: 'europe-holidays-page' }} />;
+  return <EgyptHolidays d={{ ...europe, plannerSource: 'europe-holidays', showCountry: true, testId: 'europe-holidays-page' }} />;
 }

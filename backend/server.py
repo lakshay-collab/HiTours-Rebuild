@@ -228,6 +228,8 @@ from live_packages import register as register_live_packages
 app.include_router(register_live_packages(db))
 from hotel_packages import register as register_hotel_packages
 app.include_router(register_hotel_packages(db))
+from otp import register as register_otp
+app.include_router(register_otp(db))
 from balance_links import register as register_balance_links
 app.include_router(register_balance_links(db))
 

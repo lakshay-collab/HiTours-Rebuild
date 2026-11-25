@@ -62,7 +62,7 @@ function DestinationList({ items, selected, onToggle, testPrefix, maxHeight }) {
 export function GroupOptions({ group, facets, sel, onToggle, testPrefix, chips = true, scrollPlaces = true }) {
   if (group === 'place') return <DestinationList items={facets.place} selected={sel.place} onToggle={onToggle} testPrefix={testPrefix} maxHeight={scrollPlaces} />;
   const items = facets[group];
-  if (chips && (group === 'days' || group === 'price')) {
+  if (chips && (group === 'days' || group === 'price' || group === 'stars')) {
     return <div className="flex flex-wrap gap-2">{items.map((it) => <ChipToggle key={it.value} item={it} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />)}</div>;
   }
   const row = (it) => <CheckRow key={it.value} item={it} icon={it.icon} checked={sel[group].includes(it.value)} onToggle={() => onToggle(group, it.value)} testId={`${testPrefix}-${group}-option`} />;
@@ -86,10 +86,10 @@ function ExperienceOptions({ items, sel, testPrefix, row }) {
   );
 }
 
-export default function HolidayFilterPanel({ facets, sel, onToggle, testPrefix = 'hf' }) {
+export default function HolidayFilterPanel({ facets, sel, onToggle, groups = GROUPS, testPrefix = 'hf' }) {
   return (
     <div data-testid={`${testPrefix}-panel`}>
-      {GROUPS.map((g) => (
+      {groups.map((g) => (
         <Section key={g} id={g} title={GROUP_LABELS[g]} testPrefix={testPrefix}>
           <GroupOptions group={g} facets={facets} sel={sel} onToggle={onToggle} testPrefix={testPrefix} />
         </Section>

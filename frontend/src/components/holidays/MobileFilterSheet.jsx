@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTitle, SheetDescription } from '../ui/sheet';
 import { GroupOptions } from './HolidayFilterPanel';
 import { MOBILE_GROUPS, GROUP_LABELS, applyFilters, buildFacets, toggleIn, activeCount, emptySelection } from '../../holidays/filterModel';
 
-export default function MobileFilterSheet({ open, onOpenChange, products, sel, mode, onApply, countLabel, initialGroup = 'experience' }) {
+export default function MobileFilterSheet({ open, onOpenChange, products, sel, mode, onApply, countLabel, initialGroup = 'price', groups = MOBILE_GROUPS, side = 'bottom' }) {
   const [draft, setDraft] = useState(sel);
   const [group, setGroup] = useState(initialGroup);
   useEffect(() => { if (open) { setDraft(sel); setGroup(initialGroup); } }, [open, sel, initialGroup]);
@@ -13,7 +13,7 @@ export default function MobileFilterSheet({ open, onOpenChange, products, sel, m
   const active = activeCount(draft);
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="bottom" className="h-[86dvh] p-0 rounded-t-2xl bg-white border-0 flex flex-col [&>button]:hidden" data-testid="mobile-filter-sheet">
+      <SheetContent side={side} className={`${side === 'bottom' ? 'h-[86dvh] rounded-t-2xl' : 'w-full sm:max-w-[560px]'} p-0 bg-white border-0 flex flex-col [&>button]:hidden`} data-testid="mobile-filter-sheet">
         <div className="flex items-center justify-between pl-5 pr-3 h-14 border-b border-[#E4E3DB] shrink-0">
           <SheetTitle className="eg-title-lg text-[#002131]">Filters{active ? ` (${active})` : ''}</SheetTitle>
           <SheetDescription className="sr-only">Refine by theme, experiences, destination, duration and price</SheetDescription>
@@ -21,7 +21,7 @@ export default function MobileFilterSheet({ open, onOpenChange, products, sel, m
         </div>
         <div className="flex-1 min-h-0 flex">
           <nav className="w-[38%] max-w-[180px] shrink-0 bg-[#F0EEE6] overflow-y-auto no-scrollbar" aria-label="Filter groups" data-testid="mobile-filter-groups">
-            {MOBILE_GROUPS.map((g) => {
+            {groups.map((g) => {
               const on = g === group;
               return (
                 <button key={g} type="button" onClick={() => setGroup(g)} aria-selected={on} role="tab"

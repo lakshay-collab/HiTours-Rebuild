@@ -74,7 +74,6 @@ export default function EgyptProductCard({ p, index = 0 }) {
           )}
           <div className="mt-auto pt-4 flex items-end justify-between gap-3">
             <SalePrice price={p.price} noSale={p.noSale} testId="eg-product-price" />
-            {p.liveKey && <span className="shrink-0 inline-flex items-center gap-1 eg-label-lg text-[#174358] underline underline-offset-4 pb-0.5" data-testid="eg-product-view-details">Check availability<ChevronRight size={16} /></span>}
           </div>
         </div>
       </Wrap>

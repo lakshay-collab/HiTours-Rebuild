@@ -180,5 +180,5 @@ export const baliKutaUbudLiveProduct = {
   slug: 'book/bali-kuta-ubud', liveKey: 'bali-kuta-ubud', places: ['Kuta', 'Ubud'], href: '/asia/book/bali-kuta-ubud',
   tag: detail.tag, styles: detail.tags, title: detail.title, alt: detail.alt,
   days: 7, stops: 2, hotels: 2, cities: 2, activities: 6, transfers: 9, meals: 6,
-  price: detail.price, noSale: true, images: cardImages,
+  price: detail.price, noSale: true, images: cardImages, stars: [4],
 };
